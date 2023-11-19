@@ -7,14 +7,14 @@ const QuestPage: React.FC = () => {
     const { questName, modified } = qpname.state;
     const [stepPath, setStepPath] = useState<string>("");
     const [stepDetails, setStepDetails] = useState<string[]>([]);
-    const [active, setActive] = useState(1);
-    const [highestStepVisited, setHighestStepVisited] = useState(active);
+    //const [active, setActive] = useState(1);
+    //const [highestStepVisited, setHighestStepVisited] = useState(active);
     const questStepJSON = "/QuestList.json";
     const textfile = modified + "info.txt";
 
-    const shouldAllowSelectStep = (step: number) => {
-        highestStepVisited >= step && active !== step;
-    };
+    // const shouldAllowSelectStep = (step: number) => {
+    //     highestStepVisited >= step && active !== step;
+    // };
 
     useEffect(() => {
         fetchStepPath();
