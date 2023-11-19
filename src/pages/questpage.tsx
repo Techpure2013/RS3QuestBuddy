@@ -1,5 +1,5 @@
 import { Stepper } from "@mantine/core";
-import React, { useState, useEffect, Component } from "react";
+import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 const QuestPage: React.FC = () => {
@@ -12,9 +12,9 @@ const QuestPage: React.FC = () => {
     const questStepJSON = "/QuestList.json";
     const textfile = modified + "info.txt";
 
-    // Allow the user to freely go back and forth between visited steps.
-    const shouldAllowSelectStep = (step: number) =>
+    const shouldAllowSelectStep = (step: number) => {
         highestStepVisited >= step && active !== step;
+    };
 
     useEffect(() => {
         fetchStepPath();
@@ -25,14 +25,11 @@ const QuestPage: React.FC = () => {
             const response = await fetch(questStepJSON);
             const file = await response.json();
 
-            // Normalize and lowercase the textfile for consistent comparison
             const normalizedTextFile = textfile
                 .toLowerCase()
                 .replace(/\s+/g, "");
 
-            // Find the step details for the current quest
             const foundStep = file.find((value: { Quest: string }) => {
-                // Normalize and lowercase the file names for consistent comparison
                 let pattern = /[!,`']/g;
                 const normalizedValue =
                     value.Quest.toLowerCase()
