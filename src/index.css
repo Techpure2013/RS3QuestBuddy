@@ -1,0 +1,32 @@
+@font-face {
+    font-family: rs3Font;
+    src: url("/fonts/RS3Bold.woff2");
+}
+#QHead {
+    font-family: rs3Font;
+    text-align: center;
+    padding: auto;
+    background-color: linear-gradient();
+}
+.App {
+    font-family: rs3Font;
+    text-align: center;
+}
+
+.search-bar {
+    text-align: center;
+    margin-top: 10px; /* Adjust the margin-top as needed */
+}
+
+.carousel-container {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin-top as needed */
+}
+
+body,
+html,
+#root {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
