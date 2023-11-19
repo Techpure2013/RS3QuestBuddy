@@ -1,4 +1,4 @@
-import { Stepper } from "@mantine/core";
+import { Button, Group, Stepper } from "@mantine/core";
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -7,15 +7,25 @@ const QuestPage: React.FC = () => {
     const { questName, modified } = qpname.state;
     const [stepPath, setStepPath] = useState<string>("");
     const [stepDetails, setStepDetails] = useState<string[]>([]);
-    //const [active, setActive] = useState(1);
-    //const [highestStepVisited, setHighestStepVisited] = useState(active);
     const questStepJSON = "/QuestList.json";
     const textfile = modified + "info.txt";
+    const [active, setActive] = useState(1);
+    const [highestStepVisited, setHighestStepVisited] = useState(active);
+    const stepLength = stepDetails.length;
+    const handleStepChange = (nextStep: number) => {
+        const isOutOfBounds = nextStep > stepLength || stepLength < 0;
 
-    // const shouldAllowSelectStep = (step: number) => {
-    //     highestStepVisited >= step && active !== step;
-    // };
+        if (isOutOfBounds) {
+            return console.log("out of bounds");
+        }
 
+        setActive(nextStep);
+        setHighestStepVisited((hSC) => Math.max(hSC, nextStep));
+    };
+
+    // Allow the user to freely go back and forth between visited steps.
+    const shouldAllowSelectStep = (step: number) =>
+        highestStepVisited >= step && active !== step;
     useEffect(() => {
         fetchStepPath();
     }, []);
@@ -66,25 +76,41 @@ const QuestPage: React.FC = () => {
     useEffect(() => {
         fetchStep();
     }, [fetchStep()]);
-    console.log(stepDetails);
+
     return (
         <>
             <div>
                 <h2>{questName}</h2>
             </div>
             <div>
-                {stepDetails.map((value, index) => {
-                    return (
-                        <Stepper.Step
-                            label={"Step: " + (index + 1)}
-                            key={index}
-                            orientation="vertical"
-                            description={value}
-                        >
-                            console.log(value);
-                        </Stepper.Step>
-                    );
-                })}
+                <Group position="center" mt="md">
+                    <Button
+                        variant="default"
+                        onClick={() => handleStepChange(active - 1)}
+                    >
+                        Back
+                    </Button>
+                    <Button onClick={() => handleStepChange(active + 1)}>
+                        Next step
+                    </Button>
+                </Group>
+                <Stepper
+                    active={active}
+                    onStepClick={setActive}
+                    breakpoint="xl"
+                >
+                    {stepDetails.map((value, index) => {
+                        return (
+                            <Stepper.Step
+                                label={"Step: " + (index + 1)}
+                                key={index}
+                                orientation="vertical"
+                                description={value}
+                                allowStepSelect={shouldAllowSelectStep(0)}
+                            ></Stepper.Step>
+                        );
+                    })}
+                </Stepper>
             </div>
         </>
     );
