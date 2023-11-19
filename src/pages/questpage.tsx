@@ -85,7 +85,7 @@ const QuestPage: React.FC = () => {
             <div>
                 <Group position="center" mt="md">
                     <Button
-                        variant="default"
+                        variant="outline"
                         onClick={() => handleStepChange(active - 1)}
                     >
                         Back

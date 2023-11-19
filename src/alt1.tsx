@@ -25,7 +25,7 @@ export const AltGuard = () => {
                         window.location.host
                     }/${
                         !window.location.host.includes("localhost")
-                            ? "alt1-template/" //Include repo name (this is only for github pages)
+                            ? "RS3QuestBuddy/" //Include repo name (this is only for github pages)
                             : ""
                     }appconfig${
                         !window.location.host.includes("localhost")
