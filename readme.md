@@ -9,3 +9,5 @@ The coding scribes, armed with the insights gleaned from this virtual tome, toil
 This odyssey of development, influenced by the digital verses scribed by the RuneScape community, is not without its trials. A journey through lines of code fraught with unexpected challenges, debugging quests akin to navigating a virtual labyrinth. The struggle becomes a crucible, refining the tool's functionality and utility, transforming it into a digital ally that resonates with the grit of the development process and the shared knowledge of RuneScape enthusiasts.
 
 In the struggle, Techpure's commitment to user empowerment shines through, guided in part by the illuminating pages of The RuneScape Wiki—a testament to the collaborative spirit that defines the RuneScape community. RS3 Quest Helper, a manifestation of collective effort, is envisioned not just as a tool but as a symbiosis of digital ingenuity and community wisdom, a tribute to the shared pursuit of virtual perfection sparked by the illuminating insights found within The RuneScape Wiki.
+
+RS3 Quest Buddy © 2023 by Techpure is licensed under CC BY-NC-SA 4.0 
