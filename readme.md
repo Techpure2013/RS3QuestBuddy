@@ -1,5 +1,5 @@
 # RS3QuestBuddy
-RS3 Quest Helper acts as your virtual questing buddy, offering hints and shortcuts to make your RuneScape 3 quests less of a puzzle and more of an enjoyable stroll through the gaming landscape.
+RS3 Quest Buddy acts as your virtual questing buddy, offering hints and shortcuts to make your RuneScape 3 quests less of a puzzle and more of an enjoyable stroll through the gaming landscape.
 In the intricate labyrinth of digital innovation, Techpure grapples with the arduous task of birthing RS3 Quest Helper—a laborious endeavor beset by the challenges inherent in crafting a tool that transcends the virtual dimensions of RuneScape 3. The struggle is palpable; a symphony of lines of code, algorithms, and design elements wrestles with the complexities of enhancing the questing experience for players.
 
 This insight into the ongoing saga of RS3 Quest Helper draws inspiration from the digital scriptures of The RuneScape Wiki—an invaluable repository of knowledge and a beacon of enlightenment for those seeking to unravel the intricacies of the virtual realms. As the digital forge burns with the heat of creative friction, RS3 Quest Helper emerges as a phoenix from the crucible of struggle, with contributions from the collective wisdom curated by the diligent scribes of The RuneScape Wiki.
