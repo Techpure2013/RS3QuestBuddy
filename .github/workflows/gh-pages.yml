@@ -2,8 +2,12 @@ name: Deploy Jekyll to GitHub Pages
 
 on:
   push:
+<<<<<<< HEAD
     branches:
       - gh-pages
+=======
+    branches: ["master"]
+>>>>>>> 92e5a6041f4cb49abe724c973944ec5b57c79453
 
   workflow_dispatch:
 
