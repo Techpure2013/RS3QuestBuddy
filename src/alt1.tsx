@@ -18,25 +18,7 @@ export const AltGuard = () => {
     return (
         <div className="App">
             <h1>ALT1 not found</h1>
-            <p>
-                Click{" "}
-                <a
-                    href={`alt1://addapp/${window.location.protocol}//${
-                        window.location.host
-                    }/${
-                        !window.location.host.includes("localhost")
-                            ? "RS3QuestBuddy/" //Include repo name (this is only for github pages)
-                            : ""
-                    }appconfig${
-                        !window.location.host.includes("localhost")
-                            ? ".src" //Target prod (this is only for github pages)
-                            : ""
-                    }.json`}
-                >
-                    here
-                </a>{" "}
-                to add this to alt1
-            </p>
+            <p></p>
             <Button onClick={() => setOverride(true)}>
                 View Website Anyway
             </Button>
