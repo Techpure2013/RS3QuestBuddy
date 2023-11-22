@@ -1,66 +1,51 @@
-name: Deploy React App to GitHub Pages
+# Simple workflow for deploying static content to GitHub Pages
+name: Deploy static content to Pages
 
 on:
+    # Runs on pushes targeting the default branch
     push:
-        branches:
-            - master # Replace with your main branch name
+        branches: ["main"]
 
+    # Allows you to run this workflow manually from the Actions tab
     workflow_dispatch:
 
+# Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
 permissions:
     contents: read
     pages: write
     id-token: write
 
+# Allow one concurrent deployment
 concurrency:
     group: "pages"
-    cancel-in-progress: false
+    cancel-in-progress: true
 
 jobs:
-    # Build job
-    build:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout repository
-              uses: actions/checkout@v3
-
-            - name: Setup Node.js
-              uses: actions/setup-node@v3
-              with:
-                  node-version: "20.3.2" # Specify the version you need
-
-            - name: Install Node.js dependencies
-              run: npm install
-
-            - name: Install Alt1 dependencies
-              run: npm install alt1
-
-            - name: Build React App
-              run: npm run build # Adjust the command based on your project setup
-
-            - name: Setup Pages
-              uses: actions/configure-pages@v3
-
-            - name: Upload artifact
-              uses: actions/upload-artifact@v2
-              with:
-                  name: build
-                  path: build # Change this if your build output directory is different
-
-    # Deployment job
+    # Single deploy job since we're just deploying
     deploy:
         environment:
-            name: GitHub Pages
+            name: github-pages
             url: ${{ steps.deployment.outputs.page_url }}
-
         runs-on: ubuntu-latest
-        needs: build
         steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+            - name: Set up Node
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 18
+                  cache: "npm"
+            - name: Install dependencies
+              run: npm install
+            - name: Build
+              run: npm run build
+            - name: Setup Pages
+              uses: actions/configure-pages@v3
+            - name: Upload artifact
+              uses: actions/upload-pages-artifact@v1
+              with:
+                  # Upload dist repository
+                  path: "./"
             - name: Deploy to GitHub Pages
               id: deployment
-              uses: actions/deploy-pages@v2
-              with:
-                  # Specify the branch to deploy, e.g., 'gh-pages' or 'main'
-                  target_branch: master
-                  # Specify the directory containing the build output
-                  folder: src
+              uses: actions/deploy-pages@v1
