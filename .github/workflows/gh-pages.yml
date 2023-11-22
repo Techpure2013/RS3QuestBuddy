@@ -63,4 +63,4 @@ jobs:
                   # Specify the branch to deploy, e.g., 'gh-pages' or 'main'
                   target_branch: master
                   # Specify the directory containing the build output
-                  folder: build
+                  folder: src
