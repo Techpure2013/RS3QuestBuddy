@@ -29,7 +29,7 @@ export const AltGuard = () => {
                             : ""
                     }appconfig${
                         !window.location.host.includes("localhost")
-                            ? ".prod" //Target prod (this is only for github pages)
+                            ? ".src" //Target prod (this is only for github pages)
                             : ""
                     }.json`}
                 >
