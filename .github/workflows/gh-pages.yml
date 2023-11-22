@@ -1,55 +1,63 @@
-name: Deploy Jekyll to GitHub Pages
+name: Deploy React App to GitHub Pages
 
 on:
-  push:
-<<<<<<< HEAD
-    branches:
-      - gh-pages
-=======
-    branches: ["master"]
->>>>>>> 92e5a6041f4cb49abe724c973944ec5b57c79453
+    push:
+        branches:
+            - master # Replace with your main branch name
 
-  workflow_dispatch:
+    workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+    contents: read
+    pages: write
+    id-token: write
 
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+    group: "pages"
+    cancel-in-progress: false
 
 jobs:
-  # Build job
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+    # Build job
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v3
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
+            - name: Setup Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: "20.3.2" # Specify the version you need
 
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
+            - name: Install Node.js dependencies
+              run: npm install
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+            - name: Build React App
+              run: npm run build # Adjust the command based on your project setup
 
-  # Deployment job
-  deploy:
-    environment:
-      name: GitHub Pages
-      url: ${{ steps.deployment.outputs.page_url }}
+            - name: Setup Pages
+              uses: actions/configure-pages@v3
 
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+            - name: Upload artifact
+              uses: actions/upload-artifact@v2
+              with:
+                  name: build
+                  path: build # Change this if your build output directory is different
 
+    # Deployment job
+    deploy:
+        environment:
+            name: GitHub Pages
+            url: ${{ steps.deployment.outputs.page_url }}
+
+        runs-on: ubuntu-latest
+        needs: build
+        steps:
+            - name: Deploy to GitHub Pages
+              id: deployment
+              uses: actions/deploy-pages@v2
+              with:
+                  # Specify the branch to deploy, e.g., 'gh-pages' or 'main'
+                  target_branch: master
+                  # Specify the directory containing the build output
+                  folder: build
