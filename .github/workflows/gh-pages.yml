@@ -32,6 +32,9 @@ jobs:
             - name: Install Node.js dependencies
               run: npm install
 
+            - name: Install Alt1 dependencies
+              run: npm install alt1
+
             - name: Build React App
               run: npm run build # Adjust the command based on your project setup
 
