@@ -33,9 +33,7 @@ jobs:
       - name: List Contents
         run: ls -R
 
-      # Debugging Step 2: Display the Jekyll version
-      - name: Display Jekyll Version
-        run: jekyll -v
+      
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
