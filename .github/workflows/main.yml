@@ -34,7 +34,7 @@ jobs:
         uses: actions/jekyll-build-pages@v1
         with:
           source: .
-          destination: ./_site
+          destination: ./src/main.tsx
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
 
