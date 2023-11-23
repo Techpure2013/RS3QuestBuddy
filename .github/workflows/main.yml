@@ -28,13 +28,32 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
+      # Debugging Step 1: List the contents of the directory
+      - name: List Contents
+        run: ls -R
+
+      # Debugging Step 2: Display the Jekyll version
+      - name: Display Jekyll Version
+        run: jekyll -v
+
       - name: Setup Pages
         uses: actions/configure-pages@v3
+
+      # Debugging Step 3: Print environment variables
+      - name: Print Environment Variables
+        run: env
+
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./dist
           destination: ./_site
+
+      # Debugging Step 4: Display the contents of the _site directory
+      - name: Display _site Contents
+        run: ls -R ./_site
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
 
