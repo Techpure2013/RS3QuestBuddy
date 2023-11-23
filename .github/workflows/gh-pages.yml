@@ -41,7 +41,7 @@ jobs:
               run: npm run build
             - name: Convert filenames to lowercase
               run: |
-                cp -r * dist/               
+                cp /Quests/questlist.txt dist/               
                 
                 
             - name: Setup Pages
