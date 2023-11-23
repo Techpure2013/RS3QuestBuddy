@@ -43,7 +43,7 @@ jobs:
               run: |
                 cp ./questlist.txt dist/               
                 
-                find ./build -type f -exec rename -f 'y/A-Z/a-z/' {} +
+                
             - name: Setup Pages
               uses: actions/configure-pages@v3
             - name: Uplgoad artifact
