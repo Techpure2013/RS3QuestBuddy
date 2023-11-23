@@ -43,6 +43,7 @@ jobs:
               run: |
                   cp ./questlist.txt dist/
                   cp ./questlist.json dist/
+                  cp ./src/quests dist/
             - name: Setup Pages
               uses: actions/configure-pages@v3
             - name: Uplgoad artifact
