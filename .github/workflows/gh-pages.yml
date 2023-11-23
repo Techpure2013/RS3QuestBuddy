@@ -4,7 +4,7 @@ name: Deploy static content to Pages
 on:
     # Runs on pushes targeting the default branch
     push:
-        branches: ["master"]
+        branches: ["gh-pages"]
 
     # Allows you to run this workflow manually from the Actions tab
     workflow_dispatch:
@@ -41,7 +41,7 @@ jobs:
               run: npm run build
             - name: Convert filenames to lowercase
               run: |
-                cp /Quests/questlist.txt dist/               
+                cp ./Quests/questlist.txt dist/               
                 
                 
             - name: Setup Pages
