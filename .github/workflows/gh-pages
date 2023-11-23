@@ -1,0 +1,35 @@
+name: Copy Structure
+
+on:
+  push:
+    branches:
+      - gh-pages # Change this to the branch you want to trigger the workflow on
+
+jobs:
+  copy_structure:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Create Dist Directory
+      run: mkdir -p dist
+
+    - name: Copy Directory Structure
+      run: rsync -a --exclude=dist --exclude=.git ./ dist/
+
+    - name: Commit Changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git diff --quiet && git diff --staged --quiet || git commit -m "Copy directory structure"
+      
+    - name: Push Changes
+      uses: ad-m/github-push-action@master
+      with:
+        branch: ${{ github.ref }}
+        force: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
