@@ -5,7 +5,7 @@ import { TextInput } from "@mantine/core";
 import "./index.css";
 import { NavLink } from "react-router-dom";
 
-const QUEST_FILE_PATH = "./Quests/questlist.txt";
+const QUEST_FILE_PATH = "/../dist/Quests/questlist.txt";
 
 const QuestCarousel: React.FC = () => {
     const [questList, setQuestList] = useState<string[]>([]);
@@ -18,7 +18,7 @@ const QuestCarousel: React.FC = () => {
 
     const fetchQuestList = async () => {
         try {
-            const response = await fetch(QUEST_FILE_PATH);
+            const response = await fetch(`${QUEST_FILE_PATH}`);
             const text = await response.text();
             const quests = text.split(",");
             setQuestList(quests);
