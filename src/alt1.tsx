@@ -7,9 +7,11 @@ export const AltGuard = () => {
     if (window.alt1 || override) {
         return (
             <MantineProvider
-                withNormalizeCSS
                 withGlobalStyles
-                theme={{ colorScheme: "dark" }}
+                withNormalizeCSS
+                theme={{
+                    colorScheme: "dark",
+                }}
             >
                 <App />
             </MantineProvider>
@@ -21,17 +23,7 @@ export const AltGuard = () => {
             <p>
                 Click{" "}
                 <a
-                    href={`alt1://addapp/${window.location.protocol}//${
-                        window.location.host
-                    }/${
-                        !window.location.host.includes("localhost")
-                            ? "RS3QuestBuddy/" //Include repo name (this is only for github pages)
-                            : ""
-                    }appconfig${
-                        !window.location.host.includes("localhost")
-                            ? ".prod" //Target prod (this is only for github pages)
-                            : ""
-                    }.json`}
+                    href={`alt1://addapp/${window.location.protocol}//${window.location.host}/appconfig.json`}
                 >
                     here
                 </a>{" "}
