@@ -1,44 +1,39 @@
-import React, { useState, useEffect } from "react";
 import { Button, MantineProvider } from "@mantine/core";
 import App from "./App";
+import { useState } from "react";
 
 export const AltGuard = () => {
     const [override, setOverride] = useState(false);
-    const [error, setError] = useState(false);
-
-    useEffect(() => {
-        // Check for ALT1 presence on component mount
-        if (!window.alt1) {
-            console.log("ALT1 not found");
-            setError(true);
-        }
-    }, []);
-
-    const handleAlt1Click = () => {
-        // Handle ALT1 link click
-        window.location.href = `alt1://addapp/${window.location.protocol}//${window.location.host}/appconfig.json`;
-    };
-    console.log("window:", window);
-    if (error || override) {
+    if (window.alt1 || override) {
         return (
             <MantineProvider
-                withGlobalStyles
                 withNormalizeCSS
-                theme={{
-                    colorScheme: "dark",
-                }}
+                withGlobalStyles
+                theme={{ colorScheme: "dark" }}
             >
                 <App />
             </MantineProvider>
         );
     }
-
+    console.log("I am here");
     return (
         <div className="App">
             <h1>ALT1 not found</h1>
             <p>
                 Click{" "}
-                <a href="#" onClick={handleAlt1Click}>
+                <a
+                    href={`alt1://addapp/${window.location.protocol}//${
+                        window.location.host
+                    }/${
+                        !window.location.host.includes("localhost")
+                            ? "RS3QuestBuddy/" //Include repo name (this is only for github pages)
+                            : ""
+                    }appconfig${
+                        !window.location.host.includes("localhost")
+                            ? ".prod" //Target prod (this is only for github pages)
+                            : ""
+                    }.json`}
+                >
                     here
                 </a>{" "}
                 to add this to alt1
