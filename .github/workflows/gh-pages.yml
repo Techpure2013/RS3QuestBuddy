@@ -42,7 +42,7 @@ jobs:
             - name: Convert filenames to lowercase
               run: |
                 cp ./questlist.txt dist/               
-                find ./build -type d -exec rename -f 'y/A-Z/a-z/' {} +
+                
                 find ./build -type f -exec rename -f 'y/A-Z/a-z/' {} +
             - name: Setup Pages
               uses: actions/configure-pages@v3
