@@ -41,7 +41,7 @@ jobs:
               run: npm run build
             - name: Convert filenames to lowercase
               run: |
-                  cp -r * dist/
+                  cp questlist.txt dist/
                   find ./dist -type d -exec rename -f 'y/A-Z/a-z/' {} +
                   find ./dist -type f -exec rename -f 'y/A-Z/a-z/' {} +
 
