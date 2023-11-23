@@ -22,6 +22,7 @@ const QuestCarousel: React.FC = () => {
             const text = await response.text();
             const quests = text.split(",");
             setQuestList(quests);
+            console.log(quests);
         } catch (error) {
             console.error("Error fetching quest list:", error);
         }
