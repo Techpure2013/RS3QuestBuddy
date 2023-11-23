@@ -33,8 +33,11 @@ jobs:
             - name: List Contents
               run: ls -R
 
-            - name: find version
-              run: lsb_release -a
+            - name: find directories
+              run: find . -type d -exec bash -c 'mv "$1" "${1%/*}/$(echo "${1##*/}" | tr "[:upper:]" "[:lower:]")"' _ {} \;
+
+            - name: file find
+              run: find . -type f -exec bash -c 'mv "$1" "${1%/*}/$(echo "${1##*/}" | tr "[:upper:]" "[:lower:]")"' _ {} \;
 
             - name: Setup Pages
               uses: actions/configure-pages@v3
