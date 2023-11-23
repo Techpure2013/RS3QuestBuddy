@@ -5,8 +5,13 @@ import { TextInput } from "@mantine/core";
 import "./index.css";
 import { NavLink } from "react-router-dom";
 
-const QUEST_FILE_PATH = "/dist/questlist.txt";
-
+const QUEST_FILE_PATH = () => {
+    if (window.location.host.includes("localhost:")) {
+        return "/dist/questlist.txt";
+    } else {
+        return "RS3QuestBuddy/dist/questlist.txt";
+    }
+};
 const QuestCarousel: React.FC = () => {
     const [questList, setQuestList] = useState<string[]>([]);
     const [searchQuery, setSearchQuery] = useState<string>("");
