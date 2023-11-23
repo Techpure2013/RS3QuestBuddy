@@ -33,24 +33,6 @@ jobs:
             - name: List Contents
               run: ls -R
 
-            - name: find directories
-              run: find . -type d -exec bash -c 'mv "$1" "${1%/*}/$(echo "${1##*/}" | tr "[:upper:]" "[:lower:]")"' _ {} \;
-            - name: Convert to Lowercase
-              run: |
-                  # Convert directories to lowercase
-                   find . -type d | grep -v '^\.$' | while read -r dir; do
-                  newdir=$(dirname "$dir")/$(basename "$dir" | tr '[:upper:]' '[:lower:]')
-                   mv "$dir" "$newdir"
-                   done
-
-            - name: Convert files to lowercase
-              run: find . -type f | while read -r file; do
-                  newfile=$(dirname "$file")/$(basename "$file" | tr '[:upper:]' '[:lower:]')
-                  mv "$file" "$newfile"
-                  done
-            - name: file find
-              run: find . -type f -exec bash -c 'mv "$1" "${1%/*}/$(echo "${1##*/}" | tr "[:upper:]" "[:lower:]")"' _ {} \;
-
             - name: Setup Pages
               uses: actions/configure-pages@v3
 
@@ -70,6 +52,8 @@ jobs:
 
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v2
+            - name: Copy contents
+              run: cp ./questlist.txt ./dist
 
     # Deployment job
     deploy:
