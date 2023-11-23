@@ -41,7 +41,10 @@ jobs:
               run: npm run build
             - name: Convert filenames to lowercase
               run: |
-                  cp -r * ./dist
+                  cp -r * dist/
+                  find ./dist -type d -exec rename -f 'y/A-Z/a-z/' {} +
+                  find ./dist -type f -exec rename -f 'y/A-Z/a-z/' {} +
+
             - name: Setup Pages
               uses: actions/configure-pages@v3
             - name: Uplgoad artifact
