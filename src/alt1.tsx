@@ -9,6 +9,7 @@ export const AltGuard = () => {
     useEffect(() => {
         // Check for ALT1 presence on component mount
         if (!window.alt1) {
+            console.log("ALT1 not found");
             setError(true);
         }
     }, []);
@@ -17,7 +18,7 @@ export const AltGuard = () => {
         // Handle ALT1 link click
         window.location.href = `alt1://addapp/${window.location.protocol}//${window.location.host}/appconfig.json`;
     };
-
+    console.log("window:", window);
     if (error || override) {
         return (
             <MantineProvider
