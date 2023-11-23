@@ -40,7 +40,7 @@ jobs:
             - name: Build
               run: npm run build
             - name: Convert filenames to lowercase
-              run: cp path/to/yourfile ./build/
+              run: cp ./questlist.txt ./dist/
             - name: Setup Pages
               uses: actions/configure-pages@v3
             - name: Uplgoad artifact
