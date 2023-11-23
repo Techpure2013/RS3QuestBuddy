@@ -7,7 +7,7 @@ const QuestPage: React.FC = () => {
     const { questName, modified } = qpname.state;
     const [stepPath, setStepPath] = useState<string>("");
     const [stepDetails, setStepDetails] = useState<string[]>([]);
-    const questStepJSON = "/questlist.json";
+    const questStepJSON = "questlist.json";
     const textfile = modified + "info.txt";
     const [active, setActive] = useState(1);
     const [highestStepVisited, setHighestStepVisited] = useState(active);
