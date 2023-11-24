@@ -11,9 +11,9 @@ const QuestCarousel: React.FC = () => {
     //const overlayDuration = 10000; // 10 seconds
     const QUEST_FILE_PATH = () => {
         if (window.location.host.includes("localhost:")) {
-            return "/dist/questlist.txt";
+            return "/questlist.txt";
         } else {
-            return window.location.host + "/dist/questlist.txt";
+            return process.env.PUBLIC_URL + "/questlist.txt";
         }
     };
 
