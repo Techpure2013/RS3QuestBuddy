@@ -10,4 +10,33 @@ This odyssey of development, influenced by the digital verses scribed by the Run
 
 In the struggle, Techpure's commitment to user empowerment shines through, guided in part by the illuminating pages of The RuneScape Wiki—a testament to the collaborative spirit that defines the RuneScape community. RS3 Quest Helper, a manifestation of collective effort, is envisioned not just as a tool but as a symbiosis of digital ingenuity and community wisdom, a tribute to the shared pursuit of virtual perfection sparked by the illuminating insights found within The RuneScape Wiki.
 
-RS3 Quest Buddy © 2023 by Techpure is licensed under CC BY-NC-SA 4.0 
+---
+
+# Adding to Alt1
+You may add this to your Alt1 via the following URL:
+`alt1://addapp/https://techpure2013.github.io/RS3QuestBuddy/appconfig.json`
+
+# Building from Source
+**Run project without building**
+```bash
+$ npm run dev
+```
+
+**Build project out to `./dist`**
+```bash
+$ npm run build
+```
+
+**Running ES Lint**
+```bash
+$ npm run lint
+```
+
+**Run application live preview**
+```bash
+$ npm run preview
+```
+
+
+# License
+*RS3 Quest Buddy © 2023 by Techpure is licensed under CC BY-NC-SA 4.0*
