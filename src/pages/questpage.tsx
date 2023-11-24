@@ -28,6 +28,7 @@ const QuestPage: React.FC = () => {
         highestStepVisited >= step && active !== step;
     useEffect(() => {
         fetchStepPath();
+        setStepPath("");
     }, []);
 
     const fetchStepPath = async () => {
@@ -72,6 +73,11 @@ const QuestPage: React.FC = () => {
             console.error("Steps Could Not Load", error);
         }
     };
+    useEffect(() => {
+        fetchStep();
+        setStepDetails([]);
+    }, []);
+
     fetchStep();
 
     return (
