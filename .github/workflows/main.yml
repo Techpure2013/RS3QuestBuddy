@@ -44,7 +44,7 @@ jobs:
               uses: actions/jekyll-build-pages@v1
               with:
                   source: ./dist
-                  destination: ./src/main.tsx
+                  destination: ./_site
 
             # Debugging Step 4: Display the contents of the _site directory
             - name: Display _site Contents
