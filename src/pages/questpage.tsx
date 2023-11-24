@@ -75,7 +75,7 @@ const QuestPage: React.FC = () => {
 
     useEffect(() => {
         fetchStep();
-    }, [fetchStep()]);
+    }, []);
 
     return (
         <>
