@@ -108,13 +108,13 @@ const QuestPage: React.FC = () => {
                             variant="outline"
                             onClick={() => handleStepChange(active - 1)}
                         >
-                            Back
+                            Prev Step
                         </Button>
                         <Button
                             variant="outline"
                             onClick={() => handleStepChange(active + 1)}
                         >
-                            Next step
+                            Next Step
                         </Button>
                     </Flex>
                 </Group>
