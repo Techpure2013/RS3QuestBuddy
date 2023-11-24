@@ -9,23 +9,16 @@ const QuestCarousel: React.FC = () => {
     const [questList, setQuestList] = useState<string[]>([]);
     const [searchQuery, setSearchQuery] = useState<string>("");
     //const overlayDuration = 10000; // 10 seconds
-    const QUEST_FILE_PATH = () => {
-        if (window.location.host.includes("localhost:")) {
-            return "/questlist.txt";
-        } else {
-            return process.env.PUBLIC_URL + "/questlist.txt";
-        }
-    };
+    const QUEST_FILE_PATH = "/questlist.txt";
 
     console.log(QUEST_FILE_PATH);
     useEffect(() => {
         fetchQuestList();
-        QUEST_FILE_PATH();
     }, []);
 
     const fetchQuestList = async () => {
         try {
-            const response = await fetch(`${QUEST_FILE_PATH()}`);
+            const response = await fetch(`${QUEST_FILE_PATH}`);
             const text = await response.text();
             const quests = text.split(",");
             setQuestList(quests);
