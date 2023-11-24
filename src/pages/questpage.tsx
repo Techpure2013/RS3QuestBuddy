@@ -7,7 +7,7 @@ const QuestPage: React.FC = () => {
     const { questName, modified } = qpname.state;
     const [stepPath, setStepPath] = useState<string>("");
     const [stepDetails, setStepDetails] = useState<string[]>([]);
-    const questStepJSON = "./QuestList.json";
+    const questStepJSON = "/QuestList.json";
     const textfile = modified + "info.txt";
     const [active, setActive] = useState(1);
     const [highestStepVisited, setHighestStepVisited] = useState(active);
@@ -22,14 +22,13 @@ const QuestPage: React.FC = () => {
         setActive(nextStep);
         setHighestStepVisited((hSC) => Math.max(hSC, nextStep));
     };
-
+    useEffect(() => {
+        fetchStepPath();
+        fetchStep();
+    }, []);
     // Allow the user to freely go back and forth between visited steps.
     const shouldAllowSelectStep = (step: number) =>
         highestStepVisited >= step && active !== step;
-    useEffect(() => {
-        fetchStepPath();
-        setStepPath("");
-    }, []);
 
     const fetchStepPath = async () => {
         try {
@@ -73,12 +72,6 @@ const QuestPage: React.FC = () => {
             console.error("Steps Could Not Load", error);
         }
     };
-    useEffect(() => {
-        fetchStep();
-        setStepDetails([]);
-    }, []);
-
-    fetchStep();
 
     return (
         <>
