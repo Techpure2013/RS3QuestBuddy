@@ -13,11 +13,7 @@ const QuestCarousel: React.FC = () => {
         if (window.location.host.includes("localhost:")) {
             return "/dist/questlist.txt";
         } else {
-            return (
-                window.location.origin +
-                process.env.PUBLIC_URL +
-                "/dist/questlist.txt"
-            );
+            return window.location.host + "/dist/questlist.txt";
         }
     };
 
