@@ -51,10 +51,7 @@ jobs:
               run: ls -R ./_site
 
             - name: Upload artifact
-              uses: actions/upload-artifact@v2
-              with:
-                  path: ./dist # Corrected path
-                  name: dist # Adjusted name to match the artifact name
+              uses: actions/upload-pages-artifact@v2
 
     # Deployment job
     deploy:
@@ -67,6 +64,3 @@ jobs:
             - name: Deploy to GitHub Pages
               id: deployment
               uses: actions/deploy-pages@v2
-              with:
-                  github_token: ${{ secrets.GITHUB_TOKEN }}
-                  artifact: ./dist # Make sure this matches the artifact name
