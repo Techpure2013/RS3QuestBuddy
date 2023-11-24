@@ -2,18 +2,16 @@
     font-family: rs3Font;
     src: url("/fonts/RS3Bold.woff2");
 }
-#QHead {
-    font-family: rs3Font;
-    text-align: center;
-    padding: auto;
-    background-color: linear-gradient();
-}
+
 .App {
     font-family: rs3Font;
     text-align: center;
-    background-color: ;
 }
-
+.Alt1Button {
+    color: #3d4b5a;
+    left: 40%;
+    transform: translateX(30%);
+}
 TextInput {
     text-align: center;
     margin-top: 10px; /* Adjust the margin-top as needed */
@@ -29,8 +27,6 @@ TextInput {
     );
 }
 
-.navLink {
-}
 .caroQTitle {
     text-align: center;
 
@@ -52,8 +48,8 @@ TextInput {
 }
 .buttonsGroup {
     position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 80%;
+    transform: translateX(30%);
     bottom: 240px; /* Adjust as needed for the vertical position */
 
     display: flex;
@@ -95,13 +91,13 @@ TextInput {
         #141b23,
         #0c1117
     );
-    left: 15rem;
+
     border: auto;
     color: #fff; /* White text */
     padding: 10px 20px; /* Adjust padding as needed */
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+
     font-size: 16px;
     border-radius: 4px; /* Optional: Rounded corners */
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7); /* Shadow on the bottom right */
