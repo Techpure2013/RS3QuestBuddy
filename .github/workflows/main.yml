@@ -41,6 +41,10 @@ jobs:
               run: npm run build
             - name: Setup Pages
               uses: actions/configure-pages@v3
+
+            - name: a
+              run: cp ./questlist.txt ./dist
+
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v1
               with:
