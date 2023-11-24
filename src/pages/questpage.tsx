@@ -70,7 +70,12 @@ const QuestPage: React.FC = () => {
         }
     };
     useEffect(() => {
-        fetchStepPath();
+        if (!fetchStep) {
+            fetchStepPath();
+        } else {
+            fetchStep();
+        }
+
         fetchStep();
     }, [fetchStep(), fetchStepPath()]);
     return (
