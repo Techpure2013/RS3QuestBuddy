@@ -1,4 +1,4 @@
-name: Deploy static content to Pages
+name: Deploy QuestBuddy to GitHub Pages
 
 on:
     # Runs on pushes targeting the default branch
@@ -27,34 +27,45 @@ jobs:
             url: ${{ steps.deployment.outputs.page_url }}
         runs-on: ubuntu-latest
         steps:
+            # Checkout and clone git repo
             - name: Checkout
               uses: actions/checkout@v3
+
+            # Setup NodeJS v18 LTS
             - name: Set up Node
               uses: actions/setup-node@v3
               with:
                   node-version: 18
                   cache: "npm"
+
+            # Build out JS/HTML into Dist production.
             - name: Install dependencies
               run: npm install
             - name: Build
               run: npm run build
-            - name: Setup Pages
+
+            # Configure GitHub Pages for deployment
+            - name: Setup GitHub Pages
               uses: actions/configure-pages@v3
 
-            - name: a
+            # Copy/Move final build output files to production location.
+            - name: Copy Quest List TXT
               run: cp ./questlist.txt ./dist
-            - name: b
+            - name: Copy Quest List JSON LUT
               run: cp ./QuestList.json ./dist
-            - name: c
+            - name: Move Quests to Dist Folder
               run: mv ./Quests ./dist
-            - name: d
+            - name: List out final PWD contents
               run: ls -a
 
+            # Upload the distributables to GitHub Pages after finalization.
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v1
               with:
                   # Upload dist repository
                   path: "./dist"
+            
+            # Send GitHub Pages final build to live production
             - name: Deploy to GitHub Pages
               id: deployment
               uses: actions/deploy-pages@v1
