@@ -47,7 +47,7 @@ jobs:
             - name: b
               run: cp ./QuestList.json ./dist
             - name: c
-              run: cp ./Quests ./dist
+              run: mv ./Quests ./dist
 
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v1
