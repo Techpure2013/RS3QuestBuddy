@@ -13,9 +13,14 @@ const QuestCarousel: React.FC = () => {
         if (window.location.host.includes("localhost:")) {
             return "/dist/questlist.txt";
         } else {
-            return window.location.origin + "/dist/questlist.txt";
+            return (
+                window.location.origin +
+                process.env.PUBLIC_URL +
+                "/dist/questlist.txt"
+            );
         }
     };
+
     console.log(QUEST_FILE_PATH);
     useEffect(() => {
         fetchQuestList();
