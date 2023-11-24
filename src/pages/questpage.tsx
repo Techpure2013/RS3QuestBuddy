@@ -87,7 +87,7 @@ const QuestPage: React.FC = () => {
             <div>
                 <Group position="center" mt="md">
                     <Button variant="outline" onClick={handleBackButton}>
-                        Quest Page
+                        Go Back
                     </Button>
                     <Button
                         variant="outline"
