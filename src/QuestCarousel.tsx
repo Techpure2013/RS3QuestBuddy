@@ -13,7 +13,7 @@ const QuestCarousel: React.FC = () => {
         if (window.location.host.includes("localhost:")) {
             return "/dist/questlist.txt";
         } else {
-            return "RS3QuestBuddy/dist/questlist.txt";
+            return window.location.host + "/dist/questlist.txt";
         }
         console.log(QUEST_FILE_PATH);
     };
