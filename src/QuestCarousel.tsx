@@ -9,7 +9,7 @@ const QuestCarousel: React.FC = () => {
     const [questList, setQuestList] = useState<string[]>([]);
     const [searchQuery, setSearchQuery] = useState<string>("");
     //const overlayDuration = 10000; // 10 seconds
-    const QUEST_FILE_PATH = "/questlist.txt";
+    const QUEST_FILE_PATH = "/dist/questlist.txt";
 
     console.log(QUEST_FILE_PATH);
     useEffect(() => {
