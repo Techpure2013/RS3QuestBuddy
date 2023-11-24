@@ -50,6 +50,9 @@ jobs:
             - name: Display _site Contents
               run: ls -R ./_site
 
+            - name: Copy Questlist to directory
+              run: cp ./questlist ./dist
+
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v2
 
