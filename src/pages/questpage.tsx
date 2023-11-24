@@ -22,10 +22,7 @@ const QuestPage: React.FC = () => {
         setActive(nextStep);
         setHighestStepVisited((hSC) => Math.max(hSC, nextStep));
     };
-    useEffect(() => {
-        fetchStepPath();
-        fetchStep();
-    }, []);
+
     // Allow the user to freely go back and forth between visited steps.
     const shouldAllowSelectStep = (step: number) =>
         highestStepVisited >= step && active !== step;
@@ -72,7 +69,10 @@ const QuestPage: React.FC = () => {
             console.error("Steps Could Not Load", error);
         }
     };
-
+    useEffect(() => {
+        fetchStepPath();
+        fetchStep();
+    }, [fetchStep(), fetchStepPath()]);
     return (
         <>
             <div>
