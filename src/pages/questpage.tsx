@@ -75,7 +75,7 @@ const QuestPage: React.FC = () => {
         } else {
             fetchStep();
         }
-    }, [textfile, questStepJSON, fetchStep(), fetchStepPath()]);
+    }, [fetchStep(), fetchStepPath()]);
     return (
         <>
             <div>
