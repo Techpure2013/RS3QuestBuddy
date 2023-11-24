@@ -18,7 +18,7 @@ const QuestCarousel: React.FC = () => {
 
     const fetchQuestList = async () => {
         try {
-            const response = await fetch(`${QUEST_FILE_PATH}`);
+            const response = await fetch(QUEST_FILE_PATH);
             const text = await response.text();
             const quests = text.split(",");
             setQuestList(quests);
