@@ -4,7 +4,7 @@ import QuestPage from "./pages/questpage";
 function App() {
     return (
         <>
-            <HashRouter>
+            <HashRouter basename="/">
                 <Routes>
                     <Route path="/src/App.tsx">
                         {/* put url base here and nest children routes */}

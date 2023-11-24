@@ -57,7 +57,7 @@ const QuestCarousel: React.FC = () => {
                         return (
                             <Carousel.Slide key={index}>
                                 <NavLink
-                                    to={"#/QuestPage"}
+                                    to={"/QuestPage"}
                                     state={{
                                         questName: quest,
                                         modified: modifiedQuestVal1,
