@@ -72,10 +72,7 @@ const QuestPage: React.FC = () => {
             console.error("Steps Could Not Load", error);
         }
     };
-
-    useEffect(() => {
-        fetchStep();
-    }, []);
+    fetchStep();
 
     return (
         <>
