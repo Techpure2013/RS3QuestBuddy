@@ -5,29 +5,29 @@ import { TextInput } from "@mantine/core";
 import "./index.css";
 import { NavLink } from "react-router-dom";
 
-const QUEST_FILE_PATH = () => {
-    if (window.location.host.includes("localhost:")) {
-        return "/dist/questlist.txt";
-    } else {
-        return "RS3QuestBuddy/dist/questlist.txt";
-    }
-};
 const QuestCarousel: React.FC = () => {
     const [questList, setQuestList] = useState<string[]>([]);
     const [searchQuery, setSearchQuery] = useState<string>("");
     //const overlayDuration = 10000; // 10 seconds
-
+    const QUEST_FILE_PATH = () => {
+        if (window.location.host.includes("localhost:")) {
+            return "/dist/questlist.txt";
+        } else {
+            return "RS3QuestBuddy/dist/questlist.txt";
+        }
+        console.log(QUEST_FILE_PATH);
+    };
     useEffect(() => {
         fetchQuestList();
+        QUEST_FILE_PATH();
     }, []);
 
     const fetchQuestList = async () => {
         try {
-            const response = await fetch(`${QUEST_FILE_PATH}`);
+            const response = await fetch(`${QUEST_FILE_PATH()}`);
             const text = await response.text();
             const quests = text.split(",");
             setQuestList(quests);
-            console.log(quests);
         } catch (error) {
             console.error("Error fetching quest list:", error);
         }
