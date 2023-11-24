@@ -1,6 +1,6 @@
 import { Button, Group, Stepper } from "@mantine/core";
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const QuestPage: React.FC = () => {
     const qpname = useLocation();
@@ -12,6 +12,7 @@ const QuestPage: React.FC = () => {
     const [active, setActive] = useState(1);
     const [highestStepVisited, setHighestStepVisited] = useState(active);
     const stepLength = stepDetails.length;
+    const navigate = useNavigate();
     const handleStepChange = (nextStep: number) => {
         const isOutOfBounds = nextStep > stepLength || stepLength < 0;
 
@@ -22,7 +23,9 @@ const QuestPage: React.FC = () => {
         setActive(nextStep);
         setHighestStepVisited((hSC) => Math.max(hSC, nextStep));
     };
-
+    const handleBackButton = () => {
+        navigate("/");
+    };
     // Allow the user to freely go back and forth between visited steps.
     const shouldAllowSelectStep = (step: number) =>
         highestStepVisited >= step && active !== step;
@@ -75,7 +78,7 @@ const QuestPage: React.FC = () => {
         } else {
             fetchStep();
         }
-    }, [fetchStep(), fetchStepPath()]);
+    }, [questStepJSON, fetchStep(), fetchStepPath()]);
     return (
         <>
             <div>
@@ -83,6 +86,9 @@ const QuestPage: React.FC = () => {
             </div>
             <div>
                 <Group position="center" mt="md">
+                    <Button variant="outline" onClick={handleBackButton}>
+                        Quest Page
+                    </Button>
                     <Button
                         variant="outline"
                         onClick={() => handleStepChange(active - 1)}

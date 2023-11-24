@@ -6,15 +6,16 @@ function App() {
         <>
             <HashRouter basename="/">
                 <Routes>
-                    <Route path="/src/App.tsx">
-                        {/* put url base here and nest children routes */}
-                        <Route path="" element={<QuestCarousel />} />
+                    <Route path="/">
+                        {/* Your default route */}
+                        <Route index element={<QuestCarousel />} />
                     </Route>
                     <Route path="/QuestPage" element={<QuestPage />} />
-                    <Route path="/*" element={<Navigate to="/src/App.tsx" />} />
-                    {/* navigate to default route if no url matched */}
+                    <Route path="/*" element={<Navigate to="/" />} />
+                    {/* Navigate to the default route if no URL matched */}
                 </Routes>
             </HashRouter>
+
             <Outlet />
         </>
     );
