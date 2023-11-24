@@ -36,11 +36,11 @@ const QuestCarousel: React.FC = () => {
     }
     return (
         <>
-            <div>
+            <div className="customContainer">
                 <TextInput
+                    className="customInput"
                     label="Search for Quest"
                     placeholder="Type in a quest"
-                    size="md"
                     value={searchQuery}
                     onChange={handleSearchChange}
                 />

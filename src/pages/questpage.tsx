@@ -1,4 +1,4 @@
-import { Button, Group, Stepper } from "@mantine/core";
+import { Button, Flex, Group, Stepper } from "@mantine/core";
 import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./../index.css";
@@ -91,28 +91,32 @@ const QuestPage: React.FC = () => {
             </div>
             <div className="questContainer">
                 <Group className="buttonsGroup" position="center" mt="md">
-                    <Button
-                        className="buttons"
-                        variant="outline"
-                        onClick={handleBackButton}
+                    <Flex
+                        mih={75}
+                        miw={75}
+                        gap="md"
+                        justify="flex-start"
+                        align="flex-start"
+                        direction="row"
+                        wrap="wrap"
                     >
-                        Pick Quest
-                    </Button>
+                        <Button variant="outline" onClick={handleBackButton}>
+                            Pick Quest
+                        </Button>
 
-                    <Button
-                        className="buttons"
-                        variant="outline"
-                        onClick={() => handleStepChange(active - 1)}
-                    >
-                        Back
-                    </Button>
-                    <Button
-                        className="buttons"
-                        variant="outline"
-                        onClick={() => handleStepChange(active + 1)}
-                    >
-                        Next step
-                    </Button>
+                        <Button
+                            variant="outline"
+                            onClick={() => handleStepChange(active - 1)}
+                        >
+                            Back
+                        </Button>
+                        <Button
+                            variant="outline"
+                            onClick={() => handleStepChange(active + 1)}
+                        >
+                            Next step
+                        </Button>
+                    </Flex>
                 </Group>
                 <Stepper
                     className="stepperContainer"

@@ -14,10 +14,21 @@
     background-color: ;
 }
 
-.search-bar {
+TextInput {
     text-align: center;
     margin-top: 10px; /* Adjust the margin-top as needed */
+    color: #4e85bc;
+    background: linear-gradient(
+        to bottom,
+        #546576,
+        #3d4b5a,
+        #2c3742,
+        #1e2832,
+        #141b23,
+        #0c1117
+    );
 }
+
 .navLink {
 }
 .caroQTitle {
@@ -48,6 +59,7 @@
     display: flex;
     gap: 10px; /* Adjust as needed for the space between buttons */
 }
+/* Save this buttons class for later use maybe */
 .buttons {
     color: #061017;
     background-color: linear-gradient(
@@ -72,13 +84,36 @@
     font-family: rs3Font;
     text-align: center;
 }
-
-.buttons:hover {
+.mantine-Button-root {
+    color: #061017;
+    background-color: linear-gradient(
+        to bottom,
+        #546576,
+        #3d4b5a,
+        #2c3742,
+        #1e2832,
+        #141b23,
+        #0c1117
+    );
+    left: 15rem;
+    border: auto;
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Adjust padding as needed */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px; /* Optional: Rounded corners */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7); /* Shadow on the bottom right */
+    font-family: rs3Font;
+    text-align: center;
+}
+.mantine-Button-root:hover {
     background-color: hsl(200, 25%, 50%);
 }
 .navLink {
     text-decoration: none;
-    color: black;
+    color: #4e85bc;
 }
 .mantine-Stepper-stepDescription {
     font-family: rs3Font;
@@ -102,6 +137,32 @@
     font-family: rs3Font;
     color: #4e85bc;
 }
+
+.mantine-TextInput-label {
+    font-family: rs3Font;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #4e85bc;
+    font-size: 25px;
+}
+.custom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+}
+
+.mantine-TextInput-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mantine-TextInput-input {
+    text-align: center;
+    width: 25rem;
+}
+
 body,
 html,
 #root {
