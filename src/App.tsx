@@ -15,7 +15,6 @@ function App() {
                     {/* Navigate to the default route if no URL matched */}
                 </Routes>
             </HashRouter>
-
             <Outlet />
         </>
     );

@@ -11,22 +11,125 @@
 .App {
     font-family: rs3Font;
     text-align: center;
+    background-color: ;
 }
 
 .search-bar {
     text-align: center;
     margin-top: 10px; /* Adjust the margin-top as needed */
 }
-
-.carousel-container {
+.navLink {
+}
+.caroQTitle {
     text-align: center;
-    margin-top: 20px; /* Adjust the margin-top as needed */
+
+    top: 20px; /* Adjust as needed for the vertical position */
+
+    display: flex;
+    gap: 10px; /* Adjust as needed for the space between buttons */
+}
+.questContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.stepperContainer {
+    max-height: 400px; /* Set the desired height for the stepper container */
+    background-color: #00000;
+    margin-top: 16px; /* Adjust as needed to create space between buttons and stepper */
+}
+.buttonsGroup {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 240px; /* Adjust as needed for the vertical position */
+
+    display: flex;
+    gap: 10px; /* Adjust as needed for the space between buttons */
+}
+.buttons {
+    color: #061017;
+    background-color: linear-gradient(
+        to bottom,
+        #546576,
+        #3d4b5a,
+        #2c3742,
+        #1e2832,
+        #141b23,
+        #0c1117
+    );
+    left: 15rem;
+    border: auto;
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Adjust padding as needed */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px; /* Optional: Rounded corners */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7); /* Shadow on the bottom right */
+    font-family: rs3Font;
+    text-align: center;
+}
+
+.buttons:hover {
+    background-color: hsl(200, 25%, 50%);
+}
+.navLink {
+    text-decoration: none;
+    color: black;
+}
+.mantine-Stepper-stepDescription {
+    font-family: rs3Font;
+    font-size: 17px;
+    color: #4e85bc;
+}
+
+.mantine-Stepper-stepIcon {
+    background: linear-gradient(
+        to bottom,
+        #546576,
+        #3d4b5a,
+        #2c3742,
+        #1e2832,
+        #141b23,
+        #0c1117
+    );
+}
+.mantine-Stepper-stepLabel {
+    font-size: 20px;
+    font-family: rs3Font;
+    color: #4e85bc;
+}
 body,
 html,
 #root {
+    background: linear-gradient(
+        to bottom,
+        #546576,
+        #3d4b5a,
+        #2c3742,
+        #1e2832,
+        #141b23,
+        #0c1117
+    );
+    font-family: rs3Font;
     padding: 0;
     margin: 0;
     height: 100%;
+    animation: backgroundPulse 5s infinite alternate ease-in-out;
+}
+h2 {
+    font-family: rs3Font;
+    text-align: center;
+    color: #4e85bc;
+}
+@keyframes backgroundPulse {
+    0% {
+        background: #2c3742;
+    }
+    100% {
+        background: #141b23; /* A slightly darker shade */
+    }
 }

@@ -4,6 +4,7 @@ import { Carousel } from "@mantine/carousel";
 import { TextInput } from "@mantine/core";
 import "./index.css";
 import { NavLink } from "react-router-dom";
+import { IconArrowRight, IconArrowLeft } from "@tabler/icons-react";
 
 const QuestCarousel: React.FC = () => {
     const [questList, setQuestList] = useState<string[]>([]);
@@ -45,8 +46,24 @@ const QuestCarousel: React.FC = () => {
                 />
             </div>
 
-            <div className="carousel-container">
-                <Carousel maw={320} mx="auto" withIndicators height={200}>
+            <div>
+                <Carousel
+                    className="caroQTitle"
+                    maw={320}
+                    mx="auto"
+                    withIndicators
+                    height={25}
+                    styles={{
+                        control: {
+                            "&[data-inactive]": {
+                                opacity: 0,
+                                cursor: "default",
+                            },
+                        },
+                    }}
+                    nextControlIcon={<IconArrowRight size={16} />}
+                    previousControlIcon={<IconArrowLeft size={16} />}
+                >
                     {filteredQuests.map((quest, index) => {
                         let questTEdit = quest.toLowerCase().split(" ");
                         let pattern = /[!,`']/g;
@@ -55,8 +72,9 @@ const QuestCarousel: React.FC = () => {
                             .replace(pattern, "");
 
                         return (
-                            <Carousel.Slide key={index}>
+                            <Carousel.Slide size="100%" key={index}>
                                 <NavLink
+                                    className="navLink"
                                     to={"/QuestPage"}
                                     state={{
                                         questName: quest,

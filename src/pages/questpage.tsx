@@ -1,7 +1,7 @@
 import { Button, Group, Stepper } from "@mantine/core";
 import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-
+import "./../index.css";
 const QuestPage: React.FC = () => {
     const qpname = useLocation();
     const { questName, modified } = qpname.state;
@@ -84,35 +84,38 @@ const QuestPage: React.FC = () => {
         fetchData();
     }, [textfile, questStepJSON]);
 
-    // useEffect(() => {
-    //     console.log("Am I rerendering");
-    //     if (!fetchStep) {
-    //         fetchStepPath();
-    //     } else {
-    //         fetchStep();
-    //     }
-    // }, [fetchStep(), fetchStepPath()]);
     return (
         <>
             <div>
                 <h2>{questName}</h2>
             </div>
-            <div>
-                <Group position="center" mt="md">
-                    <Button variant="outline" onClick={handleBackButton}>
-                        Go Back
-                    </Button>
+            <div className="questContainer">
+                <Group className="buttonsGroup" position="center" mt="md">
                     <Button
+                        className="buttons"
+                        variant="outline"
+                        onClick={handleBackButton}
+                    >
+                        Pick Quest
+                    </Button>
+
+                    <Button
+                        className="buttons"
                         variant="outline"
                         onClick={() => handleStepChange(active - 1)}
                     >
                         Back
                     </Button>
-                    <Button onClick={() => handleStepChange(active + 1)}>
+                    <Button
+                        className="buttons"
+                        variant="outline"
+                        onClick={() => handleStepChange(active + 1)}
+                    >
                         Next step
                     </Button>
                 </Group>
                 <Stepper
+                    className="stepperContainer"
                     active={active}
                     onStepClick={setActive}
                     breakpoint="xl"
@@ -120,6 +123,7 @@ const QuestPage: React.FC = () => {
                     {stepDetails.map((value, index) => {
                         return (
                             <Stepper.Step
+                                className="stepperStep"
                                 label={"Step: " + (index + 1)}
                                 key={index}
                                 orientation="vertical"

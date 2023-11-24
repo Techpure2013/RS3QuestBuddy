@@ -1,19 +1,12 @@
-import { Button, MantineProvider } from "@mantine/core";
+import { Button } from "@mantine/core";
 import App from "./App";
 import { useState } from "react";
+import "./index.css";
 
 export const AltGuard = () => {
     const [override, setOverride] = useState(false);
     if (window.alt1 || override) {
-        return (
-            <MantineProvider
-                withNormalizeCSS
-                withGlobalStyles
-                theme={{ colorScheme: "dark" }}
-            >
-                <App />
-            </MantineProvider>
-        );
+        return <App />;
     }
     console.log("I am here");
     return (
