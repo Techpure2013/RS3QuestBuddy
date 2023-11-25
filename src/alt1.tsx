@@ -32,10 +32,15 @@ export const AltGuard = () => {
                     </a>{" "}
                     to add this to alt1
                 </p>
+
+                <Button
+                    className="Alt1Button"
+                    variant="outline"
+                    onClick={() => setOverride(true)}
+                >
+                    Continue to RS3 Quest Buddy
+                </Button>
             </div>
-            <Button className="Alt1Button" onClick={() => setOverride(true)}>
-                View Website Anyway
-            </Button>
         </>
     );
 };

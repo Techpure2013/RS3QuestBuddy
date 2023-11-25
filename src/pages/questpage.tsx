@@ -87,13 +87,12 @@ const QuestPage: React.FC = () => {
     return (
         <>
             <div>
-                <h2>{questName}</h2>
+                <h2 className="qpTitle">{questName}</h2>
             </div>
             <div className="questContainer">
-                <Group className="buttonsGroup" position="center" mt="md">
+                <Group position="center" mt="md">
                     <Flex
-                        mih={75}
-                        miw={75}
+                        className="flexGroup"
                         gap="md"
                         justify="flex-start"
                         align="flex-start"

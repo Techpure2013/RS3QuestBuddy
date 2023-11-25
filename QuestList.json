@@ -1,7 +1,11 @@
 [
     {
         "Quest": "questlist.txt",
-        "Path": "./questlist.txt"
+        "Path": "./Quests/questlist.txt"
+    },
+    {
+        "Quest": "questlistfolder.txt.bat",
+        "Path": "./Quests/questlistfolder.txt.bat"
     },
     {
         "Quest": "A Fairy Tale I",
