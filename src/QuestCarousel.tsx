@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Carousel } from "@mantine/carousel";
 import { TextInput } from "@mantine/core";
+// import { QuestList } from './quest_list.json'; TODO: new unified quest list into a json format
 import "./index.css";
 import { NavLink } from "react-router-dom";
 import { IconArrowRight, IconArrowLeft } from "@tabler/icons-react";
