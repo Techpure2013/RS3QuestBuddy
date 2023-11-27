@@ -67,12 +67,20 @@ const QuestCarousel: React.FC = () => {
                     {filteredQuests.map((quest, index) => {
                         let questTEdit = quest.toLowerCase().split(" ");
                         let pattern = /[!,`']/g;
+                        let rewardsPng =
+                            "/Rewards/" +
+                            quest
+                                .toLowerCase()
+                                .replace(" ", "")
+                                .replace(pattern, "") +
+                            "reward.png";
                         let modifiedQuestVal1 = questTEdit
                             .join("")
                             .replace(pattern, "");
 
                         return (
-                            <Carousel.Slide size="100%" key={index}>
+                            <Carousel.Slide size="200%" key={index}>
+                                2
                                 <NavLink
                                     className="navLink"
                                     to={"/QuestPage"}
@@ -83,6 +91,7 @@ const QuestCarousel: React.FC = () => {
                                 >
                                     {quest}
                                 </NavLink>
+                                <img src={rewardsPng} alt="Rewards for Quest" />
                             </Carousel.Slide>
                         );
                     })}
