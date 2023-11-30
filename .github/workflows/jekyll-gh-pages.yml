@@ -56,7 +56,7 @@ jobs:
             - name: Move Quests to Dist Folder
               run: mv ./Quests ./dist
             - name: Move Rewards to Dist Folder
-              run: mv ./Rewards ./dist
+              run: cp ./Rewards ./dist
             - name: List out final PWD contents
               run: ls -a
 
