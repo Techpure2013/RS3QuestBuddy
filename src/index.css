@@ -24,14 +24,11 @@ TextInput {
         #0c1117
     );
 }
-
 .caroQTitle {
     text-align: center;
-
-    top: 20px; /* Adjust as needed for the vertical position */
-
-    display: flex;
-    gap: 10px; /* Adjust as needed for the space between buttons */
+}
+.caroContainer {
+    top: 30px;
 }
 .questContainer {
     display: flex;

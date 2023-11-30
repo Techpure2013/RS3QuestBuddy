@@ -48,11 +48,18 @@ const QuestCarousel: React.FC = () => {
 
             <div>
                 <Carousel
-                    className="caroQTitle"
-                    maw={320}
+                    className="caroContainer"
+                    breakpoints={[
+                        { maxWidth: "sm", slideSize: "50%", slideGap: 2 },
+                        { maxWidth: "md", slideSize: "50%", slideGap: 4 },
+                        { maxWidth: "lg", slideSize: "75%", slideGap: 8 },
+                        { maxWidth: "xl", slideSize: "100%", slideGap: 10 },
+                    ]}
+                    align="start"
+                    maw={510}
                     mx="auto"
                     withIndicators
-                    height={25}
+                    height={600}
                     styles={{
                         control: {
                             "&[data-inactive]": {
@@ -67,12 +74,27 @@ const QuestCarousel: React.FC = () => {
                     {filteredQuests.map((quest, index) => {
                         let questTEdit = quest.toLowerCase().split(" ");
                         let pattern = /[!,`']/g;
+                        let pattern2 = /[! ,'"._]/g;
+                        let QuestImage =
+                            "/Rewards/" +
+                            quest
+                                .toLowerCase()
+                                .replace(" ", "")
+                                .replace(pattern2, "")
+                                .replace(" ", "")
+                                .replace(" ", "")
+                                .replace(" ", "")
+                                .replace(" ", "")
+                                .replace(" ", "") +
+                            "reward.png";
+                        console.log(QuestImage);
+
                         let modifiedQuestVal1 = questTEdit
                             .join("")
                             .replace(pattern, "");
-
+                        console.log(modifiedQuestVal1);
                         return (
-                            <Carousel.Slide size="100%" key={index}>
+                            <Carousel.Slide size={100} key={index}>
                                 <NavLink
                                     className="navLink"
                                     to={"/QuestPage"}
@@ -81,8 +103,10 @@ const QuestCarousel: React.FC = () => {
                                         modified: modifiedQuestVal1,
                                     }}
                                 >
-                                    {quest}
+                                    <div className="caroQTitle">{quest}</div>
                                 </NavLink>
+
+                                <img src={QuestImage} alt="Reward" />
                             </Carousel.Slide>
                         );
                     })}
