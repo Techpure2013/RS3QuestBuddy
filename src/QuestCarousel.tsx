@@ -88,7 +88,7 @@ const QuestCarousel: React.FC = () => {
                         const isTempleOfIkov = quest === "Temple of Ikov";
                         const pattern = /[^a-zA-Z0-9]/g;
                         let questImage =
-                            "./Rewards/" +
+                            "./../Rewards/" +
                             quest.toLowerCase().replace(pattern, "") +
                             "reward.png";
 
