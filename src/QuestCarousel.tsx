@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Carousel } from "@mantine/carousel";
 import { TextInput } from "@mantine/core";
+
 import "./index.css";
 import { NavLink } from "react-router-dom";
 import { IconArrowRight, IconArrowLeft } from "@tabler/icons-react";
@@ -9,10 +10,10 @@ import { IconArrowRight, IconArrowLeft } from "@tabler/icons-react";
 const QuestCarousel: React.FC = () => {
     const [questList, setQuestList] = useState<string[]>([]);
     const [searchQuery, setSearchQuery] = useState<string>("");
-    //const overlayDuration = 10000; // 10 seconds
     const QUEST_FILE_PATH = "./questlist.txt";
+    const [, setSelectedQuest] = useState<string | null>(null);
+    const [, setShowAlternateImage] = useState(false);
 
-    console.log(QUEST_FILE_PATH);
     useEffect(() => {
         fetchQuestList();
     }, []);
@@ -21,19 +22,26 @@ const QuestCarousel: React.FC = () => {
         try {
             const response = await fetch(QUEST_FILE_PATH);
             const text = await response.text();
-            const quests = text.split(",");
+            const quests = text.split("`");
             setQuestList(quests);
         } catch (error) {
             console.error("Error fetching quest list:", error);
         }
     };
 
+    const handleQuestSelection = (selectedQuest: string) => {
+        setSelectedQuest(selectedQuest);
+        setShowAlternateImage(false); // Reset the showAlternateImage state when a new quest is selected
+    };
+
+    const toggleImages = () => {
+        setShowAlternateImage((prev) => !prev);
+    };
+
     const filteredQuests = questList.filter((quest) =>
         quest.toLowerCase().includes(searchQuery.toLowerCase())
     );
-    function handleSearchChange(event: React.ChangeEvent<HTMLInputElement>) {
-        setSearchQuery(event.target.value);
-    }
+
     return (
         <>
             <div className="customContainer">
@@ -42,7 +50,7 @@ const QuestCarousel: React.FC = () => {
                     label="Search for Quest"
                     placeholder="Type in a quest"
                     value={searchQuery}
-                    onChange={handleSearchChange}
+                    onChange={(event) => setSearchQuery(event.target.value)}
                 />
             </div>
 
@@ -59,7 +67,7 @@ const QuestCarousel: React.FC = () => {
                     maw={510}
                     mx="auto"
                     withIndicators
-                    height={600}
+                    height={550}
                     styles={{
                         control: {
                             "&[data-inactive]": {
@@ -73,40 +81,41 @@ const QuestCarousel: React.FC = () => {
                 >
                     {filteredQuests.map((quest, index) => {
                         let questTEdit = quest.toLowerCase().split(" ");
-                        let pattern = /[!,`']/g;
-                        let pattern2 = /[! ,'"._]/g;
-                        let QuestImage =
-                            "/Rewards/" +
-                            quest
-                                .toLowerCase()
-                                .replace(" ", "")
-                                .replace(pattern2, "")
-                                .replace(" ", "")
-                                .replace(" ", "")
-                                .replace(" ", "")
-                                .replace(" ", "")
-                                .replace(" ", "") +
-                            "reward.png";
-                        console.log(QuestImage);
-
                         let modifiedQuestVal1 = questTEdit
                             .join("")
-                            .replace(pattern, "");
-                        console.log(modifiedQuestVal1);
-                        return (
-                            <Carousel.Slide size={100} key={index}>
-                                <NavLink
-                                    className="navLink"
-                                    to={"/QuestPage"}
-                                    state={{
-                                        questName: quest,
-                                        modified: modifiedQuestVal1,
-                                    }}
-                                >
-                                    <div className="caroQTitle">{quest}</div>
-                                </NavLink>
+                            .replace(/[!,`']/g, "");
 
-                                <img src={QuestImage} alt="Reward" />
+                        const isTempleOfIkov = quest === "Temple of Ikov";
+                        const pattern = /[^a-zA-Z0-9]/g;
+                        let questImage =
+                            "/Rewards/" +
+                            quest.toLowerCase().replace(pattern, "") +
+                            "reward.png";
+
+                        return (
+                            <Carousel.Slide
+                                size={100}
+                                key={index}
+                                onClick={() => handleQuestSelection(quest)}
+                            >
+                                <div className="caroQTitle">
+                                    <NavLink
+                                        className="navLink"
+                                        to={"/QuestPage"}
+                                        state={{
+                                            questName: quest,
+                                            modified: modifiedQuestVal1,
+                                        }}
+                                    >
+                                        {quest}
+                                    </NavLink>
+                                </div>
+                                <img src={questImage} alt="Reward" />
+                                {isTempleOfIkov && (
+                                    <button onClick={toggleImages}>
+                                        Switch me
+                                    </button>
+                                )}
                             </Carousel.Slide>
                         );
                     })}
