@@ -54,9 +54,9 @@ jobs:
             - name: Copy Quest List JSON LUT
               run: cp ./QuestList.json ./dist
             - name: Move Quests to Dist Folder
-              run: mv ./Quests ./dist
+              run: mv ./Quests/ ./dist
             - name: Move Rewards to Dist Folder
-              run: mv ./Rewards ./dist
+              run: mv ./Rewards/ ./dist
             - name: List out final PWD contents
               run: ls -a
 
