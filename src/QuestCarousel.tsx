@@ -58,16 +58,18 @@ const QuestCarousel: React.FC = () => {
                 <Carousel
                     className="caroContainer"
                     breakpoints={[
-                        { maxWidth: "sm", slideSize: "50%", slideGap: 2 },
+                        { maxWidth: "sm", slideSize: "10%", slideGap: 0 },
                         { maxWidth: "md", slideSize: "50%", slideGap: 4 },
                         { maxWidth: "lg", slideSize: "75%", slideGap: 8 },
                         { maxWidth: "xl", slideSize: "100%", slideGap: 10 },
                     ]}
+                    speed={100}
                     align="start"
-                    maw={510}
+                    maw={410}
                     mx="auto"
                     withIndicators
-                    height={550}
+                    slidesToScroll={1}
+                    height={400}
                     styles={{
                         control: {
                             "&[data-inactive]": {

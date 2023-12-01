@@ -28,6 +28,7 @@ TextInput {
     text-align: center;
 }
 .caroContainer {
+    overflow: auto;
     top: 30px;
 }
 .questContainer {
@@ -35,7 +36,10 @@ TextInput {
     flex-direction: column;
     align-items: center;
 }
-
+img {
+    width: 415px;
+    height: 350px;
+}
 .stepperContainer {
     max-height: 400px; /* Set the desired height for the stepper container */
     background-color: #00000;
