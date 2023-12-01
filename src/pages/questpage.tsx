@@ -1,4 +1,4 @@
-import { Button, Flex, Group, Stepper } from "@mantine/core";
+import { Button, Flex, Stepper } from "@mantine/core";
 import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./../index.css";
@@ -12,15 +12,32 @@ const QuestPage: React.FC = () => {
     const [highestStepVisited, setHighestStepVisited] = useState(active);
     const stepLength = stepDetails.length;
     const navigate = useNavigate();
-    const handleStepChange = (nextStep: number) => {
-        const isOutOfBounds = nextStep > stepLength || stepLength < 0;
 
-        if (isOutOfBounds) {
-            return console.log("out of bounds");
+    const scrollNext = () => {
+        if (active > 2) {
+            window.scrollBy(-250, 210);
         }
+    };
+    const scrollPrev = () => {
+        const count = 0;
+        if (count > active) {
+            count + 2;
+            window.scrollBy(250, -210);
+        }
+    };
 
-        setActive(nextStep);
-        setHighestStepVisited((hSC) => Math.max(hSC, nextStep));
+    const handleStepChange = (nextStep: number) => {
+        const isOutOfBoundsBottom = nextStep > stepLength;
+        const isOutOfBoundsTop = stepLength < 0;
+
+        if (isOutOfBoundsBottom) {
+            return window.alert("Cannot go forward");
+        } else if (isOutOfBoundsTop) {
+            return window.alert("Cannot go back");
+        } else {
+            setActive(nextStep);
+            setHighestStepVisited((hSC) => Math.max(hSC, nextStep));
+        }
     };
     const handleBackButton = () => {
         navigate("/");
@@ -89,54 +106,62 @@ const QuestPage: React.FC = () => {
             <div>
                 <h2 className="qpTitle">{questName}</h2>
             </div>
-            <div className="questContainer">
-                <Group position="center" mt="md">
-                    <Flex
-                        className="flexGroup"
-                        gap="md"
-                        justify="flex-start"
-                        align="flex-start"
-                        direction="row"
-                        wrap="wrap"
-                    >
-                        <Button variant="outline" onClick={handleBackButton}>
-                            Pick Quest
-                        </Button>
 
-                        <Button
-                            variant="outline"
-                            onClick={() => handleStepChange(active - 1)}
-                        >
-                            Prev Step
-                        </Button>
-                        <Button
-                            variant="outline"
-                            onClick={() => handleStepChange(active + 1)}
-                        >
-                            Next Step
-                        </Button>
-                    </Flex>
-                </Group>
-                <Stepper
-                    className="stepperContainer"
-                    active={active}
-                    onStepClick={setActive}
-                    breakpoint="xl"
+            <Flex className="prevNextGroup" gap="sm">
+                <Button
+                    variant="outline"
+                    onClick={() => {
+                        scrollPrev();
+                        handleStepChange(active - 1);
+                    }}
                 >
-                    {stepDetails.map((value, index) => {
-                        return (
-                            <Stepper.Step
-                                className="stepperStep"
-                                label={"Step: " + (index + 1)}
-                                key={index}
-                                orientation="vertical"
-                                description={value}
-                                allowStepSelect={shouldAllowSelectStep(0)}
-                            ></Stepper.Step>
-                        );
-                    })}
-                </Stepper>
-            </div>
+                    Prev Step
+                </Button>
+                <Button
+                    variant="outline"
+                    onClick={() => {
+                        handleStepChange(active + 1);
+                        scrollNext();
+                    }}
+                >
+                    Next Step
+                </Button>
+            </Flex>
+            <Flex
+                className="buttonsGroup"
+                gap="sm"
+                justify="flex-start"
+                align="flex-start"
+                direction="column"
+                wrap="wrap"
+            >
+                <Button variant="outline">
+                    Related Quest Images(Coming Soon)
+                </Button>
+                <Button variant="outline" onClick={handleBackButton}>
+                    Pick Quest
+                </Button>
+            </Flex>
+
+            <Stepper
+                className="stepperContainer"
+                active={active}
+                onStepClick={setActive}
+                breakpoint="xl"
+            >
+                {stepDetails.map((value, index) => {
+                    return (
+                        <Stepper.Step
+                            className="stepperStep"
+                            label={"Step: " + (index + 1)}
+                            key={index}
+                            orientation="vertical"
+                            description={value}
+                            allowStepSelect={shouldAllowSelectStep(0)}
+                        ></Stepper.Step>
+                    );
+                })}
+            </Stepper>
         </>
     );
 };

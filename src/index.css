@@ -34,7 +34,6 @@ TextInput {
 .questContainer {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 img {
     width: 415px;
@@ -46,16 +45,15 @@ img {
     margin-top: 16px; /* Adjust as needed to create space between buttons and stepper */
 }
 .buttonsGroup {
-    position: fixed;
-    left: 80%;
-    transform: translateX(30%);
-    bottom: 240px; /* Adjust as needed for the vertical position */
-
-    display: flex;
-    gap: 10px; /* Adjust as needed for the space between buttons */
 }
 /* Save this buttons class for later use maybe */
+.prevNextGroup {
+    position: fixed;
 
+    left: 53%;
+    display: flex;
+    gap: 10px;
+}
 .mantine-Button-root {
     color: #fff; /* White text */
     font-size: 16px;
