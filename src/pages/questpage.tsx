@@ -1,6 +1,7 @@
 import { Button, Flex, Stepper } from "@mantine/core";
 import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+
 import "./../index.css";
 const QuestPage: React.FC = () => {
     const qpname = useLocation();
@@ -8,22 +9,22 @@ const QuestPage: React.FC = () => {
     const [stepDetails, setStepDetails] = useState<string[]>([]);
     const questStepJSON = "./QuestList.json";
     const textfile = modified + "info.txt";
-    const [active, setActive] = useState(1);
+    const [active, setActive] = useState(0);
     const [highestStepVisited, setHighestStepVisited] = useState(active);
     const stepLength = stepDetails.length;
     const navigate = useNavigate();
 
     const scrollNext = () => {
-        if (active > 2) {
-            window.scrollBy(-250, 210);
+        if (active >= 1) {
+            document
+                .getElementById(active.toString())
+                ?.scrollIntoView({ behavior: "smooth" });
         }
     };
     const scrollPrev = () => {
-        const count = 0;
-        if (count > active) {
-            count + 2;
-            window.scrollBy(250, -210);
-        }
+        document
+            .getElementById(active.toString())
+            ?.scrollIntoView({ behavior: "smooth" });
     };
 
     const handleStepChange = (nextStep: number) => {
@@ -112,7 +113,7 @@ const QuestPage: React.FC = () => {
                     variant="outline"
                     onClick={() => {
                         scrollPrev();
-                        handleStepChange(active - 1);
+                        handleStepChange(active - 2);
                     }}
                 >
                     Prev Step
@@ -152,6 +153,7 @@ const QuestPage: React.FC = () => {
                 {stepDetails.map((value, index) => {
                     return (
                         <Stepper.Step
+                            id={index.toString()}
                             className="stepperStep"
                             label={"Step: " + (index + 1)}
                             key={index}
