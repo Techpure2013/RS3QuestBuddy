@@ -24,6 +24,7 @@ TextInput {
         #0c1117
     );
 }
+
 .caroQTitle {
     text-align: center;
 }
@@ -44,18 +45,30 @@ img {
     background-color: #00000;
     margin-top: 16px; /* Adjust as needed to create space between buttons and stepper */
 }
-.buttonsGroup {
+/* .buttonsGroup {
+    position: fixed;
+
+    left: 40%;
+    display: flex;
+    gap: 10px;
+} */
+.ButtonGroupTwo {
+    position: fixed;
+    top: 30px;
+    left: 2%;
+    display: flex;
+    gap: 10px;
 }
 /* Save this buttons class for later use maybe */
 .prevNextGroup {
     position: fixed;
 
-    left: 53%;
+    left: 50%;
     display: flex;
     gap: 10px;
 }
 .mantine-Button-root {
-    color: #fff; /* White text */
+    color: #fff; /* white text */
     font-size: 16px;
     border-radius: 4px; /* Optional: Rounded corners */
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7); /* Shadow on the bottom right */
@@ -70,7 +83,7 @@ img {
 }
 .mantine-Stepper-stepDescription {
     font-family: rs3Font;
-    font-size: 17px;
+    font-size: 15px;
     color: #4e85bc;
 }
 
