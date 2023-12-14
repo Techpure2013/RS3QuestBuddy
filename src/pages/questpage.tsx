@@ -148,7 +148,7 @@ const QuestPage: React.FC = () => {
                 className="stepperContainer"
                 active={active}
                 onStepClick={setActive}
-                breakpoint="xl"
+                orientation="vertical"
             >
                 {stepDetails.map((value, index) => {
                     return (
