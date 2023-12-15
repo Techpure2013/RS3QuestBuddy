@@ -43,8 +43,8 @@ const QuestPage: React.FC = () => {
                 console.log("Fetched Image List:", imageList);
 
                 // Filter images based on the questName
-                const filteredImages = imageList.images.find(
-                    (image: any) =>
+                const filteredImages = imageList.find(
+                    (image: { name: string }) =>
                         image.name.toLowerCase() === questName.toLowerCase()
                 );
 
@@ -153,11 +153,15 @@ const QuestPage: React.FC = () => {
             // Render Mantine Carousel
             root.render(
                 <Carousel>
-                    {questImages.map((image, index) => (
-                        <Carousel.Slide key={index}>
-                            <img src={image.path} alt={image.name} />
-                        </Carousel.Slide>
-                    ))}
+                    {questImages.map((image) => {
+                        return (
+                            <>
+                                <Carousel.Slide>
+                                    <img src={image.path} alt={image.name} />
+                                </Carousel.Slide>
+                            </>
+                        );
+                    })}
                 </Carousel>
             );
         }
