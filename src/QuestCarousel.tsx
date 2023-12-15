@@ -57,27 +57,12 @@ const QuestCarousel: React.FC = () => {
             <div>
                 <Carousel
                     className="caroContainer"
-                    breakpoints={[
-                        { maxWidth: "sm", slideSize: "10%", slideGap: 0 },
-                        { maxWidth: "md", slideSize: "50%", slideGap: 4 },
-                        { maxWidth: "lg", slideSize: "75%", slideGap: 8 },
-                        { maxWidth: "xl", slideSize: "100%", slideGap: 10 },
-                    ]}
                     speed={100}
                     align="start"
-                    maw={410}
                     mx="auto"
                     withIndicators
                     slidesToScroll={1}
                     height={400}
-                    styles={{
-                        control: {
-                            "&[data-inactive]": {
-                                opacity: 0,
-                                cursor: "default",
-                            },
-                        },
-                    }}
                     nextControlIcon={<IconArrowRight size={16} />}
                     previousControlIcon={<IconArrowLeft size={16} />}
                 >
@@ -96,7 +81,6 @@ const QuestCarousel: React.FC = () => {
 
                         return (
                             <Carousel.Slide
-                                size={100}
                                 key={index}
                                 onClick={() => handleQuestSelection(quest)}
                             >

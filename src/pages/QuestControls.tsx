@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Button, Flex } from "@mantine/core";
-import styled from "@emotion/styled";
 
 const QuestControls: React.FC<{
     scrollNext: () => void;

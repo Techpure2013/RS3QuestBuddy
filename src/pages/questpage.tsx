@@ -1,13 +1,14 @@
 // QuestPage.js
 import React, { useState, useEffect, useRef } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { Button, Flex, Stepper } from "@mantine/core";
+import { Button, Flex, MantineProvider, Stepper } from "@mantine/core";
 
 import QuestControls from "./QuestControls";
 import "./../index.css";
 import { Carousel } from "@mantine/carousel";
 import { createRoot } from "react-dom/client";
-
+import "@mantine/core/styles/UnstyledButton.css";
+import "@mantine/core/styles/Button.css";
 const QuestPage: React.FC = () => {
     // State and variables
     const qpname = useLocation();
@@ -131,11 +132,13 @@ const QuestPage: React.FC = () => {
 
                 // Render QuestControls into the new window
                 root.render(
-                    <QuestControls
-                        scrollNext={scrollNext}
-                        scrollPrev={scrollPrev}
-                        handleStepChange={setActiveAndScroll}
-                    />
+                    <MantineProvider>
+                        <QuestControls
+                            scrollNext={scrollNext}
+                            scrollPrev={scrollPrev}
+                            handleStepChange={setActiveAndScroll}
+                        />
+                    </MantineProvider>
                 );
             }
         }

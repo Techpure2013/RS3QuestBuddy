@@ -27,10 +27,11 @@ TextInput {
 
 .caroQTitle {
     text-align: center;
+    top: 50px;
 }
 .caroContainer {
-    overflow: auto;
-    top: 30px;
+    font-family: rs3Font;
+    text-align: center;
 }
 .questContainer {
     display: flex;
@@ -68,7 +69,7 @@ img {
     gap: 10px;
 }
 .mantine-Button-root {
-    color: white; /* white text */
+    color: #ffffff; /* white text */
     font-size: 16px;
     border-radius: 4px; /* Optional: Rounded corners */
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7); /* Shadow on the bottom right */
