@@ -26,12 +26,6 @@ const QuestImages: React.FC = () => {
         <>
             <Carousel
                 className="caroContainer"
-                breakpoints={[
-                    { maxWidth: "sm", slideSize: "10%", slideGap: 0 },
-                    { maxWidth: "md", slideSize: "50%", slideGap: 4 },
-                    { maxWidth: "lg", slideSize: "75%", slideGap: 8 },
-                    { maxWidth: "xl", slideSize: "100%", slideGap: 10 },
-                ]}
                 speed={100}
                 align="start"
                 maw={410}
@@ -39,19 +33,12 @@ const QuestImages: React.FC = () => {
                 withIndicators
                 slidesToScroll={1}
                 height={400}
-                styles={{
-                    control: {
-                        "&[data-inactive]": {
-                            opacity: 0,
-                            cursor: "default",
-                        },
-                    },
-                }}
+                styles={{}}
                 nextControlIcon={<IconArrowRight size={16} />}
                 previousControlIcon={<IconArrowLeft size={16} />}
             >
                 {questImages.map((value, index) => (
-                    <Carousel.Slide size={100} key={index}>
+                    <Carousel.Slide key={index}>
                         <img src={value.image} alt={value.name} />
                     </Carousel.Slide>
                 ))}
