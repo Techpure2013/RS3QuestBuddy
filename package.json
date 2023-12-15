@@ -13,6 +13,7 @@
     "dependencies": {
         "@dhmk/zustand-lens": "^2.0.5",
         "@emotion/react": "^11.11.1",
+        "@emotion/styled": "^11.11.0",
         "@mantine/carousel": "^6.0.14",
         "@mantine/core": "^6.0.14",
         "@mantine/dates": "^6.0.14",
