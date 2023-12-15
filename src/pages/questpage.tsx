@@ -116,21 +116,14 @@ const QuestPage: React.FC = () => {
                         copyStyle(window, newWindow!, stylesheet);
                     });
 
-                    const mantineStylesheet = document.querySelector(
-                        'link[href*="mantine"]'
-                    ) as HTMLLinkElement | null;
-                    if (mantineStylesheet) {
-                        mantineStylesheet.addEventListener("load", () => {
-                            // Copy the Mantine styles after they are loaded
-                            const newMantineStylesheet =
-                                document.createElement("link");
-                            newMantineStylesheet.rel = "stylesheet";
-                            newMantineStylesheet.href = mantineStylesheet.href;
-                            newWindow!.document.head.appendChild(
-                                newMantineStylesheet
-                            );
-                        });
-                    }
+                    const emotionStyles = document.querySelectorAll(
+                        "style[data-emotion]"
+                    );
+                    emotionStyles.forEach((style) => {
+                        const newEmotionStyle = document.createElement("style");
+                        newEmotionStyle.textContent = style.textContent;
+                        newWindow!.document.head.appendChild(newEmotionStyle);
+                    });
                 }
 
                 // Call the function to copy styles
