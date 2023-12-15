@@ -2,9 +2,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Button, Flex, Stepper } from "@mantine/core";
-import ReactDOM from "react-dom";
+
 import QuestControls from "./QuestControls";
 import "./../index.css";
+import { Carousel } from "@mantine/carousel";
+import { createRoot } from "react-dom/client";
 
 const QuestPage: React.FC = () => {
     // State and variables
@@ -19,7 +21,9 @@ const QuestPage: React.FC = () => {
     const navigate = useNavigate();
     const [popOutWindow, setPopOutWindow] = useState<Window | null>(null);
     const [, setPopOutClicked] = useState(false);
-
+    const [questImages, setQuestImages] = useState<
+        { name: string; path: string }[]
+    >([]);
     // Effect for initializing stepRefs
     const stepRefs = useRef<React.RefObject<HTMLDivElement>[]>([]);
     useEffect(() => {
@@ -28,8 +32,34 @@ const QuestPage: React.FC = () => {
         );
     }, [stepDetails.length]);
 
-    // Functions
+    // Effect to fetch QuestImageList.json
+    useEffect(() => {
+        const fetchQuestImages = async () => {
+            try {
+                const response = await fetch("./../../QuestImageList.json");
+                const imageList = await response.json();
 
+                // Log the fetched imageList for debugging
+                console.log("Fetched Image List:", imageList);
+
+                // Filter images based on the questName
+                const filteredImages = imageList.images.find(
+                    (image: any) =>
+                        image.name.toLowerCase() === questName.toLowerCase()
+                );
+
+                // Log the filtered images for debugging
+                console.log("Filtered Images:", filteredImages);
+
+                setQuestImages(filteredImages);
+                console.log("Set Quest Images:", filteredImages);
+            } catch (error) {
+                console.error("Error fetching QuestImageList.json:", error);
+            }
+        };
+
+        fetchQuestImages();
+    }, [questName]);
     // Handles popping in and out the quest controls
     const handlePopOut = () => {
         if (popOutWindow && !popOutWindow.closed) {
@@ -59,7 +89,10 @@ const QuestPage: React.FC = () => {
                     newWindow.document.createElement("div");
                 initialContentContainer.id = "initialContentContainer";
                 newWindow.document.body.appendChild(initialContentContainer);
-
+                const domNode: any = newWindow.document.getElementById(
+                    "initialContentContainer"
+                );
+                const root = createRoot(domNode);
                 const iconLink = newWindow.document.createElement("link");
                 iconLink.rel = "icon";
                 iconLink.href = "./src/assets/rs3buddyicon.png";
@@ -75,6 +108,8 @@ const QuestPage: React.FC = () => {
                     const stylesheetsArray: HTMLStyleElement[] =
                         Array.from(stylesheets);
 
+                    console.log("Copying styles:", stylesheetsArray);
+
                     stylesheetsArray.forEach(function (
                         stylesheet: HTMLStyleElement
                     ) {
@@ -86,18 +121,38 @@ const QuestPage: React.FC = () => {
                 copyStyles();
 
                 // Render QuestControls into the new window
-                ReactDOM.render(
+                root.render(
                     <QuestControls
                         scrollNext={scrollNext}
                         scrollPrev={scrollPrev}
                         handleStepChange={setActiveAndScroll}
-                    />,
-                    container
+                    />
                 );
             }
         }
     };
+    // Function to render Quest Images in a new window
+    const renderQuestImages = () => {
+        const newWindow = window.open("", "", "width=600,height=400");
+        if (newWindow) {
+            newWindow.document.title = "Quest Images";
+            newWindow.document.body.id = "QuestImages";
 
+            const domNode: any =
+                newWindow.document.getElementById("QuestImages");
+            const root = createRoot(domNode);
+            // Render Mantine Carousel
+            root.render(
+                <Carousel>
+                    {questImages.map((image, index) => (
+                        <Carousel.Slide key={index}>
+                            <img src={image.path} alt={image.name} />
+                        </Carousel.Slide>
+                    ))}
+                </Carousel>
+            );
+        }
+    };
     // Function to copy styles from one window to another
     function copyStyle(
         _from: Window,
@@ -292,6 +347,9 @@ const QuestPage: React.FC = () => {
                 )}
                 <Button variant="outline" onClick={handleBackButton}>
                     Pick Quest
+                </Button>
+                <Button variant="outline" onClick={renderQuestImages}>
+                    View Quest Images
                 </Button>
             </Flex>
             <Stepper
