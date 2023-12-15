@@ -297,11 +297,7 @@ const QuestPage: React.FC = () => {
             <Stepper
                 className="stepperContainer"
                 active={active}
-<<<<<<< HEAD
                 onStepClick={setActiveAndScroll}
-=======
-                onStepClick={setActive}
->>>>>>> f6034e64812958c1a442f0d2315901f8d221c488
                 orientation="vertical"
             >
                 {stepDetails.map((value, index) => (
