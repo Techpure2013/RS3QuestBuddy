@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import * as alt1 from "alt1";
 import { Stack, Text, TextInput } from "@mantine/core";
-import { useStore } from "../store/store";
+import { useStore } from "./../store/store";
 import OCRChat from "alt1/chatbox";
 
 const createNewReader = () => {
@@ -72,7 +72,7 @@ const Chatbox = () => {
         };
     }, []);
     const [find, setFind] = useState("");
-    const foundSearchPhrase = !!store.chatBox.msg.find((line) =>
+    const foundSearchPhrase = !!store.chatBox.msg.find((line: any) =>
         line.toLowerCase().includes(find.toLowerCase())
     );
     return (
@@ -83,7 +83,7 @@ const Chatbox = () => {
                 label={`Found search phrase: ${foundSearchPhrase}`}
             />
             <Stack>
-                {store.chatBox.msg.map((line) => {
+                {store.chatBox.msg.map((line: any) => {
                     return <Text>{line}</Text>;
                 })}
             </Stack>

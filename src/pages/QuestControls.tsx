@@ -37,8 +37,12 @@ const QuestControls: React.FC<{
     return (
         <>
             <Flex className="ButtonGroupTwo" gap="sm">
-                <Button onClick={handleScrollPrev}>Prev Step</Button>
-                <Button onClick={handleScrollNext}>Next Step</Button>
+                <Button variant="outline" onClick={handleScrollPrev}>
+                    Prev Step
+                </Button>
+                <Button variant="outline" onClick={handleScrollNext}>
+                    Next Step
+                </Button>
             </Flex>
         </>
     );

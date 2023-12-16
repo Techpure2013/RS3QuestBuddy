@@ -5,10 +5,21 @@ import { Button, Flex, MantineProvider, Stepper } from "@mantine/core";
 
 import QuestControls from "./QuestControls";
 import "./../index.css";
-// import { Carousel } from "@mantine/carousel";
+import { Carousel } from "@mantine/carousel";
 import { createRoot } from "react-dom/client";
+import "@mantine/core/styles/global.css";
+import "@mantine/core/styles/ScrollArea.css";
 import "@mantine/core/styles/UnstyledButton.css";
-import "@mantine/core/styles/Button.css";
+import "@mantine/core/styles/VisuallyHidden.css";
+import "@mantine/core/styles/Paper.css";
+import "@mantine/core/styles/Popover.css";
+import "@mantine/core/styles/CloseButton.css";
+import "@mantine/core/styles/Group.css";
+import "@mantine/core/styles/Loader.css";
+import "@mantine/core/styles/Overlay.css";
+import "@mantine/core/styles/ModalBase.css";
+import "@mantine/core/styles/Input.css";
+import "@mantine/core/styles/Flex.css";
 // import questimages from "./QuestImages";
 const QuestPage: React.FC = () => {
     // State and variables
@@ -23,9 +34,11 @@ const QuestPage: React.FC = () => {
     const navigate = useNavigate();
     const [popOutWindow, setPopOutWindow] = useState<Window | null>(null);
     const [, setPopOutClicked] = useState(false);
-    // const [questImages, setQuestImages] = useState<
-    //     { name: string; path: string }[]
-    // >([]);
+    const [questImages, setQuestImages] = useState<
+        { name: string; path: string }[]
+    >([]);
+    const [viewQuestImage, setViewQuestImage] = useState(false);
+
     // Effect for initializing stepRefs
     const stepRefs = useRef<React.RefObject<HTMLDivElement>[]>([]);
     useEffect(() => {
@@ -118,51 +131,7 @@ const QuestPage: React.FC = () => {
             }
         }
     };
-    // Function to render Quest Images in a new window
-    // const copyMantineStyles = (from: Document, to: Document) => {
-    //     const mantineStyles = from.querySelectorAll(
-    //         'style[data-emotion="mantine"]'
-    //     );
 
-    //     mantineStyles.forEach((style) => {
-    //         const newStyle = to.createElement("style");
-    //         newStyle.textContent = style.textContent;
-    //         to.head.appendChild(newStyle);
-    //     });
-    // };
-
-    // const renderQuestImages = () => {
-    //     const newWindow = window.open("", "", "width=600,height=400");
-
-    //     if (newWindow) {
-    //         newWindow.location.href = "/QuestImages";
-    //         newWindow.document.title = "Quest Images";
-    //         newWindow.document.body.id = "QuestImages";
-
-    //         // const domNode: any =
-    //         //     newWindow.document.getElementById("QuestImages");
-
-    //         // const root = createRoot(domNode);
-    //         console.log(questImages);
-    //         // Render Mantine Carousel with MantineProvider
-    //         // setTimeout(() => {
-    //         //     root.render(
-    //         //         <MantineProvider>
-    //         //             <Carousel>
-    //         //                 {questImages.map((image: any, index: number) => (
-    //         //                     <Carousel.Slide key={index}>
-    //         //                         <img src={image.path} alt={image.name} />
-    //         //                     </Carousel.Slide>
-    //         //                 ))}
-    //         //             </Carousel>
-    //         //         </MantineProvider>
-    //         //     );
-    //         // }, 1000);
-
-    //         // Copy Mantine styles to the new window
-    //         copyMantineStyles(document, newWindow.document);
-    //     }
-    // };
     // Function to copy styles from one window to another
     function copyStyle(
         _from: Window,
@@ -207,7 +176,10 @@ const QuestPage: React.FC = () => {
             });
         }
     };
-
+    //Handles image carousel visibility
+    const questImageVis = () => {
+        setViewQuestImage((prevState) => !prevState);
+    };
     // Handles step change
     const handleStepChange = (nextStep: number) => {
         const stepLength = stepDetails.length;
@@ -255,6 +227,50 @@ const QuestPage: React.FC = () => {
 
     // Fetches the path for the current step
     useEffect(() => {
+        const fetchQuestImages = async () => {
+            try {
+                const response = await fetch("./../../QuestImageList.json");
+                const imageList = await response.json();
+
+                if (!Array.isArray(imageList)) {
+                    console.error("QuestImageList.json is not an array.");
+                    return;
+                }
+
+                const questInfo = imageList.find(
+                    (quest: any) =>
+                        quest.name.toLowerCase() === questName.toLowerCase()
+                );
+
+                if (!questInfo) {
+                    console.error(
+                        `Quest with name '${questName}' not found in QuestImageList.json.`
+                    );
+                    return;
+                }
+
+                const filteredImages = questInfo.images || [];
+
+                console.log("Fetched Image List:", imageList);
+                console.log("Current questName:", questName);
+                console.log("Filtered Images:", filteredImages);
+
+                const imagePaths = filteredImages.map((filename: string) => {
+                    return `./Quest Images/${questName}/${filename}`;
+                });
+
+                console.log("Image Paths:", imagePaths);
+
+                setQuestImages(imagePaths);
+                console.log("Set Quest Images:", imagePaths);
+            } catch (error) {
+                console.error(
+                    "Error fetching or processing QuestImageList.json:",
+                    error
+                );
+            }
+        };
+
         const fetchStepPath = async () => {
             try {
                 const response = await fetch(questStepJSON);
@@ -306,7 +322,7 @@ const QuestPage: React.FC = () => {
                 console.error("Steps Could Not Load", error);
             }
         };
-
+        fetchQuestImages();
         fetchData();
     }, [textfile, questStepJSON]);
 
@@ -316,6 +332,20 @@ const QuestPage: React.FC = () => {
             <div>
                 <h2 className="qpTitle">{questName}</h2>
             </div>
+
+            {viewQuestImage && (
+                <Carousel>
+                    {questImages.map((value, index) => {
+                        const imagePath = `./Quest Images/${questName}/${value.path}`;
+
+                        return (
+                            <Carousel.Slide key={index}>
+                                <img src={imagePath} alt={value.name} />
+                            </Carousel.Slide>
+                        );
+                    })}
+                </Carousel>
+            )}
             {buttonVisible && (
                 <Flex className="prevNextGroup" gap="sm">
                     <Button
@@ -372,13 +402,15 @@ const QuestPage: React.FC = () => {
                 >
                     Pick Quest
                 </Button>
-                {/* <Button
+                <Button
                     variant="outline"
                     color="#EEF3FF"
-                    onClick={renderQuestImages}
+                    onClick={() => {
+                        questImageVis();
+                    }}
                 >
                     View Quest Images
-                </Button> */}
+                </Button>
             </Flex>
             <Stepper
                 className="stepperContainer"
