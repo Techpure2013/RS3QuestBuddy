@@ -69,7 +69,6 @@ img {
     gap: 10px;
 }
 .mantine-Button-root {
-    color: #ffffff; /* white text */
     font-size: 16px;
     border-radius: 4px; /* Optional: Rounded corners */
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7); /* Shadow on the bottom right */

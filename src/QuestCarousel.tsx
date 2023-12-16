@@ -65,6 +65,7 @@ const QuestCarousel: React.FC = () => {
                     height={400}
                     nextControlIcon={<IconArrowRight size={16} />}
                     previousControlIcon={<IconArrowLeft size={16} />}
+                    slideSize="100%"
                 >
                     {filteredQuests.map((quest, index) => {
                         let questTEdit = quest.toLowerCase().split(" ");

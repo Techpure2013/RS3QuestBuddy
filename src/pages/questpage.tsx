@@ -1,6 +1,6 @@
 // QuestPage.js
 import React, { useState, useEffect, useRef } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { Button, Flex, MantineProvider, Stepper } from "@mantine/core";
 
 import QuestControls from "./QuestControls";
@@ -9,6 +9,7 @@ import { Carousel } from "@mantine/carousel";
 import { createRoot } from "react-dom/client";
 import "@mantine/core/styles/UnstyledButton.css";
 import "@mantine/core/styles/Button.css";
+import questimages from "./QuestImages";
 const QuestPage: React.FC = () => {
     // State and variables
     const qpname = useLocation();
@@ -34,33 +35,7 @@ const QuestPage: React.FC = () => {
     }, [stepDetails.length]);
 
     // Effect to fetch QuestImageList.json
-    useEffect(() => {
-        const fetchQuestImages = async () => {
-            try {
-                const response = await fetch("./../../QuestImageList.json");
-                const imageList = await response.json();
 
-                // Log the fetched imageList for debugging
-                console.log("Fetched Image List:", imageList);
-
-                // Filter images based on the questName
-                const filteredImages = imageList.find(
-                    (image: { name: string }) =>
-                        image.name.toLowerCase() === questName.toLowerCase()
-                );
-
-                // Log the filtered images for debugging
-                console.log("Filtered Images:", filteredImages);
-
-                setQuestImages(filteredImages);
-                console.log("Set Quest Images:", filteredImages);
-            } catch (error) {
-                console.error("Error fetching QuestImageList.json:", error);
-            }
-        };
-
-        fetchQuestImages();
-    }, [questName]);
     // Handles popping in and out the quest controls
     const handlePopOut = () => {
         if (popOutWindow && !popOutWindow.closed) {
@@ -144,29 +119,48 @@ const QuestPage: React.FC = () => {
         }
     };
     // Function to render Quest Images in a new window
+    const copyMantineStyles = (from: Document, to: Document) => {
+        const mantineStyles = from.querySelectorAll(
+            'style[data-emotion="mantine"]'
+        );
+
+        mantineStyles.forEach((style) => {
+            const newStyle = to.createElement("style");
+            newStyle.textContent = style.textContent;
+            to.head.appendChild(newStyle);
+        });
+    };
+
     const renderQuestImages = () => {
         const newWindow = window.open("", "", "width=600,height=400");
+
         if (newWindow) {
+            newWindow.location.href = "/QuestImages";
             newWindow.document.title = "Quest Images";
             newWindow.document.body.id = "QuestImages";
 
             const domNode: any =
                 newWindow.document.getElementById("QuestImages");
+
             const root = createRoot(domNode);
-            // Render Mantine Carousel
-            root.render(
-                <Carousel>
-                    {questImages.map((image) => {
-                        return (
-                            <>
-                                <Carousel.Slide>
-                                    <img src={image.path} alt={image.name} />
-                                </Carousel.Slide>
-                            </>
-                        );
-                    })}
-                </Carousel>
-            );
+            console.log(questImages);
+            // Render Mantine Carousel with MantineProvider
+            // setTimeout(() => {
+            //     root.render(
+            //         <MantineProvider>
+            //             <Carousel>
+            //                 {questImages.map((image: any, index: number) => (
+            //                     <Carousel.Slide key={index}>
+            //                         <img src={image.path} alt={image.name} />
+            //                     </Carousel.Slide>
+            //                 ))}
+            //             </Carousel>
+            //         </MantineProvider>
+            //     );
+            // }, 1000);
+
+            // Copy Mantine styles to the new window
+            copyMantineStyles(document, newWindow.document);
         }
     };
     // Function to copy styles from one window to another
@@ -326,6 +320,7 @@ const QuestPage: React.FC = () => {
                 <Flex className="prevNextGroup" gap="sm">
                     <Button
                         variant="outline"
+                        color="#EEF3FF"
                         onClick={() => {
                             scrollPrev();
                             handleStepChange(active - 1);
@@ -335,6 +330,7 @@ const QuestPage: React.FC = () => {
                     </Button>
                     <Button
                         variant="outline"
+                        color="#EEF3FF"
                         onClick={() => {
                             handleStepChange(active + 1);
                             scrollNext();
@@ -353,18 +349,34 @@ const QuestPage: React.FC = () => {
                 wrap="wrap"
             >
                 {popOutWindow ? (
-                    <Button variant="outline" onClick={handlePopOut}>
+                    <Button
+                        variant="outline"
+                        color="#EEF3FF"
+                        onClick={handlePopOut}
+                    >
                         Pop In Quest Controls
                     </Button>
                 ) : (
-                    <Button variant="outline" onClick={handlePopOut}>
+                    <Button
+                        variant="outline"
+                        color="#EEF3FF"
+                        onClick={handlePopOut}
+                    >
                         Pop Out Quest Controls
                     </Button>
                 )}
-                <Button variant="outline" onClick={handleBackButton}>
+                <Button
+                    variant="outline"
+                    color="#EEF3FF"
+                    onClick={handleBackButton}
+                >
                     Pick Quest
                 </Button>
-                <Button variant="outline" onClick={renderQuestImages}>
+                <Button
+                    variant="outline"
+                    color="#EEF3FF"
+                    onClick={renderQuestImages}
+                >
                     View Quest Images
                 </Button>
             </Flex>

@@ -1,26 +1,55 @@
 import { Carousel } from "@mantine/carousel";
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 const QuestImages: React.FC = () => {
     const [questImages, setQuestImages] = useState<
         { name: string; image: string }[]
     >([]);
     const questImageJSON = "/QuestImageList.json";
-
+    const qpname = useLocation();
+    const { questName } = qpname.state;
     useEffect(() => {
-        const fetchImages = async () => {
+        const fetchQuestImages = async () => {
             try {
-                const response = await fetch(questImageJSON);
-                const images = await response.json();
-                setQuestImages(images); // Assuming the JSON structure is an array of objects with 'name' and 'image' keys
+                const response = await fetch("./../../QuestImageList.json");
+                const imageList = await response.json();
+
+                if (!Array.isArray(imageList)) {
+                    console.error("QuestImageList.json is not an array.");
+                    return;
+                }
+
+                const questInfo = imageList.find(
+                    (quest: any) =>
+                        quest.name.toLowerCase() === questName.toLowerCase()
+                );
+
+                if (!questInfo) {
+                    console.error(
+                        `Quest with name '${questName}' not found in QuestImageList.json.`
+                    );
+                    return;
+                }
+
+                const filteredImages = questInfo.images || [];
+
+                console.log("Fetched Image List:", imageList);
+                console.log("Current questName:", questName);
+                console.log("Filtered Images:", filteredImages);
+
+                setQuestImages(filteredImages);
+                console.log("Set Quest Images:", filteredImages);
             } catch (error) {
-                console.error("Error fetching images:", error);
+                console.error(
+                    "Error fetching or processing QuestImageList.json:",
+                    error
+                );
             }
         };
-
-        fetchImages();
-    }, [questImageJSON]);
+        fetchQuestImages();
+    }, [questName]);
 
     return (
         <>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Button, Flex } from "@mantine/core";
-
+import "@mantine/core/styles/UnstyledButton.css";
+import "@mantine/core/styles/Button.css";
 const QuestControls: React.FC<{
     scrollNext: () => void;
     scrollPrev: () => void;
@@ -36,12 +37,8 @@ const QuestControls: React.FC<{
     return (
         <>
             <Flex className="ButtonGroupTwo" gap="sm">
-                <Button variant="outline" onClick={handleScrollPrev}>
-                    Prev Step
-                </Button>
-                <Button variant="outline" onClick={handleScrollNext}>
-                    Next Step
-                </Button>
+                <Button onClick={handleScrollPrev}>Prev Step</Button>
+                <Button onClick={handleScrollNext}>Next Step</Button>
             </Flex>
         </>
     );

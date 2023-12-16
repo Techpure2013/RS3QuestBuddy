@@ -1,11 +1,18 @@
-import { Routes, Route, HashRouter, Navigate, Outlet } from "react-router-dom";
+import {
+    Routes,
+    Route,
+    Navigate,
+    Outlet,
+    BrowserRouter,
+} from "react-router-dom";
 import QuestCarousel from "./QuestCarousel";
 import QuestPage from "./pages/questpage";
 import QuestImages from "./pages/QuestImages";
+
 function App() {
     return (
         <>
-            <HashRouter basename="/">
+            <BrowserRouter basename="/">
                 <Routes>
                     <Route path="/">
                         {/* Your default route */}
@@ -16,7 +23,7 @@ function App() {
                     <Route path="/*" element={<Navigate to="/" />} />
                     {/* Navigate to the default route if no URL matched */}
                 </Routes>
-            </HashRouter>
+            </BrowserRouter>
             <Outlet />
         </>
     );
