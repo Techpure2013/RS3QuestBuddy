@@ -1,15 +1,15 @@
 // QuestPage.js
 import React, { useState, useEffect, useRef } from "react";
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Button, Flex, MantineProvider, Stepper } from "@mantine/core";
 
 import QuestControls from "./QuestControls";
 import "./../index.css";
-import { Carousel } from "@mantine/carousel";
+// import { Carousel } from "@mantine/carousel";
 import { createRoot } from "react-dom/client";
 import "@mantine/core/styles/UnstyledButton.css";
 import "@mantine/core/styles/Button.css";
-import questimages from "./QuestImages";
+// import questimages from "./QuestImages";
 const QuestPage: React.FC = () => {
     // State and variables
     const qpname = useLocation();
@@ -23,9 +23,9 @@ const QuestPage: React.FC = () => {
     const navigate = useNavigate();
     const [popOutWindow, setPopOutWindow] = useState<Window | null>(null);
     const [, setPopOutClicked] = useState(false);
-    const [questImages, setQuestImages] = useState<
-        { name: string; path: string }[]
-    >([]);
+    // const [questImages, setQuestImages] = useState<
+    //     { name: string; path: string }[]
+    // >([]);
     // Effect for initializing stepRefs
     const stepRefs = useRef<React.RefObject<HTMLDivElement>[]>([]);
     useEffect(() => {
@@ -119,50 +119,50 @@ const QuestPage: React.FC = () => {
         }
     };
     // Function to render Quest Images in a new window
-    const copyMantineStyles = (from: Document, to: Document) => {
-        const mantineStyles = from.querySelectorAll(
-            'style[data-emotion="mantine"]'
-        );
+    // const copyMantineStyles = (from: Document, to: Document) => {
+    //     const mantineStyles = from.querySelectorAll(
+    //         'style[data-emotion="mantine"]'
+    //     );
 
-        mantineStyles.forEach((style) => {
-            const newStyle = to.createElement("style");
-            newStyle.textContent = style.textContent;
-            to.head.appendChild(newStyle);
-        });
-    };
+    //     mantineStyles.forEach((style) => {
+    //         const newStyle = to.createElement("style");
+    //         newStyle.textContent = style.textContent;
+    //         to.head.appendChild(newStyle);
+    //     });
+    // };
 
-    const renderQuestImages = () => {
-        const newWindow = window.open("", "", "width=600,height=400");
+    // const renderQuestImages = () => {
+    //     const newWindow = window.open("", "", "width=600,height=400");
 
-        if (newWindow) {
-            newWindow.location.href = "/QuestImages";
-            newWindow.document.title = "Quest Images";
-            newWindow.document.body.id = "QuestImages";
+    //     if (newWindow) {
+    //         newWindow.location.href = "/QuestImages";
+    //         newWindow.document.title = "Quest Images";
+    //         newWindow.document.body.id = "QuestImages";
 
-            const domNode: any =
-                newWindow.document.getElementById("QuestImages");
+    //         // const domNode: any =
+    //         //     newWindow.document.getElementById("QuestImages");
 
-            const root = createRoot(domNode);
-            console.log(questImages);
-            // Render Mantine Carousel with MantineProvider
-            // setTimeout(() => {
-            //     root.render(
-            //         <MantineProvider>
-            //             <Carousel>
-            //                 {questImages.map((image: any, index: number) => (
-            //                     <Carousel.Slide key={index}>
-            //                         <img src={image.path} alt={image.name} />
-            //                     </Carousel.Slide>
-            //                 ))}
-            //             </Carousel>
-            //         </MantineProvider>
-            //     );
-            // }, 1000);
+    //         // const root = createRoot(domNode);
+    //         console.log(questImages);
+    //         // Render Mantine Carousel with MantineProvider
+    //         // setTimeout(() => {
+    //         //     root.render(
+    //         //         <MantineProvider>
+    //         //             <Carousel>
+    //         //                 {questImages.map((image: any, index: number) => (
+    //         //                     <Carousel.Slide key={index}>
+    //         //                         <img src={image.path} alt={image.name} />
+    //         //                     </Carousel.Slide>
+    //         //                 ))}
+    //         //             </Carousel>
+    //         //         </MantineProvider>
+    //         //     );
+    //         // }, 1000);
 
-            // Copy Mantine styles to the new window
-            copyMantineStyles(document, newWindow.document);
-        }
-    };
+    //         // Copy Mantine styles to the new window
+    //         copyMantineStyles(document, newWindow.document);
+    //     }
+    // };
     // Function to copy styles from one window to another
     function copyStyle(
         _from: Window,
@@ -372,13 +372,13 @@ const QuestPage: React.FC = () => {
                 >
                     Pick Quest
                 </Button>
-                <Button
+                {/* <Button
                     variant="outline"
                     color="#EEF3FF"
                     onClick={renderQuestImages}
                 >
                     View Quest Images
-                </Button>
+                </Button> */}
             </Flex>
             <Stepper
                 className="stepperContainer"

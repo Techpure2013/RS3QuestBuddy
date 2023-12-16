@@ -7,7 +7,7 @@ const QuestImages: React.FC = () => {
     const [questImages, setQuestImages] = useState<
         { name: string; image: string }[]
     >([]);
-    const questImageJSON = "/QuestImageList.json";
+    // const questImageJSON = "/QuestImageList.json";
     const qpname = useLocation();
     const { questName } = qpname.state;
     useEffect(() => {
