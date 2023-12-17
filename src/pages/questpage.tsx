@@ -227,7 +227,7 @@ const QuestPage: React.FC = () => {
     useEffect(() => {
         const fetchQuestImages = async () => {
             try {
-                const response = await fetch("./../../QuestImageList.json");
+                const response = await fetch("./QuestImageList.json");
                 const imageList = await response.json();
 
                 if (!Array.isArray(imageList)) {
