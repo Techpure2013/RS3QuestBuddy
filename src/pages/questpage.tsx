@@ -20,6 +20,7 @@ import "@mantine/core/styles/Overlay.css";
 import "@mantine/core/styles/ModalBase.css";
 import "@mantine/core/styles/Input.css";
 import "@mantine/core/styles/Flex.css";
+import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 // import questimages from "./QuestImages";
 const QuestPage: React.FC = () => {
     // State and variables
@@ -351,10 +352,19 @@ const QuestPage: React.FC = () => {
             </div>
             {viewQuestImage && (
                 <>
-                    <Carousel>
+                    <Carousel
+                        withIndicators
+                        orientation="horizontal"
+                        align="center"
+                        mx="auto"
+                        slidesToScroll={1}
+                        nextControlIcon={<IconArrowRight size={16} />}
+                        previousControlIcon={<IconArrowLeft size={16} />}
+                        slideSize="100%"
+                    >
                         {questImages.map((src, index) => (
                             <Carousel.Slide key={index}>
-                                <Image src={src} />
+                                <Image src={src} fit="initial" />
                             </Carousel.Slide>
                         ))}
                     </Carousel>
