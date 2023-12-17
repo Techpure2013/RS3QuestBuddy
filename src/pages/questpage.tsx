@@ -266,7 +266,7 @@ const QuestPage: React.FC = () => {
                 const imagePaths =
                     filteredImages.length === 1
                         ? [
-                              `/src/pages/Images/${questName.trim()}/${filteredImages[0].trim()}`,
+                              `/Images${questName.trim()}/${filteredImages[0].trim()}`,
                           ]
                         : filteredImages
                               .filter((filename: string) =>
@@ -274,13 +274,12 @@ const QuestPage: React.FC = () => {
                               )
                               .map(
                                   (filename: string) =>
-                                      `/src/pages/Images/${questName.trim()}/${filename.trim()}`
+                                      `/Images/${questName.trim()}/${filename.trim()}`
                               );
 
                 console.log("Image Paths:", imagePaths);
 
                 setQuestImages(imagePaths);
-                console.log("Set Quest Images:", questImages);
             } catch (error) {
                 console.error(
                     "Error fetching or processing QuestImageList.json:",
