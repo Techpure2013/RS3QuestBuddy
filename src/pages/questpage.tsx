@@ -1,7 +1,7 @@
 // QuestPage.js
 import React, { useState, useEffect, useRef } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { Button, Flex, MantineProvider, Stepper } from "@mantine/core";
+import { Image, Button, Flex, MantineProvider, Stepper } from "@mantine/core";
 
 import QuestControls from "./QuestControls";
 import "./../index.css";
@@ -34,9 +34,7 @@ const QuestPage: React.FC = () => {
     const navigate = useNavigate();
     const [popOutWindow, setPopOutWindow] = useState<Window | null>(null);
     const [, setPopOutClicked] = useState(false);
-    const [questImages, setQuestImages] = useState<
-        { name: string; path: string }[]
-    >([]);
+    const [questImages, setQuestImages] = useState<string[]>([]);
     const [viewQuestImage, setViewQuestImage] = useState(false);
 
     // Effect for initializing stepRefs
@@ -237,32 +235,52 @@ const QuestPage: React.FC = () => {
                     return;
                 }
 
+                const sanitizeString = (input: string) => {
+                    return input.replace(/[^\w\s]/gi, "").toLowerCase();
+                };
+
+                const sanitizedQuestName = questName.trim();
                 const questInfo = imageList.find(
                     (quest: any) =>
-                        quest.name.toLowerCase() === questName.toLowerCase()
+                        quest.name &&
+                        sanitizeString(quest.name) ===
+                            sanitizeString(sanitizedQuestName)
                 );
 
                 if (!questInfo) {
                     console.error(
-                        `Quest with name '${questName}' not found in QuestImageList.json.`
+                        `Quest info not found for questName: ${questName}`
                     );
                     return;
                 }
 
-                const filteredImages = questInfo.images || [];
+                const filteredImages = questInfo.images;
 
-                console.log("Fetched Image List:", imageList);
-                console.log("Current questName:", questName);
-                console.log("Filtered Images:", filteredImages);
+                if (!Array.isArray(filteredImages)) {
+                    console.error(
+                        `Images array not found for questName: ${questName}`
+                    );
+                    return;
+                }
 
-                const imagePaths = filteredImages.map((filename: string) => {
-                    return `./Quest Images/${questName}/${filename}`;
-                });
+                const imagePaths =
+                    filteredImages.length === 1
+                        ? [
+                              `/src/pages/Images/${questName.trim()}/${filteredImages[0].trim()}`,
+                          ]
+                        : filteredImages
+                              .filter((filename: string) =>
+                                  filename.toLowerCase().endsWith(".png")
+                              )
+                              .map(
+                                  (filename: string) =>
+                                      `/src/pages/Images/${questName.trim()}/${filename.trim()}`
+                              );
 
                 console.log("Image Paths:", imagePaths);
 
                 setQuestImages(imagePaths);
-                console.log("Set Quest Images:", imagePaths);
+                console.log("Set Quest Images:", questImages);
             } catch (error) {
                 console.error(
                     "Error fetching or processing QuestImageList.json:",
@@ -324,7 +342,7 @@ const QuestPage: React.FC = () => {
         };
         fetchQuestImages();
         fetchData();
-    }, [textfile, questStepJSON]);
+    }, [textfile, questStepJSON, questName]);
 
     // Rendered content
     return (
@@ -332,20 +350,20 @@ const QuestPage: React.FC = () => {
             <div>
                 <h2 className="qpTitle">{questName}</h2>
             </div>
-
             {viewQuestImage && (
-                <Carousel>
-                    {questImages.map((value, index) => {
-                        const imagePath = `./Quest Images/${questName}/${value.path}`;
-
-                        return (
+                <>
+                    <Carousel>
+                        {questImages.map((src, index) => (
                             <Carousel.Slide key={index}>
-                                <img src={imagePath} alt={value.name} />
+                                <Image src={src} />
                             </Carousel.Slide>
-                        );
-                    })}
-                </Carousel>
+                        ))}
+                    </Carousel>
+                    {/* Log questImages to the console for debugging */}
+                    {console.log("questImages:", questImages)}
+                </>
             )}
+
             {buttonVisible && (
                 <Flex className="prevNextGroup" gap="sm">
                     <Button

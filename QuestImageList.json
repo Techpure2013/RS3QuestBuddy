@@ -119,7 +119,7 @@
             "AVoidDanceHatchway.png",
             "AVoidDanceKorasibreaksthebox.png",
             "AVoidDanceKorasistrikestheguard.png",
-            "AVoidDancereward.png",
+
             "AVoidDanceSummoningtheVoidDrone.png",
             "AVoidDanceThepesttrapped.png"
         ]
@@ -128,7 +128,7 @@
         "name": "Aftermath",
         "images": [
             "Aftermath.png",
-            "Aftermathreward.png",
+
             "Saradomininaftermath.png",
             "SirCadianinthezamorakianundercity.png",
             "ZarosiansmeetinPraetoriuminaftermath.png"
@@ -136,15 +136,15 @@
     },
     {
         "name": "All Fired Up",
-        "images": ["AllFiredUp.png", "AllFiredUpreward.png", "BlazeBeacon.png"]
+        "images": ["AllFiredUp.png", "BlazeBeacon.png"]
     },
     {
         "name": "Alpha vs Omega",
         "images": [
-            ".AlphavsOmega.png",
-            ".AlphavsOmegaRasialdefeated.png",
-            ".AlphavsOmegareward.png",
-            ".AlphavsOmegathebattlewithRasial.png"
+            "AlphavsOmega.png",
+            "AlphavsOmegaRasialdefeated.png",
+            "AlphavsOmegareward.png",
+            "AlphavsOmegathebattlewithRasial.png"
         ]
     },
     {
@@ -172,7 +172,6 @@
     {
         "name": "Another Slice of HAM",
         "images": [
-            "AnotherSliceofH.A.M.reward.png89da0.png",
             "AnotherSliceofH.png",
             "Congratzfromdorgshuun.png",
             "Digforartefacts.png",
@@ -188,21 +187,16 @@
         "name": "As a First Resort",
         "images": [
             "Asafirstresort.png",
-            "AsaFirstResortreward.png",
-            "Eucalyptus_logs.png",
-            "Fever_grass.png",
-            "Lavender.png",
-            "Primweed.png",
+
             "Releasingplatypus.png",
             "ResortCook.png",
             "ResortSnurgh.png",
-            "Stinkbloom.png",
-            "Tansymum.png",
+
             "VarrockHerald.png"
         ]
     },
     {
-        "name": "Azzanadra's Quest",
+        "name": "Azzanadras Quest",
         "images": [
             "AzzanadraandArianeattheGielinorsElderHalls.png",
             "Azzanadracomplainsaboutthecouncil.png",
@@ -282,7 +276,7 @@
     },
     {
         "name": "Between a Rock",
-        "images": ["./Quest Images/Between a Rock/dwarvernengineerlocation.png"]
+        "images": ["dwarvernengineerlocation.png"]
     },
     {
         "name": "Big Chompy Bird Hunting",
@@ -394,7 +388,7 @@
         ]
     },
     {
-        "name": "Buyersand Cellars",
+        "name": "Buyers and Cellars",
         "images": [
             "BuyersandCellars.png",
             "BuyersandCellarsreward.png",
@@ -3181,8 +3175,7 @@
             "Shapingthecrystaltree.png",
             "Shootingthetarget.png",
             "Thedeadelfmessenger.png",
-            "WithintheLight.png",
-            "WithintheLightreward.png"
+            "WithintheLight.png"
         ]
     },
     {
@@ -3190,8 +3183,7 @@
         "images": [
             "SearchStikklebrix.png",
             "WolfWhistle.png",
-            "WolfWhistlepouch.png",
-            "WolfWhistlereward.png"
+            "WolfWhistlepouch.png"
         ]
     },
     {
@@ -3205,7 +3197,6 @@
             "Urigraverobbing.png",
             "YouAreIt.png",
             "YouAreItmysteriouscluediglocation.png",
-            "YouAreItreward.png",
             "YouAreItstartinglocation.png"
         ]
     },
@@ -3214,7 +3205,6 @@
         "images": [
             "SlashBashsafespot.png",
             "ZogreFleshEaters.png",
-            "ZogreFleshEatersreward.png",
             "ZogreFleshEnteringTunnel.png",
             "ZogreFleshJumpingBarricade.png",
             "ZogreFleshOgreSithik.png",
