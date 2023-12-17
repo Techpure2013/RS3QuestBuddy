@@ -266,7 +266,7 @@ const QuestPage: React.FC = () => {
                 const imagePaths =
                     filteredImages.length === 1
                         ? [
-                              `/Images${questName.trim()}/${filteredImages[0].trim()}`,
+                              `./Images${questName.trim()}/${filteredImages[0].trim()}`,
                           ]
                         : filteredImages
                               .filter((filename: string) =>
@@ -274,7 +274,7 @@ const QuestPage: React.FC = () => {
                               )
                               .map(
                                   (filename: string) =>
-                                      `/Images/${questName.trim()}/${filename.trim()}`
+                                      `./Images/${questName.trim()}/${filename.trim()}`
                               );
 
                 console.log("Image Paths:", imagePaths);
