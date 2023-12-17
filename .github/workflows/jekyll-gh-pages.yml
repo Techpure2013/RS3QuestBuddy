@@ -60,7 +60,7 @@ jobs:
             - name: List out final PWD contents
               run: ls -a
             - name: Copy Quest Images to ./dist
-              run: cp ./Images/ ./dist
+              run: mv ./Images/ ./dist
 
             # Upload the distributables to GitHub Pages after finalization.
             - name: Upload artifact
