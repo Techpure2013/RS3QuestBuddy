@@ -1,8 +1,9 @@
 // QuestPage.js
 import React, { useState, useEffect, useRef } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { Image, Button, Flex, MantineProvider, Stepper } from "@mantine/core";
-
+import { Button, Flex, MantineProvider, Stepper } from "@mantine/core";
+import * as a1lib from "alt1";
+import DialogReader from "alt1/dialog";
 import QuestControls from "./QuestControls";
 import "./../index.css";
 import { Carousel } from "@mantine/carousel";
@@ -21,6 +22,7 @@ import "@mantine/core/styles/ModalBase.css";
 import "@mantine/core/styles/Input.css";
 import "@mantine/core/styles/Flex.css";
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
+
 // import questimages from "./QuestImages";
 const QuestPage: React.FC = () => {
     // State and variables
@@ -37,16 +39,104 @@ const QuestPage: React.FC = () => {
     const [, setPopOutClicked] = useState(false);
     const [questImages, setQuestImages] = useState<string[]>([]);
     const [viewQuestImage, setViewQuestImage] = useState(false);
+    const [, setTranscript] = useState<string>("");
+    const [cTranscript, setCTranscript] = useState<string>("");
+    const color = a1lib.mixColor(255, 0, 0);
+    const [, setCurrentDialog] = useState<string[]>([]);
+    const stepRefs = useRef<React.RefObject<HTMLDivElement>[]>([]);
+    const [boxX, setboxX] = useState(0);
+    const [boxY, setBoxY] = useState(0);
+    const [diagW, setDiagW] = useState(0);
+    const [diagH, setDiagH] = useState(0);
+    const [diagTitle, setDiagTitle] = useState("");
 
     // Effect for initializing stepRefs
-    const stepRefs = useRef<React.RefObject<HTMLDivElement>[]>([]);
+
     useEffect(() => {
         stepRefs.current = Array.from({ length: stepDetails.length }, () =>
             React.createRef()
         );
     }, [stepDetails.length]);
 
-    // Effect to fetch QuestImageList.json
+    // UseEffect to find the dialog box
+    useEffect(() => {
+        const diagReader = new DialogReader();
+
+        const findDialogBox = () => {
+            const found = diagReader.find();
+            setDiagH(diagReader.pos?.height!);
+            setDiagW(diagReader.pos?.width!);
+            if (found) {
+                if (!null) {
+                    const diagboxcapture = a1lib.captureHoldFullRs();
+
+                    const findOptions = diagReader.findOptions(diagboxcapture);
+
+                    const readOption = diagReader.readOptions(
+                        diagboxcapture,
+                        findOptions
+                    );
+
+                    if (readOption) {
+                        for (let i = 0; i < readOption.length; i++) {
+                            const option = readOption[i].text;
+
+                            if (cTranscript.includes(option)) {
+                                setboxX(readOption[i].x);
+                                setBoxY(readOption[i].y);
+                                break; // Exit the loop once a match is found
+                            }
+                        }
+                    }
+
+                    const checked = diagReader.checkDialog(diagboxcapture);
+                    let title = diagReader.readTitle(diagboxcapture);
+                    if (checked) {
+                        try {
+                            const dialog = diagReader.readDialog(
+                                diagboxcapture,
+                                checked
+                            ) as string[];
+                            setCurrentDialog(dialog);
+                        } catch (error) {}
+                    }
+
+                    setDiagTitle(title);
+                    console.log(title);
+                } else {
+                    console.error("diagReader.pos is null or undefined");
+                }
+            } else {
+                console.error("Invalid dialog box coordinates");
+            }
+        };
+
+        // Set up an interval to periodically check for the dialog box
+        const intervalId = setInterval(findDialogBox, 1000); // Adjust the interval as needed
+
+        // Clean up the interval when the component is unmounted
+        return () => {
+            setDiagTitle("");
+            clearInterval(intervalId);
+        };
+    }, [diagTitle]);
+    if (
+        diagTitle.toLowerCase() == "choose an option" ||
+        diagTitle.toLowerCase() == "select an option"
+    ) {
+        alt1.overLayRect(
+            color,
+            boxX - 50,
+            boxY - 16,
+            diagW / 2 - 50,
+            diagH / 2 - 30,
+            1000,
+            4
+        );
+    } else {
+        null;
+    }
+    // Handles Image Enlargement
 
     // Handles popping in and out the quest controls
     const handlePopOut = () => {
@@ -278,8 +368,6 @@ const QuestPage: React.FC = () => {
                                       `./Images/${questName.trim()}/${filename.trim()}`
                               );
 
-                console.log("Image Paths:", imagePaths);
-
                 setQuestImages(imagePaths);
             } catch (error) {
                 console.error(
@@ -288,18 +376,16 @@ const QuestPage: React.FC = () => {
                 );
             }
         };
-
         const fetchStepPath = async () => {
             try {
                 const response = await fetch(questStepJSON);
                 const file = await response.json();
-
+                const pattern = /[!,`']/g;
                 const normalizedTextFile = textfile
                     .toLowerCase()
                     .replace(/\s+/g, "");
 
                 const foundStep = file.find((value: { Quest: string }) => {
-                    let pattern = /[!,`']/g;
                     const normalizedValue =
                         value.Quest.toLowerCase()
                             .split(" ")
@@ -340,6 +426,50 @@ const QuestPage: React.FC = () => {
                 console.error("Steps Could Not Load", error);
             }
         };
+        const fetchQuestTranscripts = async () => {
+            try {
+                const response = await fetch(questStepJSON);
+                const questData = await response.json();
+
+                // Find the quest entry in the questData array
+                const questNameToFind = questName.toLowerCase().trim();
+                const questEntry = questData.find(
+                    (value: { Quest: string }) => {
+                        const normalizedQuestName =
+                            value.Quest.toLowerCase().trim();
+
+                        return normalizedQuestName === questNameToFind;
+                    }
+                );
+
+                if (questEntry) {
+                    // Fetch the transcripts only if the quest entry is found
+                    const transcriptPath = questEntry.Transcript;
+                    const cTranscriptPath = questEntry.CTranscript;
+
+                    // Fetch main quest transcript as text
+                    const transcriptResponse = await fetch(transcriptPath);
+                    const mainQuestTranscript = await transcriptResponse.text();
+
+                    // Fetch compare quest transcript as text
+                    const cTranscriptResponse = await fetch(cTranscriptPath);
+                    const compareQuestTranscript =
+                        await cTranscriptResponse.text();
+
+                    // Set the transcripts in your state variables or perform other actions
+                    setTranscript(mainQuestTranscript);
+                    setCTranscript(compareQuestTranscript);
+                } else {
+                    console.error("Quest not found:", questNameToFind);
+                }
+            } catch (error) {
+                console.error(
+                    "Error fetching or processing quest transcripts:",
+                    error
+                );
+            }
+        };
+        fetchQuestTranscripts();
         fetchQuestImages();
         fetchData();
     }, [textfile, questStepJSON, questName]);
@@ -364,12 +494,10 @@ const QuestPage: React.FC = () => {
                     >
                         {questImages.map((src, index) => (
                             <Carousel.Slide key={index}>
-                                <Image src={src} fit="initial" />
+                                <img src={src} />
                             </Carousel.Slide>
                         ))}
                     </Carousel>
-                    {/* Log questImages to the console for debugging */}
-                    {console.log("questImages:", questImages)}
                 </>
             )}
 

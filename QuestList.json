@@ -9,990 +9,1538 @@
     },
     {
         "Quest": "A Fairy Tale I",
-        "Path": "./Quests/A Fairy Tale I/AFairyTale1Info.txt"
+        "Path": "./Quests/A Fairy Tale I/AFairyTaleIInfo.txt",
+        "Transcript": "./Quests/A Fairy Tale I/A_Fairy_Tale_I_-_Growing_Pains_transcript.json",
+        "CTranscript": "./Quests/A Fairy Tale I/CompareA_Fairy_Tale_I.json"
     },
     {
         "Quest": "A Fairy Tale II",
-        "Path": "./Quests/A Fairy Tale II/AFairyTalePart2Info.txt"
+        "Path": "./Quests/A Fairy Tale II/AFairyTalePartIIInfo.txt",
+        "Transcript": "./Quests/A Fairy Tale II/A_Fairy_Tale_II_-_Cure_a_Queen_transcript.json",
+        "CTranscript": "./Quests/A Fairy Tale II/CompareA_Fairy_Tale_II.json"
     },
     {
         "Quest": "A Fairy Tale III",
-        "Path": "./Quests/A Fairy Tale III/AFairyTalePart3Info.txt"
+        "Path": "./Quests/A Fairy Tale III/AFairyTalePartIIIInfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/A Fairy Tale III/CompareA_Fairy_Tale_III.json"
     },
     {
         "Quest": "A Shadow over Ashdale",
-        "Path": "./Quests/A Shadow over Ashdale/AShadowOverAshdaleInfo.txt"
+        "Path": "./Quests/A Shadow over Ashdale/AShadowOverAshdaleInfo.txt",
+        "Transcript": "./Quests/A Shadow over Ashdale/A_Shadow_over_Ashdale_transcript.json",
+        "CTranscript": "./Quests/A Shadow over Ashdale/CompareA_Shadow_over_Ashdale.json"
     },
     {
         "Quest": "A Soul's Bane",
-        "Path": "./Quests/A Soul's Bane/ASoulsBaneInfo.txt"
+        "Path": "./Quests/A Soul's Bane/ASoulsBaneInfo.txt",
+        "Transcript": "./Quests/A Soul's Bane/A_Soul's_Bane_transcript.json",
+        "CTranscript": "./Quests/A Soul's Bane/CompareA_Souls_Bane.json"
     },
     {
         "Quest": "A Tail of Two Cats",
-        "Path": "./Quests/A Tail of Two Cats/ATailOfTwoCatsInfo.txt"
+        "Path": "./Quests/A Tail of Two Cats/ATailOfTwoCatsInfo.txt",
+        "Transcript": "./Quests/A Tail of Two Cats/A_Tail_of_Two_Cats_transcript.json",
+        "CTranscript": ""
     },
     {
         "Quest": "A Void Dance",
-        "Path": "./Quests/A Void Dance/AVoidDanceInfo.txt"
+        "Path": "./Quests/A Void Dance/AVoidDanceInfo.txt",
+        "Transcript": "./Quests/A Void Dance/A_Void_Dance_transcript.json",
+        "CTranscript": "./Quests/A Void Dance/CompareA_Void_Dance.json"
     },
     {
         "Quest": "Aftermath",
-        "Path": "./Quests/Aftermath/AftermathQuestInfo.txt"
+        "Path": "./Quests/Aftermath/AftermathQuestInfo.txt",
+        "Transcript": "./Quests/Aftermath/Aftermath_transcript.json",
+        "CTranscript": "./Quests/Aftermath/CompareAftermath.json"
     },
     {
         "Quest": "All Fired Up",
-        "Path": "./Quests/All Fired Up/AllFiredUpInfo.txt"
+        "Path": "./Quests/All Fired Up/AllFiredUpInfo.txt",
+        "Transcript": "./Quests/All Fired Up/All_Fired_Up_transcript.json",
+        "CTranscript": "./Quests/All Fired Up/CompareAll_Fired_Up.json"
     },
     {
         "Quest": "Alpha vs Omega",
-        "Path": "./Quests/Alpha vs Omega/AlphavsOmegaInfo.txt"
+        "Path": "./Quests/Alpha vs Omega/AlphavsOmegaInfo.txt",
+        "Transcript": "./Quests/Alpha vs Omega/Alpha_vs_Omega_transcript.json",
+        "CTranscript": "./Quests/Alpha vs Omega/CompareAlpha_vs_Omega.json"
     },
     {
         "Quest": "Ancient Awakening",
-        "Path": "./Quests/Ancient Awakening/AncientAwakeningInfo.txt"
+        "Path": "./Quests/Ancient Awakening/AncientAwakeningInfo.txt",
+        "Transcript": "./Quests/Ancient Awakening/Ancient_Awakening_transcript.json",
+        "CTranscript": "./Quests/Ancient Awakening/CompareAncient_Awakening.json"
     },
     {
         "Quest": "Animal Magnetism",
-        "Path": "./Quests/Animal Magnetism/AnimalMagnetismInfo.txt"
+        "Path": "./Quests/Animal Magnetism/AnimalMagnetismInfo.txt",
+        "Transcript": "./Quests/Animal Magnetism/Animal_Magnetism_transcript.json",
+        "CTranscript": "./Quests/Animal Magnetism/CompareAnimal_Magnetism.json"
     },
     {
         "Quest": "Another Slice of HAM",
-        "Path": "./Quests/Another Slice of HAM/AnotherSliceOfHamInfo.txt"
+        "Path": "./Quests/Another Slice of HAM/AnotherSliceOfHamInfo.txt",
+        "Transcript": "./Quests/Another Slice of HAM/Another_Slice_of_HAM_transcript.json",
+        "CTranscript": "./Quests/Another Slice of HAM/CompareAnother_Slice_of_HAM.json"
     },
     {
         "Quest": "As a First Resort",
-        "Path": "./Quests/As a First Resort/AsAFirstResortInfo.txt"
+        "Path": "./Quests/As a First Resort/AsAFirstResortInfo.txt",
+        "Transcript": "./Quests/As a First Resort/As_a_First_Resort_transcript.json",
+        "CTranscript": "./Quests/As a First Resort/CompareAs_a_First_Resort.json"
     },
     {
         "Quest": "Azzanadra's Quest",
-        "Path": "./Quests/Azzanadra's Quest/AzzandrasQuestInfo.txt"
+        "Path": "./Quests/Azzanadra's Quest/AzzandrasQuestInfo.txt",
+        "Transcript": "./Quests/Azzanadra's Quest/Azzanadra's_Quest_transcript.json",
+        "CTranscript": "./Quests/Azzanadra's Quest/CompareAzzanadra's_Quest.json"
     },
     {
         "Quest": "Back to my Roots",
-        "Path": "./Quests/Back to my Roots/BackToMyRootsInfo.txt"
+        "Path": "./Quests/Back to my Roots/BackToMyRootsInfo.txt",
+        "Transcript": "./Quests/Back to my Roots/Back_to_my_Roots_transcript.json",
+        "CTranscript": "./Quests/Back to my Roots/CompareBack_to_my_Roots.json"
     },
     {
         "Quest": "Back to the Freezer",
-        "Path": "./Quests/Back to the Freezer/BackToTheFreezerInfo.txt"
+        "Path": "./Quests/Back to the Freezer/BackToTheFreezerInfo.txt",
+        "Transcript": "./Quests/Back to the Freezer/Back_to_the_Freezer_transcript.json",
+        "CTranscript": "./Quests/Back to the Freezer/CompareBack_to_the_Freezer.json"
     },
     {
         "Quest": "Battle of the Monolith",
-        "Path": "./Quests/Battle of the Monolith/BattleOfTheMonolithInfo.txt"
+        "Path": "./Quests/Battle of the Monolith/BattleOfTheMonolithInfo.txt",
+        "Transcript": "./Quests/Battle of the Monolith/Battle_of_the_Monolith_transcript.json",
+        "CTranscript": "./Quests/Battle of the Monolith/CompareBattle_of_the_Monolith.json"
     },
     {
         "Quest": "Beneath Cursed Tides",
-        "Path": "./Quests/Beneath Cursed Tides/BeneathCursedTidesInfo.txt"
+        "Path": "./Quests/Beneath Cursed Tides/BeneathCursedTidesInfo.txt",
+        "Transcript": "./Quests/Beneath Cursed Tides/Beneath_Cursed_Tides_transcript.json",
+        "CTranscript": "./Quests/Beneath Cursed Tides/CompareBeneath_Cursed_Tides.json"
     },
     {
         "Quest": "Between a Rock",
-        "Path": "./Quests/Between a Rock/BetweenARockInfo.txt"
+        "Path": "./Quests/Between a Rock/BetweenARockInfo.txt",
+        "Transcript": "/Quests/Between a Rock/Between_a_Rock_transcript.json",
+        "CTranscript": "/Quests/Between a Rock/CompareBetween_a_Rock.json"
     },
     {
         "Quest": "Big Chompy Bird Hunting",
-        "Path": "./Quests/Big Chompy Bird Hunting/BigChompyBirdHuntingInfo.txt"
+        "Path": "./Quests/Big Chompy Bird Hunting/BigChompyBirdHuntingInfo.txt",
+        "Transcript": "./Quests/Big Chompy Bird Hunting/Big_Chompy_Bird_Hunting_transcript.json",
+        "CTranscript": "./Quests/Big Chompy Bird Hunting/CompareBig_Chompy_Bird_Hunting.json"
     },
     {
         "Quest": "Biohazard",
-        "Path": "./Quests/Biohazard/BiohazardInfo.txt"
+        "Path": "./Quests/Biohazard/BiohazardInfo.txt",
+        "Transcript": "./Quests/Biohazard/Biohazard_transcript.json",
+        "CTranscript": "./Quests/Biohazard/CompareBiohazard.json"
     },
     {
         "Quest": "Birthright of the Dwarves",
-        "Path": "./Quests/Birthright of the Dwarves/BirthrightOfTheDwarvesInfo.txt"
+        "Path": "./Quests/Birthright of the Dwarves/BirthrightOfTheDwarvesInfo.txt",
+        "Transcript": "./Quests/Birthright of the Dwarves/Birthright_of_the_Dwarves_transcript.json",
+        "CTranscript": "./Quests/Birthright of the Dwarves/CompareBirthright_of_the_Dwarves.json"
     },
     {
         "Quest": "Blood Runs Deep",
-        "Path": "./Quests/Blood Runs Deep/BloodRunsDeepInfo.txt"
+        "Path": "./Quests/Blood Runs Deep/BloodRunsDeepInfo.txt",
+        "Transcript": "./Quests/Blood Runs Deep/Blood_Runs_Deep_transcript.json",
+        "CTranscript": "./Quests/Blood Runs Deep/CompareBlood_Runs_Deep.json"
     },
     {
         "Quest": "Bringing Home the Bacon",
-        "Path": "./Quests/Bringing Home the Bacon/BringingHomeTheBaconInfo.txt"
+        "Path": "./Quests/Bringing Home the Bacon/BringingHomeTheBaconInfo.txt",
+        "Transcript": "./Quests/Bringing Home the Bacon/Bringing_Home_the_Bacon_transcript.json",
+        "CTranscript": "./Quests/Bringing Home the Bacon/CompareBringing_Home_the_Bacon.json"
     },
     {
         "Quest": "Broken Home",
-        "Path": "./Quests/Broken Home/BrokenHomeInfo.txt"
+        "Path": "./Quests/Broken Home/BrokenHomeInfo.txt",
+        "Transcript": "./Quests/Broken Home/Broken_Home_transcript.json",
+        "CTranscript": "./Quests/Broken Home/CompareBroken_Home.json"
     },
     {
         "Quest": "Buyers and Cellars",
-        "Path": "./Quests/Buyers and Cellars/BuyersAndCellarsInfo.txt"
+        "Path": "./Quests/Buyers and Cellars/BuyersAndCellarsInfo.txt",
+        "Transcript": "./Quests/Buyers and Cellars/Buyers_and_Cellars_transcript.json",
+        "CTranscript": "./Quests/Buyers and Cellars/CompareBuyers_and_Cellars.json"
     },
     {
         "Quest": "Cabin Fever",
-        "Path": "./Quests/Cabin Fever/CabinFeverInfo.txt"
+        "Path": "./Quests/Cabin Fever/CabinFeverInfo.txt",
+        "Transcript": "./Quests/Cabin Fever/Cabin_Fever_transcript.json",
+        "CTranscript": "./Quests/Cabin Fever/CompareCabin_Fever.json"
     },
     {
         "Quest": "Call of the Ancestors",
-        "Path": "./Quests/Call of the Ancestors/CallOfTheAncestorsInfo.txt"
+        "Path": "./Quests/Call of the Ancestors/CallOfTheAncestorsInfo.txt",
+        "Transcript": "./Quests/Call of the Ancestors/Call_of_the_Ancestors_transcript.json",
+        "CTranscript": "./Quests/Call of the Ancestors/CompareCall_of_the_Ancestors.json"
     },
     {
         "Quest": "Carnillean Rising",
-        "Path": "./Quests/Carnillean Rising/CarnilleanRisingInfo.txt"
+        "Path": "./Quests/Carnillean Rising/CarnilleanRisingInfo.txt",
+        "Transcript": "./Quests/Carnillean Rising/Carnillean_Rising_transcript.json",
+        "CTranscript": "./Quests/Carnillean Rising/CompareCarnillean_Rising.json"
     },
     {
         "Quest": "Catapult Construction",
-        "Path": "./Quests/Catapult Construction/CatapultConstructionInfo.txt"
+        "Path": "./Quests/Catapult Construction/CatapultConstructionInfo.txt",
+        "Transcript": "./Quests/Catapult Construction/Catapult_Construction_transcript.json",
+        "CTranscript": "./Quests/Catapult Construction/CompareCatapult_Construction.json"
     },
     {
         "Quest": "Chef's Assistant",
-        "Path": "./Quests/Chef's Assistant/ChefsAssistantInfo.txt"
+        "Path": "./Quests/Chef's Assistant/ChefsAssistantInfo.txt",
+        "Transcript": "./Quests/Chef's Assistant/Chef's_Assistant_transcript.json",
+        "CTranscript": "./Quests/Chef's Assistant/CompareChef's_Assistant.json"
     },
     {
         "Quest": "Children of Mah",
-        "Path": "./Quests/Children of Mah/ChildrenOfMahInfo.txt"
+        "Path": "./Quests/Children of Mah/ChildrenOfMahInfo.txt",
+        "Transcript": "./Quests/Children of Mah/Children_of_Mah_transcript.json",
+        "CTranscript": "./Quests/Children of Mah/CompareChildren_of_Mah.json"
     },
     {
         "Quest": "City of Senntisten",
-        "Path": "./Quests/City of Senntisten/CityOfSenntistenInfo.txt"
+        "Path": "./Quests/City of Senntisten/CityOfSenntistenInfo.txt",
+        "Transcript": "./Quests/City of Senntisten/City_of_Senntisten_transcript.json",
+        "CTranscript": ""
     },
     {
         "Quest": "Clock Tower",
-        "Path": "./Quests/Clock Tower/ClockTowerInfo.txt"
+        "Path": "./Quests/Clock Tower/ClockTowerInfo.txt",
+        "Transcript": "./Quests/Clock Tower/Clock_Tower_transcript.json",
+        "CTranscript": "./Quests/Clock Tower/CompareClock_Tower.json"
     },
     {
         "Quest": "Cold War",
-        "Path": "./Quests/Cold War/ColdWarInfo.txt"
+        "Path": "./Quests/Cold War/ColdWarInfo.txt",
+        "Transcript": "./Quests/Cold War/Cold_War_transcript.json",
+        "CTranscript": "./Quests/Cold War/CompareCold_War.json"
     },
     {
         "Quest": "Contact",
-        "Path": "./Quests/Contact/ContactInfo.txt"
+        "Path": "./Quests/Contact/ContactInfo.txt",
+        "Transcript": "./Quests/Contact/Contact_transcript.json",
+        "CTranscript": "./Quests/Contact/CompareContact.json"
     },
     {
         "Quest": "Cook's Assistant",
-        "Path": "./Quests/Cook's Assistant/CooksAssistantInfo.txt"
+        "Path": "./Quests/Cook's Assistant/CooksAssistantInfo.txt",
+        "Transcript": "./Quests/Cook's Assistant/Cook's_Assistant_transcript.json",
+        "CTranscript": "./Quests/Cook's Assistant/CompareCooks_Assistant.json"
     },
     {
         "Quest": "Creature of Fenkenstrain",
-        "Path": "./Quests/Creature of Fenkenstrain/CreatureOfFenkenstrainInfo.txt"
+        "Path": "./Quests/Creature of Fenkenstrain/CreatureOfFenkenstrainInfo.txt",
+        "Transcript": "./Quests/Creature of Fenkenstrain/Creature_of_Fenkenstrain_transcript.json",
+        "CTranscript": "./Quests/Creature of Fenkenstrain/CompareCreature_of_Fenkenstrain.json"
     },
     {
         "Quest": "Crocodile Tears",
-        "Path": "./Quests/Crocodile Tears/CrocodileTearsInfo.txt"
+        "Path": "./Quests/Crocodile Tears/CrocodileTearsInfo.txt",
+        "Transcript": "./Quests/Crocodile Tears/Crocodile_Tears_transcript.json",
+        "CTranscript": "./Quests/Crocodile Tears/CompareCrocodile_Tears.json"
     },
     {
         "Quest": "Curse of the Black Stone",
-        "Path": "./Quests/Curse of the Black Stone/CurseOfTheBlackStoneInfo.txt"
+        "Path": "./Quests/Curse of the Black Stone/CurseOfTheBlackStoneInfo.txt",
+        "Transcript": "./Quests/Curse of the Black Stone/Curse_of_the_Black_Stone_transcript.json",
+        "CTranscript": "./Quests/Curse of the Black Stone/CompareCurse_of_the_Black_Stone.json"
     },
     {
         "Quest": "Daughter of Chaos",
-        "Path": "./Quests/Daughter of Chaos/DaughterOfChaosInfo.txt"
+        "Path": "./Quests/Daughter of Chaos/DaughterOfChaosInfo.txt",
+        "Transcript": "./Quests/Daughter of Chaos/Daughter_of_Chaos_transcript.json",
+        "CTranscript": "./Quests/Daughter of Chaos/CompareDaughter_of_Chaos.json"
     },
     {
         "Quest": "Dead and Buried",
-        "Path": "./Quests/Dead and Buried/DeadAndBuriedInfo.txt"
+        "Path": "./Quests/Dead and Buried/DeadAndBuriedInfo.txt",
+        "Transcript": "./Quests/Dead and Buried/Dead_and_Buried_transcript.json",
+        "CTranscript": "./Quests/Dead and Buried/CompareDead_and_Buried.json"
     },
     {
         "Quest": "Deadliest Catch",
-        "Path": "./Quests/Deadliest Catch/DeadliestCatchInfo.txt"
+        "Path": "./Quests/Deadliest Catch/DeadliestCatchInfo.txt",
+        "Transcript": "./Quests/Deadliest Catch/Deadliest_Catch_transcript.json",
+        "CTranscript": "./Quests/Deadliest Catch/CompareDeadliest_Catch.json"
     },
     {
         "Quest": "Dealing with Scabaras",
-        "Path": "./Quests/Dealing with Scabaras/DealingWithScabarasInfo.txt"
+        "Path": "./Quests/Dealing with Scabaras/DealingWithScabarasInfo.txt",
+        "Transcript": "./Quests/Dealing with Scabaras/Dealing_with_Scabaras_transcript.json",
+        "CTranscript": "/"
     },
     {
         "Quest": "Death Plateau",
-        "Path": "./Quests/Death Plateau/DeathPlateauInfo.txt"
+        "Path": "./Quests/Death Plateau/DeathPlateauInfo.txt",
+        "Transcript": "./Quests/Death Plateau/Death_Plateau_transcript.json",
+        "CTranscript": "./Quests/Death Plateau/CompareDeath_Plateau.json"
     },
     {
         "Quest": "Death to the Dorgeshuun",
-        "Path": "./Quests/Death to the Dorgeshuun/DeathToTheDorgeshuunInfo.txt"
+        "Path": "./Quests/Death to the Dorgeshuun/DeathToTheDorgeshuunInfo.txt",
+        "Transcript": "./Quests/Death to the Dorgeshuun/Death_to_the_Dorgeshuun_transcript.json",
+        "CTranscript": "/Quests/Death to the Dorgeshuun/CompareDeath_to_the_Dorgeshuun.json"
     },
     {
         "Quest": "Defender of Varrock",
-        "Path": "./Quests/Defender of Varrock/DefenderOfVarrockInfo.txt"
+        "Path": "./Quests/Defender of Varrock/DefenderOfVarrockInfo.txt",
+        "Transcript": "./Quests/Defender of Varrock/Defender_of_Varrock_transcript.json",
+        "CTranscript": "./Quests/Defender of Varrock/CompareDefender_of_Varrock.json"
     },
     {
         "Quest": "Demon Slayer",
-        "Path": "./Quests/Demon Slayer/DemonSlayerInfo.txt"
+        "Path": "./Quests/Demon Slayer/DemonSlayerInfo.txt",
+        "Transcript": "./Quests/Demon Slayer/Demon_Slayer_transcript.json",
+        "CTranscript": "./Quests/Demon Slayer/CompareDemon_Slayer.json"
     },
     {
         "Quest": "Desert Treasure",
-        "Path": "./Quests/Desert Treasure/DesertTreasureInfo.txt"
+        "Path": "./Quests/Desert Treasure/DesertTreasureInfo.txt",
+        "Transcript": "./Quests/Desert Treasure/Desert_Treasure_transcript.json",
+        "CTranscript": "./Quests/Desert Treasure/CompareDesert_Treasure.json"
     },
     {
         "Quest": "Desperate Creatures",
-        "Path": "./Quests/Desperate Creatures/DesperateCreaturesInfo.txt"
+        "Path": "./Quests/Desperate Creatures/DesperateCreaturesInfo.txt",
+        "Transcript": "./Quests/Desperate Creatures/Desperate_Creatures_transcript.json",
+        "CTranscript": "./Quests/Desperate Creatures/CompareDesperate_Creatures.json"
     },
     {
         "Quest": "Desperate Measures",
-        "Path": "./Quests/Desperate Measures/DesperateMeasureInfo.txt"
+        "Path": "./Quests/Desperate Measures/DesperateMeasureInfo.txt",
+        "Transcript": "./Quests/Desperate Measures/Desperate_Measures_transcript.json",
+        "CTranscript": "./Quests/Desperate Measures/CompareDesperate_Measures.json"
     },
     {
         "Quest": "Desperate Times",
-        "Path": "./Quests/Desperate Times/DesperateTimesInfo.txt"
+        "Path": "./Quests/Desperate Times/DesperateTimesInfo.txt",
+        "Transcript": "./Quests/Desperate Times/Desperate_Times_transcript.json",
+        "CTranscript": "./Quests/Desperate Times/CompareDesperate_Times.json"
     },
     {
         "Quest": "Devious Minds",
-        "Path": "./Quests/Devious Minds/DeviousMinds.txt"
+        "Path": "./Quests/Devious Minds/DeviousMinds.txt",
+        "Transcript": "./Quests/Devious Minds/Devious_Minds_transcript.json",
+        "CTranscript": "./Quests/Devious Minds/CompareDevious_Minds.json"
     },
     {
         "Quest": "Dimension of Disaster",
-        "Path": "./Quests/Dimension of Disaster/DimensionOfDisasterInfo.txt"
+        "Path": "./Quests/Dimension of Disaster/DimensionOfDisasterInfo.txt",
+        "Transcript": "./Quests/Dimension of Disaster/Dimension_of_Disaster_transcript.json",
+        "CTranscript": "./Quests/Dimension of Disaster/CompareDimension_of_Disaster.json"
     },
     {
         "Quest": "Dishonour among Thieves",
-        "Path": "./Quests/Dishonour among Thieves/DishonourAmongThievesInfo.txt"
+        "Path": "./Quests/Dishonour among Thieves/DishonourAmongThievesInfo.txt",
+        "Transcript": "./Quests/Dishonour among Thieves/Dishonour_among_Thieves_transcript.json",
+        "CTranscript": "./Quests/Dishonour among Thieves/CompareDishonour_among_Thieves.json"
     },
     {
         "Quest": "Do No Evil",
-        "Path": "./Quests/Do No Evil/DoNoEvilInfo.txt"
+        "Path": "./Quests/Do No Evil/DoNoEvilInfo.txt",
+        "Transcript": "./Quests/Do No Evil/Do_No_Evil_transcript.json",
+        "CTranscript": "./Quests/Do No Evil/CompareDo_No_Evil.json"
     },
     {
         "Quest": "Dragon Slayer",
-        "Path": "./Quests/Dragon Slayer/DragonSlayerInfo.txt"
+        "Path": "./Quests/Dragon Slayer/DragonSlayerInfo.txt",
+        "Transcript": "./Quests/Dragon Slayer/Dragon_Slayer_transcript.json",
+        "CTranscript": "./Quests/Dragon Slayer/CompareDragon_Slayer.json"
     },
     {
         "Quest": "Dream Mentor",
-        "Path": "./Quests/Dream Mentor/DreamMentorInfo.txt"
+        "Path": "./Quests/Dream Mentor/DreamMentorInfo.txt",
+        "Transcript": "./Quests/Dream Mentor/Dream_Mentor_transcript.json",
+        "CTranscript": "./Quests/Dream Mentor/CompareDream_Mentor.json"
     },
     {
         "Quest": "Druidic Ritual",
-        "Path": "./Quests/Druidic Ritual/DruidicRitualInfo.txt"
+        "Path": "./Quests/Druidic Ritual/DruidicRitualInfo.txt",
+        "Transcript": "./Quests/Druidic Ritual/Druidic_Ritual_transcript.json",
+        "CTranscript": "./Quests/Druidic Ritual/CompareDruidic_Ritual.json"
     },
     {
         "Quest": "Dwarf Cannon",
-        "Path": "./Quests/Dwarf Cannon/DwarfCannonInfo.txt"
+        "Path": "./Quests/Dwarf Cannon/DwarfCannonInfo.txt",
+        "Transcript": "./Quests/Dwarf Cannon/Dwarf_Cannon_transcript.json",
+        "CTranscript": "./Quests/Dwarf Cannon/CompareDwarf_Cannon.json"
     },
     {
         "Quest": "Eadgar's Ruse",
-        "Path": "./Quests/Eadgar's Ruse/EdgarsRuseInfo.txt"
+        "Path": "./Quests/Eadgar's Ruse/EdgarsRuseInfo.txt",
+        "Transcript": "./Quests/Eadgar's Ruse/Eadgar's_Ruse_transcript.json",
+        "CTranscript": "./Quests/Eadgar's Ruse/CompareEadgar's_Ruse.json"
     },
     {
         "Quest": "Eagles' Peak",
-        "Path": "./Quests/Eagles' Peak/EaglesPeakInfo.txt"
+        "Path": "./Quests/Eagles' Peak/EaglesPeakInfo.txt",
+        "Transcript": "./Quests/Eagles' Peak/Eagles' Peak_transcript.json",
+        "CTranscript": "./Quests/Eagles' Peak/CompareEagles'_Peak.json"
     },
     {
         "Quest": "Elemental Workshop I",
-        "Path": "./Quests/Elemental Workshop I/ElementalWorkshop1Info.txt"
+        "Path": "./Quests/Elemental Workshop I/ElementalWorkshop1Info.txt",
+        "Transcript": "",
+        "CTranscript": ""
     },
     {
         "Quest": "Elemental Workshop II",
-        "Path": "./Quests/Elemental Workshop II/ElementalWorkshop2Info.txt"
+        "Path": "./Quests/Elemental Workshop II/ElementalWorkshop2Info.txt",
+        "Transcript": "./Quests/Elemental Workshop II/Elemental_Workshop_II_transcript.json",
+        "CTranscript": ""
     },
     {
         "Quest": "Elemental Workshop III",
-        "Path": "./Quests/Elemental Workshop III/ElementalWorkshop3Info.txt"
+        "Path": "./Quests/Elemental Workshop III/ElementalWorkshop3Info.txt",
+        "Transcript": "",
+        "CTranscript": ""
     },
     {
         "Quest": "Elemental Workshop IV",
-        "Path": "./Quests/Elemental Workshop IV/ElementalWorkshop4Info.txt"
+        "Path": "./Quests/Elemental Workshop IV/ElementalWorkshop4Info.txt",
+        "Transcript": "",
+        "CTranscript": ""
     },
     {
         "Quest": "Enakhra's Lament",
-        "Path": "./Quests/Enakhra's Lament/EnakhrasLamentInfo.txt"
+        "Path": "./Quests/Enakhra's Lament/EnakhrasLamentInfo.txt",
+        "Transcript": "./Quests/Enakhra's Lament/Enakhra's_Lament_transcript.json",
+        "CTranscript": "./Quests/Enakhra's Lament/CompareEnakhra's_Lament.json"
     },
     {
         "Quest": "Enlightened Journey",
-        "Path": "./Quests/Enlightened Journey/EnlightenedJourneyInfo.txt"
+        "Path": "./Quests/Enlightened Journey/EnlightenedJourneyInfo.txt",
+        "Transcript": "./Quests/Enlightened Journey/Enlightened_Journey_transcript.json",
+        "CTranscript": "./Quests/Enlightened Journey/CompareEnlightened_Journey.json"
     },
     {
         "Quest": "Ernest the Chicken",
-        "Path": "./Quests/Ernest the Chicken/EarnestTheChickenInfo.txt"
+        "Path": "./Quests/Ernest the Chicken/EarnestTheChickenInfo.txt",
+        "Transcript": "./Quests/Ernest the Chicken/Ernest_the_Chicken_transcript.json",
+        "CTranscript": "./Quests/Ernest the Chicken/CompareErnest_the_Chicken.json"
     },
     {
-        "Quest": "Evil Dave's",
-        "Path": "./Quests/Evil Dave's/EvilDavesBigDayOutInfo.txt"
+        "Quest": "Evil Dave's Big Day Out",
+        "Path": "./Quests/Evil Dave's Big Day Out/EvilDavesBigDayOutInfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Evil Dave's Big Day Out/CompareEvil_Daves_Big_Day_Out.json"
     },
     {
         "Quest": "Extinction",
-        "Path": "./Quests/Extinction/ExtinctionInfo.txt"
+        "Path": "./Quests/Extinction/ExtinctionInfo.txt",
+        "Transcript": "./Quests/Extinction/Extinction_transcript.json",
+        "CTranscript": "./Quests/Extinction/CompareExtinction.json"
     },
     {
         "Quest": "Eye of Het I",
-        "Path": "./Quests/Eye of Het I/EyeOfHet1Info.txt"
+        "Path": "./Quests/Eye of Het I/EyeOfHet1Info.txt",
+        "Transcript": "./Quests/Eye of Het I/Eye_of_Het_I_transcript.json",
+        "CTranscript": "./Quests/Eye of Het I/CompareEye_of_Het_I.json"
     },
     {
         "Quest": "Eye of Het II",
-        "Path": "./Quests/Eye of Het II/EyeOfHet2Info.txt"
+        "Path": "./Quests/Eye of Het II/EyeOfHet2Info.txt",
+        "Transcript": "./Quests/Eye of Het II/Eye_of_Het_II_transcript.json",
+        "CTranscript": "./Quests/Eye of Het II/CompareEye_of_Het_II.json"
     },
     {
         "Quest": "Family Crest",
-        "Path": "./Quests/Family Crest/FamilyCrestInfo.txt"
+        "Path": "./Quests/Family Crest/FamilyCrestInfo.txt",
+        "Transcript": "./Quests/Family Crest/Family_Crest_transcript.json",
+        "CTranscript": "./Quests/Family Crest/CompareFamily_Crest.json"
     },
     {
         "Quest": "Fate of the Gods",
-        "Path": "./Quests/Fate of the Gods/FateOfTheGodsInfo.txt"
+        "Path": "./Quests/Fate of the Gods/FateOfTheGodsInfo.txt",
+        "Transcript": "./Quests/Fate of the Gods/Fate_of_the_Gods_transcript.json",
+        "CTranscript": "./Quests/Fate of the Gods/CompareFate_of_the_Gods.json"
     },
     {
         "Quest": "Fight Arena",
-        "Path": "./Quests/Fight Arena/FightArenaInfo.txt"
+        "Path": "./Quests/Fight Arena/FightArenaInfo.txt",
+        "Transcript": "./Quests/Fight Arena/Fight_Arena_transcript.json",
+        "CTranscript": "./Quests/Fight Arena/CompareFight_Arena.json"
     },
     {
         "Quest": "Fishing Contest",
-        "Path": "./Quests/Fishing Contest/FishingContestInfo.txt"
+        "Path": "./Quests/Fishing Contest/FishingContestInfo.txt",
+        "Transcript": "./Quests/Fishing Contest/Fishing_Contest_transcript.json",
+        "CTranscript": "./Quests/Fishing Contest/CompareFishing_Contest.json"
     },
     {
         "Quest": "Forgettable Tale of a Drunken Dwarf",
-        "Path": "./Quests/Forgettable Tale of a Drunken Dwarf/ForgettableTaleOfADrunkenDwarfInfo.txt"
+        "Path": "./Quests/Forgettable Tale of a Drunken Dwarf/ForgettableTaleOfADrunkenDwarfInfo.txt",
+        "Transcript": "./Quests/Forgettable Tale of a Drunken Dwarf/Forgettable_Tale_of_a_Drunken_Dwarf_transcript.json",
+        "CTranscript": "./Quests/Forgettable Tale of a Drunken Dwarf/CompareForgettable_Tale_of_a_Drunken_Dwarf.json"
     },
     {
         "Quest": "Forgiveness of a Chaos Dwarf",
-        "Path": "./Quests/Forgiveness of a Chaos Dwarf/ForegivenessOfAChaosDwarfInfo.txt"
+        "Path": "./Quests/Forgiveness of a Chaos Dwarf/ForegivenessOfAChaosDwarfInfo.txt",
+        "Transcript": "./Quests/Forgiveness of a Chaos Dwarf/Forgiveness_of_a_Chaos_Dwarf_transcript.json",
+        "CTranscript": "./Quests/Forgiveness of a Chaos Dwarf/CompareForgiveness_of_a_Chaos_Dwarf.json"
     },
     {
         "Quest": "Fur 'n Seek",
-        "Path": "./Quests/Fur 'n Seek/FurNSeekInfo.txt"
+        "Path": "./Quests/Fur 'n Seek/FurNSeekInfo.txt",
+        "Transcript": "./Quests/Fur 'n Seek/Fur_'n_Seek_transcript.json",
+        "CTranscript": "./Quests/Fur 'n Seek/CompareFur_n_Seek.json"
     },
     {
         "Quest": "Garden of Tranquillity",
-        "Path": "./Quests/Garden of Tranquillity/GardenOfTranquilityInfo.txt"
+        "Path": "./Quests/Garden of Tranquillity/GardenOfTranquilityInfo.txt",
+        "Transcript": "./Quests/Garden of Tranquillity/Garden_of_Tranquillity_transcript.json",
+        "CTranscript": "./Quests/Garden of Tranquillity/CompareGarden_of_Tranquillity.json"
     },
     {
         "Quest": "Gertrude's Cat",
-        "Path": "./Quests/Gertrude's Cat/GertrudesCatInfo.txt"
+        "Path": "./Quests/Gertrude's Cat/GertrudesCatInfo.txt",
+        "Transcript": "./Quests/Gertrude's Cat/Gertrude's_Cat_transcript.json",
+        "CTranscript": "./Quests/Gertrude's Cat/CompareGertrude's_Cat.json"
     },
     {
         "Quest": "Ghosts Ahoy",
-        "Path": "./Quests/Ghosts Ahoy/GhostsAhoyInfo.txt"
+        "Path": "./Quests/Ghosts Ahoy/GhostsAhoyInfo.txt",
+        "Transcript": "./Quests/Ghosts Ahoy/Ghosts_Ahoy_transcript.json",
+        "CTranscript": "./Quests/Ghosts Ahoy/CompareGhosts_Ahoy.json"
     },
     {
         "Quest": "Glorious Memories",
-        "Path": "./Quests/Glorious Memories/GloriousMemoriesInfo.txt"
+        "Path": "./Quests/Glorious Memories/GloriousMemoriesInfo.txt",
+        "Transcript": "./Quests/Glorious Memories/Glorious_Memories_transcript.json",
+        "CTranscript": "./Quests/Glorious Memories/CompareGlorious_Memories.json"
     },
     {
         "Quest": "Goblin Diplomacy",
-        "Path": "./Quests/Goblin Diplomacy/GoblinDiplomacyInfo.txt"
+        "Path": "./Quests/Goblin Diplomacy/GoblinDiplomacyInfo.txt",
+        "Transcript": "./Quests/Goblin Diplomacy/Goblin_Diplomacy_transcript.json",
+        "CTranscript": "./Quests/Goblin Diplomacy/CompareGoblin_Diplomacy.json"
     },
     {
         "Quest": "Grim Tales",
-        "Path": "./Quests/Grim Tales/GrimTalesInfo.txt"
+        "Path": "./Quests/Grim Tales/GrimTalesInfo.txt",
+        "Transcript": "./Quests/Grim Tales/Grim_Tales_transcript.json",
+        "CTranscript": "./Quests/Grim Tales/CompareGrim_Tales.json"
     },
     {
         "Quest": "Gunnar's Ground",
-        "Path": "./Quests/Gunnar'sGround/GunnarsGroundInfo.txt"
+        "Path": "./Quests/Gunnar's Ground/GunnarsGroundInfo.txt",
+        "Transcript": "./Quests/Gunnar's Ground/Gunnar's_Ground_transcript.json",
+        "CTranscript": "./Quests/Gunnar's Ground/CompareGunnar's_Ground.json"
     },
     {
         "Quest": "Haunted Mine",
-        "Path": "./Quests/HauntedMine/HauntedMineInfo.txt"
+        "Path": "./Quests/Haunted Mine/HauntedMineInfo.txt",
+        "Transcript": "./Quests/Haunted Mine/Haunted_Mine_transcript.json",
+        "CTranscript": "./Quests/Haunted Mine/CompareHaunted_Mine.json"
     },
     {
         "Quest": "Hazeel Cult",
-        "Path": "./Quests/HazeelCult/HazeelCultInfo.txt"
+        "Path": "./Quests/Hazeel Cult/HazeelCultInfo.txt",
+        "Transcript": "./Quests/Hazeel Cult/Hazeel_Cult_transcript.json",
+        "CTranscript": "./Quests/Hazeel Cult/CompareHazeel_Cult.json"
     },
     {
         "Quest": "Heart of Stone",
-        "Path": "./Quests/HeartOfStone/HeartOfStoneInfo.txt"
+        "Path": "./Quests/Heart Of Stone/HeartOfStoneInfo.txt",
+        "Transcript": "./Quests/Heart Of Stone/Heart_of_Stone_transcript.json",
+        "CTranscript": "./Quests/Heart Of Stone/CompareHeart_of_Stone.json"
     },
     {
         "Quest": "Heartstealer",
-        "Path": "./Quests/Heartstealer/HeartstealerInfo.txt"
+        "Path": "./Quests/Heartstealer/HeartstealerInfo.txt",
+        "Transcript": "./Quests/Heartstealer/Heartstealer_transcript.json",
+        "CTranscript": "./Quests/Heartstealer/CompareHeartstealer.json"
     },
     {
         "Quest": "Hero's Welcome",
-        "Path": "./Quests/Hero's Welcome/HerosWelcomeInfo.txt"
+        "Path": "./Quests/Hero's Welcome/HerosWelcomeInfo.txt",
+        "Transcript": "./Quests/Hero's Welcome/Hero's_Welcome_transcript.json",
+        "CTranscript": "./Quests/Hero's Welcome/CompareHero's_Welcome.json"
     },
     {
         "Quest": "Heroes' Quest",
-        "Path": "./Quests/Heroes' Quest/HerosQuestInfo.txt"
+        "Path": "./Quests/Heroes' Quest/HerosQuestInfo.txt",
+        "Transcript": "./Quests/Heroes' Quest/Heroes'_Quest_transcript.json",
+        "CTranscript": "./Quests/Heroes' Quest/CompareHeroes'_Quest.json"
     },
     {
         "Quest": "Holy Grail",
-        "Path": "./Quests/Holy Grail/HolyGrailInfo.txt"
+        "Path": "./Quests/Holy Grail/HolyGrailInfo.txt",
+        "Transcript": "./Quests/Holy Grail/Holy_Grail_transcript.json",
+        "CTranscript": "./Quests/Holy Grail/CompareHoly_Grail.json"
     },
     {
         "Quest": "Horror from the Deep",
-        "Path": "./Quests/Horror from the Deep/HorrorFromTheDeepInfo.txt"
+        "Path": "./Quests/Horror from the Deep/HorrorFromTheDeepInfo.txt",
+        "Transcript": "./Quests/Horror from the Deep/Horror_from_the_Deep_transcript.json",
+        "CTranscript": "./Quests/Horror from the Deep/CompareHorror_from_the_Deep.json"
     },
     {
         "Quest": "Hunt for Red Raktuber",
-        "Path": "./Quests/Hunt for Red Raktuber/HuntForRedRaktuberInfo.txt"
+        "Path": "./Quests/Hunt for Red Raktuber/HuntForRedRaktuberInfo.txt",
+        "Transcript": "./Quests/Hunt for Red Raktuber/Hunt_for_Red_Raktuber_transcript.json",
+        "CTranscript": "./Quests/Hunt for Red Raktuber/CompareHunt_for_Red_Raktuber.json"
     },
     {
         "Quest": "Icthlarin's Little Helper",
-        "Path": "./Quests/Icthlarin's Little Helper/IcthlarinsLittleHelperInfo.txt"
+        "Path": "./Quests/Icthlarin's Little Helper/IcthlarinsLittleHelperInfo.txt",
+        "Transcript": "./Quests/Icthlarin's Little Helper/Icthlarin's_Little_Helper_transcript.json",
+        "CTranscript": "./Quests/Icthlarin's Little Helper/CompareIcthlarin's_Little_Helper.json"
     },
     {
         "Quest": "Imp Catcher",
-        "Path": "./Quests/Imp Catcher/ImpCatcherInfo.txt"
+        "Path": "./Quests/Imp Catcher/ImpCatcherInfo.txt",
+        "Transcript": "./Quests/Imp Catcher/Imp_Catcher_transcript.json",
+        "CTranscript": "./Quests/Imp Catcher/CompareImp_Catcher.json"
     },
     {
         "Quest": "Impressing the Locals",
-        "Path": "./Quests/Impressing the Locals/ImpressingTheLocalsInfo.txt"
+        "Path": "./Quests/Impressing the Locals/ImpressingTheLocalsInfo.txt",
+        "Transcript": "./Quests/Impressing the Locals/Impressing_the_Locals_transcript.json",
+        "CTranscript": "./Quests/Impressing the Locals/CompareImpressing_the_Locals.json"
     },
     {
         "Quest": "In Aid of the Myreque",
-        "Path": "./Quests/In Aid of the Myreque/InAidOfTheMyrequeInfo.txt"
+        "Path": "./Quests/In Aid of the Myreque/InAidOfTheMyrequeInfo.txt",
+        "Transcript": "./Quests/In Aid of the Myreque/In_Aid_of_the_Myreque_transcript.json",
+        "CTranscript": "./Quests/In Aid of the Myreque/CompareIn_Aid_of_the_Myreque.json"
     },
     {
         "Quest": "In Pyre Need",
-        "Path": "./Quests/In Pyre Need/InPyreNeedInfo.txt"
+        "Path": "./Quests/In Pyre Need/InPyreNeedInfo.txt",
+        "Transcript": "./Quests/In Pyre Need/In_Pyre_Need_transcript.json",
+        "CTranscript": "./Quests/In Pyre Need/CompareIn_Pyre_Need.json"
     },
     {
         "Quest": "In Search of the Myreque",
-        "Path": "./Quests/In Search of the Myreque/InSearchOfTheMyrequeInfo.txt"
+        "Path": "./Quests/In Search of the Myreque/InSearchOfTheMyrequeInfo.txt",
+        "Transcript": "./Quests/In Search of the Myreque/In_Search_of_the_Myreque_transcript.json",
+        "CTranscript": "./Quests/In Search of the Myreque/CompareIn_Search_of_the_Myreque.json"
     },
     {
         "Quest": "Jungle Potion",
-        "Path": "./Quests/Jungle Potion/JunglePotionInfo.txt"
+        "Path": "./Quests/Jungle Potion/JunglePotionInfo.txt",
+        "Transcript": "./Quests/Jungle Potion/Jungle_Potion_transcript.json",
+        "CTranscript": "./Quests/Jungle Potion/CompareJungle_Potion.json"
     },
     {
         "Quest": "Kennith's Concerns",
-        "Path": "./Quests/Kennith's Concerns/Kennith'sConcernsInfo.txt"
+        "Path": "./Quests/Kennith's Concerns/Kennith'sConcernsInfo.txt",
+        "Transcript": "./Quests/Kennith's Concerns/Kennith's_Concerns_transcript.json",
+        "CTranscript": "./Quests/Kennith's Concerns/CompareKennith's_Concerns.json"
     },
     {
         "Quest": "Kili Row",
-        "Path": "./Quests/Kili Row/KiliRowInfo.txt"
+        "Path": "./Quests/Kili Row/KiliRowInfo.txt",
+        "Transcript": "./Quests/Kili Row/Kili_Row_transcript.json",
+        "CTranscript": "./Quests/Kili Row/CompareKili_Row.json"
     },
     {
         "Quest": "Kindred Spirits",
-        "Path": "./Quests/Kindred Spirits/KindredSpiritsInfo.txt"
+        "Path": "./Quests/Kindred Spirits/KindredSpiritsInfo.txt",
+        "Transcript": "./Quests/Kindred Spirits/Kindred_Spirits_transcript.json",
+        "CTranscript": "./Quests/Kindred Spirits/CompareKindred_Spirits_dialogues.json"
     },
     {
         "Quest": "King of the Dwarves",
-        "Path": "./Quests/King of the Dwarves/KingOfTheDwarvesInfo.txt"
+        "Path": "./Quests/King of the Dwarves/KingOfTheDwarvesInfo.txt",
+        "Transcript": "./Quests/King of the Dwarves/King_of_the_Dwarves_transcript.json",
+        "CTranscript": "./Quests/King of the Dwarves/CompareKing_of_the_Dwarves.json"
     },
     {
         "Quest": "King's Ransom",
-        "Path": "./Quests/King's Ransom/KingsRansomInfo.txt"
+        "Path": "./Quests/King's Ransom/KingsRansomInfo.txt",
+        "Transcript": "./Quests/King's Ransom/King's_Ransom_transcript.json",
+        "CTranscript": "./Quests/King's Ransom/CompareKing's_Ransom.json"
     },
     {
         "Quest": "Land of the Goblins",
-        "Path": "./Quests/Land of the Goblins/LandOfGoblinsInfo.txt"
+        "Path": "./Quests/Land of the Goblins/LandOfGoblinsInfo.txt",
+        "Transcript": "./Quests/Land of the Goblins/Land_of_the_Goblins_transcript.json",
+        "CTranscript": "./Quests/Land of the Goblins/CompareLand_of_the_Goblins.json"
     },
     {
         "Quest": "Legacy of Seergaze",
-        "Path": "./Quests/Legacy of Seergaze/LegacyOfSeergazeInfo.txt"
+        "Path": "./Quests/Legacy of Seergaze/LegacyOfSeergazeInfo.txt",
+        "Transcript": "./Quests/Legacy of Seergaze/Legacy_of_Seergaze_transcript.json",
+        "CTranscript": "./Quests/Legacy of Seergaze/CompareLegacy_of_Seergaze.json"
     },
     {
         "Quest": "Legends' Quest",
-        "Path": "./Quests/Legends' Quest/LegendsQuestInfo.txt"
+        "Path": "./Quests/Legends' Quest/LegendsQuestInfo.txt",
+        "Transcript": "/Quests/Legends' Quest/Legends'_Quest_transcript.json",
+        "CTranscript": "/Quests/Legends' Quest/CompareLegends'_Quest.json"
     },
     {
         "Quest": "Let Them Eat Pie",
-        "Path": "./Quests/Let Them Eat Pie/LetThemEatPieInfo.txt"
+        "Path": "./Quests/Let Them Eat Pie/LetThemEatPieInfo.txt",
+        "Transcript": "./Quests/Let Them Eat Pie/Let_Them_Eat_Pie_transcript.json",
+        "CTranscript": "./Quests/Let Them Eat Pie/CompareLet_Them_Eat_Pie.json"
     },
     {
         "Quest": "Lost City",
-        "Path": "./Quests/Lost City/LostCityInfo.txt"
+        "Path": "./Quests/Lost City/LostCityInfo.txt",
+        "Transcript": "./Quests/Lost City/Lost_City_transcript.json",
+        "CTranscript": "./Quests/Lost City/CompareLost_City.json"
     },
     {
         "Quest": "Love Story",
-        "Path": "./Quests/Love Story/LoveStoryInfo.txt"
+        "Path": "./Quests/Love Story/LoveStoryInfo.txt",
+        "Transcript": "./Quests/Love Story/Love_Story_transcript.json",
+        "CTranscript": "./Quests/Love Story/CompareLove_Story.json"
     },
     {
         "Quest": "Lunar Diplomacy",
-        "Path": "./Quests/Lunar Diplomacy/LunarDiplomacyInfo.txt"
+        "Path": "./Quests/Lunar Diplomacy/LunarDiplomacyInfo.txt",
+        "Transcript": "./Quests/Lunar Diplomacy/Lunar_Diplomacy_transcript.json",
+        "CTranscript": "./Quests/Lunar Diplomacy/CompareLunar_Diplomacy.json"
     },
     {
         "Quest": "Making History",
-        "Path": "./Quests/Making History/MakingHistoryInfo.txt"
+        "Path": "./Quests/Making History/MakingHistoryInfo.txt",
+        "Transcript": "./Quests/Making History/Making_History_transcript.json",
+        "CTranscript": "./Quests/Making History/CompareMaking_History.json"
     },
     {
         "Quest": "Meeting History",
-        "Path": "./Quests/Meeting History/MeetingHistoryInfo.txt"
+        "Path": "./Quests/Meeting History/MeetingHistoryInfo.txt",
+        "Transcript": "./Quests/Meeting History/Meeting_History_transcript.json",
+        "CTranscript": "./Quests/Meeting History/CompareMeeting_History.json"
     },
     {
         "Quest": "Merlin's Crystal",
-        "Path": "./Quests/Merlin's Crystal/MerlinsCrystalInfo.txt"
+        "Path": "./Quests/Merlin's Crystal/MerlinsCrystalInfo.txt",
+        "Transcript": "./Quests/Merlin's Crystal/Merlin's_Crystal_transcript.json",
+        "CTranscript": "./Quests/Merlin's Crystal/CompareMerlin's_Crystal.json"
     },
     {
         "Quest": "Missing My Mummy",
-        "Path": "./Quests/Missing My Mummy/MissingMyMummyInfo.txt"
+        "Path": "./Quests/Missing My Mummy/MissingMyMummyInfo.txt",
+        "Transcript": "./Quests/Missing My Mummy/Missing_My_Mummy_transcript.json",
+        "CTranscript": "./Quests/Missing My Mummy/CompareMissing_My_Mummy.json"
     },
     {
         "Quest": "Missing Pressumed Death",
-        "Path": "./Quests/Missing Pressumed Death/MissingPressumedDeathInfo.txt"
+        "Path": "./Quests/Missing Pressumed Death/MissingPressumedDeathInfo.txt",
+        "Transcript": "./Quests/Missing Pressumed Death/Missing,_Presumed_Death_transcript.json",
+        "CTranscript": "./Quests/Missing Pressumed Death/CompareMissing,_Presumed_Death.json"
     },
     {
         "Quest": "Monk's Friend",
-        "Path": "./Quests/Monk's Friend/MonksFriendInfo.txt"
+        "Path": "./Quests/Monk's Friend/MonksFriendInfo.txt",
+        "Transcript": "./Quests/Monk's Friend/Monk's_Friend_transcript.json",
+        "CTranscript": "./Quests/Monk's Friend/CompareMonk's_Friend.json"
     },
     {
         "Quest": "Monkey Madness",
-        "Path": "./Quests/Monkey Madness/MonkeyMadnessInfo.txt"
+        "Path": "./Quests/Monkey Madness/MonkeyMadnessInfo.txt",
+        "Transcript": "./Quests/Monkey Madness/Monkey_Madness_transcript.json",
+        "CTranscript": "./Quests/Monkey Madness/CompareMonkey_Madness.json"
     },
     {
         "Quest": "Mountain Daughter",
-        "Path": "./Quests/Mountain Daughter/MountainDaughterInfo.txt"
+        "Path": "./Quests/Mountain Daughter/MountainDaughterInfo.txt",
+        "Transcript": "./Quests/Mountain Daughter/Mountain_Daughter_transcript.json",
+        "CTranscript": "./Quests/Mountain Daughter/CompareMountain_Daughter.json"
     },
     {
         "Quest": "Mourning's End Part I",
-        "Path": "./Quests/Mourning's End Part I/MourningsEndPart1Info.txt"
+        "Path": "./Quests/Mourning's End Part I/MourningsEndPart1Info.txt",
+        "Transcript": "./Quests/Mourning's End Part I/Mourning's_End_Part_I_transcript.json",
+        "CTranscript": "./Quests/Mourning's End Part I/CompareMourning's_End_Part_I.json"
     },
     {
         "Quest": "Mourning's End Part II",
-        "Path": "./Quests/Mourning's End Part II/MourningsEndPart2Info.txt"
+        "Path": "./Quests/Mourning's End Part II/MourningsEndPart2Info.txt",
+        "Transcript": "./Quests/Mourning's End Part II/Mourning's_End_Part_II_transcript.json",
+        "CTranscript": "./Quests/Mourning's End Part II/CompareMourning's_End_Part_II.json"
     },
     {
         "Quest": "Murder Mystery",
-        "Path": "./Quests/Murder Mystery/MurderMysteryInfo.txt"
+        "Path": "./Quests/Murder Mystery/MurderMysteryInfo.txt",
+        "Transcript": "./Quests/Murder Mystery/Murder_Mystery_transcript.json",
+        "CTranscript": "./Quests/Murder Mystery/CompareMurder_Mystery.json"
     },
     {
         "Quest": "Murder on the Border",
-        "Path": "./Quests/Murder on the Border/MurderOnTheBorderInfo.txt"
+        "Path": "./Quests/Murder on the Border/MurderOnTheBorderInfo.txt",
+        "Transcript": "./Quests/Murder on the Border/Murder_on_the_Border_transcript.json",
+        "CTranscript": "./Quests/Murder on the Border/CompareMurder_on_the_Border.json"
     },
     {
         "Quest": "My Arm's Big Adventure",
-        "Path": "./Quests/My Arm's Big Adventure/MyArmsBigAdventureInfo.txt"
+        "Path": "./Quests/My Arm's Big Adventure/MyArmsBigAdventureInfo.txt",
+        "Transcript": "./Quests/My Arm's Big Adventure/My_Arm's_Big_Adventure_transcript.json",
+        "CTranscript": "./Quests/My Arm's Big Adventure/CompareMy_Arm's_Big_Adventure.json"
     },
     {
         "Quest": "Myths of the White Lands",
-        "Path": "./Quests/Myths of the White Lands/MythsOfTheWhiteLandsInfo.txt"
+        "Path": "./Quests/Myths of the White Lands/MythsOfTheWhiteLandsInfo.txt",
+        "Transcript": "./Quests/Myths of the White Lands/Myths_of_the_White_Lands_transcript.json",
+        "CTranscript": "./Quests/Myths of the White Lands/CompareMyths_of_the_White_Lands.json"
     },
     {
         "Quest": "Nature Spirit",
-        "Path": "./Quests/Nature Spirit/NatureSpiritInfo.txt"
+        "Path": "./Quests/Nature Spirit/NatureSpiritInfo.txt",
+        "Transcript": "./Quests/Nature Spirit/Nature_Spirit_transcript.json",
+        "CTranscript": "./Quests/Nature Spirit/CompareNature_Spirit.json"
     },
     {
         "Quest": "Necromancy",
-        "Path": "./Quests/Necromancy/Necromancy.txt"
+        "Path": "./Quests/Necromancy/Necromancy.txt",
+        "Transcript": "./Quests/Necromancy/Necromancy_transcript.json",
+        "CTranscript": ""
     },
     {
         "Quest": "New Foundations",
-        "Path": "./Quests/New Foundations/NewFoundationsInfo.txt"
+        "Path": "./Quests/New Foundations/NewFoundationsInfo.txt",
+        "Transcript": "./Quests/New Foundations/New_Foundations_transcript.json",
+        "CTranscript": "./Quests/New Foundations/CompareNew_Foundations.json"
     },
     {
         "Quest": "Nomad's Elegy",
-        "Path": "./Quests/Nomad's Elegy/NomadsElegyInfo.txt"
+        "Path": "./Quests/Nomad's Elegy/NomadsElegyInfo.txt",
+        "Transcript": "./Quests/Nomad's Elegy/Nomad's_Elegy_transcript.json",
+        "CTranscript": "./Quests/Nomad's Elegy/CompareNomad's_Elegy.json"
+    },
+    {
+        "Quest": "Nomad's Requiem",
+        "Path": "./Quests/Nomad's Requiem/NomadsRequiemInfo.txt",
+        "Transcript": "./Quests/Nomad's Requiem/Nomad's_Requiem_transcript.json",
+        "CTranscript": "./Quests/Nomad's Requiem/CompareNomad's_Requie.json"
     },
     {
         "Quest": "Observatory Quest",
-        "Path": "./Quests/Observatory Quest/ObservatoryInfo.txt"
+        "Path": "./Quests/Observatory Quest/ObservatoryInfo.txt",
+        "Transcript": "./Quests/Observatory Quest/Observatory_Quest_transcript.json",
+        "CTranscript": "./Quests/Observatory Quest/CompareObservatory_Quest.json"
     },
     {
         "Quest": "Olaf's Quest",
-        "Path": "./Quests/Olaf's Quest/OlafsQuestInfo.txt"
+        "Path": "./Quests/Olaf's Quest/OlafsQuestInfo.txt",
+        "Transcript": "./Quests/Olaf's Quest/Olaf's_Quest_transcript.json",
+        "CTranscript": "./Quests/Olaf's Quest/CompareOlaf's_Quest.json"
     },
     {
         "Quest": "Once Upon a Slime",
-        "Path": "./Quests/Once Upon a Slime/OnceUponASlimeInfo.txt"
+        "Path": "./Quests/Once Upon a Slime/OnceUponASlimeInfo.txt",
+        "Transcript": "./Quests/Once Upon a Slime/Once_Upon_a_Slime_transcript.json",
+        "CTranscript": "./Quests/Once Upon a Slime/CompareOnce_Upon_a_Slime.json"
     },
     {
         "Quest": "Once Upon a Time in Gielinor",
-        "Path": "./Quests/Once Upon a Time in Gielinor/OnceUponATimeInGielinorInfo.txt"
+        "Path": "./Quests/Once Upon a Time in Gielinor/OnceUponATimeInGielinorInfo.txt",
+        "Transcript": "",
+        "CTranscript": ""
     },
     {
         "Quest": "One of a Kind",
-        "Path": "./Quests/One of a Kind/OneOfAKingInfo.txt"
+        "Path": "./Quests/One of a Kind/OneOfAKingInfo.txt",
+        "Transcript": "./Quests/One of a Kind/One_of_a_Kind_transcript.json",
+        "CTranscript": "./Quests/One of a Kind/CompareOne_of_a_Kind.json"
     },
     {
         "Quest": "One Piercing Note",
-        "Path": "./Quests/One Piercing Note/OnePiercingNoteInfo.txt"
+        "Path": "./Quests/One Piercing Note/OnePiercingNoteInfo.txt",
+        "Transcript": "./Quests/One Piercing Note/One_Piercing_Note_transcript.json",
+        "CTranscript": "./Quests/One Piercing Note/CompareOne_Piercing_Note.json"
     },
     {
         "Quest": "One Small Favour",
-        "Path": "./Quests/One Small Favour/OneSmallFavourInfo.txt"
+        "Path": "./Quests/One Small Favour/OneSmallFavourInfo.txt",
+        "Transcript": "./Quests/One Small Favour/One_Small_Favour_transcript.json",
+        "CTranscript": "./Quests/One Small Favour/CompareOne_Small_Favour.json"
     },
     {
         "Quest": "Our Man in the North",
-        "Path": "./Quests/Our Man in the North/OurManInTheNorthInfo.txt"
+        "Path": "./Quests/Our Man in the North/OurManInTheNorthInfo.txt",
+        "Transcript": "./Quests/Our Man in the North/Our_Man_in_the_North_transcript.json",
+        "CTranscript": "./Quests/Our Man in the North/CompareOur_Man_in_the_North.json"
     },
     {
         "Quest": "Perils of Ice Mountain",
-        "Path": "./Quests/Perils of Ice Mountain/PerilsOfIceMountainInfo.txt"
+        "Path": "./Quests/Perils of Ice Mountain/PerilsOfIceMountainInfo.txt",
+        "Transcript": "./Quests/Perils of Ice Mountain/Perils_of_Ice_Mountain_transcript.json",
+        "CTranscript": "./Quests/Perils of Ice Mountain/ComparePerils_of_Ice_Mountain.json"
     },
     {
         "Quest": "Phite Club",
-        "Path": "./Quests/Phite Club/PhiteClubInfo.txt"
+        "Path": "./Quests/Phite Club/PhiteClubInfo.txt",
+        "Transcript": "./Quests/Phite Club/Phite_Club_transcript.json",
+        "CTranscript": "./Quests/Phite Club/ComparePhite_Club.json"
     },
     {
         "Quest": "Pieces of Hate",
-        "Path": "./Quests/Pieces of Hate/PieceOfHateInfo.txt"
+        "Path": "./Quests/Pieces of Hate/PieceOfHateInfo.txt",
+        "Transcript": "./Quests/Pieces of Hate/Pieces_of_Hate_transcript.json",
+        "CTranscript": "./Quests/Pieces of Hate/ComparePieces_of_Hate.json"
     },
     {
         "Quest": "Pirate's Treasure",
-        "Path": "./Quests/Pirate's Treasure/PiratesTreasureInfo.txt"
+        "Path": "./Quests/Pirate's Treasure/PiratesTreasureInfo.txt",
+        "Transcript": "./Quests/Pirate's Treasure/Pirate's_Treasure_transcript.json",
+        "CTranscript": "./Quests/Pirate's Treasure/ComparePirate's_Treasure.json"
     },
     {
         "Quest": "Plague City",
-        "Path": "./Quests/Plague City/PlagueCityInfo.txt"
+        "Path": "./Quests/Plague City/PlagueCityInfo.txt",
+        "Transcript": "./Quests/Plague City/Plague_City_transcript.json",
+        "CTranscript": "./Quests/Plague City/ComparePlague_City.json"
     },
     {
         "Quest": "Plague's End",
-        "Path": "./Quests/Plague's End/PlaguesEndInfo.txt"
+        "Path": "./Quests/Plague's End/PlaguesEndInfo.txt",
+        "Transcript": "./Quests/Plague's End/Plague's_End_transcript.json",
+        "CTranscript": "./Quests/Plague's End/ComparePlague's_End.json"
     },
     {
         "Quest": "Priest in Peril",
-        "Path": "./Quests/Priest in Peril/PriestInPerilInfo.txt"
+        "Path": "./Quests/Priest in Peril/PriestInPerilInfo.txt",
+        "Transcript": "./Quests/Priest in Peril/Priest_in_Peril_transcript.json",
+        "CTranscript": "./Quests/Priest in Peril/ComparePriest_in_Peril.json"
     },
     {
         "Quest": "Rag and Bone Man",
-        "Path": "./Quests/Rag and Bone Man/RagAndBoneManInfo.txt"
+        "Path": "./Quests/Rag and Bone Man/RagAndBoneManInfo.txt",
+        "Transcript": "./Quests/Rag and Bone Man/Rag_and_Bone_Man_transcript.json",
+        "CTranscript": "./Quests/Rag and Bone Man/CompareRag_and_Bone_Man.json"
     },
     {
         "Quest": "Ratcatchers",
-        "Path": "./Quests/Ratcatchers/RatcatchersInfo.txt"
+        "Path": "./Quests/Ratcatchers/RatcatchersInfo.txt",
+        "Transcript": "./Quests/Ratcatchers/Rat_Catchers_transcript.json",
+        "CTranscript": "./Quests/Ratcatcher/CompareRat_Catchers.json"
     },
     {
         "Quest": "Recipe for Disaster",
-        "Path": "./Quests/Recipe for Disaster/RecipeForDisasterInfo.txt"
+        "Path": "./Quests/Recipe for Disaster/RecipeForDisasterInfo.txt",
+        "Transcript": "",
+        "CTranscript": ""
+    },
+    {
+        "Quest": "Recipe for Disaster: Freeing the Goblin Generals",
+        "Path": "./Quests/Recipe for Disaster Freeing the Goblin Generals/FreeingTheGoblinInfo.txt",
+        "Transcript": "./Quests/Recipe for Disaster Freeing the Goblin Generals/Freeing_the_Goblin_Generals_transcript.json",
+        "CTranscript": ""
+    },
+    {
+        "Quest": "Recipe for Disaster: Freeing King Awowogei",
+        "Path": "./Quests/Recipe for Disaster Freeing King Awowogei/FreeingKingAwowogeiInfo.txt",
+        "Transcript": "./Quests/Recipe for Disaster Freeing King Awowogei/Freeing_King_Awowogei_transcript.json",
+        "CTranscript": ""
+    },
+    {
+        "Quest": "Recipe for Disaster: Freeing Evil Dave",
+        "Path": "./Quests/Recipe for Disaster Freeing Evil Dave/FreeingEvilDaveInfo.txt",
+        "Transcript": "./Quests/Recipe for Disaster Freeing Evil Dave/Freeing_Evil_Dave_transcript.json",
+        "CTranscript": ""
+    },
+    {
+        "Quest": "Recipe for Disaster: Freeing the Mountain Dwarf",
+        "Path": "./Quests/Recipe for Disaster Freeing the Mountain Dwarf/FreeingtheMountainDwarfInfo.txt",
+        "Transcript": "./Quests/Recipe for Disaster Freeing the Mountain Dwarf/Freeing_the_Mountain_Dwarf_transcript.json",
+        "CTranscript": ""
+    },
+    {
+        "Quest": "Recipe for Disaster: Freeing the Lumbridge Sage",
+        "Path": "./Quests/Recipe for Disaster Freeing the Lumbridge Sage/FreeingtheLumbridgeSageInfo.txt",
+        "Transcript": "./Quests/Recipe for Disaster Freeing the Lumbridge Sage/Freeing_the_Lumbridge_Sage_transcript.json",
+        "CTranscript": ""
+    },
+    {
+        "Quest": "Recipe for Disaster: Freeing Pirate Pete",
+        "Path": "./Quests/Recipe for Disaster Freeing Pirate Pete/FreeingPiratePeteInfo.txt",
+        "Transcript": "./Quests/Recipe for Disaster Freeing Pirate Pete/Freeing_Pirate_Pete_transcript.json",
+        "CTranscript": ""
+    },
+    {
+        "Quest": "Recipe for Disaster: Freeing Skrach Uglogwee",
+        "Path": "./Quests/Recipe for Disaster Freeing Skrach Uglogwee/FreeingSkrachUglogweeInfo.txt",
+        "Transcript": "./Quests/Recipe for Disaster Freeing Skrach Uglogwee/Freeing_Skrach_Uglogwee_transcript.json",
+        "CTranscript": ""
+    },
+    {
+        "Quest": "Recipe for Disaster: Freeing Sir Amik Varze",
+        "Path": "./Quests/Recipe for Disaster Freeing Sir Amik Varze/FreeingSirAmikVarzeInfo.txt",
+        "Transcript": "./Quests/Recipe for Disaster Freeing Sir Amik Varze/Freeing_Sir_Amik_Varze_transcript.json",
+        "CTranscript": ""
+    },
+    {
+        "Quest": "Recipe for Disaster: Defeating The Culinaromancer",
+        "Path": "./Quests/Recipe for Disaster Defeating The Culinaromancer/DefeatingTheCulinaromancerInfo.txt",
+        "Transcript": "./Quests/Recipe for Disaster Defeating The Culinaromancer/Defeating_the_Culinaromancer_transcript.json",
+        "CTranscript": ""
     },
     {
         "Quest": "Regicide",
-        "Path": "./Quests/Regicide/RegicideInfo.txt"
+        "Path": "./Quests/Regicide/RegicideInfo.txt",
+        "Transcript": "./Quests/Regicide/Regicide_transcript.json",
+        "CTranscript": "./Quests/Regicide/CompareRegicide.json"
     },
     {
         "Quest": "Ritual of the Mahjarrat",
-        "Path": "./Quests/Ritual of the Mahjarrat/RitualOfTheMahjarratInfo.txt"
+        "Path": "./Quests/Ritual of the Mahjarrat/RitualOfTheMahjarratInfo.txt",
+        "Transcript": "./Quests/Ritual of the Mahjarrat/Ritual_of_the_Mahjarrat_transcript.json",
+        "CTranscript": "./Quests/Ritual of the Mahjarrat/CompareRitual_of_the_Mahjarrat.json"
     },
     {
         "Quest": "River of Blood",
-        "Path": "./Quests/River of Blood/RiverOfBloodInfo.txt"
+        "Path": "./Quests/River of Blood/RiverOfBloodInfo.txt",
+        "Transcript": "./Quests/River of Blood/River_of_Blood_transcript.json",
+        "CTranscript": "./Quests/River of Blood/CompareRiver_of_Blood.json"
     },
     {
         "Quest": "Roving Elves",
-        "Path": "./Quests/Roving Elves/RovingElvesInfo.txt"
+        "Path": "./Quests/Roving Elves/RovingElvesInfo.txt",
+        "Transcript": "./Quests/Roving Elves/Roving_Elves_transcript.json",
+        "CTranscript": "./Quests/Roving Elves/CompareRoving_Elves.json"
     },
     {
         "Quest": "Royal Trouble",
-        "Path": "./Quests/Royal Trouble/RoyalTroubleInfo.txt"
+        "Path": "./Quests/Royal Trouble/RoyalTroubleInfo.txt",
+        "Transcript": "./Quests/Royal Trouble/Royal_Trouble_transcript.json",
+        "CTranscript": "./Quests/Royal Trouble/CompareRoyal_Trouble.json"
     },
     {
         "Quest": "Rum Deal",
-        "Path": "./Quests/Rum Deal/RumDealInfo.txt"
+        "Path": "./Quests/Rum Deal/RumDealInfo.txt",
+        "Transcript": "./Quests/Rum Deal/Rum_Deal_transcript.json",
+        "CTranscript": "./Quests/Rum Deal/CompareRum_Deal.json"
     },
     {
         "Quest": "Rune Mysteries",
-        "Path": "./Quests/Rune Mysteries/RuneMysteriesInfo.txt"
+        "Path": "./Quests/Rune Mysteries/RuneMysteriesInfo.txt",
+        "Transcript": "./Quests/Rune Mysteries/Rune_Mysteries_transcript.json",
+        "CTranscript": "./Quests/Rune Mysteries/CompareRune_Mysteries.json"
     },
     {
         "Quest": "Salt in the Wound",
-        "Path": "./Quests/Salt in the Wound/SaltInTheWoundInfo.txt"
+        "Path": "./Quests/Salt in the Wound/SaltInTheWoundInfo.txt",
+        "Transcript": "./Quests/Salt in the Wound/Salt_in_the_Wound_transcript.json",
+        "CTranscript": "./Quests/Salt in the Wound/CompareSalt_in_the_Wound.json"
     },
     {
         "Quest": "Scorpion Catcher",
-        "Path": "./Quests/Scorpion Catcher/ScorpionCatcherInfo.txt"
+        "Path": "./Quests/Scorpion Catcher/ScorpionCatcherInfo.txt",
+        "Transcript": "./Quests/Scorpion Catcher/Scorpion_Catcher_transcript.json",
+        "CTranscript": "./Quests/Scorpion Catcher/CompareScorpion_Catcher.json"
     },
     {
         "Quest": "Sea Slug",
-        "Path": "./Quests/Sea Slug/SeaSlugInfo.txt"
+        "Path": "./Quests/Sea Slug/SeaSlugInfo.txt",
+        "Transcript": "./Quests/Sea Slug/Sea_Slug_transcript.json",
+        "CTranscript": "./Quests/Sea Slug/CompareSea_Slug.json"
     },
     {
         "Quest": "Shades of Mort'ton",
-        "Path": "./Quests/Shades of Mort'ton/ShadesOfMorttonInfo.txt"
+        "Path": "./Quests/Shades of Mortton/ShadesOfMortonInfo.txt",
+        "Transcript": "./Quests/Shades of Mortton/Shades_of_Mortton_transcript.json",
+        "CTranscript": "./Quests/Shades of Mortton/CompareShades_of_Mortton.json"
     },
     {
-        "Quest": "Shadow over Ashdale",
-        "Path": "./Quests/Shadow over Ashdale/ShadowOverAshdaleInfo.txt"
+        "Quest": "A Shadow over Ashdale",
+        "Path": "./Quests/A Shadow over Ashdale/ShadowOverAshdaleInfo.txt",
+        "Transcript": "./Quests/A Shadow over Ashdale/A_Shadow_over_Ashdale_transcript.json",
+        "CTranscript": "./Quests/A Shadow over Ashdale/CompareA_Shadow_over_Ashdale.json"
     },
     {
         "Quest": "Sheep Herder",
-        "Path": "./Quests/Sheep Herder/SheepHerderInfo.txt"
-    },
-    {
-        "Quest": "Sheep Shearer",
-        "Path": "./Quests/Sheep Shearer/SheepShearerInfo.txt"
+        "Path": "./Quests/Sheep Herder/SheepHerderInfo.txt",
+        "Transcript": "./Quests/Sheep Herder/Sheep_Herder_transcript.json",
+        "CTranscript": "./Quests/Sheep Herder/CompareSheep_Herder.json"
     },
     {
         "Quest": "Shield of Arrav",
-        "Path": "./Quests/Shield of Arrav/ShieldOfArravInfo.txt"
+        "Path": "./Quests/Shield of Arrav/ShieldOfArravInfo.txt",
+        "Transcript": "./Quests/Shield of Arrav/Shield_of_Arrav_transcript.json",
+        "CTranscript": "./Quests/Shield of Arrav/CompareShield_of_Arrav.json"
     },
     {
         "Quest": "Shilo Village",
-        "Path": "./Quests/Shilo Village/ShiloVillageInfo.txt"
+        "Path": "./Quests/Shilo Village/ShiloVillageInfo.txt",
+        "Transcript": "./Quests/Shilo Village/Shilo_Village_transcript.json",
+        "CTranscript": "./Quests/Shilo Village/CompareShilo_Village.json"
     },
     {
         "Quest": "A Clockwork Syringe",
-        "Path": "./Quests/A Clockwork Syringe/AClockworkSyringeInfo.txt"
+        "Path": "./Quests/A Clockwork Syringe/AClockworkSyringeInfo.txt",
+        "Transcript": "./Quests/A Clockwork Syringe/A_Clockwork_Syringe_transcript.json",
+        "CTranscript": "./Quests/A Clockwork Syringe/CompareA_Clockwork_Syringe.json"
     },
     {
         "Quest": "Shilo Village",
-        "Path": "./Quests/Shilo Village/ShiloVillageInfo.txt"
+        "Path": "./Quests/Shilo Village/ShiloVillageInfo.txt",
+        "Transcript": "./Quests/Shilo Village/Shilo_Village_transcript.json",
+        "CTranscript": "./Quests/Shilo Village/CompareShilo_Village.json"
     },
     {
         "Quest": "Sins of the Father",
-        "Path": "./Quests/Sins of the Father/SinsOfTheFatherInfo.txt"
+        "Path": "./Quests/Sins of the Father/SinsOfTheFatherInfo.txt",
+        "Transcript": "./Quests/Sins of the Father/Sins_of_the_Father_transcript.json",
+        "CTranscript": "./Quests/Sins of the Father/CompareSins_of_the_Father.json"
     },
     {
         "Quest": "Sliske's Endgame",
-        "Path": "./Quests/Sliske's Endgame/SliskesEndGameInfo.txt"
+        "Path": "./Quests/Sliske's Endgame/SliskesEndGameInfo.txt",
+        "Transcript": "./Quests/Sliske's Endgame/Sliske's_Endgame_transcript.json",
+        "CTranscript": "./Quests/Sliske's Endgame/CompareSliske's_Endgame"
     },
     {
         "Quest": "Smoking Kills",
-        "Path": "./Quests/Smoking Kills/SmokingKillsInfo.txt"
+        "Path": "./Quests/Smoking Kills/SmokingKillsInfo.txt",
+        "Transcript": "./Quests/Smoking Kills/Smoking_Kills_transcript.json",
+        "CTranscript": "./Quests/Smoking Kills/CompareSmoking_Kills.json"
     },
     {
         "Quest": "Some Like It Cold",
-        "Path": "./Quests/Some Like It Cold/SomeLikeItColdInfo.txt"
+        "Path": "./Quests/Some Like It Cold/SomeLikeItColdInfo.txt",
+        "Transcript": "./Quests/Some Like It Cold/Some_Like_It_Cold_transcript.json",
+        "CTranscript": "./Quests/Some Like It Cold/CompareSome_Like_It_Cold.json"
     },
     {
         "Quest": "Song from the Depths",
-        "Path": "./Quests/Song from the Depths/SongFromTheDepthsInfo.txt"
+        "Path": "./Quests/Song from the Depths/SongFromTheDepthsInfo.txt",
+        "Transcript": "./Quests/Song from the Depths/Song_from_the_Depths_transcript.json",
+        "CTranscript": "./Quests/Song from the Depths/CompareSong_from_the_Depths.json"
     },
     {
         "Quest": "Spirit of Summer",
-        "Path": "./Quests/Spirit of Summer/SpiritOfSummerInfo.txt"
+        "Path": "./Quests/Spirit of Summer/SpiritOfSummerInfo.txt",
+        "Transcript": "./Quests/Spirit of Summer/Spirit_of_Summer_transcript.json",
+        "CTranscript": "./Quests/Spirit of Summer/CompareSpirit_of_Summer.json"
     },
     {
         "Quest": "Stolen Hearts",
-        "Path": "./Quests/Stolen Hearts/StolenHeartsInfo.txt"
+        "Path": "./Quests/Stolen Hearts/StolenHeartsInfo.txt",
+        "Transcript": "./Quests/Stolen Hearts/Stolen_Hearts_transcript.json",
+        "CTranscript": "./Quests/Stolen Hearts/CompareStolen_Hearts.json"
     },
     {
         "Quest": "Succession",
-        "Path": "./Quests/Succession/SuccessionInfo.txt"
+        "Path": "./Quests/Succession/SuccessionInfo.txt",
+        "Transcript": "./Quests/Succession/Succession_transcript.json",
+        "CTranscript": "./Quests/Succession/CompareSuccession.json"
     },
     {
         "Quest": "Summer's End",
-        "Path": "./Quests/Summer's End/SummersEndInfo.txt"
+        "Path": "./Quests/Summer's End/SummersEndInfo.txt",
+        "Transcript": "./Quests/Summer's End/Summer's_End_transcript.json",
+        "CTranscript": "./Quests/Summer's End/ComparingSummer's_End.json"
     },
     {
         "Quest": "Swan Song",
-        "Path": "./Quests/Swan Song/SwanSongInfo.txt"
+        "Path": "./Quests/Swan Song/SwanSongInfo.txt",
+        "Transcript": "./Quests/Swan Song/Swan_Song_transcript.json",
+        "CTranscript": "./Quests/Swan Song/CompareSwan_Song.json"
     },
     {
         "Quest": "Swept Away",
-        "Path": "./Quests/Swept Away/SweptAwayInfo.txt"
+        "Path": "./Quests/Swept Away/SweptAwayInfo.txt",
+        "Transcript": "./Quests/Swept Away/Swept_Away_transcript.json",
+        "CTranscript": "./Quests/Swept Away/CompareSwept_Away.json"
     },
     {
         "Quest": "Tai Bwo Wannai Trio",
-        "Path": "./Quests/Tai Bwo Wannai Trio/TaiBwoWannaiTrioInfo.txt"
+        "Path": "./Quests/Tai Bwo Wannai Trio/TaiBwoWannaiTrioInfo.txt",
+        "Transcript": "./Quests/Tai Bwo Wannai Trio/Tai_Bwo_Wannai_Trio_transcript.json",
+        "CTranscript": "./Quests/Tai Bwo Wannai Trio/CompareTai_Bwo_Wannai_Trio.json"
     },
     {
         "Quest": "Tears of Guthix",
-        "Path": "./Quests/Tears of Guthix/TearsOfGuthixInfo.txt"
+        "Path": "./Quests/Tears of Guthix/TearsOfGuthixInfo.txt",
+        "Transcript": "./Quests/Tears of Guthix/Tears_of_Guthix_(quest)_transcript.json",
+        "CTranscript": "./Quests/Tears of Guthix/CompareTears_of_Guthix.json"
     },
     {
         "Quest": "Temple of Ikov",
-        "Path": "./Quests/Temple of Ikov/TempleOfIkovInfo.txt"
+        "Path": "./Quests/Temple of Ikov/TempleOfIkovInfo.txt",
+        "Transcript": "./Quests/Temple of Ikov/Temple_of_Ikov_transcript.json",
+        "CTranscript": "./Quests/Temple of Ikov/CompareTemple_of_Ikov.json"
     },
     {
         "Quest": "That Old Black Magic",
-        "Path": "./Quests/That Old Black Magic/ThatOldBlackMagicInfo.txt"
+        "Path": "./Quests/That Old Black Magic/ThatOldBlackMagicInfo.txt",
+        "Transcript": "./Quests/That Old Black Magic/That_Old_Black_Magic_transcript.json",
+        "CTranscript": "./Quests/That Old Black Magic/CompareThat_Old_Black_Magic.json"
     },
     {
         "Quest": "The Blood Pact",
-        "Path": "./Quests/The Blood Pact/TheBloodPactInfo.txt"
+        "Path": "./Quests/The Blood Pact/TheBloodPactInfo.txt",
+        "Transcript": "./Quests/The Blood Pact/The_Blood_Pact_transcript.json",
+        "CTranscript": "./Quests/The Blood Pact/CompareThe_Blood_Pact.json"
     },
     {
         "Quest": "The Branches of Darkmeyer",
-        "Path": "./Quests/The Branches of Darkmeyer/TheBranchesOfDarkmeyerInfo.txt"
+        "Path": "./Quests/The Branches of Darkmeyer/TheBranchesOfDarkmeyerInfo.txt",
+        "Transcript": "./Quests/The Branches of Darkmeyer/The_Branches_of_Darkmeyer_transcript.json",
+        "CTranscript": "./Quests/The Branches of Darkmeyer/CompareThe_Branches_of_Darkmeyer.json"
     },
     {
         "Quest": "The Brink of Extinction",
-        "Path": "./Quests/The Brink of Extinction/TheBrinkOfExtinctionInfo.txt"
+        "Path": "./Quests/The Brink of Extinction/TheBrinkOfExtinctionInfo.txt",
+        "Transcript": "./Quests/The Brink of Extinction/The_Brink_of_Extinction_transcript.json",
+        "CTranscript": "./Quests/The Brink of Extinction/CompareThe_Brink_of_Extinction.json"
     },
     {
         "Quest": "The Chosen Commander",
-        "Path": "./Quests/The Chosen Commander/TheChosenCommanderInfo.txt"
+        "Path": "./Quests/The Chosen Commander/TheChosenCommanderInfo.txt",
+        "Transcript": "./Quests/The Chosen Commander/The_Chosen_Commander_transcript.json",
+        "CTranscript": "./Quests/The Chosen Commander/CompareThe_Chosen_Commander.json"
     },
     {
         "Quest": "The Curse of Arrav",
-        "Path": "./Quests/The Curse of Arrav/TheCurseOfArravInfo.txt"
+        "Path": "./Quests/The Curse of Arrav/TheCurseOfArravInfo.txt",
+        "Transcript": "./Quests/The Curse of Arrav/The_Curse_of_Arrav_transcript.json",
+        "CTranscript": "./Quests/The Curse of Arrav/CompareThe_Curse_of_Arrav.json"
     },
     {
         "Quest": "The Darkness of Hallowvale",
-        "Path": "./Quests/The Darkness of Hallowvale/TheDarknessOfHallowvaleInfo.txt"
+        "Path": "./Quests/The Darkness of Hallowvale/TheDarknessOfHallowvaleInfo.txt",
+        "Transcript": "./Quests/The Darkness of Hallowvale/The_Darkness_of_Hallowvale_transcript.json",
+        "CTranscript": "./Quests/The Darkness of Hallowvale/CompareThe_Darkness_of_Hallowvale.json"
     },
     {
         "Quest": "The Death of Chivalry",
-        "Path": "./Quests/The Death of Chivalry/TheDeathOfChivalryInfo.txt"
+        "Path": "./Quests/The Death of Chivalry/TheDeathOfChivalryInfo.txt",
+        "Transcript": "./Quests/The Death of Chivalry/The_Death_of_Chivalry_transcript.json",
+        "CTranscript": "./Quests/The Death of Chivalry/CompareThe_Death_of_Chivalry.json"
     },
     {
         "Quest": "The Dig Site",
-        "Path": "./Quests/The Dig Site/TheDigSiteInfo.txt"
+        "Path": "./Quests/The Dig Site/TheDigSiteInfo.txt",
+        "Transcript": "./Quests/The Dig Site/The_Dig_Site_transcript.json",
+        "CTranscript": "./Quests/The Dig Site/CompareThe_Dig_Site.json"
     },
     {
         "Quest": "The Elder Kiln",
-        "Path": "./Quests/The Elder Kiln/TheElderKilnInfo.txt"
+        "Path": "./Quests/The Elder Kiln/TheElderKilnInfo.txt",
+        "Transcript": "./Quests/The Elder Kiln/The_Elder_Kiln_transcript.json",
+        "CTranscript": "./Quests/The Elder Kiln/CompareThe_Elder_Kiln.json"
     },
     {
         "Quest": "The Eyes of Glouphrie",
-        "Path": "./Quests/The Eyes of Glouphrie/TheEyesOfGlouphrieInfo.txt"
+        "Path": "./Quests/The Eyes of Glouphrie/TheEyesOfGlouphrieInfo.txt",
+        "Transcript": "./Quests/The Eyes of Glouphrie/The_Eyes_of_Glouphrie_transcript.json",
+        "CTranscript": "./Quests/The Eyes of Glouphrie/CompareThe_Eyes_of_Glouphrie.json"
     },
     {
         "Quest": "The Feud",
-        "Path": "./Quests/The Feud/TheFeud.txt"
+        "Path": "./Quests/The Feud/TheFeud.txt",
+        "Transcript": "./Quests/The Feud/The_Feud_transcript.json",
+        "CTranscript": "./Quests/The Feud/CompareThe_Feud.json"
     },
     {
         "Quest": "The Firemaker's Curse",
-        "Path": "./Quests/The Firemaker's Curse/TheFiremakersCurseInfo.txt"
+        "Path": "./Quests/The Firemaker's Curse/TheFiremakersCurseInfo.txt",
+        "Transcript": "./Quests/The Firemaker's Curse/The_Firemaker's_Curse_transcript.json",
+        "CTranscript": "./Quests/The Firemaker's Curse/CompareThe_Firemaker's_Curse.json"
     },
     {
         "Quest": "The Fremennik Isles",
-        "Path": "./Quests/The Fremennik Isles/TheFremennikIslesInfo.txt"
+        "Path": "./Quests/The Fremennik Isles/TheFremennikIslesInfo.txt",
+        "Transcript": "./Quests/The Fremennik Isles/The_Fremennik_Isles_transcript.json",
+        "CTranscript": "./Quests/The Fremennik Isles/CompareThe_Fremennik_Isles.json"
     },
     {
         "Quest": "The Fremennik Trials",
-        "Path": "./Quests/The Fremennik Trials/TheFremennikTrialsInfo.txt"
+        "Path": "./Quests/The Fremennik Trials/TheFremennikTrialsInfo.txt",
+        "Transcript": "./Quests/The Fremennik Trials/The_Fremennik_Trials_transcript.json",
+        "CTranscript": "./Quests/The Fremennik Trial/CompareThe_Fremennik_Trials"
     },
     {
         "Quest": "The Giant Dwarf",
-        "Path": "./Quests/The Giant Dwarf/TheGiantDwarfInfo.txt"
+        "Path": "./Quests/The Giant Dwarf/TheGiantDwarfInfo.txt",
+        "Transcript": "./Quests/The Giant Dwarf/The_Giant_Dwarf_transcript.json",
+        "CTranscript": "./Quests/The Giant Dwarf/CompareThe_Giant_Dwarf.json"
     },
     {
         "Quest": "The Golem",
-        "Path": "./Quests/The Golem/GowerQuestInfo.txt"
+        "Path": "./Quests/The Golem/GowerQuestInfo.txt",
+        "Transcript": "./Quests/The Golem/The_Golem_transcript.json",
+        "CTranscript": "./Quests/The Golem/CompareThe_Golem.json"
     },
     {
         "Quest": "The Golem",
-        "Path": "./Quests/The Golem/TheGolemInfo.txt"
+        "Path": "./Quests/The Golem/TheGolemInfo.txt",
+        "Transcript": "./Quests/The Golem/The_Golem_transcript.json",
+        "CTranscript": "./Quests/The Golem/CompareThe_Golem.json"
     },
     {
         "Quest": "The Grand Tree",
-        "Path": "./Quests/The Grand Tree/TheGrandTreeInfo.txt"
+        "Path": "./Quests/The Grand Tree/TheGrandTreeInfo.txt",
+        "Transcript": "./Quests/The Grand Tree/The_Grand_Tree_transcript.json",
+        "CTranscript": "./Quests/The Grand Tree/CompareThe_Grand_Tree.json"
     },
     {
         "Quest": "The Great Brain Robbery",
-        "Path": "./Quests/The Great Brain Robbery/TheGreatBrainRobberyInfo.txt"
+        "Path": "./Quests/The Great Brain Robbery/TheGreatBrainRobberyInfo.txt",
+        "Transcript": "./Quests/The Great Brain Robbery/The_Great_Brain_Robbery_transcript.json",
+        "CTranscript": "./Quests/The Great Brain Robbery/CompareThe_Great_Brain_Robbery.json"
     },
     {
         "Quest": "The Hand in the Sand",
-        "Path": "./Quests/The Hand in the Sand/TheHandInTheSandInfo.txt"
+        "Path": "./Quests/The Hand in the Sand/TheHandInTheSandInfo.txt",
+        "Transcript": "./Quests/The Hand in the Sand/The_Hand_in_the_Sand_transcript.json",
+        "CTranscript": "./Quests/The Hand in the Sand/CompareThe_Hand_in_the_Sand.json"
     },
     {
         "Quest": "The Jack of Spades",
-        "Path": "./Quests/The Jack of Spades/TheJackOfSpadesInfo.txt"
+        "Path": "./Quests/The Jack of Spades/TheJackOfSpadesInfo.txt",
+        "Transcript": "./Quests/The Jack of Spades/The_Jack_of_Spades_transcript.json",
+        "CTranscript": "./Quests/The Jack of Spades/CompareThe_Jack_of_Spades.json"
     },
     {
         "Quest": "The Knight's Sword",
-        "Path": "./Quests/The Knight's Sword/TheKnightsSwordInfo.txt"
+        "Path": "./Quests/The Knight's Sword/TheKnightsSwordInfo.txt",
+        "Transcript": "./Quests/The Knight's Sword/The_Knight's_Sword_transcript.json",
+        "CTranscript": "./Quests/The Knight's Sword/CompareThe_Knight's_Sword.json"
     },
     {
         "Quest": "The Light Within",
-        "Path": "./Quests/The Light Within/TheLightWithinInfo.txt"
+        "Path": "./Quests/The Light Within/TheLightWithinInfo.txt",
+        "Transcript": "./Quests/The Light Within/The_Light_Within_transcript.json",
+        "CTranscript": "./Quests/The Light Within/CompareThe_Light_Within.json"
     },
     {
         "Quest": "The Lord of Vampyrium",
-        "Path": "./Quests/The Lord of Vampyrium/TheLordOfVampyriumInfo.txt"
+        "Path": "./Quests/The Lord of Vampyrium/TheLordOfVampyriumInfo.txt",
+        "Transcript": "./Quests/The Lord of Vampyrium/The_Lord_of_Vampyrium_transcript.json",
+        "CTranscript": "./Quests/The Lord of Vampyrium/CompareThe_Lord_of_Vampyrium.json"
     },
     {
         "Quest": "The Lost Tribe",
-        "Path": "./Quests/The Lost Tribe/TheLostTribeInfo.txt"
+        "Path": "./Quests/The Lost Tribe/TheLostTribeInfo.txt",
+        "Transcript": "./Quests/The Lost Tribe/The_Lost_Tribe_transcript.json",
+        "CTranscript": "./Quests/The Lost Tribe/CompareThe_Lost_Tribe.json"
     },
     {
         "Quest": "The Mighty Fall",
-        "Path": "./Quests/The Mighty Fall/TheMightyFallInfo.txt"
+        "Path": "./Quests/The Mighty Fall/TheMightyFallInfo.txt",
+        "Transcript": "./Quests/The Mighty Fall/The_Mighty_Fall_transcript.json",
+        "CTranscript": "./Quests/The Mighty Fall/CompareThe_Mighty_Fall.json"
     },
     {
         "Quest": "The Needle Skips",
-        "Path": "./Quests/The Needle Skips/TheNeedleSkipsInfo.txt"
+        "Path": "./Quests/The Needle Skips/TheNeedleSkipsInfo.txt",
+        "Transcript": "./Quests/The Needle Skips/The_Needle_Skips_transcript.json",
+        "CTranscript": "./Quests/The Needle Skips/CompareThe_Needle_Skips.json"
     },
     {
         "Quest": "The Path of Glouphrie",
-        "Path": "./Quests/The Path of Glouphrie/ThePathOfGlouphrieInfo.txt"
+        "Path": "./Quests/The Path of Glouphrie/ThePathOfGlouphrieInfo.txt",
+        "Transcript": "./Quests/The Path of Glouphrie/The_Path_of_Glouphrie_transcript.json",
+        "CTranscript": "./Quests/The Path of Glouphrie/CompareThe_Path_of_Glouphrie.json"
     },
     {
         "Quest": "The Prisoner of Glouphrie",
-        "Path": "./Quests/The Prisoner of Glouphrie/ThePrisonerOfGlouphrieInfo.txt"
+        "Path": "./Quests/The Prisoner of Glouphrie/ThePrisonerOfGlouphrieInfo.txt",
+        "Transcript": "./Quests/The Prisoner of Glouphrie/The_Prisoner_of_Glouphrie_transcript.json",
+        "CTranscript": "./Quests/The Prisoner of Glouphrie/CompareThe_Prisoner_of_Glouphrie.json"
     },
     {
         "Quest": "The Restless Ghost",
-        "Path": "./Quests/The Restless Ghost/TheRestlessGhostInfo.txt"
+        "Path": "./Quests/The Restless Ghost/TheRestlessGhostInfo.txt",
+        "Transcript": "./Quests/The Restless Ghost/The_Restless_Ghost_transcript.json",
+        "CTranscript": "./Quests/The Restless Ghost/CompareThe_Restless_Ghost.json"
     },
     {
         "Quest": "The Slug Menace",
-        "Path": "./Quests/The Slug Menace/TheSlugMenaceInfo.txt"
+        "Path": "./Quests/The Slug Menace/TheSlugMenaceInfo.txt",
+        "Transcript": "./Quests/The Slug Menace/The_Slug_Menace_transcript.json",
+        "CTranscript": "./Quests/The Slug Menace/CompareThe_Slug_Menace.json"
     },
     {
         "Quest": "The Tale of the Muspah",
-        "Path": "./Quests/The Tale of the Muspah/TheTaleOfTheMuspahInfo.txt"
+        "Path": "./Quests/The Tale of the Muspah/TheTaleOfTheMuspahInfo.txt",
+        "Transcript": "./Quests/The Tale of the Muspah/The_Tale_of_the_Muspah_transcript.json",
+        "CTranscript": "./Quests/The Tale of the Muspah/CompareThe_Tale_of_the_Muspah.json"
     },
     {
         "Quest": "The Temple at Senntisten",
-        "Path": "./Quests/The Temple at Senntisten/TheTempleOfSenntistenInfo.txt"
+        "Path": "./Quests/The Temple at Senntisten/TheTempleOfSenntistenInfo.txt",
+        "Transcript": "./Quests/The Temple at Senntisten/The_Temple_at_Senntisten_transcript.json",
+        "CTranscript": "./Quests/The Temple at Senntisten/CompareThe_Temple_at_Senntisten.json"
     },
     {
         "Quest": "The Tourist Trap",
-        "Path": "./Quests/The Tourist Trap/TheTouristTrapInfo.txt"
+        "Path": "./Quests/The Tourist Trap/TheTouristTrapInfo.txt",
+        "Transcript": "./Quests/The Tourist Trap/The_Tourist_Trap_transcript.json",
+        "CTranscript": "./Quests/The Tourist Trap/CompareThe_Tourist_Trap.json"
     },
     {
         "Quest": "The Vault of Shadows",
-        "Path": "./Quests/The Vault of Shadows/TheVaultOfShadowsInfo.txt"
+        "Path": "./Quests/The Vault of Shadows/TheVaultOfShadowsInfo.txt",
+        "Transcript": "./Quests/The Vault of Shadows/The_Vault_of_Shadows_transcript.json",
+        "CTranscript": "./Quests/The Vault of Shadows/CompareThe_Vault_of_Shadows.json"
     },
     {
         "Quest": "The Void Stares Back",
-        "Path": "./Quests/The Void Stares Back/TheVoidStaresBackInfo.txt"
+        "Path": "./Quests/The Void Stares Back/TheVoidStaresBackInfo.txt",
+        "Transcript": "./Quests/The Void Stares Back/The_Void_Stares_Back_transcript.json",
+        "CTranscript": "./Quests/The Void Stares Back/CompareThe_Void_Stares_Back.json"
     },
     {
         "Quest": "The World Wakes",
-        "Path": "./Quests/The World Wakes/TheWorldWakesInfo.txt"
+        "Path": "./Quests/The World Wakes/TheWorldWakesInfo.txt",
+        "Transcript": "./Quests/The World Wakes/The_World_Wakes_transcript.json",
+        "CTranscript": "./Quests/The World Wakes/CompareThe_World_Wakes.json"
     },
     {
         "Quest": "Throne of Miscellania",
-        "Path": "./Quests/Throne of Miscellania/ThroneOfMiscellaniaInfo.txt"
+        "Path": "./Quests/Throne of Miscellania/ThroneOfMiscellaniaInfo.txt",
+        "Transcript": "./Quests/Throne of Miscellania/Throne_of_Miscellania_transcript.json",
+        "CTranscript": "./Quests/Throne of Miscellania/CompareThrone_of_Miscellania.json"
     },
     {
         "Quest": "TokTz-Ket-Dill",
-        "Path": "./Quests/TokTz-Ket-Dill/ToktzKetDillInfo.txt"
+        "Path": "./Quests/TokTz-Ket-Dill/ToktzKetDillInfo.txt",
+        "Transcript": "./Quests/TokTz-Ket-Dill/TokTz-Ket-Dill_transcript.json",
+        "CTranscript": "./Quests/TokTz-Ket-Dill/CompareTokTz-Ket-Dill.json"
     },
     {
         "Quest": "Tomes of the Warlock",
-        "Path": "./Quests/Tomes of the Warlock/TomesOfTheWarlockInfo.txt"
+        "Path": "./Quests/Tomes of the Warlock/TomesOfTheWarlockInfo.txt",
+        "Transcript": "./Quests/Tomes of the Warlock/Tomes_of_the_Warlock_transcript.json",
+        "CTranscript": "./Quests/Tomes of the Warlock/CompareTomes_of_the_Warlock.json"
     },
     {
         "Quest": "Tower of Life",
-        "Path": "./Quests/Tower of Life/TowerOfLifeInfo.txt"
+        "Path": "./Quests/Tower of Life/TowerOfLifeInfo.txt",
+        "Transcript": "./Quests/Tower of Life/Tower_of_Life_transcript.json",
+        "CTranscript": "./Quests/Tower of Life/CompareTower_of_Life.json"
     },
     {
         "Quest": "Tree Gnome Village",
-        "Path": "./Quests/Tree Gnome Village/TreeGnomeVillageInfo.txt"
+        "Path": "./Quests/Tree Gnome Village/TreeGnomeVillageInfo.txt",
+        "Transcript": "./Quests/Tree Gnome Village/Tree_Gnome_Village_transcript.json",
+        "CTranscript": "./Quests/Tree Gnome Village/CompareTree_Gnome_Village.json"
     },
     {
         "Quest": "Tribal Totem",
-        "Path": "./Quests/Tribal Totem/TribalTotemInfo.txt"
+        "Path": "./Quests/Tribal Totem/TribalTotemInfo.txt",
+        "Transcript": "./Quests/Tribal Totem/Tribal_Totem_transcript.json",
+        "CTranscript": "./Quests/Tribal Totem/CompareTribal_Totem.json"
     },
     {
         "Quest": "Troll Romance",
-        "Path": "./Quests/Troll Romance/TrollRomanceInfo.txt"
+        "Path": "./Quests/Troll Romance/TrollRomanceInfo.txt",
+        "Transcript": "./Quests/Troll Romance/Troll_Romance_transcript.json",
+        "CTranscript": "./Quests/Troll Romance/CompareTroll_Romance.json"
     },
     {
         "Quest": "Troll Stronghold",
-        "Path": "./Quests/Troll Stronghold/TrollStrongholdInfo.txt"
+        "Path": "./Quests/Troll Stronghold/TrollStrongholdInfo.txt",
+        "Transcript": "./Quests/Troll Stronghold/Troll_Stronghold_transcript.json",
+        "CTranscript": "./Quests/Troll Stronghold/CompareTroll_Stronghold.json"
     },
     {
         "Quest": "Twilight of the Gods",
-        "Path": "./Quests/Twilight of the Gods/TwilightOfTheGodsInfo.txt"
+        "Path": "./Quests/Twilight of the Gods/TwilightOfTheGodsInfo.txt",
+        "Transcript": "./Quests/Twilight of the Gods/Twilight_of_the_Gods_transcript.json",
+        "CTranscript": "./Quests/Twilight of the Gods/CompareTwilight_of_the_Gods.json"
     },
     {
         "Quest": "Underground Pass",
-        "Path": "./Quests/Underground Pass/UndergroundPassInfo.txt"
+        "Path": "./Quests/Underground Pass/UndergroundPassInfo.txt",
+        "Transcript": "./Quests/Underground Pass/Underground_Pass_transcript.json",
+        "CTranscript": "./Quests/Underground Pass/CompareUnderground_Pass.json"
     },
     {
         "Quest": "Unwelcome Guests",
-        "Path": "./Quests/Unwelcome Guests/UnwelcomeGuestsInfo.txt"
+        "Path": "./Quests/Unwelcome Guests/UnwelcomeGuestsInfo.txt",
+        "Transcript": "./Quests/Unwelcome Guests/Unwelcome_Guests_transcript.json",
+        "CTranscript": "/Quests/Unwelcome Guests/CompareUnwelcome_Guests.json"
     },
     {
         "Quest": "Vampyre Slayer",
-        "Path": "./Quests/Vampyre Slayer/VampyreSlayerInfo.txt"
+        "Path": "./Quests/Vampyre Slayer/VampyreSlayerInfo.txt",
+        "Transcript": "./Quests/Vampyre Slayer/Vampyre_Slayer_transcript.json",
+        "CTranscript": "./Quests/Vampyre Slayer/CompareVampyre_Slayer.json"
     },
     {
         "Quest": "Vessel of the Harbinger",
-        "Path": "./Quests/Vessel of the Harbinger/VesselOfTheHarbinger.txt"
+        "Path": "./Quests/Vessel of the Harbinger/VesselOfTheHarbinger.txt",
+        "Transcript": "./Quests/Vessel of the Harbinger/Vessel_of_the_Harbinger_transcript.json",
+        "CTranscript": "./Quests/Vessel of the Harbinger/CompareVessel_of_the_Harbinger.json"
     },
     {
         "Quest": "Violet is Blue",
-        "Path": "./Quests/Violet is Blue/VioletIsBlueInfo.txt"
+        "Path": "./Quests/Violet is Blue/VioletIsBlueInfo.txt",
+        "Transcript": "./Quests/Violet is Blue/Violet_is_Blue_transcript.json",
+        "CTranscript": "./Quests/Violet is Blue/CompareViolet_is_Blue.json"
     },
     {
         "Quest": "Violet is Blue Too",
-        "Path": "./Quests/Violet is Blue Too/VioletIsBlueTooInfo.txt"
+        "Path": "./Quests/Violet is Blue Too/VioletIsBlueTooInfo.txt",
+        "Transcript": "./Quests/Violet is Blue Too/Violet_is_Blue_Too_transcript.json",
+        "CTranscript": "./Quests/Violet is Blue Too/CompareViolet_is_Blue_Too.json"
     },
     {
         "Quest": "Wanted",
-        "Path": "./Quests/Wanted/WantedInfo.txt"
+        "Path": "./Quests/Wanted/WantedInfo.txt",
+        "Transcript": "./Quests/Wanted/Wanted_transcript.json",
+        "CTranscript": "./Quests/Wanted/CompareWanted.json"
     },
     {
         "Quest": "Watchtower",
-        "Path": "./Quests/Watchtower/WatchtowerInfo.txt"
+        "Path": "./Quests/Watchtower/WatchtowerInfo.txt",
+        "Transcript": "./Quests/Watchtower/Watchtower_transcript.json",
+        "CTranscript": "./Quests/Watchtower/CompareWatchtower.json"
     },
     {
         "Quest": "What Lies Below",
-        "Path": "./Quests/What Lies Below/WhatLiesBelowInfo.txt"
+        "Path": "./Quests/What Lies Below/WhatLiesBelowInfo.txt",
+        "Transcript": "./Quests/What Lies Below/What_Lies_Below_transcript.json",
+        "CTranscript": "./Quests/What Lies Below/CompareWhat_Lies_Below.json"
     },
     {
         "Quest": "What's Mine is Yours",
-        "Path": "./Quests/What's Mine is Yours/WhatsMineIsYoursInfo.txt"
+        "Path": "./Quests/What's Mine is Yours/WhatsMineIsYoursInfo.txt",
+        "Transcript": "./Quests/What's Mine is Yours/What's_Mine_is_Yours_transcript.json",
+        "CTranscript": "./Quests/What's Mine is Yours/CompareWhat's_Mine_is_Yours.json"
     },
     {
         "Quest": "While Guthix Sleeps",
-        "Path": "./Quests/While Guthix Sleeps/WhileGuthixSleepsInfo.txt"
+        "Path": "./Quests/While Guthix Sleeps/WhileGuthixSleepsInfo.txt",
+        "Transcript": "./Quests/While Guthix Sleeps/While_Guthix_Sleeps_transcript.json",
+        "CTranscript": "./Quests/While Guthix Sleeps/CompareWhile_Guthix_Sleeps.json"
     },
     {
         "Quest": "Witch's House",
-        "Path": "./Quests/Witch's House/WitchesHouseInfo.txt"
+        "Path": "./Quests/Witch's House/WitchesHouseInfo.txt",
+        "Transcript": "./Quests/Witch's House/Witch's_House_transcript.json",
+        "CTranscript": "./Quests/Witch's House/CompareWitch's_House.json"
     },
     {
         "Quest": "Within the Light",
-        "Path": "./Quests/Within the Light/WithinTheLightInfo.txt"
+        "Path": "./Quests/Within the Light/WithinTheLightInfo.txt",
+        "Transcript": "./Quests/Within the Light/Within_the_Light_transcript.json",
+        "CTranscript": "./Quests/Within the Light/CompareWithin_the_Light.json"
     },
     {
         "Quest": "Wolf Whistle",
-        "Path": "./Quests/Wolf Whistle/WolfWhistleInfo.txt"
+        "Path": "./Quests/Wolf Whistle/WolfWhistleInfo.txt",
+        "Transcript": "/Quests/Wolf Whistle/Wolf_Whistle_transcript.json",
+        "CTranscript": "/Quests/Wolf Whistle/CompareWolf_Whistle.json"
     },
     {
         "Quest": "You Are It",
-        "Path": "./Quests/You Are It/YouAreItInfo.txt"
+        "Path": "./Quests/You Are It/YouAreItInfo.txt",
+        "Transcript": "./Quests/You Are It/You_Are_It_transcript.json",
+        "CTranscript": "./Quests/You Are It/CompareYou_Are_It.json"
     },
     {
         "Quest": "Zogre Flesh Eaters",
-        "Path": "./Quests/Zogre Flesh Eaters/ZogreFleshEatersInfo.txt"
+        "Path": "./Quests/Zogre Flesh Eaters/ZogreFleshEatersInfo.txt",
+        "Transcript": "./Quests/Zogre Flesh Eaters/Zogre_Flesh_Eaters_transcript.json",
+        "CTranscript": "./Quests/Zogre Flesh Eaters/CompareZogre_Flesh_Eaters.json"
     }
 ]

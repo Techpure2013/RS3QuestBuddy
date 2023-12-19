@@ -119,7 +119,6 @@
             "AVoidDanceHatchway.png",
             "AVoidDanceKorasibreaksthebox.png",
             "AVoidDanceKorasistrikestheguard.png",
-
             "AVoidDanceSummoningtheVoidDrone.png",
             "AVoidDanceThepesttrapped.png"
         ]
@@ -128,7 +127,6 @@
         "name": "Aftermath",
         "images": [
             "Aftermath.png",
-
             "Saradomininaftermath.png",
             "SirCadianinthezamorakianundercity.png",
             "ZarosiansmeetinPraetoriuminaftermath.png"
@@ -143,7 +141,6 @@
         "images": [
             "AlphavsOmega.png",
             "AlphavsOmegaRasialdefeated.png",
-            "AlphavsOmegareward.png",
             "AlphavsOmegathebattlewithRasial.png"
         ]
     },
@@ -154,7 +151,6 @@
             "AncientAwakeningAsterandwoodenheadstone.png",
             "AncientAwakeningfightingtheundeadgiant.png",
             "AncientAwakeningfindingartefacts.png",
-            "AncientAwakeningreward.png",
             "AncientAwakeningTheyshallservemeindeath.png",
             "AncientAwakeningundeadwaves.png",
             "TheHolographicArchivist.png",
@@ -163,11 +159,7 @@
     },
     {
         "name": "Animal Magnetism",
-        "images": [
-            "AnimalMagnetism.png",
-            "AnimalMagnetismreward.png",
-            "CompletedNotes.png"
-        ]
+        "images": ["AnimalMagnetism.png", "CompletedNotes.png"]
     },
     {
         "name": "Another Slice of HAM",
@@ -187,11 +179,9 @@
         "name": "As a First Resort",
         "images": [
             "Asafirstresort.png",
-
             "Releasingplatypus.png",
             "ResortCook.png",
             "ResortSnurgh.png",
-
             "VarrockHerald.png"
         ]
     },
@@ -201,7 +191,6 @@
             "AzzanadraandArianeattheGielinorsElderHalls.png",
             "Azzanadracomplainsaboutthecouncil.png",
             "AzzanadrasQuest.png",
-            "AzzanadrasQuestreward.png",
             "Freneskaemap.png",
             "HarvestingaTrindinespring.png",
             "HarvestingJasmemoryspring.png",
@@ -215,14 +204,7 @@
     },
     {
         "name": "Back to my Roots",
-        "images": [
-            "BacktomyRoots.png",
-            "BacktomyRootsreward.png",
-            "Jadevineentrance.png",
-            "JadeVinefight.png",
-            "Jadevinemazemap.png",
-            "WizardCrompertyspackage.png"
-        ]
+        "images": ["Jadevinemazemap.png"]
     },
     {
         "name": "Back to the Freezer",
@@ -234,7 +216,6 @@
             "BacktotheFreezerMiningGuild.png",
             "BacktotheFreezermonkeyisland.png",
             "BacktotheFreezerPingandPong.png",
-            "BacktotheFreezerreward.png",
             "BacktotheFreezersecretbunkerpastmap.png",
             "BacktotheFreezersecretbunkerpresentmap.png",
             "ElonsListTable.png",
@@ -249,7 +230,6 @@
             "300px-BattleoftheMonolith-Week5.png77c7b.png",
             "Azzanadraascends.png",
             "BattlefortheMonolith.png",
-            "BattleoftheMonolithreward.png",
             "BattleoftheMonoliththirdbattlelocations.png",
             "BattleoftheMonolithWeek.png",
             "BattleoftheMonolithWeekfarm.png",
@@ -266,7 +246,6 @@
             "BeneathCursedTides.png",
             "BeneathCursedTidescookingshrimp.png",
             "BeneathCursedTidesrecruitingVannaka.png",
-            "BeneathCursedTidesreward.png",
             "BeneathCursedTidestutors.png",
             "Cookingforthemasterchef.png",
             "Deadsearats.png",
@@ -286,15 +265,13 @@
             "BigChompyBirdHuntingCooking.png",
             "BigChompyBirdHuntingInflatingToads.png",
             "BigChompyBirdHuntingRantz.png",
-            "BigChompyBirdHuntingRantzscave.png",
-            "BigChompyBirdHuntingreward.png"
+            "BigChompyBirdHuntingRantzscave.png"
         ]
     },
     {
         "name": "Biohazard",
         "images": [
             "Biohazard.png",
-            "Biohazardreward.png",
             "GuidorsLocation.png",
             "ReasonTable.png",
             "ReleasingthePigeons.png"
@@ -369,7 +346,6 @@
             "BanishingOrmod.png",
             "BrokenHome.png",
             "BrokenHomemap.png",
-            "BrokenHomereward.png",
             "BrokenHomestatuepuzzle.png",
             "BrokenHomestatuepuzzlesolution.png",
             "BrokenHomewindowsshatter.png",
@@ -389,11 +365,7 @@
     },
     {
         "name": "Buyers and Cellars",
-        "images": [
-            "BuyersandCellars.png",
-            "BuyersandCellarsreward.png",
-            "FatherUrhneyFire.png"
-        ]
+        "images": ["BuyersandCellars.png", "FatherUrhneyFire.png"]
     },
     {
         "name": "Cabin Fever",
@@ -402,7 +374,6 @@
             "Cabinfevercutscene.png",
             "CabinFeverdevastation.png",
             "CabinFeverLeFietteTeach.png",
-            "CabinFeverreward.png",
             "RepairingTheAdventurous.png"
         ]
     },
@@ -411,7 +382,6 @@
         "images": [
             "AirutAmbush.png",
             "CalloftheAncestors.png",
-            "CalloftheAncestorsreward.png",
             "FirstGoebietrial.png",
             "Goebiesgather.png",
             "Lunchisimpaled.png",
@@ -426,7 +396,6 @@
         "images": [
             "CarnilleanRising.png",
             "CarnilleanRisingreward.png",
-            "CarnilleanRisingsewers.png",
             "Gettingtheguarddrunk.png",
             "Luringwolves.png",
             "Philipesreward.png",

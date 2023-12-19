@@ -38,8 +38,16 @@ TextInput {
     flex-direction: column;
 }
 img {
-    width: 415px;
-    height: 350px;
+    bottom: auto;
+    align: center;
+    margin: auto;
+    display: block;
+    image-rendering: pixelated;
+}
+
+img.enlarged {
+    width: 300px; /* Change this value to your desired size */
+    height: auto;
 }
 .stepperContainer {
     max-height: 400px; /* Set the desired height for the stepper container */
@@ -63,10 +71,11 @@ img {
 /* Save this buttons class for later use maybe */
 .prevNextGroup {
     position: fixed;
-
-    left: 50%;
+    top: 17.5%; /* Adjust as needed */
+    left: 50%; /* Center horizontally */
     display: flex;
     gap: 10px;
+    z-index: 1;
 }
 .mantine-Button-root {
     font-size: 16px;
@@ -102,6 +111,7 @@ img {
     font-size: 20px;
     font-family: rs3Font;
     color: #4e85bc;
+    z-index: 20;
 }
 
 .mantine-TextInput-label {
