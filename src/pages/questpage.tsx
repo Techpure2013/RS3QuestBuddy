@@ -81,7 +81,10 @@ const QuestPage: React.FC = () => {
                         for (let i = 0; i < readOption.length; i++) {
                             const option = readOption[i].text;
 
-                            if (cTranscript.includes(option)) {
+                            if (
+                                cTranscript.includes(option) ||
+                                cTranscript.includes("[Any Option]")
+                            ) {
                                 setboxX(readOption[i].x);
                                 setBoxY(readOption[i].y);
                                 break; // Exit the loop once a match is found
@@ -130,7 +133,7 @@ const QuestPage: React.FC = () => {
             boxY - 16,
             diagW / 2 - 50,
             diagH / 2 - 30,
-            1000,
+            500,
             4
         );
     } else {

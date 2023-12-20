@@ -1,13 +1,5 @@
 [
     {
-        "Quest": "questlist.txt",
-        "Path": "./Quests/questlist.txt"
-    },
-    {
-        "Quest": "questlistfolder.txt.bat",
-        "Path": "./Quests/questlistfolder.txt.bat"
-    },
-    {
         "Quest": "A Fairy Tale I",
         "Path": "./Quests/A Fairy Tale I/AFairyTaleIInfo.txt",
         "Transcript": "./Quests/A Fairy Tale I/A_Fairy_Tale_I_-_Growing_Pains_transcript.json",
@@ -686,6 +678,12 @@
         "CTranscript": "./Quests/Let Them Eat Pie/CompareLet_Them_Eat_Pie.json"
     },
     {
+        "Quest": "Lost Her Marbles Miniquest",
+        "Path": "./Quests/Lost Her Marbles Miniquest/losthermarblesminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Lost Her Marbles Miniquest/CompareLostHerMarblesminiquest.json "
+    },
+    {
         "Quest": "Lost City",
         "Path": "./Quests/Lost City/LostCityInfo.txt",
         "Transcript": "./Quests/Lost City/Lost_City_transcript.json",
@@ -927,7 +925,7 @@
     },
     {
         "Quest": "Recipe for Disaster: Freeing the Goblin Generals",
-        "Path": "./Quests/Recipe for Disaster Freeing the Goblin Generals/FreeingTheGoblinInfo.txt",
+        "Path": "./Quests/Recipe for Disaster Freeing the Goblin Generals/freeingthegoblingeneralsinfo.txt.txt",
         "Transcript": "./Quests/Recipe for Disaster Freeing the Goblin Generals/Freeing_the_Goblin_Generals_transcript.json",
         "CTranscript": ""
     },
@@ -1056,6 +1054,12 @@
         "Path": "./Quests/Sheep Herder/SheepHerderInfo.txt",
         "Transcript": "./Quests/Sheep Herder/Sheep_Herder_transcript.json",
         "CTranscript": "./Quests/Sheep Herder/CompareSheep_Herder.json"
+    },
+    {
+        "Quest": "Sheep Shearer",
+        "Path": "./Quests/Sheep Shearer/sheepshearerinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Sheep Shearer/Comparesheepshearer.json"
     },
     {
         "Quest": "Shield of Arrav",
@@ -1542,5 +1546,341 @@
         "Path": "./Quests/Zogre Flesh Eaters/ZogreFleshEatersInfo.txt",
         "Transcript": "./Quests/Zogre Flesh Eaters/Zogre_Flesh_Eaters_transcript.json",
         "CTranscript": "./Quests/Zogre Flesh Eaters/CompareZogre_Flesh_Eaters.json"
+    },
+    {
+        "Quest": "Bar Crawl Miniquest",
+        "Path": "./Quests/Bar Crawl Miniquest/barcrawlminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Bar Crawl Miniquest/Comparebarcrawlminiquest.json"
+    },
+    {
+        "Quest": "Benedict's World Tour Miniquest",
+        "Path": "./Quests/Benedicts World Tour Miniquest/benedictsworldtourminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Benedicts World Tour Miniquest/Comparebenedictsworldtourminiquest.json"
+    },
+    {
+        "Quest": "Desert Slayer Dungeon Miniquest",
+        "Path": "./Quests/Desert Slayer Dungeon Miniquest/desertslayerdungeonminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Desert Slayer Dungeon Miniquest/Comparedesertslayerdungeonminiquest.json"
+    },
+    {
+        "Quest": "Enter the Abyss Miniquest",
+        "Path": "./Quests/Enter the Abyss Miniquest/entertheabyssminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Enter the Abyss Miniquest/Compareentertheabyssminiquest.json"
+    },
+    {
+        "Quest": "Father and Son Miniquest",
+        "Path": "./Quests/Father and Son Miniquest/fatherandsonminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Father and Son Miniquest/Comparefatherandsonminiquest.json"
+    },
+    {
+        "Quest": "Helping Laniakea Miniquest",
+        "Path": "./Quests/Helping Laniakea Miniquest/helpinglaniakeaminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Helping Laniakea Miniquest/Comparehelpinglaniakeaminiquest.json"
+    },
+    {
+        "Quest": "Hopespears Will Miniquest",
+        "Path": "./Quests/Hopespears Will Miniquest/hopespearswillminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Hopespears Will Miniquest/Comparehopespearswillminiquest.json"
+    },
+    {
+        "Quest": "The Hunt for Surok Miniquest",
+        "Path": "./Quests/The Hunt for Surok Miniquest/thehuntforsurokminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/The Hunt for Surok Miniquest/Comparethehuntforsurokminiquest.json"
+    },
+    {
+        "Quest": "In Memory of the Myreque Miniquest",
+        "Path": "./Quests/In Memory of the Myreque Miniquest/inmemoryofthemyrequeinfo.txt",
+        "Transcript": "",
+        "CTranscript": ""
+    },
+    {
+        "Quest": "Koscheis Troubles Miniquest",
+        "Path": "./Quests/Koscheis Troubles Miniquest/koscheistroublesminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Koscheis Troubles Miniquest/CompareKoscheisTroublesminiquest.json"
+    },
+    {
+        "Quest": "Lair of Tarn Razorlor Miniquest",
+        "Path": "./Quests/Lair of Tarn Razorlor Miniquest/lairoftarnrazorlorminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": ""
+    },
+    {
+        "Quest": "The Lost Toys Miniquest",
+        "Path": "./Quests/The Lost Toys Miniquest/thelosttoysminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": ""
+    },
+    {
+        "Quest": "Mahjarrat Memories Miniquest",
+        "Path": "./Quests/Mahjarrat Memories Miniquest/mahjarratmemoriesminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": ""
+    },
+    {
+        "Quest": "One Foot in the Grave Miniquest",
+        "Path": "./Quests/One Foot in the Grave Miniquest/onefootinthegraveminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/One Foot in the Grave Miniquest/Compareonefootinthegraveminiquest.json"
+    },
+    {
+        "Quest": "Purple Cat Miniquest",
+        "Path": "./Quests/Purple Cat Miniquest/purplecatminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Purple Cat Miniquest/Comparepurplecatminiquest.json"
+    },
+    {
+        "Quest": "Rebuilding Edgeville Miniquest",
+        "Path": "./Quests/Rebuilding Edgeville Miniquest/rebuildingedgevilleminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Rebuilding Edgeville Miniquest/Comparerebuildingedgevilleminiquest.json"
+    },
+    {
+        "Quest": "Sheep Shearer Miniquest",
+        "Path": "./Quests/Sheep Shearer Miniquest/sheepshearerminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Sheep Shearer Miniquest/Comparesheepshearerminiquest.json"
+    },
+    {
+        "Quest": "Tales of Nomad Miniquest",
+        "Path": "./Quests/Tales of Nomad Miniquest/talesofnomadminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Tales of Nomad Miniquest/Comparetalesofnomadminiquest.json"
+    },
+    {
+        "Quest": "Tortle Combat Miniquest",
+        "Path": "./Quests/Tortle Combat Miniquest/tortlecombbatminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Tortle Combat Miniquest/Comparetortlecombatminiquest.json"
+    },
+    {
+        "Quest": "Wandering Gaal Miniquest",
+        "Path": "./Quests/Wandering Gaal Miniquest/wanderinggaalminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Wandering Gaal Miniquest/Comparewanderinggaalminiquest.json"
+    },
+    {
+        "Quest": "Witchs Potion Miniquest",
+        "Path": "./Quests/Witchs Potion Miniquest/witchespotionminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Witchs Potion Miniquest/Comparewitchespotionminiquest.json"
+    },
+    {
+        "Quest": "Threes Company Saga",
+        "Path": "./Quests/Threes Company Saga/threescompanysagainfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Threes Company Saga/Comparethreescomanysaga.json"
+    },
+    {
+        "Quest": "Vengeance Saga",
+        "Path": "./Quests/Vengeance Saga/vengeancesagainfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Vengeance Saga/Comparevengeancesaga.json"
+    },
+    {
+        "Quest": "Thok It To Em Saga",
+        "Path": "./Quests/Thok It To Em Saga/thokittoemsagainfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Thok It To Em Saga/Comparethokittoemsaga.json"
+    },
+    {
+        "Quest": "Nadir Saga",
+        "Path": "./Quests/Nadir Saga/nadirsagainfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Nadir Saga/Comparenadirsaga.json"
+    },
+    {
+        "Quest": "Thok Your Block Off Saga",
+        "Path": "./Quests/Thok Your Block Off Saga/thokyourblockoffsagainfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Thok Your Block Off Saga/thokyourblockoffsagainfo.txt"
+    },
+    {
+        "Quest": "Civil War I Miniquest",
+        "Path": "./Quests/Civil War I Miniquest/civilwariminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Civil War I Miniquest/Comparecivilwariminiquest.json"
+    },
+    {
+        "Quest": "Civil War II Miniquest",
+        "Path": "./Quests/Civil War II Miniquest/civilwariiminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Civil War II Miniquest/Comparecivilwariiminiquest.json"
+    },
+    {
+        "Quest": "Civil War III Miniquest",
+        "Path": "./Quests/Civil War III Miniquest/civilwariiiminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Civil War III Miniquest/Comparecivilwariiiminiquest.json"
+    },
+    {
+        "Quest": "The Curse of Zaros Miniquest",
+        "Path": "./Quests/The Curse of Zaros Miniquest/TheCurseofZarosminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/The Curse of Zaros Miniquest/CompareTheCurseofZarosminiquest.json"
+    },
+    {
+        "Quest": "The Generals Shadow Miniquest",
+        "Path": "./Quests/The Generals Shadow Miniquest/thegeneralsshadowminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/The Generals Shadow Miniquest/Comparethegeneralsshadowminiquest.json"
+    },
+    {
+        "Quest": "Tales of the God Wars Miniquest",
+        "Path": "./Quests/Tales of the God Wars Miniquest/talesofthegodwarsminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Tales of the God Wars Miniquest/Comparetalesofthegodwarsminiquest.json"
+    },
+    {
+        "Quest": "Flag Fall Miniquest",
+        "Path": "./Quests/Flag Fall Miniquest/flagfallminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Flag Fall Miniquest/Compareflagfallminiquest.json"
+    },
+    {
+        "Quest": "Head of the Family Miniquest",
+        "Path": "./Quests/Head of the Family Miniquest/headofthefamilyminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Head of the Family Miniquest/Compareheadofthefamilyminiquest.json"
+    },
+    {
+        "Quest": "Spiritual Enlightenment Miniquest",
+        "Path": "./Quests/Spiritual Enlightenment Miniquest/spiritualenlightenmentminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Spiritual Enlightenment Miniquest/Comparespiritualenlightenmentminiquest.json"
+    },
+    {
+        "Quest": "Jed Hunter Miniquest",
+        "Path": "./Quests/Jed Hunter Miniquest/jedhunterminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Jed Hunter Miniquest/Comparejedhunterminiquest.json"
+    },
+    {
+        "Quest": "Eye for an Eye Miniquest",
+        "Path": "./Quests/Eye for an Eye Miniquest/eyeforaneyeminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Eye for an Eye Miniquest/Compareeyeforaneyeminiquest.json"
+    },
+    {
+        "Quest": "Harbinger Miniquest",
+        "Path": "./Quests/Harbinger Miniquest/harbingerminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Harbinger Miniquest/Compareharbingerminiquest.json"
+    },
+    {
+        "Quest": "Tuai Leits Own Miniquest",
+        "Path": "./Quests/Tuai Leits Own Miniquest/tuaileitsownminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Tuai Leits Own Miniquest/Comparetuaileitsownminiquest.json"
+    },
+    {
+        "Quest": "Ghosts from the Past Miniquest",
+        "Path": "./Quests/Ghosts from the Past Miniquest/ghostsfromthepastminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Ghosts from the Past Miniquest/Compareghostsfromthepastminiquest.json"
+    },
+    {
+        "Quest": "Damage Control Miniquest",
+        "Path": "./Quests/Damage Control Miniquest/damagecontrolminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Damage Control Miniquest/Comparedamagecontrolminiquest.json"
+    },
+    {
+        "Quest": "Final Destination Miniquest",
+        "Path": "./Quests/Final Destination Miniquest/finaldestinationminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Final Destination Miniquest/Comparefinaldestinationminiquest.json"
+    },
+    {
+        "Quest": "From Tiny Acorns Miniquest",
+        "Path": "./Quests/From Tiny Acorns Miniquest/fromtinyacornsminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/From Tiny Acorns Miniquest/Comparefromtinyacornsminiquest.json"
+    },
+    {
+        "Quest": "Lost Her Marbles Miniquest",
+        "Path": "./Quests/Lost Her Marbles Miniquest/losthermarblesminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Lost Her Marbles Miniquest/CompareLostHerMarblesminiquest.json"
+    },
+    {
+        "Quest": "A Guild of Our Own Miniquest",
+        "Path": "./Quests/A Guild of Our Own Miniquest/aguildofourownminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/A Guild of Our Own Miniquest/Compareaguildofourownminiquest.json"
+    },
+    {
+        "Quest": "Borics Task I Miniquest",
+        "Path": "./Quests/Borics Task I Miniquest/borictaskiminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Borics Task I Miniquest/Compareboricstaskiminiquest.json"
+    },
+    {
+        "Quest": "Borics Task II Miniquest",
+        "Path": "./Quests/Borics Task II Miniquest/boricstaskiiminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Borics Task II Miniquest/Compareboricstaskiiminiquest.json"
+    },
+    {
+        "Quest": "Borics Task III Miniquest",
+        "Path": "./Quests/Borics Task III Miniquest/boricstaskiiiminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Borics Task III Miniquest/Compareboricstaskiiiminiquest.json"
+    },
+    {
+        "Quest": "Dorics Task I Miniquest",
+        "Path": "./Quests/Dorics Task I Miniquest/doricstaskiminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Dorics Task I Miniquest/Comparedoricstaskiminiquest.json"
+    },
+    {
+        "Quest": "Dorics Task II Miniquest",
+        "Path": "./Quests/Dorics Task II Miniquest/doricstaskiiminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Dorics Task II Miniquest/Comparedoricsiiminiquest.json"
+    },
+    {
+        "Quest": "Dorics Task III Miniquest",
+        "Path": "./Quests/Dorics Task III Miniquest/doricstaskiiiminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Dorics Task III Miniquest/Comparedoricstaskiiiminiquest.json"
+    },
+    {
+        "Quest": "Dorics Task IV Miniquest",
+        "Path": "./Quests/Dorics Task IV Miniquest/doricstaskivminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Dorics Task IV Miniquest/Comparedoricstaskivminiquest.json"
+    },
+    {
+        "Quest": "Dorics Task V Miniquest",
+        "Path": "./Quests/Dorics Task V Miniquest/doricstaskvminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Dorics Task V Miniquest/Comparedoricstaskvminiquest.json"
+    },
+    {
+        "Quest": "Dorics Task VI Miniquest",
+        "Path": "./Quests/Dorics Task VI Miniquest/doricstaskviminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Dorics Task VI Miniquest/Comparedoricstaskviminiquest.json"
+    },
+    {
+        "Quest": "Dorics Task VII Miniquest",
+        "Path": "./Quests/Dorics Task VII Miniquest/doricstaskviiminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Dorics Task VII Miniquest/Comparedoricstaskviiminiquest.json"
+    },
+    {
+        "Quest": "Dorics Task VIII Miniquest",
+        "Path": "./Quests/Dorics Task VIII Miniquest/doricstaskviiiminiquestinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Dorics Task VIII Miniquest/Comparedoricsviiiminiquest.json"
     }
 ]

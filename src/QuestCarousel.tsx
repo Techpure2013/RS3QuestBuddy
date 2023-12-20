@@ -12,7 +12,6 @@ const QuestCarousel: React.FC = () => {
     const [searchQuery, setSearchQuery] = useState<string>("");
     const QUEST_FILE_PATH = "./questlist.txt";
     const [, setSelectedQuest] = useState<string | null>(null);
-    const [, setShowAlternateImage] = useState(false);
 
     useEffect(() => {
         fetchQuestList();
@@ -23,6 +22,9 @@ const QuestCarousel: React.FC = () => {
             const response = await fetch(QUEST_FILE_PATH);
             const text = await response.text();
             const quests = text.split("`");
+            quests.sort((a, b) => {
+                return a.trim().replace("'", "").localeCompare(b.trim());
+            });
             setQuestList(quests);
         } catch (error) {
             console.error("Error fetching quest list:", error);
@@ -31,11 +33,6 @@ const QuestCarousel: React.FC = () => {
 
     const handleQuestSelection = (selectedQuest: string) => {
         setSelectedQuest(selectedQuest);
-        setShowAlternateImage(false); // Reset the showAlternateImage state when a new quest is selected
-    };
-
-    const toggleImages = () => {
-        setShowAlternateImage((prev) => !prev);
     };
 
     const filteredQuests = questList.filter((quest) =>
@@ -68,43 +65,40 @@ const QuestCarousel: React.FC = () => {
                     slideSize="100%"
                 >
                     {filteredQuests.map((quest, index) => {
-                        let questTEdit = quest.toLowerCase().split(" ");
-                        let modifiedQuestVal1 = questTEdit
-                            .join("")
-                            .replace(/[!,`']/g, "");
+                        if (quest) {
+                            let questTEdit = quest.toLowerCase().split(" ");
+                            let modifiedQuestVal1 = questTEdit
+                                .join("")
+                                .replace(/[!,`']/g, "");
 
-                        const isTempleOfIkov = quest === "Temple of Ikov";
-                        const pattern = /[^a-zA-Z0-9]/g;
-                        let questImage =
-                            "./Rewards/" +
-                            quest.toLowerCase().replace(pattern, "") +
-                            "reward.png";
+                            const pattern = /[^a-zA-Z0-9]/g;
 
-                        return (
-                            <Carousel.Slide
-                                key={index}
-                                onClick={() => handleQuestSelection(quest)}
-                            >
-                                <div className="caroQTitle">
-                                    <NavLink
-                                        className="navLink"
-                                        to={"/QuestPage"}
-                                        state={{
-                                            questName: quest,
-                                            modified: modifiedQuestVal1,
-                                        }}
-                                    >
-                                        {quest}
-                                    </NavLink>
-                                </div>
-                                <img src={questImage} alt="Reward" />
-                                {isTempleOfIkov && (
-                                    <button onClick={toggleImages}>
-                                        Switch me
-                                    </button>
-                                )}
-                            </Carousel.Slide>
-                        );
+                            let questImage =
+                                "./Rewards/" +
+                                quest.toLowerCase().replace(pattern, "") +
+                                "reward.png";
+
+                            return (
+                                <Carousel.Slide
+                                    key={index}
+                                    onClick={() => handleQuestSelection(quest)}
+                                >
+                                    <div className="caroQTitle">
+                                        <NavLink
+                                            className="navLink"
+                                            to={"/QuestPage"}
+                                            state={{
+                                                questName: quest,
+                                                modified: modifiedQuestVal1,
+                                            }}
+                                        >
+                                            {quest}
+                                        </NavLink>
+                                    </div>
+                                    <img src={questImage} alt="Reward" />
+                                </Carousel.Slide>
+                            );
+                        }
                     })}
                 </Carousel>
             </div>
