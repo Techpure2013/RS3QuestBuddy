@@ -83,7 +83,8 @@ const QuestPage: React.FC = () => {
 
                             if (
                                 cTranscript.includes(option) ||
-                                cTranscript.includes("[Any Option]")
+                                cTranscript.includes("[Any Option]") ||
+                                cTranscript.includes(" None right now.")
                             ) {
                                 setboxX(readOption[i].x);
                                 setBoxY(readOption[i].y);
@@ -125,16 +126,18 @@ const QuestPage: React.FC = () => {
     }, [diagTitle]);
     if (
         diagTitle.toLowerCase() == "choose an option" ||
-        diagTitle.toLowerCase() == "select an option"
+        diagTitle.toLowerCase() == "select an option" ||
+        diagTitle.toLowerCase() == "ask about which band member?" ||
+        diagTitle.toLowerCase() == "what do you see?"
     ) {
         alt1.overLayRect(
             color,
             boxX - 50,
-            boxY - 16,
-            diagW / 2 - 50,
-            diagH / 2 - 30,
+            boxY - 13,
+            diagW / 2 - 100,
+            diagH / 2 - 35,
             500,
-            4
+            3
         );
     } else {
         null;

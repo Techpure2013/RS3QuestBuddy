@@ -834,10 +834,28 @@
         "CTranscript": "./Quests/Once Upon a Slime/CompareOnce_Upon_a_Slime.json"
     },
     {
-        "Quest": "Once Upon a Time in Gielinor",
+        "Quest": "Once Upon a Time in Gielinor Foreshadowing",
         "Path": "./Quests/Once Upon a Time in Gielinor/OnceUponATimeInGielinorInfo.txt",
         "Transcript": "",
         "CTranscript": ""
+    },
+    {
+        "Quest": "Once Upon a Time in Gielinor Flashback",
+        "Path": "./Quests/Once Upon a Time in Gielinor Flashback/onceuponatimeingielinorflashbackinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Once Upon a Time in Gielinor Flashback/Compareonceuponatimeingielinorflashback.json"
+    },
+    {
+        "Quest": "Once Upon a Time in Gielinor Fortunes",
+        "Path": "./Quests/Once Upon a Time in Gielinor Fortunes/onceuponatimeingielinorfortunesinfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Once Upon a Time in Gielinor Fortunes/Compareonceuponatimeingielinorfortunes.json"
+    },
+    {
+        "Quest": "Once Upon a Time in Gielinor Finale",
+        "Path": "./Quests/Once Upon a Time in Gielinor Finale/OnceUponATimeInGielinorfinaleInfo.txt",
+        "Transcript": "",
+        "CTranscript": "./Quests/Once Upon a Time in Gielinor Finale/Compareonceuponatimeingielinorfinale.json"
     },
     {
         "Quest": "One of a Kind",
