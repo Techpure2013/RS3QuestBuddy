@@ -15,7 +15,7 @@ import * as a1lib from "alt1";
 import DialogReader from "alt1/dialog";
 import QuestControls from "./QuestControls";
 import "./../index.css";
-import "./../../src/pages/assets/QuestIconEdited.png";
+import "./QuestIconEdited.png";
 import QuestDetails from "./QuestDetail.json";
 import { Carousel } from "@mantine/carousel";
 import { createRoot } from "react-dom/client";
@@ -781,7 +781,7 @@ const QuestPage: React.FC = () => {
                     defaultValue=""
                     chevron={
                         <Image
-                            src="./../../src/pages/assets/QuestIconEdited.png"
+                            src="./QuestIconEdited.png"
                             alt="Quest Icon"
                             width="20px"
                             height="20px"
