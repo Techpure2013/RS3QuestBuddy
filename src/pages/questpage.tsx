@@ -781,7 +781,7 @@ const QuestPage: React.FC = () => {
                     defaultValue=""
                     chevron={
                         <Image
-                            src="./src/assets/QuestIconEdited.png"
+                            src="./../../dist/assets/QuestIconEdited.png"
                             alt="Quest Icon"
                             width="20px"
                             height="20px"
