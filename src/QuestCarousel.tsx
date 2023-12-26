@@ -23,7 +23,11 @@ const QuestCarousel: React.FC = () => {
             const text = await response.text();
             const quests = text.split("`");
             quests.sort((a, b) => {
-                return a.trim().replace("'", "").localeCompare(b.trim());
+                return a
+                    .trim()
+                    .replace("'", "")
+                    .replace(":", "")
+                    .localeCompare(b.trim());
             });
             setQuestList(quests);
         } catch (error) {

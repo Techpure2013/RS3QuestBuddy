@@ -2,7 +2,31 @@
     font-family: rs3Font;
     src: url("/fonts/RS3Bold.woff2");
 }
-
+.mantine-Accordion-root {
+    font: rs3Font;
+    top: 30px;
+    width: 60vh;
+}
+.mantine-List-root {
+    list-style-type: none;
+}
+.mantine-Accordion-panel {
+    color: #686d77;
+}
+.mantine-Accordion-control {
+}
+.mantine-Accordion-control:hover {
+    background-color: #30497e;
+}
+.chevron {
+    &[data-rotate] {
+        transform: rotate(180deg);
+    }
+}
+.icon {
+    width: rem(16px);
+    height: rem(16px);
+}
 .App {
     font-family: rs3Font;
     text-align: center;
@@ -72,8 +96,8 @@ img.enlarged {
 .prevNextGroup {
     position: fixed;
     top: 17.5%; /* Adjust as needed */
-    left: 50%; /* Center horizontally */
-    display: flex;
+    left: 60%; /* Center horizontally */
+    display: block;
     gap: 10px;
     z-index: 1;
 }
@@ -91,6 +115,7 @@ img.enlarged {
     color: #4e85bc;
 }
 .mantine-Stepper-stepDescription {
+    width: 60vh;
     font-family: rs3Font;
     font-size: 15px;
     color: #4e85bc;

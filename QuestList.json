@@ -1,21 +1,21 @@
 [
     {
-        "Quest": "A Fairy Tale I",
-        "Path": "./Quests/A Fairy Tale I/AFairyTaleIInfo.txt",
-        "Transcript": "./Quests/A Fairy Tale I/A_Fairy_Tale_I_-_Growing_Pains_transcript.json",
-        "CTranscript": "./Quests/A Fairy Tale I/CompareA_Fairy_Tale_I.json"
+        "Quest": "A Fairy Tale I: Growing Pains",
+        "Path": "./Quests/A Fairy Tale I Growing Pains/afairytalei-growingpainsinfo.txt",
+        "Transcript": "./Quests/A Fairy Tale I Growing Pains/A_Fairy_Tale_I_-_Growing_Pains_transcript.json",
+        "CTranscript": "./Quests/A Fairy Tale I Growing Pains/CompareA_Fairy_Tale_I.json"
     },
     {
-        "Quest": "A Fairy Tale II",
-        "Path": "./Quests/A Fairy Tale II/AFairyTalePartIIInfo.txt",
-        "Transcript": "./Quests/A Fairy Tale II/A_Fairy_Tale_II_-_Cure_a_Queen_transcript.json",
-        "CTranscript": "./Quests/A Fairy Tale II/CompareA_Fairy_Tale_II.json"
+        "Quest": "A Fairy Tale II: Cure a Queen",
+        "Path": "./Quests/A Fairy Tale II Cure a Queen/AFairyTalePartii-cureaqueeninfo.txt",
+        "Transcript": "./Quests/A Fairy Tale II Cure a Queen/A_Fairy_Tale_II_-_Cure_a_Queen_transcript.json",
+        "CTranscript": "./Quests/A Fairy Tale II Cure a Queen/CompareA_Fairy_Tale_II.json"
     },
     {
-        "Quest": "A Fairy Tale III",
-        "Path": "./Quests/A Fairy Tale III/AFairyTalePartIIIInfo.txt",
+        "Quest": "A Fairy Tale III: Battle at Orks Rift",
+        "Path": "./Quests/A Fairy Tale III Battle at Orks Rift/AFairyTalePartiii-battleatorksriftinfo.txt ",
         "Transcript": "",
-        "CTranscript": "./Quests/A Fairy Tale III/CompareA_Fairy_Tale_III.json"
+        "CTranscript": "./Quests/A Fairy Tale III Battle at Orks Rift//CompareA_Fairy_Tale_III.json"
     },
     {
         "Quest": "A Shadow over Ashdale",
@@ -324,10 +324,34 @@
         "CTranscript": "./Quests/Devious Minds/CompareDevious_Minds.json"
     },
     {
-        "Quest": "Dimension of Disaster",
-        "Path": "./Quests/Dimension of Disaster/DimensionOfDisasterInfo.txt",
+        "Quest": "Dimension of Disaster: Coin of the Realm",
+        "Path": "./Quests/Dimension of Disaster Coin of the Realm/DimensionOfDisastercoinoftherealmInfo.txt",
         "Transcript": "./Quests/Dimension of Disaster/Dimension_of_Disaster_transcript.json",
-        "CTranscript": "./Quests/Dimension of Disaster/CompareDimension_of_Disaster.json"
+        "CTranscript": "./Quests/Dimension of Disaster Coin of the Realm/Comparedimensionofdisastercoinoftherealm.json"
+    },
+    {
+        "Quest": "Dimension of Disaster: Curse of Arrav",
+        "Path": "./Quests/Dimension of Disaster Curse of Arrav/dimensionofdisastercurseofarravinfo.txt",
+        "Transcript": "./Quests/Dimension of Disaster/Dimension_of_Disaster_transcript.json",
+        "CTranscript": "./Quests/Dimension of Disaster Curse of Arrav/Comparedimensionofdisastercurseofarrav.json"
+    },
+    {
+        "Quest": "Dimension of Disaster: Defender of Varrock",
+        "Path": "./Quests/Dimension of Disaster Defender of Varrock/dimensionofdisasterdefenderofvarrockinfo.txt",
+        "Transcript": "./Quests/Dimension of Disaster/Dimension_of_Disaster_transcript.json",
+        "CTranscript": "./Quests/Dimension of Disaster Defender of Varrock/Comparedimensionofdisasterdefenderofvarrock.json"
+    },
+    {
+        "Quest": "Dimension of Disaster: Demon Slayer",
+        "Path": "./Quests/Dimension of Disaster Demon Slayer/dimensionofdisasterdemonslayerinfo.txt",
+        "Transcript": "./Quests/Dimension of Disaster/Dimension_of_Disaster_transcript.json",
+        "CTranscript": "./Quests/Dimension of Disaster Demon Slayer/Comparedimensionofdisasterdemonslayer.json"
+    },
+    {
+        "Quest": "Dimension of Disaster: Shield of Arrav",
+        "Path": "./Quests/Dimension of Disaster Shield of Arrav/dimensionofdisastershieldofarravinfo.txt",
+        "Transcript": "./Quests/Dimension of Disaster/Dimension_of_Disaster_transcript.json",
+        "CTranscript": "./Quests/Dimension of Disaster Shield of Arrav/Comparedimensionofdisastershieldofarrav.json"
     },
     {
         "Quest": "Dishonour among Thieves",
@@ -828,31 +852,25 @@
         "CTranscript": "./Quests/Olaf's Quest/CompareOlaf's_Quest.json"
     },
     {
-        "Quest": "Once Upon a Slime",
-        "Path": "./Quests/Once Upon a Slime/OnceUponASlimeInfo.txt",
-        "Transcript": "./Quests/Once Upon a Slime/Once_Upon_a_Slime_transcript.json",
-        "CTranscript": "./Quests/Once Upon a Slime/CompareOnce_Upon_a_Slime.json"
-    },
-    {
-        "Quest": "Once Upon a Time in Gielinor Foreshadowing",
-        "Path": "./Quests/Once Upon a Time in Gielinor/OnceUponATimeInGielinorInfo.txt",
+        "Quest": "Once Upon a Time in Gielinor: Foreshadowing",
+        "Path": "./Quests/Once Upon a Time in Gielinor Foreshadowing/OnceUponATimeInGielinorforeshadowingInfo.txt",
         "Transcript": "",
-        "CTranscript": ""
+        "CTranscript": "./Quests/Once Upon a Time in Gielinor Foreshadowing/Compareonceuponatimeingielinorforshadowing.json"
     },
     {
-        "Quest": "Once Upon a Time in Gielinor Flashback",
+        "Quest": "Once Upon a Time in Gielinor: Flashback",
         "Path": "./Quests/Once Upon a Time in Gielinor Flashback/onceuponatimeingielinorflashbackinfo.txt",
         "Transcript": "",
         "CTranscript": "./Quests/Once Upon a Time in Gielinor Flashback/Compareonceuponatimeingielinorflashback.json"
     },
     {
-        "Quest": "Once Upon a Time in Gielinor Fortunes",
+        "Quest": "Once Upon a Time in Gielinor: Fortunes",
         "Path": "./Quests/Once Upon a Time in Gielinor Fortunes/onceuponatimeingielinorfortunesinfo.txt",
         "Transcript": "",
         "CTranscript": "./Quests/Once Upon a Time in Gielinor Fortunes/Compareonceuponatimeingielinorfortunes.json"
     },
     {
-        "Quest": "Once Upon a Time in Gielinor Finale",
+        "Quest": "Once Upon a Time in Gielinor: Finale",
         "Path": "./Quests/Once Upon a Time in Gielinor Finale/OnceUponATimeInGielinorfinaleInfo.txt",
         "Transcript": "",
         "CTranscript": "./Quests/Once Upon a Time in Gielinor Finale/Compareonceuponatimeingielinorfinale.json"
@@ -1038,6 +1056,18 @@
         "CTranscript": "./Quests/Rune Mysteries/CompareRune_Mysteries.json"
     },
     {
+        "Quest": "Rune Memories",
+        "Path": "./Quests/Rune Memories/RuneMemoriesInfo.txt",
+        "Transcript": "./Quests/Rune Memories/Rune_Memories_transcript.json",
+        "CTranscript": "./Quests/Rune Memories/CompareRune_Memories.json"
+    },
+    {
+        "Quest": "Rune Mechanics",
+        "Path": "./Quests/Rune Mechanics/RuneMechanicsInfo.txt",
+        "Transcript": "./Quests/Rune Mechanics/Rune_Mechanics_transcript.json",
+        "CTranscript": "./Quests/Rune Mechanics/CompareRune_Mechanics.json"
+    },
+    {
         "Quest": "Salt in the Wound",
         "Path": "./Quests/Salt in the Wound/SaltInTheWoundInfo.txt",
         "Transcript": "./Quests/Salt in the Wound/Salt_in_the_Wound_transcript.json",
@@ -1188,10 +1218,28 @@
         "CTranscript": "./Quests/Temple of Ikov/CompareTemple_of_Ikov.json"
     },
     {
-        "Quest": "That Old Black Magic",
-        "Path": "./Quests/That Old Black Magic/ThatOldBlackMagicInfo.txt",
+        "Quest": "That Old Black Magic: My One and Only Lute",
+        "Path": "./Quests/That Old Black Magic My One and Only Lute/myoneandonlyluteinfo.txtThatOldBlackMagicInfo.txt",
         "Transcript": "./Quests/That Old Black Magic/That_Old_Black_Magic_transcript.json",
-        "CTranscript": "./Quests/That Old Black Magic/CompareThat_Old_Black_Magic.json"
+        "CTranscript": "./Quests/That Old Black Magic My One and Only Lute/Comparethatoldblackmagicmyoneandonlylute.json"
+    },
+    {
+        "Quest": "That Old Black Magic: Skelly By Everlight",
+        "Path": "./Quests/That Old Black Magic Skelly By Everlight/thatoldblackmagicskellybyeverlightinfo.txt",
+        "Transcript": "./Quests/That Old Black Magic/That_Old_Black_Magic_transcript.json",
+        "CTranscript": "./Quests/That Old Black Magic Skelly By Everlight/Comparethatoldblackmagicskellybyeverlight.json"
+    },
+    {
+        "Quest": "That Old Black Magic: Flesh and Bone",
+        "Path": "./Quests/That Old Black Magic Flesh and Bone/thatoldblackmagicfleshandboneinfo.txt",
+        "Transcript": "./Quests/That Old Black Magic/That_Old_Black_Magic_transcript.json",
+        "CTranscript": "./Quests/That Old Black Magic Flesh and Bone/Comparethatoldblackmagicfleshandbone.json"
+    },
+    {
+        "Quest": "That Old Black Magic: Hermy and Bass",
+        "Path": "./Quests/That Old Black Magic Hermy and Bass/thatoldblackmagichermyandbassinfo.txt",
+        "Transcript": "./Quests/That Old Black Magic/That_Old_Black_Magic_transcript.json",
+        "CTranscript": "./Quests/That Old Black Magic Hermy and Bass/Comparethatoldblackmagichermyandbass.json"
     },
     {
         "Quest": "The Blood Pact",
