@@ -4,7 +4,7 @@
         "images": [
             "AClockworkSyringe.png",
             "AClockworkSyringeConveyorbeltdestruction.png",
-            "AClockworkSyringereward.png",
+
             "BarrelchestdisguisedsabotageAClockworkSyringe.png",
             "ControllingBaronvonHattenkrapperAClockworkSyringe.png",
             "deadbrewerslocation.png",
@@ -15,51 +15,39 @@
             "RumgeoncombatAClockworkSyringe.png",
             "TheAdventurousunderattack.png",
             "TheRideAClockworkSyringe.png",
-            "Zombiestresslevel.png",
-            "ZomboatBattle.png"
+            "Zombiestresslevel.png"
         ]
     },
     {
-        "name": "A Fairy Tale I",
+        "name": "A Fairy Tale I: Growing Pains",
         "images": [
-            "AFairyTaleIGrowingPainsreward.png",
-            "FairyGodfatherThroneroom.png",
-            "Gravedigging.png",
-            "Killingthetanglefoot.png",
-            "Sickfairyqueen.png",
-            "TalkingtoMartin.png"
+            "MartinMasterFarmerLocation.png",
+            "CommonOptionBetweenFarmers.png",
+            "AlainFarmerLoc.png",
+            "FizzleFarmerLoc.png",
+            "ElstanFarmerLoc.png",
+            "Daterna and Ellena Farmer.png",
+            "WhereToDigDrayorManor.png",
+            "EasyTeleportToZanaris.png"
+            
         ]
     },
     {
-        "name": "A Fairy Tale II",
-        "images": [
-            "AFairyTaleIICureaQueen.png",
-            "AFairyTaleIICureaQueenreward.png",
-            "AFairyTaleIIWarroom.png",
-            "FairyNuffsgrotto.png",
-            "FieldofStarflowers.png",
-            "GoraksPlane.png",
-            "KillingaGorak.png",
-            "Pickpocketingthegodfather.png",
-            "Thequeenisawoken.png"
-        ]
+        "name": "A Fairy Tale II: Cure a Queen",
+        "images": ["FairyNuffsgrotto.png"]
     },
     {
-        "name": "A Fairy Tale III",
+        "name": "A Fairy Tale III: Battle at Orks Rift",
         "images": [
-            "AFairyTaleIIIBattleatOrksRiftreward.png",
             "AFairyTalePartIIIBattleatOrksRift.png",
-            "BattleatOrksRift.png",
-            "Briefing.png",
-            "FightingtheGodfather.png",
-            "GeneralShredfleshmoodbar.png",
+
             "Gnarlymood.png",
             "Godfathersarmy.png",
             "Mangowithtoothground.png",
             "PickpocketingKChunk.png",
             "Projector.png",
             "PullingShredfleshstooth.png",
-            "Rift.png",
+
             "SparsePlane.png"
         ]
     },

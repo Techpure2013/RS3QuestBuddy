@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Button, Flex } from "@mantine/core";
-import "@mantine/core/styles/UnstyledButton.css";
-import "@mantine/core/styles/Button.css";
+
 const QuestControls: React.FC<{
     scrollNext: () => void;
     scrollPrev: () => void;

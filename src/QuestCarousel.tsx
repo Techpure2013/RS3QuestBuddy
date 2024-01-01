@@ -87,7 +87,10 @@ const QuestCarousel: React.FC = () => {
                                     key={index}
                                     onClick={() => handleQuestSelection(quest)}
                                 >
-                                    <div className="caroQTitle">
+                                    <div
+                                        className="caroQTitle"
+                                        aria-label={`Navigate to ${quest}`}
+                                    >
                                         <NavLink
                                             className="navLink"
                                             to={"/QuestPage"}
@@ -97,9 +100,13 @@ const QuestCarousel: React.FC = () => {
                                             }}
                                         >
                                             {quest}
+                                            <img
+                                                src={questImage}
+                                                alt="Reward"
+                                                aria-hidden="true"
+                                            />
                                         </NavLink>
                                     </div>
-                                    <img src={questImage} alt="Reward" />
                                 </Carousel.Slide>
                             );
                         }

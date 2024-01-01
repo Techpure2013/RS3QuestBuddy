@@ -2,19 +2,32 @@
     font-family: rs3Font;
     src: url("/fonts/RS3Bold.woff2");
 }
+.flexedButtons {
+    display: flex;
+    bottom: 30px; /* Adjust as needed */
+    margin-bottom: 20px; /* Add margin to create space */
+    z-index: 1; /* Set a higher z-index if needed */
+}
+.mantine-Stepper-stepDescription {
+    color: #575757;
+}
 .mantine-Accordion-root {
     font: rs3Font;
-    top: 30px;
+    display: block;
     width: 60vh;
+    z-index: 0; /* Set a lower z-index to ensure it stays behind other elements */
 }
 .mantine-List-root {
     list-style-type: none;
+    display: block;
+}
+.mantine-Stepper-stepIcon{
+    color: #575757;
 }
 .mantine-Accordion-panel {
-    color: #686d77;
+    color: #4D5564;
 }
-.mantine-Accordion-control {
-}
+
 .mantine-Accordion-control:hover {
     background-color: #30497e;
 }
@@ -34,6 +47,7 @@
 .Alt1Button {
     background-color: ;
 }
+
 TextInput {
     text-align: center;
     margin-top: 10px; /* Adjust the margin-top as needed */
@@ -56,6 +70,7 @@ TextInput {
 .caroContainer {
     font-family: rs3Font;
     text-align: center;
+    cursor: pointer;
 }
 .questContainer {
     display: flex;
@@ -75,7 +90,7 @@ img.enlarged {
 }
 .stepperContainer {
     max-height: 400px; /* Set the desired height for the stepper container */
-    background-color: #00000;
+    
     margin-top: 16px; /* Adjust as needed to create space between buttons and stepper */
 }
 /* .buttonsGroup {
@@ -99,7 +114,7 @@ img.enlarged {
     left: 60%; /* Center horizontally */
     display: block;
     gap: 10px;
-    z-index: 1;
+    z-index: 0;
 }
 .mantine-Button-root {
     font-size: 16px;
@@ -136,7 +151,6 @@ img.enlarged {
     font-size: 20px;
     font-family: rs3Font;
     color: #4e85bc;
-    z-index: 20;
 }
 
 .mantine-TextInput-label {
@@ -146,6 +160,9 @@ img.enlarged {
     align-items: center;
     color: #4e85bc;
     font-size: 25px;
+}
+.QuestPageImageCaro {
+    z-index: 1;
 }
 .custom-container {
     display: flex;
