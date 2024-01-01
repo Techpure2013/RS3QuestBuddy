@@ -34,7 +34,7 @@ import QuestControl from "../pages/QuestControls.tsx";
 import {
     QuestImageFetcher,
     UseImageStore,
-} from "../Fetchers/FetchQuestImages.ts";
+} from "./../Fetchers/FetchQuestImages.ts";
 import {
     QuestStepFetcher,
     useQuestStepStore,
@@ -354,7 +354,7 @@ const QuestPage: React.FC = () => {
         <>
             <QuestImageFetcher
                 questName={questName}
-                QuestListJSON={"./../../QuestImageList.json"}
+                QuestListJSON={"./QuestImageList.json"}
             />
             <QuestStepFetcher
                 textfile={textfile}
