@@ -66,8 +66,8 @@ const QuestPage: React.FC = () => {
     const [diagW, setDiagW] = useState(0);
     const [diagH, setDiagH] = useState(0);
     const [diagTitle, setDiagTitle] = useState("");
-    const [diagTitleChange, setDiagTitleChange] = useState(false);
-    const diagReader = new DialogReader();
+    // const [diagTitleChange, setDiagTitleChange] = useState(false);
+    // const diagReader = new DialogReader();
     const navigate = useNavigate();
     const details = useQuestStepStore();
     const imageDetails = UseImageStore();
