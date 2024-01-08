@@ -1,6 +1,6 @@
 import * as a1lib from "alt1";
 import DialogReader, { DialogButton } from "alt1/dialog";
-import { TypedEmitter } from "./TypeEmitter";
+import { TypedEmitter } from "./Handlers/TypeEmitter";
 import { useEffect, useState } from "react";
 /**
  *
