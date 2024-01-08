@@ -475,10 +475,15 @@ export class DiagReader extends TypedEmitter<readerEvents> {
  * Fetches and processes quest data and transcript for comparison.
  * @param p - Props containing the reader instance and quest name.
  * @returns JSX.Element representing the Reader component UI.
+ *
  */
-export function Reader(p: { reader: DiagReader; questName: string }) {
-	const [, setCState] = useState(p.reader.getCState());
-	const questName = p.questName;
+interface ReaderProps {
+	reader: DiagReader;
+	questName: string;
+}
+export const Reader: React.FC<ReaderProps> = ({ reader, questName }) => {
+	const [, setCState] = useState(reader.getCState());
+
 	useEffect(() => {
 		const fetchCompareTranscript = async (): Promise<void> => {
 			try {
@@ -510,7 +515,7 @@ export function Reader(p: { reader: DiagReader; questName: string }) {
 							value.toString().replace('"', "").replace('"', "")
 						) || [];
 					// Set the transcript data to the Zustand store
-					p.reader.cTStore = cTranscriptArray;
+					reader.cTStore = cTranscriptArray;
 				}
 			} catch (error) {
 				console.warn(
@@ -523,11 +528,12 @@ export function Reader(p: { reader: DiagReader; questName: string }) {
 	}, []);
 
 	useEffect(() => {
-		p.reader.on("change", setCState);
-		p.reader.toggleOptionRun(true);
+		console.log("I from the diagsolver has mounted");
+		reader.on("change", setCState);
+		reader.toggleOptionRun(true);
 		return () => {
-			p.reader.off("change", setCState);
-			p.reader.toggleOptionRun(false);
+			reader.off("change", setCState);
+			reader.toggleOptionRun(false);
 			// p.reader.toggleDiagRun(false);
 		};
 	}, []);
@@ -542,4 +548,4 @@ export function Reader(p: { reader: DiagReader; questName: string }) {
 			</div>
 		</>
 	);
-}
+};
