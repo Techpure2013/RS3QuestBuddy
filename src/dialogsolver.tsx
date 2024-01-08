@@ -1,6 +1,6 @@
 import * as a1lib from "alt1";
 import DialogReader, { DialogButton } from "alt1/dialog";
-import { TypedEmitter } from "./../Handlers/TypeEmitter";
+import { TypedEmitter } from "./Handlers/TypeEmitter";
 /**
  *
  * @property x - The x-coordinate of the point.
