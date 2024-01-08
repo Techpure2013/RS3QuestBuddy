@@ -162,9 +162,9 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	 * @param run - Boolean True Only
 	 */
 	public toggleOptionRun(run: boolean): void {
-		this.toggleOptionInterval(
+		this.toggleOptionInterval.bind(this)(
 			run,
-			() => this.readDiagOptions.bind(this)(),
+			() => this.readDiagOptions.bind(this),
 			600
 		);
 		console.log("I am at option run");
