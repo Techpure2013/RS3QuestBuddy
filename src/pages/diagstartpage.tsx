@@ -12,7 +12,6 @@ export const Reader: React.FC<ReaderProps> = ({ reader, questName }) => {
 		console.log("I from the diagsolver has mounted");
 		reader.on("change", setCState);
 		reader.toggleOptionRun(true);
-		reader.emit("change", reader.getCState());
 
 		const fetchCompareTranscript = async (): Promise<void> => {
 			console.log("Fetching CTranscripts");

@@ -83,7 +83,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	cTStore: string[] = [];
 	uniqueCoordinates: Record<string, { x: number; y: number }> = {};
 	coordinateCounts: Record<string, number> = {};
-	optionInterval: number = 1;
+	optionInterval: number | null = 1;
 	dialogInterval: number = 1;
 	displayNumber: number = 0;
 	widthBox: number = 0;
@@ -141,13 +141,13 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 		action: () => void,
 		interval: number
 	) {
-		console.log("I am at option run interval");
-		console.log(run, action, interval);
+		console.log("I am at option run interval", this.optionInterval);
+		console.log(run, action, interval, this.optionInterval);
 		try {
 			if (run && !this.optionInterval) {
 				console.log("I am here");
 				// Start a new interval timer and store its reference in the record
-				this.optionInterval = +setInterval(action.bind(this), interval);
+				this.optionInterval = +setInterval(action, interval);
 			} else if (!run && this.optionInterval) {
 				// Clear the interval timer if it exists
 				console.log("clearing Interval", this.optionInterval);
@@ -163,13 +163,8 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	 * Toggles the option reading process. () => this.readDiagOptions() at 600ms pulses
 	 * @param run - Boolean True Only
 	 */
-	public toggleOptionRun(run: boolean): void {
-		this.toggleOptionInterval.bind(this)(
-			run,
-			() => this.readDiagOptions.bind(this),
-			600
-		);
-		console.log("I am at option run");
+	toggleOptionRun(run: boolean): void {
+		this.toggleOptionInterval(run, () => this.readDiagOptions(), 600);
 	}
 
 	private readDiagOptions() {
