@@ -954,16 +954,16 @@
 		"CTranscript": "./Quests/Rag and Bone Man/CompareRag_and_Bone_Man.json"
 	},
 	{
-		"Quest": "Ratcatchers",
-		"Path": "./Quests/Ratcatchers/RatcatchersInfo.txt",
-		"Transcript": "./Quests/Ratcatchers/Rat_Catchers_transcript.json",
-		"CTranscript": "./Quests/Ratcatcher/CompareRat_Catchers.json"
-	},
-	{
 		"Quest": "Recipe for Disaster",
 		"Path": "./Quests/Recipe for Disaster/RecipeForDisasterInfo.txt",
 		"Transcript": "",
 		"CTranscript": ""
+	},
+	{
+		"Quest": "Rat Catchers",
+		"Path": "./Quests/Rat Catchers/RatCatchersInfo.txt",
+		"Transcript": "./Quests/Rat Catchers/Rat_Catchers_transcript.json",
+		"CTranscript": "./Quests/Rat Catchers/CompareRat_Catchers.json"
 	},
 	{
 		"Quest": "Recipe for Disaster: Freeing the Goblin Generals",
@@ -1102,6 +1102,12 @@
 		"Path": "./Quests/A Shadow over Ashdale/ShadowOverAshdaleInfo.txt",
 		"Transcript": "./Quests/A Shadow over Ashdale/A_Shadow_over_Ashdale_transcript.json",
 		"CTranscript": "./Quests/A Shadow over Ashdale/CompareA_Shadow_over_Ashdale.json"
+	},
+	{
+		"Quest": "Shadow of the Storm",
+		"Path": "./Quests/Shadow of the Storm/ShadowOfTheStormInfo.txt",
+		"Transcript": "./Quests/Shadow of the Storm/Shadow_of_the_Storm_transcript.json",
+		"CTranscript": "./Quests/Shadow of the Storm/CompareShadow_of_the_Storm.json"
 	},
 	{
 		"Quest": "Sheep Herder",
@@ -1336,12 +1342,6 @@
 		"Path": "./Quests/The Giant Dwarf/TheGiantDwarfInfo.txt",
 		"Transcript": "./Quests/The Giant Dwarf/The_Giant_Dwarf_transcript.json",
 		"CTranscript": "./Quests/The Giant Dwarf/CompareThe_Giant_Dwarf.json"
-	},
-	{
-		"Quest": "The Golem",
-		"Path": "./Quests/The Golem/GowerQuestInfo.txt",
-		"Transcript": "./Quests/The Golem/The_Golem_transcript.json",
-		"CTranscript": "./Quests/The Golem/CompareThe_Golem.json"
 	},
 	{
 		"Quest": "The Golem",

@@ -37,6 +37,10 @@
 		]
 	},
 	{
+		"name": "A Guild of Our Own Miniquest",
+		"images": [""]
+	},
+	{
 		"name": "A Fairy Tale II: Cure a Queen",
 		"images": [
 			"StartQuestDialog.png",
@@ -73,7 +77,7 @@
 		]
 	},
 	{
-		"name": "A Fairy Tale III: Battle at Orks Rift",
+		"name": "A Fairy Tale III: Battle at Ork's Rift",
 		"images": [
 			"AFairyTalePartIIIBattleatOrksRift.png",
 
@@ -929,7 +933,60 @@
 	},
 	{
 		"name": "Evil Dave's Big Day Out",
-		"images": ["EvilDavesBigDayOutoverview.png", "EvilDavesBigDayOutreward.png"]
+		"images": [
+			"evildaveshideoutstartloc.png",
+			"TalkToEvilDaveStart.png",
+			"MirrorLocation.png",
+			"EvilDaveMirror.png",
+			"talktodorisaftermirror.png",
+			"SearchWardrobe.png",
+			"wardrobeoptions.png",
+			"SweepingTheRug.png",
+			"SearchShelfForSoap.png",
+			"chore1Sink.png",
+			"AfterDishes.png",
+			"chopveggies.png",
+			"CleanBed.png",
+			"searchBookCase.png",
+			"BoilerSearch.png",
+			"searchDrapes.png",
+			"talkbanker.png",
+			"emptyFlaskStew.png",
+			"useEmptyFlaskonStew.png",
+			"exchangeBanker.png",
+			"handwrittennote.png",
+			"searchsuitofarmour.png",
+			"searchcrates.png",
+			"useonknightshelmetgunpowder.png",
+			"filledknightshelmet.png",
+			"notepaperonknightshelmet.png",
+			"completedbombknightshelmet.png",
+			"torchloc.png",
+			"routeTaken.png",
+			"drunksir.png",
+			"MargrettRat.png",
+			"talktoshantay.png",
+			"ShakeThePalmTree.png",
+			"Take Coconut.png",
+			"usecoconutonshantay.png",
+			"ShellRat.png",
+			"climbrope.png",
+			"ThrowHellRat.png",
+			"OpenJailDoor.png",
+			"TalktoShadyMan.png",
+			"SearchBarrel.png",
+			"AddRatToBarrel.png",
+			"TalkToBorderGuard.png",
+			"useRopeOnCoconutTree.png",
+			"useoldrugonbarrel.png",
+			"CarpetBarrel.png",
+			"RollTheBarrel.png",
+			"SlightlyTwinkledHole.png",
+			"insideTwinkly.png",
+			"EnterHoleIcon.png",
+			"GrabDave.png",
+			"CleanBedOption.png"
+		]
 	},
 	{
 		"name": "Extinction",
@@ -1736,11 +1793,20 @@
 		]
 	},
 	{
-		"name": "Once Upon a Time in Gielinor",
-		"images": [
-			"OnceUponaTimeinGielinor.png",
-			"OnceUponaTimeinGielinorreward.png"
-		]
+		"name": "Once Upon a Time in Gielinor: Flashback",
+		"images": ["OnceUponaTimeinGielinor.png", ""]
+	},
+	{
+		"name": "Once Upon a Time in Gielinor: Fortunes",
+		"images": ["OnceUponaTimeinGielinor.png", ""]
+	},
+	{
+		"name": "Once Upon a Time in Gielinor: Foreshadowing",
+		"images": ["OnceUponaTimeinGielinor.png", ""]
+	},
+	{
+		"name": "Once Upon a Time in Gielinor: Finale",
+		"images": ["OnceUponaTimeinGielinor.png", ""]
 	},
 	{
 		"name": "Once Upon a Slime",
