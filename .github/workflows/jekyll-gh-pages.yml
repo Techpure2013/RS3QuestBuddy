@@ -61,8 +61,6 @@ jobs:
         run: mv ./Rewards/ ./dist
       - name: Move Quest Images to ./dist
         run: mv ./Images/ ./dist
-      - name: Move Class DiagSolver to Dist
-        run: mv ./dialogsolver.tsx ./dist/src
       - name: List all directories and subdirectories
         run: find . -type d
       - name: List all files

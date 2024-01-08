@@ -44,7 +44,7 @@ import {
 } from "./../Fetchers/FetchQuestDetails.ts";
 import { useQuestControllerStore } from "./../Handlers/HandlerStore.ts";
 //import { createRoot } from "react-dom/client";
-import { DiagReader } from "./../dialogsolver.tsx";
+import { DiagReader } from "./dialogsolver.tsx";
 import { Reader } from "./diagstartpage.tsx";
 //import { PlayerQuests } from "./../Handlers/PlayerFetch.ts";
 // import questimages from "./QuestImages";

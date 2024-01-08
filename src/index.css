@@ -31,11 +31,11 @@
 .mantine-Accordion-control:hover {
 	background-color: #30497e;
 }
-.chevron {
+/* .chevron {
 	&[data-rotate] {
 		transform: rotate(180deg);
 	}
-}
+} */
 .icon {
 	width: rem(16px);
 	height: rem(16px);

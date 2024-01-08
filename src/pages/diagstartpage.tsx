@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { DiagReader } from "./../dialogsolver.tsx";
+import { DiagReader } from "./dialogsolver.tsx";
 
 interface ReaderProps {
 	reader: DiagReader;
@@ -10,6 +10,7 @@ export const Reader: React.FC<ReaderProps> = ({ reader, questName }) => {
 
 	useEffect(() => {
 		const fetchCompareTranscript = async (): Promise<void> => {
+			console.log("Fetching CTranscripts");
 			try {
 				// Fetch the quest data
 				const questResponse = await fetch("./QuestList.json");
