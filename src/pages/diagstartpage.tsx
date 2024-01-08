@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { DiagReader } from "./dialogsolver";
+import { DiagReader } from "./dialogsolver.tsx";
 
 interface ReaderProps {
 	reader: DiagReader;
