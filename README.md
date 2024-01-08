@@ -1,14 +1,29 @@
 # RS3QuestBuddy
-RS3 Quest Buddy acts as your virtual questing buddy, offering hints and shortcuts to make your RuneScape 3 quests less of a puzzle and more of an enjoyable stroll through the gaming landscape.
-In the intricate labyrinth of digital innovation, Techpure grapples with the arduous task of birthing RS3 Quest Helper—a laborious endeavor beset by the challenges inherent in crafting a tool that transcends the virtual dimensions of RuneScape 3. The struggle is palpable; a symphony of lines of code, algorithms, and design elements wrestles with the complexities of enhancing the questing experience for players.
+Runescape 3 Quest Buddy is the first of its kind, without time and dedication and the resources available this would not be possible. It contains the knowledge to know what option is the next in the quest 🎉 All 260 Quests, 56 Miniquests, and all sub quests. Steps are going to change eventually to better more precise steps eventually moving away from the wiki with new pictures to tell you whats going on, and better clear steps. The steps currently are from the RS Wiki I am wanting to move away from the wiki and aim towards Quality of Life for questing using the RS3 Quest Buddy. The steps are 100% accurate, to what step your on. It is the first project that I have built. If you want to contribute either in code, quest data, information, picture etc. Please Contact Techpure on discord he is really friendly and takes advice like a champ.
 
-This insight into the ongoing saga of RS3 Quest Helper draws inspiration from the digital scriptures of The RuneScape Wiki—an invaluable repository of knowledge and a beacon of enlightenment for those seeking to unravel the intricacies of the virtual realms. As the digital forge burns with the heat of creative friction, RS3 Quest Helper emerges as a phoenix from the crucible of struggle, with contributions from the collective wisdom curated by the diligent scribes of The RuneScape Wiki.
+#Some Key Features Include:
+Reading the options to correctly proceed in the quest. 
 
-The coding scribes, armed with the insights gleaned from this virtual tome, toil ceaselessly, grappling with the intricacies of RuneScape 3 quests. The struggle lies not only in overcoming technical hurdles but also in distilling the essence of support, seamlessly integrating it into the very fabric of the gaming tapestry—a tapestry woven in part by the collaborative efforts and meticulous documentation found within The RuneScape Wiki.
+![image](https://github.com/Techpure2013/RS3QuestBuddy/assets/149278134/a4a847fb-805d-49a3-93c3-6e62c2cd45f9)
 
-This odyssey of development, influenced by the digital verses scribed by the RuneScape community, is not without its trials. A journey through lines of code fraught with unexpected challenges, debugging quests akin to navigating a virtual labyrinth. The struggle becomes a crucible, refining the tool's functionality and utility, transforming it into a digital ally that resonates with the grit of the development process and the shared knowledge of RuneScape enthusiasts.
+#Requirements, Items needed, and much more:
 
-In the struggle, Techpure's commitment to user empowerment shines through, guided in part by the illuminating pages of The RuneScape Wiki—a testament to the collaborative spirit that defines the RuneScape community. RS3 Quest Helper, a manifestation of collective effort, is envisioned not just as a tool but as a symbiosis of digital ingenuity and community wisdom, a tribute to the shared pursuit of virtual perfection sparked by the illuminating insights found within The RuneScape Wiki.
+![image](https://github.com/Techpure2013/RS3QuestBuddy/assets/149278134/23a1449b-8509-46d2-ba37-63dfe0f7edb4)
+
+
+#Steps to keep track of where you are:
+
+![image](https://github.com/Techpure2013/RS3QuestBuddy/assets/149278134/d0215308-4fc0-4935-8e4a-7a7d1001727f)
+
+#Images to maybe help Hashtag not the greatest image collection. But am currently collecting better images for quests.
+
+![image](https://github.com/Techpure2013/RS3QuestBuddy/assets/149278134/feda60c0-0753-4a9a-8f32-d05a3e04cb8c)
+
+If you want to help gather images contact Techpure on discord.
+
+#The Quest Carousel containing 260 quest 56 mini quests all subquests:
+
+![image](https://github.com/Techpure2013/RS3QuestBuddy/assets/149278134/35aa04f1-9371-4e81-8c11-15be0c01be57)
 
 ---
 
