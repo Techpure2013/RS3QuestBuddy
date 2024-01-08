@@ -143,6 +143,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	) {
 		try {
 			if (run && !this.optionInterval) {
+				console.log("I am here");
 				// Start a new interval timer and store its reference in the record
 				this.optionInterval = +setInterval(action, interval);
 			} else if (!run && this.optionInterval) {
@@ -161,7 +162,11 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	 * @param run - Boolean True Only
 	 */
 	public toggleOptionRun(run: boolean): void {
-		this.toggleOptionInterval(run, () => this.readDiagOptions(), 600);
+		this.toggleOptionInterval(
+			run,
+			() => this.readDiagOptions.bind(this)(),
+			600
+		);
 		console.log("I am at option run");
 	}
 
