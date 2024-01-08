@@ -98,6 +98,20 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 		// Bind methods to the current instance
 		this.readDiagOptions = this.readDiagOptions.bind(this);
 		this.displayBox = this.displayBox.bind(this);
+		this.toggleOptionInterval = this.toggleOptionInterval.bind(this);
+		this.toggleOptionRun = this.toggleOptionRun.bind(this);
+		this.getCState = this.getCState.bind(this);
+		this.displayBox = this.displayBox.bind(this);
+		this.levenshteinDistance = this.levenshteinDistance.bind(this);
+		this.processDialog = this.processDialog.bind(this);
+		this.processMatching = this.processMatching.bind(this);
+		this.findBestMatchIndex = this.findBestMatchIndex.bind(this);
+		this.updateDiagDimensions = this.updateDiagDimensions.bind(this);
+		this.emit = this.emit.bind(this);
+		this.on = this.on.bind(this);
+		this.off = this.off.bind(this);
+		this.populateUniqueCoordinates = this.populateUniqueCoordinates.bind(this);
+		this.readCapture = this.readCapture.bind(this);
 	}
 	/**
 	 * Retrieves the current state of the DiagReader.
@@ -472,10 +486,3 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 		return matrix[a.length][b.length];
 	}
 }
-/**
- * Reader component responsible for managing and displaying dialog reader state.
- * Fetches and processes quest data and transcript for comparison.
- * @param p - Props containing the reader instance and quest name.
- * @returns JSX.Element representing the Reader component UI.
- *
- */
