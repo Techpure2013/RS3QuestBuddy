@@ -79,7 +79,7 @@ export class TypedEmitter<T extends Record<string, any>> {
 		// Update the listeners for the specified event
 		this.listeners[event] = listeners;
 
-		// // Log that listeners for the event have been updated
-		// console.log(`Listeners for event ${String(event)} have been updated.`);
+		// Log that listeners for the event have been updated
+		console.log(`Listeners for event ${String(event)} have been updated.`);
 	}
 }
