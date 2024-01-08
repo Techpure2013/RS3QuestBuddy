@@ -1,97 +1,97 @@
 @font-face {
-    font-family: rs3Font;
-    src: url("/fonts/RS3Bold.woff2");
+	font-family: rs3Font;
+	src: url("/fonts/RS3Bold.woff2");
 }
 .flexedButtons {
-    display: flex;
-    bottom: 30px; /* Adjust as needed */
-    margin-bottom: 20px; /* Add margin to create space */
-    z-index: 1; /* Set a higher z-index if needed */
+	display: flex;
+	bottom: 30px; /* Adjust as needed */
+	margin-bottom: 20px; /* Add margin to create space */
+	z-index: 1; /* Set a higher z-index if needed */
 }
 .mantine-Stepper-stepDescription {
-    color: #575757;
+	color: #575757;
 }
 .mantine-Accordion-root {
-    font: rs3Font;
-    display: block;
-    width: 60vh;
-    z-index: 0; /* Set a lower z-index to ensure it stays behind other elements */
+	font: rs3Font;
+	display: block;
+	width: 60vh;
+	z-index: 0; /* Set a lower z-index to ensure it stays behind other elements */
 }
 .mantine-List-root {
-    list-style-type: none;
-    display: block;
+	list-style-type: none;
+	display: block;
 }
-.mantine-Stepper-stepIcon{
-    color: #575757;
+.mantine-Stepper-stepIcon {
+	color: #575757;
 }
 .mantine-Accordion-panel {
-    color: #4D5564;
+	color: #4d5564;
 }
 
 .mantine-Accordion-control:hover {
-    background-color: #30497e;
+	background-color: #30497e;
 }
 .chevron {
-    &[data-rotate] {
-        transform: rotate(180deg);
-    }
+	&[data-rotate] {
+		transform: rotate(180deg);
+	}
 }
 .icon {
-    width: rem(16px);
-    height: rem(16px);
+	width: rem(16px);
+	height: rem(16px);
 }
 .App {
-    font-family: rs3Font;
-    text-align: center;
+	font-family: rs3Font;
+	text-align: center;
 }
 .Alt1Button {
-    background-color: ;
+	background-color: ;
 }
 
 TextInput {
-    text-align: center;
-    margin-top: 10px; /* Adjust the margin-top as needed */
-    color: #4e85bc;
-    background: linear-gradient(
-        to bottom,
-        #546576,
-        #3d4b5a,
-        #2c3742,
-        #1e2832,
-        #141b23,
-        #0c1117
-    );
+	text-align: center;
+	margin-top: 10px; /* Adjust the margin-top as needed */
+	color: #4e85bc;
+	background: linear-gradient(
+		to bottom,
+		#546576,
+		#3d4b5a,
+		#2c3742,
+		#1e2832,
+		#141b23,
+		#0c1117
+	);
 }
 
 .caroQTitle {
-    text-align: center;
-    top: 50px;
+	text-align: center;
+	top: 50px;
 }
 .caroContainer {
-    font-family: rs3Font;
-    text-align: center;
-    cursor: pointer;
+	font-family: rs3Font;
+	text-align: center;
+	cursor: pointer;
 }
 .questContainer {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 img {
-    bottom: auto;
-    align: center;
-    margin: auto;
-    display: block;
-    image-rendering: pixelated;
+	bottom: auto;
+	align: center;
+	margin: auto;
+	display: block;
+	image-rendering: pixelated;
 }
 
 img.enlarged {
-    width: 300px; /* Change this value to your desired size */
-    height: auto;
+	width: 300px; /* Change this value to your desired size */
+	height: auto;
 }
 .stepperContainer {
-    max-height: 400px; /* Set the desired height for the stepper container */
-    
-    margin-top: 16px; /* Adjust as needed to create space between buttons and stepper */
+	max-height: 400px; /* Set the desired height for the stepper container */
+
+	margin-top: 16px; /* Adjust as needed to create space between buttons and stepper */
 }
 /* .buttonsGroup {
     position: fixed;
@@ -101,84 +101,84 @@ img.enlarged {
     gap: 10px;
 } */
 .ButtonGroupTwo {
-    position: fixed;
-    top: 30px;
-    left: 2%;
-    display: flex;
-    gap: 10px;
+	position: fixed;
+	top: 30px;
+	left: 2%;
+	display: flex;
+	gap: 10px;
 }
 /* Save this buttons class for later use maybe */
 .prevNextGroup {
-    position: fixed;
-    top: 17.5%; /* Adjust as needed */
-    left: 60%; /* Center horizontally */
-    display: block;
-    gap: 10px;
-    z-index: 0;
+	position: fixed;
+	top: 17.5%; /* Adjust as needed */
+	left: 60%; /* Center horizontally */
+	display: block;
+	gap: 10px;
+	z-index: 0;
 }
 .mantine-Button-root {
-    font-size: 16px;
-    border-radius: 4px; /* Optional: Rounded corners */
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7); /* Shadow on the bottom right */
-    font-family: rs3Font;
+	font-size: 16px;
+	border-radius: 4px; /* Optional: Rounded corners */
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7); /* Shadow on the bottom right */
+	font-family: rs3Font;
 }
 .mantine-Button-root:hover {
-    background-color: hsl(200, 25%, 50%);
+	background-color: hsl(200, 25%, 50%);
 }
 .navLink {
-    text-decoration: none;
-    color: #4e85bc;
+	text-decoration: none;
+	color: #4e85bc;
 }
 .mantine-Stepper-stepDescription {
-    width: 60vh;
-    font-family: rs3Font;
-    font-size: 15px;
-    color: #4e85bc;
+	width: 60vh;
+	font-family: rs3Font;
+	font-size: 15px;
+	color: #4e85bc;
 }
 
 .mantine-Stepper-stepIcon {
-    background: linear-gradient(
-        to bottom,
-        #546576,
-        #3d4b5a,
-        #2c3742,
-        #1e2832,
-        #141b23,
-        #0c1117
-    );
+	background: linear-gradient(
+		to bottom,
+		#546576,
+		#3d4b5a,
+		#2c3742,
+		#1e2832,
+		#141b23,
+		#0c1117
+	);
 }
 .mantine-Stepper-stepLabel {
-    font-size: 20px;
-    font-family: rs3Font;
-    color: #4e85bc;
+	font-size: 20px;
+	font-family: rs3Font;
+	color: #4e85bc;
 }
 
 .mantine-TextInput-label {
-    font-family: rs3Font;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #4e85bc;
-    font-size: 25px;
+	font-family: rs3Font;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #4e85bc;
+	font-size: 25px;
 }
 .QuestPageImageCaro {
-    z-index: 1;
+	z-index: 1;
 }
 .custom-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 50vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 50vh;
 }
 
 .mantine-TextInput-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .mantine-TextInput-input {
-    text-align: center;
-    width: 25rem;
+	text-align: center;
+	width: 25rem;
 }
 .flexGroup,
 .qpTitle {
@@ -186,30 +186,13 @@ img.enlarged {
 body,
 html,
 #root {
-    background: linear-gradient(
-        to bottom,
-        #546576,
-        #3d4b5a,
-        #2c3742,
-        #1e2832,
-        #141b23,
-        #0c1117
-    );
-    font-family: rs3Font;
-    padding: 0px;
-    margin: 0px;
-    height: 100%;
-    animation: backgroundPulse 5s infinite alternate ease-in-out;
+	background-image: url("./assets/background.png");
+	font-family: rs3Font;
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
 }
 h2 {
-    text-align: center;
-    color: #4e85bc;
-}
-@keyframes backgroundPulse {
-    0% {
-        background: #2c3742;
-    }
-    100% {
-        background: #141b23; /* A slightly darker shade */
-    }
+	text-align: center;
+	color: #4e85bc;
 }

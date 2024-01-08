@@ -1,3169 +1,3205 @@
 [
-    {
-        "name": "A Clockwork Syringe",
-        "images": [
-            "AClockworkSyringe.png",
-            "AClockworkSyringeConveyorbeltdestruction.png",
+	{
+		"name": "A Clockwork Syringe",
+		"images": [
+			"AClockworkSyringe.png",
+			"AClockworkSyringeConveyorbeltdestruction.png",
 
-            "BarrelchestdisguisedsabotageAClockworkSyringe.png",
-            "ControllingBaronvonHattenkrapperAClockworkSyringe.png",
-            "deadbrewerslocation.png",
-            "EnteringtheRumgeonAClockworkSyringe.png",
-            "Interrogatingthezombiehead.png",
-            "JoesPubChair.png",
-            "Largecrateplayerownedhouse.png",
-            "RumgeoncombatAClockworkSyringe.png",
-            "TheAdventurousunderattack.png",
-            "TheRideAClockworkSyringe.png",
-            "Zombiestresslevel.png"
-        ]
-    },
-    {
-        "name": "A Fairy Tale I: Growing Pains",
-        "images": [
-            "MartinMasterFarmerLocation.png",
-            "CommonOptionBetweenFarmers.png",
-            "AlainFarmerLoc.png",
-            "FizzleFarmerLoc.png",
-            "ElstanFarmerLoc.png",
-            "Daterna and Ellena Farmer.png",
-            "WhereToDigDrayorManor.png",
-            "EasyTeleportToZanaris.png"
-            
-        ]
-    },
-    {
-        "name": "A Fairy Tale II: Cure a Queen",
-        "images": ["FairyNuffsgrotto.png"]
-    },
-    {
-        "name": "A Fairy Tale III: Battle at Orks Rift",
-        "images": [
-            "AFairyTalePartIIIBattleatOrksRift.png",
+			"BarrelchestdisguisedsabotageAClockworkSyringe.png",
+			"ControllingBaronvonHattenkrapperAClockworkSyringe.png",
+			"deadbrewerslocation.png",
+			"EnteringtheRumgeonAClockworkSyringe.png",
+			"Interrogatingthezombiehead.png",
+			"JoesPubChair.png",
+			"Largecrateplayerownedhouse.png",
+			"RumgeoncombatAClockworkSyringe.png",
+			"TheAdventurousunderattack.png",
+			"TheRideAClockworkSyringe.png",
+			"Zombiestresslevel.png"
+		]
+	},
+	{
+		"name": "A Fairy Tale I: Growing Pains",
+		"images": [
+			"MartinMasterFarmerLocation.png",
+			"CommonOptionBetweenFarmers.png",
+			"AlainFarmerLoc.png",
+			"FizzleFarmerLoc.png",
+			"ElstanFarmerLoc.png",
+			"Daterna and Ellena Farmer.png",
+			"WhereToDigDrayorManor.png",
+			"EasyTeleportToZanaris.png",
+			"NatureSpirit.png",
+			"NatureSpiritGrotto.png",
+			"Queens Secateurs.png",
+			"ZanarisDungeon.png",
+			"ZanarisFairyTODung.png"
+		]
+	},
+	{
+		"name": "A Fairy Tale II: Cure a Queen",
+		"images": [
+			"StartQuestDialog.png",
+			"FairyNuffLocation.png",
+			"HealingCert.png",
+			"PickUpCertMonoLogue.png",
+			"showtofairychef.png",
+			"studyOptionsforCert.png",
+			"runeTemplesign.png",
+			"FairyGodfatherLoc.png",
+			"FairyGodFatherFairy.png",
+			"OptiontoFairyGodfather.png",
+			"optionforFairyGodfather2.png",
+			"Optionforfairygodfather3.png",
+			"fairycoordinatorloc.png",
+			"FairyCoordinator.png",
+			"OptiontoAskCoordinator.png",
+			"fairyfixitlocation.png",
+			"fairyfixitfairy.png",
+			"fairyringcode1.png",
+			"fairyringcode2.png",
+			"fairyringcode3.png",
+			"HowToGetToFairyHQ.png",
+			"fairynufflocationfairyhq.png",
+			"FairyNuffFairyHQ.png",
+			"starflowerfairycode.png",
+			"GorakFairyCode.png",
+			"GorakClaw.png",
+			"ItemsForEssencePot.png",
+			"EssencePotionstep2.png",
+			"EssencePotionstep3.png",
+			"FairyQueenCuring.png",
+			"TalkToFairyQueen.png"
+		]
+	},
+	{
+		"name": "A Fairy Tale III: Battle at Orks Rift",
+		"images": [
+			"AFairyTalePartIIIBattleatOrksRift.png",
 
-            "Gnarlymood.png",
-            "Godfathersarmy.png",
-            "Mangowithtoothground.png",
-            "PickpocketingKChunk.png",
-            "Projector.png",
-            "PullingShredfleshstooth.png",
+			"Gnarlymood.png",
+			"Godfathersarmy.png",
+			"Mangowithtoothground.png",
+			"PickpocketingKChunk.png",
+			"Projector.png",
+			"PullingShredfleshstooth.png",
 
-            "SparsePlane.png"
-        ]
-    },
-    {
-        "name": "A Shadow over Ashdale",
-        "images": [
-            "Agorothdies.png",
-            "AShadowoverAshdale.png",
-            "AShadowoverAshdaleAshdaleissafe.png",
-            "AShadowOverAshdalereward.png",
-            "ASOAAgorothArrives.png",
-            "ASOABarrelpuzzle.png",
-            "FightingAgoroth.png",
-            "KillingaCrassianwarrior.png"
-        ]
-    },
-    {
-        "name": "A Soul's Bane",
-        "images": [
-            "Angerweapons.png",
-            "ASoulsBane.png",
-            "ASoulsBanereward.png",
-            "ConfrontingTolna.png",
-            "FightingTolna.png",
-            "Increaserage.png",
-            "Killingfear.png",
-            "Superrage.png",
-            "Tolna.png",
-            "Tolnaconfused.png",
-            "Tolnaleaveshome.png",
-            "Tolnatrapped.png"
-        ]
-    },
-    {
-        "name": "A Tail of Two Cats",
-        "images": [
-            "ATailofTwoCats.png",
-            "ATailofTwoCatsreward.png",
-            "BobsWanderRadius.png",
-            "Choppinghair.png",
-            "CuringUnferth.png",
-            "Talkingtosphinx.png"
-        ]
-    },
-    {
-        "name": "A Void Dance",
-        "images": [
-            "300px-AVoidDanceclue2.pngd4825.png",
-            "300px-AVoidDanceclue3.pngc8e4a.png",
-            "300px-AVoidDanceclue4.png2edc3.png",
-            "300px-AVoidDanceclue5.png6f23a.png",
-            "AVoidDance.png",
-            "AVoidDanceclue.png",
-            "AVoidDanceending.png",
-            "AVoidDancefightingtheguardians.png",
-            "AVoidDanceGootrail.png",
-            "AVoidDanceHatchway.png",
-            "AVoidDanceKorasibreaksthebox.png",
-            "AVoidDanceKorasistrikestheguard.png",
-            "AVoidDanceSummoningtheVoidDrone.png",
-            "AVoidDanceThepesttrapped.png"
-        ]
-    },
-    {
-        "name": "Aftermath",
-        "images": [
-            "Aftermath.png",
-            "Saradomininaftermath.png",
-            "SirCadianinthezamorakianundercity.png",
-            "ZarosiansmeetinPraetoriuminaftermath.png"
-        ]
-    },
-    {
-        "name": "All Fired Up",
-        "images": ["AllFiredUp.png", "BlazeBeacon.png"]
-    },
-    {
-        "name": "Alpha vs Omega",
-        "images": [
-            "AlphavsOmega.png",
-            "AlphavsOmegaRasialdefeated.png",
-            "AlphavsOmegathebattlewithRasial.png"
-        ]
-    },
-    {
-        "name": "Ancient Awakening",
-        "images": [
-            "AncientAwakening.png",
-            "AncientAwakeningAsterandwoodenheadstone.png",
-            "AncientAwakeningfightingtheundeadgiant.png",
-            "AncientAwakeningfindingartefacts.png",
-            "AncientAwakeningTheyshallservemeindeath.png",
-            "AncientAwakeningundeadwaves.png",
-            "TheHolographicArchivist.png",
-            "ZemouregalsummoningVorkath.png"
-        ]
-    },
-    {
-        "name": "Animal Magnetism",
-        "images": ["AnimalMagnetism.png", "CompletedNotes.png"]
-    },
-    {
-        "name": "Another Slice of HAM",
-        "images": [
-            "AnotherSliceofH.png",
-            "Congratzfromdorgshuun.png",
-            "Digforartefacts.png",
-            "Excavation.png",
-            "Goblinvillagegathering.png",
-            "H.png",
-            "Locationurtag.png",
-            "Zanikcaught.png",
-            "Zaniktied.png"
-        ]
-    },
-    {
-        "name": "As a First Resort",
-        "images": [
-            "Asafirstresort.png",
-            "Releasingplatypus.png",
-            "ResortCook.png",
-            "ResortSnurgh.png",
-            "VarrockHerald.png"
-        ]
-    },
-    {
-        "name": "Azzanadras Quest",
-        "images": [
-            "AzzanadraandArianeattheGielinorsElderHalls.png",
-            "Azzanadracomplainsaboutthecouncil.png",
-            "AzzanadrasQuest.png",
-            "Freneskaemap.png",
-            "HarvestingaTrindinespring.png",
-            "HarvestingJasmemoryspring.png",
-            "SaradominreturnstoGielinor.png",
-            "TokHaarHokmeetswithTzHaar.png",
-            "TrindineandVeilinius.png",
-            "TrindinewaitingattheHallofMemories.png",
-            "WhiteKnightsCastlefull.png",
-            "Zarosteleportsawaywiththecrown.png"
-        ]
-    },
-    {
-        "name": "Back to my Roots",
-        "images": ["Jadevinemazemap.png", "WizardLocation.png"]
-    },
-    {
-        "name": "Back to the Freezer",
-        "images": [
-            "BacktotheFreezer.png",
-            "BacktotheFreezercabbages.png",
-            "BacktotheFreezerclockworksuit.png",
-            "BacktotheFreezerheadbanner.png",
-            "BacktotheFreezerMiningGuild.png",
-            "BacktotheFreezermonkeyisland.png",
-            "BacktotheFreezerPingandPong.png",
-            "BacktotheFreezersecretbunkerpastmap.png",
-            "BacktotheFreezersecretbunkerpresentmap.png",
-            "ElonsListTable.png",
-            "ItemTable1.png",
-            "TalkingtoDundee.png",
-            "TalkingtoSkotandMundsen.png"
-        ]
-    },
-    {
-        "name": "Battle of the Monolith",
-        "images": [
-            "300px-BattleoftheMonolith-Week5.png77c7b.png",
-            "Azzanadraascends.png",
-            "BattlefortheMonolith.png",
-            "BattleoftheMonoliththirdbattlelocations.png",
-            "BattleoftheMonolithWeek.png",
-            "BattleoftheMonolithWeekfarm.png",
-            "BattleoftheMonolithWeeknorthernbarricades.png",
-            "BattleoftheMonolithWeeksouthernbarricade.png",
-            "BattleoftheMonolithWeekVarrockgates.png",
-            "ElderGodWarsBattleoftheMonolithTrailer.png",
-            "SerenconfrontsZarosattheMonolith.png"
-        ]
-    },
-    {
-        "name": "Beneath Cursed Tides",
-        "images": [
-            "BeneathCursedTides.png",
-            "BeneathCursedTidescookingshrimp.png",
-            "BeneathCursedTidesrecruitingVannaka.png",
-            "BeneathCursedTidestutors.png",
-            "Cookingforthemasterchef.png",
-            "Deadsearats.png",
-            "KillingachickenforTerrova.png",
-            "ShowdownwithVivian.png"
-        ]
-    },
-    {
-        "name": "Between a Rock",
-        "images": ["dwarvernengineerlocation.png"]
-    },
-    {
-        "name": "Big Chompy Bird Hunting",
-        "images": [
-            "BigChompyBirdHunting.png",
-            "BigChompyBirdHuntingChompyHunt.png",
-            "BigChompyBirdHuntingCooking.png",
-            "BigChompyBirdHuntingInflatingToads.png",
-            "BigChompyBirdHuntingRantz.png",
-            "BigChompyBirdHuntingRantzscave.png"
-        ]
-    },
-    {
-        "name": "Biohazard",
-        "images": [
-            "Biohazard.png",
-            "GuidorsLocation.png",
-            "ReasonTable.png",
-            "ReleasingthePigeons.png"
-        ]
-    },
-    {
-        "name": "Birthright of the Dwarves",
-        "images": [
-            "Barendirarmy.png",
-            "Birthrightherdingmemories.png",
-            "BirthrightoftheDwarves.png",
-            "BirthrightoftheDwarvesreward.png",
-            "BirthrightoftheDwarvesstart.png",
-            "BirthrightoftheDwarvesTheDirectorandGrimsson.png",
-            "DondakansLocation.png",
-            "EntranceToBarendirTunnel.png",
-            "FightingGrimsson.png",
-            "FightingGrimssonandHreidmar.png",
-            "Fightinginthemine.png",
-            "FinishedSchematic.png",
-            "FragmentTable1.png",
-            "FragmentTable2.png",
-            "FragmentTable3.png",
-            "FragmentTable4.png",
-            "FragmentTable5.png",
-            "Grimssonescapes.png",
-            "Grimssonsmemories.png",
-            "GrunshbrainwashesVeldaban.png",
-            "Grunshsmemories.png",
-            "Hreidagrim.png",
-            "LocationDwarvenEngineer.png",
-            "TaverlyDungeonMap.png",
-            "Veldabansabdication.png"
-        ]
-    },
-    {
-        "name": "Blood Runs Deep",
-        "images": [
-            "AttackWeaknessTable.png",
-            "BloodRunsDeep.png",
-            "BloodRunsDeepdagannothattack.png",
-            "BloodRunsDeepDagannothmotherencounter.png",
-            "BloodRunsDeepmarriage.png",
-            "BloodRunsDeepreward.png",
-            "Brundtsboat.png",
-            "CaveMap.png",
-            "Dagannothsentinels.png",
-            "Fremennikspiritualrealm.png",
-            "Funeral.png",
-            "Partyofheroes.png",
-            "Rellekkadagannothattack.png",
-            "SealingtheDagannothschamber.png",
-            "TraptheDagannothmother.png",
-            "Vargasescort.png",
-            "Youmaykissthebride.png"
-        ]
-    },
-    {
-        "name": "Bringing Home the Bacon",
-        "images": [
-            "Apigletandakitten.png",
-            "Baconaddictsappear.png",
-            "BringingHometheBacon.png",
-            "BringingHometheBaconreward.png",
-            "Convincingvillagers.png",
-            "MakingaBeastofBurden.png"
-        ]
-    },
-    {
-        "name": "Broken Home",
-        "images": [
-            "BanishingOrmod.png",
-            "BrokenHome.png",
-            "BrokenHomemap.png",
-            "BrokenHomestatuepuzzle.png",
-            "BrokenHomestatuepuzzlesolution.png",
-            "BrokenHomewindowsshatter.png",
-            "Broken_home_basement.png",
-            "Broken_home_first_floor.png",
-            "Broken_home_ground_floor.png",
-            "Discoveringthefacelessservant.png",
-            "Flyingkniferoom.png",
-            "Gettingtheeyegemfromtheskeleton.png",
-            "Lenianintroduceshimself.png",
-            "Lenianisconsumed.png",
-            "Obtainingthedollkey.png",
-            "Servantiseaten.png",
-            "TheAsylum.png",
-            "Themonsterchasesyou.png"
-        ]
-    },
-    {
-        "name": "Buyers and Cellars",
-        "images": ["BuyersandCellars.png", "FatherUrhneyFire.png"]
-    },
-    {
-        "name": "Cabin Fever",
-        "images": [
-            "CabinFever.png",
-            "Cabinfevercutscene.png",
-            "CabinFeverdevastation.png",
-            "CabinFeverLeFietteTeach.png",
-            "RepairingTheAdventurous.png"
-        ]
-    },
-    {
-        "name": "Call of the Ancestors",
-        "images": [
-            "AirutAmbush.png",
-            "CalloftheAncestors.png",
-            "FirstGoebietrial.png",
-            "Goebiesgather.png",
-            "Lunchisimpaled.png",
-            "Meetingtheancientgoebie.png",
-            "MeetingXinachto.png",
-            "SecondGoebietrial.png",
-            "ThirdGoebietrial.png"
-        ]
-    },
-    {
-        "name": "Carnillean Rising",
-        "images": [
-            "CarnilleanRising.png",
-            "CarnilleanRisingreward.png",
-            "Gettingtheguarddrunk.png",
-            "Luringwolves.png",
-            "Philipesreward.png",
-            "Spoilheap.png",
-            "TyingSarsaparilla.png"
-        ]
-    },
-    {
-        "name": "Catapult Construction",
-        "images": [
-            "Catapultbroken.png",
-            "CatapultConstruction.png",
-            "CatapultConstructionreward.png",
-            "Catapultconstructionstart.png",
-            "Catapult_repair_complete.png",
-            "Catapult_repair_controls.png",
-            "Orange_Side.png",
-            "Purple_Side.png"
-        ]
-    },
-    {
-        "name": "Chef's Assistant",
-        "images": [
-            "ChefsAssistant.png",
-            "ChefsAssistantreward.png",
-            "CooksAssistant.png",
-            "philanddelphinelocation.png"
-        ]
-    },
-    {
-        "name": "Children of Mah",
-        "images": [
-            ".ChildrenofMah.png",
-            ".ChildrenofMahreward.png",
-            ".JhallanandKharshaidiscussthegathering.png",
-            ".Kharshaismemoryofthethroneroom.png",
-            ".Lavasurfing.png",
-            ".Mahjarratreturntotheritualsite.png",
-            ".NightmareofMah.png",
-            ".SerenkillsMah.png",
-            ".SerenonFreneskae.png",
-            ".ZemouregalkidnapsKharshai.png"
-        ]
-    },
-    {
-        "name": "City of Senntisten",
-        "images": [
-            "Azzanadrateleportsintheeldergodeggs.png",
-            "CityofSenntisten.png",
-            "CityofSenntistendrawerpuzzlesolution.png",
-            "cityofsenntistenmap.png",
-            "CityofSenntistenreward.png",
-            "Excavatingtheforumentrance.png",
-            "FightingaGargoylesentinel.png",
-            "FightingtheBloodWarden.png",
-            "MeetinginGielinorElderHalls.png",
-            "Thegodsandtheeldergodeggs.png"
-        ]
-    },
-    {
-        "name": "Clock Tower",
-        "images": [
-            "ClockTower.png",
-            "Clocktowerblackcog.png",
-            "Clocktowerbluecog.png",
-            "clocktowermap.png",
-            "Clocktowerredcog.png",
-            "ClockTowerreward.png",
-            "Clocktowerwhitecog.png"
-        ]
-    },
-    {
-        "name": "Cold War",
-        "images": [
-            "ColdWar.png",
-            "ColdWarreward.png",
-            "Finishedbirdielookout.png",
-            "Meetingpingandpong.png",
-            "Penguinarmy.png",
-            "penguinoutpostmap.png",
-            "Spyingpenguins.png",
-            "Thepenguinsinthesheepfield.png"
-        ]
-    },
-    {
-        "name": "Contact",
-        "images": [
-            "Contact.png",
-            "Contactreward.png",
-            "Coosmansneaking.png",
-            "Maisaindungeon.png",
-            "Scarabfight.png",
-            "SophanemDungeonmap.png"
-        ]
-    },
-    {
-        "name": "Cook's Assistant",
-        "images": [
-            "CooksAssistant.png",
-            "cooksassistantmap.png",
-            "CooksAssistantreward.png"
-        ]
-    },
-    {
-        "name": "Creature of Fenkenstrain",
-        "images": [
-            "BookshelveswiththeAmulets.png",
-            "Clearingfireplace.png",
-            "CreatureofFenkenstrain.png",
-            "CreatureofFenkenstrainreward.png",
-            "CreatureofFenkenstrainstart.png",
-            "EdLestwitsgrave.png",
-            "Fenkenstraingrave.png",
-            "Fenkenstrainsmonsterontable.png",
-            "Killingexperiment.png",
-            "Lightning.png",
-            "Rollo.png"
-        ]
-    },
-    {
-        "name": "Crocodile Tears",
-        "images": [
-            "CrocodileTears.png",
-            "CrocodileTearsreward.png",
-            "Crondisrequestsfood.png",
-            "Ukundakafight.png"
-        ]
-    },
-    {
-        "name": "Curse of the Black Stone",
-        "images": [
-            "ConfrontingBletchley.png",
-            "CurseoftheBlackStone.png",
-            "CurseoftheBlackStonereward.png",
-            "DiggingonWhalesMaw.png",
-            "DragonkinLaboratory.png",
-            "DragonkinonKethsi.png",
-            "Dragonstatuepuzzle.png",
-            "FightingCrassiansonGoshima.png",
-            "Gatheredforces.png",
-            "HannibusandVindicta.png",
-            "locationofseagulls.png",
-            "Shiftingtombsrewardenhancer.png",
-            "StevenswifeandLudwig.png",
-            "TempleofAminishiEliteDungeon.png",
-            "TheAmbassadorkillsShihscrew.png"
-        ]
-    },
-    {
-        "name": "Daughter of Chaos",
-        "images": [
-            "AdrasteiainFaladorCastlethroneroom.png",
-            "AnneDimitriandtherift.png",
-            "AnneDimitriischannellingaspellinRedDragonIsle.png",
-            "AnneDimitriischannellingaspellinwarbandscamp.png",
-            "DaughterofChaosoverview.png",
-            "DaughterofChaosreward.png",
-            "MoiaconfrontsAvaryssinInfernalSource.png",
-            "TrindineleavetheSourceandbacktoWilderness.png"
-        ]
-    },
-    {
-        "name": "Dead and Buried",
-        "images": [
-            "Cryptspookyholelocations.png",
-            "DeadandBuried.png",
-            "DeadandBuriedBushingboulders.png",
-            "DeadandBuriedDragonkincrypt.png",
-            "DeadandBuriedFightingEllamariasnightmares.png",
-            "DeadandBuriedHeraldofVarrock.png",
-            "DeadandBuriedRaptorsparentsdie.png",
-            "DeadandBuriedreward.png"
-        ]
-    },
-    {
-        "name": "Deadliest Catch",
-        "images": [
-            "DeadliestCatch.png",
-            "DeadliestCatchBoat.png",
-            "DeadliestCatchreward.png",
-            "Jonesreturns.png"
-        ]
-    },
-    {
-        "name": "Dealing with Scabaras",
-        "images": [
-            "DealingwithScabaras.png",
-            "dealingwithscabarasreward.png",
-            "Maisascorpse.png",
-            "ScabarasHighPriestandstatues.png",
-            "Ullekresearchcamp.png",
-            "Ullekropeshortcut.png"
-        ]
-    },
-    {
-        "name": "Death Plateau",
-        "images": [
-            "Ambush.png",
-            "DeathPlateau.png",
-            "DeathPlateaucave.png",
-            "DeathPlateaureward.png",
-            "TheMapfight.png"
-        ]
-    },
-    {
-        "name": "Death to the Dorgeshuun",
-        "images": [
-            "DeathtotheDorgeshuun.png",
-            "DeathtotheDorgeshuunreward.png",
-            "Dtdfight.png",
-            "H.png",
-            "Lumbridgemillmachinery.png",
-            "Zanikreceivinghermark.png",
-            "Zanikresurrected.png",
-            "Zanikslocation.png"
-        ]
-    },
-    {
-        "name": "Defender of Varrock",
-        "images": [
-            "DefenderofVarrockinfobox.png",
-            "DefenderofVarrockreward.png",
-            "Dovzombieskillingvarrockguards.png",
-            "Freeatlast.png",
-            "Killingarmouredzombies.png"
-        ]
-    },
-    {
-        "name": "Demon Slayer",
-        "images": [
-            "ClaimingSilverlight.png",
-            "Delrithissummoned.png",
-            "DemonSlayer.png",
-            "DemonSlayerreward.png",
-            "Fightingthecultists.png"
-        ]
-    },
-    {
-        "name": "Desert Treasure",
-        "images": [
-            "Azzanadraghost.png",
-            "DesertTreasure.png",
-            "DesertTreasurecryingtrollchild.png",
-            "DesertTreasureRasolo.png",
-            "DesertTreasurereward.png",
-            "DesertTreasurestart.png",
-            "DTBloodObelisk.png",
-            "Dtdessoushssss.png",
-            "DTMirrors.png",
-            "Dttorch.png",
-            "FightingDamis.png",
-            "fromTrollheimtoChild.png",
-            "GraveYardLocation.png",
-            "Malakdrainsyourblood.png",
-            "SmokeDungeonMap.png",
-            "TrollCaveEntrancePath.png"
-        ]
-    },
-    {
-        "name": "Desperate Creatures",
-        "images": ["DesperateCreatures.png", "DesperateCreaturesreward.png"]
-    },
-    {
-        "name": "Desperate Measures",
-        "images": [
-            "DesperateMeasures.png",
-            "DesperateMeasuresarchaeology.png",
-            "DesperateMeasuresCharosLocations.png",
-            "DesperateMeasuresPylonSolutions.png",
-            "DesperateMeasuresreward.png",
-            "DesperateTimesblackstonedragonbattle.png",
-            "Dinosaurinvasion.png",
-            "Hibernatorium.png",
-            "Kerapacattacks.png",
-            "Kerapacbound.png",
-            "Kindracouncil.png",
-            "Thokssaga.png"
-        ]
-    },
-    {
-        "name": "Desperate Times",
-        "images": [
-            "BlackKnightFortressportallocationDesperateTimes.png",
-            "BlackKnightsFortressportal.png",
-            "DesperateTimes.png",
-            "DesperateTimesartwork.png",
-            "DesperateTimesKerapacdrainsGailspowers.png",
-            "DesperateTimesreward.png",
-            "DesperateTimesSerendiscussesherplan.png",
-            "Firstneedlepuzzle.png",
-            "KerapacCThokandtheNeedle.png",
-            "KerapacintheEmpyreanCitadel.png",
-            "NaragunintheNeedle.png",
-            "Wordgrid.png"
-        ]
-    },
-    {
-        "name": "Devious Minds",
-        "images": [
-            "Creatingtheslenderblade.png",
-            "Deadmonk.png",
-            "DeviousMinds.png",
-            "DeviousMindsreward.png",
-            "Deviousmindstempleattack.png"
-        ]
-    },
-    {
-        "name": "Diamond in the Rough",
-        "images": [
-            "AmascutandtheAmbassador.png",
-            "Banditkingandfemalebandits.png",
-            "ChattingtoOsman.png",
-            "DiamondintheRough.png",
-            "DiamondintheRoughreward.png",
-            "DungKalphites.png",
-            "Eaglejump.png",
-            "FightingKelisbodyguards.png",
-            "FightingtheBandits.png",
-            "Malebandits.png",
-            "ObtainingtheKharidId.png",
-            "Ozanquestconceptart.png",
-            "TheQuicksand.png",
-            "TheScabarastomb.png"
-        ]
-    },
-    {
-        "name": "Dimension of Disaster",
-        "images": [
-            "300px-200thQuestAlternateUniverseconceptart2.pngca223.png",
-            "DimensionofDisaster.png",
-            "DimensionofDisasterreward.png",
-            "thQuestAlternateUniverseconceptart.png"
-        ]
-    },
-    {
-        "name": "Dishonour among Thieves",
-        "images": [
-            "BlackKnightsscheming.png",
-            "DefeatingtheEliteWights.png",
-            "DishonouramongThieves.png",
-            "DishonouramongThievesnoticeboard.png",
-            "DishonouramongThievesreward.png",
-            "Foreshadowsspecialattack.png",
-            "Hazeelreturns.png",
-            "InfiltratingSliskeslair.png",
-            "Jerrodfootprints.png",
-            "Jerrodkills.png",
-            "KillingarmouredzombiesDaT.png",
-            "MeetingwithZamorak.png",
-            "NomadconfrontsDeath.png",
-            "Openingthedoors.png",
-            "SaradominCArmadylandBandosconfrontZamorak.png",
-            "Sliskeappears.png",
-            "Sliskesapparitions.png",
-            "Zamorakiangathering.png"
-        ]
-    },
-    {
-        "name": "Do No Evil",
-        "images": [
-            "Apmeken.png",
-            "Apmekenappears.png",
-            "Ayunicutscene.png",
-            "Ayunifight.png",
-            "Buildingthecolony.png",
-            "DoNoEvil.png",
-            "DoNoEvildiglocation.png",
-            "DoNoEvilreward.png",
-            "Erunicutscene.png",
-            "FightingAyuni.png",
-            "Leeunicutscene.png",
-            "Monkeycampattacked.png",
-            "OsmanandLeela.png",
-            "Thesiteofthecolony.png",
-            "UzerEagleentrance.png"
-        ]
-    },
-    {
-        "name": "Dragon Slayer",
-        "images": [
-            "Crandormapcloseup.png",
-            "DragonSlayer.png",
-            "DragonSlayerElvargdead.png",
-            "DragonSlayerreward.png",
-            "DragonSlayerWormbrain.png",
-            "FightingMelzartheMad.png",
-            "FightingtheLesserDemon.png",
-            "MelzarsMaze.png",
-            "MelzarsMazemap.png",
-            "StartingDragonSlayer.png"
-        ]
-    },
-    {
-        "name": "Dream Mentor",
-        "images": [
-            "Cyrisussbank.png",
-            "DreamMentor.png",
-            "DreamMentorreward.png",
-            "FeedingCyrisus.png",
-            "SafespotEverlasting.png",
-            "SeeingtheInadequacy.png",
-            "StatviewDreammentor.png"
-        ]
-    },
-    {
-        "name": "Druidic Ritual",
-        "images": [
-            "DruidicRitual.png",
-            "DruidicRitualceremony.png",
-            "DruidicRitualreward.png",
-            "TaverleySlayerDungeon.png"
-        ]
-    },
-    {
-        "name": "Dwarf Cannon",
-        "images": [
-            "DwarfCannon.png",
-            "DwarfCannonreward.png",
-            "Toolkitinterface.png"
-        ]
-    },
-    {
-        "name": "Eadgars Ruse",
-        "images": [
-            "EadgarsRuse.png",
-            "EadgarsRusereward.png",
-            "Goutweedstoreroom.png",
-            "TrollStrongholdParrothidinglocation.png",
-            "TThistlelocation.png"
-        ]
-    },
-    {
-        "name": "Eagles Peak",
-        "images": [
-            "CatchingtheFerret.png",
-            "EaglesPeakDungeonmap.png",
-            "EaglesPeakEagledoor.png",
-            "EaglesPeakquest.png",
-            "EaglesPeakreward.png",
-            "EaglesPeakShoutnikolaus.png"
-        ]
-    },
-    {
-        "name": "Elemental Workshop I",
-        "images": ["ElementalWorkshopI.png", "ElementalWorkshopIreward.png"]
-    },
-    {
-        "name": "Elemental Workshop II",
-        "images": [
-            "ElementalWorkshopII.png",
-            "ElementalWorkshopIIreward.png",
-            "Elementalworkshoppiping.png",
-            "Ewcogs.png"
-        ]
-    },
-    {
-        "name": "Elemental Workshop III",
-        "images": [
-            "587px-Elemental_Workshop_III_puzzle_completed.png",
-            "Bodydoor.png",
-            "ElementalWorkshopIII.png",
-            "ElementalWorkshopIIIreward.png",
-            "Elemental_Workshop_III_diagram_scroll.png",
-            "Elemental_Workshop_III_Puzzle (1).png",
-            "Elemental_Workshop_III_Puzzle.png",
-            "The_perfect_method.png"
-        ]
-    },
-    {
-        "name": "Elemental Workshop IV",
-        "images": [
-            "Drainingmachinecosmiccharged.png",
-            "ElementalWorkshopIV.png",
-            "ElementalWorkshopIVreward.png"
-        ]
-    },
-    {
-        "name": "Enakhras Lament",
-        "images": [
-            "AthanakosandEnakhratotheNorth.png",
-            "Buildingthestatue.png",
-            "EnakhrasLament.png",
-            "EnakhrasLamentreward.png",
-            "EnakhrasTempleHall.png",
-            "Removingstatueparts.png",
-            "Wallchiselling.png"
-        ]
-    },
-    {
-        "name": "Enlightened Journey",
-        "images": [
-            "EnlightenedJourney.png",
-            "EnlightenedJourneyangrymob.png",
-            "EnlightenedJourneyballoondesign.png",
-            "EnlightenedJourneybuiltballoon.png",
-            "EnlightenedJourneyreward.png"
-        ]
-    },
-    {
-        "name": "Ernest the Chicken",
-        "images": [
-            "ErnesttheChicken.png",
-            "ErnesttheChickenreward.png",
-            "IQTestingRoom.png",
-            "Pullingcandlesconce.png"
-        ]
-    },
-    {
-        "name": "Evil Dave's Big Day Out",
-        "images": [
-            "EvilDavesBigDayOutoverview.png",
-            "EvilDavesBigDayOutreward.png"
-        ]
-    },
-    {
-        "name": "Extinction",
-        "images": [
-            "Erebus.png",
-            "ExtinctionbrokenNeedle.png",
-            "ExtinctionconfrontingMoia.png",
-            "ExtinctionCroesus.png",
-            "ExtinctionDarkPortal.png",
-            "ExtinctionElderHalls.png",
-            "ExtinctionHebeandMoia.png",
-            "ExtinctionIaia.png",
-            "Extinctionreward.png",
-            "ExtinctionSerensummonstheElders.png",
-            "Extinctionworldgate.png"
-        ]
-    },
-    {
-        "name": "Eye of Het I",
-        "images": ["EyeofHetI.png", "EyeofHetIreward.png"]
-    },
-    {
-        "name": "Eye of Het II",
-        "images": [
-            "EyeofHetIIreward.png",
-            "EyeofHetIITrindine.png",
-            "EyeofHetIIZamorakandKhazard.png"
-        ]
-    },
-    {
-        "name": "Family Crest",
-        "images": [
-            "Chronozonsafespot.png",
-            "FamilyCrest.png",
-            "FamilyCrestreward.png",
-            "SpeakingtoCaleb.png"
-        ]
-    },
-    {
-        "name": "Fate of the Gods",
-        "images": [
-            "ArrivalonFreneskae.png",
-            "CollectingMahsmemories.png",
-            "FateoftheGods.png",
-            "FateoftheGodsDoorPuzzle.png",
-            "FateoftheGodsreward.png",
-            "FightingtheNihils.png",
-            "Freneskaemap.png",
-            "MahsNightmare.png",
-            "TraversingFreneskae.png",
-            "Zarosinplayersmindthreshold.png",
-            "ZarosReturnGathering.png"
-        ]
-    },
-    {
-        "name": "Fight Arena",
-        "images": [
-            "FightArenaquest.png",
-            "FightArenareward.png",
-            "FightArenasafespot.png",
-            "FightArenastart.png",
-            "FightingGeneralKhazard.png",
-            "KhazardogreattacksJustin.png",
-            "Takingkeys.png"
-        ]
-    },
-    {
-        "name": "Fishing Contest",
-        "images": ["FishingContest.png", "FishingContestreward.png"]
-    },
-    {
-        "name": "Forgettable Tale of a Drunken Dwarf",
-        "images": [
-            "Chaosarmy.png",
-            "Dwarftaleforget.png",
-            "FermentingVat.png",
-            "ForgettableTalearchives.png",
-            "ForgettableTaleofaDrunkenDwarf.png",
-            "ForgettableTaleofaDrunkenDwarfreward.png",
-            "ForgettableTaleRowdyDwarf.png",
-            "Keldahopsgrown.png"
-        ]
-    },
-    {
-        "name": "Forgiveness of a Chaos Dwarf",
-        "images": [
-            "Drunkveldaban.png",
-            "Fightingthechaosdwarf.png",
-            "FOACDcartlabyrinth.png",
-            "Forgive.png",
-            "ForgivenessConsortiummeeting.png",
-            "ForgivenessofaChaosDwarf.png",
-            "ForgivenessofaChaosDwarfreward.png",
-            "Investigatingfootprints.png",
-            "Loweringbridge.png",
-            "Openingdoor.png",
-            "Veldabaninthepub.png"
-        ]
-    },
-    {
-        "name": "Fur 'n' Seek",
-        "images": ["FurnSeek.png", "FurnSeekreward.png", "Tanningfur.png"]
-    },
-    {
-        "name": "Garden of Tranquillity",
-        "images": [
-            "GardenofTranquillity.png",
-            "GardenofTranquillityGuard.png",
-            "GardenofTranquillityreward.png",
-            "Pushstatue.png",
-            "Wellfishing.png",
-            "WhiteTree.png"
-        ]
-    },
-    {
-        "name": "Gertrude's Cat",
-        "images": ["GertrudesCat.png", "GertrudesCatreward.png"]
-    },
-    {
-        "name": "Ghosts Ahoy",
-        "images": [
-            "Bookofharicantolocation.png",
-            "GhostsAhoy.png",
-            "GhostsAhoyreward.png",
-            "Giantlobsterfight.png",
-            "Phasmatysshipwreck.png",
-            "PortPhasmatysdocks.png",
-            "RuneDraw.png"
-        ]
-    },
-    {
-        "name": "Glorious Memories",
-        "images": [
-            "GloriousMemories.png",
-            "GloriousMemoriesFoottracks.png",
-            "GloriousMemoriesreward.png",
-            "GloriousMemoriesreward2.png74787.png",
-            "Icemound.png",
-            "NialfightsGnoeal.png",
-            "Vargashits.png"
-        ]
-    },
-    {
-        "name": "Goblin Diplomacy",
-        "images": [
-            "GoblinDiplomacy.png",
-            "GoblinDiplomacyreward.png",
-            "Grubfootwithbluerobes.png",
-            "Grubfootwithbrownrobes.png"
-        ]
-    },
-    {
-        "name": "Gower Quest",
-        "images": [
-            "BehindtheScenesmap.png",
-            "BlackKnightTitanbattle.png",
-            "Cabbageswithpartyhats.png",
-            "GowerQuest.png",
-            "GowerQuestreward.png",
-            "GrandExchangepipessolution.png",
-            "RobbingtheBTSbank.png",
-            "Thordurswhitehole.png",
-            "TrainingRiding.png",
-            "TrainingSailing.png"
-        ]
-    },
-    {
-        "name": "Grim Tales",
-        "images": [
-            "FightingGlod.png",
-            "GrimTalesreward.png",
-            "GrimTalesRupertreleased.png",
-            "Sylasandthebeanstalk.png"
-        ]
-    },
-    {
-        "name": "Gunnars Ground",
-        "images": [
-            "Dororandepressed.png",
-            "GunnarsGroundinfobox.png",
-            "GunnarsGroundreward.png",
-            "QPCGunnarsGround.png",
-            "ShowingGororansring.png"
-        ]
-    },
-    {
-        "name": "Haunted Mine",
-        "images": [
-            "300px-AbandonedMineLevel2.png6fec6.png",
-            "300px-AbandonedMineLevel3.png39340.png",
-            "300px-AbandonedMineLevel4.png24b2d.png",
-            "AbandonedMineLevel.png",
-            "HauntedMine.png",
-            "HauntedMinereward.png",
-            "SpeakingtotheZealot.png",
-            "TreusDaythattacks.png"
-        ]
-    },
-    {
-        "name": "Hazeel Cult",
-        "images": [
-            "HazeelCult.png",
-            "HazeelCultreward.png",
-            "HazeelCultrewardduringquest.png",
-            "TheRevivalofHazeel.png"
-        ]
-    },
-    {
-        "name": "Heart of Stone",
-        "images": [
-            "ConflictbetweenXeniaandAriane.png",
-            "FightingBikKrasattendants.png",
-            "FightingFulKrasattendants.png",
-            "Fightingtheprehistoricabyssal.png",
-            "HeartofStone.png",
-            "HeartofStonereward.png",
-            "JasKraschamber.png",
-            "Kippledies.png",
-            "Portalentrana.png",
-            "Prehistoricabyssalsafespot.png",
-            "RunicFrequencyModulator.png",
-            "WenKraschamber.png",
-            "XeniadescribesFreneskae.png",
-            "Xeniadies.png"
-        ]
-    },
-    {
-        "name": "Heartstealer",
-        "images": [
-            "Heartstealer.png",
-            "Heartstealerpatrollingguards.png",
-            "Heartstealerreward.png",
-            "MakingthesmokebombsduringHeartstealer.png"
-        ]
-    },
-    {
-        "name": "Heroes Quest",
-        "images": [
-            "HeroesQuest.png",
-            "HeroesquestCongrats.png",
-            "HeroesquestFishingeels.png",
-            "HeroesQuestreward.png",
-            "KillingGrip.png"
-        ]
-    },
-    {
-        "name": "Hero's Welcome",
-        "images": [
-            "ChannelingVsenergy.png",
-            "Dragonkinintheirlair.png",
-            "FightingTarshak.png",
-            "FightingtheAbomination.png",
-            "HerosWelcome.png",
-            "HerosWelcomecompletedmap.png",
-            "HerosWelcomequestionsinterface.png",
-            "HerosWelcomereward.png",
-            "TheDragonkinsquabble.png",
-            "Vreturns.png",
-            "Vsdeath.png"
-        ]
-    },
-    {
-        "name": "Holy Grail",
-        "images": ["Grailontable.png", "HolyGrail.png", "HolyGrailreward.png"]
-    },
-    {
-        "name": "Horror from the Deep",
-        "images": [
-            "Dagannothdoor.png",
-            "Dagannothmotherbattle.png",
-            "Fixinglighthousebridge.png",
-            "HorrorfromtheDeep.png",
-            "HorrorfromtheDeepreward.png",
-            "Lighthouserepaired.png"
-        ]
-    },
-    {
-        "name": "Hunt for Red Raktuber",
-        "images": [
-            "Footprint.png",
-            "HuntforRedRaktuber.png",
-            "HuntforRedRaktuberreward.png",
-            "KGPofficemap.png",
-            "MarlinsSlug.png",
-            "PenguinCapture.png",
-            "RidingChuck.png",
-            "SabotagingtheSubmarine.png",
-            "SleepingKBP.png",
-            "Submarineenginepanel.png"
-        ]
-    },
-    {
-        "name": "Icthlarin's Little Helper",
-        "images": [
-            "Crondisfight.png",
-            "IcthlarinsHelperBurialRoom.png",
-            "IcthlarinsHelperHidingSymbol.png",
-            "IcthlarinsHelperLinenWorker.png",
-            "IcthlarinsHelperSphinx.png",
-            "IcthlarinsLittleHelper.png",
-            "IcthlarinsLittleHelperpitfallpath.png",
-            "IcthlarinsLittleHelperreward.png",
-            "IcthlarinsLittleHelperstart.png",
-            "IcthlarinsLittleHelperwestdoor.png",
-            "Mummy.png",
-            "Pyramidwalltrap.png"
-        ]
-    },
-    {
-        "name": "Imp Catcher",
-        "images": [
-            "Fightingthecholericimp.png",
-            "ImpCatcher.png",
-            "ImpCatcherreward.png",
-            "Phlegmaticimpvomits.png",
-            "Racingthesanguineimp.png"
-        ]
-    },
-    {
-        "name": "Impressing the Locals",
-        "images": [
-            "ImpressingtheLocals.png",
-            "ImpressingtheLocalsreward.png",
-            "ImpressingtheLocalsrewardold.png",
-            "InvitingEvieHiggs.png",
-            "InvitingSeasingerJemi.png",
-            "MeetingMisterGully.png"
-        ]
-    },
-    {
-        "name": "In Aid of the Myreque",
-        "images": [
-            "Florinhappy.png",
-            "InAidoftheMyreque.png",
-            "InAidoftheMyrequeClearingrubble.png",
-            "InAidoftheMyrequeConfrontingGadderanks.png",
-            "InAidoftheMyrequeMiningentrance.png",
-            "InAidoftheMyrequePickingpathtotemple.png",
-            "InAidoftheMyrequeProtectingIvan.png",
-            "InAidoftheMyrequereward.png",
-            "TombIvandisSeergaze.png"
-        ]
-    },
-    {
-        "name": "In Pyre Need",
-        "images": [
-            "InPyreNeed.png",
-            "InPyreNeedinfobox.png",
-            "InPyreNeedreward.png",
-            "Woundedphoenix.png"
-        ]
-    },
-    {
-        "name": "In Search of the Myreque",
-        "images": [
-            "CyregPaddlehornsboat.png",
-            "InSearchoftheMyreque.png",
-            "InSearchoftheMyrequereward.png"
-        ]
-    },
-    {
-        "name": "Jungle Potion",
-        "images": [
-            "JunglePotion.png",
-            "JunglePotionreward.png",
-            "Marshyjunglevine.png",
-            "PalmtreeJunglePotionCwithardrigal.png",
-            "Roguespurse.png",
-            "Sitofoillump.png",
-            "Volenciamossrock.png"
-        ]
-    },
-    {
-        "name": "Kennith's Concerns",
-        "images": [
-            "300px-KCRoom2.png69223.png",
-            "300px-KCRoom3.pngcc73d.png",
-            "Cameraanglechange.png",
-            "Fallingrocks.png",
-            "KCRoom.png",
-            "KennithcapturesKimberly.png",
-            "KennithsConcerns.png",
-            "KennithsConcernsreward.png",
-            "KentandCaroline.png",
-            "KimberlysParents.png",
-            "Shockingconversation.png"
-        ]
-    },
-    {
-        "name": "Kili Row",
-        "images": ["KiliRow.png", "KiliRowreward.png"]
-    },
-    {
-        "name": "Kindred Spirits",
-        "images": [
-            "Dharokfights.png",
-            "EscapingSliskeslair.png",
-            "Hanginginthebalance.png",
-            "KindredSpirits.png",
-            "KindredSpiritsreward.png",
-            "PunchingSliske.png",
-            "SliskeandtheStoneofJas.png",
-            "SliskekillsSamwell.png",
-            "SpeakingtoRelomia.png",
-            "TakingVeracskey.png",
-            "TheendofSliskesmaze.png"
-        ]
-    },
-    {
-        "name": "King of the Dwarves",
-        "images": [
-            "Dwarfarmy.png",
-            "DwarvenLibrarykeythief.png",
-            "Freeingtheminers.png",
-            "Getthemachinesworking.png",
-            "Grimssonfight.png",
-            "KingoftheDwarves.png",
-            "KingoftheDwarvesreward.png",
-            "LavaFlowMineexplosion.png"
-        ]
-    },
-    {
-        "name": "King's Ransom",
-        "images": [
-            "KingsRansom.png",
-            "KingsRansomreward.png",
-            "KingsRansomsecretpassage.png"
-        ]
-    },
-    {
-        "name": "Land of the Goblins",
-        "images": [
-            "DuskatYuBiusk.png",
-            "Fairyringpuzzle.png",
-            "GrubfootandMistag.png",
-            "GrubfootsDream.png",
-            "LandoftheGoblinsreward.png",
-            "Strongbonesfight.png",
-            "Yubiusk.png",
-            "Zanikenters.png",
-            "Zanikteleport.png"
-        ]
-    },
-    {
-        "name": "Legacy of Seergaze",
-        "images": [
-            "Bloodtalismanvault.png",
-            "Damagedwall.png",
-            "DeadMyreque.png",
-            "DrezelLegacy.png",
-            "EscortingMercenaryAdventurer.png",
-            "FightingFistandantilusandZaromark.png",
-            "KillingaVyrewatch.png",
-            "Legacy.png",
-            "LegacyofSeergaze.png",
-            "LegacyofSeergazereward.png",
-            "Repairingfurnace.png",
-            "SafalaanPower.png",
-            "SpeakingtoFlaygian.png",
-            "Zombies.png"
-        ]
-    },
-    {
-        "name": "Legends Quest",
-        "images": [
-            "FallenHero.png",
-            "GettingBindingBook.png",
-            "KharaziDungeondoors.png",
-            "KharaziDungeonentrance.png",
-            "KharaziDungeonwinch.png",
-            "KillingViyeldi.png",
-            "LegendsQuest.png",
-            "LegendsQuestFinalBoss.png",
-            "LegendsQuestQuestStart.png",
-            "LegendsQuestreward.png",
-            "Nezikchenedfirstform.png",
-            "Octagonoffire.png",
-            "Viyeldicavesmap.png",
-            "Yommitree.png"
-        ]
-    },
-    {
-        "name": "Let Them Eat Pie",
-        "images": [
-            "Cookingterriblepie.png",
-            "LetThemEatPie.png",
-            "LetThemEatPiebaitbarrel.png",
-            "LetThemEatPiereward.png",
-            "Potatoinhole.png"
-        ]
-    },
-    {
-        "name": "Lost City",
-        "images": [
-            "Adventurerscamp.png",
-            "FightingtheDramentreespirit.png",
-            "LostCity.png",
-            "LostCityreward.png",
-            "LostCitytree.png",
-            "Zanarisshed.png"
-        ]
-    },
-    {
-        "name": "Love Story",
-        "images": [
-            "FightingwiththeWOM.png",
-            "LoveStory.png",
-            "LoveStorycontrollingthedummy.png",
-            "LoveStoryhay.png",
-            "LoveStorymakeup.png",
-            "LoveStoryreward.png",
-            "Makingthedummy.png",
-            "Robbery.png",
-            "ZeneveviaBossBattle.png",
-            "Zeneviviadefeated.png",
-            "Zeneviviameet.png"
-        ]
-    },
-    {
-        "name": "Lunar Diplomacy",
-        "images": [
-            "Anythingyoucando.png",
-            "Birdseyejack.png",
-            "Dreamlannd.png",
-            "Floatingdreampuffs.png",
-            "FlukeChallengeLunarDiplomacy.png",
-            "Lduppership.png",
-            "LunarDiplomacy.png",
-            "LunarDiplomacydreampuffs.png",
-            "LunarDiplomacyrace.png",
-            "LunarDiplomacyreward.png",
-            "LunarDiplomacySafespot.png",
-            "LunarDiplomacysymbols.png",
-            "Lunarstaffenchantment.png",
-            "Meinlunardiplomacy.png",
-            "Miningstalagmite.png",
-            "NumbersChallengeLunarDiplomacy.png",
-            "Raceison.png",
-            "WoodcuttingchallengeLunarDiplomacy.png"
-        ]
-    },
-    {
-        "name": "Making History",
-        "images": [
-            "MakingHistory.png",
-            "MakingHistorychestlocation.png",
-            "MakingHistoryreward.png"
-        ]
-    },
-    {
-        "name": "Meeting History",
-        "images": [
-            "FeedingBabySarah.png",
-            "Guthixrunes.png",
-            "Meetinghistory.png",
-            "Meetinghistorycutscene.png",
-            "MeetingHistoryreward.png",
-            "Meetinghistoryspot.png"
-        ]
-    },
-    {
-        "name": "Merlin's Crystal",
-        "images": [
-            "Beggarappears.png",
-            "FightingMordred.png",
-            "FreeingMerlin.png",
-            "KeepLeFaye.png",
-            "MerlinsCrystal.png",
-            "MerlinsCrystalreward.png",
-            "VarrockChaosAltarFrontView.png"
-        ]
-    },
-    {
-        "name": "Missing My Mummy",
-        "images": [
-            "AlisDiscountWaresshop.png",
-            "Floorpuzzle.png",
-            "MissingmyMummy.png",
-            "MissingMyMummyreward.png",
-            "PharaohQueenTomb.png",
-            "Tumekensshadowforms.png",
-            "UzerMastabamap.png"
-        ]
-    },
-    {
-        "name": "Missing Presumed Death",
-        "images": [
-            "Deathescapes.png",
-            "EmpyreanMaze.png",
-            "FightingSliskeswights.png",
-            "FightingwithIcthlarin.png",
-            "MissingCPresumedDeath.png",
-            "MissingCPresumedDeathreward.png",
-            "Shadowcastersolution.png",
-            "SliskesGrandAscendancy.png",
-            "SliskesGrandAscendancyGathering.png",
-            "SliskesGrandEntrance.png",
-            "Strisathsattack.png"
-        ]
-    },
-    {
-        "name": "Monk's Friend",
-        "images": [
-            "MonksFriend.png",
-            "MonksFriendDungeon.png",
-            "MonksFriendParty.png",
-            "MonksFriendreward.png"
-        ]
-    },
-    {
-        "name": "Monkey Madness",
-        "images": [
-            "ApeAtollJailIdealLockPickTime.png",
-            "CaranockandtheForeman.png",
-            "Crashisland.png",
-            "Monkeyaunt.png",
-            "MonkeyMadness.png",
-            "MonkeyMadnessreward.png",
-            "SpeakingtoGarkor.png",
-            "SpeakingtoNarnode.png"
-        ]
-    },
-    {
-        "name": "Mountain Daughter",
-        "images": [
-            "BuryingAsleif.png",
-            "MountainDaughter.png",
-            "MountainDaughterreward.png"
-        ]
-    },
-    {
-        "name": "Mournings End Part I",
-        "images": [
-            "Fightingamourner.png",
-            "Fixeddevicetargeting.png",
-            "Foodstorelocations.png",
-            "Lletya.png",
-            "Mashingapples.png",
-            "MeetingtheHeadMourner.png",
-            "MeetingwithArianwyn.png",
-            "MourningsEndPartI.png",
-            "MourningsEndPartIreward.png",
-            "Poisoningthegrain.png",
-            "Shootingsheep.png"
-        ]
-    },
-    {
-        "name": "Mournings End Part II",
-        "images": [
-            "Bluegate.png",
-            "Crystalblackened.png",
-            "Crystalcollector.png",
-            "Crystalstrangelight.png",
-            "Cyangate.png",
-            "DeaddigteamTempleofLight.png",
-            "FracturedCrystal.png",
-            "MagentaYellowGate.png",
-            "MourningsEndPartII.png",
-            "MourningsEndPartIIreward.png",
-            "ReachingtheDeathAltar.png",
-            "TempleofLightfinaldoor.png",
-            "Themeetingofalllights.png"
-        ]
-    },
-    {
-        "name": "Murder Mystery",
-        "images": ["MurderMystery.png", "MurderMysteryreward.png"]
-    },
-    {
-        "name": "Murder on the Border",
-        "images": [
-            "DukeHoarsesdeath.png",
-            "MurderontheBorder.png",
-            "Murderontheborderfeast.png",
-            "MurderontheborderMysteryjournalevidence.png",
-            "MurderontheborderMysteryjournalsuspects.png",
-            "MurderontheBorderreward.png",
-            "Simonsdeath.png"
-        ]
-    },
-    {
-        "name": "My Arm's Big Adventure",
-        "images": [
-            "Birdattack.png",
-            "Burntmeateatingadventurer.png",
-            "Cutjungle.png",
-            "DrunkenDwarfparalysed.png",
-            "Helpremake.png",
-            "MyababoatHD.png",
-            "MyArmGainsFarming.png",
-            "MyArmsBigAdventure.png",
-            "MyArmsBigAdventurereward.png",
-            "Rocstunattack.png",
-            "Searchingthecauldron.png"
-        ]
-    },
-    {
-        "name": "Myths of the White Lands",
-        "images": [
-            "300px-LoSRoom2.pngb281d.png",
-            "300px-LoSRoom3.png51bf6.png",
-            "300px-LoSRoom4.png5b162.png",
-            "300px-LoSRoom5.png0afe3.png",
-            "LandOfSnow.png",
-            "LoSRoom.png",
-            "MeetingtheSnowimps.png",
-            "MythsoftheWhiteLands.png",
-            "MythsoftheWhiteLandsreward.png",
-            "Shoutingthroughthepipe.png",
-            "YetiCave.png"
-        ]
-    },
-    {
-        "name": "Nature Spirit",
-        "images": [
-            "Invisibleghasts.png",
-            "Killingaghast.png",
-            "NatureGrotto.png",
-            "NatureSpirit.png",
-            "NatureSpiritreward.png",
-            "NatureSpirittalkingtoDrezel.png",
-            "Naturespirittransform.png"
-        ]
-    },
-    {
-        "name": "Necromancy",
-        "images": [
-            "300px-NecromancyFirstLookExpanded281829updateimage.pngf0425.png",
-            "300px-NecromancyFirstLookExpanded28529updateimage.pngd41c3.png",
-            "NecromancyFirstLookExpandedupdateimage.png",
-            "Necromancylogo.png",
-            "TalentTreeinterface.png"
-        ]
-    },
-    {
-        "name": "New Foundations",
-        "images": [
-            "NewFoundations.png",
-            "NewFoundationsplayerbuildingwall.png",
-            "NewFoundationsreward.png",
-            "NewFoundationsthebeginningthroneroom.png"
-        ]
-    },
-    {
-        "name": "Nomad's Elegy",
-        "images": [
-            "Bandosianafterlife.png",
-            "DeathfightsGielinor.png",
-            "Defendingthebatteringram.png",
-            "DodgingNomadsSoulBlast.png",
-            "FightingShame.png",
-            "IcthlarinandDeath.png",
-            "IcthlarinfightsGielinor.png",
-            "InterrogatingLegioSeptimus.png",
-            "Limbo.png",
-            "MeetingyoungHazelmere.png",
-            "NomadrevealsGielinor.png",
-            "Nomadsclone.png",
-            "NomadsElegy.png",
-            "NomadsElegyexplosion.png",
-            "NomadsElegygatheringresources.png",
-            "NomadsElegyreward.png",
-            "SiegeonNomadsfortress.png",
-            "ThebattlewithNomad.png",
-            "Xeniafightsascended.png"
-        ]
-    },
-    {
-        "name": "Nomad's Requiem",
-        "images": [
-            "Elementalcreature.png",
-            "Elementallurelocations.png",
-            "FightingtheDecayingAvatar.png",
-            "Ignitingthebarrels.png",
-            "Makingabridgeofslabs.png",
-            "NomadsDefeat.png",
-            "NomadsRequiem.png",
-            "NomadsRequiemreward.png",
-            "NomadsRequiemsolution.png",
-            "Nomadstrikes.png",
-            "RootsNomadsRequiem.png",
-            "TheBattlewithNomad.png",
-            "Waterpuzzle.png"
-        ]
-    },
-    {
-        "name": "Observatory Quest",
-        "images": [
-            "ObservatoryQuest.png",
-            "ObservatoryQuestreward.png",
-            "Repairingthetelescope.png",
-            "Wakingthesleepingguard.png"
-        ]
-    },
-    {
-        "name": "Olaf's Quest",
-        "images": [
-            "Brinedungtree.png",
-            "BrineRatCaverndoorpuzzle.png",
-            "OlafsQuest.png",
-            "Olafsquestpuzzlecompleted.png",
-            "OlafsQuestreward.png",
-            "Svenslastmapread.png"
-        ]
-    },
-    {
-        "name": "Once Upon a Time in Gielinor",
-        "images": [
-            "OnceUponaTimeinGielinor.png",
-            "OnceUponaTimeinGielinorreward.png"
-        ]
-    },
-    {
-        "name": "Once Upon a Slime",
-        "images": [
-            "OnceUponaSlime.png",
-            "OnceUponaSlimereward.png",
-            "ShrinkingMachine.png"
-        ]
-    },
-    {
-        "name": "One of a Kind",
-        "images": [
-            "Celestialdragonconfusion.png",
-            "DefendingHannibus.png",
-            "DestroyingUnferthsfurniture.png",
-            "Fightingacelestialdragon.png",
-            "Fightingoffthedragonhunters.png",
-            "FightingtheEchoofJas.png",
-            "Investigatingthesymbols.png",
-            "MeetingwiththeKBD.png",
-            "OneofaKind.png",
-            "OneofaKindreward.png",
-            "RobertsLibrary.png",
-            "Sharriganarrives.png",
-            "SiphoningDragonkinmemories.png",
-            "Speakingtoastatue.png",
-            "SpeakingtotheKBD.png",
-            "SpeakingtotheQueenBlackDragon.png",
-            "Speakingtothesubmergedstatue.png",
-            "Therragorncrashes.png"
-        ]
-    },
-    {
-        "name": "One Piercing Note",
-        "images": [
-            "AbbeyofElspeth.png",
-            "Elenascorpse.png",
-            "Killerstrikes.png",
-            "Layingthebodytorest.png",
-            "OnePiercingNote.png",
-            "OnePiercingNotereward.png",
-            "SisterAnnasdeath.png",
-            "Thekillermurdering.png",
-            "UnusedcharactersfromOnePiercingNote.png"
-        ]
-    },
-    {
-        "name": "One Small Favour",
-        "images": [
-            "OneSmallFavour.png",
-            "OneSmallFavourHammerspikethugs.png",
-            "OneSmallFavourLandingstriprepaired.png",
-            "OneSmallFavourPetraFiyedstuck.png",
-            "OneSmallFavourreward.png"
-        ]
-    },
-    {
-        "name": "Our Man in the North",
-        "images": [
-            "Jabariandclones.png",
-            "Jabaribattle.png",
-            "MeetingHet.png",
-            "OurManintheNorth.png",
-            "OurManintheNorthreward.png",
-            "ThePharoahsgoals.png",
-            "Thugsattack.png"
-        ]
-    },
-    {
-        "name": "Perils of Ice Mountain",
-        "images": [
-            "300px-Perilsoficemountain1.png188ae.png",
-            "IceMountainavalanche.png",
-            "PerilsofIceMountain.png",
-            "PerilsofIceMountainCutscene.png",
-            "PerilsofIceMountainreward.png",
-            "Tentrepair.png"
-        ]
-    },
-    {
-        "name": "Phite Club",
-        "images": [
-            "AmascutattheSoulAltar.png",
-            "BattlewiththePharaoh.png",
-            "OsmankillsthePharoah.png",
-            "Osmanrevealshimself.png",
-            "PhiteClub.png",
-            "PhiteClubreward.png"
-        ]
-    },
-    {
-        "name": "Pieces of Hate",
-        "images": [
-            "BaronvonHattenkrapperbombrun.png",
-            "Burningcrassianguard.png",
-            "ClashingwithJack.png",
-            "Crabsattack.png",
-            "DefendingMosLeHarmless.png",
-            "Distractedprisonguard.png",
-            "FightingCaptainRabidJack.png",
-            "FightingZogoth.png",
-            "Jumpingship.png",
-            "PiecesofHate.png",
-            "PiecesofHateinvasionlocations.png",
-            "PiecesofHatereward.png",
-            "Prisonguardflees.png",
-            "Secretpiratemeeting.png",
-            "Watchingthesunset.png"
-        ]
-    },
-    {
-        "name": "Pirates Treasure",
-        "images": [
-            "MusaPointbananaplantation.png",
-            "PiratesTreasure.png",
-            "PiratesTreasurereward.png"
-        ]
-    },
-    {
-        "name": "Plague City",
-        "images": ["PlagueCity.png", "PlagueCityreward.png"]
-    },
-    {
-        "name": "Plagues End",
-        "images": [
-            "AttackontheMournerHQ.png",
-            "BuildingtheIthellstatue.png",
-            "DarkLordsdeath.png",
-            "FightingSirHugo.png",
-            "FightingtheDarkLord.png",
-            "FightingtheTrahaearnautomatons.png",
-            "GreatLibraryAmlodd.png",
-            "GreatLibraryCadarn.png",
-            "GreatLibraryCrwys.png",
-            "GreatLibraryIorwerth.png",
-            "GreatLibraryIthell.png",
-            "GreatLibraryMeilyr.png",
-            "GreatLibraryTrahaern.png",
-            "LordCrwystransforms.png",
-            "Meilyrshideout.png",
-            "MiningWellofVoyage.png",
-            "PlaguesEnd.png",
-            "PlaguesEndHining.png",
-            "PlaguesEndreward.png",
-            "Prifddinaselfcamp.png",
-            "Relievingtheguard.png",
-            "TraversingthePoisonWastes.png"
-        ]
-    },
-    {
-        "name": "Priest in Peril",
-        "images": [
-            "Drezelimprisoned.png",
-            "Killingamonk.png",
-            "KillingCerberus.png",
-            "PaterdomusEntrance.png",
-            "Pouringbucketofwater.png",
-            "PriestinPeril.png",
-            "PriestinPerilreward.png"
-        ]
-    },
-    {
-        "name": "Quiet Before the Swarm",
-        "images": [
-            "Drinkingmindpotion.png",
-            "Jessikaarrestedverdict.png",
-            "MysteriousFigurefighting.png",
-            "OutofbodyexperienceasComanderKorasi.png",
-            "QBTSCrossingthebridge.png",
-            "QBTSShipmemory.png",
-            "QuietBeforetheSwarm.png",
-            "QuietbeforetheSwarmreward.png",
-            "QuietBeforetheSwarmroom.png",
-            "Watchingthestarsedit.png"
-        ]
-    },
-    {
-        "name": "Rag and Bone Man",
-        "images": [".RagandBoneMan.png", ".RagandBoneManreward.png"]
-    },
-    {
-        "name": "Raksha the Shadow Colossus quest",
-        "images": [
-            "RakshaCtheShadowColossusquest.png",
-            "rakshatheshadowcolossusquestreward.png"
-        ]
-    },
-    {
-        "name": "Rat Catchers",
-        "images": [
-            "BreakingintotheMansion.png",
-            "Catandratfight.png",
-            "Catchingrats.png",
-            "Ratcatchers.png",
-            "RatCatchersreward.png"
-        ]
-    },
-    {
-        "name": "Recipe for Disaster Freeing Evil Dave",
-        "images": [
-            "BasementofDoom.png",
-            "RecipeforDisasterFreeingEvilDavereward.png"
-        ]
-    },
-    {
-        "name": "Recipe for Disaster Freeing King Awowogei",
-        "images": [
-            "BushTchikimonkeynuts.png",
-            "CollectingRedbananas.png",
-            "Cookingthesnake.png",
-            "RecipeforDisasterFreeingKingAwowogeireward.png",
-            "Snakepit.png"
-        ]
-    },
-    {
-        "name": "Recipe for Disaster Freeing Pirate Pete",
-        "images": [
-            "Mogrecamp.png",
-            "Mudskipper.png",
-            "RecipeforDisasterFreeingPiratePetereward.png"
-        ]
-    },
-    {
-        "name": "Recipe for Disaster Freeing Sir Amik Varze",
-        "images": [
-            "ChickenShrine.png",
-            "Evilchickenrfd.png",
-            "Fightingblackdragon.png",
-            "InspectingSirAmik.png",
-            "RecipeforDisasterFreeingSirAmikVarzereward.png",
-            "RFDBruleeFlambe.png"
-        ]
-    },
-    {
-        "name": "Recipe for Disaster Freeing Skrach Uglogwee",
-        "images": [
-            "RecipeforDisasterFreeingSkrachUglogweereward.png",
-            "TreewithArrow.png"
-        ]
-    },
-    {
-        "name": "Recipe for Disaster Freeing the Goblin Generals",
-        "images": ["RecipeforDisasterFreeingtheGoblinGeneralsreward.png"]
-    },
-    {
-        "name": "Recipe for Disaster Freeing the Lumbridge Sage",
-        "images": ["RecipeforDisasterFreeingtheLumbridgeSagereward.png"]
-    },
-    {
-        "name": "Recipe for Disaster Freeing the Mountain Dwarf",
-        "images": [
-            "RecipeforDisasterDwarfRohak.png",
-            "RecipeforDisasterFreeingtheMountainDwarfreward.png"
-        ]
-    },
-    {
-        "name": "Recruitment Drive",
-        "images": [
-            "Chickencarriedacrossbridge.png",
-            "MissCheeversroom.png",
-            "RecruitmentDrive.png",
-            "RecruitmentDrivereward.png",
-            "Recruitmentdrivetrialmemorytest.png",
-            "SirLeyeroom.png",
-            "SirRenItchoodroom.png",
-            "SirSpishyusroom.png",
-            "SirTinleyroom.png"
-        ]
-    },
-    {
-        "name": "Regicide",
-        "images": [
-            "MeetingIorwerth.png",
-            "MeetingwithKingLathas.png",
-            "Regicide.png",
-            "Regicidereward.png"
-        ]
-    },
-    {
-        "name": "Remains of the Necrolord",
-        "images": [
-            "RemainsoftheNecrolord.png",
-            "RemainsoftheNecrolordreanimatingwithYudura.png",
-            "RemainsoftheNecrolordreward.png",
-            "RemainsoftheNecrolordSkeletalTriofight.png",
-            "RemainsoftheNecrolordYuduraisresurrected.png"
-        ]
-    },
-    {
-        "name": "Ritual of the Mahjarrat",
-        "images": [
-            "AkrisaebecomesBarrowsbrother.png",
-            "Azzanadra.png",
-            "Catspeakamuleteinterface.png",
-            "Enakhradesert.png",
-            "FightingtheArmouredZombies.png",
-            "FireballattackRitualoftheMahjarrat.png",
-            "IcedemonsbattleRitualoftheMahjarrat.png",
-            "Jhallansacrificed.png",
-            "JumpoverpillarGhorrockFortress.png",
-            "KhazardbattleRitualoftheMahjarrat.png",
-            "KhazardstandoffRitualoftheMahjarrat.png",
-            "Mahjarratfights.png",
-            "MarchtobattleRitualoftheMahjarrat.png",
-            "NightmarishDraynor.png",
-            "RitualoftheMahjarrat.png",
-            "RitualoftheMahjarratreward.png",
-            "SliskesummonsBarrowsbrothersRitualoftheMahjarrat.png",
-            "Smashingthestone.png",
-            "SpeakingwithSirTendethRitualoftheMahjarrat.png",
-            "TempleKnightArchivesRitualoftheMahjarrat.png",
-            "WalldesignsolutionRitualoftheMahjarrat.png"
-        ]
-    },
-    {
-        "name": "River of Blood",
-        "images": [
-            "BattlingtheConspirators.png",
-            "BlessingtheSalve.png",
-            "CastleDrakanStoneofJashallucination.png",
-            "FightingDrakanhallucination.png",
-            "FightingSafalaan.png",
-            "FightingSkeletonHellhounds.png",
-            "FightingtheVyrewatchscouts.png",
-            "FightingtheWyrd.png",
-            "FightingVanstromhallucination.png",
-            "Juvinatesbecomeferal.png",
-            "KillingHarold.png",
-            "Pouringtheguthixbalance.png",
-            "Riverofbloodbookshelfsolution.png",
-            "RiverofBloodreward.png",
-            "RiverofBloodVampyrearmy.png",
-            "SpeakingtoEfaritay.png",
-            "SpeakingtoSarius.png"
-        ]
-    },
-    {
-        "name": "Rocking Out",
-        "images": [
-            "300px-Rockingout3.png811f0.png",
-            "Brasshandinterface.png",
-            "CatchtheKaramthulhu.png",
-            "Gettingstewthrowninyourface.png",
-            "LureSeagull.png",
-            "MakingarubbingofLuke.png",
-            "RimmingtonCustomsOfficeinterior.png",
-            "RockingOut.png",
-            "RockingOutreward.png",
-            "RockingOutWandaTheFishFilingCabinet.png"
-        ]
-    },
-    {
-        "name": "Roving Elves",
-        "images": [
-            "Crystaltree.png",
-            "Isafdarmap.png",
-            "MossGiantsmallHD.png",
-            "RovingElves.png",
-            "RovingElvesreward.png",
-            "RovingElvesStart.png",
-            "RovingElveswardreward.png"
-        ]
-    },
-    {
-        "name": "Royal Trouble",
-        "images": ["RoyalTrouble.png", "RoyalTroublereward.png"]
-    },
-    {
-        "name": "Rum Deal",
-        "images": [
-            "Blindweedz.png",
-            "RumDeal.png",
-            "RumDealreward.png",
-            "Stagnantwater.png"
-        ]
-    },
-    {
-        "name": "Rune Mechanics",
-        "images": [
-            "Edvinspuzzleoverview.png",
-            "RuneMechanics.png",
-            "Runemechanicsanimation.png",
-            "Runemechanicsprint.png",
-            "RuneMechanicsreward.png",
-            "RuneMechanicswiring.png"
-        ]
-    },
-    {
-        "name": "Rune Memories",
-        "images": [
-            "ArianeattacksEllaron.png",
-            "Gatheringoftheheadwizards.png",
-            "Glowingruneplacement.png",
-            "KelevanandMei.png",
-            "RuneMemories.png",
-            "RuneMemoriesreward.png"
-        ]
-    },
-    {
-        "name": "Rune Mysteries",
-        "images": [
-            "DescentintotheTower.png",
-            "Luringvortex.png",
-            "Openingfirsttowerbasement.png",
-            "Organinterface.png",
-            "RuneMysteries.png",
-            "RuneMysteriesreward.png",
-            "TrappingtheVortex.png",
-            "TroubleintheLibrary.png"
-        ]
-    },
-    {
-        "name": "Rune Mythos",
-        "images": [
-            "RuneMythos.png",
-            "RuneMythosEncounteringTheFirstNecromancer.png",
-            "RuneMythosreward.png"
-        ]
-    },
-    {
-        "name": "Salt in the Wound",
-        "images": [
-            "Ezekialsbomb.png",
-            "FightingaRisenknight.png",
-            "LuringaSeaSlug.png",
-            "SaltintheWound.png",
-            "SaltintheWoundreward.png",
-            "Thefinalbattle.png",
-            "Throwingserum.png"
-        ]
-    },
-    {
-        "name": "Scorpion Catcher",
-        "images": [
-            "ScorpionCatcher.png",
-            "ScorpionCatcherBarbarianOutpost.png",
-            "ScorpionCatcherreward.png"
-        ]
-    },
-    {
-        "name": "Sea Slug",
-        "images": ["SavingKennith.png", "SeaSlug.png", "SeaSlugreward.png"]
-    },
-    {
-        "name": "Shades of Mort'ton",
-        "images": [
-            "KillingaLoarShade.png",
-            "LoarShadesetFree.png",
-            "Morttontemple.png",
-            "ShadesofMortton.png",
-            "ShadesofMorttonreward.png",
-            "ShadesofMorttonstartpoint.png"
-        ]
-    },
-    {
-        "name": "Shadow of the Storm",
-        "images": [
-            "Agrithnaarfight.png",
-            "Darkwizardjoin.png",
-            "MatthewDie.png",
-            "MeetingDave.png",
-            "ShadowoftheStorm.png",
-            "ShadowoftheStormreward.png",
-            "SoSDesummoning.png",
-            "UzerSandstorm.png"
-        ]
-    },
-    {
-        "name": "Sheep Herder",
-        "images": [
-            "Burningsheepbones.png",
-            "SheepHerder.png",
-            "SheepHerderreward.png",
-            "SheepProd.png",
-            "Sicklookingsheep.png"
-        ]
-    },
-    {
-        "name": "Shield of Arrav",
-        "images": ["ShieldofArrav.png", "ShieldofArravreward.png"]
-    },
-    {
-        "name": "Shilo Village",
-        "images": [
-            "Shilouhoh.png",
-            "ShiloVillage.png",
-            "Shilovillagedolmen.png",
-            "ShiloVillageQuestUndeadOnes.png",
-            "Shilovillagereward.png",
-            "ShilovillageTombofRashiliya.png",
-            "ShilovillageZadimusgrave.png"
-        ]
-    },
-    {
-        "name": "Sins of the Father",
-        "images": [
-            "EffigyIncubator.png",
-            "SinsoftheFather.png",
-            "SinsoftheFatherreward.png"
-        ]
-    },
-    {
-        "name": "Sliskes Endgame",
-        "images": [
-            "DeathandIcthlarin.png",
-            "EclipsebeforeSliskesEndgame.png",
-            "Exitsteps.png",
-            "FightingSliske.png",
-            "Fightingthewights.png",
-            "LinzaCGregorovicandNomad.png",
-            "MeetingJas.png",
-            "MeetingupwithIcthlarin.png",
-            "RacingArmadyl.png",
-            "ReunionwithLinza.png",
-            "Sliskerevealshisplan.png",
-            "SliskesEndgame.png",
-            "SliskesEndgamepuzzle.png",
-            "SliskesEndgamequestreplayoptions.png",
-            "SliskesEndgamereward.png",
-            "SliskesEndgamesummit.png",
-            "SliskesLabyrinth1map(solution).png",
-            "SliskesLabyrinth2map(solution).png",
-            "SliskesLabyrinthentrance.png",
-            "SliskesummonstheBarrowsBrothers.png",
-            "WrathoftheWorldGuardian.png"
-        ]
-    },
-    {
-        "name": "Smoking Kills",
-        "images": [
-            "300px-Smokingkills2.png89f49.png",
-            "Banshreemistressfight.png",
-            "Belongstous.png",
-            "Bookdestroy.png",
-            "SKmummywarrior.png",
-            "SKscarabmonster.png",
-            "SmokingKills.png",
-            "SmokingKillsreward.png"
-        ]
-    },
-    {
-        "name": "Some Like It Cold",
-        "images": [
-            "BatinaboxSomeLikeItCold.png",
-            "FishingforSquid.png",
-            "Larrysadaddy.png",
-            "Makingnoise.png",
-            "PingPongontheiceberg.png",
-            "POWcamp.png",
-            "RepairedEngine.png",
-            "Sealssleeping.png",
-            "SomeLikeitCold.png",
-            "SomeLikeItColdreward.png",
-            "Submarineaction.png",
-            "Thecrashedsubmarine.png"
-        ]
-    },
-    {
-        "name": "Song from the Depths",
-        "images": [
-            "FollowingWaylanssoul.png",
-            "Glowingsymbol.png",
-            "SFTDRoomBurningsapling.png",
-            "SongfromtheDepths.png",
-            "SongfromtheDepthsreward.png",
-            "Thejump.png",
-            "TheSiren.png"
-        ]
-    },
-    {
-        "name": "Spirit of Summer",
-        "images": [
-            "300px-SpiritofSummer3.png5319d.png",
-            "300px-SpiritofSummer4.pngb030c.png",
-            "300px-SpiritofSummer5.png55fcc.png",
-            "300px-SpiritofSummer6.pngf72d2.png",
-            "AltarSpiritofSummerskullandbones.png",
-            "CaughtSpiritBeast.png",
-            "SpiritofSummer.png",
-            "SpiritofSummerDiscdamage.png",
-            "SpiritofSummerreward.png",
-            "TrappedSummer.png"
-        ]
-    },
-    {
-        "name": "Spirits of the Elid",
-        "images": [
-            "Clearingwaterchannel.png",
-            "ClimbingWaterfall.png",
-            "SpiritsoftheElid.png",
-            "SpiritsoftheElidreward.png"
-        ]
-    },
-    {
-        "name": "Stolen Hearts",
-        "images": [
-            "300px-StolenHeartsScalespuzzle2.pngcf7fa.png",
-            "PunishingKhnum.png",
-            "StolenHearts.png",
-            "StolenHeartsCornered.png",
-            "StolenHeartsreward.png",
-            "StolenHeartsScalespuzzle.png",
-            "TheillEmir.png"
-        ]
-    },
-    {
-        "name": "Succession",
-        "images": [
-            "Succession.png",
-            "SuccessionAdrasteiaiscrowned.png",
-            "SuccessionBilrachsritual.png",
-            "SuccessionfightingMal.png",
-            "SuccessionGeneralKhazardcratepuzzle.png",
-            "SuccessionMiningargonlikeore.png",
-            "Successionmodifiedritualmarker.png",
-            "Successionreward.png",
-            "SuccessionVengeancefightstheMagister.png"
-        ]
-    },
-    {
-        "name": "Summers End",
-        "images": [
-            "BeastCdarkcoreCjallek.png",
-            "Collapsedcave.png",
-            "Deadbeast.png",
-            "Graveroom.png",
-            "IntheVoidinSummersEnd.png",
-            "SpiritBeast.png",
-            "SummersEnd.png",
-            "SummersEndreward.png",
-            "SummersEnd_FirepitLocations.jpg",
-            "TheEndofSummer.png"
-        ]
-    },
-    {
-        "name": "Swan Song",
-        "images": [
-            "Fixingthewall.png",
-            "SeatrollQueenfight.png",
-            "SwanSong.png",
-            "SwanSongfight.png",
-            "SwanSongreward.png"
-        ]
-    },
-    {
-        "name": "Swept Away",
-        "images": [
-            "StirringtheGoulash.png",
-            "SweptAway.png",
-            "SweptAwayreward.png"
-        ]
-    },
-    {
-        "name": "Tai Bwo Wannai Trio",
-        "images": [
-            "TaiBwoWannaiTrio.png",
-            "TaiBwoWannaiTrioreward.png",
-            "TaiBwoWannaiTrioTamayuSlaysShaikahan.png",
-            "TamayuLocation.png",
-            "Thirdsontiadeche.png",
-            "Tinsaysecondson.png"
-        ]
-    },
-    {
-        "name": "Tears of Guthix",
-        "images": [
-            "LumbridgeCavesMap.png",
-            "Miningmagicstone.png",
-            "TearsofGuthix.png",
-            "TearsofGuthixreward.png"
-        ]
-    },
-    {
-        "name": "Temple of Ikov",
-        "images": [
-            "TempleofIkov.png",
-            "TempleofIkovlever.png",
-            "TempleofIkovLuciendisposed.png",
-            "TempleofIkovmap.png",
-            "templeofikovrewardarmadyl.png",
-            "templeofikovrewardlucien.png",
-            "TempleofIkovunstablebridge.png",
-            "TempleofIkovWinelda.png"
-        ]
-    },
-    {
-        "name": "That Old Black Magic",
-        "images": ["ThatOldBlackMagic.png", "ThatOldBlackMagicreward.png"]
-    },
-    {
-        "name": "The Blood Pact",
-        "images": [
-            "FightingKayle.png",
-            "TheBloodPact.png",
-            "TheBloodPactreward.png",
-            "Thetombisdestroyed.png"
-        ]
-    },
-    {
-        "name": "The Branches of Darkmeyer",
-        "images": [
-            "AttackingVanescula.png",
-            "BODVanesculaRescue.png",
-            "BurghdeRottTunnel.png",
-            "CuttingtheBlisterwoodTree.png",
-            "DarkmeyerTier.png",
-            "Decayingtome.png",
-            "Emergencymeeting.png",
-            "FightingVanstrom.png",
-            "Haroldfight.png",
-            "KillingCitizens.png",
-            "Myreque.png",
-            "Punchingthebloodtrader.png",
-            "Ranisedie.png",
-            "RogueVyres.png",
-            "RunningthroughDarkmeyer.png",
-            "Safalaanreads.png",
-            "TheBranchesofDarkmeyer.png",
-            "TheBranchesofDarkmeyerreward.png",
-            "VanstromInformation.png",
-            "Vanstrommist.png",
-            "VanstromsDeath.png",
-            "VyreMark.png"
-        ]
-    },
-    {
-        "name": "The Brink of Extinction",
-        "images": [
-            "300px-TBoEroom3fight.png4e3d5.png",
-            "AGaalhatches.png",
-            "BoEstatuemining.png",
-            "Fightingthechampions.png",
-            "FightingTokhaarHok.png",
-            "FightingTzKils.png",
-            "TableImage.png",
-            "TBoEroomfight.png",
-            "TBoEroompuzzle.png",
-            "TheBrinkofExtinction.png",
-            "TheBrinkofExtinctionnoticeboard.png",
-            "TheBrinkofExtinctionreward.png",
-            "TokHaarHokappears.png",
-            "Tzhaarparty.png",
-            "TzHaarsigilTheBrinkofExtinction.png",
-            "TzhaarWordTable.png",
-            "WeaponTable.png"
-        ]
-    },
-    {
-        "name": "The Chosen Commander",
-        "images": [
-            "BandosAvatarFight.png",
-            "Bandosshowdown.png",
-            "chosencommandertable.png",
-            "FightingSigmund.png",
-            "FightingWalton.png",
-            "Grubfootescape.png",
-            "PendantSmash.png",
-            "SafeSpotZanik.png",
-            "StatuesMoving.png",
-            "TalkingtoJuna.png",
-            "TheChosenCommanderreward.png",
-            "Thesickchildren.png",
-            "Wecanfight.png",
-            "ZanikGrapple.png"
-        ]
-    },
-    {
-        "name": "The Curse of Arrav",
-        "images": [
-            "300px-ArravCurse3.png92a08.png",
-            "ArravCurse.png",
-            "chaostempledungeonmap.png",
-            "Decoderstripspuzzle.png",
-            "descendentslocations.png",
-            "LamistardsTunnelsPath.png",
-            "TheCurseofArrav.png",
-            "TheCurseofArravArravmindcontrol.png",
-            "TheCurseofArravreward.png"
-        ]
-    },
-    {
-        "name": "The Darknessof Hallowvale",
-        "images": [
-            "Aeonisigteleports.png",
-            "Decoratedwall.png",
-            "Drakansingame.png",
-            "Fixingboat.png",
-            "HallowvaleBoat.png",
-            "MeetingSafalaan.png",
-            "Ralandsickle.png",
-            "Repairingtheladder.png",
-            "Safalaansmeetingpoint.png",
-            "Shadowyfigurecropped.png",
-            "Telegrabhaemalchemy.png",
-            "TheDarknessofHallowvale.png",
-            "TheDarknessofHallowvalemineroutemap.png",
-            "TheDarknessofHallowvalereward.png",
-            "Updatedunusedcastledrakanmap.png"
-        ]
-    },
-    {
-        "name": "The Death of Chivalry",
-        "images": [
-            "BlackKnightstortureDawn.png",
-            "DeathofChivalryBKF.png",
-            "DeathofChivalrytilesolution.png",
-            "FightingFern.png",
-            "FightingtheBlackKnights.png",
-            "KnockingoutGraves.png",
-            "SaradominwithElorasWand.png",
-            "TheDeathofChivalry.png",
-            "TheDeathofChivalrystart.png",
-            "Zombiefight.png"
-        ]
-    },
-    {
-        "name": "The Dig Site",
-        "images": [
-            "Diggingforthetalisman.png",
-            "DigsiteTemple.png",
-            "Panning.png",
-            "SenntistenTemplemap.png",
-            "TheDigSitereward.png",
-            "TheDigSitesearchingbushes.png"
-        ]
-    },
-    {
-        "name": "The Elder Kiln",
-        "images": [
-            "Ancientgate.png",
-            "EvadingtheTokhaar.png",
-            "FightingKetZeks.png",
-            "GaalForge.png",
-            "GaalJehdies.png",
-            "Hatchedegg.png",
-            "Hatchingtheegg.png",
-            "Jump.png",
-            "Linerow.png",
-            "SafeSpotElderKiln.png",
-            "TheElderKilnquest.png",
-            "TheElderKilnreward.png",
-            "TzHaarKetYittalsafespot.png",
-            "TzHaarnumbers.png",
-            "YtMejKotfight.png"
-        ]
-    },
-    {
-        "name": "The Eyes of Glouphrie",
-        "images": [
-            "BattleofAtarisundriCouncil.png",
-            "TheEyesofGlouphrie.png",
-            "TheEyesofGlouphriediscexchanger.png",
-            "TheEyesofGlouphrieHazelmere.png",
-            "TheEyesofGlouphrielegend.png",
-            "TheEyesofGlouphriereward.png",
-            "TheEyesofGlouphrieSaboteur.png"
-        ]
-    },
-    {
-        "name": "The Feud",
-        "images": ["TheFeud.png", "TheFeudreward.png", "UsingHagspoison.png"]
-    },
-    {
-        "name": "The Firemakers Curse",
-        "images": [
-            "Avoidingfallingrocks.png",
-            "Avoidingthefirewall.png",
-            "CaveIn.png",
-            "Charragemode.png",
-            "Detershadows.png",
-            "FightingChar.png",
-            "Firemakers.png",
-            "Firemakerscursebanner.png",
-            "Gettingthroughthemaze.png",
-            "TheFiremakersCurse.png",
-            "TheFiremakersCursefireroom.png",
-            "TheFiremakersCursefirstroom.png",
-            "TheFiremakersCurseinfobox.png",
-            "TheFiremakersCursereward.png",
-            "TheFiremakersCursewavepuzzle.png",
-            "Wallofflame.png"
-        ]
-    },
-    {
-        "name": "The Fremennik Isles",
-        "images": [
-            "Deadicetrollking.png",
-            "Entertainingmawnis.png",
-            "FIkingsorvottcourt.png",
-            "TheFremennikIsles.png",
-            "TheFremennikIsleshonourguardandtrolls.png",
-            "TheFremennikIslesreward.png"
-        ]
-    },
-    {
-        "name": "The Fremennik Trials",
-        "images": [
-            "Deathlessbossfight.png",
-            "FremennikTrialsDraugen.png",
-            "Koscheiarena.png",
-            "Peertheseerroom.png",
-            "Swensensmaze.png",
-            "TheFremennikTrials.png",
-            "TheFremennikTrialsreward.png"
-        ]
-    },
-    {
-        "name": "The Giant Dwarf",
-        "images": [
-            "ConsortiumMeeting.png",
-            "TheGiantDwarf.png",
-            "TheGiantDwarfCrashingintothestatue.png",
-            "TheGiantDwarfreward.png"
-        ]
-    },
-    {
-        "name": "The Golem",
-        "images": [
-            "TalkingtotheGolem.png",
-            "TheGolem.png",
-            "TheGolemreward.png"
-        ]
-    },
-    {
-        "name": "The Grand Tree",
-        "images": [
-            "GlouphsLittleFriend.png",
-            "GrandTreeshortcut.png",
-            "ImprisonedwithCharlie.png",
-            "Searchingroots.png",
-            "TheGrandTree.png",
-            "TheGrandTreereward.png",
-            "Tuzo.png"
-        ]
-    },
-    {
-        "name": "The Great Brain Robbery",
-        "images": [
-            "BrainRobStatue.png",
-            "ElfinlockscamoTGBR.png",
-            "GreatBrainRobberycrate.png",
-            "GreatBrainRobberyhole.png",
-            "GreatBrainRobberystairs.png",
-            "Intermission.png",
-            "Thegreatbrainrobbery.png",
-            "TheGreatBrainRobberyreward.png"
-        ]
-    },
-    {
-        "name": "The Hand in the Sand",
-        "images": [
-            "Sandyconfesses.png",
-            "TheHandintheSand.png",
-            "TheHandintheSandreward.png"
-        ]
-    },
-    {
-        "name": "The Jack of Spades",
-        "images": ["TheJackofSpades.png", "TheJackofSpadesreward.png"]
-    },
-    {
-        "name": "The Knights Sword",
-        "images": [
-            "SirVyvvinscabinet.png",
-            "Startoftheknightssword.png",
-            "TheKnightsSword.png",
-            "TheKnightsSwordreward.png",
-            "Thurgoandhut.png"
-        ]
-    },
-    {
-        "name": "The Light Within",
-        "images": [
-            "ArianwynrevivesBaxtorian.png",
-            "CarryingSeren.png",
-            "Coedensstory.png",
-            "Eldersmeeting.png",
-            "Fightingashapeshifter.png",
-            "MeetingGuthix.png",
-            "PurifyingtheHefincrystal.png",
-            "Serenandtheelders.png",
-            "Takingthecrystaltreeshard.png",
-            "Takingthedarkshard.png",
-            "TheLightWithin.png",
-            "TheLightWithinpuzzle.png",
-            "TheLightWithinreward.png",
-            "Theprudencecrystal.png"
-        ]
-    },
-    {
-        "name": "The Lord of Vampyrium",
-        "images": [
-            "300px-FightingDrakan-Phase2.png84547.png",
-            "300px-Ringpuzzle2solution.png02e88.png",
-            "300px-Ringpuzzle3solution.png3f334.png",
-            "300px-Ringpuzzle4solution.png3da70.png",
-            "Barricadingthewindows.png",
-            "Drakanambush.png",
-            "Drakanreturns.png",
-            "EmptyBurghdeRott.png",
-            "FightingDrakanPhase.png",
-            "FightingtheVenators.png",
-            "GainingstatusonCastleDrakan.png",
-            "IcyeneGraveyard.png",
-            "KillingDrakan.png",
-            "LordofVampyriumbloodpuzzlesolution.png",
-            "MyrequeintheArboretum.png",
-            "MyrequeVIpollbanner.png",
-            "ProtectingIvan.png",
-            "Ringpuzzlesolution.png",
-            "TheLordofVampyrium.png",
-            "TheLordofVampyriumreward.png",
-            "Vanesculabetraysyou.png",
-            "VanesculastabsLowerniel.png",
-            "Veliafgivesup.png",
-            "Vyresinthebase.png"
-        ]
-    },
-    {
-        "name": "The Lost Tribe",
-        "images": [
-            "Losttribe.png",
-            "LostTribepeacetreaty.png",
-            "TheLostTribe.png",
-            "TheLostTribereward.png"
-        ]
-    },
-    {
-        "name": "The Mighty Fall",
-        "images": [
-            "BandossTowerdestroyed.png",
-            "FightingLol.png",
-            "FightingYelps.png",
-            "KillingZanik.png",
-            "LearningtheKyzajTheMightyFall.png",
-            "SpeakingwithZaradorTheMightyFall.png",
-            "ThegeneralsTheMightyFall.png",
-            "TheMightyFall.png",
-            "TheMightyFallfightingGeneralGraardor.png",
-            "TheMightyFallreward.png",
-            "Yourcamp.png",
-            "Zanikhugsyou.png",
-            "ZaradorandZanik.png"
-        ]
-    },
-    {
-        "name": "The Needle Skips",
-        "images": [
-            "Endofanordeal.png",
-            "TheNeedleSkips.png",
-            "TheNeedleSkipsreward.png"
-        ]
-    },
-    {
-        "name": "The Path of Glouphrie",
-        "images": [
-            "Evilcreaturerevealed.png",
-            "FightingtheWarpedTerrorbirds.png",
-            "PathofGlouphrieYewnocksmachine.png",
-            "Terrorbirdguards.png",
-            "TheEyesofGlouphrielegend.png",
-            "ThePathofGlouphrie.png",
-            "ThePathofGlouphriereward.png"
-        ]
-    },
-    {
-        "name": "The Prisoner of Glouphrie",
-        "images": [
-            "300px-Pog6.pngbbf8d.png",
-            "300px-Pog7.png797a2.png",
-            "Arposandranundergroundlowerlevel.png",
-            "Arposandranundergroundupperlevel.png",
-            "CavernsunderArandar.png",
-            "Deadtreeentrance.png",
-            "ExitcrevicePrisonerofGlouphrie.png",
-            "GalarposMountainsvent.png",
-            "Pog.png",
-            "Reunionwithbolren.png",
-            "SturdytreePrisonerofGlouphrie.png",
-            "ThelabPrisonerofGlouphrie.png",
-            "ThePrisonerofGlouphrie.png",
-            "ThePrisonerofGlouphriereward.png"
-        ]
-    },
-    {
-        "name": "The Restless Ghost",
-        "images": ["TheRestlessGhost.png", "TheRestlessGhostreward.png"]
-    },
-    {
-        "name": "The Slug Menace",
-        "images": [
-            "CraftingtheRunes.png",
-            "Imposingdoor.png",
-            "ItsMayorHobb.png",
-            "Maledictisconverted.png",
-            "SeaSlugShrine.png",
-            "Slugmenacewall.png",
-            "TheSlugMenace.png",
-            "TheSlugMenacereward.png",
-            "WitchavenDungeonmap.png"
-        ]
-    },
-    {
-        "name": "The Spirit of War",
-        "images": [
-            "TheSpiritofWar.png",
-            "TheSpiritofWarrescuingsouls.png",
-            "TheSpiritofWarreward.png"
-        ]
-    },
-    {
-        "name": "The Tale of the Muspah",
-        "images": [
-            "CanoeboattravelrouteFremennikProvince.png",
-            "Monsterinice.png",
-            "TheTaleoftheMuspah.png",
-            "TheTaleoftheMuspahreward.png"
-        ]
-    },
-    {
-        "name": "The Temple at Senntisten",
-        "images": [
-            "Fightingtunnelbrother.png",
-            "SenntistenTemplerestoration.png",
-            "TempleatSenntisten.png",
-            "TheTempleatSenntistenIcedemon.png",
-            "TheTempleatSenntistenPushingtheheatglobe.png",
-            "TheTempleatSenntistenreward.png"
-        ]
-    },
-    {
-        "name": "The Tourist Trap",
-        "images": [
-            "Anainabarrelinaminecart.png",
-            "Makingtheprototypedart.png",
-            "TheTouristTrap.png",
-            "TheTouristTrapreward.png",
-            "TheTouristTrapstart.png",
-            "TouristTrapMineCart.png",
-            "Tradingclothes.png"
-        ]
-    },
-    {
-        "name": "The Vault of Shadows",
-        "images": [
-            "Kharidetdiallocation.png",
-            "TheVaultofShadows.png",
-            "TheVaultofShadowsbloodpuzzle.png",
-            "TheVaultofShadowspuzzleorientationanddialcommands.png",
-            "TheVaultofShadowsreward.png",
-            "TheVaultofShadowsshadowpuzzle.png",
-            "TheVaultofShadowssmokepuzzle.png",
-            "VaultofShadows.png"
-        ]
-    },
-    {
-        "name": "The Void Stares Back",
-        "images": [
-            "Colbyteleport.png",
-            "FightingthePestQueen.png",
-            "Firstpuzzleroomvoid.png",
-            "GreyzagisRevealed.png",
-            "Lamezag.png",
-            "Pestconquestmovingvoid.png",
-            "Queenisdead.png",
-            "Theimpossibledecisionvoid.png",
-            "TheKnightsArrive.png",
-            "ThePestQueenemerges.png",
-            "TheVoidGooExplosion.png",
-            "TheVoidStaresBack.png",
-            "TheVoidStaresBackreward.png",
-            "VoidStaresBackForge.png",
-            "Weightdistribution.png"
-        ]
-    },
-    {
-        "name": "The World Wakes",
-        "images": [
-            "592px-The_World_Wakes_puzzle_solution_1.png",
-            "592px-The_World_Wakes_puzzle_solution_2.png",
-            "592px-The_World_Wakes_puzzle_solution_3.png",
-            "592px-The_World_Wakes_puzzle_solution_4.png",
-            "Becomingaguardian.png",
-            "Cresdies.png",
-            "DefendingJuna.png",
-            "Edictswarning.png",
-            "FightingGraardor.png",
-            "Guthixsslaying.png",
-            "Guthixsword.png",
-            "Kreearrafight.png",
-            "OpeningdoorTWW.png",
-            "Saradominappears.png",
-            "TheWorldWakes.png",
-            "TheWorldWakesbanner.png",
-            "TheWorldWakesdoorsolution.png",
-            "TheWorldWakesreward.png",
-            "TheWorldWakesstorageroomsolution.png",
-            "ZemouregalandSharathteerk.png",
-            "ZilyanaandKril.png"
-        ]
-    },
-    {
-        "name": "Throne of Miscellania",
-        "images": ["ThroneofMiscellania.png", "ThroneofMiscellaniareward.png"]
-    },
-    {
-        "name": "Tok Tz-Ket-Dill",
-        "images": [
-            "TokTzAshes.png",
-            "TokTzKetDillquest.png",
-            "TokTzKetDillreward.png",
-            "TokTzKetDillstart.png",
-            "TzTokketDill.png"
-        ]
-    },
-    {
-        "name": "Tomes of the Warlock",
-        "images": ["TomesoftheWarlock.png", "TomesoftheWarlockreward.png"]
-    },
-    {
-        "name": "Tower of Life",
-        "images": [
-            "300px-Tolpipes2.pngd20ef.png",
-            "HomuncolusBirth.png",
-            "HomunculusMagicorLogic.png",
-            "ToLPipePuzzle.png",
-            "Tolpipes.png",
-            "TowerofLifecagefix.png",
-            "TowerofLifeinfobox.png",
-            "TowerofLifereward.png"
-        ]
-    },
-    {
-        "name": "Tree Gnome Village",
-        "images": [
-            "Khazardwarlordsafespot.png",
-            "Retrievingtheprotectionorb.png",
-            "TreeGnomeVillageOrbCeremony.png",
-            "TreeGnomeVillagereward.png"
-        ]
-    },
-    {
-        "name": "Tribal Totem",
-        "images": ["TribalTotem.png", "TribalTotemreward.png"]
-    },
-    {
-        "name": "Troll Romance",
-        "images": [
-            "Arrgsafespot.png",
-            "Forkintheroadtotrollweissdungeon.png",
-            "pathtofredas.png",
-            "TrollCaveEntrancePath.png",
-            "TrollRomance.png",
-            "TrollRomancereward.png",
-            "TrollStrongholdPath.png",
-            "TRridesled.png",
-            "Waxingthesled.png"
-        ]
-    },
-    {
-        "name": "Troll Stronghold",
-        "images": [
-            "Dadsafespot.png",
-            "PathToDad.png",
-            "SafespottingTrollGeneral.png",
-            "TrollStronghold.png",
-            "TrollStrongholdreward.png"
-        ]
-    },
-    {
-        "name": "Twilight of the Gods",
-        "images": [
-            "CuringErasinusandSenecianus.png",
-            "GuardiansofGuthixtransferknowledge.png",
-            "Keyinstructionsinterface.png",
-            "TestingtheEdicts.png",
-            "TwilightoftheGods.png",
-            "TwilightoftheGodsIbringamessagefromZamorak.png",
-            "TwilightoftheGodsreward.png"
-        ]
-    },
-    {
-        "name": "Underground Pass",
-        "images": [
-            "FiringatGuideRope.png",
-            "Ibansroom.png",
-            "Kalrag.png",
-            "PaladinCamp.png",
-            "Smashedunicorn.png",
-            "Tombonfire.png",
-            "UndergroundPass.png",
-            "UndergroundPassKardiastreasurechest.png",
-            "UndergroundPassMap.png",
-            "UndergroundPassreward.png",
-            "WelltoIbansLair.png"
-        ]
-    },
-    {
-        "name": "Unwelcome Guests",
-        "images": [
-            "UnwelcomeGuests.png",
-            "UnwelcomeGuestspresentingtheguardhouse.png",
-            "UnwelcomeGuestsreinforcingthewalls.png",
-            "UnwelcomeGuestsreward.png",
-            "Zemouregalresurrectsarmouredphantoms.png"
-        ]
-    },
-    {
-        "name": "Vampyre Slayer",
-        "images": [
-            "CountDraynorAwakes.png",
-            "FightingDraynor.png",
-            "VampyreSlayer.png",
-            "VampyreSlayerreward.png"
-        ]
-    },
-    {
-        "name": "Vessel of the Harbinger",
-        "images": [
-            "VesseloftheHarbinger.png",
-            "VesseloftheHarbingerdefeatingNettysskeleton.png",
-            "VesseloftheHarbingerreward.png"
-        ]
-    },
-    {
-        "name": "Violet is Blue",
-        "images": [
-            "BettyandTrevor.png",
-            "SnowballdodgingVioletisBlue.png",
-            "VioletisBlue.png",
-            "VioletisBluecompletedsled.png",
-            "VioletisBlueopening.png",
-            "VioletisBluereward.png",
-            "Violetshouse.png"
-        ]
-    },
-    {
-        "name": "Violet is Blue Too",
-        "images": ["VioletisBlueToo.png", "VioletisBlueTooreward.png"]
-    },
-    {
-        "name": "Wanted",
-        "images": [
-            "DiscontinuedWantedcutscene.png",
-            "FightingSolus.png",
-            "Solusblackknight.png",
-            "Solusflamesofzamarok.png",
-            "SolusthreatensDaquarius.png",
-            "Wanted.png",
-            "Wantedreward.png"
-        ]
-    },
-    {
-        "name": "Watchtower",
-        "images": [
-            "PullingtheleverintheWatchtower.png",
-            "Trellis.png",
-            "Watchtower.png",
-            "Watchtowerreward.png"
-        ]
-    },
-    {
-        "name": "Waterfall Quest",
-        "images": ["WaterfallQuest.png", "WaterfallQuestreward.png"]
-    },
-    {
-        "name": "What Lies Below",
-        "images": [
-            "Killingoutlaws.png",
-            "RatBurgiss.png",
-            "SecretMessage.png",
-            "WhatLiesBelow.png",
-            "WhatLiesBelowreward.png"
-        ]
-    },
-    {
-        "name": "What's Mine is Yours",
-        "images": [
-            "Livingrockbrawlerappears.png",
-            "WhatsMineIsYours.png",
-            "WhatsMineIsYoursreward.png"
-        ]
-    },
-    {
-        "name": "While Guthix Sleeps",
-        "images": [
-            "Dragonkincutscene.png",
-            "Enrichingthesnapdragonseed.png",
-            "HarvestingtheenrichedSnapdragon.png",
-            "Idriateleportsplayer.png",
-            "LucienandtheStoneofJas.png",
-            "Lucienspillsthebeans.png",
-            "Movario Locked Door.gif",
-            "Thesummoningofthetormenteddemons.png",
-            "Tormenteddemonfight.png",
-            "WhileGuthixSleepsheroes.png",
-            "WhileGuthixSleepsreward.png",
-            "WhileGuthixSleepsTable.png"
-        ]
-    },
-    {
-        "name": "Witch's House",
-        "images": [
-            "Cupboardmagnet.png",
-            "FightingtheExperiment.png",
-            "PottedPlant.png",
-            "WitchsHouse.png",
-            "WitchsHousereward.png"
-        ]
-    },
-    {
-        "name": "Within the Light",
-        "images": [
-            "ActivatingthegreenreceiverWithintheLight.png",
-            "ArianwyndebriefingWithintheLight.png",
-            "Arianwynkillsshadow.png",
-            "Deathaltarenergize.png",
-            "Energisedpillar.png",
-            "Platformjumping.png",
-            "Shapingthecrystaltree.png",
-            "Shootingthetarget.png",
-            "Thedeadelfmessenger.png",
-            "WithintheLight.png"
-        ]
-    },
-    {
-        "name": "Wolf Whistle",
-        "images": [
-            "SearchStikklebrix.png",
-            "WolfWhistle.png",
-            "WolfWhistlepouch.png"
-        ]
-    },
-    {
-        "name": "You Are It",
-        "images": [
-            "Destroyingthewshmaker.png",
-            "DoubleAgentrippers.png",
-            "MysteriouscluescrollYouAreItmap.png",
-            "MysteriousHolelocation.png",
-            "TheDukesundertaker.png",
-            "Urigraverobbing.png",
-            "YouAreIt.png",
-            "YouAreItmysteriouscluediglocation.png",
-            "YouAreItstartinglocation.png"
-        ]
-    },
-    {
-        "name": "Zogre Flesh Eaters",
-        "images": [
-            "SlashBashsafespot.png",
-            "ZogreFleshEaters.png",
-            "ZogreFleshEnteringTunnel.png",
-            "ZogreFleshJumpingBarricade.png",
-            "ZogreFleshOgreSithik.png",
-            "ZogreFleshSigningPortrait.png"
-        ]
-    }
+			"SparsePlane.png"
+		]
+	},
+	{
+		"name": "A Shadow over Ashdale",
+		"images": [
+			"Agorothdies.png",
+			"AShadowoverAshdale.png",
+			"AShadowoverAshdaleAshdaleissafe.png",
+			"AShadowOverAshdalereward.png",
+			"ASOAAgorothArrives.png",
+			"ASOABarrelpuzzle.png",
+			"FightingAgoroth.png",
+			"KillingaCrassianwarrior.png"
+		]
+	},
+	{
+		"name": "A Soul's Bane",
+		"images": [
+			"Angerweapons.png",
+			"ASoulsBane.png",
+			"ASoulsBanereward.png",
+			"ConfrontingTolna.png",
+			"FightingTolna.png",
+			"Increaserage.png",
+			"Killingfear.png",
+			"Superrage.png",
+			"Tolna.png",
+			"Tolnaconfused.png",
+			"Tolnaleaveshome.png",
+			"Tolnatrapped.png"
+		]
+	},
+	{
+		"name": "A Tail of Two Cats",
+		"images": [
+			"ATailofTwoCats.png",
+			"ATailofTwoCatsreward.png",
+			"BobsWanderRadius.png",
+			"Choppinghair.png",
+			"CuringUnferth.png",
+			"Talkingtosphinx.png"
+		]
+	},
+	{
+		"name": "A Void Dance",
+		"images": [
+			"300px-AVoidDanceclue2.pngd4825.png",
+			"300px-AVoidDanceclue3.pngc8e4a.png",
+			"300px-AVoidDanceclue4.png2edc3.png",
+			"300px-AVoidDanceclue5.png6f23a.png",
+			"AVoidDance.png",
+			"AVoidDanceclue.png",
+			"AVoidDanceending.png",
+			"AVoidDancefightingtheguardians.png",
+			"AVoidDanceGootrail.png",
+			"AVoidDanceHatchway.png",
+			"AVoidDanceKorasibreaksthebox.png",
+			"AVoidDanceKorasistrikestheguard.png",
+			"AVoidDanceSummoningtheVoidDrone.png",
+			"AVoidDanceThepesttrapped.png"
+		]
+	},
+	{
+		"name": "Aftermath",
+		"images": [
+			"Aftermath.png",
+			"Saradomininaftermath.png",
+			"SirCadianinthezamorakianundercity.png",
+			"ZarosiansmeetinPraetoriuminaftermath.png"
+		]
+	},
+	{
+		"name": "All Fired Up",
+		"images": ["AllFiredUp.png", "BlazeBeacon.png"]
+	},
+	{
+		"name": "Alpha vs Omega",
+		"images": [
+			"AlphavsOmega.png",
+			"AlphavsOmegaRasialdefeated.png",
+			"AlphavsOmegathebattlewithRasial.png"
+		]
+	},
+	{
+		"name": "Ancient Awakening",
+		"images": [
+			"AncientAwakening.png",
+			"AncientAwakeningAsterandwoodenheadstone.png",
+			"AncientAwakeningfightingtheundeadgiant.png",
+			"AncientAwakeningfindingartefacts.png",
+			"AncientAwakeningTheyshallservemeindeath.png",
+			"AncientAwakeningundeadwaves.png",
+			"TheHolographicArchivist.png",
+			"ZemouregalsummoningVorkath.png"
+		]
+	},
+	{
+		"name": "Animal Magnetism",
+		"images": ["AnimalMagnetism.png", "CompletedNotes.png"]
+	},
+	{
+		"name": "Another Slice of HAM",
+		"images": [
+			"AnotherSliceofH.png",
+			"Congratzfromdorgshuun.png",
+			"Digforartefacts.png",
+			"Excavation.png",
+			"Goblinvillagegathering.png",
+			"H.png",
+			"Locationurtag.png",
+			"Zanikcaught.png",
+			"Zaniktied.png"
+		]
+	},
+	{
+		"name": "As a First Resort",
+		"images": [
+			"Asafirstresort.png",
+			"Releasingplatypus.png",
+			"ResortCook.png",
+			"ResortSnurgh.png",
+			"VarrockHerald.png"
+		]
+	},
+	{
+		"name": "Azzanadras Quest",
+		"images": [
+			"AzzanadraandArianeattheGielinorsElderHalls.png",
+			"Azzanadracomplainsaboutthecouncil.png",
+			"AzzanadrasQuest.png",
+			"Freneskaemap.png",
+			"HarvestingaTrindinespring.png",
+			"HarvestingJasmemoryspring.png",
+			"SaradominreturnstoGielinor.png",
+			"TokHaarHokmeetswithTzHaar.png",
+			"TrindineandVeilinius.png",
+			"TrindinewaitingattheHallofMemories.png",
+			"WhiteKnightsCastlefull.png",
+			"Zarosteleportsawaywiththecrown.png"
+		]
+	},
+	{
+		"name": "Back to my Roots",
+		"images": ["Jadevinemazemap.png", "WizardLocation.png"]
+	},
+	{
+		"name": "Back to the Freezer",
+		"images": [
+			"BacktotheFreezer.png",
+			"BacktotheFreezercabbages.png",
+			"BacktotheFreezerclockworksuit.png",
+			"BacktotheFreezerheadbanner.png",
+			"BacktotheFreezerMiningGuild.png",
+			"BacktotheFreezermonkeyisland.png",
+			"BacktotheFreezerPingandPong.png",
+			"BacktotheFreezersecretbunkerpastmap.png",
+			"BacktotheFreezersecretbunkerpresentmap.png",
+			"ElonsListTable.png",
+			"ItemTable1.png",
+			"TalkingtoDundee.png",
+			"TalkingtoSkotandMundsen.png"
+		]
+	},
+	{
+		"name": "Battle of the Monolith",
+		"images": [
+			"300px-BattleoftheMonolith-Week5.png77c7b.png",
+			"Azzanadraascends.png",
+			"BattlefortheMonolith.png",
+			"BattleoftheMonoliththirdbattlelocations.png",
+			"BattleoftheMonolithWeek.png",
+			"BattleoftheMonolithWeekfarm.png",
+			"BattleoftheMonolithWeeknorthernbarricades.png",
+			"BattleoftheMonolithWeeksouthernbarricade.png",
+			"BattleoftheMonolithWeekVarrockgates.png",
+			"ElderGodWarsBattleoftheMonolithTrailer.png",
+			"SerenconfrontsZarosattheMonolith.png"
+		]
+	},
+	{
+		"name": "Beneath Cursed Tides",
+		"images": [
+			"BeneathCursedTides.png",
+			"BeneathCursedTidescookingshrimp.png",
+			"BeneathCursedTidesrecruitingVannaka.png",
+			"BeneathCursedTidestutors.png",
+			"Cookingforthemasterchef.png",
+			"Deadsearats.png",
+			"KillingachickenforTerrova.png",
+			"ShowdownwithVivian.png"
+		]
+	},
+	{
+		"name": "Between a Rock",
+		"images": ["dwarvernengineerlocation.png"]
+	},
+	{
+		"name": "Big Chompy Bird Hunting",
+		"images": [
+			"BigChompyBirdHunting.png",
+			"BigChompyBirdHuntingChompyHunt.png",
+			"BigChompyBirdHuntingCooking.png",
+			"BigChompyBirdHuntingInflatingToads.png",
+			"BigChompyBirdHuntingRantz.png",
+			"BigChompyBirdHuntingRantzscave.png"
+		]
+	},
+	{
+		"name": "Biohazard",
+		"images": [
+			"Biohazard.png",
+			"GuidorsLocation.png",
+			"ReasonTable.png",
+			"ReleasingthePigeons.png"
+		]
+	},
+	{
+		"name": "Birthright of the Dwarves",
+		"images": [
+			"Barendirarmy.png",
+			"Birthrightherdingmemories.png",
+			"BirthrightoftheDwarves.png",
+			"BirthrightoftheDwarvesreward.png",
+			"BirthrightoftheDwarvesstart.png",
+			"BirthrightoftheDwarvesTheDirectorandGrimsson.png",
+			"DondakansLocation.png",
+			"EntranceToBarendirTunnel.png",
+			"FightingGrimsson.png",
+			"FightingGrimssonandHreidmar.png",
+			"Fightinginthemine.png",
+			"FinishedSchematic.png",
+			"FragmentTable1.png",
+			"FragmentTable2.png",
+			"FragmentTable3.png",
+			"FragmentTable4.png",
+			"FragmentTable5.png",
+			"Grimssonescapes.png",
+			"Grimssonsmemories.png",
+			"GrunshbrainwashesVeldaban.png",
+			"Grunshsmemories.png",
+			"Hreidagrim.png",
+			"LocationDwarvenEngineer.png",
+			"TaverlyDungeonMap.png",
+			"Veldabansabdication.png"
+		]
+	},
+	{
+		"name": "Blood Runs Deep",
+		"images": [
+			"AttackWeaknessTable.png",
+			"BloodRunsDeep.png",
+			"BloodRunsDeepdagannothattack.png",
+			"BloodRunsDeepDagannothmotherencounter.png",
+			"BloodRunsDeepmarriage.png",
+			"BloodRunsDeepreward.png",
+			"Brundtsboat.png",
+			"CaveMap.png",
+			"Dagannothsentinels.png",
+			"Fremennikspiritualrealm.png",
+			"Funeral.png",
+			"Partyofheroes.png",
+			"Rellekkadagannothattack.png",
+			"SealingtheDagannothschamber.png",
+			"TraptheDagannothmother.png",
+			"Vargasescort.png",
+			"Youmaykissthebride.png"
+		]
+	},
+	{
+		"name": "Bringing Home the Bacon",
+		"images": [
+			"Apigletandakitten.png",
+			"Baconaddictsappear.png",
+			"BringingHometheBacon.png",
+			"BringingHometheBaconreward.png",
+			"Convincingvillagers.png",
+			"MakingaBeastofBurden.png"
+		]
+	},
+	{
+		"name": "Broken Home",
+		"images": [
+			"BanishingOrmod.png",
+			"BrokenHome.png",
+			"BrokenHomemap.png",
+			"BrokenHomestatuepuzzle.png",
+			"BrokenHomestatuepuzzlesolution.png",
+			"BrokenHomewindowsshatter.png",
+			"Broken_home_basement.png",
+			"Broken_home_first_floor.png",
+			"Broken_home_ground_floor.png",
+			"Discoveringthefacelessservant.png",
+			"Flyingkniferoom.png",
+			"Gettingtheeyegemfromtheskeleton.png",
+			"Lenianintroduceshimself.png",
+			"Lenianisconsumed.png",
+			"Obtainingthedollkey.png",
+			"Servantiseaten.png",
+			"TheAsylum.png",
+			"Themonsterchasesyou.png"
+		]
+	},
+	{
+		"name": "Buyers and Cellars",
+		"images": ["BuyersandCellars.png", "FatherUrhneyFire.png"]
+	},
+	{
+		"name": "Cabin Fever",
+		"images": [
+			"CabinFever.png",
+			"Cabinfevercutscene.png",
+			"CabinFeverdevastation.png",
+			"CabinFeverLeFietteTeach.png",
+			"RepairingTheAdventurous.png"
+		]
+	},
+	{
+		"name": "Call of the Ancestors",
+		"images": [
+			"AirutAmbush.png",
+			"CalloftheAncestors.png",
+			"FirstGoebietrial.png",
+			"Goebiesgather.png",
+			"Lunchisimpaled.png",
+			"Meetingtheancientgoebie.png",
+			"MeetingXinachto.png",
+			"SecondGoebietrial.png",
+			"ThirdGoebietrial.png"
+		]
+	},
+	{
+		"name": "Carnillean Rising",
+		"images": [
+			"CarnilleanRising.png",
+			"CarnilleanRisingreward.png",
+			"Gettingtheguarddrunk.png",
+			"Luringwolves.png",
+			"Philipesreward.png",
+			"Spoilheap.png",
+			"TyingSarsaparilla.png"
+		]
+	},
+	{
+		"name": "Catapult Construction",
+		"images": [
+			"Catapultbroken.png",
+			"CatapultConstruction.png",
+			"CatapultConstructionreward.png",
+			"Catapultconstructionstart.png",
+			"Catapult_repair_complete.png",
+			"Catapult_repair_controls.png",
+			"Orange_Side.png",
+			"Purple_Side.png"
+		]
+	},
+	{
+		"name": "Chef's Assistant",
+		"images": [
+			"ChefsAssistant.png",
+			"ChefsAssistantreward.png",
+			"CooksAssistant.png",
+			"philanddelphinelocation.png"
+		]
+	},
+	{
+		"name": "Children of Mah",
+		"images": [
+			".ChildrenofMah.png",
+			".ChildrenofMahreward.png",
+			".JhallanandKharshaidiscussthegathering.png",
+			".Kharshaismemoryofthethroneroom.png",
+			".Lavasurfing.png",
+			".Mahjarratreturntotheritualsite.png",
+			".NightmareofMah.png",
+			".SerenkillsMah.png",
+			".SerenonFreneskae.png",
+			".ZemouregalkidnapsKharshai.png"
+		]
+	},
+	{
+		"name": "City of Senntisten",
+		"images": [
+			"Azzanadrateleportsintheeldergodeggs.png",
+			"CityofSenntisten.png",
+			"CityofSenntistendrawerpuzzlesolution.png",
+			"cityofsenntistenmap.png",
+			"CityofSenntistenreward.png",
+			"Excavatingtheforumentrance.png",
+			"FightingaGargoylesentinel.png",
+			"FightingtheBloodWarden.png",
+			"MeetinginGielinorElderHalls.png",
+			"Thegodsandtheeldergodeggs.png"
+		]
+	},
+	{
+		"name": "Clock Tower",
+		"images": [
+			"ClockTower.png",
+			"Clocktowerblackcog.png",
+			"Clocktowerbluecog.png",
+			"clocktowermap.png",
+			"Clocktowerredcog.png",
+			"ClockTowerreward.png",
+			"Clocktowerwhitecog.png"
+		]
+	},
+	{
+		"name": "Cold War",
+		"images": [
+			"ColdWar.png",
+			"ColdWarreward.png",
+			"Finishedbirdielookout.png",
+			"Meetingpingandpong.png",
+			"Penguinarmy.png",
+			"penguinoutpostmap.png",
+			"Spyingpenguins.png",
+			"Thepenguinsinthesheepfield.png"
+		]
+	},
+	{
+		"name": "Contact",
+		"images": [
+			"Contact.png",
+			"Contactreward.png",
+			"Coosmansneaking.png",
+			"Maisaindungeon.png",
+			"Scarabfight.png",
+			"SophanemDungeonmap.png"
+		]
+	},
+	{
+		"name": "Cook's Assistant",
+		"images": [
+			"CooksAssistant.png",
+			"cooksassistantmap.png",
+			"CooksAssistantreward.png"
+		]
+	},
+	{
+		"name": "Creature of Fenkenstrain",
+		"images": [
+			"BookshelveswiththeAmulets.png",
+			"Clearingfireplace.png",
+			"CreatureofFenkenstrain.png",
+			"CreatureofFenkenstrainreward.png",
+			"CreatureofFenkenstrainstart.png",
+			"EdLestwitsgrave.png",
+			"Fenkenstraingrave.png",
+			"Fenkenstrainsmonsterontable.png",
+			"Killingexperiment.png",
+			"Lightning.png",
+			"Rollo.png"
+		]
+	},
+	{
+		"name": "Crocodile Tears",
+		"images": [
+			"CrocodileTears.png",
+			"CrocodileTearsreward.png",
+			"Crondisrequestsfood.png",
+			"Ukundakafight.png"
+		]
+	},
+	{
+		"name": "Curse of the Black Stone",
+		"images": [
+			"ConfrontingBletchley.png",
+			"CurseoftheBlackStone.png",
+			"CurseoftheBlackStonereward.png",
+			"DiggingonWhalesMaw.png",
+			"DragonkinLaboratory.png",
+			"DragonkinonKethsi.png",
+			"Dragonstatuepuzzle.png",
+			"FightingCrassiansonGoshima.png",
+			"Gatheredforces.png",
+			"HannibusandVindicta.png",
+			"locationofseagulls.png",
+			"Shiftingtombsrewardenhancer.png",
+			"StevenswifeandLudwig.png",
+			"TempleofAminishiEliteDungeon.png",
+			"TheAmbassadorkillsShihscrew.png"
+		]
+	},
+	{
+		"name": "Daughter of Chaos",
+		"images": [
+			"AdrasteiainFaladorCastlethroneroom.png",
+			"AnneDimitriandtherift.png",
+			"AnneDimitriischannellingaspellinRedDragonIsle.png",
+			"AnneDimitriischannellingaspellinwarbandscamp.png",
+			"DaughterofChaosoverview.png",
+			"DaughterofChaosreward.png",
+			"MoiaconfrontsAvaryssinInfernalSource.png",
+			"TrindineleavetheSourceandbacktoWilderness.png"
+		]
+	},
+	{
+		"name": "Dead and Buried",
+		"images": [
+			"Cryptspookyholelocations.png",
+			"DeadandBuried.png",
+			"DeadandBuriedBushingboulders.png",
+			"DeadandBuriedDragonkincrypt.png",
+			"DeadandBuriedFightingEllamariasnightmares.png",
+			"DeadandBuriedHeraldofVarrock.png",
+			"DeadandBuriedRaptorsparentsdie.png",
+			"DeadandBuriedreward.png"
+		]
+	},
+	{
+		"name": "Deadliest Catch",
+		"images": [
+			"DeadliestCatch.png",
+			"DeadliestCatchBoat.png",
+			"DeadliestCatchreward.png",
+			"Jonesreturns.png"
+		]
+	},
+	{
+		"name": "Dealing with Scabaras",
+		"images": [
+			"DealingwithScabaras.png",
+			"dealingwithscabarasreward.png",
+			"Maisascorpse.png",
+			"ScabarasHighPriestandstatues.png",
+			"Ullekresearchcamp.png",
+			"Ullekropeshortcut.png"
+		]
+	},
+	{
+		"name": "Death Plateau",
+		"images": [
+			"Ambush.png",
+			"DeathPlateau.png",
+			"DeathPlateaucave.png",
+			"DeathPlateaureward.png",
+			"TheMapfight.png"
+		]
+	},
+	{
+		"name": "Death to the Dorgeshuun",
+		"images": [
+			"DeathtotheDorgeshuun.png",
+			"DeathtotheDorgeshuunreward.png",
+			"Dtdfight.png",
+			"H.png",
+			"Lumbridgemillmachinery.png",
+			"Zanikreceivinghermark.png",
+			"Zanikresurrected.png",
+			"Zanikslocation.png"
+		]
+	},
+	{
+		"name": "Defender of Varrock",
+		"images": [
+			"DefenderofVarrockinfobox.png",
+			"DefenderofVarrockreward.png",
+			"Dovzombieskillingvarrockguards.png",
+			"Freeatlast.png",
+			"Killingarmouredzombies.png"
+		]
+	},
+	{
+		"name": "Demon Slayer",
+		"images": [
+			"ClaimingSilverlight.png",
+			"Delrithissummoned.png",
+			"DemonSlayer.png",
+			"DemonSlayerreward.png",
+			"Fightingthecultists.png"
+		]
+	},
+	{
+		"name": "Desert Treasure",
+		"images": [
+			"Azzanadraghost.png",
+			"DesertTreasure.png",
+			"DesertTreasurecryingtrollchild.png",
+			"DesertTreasureRasolo.png",
+			"DesertTreasurereward.png",
+			"DesertTreasurestart.png",
+			"DTBloodObelisk.png",
+			"Dtdessoushssss.png",
+			"DTMirrors.png",
+			"Dttorch.png",
+			"FightingDamis.png",
+			"fromTrollheimtoChild.png",
+			"GraveYardLocation.png",
+			"Malakdrainsyourblood.png",
+			"SmokeDungeonMap.png",
+			"TrollCaveEntrancePath.png"
+		]
+	},
+	{
+		"name": "Desperate Creatures",
+		"images": ["DesperateCreatures.png", "DesperateCreaturesreward.png"]
+	},
+	{
+		"name": "Desperate Measures",
+		"images": [
+			"DesperateMeasures.png",
+			"DesperateMeasuresarchaeology.png",
+			"DesperateMeasuresCharosLocations.png",
+			"DesperateMeasuresPylonSolutions.png",
+			"DesperateMeasuresreward.png",
+			"DesperateTimesblackstonedragonbattle.png",
+			"Dinosaurinvasion.png",
+			"Hibernatorium.png",
+			"Kerapacattacks.png",
+			"Kerapacbound.png",
+			"Kindracouncil.png",
+			"Thokssaga.png"
+		]
+	},
+	{
+		"name": "Desperate Times",
+		"images": [
+			"BlackKnightFortressportallocationDesperateTimes.png",
+			"BlackKnightsFortressportal.png",
+			"DesperateTimes.png",
+			"DesperateTimesartwork.png",
+			"DesperateTimesKerapacdrainsGailspowers.png",
+			"DesperateTimesreward.png",
+			"DesperateTimesSerendiscussesherplan.png",
+			"Firstneedlepuzzle.png",
+			"KerapacCThokandtheNeedle.png",
+			"KerapacintheEmpyreanCitadel.png",
+			"NaragunintheNeedle.png",
+			"Wordgrid.png"
+		]
+	},
+	{
+		"name": "Devious Minds",
+		"images": [
+			"Creatingtheslenderblade.png",
+			"Deadmonk.png",
+			"DeviousMinds.png",
+			"DeviousMindsreward.png",
+			"Deviousmindstempleattack.png"
+		]
+	},
+	{
+		"name": "Diamond in the Rough",
+		"images": [
+			"AmascutandtheAmbassador.png",
+			"Banditkingandfemalebandits.png",
+			"ChattingtoOsman.png",
+			"DiamondintheRough.png",
+			"DiamondintheRoughreward.png",
+			"DungKalphites.png",
+			"Eaglejump.png",
+			"FightingKelisbodyguards.png",
+			"FightingtheBandits.png",
+			"Malebandits.png",
+			"ObtainingtheKharidId.png",
+			"Ozanquestconceptart.png",
+			"TheQuicksand.png",
+			"TheScabarastomb.png"
+		]
+	},
+	{
+		"name": "Dimension of Disaster",
+		"images": [
+			"300px-200thQuestAlternateUniverseconceptart2.pngca223.png",
+			"DimensionofDisaster.png",
+			"DimensionofDisasterreward.png",
+			"thQuestAlternateUniverseconceptart.png"
+		]
+	},
+	{
+		"name": "Dishonour among Thieves",
+		"images": [
+			"BlackKnightsscheming.png",
+			"DefeatingtheEliteWights.png",
+			"DishonouramongThieves.png",
+			"DishonouramongThievesnoticeboard.png",
+			"DishonouramongThievesreward.png",
+			"Foreshadowsspecialattack.png",
+			"Hazeelreturns.png",
+			"InfiltratingSliskeslair.png",
+			"Jerrodfootprints.png",
+			"Jerrodkills.png",
+			"KillingarmouredzombiesDaT.png",
+			"MeetingwithZamorak.png",
+			"NomadconfrontsDeath.png",
+			"Openingthedoors.png",
+			"SaradominCArmadylandBandosconfrontZamorak.png",
+			"Sliskeappears.png",
+			"Sliskesapparitions.png",
+			"Zamorakiangathering.png"
+		]
+	},
+	{
+		"name": "Do No Evil",
+		"images": [
+			"Apmeken.png",
+			"Apmekenappears.png",
+			"Ayunicutscene.png",
+			"Ayunifight.png",
+			"Buildingthecolony.png",
+			"DoNoEvil.png",
+			"DoNoEvildiglocation.png",
+			"DoNoEvilreward.png",
+			"Erunicutscene.png",
+			"FightingAyuni.png",
+			"Leeunicutscene.png",
+			"Monkeycampattacked.png",
+			"OsmanandLeela.png",
+			"Thesiteofthecolony.png",
+			"UzerEagleentrance.png"
+		]
+	},
+	{
+		"name": "Dragon Slayer",
+		"images": [
+			"Crandormapcloseup.png",
+			"DragonSlayer.png",
+			"DragonSlayerElvargdead.png",
+			"DragonSlayerreward.png",
+			"DragonSlayerWormbrain.png",
+			"FightingMelzartheMad.png",
+			"FightingtheLesserDemon.png",
+			"MelzarsMaze.png",
+			"MelzarsMazemap.png",
+			"StartingDragonSlayer.png"
+		]
+	},
+	{
+		"name": "Dream Mentor",
+		"images": [
+			"Cyrisussbank.png",
+			"DreamMentor.png",
+			"DreamMentorreward.png",
+			"FeedingCyrisus.png",
+			"SafespotEverlasting.png",
+			"SeeingtheInadequacy.png",
+			"StatviewDreammentor.png"
+		]
+	},
+	{
+		"name": "Druidic Ritual",
+		"images": [
+			"DruidicRitual.png",
+			"DruidicRitualceremony.png",
+			"DruidicRitualreward.png",
+			"TaverleySlayerDungeon.png"
+		]
+	},
+	{
+		"name": "Dwarf Cannon",
+		"images": [
+			"DwarfCannon.png",
+			"DwarfCannonreward.png",
+			"Toolkitinterface.png"
+		]
+	},
+	{
+		"name": "Eadgars Ruse",
+		"images": [
+			"EadgarsRuse.png",
+			"EadgarsRusereward.png",
+			"Goutweedstoreroom.png",
+			"TrollStrongholdParrothidinglocation.png",
+			"TThistlelocation.png"
+		]
+	},
+	{
+		"name": "Eagles Peak",
+		"images": [
+			"CatchingtheFerret.png",
+			"EaglesPeakDungeonmap.png",
+			"EaglesPeakEagledoor.png",
+			"EaglesPeakquest.png",
+			"EaglesPeakreward.png",
+			"EaglesPeakShoutnikolaus.png"
+		]
+	},
+	{
+		"name": "Elemental Workshop I",
+		"images": ["ElementalWorkshopI.png", "ElementalWorkshopIreward.png"]
+	},
+	{
+		"name": "Elemental Workshop II",
+		"images": [
+			"ElementalWorkshopII.png",
+			"ElementalWorkshopIIreward.png",
+			"Elementalworkshoppiping.png",
+			"Ewcogs.png"
+		]
+	},
+	{
+		"name": "Elemental Workshop III",
+		"images": [
+			"587px-Elemental_Workshop_III_puzzle_completed.png",
+			"Bodydoor.png",
+			"ElementalWorkshopIII.png",
+			"ElementalWorkshopIIIreward.png",
+			"Elemental_Workshop_III_diagram_scroll.png",
+			"Elemental_Workshop_III_Puzzle (1).png",
+			"Elemental_Workshop_III_Puzzle.png",
+			"The_perfect_method.png"
+		]
+	},
+	{
+		"name": "Elemental Workshop IV",
+		"images": [
+			"Drainingmachinecosmiccharged.png",
+			"ElementalWorkshopIV.png",
+			"ElementalWorkshopIVreward.png"
+		]
+	},
+	{
+		"name": "Enakhras Lament",
+		"images": [
+			"AthanakosandEnakhratotheNorth.png",
+			"Buildingthestatue.png",
+			"EnakhrasLament.png",
+			"EnakhrasLamentreward.png",
+			"EnakhrasTempleHall.png",
+			"Removingstatueparts.png",
+			"Wallchiselling.png"
+		]
+	},
+	{
+		"name": "Enlightened Journey",
+		"images": [
+			"EnlightenedJourney.png",
+			"EnlightenedJourneyangrymob.png",
+			"EnlightenedJourneyballoondesign.png",
+			"EnlightenedJourneybuiltballoon.png",
+			"EnlightenedJourneyreward.png"
+		]
+	},
+	{
+		"name": "Ernest the Chicken",
+		"images": [
+			"ErnesttheChicken.png",
+			"ErnesttheChickenreward.png",
+			"IQTestingRoom.png",
+			"Pullingcandlesconce.png"
+		]
+	},
+	{
+		"name": "Evil Dave's Big Day Out",
+		"images": ["EvilDavesBigDayOutoverview.png", "EvilDavesBigDayOutreward.png"]
+	},
+	{
+		"name": "Extinction",
+		"images": [
+			"Erebus.png",
+			"ExtinctionbrokenNeedle.png",
+			"ExtinctionconfrontingMoia.png",
+			"ExtinctionCroesus.png",
+			"ExtinctionDarkPortal.png",
+			"ExtinctionElderHalls.png",
+			"ExtinctionHebeandMoia.png",
+			"ExtinctionIaia.png",
+			"Extinctionreward.png",
+			"ExtinctionSerensummonstheElders.png",
+			"Extinctionworldgate.png"
+		]
+	},
+	{
+		"name": "Eye of Het I",
+		"images": ["EyeofHetI.png", "EyeofHetIreward.png"]
+	},
+	{
+		"name": "Eye of Het II",
+		"images": [
+			"EyeofHetIIreward.png",
+			"EyeofHetIITrindine.png",
+			"EyeofHetIIZamorakandKhazard.png"
+		]
+	},
+	{
+		"name": "Family Crest",
+		"images": [
+			"Chronozonsafespot.png",
+			"FamilyCrest.png",
+			"FamilyCrestreward.png",
+			"SpeakingtoCaleb.png"
+		]
+	},
+	{
+		"name": "Fate of the Gods",
+		"images": [
+			"ArrivalonFreneskae.png",
+			"CollectingMahsmemories.png",
+			"FateoftheGods.png",
+			"FateoftheGodsDoorPuzzle.png",
+			"FateoftheGodsreward.png",
+			"FightingtheNihils.png",
+			"Freneskaemap.png",
+			"MahsNightmare.png",
+			"TraversingFreneskae.png",
+			"Zarosinplayersmindthreshold.png",
+			"ZarosReturnGathering.png"
+		]
+	},
+	{
+		"name": "Fight Arena",
+		"images": [
+			"FightArenaquest.png",
+			"FightArenareward.png",
+			"FightArenasafespot.png",
+			"FightArenastart.png",
+			"FightingGeneralKhazard.png",
+			"KhazardogreattacksJustin.png",
+			"Takingkeys.png"
+		]
+	},
+	{
+		"name": "Fishing Contest",
+		"images": ["FishingContest.png", "FishingContestreward.png"]
+	},
+	{
+		"name": "Forgettable Tale of a Drunken Dwarf",
+		"images": [
+			"Chaosarmy.png",
+			"Dwarftaleforget.png",
+			"FermentingVat.png",
+			"ForgettableTalearchives.png",
+			"ForgettableTaleofaDrunkenDwarf.png",
+			"ForgettableTaleofaDrunkenDwarfreward.png",
+			"ForgettableTaleRowdyDwarf.png",
+			"Keldahopsgrown.png"
+		]
+	},
+	{
+		"name": "Forgiveness of a Chaos Dwarf",
+		"images": [
+			"Drunkveldaban.png",
+			"Fightingthechaosdwarf.png",
+			"FOACDcartlabyrinth.png",
+			"Forgive.png",
+			"ForgivenessConsortiummeeting.png",
+			"ForgivenessofaChaosDwarf.png",
+			"ForgivenessofaChaosDwarfreward.png",
+			"Investigatingfootprints.png",
+			"Loweringbridge.png",
+			"Openingdoor.png",
+			"Veldabaninthepub.png"
+		]
+	},
+	{
+		"name": "Fur 'n' Seek",
+		"images": ["FurnSeek.png", "FurnSeekreward.png", "Tanningfur.png"]
+	},
+	{
+		"name": "Garden of Tranquillity",
+		"images": [
+			"GardenofTranquillity.png",
+			"GardenofTranquillityGuard.png",
+			"GardenofTranquillityreward.png",
+			"Pushstatue.png",
+			"Wellfishing.png",
+			"WhiteTree.png"
+		]
+	},
+	{
+		"name": "Gertrude's Cat",
+		"images": ["GertrudesCat.png", "GertrudesCatreward.png"]
+	},
+	{
+		"name": "Ghosts Ahoy",
+		"images": [
+			"Bookofharicantolocation.png",
+			"GhostsAhoy.png",
+			"GhostsAhoyreward.png",
+			"Giantlobsterfight.png",
+			"Phasmatysshipwreck.png",
+			"PortPhasmatysdocks.png",
+			"RuneDraw.png"
+		]
+	},
+	{
+		"name": "Glorious Memories",
+		"images": [
+			"GloriousMemories.png",
+			"GloriousMemoriesFoottracks.png",
+			"GloriousMemoriesreward.png",
+			"GloriousMemoriesreward2.png74787.png",
+			"Icemound.png",
+			"NialfightsGnoeal.png",
+			"Vargashits.png"
+		]
+	},
+	{
+		"name": "Goblin Diplomacy",
+		"images": [
+			"GoblinDiplomacy.png",
+			"GoblinDiplomacyreward.png",
+			"Grubfootwithbluerobes.png",
+			"Grubfootwithbrownrobes.png"
+		]
+	},
+	{
+		"name": "Gower Quest",
+		"images": [
+			"BehindtheScenesmap.png",
+			"BlackKnightTitanbattle.png",
+			"Cabbageswithpartyhats.png",
+			"GowerQuest.png",
+			"GowerQuestreward.png",
+			"GrandExchangepipessolution.png",
+			"RobbingtheBTSbank.png",
+			"Thordurswhitehole.png",
+			"TrainingRiding.png",
+			"TrainingSailing.png"
+		]
+	},
+	{
+		"name": "Grim Tales",
+		"images": [
+			"FightingGlod.png",
+			"GrimTalesreward.png",
+			"GrimTalesRupertreleased.png",
+			"Sylasandthebeanstalk.png"
+		]
+	},
+	{
+		"name": "Gunnars Ground",
+		"images": [
+			"Dororandepressed.png",
+			"GunnarsGroundinfobox.png",
+			"GunnarsGroundreward.png",
+			"QPCGunnarsGround.png",
+			"ShowingGororansring.png"
+		]
+	},
+	{
+		"name": "Haunted Mine",
+		"images": [
+			"300px-AbandonedMineLevel2.png6fec6.png",
+			"300px-AbandonedMineLevel3.png39340.png",
+			"300px-AbandonedMineLevel4.png24b2d.png",
+			"AbandonedMineLevel.png",
+			"HauntedMine.png",
+			"HauntedMinereward.png",
+			"SpeakingtotheZealot.png",
+			"TreusDaythattacks.png"
+		]
+	},
+	{
+		"name": "Hazeel Cult",
+		"images": [
+			"HazeelCult.png",
+			"HazeelCultreward.png",
+			"HazeelCultrewardduringquest.png",
+			"TheRevivalofHazeel.png"
+		]
+	},
+	{
+		"name": "Heart of Stone",
+		"images": [
+			"ConflictbetweenXeniaandAriane.png",
+			"FightingBikKrasattendants.png",
+			"FightingFulKrasattendants.png",
+			"Fightingtheprehistoricabyssal.png",
+			"HeartofStone.png",
+			"HeartofStonereward.png",
+			"JasKraschamber.png",
+			"Kippledies.png",
+			"Portalentrana.png",
+			"Prehistoricabyssalsafespot.png",
+			"RunicFrequencyModulator.png",
+			"WenKraschamber.png",
+			"XeniadescribesFreneskae.png",
+			"Xeniadies.png"
+		]
+	},
+	{
+		"name": "Heartstealer",
+		"images": [
+			"Heartstealer.png",
+			"Heartstealerpatrollingguards.png",
+			"Heartstealerreward.png",
+			"MakingthesmokebombsduringHeartstealer.png"
+		]
+	},
+	{
+		"name": "Heroes Quest",
+		"images": [
+			"HeroesQuest.png",
+			"HeroesquestCongrats.png",
+			"HeroesquestFishingeels.png",
+			"HeroesQuestreward.png",
+			"KillingGrip.png"
+		]
+	},
+	{
+		"name": "Hero's Welcome",
+		"images": [
+			"ChannelingVsenergy.png",
+			"Dragonkinintheirlair.png",
+			"FightingTarshak.png",
+			"FightingtheAbomination.png",
+			"HerosWelcome.png",
+			"HerosWelcomecompletedmap.png",
+			"HerosWelcomequestionsinterface.png",
+			"HerosWelcomereward.png",
+			"TheDragonkinsquabble.png",
+			"Vreturns.png",
+			"Vsdeath.png"
+		]
+	},
+	{
+		"name": "Holy Grail",
+		"images": ["Grailontable.png", "HolyGrail.png", "HolyGrailreward.png"]
+	},
+	{
+		"name": "Horror from the Deep",
+		"images": [
+			"Dagannothdoor.png",
+			"Dagannothmotherbattle.png",
+			"Fixinglighthousebridge.png",
+			"HorrorfromtheDeep.png",
+			"HorrorfromtheDeepreward.png",
+			"Lighthouserepaired.png"
+		]
+	},
+	{
+		"name": "Hunt for Red Raktuber",
+		"images": [
+			"Footprint.png",
+			"HuntforRedRaktuber.png",
+			"HuntforRedRaktuberreward.png",
+			"KGPofficemap.png",
+			"MarlinsSlug.png",
+			"PenguinCapture.png",
+			"RidingChuck.png",
+			"SabotagingtheSubmarine.png",
+			"SleepingKBP.png",
+			"Submarineenginepanel.png"
+		]
+	},
+	{
+		"name": "Icthlarin's Little Helper",
+		"images": [
+			"Crondisfight.png",
+			"IcthlarinsHelperBurialRoom.png",
+			"IcthlarinsHelperHidingSymbol.png",
+			"IcthlarinsHelperLinenWorker.png",
+			"IcthlarinsHelperSphinx.png",
+			"IcthlarinsLittleHelper.png",
+			"IcthlarinsLittleHelperpitfallpath.png",
+			"IcthlarinsLittleHelperreward.png",
+			"IcthlarinsLittleHelperstart.png",
+			"IcthlarinsLittleHelperwestdoor.png",
+			"Mummy.png",
+			"Pyramidwalltrap.png"
+		]
+	},
+	{
+		"name": "Imp Catcher",
+		"images": [
+			"Fightingthecholericimp.png",
+			"ImpCatcher.png",
+			"ImpCatcherreward.png",
+			"Phlegmaticimpvomits.png",
+			"Racingthesanguineimp.png"
+		]
+	},
+	{
+		"name": "Impressing the Locals",
+		"images": [
+			"ImpressingtheLocals.png",
+			"ImpressingtheLocalsreward.png",
+			"ImpressingtheLocalsrewardold.png",
+			"InvitingEvieHiggs.png",
+			"InvitingSeasingerJemi.png",
+			"MeetingMisterGully.png"
+		]
+	},
+	{
+		"name": "In Aid of the Myreque",
+		"images": [
+			"Florinhappy.png",
+			"InAidoftheMyreque.png",
+			"InAidoftheMyrequeClearingrubble.png",
+			"InAidoftheMyrequeConfrontingGadderanks.png",
+			"InAidoftheMyrequeMiningentrance.png",
+			"InAidoftheMyrequePickingpathtotemple.png",
+			"InAidoftheMyrequeProtectingIvan.png",
+			"InAidoftheMyrequereward.png",
+			"TombIvandisSeergaze.png"
+		]
+	},
+	{
+		"name": "In Pyre Need",
+		"images": [
+			"InPyreNeed.png",
+			"InPyreNeedinfobox.png",
+			"InPyreNeedreward.png",
+			"Woundedphoenix.png"
+		]
+	},
+	{
+		"name": "In Search of the Myreque",
+		"images": [
+			"CyregPaddlehornsboat.png",
+			"InSearchoftheMyreque.png",
+			"InSearchoftheMyrequereward.png"
+		]
+	},
+	{
+		"name": "Jungle Potion",
+		"images": [
+			"JunglePotion.png",
+			"JunglePotionreward.png",
+			"Marshyjunglevine.png",
+			"PalmtreeJunglePotionCwithardrigal.png",
+			"Roguespurse.png",
+			"Sitofoillump.png",
+			"Volenciamossrock.png"
+		]
+	},
+	{
+		"name": "Kennith's Concerns",
+		"images": [
+			"300px-KCRoom2.png69223.png",
+			"300px-KCRoom3.pngcc73d.png",
+			"Cameraanglechange.png",
+			"Fallingrocks.png",
+			"KCRoom.png",
+			"KennithcapturesKimberly.png",
+			"KennithsConcerns.png",
+			"KennithsConcernsreward.png",
+			"KentandCaroline.png",
+			"KimberlysParents.png",
+			"Shockingconversation.png"
+		]
+	},
+	{
+		"name": "Kili Row",
+		"images": ["KiliRow.png", "KiliRowreward.png"]
+	},
+	{
+		"name": "Kindred Spirits",
+		"images": [
+			"Dharokfights.png",
+			"EscapingSliskeslair.png",
+			"Hanginginthebalance.png",
+			"KindredSpirits.png",
+			"KindredSpiritsreward.png",
+			"PunchingSliske.png",
+			"SliskeandtheStoneofJas.png",
+			"SliskekillsSamwell.png",
+			"SpeakingtoRelomia.png",
+			"TakingVeracskey.png",
+			"TheendofSliskesmaze.png"
+		]
+	},
+	{
+		"name": "King of the Dwarves",
+		"images": [
+			"Dwarfarmy.png",
+			"DwarvenLibrarykeythief.png",
+			"Freeingtheminers.png",
+			"Getthemachinesworking.png",
+			"Grimssonfight.png",
+			"KingoftheDwarves.png",
+			"KingoftheDwarvesreward.png",
+			"LavaFlowMineexplosion.png"
+		]
+	},
+	{
+		"name": "King's Ransom",
+		"images": [
+			"KingsRansom.png",
+			"KingsRansomreward.png",
+			"KingsRansomsecretpassage.png"
+		]
+	},
+	{
+		"name": "Land of the Goblins",
+		"images": [
+			"DuskatYuBiusk.png",
+			"Fairyringpuzzle.png",
+			"GrubfootandMistag.png",
+			"GrubfootsDream.png",
+			"LandoftheGoblinsreward.png",
+			"Strongbonesfight.png",
+			"Yubiusk.png",
+			"Zanikenters.png",
+			"Zanikteleport.png"
+		]
+	},
+	{
+		"name": "Legacy of Seergaze",
+		"images": [
+			"Bloodtalismanvault.png",
+			"Damagedwall.png",
+			"DeadMyreque.png",
+			"DrezelLegacy.png",
+			"EscortingMercenaryAdventurer.png",
+			"FightingFistandantilusandZaromark.png",
+			"KillingaVyrewatch.png",
+			"Legacy.png",
+			"LegacyofSeergaze.png",
+			"LegacyofSeergazereward.png",
+			"Repairingfurnace.png",
+			"SafalaanPower.png",
+			"SpeakingtoFlaygian.png",
+			"Zombies.png"
+		]
+	},
+	{
+		"name": "Legends Quest",
+		"images": [
+			"FallenHero.png",
+			"GettingBindingBook.png",
+			"KharaziDungeondoors.png",
+			"KharaziDungeonentrance.png",
+			"KharaziDungeonwinch.png",
+			"KillingViyeldi.png",
+			"LegendsQuest.png",
+			"LegendsQuestFinalBoss.png",
+			"LegendsQuestQuestStart.png",
+			"LegendsQuestreward.png",
+			"Nezikchenedfirstform.png",
+			"Octagonoffire.png",
+			"Viyeldicavesmap.png",
+			"Yommitree.png"
+		]
+	},
+	{
+		"name": "Let Them Eat Pie",
+		"images": [
+			"Cookingterriblepie.png",
+			"LetThemEatPie.png",
+			"LetThemEatPiebaitbarrel.png",
+			"LetThemEatPiereward.png",
+			"Potatoinhole.png"
+		]
+	},
+	{
+		"name": "Lost City",
+		"images": [
+			"Adventurerscamp.png",
+			"FightingtheDramentreespirit.png",
+			"LostCity.png",
+			"LostCityreward.png",
+			"LostCitytree.png",
+			"Zanarisshed.png"
+		]
+	},
+	{
+		"name": "Love Story",
+		"images": [
+			"FightingwiththeWOM.png",
+			"LoveStory.png",
+			"LoveStorycontrollingthedummy.png",
+			"LoveStoryhay.png",
+			"LoveStorymakeup.png",
+			"LoveStoryreward.png",
+			"Makingthedummy.png",
+			"Robbery.png",
+			"ZeneveviaBossBattle.png",
+			"Zeneviviadefeated.png",
+			"Zeneviviameet.png"
+		]
+	},
+	{
+		"name": "Lunar Diplomacy",
+		"images": [
+			"Anythingyoucando.png",
+			"Birdseyejack.png",
+			"Dreamlannd.png",
+			"Floatingdreampuffs.png",
+			"FlukeChallengeLunarDiplomacy.png",
+			"Lduppership.png",
+			"LunarDiplomacy.png",
+			"LunarDiplomacydreampuffs.png",
+			"LunarDiplomacyrace.png",
+			"LunarDiplomacyreward.png",
+			"LunarDiplomacySafespot.png",
+			"LunarDiplomacysymbols.png",
+			"Lunarstaffenchantment.png",
+			"Meinlunardiplomacy.png",
+			"Miningstalagmite.png",
+			"NumbersChallengeLunarDiplomacy.png",
+			"Raceison.png",
+			"WoodcuttingchallengeLunarDiplomacy.png"
+		]
+	},
+	{
+		"name": "Making History",
+		"images": [
+			"MakingHistory.png",
+			"MakingHistorychestlocation.png",
+			"MakingHistoryreward.png"
+		]
+	},
+	{
+		"name": "Meeting History",
+		"images": [
+			"FeedingBabySarah.png",
+			"Guthixrunes.png",
+			"Meetinghistory.png",
+			"Meetinghistorycutscene.png",
+			"MeetingHistoryreward.png",
+			"Meetinghistoryspot.png"
+		]
+	},
+	{
+		"name": "Merlin's Crystal",
+		"images": [
+			"Beggarappears.png",
+			"FightingMordred.png",
+			"FreeingMerlin.png",
+			"KeepLeFaye.png",
+			"MerlinsCrystal.png",
+			"MerlinsCrystalreward.png",
+			"VarrockChaosAltarFrontView.png"
+		]
+	},
+	{
+		"name": "Missing My Mummy",
+		"images": [
+			"AlisDiscountWaresshop.png",
+			"Floorpuzzle.png",
+			"MissingmyMummy.png",
+			"MissingMyMummyreward.png",
+			"PharaohQueenTomb.png",
+			"Tumekensshadowforms.png",
+			"UzerMastabamap.png"
+		]
+	},
+	{
+		"name": "Missing Presumed Death",
+		"images": [
+			"Deathescapes.png",
+			"EmpyreanMaze.png",
+			"FightingSliskeswights.png",
+			"FightingwithIcthlarin.png",
+			"MissingCPresumedDeath.png",
+			"MissingCPresumedDeathreward.png",
+			"Shadowcastersolution.png",
+			"SliskesGrandAscendancy.png",
+			"SliskesGrandAscendancyGathering.png",
+			"SliskesGrandEntrance.png",
+			"Strisathsattack.png"
+		]
+	},
+	{
+		"name": "Monk's Friend",
+		"images": [
+			"MonksFriend.png",
+			"MonksFriendDungeon.png",
+			"MonksFriendParty.png",
+			"MonksFriendreward.png"
+		]
+	},
+	{
+		"name": "Monkey Madness",
+		"images": [
+			"ApeAtollJailIdealLockPickTime.png",
+			"CaranockandtheForeman.png",
+			"Crashisland.png",
+			"Monkeyaunt.png",
+			"MonkeyMadness.png",
+			"MonkeyMadnessreward.png",
+			"SpeakingtoGarkor.png",
+			"SpeakingtoNarnode.png"
+		]
+	},
+	{
+		"name": "Mountain Daughter",
+		"images": [
+			"BuryingAsleif.png",
+			"MountainDaughter.png",
+			"MountainDaughterreward.png"
+		]
+	},
+	{
+		"name": "Mournings End Part I",
+		"images": [
+			"Fightingamourner.png",
+			"Fixeddevicetargeting.png",
+			"Foodstorelocations.png",
+			"Lletya.png",
+			"Mashingapples.png",
+			"MeetingtheHeadMourner.png",
+			"MeetingwithArianwyn.png",
+			"MourningsEndPartI.png",
+			"MourningsEndPartIreward.png",
+			"Poisoningthegrain.png",
+			"Shootingsheep.png"
+		]
+	},
+	{
+		"name": "Mournings End Part II",
+		"images": [
+			"Bluegate.png",
+			"Crystalblackened.png",
+			"Crystalcollector.png",
+			"Crystalstrangelight.png",
+			"Cyangate.png",
+			"DeaddigteamTempleofLight.png",
+			"FracturedCrystal.png",
+			"MagentaYellowGate.png",
+			"MourningsEndPartII.png",
+			"MourningsEndPartIIreward.png",
+			"ReachingtheDeathAltar.png",
+			"TempleofLightfinaldoor.png",
+			"Themeetingofalllights.png"
+		]
+	},
+	{
+		"name": "Murder Mystery",
+		"images": ["MurderMystery.png", "MurderMysteryreward.png"]
+	},
+	{
+		"name": "Murder on the Border",
+		"images": [
+			"DukeHoarsesdeath.png",
+			"MurderontheBorder.png",
+			"Murderontheborderfeast.png",
+			"MurderontheborderMysteryjournalevidence.png",
+			"MurderontheborderMysteryjournalsuspects.png",
+			"MurderontheBorderreward.png",
+			"Simonsdeath.png"
+		]
+	},
+	{
+		"name": "My Arm's Big Adventure",
+		"images": [
+			"Birdattack.png",
+			"Burntmeateatingadventurer.png",
+			"Cutjungle.png",
+			"DrunkenDwarfparalysed.png",
+			"Helpremake.png",
+			"MyababoatHD.png",
+			"MyArmGainsFarming.png",
+			"MyArmsBigAdventure.png",
+			"MyArmsBigAdventurereward.png",
+			"Rocstunattack.png",
+			"Searchingthecauldron.png"
+		]
+	},
+	{
+		"name": "Myths of the White Lands",
+		"images": [
+			"300px-LoSRoom2.pngb281d.png",
+			"300px-LoSRoom3.png51bf6.png",
+			"300px-LoSRoom4.png5b162.png",
+			"300px-LoSRoom5.png0afe3.png",
+			"LandOfSnow.png",
+			"LoSRoom.png",
+			"MeetingtheSnowimps.png",
+			"MythsoftheWhiteLands.png",
+			"MythsoftheWhiteLandsreward.png",
+			"Shoutingthroughthepipe.png",
+			"YetiCave.png"
+		]
+	},
+	{
+		"name": "Nature Spirit",
+		"images": [
+			"Invisibleghasts.png",
+			"Killingaghast.png",
+			"NatureGrotto.png",
+			"NatureSpirit.png",
+			"NatureSpiritreward.png",
+			"NatureSpirittalkingtoDrezel.png",
+			"Naturespirittransform.png"
+		]
+	},
+	{
+		"name": "Necromancy",
+		"images": [
+			"300px-NecromancyFirstLookExpanded281829updateimage.pngf0425.png",
+			"300px-NecromancyFirstLookExpanded28529updateimage.pngd41c3.png",
+			"NecromancyFirstLookExpandedupdateimage.png",
+			"Necromancylogo.png",
+			"TalentTreeinterface.png"
+		]
+	},
+	{
+		"name": "New Foundations",
+		"images": [
+			"NewFoundations.png",
+			"NewFoundationsplayerbuildingwall.png",
+			"NewFoundationsreward.png",
+			"NewFoundationsthebeginningthroneroom.png"
+		]
+	},
+	{
+		"name": "Nomad's Elegy",
+		"images": [
+			"Bandosianafterlife.png",
+			"DeathfightsGielinor.png",
+			"Defendingthebatteringram.png",
+			"DodgingNomadsSoulBlast.png",
+			"FightingShame.png",
+			"IcthlarinandDeath.png",
+			"IcthlarinfightsGielinor.png",
+			"InterrogatingLegioSeptimus.png",
+			"Limbo.png",
+			"MeetingyoungHazelmere.png",
+			"NomadrevealsGielinor.png",
+			"Nomadsclone.png",
+			"NomadsElegy.png",
+			"NomadsElegyexplosion.png",
+			"NomadsElegygatheringresources.png",
+			"NomadsElegyreward.png",
+			"SiegeonNomadsfortress.png",
+			"ThebattlewithNomad.png",
+			"Xeniafightsascended.png"
+		]
+	},
+	{
+		"name": "Nomad's Requiem",
+		"images": [
+			"Elementalcreature.png",
+			"Elementallurelocations.png",
+			"FightingtheDecayingAvatar.png",
+			"Ignitingthebarrels.png",
+			"Makingabridgeofslabs.png",
+			"NomadsDefeat.png",
+			"NomadsRequiem.png",
+			"NomadsRequiemreward.png",
+			"NomadsRequiemsolution.png",
+			"Nomadstrikes.png",
+			"RootsNomadsRequiem.png",
+			"TheBattlewithNomad.png",
+			"Waterpuzzle.png"
+		]
+	},
+	{
+		"name": "Observatory Quest",
+		"images": [
+			"ObservatoryQuest.png",
+			"ObservatoryQuestreward.png",
+			"Repairingthetelescope.png",
+			"Wakingthesleepingguard.png"
+		]
+	},
+	{
+		"name": "Olaf's Quest",
+		"images": [
+			"Brinedungtree.png",
+			"BrineRatCaverndoorpuzzle.png",
+			"OlafsQuest.png",
+			"Olafsquestpuzzlecompleted.png",
+			"OlafsQuestreward.png",
+			"Svenslastmapread.png"
+		]
+	},
+	{
+		"name": "Once Upon a Time in Gielinor",
+		"images": [
+			"OnceUponaTimeinGielinor.png",
+			"OnceUponaTimeinGielinorreward.png"
+		]
+	},
+	{
+		"name": "Once Upon a Slime",
+		"images": [
+			"OnceUponaSlime.png",
+			"OnceUponaSlimereward.png",
+			"ShrinkingMachine.png"
+		]
+	},
+	{
+		"name": "One of a Kind",
+		"images": [
+			"Celestialdragonconfusion.png",
+			"DefendingHannibus.png",
+			"DestroyingUnferthsfurniture.png",
+			"Fightingacelestialdragon.png",
+			"Fightingoffthedragonhunters.png",
+			"FightingtheEchoofJas.png",
+			"Investigatingthesymbols.png",
+			"MeetingwiththeKBD.png",
+			"OneofaKind.png",
+			"OneofaKindreward.png",
+			"RobertsLibrary.png",
+			"Sharriganarrives.png",
+			"SiphoningDragonkinmemories.png",
+			"Speakingtoastatue.png",
+			"SpeakingtotheKBD.png",
+			"SpeakingtotheQueenBlackDragon.png",
+			"Speakingtothesubmergedstatue.png",
+			"Therragorncrashes.png"
+		]
+	},
+	{
+		"name": "One Piercing Note",
+		"images": [
+			"AbbeyofElspeth.png",
+			"Elenascorpse.png",
+			"Killerstrikes.png",
+			"Layingthebodytorest.png",
+			"OnePiercingNote.png",
+			"OnePiercingNotereward.png",
+			"SisterAnnasdeath.png",
+			"Thekillermurdering.png",
+			"UnusedcharactersfromOnePiercingNote.png"
+		]
+	},
+	{
+		"name": "One Small Favour",
+		"images": [
+			"OneSmallFavour.png",
+			"OneSmallFavourHammerspikethugs.png",
+			"OneSmallFavourLandingstriprepaired.png",
+			"OneSmallFavourPetraFiyedstuck.png",
+			"OneSmallFavourreward.png"
+		]
+	},
+	{
+		"name": "Our Man in the North",
+		"images": [
+			"Jabariandclones.png",
+			"Jabaribattle.png",
+			"MeetingHet.png",
+			"OurManintheNorth.png",
+			"OurManintheNorthreward.png",
+			"ThePharoahsgoals.png",
+			"Thugsattack.png"
+		]
+	},
+	{
+		"name": "Perils of Ice Mountain",
+		"images": [
+			"300px-Perilsoficemountain1.png188ae.png",
+			"IceMountainavalanche.png",
+			"PerilsofIceMountain.png",
+			"PerilsofIceMountainCutscene.png",
+			"PerilsofIceMountainreward.png",
+			"Tentrepair.png"
+		]
+	},
+	{
+		"name": "Phite Club",
+		"images": [
+			"AmascutattheSoulAltar.png",
+			"BattlewiththePharaoh.png",
+			"OsmankillsthePharoah.png",
+			"Osmanrevealshimself.png",
+			"PhiteClub.png",
+			"PhiteClubreward.png"
+		]
+	},
+	{
+		"name": "Pieces of Hate",
+		"images": [
+			"BaronvonHattenkrapperbombrun.png",
+			"Burningcrassianguard.png",
+			"ClashingwithJack.png",
+			"Crabsattack.png",
+			"DefendingMosLeHarmless.png",
+			"Distractedprisonguard.png",
+			"FightingCaptainRabidJack.png",
+			"FightingZogoth.png",
+			"Jumpingship.png",
+			"PiecesofHate.png",
+			"PiecesofHateinvasionlocations.png",
+			"PiecesofHatereward.png",
+			"Prisonguardflees.png",
+			"Secretpiratemeeting.png",
+			"Watchingthesunset.png"
+		]
+	},
+	{
+		"name": "Pirates Treasure",
+		"images": [
+			"MusaPointbananaplantation.png",
+			"PiratesTreasure.png",
+			"PiratesTreasurereward.png"
+		]
+	},
+	{
+		"name": "Plague City",
+		"images": ["PlagueCity.png", "PlagueCityreward.png"]
+	},
+	{
+		"name": "Plagues End",
+		"images": [
+			"AttackontheMournerHQ.png",
+			"BuildingtheIthellstatue.png",
+			"DarkLordsdeath.png",
+			"FightingSirHugo.png",
+			"FightingtheDarkLord.png",
+			"FightingtheTrahaearnautomatons.png",
+			"GreatLibraryAmlodd.png",
+			"GreatLibraryCadarn.png",
+			"GreatLibraryCrwys.png",
+			"GreatLibraryIorwerth.png",
+			"GreatLibraryIthell.png",
+			"GreatLibraryMeilyr.png",
+			"GreatLibraryTrahaern.png",
+			"LordCrwystransforms.png",
+			"Meilyrshideout.png",
+			"MiningWellofVoyage.png",
+			"PlaguesEnd.png",
+			"PlaguesEndHining.png",
+			"PlaguesEndreward.png",
+			"Prifddinaselfcamp.png",
+			"Relievingtheguard.png",
+			"TraversingthePoisonWastes.png"
+		]
+	},
+	{
+		"name": "Priest in Peril",
+		"images": [
+			"Drezelimprisoned.png",
+			"Killingamonk.png",
+			"KillingCerberus.png",
+			"PaterdomusEntrance.png",
+			"Pouringbucketofwater.png",
+			"PriestinPeril.png",
+			"PriestinPerilreward.png"
+		]
+	},
+	{
+		"name": "Quiet Before the Swarm",
+		"images": [
+			"Drinkingmindpotion.png",
+			"Jessikaarrestedverdict.png",
+			"MysteriousFigurefighting.png",
+			"OutofbodyexperienceasComanderKorasi.png",
+			"QBTSCrossingthebridge.png",
+			"QBTSShipmemory.png",
+			"QuietBeforetheSwarm.png",
+			"QuietbeforetheSwarmreward.png",
+			"QuietBeforetheSwarmroom.png",
+			"Watchingthestarsedit.png"
+		]
+	},
+	{
+		"name": "Rag and Bone Man",
+		"images": [".RagandBoneMan.png", ".RagandBoneManreward.png"]
+	},
+	{
+		"name": "Raksha the Shadow Colossus (quest)",
+		"images": [""]
+	},
+	{
+		"name": "Rat Catchers",
+		"images": [
+			"BreakingintotheMansion.png",
+			"Catandratfight.png",
+			"Catchingrats.png",
+			"Ratcatchers.png",
+			"RatCatchersreward.png"
+		]
+	},
+	{
+		"name": "Recipe for Disaster Freeing Evil Dave",
+		"images": [
+			"BasementofDoom.png",
+			"RecipeforDisasterFreeingEvilDavereward.png"
+		]
+	},
+	{
+		"name": "Recipe for Disaster Freeing King Awowogei",
+		"images": [
+			"BushTchikimonkeynuts.png",
+			"CollectingRedbananas.png",
+			"Cookingthesnake.png",
+			"RecipeforDisasterFreeingKingAwowogeireward.png",
+			"Snakepit.png"
+		]
+	},
+	{
+		"name": "Recipe for Disaster Freeing Pirate Pete",
+		"images": [
+			"Mogrecamp.png",
+			"Mudskipper.png",
+			"RecipeforDisasterFreeingPiratePetereward.png"
+		]
+	},
+	{
+		"name": "Recipe for Disaster Freeing Sir Amik Varze",
+		"images": [
+			"ChickenShrine.png",
+			"Evilchickenrfd.png",
+			"Fightingblackdragon.png",
+			"InspectingSirAmik.png",
+			"RecipeforDisasterFreeingSirAmikVarzereward.png",
+			"RFDBruleeFlambe.png"
+		]
+	},
+	{
+		"name": "Recipe for Disaster Freeing Skrach Uglogwee",
+		"images": [
+			"RecipeforDisasterFreeingSkrachUglogweereward.png",
+			"TreewithArrow.png"
+		]
+	},
+	{
+		"name": "Recipe for Disaster Freeing the Goblin Generals",
+		"images": ["RecipeforDisasterFreeingtheGoblinGeneralsreward.png"]
+	},
+	{
+		"name": "Recipe for Disaster Freeing the Lumbridge Sage",
+		"images": ["RecipeforDisasterFreeingtheLumbridgeSagereward.png"]
+	},
+	{
+		"name": "Recipe for Disaster Freeing the Mountain Dwarf",
+		"images": [
+			"RecipeforDisasterDwarfRohak.png",
+			"RecipeforDisasterFreeingtheMountainDwarfreward.png"
+		]
+	},
+	{
+		"name": "Recruitment Drive",
+		"images": [
+			"Chickencarriedacrossbridge.png",
+			"MissCheeversroom.png",
+			"RecruitmentDrive.png",
+			"RecruitmentDrivereward.png",
+			"Recruitmentdrivetrialmemorytest.png",
+			"SirLeyeroom.png",
+			"SirRenItchoodroom.png",
+			"SirSpishyusroom.png",
+			"SirTinleyroom.png"
+		]
+	},
+	{
+		"name": "Regicide",
+		"images": [
+			"MeetingIorwerth.png",
+			"MeetingwithKingLathas.png",
+			"Regicide.png",
+			"Regicidereward.png"
+		]
+	},
+	{
+		"name": "Remains of the Necrolord",
+		"images": [
+			"RemainsoftheNecrolord.png",
+			"RemainsoftheNecrolordreanimatingwithYudura.png",
+			"RemainsoftheNecrolordreward.png",
+			"RemainsoftheNecrolordSkeletalTriofight.png",
+			"RemainsoftheNecrolordYuduraisresurrected.png"
+		]
+	},
+	{
+		"name": "Ritual of the Mahjarrat",
+		"images": [
+			"AkrisaebecomesBarrowsbrother.png",
+			"Azzanadra.png",
+			"Catspeakamuleteinterface.png",
+			"Enakhradesert.png",
+			"FightingtheArmouredZombies.png",
+			"FireballattackRitualoftheMahjarrat.png",
+			"IcedemonsbattleRitualoftheMahjarrat.png",
+			"Jhallansacrificed.png",
+			"JumpoverpillarGhorrockFortress.png",
+			"KhazardbattleRitualoftheMahjarrat.png",
+			"KhazardstandoffRitualoftheMahjarrat.png",
+			"Mahjarratfights.png",
+			"MarchtobattleRitualoftheMahjarrat.png",
+			"NightmarishDraynor.png",
+			"RitualoftheMahjarrat.png",
+			"RitualoftheMahjarratreward.png",
+			"SliskesummonsBarrowsbrothersRitualoftheMahjarrat.png",
+			"Smashingthestone.png",
+			"SpeakingwithSirTendethRitualoftheMahjarrat.png",
+			"TempleKnightArchivesRitualoftheMahjarrat.png",
+			"WalldesignsolutionRitualoftheMahjarrat.png"
+		]
+	},
+	{
+		"name": "River of Blood",
+		"images": [
+			"BattlingtheConspirators.png",
+			"BlessingtheSalve.png",
+			"CastleDrakanStoneofJashallucination.png",
+			"FightingDrakanhallucination.png",
+			"FightingSafalaan.png",
+			"FightingSkeletonHellhounds.png",
+			"FightingtheVyrewatchscouts.png",
+			"FightingtheWyrd.png",
+			"FightingVanstromhallucination.png",
+			"Juvinatesbecomeferal.png",
+			"KillingHarold.png",
+			"Pouringtheguthixbalance.png",
+			"Riverofbloodbookshelfsolution.png",
+			"RiverofBloodreward.png",
+			"RiverofBloodVampyrearmy.png",
+			"SpeakingtoEfaritay.png",
+			"SpeakingtoSarius.png"
+		]
+	},
+	{
+		"name": "Rocking Out",
+		"images": [
+			"300px-Rockingout3.png811f0.png",
+			"Brasshandinterface.png",
+			"CatchtheKaramthulhu.png",
+			"Gettingstewthrowninyourface.png",
+			"LureSeagull.png",
+			"MakingarubbingofLuke.png",
+			"RimmingtonCustomsOfficeinterior.png",
+			"RockingOut.png",
+			"RockingOutreward.png",
+			"RockingOutWandaTheFishFilingCabinet.png"
+		]
+	},
+	{
+		"name": "Roving Elves",
+		"images": [
+			"Crystaltree.png",
+			"Isafdarmap.png",
+			"MossGiantsmallHD.png",
+			"RovingElves.png",
+			"RovingElvesreward.png",
+			"RovingElvesStart.png",
+			"RovingElveswardreward.png"
+		]
+	},
+	{
+		"name": "Royal Trouble",
+		"images": ["RoyalTrouble.png", "RoyalTroublereward.png"]
+	},
+	{
+		"name": "Rum Deal",
+		"images": [
+			"Blindweedz.png",
+			"RumDeal.png",
+			"RumDealreward.png",
+			"Stagnantwater.png"
+		]
+	},
+	{
+		"name": "Rune Mechanics",
+		"images": [
+			"Edvinspuzzleoverview.png",
+			"RuneMechanics.png",
+			"Runemechanicsanimation.png",
+			"Runemechanicsprint.png",
+			"RuneMechanicsreward.png",
+			"RuneMechanicswiring.png"
+		]
+	},
+	{
+		"name": "Rune Memories",
+		"images": [
+			"ArianeattacksEllaron.png",
+			"Gatheringoftheheadwizards.png",
+			"Glowingruneplacement.png",
+			"KelevanandMei.png",
+			"RuneMemories.png",
+			"RuneMemoriesreward.png"
+		]
+	},
+	{
+		"name": "Rune Mysteries",
+		"images": [
+			"DescentintotheTower.png",
+			"Luringvortex.png",
+			"Openingfirsttowerbasement.png",
+			"Organinterface.png",
+			"RuneMysteries.png",
+			"RuneMysteriesreward.png",
+			"TrappingtheVortex.png",
+			"TroubleintheLibrary.png"
+		]
+	},
+	{
+		"name": "Rune Mythos",
+		"images": [
+			"RuneMythos.png",
+			"RuneMythosEncounteringTheFirstNecromancer.png",
+			"RuneMythosreward.png"
+		]
+	},
+	{
+		"name": "Salt in the Wound",
+		"images": [
+			"Ezekialsbomb.png",
+			"FightingaRisenknight.png",
+			"LuringaSeaSlug.png",
+			"SaltintheWound.png",
+			"SaltintheWoundreward.png",
+			"Thefinalbattle.png",
+			"Throwingserum.png"
+		]
+	},
+	{
+		"name": "Scorpion Catcher",
+		"images": [
+			"ScorpionCatcher.png",
+			"ScorpionCatcherBarbarianOutpost.png",
+			"ScorpionCatcherreward.png"
+		]
+	},
+	{
+		"name": "Sea Slug",
+		"images": ["SavingKennith.png", "SeaSlug.png", "SeaSlugreward.png"]
+	},
+	{
+		"name": "Shades of Mort'ton",
+		"images": [
+			"KillingaLoarShade.png",
+			"LoarShadesetFree.png",
+			"Morttontemple.png",
+			"ShadesofMortton.png",
+			"ShadesofMorttonreward.png",
+			"ShadesofMorttonstartpoint.png"
+		]
+	},
+	{
+		"name": "Shadow of the Storm",
+		"images": [
+			"Agrithnaarfight.png",
+			"Darkwizardjoin.png",
+			"MatthewDie.png",
+			"MeetingDave.png",
+			"ShadowoftheStorm.png",
+			"ShadowoftheStormreward.png",
+			"SoSDesummoning.png",
+			"UzerSandstorm.png"
+		]
+	},
+	{
+		"name": "Sheep Herder",
+		"images": [
+			"Burningsheepbones.png",
+			"SheepHerder.png",
+			"SheepHerderreward.png",
+			"SheepProd.png",
+			"Sicklookingsheep.png"
+		]
+	},
+	{
+		"name": "Shield of Arrav",
+		"images": ["ShieldofArrav.png", "ShieldofArravreward.png"]
+	},
+	{
+		"name": "Shilo Village",
+		"images": [
+			"Shilouhoh.png",
+			"ShiloVillage.png",
+			"Shilovillagedolmen.png",
+			"ShiloVillageQuestUndeadOnes.png",
+			"Shilovillagereward.png",
+			"ShilovillageTombofRashiliya.png",
+			"ShilovillageZadimusgrave.png"
+		]
+	},
+	{
+		"name": "Sins of the Father",
+		"images": [
+			"EffigyIncubator.png",
+			"SinsoftheFather.png",
+			"SinsoftheFatherreward.png"
+		]
+	},
+	{
+		"name": "Sliskes Endgame",
+		"images": [
+			"DeathandIcthlarin.png",
+			"EclipsebeforeSliskesEndgame.png",
+			"Exitsteps.png",
+			"FightingSliske.png",
+			"Fightingthewights.png",
+			"LinzaCGregorovicandNomad.png",
+			"MeetingJas.png",
+			"MeetingupwithIcthlarin.png",
+			"RacingArmadyl.png",
+			"ReunionwithLinza.png",
+			"Sliskerevealshisplan.png",
+			"SliskesEndgame.png",
+			"SliskesEndgamepuzzle.png",
+			"SliskesEndgamequestreplayoptions.png",
+			"SliskesEndgamereward.png",
+			"SliskesEndgamesummit.png",
+			"SliskesLabyrinth1map(solution).png",
+			"SliskesLabyrinth2map(solution).png",
+			"SliskesLabyrinthentrance.png",
+			"SliskesummonstheBarrowsBrothers.png",
+			"WrathoftheWorldGuardian.png"
+		]
+	},
+	{
+		"name": "Smoking Kills",
+		"images": [
+			"300px-Smokingkills2.png89f49.png",
+			"Banshreemistressfight.png",
+			"Belongstous.png",
+			"Bookdestroy.png",
+			"SKmummywarrior.png",
+			"SKscarabmonster.png",
+			"SmokingKills.png",
+			"SmokingKillsreward.png"
+		]
+	},
+	{
+		"name": "Some Like It Cold",
+		"images": [
+			"BatinaboxSomeLikeItCold.png",
+			"FishingforSquid.png",
+			"Larrysadaddy.png",
+			"Makingnoise.png",
+			"PingPongontheiceberg.png",
+			"POWcamp.png",
+			"RepairedEngine.png",
+			"Sealssleeping.png",
+			"SomeLikeitCold.png",
+			"SomeLikeItColdreward.png",
+			"Submarineaction.png",
+			"Thecrashedsubmarine.png"
+		]
+	},
+	{
+		"name": "Song from the Depths",
+		"images": [
+			"FollowingWaylanssoul.png",
+			"Glowingsymbol.png",
+			"SFTDRoomBurningsapling.png",
+			"SongfromtheDepths.png",
+			"SongfromtheDepthsreward.png",
+			"Thejump.png",
+			"TheSiren.png"
+		]
+	},
+	{
+		"name": "Spirit of Summer",
+		"images": [
+			"300px-SpiritofSummer3.png5319d.png",
+			"300px-SpiritofSummer4.pngb030c.png",
+			"300px-SpiritofSummer5.png55fcc.png",
+			"300px-SpiritofSummer6.pngf72d2.png",
+			"AltarSpiritofSummerskullandbones.png",
+			"CaughtSpiritBeast.png",
+			"SpiritofSummer.png",
+			"SpiritofSummerDiscdamage.png",
+			"SpiritofSummerreward.png",
+			"TrappedSummer.png"
+		]
+	},
+	{
+		"name": "Spirits of the Elid",
+		"images": [
+			"Clearingwaterchannel.png",
+			"ClimbingWaterfall.png",
+			"SpiritsoftheElid.png",
+			"SpiritsoftheElidreward.png"
+		]
+	},
+	{
+		"name": "Stolen Hearts",
+		"images": [
+			"300px-StolenHeartsScalespuzzle2.pngcf7fa.png",
+			"PunishingKhnum.png",
+			"StolenHearts.png",
+			"StolenHeartsCornered.png",
+			"StolenHeartsreward.png",
+			"StolenHeartsScalespuzzle.png",
+			"TheillEmir.png"
+		]
+	},
+	{
+		"name": "Succession",
+		"images": [
+			"Succession.png",
+			"SuccessionAdrasteiaiscrowned.png",
+			"SuccessionBilrachsritual.png",
+			"SuccessionfightingMal.png",
+			"SuccessionGeneralKhazardcratepuzzle.png",
+			"SuccessionMiningargonlikeore.png",
+			"Successionmodifiedritualmarker.png",
+			"Successionreward.png",
+			"SuccessionVengeancefightstheMagister.png"
+		]
+	},
+	{
+		"name": "Summers End",
+		"images": [
+			"BeastCdarkcoreCjallek.png",
+			"Collapsedcave.png",
+			"Deadbeast.png",
+			"Graveroom.png",
+			"IntheVoidinSummersEnd.png",
+			"SpiritBeast.png",
+			"SummersEnd.png",
+			"SummersEndreward.png",
+			"SummersEnd_FirepitLocations.jpg",
+			"TheEndofSummer.png"
+		]
+	},
+	{
+		"name": "Swan Song",
+		"images": [
+			"Fixingthewall.png",
+			"SeatrollQueenfight.png",
+			"SwanSong.png",
+			"SwanSongfight.png",
+			"SwanSongreward.png"
+		]
+	},
+	{
+		"name": "Swept Away",
+		"images": ["StirringtheGoulash.png", "SweptAway.png", "SweptAwayreward.png"]
+	},
+	{
+		"name": "Tai Bwo Wannai Trio",
+		"images": [
+			"TaiBwoWannaiTrio.png",
+			"TaiBwoWannaiTrioreward.png",
+			"TaiBwoWannaiTrioTamayuSlaysShaikahan.png",
+			"TamayuLocation.png",
+			"Thirdsontiadeche.png",
+			"Tinsaysecondson.png"
+		]
+	},
+	{
+		"name": "Tears of Guthix",
+		"images": [
+			"LumbridgeCavesMap.png",
+			"Miningmagicstone.png",
+			"TearsofGuthix.png",
+			"TearsofGuthixreward.png"
+		]
+	},
+	{
+		"name": "Temple of Ikov",
+		"images": [
+			"TempleofIkov.png",
+			"TempleofIkovlever.png",
+			"TempleofIkovLuciendisposed.png",
+			"TempleofIkovmap.png",
+			"templeofikovrewardarmadyl.png",
+			"templeofikovrewardlucien.png",
+			"TempleofIkovunstablebridge.png",
+			"TempleofIkovWinelda.png"
+		]
+	},
+	{
+		"name": "That Old Black Magic: Hermy and Bass",
+		"images": [
+			"MapOfUm.png",
+			"Hermod.png",
+			"animated drum sticks.png",
+			"SpiritofRhythmLocation.png",
+			"EdTheSkeleton.png",
+			"ManifestDrumSticks.png",
+			"ManifestedDrumSticks.png",
+			"FirstDrum.png",
+			"seconddrumloc.png",
+			"ThirdDrumLocation.png",
+			"fourthDrumLocation.png",
+			"foroutoffordrums.png",
+			"BacktoLadyGrey.png"
+		]
+	},
+	{
+		"name": "The Blood Pact",
+		"images": [
+			"FightingKayle.png",
+			"TheBloodPact.png",
+			"TheBloodPactreward.png",
+			"Thetombisdestroyed.png"
+		]
+	},
+	{
+		"name": "The Branches of Darkmeyer",
+		"images": [
+			"AttackingVanescula.png",
+			"BODVanesculaRescue.png",
+			"BurghdeRottTunnel.png",
+			"CuttingtheBlisterwoodTree.png",
+			"DarkmeyerTier.png",
+			"Decayingtome.png",
+			"Emergencymeeting.png",
+			"FightingVanstrom.png",
+			"Haroldfight.png",
+			"KillingCitizens.png",
+			"Myreque.png",
+			"Punchingthebloodtrader.png",
+			"Ranisedie.png",
+			"RogueVyres.png",
+			"RunningthroughDarkmeyer.png",
+			"Safalaanreads.png",
+			"TheBranchesofDarkmeyer.png",
+			"TheBranchesofDarkmeyerreward.png",
+			"VanstromInformation.png",
+			"Vanstrommist.png",
+			"VanstromsDeath.png",
+			"VyreMark.png"
+		]
+	},
+	{
+		"name": "The Brink of Extinction",
+		"images": [
+			"300px-TBoEroom3fight.png4e3d5.png",
+			"AGaalhatches.png",
+			"BoEstatuemining.png",
+			"Fightingthechampions.png",
+			"FightingTokhaarHok.png",
+			"FightingTzKils.png",
+			"TableImage.png",
+			"TBoEroomfight.png",
+			"TBoEroompuzzle.png",
+			"TheBrinkofExtinction.png",
+			"TheBrinkofExtinctionnoticeboard.png",
+			"TheBrinkofExtinctionreward.png",
+			"TokHaarHokappears.png",
+			"Tzhaarparty.png",
+			"TzHaarsigilTheBrinkofExtinction.png",
+			"TzhaarWordTable.png",
+			"WeaponTable.png"
+		]
+	},
+	{
+		"name": "The Chosen Commander",
+		"images": [
+			"BandosAvatarFight.png",
+			"Bandosshowdown.png",
+			"chosencommandertable.png",
+			"FightingSigmund.png",
+			"FightingWalton.png",
+			"Grubfootescape.png",
+			"PendantSmash.png",
+			"SafeSpotZanik.png",
+			"StatuesMoving.png",
+			"TalkingtoJuna.png",
+			"TheChosenCommanderreward.png",
+			"Thesickchildren.png",
+			"Wecanfight.png",
+			"ZanikGrapple.png"
+		]
+	},
+	{
+		"name": "The Curse of Arrav",
+		"images": [
+			"300px-ArravCurse3.png92a08.png",
+			"ArravCurse.png",
+			"chaostempledungeonmap.png",
+			"Decoderstripspuzzle.png",
+			"descendentslocations.png",
+			"LamistardsTunnelsPath.png",
+			"TheCurseofArrav.png",
+			"TheCurseofArravArravmindcontrol.png",
+			"TheCurseofArravreward.png"
+		]
+	},
+	{
+		"name": "The Darknessof Hallowvale",
+		"images": [
+			"Aeonisigteleports.png",
+			"Decoratedwall.png",
+			"Drakansingame.png",
+			"Fixingboat.png",
+			"HallowvaleBoat.png",
+			"MeetingSafalaan.png",
+			"Ralandsickle.png",
+			"Repairingtheladder.png",
+			"Safalaansmeetingpoint.png",
+			"Shadowyfigurecropped.png",
+			"Telegrabhaemalchemy.png",
+			"TheDarknessofHallowvale.png",
+			"TheDarknessofHallowvalemineroutemap.png",
+			"TheDarknessofHallowvalereward.png",
+			"Updatedunusedcastledrakanmap.png"
+		]
+	},
+	{
+		"name": "The Death of Chivalry",
+		"images": [
+			"BlackKnightstortureDawn.png",
+			"DeathofChivalryBKF.png",
+			"DeathofChivalrytilesolution.png",
+			"FightingFern.png",
+			"FightingtheBlackKnights.png",
+			"KnockingoutGraves.png",
+			"SaradominwithElorasWand.png",
+			"TheDeathofChivalry.png",
+			"TheDeathofChivalrystart.png",
+			"Zombiefight.png"
+		]
+	},
+	{
+		"name": "The Dig Site",
+		"images": [
+			"Diggingforthetalisman.png",
+			"DigsiteTemple.png",
+			"Panning.png",
+			"SenntistenTemplemap.png",
+			"TheDigSitereward.png",
+			"TheDigSitesearchingbushes.png"
+		]
+	},
+	{
+		"name": "The Elder Kiln",
+		"images": [
+			"Ancientgate.png",
+			"EvadingtheTokhaar.png",
+			"FightingKetZeks.png",
+			"GaalForge.png",
+			"GaalJehdies.png",
+			"Hatchedegg.png",
+			"Hatchingtheegg.png",
+			"Jump.png",
+			"Linerow.png",
+			"SafeSpotElderKiln.png",
+			"TheElderKilnquest.png",
+			"TheElderKilnreward.png",
+			"TzHaarKetYittalsafespot.png",
+			"TzHaarnumbers.png",
+			"YtMejKotfight.png"
+		]
+	},
+	{
+		"name": "The Eyes of Glouphrie",
+		"images": [
+			"BattleofAtarisundriCouncil.png",
+			"TheEyesofGlouphrie.png",
+			"TheEyesofGlouphriediscexchanger.png",
+			"TheEyesofGlouphrieHazelmere.png",
+			"TheEyesofGlouphrielegend.png",
+			"TheEyesofGlouphriereward.png",
+			"TheEyesofGlouphrieSaboteur.png"
+		]
+	},
+	{
+		"name": "The Feud",
+		"images": ["TheFeud.png", "TheFeudreward.png", "UsingHagspoison.png"]
+	},
+	{
+		"name": "The Firemakers Curse",
+		"images": [
+			"Avoidingfallingrocks.png",
+			"Avoidingthefirewall.png",
+			"CaveIn.png",
+			"Charragemode.png",
+			"Detershadows.png",
+			"FightingChar.png",
+			"Firemakers.png",
+			"Firemakerscursebanner.png",
+			"Gettingthroughthemaze.png",
+			"TheFiremakersCurse.png",
+			"TheFiremakersCursefireroom.png",
+			"TheFiremakersCursefirstroom.png",
+			"TheFiremakersCurseinfobox.png",
+			"TheFiremakersCursereward.png",
+			"TheFiremakersCursewavepuzzle.png",
+			"Wallofflame.png"
+		]
+	},
+	{
+		"name": "The Fremennik Isles",
+		"images": [
+			"Deadicetrollking.png",
+			"Entertainingmawnis.png",
+			"FIkingsorvottcourt.png",
+			"TheFremennikIsles.png",
+			"TheFremennikIsleshonourguardandtrolls.png",
+			"TheFremennikIslesreward.png"
+		]
+	},
+	{
+		"name": "The Fremennik Trials",
+		"images": [
+			"Deathlessbossfight.png",
+			"FremennikTrialsDraugen.png",
+			"Koscheiarena.png",
+			"Peertheseerroom.png",
+			"Swensensmaze.png",
+			"TheFremennikTrials.png",
+			"TheFremennikTrialsreward.png"
+		]
+	},
+	{
+		"name": "The Giant Dwarf",
+		"images": [
+			"ConsortiumMeeting.png",
+			"TheGiantDwarf.png",
+			"TheGiantDwarfCrashingintothestatue.png",
+			"TheGiantDwarfreward.png"
+		]
+	},
+	{
+		"name": "The Golem",
+		"images": ["TalkingtotheGolem.png", "TheGolem.png", "TheGolemreward.png"]
+	},
+	{
+		"name": "The Grand Tree",
+		"images": [
+			"GlouphsLittleFriend.png",
+			"GrandTreeshortcut.png",
+			"ImprisonedwithCharlie.png",
+			"Searchingroots.png",
+			"TheGrandTree.png",
+			"TheGrandTreereward.png",
+			"Tuzo.png"
+		]
+	},
+	{
+		"name": "The Great Brain Robbery",
+		"images": [
+			"BrainRobStatue.png",
+			"ElfinlockscamoTGBR.png",
+			"GreatBrainRobberycrate.png",
+			"GreatBrainRobberyhole.png",
+			"GreatBrainRobberystairs.png",
+			"Intermission.png",
+			"Thegreatbrainrobbery.png",
+			"TheGreatBrainRobberyreward.png"
+		]
+	},
+	{
+		"name": "The Hand in the Sand",
+		"images": [
+			"Sandyconfesses.png",
+			"TheHandintheSand.png",
+			"TheHandintheSandreward.png"
+		]
+	},
+	{
+		"name": "The Jack of Spades",
+		"images": ["TheJackofSpades.png", "TheJackofSpadesreward.png"]
+	},
+	{
+		"name": "The Knights Sword",
+		"images": [
+			"SirVyvvinscabinet.png",
+			"Startoftheknightssword.png",
+			"TheKnightsSword.png",
+			"TheKnightsSwordreward.png",
+			"Thurgoandhut.png"
+		]
+	},
+	{
+		"name": "The Light Within",
+		"images": [
+			"ArianwynrevivesBaxtorian.png",
+			"CarryingSeren.png",
+			"Coedensstory.png",
+			"Eldersmeeting.png",
+			"Fightingashapeshifter.png",
+			"MeetingGuthix.png",
+			"PurifyingtheHefincrystal.png",
+			"Serenandtheelders.png",
+			"Takingthecrystaltreeshard.png",
+			"Takingthedarkshard.png",
+			"TheLightWithin.png",
+			"TheLightWithinpuzzle.png",
+			"TheLightWithinreward.png",
+			"Theprudencecrystal.png"
+		]
+	},
+	{
+		"name": "The Lord of Vampyrium",
+		"images": [
+			"300px-FightingDrakan-Phase2.png84547.png",
+			"300px-Ringpuzzle2solution.png02e88.png",
+			"300px-Ringpuzzle3solution.png3f334.png",
+			"300px-Ringpuzzle4solution.png3da70.png",
+			"Barricadingthewindows.png",
+			"Drakanambush.png",
+			"Drakanreturns.png",
+			"EmptyBurghdeRott.png",
+			"FightingDrakanPhase.png",
+			"FightingtheVenators.png",
+			"GainingstatusonCastleDrakan.png",
+			"IcyeneGraveyard.png",
+			"KillingDrakan.png",
+			"LordofVampyriumbloodpuzzlesolution.png",
+			"MyrequeintheArboretum.png",
+			"MyrequeVIpollbanner.png",
+			"ProtectingIvan.png",
+			"Ringpuzzlesolution.png",
+			"TheLordofVampyrium.png",
+			"TheLordofVampyriumreward.png",
+			"Vanesculabetraysyou.png",
+			"VanesculastabsLowerniel.png",
+			"Veliafgivesup.png",
+			"Vyresinthebase.png"
+		]
+	},
+	{
+		"name": "The Lost Tribe",
+		"images": [
+			"Losttribe.png",
+			"LostTribepeacetreaty.png",
+			"TheLostTribe.png",
+			"TheLostTribereward.png"
+		]
+	},
+	{
+		"name": "The Mighty Fall",
+		"images": [
+			"BandossTowerdestroyed.png",
+			"FightingLol.png",
+			"FightingYelps.png",
+			"KillingZanik.png",
+			"LearningtheKyzajTheMightyFall.png",
+			"SpeakingwithZaradorTheMightyFall.png",
+			"ThegeneralsTheMightyFall.png",
+			"TheMightyFall.png",
+			"TheMightyFallfightingGeneralGraardor.png",
+			"TheMightyFallreward.png",
+			"Yourcamp.png",
+			"Zanikhugsyou.png",
+			"ZaradorandZanik.png"
+		]
+	},
+	{
+		"name": "The Needle Skips",
+		"images": [
+			"Endofanordeal.png",
+			"TheNeedleSkips.png",
+			"TheNeedleSkipsreward.png"
+		]
+	},
+	{
+		"name": "The Path of Glouphrie",
+		"images": [
+			"Evilcreaturerevealed.png",
+			"FightingtheWarpedTerrorbirds.png",
+			"PathofGlouphrieYewnocksmachine.png",
+			"Terrorbirdguards.png",
+			"TheEyesofGlouphrielegend.png",
+			"ThePathofGlouphrie.png",
+			"ThePathofGlouphriereward.png"
+		]
+	},
+	{
+		"name": "The Prisoner of Glouphrie",
+		"images": [
+			"300px-Pog6.pngbbf8d.png",
+			"300px-Pog7.png797a2.png",
+			"Arposandranundergroundlowerlevel.png",
+			"Arposandranundergroundupperlevel.png",
+			"CavernsunderArandar.png",
+			"Deadtreeentrance.png",
+			"ExitcrevicePrisonerofGlouphrie.png",
+			"GalarposMountainsvent.png",
+			"Pog.png",
+			"Reunionwithbolren.png",
+			"SturdytreePrisonerofGlouphrie.png",
+			"ThelabPrisonerofGlouphrie.png",
+			"ThePrisonerofGlouphrie.png",
+			"ThePrisonerofGlouphriereward.png"
+		]
+	},
+	{
+		"name": "The Restless Ghost",
+		"images": ["TheRestlessGhost.png", "TheRestlessGhostreward.png"]
+	},
+	{
+		"name": "The Slug Menace",
+		"images": [
+			"CraftingtheRunes.png",
+			"Imposingdoor.png",
+			"ItsMayorHobb.png",
+			"Maledictisconverted.png",
+			"SeaSlugShrine.png",
+			"Slugmenacewall.png",
+			"TheSlugMenace.png",
+			"TheSlugMenacereward.png",
+			"WitchavenDungeonmap.png"
+		]
+	},
+	{
+		"name": "The Spirit of War",
+		"images": [
+			"TheSpiritofWar.png",
+			"TheSpiritofWarrescuingsouls.png",
+			"TheSpiritofWarreward.png"
+		]
+	},
+	{
+		"name": "The Tale of the Muspah",
+		"images": [
+			"CanoeboattravelrouteFremennikProvince.png",
+			"Monsterinice.png",
+			"TheTaleoftheMuspah.png",
+			"TheTaleoftheMuspahreward.png"
+		]
+	},
+	{
+		"name": "The Temple at Senntisten",
+		"images": [
+			"Fightingtunnelbrother.png",
+			"SenntistenTemplerestoration.png",
+			"TempleatSenntisten.png",
+			"TheTempleatSenntistenIcedemon.png",
+			"TheTempleatSenntistenPushingtheheatglobe.png",
+			"TheTempleatSenntistenreward.png"
+		]
+	},
+	{
+		"name": "The Tourist Trap",
+		"images": [
+			"Anainabarrelinaminecart.png",
+			"Makingtheprototypedart.png",
+			"TheTouristTrap.png",
+			"TheTouristTrapreward.png",
+			"TheTouristTrapstart.png",
+			"TouristTrapMineCart.png",
+			"Tradingclothes.png"
+		]
+	},
+	{
+		"name": "The Vault of Shadows",
+		"images": [
+			"Kharidetdiallocation.png",
+			"TheVaultofShadows.png",
+			"TheVaultofShadowsbloodpuzzle.png",
+			"TheVaultofShadowspuzzleorientationanddialcommands.png",
+			"TheVaultofShadowsreward.png",
+			"TheVaultofShadowsshadowpuzzle.png",
+			"TheVaultofShadowssmokepuzzle.png",
+			"VaultofShadows.png"
+		]
+	},
+	{
+		"name": "The Void Stares Back",
+		"images": [
+			"Colbyteleport.png",
+			"FightingthePestQueen.png",
+			"Firstpuzzleroomvoid.png",
+			"GreyzagisRevealed.png",
+			"Lamezag.png",
+			"Pestconquestmovingvoid.png",
+			"Queenisdead.png",
+			"Theimpossibledecisionvoid.png",
+			"TheKnightsArrive.png",
+			"ThePestQueenemerges.png",
+			"TheVoidGooExplosion.png",
+			"TheVoidStaresBack.png",
+			"TheVoidStaresBackreward.png",
+			"VoidStaresBackForge.png",
+			"Weightdistribution.png"
+		]
+	},
+	{
+		"name": "The World Wakes",
+		"images": [
+			"592px-The_World_Wakes_puzzle_solution_1.png",
+			"592px-The_World_Wakes_puzzle_solution_2.png",
+			"592px-The_World_Wakes_puzzle_solution_3.png",
+			"592px-The_World_Wakes_puzzle_solution_4.png",
+			"Becomingaguardian.png",
+			"Cresdies.png",
+			"DefendingJuna.png",
+			"Edictswarning.png",
+			"FightingGraardor.png",
+			"Guthixsslaying.png",
+			"Guthixsword.png",
+			"Kreearrafight.png",
+			"OpeningdoorTWW.png",
+			"Saradominappears.png",
+			"TheWorldWakes.png",
+			"TheWorldWakesbanner.png",
+			"TheWorldWakesdoorsolution.png",
+			"TheWorldWakesreward.png",
+			"TheWorldWakesstorageroomsolution.png",
+			"ZemouregalandSharathteerk.png",
+			"ZilyanaandKril.png"
+		]
+	},
+	{
+		"name": "Throne of Miscellania",
+		"images": ["ThroneofMiscellania.png", "ThroneofMiscellaniareward.png"]
+	},
+	{
+		"name": "Tok Tz-Ket-Dill",
+		"images": [
+			"TokTzAshes.png",
+			"TokTzKetDillquest.png",
+			"TokTzKetDillreward.png",
+			"TokTzKetDillstart.png",
+			"TzTokketDill.png"
+		]
+	},
+	{
+		"name": "Tomes of the Warlock",
+		"images": ["TomesoftheWarlock.png", "TomesoftheWarlockreward.png"]
+	},
+	{
+		"name": "Tower of Life",
+		"images": [
+			"300px-Tolpipes2.pngd20ef.png",
+			"HomuncolusBirth.png",
+			"HomunculusMagicorLogic.png",
+			"ToLPipePuzzle.png",
+			"Tolpipes.png",
+			"TowerofLifecagefix.png",
+			"TowerofLifeinfobox.png",
+			"TowerofLifereward.png"
+		]
+	},
+	{
+		"name": "Tree Gnome Village",
+		"images": [
+			"Khazardwarlordsafespot.png",
+			"Retrievingtheprotectionorb.png",
+			"TreeGnomeVillageOrbCeremony.png",
+			"TreeGnomeVillagereward.png"
+		]
+	},
+	{
+		"name": "Tribal Totem",
+		"images": ["TribalTotem.png", "TribalTotemreward.png"]
+	},
+	{
+		"name": "Troll Romance",
+		"images": [
+			"Arrgsafespot.png",
+			"Forkintheroadtotrollweissdungeon.png",
+			"pathtofredas.png",
+			"TrollCaveEntrancePath.png",
+			"TrollRomance.png",
+			"TrollRomancereward.png",
+			"TrollStrongholdPath.png",
+			"TRridesled.png",
+			"Waxingthesled.png"
+		]
+	},
+	{
+		"name": "Troll Stronghold",
+		"images": [
+			"Dadsafespot.png",
+			"PathToDad.png",
+			"SafespottingTrollGeneral.png",
+			"TrollStronghold.png",
+			"TrollStrongholdreward.png"
+		]
+	},
+	{
+		"name": "Twilight of the Gods",
+		"images": [
+			"CuringErasinusandSenecianus.png",
+			"GuardiansofGuthixtransferknowledge.png",
+			"Keyinstructionsinterface.png",
+			"TestingtheEdicts.png",
+			"TwilightoftheGods.png",
+			"TwilightoftheGodsIbringamessagefromZamorak.png",
+			"TwilightoftheGodsreward.png"
+		]
+	},
+	{
+		"name": "Underground Pass",
+		"images": [
+			"FiringatGuideRope.png",
+			"Ibansroom.png",
+			"Kalrag.png",
+			"PaladinCamp.png",
+			"Smashedunicorn.png",
+			"Tombonfire.png",
+			"UndergroundPass.png",
+			"UndergroundPassKardiastreasurechest.png",
+			"UndergroundPassMap.png",
+			"UndergroundPassreward.png",
+			"WelltoIbansLair.png"
+		]
+	},
+	{
+		"name": "Unwelcome Guests",
+		"images": [
+			"UnwelcomeGuests.png",
+			"UnwelcomeGuestspresentingtheguardhouse.png",
+			"UnwelcomeGuestsreinforcingthewalls.png",
+			"UnwelcomeGuestsreward.png",
+			"Zemouregalresurrectsarmouredphantoms.png"
+		]
+	},
+	{
+		"name": "Vampyre Slayer",
+		"images": [
+			"CountDraynorAwakes.png",
+			"FightingDraynor.png",
+			"VampyreSlayer.png",
+			"VampyreSlayerreward.png"
+		]
+	},
+	{
+		"name": "Vessel of the Harbinger",
+		"images": [
+			"VesseloftheHarbinger.png",
+			"VesseloftheHarbingerdefeatingNettysskeleton.png",
+			"VesseloftheHarbingerreward.png"
+		]
+	},
+	{
+		"name": "Violet is Blue",
+		"images": [
+			"BettyandTrevor.png",
+			"SnowballdodgingVioletisBlue.png",
+			"VioletisBlue.png",
+			"VioletisBluecompletedsled.png",
+			"VioletisBlueopening.png",
+			"VioletisBluereward.png",
+			"Violetshouse.png"
+		]
+	},
+	{
+		"name": "Violet is Blue Too",
+		"images": ["VioletisBlueToo.png", "VioletisBlueTooreward.png"]
+	},
+	{
+		"name": "Wanted",
+		"images": [
+			"DiscontinuedWantedcutscene.png",
+			"FightingSolus.png",
+			"Solusblackknight.png",
+			"Solusflamesofzamarok.png",
+			"SolusthreatensDaquarius.png",
+			"Wanted.png",
+			"Wantedreward.png"
+		]
+	},
+	{
+		"name": "Watchtower",
+		"images": [
+			"PullingtheleverintheWatchtower.png",
+			"Trellis.png",
+			"Watchtower.png",
+			"Watchtowerreward.png"
+		]
+	},
+	{
+		"name": "Waterfall Quest",
+		"images": ["WaterfallQuest.png", "WaterfallQuestreward.png"]
+	},
+	{
+		"name": "What Lies Below",
+		"images": [
+			"Killingoutlaws.png",
+			"RatBurgiss.png",
+			"SecretMessage.png",
+			"WhatLiesBelow.png",
+			"WhatLiesBelowreward.png"
+		]
+	},
+	{
+		"name": "What's Mine is Yours",
+		"images": [
+			"Livingrockbrawlerappears.png",
+			"WhatsMineIsYours.png",
+			"WhatsMineIsYoursreward.png"
+		]
+	},
+	{
+		"name": "While Guthix Sleeps",
+		"images": [
+			"Dragonkincutscene.png",
+			"Enrichingthesnapdragonseed.png",
+			"HarvestingtheenrichedSnapdragon.png",
+			"Idriateleportsplayer.png",
+			"LucienandtheStoneofJas.png",
+			"Lucienspillsthebeans.png",
+			"Movario Locked Door.gif",
+			"Thesummoningofthetormenteddemons.png",
+			"Tormenteddemonfight.png",
+			"WhileGuthixSleepsheroes.png",
+			"WhileGuthixSleepsreward.png",
+			"WhileGuthixSleepsTable.png"
+		]
+	},
+	{
+		"name": "Witch's House",
+		"images": [
+			"Cupboardmagnet.png",
+			"FightingtheExperiment.png",
+			"PottedPlant.png",
+			"WitchsHouse.png",
+			"WitchsHousereward.png"
+		]
+	},
+	{
+		"name": "Within the Light",
+		"images": [
+			"ActivatingthegreenreceiverWithintheLight.png",
+			"ArianwyndebriefingWithintheLight.png",
+			"Arianwynkillsshadow.png",
+			"Deathaltarenergize.png",
+			"Energisedpillar.png",
+			"Platformjumping.png",
+			"Shapingthecrystaltree.png",
+			"Shootingthetarget.png",
+			"Thedeadelfmessenger.png",
+			"WithintheLight.png"
+		]
+	},
+	{
+		"name": "Wolf Whistle",
+		"images": [
+			"SearchStikklebrix.png",
+			"WolfWhistle.png",
+			"WolfWhistlepouch.png"
+		]
+	},
+	{
+		"name": "You Are It",
+		"images": [
+			"Destroyingthewshmaker.png",
+			"DoubleAgentrippers.png",
+			"MysteriouscluescrollYouAreItmap.png",
+			"MysteriousHolelocation.png",
+			"TheDukesundertaker.png",
+			"Urigraverobbing.png",
+			"YouAreIt.png",
+			"YouAreItmysteriouscluediglocation.png",
+			"YouAreItstartinglocation.png"
+		]
+	},
+	{
+		"name": "Zogre Flesh Eaters",
+		"images": [
+			"SlashBashsafespot.png",
+			"ZogreFleshEaters.png",
+			"ZogreFleshEnteringTunnel.png",
+			"ZogreFleshJumpingBarricade.png",
+			"ZogreFleshOgreSithik.png",
+			"ZogreFleshSigningPortrait.png"
+		]
+	}
 ]

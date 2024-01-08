@@ -22,9 +22,9 @@ import "@mantine/core/styles/Input.css";
 import "@mantine/core/styles/Flex.css";
 import { MantineProvider } from "@mantine/core";
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-    <MantineProvider>
-        <React.StrictMode>
-            <AltGuard />
-        </React.StrictMode>
-    </MantineProvider>
+	<MantineProvider>
+		<React.StrictMode>
+			<AltGuard />
+		</React.StrictMode>
+	</MantineProvider>
 );
