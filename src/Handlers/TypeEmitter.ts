@@ -4,6 +4,13 @@
  * @typeparam T - A type representing the events and their payload types.
  */
 export class TypedEmitter<T extends Record<string, any>> {
+	constructor() {
+		this.on = this.on.bind(this);
+		this.off = this.off.bind(this);
+		this.emit = this.emit.bind(this);
+		this.once = this.once.bind(this);
+		this.listenersChanged = this.listenersChanged.bind(this);
+	}
 	/**
 	 * Object to store event listeners.
 	 * Each key represents an event, and the corresponding value is a Set of listeners for that event.
