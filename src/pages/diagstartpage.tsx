@@ -9,6 +9,11 @@ export const Reader: React.FC<ReaderProps> = ({ reader, questName }) => {
 	const [, setCState] = useState(reader.getCState());
 
 	useEffect(() => {
+		console.log("I from the diagsolver has mounted");
+		reader.on("change", setCState);
+		reader.toggleOptionRun(true);
+		reader.emit("change", reader.getCState());
+
 		const fetchCompareTranscript = async (): Promise<void> => {
 			console.log("Fetching CTranscripts");
 			try {
@@ -50,14 +55,6 @@ export const Reader: React.FC<ReaderProps> = ({ reader, questName }) => {
 			}
 		};
 		fetchCompareTranscript();
-	}, []);
-
-	useEffect(() => {
-		console.log("I from the diagsolver has mounted");
-		reader.on("change", setCState);
-
-		reader.toggleOptionRun(true);
-		reader.emit("change", reader.getCState());
 		return () => {
 			console.warn("I am unmounting Diagsolver Page Component");
 			reader.off("change", setCState);

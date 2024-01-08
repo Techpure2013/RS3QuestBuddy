@@ -136,16 +136,11 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	 * @param action - The action to be performed at each interval.
 	 * @param interval - The interval duration in milliseconds.
 	 */
-	toggleOptionInterval(
-		run: boolean,
-		action: () => void,
-		interval: number
-	): void {
+	toggleOptionInterval(run: boolean, action: () => void, interval: number) {
 		if (run && !this.optionInterval) {
 			// Start a new interval timer and store its reference in the record
 			this.optionInterval = +setInterval(action, interval);
-		}
-		if (!run && this.optionInterval) {
+		} else if (!run && this.optionInterval) {
 			// Clear the interval timer if it exists
 			clearInterval(this.optionInterval);
 			this.optionInterval = 0; // Reset the interval reference
