@@ -147,7 +147,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 			if (run && !this.optionInterval) {
 				console.log("I am here");
 				// Start a new interval timer and store its reference in the record
-				this.optionInterval = +setInterval(action, interval);
+				this.optionInterval = +setInterval(action.bind(this), interval);
 			} else if (!run && this.optionInterval) {
 				// Clear the interval timer if it exists
 				console.log("clearing Interval", this.optionInterval);
