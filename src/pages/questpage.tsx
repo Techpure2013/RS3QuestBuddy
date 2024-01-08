@@ -42,7 +42,7 @@ import {
 	QuestDetailsFetcher,
 	useQuestDetailsStore,
 } from "./../Fetchers/FetchQuestDetails.ts";
-import { useQuestControllerStore } from "../Handlers/HandlerStore.ts";
+import { useQuestControllerStore } from "./../Handlers/HandlerStore.ts";
 //import { createRoot } from "react-dom/client";
 import { Reader, DiagReader } from "./dialogsolver.tsx";
 //import { PlayerQuests } from "./../Handlers/PlayerFetch.ts";
