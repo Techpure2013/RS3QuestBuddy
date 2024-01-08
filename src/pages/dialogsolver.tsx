@@ -144,7 +144,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 		console.log("I am at option run interval", this.optionInterval);
 		console.log(run, action, interval, this.optionInterval);
 		try {
-			if (run && !this.optionInterval) {
+			if (run && this.optionInterval == 1) {
 				console.log("I am here");
 				// Start a new interval timer and store its reference in the record
 				this.optionInterval = +setInterval(action, interval);
@@ -152,7 +152,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 				// Clear the interval timer if it exists
 				console.log("clearing Interval", this.optionInterval);
 				clearInterval(this.optionInterval);
-				this.optionInterval = 0; // Reset the interval reference
+				this.optionInterval = 1; // Reset the interval reference
 			}
 		} catch (error) {
 			console.error("Error toggling option interval:", error);
