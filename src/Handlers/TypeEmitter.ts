@@ -16,7 +16,6 @@ export class TypedEmitter<T extends Record<string, any>> {
 	 * Each key represents an event, and the corresponding value is a Set of listeners for that event.
 	 */
 	private listeners: { [key in keyof T]?: Set<(v: T[key]) => void> } = {};
-
 	/**
 	 * Add a listener for a specific event.
 	 *
@@ -29,7 +28,6 @@ export class TypedEmitter<T extends Record<string, any>> {
 		listeners.add(listener);
 		this.listenersChanged(event, listeners);
 	}
-
 	/**
 	 * Add a one-time listener for a specific event.
 	 * The listener will be automatically removed after it's invoked once.
@@ -47,7 +45,6 @@ export class TypedEmitter<T extends Record<string, any>> {
 		listeners.add(oncer);
 		this.listenersChanged(event, listeners);
 	}
-
 	/**
 	 * Remove a listener for a specific event.
 	 *
