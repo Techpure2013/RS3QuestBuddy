@@ -55,6 +55,7 @@ type readerEvents = {
 		 * Array of previous best matching points.
 		 */
 		previousBestMatches: Points[];
+		ReadOptionStart: () => void;
 	};
 };
 /**
@@ -103,7 +104,9 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	 * @returns The current state as a 'change' event object.
 	 */
 	getCState(): readerEvents["change"] {
+		console.log("Getting State");
 		return {
+			ReadOptionStart: () => this.readDiagOptions(),
 			readOption: this.readOption,
 			dialogTitle: this.diagTitle,
 			charDialog: this.charDialog,
@@ -143,7 +146,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 		this.toggleOptionInterval(run, () => this.readDiagOptions(), 600);
 	}
 
-	readDiagOptions(): void {
+	readDiagOptions() {
 		console.log("I am here");
 		// Capture the full RS screen
 		const diagboxcapture = a1lib.captureHoldFullRs();

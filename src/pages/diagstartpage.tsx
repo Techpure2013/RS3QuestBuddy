@@ -55,7 +55,9 @@ export const Reader: React.FC<ReaderProps> = ({ reader, questName }) => {
 	useEffect(() => {
 		console.log("I from the diagsolver has mounted");
 		reader.on("change", setCState);
+
 		reader.toggleOptionInterval(true, () => reader.readDiagOptions(), 600);
+		reader.emit("change", reader.getCState());
 		return () => {
 			reader.off("change", setCState);
 			reader.toggleOptionRun(false);
