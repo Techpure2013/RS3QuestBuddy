@@ -179,7 +179,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 				this.processDialog(diagboxcapture);
 				this.processMatching();
 			} catch (error) {
-				null;
+				console.warn("Cannot See Options Normal Response", error);
 			}
 		} else {
 			console.error("Invalid diagH or diagW values."); // Log an error if diagH or diagW is invalid

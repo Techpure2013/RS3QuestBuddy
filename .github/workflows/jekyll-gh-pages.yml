@@ -1,77 +1,80 @@
 name: Deploy QuestBuddy to GitHub Pages
 
 on:
-    # Runs on pushes targeting the default branch
-    push:
-        branches: ["master"]
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["master"]
 
-    # Allows you to run this workflow manually from the Actions tab
-    workflow_dispatch:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 # Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
 permissions:
-    contents: read
-    pages: write
-    id-token: write
+  contents: read
+  pages: write
+  id-token: write
 
 # Allow one concurrent deployment
 concurrency:
-    group: "pages"
-    cancel-in-progress: true
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
-    # Single deploy job since we're just deploying
-    deploy:
-        environment:
-            name: github-pages
-            url: ${{ steps.deployment.outputs.page_url }}
-        runs-on: ubuntu-latest
-        steps:
-            # Checkout and clone git repo
-            - name: Checkout
-              uses: actions/checkout@v3
+  # Single deploy job since we're just deploying
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout and clone git repo
+      - name: Checkout
+        uses: actions/checkout@v3
 
-            # Setup NodeJS v18 LTS
-            - name: Set up Node
-              uses: actions/setup-node@v3
-              with:
-                  node-version: 18
-                  cache: "npm"
+      # Setup NodeJS v18 LTS
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: "npm"
 
-            # Build out JS/HTML into Dist production.
-            - name: Install dependencies
-              run: npm install
-            - name: Build
-              run: npm run build
+      # Build out JS/HTML into Dist production.
+      - name: Install dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
 
-            # Configure GitHub Pages for deployment
-            - name: Setup GitHub Pages
-              uses: actions/configure-pages@v3
+      # Configure GitHub Pages for deployment
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v3
 
-            # Copy/Move final build output files to production location.
-            - name: Copy Quest List TXT
-              run: cp ./questlist.txt ./dist
-            - name: Copy Quest List JSON LUT
-              run: cp ./QuestList.json ./dist
-            - name: Copy QuestImageList.JSON to ./dist
-              run: cp ./QuestImageList.json ./dist
-            - name: Move Quests to Dist Folder
-              run: mv ./Quests/ ./dist
-            - name: Move Rewards to Dist Folder
-              run: mv ./Rewards/ ./dist
-            - name: Move Quest Images to ./dist
-              run: mv ./Images/ ./dist
-            - name: List out final PWD contents
-              run: ls -a
+      # Copy/Move final build output files to production location.
+      - name: Copy Quest List TXT
+        run: cp ./questlist.txt ./dist
+      - name: Copy Quest List JSON LUT
+        run: cp ./QuestList.json ./dist
+      - name: Copy QuestImageList.JSON to ./dist
+        run: cp ./QuestImageList.json ./dist
+      - name: Move Quests to Dist Folder
+        run: mv ./Quests/ ./dist
+      - name: Move Rewards to Dist Folder
+        run: mv ./Rewards/ ./dist
+      - name: Move Quest Images to ./dist
+        run: mv ./Images/ ./dist
+      - name: Move Class DiagSolver to Dist
+        run: mv ./dialogsolver.tsx ./dist/src
+      - name: List all directories and subdirectories
+        run: find . -type d
+      - name: List all files
+        run: find . -type f
+      # Upload the distributables to GitHub Pages after finalization.
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          # Upload dist repository
+          path: "./dist"
 
-            # Upload the distributables to GitHub Pages after finalization.
-            - name: Upload artifact
-              uses: actions/upload-pages-artifact@v1
-              with:
-                  # Upload dist repository
-                  path: "./dist"
-
-            # Send GitHub Pages final build to live production
-            - name: Deploy to GitHub Pages
-              id: deployment
-              uses: actions/deploy-pages@v1
+      # Send GitHub Pages final build to live production
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
