@@ -118,7 +118,6 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	 * @returns The current state as a 'change' event object.
 	 */
 	public getCState(): readerEvents["change"] {
-		console.log("Getting State");
 		return {
 			ReadOptionStart: () => this.readDiagOptions(),
 			readOption: this.readOption,
@@ -145,12 +144,10 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 		console.log(run, action, interval, this.optionInterval);
 		try {
 			if (run && this.optionInterval == 1) {
-				console.log("I am here");
 				// Start a new interval timer and store its reference in the record
 				this.optionInterval = +setInterval(action, interval);
 			} else if (!run && this.optionInterval) {
 				// Clear the interval timer if it exists
-				console.log("clearing Interval", this.optionInterval);
 				clearInterval(this.optionInterval);
 				this.optionInterval = 1; // Reset the interval reference
 			}
@@ -168,7 +165,6 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	}
 
 	private readDiagOptions() {
-		console.log("I am here");
 		// Capture the full RS screen
 		const diagboxcapture = a1lib.captureHoldFullRs();
 
@@ -215,7 +211,6 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	 * The dimensions are stored in 'diagH' (height) and 'diagW' (width) properties.
 	 */
 	private updateDiagDimensions(): void {
-		console.log("I am here");
 		this.diagH = this.diagReader.pos?.height!;
 		this.diagW = this.diagReader.pos?.width!;
 		this.diagX = this.diagReader.pos?.x!;
@@ -229,7 +224,6 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	 * @param diagboxcapture - The captured dialog box data.
 	 */
 	private processDialog(diagboxcapture: any): void {
-		console.log("I am here");
 		// Check the captured dialog box
 		const checked = this.diagReader.checkDialog(diagboxcapture);
 		// Read the character dialog
