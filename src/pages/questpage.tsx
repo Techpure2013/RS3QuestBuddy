@@ -213,28 +213,17 @@ const QuestPage: React.FC = () => {
 		const imageCaro = document.querySelector(
 			".QuestPageImageCaro"
 		) as HTMLElement;
-		const stepperBounds = document.querySelector("stepperStep") as HTMLElement;
-		if (prevNextButtons && imageCaro && stepperBounds) {
+
+		if (prevNextButtons && imageCaro) {
 			// Check if elements exist
 			const prevNextRect = prevNextButtons.getBoundingClientRect();
 			const imageCaroRect = imageCaro.getBoundingClientRect();
-			const stepperRect = stepperBounds.getBoundingClientRect();
 
 			if (
 				prevNextRect.right > imageCaroRect.left &&
 				prevNextRect.left < imageCaroRect.right &&
 				prevNextRect.bottom > imageCaroRect.top &&
 				prevNextRect.top < imageCaroRect.bottom
-			) {
-				prevNextButtons.style.visibility = "hidden"; // Hide the prevNextButtons
-			} else {
-				prevNextButtons.style.visibility = "visible"; // Show the prevNextButtons
-			}
-			if (
-				prevNextRect.right > stepperRect.left &&
-				prevNextRect.left < stepperRect.right &&
-				prevNextRect.bottom > stepperRect.top &&
-				prevNextRect.top < stepperRect.bottom
 			) {
 				prevNextButtons.style.visibility = "hidden"; // Hide the prevNextButtons
 			} else {

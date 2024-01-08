@@ -85,7 +85,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	coordinateCounts: Record<string, number> = {};
 	optionInterval: number | null = 1;
 	dialogInterval: number = 1;
-	displayNumber: number = 0;
+	displayNumber: number = 1;
 	widthBox: number = 0;
 	anyOption: boolean = false;
 
@@ -140,8 +140,6 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 		action: () => void,
 		interval: number
 	) {
-		console.log("I am at option run interval", this.optionInterval);
-		console.log(run, action, interval, this.optionInterval);
 		try {
 			if (run && this.optionInterval == 1) {
 				// Start a new interval timer and store its reference in the record
@@ -336,7 +334,6 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	 * Displays the overlay rectangle for each unique coordinate with a delay.
 	 */
 	private populateUniqueCoordinates() {
-		console.log("I am here");
 		for (const coord of this.currentBestMatches) {
 			const key = `${coord.x},${coord.y},${coord.width}`;
 			this.uniqueCoordinates[key] = { ...coord };
@@ -372,6 +369,9 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	 * Uses setTimeout to stagger the timings and display each option.
 	 */
 	private displayBox() {
+		if (this.uniqueCoordinates["0,0,0"]) {
+			delete this.uniqueCoordinates["0,0,0"];
+		}
 		// Get the keys of coordinateCounts
 		const keys = Object.keys(this.uniqueCoordinates);
 
@@ -405,7 +405,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 				this.color,
 				this.coordX - 60,
 				this.coordY - 16,
-				this.widthBox - 60,
+				this.widthBox,
 				this.diagH / 2 - 30,
 				1000,
 				3
@@ -429,7 +429,6 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 				3
 			);
 		}
-		// Display the overlay text and rectangle initially
 
 		// Use setTimeout to introduce a delay before displaying the overlay rectangle
 		setTimeout(() => {
@@ -449,7 +448,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 
 			this.displayBox();
 		}, delay);
-	} // Multiply the index by the delay to stagger the timings
+	}
 
 	/**
 	 * Calculates the Levenshtein distance between two strings.
