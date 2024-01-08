@@ -145,6 +145,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	}
 
 	readDiagOptions(): void {
+		console.log("I am here");
 		// Capture the full RS screen
 		const diagboxcapture = a1lib.captureHoldFullRs();
 
@@ -191,6 +192,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	 * The dimensions are stored in 'diagH' (height) and 'diagW' (width) properties.
 	 */
 	private updateDiagDimensions(): void {
+		console.log("I am here");
 		this.diagH = this.diagReader.pos?.height!;
 		this.diagW = this.diagReader.pos?.width!;
 		this.diagX = this.diagReader.pos?.x!;
@@ -204,6 +206,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	 * @param diagboxcapture - The captured dialog box data.
 	 */
 	private processDialog(diagboxcapture: any): void {
+		console.log("I am here");
 		// Check the captured dialog box
 		const checked = this.diagReader.checkDialog(diagboxcapture);
 		// Read the character dialog
@@ -316,6 +319,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	 * Displays the overlay rectangle for each unique coordinate with a delay.
 	 */
 	private populateUniqueCoordinates() {
+		console.log("I am here");
 		for (const coord of this.currentBestMatches) {
 			const key = `${coord.x},${coord.y},${coord.width}`;
 			this.uniqueCoordinates[key] = { ...coord };
