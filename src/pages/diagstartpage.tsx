@@ -56,12 +56,12 @@ export const Reader: React.FC<ReaderProps> = ({ reader, questName }) => {
 		console.log("I from the diagsolver has mounted");
 		reader.on("change", setCState);
 
-		reader.toggleOptionInterval(true, () => reader.readDiagOptions(), 600);
+		reader.toggleOptionRun(true);
 		reader.emit("change", reader.getCState());
 		return () => {
+			console.warn("I am unmounting Diagsolver Page Component");
 			reader.off("change", setCState);
 			reader.toggleOptionRun(false);
-			// p.reader.toggleDiagRun(false);
 		};
 	}, []);
 	return (
