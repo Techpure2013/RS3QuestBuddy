@@ -136,13 +136,18 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	 * @param action - The action to be performed at each interval.
 	 * @param interval - The interval duration in milliseconds.
 	 */
-	toggleOptionInterval(run: boolean, action: () => void, interval: number) {
+	public toggleOptionInterval(
+		run: boolean,
+		action: () => void,
+		interval: number
+	) {
 		try {
 			if (run && !this.optionInterval) {
 				// Start a new interval timer and store its reference in the record
 				this.optionInterval = +setInterval(action, interval);
 			} else if (!run && this.optionInterval) {
 				// Clear the interval timer if it exists
+				console.log("clearing Interval", this.optionInterval);
 				clearInterval(this.optionInterval);
 				this.optionInterval = 0; // Reset the interval reference
 			}
@@ -155,12 +160,12 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	 * Toggles the option reading process. () => this.readDiagOptions() at 600ms pulses
 	 * @param run - Boolean True Only
 	 */
-	toggleOptionRun(run: boolean): void {
+	public toggleOptionRun(run: boolean): void {
 		this.toggleOptionInterval(run, () => this.readDiagOptions(), 600);
 		console.log("I am at option run");
 	}
 
-	readDiagOptions() {
+	private readDiagOptions() {
 		console.log("I am here");
 		// Capture the full RS screen
 		const diagboxcapture = a1lib.captureHoldFullRs();
@@ -351,7 +356,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 
 		this.displayBox();
 	}
-	readCapture() {
+	private readCapture() {
 		const diagboxcapture = a1lib.captureHoldFullRs();
 		const findReadOptions = this.diagReader.findOptions(diagboxcapture);
 		const readingOptions = this.diagReader.readOptions(
@@ -370,7 +375,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	 * Displays the overlay rectangle with a delay.
 	 * Uses setTimeout to stagger the timings and display each option.
 	 */
-	displayBox() {
+	private displayBox() {
 		// Get the keys of coordinateCounts
 		const keys = Object.keys(this.uniqueCoordinates);
 
@@ -459,7 +464,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	 * @returns The Levenshtein distance between the two strings.
 	 */
 
-	levenshteinDistance(a: string, b: string): number {
+	private levenshteinDistance(a: string, b: string): number {
 		const matrix: number[][] = [];
 
 		// Initialize matrix with 0-based index values
