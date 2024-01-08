@@ -117,7 +117,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	 * Retrieves the current state of the DiagReader.
 	 * @returns The current state as a 'change' event object.
 	 */
-	getCState(): readerEvents["change"] {
+	public getCState(): readerEvents["change"] {
 		console.log("Getting State");
 		return {
 			ReadOptionStart: () => this.readDiagOptions(),
@@ -141,6 +141,8 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 		action: () => void,
 		interval: number
 	) {
+		console.log("I am at option run interval");
+		console.log(run, action, interval);
 		try {
 			if (run && !this.optionInterval) {
 				console.log("I am here");
