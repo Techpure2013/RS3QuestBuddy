@@ -122,15 +122,288 @@
 		]
 	},
 	{
-		"name": "A Tail of Two Cats",
+		"name": "Bar Crawl Miniquest",
 		"images": [
-			"ATailofTwoCats.png",
-			"ATailofTwoCatsreward.png",
-			"BobsWanderRadius.png",
-			"Choppinghair.png",
-			"CuringUnferth.png",
-			"Talkingtosphinx.png"
+			"Bluemooninnloc.png",
+			"barmenbluemoon.png",
+			"jollyboarInnloc.png",
+			"bartenderjollyboar.png",
+			"barLocgnomestronghold.png",
+			"climbupladder.png",
+			"bartenderLoc.png",
+			"blurberrybartender.png",
+			"DragonInnLoc.png",
+			"bartenderdragoninn.png",
+			"FlyingHorseInnLoc.png",
+			"bartenderflyinghorseinn.png",
+			"Barlocationseersvillage.png",
+			"RisingSunFallyLoc.png",
+			"emilybartenderfally.png",
+			"deadmanschestloc.png",
+			"bartenderDeadMansChest.png",
+			"musapointbarloc.png",
+			"zambobartender.png",
+			"rustyanchorbarloc.png",
+			"bartenderrustyanchor.png"
 		]
+	},
+	{
+		"name": "Benedict's World Tour Miniquest",
+		"images": [
+			"PipeLocation.png",
+			"MonocleLoc.png",
+			"ToffeeAppleLoc.png",
+			"Package.png",
+			"foxpeltloc.png",
+			"CrystalLocation.png",
+			"SurgicalMaskLoc.png",
+			"ToyShipLoc.png",
+			"ScarfLoc.png",
+			"SweetsLoc.png",
+			"FootLoc.png",
+			"CinnimonLoc.png",
+			"FlaskOfTeaLoc.png",
+			"FrogburgerLoc.png",
+			"RawFishLikeThingLoc.png",
+			"MoneyPouchLoc.png"
+		]
+	},
+	{
+		"name": "Desert Slayer Dungeon Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Enter the Abyss Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Father and Son Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Helping Laniakea Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Hopespear's Will Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "The Hunt for Surok Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "In Memory of the Myreque Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Koschei's Troubles Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Lair of Tarn Razorlor Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "The Lost Toys Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Mahjarrat Memories Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "One Foot in the Grave Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Purple Cat Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Rebuilding Edgeville Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Sheep Shearer Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Tales of Nomad Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Tortle Combat Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Wandering Ga'al Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Witch's Potion Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Three's Company Saga",
+		"images": [""]
+	},
+	{
+		"name": "Vengeance Saga",
+		"images": [""]
+	},
+	{
+		"name": "Thok It To 'Em Saga",
+		"images": [""]
+	},
+	{
+		"name": "Nadir Saga",
+		"images": [""]
+	},
+	{
+		"name": "Thok Your Block Off Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Civil War I Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Civil War II Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Civil War III Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "The Curse of Zaros Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "The General's Shadow Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Tales of the God Wars Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Flag Fall Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Head of the Family Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Spiritual Enlightenment Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Jed Hunter Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Eye for an Eye Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Harbinger Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Tuai Leit's Own Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Ghosts from the Past Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Damage Control Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Final Destination Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "From Tiny Acorns Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Lost Her Marbles Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "A Guild of Our Own Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Boric's Task I Miniquest",
+		"images": [
+			"LocToBoric.png",
+			"LocationOfBoric.png",
+			"TalkToBoric.png",
+			"CoalTruckLocation.png",
+			"AgilityCheck.png",
+			"CoalTruckandMiner.png"
+		]
+	},
+	{
+		"name": "Boric's Task II Miniquest",
+		"images": [
+			"LocToBoric.png",
+			"LocationOfBoric.png",
+			"TalkToBoric.png",
+			"RockBrawler.png",
+			"LumbridgeMineLocation.png",
+			"LocationOfArdougneMine.png",
+			"AlkharidMine.png",
+			"AgilityPyrimidNWMineLoc.png",
+			"BrimhavenLocationMine.png"
+		]
+	},
+	{
+		"name": "Boric's Task III Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Doric's Task I Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Doric's Task II Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Doric's Task III Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Doric's Task IV Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Doric's Task V Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Doric's Task VI Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Doric's Task VII Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "Doric's Task VIII Miniquest",
+		"images": [""]
+	},
+	{
+		"name": "A Tail of Two Cats",
+		"images": ["BobsWanderRadius.png"]
 	},
 	{
 		"name": "A Void Dance",
