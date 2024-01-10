@@ -82,6 +82,21 @@ const QuestPage: React.FC = () => {
 			setViewImage(true);
 		}
 	};
+	// Inside your component
+	const carouselRef = useRef<HTMLDivElement | null>(null);
+
+	// Use useEffect to scroll when viewQuestImage is true
+	useEffect(() => {
+		if (viewQuestImage && carouselRef.current) {
+			carouselRef.current.scrollIntoView({ behavior: "smooth" });
+		} else {
+			// Scroll back to step references
+			const firstStepRef = stepRefs.current[0];
+			if (firstStepRef && firstStepRef.current) {
+				firstStepRef.current.scrollIntoView({ behavior: "smooth" });
+			}
+		}
+	}, [viewQuestImage]);
 	function copyStyle(
 		_from: Window,
 		to: Window,
@@ -300,6 +315,7 @@ const QuestPage: React.FC = () => {
 						slideSize="100%"
 						className="QuestPageImageCaro"
 						height={400}
+						ref={carouselRef}
 					>
 						{imageDetails.imageList.map((src, index) => (
 							<Carousel.Slide key={index}>
