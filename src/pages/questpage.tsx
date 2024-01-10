@@ -5,7 +5,6 @@ import {
 	Button,
 	Flex,
 	List,
-	//MantineProvider,
 	Stepper,
 	//TextInput,
 } from "@mantine/core";
@@ -29,7 +28,7 @@ import "@mantine/core/styles/Input.css";
 import "@mantine/core/styles/Flex.css";
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { Image } from "./ImageInterface.tsx";
-//import QuestControl from "./../pages/QuestControls.tsx";
+import QuestControl from "./../pages/QuestControls.tsx";
 import {
 	QuestImageFetcher,
 	UseImageStore,
@@ -43,11 +42,11 @@ import {
 	useQuestDetailsStore,
 } from "./../Fetchers/FetchQuestDetails.ts";
 import { useQuestControllerStore } from "./../Handlers/HandlerStore.ts";
-//import { createRoot } from "react-dom/client";
+import { createRoot } from "react-dom/client";
 import { DiagReader } from "./dialogsolver.tsx";
 import { Reader } from "./diagstartpage.tsx";
 //import { PlayerQuests } from "./../Handlers/PlayerFetch.ts";
-// import questimages from "./QuestImages";
+//import questimages from "./QuestImages";
 const QuestPage: React.FC = () => {
 	// State and variables
 	const qpname = useLocation();
@@ -61,51 +60,52 @@ const QuestPage: React.FC = () => {
 	const details = useQuestStepStore();
 	const imageDetails = UseImageStore();
 	const stepRefs = useRef<React.RefObject<HTMLDivElement>[]>([]);
-	const [viewQuestImage, setViewQuestImage] = useState(false);
+
 	const QuestDetails = useQuestDetailsStore.getState().questDetails;
-	const { showStepReq, buttonVisible, toggleShowStepReq } =
-		useQuestControllerStore();
-	//const handles = useQuestControllerStore();
+	const {
+		showStepReq,
+		buttonVisible,
+		toggleShowStepReq,
+		viewQuestImage,
+		setViewImage,
+	} = useQuestControllerStore();
+	const handles = useQuestControllerStore();
 	//const PlayerFetch = new PlayerQuests();
 
 	const handleBackButton = () => {
 		navigate("/");
 	};
 	const questImageVis = () => {
-		setViewQuestImage((prevState) => !prevState);
+		if (viewQuestImage === true) {
+			setViewImage(false);
+		} else {
+			setViewImage(true);
+		}
 	};
-	// function copyStyle(
-	// 	_from: Window,
-	// 	to: Window,
-	// 	node: HTMLStyleElement | HTMLLinkElement
-	// ): void {
-	// 	const doc: Document = to.document;
-
-	// 	if (node.tagName === "STYLE") {
-	// 		// If it's a style element, create a new style element
-	// 		const newStyle: HTMLStyleElement = doc.createElement("style");
-
-	// 		if (node.textContent) {
-	// 			newStyle.textContent = node.textContent;
-	// 		} else if ("innerText" in node && node.innerText) {
-	// 			newStyle.innerText = node.innerText;
-	// 		}
-
-	// 		doc.head.appendChild(newStyle);
-	// 	} else if (node.tagName === "LINK" && "rel" in node) {
-	// 		// If it's a link element, create a new link element
-	// 		const newLink: HTMLLinkElement = doc.createElement("link");
-
-	// 		if ("rel" in node) {
-	// 			newLink.rel = node.rel;
-	// 		}
-
-	// 		newLink.href = node.href;
-	// 		newLink.type = node.type;
-
-	// 		doc.head.appendChild(newLink);
-	// 	}
-	// }
+	function copyStyle(
+		_from: Window,
+		to: Window,
+		node: HTMLStyleElement | HTMLLinkElement
+	): void {
+		try {
+			const doc: Document = to.document;
+			console.log("Copying style/link:", node);
+			if (node.tagName === "STYLE") {
+				const newStyle: HTMLStyleElement = doc.createElement("style");
+				newStyle.textContent = node.textContent || "";
+				doc.head.appendChild(newStyle);
+			}
+			if (node.tagName === "LINK" && "rel" in node) {
+				const newLink: HTMLLinkElement = doc.createElement("link");
+				newLink.rel = node.rel || "";
+				newLink.href = node.href || "";
+				newLink.type = node.type || "";
+				doc.head.appendChild(newLink);
+			}
+		} catch (error) {
+			console.error("Error copying style:", error);
+		}
+	}
 	const scrollNext = (): void => {
 		const nextStep = active + 1;
 		scrollIntoView(nextStep);
@@ -123,80 +123,94 @@ const QuestPage: React.FC = () => {
 	};
 	const ShouldAllowStep = (step: number) =>
 		highestStepVisited >= step && active !== step;
-	// const handlePopOut = () => {
-	// 	if (handles.popOutWindow && !handles.popOutWindow.closed) {
-	// 		// If open, close the window
-	// 		handles.popOutWindow.close();
-	// 		handles.setPopOutWindow(null);
-	// 		handles.setButtonVisible(true); // Show the buttons again
-	// 		handles.setPopOutClicked(true);
-	// 	} else {
-	// 		// If not open, open a new browser window
-	// 		const newWindow = window.open("", "", "width=237,height=90");
-	// 		if (newWindow) {
-	// 			// Set the pop-out window and hide buttons in the current window
-	// 			handles.setPopOutWindow(newWindow);
-	// 			handles.setButtonVisible(false);
-	// 			handles.setPopOutClicked(false);
+	const handlePopOut = () => {
+		if (handles.popOutWindow && !handles.popOutWindow.closed) {
+			// If open, close the window
+			handles.popOutWindow.close();
+			handles.setPopOutWindow(null);
+			handles.setButtonVisible(true); // Show the buttons again
+			handles.setPopOutClicked(true);
+		} else {
+			const emptypage = "./emptypage.html";
+			var popid = "testpopup_" + Date.now();
+			let dpr = window.devicePixelRatio;
 
-	// 			// Render the QuestControls component into the new window
-	// 			const container: HTMLDivElement =
-	// 				newWindow.document.createElement("div");
-	// 			container.className = "ButtonGroupTwo";
-	// 			newWindow.document.body.appendChild(container);
-	// 			newWindow.document.title = "Quest Controls";
+			console.log(dpr);
+			// If not open, open a new browser window
+			const newWindow = window.open(
+				emptypage,
+				"promptbox" + popid,
+				`width=${Math.ceil(594 * dpr) + 1},height=${Math.ceil(90 * dpr) + 1}`
+			)!;
+			if (newWindow) {
+				// Set the pop-out window and hide buttons in the current window
+				handles.setPopOutWindow(newWindow);
+				handles.setButtonVisible(false);
+				handles.setPopOutClicked(false);
 
-	// 			// Set initial content for the new window
-	// 			const initialContentContainer = newWindow.document.createElement("div");
-	// 			initialContentContainer.id = "initialContentContainer";
-	// 			newWindow.document.body.appendChild(initialContentContainer);
-	// 			const domNode: any = newWindow.document.getElementById(
-	// 				"initialContentContainer"
-	// 			);
-	// 			const root = createRoot(domNode);
-	// 			const iconLink = newWindow.document.createElement("link");
-	// 			iconLink.rel = "icon";
-	// 			iconLink.href = "./src/assets/rs3buddyicon.png";
-	// 			newWindow.document.head.appendChild(iconLink);
+				newWindow.document.write("<!DOCTYPE html><head></head><body></body>");
+				// Render the QuestControls component into the new window
+				const container: HTMLDivElement =
+					newWindow.document.createElement("div");
+				container.className = "ButtonGroupTwo";
+				newWindow.document.body.appendChild(container);
+				newWindow.document.title = "Quest Controls";
+				container.style.backgroundImage = "./../assets/background.png";
+				// Set initial content for the new window
+				const initialContentContainer = newWindow.document.createElement("div");
+				initialContentContainer.id = "initialContentContainer";
+				newWindow.document.body.appendChild(initialContentContainer);
+				const domNode: any = newWindow.document.getElementById(
+					"initialContentContainer"
+				);
+				const root = createRoot(domNode);
+				const iconLink = newWindow.document.createElement("link");
+				iconLink.rel = "icon";
+				iconLink.href = "./src/assets/rs3buddyicon.png";
+				newWindow.document.head.appendChild(iconLink);
 
-	// 			// Function to copy styles from the original window to the new window
-	// 			function copyStyles(): void {
-	// 				const stylesheets: NodeListOf<HTMLStyleElement | HTMLLinkElement> =
-	// 					document.querySelectorAll('style, link[rel="stylesheet"]');
-	// 				const stylesheetsArray: HTMLStyleElement[] = Array.from(stylesheets);
+				// Function to copy styles from the original window to the new window
+				function copyStyles(): void {
+					try {
+						const stylesheets: NodeListOf<HTMLStyleElement | HTMLLinkElement> =
+							document.querySelectorAll('style, link[rel="stylesheet"]');
+						const stylesheetsArray: HTMLStyleElement[] =
+							Array.from(stylesheets);
 
-	// 				console.log("Copying styles:", stylesheetsArray);
+						console.log("Copying styles:", stylesheetsArray);
 
-	// 				stylesheetsArray.forEach(function (stylesheet: HTMLStyleElement) {
-	// 					copyStyle(window, newWindow!, stylesheet);
-	// 				});
+						stylesheetsArray.forEach(function (stylesheet: HTMLStyleElement) {
+							console.log("Copying stylesheet:", stylesheet);
+							copyStyle(window, newWindow!, stylesheet);
+						});
 
-	// 				const emotionStyles = document.querySelectorAll(
-	// 					"style[data-emotion]"
-	// 				);
-	// 				emotionStyles.forEach((style) => {
-	// 					const newEmotionStyle = document.createElement("style");
-	// 					newEmotionStyle.textContent = style.textContent;
-	// 					newWindow!.document.head.appendChild(newEmotionStyle);
-	// 				});
-	// 			}
+						const emotionStyles = document.querySelectorAll(
+							"style[data-emotion]"
+						);
+						emotionStyles.forEach((style) => {
+							const newEmotionStyle = document.createElement("style");
+							newEmotionStyle.textContent = style.textContent;
+							newWindow!.document.head.appendChild(newEmotionStyle);
+						});
+					} catch (error) {
+						console.error("Error copying styles:", error);
+					}
+				}
+				// Call the function to copy styles
+				copyStyles();
 
-	// 			// Call the function to copy styles
-	// 			copyStyles();
+				// Render QuestControls into the new window
 
-	// 			// Render QuestControls into the new window
-	// 			root.render(
-	// 				<MantineProvider>
-	// 					<QuestControl
-	// 						scrollNext={scrollNext}
-	// 						scrollPrev={scrollPrev}
-	// 						handleStepChange={setActiveAndScroll}
-	// 					/>
-	// 				</MantineProvider>
-	// 			);
-	// 		}
-	// 	}
-	// };
+				root.render(
+					<QuestControl
+						scrollNext={scrollNext}
+						scrollPrev={scrollPrev}
+						handleStepChange={setActiveAndScroll}
+					/>
+				);
+			}
+		}
+	};
 	const setActiveAndScroll = (nextStep: number) => {
 		if (nextStep >= 0 && nextStep < details.stepDetails.length) {
 			setActive(nextStep);
@@ -333,36 +347,51 @@ const QuestPage: React.FC = () => {
 				direction="column"
 				wrap="wrap"
 			>
-				{/* {buttonVisible ? (
-					<Button variant="outline" color="#EEF3FF" onClick={handlePopOut}>
-						Pop Out Quest Controls
-					</Button>
+				{buttonVisible ? (
+					<>
+						<Button variant="outline" color="#EEF3FF" onClick={handlePopOut}>
+							Pop Out Quest Controls
+						</Button>
+						<Button
+							variant="outline"
+							color="#EEF3FF"
+							onClick={handleBackButton}
+						>
+							Pick Another Quest
+						</Button>
+						<Button
+							variant="outline"
+							color="#EEF3FF"
+							onClick={() => {
+								questImageVis();
+							}}
+						>
+							View Quest Images
+						</Button>
+					</>
 				) : (
 					<Button variant="outline" color="#EEF3FF" onClick={handlePopOut}>
 						Pop In Quest Controls
 					</Button>
-				)} */}
-				<Button variant="outline" color="#EEF3FF" onClick={handleBackButton}>
-					Pick Another Quest
-				</Button>
-				<Button
-					variant="outline"
-					color="#EEF3FF"
-					onClick={() => {
-						questImageVis();
-					}}
-				>
-					View Quest Images
-				</Button>
-				{showStepReq ? (
-					<Button variant="outline" color="#EEF3FF" onClick={toggleShowStepReq}>
-						Show Step Details
-					</Button>
-				) : (
-					<Button variant="outline" color="#EEF3FF" onClick={toggleShowStepReq}>
-						Show Quest Details
-					</Button>
 				)}
+				{buttonVisible && // Add the NOT (!) operator here to hide the button when buttonVisible is true
+					(showStepReq ? (
+						<Button
+							variant="outline"
+							color="#EEF3FF"
+							onClick={toggleShowStepReq}
+						>
+							Show Step Details
+						</Button>
+					) : (
+						<Button
+							variant="outline"
+							color="#EEF3FF"
+							onClick={toggleShowStepReq}
+						>
+							Show Quest Details
+						</Button>
+					))}
 			</Flex>
 			{showStepReq && Array.isArray(QuestDetails) ? (
 				<Accordion

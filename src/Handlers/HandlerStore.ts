@@ -15,13 +15,24 @@ interface QuestControllerStore {
 	toggleShowControlPopOut: () => void;
 	showAccordian: boolean;
 	toggleAccordian: () => void;
-	findDialogBoxTimer: NodeJS.Timeout | null;
-	setFindDialogBoxTimer: (timer: NodeJS.Timeout | null) => void;
+	highestStep: number;
+	currentActive: number;
+	htmlID: HTMLElement | null;
+	viewQuestImage: boolean;
+	setViewImage: (visible: boolean) => void;
+	questImageVis: () => void;
 }
 
 export const useQuestControllerStore = create<QuestControllerStore>((set) => ({
-	findDialogBoxTimer: null,
-	setFindDialogBoxTimer: (timer) => set({ findDialogBoxTimer: timer }),
+	questImageVis: () => {
+		set((state) => ({
+			viewQuestImage: !state.viewQuestImage,
+		}));
+	},
+	setViewImage: (visible) => set({ viewQuestImage: visible }),
+	viewQuestImage: false,
+	htmlID: null,
+	currentActive: 0,
 	popOutWindow: null,
 	showAccordian: false,
 	buttonVisible: true,
@@ -40,4 +51,5 @@ export const useQuestControllerStore = create<QuestControllerStore>((set) => ({
 		set((state) => ({ showControlPopOut: !state.showControlPopOut })),
 	toggleAccordian: () =>
 		set((state) => ({ showControlPopOut: !state.showControlPopOut })),
+	highestStep: 0,
 }));
