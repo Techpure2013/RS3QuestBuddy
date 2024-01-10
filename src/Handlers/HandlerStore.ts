@@ -17,7 +17,7 @@ interface QuestControllerStore {
 	toggleAccordian: () => void;
 	highestStep: number;
 	currentActive: number;
-	htmlID: HTMLElement | null;
+
 	viewQuestImage: boolean;
 	setViewImage: (visible: boolean) => void;
 	questImageVis: () => void;
