@@ -14,7 +14,6 @@ export const AltGuard = () => {
 			<div className="App">
 				<h1>ALT1 not found</h1>
 				<p>
-					Click{" "}
 					<a
 						href={`alt1://addapp/${window.location.protocol}//${
 							window.location.host
@@ -28,9 +27,10 @@ export const AltGuard = () => {
 								: ""
 						}.json`}
 					>
-						here
-					</a>{" "}
-					to add this to alt1
+						<Button className="Alt1Button" variant="outline">
+							Click here to add this to alt1
+						</Button>
+					</a>
 				</p>
 
 				<Button
@@ -38,7 +38,7 @@ export const AltGuard = () => {
 					variant="outline"
 					onClick={() => setOverride(true)}
 				>
-					Continue to RS3 Quest Buddy
+					Continue to RS3 Quest Buddy Web (No Alt1)
 				</Button>
 			</div>
 		</>

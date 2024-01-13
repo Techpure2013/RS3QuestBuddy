@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { AltGuard } from "./alt1.tsx";
+import "@mantine/core/styles.css";
 import "@mantine/carousel/styles.css";
 import "@mantine/core/styles/UnstyledButton.css";
 import "@mantine/core/styles/Button.css";

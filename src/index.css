@@ -2,6 +2,30 @@
 	font-family: rs3Font;
 	src: url("/fonts/RS3Bold.woff2");
 }
+.ApplySkillsButton {
+	left: 5px;
+}
+.RefreshButton {
+	left: 10px;
+}
+.SortButton,
+.RefreshButton,
+.ApplySkillsButton {
+	margin-top: 6px;
+	size: 20px;
+}
+.SearchContainer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.SearchQuest {
+	width: 50%;
+}
+
+.PlayerSearch {
+	width: 50%;
+}
 .flexedButtons {
 	display: flex;
 	bottom: 30px; /* Adjust as needed */
@@ -48,26 +72,13 @@
 	background-color: ;
 }
 
-TextInput {
-	text-align: center;
-	margin-top: 10px; /* Adjust the margin-top as needed */
-	color: #4e85bc;
-	background: linear-gradient(
-		to bottom,
-		#546576,
-		#3d4b5a,
-		#2c3742,
-		#1e2832,
-		#141b23,
-		#0c1117
-	);
-}
-
 .caroQTitle {
+	color: #4e85bc;
 	text-align: center;
 	top: 50px;
 }
 .caroContainer {
+	top: 10px;
 	font-family: rs3Font;
 	text-align: center;
 	cursor: pointer;
@@ -162,24 +173,16 @@ img.enlarged {
 	font-size: 25px;
 }
 .QuestPageImageCaro {
-	z-index: 1;
+	z-index: 10;
 }
 .custom-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	height: 50vh;
+	width: 50vh;
 }
 
-.mantine-TextInput-wrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.mantine-TextInput-input {
-	text-align: center;
-	width: 25rem;
-}
 .flexGroup,
 .qpTitle {
 }

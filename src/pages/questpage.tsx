@@ -60,8 +60,9 @@ const QuestPage: React.FC = () => {
 	const details = useQuestStepStore();
 	const imageDetails = UseImageStore();
 	const stepRefs = useRef<React.RefObject<HTMLDivElement>[]>([]);
-
+	const [completedQuests, setCompleteQuests] = useState<string[] | null>(null);
 	const QuestDetails = useQuestDetailsStore.getState().questDetails;
+	const [skillLevels, setSkillLevels] = useState<string[]>([]);
 	const {
 		showStepReq,
 		buttonVisible,
@@ -286,7 +287,29 @@ const QuestPage: React.FC = () => {
 			React.createRef()
 		);
 	}, [details.stepDetails.length]);
-
+	useEffect(() => {
+		const completedQuests = sessionStorage.getItem("hasCompleted");
+		const skill = sessionStorage.getItem("skillLevels");
+		if (completedQuests !== null && skill !== null) {
+			const parsedQuests = JSON.parse(completedQuests);
+			const parsedSkills = JSON.parse(skill);
+			if (
+				parsedQuests !== null &&
+				typeof parsedQuests === "object" &&
+				Array.isArray(parsedQuests) &&
+				parsedSkills !== null &&
+				typeof parsedSkills === "object" &&
+				Array.isArray(parsedSkills)
+			) {
+				setCompleteQuests(parsedQuests);
+				setSkillLevels(parsedSkills);
+			} else {
+				console.error("Invalid or non-array data in sessionStorage");
+			}
+		} else {
+			console.error("No data found in sessionStorage");
+		}
+	}, []);
 	return (
 		<>
 			<QuestImageFetcher
@@ -325,12 +348,7 @@ const QuestPage: React.FC = () => {
 					</Carousel>
 				</>
 			)}
-			{/* <TextInput
-				className="customInput"
-				label="Search for Quest"
-				placeholder="Type in a quest"
-				onKeyDown={handlePlayerName}
-			/> */}
+
 			{buttonVisible && (
 				<Flex className="prevNextGroup" gap="sm">
 					<Button
@@ -439,12 +457,76 @@ const QuestPage: React.FC = () => {
 													(requirement, requirementIndex) => {
 														// Combine questIndex and requirementIndex to create a unique key
 														const uniqueKey = `${questIndex}-${requirementIndex}`;
+														const hasSkill = skillLevels.some((value) => {
+															const splitValue = value.split(" ");
+															const isNumber = !isNaN(
+																parseFloat(splitValue[0])
+															);
+															const reqStr = requirement.split(" ");
+															const isReqNum = !isNaN(parseFloat(reqStr[0]));
 
+															if (isNumber && isReqNum) {
+																const numberPart = parseInt(splitValue[0]);
+																const requirementNumber = parseInt(reqStr[0]);
+
+																// Compare the extracted number
+																return numberPart > requirementNumber;
+															}
+
+															return false;
+														});
+														const needMort =
+															requirement === "Ability to enter Morytania";
+														let abilityToEnterMort = false;
+														if (needMort) {
+															const hasPriestInPeril =
+																completedQuests &&
+																completedQuests.some((value) => {
+																	if (
+																		value &&
+																		typeof value === "object" &&
+																		"title" in value &&
+																		value !== null
+																	) {
+																		return (
+																			(value as { title?: string }).title ===
+																			"Priest in Peril"
+																		);
+																	}
+																	return false;
+																});
+															if (hasPriestInPeril) {
+																abilityToEnterMort = true;
+															}
+														}
+														const isComplete =
+															completedQuests &&
+															completedQuests.some((value) => {
+																if (
+																	value &&
+																	typeof value === "object" &&
+																	"title" in value &&
+																	value !== null
+																) {
+																	return (
+																		(value as { title?: string }).title ===
+																		requirement
+																	);
+																}
+																return false;
+															});
 														return (
 															<li
 																key={uniqueKey}
 																style={{
 																	display: "block",
+																	color: abilityToEnterMort
+																		? "green"
+																		: hasSkill
+																		? "green"
+																		: isComplete
+																		? "green"
+																		: "red",
 																}}
 															>
 																{"- "}

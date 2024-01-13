@@ -58,6 +58,7 @@ export const QuestImageFetcher: React.FC<QuestImageType> = ({
 					? [
 							`./Images/${questName
 								.trim()
+								.toLowerCase()
 								.replace(":", "")}/${filteredImages[0].trim()}`,
 					  ]
 					: filteredImages
