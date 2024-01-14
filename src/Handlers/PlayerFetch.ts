@@ -62,17 +62,21 @@ export class PlayerQuests {
 		this.getDifficulty = this.getDifficulty.bind(this);
 		this.getQuestPoints = this.getQuestPoints.bind(this);
 	}
-	private api_url: string = "https://apps.runescape.com/runemetrics/quests";
+	private url =
+		"https://corsproxy.io/?" +
+		encodeURIComponent("https://apps.runescape.com/runemetrics/quests");
+	private url2 =
+		"https://corsproxy.io/?" +
+		encodeURIComponent(
+			"https://secure.runescape.com/m=hiscore/index_lite.ws?player="
+		);
+	//private api_url: string = "https://apps.runescape.com/runemetrics/quests";
 	//private api_LocaltoPublicCOR: string = "https://cors-anywhere.herokuapp.com/"; //Disable or Comment out for Production
 	//private api_LocaltoPublicCOR: string = "https://raw.githubusercontent.com/";
-	private api_url3: string =
-		"https://secure.runescape.com/m=hiscore/index_lite.ws?player=";
+	//private api_url3: string =
+	//g"https://secure.runescape.com/m=hiscore/index_lite.ws?player=";
 	public async fetchPlayerInfo(playername: string) {
-		let response = await fetch(`${this.api_url}?user=${playername}`, {
-			headers: {
-				"Access-Control-Allow-Origin": "*", // Set the appropriate origin or use '*' for any origin
-			},
-		});
+		let response = await fetch(this.url + `?user=${playername}`);
 
 		if (!response.ok) {
 			throw new Error(`Failed to fetch player info: ${response.status}`);
@@ -144,11 +148,7 @@ export class PlayerQuests {
 	}
 	public async fetchPlayerSkills(playername: string): Promise<String[]> {
 		try {
-			let response = await fetch(`${this.api_url3}${playername}`, {
-				headers: {
-					"Access-Control-Allow-Origin": "*", // Set the appropriate origin or use '*' for any origin
-				},
-			});
+			let response = await fetch(this.url2 + `${playername}`);
 
 			if (!response.ok) {
 				throw new Error(`Failed to fetch player info: ${response.status}`);
