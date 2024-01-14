@@ -521,12 +521,12 @@ const QuestPage: React.FC = () => {
 																style={{
 																	display: "block",
 																	color: abilityToEnterMort
-																		? "green"
+																		? "#24BF58" //Green
 																		: hasSkill
-																		? "green"
+																		? "#24BF58" //Green
 																		: isComplete
-																		? "green"
-																		: "red",
+																		? "#24BF58" //Green
+																		: "#C64340", // Red
 																}}
 															>
 																{"- "}

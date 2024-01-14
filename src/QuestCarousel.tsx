@@ -29,6 +29,7 @@ const QuestCarousel: React.FC = () => {
 	const filteredQuests = questList.filter((quest) =>
 		quest.toLowerCase().includes(searchQuery.toLowerCase())
 	);
+	const [skillsApplied, setSkillsApplied] = useState(false);
 	const filteredRemainingQuests = sorted
 		? remainingQuests!.filter((quest) =>
 				quest.toLowerCase().includes(searchQuery.toLowerCase())
@@ -88,7 +89,9 @@ const QuestCarousel: React.FC = () => {
 					<div
 						className="caroQTitle"
 						aria-label={`Navigate to ${quest}`}
-						style={{ color: playerFound ? "#54B46F" : "#4e85bc" }}
+						style={{
+							color: sorted ? "#BF2930" : playerFound ? "#54B46F" : "#4e85bc",
+						}}
 					>
 						{quest}
 						<img src={questImage} alt="Reward" aria-hidden="true" />
@@ -114,6 +117,7 @@ const QuestCarousel: React.FC = () => {
 	};
 	const applySkills = () => {
 		rsSorter.sortCompletedQuests(rsUserQuestProfile);
+		setSkillsApplied(true);
 	};
 	useEffect(() => {
 		const remainQuests = sessionStorage.getItem("remainingQuests");
@@ -131,8 +135,9 @@ const QuestCarousel: React.FC = () => {
 				setQuestPoints(qpoint);
 				setReturningPName(player);
 				setRemainingQuests(parsedQuests);
-				setPlayerFound(true);
 				setAlreadySorted(true);
+				setPlayerFound(true);
+				applySkills();
 				sort();
 			} else {
 				console.warn("Invalid or non-array data in sessionStorage");
@@ -140,7 +145,7 @@ const QuestCarousel: React.FC = () => {
 		} else {
 			console.warn("No data found in sessionStorage");
 		}
-	}, [sorted]);
+	}, [sorted, skillsApplied]);
 	return (
 		<>
 			<QuestListFetcher questlist="./questlist.txt" />
@@ -202,17 +207,20 @@ const QuestCarousel: React.FC = () => {
 						Sort Out Completed Quests
 					</Button>
 				)}
-				<Button
-					className="ApplySkillsButton"
-					variant="outline"
-					color="#EEF3FF"
-					onClick={() => {
-						applySkills();
-					}}
-					disabled={playerFound ? false : true}
-				>
-					Apply Skills Dont Sort
-				</Button>
+				{!skillsApplied && (
+					<Button
+						className="ApplySkillsButton"
+						variant="outline"
+						color="#EEF3FF"
+						onClick={() => {
+							applySkills();
+						}}
+						disabled={playerFound ? false : true}
+					>
+						Apply Skills Dont Sort
+					</Button>
+				)}
+
 				<Button
 					className="RefreshButton"
 					variant="outline"

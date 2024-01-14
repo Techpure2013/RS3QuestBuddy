@@ -4,6 +4,8 @@ export class rsQuestSorter {
 	private remainingQuests: string[] = [];
 	constructor() {
 		this.sortNotStartedQuests = this.sortNotStartedQuests.bind(this);
+		this.sortCompletedQuests = this.sortCompletedQuests.bind(this);
+		this.remainingQuests = this.remainingQuests;
 	}
 
 	public sortNotStartedQuests(playerInfo: PlayerQuestInfo[]): string[] {
