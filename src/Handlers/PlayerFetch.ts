@@ -64,13 +64,16 @@ export class PlayerQuests {
 	}
 	private api_url: string = "https://apps.runescape.com/runemetrics/quests";
 	//private api_LocaltoPublicCOR: string = "https://cors-anywhere.herokuapp.com/"; //Disable or Comment out for Production
-	private api_LocaltoPublicCOR: string = "https://raw.githubusercontent.com/";
+	//private api_LocaltoPublicCOR: string = "https://raw.githubusercontent.com/";
 	private api_url3: string =
 		"https://secure.runescape.com/m=hiscore/index_lite.ws?player=";
 	public async fetchPlayerInfo(playername: string) {
-		let response = await fetch(
-			`${this.api_LocaltoPublicCOR}${this.api_url}?user=${playername}`
-		);
+		let response = await fetch(`${this.api_url}?user=${playername}`, {
+			mode: "cors",
+			headers: {
+				"Access-Control-Allow-Origin": "*", // Set the appropriate origin or use '*' for any origin
+			},
+		});
 
 		if (!response.ok) {
 			throw new Error(`Failed to fetch player info: ${response.status}`);
@@ -142,9 +145,12 @@ export class PlayerQuests {
 	}
 	public async fetchPlayerSkills(playername: string): Promise<String[]> {
 		try {
-			let response = await fetch(
-				`${this.api_LocaltoPublicCOR}${this.api_url3}${playername}`
-			);
+			let response = await fetch(`${this.api_url3}${playername}`, {
+				mode: "cors",
+				headers: {
+					"Access-Control-Allow-Origin": "*", // Set the appropriate origin or use '*' for any origin
+				},
+			});
 
 			if (!response.ok) {
 				throw new Error(`Failed to fetch player info: ${response.status}`);
