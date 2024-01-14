@@ -63,7 +63,7 @@ export class PlayerQuests {
 		this.getQuestPoints = this.getQuestPoints.bind(this);
 	}
 	private api_url: string = "https://apps.runescape.com/runemetrics/quests";
-	private api_LocaltoPublicCOR: string = "https://cors-anywhere.herokuapp.com/"; //Disable or Comment out for Production
+	//private api_LocaltoPublicCOR: string = "https://cors-anywhere.herokuapp.com/"; //Disable or Comment out for Production
 	//private api_LocaltoPublicCOR: string = "https://raw.githubusercontent.com/";
 	private api_url3: string =
 		"https://secure.runescape.com/m=hiscore/index_lite.ws?player=";
