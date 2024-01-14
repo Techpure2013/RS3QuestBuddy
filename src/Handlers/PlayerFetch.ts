@@ -70,7 +70,7 @@ export class PlayerQuests {
 	public async fetchPlayerInfo(playername: string) {
 		let response = await fetch(`${this.api_url}?user=${playername}`, {
 			headers: {
-				"Access-Control-Allow-Origin": "https://raw.githubusercontent.com/", // Set the appropriate origin or use '*' for any origin
+				"Access-Control-Allow-Origin": "*", // Set the appropriate origin or use '*' for any origin
 			},
 		});
 
@@ -146,7 +146,7 @@ export class PlayerQuests {
 		try {
 			let response = await fetch(`${this.api_url3}${playername}`, {
 				headers: {
-					"Access-Control-Allow-Origin": "https://raw.githubusercontent.com/", // Set the appropriate origin or use '*' for any origin
+					"Access-Control-Allow-Origin": "*", // Set the appropriate origin or use '*' for any origin
 				},
 			});
 
