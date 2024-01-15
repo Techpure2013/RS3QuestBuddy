@@ -27,10 +27,6 @@
 	width: 50%;
 }
 .flexedButtons {
-	display: flex;
-	bottom: 30px; /* Adjust as needed */
-	margin-bottom: 20px; /* Add margin to create space */
-	z-index: 1; /* Set a higher z-index if needed */
 }
 .mantine-Stepper-stepDescription {
 	color: #575757;
@@ -39,7 +35,7 @@
 	font: rs3Font;
 	display: block;
 	width: 60vh;
-	z-index: 0; /* Set a lower z-index to ensure it stays behind other elements */
+	z-index: 10; /* Set a lower z-index to ensure it stays behind other elements */
 }
 .mantine-List-root {
 	list-style-type: none;
@@ -112,20 +108,19 @@ img.enlarged {
     gap: 10px;
 } */
 .ButtonGroupTwo {
-	position: fixed;
-	top: 30px;
-	left: 2%;
-	display: flex;
+	justify-content: flex-start;
+	right: 20px;
 	gap: 10px;
 }
 /* Save this buttons class for later use maybe */
 .prevNextGroup {
 	position: fixed;
-	top: 17.5%; /* Adjust as needed */
-	left: 60%; /* Center horizontally */
-	display: block;
-	gap: 10px;
-	z-index: 0;
+	float: left;
+	display: flex;
+	bottom: 0;
+	left: auto;
+	right: 10px;
+	z-index: 1;
 }
 .mantine-Button-root {
 	font-size: 16px;
@@ -141,7 +136,8 @@ img.enlarged {
 	color: #4e85bc;
 }
 .mantine-Stepper-stepDescription {
-	width: 60vh;
+	justify-content: flex-start;
+	width: auto;
 	font-family: rs3Font;
 	font-size: 15px;
 	color: #4e85bc;
@@ -175,6 +171,10 @@ img.enlarged {
 .QuestPageImageCaro {
 	z-index: 10;
 }
+.autoPad1,
+.autoPad2 {
+	padding-top: 20px;
+}
 .custom-container {
 	display: flex;
 	flex-direction: column;
@@ -183,6 +183,9 @@ img.enlarged {
 	width: 50vh;
 }
 
+body {
+	padding-bottom: 600px;
+}
 .flexGroup,
 .qpTitle {
 }
@@ -191,9 +194,6 @@ html,
 #root {
 	background-image: url("./assets/background.png");
 	font-family: rs3Font;
-	padding: 0px;
-	margin: 0px;
-	height: 100%;
 }
 h2 {
 	text-align: center;

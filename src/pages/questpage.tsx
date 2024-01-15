@@ -146,14 +146,12 @@ const QuestPage: React.FC = () => {
 		} else {
 			const emptypage = "./emptypage.html";
 			var popid = "testpopup_" + Date.now();
-			let dpr = window.devicePixelRatio;
 
-			console.log(dpr);
 			// If not open, open a new browser window
 			const newWindow = window.open(
 				emptypage,
 				"promptbox" + popid,
-				`width=${Math.ceil(594 * dpr) + 1},height=${Math.ceil(90 * dpr) + 1}`
+				"width=594, height=100"
 			)!;
 			if (newWindow) {
 				// Set the pop-out window and hide buttons in the current window
@@ -215,16 +213,20 @@ const QuestPage: React.FC = () => {
 				// Render QuestControls into the new window
 
 				root.render(
-					<QuestControl
-						scrollNext={scrollNext}
-						scrollPrev={scrollPrev}
-						handleStepChange={setActiveAndScroll}
-					/>
+					<>
+						<QuestControl
+							scrollNext={scrollNext}
+							scrollPrev={scrollPrev}
+							handleStepChange={setActiveAndScroll}
+						/>
+						<div className="autoPad1"></div>
+						<div className="autoPad2"></div>
+					</>
 				);
 			}
 		}
 	};
-	const setActiveAndScroll = (nextStep: number) => {
+	const setActiveAndScroll = (nextStep: number): void => {
 		if (nextStep >= 0 && nextStep < details.stepDetails.length) {
 			setActive(nextStep);
 			setHighestStepVisited((hSC) => Math.max(hSC, nextStep));
@@ -425,58 +427,79 @@ const QuestPage: React.FC = () => {
 					))}
 			</Flex>
 			{showStepReq && Array.isArray(QuestDetails) ? (
-				<Accordion
-					defaultValue=""
-					chevron={
-						<Image
-							src={QuestIcon}
-							alt="Quest Icon"
-							width="20px"
-							height="20px"
-						/>
-					}
-				>
-					<Accordion.Item key={1} value="Click to Show Quest Requirements">
-						<Accordion.Control
-							styles={{
-								control: { color: "#4e85bc" },
-							}}
-						>
-							Requirements
-						</Accordion.Control>
-						<Accordion.Panel>
-							<div>
-								<ul>
-									{QuestDetails.map((quest, questIndex) => {
-										return (
-											<React.Fragment key={questIndex}>
-												{quest.Requirements.map(
-													(requirement, requirementIndex) => {
-														// Combine questIndex and requirementIndex to create a unique key
-														const uniqueKey = `${questIndex}-${requirementIndex}`;
-														const hasSkill = skillLevels.some((value) => {
-															const splitValue = value.split(" ");
-															const isNumber = !isNaN(
-																parseFloat(splitValue[0])
-															);
-															const reqStr = requirement.split(" ");
-															const isReqNum = !isNaN(parseFloat(reqStr[0]));
+				<>
+					<Accordion
+						defaultValue=""
+						chevron={
+							<Image
+								src={QuestIcon}
+								alt="Quest Icon"
+								width="20px"
+								height="20px"
+							/>
+						}
+					>
+						<Accordion.Item key={1} value="Click to Show Quest Requirements">
+							<Accordion.Control
+								styles={{
+									control: { color: "#4e85bc" },
+								}}
+							>
+								Requirements
+							</Accordion.Control>
+							<Accordion.Panel>
+								<div>
+									<ul>
+										{QuestDetails.map((quest, questIndex) => {
+											return (
+												<React.Fragment key={questIndex}>
+													{quest.Requirements.map(
+														(requirement, requirementIndex) => {
+															// Combine questIndex and requirementIndex to create a unique key
+															const uniqueKey = `${questIndex}-${requirementIndex}`;
+															const hasSkill = skillLevels.some((value) => {
+																const splitValue = value.split(" ");
+																const isNumber = !isNaN(
+																	parseFloat(splitValue[0])
+																);
+																const reqStr = requirement.split(" ");
+																const isReqNum = !isNaN(parseFloat(reqStr[0]));
 
-															if (isNumber && isReqNum) {
-																const numberPart = parseInt(splitValue[0]);
-																const requirementNumber = parseInt(reqStr[0]);
+																if (isNumber && isReqNum) {
+																	const numberPart = parseInt(splitValue[0]);
+																	const requirementNumber = parseInt(reqStr[0]);
 
-																// Compare the extracted number
-																return numberPart > requirementNumber;
+																	// Compare the extracted number
+																	return numberPart > requirementNumber;
+																}
+
+																return false;
+															});
+															const needMort =
+																requirement === "Ability to enter Morytania";
+															let abilityToEnterMort = false;
+															if (needMort) {
+																const hasPriestInPeril =
+																	completedQuests &&
+																	completedQuests.some((value) => {
+																		if (
+																			value &&
+																			typeof value === "object" &&
+																			"title" in value &&
+																			value !== null
+																		) {
+																			return (
+																				(value as { title?: string }).title ===
+																				"Priest in Peril"
+																			);
+																		}
+																		return false;
+																	});
+																if (hasPriestInPeril) {
+																	abilityToEnterMort = true;
+																}
 															}
-
-															return false;
-														});
-														const needMort =
-															requirement === "Ability to enter Morytania";
-														let abilityToEnterMort = false;
-														if (needMort) {
-															const hasPriestInPeril =
+															const isComplete =
 																completedQuests &&
 																completedQuests.some((value) => {
 																	if (
@@ -487,226 +510,213 @@ const QuestPage: React.FC = () => {
 																	) {
 																		return (
 																			(value as { title?: string }).title ===
-																			"Priest in Peril"
+																			requirement
 																		);
 																	}
 																	return false;
 																});
-															if (hasPriestInPeril) {
-																abilityToEnterMort = true;
-															}
+															return (
+																<li
+																	key={uniqueKey}
+																	style={{
+																		display: "block",
+																		color: abilityToEnterMort
+																			? "#24BF58" //Green
+																			: hasSkill
+																			? "#24BF58" //Green
+																			: isComplete
+																			? "#24BF58" //Green
+																			: "#C64340", // Red
+																	}}
+																>
+																	{"- "}
+																	{requirement}
+																</li>
+															);
 														}
-														const isComplete =
-															completedQuests &&
-															completedQuests.some((value) => {
-																if (
-																	value &&
-																	typeof value === "object" &&
-																	"title" in value &&
-																	value !== null
-																) {
-																	return (
-																		(value as { title?: string }).title ===
-																		requirement
-																	);
-																}
-																return false;
-															});
+													)}
+												</React.Fragment>
+											);
+										})}
+									</ul>
+								</div>
+							</Accordion.Panel>
+						</Accordion.Item>
+						<Accordion.Item key={2} value="Click to Show Start Point">
+							<Accordion.Control
+								className="AccordianControl"
+								styles={{
+									control: { color: "#4e85bc" },
+								}}
+							>
+								Start Point
+							</Accordion.Control>
+							<Accordion.Panel>
+								<div>
+									{QuestDetails.map((value) => {
+										return value.StartPoint;
+									})}
+								</div>
+							</Accordion.Panel>
+						</Accordion.Item>
+						<Accordion.Item key={3} value="Members Or Not">
+							<Accordion.Control
+								className="AccordianControl"
+								styles={{
+									control: { color: "#4e85bc" },
+								}}
+							>
+								Is This a Members Quest?
+							</Accordion.Control>
+							<Accordion.Panel>
+								<div>
+									{QuestDetails.map((value) => {
+										return value.MemberRequirement;
+									})}
+								</div>
+							</Accordion.Panel>
+						</Accordion.Item>
+						<Accordion.Item key={4} value="Official Length of Quest">
+							<Accordion.Control
+								className="AccordianControl"
+								styles={{
+									control: { color: "#4e85bc" },
+								}}
+							>
+								How Long is This Quest?
+							</Accordion.Control>
+							<Accordion.Panel>
+								<div>
+									{QuestDetails.map((value) => {
+										return value.OfficialLength;
+									})}
+								</div>
+							</Accordion.Panel>
+						</Accordion.Item>
+						<Accordion.Item key={5} value="Items Required">
+							<Accordion.Control
+								className="AccordianControl"
+								styles={{
+									control: { color: "#4e85bc" },
+								}}
+							>
+								Items You Definitely Need
+							</Accordion.Control>
+							<Accordion.Panel>
+								<div>
+									<List listStyleType="none">
+										{QuestDetails.map((quest, questIndex) => {
+											return (
+												<React.Fragment key={questIndex}>
+													{quest.ItemsRequired.map((item, itemIndex) => {
+														// Combine questIndex and itemIndex to create a unique key
+														const uniqueKey = `${questIndex}-${itemIndex}`;
+
 														return (
-															<li
-																key={uniqueKey}
-																style={{
-																	display: "block",
-																	color: abilityToEnterMort
-																		? "#24BF58" //Green
-																		: hasSkill
-																		? "#24BF58" //Green
-																		: isComplete
-																		? "#24BF58" //Green
-																		: "#C64340", // Red
-																}}
-															>
+															<List.Item key={uniqueKey}>
 																{"- "}
-																{requirement}
-															</li>
+																{item}
+															</List.Item>
 														);
-													}
-												)}
-											</React.Fragment>
-										);
-									})}
-								</ul>
-							</div>
-						</Accordion.Panel>
-					</Accordion.Item>
-					<Accordion.Item key={2} value="Click to Show Start Point">
-						<Accordion.Control
-							className="AccordianControl"
-							styles={{
-								control: { color: "#4e85bc" },
-							}}
-						>
-							Start Point
-						</Accordion.Control>
-						<Accordion.Panel>
-							<div>
-								{QuestDetails.map((value) => {
-									return value.StartPoint;
-								})}
-							</div>
-						</Accordion.Panel>
-					</Accordion.Item>
-					<Accordion.Item key={3} value="Members Or Not">
-						<Accordion.Control
-							className="AccordianControl"
-							styles={{
-								control: { color: "#4e85bc" },
-							}}
-						>
-							Is This a Members Quest?
-						</Accordion.Control>
-						<Accordion.Panel>
-							<div>
-								{QuestDetails.map((value) => {
-									return value.MemberRequirement;
-								})}
-							</div>
-						</Accordion.Panel>
-					</Accordion.Item>
-					<Accordion.Item key={4} value="Official Length of Quest">
-						<Accordion.Control
-							className="AccordianControl"
-							styles={{
-								control: { color: "#4e85bc" },
-							}}
-						>
-							How Long is This Quest?
-						</Accordion.Control>
-						<Accordion.Panel>
-							<div>
-								{QuestDetails.map((value) => {
-									return value.OfficialLength;
-								})}
-							</div>
-						</Accordion.Panel>
-					</Accordion.Item>
-					<Accordion.Item key={5} value="Items Required">
-						<Accordion.Control
-							className="AccordianControl"
-							styles={{
-								control: { color: "#4e85bc" },
-							}}
-						>
-							Items You Definitely Need
-						</Accordion.Control>
-						<Accordion.Panel>
-							<div>
-								<List listStyleType="none">
-									{QuestDetails.map((quest, questIndex) => {
-										return (
-											<React.Fragment key={questIndex}>
-												{quest.ItemsRequired.map((item, itemIndex) => {
-													// Combine questIndex and itemIndex to create a unique key
-													const uniqueKey = `${questIndex}-${itemIndex}`;
+													})}
+												</React.Fragment>
+											);
+										})}
+									</List>
+								</div>
+							</Accordion.Panel>
+						</Accordion.Item>
+						<Accordion.Item key={6} value="Recommended">
+							<Accordion.Control
+								className="AccordianControl"
+								title="Items You Might Need"
+								styles={{
+									control: { color: "#4e85bc" },
+								}}
+							>
+								Items You Might Need
+							</Accordion.Control>
+							<Accordion.Panel>
+								<div>
+									<List listStyleType="none">
+										{QuestDetails.map((quest, questIndex) => {
+											return (
+												<React.Fragment key={questIndex}>
+													{quest.Recommended.map((item, itemIndex) => {
+														// Combine questIndex and itemIndex to create a unique key
+														const uniqueKey = `${questIndex}-${itemIndex}`;
 
+														return (
+															<List.Item key={uniqueKey}>
+																{"- "}
+																{item}
+															</List.Item>
+														);
+													})}
+												</React.Fragment>
+											);
+										})}
+									</List>
+								</div>
+							</Accordion.Panel>
+						</Accordion.Item>
+						<Accordion.Item key={7} value="Enemies to Defeat">
+							<Accordion.Control
+								className="AccordianControl"
+								styles={{
+									control: { color: "#4e85bc" },
+								}}
+							>
+								Enemies To Look Out For
+							</Accordion.Control>
+							<Accordion.Panel>
+								<div>
+									<List listStyleType="none">
+										{QuestDetails.map((quest, questIndex) => (
+											<React.Fragment key={questIndex}>
+												{quest.EnemiesToDefeat.map((value, enemiesIndex) => {
+													const UniqueID = `${questIndex}-${enemiesIndex}`;
 													return (
-														<List.Item key={uniqueKey}>
+														<List.Item key={UniqueID}>
 															{"- "}
-															{item}
+															{value}
 														</List.Item>
 													);
 												})}
 											</React.Fragment>
-										);
-									})}
-								</List>
-							</div>
-						</Accordion.Panel>
-					</Accordion.Item>
-					<Accordion.Item key={6} value="Recommended">
-						<Accordion.Control
-							className="AccordianControl"
-							title="Items You Might Need"
-							styles={{
-								control: { color: "#4e85bc" },
-							}}
-						>
-							Items You Might Need
-						</Accordion.Control>
-						<Accordion.Panel>
-							<div>
-								<List listStyleType="none">
-									{QuestDetails.map((quest, questIndex) => {
-										return (
-											<React.Fragment key={questIndex}>
-												{quest.Recommended.map((item, itemIndex) => {
-													// Combine questIndex and itemIndex to create a unique key
-													const uniqueKey = `${questIndex}-${itemIndex}`;
-
-													return (
-														<List.Item key={uniqueKey}>
-															{"- "}
-															{item}
-														</List.Item>
-													);
-												})}
-											</React.Fragment>
-										);
-									})}
-								</List>
-							</div>
-						</Accordion.Panel>
-					</Accordion.Item>
-					<Accordion.Item key={7} value="Enemies to Defeat">
-						<Accordion.Control
-							className="AccordianControl"
-							styles={{
-								control: { color: "#4e85bc" },
-							}}
-						>
-							Enemies To Look Out For
-						</Accordion.Control>
-						<Accordion.Panel>
-							<div>
-								<List listStyleType="none">
-									{QuestDetails.map((quest, questIndex) => (
-										<React.Fragment key={questIndex}>
-											{quest.EnemiesToDefeat.map((value, enemiesIndex) => {
-												const UniqueID = `${questIndex}-${enemiesIndex}`;
-												return (
-													<List.Item key={UniqueID}>
-														{"- "}
-														{value}
-													</List.Item>
-												);
-											})}
-										</React.Fragment>
-									))}
-								</List>
-							</div>
-						</Accordion.Panel>
-					</Accordion.Item>
-				</Accordion>
+										))}
+									</List>
+								</div>
+							</Accordion.Panel>
+						</Accordion.Item>
+					</Accordion>
+					<div className="autoPad1"></div>
+					<div className="autoPad2"></div>
+				</>
 			) : (
-				<Stepper
-					className="stepperContainer"
-					active={active}
-					orientation="vertical"
-					onStepClick={setActiveAndScroll}
-				>
-					{details.stepDetails.map((value, index) => (
-						<Stepper.Step
-							id={index.toString()}
-							className="stepperStep"
-							label={`Step: ${index + 1}`}
-							key={index}
-							orientation="vertical"
-							description={value}
-							onClick={() => setActiveAndScroll}
-							allowStepSelect={ShouldAllowStep(index)}
-						/>
-					))}
-				</Stepper>
+				<>
+					<Stepper
+						className="stepperContainer"
+						active={active}
+						orientation="vertical"
+						onStepClick={setActiveAndScroll}
+					>
+						{details.stepDetails.map((value, index) => (
+							<Stepper.Step
+								id={index.toString()}
+								className="stepperStep"
+								label={`Step: ${index + 1}`}
+								key={index}
+								orientation="vertical"
+								description={value}
+								onClick={() => setActiveAndScroll}
+								allowStepSelect={ShouldAllowStep(index)}
+							/>
+						))}
+					</Stepper>
+					<div className="autoPad1"></div>
+					<div className="autoPad2"></div>
+				</>
 			)}
 		</>
 	);
