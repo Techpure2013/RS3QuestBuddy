@@ -459,7 +459,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	 * @returns The Levenshtein distance between the two strings.
 	 */
 
-	private levenshteinDistance(a: string, b: string): number {
+	public levenshteinDistance(a: string, b: string): number {
 		const matrix: number[][] = [];
 
 		// Initialize matrix with 0-based index values

@@ -1,14 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
-import {
-	Accordion,
-	Button,
-	Flex,
-	List,
-	Stepper,
-	//TextInput,
-} from "@mantine/core";
+import { Accordion, Button, Flex, List, Stepper } from "@mantine/core";
 import "./../index.css";
 import QuestIcon from "./../QuestIconEdited.png";
 import { Carousel } from "@mantine/carousel";
@@ -49,8 +42,6 @@ import { createRoot } from "react-dom/client";
 import { DiagReader } from "./dialogsolver.tsx";
 import { Reader } from "./diagstartpage.tsx";
 
-//import { PlayerQuests } from "./../Handlers/PlayerFetch.ts";
-//import questimages from "./QuestImages";
 const QuestPage: React.FC = () => {
 	// State and variables
 	const qpname = useLocation();
@@ -78,10 +69,10 @@ const QuestPage: React.FC = () => {
 	const handleBackButton = () => {
 		navigate("/");
 	};
-	//const finder = new diagFinder();
+	// const finder = new diagFinder();
 
-	//const found = finder.find();
-	// console.log(found);
+	// const found = finder.find();
+	//console.log(found);
 	const questImageVis = () => {
 		if (viewQuestImage === true) {
 			setViewImage(false);

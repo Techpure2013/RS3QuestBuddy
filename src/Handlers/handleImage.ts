@@ -5,7 +5,8 @@ import diagboxRegCorner from "./../assets/DiagAssets/diagboxNpc.png";
 import userSideCorner from "./../assets/DiagAssets/diagboxSelf.png";
 import legacyNpcCorner from "./../assets/DiagAssets/npcSidelegskin.png";
 import legacyUserCorner from "./../assets/DiagAssets/legacyUserSide.png";
-
+// import legacyContinueHover from "./../assets/DiagAssets/legacyHoveredContinue.png"
+// import legacyContinueButton from "./../assets/DiagAssets/legacyContinueButton.png"
 let optionSelected = {
 	diagboxSide: await a1lib.imageDataFromUrl(diagboxRegCorner),
 	diagboxSideSelf: await a1lib.imageDataFromUrl(userSideCorner),
@@ -88,7 +89,15 @@ export class diagFinder {
 				width: 506,
 				height: 130,
 			};
-			alt1.overLayRect(color, this.NpcPos.x, this.NpcPos.y, 1, 1, 5000, 1);
+			alt1.overLayRect(
+				color,
+				this.NpcPos.x + 258,
+				this.NpcPos.y + 123,
+				1,
+				1,
+				5000,
+				3
+			);
 			return this.NpcPos;
 		}
 		if (userBox !== undefined && npcBox === undefined) {
@@ -98,7 +107,15 @@ export class diagFinder {
 				width: 515,
 				height: 141,
 			};
-			alt1.overLayRect(color, this.UserPos.x, this.UserPos.y, 1, 1, 5000, 1);
+			alt1.overLayRect(
+				color,
+				this.UserPos.x + 258,
+				this.UserPos.y + 123,
+				1,
+				1,
+				5000,
+				3
+			);
 			return this.UserPos;
 		}
 		if (legNBox !== undefined) {
@@ -110,12 +127,12 @@ export class diagFinder {
 			};
 			alt1.overLayRect(
 				color,
-				this.LNpcPos.x,
+				this.LNpcPos.x + 258,
 				this.LNpcPos.y,
-				515,
-				141,
+				1,
+				1,
 				5000,
-				1
+				3
 			);
 			return this.LNpcPos;
 		}
@@ -137,4 +154,89 @@ export class diagFinder {
 			);
 		}
 	}
+	ensureImage(imgref: ImgRef | null | undefined) {
+		if (!this.NpcPos) {
+			return null;
+		} else {
+			if (imgref && a1lib.Rect.fromArgs(imgref).contains(this.NpcPos)) {
+				return imgref;
+			}
+		}
+		if (!this.UserPos) {
+			return null;
+		} else {
+			if (imgref && a1lib.Rect.fromArgs(imgref).contains(this.UserPos)) {
+				return imgref;
+			}
+		}
+		if (!this.LNpcPos) {
+			return null;
+		} else {
+			if (imgref && a1lib.Rect.fromArgs(imgref).contains(this.LNpcPos)) {
+				return imgref;
+			}
+		}
+		if (!this.LUserPos) {
+			return null;
+		} else {
+			if (imgref && a1lib.Rect.fromArgs(imgref).contains(this.LUserPos)) {
+				return imgref;
+			}
+		}
+
+		if (imgref && a1lib.Rect.fromArgs(imgref).contains(this.LUserPos)) {
+			return imgref;
+		}
+		if (this.NpcPos !== undefined) {
+			return a1lib.captureHold(
+				this.NpcPos.x,
+				this.NpcPos.y,
+				this.NpcPos.width,
+				this.NpcPos.height
+			);
+		}
+		if (this.UserPos !== undefined) {
+			return a1lib.captureHold(
+				this.UserPos.x,
+				this.UserPos.y,
+				this.UserPos.width,
+				this.UserPos.height
+			);
+		}
+		if (this.LNpcPos !== undefined) {
+			return a1lib.captureHold(
+				this.LNpcPos.x,
+				this.LNpcPos.y,
+				this.LNpcPos.width,
+				this.LNpcPos.height
+			);
+		}
+		if (this.LUserPos !== undefined) {
+			return a1lib.captureHold(
+				this.LUserPos.x,
+				this.LUserPos.y,
+				this.LUserPos.width,
+				this.LUserPos.height
+			);
+		}
+	}
+
+	// CheckDialog(imgref: ImgRef) {
+	// 	if (!this.NpcPos) {
+	// 		throw new Error("position not found yet");
+	// 	}
+	// 	if (!this.UserPos) {
+	// 		throw new Error("position not found yet");
+	// 	}
+	// 	if (!this.LNpcPos) {
+	// 		throw new Error("position not found yet");
+	// 	}
+	// 	if (!this.LUserPos) {
+	// 		throw new Error("position not found yet");
+	// 	}
+	// 	let legacyLocs: a1lib.PointLike[] = [];
+	// 	let regularLocs: a1lib.PointLike[] = [];
+
+	// }
+	// Read(imgref?: ImgRef | null | undefined) {}
 }

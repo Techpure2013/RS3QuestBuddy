@@ -11,6 +11,7 @@ import { NavLink } from "react-router-dom";
 import { IconArrowRight, IconArrowLeft } from "@tabler/icons-react";
 import { PlayerQuests, usePlayerStore } from "./Handlers/PlayerFetch";
 import { rsQuestSorter } from "./Handlers/SortPlayerData";
+
 const QuestCarousel: React.FC = () => {
 	const [focused, setFocused] = useState(false);
 	const [searchQuery, setSearchQuery] = useState<string>("");
@@ -35,6 +36,7 @@ const QuestCarousel: React.FC = () => {
 				quest.toLowerCase().includes(searchQuery.toLowerCase())
 		  )
 		: [];
+	console.log(filteredQuests);
 	const handleKeyPress = async () => {
 		try {
 			if (playerName.length > 0) {
@@ -263,13 +265,11 @@ const QuestCarousel: React.FC = () => {
 						))}
 
 					{!sorted &&
-						filteredQuests
-							.slice(1)
-							.map((quest, index) => (
-								<Carousel.Slide key={index}>
-									{renderQuestContent(quest)}
-								</Carousel.Slide>
-							))}
+						filteredQuests.map((quest, index) => (
+							<Carousel.Slide key={index}>
+								{renderQuestContent(quest)}
+							</Carousel.Slide>
+						))}
 				</Carousel>
 			</div>
 		</>

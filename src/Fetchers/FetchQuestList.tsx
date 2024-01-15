@@ -35,6 +35,7 @@ export const QuestListFetcher: React.FC<QuestListFetch> = ({ questlist }) => {
 					.replace(":", "")
 					.localeCompare(b.trim());
 			});
+			quests.shift();
 
 			useQuestListStore.getState().setQuestList(quests);
 		} catch (error) {
