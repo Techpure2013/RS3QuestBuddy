@@ -195,10 +195,13 @@ export class rsQuestSorter {
 		} else {
 			console.warn("playerInfo is not an array:", playerInfo);
 		}
-		window.sessionStorage.setItem(
-			"remainingQuests",
-			JSON.stringify(this.remainingQuests)
-		);
+		if (sessionStorage.getItem("remainingQuests") === null) {
+			window.sessionStorage.setItem(
+				"remainingQuests",
+				JSON.stringify(this.remainingQuests)
+			);
+		}
+
 		return this.remainingQuests;
 	}
 	public sortCompletedQuests(playerInfo: PlayerQuestInfo[]): void {

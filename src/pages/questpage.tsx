@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+
 import {
 	Accordion,
 	Button,
@@ -29,6 +30,7 @@ import "@mantine/core/styles/Flex.css";
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { Image } from "./ImageInterface.tsx";
 import QuestControl from "./../pages/QuestControls.tsx";
+//import { diagFinder } from "../Handlers/handleImage.ts";
 import {
 	QuestImageFetcher,
 	UseImageStore,
@@ -37,6 +39,7 @@ import {
 	QuestStepFetcher,
 	useQuestStepStore,
 } from "./../Fetchers/FetchQuestSteps.tsx";
+
 import {
 	QuestDetailsFetcher,
 	useQuestDetailsStore,
@@ -45,6 +48,7 @@ import { useQuestControllerStore } from "./../Handlers/HandlerStore.ts";
 import { createRoot } from "react-dom/client";
 import { DiagReader } from "./dialogsolver.tsx";
 import { Reader } from "./diagstartpage.tsx";
+
 //import { PlayerQuests } from "./../Handlers/PlayerFetch.ts";
 //import questimages from "./QuestImages";
 const QuestPage: React.FC = () => {
@@ -71,11 +75,13 @@ const QuestPage: React.FC = () => {
 		setViewImage,
 	} = useQuestControllerStore();
 	const handles = useQuestControllerStore();
-	//const PlayerFetch = new PlayerQuests();
-
 	const handleBackButton = () => {
 		navigate("/");
 	};
+	//const finder = new diagFinder();
+
+	//const found = finder.find();
+	// console.log(found);
 	const questImageVis = () => {
 		if (viewQuestImage === true) {
 			setViewImage(false);

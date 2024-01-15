@@ -1,17 +1,34 @@
-export const getImageDataFromUrl = async (url: string) => {
-    const imageResult = await fetch(url);
+export const getImageDataFromUrl = async (
+	url: string
+): Promise<ImageData | null> => {
+	try {
+		const imageResult = await fetch(url);
 
-    const bitmap = await createImageBitmap(await imageResult.blob());
-    const [width, height] = [bitmap.width, bitmap.height];
+		if (!imageResult.ok) {
+			throw new Error(`Failed to fetch image. Status: ${imageResult.status}`);
+		}
 
-    const canvas = document.createElement("canvas");
+		const blob = await imageResult.blob();
+		const bitmap = await createImageBitmap(blob);
+		const [width, height] = [bitmap.width, bitmap.height];
 
-    const ctx = canvas.getContext("2d");
-    ctx?.drawImage(bitmap, 0, 0);
+		const canvas = document.createElement("canvas");
+		const ctx = canvas.getContext("2d");
 
-    const imageData = ctx?.getImageData(0, 0, width, height);
+		if (ctx) {
+			canvas.width = width;
+			canvas.height = height;
+			ctx.drawImage(bitmap, 0, 0);
 
-    canvas.remove();
+			const imageData = ctx.getImageData(0, 0, width, height);
 
-    return imageData;
+			canvas.remove();
+			return imageData;
+		} else {
+			throw new Error("Canvas 2D context is not supported.");
+		}
+	} catch (error) {
+		console.error(`Error fetching or processing image`, error);
+		return null;
+	}
 };
