@@ -1,6 +1,7 @@
 import * as a1lib from "alt1";
 import DialogReader, { DialogButton } from "alt1/dialog";
 import { TypedEmitter } from "./../Handlers/TypeEmitter";
+import { diagFinder } from "../Handlers/handleImage";
 /**
  *
  * @property x - The x-coordinate of the point.
@@ -94,7 +95,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	displayNumber: number = 1;
 	widthBox: number = 0;
 	anyOption: boolean = false;
-
+	dialogHelp = new diagFinder();
 	/**
 	 * Constructs a new DiagReader instance.
 	 * Initializes properties and binds methods.
@@ -194,6 +195,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 						diagboxcapture,
 						findOptions
 					);
+
 					this.emit("change", this.getCState());
 				} else {
 					console.error("findOptions not found or invalid."); // Log an error if findOptions is not valid
@@ -264,8 +266,8 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 				const bestMatchIndex = this.findBestMatchIndex(value.toLowerCase());
 				// Update current best matches if a match is found
 				if (bestMatchIndex !== -1) {
-					if (this.readOption![bestMatchIndex].width > 315) {
-						this.readOption![bestMatchIndex].width = 300;
+					if (this.readOption![bestMatchIndex].width > 300) {
+						this.readOption![bestMatchIndex].width = 285;
 					}
 					this.currentBestMatches.push({
 						x: this.readOption![bestMatchIndex].x,
@@ -286,8 +288,8 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 					const randomIndex = Math.floor(
 						Math.random() * this.readOption!.length
 					);
-					if (this.readOption[randomIndex].width > 315) {
-						this.readOption[randomIndex].width = 300;
+					if (this.readOption[randomIndex].width > 300) {
+						this.readOption[randomIndex].width = 234;
 					}
 					this.currentBestMatches.push({
 						x: this.readOption![randomIndex].x,
@@ -304,6 +306,10 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 			// Populate unique coordinates based on the current best matches
 			this.populateUniqueCoordinates();
 		} else {
+			setTimeout(() => {
+				this.dialogHelp.find();
+			}, 2000);
+
 			console.warn(
 				"Transcript Could not be found because there are no readoptions on screen"
 			);

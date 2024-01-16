@@ -40,8 +40,6 @@ import { useQuestControllerStore } from "./../Handlers/HandlerStore.ts";
 import { createRoot } from "react-dom/client";
 import { DiagReader } from "./dialogsolver.tsx";
 import { Reader } from "./diagstartpage.tsx";
-//import { diagFinder } from "../Handlers/handleImage.ts";
-
 const QuestPage: React.FC = () => {
 	// State and variables
 	const qpname = useLocation();
@@ -58,7 +56,7 @@ const QuestPage: React.FC = () => {
 	const [completedQuests, setCompleteQuests] = useState<string[] | null>(null);
 	const QuestDetails = useQuestDetailsStore.getState().questDetails;
 	const [skillLevels, setSkillLevels] = useState<string[]>([]);
-	//const finder = new diagFinder();
+
 	const {
 		showStepReq,
 		buttonVisible,

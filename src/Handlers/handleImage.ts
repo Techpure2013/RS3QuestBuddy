@@ -49,38 +49,37 @@ export class diagFinder {
 		let userBoxes: a1lib.PointLike[] = [];
 		let legacyNpcBoxes: a1lib.PointLike[] = [];
 		let legacyUserBoxes: a1lib.PointLike[] = [];
-		let generalBoxes: a1lib.PointLike[] = [];
+		//let generalBoxes: a1lib.PointLike[] = [];
 		let acceptButtonBoxes: a1lib.PointLike[] = [];
 		let dialogOptionBoxes: a1lib.PointLike[] = [];
 		for (let imgs of [imgPack]) {
-			const NPos = imgref.findSubimage(imgs.diagboxSide);
-			console.log(NPos);
-			const UPos = imgref.findSubimage(imgs.diagboxSideSelf);
+			// const NPos = imgref.findSubimage(imgs.diagboxSide);
+			// const UPos = imgref.findSubimage(imgs.diagboxSideSelf);
 			const LNPos = imgref.findSubimage(imgs.legDiagBoxNpc);
 			const LUPos = imgref.findSubimage(imgs.legDiagBoxUser);
 			const GenBoxPos = imgref.findSubimage(imgs.genbox);
 			const acceptButton = imgref.findSubimage(imgs.acceptButton);
 			const diagOptions = imgref.findSubimage(imgs.dialogOptionButton);
-			if (NPos.length > 0) {
-				for (let a in NPos) {
-					let p = NPos[a];
-					if (imgref.findSubimage(imgs.diagboxSide).length !== 0) {
-						npcBoxes.push({ ...p });
-					} else {
-						console.error("position not found for npc box");
-					}
-				}
-			}
-			if (UPos.length > 0) {
-				for (let b in UPos) {
-					let p2 = UPos[b];
-					if (imgref.findSubimage(imgs.diagboxSideSelf).length !== 0) {
-						userBoxes.push({ ...p2 });
-					} else {
-						console.error("position not found for user box");
-					}
-				}
-			}
+			// if (NPos.length > 0) {
+			// 	for (let a in NPos) {
+			// 		let p = NPos[a];
+			// 		if (imgref.findSubimage(imgs.diagboxSide).length !== 0) {
+			// 			npcBoxes.push({ ...p });
+			// 		} else {
+			// 			console.error("position not found for npc box");
+			// 		}
+			// 	}
+			// }
+			// if (UPos.length > 0) {
+			// 	for (let b in UPos) {
+			// 		let p2 = UPos[b];
+			// 		if (imgref.findSubimage(imgs.diagboxSideSelf).length !== 0) {
+			// 			userBoxes.push({ ...p2 });
+			// 		} else {
+			// 			console.error("position not found for user box");
+			// 		}
+			// 	}
+			// }
 			if (LNPos.length > 0) {
 				for (let c in LNPos) {
 					let p3 = LNPos[c];
@@ -128,14 +127,13 @@ export class diagFinder {
 		let userBox = userBoxes[0];
 		let legNBox = legacyNpcBoxes[0];
 		let legUBox = legacyUserBoxes[0];
-		let generalBox = generalBoxes[0];
+		//let generalBox = generalBoxes[0];
 		let acceptButtonBox = acceptButtonBoxes[0];
 		let dialogOptionBox = [];
 		if (dialogOptionBoxes.length > 0) {
 			for (let a in dialogOptionBoxes) {
 				let pos = dialogOptionBoxes[a];
 				dialogOptionBox.push({ ...pos });
-				console.log(dialogOptionBox);
 			}
 		}
 
@@ -147,7 +145,7 @@ export class diagFinder {
 				height: 135,
 			};
 
-			alt1.overLayRect(color, Math.round(241), 937, 510, 145, 5000, 1);
+			// alt1.overLayRect(color, Math.round(241), 937, 510, 145, 5000, 1);
 			//alt1.overLayRect(color, Math.round(817 / 2), 484, 536, 135, 5000, 1);
 			return this.NpcPos;
 		}
@@ -160,7 +158,7 @@ export class diagFinder {
 			};
 			//788 start X 945 start Y, 791 end X 951 end Y RegContinueButton
 			//The same Coords for RegContinueButtonHovered
-			alt1.overLayRect(color, this.UserPos.x, this.UserPos.y, 75, 15, 5000, 3);
+			//alt1.overLayRect(color, this.UserPos.x, this.UserPos.y, 75, 15, 5000, 3);
 			return this.UserPos;
 		}
 		if (legNBox !== undefined) {
@@ -171,7 +169,7 @@ export class diagFinder {
 				height: 130,
 			};
 			//Legacy X-Start: 792 Y-Start: 950, X-End: 791 Y-End: 950
-			alt1.overLayRect(color, this.LNpcPos.x, this.LNpcPos.y, 511, 32, 5000, 1);
+			// alt1.overLayRect(color, this.LNpcPos.x, this.LNpcPos.y, 511, 32, 5000, 1);
 			return this.LNpcPos;
 		}
 		if (legUBox !== undefined) {
@@ -181,26 +179,26 @@ export class diagFinder {
 				width: 509,
 				height: 130,
 			};
-			alt1.overLayRect(
-				color,
-				this.LUserPos.x + 217,
-				this.LUserPos.y + 113,
-				74,
-				14,
-				5000,
-				1
-			);
+			// alt1.overLayRect(
+			// 	color,
+			// 	this.LUserPos.x + 217,
+			// 	this.LUserPos.y + 113,
+			// 	74,
+			// 	14,
+			// 	5000,
+			// 	1
+			// );
 			return this.LUserPos;
 		}
-		if (generalBox !== undefined && dialogOptionBoxes) {
-			this.genBoxPos = {
-				x: generalBox.x,
-				y: generalBox.y,
-				width: 509,
-				height: 130,
-			};
-			return this.genBoxPos;
-		}
+		// if (generalBox !== undefined && dialogOptionBoxes) {
+		// 	this.genBoxPos = {
+		// 		x: generalBox.x,
+		// 		y: generalBox.y,
+		// 		width: 509,
+		// 		height: 130,
+		// 	};
+		// 	return this.genBoxPos;
+		// }
 		if (acceptButtonBox !== undefined) {
 			this.acceptbuttonPos = {
 				x: acceptButtonBox.x,
@@ -214,82 +212,82 @@ export class diagFinder {
 				this.acceptbuttonPos.y,
 				this.acceptbuttonPos.width,
 				this.acceptbuttonPos.height,
-				5000,
-				1
+				1000,
+				3
 			);
 			return this.acceptbuttonPos;
 		}
 	}
-	ensureImage(imgref: ImgRef | null | undefined) {
-		if (!this.NpcPos) {
-			return null;
-		} else {
-			if (imgref && a1lib.Rect.fromArgs(imgref).contains(this.NpcPos)) {
-				return imgref;
-			}
-		}
-		if (!this.UserPos) {
-			return null;
-		} else {
-			if (imgref && a1lib.Rect.fromArgs(imgref).contains(this.UserPos)) {
-				return imgref;
-			}
-		}
-		if (!this.LNpcPos) {
-			return null;
-		} else {
-			if (imgref && a1lib.Rect.fromArgs(imgref).contains(this.LNpcPos)) {
-				return imgref;
-			}
-		}
-		if (!this.LUserPos) {
-			return null;
-		} else {
-			if (imgref && a1lib.Rect.fromArgs(imgref).contains(this.LUserPos)) {
-				return imgref;
-			}
-		}
-		if (!this.genBoxPos) {
-			return null;
-		} else {
-			if (imgref && a1lib.Rect.fromArgs(imgref).contains(this.genBoxPos)) {
-				return imgref;
-			}
-		}
+	// ensureImage(imgref: ImgRef | null | undefined) {
+	// 	if (!this.NpcPos) {
+	// 		return null;
+	// 	} else {
+	// 		if (imgref && a1lib.Rect.fromArgs(imgref).contains(this.NpcPos)) {
+	// 			return imgref;
+	// 		}
+	// 	}
+	// 	if (!this.UserPos) {
+	// 		return null;
+	// 	} else {
+	// 		if (imgref && a1lib.Rect.fromArgs(imgref).contains(this.UserPos)) {
+	// 			return imgref;
+	// 		}
+	// 	}
+	// 	if (!this.LNpcPos) {
+	// 		return null;
+	// 	} else {
+	// 		if (imgref && a1lib.Rect.fromArgs(imgref).contains(this.LNpcPos)) {
+	// 			return imgref;
+	// 		}
+	// 	}
+	// 	if (!this.LUserPos) {
+	// 		return null;
+	// 	} else {
+	// 		if (imgref && a1lib.Rect.fromArgs(imgref).contains(this.LUserPos)) {
+	// 			return imgref;
+	// 		}
+	// 	}
+	// 	if (!this.genBoxPos) {
+	// 		return null;
+	// 	} else {
+	// 		if (imgref && a1lib.Rect.fromArgs(imgref).contains(this.genBoxPos)) {
+	// 			return imgref;
+	// 		}
+	// 	}
 
-		if (this.NpcPos !== undefined) {
-			return a1lib.captureHold(
-				this.NpcPos.x,
-				this.NpcPos.y,
-				this.NpcPos.width,
-				this.NpcPos.height
-			);
-		}
-		if (this.UserPos !== undefined) {
-			return a1lib.captureHold(
-				this.UserPos.x,
-				this.UserPos.y,
-				this.UserPos.width,
-				this.UserPos.height
-			);
-		}
-		if (this.LNpcPos !== undefined) {
-			return a1lib.captureHold(
-				this.LNpcPos.x,
-				this.LNpcPos.y,
-				this.LNpcPos.width,
-				this.LNpcPos.height
-			);
-		}
-		if (this.LUserPos !== undefined) {
-			return a1lib.captureHold(
-				this.LUserPos.x,
-				this.LUserPos.y,
-				this.LUserPos.width,
-				this.LUserPos.height
-			);
-		}
-	}
+	// 	if (this.NpcPos !== undefined) {
+	// 		return a1lib.captureHold(
+	// 			this.NpcPos.x,
+	// 			this.NpcPos.y,
+	// 			this.NpcPos.width,
+	// 			this.NpcPos.height
+	// 		);
+	// 	}
+	// 	if (this.UserPos !== undefined) {
+	// 		return a1lib.captureHold(
+	// 			this.UserPos.x,
+	// 			this.UserPos.y,
+	// 			this.UserPos.width,
+	// 			this.UserPos.height
+	// 		);
+	// 	}
+	// 	if (this.LNpcPos !== undefined) {
+	// 		return a1lib.captureHold(
+	// 			this.LNpcPos.x,
+	// 			this.LNpcPos.y,
+	// 			this.LNpcPos.width,
+	// 			this.LNpcPos.height
+	// 		);
+	// 	}
+	// 	if (this.LUserPos !== undefined) {
+	// 		return a1lib.captureHold(
+	// 			this.LUserPos.x,
+	// 			this.LUserPos.y,
+	// 			this.LUserPos.width,
+	// 			this.LUserPos.height
+	// 		);
+	// 	}
+	// }
 
 	// CheckDialog(imgref: ImgRef) {
 	// 	// if (!this.NpcPos) {
