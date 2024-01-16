@@ -23,7 +23,6 @@ import "@mantine/core/styles/Flex.css";
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { Image } from "./ImageInterface.tsx";
 import QuestControl from "./../pages/QuestControls.tsx";
-//import { diagFinder } from "../Handlers/handleImage.ts";
 import {
 	QuestImageFetcher,
 	UseImageStore,
@@ -41,6 +40,7 @@ import { useQuestControllerStore } from "./../Handlers/HandlerStore.ts";
 import { createRoot } from "react-dom/client";
 import { DiagReader } from "./dialogsolver.tsx";
 import { Reader } from "./diagstartpage.tsx";
+//import { diagFinder } from "../Handlers/handleImage.ts";
 
 const QuestPage: React.FC = () => {
 	// State and variables
@@ -58,6 +58,7 @@ const QuestPage: React.FC = () => {
 	const [completedQuests, setCompleteQuests] = useState<string[] | null>(null);
 	const QuestDetails = useQuestDetailsStore.getState().questDetails;
 	const [skillLevels, setSkillLevels] = useState<string[]>([]);
+	//const finder = new diagFinder();
 	const {
 		showStepReq,
 		buttonVisible,
@@ -69,10 +70,7 @@ const QuestPage: React.FC = () => {
 	const handleBackButton = () => {
 		navigate("/");
 	};
-	// const finder = new diagFinder();
 
-	// const found = finder.find();
-	//console.log(found);
 	const questImageVis = () => {
 		if (viewQuestImage === true) {
 			setViewImage(false);
@@ -80,7 +78,7 @@ const QuestPage: React.FC = () => {
 			setViewImage(true);
 		}
 	};
-	// Inside your component
+
 	const carouselRef = useRef<HTMLDivElement | null>(null);
 
 	// Use useEffect to scroll when viewQuestImage is true

@@ -10,6 +10,7 @@ type Points = {
 	x: number;
 	y: number;
 	width: number;
+	buttonX: number;
 	displayIndex: number;
 };
 
@@ -72,13 +73,18 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	diagY: number = 0;
 	charDialog: string | undefined = "";
 	readOption: DialogButton[] | null = [];
-	currentBestMatches: Points[] = [{ x: 0, y: 0, width: 0, displayIndex: 1 }];
-	previousBestMatches: Points[] = [{ x: 0, y: 0, width: 0, displayIndex: 1 }];
+	currentBestMatches: Points[] = [
+		{ x: 0, y: 0, width: 0, buttonX: 0, displayIndex: 1 },
+	];
+	previousBestMatches: Points[] = [
+		{ x: 0, y: 0, width: 0, buttonX: 0, displayIndex: 1 },
+	];
 	bestMatchX: Points["x"] = 0;
 	bestMatchY: Points["y"] = 0;
 	diagTitle: string = "";
 	coordX: number = 0;
 	coordY: number = 0;
+	buttonX: number = 0;
 	diagReader = new DialogReader();
 	cTStore: string[] = [];
 	uniqueCoordinates: Record<string, { x: number; y: number }> = {};
@@ -258,10 +264,14 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 				const bestMatchIndex = this.findBestMatchIndex(value.toLowerCase());
 				// Update current best matches if a match is found
 				if (bestMatchIndex !== -1) {
+					if (this.readOption![bestMatchIndex].width > 315) {
+						this.readOption![bestMatchIndex].width = 300;
+					}
 					this.currentBestMatches.push({
 						x: this.readOption![bestMatchIndex].x,
 						y: this.readOption![bestMatchIndex].y,
 						width: this.readOption![bestMatchIndex].width,
+						buttonX: this.readOption![bestMatchIndex].buttonx,
 						displayIndex: this.currentBestMatches.length,
 					});
 					this.emit("change", this.getCState());
@@ -276,10 +286,14 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 					const randomIndex = Math.floor(
 						Math.random() * this.readOption!.length
 					);
+					if (this.readOption[randomIndex].width > 315) {
+						this.readOption[randomIndex].width = 300;
+					}
 					this.currentBestMatches.push({
 						x: this.readOption![randomIndex].x,
 						y: this.readOption![randomIndex].y,
 						width: this.readOption![randomIndex].width,
+						buttonX: this.readOption![randomIndex].buttonx,
 						displayIndex: this.currentBestMatches.length,
 					});
 					this.emit("change", this.getCState());
@@ -335,7 +349,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	 */
 	private populateUniqueCoordinates() {
 		for (const coord of this.currentBestMatches) {
-			const key = `${coord.x},${coord.y},${coord.width}`;
+			const key = `${coord.x},${coord.y},${coord.width},${coord.buttonX}`;
 			this.uniqueCoordinates[key] = { ...coord };
 
 			this.coordinateCounts[key] = (this.coordinateCounts[key] || 0) + 1;
@@ -364,13 +378,14 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 			readCount = readCount + 1;
 		}
 	}
+
 	/**
 	 * Displays the overlay rectangle with a delay.
 	 * Uses setTimeout to stagger the timings and display each option.
 	 */
 	private displayBox() {
-		if (this.uniqueCoordinates["0,0,0"]) {
-			delete this.uniqueCoordinates["0,0,0"];
+		if (this.uniqueCoordinates["0,0,0,0"]) {
+			delete this.uniqueCoordinates["0,0,0,0"];
 		}
 		// Get the keys of coordinateCounts
 		const keys = Object.keys(this.uniqueCoordinates);
@@ -383,30 +398,51 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 
 		for (let i = 0; i < keys.length; i++) {
 			const key = keys[i];
-			const [x, y, width] = key.split(",").map((value) => {
+			const [x, y, width, buttonX] = key.split(",").map((value) => {
 				return Number(value); // Convert each value to a number after trimming any whitespace
 			}); // Split the key into x and y coordinates
 
 			this.coordX = x;
 			this.coordY = y;
 			this.widthBox = width;
+			this.buttonX = buttonX;
 			break;
 		}
+		//Four Options:
+		//X1: 769  X2: 766 X3: 704 X4: 746  BUTTON X: 673
+		//Y1: 884  Y2: 907 Y3: 930 Y4: 953  BUTTON X: 673
+		//W1: 311  W2: 311 W3: 311 W4: 385  BUTTON X: 673
+		// H: 130   H: 130  H: 130 H4: 130  BUTTON X: 673
+		//////Three Options:
+		//  First   Second    Third
+		//X1: 800 |||X2: 744|||X3: 800   BUTTON  X: 731
+		//Y1: 947 |||Y2: 919|||Y3: 947   BUTTON  X: 731
+		// W: 196 ||| W: 196||||W: 196   BUTTON  X: 731
+		// H: 130 ||||H: 130||||H: 130   BUTTON  X: 731
+		///////////////////////////
+		//Two Options:
+		//X1: 753 X2: 783   BUTTON  X: 720
+		//Y1: 905 Y2: 933
+		//W1: 332 W2: 234
+		// H: 130  H: 130
+		//
+		console.log(this.widthBox);
+
 		if (!this.anyOption) {
 			alt1.overLayText(
 				`Option ${this.displayNumber} --->`,
 				this.textColor,
-				14,
-				this.coordX - 170,
+				13,
+				this.buttonX - 95,
 				this.coordY - 13,
 				1000
 			);
 			alt1.overLayRect(
 				this.color,
-				this.coordX - 60,
-				this.coordY - 16,
+				this.buttonX,
+				this.coordY - 13,
 				this.widthBox,
-				this.diagH / 2 - 30,
+				this.diagH / 2 - 40,
 				1000,
 				3
 			);
@@ -415,16 +451,16 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 				`Any Option`,
 				this.textColor,
 				13,
-				this.coordX - 190,
+				this.buttonX - 95,
 				this.coordY - 13,
 				1000
 			);
 			alt1.overLayRect(
 				this.color,
-				this.coordX - 100,
-				this.coordY - 16,
+				this.buttonX,
+				this.coordY - 10,
 				this.widthBox,
-				this.diagH / 2 - 30,
+				this.diagH / 2 - 40,
 				1000,
 				3
 			);
@@ -435,7 +471,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 			this.displayNumber++;
 			// Delete the displayed coordinate
 			delete this.uniqueCoordinates[
-				`${this.coordX},${this.coordY},${this.widthBox}`
+				`${this.coordX},${this.coordY},${this.widthBox},${this.buttonX}`
 			];
 
 			// Check if any more coordinates need to be displayed
