@@ -12,19 +12,7 @@ import legacyContinueButton from "./../assets/DiagAssets/legacyContinueButtonAlt
 import generalbox from "./../assets/DiagAssets/genboximage.png";
 import acceptButton from "./../assets/DiagAssets/AcceptButton.png";
 import dialogOptionButton from "./../assets/DiagAssets/regularButton.png";
-let imgPack = {
-	diagboxSide: await a1lib.imageDataFromUrl(regNpcBox),
-	diagboxSideSelf: await a1lib.imageDataFromUrl(userSideCorner),
-	legDiagBoxNpc: await a1lib.imageDataFromUrl(legacyNpcCorner),
-	legDiagBoxUser: await a1lib.imageDataFromUrl(legacyUserCorner),
-	diagboxContinueButton: await a1lib.imageDataFromUrl(diagBoxContinueB),
-	diagBoxContinueHover: await a1lib.imageDataFromUrl(regBoxContinueBHov),
-	legacyContButton: await a1lib.imageDataFromUrl(legacyContinueButton),
-	legacyContinueButtonHover: await a1lib.imageDataFromUrl(legacyContinueHover),
-	genbox: await a1lib.imageDataFromUrl(generalbox),
-	acceptButton: await a1lib.imageDataFromUrl(acceptButton),
-	dialogOptionButton: await a1lib.imageDataFromUrl(dialogOptionButton),
-};
+
 export class diagFinder {
 	legTitleColor = a1lib.mixColor(255, 152, 31);
 	regTitleColor = a1lib.mixColor(255, 203, 5);
@@ -35,8 +23,36 @@ export class diagFinder {
 	genBoxPos: a1lib.RectLike | null = null;
 	acceptbuttonPos: a1lib.RectLike | null = null;
 	dialogOptionsPos: a1lib.RectLike | null = null;
+	imgPack: any;
+
 	constructor() {
 		this.find = this.find.bind(this);
+		this.initialize();
+	}
+
+	async initialize() {
+		this.imgPack = await this.loadImageData();
+		// Now you can use this.imgPack in the rest of your class
+	}
+
+	async loadImageData() {
+		let imgPack = {
+			diagboxSide: await a1lib.imageDataFromUrl(regNpcBox),
+			diagboxSideSelf: await a1lib.imageDataFromUrl(userSideCorner),
+			legDiagBoxNpc: await a1lib.imageDataFromUrl(legacyNpcCorner),
+			legDiagBoxUser: await a1lib.imageDataFromUrl(legacyUserCorner),
+			diagboxContinueButton: await a1lib.imageDataFromUrl(diagBoxContinueB),
+			diagBoxContinueHover: await a1lib.imageDataFromUrl(regBoxContinueBHov),
+			legacyContButton: await a1lib.imageDataFromUrl(legacyContinueButton),
+			legacyContinueButtonHover: await a1lib.imageDataFromUrl(
+				legacyContinueHover
+			),
+			genbox: await a1lib.imageDataFromUrl(generalbox),
+			acceptButton: await a1lib.imageDataFromUrl(acceptButton),
+			dialogOptionButton: await a1lib.imageDataFromUrl(dialogOptionButton),
+		};
+
+		return imgPack;
 	}
 	find(imgref?: ImgRef) {
 		if (!imgref) {
@@ -52,7 +68,7 @@ export class diagFinder {
 		//let generalBoxes: a1lib.PointLike[] = [];
 		let acceptButtonBoxes: a1lib.PointLike[] = [];
 		let dialogOptionBoxes: a1lib.PointLike[] = [];
-		for (let imgs of [imgPack]) {
+		for (let imgs of [this.imgPack]) {
 			// const NPos = imgref.findSubimage(imgs.diagboxSide);
 			// const UPos = imgref.findSubimage(imgs.diagboxSideSelf);
 			const LNPos = imgref.findSubimage(imgs.legDiagBoxNpc);
