@@ -266,8 +266,14 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 				const bestMatchIndex = this.findBestMatchIndex(value.toLowerCase());
 				// Update current best matches if a match is found
 				if (bestMatchIndex !== -1) {
-					if (this.readOption![bestMatchIndex].width > 300) {
-						this.readOption![bestMatchIndex].width = 285;
+					if (this.readOption!.length == 5) {
+						this.readOption![bestMatchIndex].width = 288;
+					} else if (this.readOption!.length == 4) {
+						this.readOption![bestMatchIndex].width = 315;
+					} else if (this.readOption!.length == 3) {
+						this.readOption![bestMatchIndex].width = 220;
+					} else if (this.readOption!.length == 2) {
+						this.readOption![bestMatchIndex].width = 220;
 					}
 					this.currentBestMatches.push({
 						x: this.readOption![bestMatchIndex].x,
@@ -288,8 +294,14 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 					const randomIndex = Math.floor(
 						Math.random() * this.readOption!.length
 					);
-					if (this.readOption[randomIndex].width > 300) {
-						this.readOption[randomIndex].width = 234;
+					if (this.readOption!.length == 5) {
+						this.readOption![randomIndex].width = 288;
+					} else if (this.readOption!.length == 4) {
+						this.readOption![randomIndex].width = 315;
+					} else if (this.readOption!.length == 3) {
+						this.readOption![randomIndex].width = 220;
+					} else if (this.readOption!.length == 2) {
+						this.readOption![randomIndex].width = 220;
 					}
 					this.currentBestMatches.push({
 						x: this.readOption![randomIndex].x,
@@ -414,6 +426,11 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 			this.buttonX = buttonX;
 			break;
 		}
+		//Five Options:
+		//X1: 586  X2: 569 X3: 599 X4: 608 X5: 536
+		//Y1: 708  Y2: 727 Y3: 746 Y4: 765 Y5: 784
+		//W1: 288  W2: 288 W3: 288 W4: 376 W5: 288
+		// H: 130 --------------------------------
 		//Four Options:
 		//X1: 769  X2: 766 X3: 704 X4: 746  BUTTON X: 673
 		//Y1: 884  Y2: 907 Y3: 930 Y4: 953  BUTTON X: 673
@@ -421,17 +438,16 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 		// H: 130   H: 130  H: 130 H4: 130  BUTTON X: 673
 		//////Three Options:
 		//  First   Second    Third
-		//X1: 800 |||X2: 744|||X3: 800   BUTTON  X: 731
-		//Y1: 947 |||Y2: 919|||Y3: 947   BUTTON  X: 731
-		// W: 196 ||| W: 196||||W: 196   BUTTON  X: 731
-		// H: 130 ||||H: 130||||H: 130   BUTTON  X: 731
+		//X1: 800   X2: 744   X3: 800   BUTTON  X: 731
+		//Y1: 947   Y2: 919   Y3: 947   BUTTON  X: 731
+		// W: 196    W: 196    W: 196   BUTTON  X: 731
+		// H: 130    H: 130    H: 130   BUTTON  X: 731
 		///////////////////////////
 		//Two Options:
 		//X1: 753 X2: 783   BUTTON  X: 720
 		//Y1: 905 Y2: 933
 		//W1: 332 W2: 234
 		// H: 130  H: 130
-		//
 
 		if (!this.anyOption) {
 			alt1.overLayText(

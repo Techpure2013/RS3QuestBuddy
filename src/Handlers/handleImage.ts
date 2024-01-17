@@ -178,15 +178,15 @@ export class diagFinder {
 			};
 			//788 start X 945 start Y, 791 end X 951 end Y RegContinueButton
 			//The same Coords for RegContinueButtonHovered
-			alt1.overLayRect(
-				color,
-				this.UserPos.x,
-				this.UserPos.y,
-				510,
-				130,
-				5000,
-				10
-			);
+			// alt1.overLayRect(
+			// 	color,
+			// 	this.UserPos.x,
+			// 	this.UserPos.y,
+			// 	510,
+			// 	130,
+			// 	5000,
+			// 	10
+			// );
 			return this.UserPos;
 		}
 		if (legNBox !== undefined) {
