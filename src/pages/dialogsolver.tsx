@@ -432,7 +432,6 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 		//W1: 332 W2: 234
 		// H: 130  H: 130
 		//
-		console.log(this.widthBox);
 
 		if (!this.anyOption) {
 			alt1.overLayText(

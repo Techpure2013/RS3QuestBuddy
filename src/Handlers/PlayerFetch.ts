@@ -156,7 +156,6 @@ export class PlayerQuests {
 
 			let data = await response.text();
 
-			// Assuming your data is in CSV format, parse it into an array of Skills
 			const skillNames: string[] = [
 				"Total Level",
 				"Attack",
@@ -211,7 +210,6 @@ export class PlayerQuests {
 			return skillStrings;
 		} catch (error) {
 			console.error(error);
-			// You might want to handle the error or propagate it to the caller
 			throw error;
 		}
 	}

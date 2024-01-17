@@ -12,6 +12,7 @@ import legacyContinueButton from "./../assets/DiagAssets/legacyContinueButtonAlt
 import generalbox from "./../assets/DiagAssets/genboximage.png";
 import acceptButton from "./../assets/DiagAssets/AcceptButton.png";
 import dialogOptionButton from "./../assets/DiagAssets/regularButton.png";
+import fontHeavy from "./../assets/DiagAssets/Fonts/aa_8px_mono_allcaps.data.png";
 
 export class diagFinder {
 	legTitleColor = a1lib.mixColor(255, 152, 31);
@@ -32,11 +33,10 @@ export class diagFinder {
 
 	async initialize() {
 		this.imgPack = await this.loadImageData();
-		// Now you can use this.imgPack in the rest of your class
 	}
 
 	async loadImageData() {
-		let imgPack = {
+		const imgPack = {
 			diagboxSide: await a1lib.imageDataFromUrl(regNpcBox),
 			diagboxSideSelf: await a1lib.imageDataFromUrl(userSideCorner),
 			legDiagBoxNpc: await a1lib.imageDataFromUrl(legacyNpcCorner),
@@ -50,9 +50,9 @@ export class diagFinder {
 			genbox: await a1lib.imageDataFromUrl(generalbox),
 			acceptButton: await a1lib.imageDataFromUrl(acceptButton),
 			dialogOptionButton: await a1lib.imageDataFromUrl(dialogOptionButton),
+			fontH: await a1lib.imageDataFromUrl(fontHeavy),
 		};
-
-		return imgPack;
+		return (this.imgPack = imgPack);
 	}
 	find(imgref?: ImgRef) {
 		if (!imgref) {
@@ -69,33 +69,35 @@ export class diagFinder {
 		let acceptButtonBoxes: a1lib.PointLike[] = [];
 		let dialogOptionBoxes: a1lib.PointLike[] = [];
 		for (let imgs of [this.imgPack]) {
-			// const NPos = imgref.findSubimage(imgs.diagboxSide);
-			// const UPos = imgref.findSubimage(imgs.diagboxSideSelf);
+			const NPos = imgref.findSubimage(imgs.diagboxSide);
+			console.log(NPos);
+			const UPos = imgref.findSubimage(imgs.diagboxSideSelf);
 			const LNPos = imgref.findSubimage(imgs.legDiagBoxNpc);
 			const LUPos = imgref.findSubimage(imgs.legDiagBoxUser);
 			const GenBoxPos = imgref.findSubimage(imgs.genbox);
 			const acceptButton = imgref.findSubimage(imgs.acceptButton);
 			const diagOptions = imgref.findSubimage(imgs.dialogOptionButton);
-			// if (NPos.length > 0) {
-			// 	for (let a in NPos) {
-			// 		let p = NPos[a];
-			// 		if (imgref.findSubimage(imgs.diagboxSide).length !== 0) {
-			// 			npcBoxes.push({ ...p });
-			// 		} else {
-			// 			console.error("position not found for npc box");
-			// 		}
-			// 	}
-			// }
-			// if (UPos.length > 0) {
-			// 	for (let b in UPos) {
-			// 		let p2 = UPos[b];
-			// 		if (imgref.findSubimage(imgs.diagboxSideSelf).length !== 0) {
-			// 			userBoxes.push({ ...p2 });
-			// 		} else {
-			// 			console.error("position not found for user box");
-			// 		}
-			// 	}
-			// }
+
+			if (NPos.length > 0) {
+				for (let a in NPos) {
+					let p = NPos[a];
+					if (imgref.findSubimage(imgs.diagboxSide).length !== 0) {
+						npcBoxes.push({ ...p });
+					} else {
+						console.error("position not found for npc box");
+					}
+				}
+			}
+			if (UPos.length > 0) {
+				for (let b in UPos) {
+					let p2 = UPos[b];
+					if (imgref.findSubimage(imgs.diagboxSideSelf).length !== 0) {
+						userBoxes.push({ ...p2 });
+					} else {
+						console.error("position not found for user box");
+					}
+				}
+			}
 			if (LNPos.length > 0) {
 				for (let c in LNPos) {
 					let p3 = LNPos[c];
@@ -139,6 +141,7 @@ export class diagFinder {
 		}
 
 		const color = a1lib.mixColor(255, 0, 0);
+
 		let npcBox = npcBoxes[0];
 		let userBox = userBoxes[0];
 		let legNBox = legacyNpcBoxes[0];
@@ -166,6 +169,7 @@ export class diagFinder {
 			return this.NpcPos;
 		}
 		if (userBox !== undefined && npcBox === undefined) {
+			console.log(this.UserPos);
 			this.UserPos = {
 				x: userBox.x - 488,
 				y: userBox.y - 82,
@@ -174,7 +178,15 @@ export class diagFinder {
 			};
 			//788 start X 945 start Y, 791 end X 951 end Y RegContinueButton
 			//The same Coords for RegContinueButtonHovered
-			//alt1.overLayRect(color, this.UserPos.x, this.UserPos.y, 75, 15, 5000, 3);
+			alt1.overLayRect(
+				color,
+				this.UserPos.x,
+				this.UserPos.y,
+				510,
+				130,
+				5000,
+				10
+			);
 			return this.UserPos;
 		}
 		if (legNBox !== undefined) {
@@ -421,7 +433,7 @@ export class diagFinder {
 	// 	}
 	// }
 	// readTitle(imgref: ImgRef) {
-	// 	const font = OCR.loadFontImage(imgPack.fontH, {
+	// 	const font = ocr.loadFontImage(imgPack.fontH, {
 	// 		basey: 13,
 	// 		spacewidth: 5,
 	// 		treshold: 0.6,
@@ -441,17 +453,15 @@ export class diagFinder {
 	// 			32
 	// 		);
 	// 		[[255, 203, 5]];
-	// 		let readTitle = OCR.readSmallCapsBackwards(
+	// 		let readTitle = ocr.readSmallCapsBackwards(
 	// 			buffer,
 	// 			font,
 	// 			[[255, 203, 5]],
-	// 			140,
-	// 			20,
-	// 			140,
-	// 			15
+	// 			this.NpcPos.x,
+	// 			837
 	// 		);
-	// 		OCR.debugFont(font);
-	// 		console.log();
+	// 		ocr.debugFont(font);
+
 	// 		return readTitle.text.toLowerCase();
 	// 	}
 	// 	if (this.UserPos !== null) {
@@ -461,22 +471,19 @@ export class diagFinder {
 	// 			this.UserPos.width,
 	// 			32
 	// 		);
-	// 		let pos = OCR.findReadLine(
+	// 		let pos = ocr.findReadLine(
 	// 			buffer,
 	// 			font,
 	// 			[[255, 203, 5]],
 	// 			this.UserPos.x,
 	// 			this.UserPos.y
 	// 		);
-	// 		let readTitle = OCR.readSmallCapsBackwards(
+	// 		let readTitle = ocr.readSmallCapsBackwards(
 	// 			buffer,
 	// 			font,
 	// 			[[255, 203, 5]],
 	// 			241,
-	// 			13,
-	// 			200,
-
-	// 			100
+	// 			20
 	// 		);
 	// 		console.log(pos.text);
 	// 		return readTitle.text.toLowerCase();
@@ -489,14 +496,12 @@ export class diagFinder {
 	// 			32
 	// 		);
 
-	// 		let readTitle = OCR.readSmallCapsBackwards(
+	// 		let readTitle = ocr.readSmallCapsBackwards(
 	// 			buffer,
 	// 			font,
 	// 			[[255, 203, 5]],
 	// 			Math.round(this.genBoxPos.width / 2) - 10,
-	// 			20,
-	// 			130,
-	// 			1
+	// 			20
 	// 		);
 	// 		console.log(readTitle.debugArea);
 	// 		return readTitle.text.toLowerCase();

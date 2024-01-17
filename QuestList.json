@@ -125,6 +125,7 @@
 		"Transcript": "/Quests/Between a Rock/Between_a_Rock_transcript.json",
 		"CTranscript": "/Quests/Between a Rock/CompareBetween_a_Rock.json"
 	},
+
 	{
 		"Quest": "Big Chompy Bird Hunting",
 		"Path": "./Quests/Big Chompy Bird Hunting/BigChompyBirdHuntingInfo.txt",
@@ -1042,6 +1043,12 @@
 		"Path": "./Quests/River of Blood/RiverOfBloodInfo.txt",
 		"Transcript": "./Quests/River of Blood/River_of_Blood_transcript.json",
 		"CTranscript": "./Quests/River of Blood/CompareRiver_of_Blood.json"
+	},
+	{
+		"Quest": "Rocking Out",
+		"Path": "./Quests/Rocking Out/RockingOutInfo.txt",
+		"Transcript": "./Quests/Rocking Out/Rocking_Out_transcript.json",
+		"CTranscript": "./Quests/Rocking Out/CompareRocking_Out.json"
 	},
 	{
 		"Quest": "Roving Elves",

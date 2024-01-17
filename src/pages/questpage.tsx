@@ -40,6 +40,8 @@ import { useQuestControllerStore } from "./../Handlers/HandlerStore.ts";
 import { createRoot } from "react-dom/client";
 import { DiagReader } from "./dialogsolver.tsx";
 import { Reader } from "./diagstartpage.tsx";
+// import { diagFinder } from "../Handlers/handleImage.ts";
+// import * as a1lib from "alt1";
 const QuestPage: React.FC = () => {
 	// State and variables
 	const qpname = useLocation();
@@ -56,7 +58,7 @@ const QuestPage: React.FC = () => {
 	const [completedQuests, setCompleteQuests] = useState<string[] | null>(null);
 	const QuestDetails = useQuestDetailsStore.getState().questDetails;
 	const [skillLevels, setSkillLevels] = useState<string[]>([]);
-
+	// const finder = new diagFinder();
 	const {
 		showStepReq,
 		buttonVisible,
@@ -68,7 +70,6 @@ const QuestPage: React.FC = () => {
 	const handleBackButton = () => {
 		navigate("/");
 	};
-
 	const questImageVis = () => {
 		if (viewQuestImage === true) {
 			setViewImage(false);
@@ -76,9 +77,12 @@ const QuestPage: React.FC = () => {
 			setViewImage(true);
 		}
 	};
-
 	const carouselRef = useRef<HTMLDivElement | null>(null);
 
+	// const capture = a1lib.captureHoldFullRs();
+	// finder.find();
+	// const title = finder.readTitle(capture);
+	// console.log(title);
 	// Use useEffect to scroll when viewQuestImage is true
 	useEffect(() => {
 		if (viewQuestImage && carouselRef.current) {
@@ -271,12 +275,7 @@ const QuestPage: React.FC = () => {
 			setHighestStepVisited((hSC) => Math.max(hSC, nextStep));
 		}
 	};
-	// const handlePlayerName = (event: React.KeyboardEvent<HTMLInputElement>) => {
-	// 	if (event.key === "Enter") {
-	// 		let player = PlayerFetch.run;
-	// 		console.log(" data", player);
-	// 	}
-	// };
+
 	useEffect(() => {
 		stepRefs.current = Array.from({ length: details.stepDetails.length }, () =>
 			React.createRef()
@@ -323,6 +322,7 @@ const QuestPage: React.FC = () => {
 			{viewQuestImage && (
 				<>
 					<Carousel
+						speed={100}
 						withIndicators
 						orientation="horizontal"
 						align="start"
