@@ -98,6 +98,7 @@ const QuestPage: React.FC = () => {
 	if (questName == "Bring Leela to Senliten's tomb") {
 		questName = "Missing My Mummy";
 	}
+
 	// const capture = a1lib.captureHoldFullRs();
 	// finder.find();
 	// const title = finder.readTitle(capture);
@@ -599,7 +600,8 @@ const QuestPage: React.FC = () => {
 																			: "#C64340", // Red
 																	}}
 																>
-																	{!isNaN(firstPart) ? (
+																	{!isNaN(firstPart) ||
+																	requirement === "None" ? (
 																		<span>{requirement}</span>
 																	) : (
 																		<NavLink
