@@ -91,7 +91,6 @@ export class PlayerQuests {
 
 			if (usePlayerStore.getState().playerQuestInfo.length !== 0) {
 				usePlayerStore.getState().playerReponseOK = true;
-				window.sessionStorage.setItem("playerName", playername);
 			}
 		} else {
 			console.warn("Unexpected data structure:", data);
@@ -206,7 +205,6 @@ export class PlayerQuests {
 				"skillLevels",
 				JSON.stringify(skillStrings)
 			);
-
 			return skillStrings;
 		} catch (error) {
 			console.error(error);

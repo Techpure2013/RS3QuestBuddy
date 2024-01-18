@@ -297,6 +297,41 @@
 		"EnemiesToDefeat": ["Wild jade vine (level 72)"]
 	},
 	{
+		"Quest": "Back to the Freezer",
+		"StartPoint": "Speak to Chuck at Ardougne Zoo.",
+		"MemberRequirement": "Members only",
+		"OfficialLength": "Medium to Long",
+		"Requirements": [
+			"Some Like It Cold ",
+			"Hunt for Red Raktuber ",
+			"Cold War",
+			"Sea Slug ",
+			"Ernest the Chicken",
+			"50 Divination",
+			"45 Runecrafting",
+			"37 Slayer"
+		],
+		"ItemsRequired": [
+			"Combat equipment",
+			"Clockwork suit (given to you if you don't have it)",
+			"Insulated boots",
+			"Ice cooler (Needed as an item, Ice shaker will not work)",
+			"50 Flickering energy",
+			"50 Bright energy",
+			"50 Sparkling energy",
+			"50 Gleaming energy",
+			"8-12 free backpack spaces"
+		],
+		"Recommended": [
+			"Protection against desert heat",
+			"Food",
+			"Pollnivneach teleportation methods (e.g. Chipped Teleport to house tablets, Ring of slaying teleport to Sumona, or a Pollnivneach Teleport scroll), or the Bandit Camp lodestone unlocked",
+			"Ardougne easy achievements for quick teleports to Chuck using the Kandarin monastery Teleport spell, or Clocktower Teleport scrolls, or Dramen staff or Lunar staff for access to the fairy ring code DJP",
+			"A charged Enchanted lyre, for immediate access to the market in Rellekka"
+		],
+		"EnemiesToDefeat": ["10 Killerwatt (level 61)"]
+	},
+	{
 		"Quest": "Battle of Forinthry",
 		"StartPoint": "Talk to the Raptor in Fort Forinthry. Show on map",
 		"MemberRequirement": "Members only",

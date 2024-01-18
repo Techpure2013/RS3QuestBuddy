@@ -60,7 +60,7 @@ export const QuestDetailsFetcher: React.FC<QuestFetcher> = ({ questName }) => {
 	//Call the fetchDetails function when the component mounts or when needed
 	useEffect(() => {
 		fetchDetails();
-	}, []);
+	}, [questName]);
 
 	return null;
 };

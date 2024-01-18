@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 import { Accordion, Button, Flex, List, Stepper } from "@mantine/core";
 import "./../index.css";
@@ -40,24 +40,28 @@ import { useQuestControllerStore } from "./../Handlers/HandlerStore.ts";
 import { createRoot } from "react-dom/client";
 import { DiagReader } from "./dialogsolver.tsx";
 import { Reader } from "./diagstartpage.tsx";
+
 // import { diagFinder } from "../Handlers/handleImage.ts";
 // import * as a1lib from "alt1";
 const QuestPage: React.FC = () => {
 	// State and variables
 	const qpname = useLocation();
-	const { questName, modified } = qpname.state;
+
+	let { questName, modified } = qpname.state;
+
 	const [active, setActive] = useState(-1);
 	const [highestStepVisited, setHighestStepVisited] = useState(active);
 	const questlistJSON = "./QuestList.json";
 	const textfile = modified + "info.txt";
 	const reader = new DiagReader();
-	const navigate = useNavigate();
+
 	const details = useQuestStepStore();
 	const imageDetails = UseImageStore();
 	const stepRefs = useRef<React.RefObject<HTMLDivElement>[]>([]);
 	const [completedQuests, setCompleteQuests] = useState<string[] | null>(null);
 	const QuestDetails = useQuestDetailsStore.getState().questDetails;
 	const [skillLevels, setSkillLevels] = useState<string[]>([]);
+
 	// const finder = new diagFinder();
 	const {
 		showStepReq,
@@ -68,7 +72,8 @@ const QuestPage: React.FC = () => {
 	} = useQuestControllerStore();
 	const handles = useQuestControllerStore();
 	const handleBackButton = () => {
-		navigate("/");
+		console.log(history.state);
+		history.back();
 	};
 	const questImageVis = () => {
 		if (viewQuestImage === true) {
@@ -78,7 +83,15 @@ const QuestPage: React.FC = () => {
 		}
 	};
 	const carouselRef = useRef<HTMLDivElement | null>(null);
-
+	if (questName == "Ability to enter Morytania") {
+		questName = "Priest in Peril";
+	}
+	if (
+		questName ==
+		"Jungle Potion is only required if clean volencia moss is a requested item during the quest"
+	) {
+		questName = "Jungle Potion";
+	}
 	// const capture = a1lib.captureHoldFullRs();
 	// finder.find();
 	// const title = finder.readTitle(capture);
@@ -473,7 +486,11 @@ const QuestPage: React.FC = () => {
 															});
 															const needMort =
 																requirement === "Ability to enter Morytania";
+															const needJunglePotion =
+																requirement ===
+																"Jungle Potion is only required if clean volencia moss is a requested item during the quest";
 															let abilityToEnterMort = false;
+															let junglePotion = false;
 															if (needMort) {
 																const hasPriestInPeril =
 																	completedQuests &&
@@ -495,6 +512,27 @@ const QuestPage: React.FC = () => {
 																	abilityToEnterMort = true;
 																}
 															}
+															if (needJunglePotion) {
+																const hasJunglePotion =
+																	completedQuests &&
+																	completedQuests.some((value) => {
+																		if (
+																			value &&
+																			typeof value === "object" &&
+																			"title" in value &&
+																			value !== null
+																		) {
+																			return (
+																				(value as { title?: string }).title ===
+																				"Jungle Potion"
+																			);
+																		}
+																		return false;
+																	});
+																if (hasJunglePotion) {
+																	junglePotion = true;
+																}
+															}
 															const isComplete =
 																completedQuests &&
 																completedQuests.some((value) => {
@@ -511,22 +549,58 @@ const QuestPage: React.FC = () => {
 																	}
 																	return false;
 																});
+															const requirementParts = requirement.split(" ");
+															const firstPart: number = parseInt(
+																requirementParts[0]
+															);
+															console.log(requirementParts);
+
 															return (
 																<li
 																	key={uniqueKey}
 																	style={{
 																		display: "block",
-																		color: abilityToEnterMort
-																			? "#24BF58" //Green
-																			: hasSkill
+																		color: hasSkill
 																			? "#24BF58" //Green
 																			: isComplete
 																			? "#24BF58" //Green
 																			: "#C64340", // Red
 																	}}
 																>
-																	{"- "}
-																	{requirement}
+																	{!isNaN(firstPart) ? (
+																		<span>{requirement}</span>
+																	) : (
+																		<NavLink
+																			to="/QuestPage"
+																			onClick={() => {
+																				if (abilityToEnterMort) {
+																					console.log(history.state);
+																					document.location.reload();
+																				}
+																			}}
+																			state={{
+																				questName: requirement,
+																				modified: requirement
+																					.toLowerCase()
+																					.replace(/[!,`']/g, ""),
+																			}}
+																			style={{
+																				display: "block",
+																				color: junglePotion
+																					? "#24BF58" //Green
+																					: abilityToEnterMort
+																					? "#24BF58" //Green
+																					: hasSkill
+																					? "#24BF58" //Green
+																					: isComplete
+																					? "#24BF58" //Green
+																					: "#C64340", // Red
+																				textDecoration: "none",
+																			}}
+																		>
+																			{requirement}
+																		</NavLink>
+																	)}
 																</li>
 															);
 														}

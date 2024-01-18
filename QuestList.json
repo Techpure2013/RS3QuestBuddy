@@ -961,16 +961,16 @@
 		"CTranscript": "./Quests/Rag and Bone Man/CompareRag_and_Bone_Man.json"
 	},
 	{
-		"Quest": "Recipe for Disaster",
-		"Path": "./Quests/Recipe for Disaster/RecipeForDisasterInfo.txt",
-		"Transcript": "",
-		"CTranscript": ""
-	},
-	{
 		"Quest": "Rat Catchers",
 		"Path": "./Quests/Rat Catchers/RatCatchersInfo.txt",
 		"Transcript": "./Quests/Rat Catchers/Rat_Catchers_transcript.json",
 		"CTranscript": "./Quests/Rat Catchers/CompareRat_Catchers.json"
+	},
+	{
+		"Quest": "Recipe for Disaster: Another Cook's Quest",
+		"Path": "./Quests/Recipe for Disaster Another Cooks Quest/recipefordisasteranothercooksquestinfo.txt",
+		"Transcript": "",
+		"CTranscript": "./Quests/Recipe for Disaster Another Cooks Quest/CompareRecipeforDisasterAnotherCooksQuest.json"
 	},
 	{
 		"Quest": "Recipe for Disaster: Freeing the Goblin Generals",

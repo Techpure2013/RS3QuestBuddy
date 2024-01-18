@@ -126,7 +126,7 @@ export class rsQuestSorter {
 			);
 
 			// Now finalFilteredPlayerInfo contains the modified quest points
-			console.log(filteredPlayerInfo);
+
 			const hasCompleteInfo = filteredPlayerInfo.filter((value) => {
 				if (value && typeof value === "object" && value.title) {
 					return value.status.toLowerCase() === "completed";
@@ -179,7 +179,7 @@ export class rsQuestSorter {
 					return false;
 				}
 			});
-			console.log("this is the next new Filter", newFiltersInfo);
+
 			const lastFilter = newFiltersInfo.filter((value) => {
 				if (value && typeof value === "object" && value.title) {
 					return value.userEligible;
@@ -363,6 +363,10 @@ export class rsQuestSorter {
 					JSON.stringify(hasCompleteInfo)
 				);
 			}
+			console.warn(
+				"This is for debugging purposes on users end",
+				hasCompleteInfo
+			);
 			usePlayerStore.getState().grabbedSkills = true;
 		}
 	}
