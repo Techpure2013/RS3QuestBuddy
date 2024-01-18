@@ -92,6 +92,12 @@ const QuestPage: React.FC = () => {
 	) {
 		questName = "Jungle Potion";
 	}
+	if (questName == "Fully restore Senliten from the 'Missing My Mummy' quest") {
+		questName = "Missing My Mummy";
+	}
+	if (questName == "Bring Leela to Senliten's tomb") {
+		questName = "Missing My Mummy";
+	}
 	// const capture = a1lib.captureHoldFullRs();
 	// finder.find();
 	// const title = finder.readTitle(capture);
@@ -484,6 +490,10 @@ const QuestPage: React.FC = () => {
 
 																return false;
 															});
+															const needLeela =
+																requirement ===
+																	"Fully restore Senliten from the 'Missing My Mummy' quest" ||
+																"Bring Leela to Senliten's tomb";
 															const needMort =
 																requirement === "Ability to enter Morytania";
 															const needJunglePotion =
@@ -491,6 +501,7 @@ const QuestPage: React.FC = () => {
 																"Jungle Potion is only required if clean volencia moss is a requested item during the quest";
 															let abilityToEnterMort = false;
 															let junglePotion = false;
+															let mmm = false;
 															if (needMort) {
 																const hasPriestInPeril =
 																	completedQuests &&
@@ -512,6 +523,28 @@ const QuestPage: React.FC = () => {
 																	abilityToEnterMort = true;
 																}
 															}
+															if (needLeela) {
+																const hasMMM =
+																	completedQuests &&
+																	completedQuests.some((value) => {
+																		if (
+																			value &&
+																			typeof value === "object" &&
+																			"title" in value &&
+																			value !== null
+																		) {
+																			return (
+																				(value as { title?: string }).title ===
+																				"Missing My Mummy"
+																			);
+																		}
+																		return false;
+																	});
+																if (hasMMM) {
+																	mmm = true;
+																}
+															}
+
 															if (needJunglePotion) {
 																const hasJunglePotion =
 																	completedQuests &&
@@ -553,7 +586,6 @@ const QuestPage: React.FC = () => {
 															const firstPart: number = parseInt(
 																requirementParts[0]
 															);
-															console.log(requirementParts);
 
 															return (
 																<li
@@ -586,7 +618,9 @@ const QuestPage: React.FC = () => {
 																			}}
 																			style={{
 																				display: "block",
-																				color: junglePotion
+																				color: mmm
+																					? "#24BF58"
+																					: junglePotion
 																					? "#24BF58" //Green
 																					: abilityToEnterMort
 																					? "#24BF58" //Green

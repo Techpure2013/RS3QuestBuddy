@@ -41,6 +41,7 @@ const QuestCarousel: React.FC = () => {
 	const handleKeyPress = async () => {
 		try {
 			if (playerName.length > 0) {
+				console.log("im here");
 				setSearchInitiated(true);
 				await playerfetch.fetchPlayerInfo(playerName);
 				await playerfetch.fetchPlayerSkills(playerName);
@@ -53,7 +54,10 @@ const QuestCarousel: React.FC = () => {
 						"playerFound",
 						JSON.stringify(playerFound)
 					);
-					window.localStorage.setItem("playerName", JSON.stringify(playerName));
+					window.sessionStorage.setItem(
+						"playerName",
+						JSON.stringify(playerName)
+					);
 				}
 			} else {
 				playerFound.current = false;
@@ -149,7 +153,7 @@ const QuestCarousel: React.FC = () => {
 	};
 	useEffect(() => {
 		console.log("Effect triggered on load");
-		const player = localStorage.getItem("playerName");
+		const player = sessionStorage.getItem("playerName");
 		console.log(player);
 		if (player !== null) {
 			returningPName.current = player;
@@ -160,7 +164,7 @@ const QuestCarousel: React.FC = () => {
 	}, []);
 	useEffect(() => {
 		const remainQuests = sessionStorage.getItem("remainingQuests");
-		const player = localStorage.getItem("playerName");
+		const player = sessionStorage.getItem("playerName");
 		const qp = sessionStorage.getItem("questPoints");
 		const sort = sessionStorage.getItem("sorted");
 		const playerF = sessionStorage.getItem("playerFound");
@@ -212,11 +216,7 @@ const QuestCarousel: React.FC = () => {
 						styles={{
 							input: { color: playerFound.current ? "#36935C" : "#933648" },
 						}}
-						label={
-							playerFound.current
-								? "Click me, Hit ENTER, wait 20s to update."
-								: "Search for Player Name"
-						}
+						label={"Search for Player Name"}
 						placeholder={"Search for Player Name"}
 						onKeyDown={(event) => {
 							if (event.key === "Enter") {
