@@ -322,9 +322,9 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 				this.dialogHelp.find();
 			}, 2000);
 
-			console.warn(
-				"Transcript Could not be found because there are no readoptions on screen"
-			);
+			// console.warn(
+			// 	"Transcript Could not be found because there are no readoptions on screen"
+			// );
 		}
 	}
 	/**
@@ -366,6 +366,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	 * Displays the overlay rectangle for each unique coordinate with a delay.
 	 */
 	private populateUniqueCoordinates() {
+		console.log(this.currentBestMatches);
 		for (const coord of this.currentBestMatches) {
 			const key = `${coord.x},${coord.y},${coord.width},${coord.buttonX}`;
 			this.uniqueCoordinates[key] = { ...coord };
@@ -450,6 +451,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 		// H: 130  H: 130
 
 		if (!this.anyOption) {
+			console.log(a1lib.getMousePosition(), this.buttonX);
 			alt1.overLayText(
 				`Option ${this.displayNumber} --->`,
 				this.textColor,
