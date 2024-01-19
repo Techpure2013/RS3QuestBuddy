@@ -48,7 +48,7 @@ const QuestPage: React.FC = () => {
 	const qpname = useLocation();
 
 	let { questName, modified } = qpname.state;
-
+	window.localStorage.setItem("questName", questName);
 	const [active, setActive] = useState(-1);
 	const [highestStepVisited, setHighestStepVisited] = useState(active);
 	const questlistJSON = "./QuestList.json";

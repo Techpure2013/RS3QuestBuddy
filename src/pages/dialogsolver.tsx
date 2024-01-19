@@ -2,6 +2,7 @@ import * as a1lib from "alt1";
 import DialogReader, { DialogButton } from "alt1/dialog";
 import { TypedEmitter } from "./../Handlers/TypeEmitter";
 import { diagFinder } from "../Handlers/handleImage";
+
 /**
  *
  * @property x - The x-coordinate of the point.
@@ -96,6 +97,8 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	widthBox: number = 0;
 	anyOption: boolean = false;
 	dialogHelp = new diagFinder();
+	questName = localStorage.getItem("questName")?.replace(/["]/g, "");
+
 	/**
 	 * Constructs a new DiagReader instance.
 	 * Initializes properties and binds methods.
@@ -251,41 +254,81 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 			this.resetVariables();
 		}
 	}
+	private cyclicShift(
+		arr: any[],
+		currentIndex: number,
+		groupSize: number
+	): any[] {
+		const groupIndex = Math.floor(currentIndex / groupSize);
 
+		// Calculate the starting index for the current group
+		const startIndex = groupIndex * groupSize;
+
+		// Perform cyclic shift within the current group
+		const shiftedArr = [...arr.slice(startIndex, startIndex + groupSize)];
+		const frontItem = shiftedArr.shift();
+		shiftedArr.push(frontItem);
+
+		// Update the original array with the shifted values
+		arr.splice(startIndex, groupSize, ...shiftedArr);
+
+		return arr;
+	}
 	/**
 	 * Processes matching points based on stored values and dialog options.
 	 * Finds the best match index for each stored value and updates the current best matches.
 	 * Emits a 'change' event after updating the state.
 	 * Logs an assertion error if the transcript could not be found.
 	 */
+	private count: number = 0;
+	private displayCount: number = 0;
+	private bestMatchIndex: number = 0;
 	private processMatching(): void {
 		// Check if stored values and dialog options are available
 		if (this.cTStore.length !== 0 && this.readOption!.length !== 0) {
 			// Iterate through stored values to find the best match
 			for (const value of this.cTStore) {
-				const bestMatchIndex = this.findBestMatchIndex(value.toLowerCase());
+				this.bestMatchIndex = this.findBestMatchIndex(value.toLowerCase());
 				// Update current best matches if a match is found
-				if (bestMatchIndex !== -1) {
-					if (this.readOption!.length == 5) {
-						this.readOption![bestMatchIndex].width = 288;
-					} else if (this.readOption!.length == 4) {
-						this.readOption![bestMatchIndex].width = 315;
-					} else if (this.readOption!.length == 3) {
-						this.readOption![bestMatchIndex].width = 220;
-					} else if (this.readOption!.length == 2) {
-						this.readOption![bestMatchIndex].width = 220;
+
+				if (this.bestMatchIndex !== -1) {
+					const usedIndex = this.cTStore.indexOf(value);
+
+					if (usedIndex !== -1 && this.count < 1) {
+						// Remove the used value from its current position and add it to the end
+						if (this.displayCount > this.currentBestMatches.length) {
+							const usedValue = this.cTStore.splice(usedIndex, 1)[0];
+							this.cTStore.push(usedValue);
+							this.displayCount = 0;
+						}
 					}
+					if (this.readOption!.length == 5) {
+						this.readOption![this.bestMatchIndex].width = 288;
+					} else if (this.readOption!.length == 4) {
+						this.readOption![this.bestMatchIndex].width = 315;
+					} else if (this.readOption!.length == 3) {
+						this.readOption![this.bestMatchIndex].width = 220;
+					} else if (this.readOption!.length == 2) {
+						this.readOption![this.bestMatchIndex].width = 220;
+					}
+
 					this.currentBestMatches.push({
-						x: this.readOption![bestMatchIndex].x,
-						y: this.readOption![bestMatchIndex].y,
-						width: this.readOption![bestMatchIndex].width,
-						buttonX: this.readOption![bestMatchIndex].buttonx,
+						x: this.readOption![this.bestMatchIndex].x,
+						y: this.readOption![this.bestMatchIndex].y,
+						width: this.readOption![this.bestMatchIndex].width,
+						buttonX: this.readOption![this.bestMatchIndex].buttonx,
 						displayIndex: this.currentBestMatches.length,
 					});
+					this.count++;
+					this.readOption = this.cyclicShift(
+						this.readOption!,
+						this.bestMatchIndex,
+						this.currentBestMatches.length
+					);
 					this.emit("change", this.getCState());
 					this.anyOption = false;
 				} else if (
-					bestMatchIndex < 0 &&
+					this.bestMatchIndex < 0 &&
 					value === "[Any option]" &&
 					this.readOption?.every((option) => option.text !== "[Any option]") &&
 					this.currentBestMatches &&
@@ -315,6 +358,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 				}
 			}
 
+			this.count = 0;
 			// Populate unique coordinates based on the current best matches
 			this.populateUniqueCoordinates();
 		} else {
@@ -341,7 +385,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 		for (let i = 0; i < this.readOption!.length; i++) {
 			const option = this.readOption![i].text.toLowerCase();
 			const distance = this.levenshteinDistance(value, option);
-			const similarityThreshold = 2;
+			const similarityThreshold = 0;
 
 			if (distance <= similarityThreshold && distance < bestMatchDistance) {
 				bestMatchDistance = distance;
@@ -350,6 +394,40 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 		}
 
 		return bestMatchIndex;
+	}
+	/**
+	 * Calculates the Levenshtein distance between two strings.
+	 * The Levenshtein distance represents the minimum number of single-character edits
+	 * (insertions, deletions, or substitutions) required to change one string into another.
+	 * @param a - The first string for comparison.
+	 * @param b - The second string for comparison.
+	 * @returns The Levenshtein distance between the two strings.
+	 */
+	public levenshteinDistance(a: string, b: string): number {
+		const matrix: number[][] = [];
+
+		// Initialize matrix with 0-based index values
+		for (let i = 0; i <= a.length; i++) {
+			matrix[i] = [i];
+		}
+		for (let j = 0; j <= b.length; j++) {
+			matrix[0][j] = j;
+		}
+
+		// Fill the matrix
+		for (let i = 1; i <= a.length; i++) {
+			for (let j = 1; j <= b.length; j++) {
+				const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+				matrix[i][j] = Math.min(
+					matrix[i - 1][j] + 1, // Deletion
+					matrix[i][j - 1] + 1, // Insertion
+					matrix[i - 1][j - 1] + cost // Substitution
+				);
+			}
+		}
+
+		// Return the bottom-right value of the matrix
+		return matrix[a.length][b.length];
 	}
 	/**
 	 * Resets the variables related to best matches and dialog box dimensions.
@@ -366,16 +444,9 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	 * Displays the overlay rectangle for each unique coordinate with a delay.
 	 */
 	private populateUniqueCoordinates() {
-		console.log(this.currentBestMatches);
 		for (const coord of this.currentBestMatches) {
 			const key = `${coord.x},${coord.y},${coord.width},${coord.buttonX}`;
 			this.uniqueCoordinates[key] = { ...coord };
-
-			this.coordinateCounts[key] = (this.coordinateCounts[key] || 0) + 1;
-
-			if (this.coordinateCounts[key] === 2) {
-				this.coordinateCounts = {};
-			}
 		}
 
 		this.currentBestMatches = [];
@@ -402,31 +473,37 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	 * Displays the overlay rectangle with a delay.
 	 * Uses setTimeout to stagger the timings and display each option.
 	 */
-	private displayBox() {
+	private handleCoordinates() {
 		if (this.uniqueCoordinates["0,0,0,0"]) {
 			delete this.uniqueCoordinates["0,0,0,0"];
 		}
+
 		// Get the keys of coordinateCounts
 		const keys = Object.keys(this.uniqueCoordinates);
 
-		// Define the delay duration in milliseconds
-		const delay = 1000; // 2 seconds
-		this.toggleOptionRun(false);
-		this.toggleOptionInterval(true, () => this.readCapture(), 600);
-		// Iterate over the keys
+		// Keep only the first coordinate if there are more than one
+		if (keys.length > 1) {
+			const firstKey = keys[0];
+			this.uniqueCoordinates = { [firstKey]: this.uniqueCoordinates[firstKey] };
+		}
 
-		for (let i = 0; i < keys.length; i++) {
-			const key = keys[i];
-			const [x, y, width, buttonX] = key.split(",").map((value) => {
-				return Number(value); // Convert each value to a number after trimming any whitespace
-			}); // Split the key into x and y coordinates
-
+		// Process the remaining coordinate (you may want to modify this part based on your requirements)
+		if (keys.length > 0) {
+			const [x, y, width, buttonX] = keys[0]
+				.split(",")
+				.map((value) => Number(value.trim()));
 			this.coordX = x;
 			this.coordY = y;
 			this.widthBox = width;
 			this.buttonX = buttonX;
-			break;
 		}
+	}
+	private displayBox() {
+		this.handleCoordinates();
+		const delay = 1000; // 2 seconds
+		this.toggleOptionRun(false);
+		this.toggleOptionInterval(true, () => this.readCapture(), 600);
+		// Iterate over the keys
 		//Five Options:
 		//X1: 586  X2: 569 X3: 599 X4: 608 X5: 536
 		//Y1: 708  Y2: 727 Y3: 746 Y4: 765 Y5: 784
@@ -451,7 +528,6 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 		// H: 130  H: 130
 
 		if (!this.anyOption) {
-			console.log(a1lib.getMousePosition(), this.buttonX);
 			alt1.overLayText(
 				`Option ${this.displayNumber} --->`,
 				this.textColor,
@@ -502,46 +578,11 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 				this.displayNumber = 1;
 				this.toggleOptionInterval(false, () => this.readCapture, 600);
 				this.toggleOptionInterval(true, () => this.readDiagOptions(), 600);
+				this.displayCount++;
 				return;
 			}
 
 			this.displayBox();
 		}, delay);
-	}
-
-	/**
-	 * Calculates the Levenshtein distance between two strings.
-	 * The Levenshtein distance represents the minimum number of single-character edits
-	 * (insertions, deletions, or substitutions) required to change one string into another.
-	 * @param a - The first string for comparison.
-	 * @param b - The second string for comparison.
-	 * @returns The Levenshtein distance between the two strings.
-	 */
-
-	public levenshteinDistance(a: string, b: string): number {
-		const matrix: number[][] = [];
-
-		// Initialize matrix with 0-based index values
-		for (let i = 0; i <= a.length; i++) {
-			matrix[i] = [i];
-		}
-		for (let j = 0; j <= b.length; j++) {
-			matrix[0][j] = j;
-		}
-
-		// Fill the matrix
-		for (let i = 1; i <= a.length; i++) {
-			for (let j = 1; j <= b.length; j++) {
-				const cost = a[i - 1] === b[j - 1] ? 0 : 1;
-				matrix[i][j] = Math.min(
-					matrix[i - 1][j] + 1, // Deletion
-					matrix[i][j - 1] + 1, // Insertion
-					matrix[i - 1][j - 1] + cost // Substitution
-				);
-			}
-		}
-
-		// Return the bottom-right value of the matrix
-		return matrix[a.length][b.length];
 	}
 }

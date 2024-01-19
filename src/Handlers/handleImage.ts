@@ -70,7 +70,6 @@ export class diagFinder {
 		let dialogOptionBoxes: a1lib.PointLike[] = [];
 		for (let imgs of [this.imgPack]) {
 			const NPos = imgref.findSubimage(imgs.diagboxSide);
-			console.log(NPos);
 			const UPos = imgref.findSubimage(imgs.diagboxSideSelf);
 			const LNPos = imgref.findSubimage(imgs.legDiagBoxNpc);
 			const LUPos = imgref.findSubimage(imgs.legDiagBoxUser);
