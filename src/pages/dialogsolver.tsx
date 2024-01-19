@@ -98,6 +98,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	anyOption: boolean = false;
 	dialogHelp = new diagFinder();
 	questName = localStorage.getItem("questName")?.replace(/["]/g, "");
+	cTStoreCopy = this.cTStore;
 
 	/**
 	 * Constructs a new DiagReader instance.
@@ -254,26 +255,26 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 			this.resetVariables();
 		}
 	}
-	private cyclicShift(
-		arr: any[],
-		currentIndex: number,
-		groupSize: number
-	): any[] {
-		const groupIndex = Math.floor(currentIndex / groupSize);
+	// private cyclicShift(
+	// 	arr: any[],
+	// 	currentIndex: number,
+	// 	groupSize: number
+	// ): any[] {
+	// 	const groupIndex = Math.floor(currentIndex / groupSize);
 
-		// Calculate the starting index for the current group
-		const startIndex = groupIndex * groupSize;
+	// 	// Calculate the starting index for the current group
+	// 	const startIndex = groupIndex * groupSize;
 
-		// Perform cyclic shift within the current group
-		const shiftedArr = [...arr.slice(startIndex, startIndex + groupSize)];
-		const frontItem = shiftedArr.shift();
-		shiftedArr.push(frontItem);
+	// 	// Perform cyclic shift within the current group
+	// 	const shiftedArr = [...arr.slice(startIndex, startIndex + groupSize)];
+	// 	const frontItem = shiftedArr.shift();
+	// 	shiftedArr.push(frontItem);
 
-		// Update the original array with the shifted values
-		arr.splice(startIndex, groupSize, ...shiftedArr);
+	// 	// Update the original array with the shifted values
+	// 	arr.splice(startIndex, groupSize, ...shiftedArr);
 
-		return arr;
-	}
+	// 	return arr;
+	// }
 	/**
 	 * Processes matching points based on stored values and dialog options.
 	 * Finds the best match index for each stored value and updates the current best matches.
@@ -285,7 +286,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	private bestMatchIndex: number = 0;
 	private processMatching(): void {
 		// Check if stored values and dialog options are available
-		if (this.cTStore.length !== 0 && this.readOption!.length !== 0) {
+		if (this.cTStoreCopy.length !== 0 && this.readOption!.length !== 0) {
 			// Iterate through stored values to find the best match
 			for (const value of this.cTStore) {
 				this.bestMatchIndex = this.findBestMatchIndex(value.toLowerCase());
@@ -296,9 +297,9 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 
 					if (usedIndex !== -1 && this.count < 1) {
 						// Remove the used value from its current position and add it to the end
-						if (this.displayCount > this.currentBestMatches.length) {
+						if (this.displayCount > 6) {
 							const usedValue = this.cTStore.splice(usedIndex, 1)[0];
-							this.cTStore.push(usedValue);
+							this.cTStoreCopy.push(usedValue);
 							this.displayCount = 0;
 						}
 					}
@@ -320,11 +321,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 						displayIndex: this.currentBestMatches.length,
 					});
 					this.count++;
-					this.readOption = this.cyclicShift(
-						this.readOption!,
-						this.bestMatchIndex,
-						this.currentBestMatches.length
-					);
+
 					this.emit("change", this.getCState());
 					this.anyOption = false;
 				} else if (
@@ -365,7 +362,8 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 			setTimeout(() => {
 				this.dialogHelp.find();
 			}, 2000);
-
+			this.displayCount = 0;
+			this.cTStoreCopy = this.cTStore;
 			// console.warn(
 			// 	"Transcript Could not be found because there are no readoptions on screen"
 			// );
