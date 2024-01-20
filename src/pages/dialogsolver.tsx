@@ -285,7 +285,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 		// Check if stored values and dialog options are available
 		if (this.cTStoreCopy.length !== 0 && this.readOption!.length !== 0) {
 			// Iterate through stored values to find the best match
-			for (const value of this.cTStore) {
+			for (const value of this.cTStoreCopy) {
 				this.bestMatchIndex = this.findBestMatchIndex(value.toLowerCase());
 				// Update current best matches if a match is found
 
