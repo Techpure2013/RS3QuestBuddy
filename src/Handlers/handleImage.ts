@@ -44,9 +44,7 @@ export class diagFinder {
 			diagboxContinueButton: await a1lib.imageDataFromUrl(diagBoxContinueB),
 			diagBoxContinueHover: await a1lib.imageDataFromUrl(regBoxContinueBHov),
 			legacyContButton: await a1lib.imageDataFromUrl(legacyContinueButton),
-			legacyContinueButtonHover: await a1lib.imageDataFromUrl(
-				legacyContinueHover
-			),
+			legacyContinueButtonHover: await a1lib.imageDataFromUrl(legacyContinueHover),
 			genbox: await a1lib.imageDataFromUrl(generalbox),
 			acceptButton: await a1lib.imageDataFromUrl(acceptButton),
 			dialogOptionButton: await a1lib.imageDataFromUrl(dialogOptionButton),
@@ -168,7 +166,6 @@ export class diagFinder {
 			return this.NpcPos;
 		}
 		if (userBox !== undefined && npcBox === undefined) {
-			console.log(this.UserPos);
 			this.UserPos = {
 				x: userBox.x - 488,
 				y: userBox.y - 82,

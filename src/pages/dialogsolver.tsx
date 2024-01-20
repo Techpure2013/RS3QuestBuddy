@@ -97,8 +97,8 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	widthBox: number = 0;
 	anyOption: boolean = false;
 	dialogHelp = new diagFinder();
-	questName = localStorage.getItem("questName")?.replace(/["]/g, "");
-	cTStoreCopy = this.cTStore;
+
+	prevTitle: string = "";
 
 	/**
 	 * Constructs a new DiagReader instance.
@@ -242,6 +242,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 
 		// Read and set the dialog title
 		this.diagTitle = this.diagReader.readTitle(diagboxcapture);
+
 		// Emit a 'change' event with the updated state
 		this.emit("change", this.getCState());
 
@@ -278,38 +279,32 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	 * Emits a 'change' event after updating the state.
 	 * Logs an assertion error if the transcript could not be found.
 	 */
-	private count: number = 0;
-	private displayCount: number = 0;
+
 	private bestMatchIndex: number = 0;
+	private maxIteration: number = 1;
+	private iterationCount: number = 0;
 	private processMatching(): void {
+		this.iterationCount = 0;
 		// Check if stored values and dialog options are available
-		if (this.cTStoreCopy.length !== 0 && this.readOption!.length !== 0) {
-			// Iterate through stored values to find the best match
-			for (const value of this.cTStoreCopy) {
+		if (this.cTStore.length !== 0 && this.readOption!.length !== 0) {
+			for (const value of this.cTStore) {
 				this.bestMatchIndex = this.findBestMatchIndex(value.toLowerCase());
+
 				// Update current best matches if a match is found
-
 				if (this.bestMatchIndex !== -1) {
-					const usedIndex = this.cTStoreCopy.indexOf(value);
+					const usedIndex = this.cTStore.indexOf(value);
 
-					if (usedIndex !== -1 && this.count < 1) {
-						// Remove the used value from its current position and add it to the end
-						if (this.displayCount > 6) {
-							const usedValue = this.cTStore.splice(usedIndex, 1)[0];
-							this.cTStoreCopy.push(usedValue);
-							this.displayCount = 0;
-						}
-					}
-					if (this.readOption!.length == 5) {
-						this.readOption![this.bestMatchIndex].width = 288;
-					} else if (this.readOption!.length == 4) {
-						this.readOption![this.bestMatchIndex].width = 315;
-					} else if (this.readOption!.length == 3) {
-						this.readOption![this.bestMatchIndex].width = 220;
-					} else if (this.readOption!.length == 2) {
-						this.readOption![this.bestMatchIndex].width = 220;
+					// Remove the used value from its current position and add it to the end
+
+					const length = this.readOption!.length;
+					let width = 220; // Default width for lengths 2 and 3
+					if (length === 4) {
+						width = 315;
+					} else if (length === 5) {
+						width = 288;
 					}
 
+					this.readOption![this.bestMatchIndex].width = width;
 					this.currentBestMatches.push({
 						x: this.readOption![this.bestMatchIndex].x,
 						y: this.readOption![this.bestMatchIndex].y,
@@ -317,48 +312,46 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 						buttonX: this.readOption![this.bestMatchIndex].buttonx,
 						displayIndex: this.currentBestMatches.length,
 					});
-					this.count++;
+
+					// Check if the maximum iterations have been reached before updating the store
+					if (this.iterationCount < this.maxIteration) {
+						const usedValue = this.cTStore.splice(usedIndex, 1)[0];
+						this.cTStore.push(usedValue);
+					}
 
 					this.emit("change", this.getCState());
 					this.anyOption = false;
-				} else if (
-					this.bestMatchIndex < 0 &&
-					value === "[Any option]" &&
-					this.readOption?.every((option) => option.text !== "[Any option]") &&
-					this.currentBestMatches &&
-					this.currentBestMatches.length === 0
-				) {
-					const randomIndex = Math.floor(Math.random() * this.readOption!.length);
-					if (this.readOption!.length == 5) {
-						this.readOption![randomIndex].width = 288;
-					} else if (this.readOption!.length == 4) {
-						this.readOption![randomIndex].width = 315;
-					} else if (this.readOption!.length == 3) {
-						this.readOption![randomIndex].width = 220;
-					} else if (this.readOption!.length == 2) {
-						this.readOption![randomIndex].width = 220;
-					}
-					this.currentBestMatches.push({
-						x: this.readOption![randomIndex].x,
-						y: this.readOption![randomIndex].y,
-						width: this.readOption![randomIndex].width,
-						buttonX: this.readOption![randomIndex].buttonx,
-						displayIndex: this.currentBestMatches.length,
-					});
-					this.emit("change", this.getCState());
-					this.anyOption = true;
+
+					// Increment the iteration count after processing a value
+					this.iterationCount++;
+				}
+
+				// Check if the maximum iterations have been reached before continuing the loop
+				if (this.iterationCount >= this.maxIteration) {
+					break;
 				}
 			}
+			if (this.currentBestMatches.length === 0) {
+				const randomIndex = Math.floor(Math.random() * this.readOption!.length);
+				const randomCoordinate = this.readOption![randomIndex];
 
-			this.count = 0;
+				// Update current best matches with the random coordinate
+				this.currentBestMatches.push({
+					x: randomCoordinate.x,
+					y: randomCoordinate.y,
+					width: randomCoordinate.width,
+					buttonX: randomCoordinate.buttonx,
+					displayIndex: this.currentBestMatches.length,
+				});
+				this.anyOption = true;
+			}
 			// Populate unique coordinates based on the current best matches
 			this.populateUniqueCoordinates();
 		} else {
 			setTimeout(() => {
 				this.dialogHelp.find();
 			}, 2000);
-			this.displayCount = 0;
-			this.cTStoreCopy = this.cTStore;
+
 			// console.warn(
 			// 	"Transcript Could not be found because there are no readoptions on screen"
 			// );
@@ -378,7 +371,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 		for (let i = 0; i < this.readOption!.length; i++) {
 			const option = this.readOption![i].text.toLowerCase();
 			const distance = this.levenshteinDistance(value, option);
-			const similarityThreshold = 0;
+			const similarityThreshold = 2;
 
 			if (distance <= similarityThreshold && distance < bestMatchDistance) {
 				bestMatchDistance = distance;
@@ -441,7 +434,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 			const key = `${coord.x},${coord.y},${coord.width},${coord.buttonX}`;
 			this.uniqueCoordinates[key] = { ...coord };
 		}
-
+		console.log(this.currentBestMatches);
 		this.currentBestMatches = [];
 
 		this.displayBox();
@@ -474,13 +467,6 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 		// Get the keys of coordinateCounts
 		const keys = Object.keys(this.uniqueCoordinates);
 
-		// Keep only the first coordinate if there are more than one
-		if (keys.length > 1) {
-			const firstKey = keys[0];
-			this.uniqueCoordinates = { [firstKey]: this.uniqueCoordinates[firstKey] };
-		}
-
-		// Process the remaining coordinate (you may want to modify this part based on your requirements)
 		if (keys.length > 0) {
 			const [x, y, width, buttonX] = keys[0]
 				.split(",")
@@ -521,6 +507,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 		// H: 130  H: 130
 
 		if (!this.anyOption) {
+			console.log("option display");
 			alt1.overLayText(
 				`Option ${this.displayNumber} --->`,
 				this.textColor,
@@ -560,18 +547,15 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 
 		// Use setTimeout to introduce a delay before displaying the overlay rectangle
 		setTimeout(() => {
-			this.displayNumber++;
-			// Delete the displayed coordinate
 			delete this.uniqueCoordinates[
 				`${this.coordX},${this.coordY},${this.widthBox},${this.buttonX}`
 			];
 
-			// Check if any more coordinates need to be displayed
 			if (Object.keys(this.uniqueCoordinates).length === 0) {
 				this.displayNumber = 1;
 				this.toggleOptionInterval(false, () => this.readCapture, 600);
 				this.toggleOptionInterval(true, () => this.readDiagOptions(), 600);
-				this.displayCount++;
+
 				return;
 			}
 

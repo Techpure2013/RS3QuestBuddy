@@ -42,7 +42,7 @@ export const Reader: React.FC<ReaderProps> = ({ reader, questName }) => {
 						cleanedData?.map((value) =>
 							value.toString().replace('"', "").replace('"', "")
 						) || [];
-					// Set the transcript data to the Zustand store
+
 					reader.cTStore = cTranscriptArray;
 				}
 			} catch (error) {
@@ -57,6 +57,7 @@ export const Reader: React.FC<ReaderProps> = ({ reader, questName }) => {
 			console.warn("I am unmounting Diagsolver Page Component");
 			reader.off("change", setCState);
 			reader.toggleOptionRun(false);
+			reader.readOption = [];
 		};
 	}, []);
 	return (

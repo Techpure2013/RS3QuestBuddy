@@ -145,6 +145,7 @@ const QuestPage: React.FC = () => {
 			scrollIntoView(nextStep);
 		}
 	};
+
 	const scrollPrev = (): void => {
 		const prevStep = active - 1;
 		console.log(prevStep);
@@ -305,9 +306,12 @@ const QuestPage: React.FC = () => {
 	useEffect(() => {
 		const completedQuests = sessionStorage.getItem("hasCompleted");
 		const skill = sessionStorage.getItem("skillLevels");
-		if (completedQuests !== null && skill !== null) {
+		const sRef = localStorage.getItem("stepRef");
+		if (completedQuests !== null && skill !== null && sRef !== null) {
 			const parsedQuests = JSON.parse(completedQuests);
 			const parsedSkills = JSON.parse(skill);
+			const parsedRef = JSON.parse(sRef);
+			stepRefs.current = parsedRef;
 			if (
 				parsedQuests !== null &&
 				typeof parsedQuests === "object" &&

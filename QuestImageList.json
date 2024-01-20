@@ -1138,11 +1138,7 @@
 	},
 	{
 		"name": "Dwarf Cannon",
-		"images": [
-			"DwarfCannon.png",
-			"DwarfCannonreward.png",
-			"Toolkitinterface.png"
-		]
+		"images": ["DwarfCannon.png", "DwarfCannonreward.png", "Toolkitinterface.png"]
 	},
 	{
 		"name": "Eadgars Ruse",
@@ -1791,17 +1787,16 @@
 	{
 		"name": "Love Story",
 		"images": [
-			"FightingwiththeWOM.png",
-			"LoveStory.png",
-			"LoveStorycontrollingthedummy.png",
-			"LoveStoryhay.png",
-			"LoveStorymakeup.png",
-			"LoveStoryreward.png",
-			"Makingthedummy.png",
-			"Robbery.png",
-			"ZeneveviaBossBattle.png",
-			"Zeneviviadefeated.png",
-			"Zeneviviameet.png"
+			"MabelStartLoc.png",
+			"ClimbUpLadder.png",
+			"HaybalePuzzleSolution.png",
+			"Location of ring.png",
+			"wiseOldMan.png",
+			"step17Reference.png",
+			"PuzzleBottomSolution.png",
+			"PuzzleTopSolution.png",
+			"WorkshopRoom.png",
+			"BombLocations.png"
 		]
 	},
 	{
@@ -2302,10 +2297,7 @@
 	},
 	{
 		"name": "Recipe for Disaster Freeing Evil Dave",
-		"images": [
-			"BasementofDoom.png",
-			"RecipeforDisasterFreeingEvilDavereward.png"
-		]
+		"images": ["BasementofDoom.png", "RecipeforDisasterFreeingEvilDavereward.png"]
 	},
 	{
 		"name": "Recipe for Disaster Freeing King Awowogei",
@@ -3545,11 +3537,7 @@
 	},
 	{
 		"name": "Wolf Whistle",
-		"images": [
-			"SearchStikklebrix.png",
-			"WolfWhistle.png",
-			"WolfWhistlepouch.png"
-		]
+		"images": ["SearchStikklebrix.png", "WolfWhistle.png", "WolfWhistlepouch.png"]
 	},
 	{
 		"name": "You Are It",
