@@ -141,17 +141,22 @@ const QuestPage: React.FC = () => {
 	}
 	const scrollNext = (): void => {
 		const nextStep = active + 1;
-		scrollIntoView(nextStep);
+		if (nextStep <= details.stepDetails.length) {
+			scrollIntoView(nextStep);
+		}
 	};
 	const scrollPrev = (): void => {
 		const prevStep = active - 1;
-		scrollIntoView(prevStep);
+		console.log(prevStep);
+		if (prevStep > 0) {
+			scrollIntoView(prevStep);
+		}
 	};
 
 	const scrollIntoView = (step: number) => {
 		const element = document.getElementById(step.toString());
 		if (element) {
-			element.scrollIntoView({ behavior: "smooth", block: "start" });
+			element.scrollIntoView({ behavior: "smooth", block: "nearest" });
 		}
 	};
 	const ShouldAllowStep = (step: number) =>
@@ -181,8 +186,7 @@ const QuestPage: React.FC = () => {
 
 				newWindow.document.write("<!DOCTYPE html><head></head><body></body>");
 				// Render the QuestControls component into the new window
-				const container: HTMLDivElement =
-					newWindow.document.createElement("div");
+				const container: HTMLDivElement = newWindow.document.createElement("div");
 				container.className = "ButtonGroupTwo";
 				newWindow.document.body.appendChild(container);
 				newWindow.document.title = "Quest Controls";
@@ -205,8 +209,7 @@ const QuestPage: React.FC = () => {
 					try {
 						const stylesheets: NodeListOf<HTMLStyleElement | HTMLLinkElement> =
 							document.querySelectorAll('style, link[rel="stylesheet"]');
-						const stylesheetsArray: HTMLStyleElement[] =
-							Array.from(stylesheets);
+						const stylesheetsArray: HTMLStyleElement[] = Array.from(stylesheets);
 
 						console.log("Copying styles:", stylesheetsArray);
 
@@ -215,9 +218,7 @@ const QuestPage: React.FC = () => {
 							copyStyle(window, newWindow!, stylesheet);
 						});
 
-						const emotionStyles = document.querySelectorAll(
-							"style[data-emotion]"
-						);
+						const emotionStyles = document.querySelectorAll("style[data-emotion]");
 						emotionStyles.forEach((style) => {
 							const newEmotionStyle = document.createElement("style");
 							newEmotionStyle.textContent = style.textContent;
@@ -284,12 +285,12 @@ const QuestPage: React.FC = () => {
 	const handleStepChange = (nextStep: number) => {
 		const stepLength = details.stepDetails.length;
 		const isOutOfBoundsBottom = nextStep > stepLength;
-		const isOutOfBoundsTop = stepLength < 0;
+		const isOutOfBoundsTop = nextStep < 0;
 
 		if (isOutOfBoundsBottom) {
-			return window.alert("Cannot go forward");
+			window.alert("Cannot go forward");
 		} else if (isOutOfBoundsTop) {
-			return window.alert("Cannot go back");
+			window.alert("Cannot go back");
 		} else {
 			setActive(nextStep);
 			setHighestStepVisited((hSC) => Math.max(hSC, nextStep));
@@ -401,11 +402,7 @@ const QuestPage: React.FC = () => {
 						<Button variant="outline" color="#EEF3FF" onClick={handlePopOut}>
 							Pop Out Quest Controls
 						</Button>
-						<Button
-							variant="outline"
-							color="#EEF3FF"
-							onClick={handleBackButton}
-						>
+						<Button variant="outline" color="#EEF3FF" onClick={handleBackButton}>
 							Pick Another Quest
 						</Button>
 						<Button
@@ -423,21 +420,13 @@ const QuestPage: React.FC = () => {
 						Pop In Quest Controls
 					</Button>
 				)}
-				{buttonVisible && // Add the NOT (!) operator here to hide the button when buttonVisible is true
+				{buttonVisible &&
 					(showStepReq ? (
-						<Button
-							variant="outline"
-							color="#EEF3FF"
-							onClick={toggleShowStepReq}
-						>
+						<Button variant="outline" color="#EEF3FF" onClick={toggleShowStepReq}>
 							Show Step Details
 						</Button>
 					) : (
-						<Button
-							variant="outline"
-							color="#EEF3FF"
-							onClick={toggleShowStepReq}
-						>
+						<Button variant="outline" color="#EEF3FF" onClick={toggleShowStepReq}>
 							Show Quest Details
 						</Button>
 					))}
@@ -447,12 +436,7 @@ const QuestPage: React.FC = () => {
 					<Accordion
 						defaultValue=""
 						chevron={
-							<Image
-								src={QuestIcon}
-								alt="Quest Icon"
-								width="20px"
-								height="20px"
-							/>
+							<Image src={QuestIcon} alt="Quest Icon" width="20px" height="20px" />
 						}
 					>
 						<Accordion.Item key={1} value="Click to Show Quest Requirements">
@@ -469,105 +453,38 @@ const QuestPage: React.FC = () => {
 										{QuestDetails.map((quest, questIndex) => {
 											return (
 												<React.Fragment key={questIndex}>
-													{quest.Requirements.map(
-														(requirement, requirementIndex) => {
-															// Combine questIndex and requirementIndex to create a unique key
-															const uniqueKey = `${questIndex}-${requirementIndex}`;
-															const hasSkill = skillLevels.some((value) => {
-																const splitValue = value.split(" ");
-																const isNumber = !isNaN(
-																	parseFloat(splitValue[0])
-																);
-																const reqStr = requirement.split(" ");
-																const isReqNum = !isNaN(parseFloat(reqStr[0]));
+													{quest.Requirements.map((requirement, requirementIndex) => {
+														// Combine questIndex and requirementIndex to create a unique key
+														const uniqueKey = `${questIndex}-${requirementIndex}`;
+														const hasSkill = skillLevels.some((value) => {
+															const splitValue = value.split(" ");
+															const isNumber = !isNaN(parseFloat(splitValue[0]));
+															const reqStr = requirement.split(" ");
+															const isReqNum = !isNaN(parseFloat(reqStr[0]));
 
-																if (isNumber && isReqNum) {
-																	const numberPart = parseInt(splitValue[0]);
-																	const requirementNumber = parseInt(reqStr[0]);
+															if (isNumber && isReqNum) {
+																const numberPart = parseInt(splitValue[0]);
+																const requirementNumber = parseInt(reqStr[0]);
 
-																	// Compare the extracted number
-																	return numberPart > requirementNumber;
-																}
-
-																return false;
-															});
-															const needLeela =
-																requirement ===
-																	"Fully restore Senliten from the 'Missing My Mummy' quest" ||
-																"Bring Leela to Senliten's tomb";
-															const needMort =
-																requirement === "Ability to enter Morytania";
-															const needJunglePotion =
-																requirement ===
-																"Jungle Potion is only required if clean volencia moss is a requested item during the quest";
-															let abilityToEnterMort = false;
-															let junglePotion = false;
-															let mmm = false;
-															if (needMort) {
-																const hasPriestInPeril =
-																	completedQuests &&
-																	completedQuests.some((value) => {
-																		if (
-																			value &&
-																			typeof value === "object" &&
-																			"title" in value &&
-																			value !== null
-																		) {
-																			return (
-																				(value as { title?: string }).title ===
-																				"Priest in Peril"
-																			);
-																		}
-																		return false;
-																	});
-																if (hasPriestInPeril) {
-																	abilityToEnterMort = true;
-																}
-															}
-															if (needLeela) {
-																const hasMMM =
-																	completedQuests &&
-																	completedQuests.some((value) => {
-																		if (
-																			value &&
-																			typeof value === "object" &&
-																			"title" in value &&
-																			value !== null
-																		) {
-																			return (
-																				(value as { title?: string }).title ===
-																				"Missing My Mummy"
-																			);
-																		}
-																		return false;
-																	});
-																if (hasMMM) {
-																	mmm = true;
-																}
+																// Compare the extracted number
+																return numberPart > requirementNumber;
 															}
 
-															if (needJunglePotion) {
-																const hasJunglePotion =
-																	completedQuests &&
-																	completedQuests.some((value) => {
-																		if (
-																			value &&
-																			typeof value === "object" &&
-																			"title" in value &&
-																			value !== null
-																		) {
-																			return (
-																				(value as { title?: string }).title ===
-																				"Jungle Potion"
-																			);
-																		}
-																		return false;
-																	});
-																if (hasJunglePotion) {
-																	junglePotion = true;
-																}
-															}
-															const isComplete =
+															return false;
+														});
+														const needLeela =
+															requirement ===
+																"Fully restore Senliten from the 'Missing My Mummy' quest" ||
+															"Bring Leela to Senliten's tomb";
+														const needMort = requirement === "Ability to enter Morytania";
+														const needJunglePotion =
+															requirement ===
+															"Jungle Potion is only required if clean volencia moss is a requested item during the quest";
+														let abilityToEnterMort = false;
+														let junglePotion = false;
+														let mmm = false;
+														if (needMort) {
+															const hasPriestInPeril =
 																completedQuests &&
 																completedQuests.some((value) => {
 																	if (
@@ -577,70 +494,121 @@ const QuestPage: React.FC = () => {
 																		value !== null
 																	) {
 																		return (
-																			(value as { title?: string }).title ===
-																			requirement
+																			(value as { title?: string }).title === "Priest in Peril"
 																		);
 																	}
 																	return false;
 																});
-															const requirementParts = requirement.split(" ");
-															const firstPart: number = parseInt(
-																requirementParts[0]
-															);
-
-															return (
-																<li
-																	key={uniqueKey}
-																	style={{
-																		display: "block",
-																		color: hasSkill
-																			? "#24BF58" //Green
-																			: isComplete
-																			? "#24BF58" //Green
-																			: "#C64340", // Red
-																	}}
-																>
-																	{!isNaN(firstPart) ||
-																	requirement === "None" ? (
-																		<span>{requirement}</span>
-																	) : (
-																		<NavLink
-																			to="/QuestPage"
-																			onClick={() => {
-																				if (abilityToEnterMort) {
-																					console.log(history.state);
-																					document.location.reload();
-																				}
-																			}}
-																			state={{
-																				questName: requirement,
-																				modified: requirement
-																					.toLowerCase()
-																					.replace(/[!,`']/g, ""),
-																			}}
-																			style={{
-																				display: "block",
-																				color: mmm
-																					? "#24BF58"
-																					: junglePotion
-																					? "#24BF58" //Green
-																					: abilityToEnterMort
-																					? "#24BF58" //Green
-																					: hasSkill
-																					? "#24BF58" //Green
-																					: isComplete
-																					? "#24BF58" //Green
-																					: "#C64340", // Red
-																				textDecoration: "none",
-																			}}
-																		>
-																			{requirement}
-																		</NavLink>
-																	)}
-																</li>
-															);
+															if (hasPriestInPeril) {
+																abilityToEnterMort = true;
+															}
 														}
-													)}
+														if (needLeela) {
+															const hasMMM =
+																completedQuests &&
+																completedQuests.some((value) => {
+																	if (
+																		value &&
+																		typeof value === "object" &&
+																		"title" in value &&
+																		value !== null
+																	) {
+																		return (
+																			(value as { title?: string }).title === "Missing My Mummy"
+																		);
+																	}
+																	return false;
+																});
+															if (hasMMM) {
+																mmm = true;
+															}
+														}
+
+														if (needJunglePotion) {
+															const hasJunglePotion =
+																completedQuests &&
+																completedQuests.some((value) => {
+																	if (
+																		value &&
+																		typeof value === "object" &&
+																		"title" in value &&
+																		value !== null
+																	) {
+																		return (
+																			(value as { title?: string }).title === "Jungle Potion"
+																		);
+																	}
+																	return false;
+																});
+															if (hasJunglePotion) {
+																junglePotion = true;
+															}
+														}
+														const isComplete =
+															completedQuests &&
+															completedQuests.some((value) => {
+																if (
+																	value &&
+																	typeof value === "object" &&
+																	"title" in value &&
+																	value !== null
+																) {
+																	return (value as { title?: string }).title === requirement;
+																}
+																return false;
+															});
+														const requirementParts = requirement.split(" ");
+														const firstPart: number = parseInt(requirementParts[0]);
+
+														return (
+															<li
+																key={uniqueKey}
+																style={{
+																	display: "block",
+																	color: hasSkill
+																		? "#24BF58" //Green
+																		: isComplete
+																		? "#24BF58" //Green
+																		: "#C64340", // Red
+																}}
+															>
+																{!isNaN(firstPart) || requirement === "None" ? (
+																	<span>{requirement}</span>
+																) : (
+																	<NavLink
+																		to="/QuestPage"
+																		onClick={() => {
+																			if (abilityToEnterMort) {
+																				console.log(history.state);
+																				document.location.reload();
+																			}
+																		}}
+																		state={{
+																			questName: requirement,
+																			modified: requirement.toLowerCase().replace(/[!,`']/g, ""),
+																		}}
+																		style={{
+																			display: "block",
+																			color: mmm
+																				? "#24BF58"
+																				: junglePotion
+																				? "#24BF58" //Green
+																				: abilityToEnterMort
+																				? "#24BF58" //Green
+																				: hasSkill
+																				? "#24BF58" //Green
+																				: isComplete
+																				? "#24BF58" //Green
+																				: "#C64340", // Red
+																			textDecoration: "none",
+																		}}
+																	>
+																		{requirement}
+																	</NavLink>
+																)}
+															</li>
+														);
+													})}
 												</React.Fragment>
 											);
 										})}
@@ -809,7 +777,7 @@ const QuestPage: React.FC = () => {
 					>
 						{details.stepDetails.map((value, index) => (
 							<Stepper.Step
-								id={index.toString()}
+								id={(index + 1).toString()}
 								className="stepperStep"
 								label={`Step: ${index + 1}`}
 								key={index}

@@ -195,10 +195,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 
 				// Validate findOptions before proceeding
 				if (findOptions) {
-					this.readOption = this.diagReader.readOptions(
-						diagboxcapture,
-						findOptions
-					);
+					this.readOption = this.diagReader.readOptions(diagboxcapture, findOptions);
 
 					this.emit("change", this.getCState());
 				} else {
@@ -293,7 +290,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 				// Update current best matches if a match is found
 
 				if (this.bestMatchIndex !== -1) {
-					const usedIndex = this.cTStore.indexOf(value);
+					const usedIndex = this.cTStoreCopy.indexOf(value);
 
 					if (usedIndex !== -1 && this.count < 1) {
 						// Remove the used value from its current position and add it to the end
@@ -331,9 +328,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 					this.currentBestMatches &&
 					this.currentBestMatches.length === 0
 				) {
-					const randomIndex = Math.floor(
-						Math.random() * this.readOption!.length
-					);
+					const randomIndex = Math.floor(Math.random() * this.readOption!.length);
 					if (this.readOption!.length == 5) {
 						this.readOption![randomIndex].width = 288;
 					} else if (this.readOption!.length == 4) {
