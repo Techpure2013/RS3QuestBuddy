@@ -1,4 +1,3 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { AltGuard } from "./alt1.tsx";
@@ -24,8 +23,6 @@ import "@mantine/core/styles/Flex.css";
 import { MantineProvider } from "@mantine/core";
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
 	<MantineProvider>
-		<React.StrictMode>
-			<AltGuard />
-		</React.StrictMode>
+		<AltGuard />
 	</MantineProvider>
 );

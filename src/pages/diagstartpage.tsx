@@ -16,11 +16,10 @@ export const Reader: React.FC<ReaderProps> = ({ reader, questName }) => {
 
 		return () => {
 			console.log("Component is unmounting");
-			//clearAllIntervals();
-
+			reader.toggleOptionRun(false);
 			reader.off("change", handleChange);
 		};
-	}, [reader]);
+	}, []);
 
 	useEffect(() => {
 		const fetchCompareTranscript = async (): Promise<void> => {
