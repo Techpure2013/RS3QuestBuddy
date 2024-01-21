@@ -50,14 +50,8 @@ const QuestCarousel: React.FC = () => {
 					console.log();
 
 					playerFound.current = true;
-					window.sessionStorage.setItem(
-						"playerFound",
-						JSON.stringify(playerFound)
-					);
-					window.sessionStorage.setItem(
-						"playerName",
-						JSON.stringify(playerName)
-					);
+					window.sessionStorage.setItem("playerFound", JSON.stringify(playerFound));
+					window.sessionStorage.setItem("playerName", JSON.stringify(playerName));
 				}
 			} else {
 				playerFound.current = false;
@@ -77,15 +71,11 @@ const QuestCarousel: React.FC = () => {
 			if (!sorted.current) {
 				const pattern = /[^a-zA-Z0-9]/g;
 				questImage =
-					"./Rewards/" +
-					quest.toLowerCase().replace(pattern, "") +
-					"reward.png";
+					"./Rewards/" + quest.toLowerCase().replace(pattern, "") + "reward.png";
 			} else {
 				const pattern = /[^a-zA-Z0-9]/g;
 				questImage =
-					"./Rewards/" +
-					quest.toLowerCase().replace(pattern, "") +
-					"reward.png";
+					"./Rewards/" + quest.toLowerCase().replace(pattern, "") + "reward.png";
 			}
 
 			return (
@@ -209,9 +199,7 @@ const QuestCarousel: React.FC = () => {
 					<TextInput
 						readOnly={false}
 						defaultValue={
-							playerFound.current
-								? returningPName.current.replace(/["]/g, "")
-								: ""
+							playerFound.current ? returningPName.current.replace(/["]/g, "") : ""
 						}
 						styles={{
 							input: { color: playerFound.current ? "#36935C" : "#933648" },
@@ -311,9 +299,8 @@ const QuestCarousel: React.FC = () => {
 				<div className="caroQTitle">
 					<h3>Quests have been sorted by quests you can do!</h3>
 					<p>
-						{returningPName.current} has a total of {questPoints} Quest Points
-						and {remainingQuests.current?.length} remaining quests to Quest
-						Cape!
+						{returningPName.current} has a total of {questPoints} Quest Points and{" "}
+						{remainingQuests.current?.length} remaining quests to Quest Cape!
 					</p>
 				</div>
 			)}
@@ -331,16 +318,12 @@ const QuestCarousel: React.FC = () => {
 				>
 					{sorted.current &&
 						filteredRemainingQuests.map((quest, index) => (
-							<Carousel.Slide key={index}>
-								{renderQuestContent(quest)}
-							</Carousel.Slide>
+							<Carousel.Slide key={index}>{renderQuestContent(quest)}</Carousel.Slide>
 						))}
 
 					{!sorted.current &&
 						filteredQuests.map((quest, index) => (
-							<Carousel.Slide key={index}>
-								{renderQuestContent(quest)}
-							</Carousel.Slide>
+							<Carousel.Slide key={index}>{renderQuestContent(quest)}</Carousel.Slide>
 						))}
 				</Carousel>
 			</div>

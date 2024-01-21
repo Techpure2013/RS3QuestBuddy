@@ -97,8 +97,9 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	widthBox: number = 0;
 	anyOption: boolean = false;
 	dialogHelp = new diagFinder();
-
+	intervalIds: any[] = [];
 	prevTitle: string = "";
+	timeoutID: NodeJS.Timeout | undefined;
 
 	/**
 	 * Constructs a new DiagReader instance.
@@ -155,6 +156,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 			if (run && this.optionInterval == 1) {
 				// Start a new interval timer and store its reference in the record
 				this.optionInterval = +setInterval(action, interval);
+				this.intervalIds.push(this.optionInterval);
 			} else if (!run && this.optionInterval) {
 				// Clear the interval timer if it exists
 				clearInterval(this.optionInterval);
@@ -348,7 +350,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 			// Populate unique coordinates based on the current best matches
 			this.populateUniqueCoordinates();
 		} else {
-			setTimeout(() => {
+			this.timeoutID = setTimeout(() => {
 				this.dialogHelp.find();
 			}, 2000);
 
@@ -481,30 +483,6 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 		this.handleCoordinates();
 		const delay = 1000; // 2 seconds
 		this.toggleOptionRun(false);
-		this.toggleOptionInterval(true, () => this.readCapture(), 600);
-		// Iterate over the keys
-		//Five Options:
-		//X1: 586  X2: 569 X3: 599 X4: 608 X5: 536
-		//Y1: 708  Y2: 727 Y3: 746 Y4: 765 Y5: 784
-		//W1: 288  W2: 288 W3: 288 W4: 376 W5: 288
-		// H: 130 --------------------------------
-		//Four Options:
-		//X1: 769  X2: 766 X3: 704 X4: 746  BUTTON X: 673
-		//Y1: 884  Y2: 907 Y3: 930 Y4: 953  BUTTON X: 673
-		//W1: 311  W2: 311 W3: 311 W4: 385  BUTTON X: 673
-		// H: 130   H: 130  H: 130 H4: 130  BUTTON X: 673
-		//////Three Options:
-		//  First   Second    Third
-		//X1: 800   X2: 744   X3: 800   BUTTON  X: 731
-		//Y1: 947   Y2: 919   Y3: 947   BUTTON  X: 731
-		// W: 196    W: 196    W: 196   BUTTON  X: 731
-		// H: 130    H: 130    H: 130   BUTTON  X: 731
-		///////////////////////////
-		//Two Options:
-		//X1: 753 X2: 783   BUTTON  X: 720
-		//Y1: 905 Y2: 933
-		//W1: 332 W2: 234
-		// H: 130  H: 130
 
 		if (!this.anyOption) {
 			console.log("option display");
@@ -546,20 +524,43 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 		}
 
 		// Use setTimeout to introduce a delay before displaying the overlay rectangle
-		setTimeout(() => {
+
+		this.timeoutID = setTimeout(() => {
 			delete this.uniqueCoordinates[
 				`${this.coordX},${this.coordY},${this.widthBox},${this.buttonX}`
 			];
 
 			if (Object.keys(this.uniqueCoordinates).length === 0) {
 				this.displayNumber = 1;
-				this.toggleOptionInterval(false, () => this.readCapture, 600);
+
 				this.toggleOptionInterval(true, () => this.readDiagOptions(), 600);
 
 				return;
 			}
-
 			this.displayBox();
 		}, delay);
 	}
+	// Iterate over the keys
+	//Five Options:
+	//X1: 586  X2: 569 X3: 599 X4: 608 X5: 536
+	//Y1: 708  Y2: 727 Y3: 746 Y4: 765 Y5: 784
+	//W1: 288  W2: 288 W3: 288 W4: 376 W5: 288
+	// H: 130 --------------------------------
+	//Four Options:
+	//X1: 769  X2: 766 X3: 704 X4: 746  BUTTON X: 673
+	//Y1: 884  Y2: 907 Y3: 930 Y4: 953  BUTTON X: 673
+	//W1: 311  W2: 311 W3: 311 W4: 385  BUTTON X: 673
+	// H: 130   H: 130  H: 130 H4: 130  BUTTON X: 673
+	//////Three Options:
+	//  First   Second    Third
+	//X1: 800   X2: 744   X3: 800   BUTTON  X: 731
+	//Y1: 947   Y2: 919   Y3: 947   BUTTON  X: 731
+	// W: 196    W: 196    W: 196   BUTTON  X: 731
+	// H: 130    H: 130    H: 130   BUTTON  X: 731
+	///////////////////////////
+	//Two Options:
+	//X1: 753 X2: 783   BUTTON  X: 720
+	//Y1: 905 Y2: 933
+	//W1: 332 W2: 234
+	// H: 130  H: 130
 }

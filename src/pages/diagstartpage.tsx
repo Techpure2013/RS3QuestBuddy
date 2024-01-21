@@ -1,44 +1,45 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { DiagReader } from "./dialogsolver.tsx";
 
 interface ReaderProps {
 	reader: DiagReader;
 	questName: string;
 }
+
 export const Reader: React.FC<ReaderProps> = ({ reader, questName }) => {
-	const [, setCState] = useState(reader.getCState());
+	useEffect(() => {
+		console.log("Component has mounted");
+
+		reader.toggleOptionRun(true);
+		const handleChange = () => setCState(reader.getCState());
+		reader.on("change", handleChange);
+
+		return () => {
+			console.log("Component is unmounting");
+			//clearAllIntervals();
+
+			reader.off("change", handleChange);
+		};
+	}, [reader]);
 
 	useEffect(() => {
-		console.log("I from the diagsolver has mounted");
-		reader.on("change", setCState);
-		reader.toggleOptionRun(true);
-
 		const fetchCompareTranscript = async (): Promise<void> => {
 			try {
-				// Fetch the quest data
 				const questResponse = await fetch("./QuestList.json");
 				const questData = await questResponse.json();
-
-				// Normalize the quest name for comparison
 				const normalizedQuestName = questName.toLowerCase().trim();
-
-				// Find the quest entry in the questData array
-				const questEntry = questData.find((value: { Quest: string }) => {
-					return value.Quest.toLowerCase().trim() === normalizedQuestName;
-				});
+				const questEntry = questData.find(
+					(value: { Quest: string }) =>
+						value.Quest.toLowerCase().trim() === normalizedQuestName
+				);
 
 				if (questEntry) {
 					const cTranscriptPath = questEntry.CTranscript;
-
-					// Fetch the compare transcript data
 					const transcriptResponse = await fetch(cTranscriptPath);
 					const rawData = await transcriptResponse.text();
-
-					// Clean the data
 					const pattern = /"([^"]+)"/g;
 					const cleanedData = rawData.match(pattern);
-
-					const cTranscriptArray: string[] =
+					const cTranscriptArray =
 						cleanedData?.map((value) =>
 							value.toString().replace('"', "").replace('"', "")
 						) || [];
@@ -47,28 +48,16 @@ export const Reader: React.FC<ReaderProps> = ({ reader, questName }) => {
 				}
 			} catch (error) {
 				console.warn(
-					"Could not fetch or clean the compare transcript data:",
+					"Error fetching or cleaning the compare transcript data:",
 					error
 				);
 			}
 		};
+
 		fetchCompareTranscript();
-		return () => {
-			console.warn("I am unmounting Diagsolver Page Component");
-			reader.off("change", setCState);
-			reader.toggleOptionRun(false);
-			reader.readOption = [];
-		};
-	}, []);
-	return (
-		<>
-			<div className="DialogReaderContainer" style={{ color: "#FFFFFF" }}>
-				{/* <h2>State:</h2>
-				<pre style={{ color: "#FFFFFF" }}>
-					{JSON.stringify(cState, null, 3)}
-				</pre>
-				You can also display specific state properties here */}
-			</div>
-		</>
-	);
+	}, [questName]);
+
+	const [, setCState] = useState(reader.getCState());
+
+	return <div key="">{/* Render your JSX elements here */}</div>;
 };

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 
 import { Accordion, Button, Flex, List, Stepper } from "@mantine/core";
 import "./../index.css";
@@ -54,7 +54,7 @@ const QuestPage: React.FC = () => {
 	const questlistJSON = "./QuestList.json";
 	const textfile = modified + "info.txt";
 	const reader = new DiagReader();
-
+	const hist = useNavigate();
 	const details = useQuestStepStore();
 	const imageDetails = UseImageStore();
 	const stepRefs = useRef<React.RefObject<HTMLDivElement>[]>([]);
@@ -72,8 +72,7 @@ const QuestPage: React.FC = () => {
 	} = useQuestControllerStore();
 	const handles = useQuestControllerStore();
 	const handleBackButton = () => {
-		console.log(history.state);
-		history.back();
+		hist("/");
 	};
 	const questImageVis = () => {
 		if (viewQuestImage === true) {
@@ -98,7 +97,11 @@ const QuestPage: React.FC = () => {
 	if (questName == "Bring Leela to Senliten's tomb") {
 		questName = "Missing My Mummy";
 	}
-
+	const clearAllIntervals = () => {
+		clearTimeout(reader.timeoutID);
+		reader.intervalIds.forEach(clearInterval);
+		reader.intervalIds = [];
+	};
 	// const capture = a1lib.captureHoldFullRs();
 	// finder.find();
 	// const title = finder.readTitle(capture);
@@ -328,19 +331,21 @@ const QuestPage: React.FC = () => {
 		} else {
 			console.error("No data found in sessionStorage");
 		}
+		return () => {
+			clearAllIntervals();
+		};
 	}, []);
+
 	return (
 		<>
+			<Reader reader={reader} questName={questName} />;
 			<QuestImageFetcher
 				questName={questName}
 				QuestListJSON={"./QuestImageList.json"}
 			/>
 			<QuestStepFetcher textfile={textfile} questStepJSON={questlistJSON} />
 			<QuestDetailsFetcher questName={questName} />
-
-			<Reader reader={reader} questName={questName} />
 			{window.addEventListener("scroll", updateButtonVis)}
-
 			<div>
 				<h2 className="qpTitle">{questName}</h2>
 			</div>
@@ -368,7 +373,6 @@ const QuestPage: React.FC = () => {
 					</Carousel>
 				</>
 			)}
-
 			{buttonVisible && (
 				<Flex className="prevNextGroup" gap="sm">
 					<Button
@@ -426,7 +430,13 @@ const QuestPage: React.FC = () => {
 				)}
 				{buttonVisible &&
 					(showStepReq ? (
-						<Button variant="outline" color="#EEF3FF" onClick={toggleShowStepReq}>
+						<Button
+							variant="outline"
+							color="#EEF3FF"
+							onClick={() => {
+								toggleShowStepReq();
+							}}
+						>
 							Show Step Details
 						</Button>
 					) : (
