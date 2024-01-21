@@ -307,20 +307,19 @@ const QuestPage: React.FC = () => {
 		);
 	}, [details.stepDetails.length]);
 	useEffect(() => {
-		const completedQuests = sessionStorage.getItem("hasCompleted");
+		const completedQuests = window.sessionStorage.getItem("hasCompleted");
 		const skill = sessionStorage.getItem("skillLevels");
-		const sRef = localStorage.getItem("stepRef");
-		if (completedQuests !== null && skill !== null && sRef !== null) {
+
+		if (completedQuests !== null && skill !== null) {
 			const parsedQuests = JSON.parse(completedQuests);
+
+			console.log(parsedQuests);
 			const parsedSkills = JSON.parse(skill);
-			const parsedRef = JSON.parse(sRef);
-			stepRefs.current = parsedRef;
+
 			if (
 				parsedQuests !== null &&
-				typeof parsedQuests === "object" &&
 				Array.isArray(parsedQuests) &&
 				parsedSkills !== null &&
-				typeof parsedSkills === "object" &&
 				Array.isArray(parsedSkills)
 			) {
 				setCompleteQuests(parsedQuests);
@@ -483,7 +482,6 @@ const QuestPage: React.FC = () => {
 																// Compare the extracted number
 																return numberPart > requirementNumber;
 															}
-
 															return false;
 														});
 														const needLeela =
@@ -495,8 +493,8 @@ const QuestPage: React.FC = () => {
 															requirement ===
 															"Jungle Potion is only required if clean volencia moss is a requested item during the quest";
 														let abilityToEnterMort = false;
-														let junglePotion = false;
-														let mmm = false;
+
+														//let mmm = false;
 														if (needMort) {
 															const hasPriestInPeril =
 																completedQuests &&
@@ -511,7 +509,6 @@ const QuestPage: React.FC = () => {
 																			(value as { title?: string }).title === "Priest in Peril"
 																		);
 																	}
-																	return false;
 																});
 															if (hasPriestInPeril) {
 																abilityToEnterMort = true;
@@ -521,23 +518,17 @@ const QuestPage: React.FC = () => {
 															const hasMMM =
 																completedQuests &&
 																completedQuests.some((value) => {
-																	if (
-																		value &&
-																		typeof value === "object" &&
-																		"title" in value &&
-																		value !== null
-																	) {
+																	if (value && typeof value === "object") {
 																		return (
 																			(value as { title?: string }).title === "Missing My Mummy"
 																		);
 																	}
-																	return false;
 																});
 															if (hasMMM) {
-																mmm = true;
+																//mmm = true;
 															}
 														}
-
+														let junglePotion = false;
 														if (needJunglePotion) {
 															const hasJunglePotion =
 																completedQuests &&
@@ -552,12 +543,12 @@ const QuestPage: React.FC = () => {
 																			(value as { title?: string }).title === "Jungle Potion"
 																		);
 																	}
-																	return false;
 																});
 															if (hasJunglePotion) {
 																junglePotion = true;
 															}
 														}
+														console.log(completedQuests);
 														const isComplete =
 															completedQuests &&
 															completedQuests.some((value) => {
@@ -571,23 +562,33 @@ const QuestPage: React.FC = () => {
 																}
 																return false;
 															});
+
+														let color = "#C64340"; // Default to red
+
+														if (isComplete) {
+															color = "#24BF58"; // Green
+														}
+														if (junglePotion) {
+															color = "#24BF58";
+														}
+														if (abilityToEnterMort) {
+															color = "#24BF58";
+														}
+
 														const requirementParts = requirement.split(" ");
 														const firstPart: number = parseInt(requirementParts[0]);
-
+														console.log(hasSkill);
 														return (
 															<li
 																key={uniqueKey}
 																style={{
 																	display: "block",
-																	color: hasSkill
-																		? "#24BF58" //Green
-																		: isComplete
-																		? "#24BF58" //Green
-																		: "#C64340", // Red
 																}}
 															>
 																{!isNaN(firstPart) || requirement === "None" ? (
-																	<span>{requirement}</span>
+																	<span style={{ color: hasSkill ? "#24BF58" : "#C64340" }}>
+																		{requirement}
+																	</span>
 																) : (
 																	<NavLink
 																		to="/QuestPage"
@@ -603,21 +604,12 @@ const QuestPage: React.FC = () => {
 																		}}
 																		style={{
 																			display: "block",
-																			color: mmm
-																				? "#24BF58"
-																				: junglePotion
-																				? "#24BF58" //Green
-																				: abilityToEnterMort
-																				? "#24BF58" //Green
-																				: hasSkill
-																				? "#24BF58" //Green
-																				: isComplete
-																				? "#24BF58" //Green
-																				: "#C64340", // Red
+																			color: color,
+
 																			textDecoration: "none",
 																		}}
 																	>
-																		{requirement}
+																		<span>{requirement}</span>
 																	</NavLink>
 																)}
 															</li>

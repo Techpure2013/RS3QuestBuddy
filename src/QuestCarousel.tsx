@@ -247,7 +247,9 @@ const QuestCarousel: React.FC = () => {
 						variant="outline"
 						color="#EEF3FF"
 						onClick={() => {
+							applySkills();
 							sort();
+
 							location.reload();
 						}}
 						disabled={playerFound.current ? false : true}
