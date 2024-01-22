@@ -79,14 +79,61 @@
 	{
 		"name": "A Fairy Tale III: Battle at Ork's Rift",
 		"images": [
-			"AFairyTalePartIIIBattleatOrksRift.png",
-			"Gnarlymood.png",
-			"Godfathersarmy.png",
+			"REQ.png",
+			"warning.png",
+			"SparsePlane.png",
+			"start.png",
+			"qstart.png",
+			"tlkFQ.png",
+			"TF.png",
+			"PROJECTOR.png",
+			"Briefing.png",
+			"Hammerandsec.png",
+			"hammerSecateurs.png",
+			"teefextraTK.png",
+			"toothextractondoor.png",
+			"tlk_gnarly.png",
+			"usemilk.png",
+			"pickupGNARLY.png",
+			"WAVEEMOTE.png",
+			"SW2MAP.png",
+			"teleout.png",
+			"RECCFIX.png",
+			"map_nwofbank.png",
+			"breegth.png",
+			"ork.png",
+			"ff.png",
+			"CAMPFIRE.png",
+			"TALKKCHUNK.png",
+			"BROKENBRIDGE.png",
+			"PP.png",
+			"MAPBKQ.png",
+			"WATERFALL.png",
+			"DRYAD.png",
+			"GRUMBLOD.png",
+			"MTREEMAP.png",
+			"MANGO.png",
+			"HLOG.png",
 			"Mangowithtoothground.png",
-			"PickpocketingKChunk.png",
-			"Projector.png",
-			"PullingShredfleshstooth.png",
-			"SparsePlane.png"
+			"EXTRACT_TOOTH.png",
+			"SHREDFLESH.png",
+			"TOOTHBYEBYE.png",
+			"ROCKS.png",
+			"RECC.5.png",
+			"ComboTele.png",
+			"ftree.png",
+			"fairyspell.png",
+			"Godfathersarmy.png",
+			"TEETHPATCH.png",
+			"KL_.png",
+			"thefight.png",
+			"tootharmy.png",
+			"ttfgf.png",
+			"FG.png",
+			"afterfight",
+			"close1.png",
+			"close2.png",
+			"close3.png"
 		]
 	},
 	{
@@ -365,39 +412,95 @@
 	},
 	{
 		"name": "Boric's Task III (miniquest)",
-		"images": [""]
+		"images": [
+			"LocToBoric.png",
+			"LocationOfBoric.png",
+			"TalkToBoric.png",
+			"talktodwarf.png"
+		]
 	},
 	{
 		"name": "Doric's Task I (miniquest)",
-		"images": [""]
+		"images": ["LocToDoric.png", "IronBar.png"]
 	},
 	{
 		"name": "Doric's Task II (miniquest)",
-		"images": [""]
+		"images": [
+			"DoricsList.png",
+			"smithinglocation.png",
+			"steelchainbodies.png",
+			"twochainbodies.png",
+			"DelnuthLoc.png",
+			"Needthisdialogue.png",
+			"bronzebars.png",
+			"cannonParts.png",
+			"laddertoroof.png",
+			"repaircannon.png"
+		]
 	},
 	{
 		"name": "Doric's Task III (miniquest)",
-		"images": [""]
+		"images": [
+			"LocToDoric.png",
+			"DoricsList.png",
+			"Bentnozeloc.png",
+			"BentnozeNpc.png",
+			"Required.png",
+			"itemstogive.png",
+			"BentnozeNpc.png"
+		]
 	},
 	{
 		"name": "Doric's Task IV (miniquest)",
-		"images": [""]
+		"images": ["LocToDoric.png", "LuminiteSafespot.png", "AdamantBurialSet.png"]
 	},
 	{
 		"name": "Doric's Task V (miniquest)",
-		"images": [""]
+		"images": [
+			"LocToDoric.png",
+			"DoricsList5.png",
+			"ItemstoGive.png",
+			"montaiRoamingRange.png",
+			"CommanderMontai.png"
+		]
 	},
 	{
 		"name": "Doric's Task VI (miniquest)",
-		"images": [""]
+		"images": [
+			"LocToDoric.png",
+			"Dorics6Tasklist.png",
+			"itemstogive.png",
+			"ArmourHut.png",
+			"SkulgrimenNpc.png"
+		]
 	},
 	{
 		"name": "Doric's Task VII (miniquest)",
-		"images": [""]
+		"images": [
+			"LocToDoric.png",
+			"ToKeldagrim.png",
+			"Quicktravel.png",
+			"sanitiriloc.png",
+			"Santiri.png",
+			"commanderloc.png",
+			"SupremeCommander.png",
+			"anvilAcross.png",
+			"Librarian.png",
+			"Stonemason.png",
+			"useonstonecrusher.png",
+			"wellitsawell.png",
+			"useonwell.png"
+		]
 	},
 	{
 		"name": "Doric's Task VIII (miniquest)",
-		"images": [""]
+		"images": [
+			"LocToDoric.png",
+			"Doricslist8.png",
+			"WeaponsCrate.png",
+			"itemstogive.png",
+			"droploc.png"
+		]
 	},
 	{
 		"name": "A Tail of Two Cats",

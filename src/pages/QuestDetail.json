@@ -541,11 +541,7 @@
 		"Requirements": ["None"],
 		"ItemsRequired": ["None"],
 		"Recommended": ["None"],
-		"EnemiesToDefeat": [
-			"Kayle (level 1)",
-			"Caitlin (level 1)",
-			"Reese (level 1)"
-		]
+		"EnemiesToDefeat": ["Kayle (level 1)", "Caitlin (level 1)", "Reese (level 1)"]
 	},
 	{
 		"Quest": "Blood Runs Deep",
@@ -668,12 +664,7 @@
 		"StartPoint": "Speak to TzHaar-Mej-Ak or TzHaar-Mej-Jeh in the TzHaar City's main plaza. Show on map",
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Medium to Long",
-		"Requirements": [
-			"The Elder Kiln",
-			"80 Defence",
-			"72 Mining",
-			"80 Smithing"
-		],
+		"Requirements": ["The Elder Kiln", "80 Defence", "72 Mining", "80 Smithing"],
 		"ItemsRequired": ["Any pickaxe (toolbelt will work)"],
 		"Recommended": [
 			"6 free inventory slots",
@@ -2313,9 +2304,7 @@
 		"StartPoint": "Talk to Veronica, south of Draynor Manor gates.",
 		"MemberRequirement": "Free to play",
 		"OfficialLength": "Medium",
-		"Requirements": [
-			"None, but watch out for those trees in the manor grounds."
-		],
+		"Requirements": ["None, but watch out for those trees in the manor grounds."],
 		"ItemsRequired": ["None"],
 		"Recommended": ["None"],
 		"EnemiesToDefeat": ["Skeleton (level 11, optional)"]
@@ -5378,9 +5367,7 @@
 			"Falador teleports (lodestone, runes or tabs) to allow easier transport",
 			"Completed The Giant Dwarf for access to the mine cart system (and easier transport)"
 		],
-		"EnemiesToDefeat": [
-			"Icefiend (Level 35) (Only if you don't have ice gloves)"
-		]
+		"EnemiesToDefeat": ["Icefiend (Level 35) (Only if you don't have ice gloves)"]
 	},
 	{
 		"Quest": "Recipe for Disaster: Freeing Evil Dave",
@@ -6840,9 +6827,7 @@
 		"Requirements": ["The Blood Pact", "32 Necromancy"],
 		"ItemsRequired": ["None"],
 		"Recommended": ["None"],
-		"EnemiesToDefeat": [
-			"Dragith Nurn (level 26; must be killed with necromancy)"
-		]
+		"EnemiesToDefeat": ["Dragith Nurn (level 26; must be killed with necromancy)"]
 	},
 	{
 		"Quest": "That Old Black Magic: Skelly By Everlight",
@@ -6894,9 +6879,7 @@
 		],
 		"ItemsRequired": ["None"],
 		"Recommended": ["None"],
-		"EnemiesToDefeat": [
-			"Multiple kills of Hermod, the Spirit of War (level 732)"
-		]
+		"EnemiesToDefeat": ["Multiple kills of Hermod, the Spirit of War (level 732)"]
 	},
 	{
 		"Quest": "Throne of Miscellania",
@@ -8104,7 +8087,7 @@
 	},
 	{
 		"Quest": "Damage Control (miniquest)",
-		"StartPoint": "Speak to Bosun Higgs on the docks near the Sarim's Revenge. Show on map",
+		"StartPoint": "Speak to Bosun Higgs on the docks near the Sarim's Revenge.",
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Short",
 		"Requirements": [
@@ -8133,7 +8116,7 @@
 	},
 	{
 		"Quest": "Desert Slayer Dungeon (miniquest)",
-		"StartPoint": "Enter a barrier on the lowest level of Pollnivneach Slayer Dungeon. Show on map (via the first location → the second location)",
+		"StartPoint": "Enter a barrier on the lowest level of Pollnivneach Slayer Dungeon.",
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Short to Medium",
 		"Requirements": [
@@ -8166,7 +8149,7 @@
 	},
 	{
 		"Quest": "Doric's Task I (miniquest)",
-		"StartPoint": "Speak to Doric in his hut just outside the gates of Taverley north of Falador. Show on map",
+		"StartPoint": "Speak to Doric in his hut just outside the gates of Taverley north of Falador. Image in View Images",
 		"MemberRequirement": "Free to play",
 		"OfficialLength": "Very Short",
 		"Requirements": ["What's Mine is Yours", "10 Smithing", "10 Mining"],
@@ -8176,7 +8159,7 @@
 	},
 	{
 		"Quest": "Doric's Task II (miniquest)",
-		"StartPoint": "Speak to Doric in his hut just outside the gates of Taverley north of Falador. Show on map",
+		"StartPoint": "Speak to Doric in his hut just outside the gates of Taverley north of Falador. Image in View Images",
 		"MemberRequirement": "Free to play",
 		"OfficialLength": "Very Short",
 		"Requirements": [
@@ -8192,7 +8175,7 @@
 	},
 	{
 		"Quest": "Doric's Task III (miniquest)",
-		"StartPoint": "Speak to Doric in his hut just outside the gates of Taverley north of Falador. Show on map",
+		"StartPoint": "Speak to Doric in his hut just outside the gates of Taverley north of Falador. Image in View Images",
 		"MemberRequirement": "Free to play",
 		"OfficialLength": "Short",
 		"Requirements": [
@@ -8209,18 +8192,17 @@
 	},
 	{
 		"Quest": "Doric's Task IV (miniquest)",
-		"StartPoint": "Speak to Doric in his hut just outside the gates of Taverley north of Falador. Show on map",
+		"StartPoint": "Speak to Doric in his hut just outside the gates of Taverley north of Falador. Image in View Images",
 		"MemberRequirement": "Free to play",
 		"OfficialLength": "Medium",
 		"Requirements": [
-			"Doric's Task IV (miniquest)",
 			"Doric's Task III (miniquest)",
 			"Doric's Task II (miniquest)",
 			"Doric's Task I (miniquest)",
 			"What's Mine is Yours",
 			"Death Plateau",
 			"40 Smithing",
-			"Ironman badge.png Hardcore Ironman badge.png Ironmen: 40 Mining"
+			"Ironmen: 40 Mining"
 		],
 		"ItemsRequired": [
 			"48 adamant bars or a set of:",
@@ -8235,11 +8217,10 @@
 	},
 	{
 		"Quest": "Doric's Task V (miniquest)",
-		"StartPoint": "Speak to Doric in his hut just outside the gates of Taverley north of Falador. Show on map",
+		"StartPoint": "Speak to Doric in his hut just outside the gates of Taverley north of Falador. Image in View Images",
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Short",
 		"Requirements": [
-			"Doric's Task V (miniquest)",
 			"Doric's Task IV (miniquest)",
 			"Doric's Task III (miniquest)",
 			"Doric's Task II (miniquest)",
@@ -8247,7 +8228,7 @@
 			"What's Mine is Yours",
 			"Death Plateau",
 			"50 Smithing",
-			"Ironman badge.png Hardcore Ironman badge.png Ironmen: 50 Mining"
+			"Ironmen: 50 Mining"
 		],
 		"ItemsRequired": ["12 rune bars", "20 steel bars or 4 steel platebodies"],
 		"Recommended": [
@@ -8258,11 +8239,10 @@
 	},
 	{
 		"Quest": "Doric's Task VI (miniquest)",
-		"StartPoint": "Speak to Doric in his hut just outside the gates of Taverley north of Falador. Show on map",
+		"StartPoint": "Speak to Doric in his hut just outside the gates of Taverley north of Falador.",
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Short",
 		"Requirements": [
-			"Doric's Task VI (miniquest)",
 			"Doric's Task V (miniquest)",
 			"Doric's Task IV (miniquest)",
 			"Doric's Task III (miniquest)",
@@ -8270,7 +8250,7 @@
 			"Doric's Task I (miniquest)",
 			"Death Plateau",
 			"60 Smithing",
-			"Ironman badge.png Hardcore Ironman badge.png Ironmen: 60 Mining"
+			"Ironmen: 60 Mining"
 		],
 		"ItemsRequired": ["16 orikalkum bars"],
 		"Recommended": [
@@ -8281,18 +8261,17 @@
 	},
 	{
 		"Quest": "Doric's Task VIII (miniquest)",
-		"StartPoint": "Speak to Doric in his hut just outside the gates of Taverley north of Falador. Show on map",
+		"StartPoint": "Speak to Doric in his hut just outside the gates of Taverley north of Falador.",
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Short",
 		"Requirements": [
-			"Doric's Task VIII (miniquest)",
 			"Doric's Task VII (miniquest)",
 			"Doric's Task VI (miniquest)",
 			"Doric's Task V (miniquest)",
 			"Doric's Task IV (miniquest)",
 			"Doric's Task III (miniquest)",
 			"70 Smithing",
-			"Ironman badge.png Hardcore Ironman badge.png Ironmen: 70 Mining"
+			"Ironmen: 70 Mining"
 		],
 		"ItemsRequired": ["two backpack spaces", "20 necronium bars"],
 		"Recommended": ["Falador Teleport or activated Falador lodestone"],
