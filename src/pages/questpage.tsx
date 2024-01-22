@@ -787,6 +787,12 @@ const QuestPage: React.FC = () => {
 								className="stepperStep"
 								label={`Step: ${index + 1}`}
 								key={index}
+								color={active > index ? "#24BF58" : "#4e85bc"}
+								styles={{
+									stepDescription: {
+										color: active > index ? "#24BF58" : "#546576",
+									},
+								}}
 								orientation="vertical"
 								description={value}
 								onClick={() => setActiveAndScroll}
