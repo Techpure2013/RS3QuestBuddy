@@ -1,7 +1,14 @@
 // QuestCarousel.tsx
 import React, { useEffect, useRef, useState } from "react";
 import { Carousel } from "@mantine/carousel";
-import { Button, TextInput, Tooltip, Loader } from "@mantine/core";
+import {
+	Button,
+	TextInput,
+	Tooltip,
+	Loader,
+	ActionIcon,
+	Modal,
+} from "@mantine/core";
 import "@mantine/core/styles/UnstyledButton.css";
 import "@mantine/core/styles/Button.css";
 import "@mantine/core/styles/Input.css";
@@ -11,6 +18,9 @@ import { NavLink } from "react-router-dom";
 import { IconArrowRight, IconArrowLeft } from "@tabler/icons-react";
 import { PlayerQuests, usePlayerStore } from "./Handlers/PlayerFetch";
 import { rsQuestSorter } from "./Handlers/SortPlayerData";
+import { IconSettings } from "@tabler/icons-react";
+import { useDisclosure } from "@mantine/hooks";
+import { Settings } from "./pages/Settings";
 const QuestCarousel: React.FC = () => {
 	const [focused, setFocused] = useState(false);
 	const [searchQuery, setSearchQuery] = useState<string>("");
@@ -26,6 +36,13 @@ const QuestCarousel: React.FC = () => {
 	const [searchInitiated, setSearchInitiated] = useState(false);
 	const [questPoints, setQuestPoints] = useState(0);
 	const alreadySorted = useRef<boolean>(false);
+	const [opened, { open, close }] = useDisclosure(false);
+	const [userColor, setUserColor] = useState("");
+	const [userLabelColor, setUserLabelColor] = useState("");
+	const [userButtonColor, setUserButtonColor] = useState("");
+	const [hasColor, setHasColor] = useState(false);
+	const [hasButtonColor, setHasButtonColor] = useState(false);
+	const [hasLabelColor, setHasLabelColor] = useState(false);
 	const filteredQuests = questList.filter((quest) =>
 		quest.toLowerCase().includes(searchQuery.toLowerCase())
 	);
@@ -79,30 +96,30 @@ const QuestCarousel: React.FC = () => {
 			}
 
 			return (
-				<NavLink
-					to={"/QuestPage"}
-					state={{
-						questName: quest,
-						modified: modifiedQuestVal1,
+				<div
+					className="caroQTitle"
+					aria-label={`Navigate to ${quest}`}
+					style={{
+						color: sorted.current
+							? "#BF2930"
+							: playerFound.current
+							? "#54B46F"
+							: "#4e85bc",
+						paddingTop: "30",
 					}}
-					style={{ textDecoration: "none" }}
 				>
-					<div
-						className="caroQTitle"
-						aria-label={`Navigate to ${quest}`}
-						style={{
-							color: sorted.current
-								? "#BF2930"
-								: playerFound.current
-								? "#54B46F"
-								: "#4e85bc",
-							paddingTop: "30",
+					{quest}
+					<NavLink
+						to={"/QuestPage"}
+						state={{
+							questName: quest,
+							modified: modifiedQuestVal1,
 						}}
+						style={{ textDecoration: "none" }}
 					>
-						{quest}
 						<img src={questImage} alt="Reward" aria-hidden="true" />
-					</div>
-				</NavLink>
+					</NavLink>
+				</div>
 			);
 		}
 
@@ -137,17 +154,47 @@ const QuestCarousel: React.FC = () => {
 			return;
 		}
 	};
+	useEffect(() => {
+		const colorVal = localStorage.getItem("textColorValue");
+		const labelCol = localStorage.getItem("labelColor");
+		const buttonCol = localStorage.getItem("buttonColor");
+		if (buttonCol) {
+			setUserButtonColor(buttonCol);
+			setHasButtonColor(true);
+		} else {
+			setHasButtonColor(false);
+		}
+		if (labelCol) {
+			setUserLabelColor(labelCol);
+			setHasLabelColor(true);
+		} else {
+			setHasLabelColor(false);
+		}
+		if (colorVal) {
+			setUserColor(colorVal);
+			setHasColor(true);
+		} else {
+			setHasColor(false);
+		}
+	}, [
+		userButtonColor,
+		userLabelColor,
+		userColor,
+		hasColor,
+		hasLabelColor,
+		hasButtonColor,
+		opened,
+	]);
 	const applySkills = () => {
 		rsSorter.sortCompletedQuests(rsUserQuestProfile);
 		setSkillsApplied(true);
 	};
 	useEffect(() => {
-		console.log("Effect triggered on load");
 		const player = sessionStorage.getItem("playerName");
-		console.log(player);
+
 		if (player !== null) {
 			returningPName.current = player;
-			console.log(playerFound);
+
 			handlePlayerLoad();
 			playerFound.current = true;
 		}
@@ -193,6 +240,25 @@ const QuestCarousel: React.FC = () => {
 	}, []);
 	return (
 		<>
+			<Modal
+				title="Settings"
+				opened={opened}
+				onClose={() => {
+					close();
+				}}
+				styles={{
+					header: {
+						backgroundColor: "#3d3d3d",
+					},
+					title: {
+						fontSize: "34px",
+						textAlign: "center",
+					},
+					body: { backgroundColor: "#3d3d3d" },
+				}}
+			>
+				<Settings />
+			</Modal>
 			<QuestListFetcher questlist="./questlist.txt" />
 			<div className="SearchContainer">
 				<div className="PlayerSearch">
@@ -203,6 +269,7 @@ const QuestCarousel: React.FC = () => {
 						}
 						styles={{
 							input: { color: playerFound.current ? "#36935C" : "#933648" },
+							label: { color: hasLabelColor ? userLabelColor : "#4e85bc" },
 						}}
 						label={"Search for Player Name"}
 						placeholder={"Search for Player Name"}
@@ -232,6 +299,9 @@ const QuestCarousel: React.FC = () => {
 
 				<div className="SearchQuest">
 					<TextInput
+						styles={{
+							label: { color: hasLabelColor ? userLabelColor : "#4e85bc" },
+						}}
 						className="customInput"
 						label="Search for Quest"
 						placeholder="Type in a quest"
@@ -245,7 +315,7 @@ const QuestCarousel: React.FC = () => {
 					<Button
 						className="SortButton"
 						variant="outline"
-						color="#EEF3FF"
+						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
 						onClick={() => {
 							applySkills();
 							sort();
@@ -260,7 +330,7 @@ const QuestCarousel: React.FC = () => {
 					<Button
 						className="SortButton"
 						variant="outline"
-						color="#EEF3FF"
+						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
 						onClick={() => {
 							unSort();
 							location.reload();
@@ -274,7 +344,7 @@ const QuestCarousel: React.FC = () => {
 					<Button
 						className="ApplySkillsButton"
 						variant="outline"
-						color="#EEF3FF"
+						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
 						onClick={() => {
 							applySkills();
 						}}
@@ -287,10 +357,9 @@ const QuestCarousel: React.FC = () => {
 				<Button
 					className="RefreshButton"
 					variant="outline"
-					color="#EEF3FF"
+					color={hasButtonColor ? userButtonColor : "#EEF3FF"}
 					onClick={() => {
 						sessionStorage.clear();
-						localStorage.clear();
 						location.reload();
 					}}
 				>
@@ -298,7 +367,10 @@ const QuestCarousel: React.FC = () => {
 				</Button>
 			</div>
 			{sorted.current && (
-				<div className="caroQTitle">
+				<div
+					className="caroQTitle"
+					style={{ color: hasColor ? userColor : "#4e85bc" }}
+				>
 					<h3>Quests have been sorted by quests you can do!</h3>
 					<p>
 						{returningPName.current} has a total of {questPoints} Quest Points and{" "}
@@ -314,8 +386,18 @@ const QuestCarousel: React.FC = () => {
 					withIndicators
 					slidesToScroll={1}
 					height={400}
-					nextControlIcon={<IconArrowRight size={16} />}
-					previousControlIcon={<IconArrowLeft size={16} />}
+					nextControlIcon={
+						<IconArrowRight
+							size={16}
+							color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+						/>
+					}
+					previousControlIcon={
+						<IconArrowLeft
+							size={16}
+							color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+						/>
+					}
 					slideSize="100%"
 				>
 					{sorted.current &&
@@ -329,6 +411,17 @@ const QuestCarousel: React.FC = () => {
 						))}
 				</Carousel>
 			</div>
+			<ActionIcon
+				onClick={open}
+				variant="outline"
+				size={"sm"}
+				color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+				styles={{
+					root: { bottom: "22px" },
+				}}
+			>
+				<IconSettings />
+			</ActionIcon>
 		</>
 	);
 };

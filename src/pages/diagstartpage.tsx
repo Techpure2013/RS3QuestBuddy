@@ -42,7 +42,7 @@ export const Reader: React.FC<ReaderProps> = ({ reader, questName }) => {
 						cleanedData?.map((value) =>
 							value.toString().replace('"', "").replace('"', "")
 						) || [];
-					console.log(cTranscriptArray);
+
 					reader.cTStore = cTranscriptArray;
 				}
 			} catch (error) {

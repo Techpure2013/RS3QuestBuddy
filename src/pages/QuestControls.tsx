@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Button, Flex } from "@mantine/core";
+import { ActionIcon, Button, Flex, Modal } from "@mantine/core";
 import { MantineProvider } from "@mantine/core";
 import "@mantine/core/styles/global.css";
 import "@mantine/core/styles/Accordion.css";
@@ -18,6 +18,9 @@ import "@mantine/core/styles/Input.css";
 import "@mantine/core/styles/Flex.css";
 import "./../index.css";
 import { useQuestControllerStore } from "../Handlers/HandlerStore";
+import { IconSettings } from "@tabler/icons-react";
+import { useDisclosure } from "@mantine/hooks";
+import { Settings } from "./Settings";
 
 const QuestControls: React.FC<{
 	scrollNext: () => void;
@@ -34,7 +37,44 @@ const QuestControls: React.FC<{
 		scrollNext();
 		scrollIntoView(nextStep);
 	};
-
+	const [opened, { open, close }] = useDisclosure(false);
+	const [userColor, setUserColor] = useState("");
+	const [userLabelColor, setUserLabelColor] = useState("");
+	const [userButtonColor, setUserButtonColor] = useState("");
+	const [hasColor, setHasColor] = useState(false);
+	const [hasButtonColor, setHasButtonColor] = useState(false);
+	const [hasLabelColor, setHasLabelColor] = useState(false);
+	useEffect(() => {
+		const colorVal = localStorage.getItem("textColorValue");
+		const labelCol = localStorage.getItem("labelColor");
+		const buttonCol = localStorage.getItem("buttonColor");
+		if (buttonCol) {
+			setUserButtonColor(buttonCol);
+			setHasButtonColor(true);
+		} else {
+			setHasButtonColor(false);
+		}
+		if (labelCol) {
+			setUserLabelColor(labelCol);
+			setHasLabelColor(true);
+		} else {
+			setHasLabelColor(false);
+		}
+		if (colorVal) {
+			setUserColor(colorVal);
+			setHasColor(true);
+		} else {
+			setHasColor(false);
+		}
+	}, [
+		userButtonColor,
+		userLabelColor,
+		userColor,
+		hasColor,
+		hasLabelColor,
+		hasButtonColor,
+		opened,
+	]);
 	const handleScrollPrev = () => {
 		const nextStep = active - 1;
 		setActive(nextStep);
@@ -59,17 +99,53 @@ const QuestControls: React.FC<{
 	return (
 		<>
 			<MantineProvider>
+				<Modal
+					title="Settings"
+					opened={opened}
+					onClose={() => {
+						close();
+					}}
+					styles={{
+						header: {
+							backgroundColor: "#3d3d3d",
+						},
+						title: {
+							fontSize: "34px",
+							textAlign: "center",
+							color: hasColor ? userColor : "#4e85bc",
+						},
+						body: { backgroundColor: "#3d3d3d" },
+					}}
+				>
+					<Settings />
+				</Modal>
 				<Flex className="ButtonGroupTwo" gap="sm">
-					<Button variant="outline" color="#EEF3FF" onClick={handleScrollPrev}>
+					<ActionIcon
+						onClick={open}
+						variant="outline"
+						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+						size={"lg"}
+					>
+						<IconSettings />
+					</ActionIcon>
+					<Button
+						variant="outline"
+						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+						onClick={handleScrollPrev}
+					>
 						Prev Step
 					</Button>
-					<Button variant="outline" color="#EEF3FF" onClick={handleScrollNext}>
+					<Button
+						variant="outline"
+						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+						onClick={handleScrollNext}
+					>
 						Next Step
 					</Button>
 					{showStepReq ? (
 						<Button
 							variant="outline"
-							color="#EEF3FF"
+							color={hasButtonColor ? userButtonColor : "#EEF3FF"}
 							onClick={toggleShowStepReq}
 						>
 							Show Step Details
@@ -77,7 +153,7 @@ const QuestControls: React.FC<{
 					) : (
 						<Button
 							variant="outline"
-							color="#EEF3FF"
+							color={hasButtonColor ? userButtonColor : "#EEF3FF"}
 							onClick={toggleShowStepReq}
 						>
 							Show Quest Details
@@ -85,7 +161,7 @@ const QuestControls: React.FC<{
 					)}
 					<Button
 						variant="outline"
-						color="#EEF3FF"
+						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
 						onClick={() => {
 							questImageVis();
 						}}

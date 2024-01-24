@@ -1,7 +1,15 @@
 import React, { useState, useEffect, useRef } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 
-import { Accordion, Button, Flex, List, Stepper } from "@mantine/core";
+import {
+	Accordion,
+	ActionIcon,
+	Button,
+	Flex,
+	List,
+	Modal,
+	Stepper,
+} from "@mantine/core";
 import "./../index.css";
 import QuestIcon from "./../QuestIconEdited.png";
 import { Carousel } from "@mantine/carousel";
@@ -20,7 +28,11 @@ import "@mantine/core/styles/Overlay.css";
 import "@mantine/core/styles/ModalBase.css";
 import "@mantine/core/styles/Input.css";
 import "@mantine/core/styles/Flex.css";
-import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
+import {
+	IconArrowLeft,
+	IconArrowRight,
+	IconSettings,
+} from "@tabler/icons-react";
 import { Image } from "./ImageInterface.tsx";
 import QuestControl from "./../pages/QuestControls.tsx";
 import {
@@ -40,6 +52,9 @@ import { useQuestControllerStore } from "./../Handlers/HandlerStore.ts";
 import { createRoot } from "react-dom/client";
 import { DiagReader } from "./dialogsolver.tsx";
 import { Reader } from "./diagstartpage.tsx";
+import { IconArrowBack } from "@tabler/icons-react";
+import { Settings } from "./Settings.tsx";
+import { useDisclosure } from "@mantine/hooks";
 
 // import { diagFinder } from "../Handlers/handleImage.ts";
 // import * as a1lib from "alt1";
@@ -48,7 +63,7 @@ const QuestPage: React.FC = () => {
 	const qpname = useLocation();
 
 	let { questName, modified } = qpname.state;
-
+	const [opened, { open, close }] = useDisclosure(false);
 	const [active, setActive] = useState(-1);
 	const [highestStepVisited, setHighestStepVisited] = useState(active);
 	const questlistJSON = "./QuestList.json";
@@ -61,7 +76,16 @@ const QuestPage: React.FC = () => {
 	const [completedQuests, setCompleteQuests] = useState<string[] | null>(null);
 	const QuestDetails = useQuestDetailsStore.getState().questDetails;
 	const [skillLevels, setSkillLevels] = useState<string[]>([]);
-
+	const [isHighlight, setIsHighlight] = useState(false);
+	const [stepHidden, setStepHidden] = useState(false);
+	const buttonRef = useRef<HTMLButtonElement | null>(null);
+	const [toTop, setToTop] = useState(false);
+	const [userColor, setUserColor] = useState("");
+	const [userLabelColor, setUserLabelColor] = useState("");
+	const [userButtonColor, setUserButtonColor] = useState("");
+	const [hasColor, setHasColor] = useState(false);
+	const [hasButtonColor, setHasButtonColor] = useState(false);
+	const [hasLabelColor, setHasLabelColor] = useState(false);
 	// const finder = new diagFinder();
 	const {
 		showStepReq,
@@ -108,14 +132,18 @@ const QuestPage: React.FC = () => {
 	// console.log(title);
 	// Use useEffect to scroll when viewQuestImage is true
 	useEffect(() => {
+		if (toTop && buttonRef.current) {
+			buttonRef.current.scrollIntoView({ behavior: "smooth" });
+		} else {
+			scrollIntoView(active);
+		}
+	}, [toTop]);
+	useEffect(() => {
 		if (viewQuestImage && carouselRef.current) {
 			carouselRef.current.scrollIntoView({ behavior: "smooth" });
 		} else {
-			// Scroll back to step references
-			const firstStepRef = stepRefs.current[0];
-			if (firstStepRef && firstStepRef.current) {
-				firstStepRef.current.scrollIntoView({ behavior: "smooth" });
-			}
+			// Scroll back to step
+			scrollIntoView(active);
 		}
 	}, [viewQuestImage]);
 	function copyStyle(
@@ -151,7 +179,7 @@ const QuestPage: React.FC = () => {
 
 	const scrollPrev = (): void => {
 		const prevStep = active - 1;
-		console.log(prevStep);
+
 		if (prevStep > 0) {
 			scrollIntoView(prevStep);
 		}
@@ -160,11 +188,14 @@ const QuestPage: React.FC = () => {
 	const scrollIntoView = (step: number) => {
 		const element = document.getElementById(step.toString());
 		if (element) {
-			element.scrollIntoView({ behavior: "smooth", block: "nearest" });
+			element.scrollIntoView({ behavior: "smooth", block: "center" });
 		}
 	};
-	const ShouldAllowStep = (step: number) =>
-		highestStepVisited >= step && active !== step;
+	const ShouldAllowStep = (step: number) => {
+		step = step;
+		return highestStepVisited >= step && active !== step;
+	};
+
 	const handlePopOut = () => {
 		if (handles.popOutWindow && !handles.popOutWindow.closed) {
 			// If open, close the window
@@ -255,9 +286,7 @@ const QuestPage: React.FC = () => {
 		if (nextStep >= 0 && nextStep < details.stepDetails.length) {
 			setActive(nextStep);
 			setHighestStepVisited((hSC) => Math.max(hSC, nextStep));
-			stepRefs.current[nextStep].current?.scrollIntoView({
-				behavior: "smooth",
-			});
+			scrollIntoView(nextStep);
 		}
 	};
 	const updateButtonVis = () => {
@@ -300,6 +329,39 @@ const QuestPage: React.FC = () => {
 			setHighestStepVisited((hSC) => Math.max(hSC, nextStep));
 		}
 	};
+	useEffect(() => {
+		const hl = localStorage.getItem("isHighlighted");
+		const rs = localStorage.getItem("removeStep");
+		const colorVal = localStorage.getItem("textColorValue");
+		const labelCol = localStorage.getItem("labelColor");
+		const buttonCol = localStorage.getItem("buttonColor");
+		if (buttonCol) {
+			setUserButtonColor(buttonCol);
+			setHasButtonColor(true);
+		} else {
+			setHasButtonColor(false);
+		}
+		if (labelCol) {
+			setUserLabelColor(labelCol);
+			setHasLabelColor(true);
+		} else {
+			setHasLabelColor(false);
+		}
+		if (colorVal) {
+			setUserColor(colorVal);
+			setHasColor(true);
+		} else {
+			setHasColor(false);
+		}
+		if (hl !== null) {
+			const highlight = JSON.parse(hl);
+			setIsHighlight(highlight);
+		}
+		if (rs !== null) {
+			const removeStep = JSON.parse(rs);
+			setStepHidden(removeStep);
+		}
+	}, [stepHidden, isHighlight, showStepReq, opened]);
 
 	useEffect(() => {
 		stepRefs.current = Array.from({ length: details.stepDetails.length }, () =>
@@ -313,7 +375,6 @@ const QuestPage: React.FC = () => {
 		if (completedQuests !== null && skill !== null) {
 			const parsedQuests = JSON.parse(completedQuests);
 
-			console.log(parsedQuests);
 			const parsedSkills = JSON.parse(skill);
 
 			if (
@@ -337,6 +398,26 @@ const QuestPage: React.FC = () => {
 
 	return (
 		<>
+			<Modal
+				title="Settings"
+				opened={opened}
+				onClose={() => {
+					close();
+				}}
+				styles={{
+					header: {
+						backgroundColor: "#3d3d3d",
+					},
+					title: {
+						fontSize: "34px",
+						textAlign: "center",
+						color: hasColor ? userColor : "#4e85bc",
+					},
+					body: { backgroundColor: "#3d3d3d" },
+				}}
+			>
+				<Settings />
+			</Modal>
 			<Reader reader={reader} questName={questName} />;
 			<QuestImageFetcher
 				questName={questName}
@@ -346,7 +427,9 @@ const QuestPage: React.FC = () => {
 			<QuestDetailsFetcher questName={questName} />
 			{window.addEventListener("scroll", updateButtonVis)}
 			<div>
-				<h2 className="qpTitle">{questName}</h2>
+				<h2 className="qpTitle" style={{ color: hasColor ? userColor : "#4e85bc" }}>
+					{questName}
+				</h2>
 			</div>
 			{viewQuestImage && (
 				<>
@@ -374,9 +457,39 @@ const QuestPage: React.FC = () => {
 			)}
 			{buttonVisible && (
 				<Flex className="prevNextGroup" gap="sm">
+					{toTop ? (
+						<Button
+							variant="outline"
+							color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+							onClick={() => {
+								setToTop((prev) => !prev);
+							}}
+						>
+							Return to Step
+						</Button>
+					) : (
+						<Button
+							variant="outline"
+							color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+							onClick={() => {
+								setToTop((prev) => !prev);
+							}}
+						>
+							Return to Top
+						</Button>
+					)}
 					<Button
 						variant="outline"
-						color="#EEF3FF"
+						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+						onClick={() => {
+							questImageVis();
+						}}
+					>
+						View Quest Images
+					</Button>
+					<Button
+						variant="outline"
+						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
 						onClick={() => {
 							scrollPrev();
 							handleStepChange(active - 1);
@@ -386,7 +499,7 @@ const QuestPage: React.FC = () => {
 					</Button>
 					<Button
 						variant="outline"
-						color="#EEF3FF"
+						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
 						onClick={() => {
 							handleStepChange(active + 1);
 							scrollNext();
@@ -394,6 +507,14 @@ const QuestPage: React.FC = () => {
 					>
 						Next Step
 					</Button>
+					<ActionIcon
+						onClick={open}
+						variant="outline"
+						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+						size={"lg"}
+					>
+						<IconSettings />
+					</ActionIcon>
 				</Flex>
 			)}
 			<Flex
@@ -406,24 +527,29 @@ const QuestPage: React.FC = () => {
 			>
 				{buttonVisible ? (
 					<>
-						<Button variant="outline" color="#EEF3FF" onClick={handlePopOut}>
+						<Button
+							ref={buttonRef}
+							variant="outline"
+							color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+							onClick={handlePopOut}
+						>
 							Pop Out Quest Controls
-						</Button>
-						<Button variant="outline" color="#EEF3FF" onClick={handleBackButton}>
-							Pick Another Quest
 						</Button>
 						<Button
 							variant="outline"
-							color="#EEF3FF"
-							onClick={() => {
-								questImageVis();
-							}}
+							color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+							onClick={handleBackButton}
+							leftSection={<IconArrowBack />}
 						>
-							View Quest Images
+							Pick Another Quest
 						</Button>
 					</>
 				) : (
-					<Button variant="outline" color="#EEF3FF" onClick={handlePopOut}>
+					<Button
+						variant="outline"
+						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+						onClick={handlePopOut}
+					>
 						Pop In Quest Controls
 					</Button>
 				)}
@@ -431,21 +557,26 @@ const QuestPage: React.FC = () => {
 					(showStepReq ? (
 						<Button
 							variant="outline"
-							color="#EEF3FF"
+							color={hasButtonColor ? userButtonColor : "#EEF3FF"}
 							onClick={() => {
 								toggleShowStepReq();
 							}}
 						>
-							Show Step Details
+							Show Quest Steps
 						</Button>
 					) : (
-						<Button variant="outline" color="#EEF3FF" onClick={toggleShowStepReq}>
+						<Button
+							variant="outline"
+							color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+							onClick={toggleShowStepReq}
+						>
 							Show Quest Details
 						</Button>
 					))}
 			</Flex>
 			{showStepReq && Array.isArray(QuestDetails) ? (
 				<>
+					<div className="autoPad1"></div>
 					<Accordion
 						defaultValue=""
 						chevron={
@@ -455,7 +586,7 @@ const QuestPage: React.FC = () => {
 						<Accordion.Item key={1} value="Click to Show Quest Requirements">
 							<Accordion.Control
 								styles={{
-									control: { color: "#4e85bc" },
+									control: { color: hasLabelColor ? userLabelColor : "#4e85bc" },
 								}}
 							>
 								Requirements
@@ -548,7 +679,7 @@ const QuestPage: React.FC = () => {
 																junglePotion = true;
 															}
 														}
-														console.log(completedQuests);
+
 														const isComplete =
 															completedQuests &&
 															completedQuests.some((value) => {
@@ -577,7 +708,7 @@ const QuestPage: React.FC = () => {
 
 														const requirementParts = requirement.split(" ");
 														const firstPart: number = parseInt(requirementParts[0]);
-														console.log(hasSkill);
+
 														return (
 															<li
 																key={uniqueKey}
@@ -626,12 +757,12 @@ const QuestPage: React.FC = () => {
 							<Accordion.Control
 								className="AccordianControl"
 								styles={{
-									control: { color: "#4e85bc" },
+									control: { color: hasLabelColor ? userLabelColor : "#4e85bc" },
 								}}
 							>
 								Start Point
 							</Accordion.Control>
-							<Accordion.Panel>
+							<Accordion.Panel c={hasColor ? userColor : "#4d5564"}>
 								<div>
 									{QuestDetails.map((value) => {
 										return value.StartPoint;
@@ -643,12 +774,12 @@ const QuestPage: React.FC = () => {
 							<Accordion.Control
 								className="AccordianControl"
 								styles={{
-									control: { color: "#4e85bc" },
+									control: { color: hasLabelColor ? userLabelColor : "#4e85bc" },
 								}}
 							>
 								Is This a Members Quest?
 							</Accordion.Control>
-							<Accordion.Panel>
+							<Accordion.Panel c={hasColor ? userColor : "#4d5564"}>
 								<div>
 									{QuestDetails.map((value) => {
 										return value.MemberRequirement;
@@ -660,12 +791,12 @@ const QuestPage: React.FC = () => {
 							<Accordion.Control
 								className="AccordianControl"
 								styles={{
-									control: { color: "#4e85bc" },
+									control: { color: hasLabelColor ? userLabelColor : "#4e85bc" },
 								}}
 							>
 								How Long is This Quest?
 							</Accordion.Control>
-							<Accordion.Panel>
+							<Accordion.Panel c={hasColor ? userColor : "#4d5564"}>
 								<div>
 									{QuestDetails.map((value) => {
 										return value.OfficialLength;
@@ -677,12 +808,12 @@ const QuestPage: React.FC = () => {
 							<Accordion.Control
 								className="AccordianControl"
 								styles={{
-									control: { color: "#4e85bc" },
+									control: { color: hasLabelColor ? userLabelColor : "#4e85bc" },
 								}}
 							>
 								Items You Definitely Need
 							</Accordion.Control>
-							<Accordion.Panel>
+							<Accordion.Panel c={hasColor ? userColor : "#4d5564"}>
 								<div>
 									<List listStyleType="none">
 										{QuestDetails.map((quest, questIndex) => {
@@ -711,12 +842,12 @@ const QuestPage: React.FC = () => {
 								className="AccordianControl"
 								title="Items You Might Need"
 								styles={{
-									control: { color: "#4e85bc" },
+									control: { color: hasLabelColor ? userLabelColor : "#4e85bc" },
 								}}
 							>
 								Items You Might Need
 							</Accordion.Control>
-							<Accordion.Panel>
+							<Accordion.Panel c={hasColor ? userColor : "#4d5564"}>
 								<div>
 									<List listStyleType="none">
 										{QuestDetails.map((quest, questIndex) => {
@@ -744,12 +875,12 @@ const QuestPage: React.FC = () => {
 							<Accordion.Control
 								className="AccordianControl"
 								styles={{
-									control: { color: "#4e85bc" },
+									control: { color: hasLabelColor ? userLabelColor : "#4e85bc" },
 								}}
 							>
 								Enemies To Look Out For
 							</Accordion.Control>
-							<Accordion.Panel>
+							<Accordion.Panel c={hasColor ? userColor : "#4d5564"}>
 								<div>
 									<List listStyleType="none">
 										{QuestDetails.map((quest, questIndex) => (
@@ -781,24 +912,75 @@ const QuestPage: React.FC = () => {
 						orientation="vertical"
 						onStepClick={setActiveAndScroll}
 					>
-						{details.stepDetails.map((value, index) => (
-							<Stepper.Step
-								id={(index + 1).toString()}
-								className="stepperStep"
-								label={`Step: ${index + 1}`}
-								key={index}
-								color={active > index ? "#24BF58" : "#4e85bc"}
-								styles={{
-									stepDescription: {
-										color: active > index ? "#24BF58" : "#546576",
-									},
-								}}
-								orientation="vertical"
-								description={value}
-								onClick={() => setActiveAndScroll}
-								allowStepSelect={ShouldAllowStep(index)}
-							/>
-						))}
+						{details.stepDetails.map((value, index) =>
+							isHighlight ? (
+								<Stepper.Step
+									id={(index + 1).toString()}
+									className="stepperStep"
+									label={`Step: ${index + 1}`}
+									key={index + 1}
+									color={active > index ? "#24BF58" : "#4e85bc"}
+									styles={{
+										stepDescription: {
+											color: active > index ? "#24BF58" : hasColor ? userColor : "#546576",
+										},
+										stepLabel: {
+											color: hasLabelColor ? userLabelColor : "#546576",
+										},
+									}}
+									orientation="vertical"
+									description={value}
+									onClick={() => setActiveAndScroll}
+									allowStepSelect={ShouldAllowStep(index)}
+								/>
+							) : stepHidden ? ( // Render nothing if stepHidden is true
+								<Stepper.Step
+									id={(index + 1).toString()}
+									className="stepperStep"
+									label={`Step: ${index + 1}`}
+									key={index + 1}
+									styles={{
+										stepDescription: {
+											visibility: active > index ? "hidden" : "visible",
+											color: hasColor ? userColor : "#546576",
+										},
+										stepLabel: {
+											visibility: active > index ? "hidden" : "visible",
+										},
+										stepCompletedIcon: {
+											visibility: active > index ? "hidden" : "visible",
+										},
+										stepIcon: {
+											visibility: active > index ? "hidden" : "visible",
+										},
+										stepWrapper: {
+											visibility: active > index ? "hidden" : "visible",
+										},
+									}}
+									orientation="vertical"
+									description={value}
+									onClick={() => setActiveAndScroll}
+									allowStepSelect={ShouldAllowStep(index)}
+								/>
+							) : (
+								<Stepper.Step
+									id={(index + 1).toString()}
+									className="stepperStep"
+									label={`Step: ${index + 1}`}
+									key={index + 1}
+									color={active > index ? "#24BF58" : "#4e85bc"}
+									styles={{
+										stepDescription: {
+											color: "#546576",
+										},
+									}}
+									orientation="vertical"
+									description={value}
+									onClick={() => setActiveAndScroll}
+									allowStepSelect={ShouldAllowStep(index)}
+								/>
+							)
+						)}
 					</Stepper>
 					<div className="autoPad1"></div>
 					<div className="autoPad2"></div>

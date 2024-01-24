@@ -17,7 +17,8 @@ interface QuestControllerStore {
 	toggleAccordian: () => void;
 	highestStep: number;
 	currentActive: number;
-
+	settingsIsOpen: (open: boolean) => void;
+	settingsOpen: boolean;
 	viewQuestImage: boolean;
 	setViewImage: (visible: boolean) => void;
 	questImageVis: () => void;
@@ -29,7 +30,9 @@ export const useQuestControllerStore = create<QuestControllerStore>((set) => ({
 			viewQuestImage: !state.viewQuestImage,
 		}));
 	},
+	settingsOpen: false,
 	setViewImage: (visible) => set({ viewQuestImage: visible }),
+	settingsIsOpen: (open) => set({ settingsOpen: open }),
 	viewQuestImage: false,
 	htmlID: null,
 	currentActive: 0,
@@ -44,8 +47,7 @@ export const useQuestControllerStore = create<QuestControllerStore>((set) => ({
 	toggleImageCaro: () =>
 		set((state) => ({ showImageCaro: !state.showImageCaro })),
 	showStepReq: true,
-	toggleShowStepReq: () =>
-		set((state) => ({ showStepReq: !state.showStepReq })),
+	toggleShowStepReq: () => set((state) => ({ showStepReq: !state.showStepReq })),
 	showControlPopOut: false,
 	toggleShowControlPopOut: () =>
 		set((state) => ({ showControlPopOut: !state.showControlPopOut })),

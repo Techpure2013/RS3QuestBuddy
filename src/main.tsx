@@ -21,6 +21,7 @@ import "@mantine/core/styles/ModalBase.css";
 import "@mantine/core/styles/Input.css";
 import "@mantine/core/styles/Flex.css";
 import { MantineProvider } from "@mantine/core";
+
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
 	<MantineProvider>
 		<AltGuard />
