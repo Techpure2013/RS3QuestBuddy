@@ -2,6 +2,7 @@
 	font-family: rs3Font;
 	src: url("/fonts/RS3Bold.woff2");
 }
+
 .ApplySkillsButton {
 	left: 5px;
 }
@@ -112,12 +113,11 @@ img.enlarged {
 /* Save this buttons class for later use maybe */
 .prevNextGroup {
 	position: fixed;
-	float: left;
-	display: flex;
 	bottom: 0;
-	left: auto;
-	right: 10px;
-	z-index: 1;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 }
 .mantine-Button-root {
 	font-size: 16px;
