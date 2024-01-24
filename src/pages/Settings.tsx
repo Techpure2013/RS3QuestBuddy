@@ -219,6 +219,7 @@ export const Settings: React.FC = () => {
 							onClick={() => {
 								setSwatchLabelColor([]);
 							}}
+							variant="outline"
 							color={hasButtonColor ? userButtonColor : "#EEF3FF"}
 						>
 							Clear Swatch
@@ -263,6 +264,7 @@ export const Settings: React.FC = () => {
 							onClick={() => {
 								setButtonSwatchColors([]);
 							}}
+							variant="outline"
 						>
 							Clear Swatch
 						</Button>
