@@ -1,9 +1,9 @@
 {
 	"appName": "RS3 Quest Buddy",
-	"description": "Alt1 React starter kit",
+	"description": "RS3 Quest Buddy",
 	"appUrl": "./../../index.html",
 	"configUrl": "./RS3QuestBuddy/appconfig.prod.json",
-	"iconUrl": "./../src/assets/rs3buddyicon.png",
+	"iconUrl": "./src/assets/rs3buddyicon.png",
 	"defaultWidth": 580,
 	"defaultHeight": 550,
 	"minWidth": 250,

@@ -144,7 +144,7 @@
 			"Agorothdies.png",
 			"AShadowoverAshdale.png",
 			"AShadowoverAshdaleAshdaleissafe.png",
-			"AShadowOverAshdalereward.png",
+
 			"ASOAAgorothArrives.png",
 			"ASOABarrelpuzzle.png",
 			"FightingAgoroth.png",
@@ -156,7 +156,7 @@
 		"images": [
 			"Angerweapons.png",
 			"ASoulsBane.png",
-			"ASoulsBanereward.png",
+
 			"ConfrontingTolna.png",
 			"FightingTolna.png",
 			"Increaserage.png",
@@ -746,7 +746,7 @@
 			"Barendirarmy.png",
 			"Birthrightherdingmemories.png",
 			"BirthrightoftheDwarves.png",
-			"BirthrightoftheDwarvesreward.png",
+
 			"BirthrightoftheDwarvesstart.png",
 			"BirthrightoftheDwarvesTheDirectorandGrimsson.png",
 			"DondakansLocation.png",
@@ -778,7 +778,7 @@
 			"BloodRunsDeepdagannothattack.png",
 			"BloodRunsDeepDagannothmotherencounter.png",
 			"BloodRunsDeepmarriage.png",
-			"BloodRunsDeepreward.png",
+
 			"Brundtsboat.png",
 			"CaveMap.png",
 			"Dagannothsentinels.png",
@@ -798,7 +798,7 @@
 			"Apigletandakitten.png",
 			"Baconaddictsappear.png",
 			"BringingHometheBacon.png",
-			"BringingHometheBaconreward.png",
+
 			"Convincingvillagers.png",
 			"MakingaBeastofBurden.png"
 		]
@@ -858,10 +858,10 @@
 		"name": "Carnillean Rising",
 		"images": [
 			"CarnilleanRising.png",
-			"CarnilleanRisingreward.png",
+
 			"Gettingtheguarddrunk.png",
 			"Luringwolves.png",
-			"Philipesreward.png",
+
 			"Spoilheap.png",
 			"TyingSarsaparilla.png"
 		]
@@ -871,7 +871,7 @@
 		"images": [
 			"Catapultbroken.png",
 			"CatapultConstruction.png",
-			"CatapultConstructionreward.png",
+
 			"Catapultconstructionstart.png",
 			"Catapult_repair_complete.png",
 			"Catapult_repair_controls.png",
@@ -883,7 +883,7 @@
 		"name": "Chef's Assistant",
 		"images": [
 			"ChefsAssistant.png",
-			"ChefsAssistantreward.png",
+
 			"CooksAssistant.png",
 			"philanddelphinelocation.png"
 		]
@@ -892,7 +892,7 @@
 		"name": "Children of Mah",
 		"images": [
 			".ChildrenofMah.png",
-			".ChildrenofMahreward.png",
+
 			".JhallanandKharshaidiscussthegathering.png",
 			".Kharshaismemoryofthethroneroom.png",
 			".Lavasurfing.png",
@@ -910,7 +910,7 @@
 			"CityofSenntisten.png",
 			"CityofSenntistendrawerpuzzlesolution.png",
 			"cityofsenntistenmap.png",
-			"CityofSenntistenreward.png",
+
 			"Excavatingtheforumentrance.png",
 			"FightingaGargoylesentinel.png",
 			"FightingtheBloodWarden.png",
@@ -926,7 +926,7 @@
 			"Clocktowerbluecog.png",
 			"clocktowermap.png",
 			"Clocktowerredcog.png",
-			"ClockTowerreward.png",
+
 			"Clocktowerwhitecog.png"
 		]
 	},
@@ -934,7 +934,7 @@
 		"name": "Cold War",
 		"images": [
 			"ColdWar.png",
-			"ColdWarreward.png",
+
 			"Finishedbirdielookout.png",
 			"Meetingpingandpong.png",
 			"Penguinarmy.png",
@@ -947,7 +947,7 @@
 		"name": "Contact",
 		"images": [
 			"Contact.png",
-			"Contactreward.png",
+
 			"Coosmansneaking.png",
 			"Maisaindungeon.png",
 			"Scarabfight.png",
@@ -956,11 +956,7 @@
 	},
 	{
 		"name": "Cook's Assistant",
-		"images": [
-			"CooksAssistant.png",
-			"cooksassistantmap.png",
-			"CooksAssistantreward.png"
-		]
+		"images": ["CooksAssistant.png", "cooksassistantmap.png"]
 	},
 	{
 		"name": "Creature of Fenkenstrain",
@@ -968,7 +964,7 @@
 			"BookshelveswiththeAmulets.png",
 			"Clearingfireplace.png",
 			"CreatureofFenkenstrain.png",
-			"CreatureofFenkenstrainreward.png",
+
 			"CreatureofFenkenstrainstart.png",
 			"EdLestwitsgrave.png",
 			"Fenkenstraingrave.png",
@@ -982,7 +978,7 @@
 		"name": "Crocodile Tears",
 		"images": [
 			"CrocodileTears.png",
-			"CrocodileTearsreward.png",
+
 			"Crondisrequestsfood.png",
 			"Ukundakafight.png"
 		]
@@ -992,7 +988,7 @@
 		"images": [
 			"ConfrontingBletchley.png",
 			"CurseoftheBlackStone.png",
-			"CurseoftheBlackStonereward.png",
+
 			"DiggingonWhalesMaw.png",
 			"DragonkinLaboratory.png",
 			"DragonkinonKethsi.png",
@@ -1001,7 +997,7 @@
 			"Gatheredforces.png",
 			"HannibusandVindicta.png",
 			"locationofseagulls.png",
-			"Shiftingtombsrewardenhancer.png",
+
 			"StevenswifeandLudwig.png",
 			"TempleofAminishiEliteDungeon.png",
 			"TheAmbassadorkillsShihscrew.png"
@@ -1015,7 +1011,7 @@
 			"AnneDimitriischannellingaspellinRedDragonIsle.png",
 			"AnneDimitriischannellingaspellinwarbandscamp.png",
 			"DaughterofChaosoverview.png",
-			"DaughterofChaosreward.png",
+
 			"MoiaconfrontsAvaryssinInfernalSource.png",
 			"TrindineleavetheSourceandbacktoWilderness.png"
 		]
@@ -1029,24 +1025,18 @@
 			"DeadandBuriedDragonkincrypt.png",
 			"DeadandBuriedFightingEllamariasnightmares.png",
 			"DeadandBuriedHeraldofVarrock.png",
-			"DeadandBuriedRaptorsparentsdie.png",
-			"DeadandBuriedreward.png"
+			"DeadandBuriedRaptorsparentsdie.png"
 		]
 	},
 	{
 		"name": "Deadliest Catch",
-		"images": [
-			"DeadliestCatch.png",
-			"DeadliestCatchBoat.png",
-			"DeadliestCatchreward.png",
-			"Jonesreturns.png"
-		]
+		"images": ["DeadliestCatch.png", "DeadliestCatchBoat.png", "Jonesreturns.png"]
 	},
 	{
 		"name": "Dealing with Scabaras",
 		"images": [
 			"DealingwithScabaras.png",
-			"dealingwithscabarasreward.png",
+
 			"Maisascorpse.png",
 			"ScabarasHighPriestandstatues.png",
 			"Ullekresearchcamp.png",
@@ -1059,7 +1049,7 @@
 			"Ambush.png",
 			"DeathPlateau.png",
 			"DeathPlateaucave.png",
-			"DeathPlateaureward.png",
+
 			"TheMapfight.png"
 		]
 	},
@@ -1067,7 +1057,7 @@
 		"name": "Death to the Dorgeshuun",
 		"images": [
 			"DeathtotheDorgeshuun.png",
-			"DeathtotheDorgeshuunreward.png",
+
 			"Dtdfight.png",
 			"H.png",
 			"Lumbridgemillmachinery.png",
@@ -1080,7 +1070,7 @@
 		"name": "Defender of Varrock",
 		"images": [
 			"DefenderofVarrockinfobox.png",
-			"DefenderofVarrockreward.png",
+
 			"Dovzombieskillingvarrockguards.png",
 			"Freeatlast.png",
 			"Killingarmouredzombies.png"
@@ -1092,7 +1082,7 @@
 			"ClaimingSilverlight.png",
 			"Delrithissummoned.png",
 			"DemonSlayer.png",
-			"DemonSlayerreward.png",
+
 			"Fightingthecultists.png"
 		]
 	},
@@ -1103,7 +1093,7 @@
 			"DesertTreasure.png",
 			"DesertTreasurecryingtrollchild.png",
 			"DesertTreasureRasolo.png",
-			"DesertTreasurereward.png",
+
 			"DesertTreasurestart.png",
 			"DTBloodObelisk.png",
 			"Dtdessoushssss.png",
@@ -1119,7 +1109,7 @@
 	},
 	{
 		"name": "Desperate Creatures",
-		"images": ["DesperateCreatures.png", "DesperateCreaturesreward.png"]
+		"images": ["DesperateCreatures.png"]
 	},
 	{
 		"name": "Desperate Measures",
@@ -1128,7 +1118,7 @@
 			"DesperateMeasuresarchaeology.png",
 			"DesperateMeasuresCharosLocations.png",
 			"DesperateMeasuresPylonSolutions.png",
-			"DesperateMeasuresreward.png",
+
 			"DesperateTimesblackstonedragonbattle.png",
 			"Dinosaurinvasion.png",
 			"Hibernatorium.png",
@@ -1146,7 +1136,7 @@
 			"DesperateTimes.png",
 			"DesperateTimesartwork.png",
 			"DesperateTimesKerapacdrainsGailspowers.png",
-			"DesperateTimesreward.png",
+
 			"DesperateTimesSerendiscussesherplan.png",
 			"Firstneedlepuzzle.png",
 			"KerapacCThokandtheNeedle.png",
@@ -1161,7 +1151,7 @@
 			"Creatingtheslenderblade.png",
 			"Deadmonk.png",
 			"DeviousMinds.png",
-			"DeviousMindsreward.png",
+
 			"Deviousmindstempleattack.png"
 		]
 	},
@@ -1172,7 +1162,7 @@
 			"Banditkingandfemalebandits.png",
 			"ChattingtoOsman.png",
 			"DiamondintheRough.png",
-			"DiamondintheRoughreward.png",
+
 			"DungKalphites.png",
 			"Eaglejump.png",
 			"FightingKelisbodyguards.png",
@@ -1185,22 +1175,13 @@
 		]
 	},
 	{
-		"name": "Dimension of Disaster",
-		"images": [
-			"300px-200thQuestAlternateUniverseconceptart2.pngca223.png",
-			"DimensionofDisaster.png",
-			"DimensionofDisasterreward.png",
-			"thQuestAlternateUniverseconceptart.png"
-		]
-	},
-	{
 		"name": "Dishonour among Thieves",
 		"images": [
 			"BlackKnightsscheming.png",
 			"DefeatingtheEliteWights.png",
 			"DishonouramongThieves.png",
 			"DishonouramongThievesnoticeboard.png",
-			"DishonouramongThievesreward.png",
+
 			"Foreshadowsspecialattack.png",
 			"Hazeelreturns.png",
 			"InfiltratingSliskeslair.png",
@@ -1226,7 +1207,7 @@
 			"Buildingthecolony.png",
 			"DoNoEvil.png",
 			"DoNoEvildiglocation.png",
-			"DoNoEvilreward.png",
+
 			"Erunicutscene.png",
 			"FightingAyuni.png",
 			"Leeunicutscene.png",
@@ -1289,7 +1270,7 @@
 		"images": [
 			"Cyrisussbank.png",
 			"DreamMentor.png",
-			"DreamMentorreward.png",
+
 			"FeedingCyrisus.png",
 			"SafespotEverlasting.png",
 			"SeeingtheInadequacy.png",
@@ -1301,19 +1282,19 @@
 		"images": [
 			"DruidicRitual.png",
 			"DruidicRitualceremony.png",
-			"DruidicRitualreward.png",
+
 			"TaverleySlayerDungeon.png"
 		]
 	},
 	{
 		"name": "Dwarf Cannon",
-		"images": ["DwarfCannon.png", "DwarfCannonreward.png", "Toolkitinterface.png"]
+		"images": ["DwarfCannon.png", "Toolkitinterface.png"]
 	},
 	{
 		"name": "Eadgars Ruse",
 		"images": [
 			"EadgarsRuse.png",
-			"EadgarsRusereward.png",
+
 			"Goutweedstoreroom.png",
 			"TrollStrongholdParrothidinglocation.png",
 			"TThistlelocation.png"
@@ -1325,20 +1306,19 @@
 			"CatchingtheFerret.png",
 			"EaglesPeakDungeonmap.png",
 			"EaglesPeakEagledoor.png",
-			"EaglesPeakquest.png",
-			"EaglesPeakreward.png",
+
 			"EaglesPeakShoutnikolaus.png"
 		]
 	},
 	{
 		"name": "Elemental Workshop I",
-		"images": ["ElementalWorkshopI.png", "ElementalWorkshopIreward.png"]
+		"images": ["ElementalWorkshopI.png"]
 	},
 	{
 		"name": "Elemental Workshop II",
 		"images": [
 			"ElementalWorkshopII.png",
-			"ElementalWorkshopIIreward.png",
+
 			"Elementalworkshoppiping.png",
 			"Ewcogs.png"
 		]
@@ -1349,7 +1329,7 @@
 			"587px-Elemental_Workshop_III_puzzle_completed.png",
 			"Bodydoor.png",
 			"ElementalWorkshopIII.png",
-			"ElementalWorkshopIIIreward.png",
+
 			"Elemental_Workshop_III_diagram_scroll.png",
 			"Elemental_Workshop_III_Puzzle (1).png",
 			"Elemental_Workshop_III_Puzzle.png",
@@ -1358,19 +1338,14 @@
 	},
 	{
 		"name": "Elemental Workshop IV",
-		"images": [
-			"Drainingmachinecosmiccharged.png",
-			"ElementalWorkshopIV.png",
-			"ElementalWorkshopIVreward.png"
-		]
+		"images": ["Drainingmachinecosmiccharged.png", "ElementalWorkshopIV.png"]
 	},
 	{
 		"name": "Enakhras Lament",
 		"images": [
 			"AthanakosandEnakhratotheNorth.png",
 			"Buildingthestatue.png",
-			"EnakhrasLament.png",
-			"EnakhrasLamentreward.png",
+
 			"EnakhrasTempleHall.png",
 			"Removingstatueparts.png",
 			"Wallchiselling.png"
@@ -1382,15 +1357,14 @@
 			"EnlightenedJourney.png",
 			"EnlightenedJourneyangrymob.png",
 			"EnlightenedJourneyballoondesign.png",
-			"EnlightenedJourneybuiltballoon.png",
-			"EnlightenedJourneyreward.png"
+			"EnlightenedJourneybuiltballoon.png"
 		]
 	},
 	{
 		"name": "Ernest the Chicken",
 		"images": [
 			"ErnesttheChicken.png",
-			"ErnesttheChickenreward.png",
+
 			"IQTestingRoom.png",
 			"Pullingcandlesconce.png"
 		]
@@ -1463,22 +1437,18 @@
 			"ExtinctionElderHalls.png",
 			"ExtinctionHebeandMoia.png",
 			"ExtinctionIaia.png",
-			"Extinctionreward.png",
+
 			"ExtinctionSerensummonstheElders.png",
 			"Extinctionworldgate.png"
 		]
 	},
 	{
 		"name": "Eye of Het I",
-		"images": ["EyeofHetI.png", "EyeofHetIreward.png"]
+		"images": ["EyeofHetI.png"]
 	},
 	{
 		"name": "Eye of Het II",
-		"images": [
-			"EyeofHetIIreward.png",
-			"EyeofHetIITrindine.png",
-			"EyeofHetIIZamorakandKhazard.png"
-		]
+		"images": ["EyeofHetIITrindine.png", "EyeofHetIIZamorakandKhazard.png"]
 	},
 	{
 		"name": "Family Crest",
@@ -1528,7 +1498,7 @@
 			"CollectingMahsmemories.png",
 			"FateoftheGods.png",
 			"FateoftheGodsDoorPuzzle.png",
-			"FateoftheGodsreward.png",
+
 			"FightingtheNihils.png",
 			"Freneskaemap.png",
 			"MahsNightmare.png",
@@ -1541,7 +1511,7 @@
 		"name": "Fight Arena",
 		"images": [
 			"FightArenaquest.png",
-			"FightArenareward.png",
+
 			"FightArenasafespot.png",
 			"FightArenastart.png",
 			"FightingGeneralKhazard.png",
@@ -1551,7 +1521,7 @@
 	},
 	{
 		"name": "Fishing Contest",
-		"images": ["FishingContest.png", "FishingContestreward.png"]
+		"images": ["FishingContest.png"]
 	},
 	{
 		"name": "Forgettable Tale of a Drunken Dwarf",
@@ -1561,7 +1531,7 @@
 			"FermentingVat.png",
 			"ForgettableTalearchives.png",
 			"ForgettableTaleofaDrunkenDwarf.png",
-			"ForgettableTaleofaDrunkenDwarfreward.png",
+
 			"ForgettableTaleRowdyDwarf.png",
 			"Keldahopsgrown.png"
 		]
@@ -1575,7 +1545,7 @@
 			"Forgive.png",
 			"ForgivenessConsortiummeeting.png",
 			"ForgivenessofaChaosDwarf.png",
-			"ForgivenessofaChaosDwarfreward.png",
+
 			"Investigatingfootprints.png",
 			"Loweringbridge.png",
 			"Openingdoor.png",
@@ -1584,14 +1554,14 @@
 	},
 	{
 		"name": "Fur 'n' Seek",
-		"images": ["FurnSeek.png", "FurnSeekreward.png", "Tanningfur.png"]
+		"images": ["FurnSeek.png", "Tanningfur.png"]
 	},
 	{
 		"name": "Garden of Tranquillity",
 		"images": [
 			"GardenofTranquillity.png",
 			"GardenofTranquillityGuard.png",
-			"GardenofTranquillityreward.png",
+
 			"Pushstatue.png",
 			"Wellfishing.png",
 			"WhiteTree.png"
@@ -1599,14 +1569,14 @@
 	},
 	{
 		"name": "Gertrude's Cat",
-		"images": ["GertrudesCat.png", "GertrudesCatreward.png"]
+		"images": ["GertrudesCat.png"]
 	},
 	{
 		"name": "Ghosts Ahoy",
 		"images": [
 			"Bookofharicantolocation.png",
 			"GhostsAhoy.png",
-			"GhostsAhoyreward.png",
+
 			"Giantlobsterfight.png",
 			"Phasmatysshipwreck.png",
 			"PortPhasmatysdocks.png",
@@ -1618,8 +1588,7 @@
 		"images": [
 			"GloriousMemories.png",
 			"GloriousMemoriesFoottracks.png",
-			"GloriousMemoriesreward.png",
-			"GloriousMemoriesreward2.png74787.png",
+
 			"Icemound.png",
 			"NialfightsGnoeal.png",
 			"Vargashits.png"
@@ -1629,7 +1598,7 @@
 		"name": "Goblin Diplomacy",
 		"images": [
 			"GoblinDiplomacy.png",
-			"GoblinDiplomacyreward.png",
+
 			"Grubfootwithbluerobes.png",
 			"Grubfootwithbrownrobes.png"
 		]
@@ -1641,7 +1610,7 @@
 			"BlackKnightTitanbattle.png",
 			"Cabbageswithpartyhats.png",
 			"GowerQuest.png",
-			"GowerQuestreward.png",
+
 			"GrandExchangepipessolution.png",
 			"RobbingtheBTSbank.png",
 			"Thordurswhitehole.png",
@@ -1653,7 +1622,7 @@
 		"name": "Grim Tales",
 		"images": [
 			"FightingGlod.png",
-			"GrimTalesreward.png",
+
 			"GrimTalesRupertreleased.png",
 			"Sylasandthebeanstalk.png"
 		]
@@ -1663,7 +1632,7 @@
 		"images": [
 			"Dororandepressed.png",
 			"GunnarsGroundinfobox.png",
-			"GunnarsGroundreward.png",
+
 			"QPCGunnarsGround.png",
 			"ShowingGororansring.png"
 		]
@@ -1675,20 +1644,14 @@
 			"300px-AbandonedMineLevel3.png39340.png",
 			"300px-AbandonedMineLevel4.png24b2d.png",
 			"AbandonedMineLevel.png",
-			"HauntedMine.png",
-			"HauntedMinereward.png",
+
 			"SpeakingtotheZealot.png",
 			"TreusDaythattacks.png"
 		]
 	},
 	{
 		"name": "Hazeel Cult",
-		"images": [
-			"HazeelCult.png",
-			"HazeelCultreward.png",
-			"HazeelCultrewardduringquest.png",
-			"TheRevivalofHazeel.png"
-		]
+		"images": ["HazeelCult.png", "TheRevivalofHazeel.png"]
 	},
 	{
 		"name": "Heart of Stone",
@@ -1698,7 +1661,7 @@
 			"FightingFulKrasattendants.png",
 			"Fightingtheprehistoricabyssal.png",
 			"HeartofStone.png",
-			"HeartofStonereward.png",
+
 			"JasKraschamber.png",
 			"Kippledies.png",
 			"Portalentrana.png",
@@ -1714,7 +1677,7 @@
 		"images": [
 			"Heartstealer.png",
 			"Heartstealerpatrollingguards.png",
-			"Heartstealerreward.png",
+
 			"MakingthesmokebombsduringHeartstealer.png"
 		]
 	},
@@ -1724,7 +1687,7 @@
 			"HeroesQuest.png",
 			"HeroesquestCongrats.png",
 			"HeroesquestFishingeels.png",
-			"HeroesQuestreward.png",
+
 			"KillingGrip.png"
 		]
 	},
@@ -1738,7 +1701,7 @@
 			"HerosWelcome.png",
 			"HerosWelcomecompletedmap.png",
 			"HerosWelcomequestionsinterface.png",
-			"HerosWelcomereward.png",
+
 			"TheDragonkinsquabble.png",
 			"Vreturns.png",
 			"Vsdeath.png"
@@ -1746,7 +1709,7 @@
 	},
 	{
 		"name": "Holy Grail",
-		"images": ["Grailontable.png", "HolyGrail.png", "HolyGrailreward.png"]
+		"images": ["Grailontable.png", "HolyGrail.png"]
 	},
 	{
 		"name": "Horror from the Deep",
@@ -1755,7 +1718,7 @@
 			"Dagannothmotherbattle.png",
 			"Fixinglighthousebridge.png",
 			"HorrorfromtheDeep.png",
-			"HorrorfromtheDeepreward.png",
+
 			"Lighthouserepaired.png"
 		]
 	},
@@ -1764,7 +1727,7 @@
 		"images": [
 			"Footprint.png",
 			"HuntforRedRaktuber.png",
-			"HuntforRedRaktuberreward.png",
+
 			"KGPofficemap.png",
 			"MarlinsSlug.png",
 			"PenguinCapture.png",
@@ -1784,7 +1747,7 @@
 			"IcthlarinsHelperSphinx.png",
 			"IcthlarinsLittleHelper.png",
 			"IcthlarinsLittleHelperpitfallpath.png",
-			"IcthlarinsLittleHelperreward.png",
+
 			"IcthlarinsLittleHelperstart.png",
 			"IcthlarinsLittleHelperwestdoor.png",
 			"Mummy.png",
@@ -1796,7 +1759,7 @@
 		"images": [
 			"Fightingthecholericimp.png",
 			"ImpCatcher.png",
-			"ImpCatcherreward.png",
+
 			"Phlegmaticimpvomits.png",
 			"Racingthesanguineimp.png"
 		]
@@ -1805,8 +1768,7 @@
 		"name": "Impressing the Locals",
 		"images": [
 			"ImpressingtheLocals.png",
-			"ImpressingtheLocalsreward.png",
-			"ImpressingtheLocalsrewardold.png",
+
 			"InvitingEvieHiggs.png",
 			"InvitingSeasingerJemi.png",
 			"MeetingMisterGully.png"
@@ -1822,32 +1784,23 @@
 			"InAidoftheMyrequeMiningentrance.png",
 			"InAidoftheMyrequePickingpathtotemple.png",
 			"InAidoftheMyrequeProtectingIvan.png",
-			"InAidoftheMyrequereward.png",
+
 			"TombIvandisSeergaze.png"
 		]
 	},
 	{
 		"name": "In Pyre Need",
-		"images": [
-			"InPyreNeed.png",
-			"InPyreNeedinfobox.png",
-			"InPyreNeedreward.png",
-			"Woundedphoenix.png"
-		]
+		"images": ["InPyreNeed.png", "InPyreNeedinfobox.png", "Woundedphoenix.png"]
 	},
 	{
 		"name": "In Search of the Myreque",
-		"images": [
-			"CyregPaddlehornsboat.png",
-			"InSearchoftheMyreque.png",
-			"InSearchoftheMyrequereward.png"
-		]
+		"images": ["CyregPaddlehornsboat.png", "InSearchoftheMyreque.png"]
 	},
 	{
 		"name": "Jungle Potion",
 		"images": [
 			"JunglePotion.png",
-			"JunglePotionreward.png",
+
 			"Marshyjunglevine.png",
 			"PalmtreeJunglePotionCwithardrigal.png",
 			"Roguespurse.png",
@@ -1865,7 +1818,7 @@
 			"KCRoom.png",
 			"KennithcapturesKimberly.png",
 			"KennithsConcerns.png",
-			"KennithsConcernsreward.png",
+
 			"KentandCaroline.png",
 			"KimberlysParents.png",
 			"Shockingconversation.png"
@@ -1873,7 +1826,7 @@
 	},
 	{
 		"name": "Kili Row",
-		"images": ["KiliRow.png", "KiliRowreward.png"]
+		"images": ["KiliRow.png"]
 	},
 	{
 		"name": "Kindred Spirits",
@@ -1882,7 +1835,7 @@
 			"EscapingSliskeslair.png",
 			"Hanginginthebalance.png",
 			"KindredSpirits.png",
-			"KindredSpiritsreward.png",
+
 			"PunchingSliske.png",
 			"SliskeandtheStoneofJas.png",
 			"SliskekillsSamwell.png",
@@ -1900,17 +1853,13 @@
 			"Getthemachinesworking.png",
 			"Grimssonfight.png",
 			"KingoftheDwarves.png",
-			"KingoftheDwarvesreward.png",
+
 			"LavaFlowMineexplosion.png"
 		]
 	},
 	{
 		"name": "King's Ransom",
-		"images": [
-			"KingsRansom.png",
-			"KingsRansomreward.png",
-			"KingsRansomsecretpassage.png"
-		]
+		"images": ["KingsRansom.png", "KingsRansomsecretpassage.png"]
 	},
 	{
 		"name": "Land of the Goblins",
@@ -1919,7 +1868,7 @@
 			"Fairyringpuzzle.png",
 			"GrubfootandMistag.png",
 			"GrubfootsDream.png",
-			"LandoftheGoblinsreward.png",
+
 			"Strongbonesfight.png",
 			"Yubiusk.png",
 			"Zanikenters.png",
@@ -1938,7 +1887,7 @@
 			"KillingaVyrewatch.png",
 			"Legacy.png",
 			"LegacyofSeergaze.png",
-			"LegacyofSeergazereward.png",
+
 			"Repairingfurnace.png",
 			"SafalaanPower.png",
 			"SpeakingtoFlaygian.png",
@@ -1957,7 +1906,7 @@
 			"LegendsQuest.png",
 			"LegendsQuestFinalBoss.png",
 			"LegendsQuestQuestStart.png",
-			"LegendsQuestreward.png",
+
 			"Nezikchenedfirstform.png",
 			"Octagonoffire.png",
 			"Viyeldicavesmap.png",
@@ -1966,21 +1915,14 @@
 	},
 	{
 		"name": "Let Them Eat Pie",
-		"images": [
-			"Cookingterriblepie.png",
-			"LetThemEatPie.png",
-			"LetThemEatPiebaitbarrel.png",
-			"LetThemEatPiereward.png",
-			"Potatoinhole.png"
-		]
+		"images": ["Cookingterriblepie.png", "LetThemEatPie.png", "Potatoinhole.png"]
 	},
 	{
 		"name": "Lost City",
 		"images": [
 			"Adventurerscamp.png",
 			"FightingtheDramentreespirit.png",
-			"LostCity.png",
-			"LostCityreward.png",
+
 			"LostCitytree.png",
 			"Zanarisshed.png"
 		]
@@ -2012,7 +1954,7 @@
 			"LunarDiplomacy.png",
 			"LunarDiplomacydreampuffs.png",
 			"LunarDiplomacyrace.png",
-			"LunarDiplomacyreward.png",
+
 			"LunarDiplomacySafespot.png",
 			"LunarDiplomacysymbols.png",
 			"Lunarstaffenchantment.png",
@@ -2025,11 +1967,7 @@
 	},
 	{
 		"name": "Making History",
-		"images": [
-			"MakingHistory.png",
-			"MakingHistorychestlocation.png",
-			"MakingHistoryreward.png"
-		]
+		"images": ["MakingHistory.png", "MakingHistorychestlocation.png"]
 	},
 	{
 		"name": "Meeting History",
@@ -2038,7 +1976,7 @@
 			"Guthixrunes.png",
 			"Meetinghistory.png",
 			"Meetinghistorycutscene.png",
-			"MeetingHistoryreward.png",
+
 			"Meetinghistoryspot.png"
 		]
 	},
@@ -2050,7 +1988,7 @@
 			"FreeingMerlin.png",
 			"KeepLeFaye.png",
 			"MerlinsCrystal.png",
-			"MerlinsCrystalreward.png",
+
 			"VarrockChaosAltarFrontView.png"
 		]
 	},
@@ -2060,7 +1998,7 @@
 			"AlisDiscountWaresshop.png",
 			"Floorpuzzle.png",
 			"MissingmyMummy.png",
-			"MissingMyMummyreward.png",
+
 			"PharaohQueenTomb.png",
 			"Tumekensshadowforms.png",
 			"UzerMastabamap.png"
@@ -2074,7 +2012,7 @@
 			"FightingSliskeswights.png",
 			"FightingwithIcthlarin.png",
 			"MissingCPresumedDeath.png",
-			"MissingCPresumedDeathreward.png",
+
 			"Shadowcastersolution.png",
 			"SliskesGrandAscendancy.png",
 			"SliskesGrandAscendancyGathering.png",
@@ -2087,8 +2025,7 @@
 		"images": [
 			"MonksFriend.png",
 			"MonksFriendDungeon.png",
-			"MonksFriendParty.png",
-			"MonksFriendreward.png"
+			"MonksFriendParty.png"
 		]
 	},
 	{
@@ -2099,18 +2036,14 @@
 			"Crashisland.png",
 			"Monkeyaunt.png",
 			"MonkeyMadness.png",
-			"MonkeyMadnessreward.png",
+
 			"SpeakingtoGarkor.png",
 			"SpeakingtoNarnode.png"
 		]
 	},
 	{
 		"name": "Mountain Daughter",
-		"images": [
-			"BuryingAsleif.png",
-			"MountainDaughter.png",
-			"MountainDaughterreward.png"
-		]
+		"images": ["BuryingAsleif.png", "MountainDaughter.png"]
 	},
 	{
 		"name": "Mournings End Part I",
@@ -2123,7 +2056,7 @@
 			"MeetingtheHeadMourner.png",
 			"MeetingwithArianwyn.png",
 			"MourningsEndPartI.png",
-			"MourningsEndPartIreward.png",
+
 			"Poisoningthegrain.png",
 			"Shootingsheep.png"
 		]
@@ -2140,7 +2073,7 @@
 			"FracturedCrystal.png",
 			"MagentaYellowGate.png",
 			"MourningsEndPartII.png",
-			"MourningsEndPartIIreward.png",
+
 			"ReachingtheDeathAltar.png",
 			"TempleofLightfinaldoor.png",
 			"Themeetingofalllights.png"
@@ -2148,7 +2081,7 @@
 	},
 	{
 		"name": "Murder Mystery",
-		"images": ["MurderMystery.png", "MurderMysteryreward.png"]
+		"images": ["MurderMystery.png"]
 	},
 	{
 		"name": "Murder on the Border",
@@ -2158,7 +2091,7 @@
 			"Murderontheborderfeast.png",
 			"MurderontheborderMysteryjournalevidence.png",
 			"MurderontheborderMysteryjournalsuspects.png",
-			"MurderontheBorderreward.png",
+
 			"Simonsdeath.png"
 		]
 	},
@@ -2173,7 +2106,7 @@
 			"MyababoatHD.png",
 			"MyArmGainsFarming.png",
 			"MyArmsBigAdventure.png",
-			"MyArmsBigAdventurereward.png",
+
 			"Rocstunattack.png",
 			"Searchingthecauldron.png"
 		]
@@ -2189,7 +2122,7 @@
 			"LoSRoom.png",
 			"MeetingtheSnowimps.png",
 			"MythsoftheWhiteLands.png",
-			"MythsoftheWhiteLandsreward.png",
+
 			"Shoutingthroughthepipe.png",
 			"YetiCave.png"
 		]
@@ -2201,7 +2134,7 @@
 			"Killingaghast.png",
 			"NatureGrotto.png",
 			"NatureSpirit.png",
-			"NatureSpiritreward.png",
+
 			"NatureSpirittalkingtoDrezel.png",
 			"Naturespirittransform.png"
 		]
@@ -2221,7 +2154,7 @@
 		"images": [
 			"NewFoundations.png",
 			"NewFoundationsplayerbuildingwall.png",
-			"NewFoundationsreward.png",
+
 			"NewFoundationsthebeginningthroneroom.png"
 		]
 	},
@@ -2243,7 +2176,7 @@
 			"NomadsElegy.png",
 			"NomadsElegyexplosion.png",
 			"NomadsElegygatheringresources.png",
-			"NomadsElegyreward.png",
+
 			"SiegeonNomadsfortress.png",
 			"ThebattlewithNomad.png",
 			"Xeniafightsascended.png"
@@ -2259,7 +2192,7 @@
 			"Makingabridgeofslabs.png",
 			"NomadsDefeat.png",
 			"NomadsRequiem.png",
-			"NomadsRequiemreward.png",
+
 			"NomadsRequiemsolution.png",
 			"Nomadstrikes.png",
 			"RootsNomadsRequiem.png",
@@ -2271,7 +2204,7 @@
 		"name": "Observatory Quest",
 		"images": [
 			"ObservatoryQuest.png",
-			"ObservatoryQuestreward.png",
+
 			"Repairingthetelescope.png",
 			"Wakingthesleepingguard.png"
 		]
@@ -2283,7 +2216,7 @@
 			"BrineRatCaverndoorpuzzle.png",
 			"OlafsQuest.png",
 			"Olafsquestpuzzlecompleted.png",
-			"OlafsQuestreward.png",
+
 			"Svenslastmapread.png"
 		]
 	},
@@ -2305,11 +2238,7 @@
 	},
 	{
 		"name": "Once Upon a Slime",
-		"images": [
-			"OnceUponaSlime.png",
-			"OnceUponaSlimereward.png",
-			"ShrinkingMachine.png"
-		]
+		"images": ["OnceUponaSlime.png", "ShrinkingMachine.png"]
 	},
 	{
 		"name": "One of a Kind",
@@ -2323,7 +2252,7 @@
 			"Investigatingthesymbols.png",
 			"MeetingwiththeKBD.png",
 			"OneofaKind.png",
-			"OneofaKindreward.png",
+
 			"RobertsLibrary.png",
 			"Sharriganarrives.png",
 			"SiphoningDragonkinmemories.png",
@@ -2342,7 +2271,7 @@
 			"Killerstrikes.png",
 			"Layingthebodytorest.png",
 			"OnePiercingNote.png",
-			"OnePiercingNotereward.png",
+
 			"SisterAnnasdeath.png",
 			"Thekillermurdering.png",
 			"UnusedcharactersfromOnePiercingNote.png"
@@ -2354,8 +2283,7 @@
 			"OneSmallFavour.png",
 			"OneSmallFavourHammerspikethugs.png",
 			"OneSmallFavourLandingstriprepaired.png",
-			"OneSmallFavourPetraFiyedstuck.png",
-			"OneSmallFavourreward.png"
+			"OneSmallFavourPetraFiyedstuck.png"
 		]
 	},
 	{
@@ -2365,7 +2293,7 @@
 			"Jabaribattle.png",
 			"MeetingHet.png",
 			"OurManintheNorth.png",
-			"OurManintheNorthreward.png",
+
 			"ThePharoahsgoals.png",
 			"Thugsattack.png"
 		]
@@ -2377,7 +2305,7 @@
 			"IceMountainavalanche.png",
 			"PerilsofIceMountain.png",
 			"PerilsofIceMountainCutscene.png",
-			"PerilsofIceMountainreward.png",
+
 			"Tentrepair.png"
 		]
 	},
@@ -2388,8 +2316,7 @@
 			"BattlewiththePharaoh.png",
 			"OsmankillsthePharoah.png",
 			"Osmanrevealshimself.png",
-			"PhiteClub.png",
-			"PhiteClubreward.png"
+			"PhiteClub.png"
 		]
 	},
 	{
@@ -2406,7 +2333,7 @@
 			"Jumpingship.png",
 			"PiecesofHate.png",
 			"PiecesofHateinvasionlocations.png",
-			"PiecesofHatereward.png",
+
 			"Prisonguardflees.png",
 			"Secretpiratemeeting.png",
 			"Watchingthesunset.png"
@@ -2414,15 +2341,11 @@
 	},
 	{
 		"name": "Pirates Treasure",
-		"images": [
-			"MusaPointbananaplantation.png",
-			"PiratesTreasure.png",
-			"PiratesTreasurereward.png"
-		]
+		"images": ["MusaPointbananaplantation.png", "PiratesTreasure.png"]
 	},
 	{
 		"name": "Plague City",
-		"images": ["PlagueCity.png", "PlagueCityreward.png"]
+		"images": ["PlagueCity.png"]
 	},
 	{
 		"name": "Plagues End",
@@ -2445,7 +2368,7 @@
 			"MiningWellofVoyage.png",
 			"PlaguesEnd.png",
 			"PlaguesEndHining.png",
-			"PlaguesEndreward.png",
+
 			"Prifddinaselfcamp.png",
 			"Relievingtheguard.png",
 			"TraversingthePoisonWastes.png"
@@ -2459,8 +2382,7 @@
 			"KillingCerberus.png",
 			"PaterdomusEntrance.png",
 			"Pouringbucketofwater.png",
-			"PriestinPeril.png",
-			"PriestinPerilreward.png"
+			"PriestinPeril.png"
 		]
 	},
 	{
@@ -2472,15 +2394,14 @@
 			"OutofbodyexperienceasComanderKorasi.png",
 			"QBTSCrossingthebridge.png",
 			"QBTSShipmemory.png",
-			"QuietBeforetheSwarm.png",
-			"QuietbeforetheSwarmreward.png",
+
 			"QuietBeforetheSwarmroom.png",
 			"Watchingthestarsedit.png"
 		]
 	},
 	{
 		"name": "Rag and Bone Man",
-		"images": [".RagandBoneMan.png", ".RagandBoneManreward.png"]
+		"images": [".RagandBoneMan.png"]
 	},
 	{
 		"name": "Raksha the Shadow Colossus Quest",
@@ -2491,14 +2412,12 @@
 		"images": [
 			"BreakingintotheMansion.png",
 			"Catandratfight.png",
-			"Catchingrats.png",
-			"Ratcatchers.png",
-			"RatCatchersreward.png"
+			"Catchingrats.png"
 		]
 	},
 	{
 		"name": "Recipe for Disaster Freeing Evil Dave",
-		"images": ["BasementofDoom.png", "RecipeforDisasterFreeingEvilDavereward.png"]
+		"images": ["BasementofDoom.png"]
 	},
 	{
 		"name": "Recipe for Disaster Freeing King Awowogei",
@@ -2506,17 +2425,13 @@
 			"BushTchikimonkeynuts.png",
 			"CollectingRedbananas.png",
 			"Cookingthesnake.png",
-			"RecipeforDisasterFreeingKingAwowogeireward.png",
+
 			"Snakepit.png"
 		]
 	},
 	{
 		"name": "Recipe for Disaster Freeing Pirate Pete",
-		"images": [
-			"Mogrecamp.png",
-			"Mudskipper.png",
-			"RecipeforDisasterFreeingPiratePetereward.png"
-		]
+		"images": ["Mogrecamp.png", "Mudskipper.png"]
 	},
 	{
 		"name": "Recipe for Disaster Freeing Sir Amik Varze",
@@ -2525,31 +2440,25 @@
 			"Evilchickenrfd.png",
 			"Fightingblackdragon.png",
 			"InspectingSirAmik.png",
-			"RecipeforDisasterFreeingSirAmikVarzereward.png",
+
 			"RFDBruleeFlambe.png"
 		]
 	},
 	{
 		"name": "Recipe for Disaster Freeing Skrach Uglogwee",
-		"images": [
-			"RecipeforDisasterFreeingSkrachUglogweereward.png",
-			"TreewithArrow.png"
-		]
+		"images": ["", ""]
 	},
 	{
 		"name": "Recipe for Disaster Freeing the Goblin Generals",
-		"images": ["RecipeforDisasterFreeingtheGoblinGeneralsreward.png"]
+		"images": [""]
 	},
 	{
 		"name": "Recipe for Disaster Freeing the Lumbridge Sage",
-		"images": ["RecipeforDisasterFreeingtheLumbridgeSagereward.png"]
+		"images": [""]
 	},
 	{
 		"name": "Recipe for Disaster Freeing the Mountain Dwarf",
-		"images": [
-			"RecipeforDisasterDwarfRohak.png",
-			"RecipeforDisasterFreeingtheMountainDwarfreward.png"
-		]
+		"images": ["RecipeforDisasterDwarfRohak.png"]
 	},
 	{
 		"name": "Recruitment Drive",
@@ -2557,7 +2466,7 @@
 			"Chickencarriedacrossbridge.png",
 			"MissCheeversroom.png",
 			"RecruitmentDrive.png",
-			"RecruitmentDrivereward.png",
+
 			"Recruitmentdrivetrialmemorytest.png",
 			"SirLeyeroom.png",
 			"SirRenItchoodroom.png",
@@ -2567,19 +2476,14 @@
 	},
 	{
 		"name": "Regicide",
-		"images": [
-			"MeetingIorwerth.png",
-			"MeetingwithKingLathas.png",
-			"Regicide.png",
-			"Regicidereward.png"
-		]
+		"images": ["MeetingIorwerth.png", "MeetingwithKingLathas.png", "Regicide.png"]
 	},
 	{
 		"name": "Remains of the Necrolord",
 		"images": [
 			"RemainsoftheNecrolord.png",
 			"RemainsoftheNecrolordreanimatingwithYudura.png",
-			"RemainsoftheNecrolordreward.png",
+
 			"RemainsoftheNecrolordSkeletalTriofight.png",
 			"RemainsoftheNecrolordYuduraisresurrected.png"
 		]
@@ -2602,7 +2506,7 @@
 			"MarchtobattleRitualoftheMahjarrat.png",
 			"NightmarishDraynor.png",
 			"RitualoftheMahjarrat.png",
-			"RitualoftheMahjarratreward.png",
+
 			"SliskesummonsBarrowsbrothersRitualoftheMahjarrat.png",
 			"Smashingthestone.png",
 			"SpeakingwithSirTendethRitualoftheMahjarrat.png",
@@ -2626,7 +2530,7 @@
 			"KillingHarold.png",
 			"Pouringtheguthixbalance.png",
 			"Riverofbloodbookshelfsolution.png",
-			"RiverofBloodreward.png",
+
 			"RiverofBloodVampyrearmy.png",
 			"SpeakingtoEfaritay.png",
 			"SpeakingtoSarius.png"
@@ -2643,7 +2547,7 @@
 			"MakingarubbingofLuke.png",
 			"RimmingtonCustomsOfficeinterior.png",
 			"RockingOut.png",
-			"RockingOutreward.png",
+
 			"RockingOutWandaTheFishFilingCabinet.png"
 		]
 	},
@@ -2654,23 +2558,17 @@
 			"Isafdarmap.png",
 			"MossGiantsmallHD.png",
 			"RovingElves.png",
-			"RovingElvesreward.png",
-			"RovingElvesStart.png",
-			"RovingElveswardreward.png"
+
+			"RovingElvesStart.png"
 		]
 	},
 	{
 		"name": "Royal Trouble",
-		"images": ["RoyalTrouble.png", "RoyalTroublereward.png"]
+		"images": ["RoyalTrouble.png"]
 	},
 	{
 		"name": "Rum Deal",
-		"images": [
-			"Blindweedz.png",
-			"RumDeal.png",
-			"RumDealreward.png",
-			"Stagnantwater.png"
-		]
+		"images": ["Blindweedz.png", "RumDeal.png", "Stagnantwater.png"]
 	},
 	{
 		"name": "Rune Mechanics",
@@ -2679,7 +2577,7 @@
 			"RuneMechanics.png",
 			"Runemechanicsanimation.png",
 			"Runemechanicsprint.png",
-			"RuneMechanicsreward.png",
+
 			"RuneMechanicswiring.png"
 		]
 	},
@@ -2690,8 +2588,7 @@
 			"Gatheringoftheheadwizards.png",
 			"Glowingruneplacement.png",
 			"KelevanandMei.png",
-			"RuneMemories.png",
-			"RuneMemoriesreward.png"
+			"RuneMemories.png"
 		]
 	},
 	{
@@ -2702,18 +2599,14 @@
 			"Openingfirsttowerbasement.png",
 			"Organinterface.png",
 			"RuneMysteries.png",
-			"RuneMysteriesreward.png",
+
 			"TrappingtheVortex.png",
 			"TroubleintheLibrary.png"
 		]
 	},
 	{
 		"name": "Rune Mythos",
-		"images": [
-			"RuneMythos.png",
-			"RuneMythosEncounteringTheFirstNecromancer.png",
-			"RuneMythosreward.png"
-		]
+		"images": ["RuneMythos.png", "RuneMythosEncounteringTheFirstNecromancer.png"]
 	},
 	{
 		"name": "Salt in the Wound",
@@ -2722,22 +2615,18 @@
 			"FightingaRisenknight.png",
 			"LuringaSeaSlug.png",
 			"SaltintheWound.png",
-			"SaltintheWoundreward.png",
+
 			"Thefinalbattle.png",
 			"Throwingserum.png"
 		]
 	},
 	{
 		"name": "Scorpion Catcher",
-		"images": [
-			"ScorpionCatcher.png",
-			"ScorpionCatcherBarbarianOutpost.png",
-			"ScorpionCatcherreward.png"
-		]
+		"images": ["ScorpionCatcher.png", "ScorpionCatcherBarbarianOutpost.png"]
 	},
 	{
 		"name": "Sea Slug",
-		"images": ["SavingKennith.png", "SeaSlug.png", "SeaSlugreward.png"]
+		"images": ["SavingKennith.png", "SeaSlug.png"]
 	},
 	{
 		"name": "Shades of Mort'ton",
@@ -2746,7 +2635,7 @@
 			"LoarShadesetFree.png",
 			"Morttontemple.png",
 			"ShadesofMortton.png",
-			"ShadesofMorttonreward.png",
+
 			"ShadesofMorttonstartpoint.png"
 		]
 	},
@@ -2758,7 +2647,7 @@
 			"MatthewDie.png",
 			"MeetingDave.png",
 			"ShadowoftheStorm.png",
-			"ShadowoftheStormreward.png",
+
 			"SoSDesummoning.png",
 			"UzerSandstorm.png"
 		]
@@ -2768,14 +2657,14 @@
 		"images": [
 			"Burningsheepbones.png",
 			"SheepHerder.png",
-			"SheepHerderreward.png",
+
 			"SheepProd.png",
 			"Sicklookingsheep.png"
 		]
 	},
 	{
 		"name": "Shield of Arrav",
-		"images": ["ShieldofArrav.png", "ShieldofArravreward.png"]
+		"images": ["ShieldofArrav.png"]
 	},
 	{
 		"name": "Shilo Village",
@@ -2784,18 +2673,14 @@
 			"ShiloVillage.png",
 			"Shilovillagedolmen.png",
 			"ShiloVillageQuestUndeadOnes.png",
-			"Shilovillagereward.png",
+
 			"ShilovillageTombofRashiliya.png",
 			"ShilovillageZadimusgrave.png"
 		]
 	},
 	{
 		"name": "Sins of the Father",
-		"images": [
-			"EffigyIncubator.png",
-			"SinsoftheFather.png",
-			"SinsoftheFatherreward.png"
-		]
+		"images": ["EffigyIncubator.png", "SinsoftheFather.png"]
 	},
 	{
 		"name": "Sliskes Endgame",
@@ -2814,7 +2699,7 @@
 			"SliskesEndgame.png",
 			"SliskesEndgamepuzzle.png",
 			"SliskesEndgamequestreplayoptions.png",
-			"SliskesEndgamereward.png",
+
 			"SliskesEndgamesummit.png",
 			"SliskesLabyrinth1map(solution).png",
 			"SliskesLabyrinth2map(solution).png",
@@ -2831,9 +2716,7 @@
 			"Belongstous.png",
 			"Bookdestroy.png",
 			"SKmummywarrior.png",
-			"SKscarabmonster.png",
-			"SmokingKills.png",
-			"SmokingKillsreward.png"
+			"SKscarabmonster.png"
 		]
 	},
 	{
@@ -2847,8 +2730,7 @@
 			"POWcamp.png",
 			"RepairedEngine.png",
 			"Sealssleeping.png",
-			"SomeLikeitCold.png",
-			"SomeLikeItColdreward.png",
+
 			"Submarineaction.png",
 			"Thecrashedsubmarine.png"
 		]
@@ -2859,8 +2741,7 @@
 			"FollowingWaylanssoul.png",
 			"Glowingsymbol.png",
 			"SFTDRoomBurningsapling.png",
-			"SongfromtheDepths.png",
-			"SongfromtheDepthsreward.png",
+
 			"Thejump.png",
 			"TheSiren.png"
 		]
@@ -2876,7 +2757,7 @@
 			"CaughtSpiritBeast.png",
 			"SpiritofSummer.png",
 			"SpiritofSummerDiscdamage.png",
-			"SpiritofSummerreward.png",
+
 			"TrappedSummer.png"
 		]
 	},
@@ -2885,8 +2766,7 @@
 		"images": [
 			"Clearingwaterchannel.png",
 			"ClimbingWaterfall.png",
-			"SpiritsoftheElid.png",
-			"SpiritsoftheElidreward.png"
+			"SpiritsoftheElid.png"
 		]
 	},
 	{
@@ -2896,7 +2776,7 @@
 			"PunishingKhnum.png",
 			"StolenHearts.png",
 			"StolenHeartsCornered.png",
-			"StolenHeartsreward.png",
+
 			"StolenHeartsScalespuzzle.png",
 			"TheillEmir.png"
 		]
@@ -2911,7 +2791,7 @@
 			"SuccessionGeneralKhazardcratepuzzle.png",
 			"SuccessionMiningargonlikeore.png",
 			"Successionmodifiedritualmarker.png",
-			"Successionreward.png",
+
 			"SuccessionVengeancefightstheMagister.png"
 		]
 	},
@@ -2925,7 +2805,7 @@
 			"IntheVoidinSummersEnd.png",
 			"SpiritBeast.png",
 			"SummersEnd.png",
-			"SummersEndreward.png",
+
 			"SummersEnd_FirepitLocations.jpg",
 			"TheEndofSummer.png"
 		]
@@ -2936,19 +2816,18 @@
 			"Fixingthewall.png",
 			"SeatrollQueenfight.png",
 			"SwanSong.png",
-			"SwanSongfight.png",
-			"SwanSongreward.png"
+			"SwanSongfight.png"
 		]
 	},
 	{
 		"name": "Swept Away",
-		"images": ["StirringtheGoulash.png", "SweptAway.png", "SweptAwayreward.png"]
+		"images": ["StirringtheGoulash.png", "SweptAway.png"]
 	},
 	{
 		"name": "Tai Bwo Wannai Trio",
 		"images": [
 			"TaiBwoWannaiTrio.png",
-			"TaiBwoWannaiTrioreward.png",
+
 			"TaiBwoWannaiTrioTamayuSlaysShaikahan.png",
 			"TamayuLocation.png",
 			"Thirdsontiadeche.png",
@@ -2960,8 +2839,7 @@
 		"images": [
 			"LumbridgeCavesMap.png",
 			"Miningmagicstone.png",
-			"TearsofGuthix.png",
-			"TearsofGuthixreward.png"
+			"TearsofGuthix.png"
 		]
 	},
 	{
@@ -2971,8 +2849,7 @@
 			"TempleofIkovlever.png",
 			"TempleofIkovLuciendisposed.png",
 			"TempleofIkovmap.png",
-			"templeofikovrewardarmadyl.png",
-			"templeofikovrewardlucien.png",
+
 			"TempleofIkovunstablebridge.png",
 			"TempleofIkovWinelda.png"
 		]
@@ -2997,12 +2874,7 @@
 	},
 	{
 		"name": "The Blood Pact",
-		"images": [
-			"FightingKayle.png",
-			"TheBloodPact.png",
-			"TheBloodPactreward.png",
-			"Thetombisdestroyed.png"
-		]
+		"images": ["FightingKayle.png", "TheBloodPact.png", "Thetombisdestroyed.png"]
 	},
 	{
 		"name": "The Branches of Darkmeyer",
@@ -3024,7 +2896,7 @@
 			"RunningthroughDarkmeyer.png",
 			"Safalaanreads.png",
 			"TheBranchesofDarkmeyer.png",
-			"TheBranchesofDarkmeyerreward.png",
+
 			"VanstromInformation.png",
 			"Vanstrommist.png",
 			"VanstromsDeath.png",
@@ -3045,7 +2917,7 @@
 			"TBoEroompuzzle.png",
 			"TheBrinkofExtinction.png",
 			"TheBrinkofExtinctionnoticeboard.png",
-			"TheBrinkofExtinctionreward.png",
+
 			"TokHaarHokappears.png",
 			"Tzhaarparty.png",
 			"TzHaarsigilTheBrinkofExtinction.png",
@@ -3066,7 +2938,7 @@
 			"SafeSpotZanik.png",
 			"StatuesMoving.png",
 			"TalkingtoJuna.png",
-			"TheChosenCommanderreward.png",
+
 			"Thesickchildren.png",
 			"Wecanfight.png",
 			"ZanikGrapple.png"
@@ -3082,8 +2954,7 @@
 			"descendentslocations.png",
 			"LamistardsTunnelsPath.png",
 			"TheCurseofArrav.png",
-			"TheCurseofArravArravmindcontrol.png",
-			"TheCurseofArravreward.png"
+			"TheCurseofArravArravmindcontrol.png"
 		]
 	},
 	{
@@ -3102,7 +2973,7 @@
 			"Telegrabhaemalchemy.png",
 			"TheDarknessofHallowvale.png",
 			"TheDarknessofHallowvalemineroutemap.png",
-			"TheDarknessofHallowvalereward.png",
+
 			"Updatedunusedcastledrakanmap.png"
 		]
 	},
@@ -3137,7 +3008,7 @@
 			"DigsiteTemple.png",
 			"Panning.png",
 			"SenntistenTemplemap.png",
-			"TheDigSitereward.png",
+
 			"TheDigSitesearchingbushes.png"
 		]
 	},
@@ -3155,7 +3026,7 @@
 			"Linerow.png",
 			"SafeSpotElderKiln.png",
 			"TheElderKilnquest.png",
-			"TheElderKilnreward.png",
+
 			"TzHaarKetYittalsafespot.png",
 			"TzHaarnumbers.png",
 			"YtMejKotfight.png"
@@ -3163,19 +3034,11 @@
 	},
 	{
 		"name": "The Eyes of Glouphrie",
-		"images": [
-			"BattleofAtarisundriCouncil.png",
-			"TheEyesofGlouphrie.png",
-			"TheEyesofGlouphriediscexchanger.png",
-			"TheEyesofGlouphrieHazelmere.png",
-			"TheEyesofGlouphrielegend.png",
-			"TheEyesofGlouphriereward.png",
-			"TheEyesofGlouphrieSaboteur.png"
-		]
+		"images": ["MachineChart.png", "TheEyesofGlouphriediscexchanger.png"]
 	},
 	{
 		"name": "The Feud",
-		"images": ["TheFeud.png", "TheFeudreward.png", "UsingHagspoison.png"]
+		"images": ["TheFeud.png", "UsingHagspoison.png"]
 	},
 	{
 		"name": "The Firemakers Curse",
@@ -3193,7 +3056,7 @@
 			"TheFiremakersCursefireroom.png",
 			"TheFiremakersCursefirstroom.png",
 			"TheFiremakersCurseinfobox.png",
-			"TheFiremakersCursereward.png",
+
 			"TheFiremakersCursewavepuzzle.png",
 			"Wallofflame.png"
 		]
@@ -3205,8 +3068,7 @@
 			"Entertainingmawnis.png",
 			"FIkingsorvottcourt.png",
 			"TheFremennikIsles.png",
-			"TheFremennikIsleshonourguardandtrolls.png",
-			"TheFremennikIslesreward.png"
+			"TheFremennikIsleshonourguardandtrolls.png"
 		]
 	},
 	{
@@ -3217,8 +3079,7 @@
 			"Koscheiarena.png",
 			"Peertheseerroom.png",
 			"Swensensmaze.png",
-			"TheFremennikTrials.png",
-			"TheFremennikTrialsreward.png"
+			"TheFremennikTrials.png"
 		]
 	},
 	{
@@ -3226,13 +3087,12 @@
 		"images": [
 			"ConsortiumMeeting.png",
 			"TheGiantDwarf.png",
-			"TheGiantDwarfCrashingintothestatue.png",
-			"TheGiantDwarfreward.png"
+			"TheGiantDwarfCrashingintothestatue.png"
 		]
 	},
 	{
 		"name": "The Golem",
-		"images": ["TalkingtotheGolem.png", "TheGolem.png", "TheGolemreward.png"]
+		"images": ["TalkingtotheGolem.png", "TheGolem.png"]
 	},
 	{
 		"name": "The Grand Tree",
@@ -3242,7 +3102,7 @@
 			"ImprisonedwithCharlie.png",
 			"Searchingroots.png",
 			"TheGrandTree.png",
-			"TheGrandTreereward.png",
+
 			"Tuzo.png"
 		]
 	},
@@ -3255,21 +3115,16 @@
 			"GreatBrainRobberyhole.png",
 			"GreatBrainRobberystairs.png",
 			"Intermission.png",
-			"Thegreatbrainrobbery.png",
-			"TheGreatBrainRobberyreward.png"
+			"Thegreatbrainrobbery.png"
 		]
 	},
 	{
 		"name": "The Hand in the Sand",
-		"images": [
-			"Sandyconfesses.png",
-			"TheHandintheSand.png",
-			"TheHandintheSandreward.png"
-		]
+		"images": ["Sandyconfesses.png", "TheHandintheSand.png"]
 	},
 	{
 		"name": "The Jack of Spades",
-		"images": ["TheJackofSpades.png", "TheJackofSpadesreward.png"]
+		"images": ["TheJackofSpades.png"]
 	},
 	{
 		"name": "The Knights Sword",
@@ -3277,7 +3132,7 @@
 			"SirVyvvinscabinet.png",
 			"Startoftheknightssword.png",
 			"TheKnightsSword.png",
-			"TheKnightsSwordreward.png",
+
 			"Thurgoandhut.png"
 		]
 	},
@@ -3296,7 +3151,7 @@
 			"Takingthedarkshard.png",
 			"TheLightWithin.png",
 			"TheLightWithinpuzzle.png",
-			"TheLightWithinreward.png",
+
 			"Theprudencecrystal.png"
 		]
 	},
@@ -3322,7 +3177,7 @@
 			"ProtectingIvan.png",
 			"Ringpuzzlesolution.png",
 			"TheLordofVampyrium.png",
-			"TheLordofVampyriumreward.png",
+
 			"Vanesculabetraysyou.png",
 			"VanesculastabsLowerniel.png",
 			"Veliafgivesup.png",
@@ -3331,12 +3186,7 @@
 	},
 	{
 		"name": "The Lost Tribe",
-		"images": [
-			"Losttribe.png",
-			"LostTribepeacetreaty.png",
-			"TheLostTribe.png",
-			"TheLostTribereward.png"
-		]
+		"images": ["Losttribe.png", "LostTribepeacetreaty.png", "TheLostTribe.png"]
 	},
 	{
 		"name": "The Mighty Fall",
@@ -3350,7 +3200,7 @@
 			"ThegeneralsTheMightyFall.png",
 			"TheMightyFall.png",
 			"TheMightyFallfightingGeneralGraardor.png",
-			"TheMightyFallreward.png",
+
 			"Yourcamp.png",
 			"Zanikhugsyou.png",
 			"ZaradorandZanik.png"
@@ -3358,46 +3208,24 @@
 	},
 	{
 		"name": "The Needle Skips",
-		"images": [
-			"Endofanordeal.png",
-			"TheNeedleSkips.png",
-			"TheNeedleSkipsreward.png"
-		]
+		"images": ["Endofanordeal.png", "TheNeedleSkips.png"]
 	},
 	{
 		"name": "The Path of Glouphrie",
-		"images": [
-			"Evilcreaturerevealed.png",
-			"FightingtheWarpedTerrorbirds.png",
-			"PathofGlouphrieYewnocksmachine.png",
-			"Terrorbirdguards.png",
-			"TheEyesofGlouphrielegend.png",
-			"ThePathofGlouphrie.png",
-			"ThePathofGlouphriereward.png"
-		]
+		"images": ["MachineChart.png"]
 	},
 	{
 		"name": "The Prisoner of Glouphrie",
 		"images": [
-			"300px-Pog6.pngbbf8d.png",
-			"300px-Pog7.png797a2.png",
 			"Arposandranundergroundlowerlevel.png",
 			"Arposandranundergroundupperlevel.png",
 			"CavernsunderArandar.png",
-			"Deadtreeentrance.png",
-			"ExitcrevicePrisonerofGlouphrie.png",
-			"GalarposMountainsvent.png",
-			"Pog.png",
-			"Reunionwithbolren.png",
-			"SturdytreePrisonerofGlouphrie.png",
-			"ThelabPrisonerofGlouphrie.png",
-			"ThePrisonerofGlouphrie.png",
-			"ThePrisonerofGlouphriereward.png"
+			"Pog.png"
 		]
 	},
 	{
 		"name": "The Restless Ghost",
-		"images": ["TheRestlessGhost.png", "TheRestlessGhostreward.png"]
+		"images": ["TheRestlessGhost.png"]
 	},
 	{
 		"name": "The Slug Menace",
@@ -3409,25 +3237,20 @@
 			"SeaSlugShrine.png",
 			"Slugmenacewall.png",
 			"TheSlugMenace.png",
-			"TheSlugMenacereward.png",
+
 			"WitchavenDungeonmap.png"
 		]
 	},
 	{
 		"name": "The Spirit of War",
-		"images": [
-			"TheSpiritofWar.png",
-			"TheSpiritofWarrescuingsouls.png",
-			"TheSpiritofWarreward.png"
-		]
+		"images": ["TheSpiritofWar.png", "TheSpiritofWarrescuingsouls.png"]
 	},
 	{
 		"name": "The Tale of the Muspah",
 		"images": [
 			"CanoeboattravelrouteFremennikProvince.png",
 			"Monsterinice.png",
-			"TheTaleoftheMuspah.png",
-			"TheTaleoftheMuspahreward.png"
+			"TheTaleoftheMuspah.png"
 		]
 	},
 	{
@@ -3437,8 +3260,7 @@
 			"SenntistenTemplerestoration.png",
 			"TempleatSenntisten.png",
 			"TheTempleatSenntistenIcedemon.png",
-			"TheTempleatSenntistenPushingtheheatglobe.png",
-			"TheTempleatSenntistenreward.png"
+			"TheTempleatSenntistenPushingtheheatglobe.png"
 		]
 	},
 	{
@@ -3447,7 +3269,7 @@
 			"Anainabarrelinaminecart.png",
 			"Makingtheprototypedart.png",
 			"TheTouristTrap.png",
-			"TheTouristTrapreward.png",
+
 			"TheTouristTrapstart.png",
 			"TouristTrapMineCart.png",
 			"Tradingclothes.png"
@@ -3460,7 +3282,7 @@
 			"TheVaultofShadows.png",
 			"TheVaultofShadowsbloodpuzzle.png",
 			"TheVaultofShadowspuzzleorientationanddialcommands.png",
-			"TheVaultofShadowsreward.png",
+
 			"TheVaultofShadowsshadowpuzzle.png",
 			"TheVaultofShadowssmokepuzzle.png",
 			"VaultofShadows.png"
@@ -3481,7 +3303,7 @@
 			"ThePestQueenemerges.png",
 			"TheVoidGooExplosion.png",
 			"TheVoidStaresBack.png",
-			"TheVoidStaresBackreward.png",
+
 			"VoidStaresBackForge.png",
 			"Weightdistribution.png"
 		]
@@ -3506,7 +3328,7 @@
 			"TheWorldWakes.png",
 			"TheWorldWakesbanner.png",
 			"TheWorldWakesdoorsolution.png",
-			"TheWorldWakesreward.png",
+
 			"TheWorldWakesstorageroomsolution.png",
 			"ZemouregalandSharathteerk.png",
 			"ZilyanaandKril.png"
@@ -3514,21 +3336,15 @@
 	},
 	{
 		"name": "Throne of Miscellania",
-		"images": ["ThroneofMiscellania.png", "ThroneofMiscellaniareward.png"]
+		"images": ["ThroneofMiscellania.png"]
 	},
 	{
 		"name": "Tok Tz-Ket-Dill",
-		"images": [
-			"TokTzAshes.png",
-			"TokTzKetDillquest.png",
-			"TokTzKetDillreward.png",
-			"TokTzKetDillstart.png",
-			"TzTokketDill.png"
-		]
+		"images": ["TokTzAshes.png", "TokTzKetDillstart.png", "TzTokketDill.png"]
 	},
 	{
 		"name": "Tomes of the Warlock",
-		"images": ["TomesoftheWarlock.png", "TomesoftheWarlockreward.png"]
+		"images": ["TomesoftheWarlock.png"]
 	},
 	{
 		"name": "Tower of Life",
@@ -3539,8 +3355,7 @@
 			"ToLPipePuzzle.png",
 			"Tolpipes.png",
 			"TowerofLifecagefix.png",
-			"TowerofLifeinfobox.png",
-			"TowerofLifereward.png"
+			"TowerofLifeinfobox.png"
 		]
 	},
 	{
@@ -3548,13 +3363,12 @@
 		"images": [
 			"Khazardwarlordsafespot.png",
 			"Retrievingtheprotectionorb.png",
-			"TreeGnomeVillageOrbCeremony.png",
-			"TreeGnomeVillagereward.png"
+			"TreeGnomeVillageOrbCeremony.png"
 		]
 	},
 	{
 		"name": "Tribal Totem",
-		"images": ["TribalTotem.png", "TribalTotemreward.png"]
+		"images": ["TribalTotem.png"]
 	},
 	{
 		"name": "Troll Romance",
@@ -3564,7 +3378,7 @@
 			"pathtofredas.png",
 			"TrollCaveEntrancePath.png",
 			"TrollRomance.png",
-			"TrollRomancereward.png",
+
 			"TrollStrongholdPath.png",
 			"TRridesled.png",
 			"Waxingthesled.png"
@@ -3576,8 +3390,7 @@
 			"Dadsafespot.png",
 			"PathToDad.png",
 			"SafespottingTrollGeneral.png",
-			"TrollStronghold.png",
-			"TrollStrongholdreward.png"
+			"TrollStronghold.png"
 		]
 	},
 	{
@@ -3588,8 +3401,7 @@
 			"Keyinstructionsinterface.png",
 			"TestingtheEdicts.png",
 			"TwilightoftheGods.png",
-			"TwilightoftheGodsIbringamessagefromZamorak.png",
-			"TwilightoftheGodsreward.png"
+			"TwilightoftheGodsIbringamessagefromZamorak.png"
 		]
 	},
 	{
@@ -3604,7 +3416,7 @@
 			"UndergroundPass.png",
 			"UndergroundPassKardiastreasurechest.png",
 			"UndergroundPassMap.png",
-			"UndergroundPassreward.png",
+
 			"WelltoIbansLair.png"
 		]
 	},
@@ -3613,9 +3425,7 @@
 		"images": [
 			"UnwelcomeGuests.png",
 			"UnwelcomeGuestspresentingtheguardhouse.png",
-			"UnwelcomeGuestsreinforcingthewalls.png",
-			"UnwelcomeGuestsreward.png",
-			"Zemouregalresurrectsarmouredphantoms.png"
+			"UnwelcomeGuestsreinforcingthewalls.png"
 		]
 	},
 	{
@@ -3623,17 +3433,12 @@
 		"images": [
 			"CountDraynorAwakes.png",
 			"FightingDraynor.png",
-			"VampyreSlayer.png",
-			"VampyreSlayerreward.png"
+			"VampyreSlayer.png"
 		]
 	},
 	{
 		"name": "Vessel of the Harbinger",
-		"images": [
-			"VesseloftheHarbinger.png",
-			"VesseloftheHarbingerdefeatingNettysskeleton.png",
-			"VesseloftheHarbingerreward.png"
-		]
+		"images": ["VesseloftheHarbinger.png"]
 	},
 	{
 		"name": "Violet is Blue",
@@ -3643,13 +3448,13 @@
 			"VioletisBlue.png",
 			"VioletisBluecompletedsled.png",
 			"VioletisBlueopening.png",
-			"VioletisBluereward.png",
+
 			"Violetshouse.png"
 		]
 	},
 	{
 		"name": "Violet is Blue Too",
-		"images": ["VioletisBlueToo.png", "VioletisBlueTooreward.png"]
+		"images": ["VioletisBlueToo.png"]
 	},
 	{
 		"name": "Wanted",
@@ -3659,22 +3464,16 @@
 			"Solusblackknight.png",
 			"Solusflamesofzamarok.png",
 			"SolusthreatensDaquarius.png",
-			"Wanted.png",
-			"Wantedreward.png"
+			"Wanted.png"
 		]
 	},
 	{
 		"name": "Watchtower",
-		"images": [
-			"PullingtheleverintheWatchtower.png",
-			"Trellis.png",
-			"Watchtower.png",
-			"Watchtowerreward.png"
-		]
+		"images": ["PullingtheleverintheWatchtower.png", "Trellis.png"]
 	},
 	{
 		"name": "Waterfall Quest",
-		"images": ["WaterfallQuest.png", "WaterfallQuestreward.png"]
+		"images": ["WaterfallQuest.png"]
 	},
 	{
 		"name": "What Lies Below",
@@ -3682,17 +3481,12 @@
 			"Killingoutlaws.png",
 			"RatBurgiss.png",
 			"SecretMessage.png",
-			"WhatLiesBelow.png",
-			"WhatLiesBelowreward.png"
+			"WhatLiesBelow.png"
 		]
 	},
 	{
 		"name": "What's Mine is Yours",
-		"images": [
-			"Livingrockbrawlerappears.png",
-			"WhatsMineIsYours.png",
-			"WhatsMineIsYoursreward.png"
-		]
+		"images": ["Livingrockbrawlerappears.png", "WhatsMineIsYours.png"]
 	},
 	{
 		"name": "While Guthix Sleeps",
@@ -3706,8 +3500,7 @@
 			"Movario Locked Door.gif",
 			"Thesummoningofthetormenteddemons.png",
 			"Tormenteddemonfight.png",
-			"WhileGuthixSleepsheroes.png",
-			"WhileGuthixSleepsreward.png",
+
 			"WhileGuthixSleepsTable.png"
 		]
 	},
@@ -3717,8 +3510,7 @@
 			"Cupboardmagnet.png",
 			"FightingtheExperiment.png",
 			"PottedPlant.png",
-			"WitchsHouse.png",
-			"WitchsHousereward.png"
+			"WitchsHouse.png"
 		]
 	},
 	{
