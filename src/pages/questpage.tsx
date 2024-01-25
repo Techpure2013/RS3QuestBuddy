@@ -28,7 +28,7 @@ import "@mantine/core/styles/Overlay.css";
 import "@mantine/core/styles/ModalBase.css";
 import "@mantine/core/styles/Input.css";
 import "@mantine/core/styles/Flex.css";
-//import { OverlayComponent } from "../Handlers/overlay.tsx";
+
 import {
 	IconArrowLeft,
 	IconArrowRight,
