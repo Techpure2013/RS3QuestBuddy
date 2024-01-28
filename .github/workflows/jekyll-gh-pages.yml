@@ -31,9 +31,9 @@ jobs:
    - name: Checkout
      uses: actions/checkout@v4
 
-   # Setup NodeJS v18 LTS
+   # Setup NodeJS v20 LTS
    - name: Set up Node
-     uses: actions/setup-node@v4
+     uses: actions/setup-node@v3
      with:
       node-version: 20
       cache: "npm"
@@ -71,4 +71,4 @@ jobs:
    # Send GitHub Pages final build to live production
    - name: Deploy to GitHub Pages
      id: deployment
-     uses: actions/deploy-pages@v2
+     uses: actions/deploy-pages@v3
