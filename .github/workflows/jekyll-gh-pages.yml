@@ -61,8 +61,6 @@ jobs:
      run: mv ./Rewards/ ./dist
    - name: Move Quest Images to ./dist
      run: mv ./Images/ ./dist
-   - name: Move Icon into ./dist
-     run: mv ./rs3buddyicon.png ./dist
    # Upload the distributables to GitHub Pages after finalization.
    - name: Upload artifact
      uses: actions/upload-pages-artifact@v1
