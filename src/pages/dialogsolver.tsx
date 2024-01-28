@@ -255,26 +255,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 			this.resetVariables();
 		}
 	}
-	// private cyclicShift(
-	// 	arr: any[],
-	// 	currentIndex: number,
-	// 	groupSize: number
-	// ): any[] {
-	// 	const groupIndex = Math.floor(currentIndex / groupSize);
 
-	// 	// Calculate the starting index for the current group
-	// 	const startIndex = groupIndex * groupSize;
-
-	// 	// Perform cyclic shift within the current group
-	// 	const shiftedArr = [...arr.slice(startIndex, startIndex + groupSize)];
-	// 	const frontItem = shiftedArr.shift();
-	// 	shiftedArr.push(frontItem);
-
-	// 	// Update the original array with the shifted values
-	// 	arr.splice(startIndex, groupSize, ...shiftedArr);
-
-	// 	return arr;
-	// }
 	/**
 	 * Processes matching points based on stored values and dialog options.
 	 * Finds the best match index for each stored value and updates the current best matches.

@@ -201,10 +201,7 @@ export class PlayerQuests {
 			const skillStrings: string[] = parsedSkills.map(
 				(skill) => `${skill.skillLevel} ${skill.skillName}`
 			);
-			window.sessionStorage.setItem(
-				"skillLevels",
-				JSON.stringify(skillStrings)
-			);
+			window.sessionStorage.setItem("skillLevels", JSON.stringify(skillStrings));
 			return skillStrings;
 		} catch (error) {
 			console.error(error);
