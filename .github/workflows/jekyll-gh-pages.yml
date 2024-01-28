@@ -63,7 +63,7 @@ jobs:
      run: mv ./Images/ ./dist
    # Upload the distributables to GitHub Pages after finalization.
    - name: Upload artifact
-     uses: actions/upload-pages-artifact@v3
+     uses: actions/upload-pages-artifact@v4
      with:
       # Upload dist repository
       path: "./dist"
@@ -71,4 +71,4 @@ jobs:
    # Send GitHub Pages final build to live production
    - name: Deploy to GitHub Pages
      id: deployment
-     uses: actions/deploy-pages@v3.7
+     uses: actions/deploy-pages@v3.9
