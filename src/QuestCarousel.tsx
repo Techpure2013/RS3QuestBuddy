@@ -278,7 +278,7 @@ const QuestCarousel: React.FC = () => {
 								console.log("Event value:", event.currentTarget.value);
 								playerName = event.currentTarget.value;
 								console.log("After update:", playerName);
-								setFocused(false);
+								setFocused(true);
 								handleKeyPress();
 							}
 						}}
