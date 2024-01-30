@@ -99,7 +99,7 @@ export const UserNotes: React.FC = () => {
 					color: hasColor ? userColor : "white",
 				}}
 				className="Notepad"
-				placeholder="Type in your notes."
+				placeholder="Type in your notes. Press ctrl + s To save"
 				value={noteValue}
 				onChange={handleNoteChange}
 			/>
@@ -134,8 +134,8 @@ export const UserNotes: React.FC = () => {
 									color="#CA4D4D"
 									styles={{
 										root: {
-											left: "80vh",
-
+											left: "70vh",
+											margin: "10px",
 											bottom: "2px",
 										},
 									}}
