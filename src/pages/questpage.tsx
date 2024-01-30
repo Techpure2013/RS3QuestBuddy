@@ -459,7 +459,7 @@ const QuestPage: React.FC = () => {
 				<>
 					<Carousel
 						speed={100}
-						withIndicators
+						withIndicators={false}
 						orientation="horizontal"
 						align="start"
 						mx="auto"
