@@ -468,7 +468,7 @@ const QuestPage: React.FC = () => {
 						previousControlIcon={<IconArrowLeft size={16} />}
 						slideSize="100%"
 						className="QuestPageImageCaro"
-						height={400}
+						height={300}
 						ref={carouselRef}
 					>
 						{imageDetails.imageList.map((src, index) => (
@@ -480,64 +480,18 @@ const QuestPage: React.FC = () => {
 				</>
 			)}
 			{buttonVisible && (
-				<Flex className="prevNextGroup" gap="sm">
-					{toTop ? (
-						<Button
-							variant="outline"
-							color={hasButtonColor ? userButtonColor : "#EEF3FF"}
-							onClick={() => {
-								setToTop((prev) => !prev);
-							}}
-						>
-							Return to Step
-						</Button>
-					) : (
-						<Button
-							variant="outline"
-							color={hasButtonColor ? userButtonColor : "#EEF3FF"}
-							onClick={() => {
-								setToTop((prev) => !prev);
-							}}
-						>
-							Return to Top
-						</Button>
-					)}
-					<Button
-						variant="outline"
-						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
-						onClick={() => {
-							questImageVis();
-						}}
-					>
-						View Quest Images
-					</Button>
-					<Button
-						variant="outline"
-						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
-						onClick={() => {
-							scrollPrev();
-							handleStepChange(active - 1);
-						}}
-					>
-						Prev Step
-					</Button>
-					<Button
-						variant="outline"
-						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
-						onClick={() => {
-							handleStepChange(active + 1);
-							scrollNext();
-						}}
-					>
-						Next Step
-					</Button>
+				<Flex
+					className="prevNextGroup"
+					gap="sm"
+					styles={{ root: { left: "15px", bottom: "10px", height: "185px" } }}
+				>
 					<ActionIcon
 						onClick={open}
 						variant="outline"
 						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
 						size={"sm"}
 						styles={{
-							root: { right: "5px" },
+							root: { right: "120px", top: "166px" },
 						}}
 					>
 						<IconSettings />
@@ -548,11 +502,67 @@ const QuestPage: React.FC = () => {
 						size={"sm"}
 						variant="outline"
 						styles={{
-							root: { right: "35px", bottom: "34px" },
+							root: { right: "90px", top: "132px" },
 						}}
 					>
 						<IconPlus />
 					</ActionIcon>
+					<Button
+						styles={{ root: {} }}
+						size="compact-sm"
+						variant="outline"
+						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+						onClick={() => {
+							handleStepChange(active + 1);
+							scrollNext();
+						}}
+					>
+						Next Step
+					</Button>
+					{toTop ? (
+						<Button
+							size="compact-sm"
+							variant="outline"
+							color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+							onClick={() => {
+								setToTop((prev) => !prev);
+							}}
+						>
+							Return to Step
+						</Button>
+					) : (
+						<Button
+							size="compact-sm"
+							variant="outline"
+							color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+							onClick={() => {
+								setToTop((prev) => !prev);
+							}}
+						>
+							Return to Top
+						</Button>
+					)}
+					<Button
+						size="compact-sm"
+						variant="outline"
+						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+						onClick={() => {
+							questImageVis();
+						}}
+					>
+						View Quest Images
+					</Button>
+					<Button
+						size="compact-sm"
+						variant="outline"
+						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+						onClick={() => {
+							scrollPrev();
+							handleStepChange(active - 1);
+						}}
+					>
+						Prev Step
+					</Button>
 				</Flex>
 			)}
 			<Flex
@@ -1021,14 +1031,20 @@ const QuestPage: React.FC = () => {
 										onClick={() => setActiveAndScroll}
 										allowStepSelect={ShouldAllowStep(index)}
 									/>
+									<div className="autoPad1"></div>
+									<div className="autoPad1"></div>
 								</>
 							)
 						)}
 					</Stepper>
-					<div className="autoPad1"></div>
-					<div className="autoPad2"></div>
 				</>
 			)}
+			<div className="autoPad1"></div>
+			<div className="autoPad1"></div>
+			<div className="autoPad1"></div>
+			<div className="autoPad1"></div>
+			<div className="autoPad1"></div>
+			<div className="autoPad1"></div>
 		</>
 	);
 };

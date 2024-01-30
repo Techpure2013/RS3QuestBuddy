@@ -336,9 +336,9 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 				this.dialogHelp.find();
 			}, 2000);
 
-			// console.warn(
-			// 	"Transcript Could not be found because there are no readoptions on screen"
-			// );
+			console.warn(
+				"Transcript Could not be found because there are no readoptions on screen"
+			);
 		}
 	}
 	/**
