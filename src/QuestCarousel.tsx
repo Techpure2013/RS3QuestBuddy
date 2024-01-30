@@ -15,12 +15,14 @@ import "@mantine/core/styles/Input.css";
 import "./index.css";
 import { useQuestListStore, QuestListFetcher } from "./Fetchers/FetchQuestList";
 import { NavLink } from "react-router-dom";
-import { IconArrowRight, IconArrowLeft } from "@tabler/icons-react";
+import { IconArrowRight, IconArrowLeft, IconPlus } from "@tabler/icons-react";
 import { PlayerQuests, usePlayerStore } from "./Handlers/PlayerFetch";
 import { rsQuestSorter } from "./Handlers/SortPlayerData";
 import { IconSettings } from "@tabler/icons-react";
 import { useDisclosure } from "@mantine/hooks";
 import { Settings } from "./pages/Settings";
+import useNotesDisclosure from "./Handlers/useDisclosure";
+import { UserNotes } from "./pages/userNotes";
 const QuestCarousel: React.FC = () => {
 	const [focused, setFocused] = useState(false);
 	const [searchQuery, setSearchQuery] = useState<string>("");
@@ -37,6 +39,7 @@ const QuestCarousel: React.FC = () => {
 	const [questPoints, setQuestPoints] = useState(0);
 	const alreadySorted = useRef<boolean>(false);
 	const [opened, { open, close }] = useDisclosure(false);
+	const [isOpened, { openNotes, closedNotes }] = useNotesDisclosure(false);
 	const [userColor, setUserColor] = useState("");
 	const [userLabelColor, setUserLabelColor] = useState("");
 	const [userButtonColor, setUserButtonColor] = useState("");
@@ -241,6 +244,25 @@ const QuestCarousel: React.FC = () => {
 	return (
 		<>
 			<Modal
+				title="Notes"
+				opened={isOpened}
+				onClose={() => {
+					closedNotes();
+				}}
+				styles={{
+					header: {
+						backgroundColor: "#3d3d3d",
+					},
+					title: {
+						fontSize: "34px",
+						textAlign: "center",
+					},
+					body: { backgroundColor: "#3d3d3d" },
+				}}
+			>
+				<UserNotes />
+			</Modal>
+			<Modal
 				title="Settings"
 				opened={opened}
 				onClose={() => {
@@ -412,12 +434,27 @@ const QuestCarousel: React.FC = () => {
 				</Carousel>
 			</div>
 			<ActionIcon
+				color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+				onClick={openNotes}
+				size={"sm"}
+				variant="outline"
+				styles={{
+					root: {
+						position: "fixed",
+						bottom: "22px",
+						left: "5px",
+					},
+				}}
+			>
+				<IconPlus />
+			</ActionIcon>
+			<ActionIcon
 				onClick={open}
 				variant="outline"
 				size={"sm"}
 				color={hasButtonColor ? userButtonColor : "#EEF3FF"}
 				styles={{
-					root: { bottom: "22px" },
+					root: { bottom: "22px", left: "35px", position: "fixed" },
 				}}
 			>
 				<IconSettings />

@@ -2,7 +2,9 @@
 	font-family: rs3Font;
 	src: url("/fonts/RS3Bold.woff2");
 }
-
+.Notepad {
+	font-family: rs3Font;
+}
 .ApplySkillsButton {
 	left: 5px;
 }

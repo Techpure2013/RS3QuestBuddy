@@ -33,6 +33,7 @@ import {
 	IconArrowLeft,
 	IconArrowRight,
 	IconSettings,
+	IconPlus,
 } from "@tabler/icons-react";
 import { Image } from "./ImageInterface.tsx";
 import QuestControl from "./../pages/QuestControls.tsx";
@@ -56,6 +57,8 @@ import { Reader } from "./diagstartpage.tsx";
 import { IconArrowBack } from "@tabler/icons-react";
 import { Settings } from "./Settings.tsx";
 import { useDisclosure } from "@mantine/hooks";
+import useNotesDisclosure from "../Handlers/useDisclosure.ts";
+import { UserNotes } from "./userNotes.tsx";
 
 // import { diagFinder } from "../Handlers/handleImage.ts";
 // import * as a1lib from "alt1";
@@ -87,6 +90,7 @@ const QuestPage: React.FC = () => {
 	const [hasColor, setHasColor] = useState(false);
 	const [hasButtonColor, setHasButtonColor] = useState(false);
 	const [hasLabelColor, setHasLabelColor] = useState(false);
+	const [isOpened, { openNotes, closedNotes }] = useNotesDisclosure(false);
 	// const finder = new diagFinder();
 	const {
 		showStepReq,
@@ -212,7 +216,7 @@ const QuestPage: React.FC = () => {
 			const newWindow = window.open(
 				emptypage,
 				"promptbox" + popid,
-				"width=594, height=100"
+				"width=200, height=221"
 			)!;
 			if (newWindow) {
 				// Set the pop-out window and hide buttons in the current window
@@ -400,6 +404,25 @@ const QuestPage: React.FC = () => {
 	return (
 		<>
 			<Modal
+				title="Notes"
+				opened={isOpened}
+				onClose={() => {
+					closedNotes();
+				}}
+				styles={{
+					header: {
+						backgroundColor: "#3d3d3d",
+					},
+					title: {
+						fontSize: "34px",
+						textAlign: "center",
+					},
+					body: { backgroundColor: "#3d3d3d" },
+				}}
+			>
+				<UserNotes />
+			</Modal>
+			<Modal
 				title="Settings"
 				opened={opened}
 				onClose={() => {
@@ -512,9 +535,23 @@ const QuestPage: React.FC = () => {
 						onClick={open}
 						variant="outline"
 						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
-						size={"lg"}
+						size={"sm"}
+						styles={{
+							root: { right: "5px" },
+						}}
 					>
 						<IconSettings />
+					</ActionIcon>
+					<ActionIcon
+						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+						onClick={openNotes}
+						size={"sm"}
+						variant="outline"
+						styles={{
+							root: { right: "35px", bottom: "34px" },
+						}}
+					>
+						<IconPlus />
 					</ActionIcon>
 				</Flex>
 			)}
@@ -907,6 +944,7 @@ const QuestPage: React.FC = () => {
 				</>
 			) : (
 				<>
+					<div className="autoPad1"></div>
 					<Stepper
 						className="stepperContainer"
 						active={active}
@@ -934,52 +972,56 @@ const QuestPage: React.FC = () => {
 									onClick={() => setActiveAndScroll}
 									allowStepSelect={ShouldAllowStep(index)}
 								/>
-							) : stepHidden ? ( // Render nothing if stepHidden is true
-								<Stepper.Step
-									id={(index + 1).toString()}
-									className="stepperStep"
-									label={`Step: ${index + 1}`}
-									key={index + 1}
-									styles={{
-										stepDescription: {
-											visibility: active > index ? "hidden" : "visible",
-											color: hasColor ? userColor : "#546576",
-										},
-										stepLabel: {
-											visibility: active > index ? "hidden" : "visible",
-										},
-										stepCompletedIcon: {
-											visibility: active > index ? "hidden" : "visible",
-										},
-										stepIcon: {
-											visibility: active > index ? "hidden" : "visible",
-										},
-										stepWrapper: {
-											visibility: active > index ? "hidden" : "visible",
-										},
-									}}
-									orientation="vertical"
-									description={value}
-									onClick={() => setActiveAndScroll}
-									allowStepSelect={ShouldAllowStep(index)}
-								/>
+							) : stepHidden ? (
+								<>
+									<Stepper.Step
+										id={(index + 1).toString()}
+										className="stepperStep"
+										label={`Step: ${index + 1}`}
+										key={index + 1}
+										styles={{
+											stepDescription: {
+												visibility: active > index ? "hidden" : "visible",
+												color: hasColor ? userColor : "#546576",
+											},
+											stepLabel: {
+												visibility: active > index ? "hidden" : "visible",
+											},
+											stepCompletedIcon: {
+												visibility: active > index ? "hidden" : "visible",
+											},
+											stepIcon: {
+												visibility: active > index ? "hidden" : "visible",
+											},
+											stepWrapper: {
+												visibility: active > index ? "hidden" : "visible",
+											},
+										}}
+										orientation="vertical"
+										description={value}
+										onClick={() => setActiveAndScroll}
+										allowStepSelect={ShouldAllowStep(index)}
+									/>
+								</>
 							) : (
-								<Stepper.Step
-									id={(index + 1).toString()}
-									className="stepperStep"
-									label={`Step: ${index + 1}`}
-									key={index + 1}
-									color={active > index ? "#24BF58" : "#4e85bc"}
-									styles={{
-										stepDescription: {
-											color: "#546576",
-										},
-									}}
-									orientation="vertical"
-									description={value}
-									onClick={() => setActiveAndScroll}
-									allowStepSelect={ShouldAllowStep(index)}
-								/>
+								<>
+									<Stepper.Step
+										id={(index + 1).toString()}
+										className="stepperStep"
+										label={`Step: ${index + 1}`}
+										key={index + 1}
+										color={active > index ? "#24BF58" : "#4e85bc"}
+										styles={{
+											stepDescription: {
+												color: "#546576",
+											},
+										}}
+										orientation="vertical"
+										description={value}
+										onClick={() => setActiveAndScroll}
+										allowStepSelect={ShouldAllowStep(index)}
+									/>
+								</>
 							)
 						)}
 					</Stepper>
