@@ -404,7 +404,7 @@ const QuestPage: React.FC = () => {
 	return (
 		<>
 			<Modal
-				title="Notes"
+				title="Notes ( save: ctrl + s )"
 				opened={isOpened}
 				onClose={() => {
 					closedNotes();

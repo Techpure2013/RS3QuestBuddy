@@ -105,6 +105,7 @@ export const UserNotes: React.FC = () => {
 			/>
 
 			<h3 style={{ color: hasColor ? userColor : "#4e85bc" }}>Your Notes</h3>
+
 			{displayNote.map((value, index) => {
 				const trueIndex = index + 1;
 				console.log(value);
@@ -133,11 +134,7 @@ export const UserNotes: React.FC = () => {
 									variant="outline"
 									color="#CA4D4D"
 									styles={{
-										root: {
-											left: "70vh",
-											margin: "10px",
-											bottom: "2px",
-										},
+										root: {},
 									}}
 								>
 									<IconTrash />
