@@ -29,13 +29,13 @@ jobs:
   steps:
    # Checkout and clone git repo
    - name: Checkout
-     uses: actions/checkout@v3
+     uses: actions/checkout@v4
 
    # Setup NodeJS v18 LTS
    - name: Set up Node
-     uses: actions/setup-node@v3
+     uses: actions/setup-node@v4
      with:
-      node-version: 18
+      node-version: 20
       cache: "npm"
 
    # Build out JS/HTML into Dist production.
@@ -65,7 +65,7 @@ jobs:
      run: mv ./rs3buddyicon.png ./dist
    # Upload the distributables to GitHub Pages after finalization.
    - name: Upload artifact
-     uses: actions/upload-pages-artifact@v1
+     uses: actions/upload-pages-artifact@v3
      with:
       # Upload dist repository
       path: "./dist"
@@ -73,4 +73,4 @@ jobs:
    # Send GitHub Pages final build to live production
    - name: Deploy to GitHub Pages
      id: deployment
-     uses: actions/deploy-pages@v1
+     uses: actions/deploy-pages@v4

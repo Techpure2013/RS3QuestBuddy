@@ -273,11 +273,11 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 		if (this.cTStore.length !== 0 && this.readOption!.length !== 0) {
 			for (const value of this.cTStore) {
 				this.bestMatchIndex = this.findBestMatchIndex(value.toLowerCase());
-				console.log(value);
+
 				// Update current best matches if a match is found
 				if (this.bestMatchIndex !== -1) {
 					const usedIndex = this.cTStore.indexOf(value);
-					console.log(value);
+
 					// Remove the used value from its current position and add it to the end
 
 					const length = this.readOption!.length;
@@ -318,7 +318,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 			if (this.currentBestMatches.length === 0) {
 				const randomIndex = Math.floor(Math.random() * this.readOption!.length);
 				const randomCoordinate = this.readOption![randomIndex];
-
+				console.log(this.readOption);
 				// Update current best matches with the random coordinate
 				this.currentBestMatches.push({
 					x: randomCoordinate.x,
