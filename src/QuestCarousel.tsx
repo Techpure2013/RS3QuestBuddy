@@ -58,6 +58,7 @@ const QuestCarousel: React.FC = () => {
 	const handlePlayerLoad = async () => {
 		await playerfetch.fetchPlayerInfo(playerName);
 	};
+
 	const handleKeyPress = async () => {
 		try {
 			if (playerName.length > 0) {
@@ -119,6 +120,9 @@ const QuestCarousel: React.FC = () => {
 							modified: modifiedQuestVal1,
 						}}
 						style={{ textDecoration: "none" }}
+						onClick={() => {
+							window.resizeTo(319, 619);
+						}}
 					>
 						<img src={questImage} alt="Reward" aria-hidden="true" />
 					</NavLink>
@@ -402,12 +406,14 @@ const QuestCarousel: React.FC = () => {
 			)}
 			<div className="caroContainer">
 				<Carousel
-					speed={100}
+					speed={23}
 					align="start"
 					mx="auto"
 					withIndicators
 					slidesToScroll={1}
-					height={400}
+					slideSize={{ base: "100%", sm: "35%", md: "50%", lg: "75%", xl: "125%" }}
+					height={500}
+					slideGap={15}
 					nextControlIcon={
 						<IconArrowRight
 							size={16}
@@ -420,7 +426,6 @@ const QuestCarousel: React.FC = () => {
 							color={hasButtonColor ? userButtonColor : "#EEF3FF"}
 						/>
 					}
-					slideSize="100%"
 				>
 					{sorted.current &&
 						filteredRemainingQuests.map((quest, index) => (

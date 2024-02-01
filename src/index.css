@@ -2,6 +2,21 @@
 	font-family: rs3Font;
 	src: url("/fonts/RS3Bold.woff2");
 }
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background-image: url("./assets/background.png");
+}
+::-webkit-scrollbar-thumb {
+	background-color: #555;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #f1f1f1f1;
+}
 .Notepad {
 	font-family: rs3Font;
 }

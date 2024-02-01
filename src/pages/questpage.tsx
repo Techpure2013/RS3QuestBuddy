@@ -103,6 +103,7 @@ const QuestPage: React.FC = () => {
 	const handleBackButton = () => {
 		hist("/");
 	};
+
 	const questImageVis = () => {
 		if (viewQuestImage === true) {
 			setViewImage(false);
@@ -459,6 +460,7 @@ const QuestPage: React.FC = () => {
 				<>
 					<Carousel
 						speed={100}
+						slideGap={25}
 						withIndicators={false}
 						orientation="horizontal"
 						align="start"
@@ -466,7 +468,7 @@ const QuestPage: React.FC = () => {
 						slidesToScroll={1}
 						nextControlIcon={<IconArrowRight size={16} />}
 						previousControlIcon={<IconArrowLeft size={16} />}
-						slideSize="100%"
+						slideSize={{ base: "100%", sm: "35%", md: "50%", lg: "75%", xl: "100%" }}
 						className="QuestPageImageCaro"
 						height={300}
 						ref={carouselRef}
