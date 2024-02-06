@@ -407,13 +407,12 @@ const QuestCarousel: React.FC = () => {
 			<div className="caroContainer">
 				<Carousel
 					speed={23}
-					align="start"
+					align="center"
 					mx="auto"
 					withIndicators
-					slidesToScroll={1}
 					slideSize={{ base: "100%", sm: "35%", md: "50%", lg: "75%", xl: "125%" }}
-					height={500}
-					slideGap={15}
+					includeGapInSize={true}
+					containScroll={"trimSnaps"}
 					nextControlIcon={
 						<IconArrowRight
 							size={16}

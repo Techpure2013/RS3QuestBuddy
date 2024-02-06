@@ -59,7 +59,7 @@ import { Settings } from "./Settings.tsx";
 import { useDisclosure } from "@mantine/hooks";
 import useNotesDisclosure from "../Handlers/useDisclosure.ts";
 import { UserNotes } from "./userNotes.tsx";
-
+import useImageDisclosure from "./ImageModal.tsx";
 // import { diagFinder } from "../Handlers/handleImage.ts";
 // import * as a1lib from "alt1";
 const QuestPage: React.FC = () => {
@@ -91,26 +91,15 @@ const QuestPage: React.FC = () => {
 	const [hasButtonColor, setHasButtonColor] = useState(false);
 	const [hasLabelColor, setHasLabelColor] = useState(false);
 	const [isOpened, { openNotes, closedNotes }] = useNotesDisclosure(false);
+	const [isImg, { imgModOpen, imgModClose }] = useImageDisclosure(false);
 	// const finder = new diagFinder();
-	const {
-		showStepReq,
-		buttonVisible,
-		toggleShowStepReq,
-		viewQuestImage,
-		setViewImage,
-	} = useQuestControllerStore();
+	const { showStepReq, buttonVisible, toggleShowStepReq, viewQuestImage } =
+		useQuestControllerStore();
 	const handles = useQuestControllerStore();
 	const handleBackButton = () => {
 		hist("/");
 	};
 
-	const questImageVis = () => {
-		if (viewQuestImage === true) {
-			setViewImage(false);
-		} else {
-			setViewImage(true);
-		}
-	};
 	const carouselRef = useRef<HTMLDivElement | null>(null);
 	if (questName == "Ability to enter Morytania") {
 		questName = "Priest in Peril";
@@ -456,21 +445,35 @@ const QuestPage: React.FC = () => {
 					{questName}
 				</h2>
 			</div>
-			{viewQuestImage && (
-				<>
+			<>
+				<Modal
+					opened={isImg}
+					onClose={() => {
+						imgModClose();
+					}}
+					styles={{
+						root: { width: "600px" },
+						header: {
+							backgroundColor: "#3d3d3d",
+						},
+						title: {
+							fontSize: "34px",
+							textAlign: "center",
+							color: hasColor ? userColor : "#4e85bc",
+						},
+						body: { backgroundColor: "#3d3d3d" },
+					}}
+				>
 					<Carousel
 						speed={100}
-						slideGap={25}
 						withIndicators={false}
 						orientation="horizontal"
-						align="start"
-						mx="auto"
-						slidesToScroll={1}
+						styles={{}}
 						nextControlIcon={<IconArrowRight size={16} />}
 						previousControlIcon={<IconArrowLeft size={16} />}
-						slideSize={{ base: "100%", sm: "35%", md: "50%", lg: "75%", xl: "100%" }}
 						className="QuestPageImageCaro"
-						height={300}
+						includeGapInSize={true}
+						containScroll={"keepSnaps"}
 						ref={carouselRef}
 					>
 						{imageDetails.imageList.map((src, index) => (
@@ -479,8 +482,8 @@ const QuestPage: React.FC = () => {
 							</Carousel.Slide>
 						))}
 					</Carousel>
-				</>
-			)}
+				</Modal>
+			</>
 			{buttonVisible && (
 				<Flex
 					className="prevNextGroup"
@@ -549,7 +552,7 @@ const QuestPage: React.FC = () => {
 						variant="outline"
 						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
 						onClick={() => {
-							questImageVis();
+							imgModOpen();
 						}}
 					>
 						View Quest Images
