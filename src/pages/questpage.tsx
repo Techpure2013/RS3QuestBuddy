@@ -12,7 +12,7 @@ import {
 } from "@mantine/core";
 import "./../index.css";
 import QuestIcon from "./../QuestIconEdited.png";
-import { Carousel } from "@mantine/carousel";
+import { Carousel, Embla, useAnimationOffsetEffect } from "@mantine/carousel";
 import "@mantine/core/styles/global.css";
 import "@mantine/core/styles/Accordion.css";
 import "@mantine/core/styles/List.css";
@@ -60,12 +60,15 @@ import { useDisclosure } from "@mantine/hooks";
 import useNotesDisclosure from "../Handlers/useDisclosure.ts";
 import { UserNotes } from "./userNotes.tsx";
 import useImageDisclosure from "./ImageModal.tsx";
-// import { diagFinder } from "../Handlers/handleImage.ts";
-// import * as a1lib from "alt1";
+
 const QuestPage: React.FC = () => {
 	// State and variables
 	const qpname = useLocation();
+	const TRANSITION_DURATION = 200;
 
+	const [embla, setEmbla] = useState<Embla | null>(null);
+
+	useAnimationOffsetEffect(embla, TRANSITION_DURATION);
 	let { questName, modified } = qpname.state;
 	const [opened, { open, close }] = useDisclosure(false);
 	const [active, setActive] = useState(-1);
@@ -447,6 +450,7 @@ const QuestPage: React.FC = () => {
 			</div>
 			<>
 				<Modal
+					transitionProps={{ duration: TRANSITION_DURATION }}
 					opened={isImg}
 					onClose={() => {
 						imgModClose();
@@ -465,15 +469,16 @@ const QuestPage: React.FC = () => {
 					}}
 				>
 					<Carousel
+						getEmblaApi={setEmbla}
 						speed={100}
 						withIndicators={false}
 						orientation="horizontal"
-						styles={{}}
+						styles={{ root: { width: "420px" } }}
 						nextControlIcon={<IconArrowRight size={16} />}
 						previousControlIcon={<IconArrowLeft size={16} />}
 						className="QuestPageImageCaro"
 						includeGapInSize={true}
-						containScroll={"keepSnaps"}
+						containScroll={"trimSnaps"}
 						ref={carouselRef}
 					>
 						{imageDetails.imageList.map((src, index) => (

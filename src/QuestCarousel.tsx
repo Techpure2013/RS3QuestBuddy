@@ -406,9 +406,8 @@ const QuestCarousel: React.FC = () => {
 			)}
 			<div className="caroContainer">
 				<Carousel
-					speed={23}
+					speed={100}
 					align="center"
-					mx="auto"
 					withIndicators
 					slideSize={{ base: "100%", sm: "35%", md: "50%", lg: "75%", xl: "125%" }}
 					includeGapInSize={true}

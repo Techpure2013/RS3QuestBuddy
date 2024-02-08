@@ -871,7 +871,6 @@
 		"images": [
 			"Catapultbroken.png",
 			"CatapultConstruction.png",
-
 			"Catapultconstructionstart.png",
 			"Catapult_repair_complete.png",
 			"Catapult_repair_controls.png",
@@ -881,12 +880,7 @@
 	},
 	{
 		"name": "Chef's Assistant",
-		"images": [
-			"ChefsAssistant.png",
-
-			"CooksAssistant.png",
-			"philanddelphinelocation.png"
-		]
+		"images": []
 	},
 	{
 		"name": "Children of Mah",
@@ -956,7 +950,27 @@
 	},
 	{
 		"name": "Cook's Assistant",
-		"images": ["CooksAssistant.png", "cooksassistantmap.png"]
+		"images": [
+			"StartQuest.png",
+			"TalkToCook.png",
+			"LocationOfMilkableCow.png",
+			"TakeBucket.png",
+			"TalkToGillie.png",
+			"MilkPrizedCow.png",
+			"MilkingTheCow.png",
+			"LocationOfLargeEgg.png",
+			"LargeSuperEgg.png",
+			"LocationOfLargeEgg.png",
+			"PickWheat.png",
+			"WheatInventory.png",
+			"FlowerMillLocation.png",
+			"PictureOfMill.png",
+			"TalkToMillie.png",
+			"ClimbMillLadder.png",
+			"EmptyPotInMill.png",
+			"TakeFlour.png",
+			"TalkToCook.png"
+		]
 	},
 	{
 		"name": "Creature of Fenkenstrain",
@@ -1901,7 +1915,31 @@
 	},
 	{
 		"name": "In Pyre Need",
-		"images": ["InPyreNeed.png", "InPyreNeedinfobox.png", "Woundedphoenix.png"]
+		"images": [
+			"StartLocation.png",
+			"TalkToBrian.png",
+			"EnterCave.png",
+			"SassaFrassTree.png",
+			"MasticTree.png",
+			"HarvestMastic.png",
+			"CinnimonTree.png",
+			"HarvestCinny.png",
+			"CedarTree.png",
+			"HarvestCedar.png",
+			"AlanthusTree.png",
+			"HarvestAil.png",
+			"FletchTwigs.png",
+			"LightPyre.png",
+			"LightPyre2.png",
+			"WatchPhoenixBurn",
+			"WatchPhoenixBurn2.png",
+			"RiseFromAsh.png",
+			"TalkToPhoenix.png",
+			"TalkToPhoenix2.png",
+			"TalkDialog.png",
+			"PhoenixQuill.png",
+			"TalkToBrian.png"
+		]
 	},
 	{
 		"name": "In Search of the Myreque",
