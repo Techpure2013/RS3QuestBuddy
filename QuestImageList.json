@@ -318,7 +318,19 @@
 	},
 	{
 		"name": "Sheep Shearer (miniquest)",
-		"images": [""]
+		"images": [
+			"QuestStart.png",
+			"TalkToFred.png",
+			"ClimbOver.png",
+			"ShearSheep.png",
+			"RequiredItems.png",
+			"ClimbUpStairs.png",
+			"Upstairs.png",
+			"SpinneyLoc.png",
+			"Spinney2.png",
+			"Talkingtofred2.png",
+			"NOTASHEEP.png"
+		]
 	},
 	{
 		"name": "Tales of Nomad (miniquest)",
@@ -3388,7 +3400,15 @@
 	},
 	{
 		"name": "The Needle Skips",
-		"images": ["Endofanordeal.png", "TheNeedleSkips.png"]
+		"images": [
+			"Ch1Title.png",
+			"Chapter1.png",
+			"Chapter1Continued.png",
+			"Ch2Title.png",
+			"Chapter2.png",
+			"CH3Title.png",
+			"Chapter3.png"
+		]
 	},
 	{
 		"name": "The Path of Glouphrie",
@@ -3764,7 +3784,31 @@
 	},
 	{
 		"name": "Wolf Whistle",
-		"images": ["SearchStikklebrix.png", "WolfWhistle.png", "WolfWhistlepouch.png"]
+		"images": [
+			"QuestStart.png",
+			"Pickupsticks.png",
+			"LocationofWell.png",
+			"talktoscaletrix.png",
+			"Pickupsticks.png",
+			"Climbupstairs.png",
+			"SearchDrawer1.png",
+			"SearchDrawer.png",
+			"Locationofpetshop.png",
+			"Pickupsticks.png",
+			"WhiteHairMeat.png",
+			"SkittlebricksLoc",
+			"SkittlebricksBoddy.png",
+			"SkittleBricksBooddy2.png",
+			"Pickupsticks.png",
+			"Infusepouches.png",
+			"Infusepouches2.png",
+			"Pickupsticks.png",
+			"talktoscaletrix.png",
+			"cutscene1.png",
+			"cutscene2.png",
+			"cutscene3.png",
+			"cutscene4.png"
+		]
 	},
 	{
 		"name": "You Are It",
