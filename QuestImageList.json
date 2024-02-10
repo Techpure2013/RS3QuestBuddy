@@ -306,7 +306,22 @@
 	},
 	{
 		"name": "One Foot in the Grave (miniquest)",
-		"images": [""]
+		"images": [
+			"GetAnotherHand.png",
+			"VineMaze.png",
+			"HandImg.png",
+			"BellLocation.png",
+			"RingBell.png",
+			"KillMonstersInMaze.png",
+			"Foot.png",
+			"Torso.png",
+			"LeftArm.png",
+			"RightArm.png",
+			"LeftLeg.png",
+			"RightLeg.png",
+			"SearchSandyDesk.png",
+			"UnlockDiary.png"
+		]
 	},
 	{
 		"name": "Purple Cat (miniquest)",
@@ -679,7 +694,45 @@
 	},
 	{
 		"name": "Back to my Roots",
-		"images": ["Jadevinemazemap.png", "WizardLocation.png"]
+		"images": [
+			"ItemsRequired.png",
+			"QuestStart.png",
+			"WizardCrompLoc.png",
+			"WizardCrompNpc.png",
+			"RPDTEmployeesLoc.png",
+			"SmellyPackage.png",
+			"PotLid.png",
+			"GarthLoc.png",
+			"TalkToGarth.png",
+			"VineMaze.png",
+			"ClimbvineNorth.png",
+			"Climbvine2.png",
+			"Climbdownvine.png",
+			"ClimbdownVine2.png",
+			"CutVines.png",
+			"CrawlThroughVines.png",
+			"ClimbVine3.png",
+			"climbvine4.png",
+			"SwingVine.png",
+			"ClimbDownVine3.png",
+			"ClimbDownVine4.png",
+			"CutVines2.png",
+			"CrawlThroughVines.png",
+			"ClimbVine6.png",
+			"CrossVine.png",
+			"ClimbDownVine5.png",
+			"ClimbdownVine6.png",
+			"CutVines2.png",
+			"LooseSoilDig.png",
+			"CutRoots.png",
+			"FailedRoot.png",
+			"SuccessfullRoot.png",
+			"SealedPoot.png",
+			"TalkToHoracio2.png",
+			"UseOnPatch.png",
+			"AttackVine.png",
+			"CutVineJade.png"
+		]
 	},
 	{
 		"name": "Back to the Freezer",
