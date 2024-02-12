@@ -8773,6 +8773,18 @@
 		"EnemiesToDefeat": ["None"]
 	},
 	{
+		"Quest": "Housing of Parliament",
+		"StartPoint": "Talk to Deryn found in the most northern part of the City of Um.",
+		"MemberRequirement": "Members only",
+		"OfficialLength": "Short",
+		"Requirements": ["54 Necromancy"],
+		"ItemsRequired": [
+			"couple buckets of water, 1 King Worm, 1 raw or cooked ghostly sole, 1 beetle bits, 2 raw or cooked snail"
+		],
+		"Recommended": ["None"],
+		"EnemiesToDefeat": ["Snail (lvl 14)"]
+	},
+	{
 		"Quest": "Sheep Shearer (miniquest)",
 		"StartPoint": "Talk to Fred the Farmer, found in his house in Lumbridge, found North of the Lumbridge Market.",
 		"MemberRequirement": "F2P Free to play",

@@ -949,6 +949,12 @@
 		"CTranscript": "./Quests/Pirate's Treasure/ComparePirate's_Treasure.json"
 	},
 	{
+		"Quest": "Housing of Parliament",
+		"Path": "./Quests/Housing of Parliament/housingofparliamentinfo.txt",
+		"Transcript": "",
+		"CTranscript": "./Quests/Housing of Parliament/Comparehousingofparliament.json"
+	},
+	{
 		"Quest": "Plague City",
 		"Path": "./Quests/Plague City/PlagueCityInfo.txt",
 		"Transcript": "./Quests/Plague City/Plague_City_transcript.json",

@@ -28,7 +28,7 @@ import "@mantine/core/styles/Overlay.css";
 import "@mantine/core/styles/ModalBase.css";
 import "@mantine/core/styles/Input.css";
 import "@mantine/core/styles/Flex.css";
-
+import "@mantine/core/styles/Stepper.css";
 import {
 	IconArrowLeft,
 	IconArrowRight,
@@ -102,7 +102,18 @@ const QuestPage: React.FC = () => {
 	const handleBackButton = () => {
 		hist("/");
 	};
-
+	function create_ListUUID() {
+		var dt = new Date().getTime();
+		var uuid = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(
+			/[xy]/g,
+			function (c) {
+				var r = (dt + Math.random() * 16) % 16 | 0;
+				dt = Math.floor(dt / 16);
+				return (c == "x" ? r : (r & 0x3) | 0x8).toString(16);
+			}
+		);
+		return uuid;
+	}
 	const carouselRef = useRef<HTMLDivElement | null>(null);
 	if (questName == "Ability to enter Morytania") {
 		questName = "Priest in Peril";
@@ -977,7 +988,7 @@ const QuestPage: React.FC = () => {
 									id={(index + 1).toString()}
 									className="stepperStep"
 									label={`Step: ${index + 1}`}
-									key={index + 1}
+									key={create_ListUUID()}
 									color={active > index ? "#24BF58" : "#4e85bc"}
 									styles={{
 										stepDescription: {
@@ -998,7 +1009,7 @@ const QuestPage: React.FC = () => {
 										id={(index + 1).toString()}
 										className="stepperStep"
 										label={`Step: ${index + 1}`}
-										key={index + 1}
+										key={create_ListUUID()}
 										styles={{
 											stepDescription: {
 												visibility: active > index ? "hidden" : "visible",
