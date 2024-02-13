@@ -16,7 +16,6 @@ import { useDisclosure } from "@mantine/hooks";
 import { Settings } from "./pages/Settings";
 import useNotesDisclosure from "./Handlers/useDisclosure";
 import { UserNotes } from "./pages/userNotes";
-
 const QuestCarousel: React.FC = () => {
 	const [searchQuery, setSearchQuery] = useState<string>("");
 	const playerfetch = new PlayerQuests();

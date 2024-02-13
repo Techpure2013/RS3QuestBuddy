@@ -68,9 +68,7 @@ const QuestPage: React.FC = () => {
 	const details = useQuestStepStore();
 	const imageDetails = UseImageStore();
 	const stepRefs = useRef<React.RefObject<HTMLDivElement>[]>([]);
-
 	const QuestDetails = useQuestDetailsStore.getState().questDetails;
-
 	const [isHighlight, setIsHighlight] = useState(false);
 	const [stepHidden, setStepHidden] = useState(false);
 	const buttonRef = useRef<HTMLButtonElement | null>(null);
