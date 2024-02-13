@@ -667,7 +667,7 @@ const QuestPage: React.FC = () => {
 								color={hasButtonColor ? userButtonColor : "#EEF3FF"}
 								size={"sm"}
 								styles={{
-									root: { right: "175px", top: "112px" },
+									root: { right: "200px", top: "140px" },
 								}}
 							>
 								<IconSettings />
