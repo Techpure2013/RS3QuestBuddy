@@ -469,7 +469,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 		if (!this.anyOption) {
 			console.log("option display");
 			alt1.overLayText(
-				`Option ${this.displayNumber} --->`,
+				`Select --->`,
 				this.textColor,
 				13,
 				this.buttonX - 95,

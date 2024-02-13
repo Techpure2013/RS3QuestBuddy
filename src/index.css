@@ -44,8 +44,6 @@
 .PlayerSearch {
 	width: 50%;
 }
-.flexedButtons {
-}
 .mantine-Stepper-stepDescription {
 	color: #575757;
 }
@@ -66,6 +64,11 @@
 .mantine-Accordion-control:hover {
 	background-color: #30497e;
 }
+.quill > .ql-container > .ql-editor.ql-blank::before {
+	font-size: 13px;
+	font-family: rs3Font;
+	color: #f1f1f1f1;
+}
 /* .chevron {
 	&[data-rotate] {
 		transform: rotate(180deg);
@@ -78,9 +81,6 @@
 .App {
 	font-family: rs3Font;
 	text-align: center;
-}
-.Alt1Button {
-	background-color: ;
 }
 
 .caroQTitle {
@@ -100,7 +100,7 @@
 }
 img {
 	bottom: auto;
-	align: center;
+	justify-content: center;
 	margin: auto;
 	display: block;
 	image-rendering: pixelated;
@@ -131,8 +131,9 @@ img.enlarged {
 .prevNextGroup {
 	position: fixed;
 	bottom: 0;
-	right: 3px;
+	right: 5px;
 	display: flex;
+	gap: 10px;
 	flex-direction: column;
 	align-items: flex-end;
 }
@@ -199,9 +200,6 @@ img.enlarged {
 
 body {
 	padding-bottom: 600px;
-}
-.flexGroup,
-.qpTitle {
 }
 body,
 html,

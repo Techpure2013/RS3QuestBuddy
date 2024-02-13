@@ -97,6 +97,7 @@ export const UserNotes: React.FC = () => {
 				style={{
 					backgroundColor: "#1e2832",
 					color: hasColor ? userColor : "white",
+					borderRadius: "2px",
 				}}
 				className="Notepad"
 				placeholder="Type in your notes. Press ctrl + s To save"
@@ -112,34 +113,37 @@ export const UserNotes: React.FC = () => {
 				if (value !== "") {
 					return (
 						<>
-							<Box
-								key={trueIndex}
-								style={{
-									backgroundColor: "#1e2832",
-									color: hasColor ? userColor : "white",
-									borderRadius: "5px" /* Optional: Rounded corners */,
-									boxShadow:
-										"5px 5px 5px rgba(0, 0, 0, 0.7)" /* Shadow on the bottom right */,
-									fontFamily: "rs3Font",
-									textAlign: "left",
-									padding: "5px",
-								}}
-							>
-								{ReactHtmlParser(value)}
-								<ActionIcon
-									onClick={() => {
-										removeNote(trueIndex);
-									}}
-									size={"sm"}
-									variant="outline"
-									color="#CA4D4D"
-									styles={{
-										root: {},
+							<div style={{ position: "relative" }}>
+								<Box
+									key={trueIndex}
+									style={{
+										backgroundColor: "#1e2832",
+										color: hasColor ? userColor : "white",
+										borderRadius: "5px" /* Optional: Rounded corners */,
+										boxShadow:
+											"5px 5px 5px rgba(0, 0, 0, 0.7)" /* Shadow on the bottom right */,
+										fontFamily: "rs3Font",
+										textAlign: "left",
+										padding: "5px",
+										position: "static",
 									}}
 								>
-									<IconTrash />
-								</ActionIcon>
-							</Box>
+									{ReactHtmlParser(value)}
+									<ActionIcon
+										onClick={() => {
+											removeNote(trueIndex);
+										}}
+										size={"sm"}
+										variant="outline"
+										color="#CA4D4D"
+										styles={{
+											root: {},
+										}}
+									>
+										<IconTrash />
+									</ActionIcon>
+								</Box>
+							</div>
 							<div className="autoPad2" />
 						</>
 					);
