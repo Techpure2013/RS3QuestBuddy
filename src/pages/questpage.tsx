@@ -602,38 +602,28 @@ const QuestPage: React.FC = () => {
 									/>
 								</>
 							) : (
-								<>
-									<Stepper.Step
-										id={(index + 1).toString()}
-										className="stepperStep"
-										label={`Step: ${index + 1}`}
-										key={index + 1}
-										color={active > index ? "#24BF58" : "#4e85bc"}
-										styles={{
-											stepDescription: {
-												color: "#546576",
-											},
-										}}
-										orientation="vertical"
-										description={value}
-										onClick={() => setActiveAndScroll}
-										allowStepSelect={ShouldAllowStep(index)}
-									/>
-									<div className="autoPad1"></div>
-									<div className="autoPad1"></div>
-								</>
+								<Stepper.Step
+									id={(index + 1).toString()}
+									className="stepperStep"
+									label={`Step: ${index + 1}`}
+									key={create_ListUUID()}
+									color={"#4e85bc"}
+									styles={{
+										stepDescription: {
+											color: "#546576",
+										},
+										stepLabel: {
+											color: "#4e85bc",
+										},
+									}}
+									orientation="vertical"
+									description={value}
+									onClick={() => setActiveAndScroll}
+									allowStepSelect={ShouldAllowStep(index)}
+								/>
 							)
 						)}
 					</Stepper>
-					<div className="autoPad1"></div>
-					<div className="autoPad1"></div>
-					<div className="autoPad1"></div>
-					<div className="autoPad1"></div>
-					<div className="autoPad1"></div>
-					<div className="autoPad1"></div>
-					<div className="autoPad1"></div>
-					<div className="autoPad1"></div>
-					<div className="autoPad1"></div>
 					{buttonVisible && (
 						<div className="prevNextGroup">
 							{toTop ? (

@@ -88,10 +88,6 @@ export class PlayerQuests {
 		if (typeof data === "object" && Array.isArray(data.quests)) {
 			// Use the 'quests' array directly
 			usePlayerStore.getState().setPlayerQuestInfo(data.quests);
-
-			if (usePlayerStore.getState().playerQuestInfo.length !== 0) {
-				usePlayerStore.getState().playerReponseOK = true;
-			}
 		} else {
 			console.warn("Unexpected data structure:", data);
 			// Handle the unexpected data structure accordingly

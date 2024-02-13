@@ -1,14 +1,7 @@
 // QuestCarousel.tsx
 import React, { useEffect, useRef, useState } from "react";
 import { Carousel } from "@mantine/carousel";
-import {
-	Button,
-	TextInput,
-	Tooltip,
-	Loader,
-	ActionIcon,
-	Modal,
-} from "@mantine/core";
+import { Button, TextInput, ActionIcon, Modal, Loader } from "@mantine/core";
 import "@mantine/core/styles/UnstyledButton.css";
 import "@mantine/core/styles/Button.css";
 import "@mantine/core/styles/Input.css";
@@ -23,8 +16,8 @@ import { useDisclosure } from "@mantine/hooks";
 import { Settings } from "./pages/Settings";
 import useNotesDisclosure from "./Handlers/useDisclosure";
 import { UserNotes } from "./pages/userNotes";
+
 const QuestCarousel: React.FC = () => {
-	const [focused, setFocused] = useState(false);
 	const [searchQuery, setSearchQuery] = useState<string>("");
 	const playerfetch = new PlayerQuests();
 	const returningPName = useRef<string>("");
@@ -46,6 +39,7 @@ const QuestCarousel: React.FC = () => {
 	const [hasColor, setHasColor] = useState(false);
 	const [hasButtonColor, setHasButtonColor] = useState(false);
 	const [hasLabelColor, setHasLabelColor] = useState(false);
+	const [update, setUpdate] = useState(false);
 	const filteredQuests = questList.filter((quest) =>
 		quest.toLowerCase().includes(searchQuery.toLowerCase())
 	);
@@ -67,12 +61,12 @@ const QuestCarousel: React.FC = () => {
 				await playerfetch.fetchPlayerInfo(playerName);
 				await playerfetch.fetchPlayerSkills(playerName);
 				returningPName.current = playerName;
-				if (usePlayerStore.getState().playerReponseOK) {
-					console.log();
-
+				if (usePlayerStore.getState().playerQuestInfo.length > 0) {
+					setUpdate(true);
 					playerFound.current = true;
 					window.sessionStorage.setItem("playerFound", JSON.stringify(playerFound));
 					window.sessionStorage.setItem("playerName", JSON.stringify(playerName));
+					setSearchInitiated(false);
 				}
 			} else {
 				playerFound.current = false;
@@ -82,7 +76,11 @@ const QuestCarousel: React.FC = () => {
 			console.error("Error fetching player info:", error);
 		}
 	};
-
+	useEffect(() => {
+		if (usePlayerStore.getState().playerQuestInfo.length > 0) {
+			setUpdate(false);
+		}
+	}, [update]);
 	const renderQuestContent = (quest: string | undefined) => {
 		if (quest) {
 			let questTEdit = quest.toLowerCase().split(" ");
@@ -153,14 +151,7 @@ const QuestCarousel: React.FC = () => {
 		);
 		window.sessionStorage.setItem("sorted", JSON.stringify(sorted.current));
 	};
-	const startLoader = () => {
-		if (!playerFound.current) {
-			while (!usePlayerStore.getState().playerReponseOK) {
-				return <Loader size={25} />;
-			}
-			return;
-		}
-	};
+
 	useEffect(() => {
 		const colorVal = localStorage.getItem("textColorValue");
 		const labelCol = localStorage.getItem("labelColor");
@@ -192,6 +183,7 @@ const QuestCarousel: React.FC = () => {
 		hasButtonColor,
 		opened,
 	]);
+
 	const applySkills = () => {
 		rsSorter.sortCompletedQuests(rsUserQuestProfile);
 		setSkillsApplied(true);
@@ -205,7 +197,7 @@ const QuestCarousel: React.FC = () => {
 			handlePlayerLoad();
 			playerFound.current = true;
 		}
-	}, []);
+	}, [playerFound.current]);
 	useEffect(() => {
 		const remainQuests = sessionStorage.getItem("remainingQuests");
 		const player = sessionStorage.getItem("playerName");
@@ -245,6 +237,11 @@ const QuestCarousel: React.FC = () => {
 			console.warn("No data found in sessionStorage");
 		}
 	}, []);
+	function startSearch() {
+		do {
+			return <Loader size={25} color="#36935C" />;
+		} while (!update);
+	}
 	return (
 		<>
 			<Modal
@@ -304,22 +301,10 @@ const QuestCarousel: React.FC = () => {
 								console.log("Event value:", event.currentTarget.value);
 								playerName = event.currentTarget.value;
 								console.log("After update:", playerName);
-								setFocused(true);
 								handleKeyPress();
 							}
 						}}
-						rightSection={searchInitiated ? startLoader() : null}
-						onFocus={() => setFocused(true)}
-						onBlur={() => setFocused(false)}
-						inputContainer={(children) => (
-							<Tooltip
-								label="Hit Enter, If it looks like its taking a while click in the box"
-								position="top-start"
-								opened={focused}
-							>
-								{children}
-							</Tooltip>
-						)}
+						rightSection={searchInitiated ? startSearch() : null}
 					/>
 				</div>
 
@@ -399,8 +384,9 @@ const QuestCarousel: React.FC = () => {
 				>
 					<h3>Quests have been sorted by quests you can do!</h3>
 					<p>
-						{returningPName.current} has a total of {questPoints} Quest Points and{" "}
-						{remainingQuests.current?.length} remaining quests to Quest Cape!
+						{returningPName.current.replace('"', "").replace('"', "")} has a total of{" "}
+						{questPoints} Quest Points and has {remainingQuests.current?.length}{" "}
+						quests you can do at this current time!
 					</p>
 				</div>
 			)}
@@ -408,22 +394,12 @@ const QuestCarousel: React.FC = () => {
 				<Carousel
 					speed={100}
 					align="center"
-					withIndicators
 					slideSize={{ base: "100%", sm: "35%", md: "50%", lg: "75%", xl: "125%" }}
 					includeGapInSize={true}
+					height={450}
 					containScroll={"trimSnaps"}
-					nextControlIcon={
-						<IconArrowRight
-							size={16}
-							color={hasButtonColor ? userButtonColor : "#EEF3FF"}
-						/>
-					}
-					previousControlIcon={
-						<IconArrowLeft
-							size={16}
-							color={hasButtonColor ? userButtonColor : "#EEF3FF"}
-						/>
-					}
+					nextControlIcon={<IconArrowRight size={16} />}
+					previousControlIcon={<IconArrowLeft size={16} />}
 				>
 					{sorted.current &&
 						filteredRemainingQuests.map((quest, index) => (
