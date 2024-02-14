@@ -10,7 +10,6 @@ export const Reader: React.FC<ReaderProps> = ({ reader, questName }) => {
 	useEffect(() => {
 		console.log("Component has mounted");
 
-		reader.toggleOptionRun(true);
 		const handleChange = () => setCState(reader.getCState());
 		reader.on("change", handleChange);
 

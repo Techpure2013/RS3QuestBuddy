@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 import { useQuestDetailsStore } from "../Fetchers/FetchQuestDetails";
 import React from "react";
 
-import { DiagReader } from "./dialogsolver";
 export const QuestAccordian: React.FC = () => {
 	const [userColor, setUserColor] = useState("");
 	const [userLabelColor, setUserLabelColor] = useState("");
@@ -15,7 +14,7 @@ export const QuestAccordian: React.FC = () => {
 	const [hasLabelColor, setHasLabelColor] = useState(false);
 	const [skillLevels, setSkillLevels] = useState<string[]>([]);
 	const [completedQuests, setCompleteQuests] = useState<string[] | null>(null);
-	const reader = new DiagReader();
+
 	useEffect(() => {
 		const completedQuests = window.sessionStorage.getItem("hasCompleted");
 		const skill = sessionStorage.getItem("skillLevels");
@@ -39,9 +38,6 @@ export const QuestAccordian: React.FC = () => {
 		} else {
 			console.error("No data found in sessionStorage");
 		}
-		return () => {
-			clearAllIntervals();
-		};
 	}, []);
 	useEffect(() => {
 		const colorVal = localStorage.getItem("textColorValue");
@@ -60,11 +56,7 @@ export const QuestAccordian: React.FC = () => {
 			setHasColor(false);
 		}
 	}, []);
-	const clearAllIntervals = () => {
-		clearTimeout(reader.timeoutID);
-		reader.intervalIds.forEach(clearInterval);
-		reader.intervalIds = [];
-	};
+
 	return (
 		<>
 			<div className="autoPad1"></div>

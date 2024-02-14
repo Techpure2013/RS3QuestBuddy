@@ -371,6 +371,7 @@ const QuestPage: React.FC = () => {
 			const removeStep = JSON.parse(rs);
 			setStepHidden(removeStep);
 		}
+		reader.toggleOptionRun(true);
 		return () => clearAllIntervals();
 	}, [stepHidden, isHighlight, showStepReq, opened]);
 
