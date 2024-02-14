@@ -65,6 +65,7 @@ type readerEvents = {
  * DiagReader class responsible for reading dialogues and emitting events.
  * Extends TypedEmitter to handle typed events.
  */
+
 export class DiagReader extends TypedEmitter<readerEvents> {
 	diagInterval: number = 0;
 	color = a1lib.mixColor(255, 0, 0);
@@ -125,6 +126,9 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 		this.populateUniqueCoordinates = this.populateUniqueCoordinates.bind(this);
 		this.readCapture = this.readCapture.bind(this);
 	}
+	public start() {
+		this.readDiagOptions();
+	}
 	/**
 	 * Retrieves the current state of the DiagReader.
 	 * @returns The current state as a 'change' event object.
@@ -149,14 +153,15 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	 */
 	public toggleOptionInterval(
 		run: boolean,
-		action: () => void,
+
 		interval: number
 	) {
 		try {
 			if (run && this.optionInterval == 1) {
-				console.log(run);
 				// Start a new interval timer and store its reference in the record
-				this.optionInterval = +setInterval(action, interval);
+				this.optionInterval = +setInterval(() => {
+					this.start();
+				}, interval);
 				this.intervalIds.push(this.optionInterval);
 			} else if (!run && this.optionInterval) {
 				// Clear the interval timer if it exists
@@ -173,7 +178,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	 * @param run - Boolean True Only
 	 */
 	toggleOptionRun(run: boolean): void {
-		this.toggleOptionInterval(run, () => this.readDiagOptions(), 600);
+		this.toggleOptionInterval(run, 600);
 	}
 
 	private readDiagOptions() {
@@ -319,7 +324,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 			if (this.currentBestMatches.length === 0) {
 				const randomIndex = Math.floor(Math.random() * this.readOption!.length);
 				const randomCoordinate = this.readOption![randomIndex];
-				console.log(this.readOption);
+
 				// Update current best matches with the random coordinate
 				this.currentBestMatches.push({
 					x: randomCoordinate.x,
@@ -433,7 +438,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 		let readCount = 0;
 		if (readingOptions?.length == 0) {
 			if (readingOptions?.length == 0 && readCount > 2) {
-				this.toggleOptionInterval(true, () => this.readDiagOptions, 600);
+				this.toggleOptionInterval(true, 600);
 			}
 			readCount = readCount + 1;
 		}
@@ -467,7 +472,6 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 		this.toggleOptionRun(false);
 
 		if (!this.anyOption) {
-			console.log("option display");
 			alt1.overLayText(
 				`Select --->`,
 				this.textColor,
@@ -515,7 +519,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 			if (Object.keys(this.uniqueCoordinates).length === 0) {
 				this.displayNumber = 1;
 
-				this.toggleOptionInterval(true, () => this.readDiagOptions(), 600);
+				this.toggleOptionInterval(true, 600);
 
 				return;
 			}

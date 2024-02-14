@@ -7,12 +7,13 @@ interface ReaderProps {
 }
 
 export const Reader: React.FC<ReaderProps> = ({ reader, questName }) => {
+	const [, setCState] = useState(reader.getCState());
 	useEffect(() => {
 		console.log("Component has mounted");
 
 		const handleChange = () => setCState(reader.getCState());
 		reader.on("change", handleChange);
-
+		reader.toggleOptionRun(true);
 		return () => {
 			console.log("Component is unmounting");
 			reader.toggleOptionRun(false);
@@ -55,7 +56,5 @@ export const Reader: React.FC<ReaderProps> = ({ reader, questName }) => {
 		fetchCompareTranscript();
 	}, [questName]);
 
-	const [, setCState] = useState(reader.getCState());
-
-	return <div key="">{/* Render your JSX elements here */}</div>;
+	return null;
 };
