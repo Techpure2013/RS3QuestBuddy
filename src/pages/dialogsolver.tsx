@@ -418,7 +418,6 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 			const key = `${coord.x},${coord.y},${coord.width},${coord.buttonX}`;
 			this.uniqueCoordinates[key] = { ...coord };
 		}
-		console.log(this.currentBestMatches);
 		this.currentBestMatches = [];
 
 		this.displayBox();

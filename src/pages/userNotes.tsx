@@ -77,6 +77,7 @@ export const UserNotes: React.FC = () => {
 			console.warn("Did not find Notes");
 		}
 	}, []);
+
 	useEffect(() => {
 		// Update the original note when noteValue changes
 		setOriginalNote(noteValue);
@@ -109,7 +110,6 @@ export const UserNotes: React.FC = () => {
 
 			{displayNote.map((value, index) => {
 				const trueIndex = index + 1;
-				console.log(value);
 				if (value !== "") {
 					return (
 						<>

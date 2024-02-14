@@ -49,6 +49,7 @@ import useNotesDisclosure from "../Handlers/useDisclosure.ts";
 import { UserNotes } from "./userNotes.tsx";
 import useImageDisclosure from "./ImageModal.tsx";
 import { QuestAccordian } from "./QuestAccordian.tsx";
+
 const QuestPage: React.FC = () => {
 	// State and variables
 	const qpname = useLocation();
@@ -79,13 +80,26 @@ const QuestPage: React.FC = () => {
 	const [hasColor, setHasColor] = useState(false);
 	const [hasButtonColor, setHasButtonColor] = useState(false);
 	const [hasLabelColor, setHasLabelColor] = useState(false);
-	const [isOpened, { openNotes, closedNotes }] = useNotesDisclosure(false);
+	let [isOpened, { openNotes, closedNotes }] = useNotesDisclosure(false);
+	const isOpenNotes = useRef(false);
 	const [isImg, { imgModOpen, imgModClose }] = useImageDisclosure(false);
 	// const finder = new diagFinder();
 	const { showStepReq, buttonVisible, toggleShowStepReq, viewQuestImage } =
 		useQuestControllerStore();
 	const handles = useQuestControllerStore();
-
+	const handleKeyDown = (event: KeyboardEvent) => {
+		if (!isOpenNotes.current) {
+			if (event.key === " ") {
+				event.preventDefault();
+			}
+		}
+	};
+	useEffect(() => {
+		document.addEventListener("keydown", handleKeyDown);
+		return () => {
+			document.removeEventListener("keydown", handleKeyDown);
+		};
+	}, []);
 	const handleBackButton = () => {
 		hist("/");
 	};
@@ -365,7 +379,9 @@ const QuestPage: React.FC = () => {
 			React.createRef()
 		);
 	}, [details.stepDetails.length]);
-
+	function handleFalse() {
+		isOpenNotes.current = false;
+	}
 	return (
 		<>
 			<div>
@@ -373,6 +389,7 @@ const QuestPage: React.FC = () => {
 					title="Notes"
 					opened={isOpened}
 					onClose={() => {
+						handleFalse();
 						closedNotes();
 					}}
 					styles={{
@@ -650,7 +667,10 @@ const QuestPage: React.FC = () => {
 							</ActionIcon>
 							<ActionIcon
 								color={hasButtonColor ? userButtonColor : "#EEF3FF"}
-								onClick={openNotes}
+								onClick={() => {
+									isOpenNotes.current = true;
+									openNotes();
+								}}
 								size={"sm"}
 								variant="outline"
 								styles={{
