@@ -85,22 +85,7 @@ const QuestPage: React.FC = () => {
 	const { showStepReq, buttonVisible, toggleShowStepReq, viewQuestImage } =
 		useQuestControllerStore();
 	const handles = useQuestControllerStore();
-	const handleKeyDown = (event: KeyboardEvent) => {
-		// Prevent scrolling when the spacebar is pressed
-		if (event.key === " " || event.key === "Spacebar") {
-			event.preventDefault();
-		}
-	};
 
-	useEffect(() => {
-		// Attach the event listener when the component mounts
-		document.addEventListener("keydown", handleKeyDown);
-
-		// Detach the event listener when the component unmounts
-		return () => {
-			document.removeEventListener("keydown", handleKeyDown);
-		};
-	}, []);
 	const handleBackButton = () => {
 		hist("/");
 	};
@@ -383,45 +368,48 @@ const QuestPage: React.FC = () => {
 
 	return (
 		<>
-			<Modal
-				title="Notes"
-				opened={isOpened}
-				onClose={() => {
-					closedNotes();
-				}}
-				styles={{
-					header: {
-						backgroundColor: "#3d3d3d",
-					},
-					title: {
-						fontSize: "34px",
-						textAlign: "center",
-					},
-					body: { backgroundColor: "#3d3d3d" },
-				}}
-			>
-				<UserNotes />
-			</Modal>
-			<Modal
-				title="Settings"
-				opened={opened}
-				onClose={() => {
-					close();
-				}}
-				styles={{
-					header: {
-						backgroundColor: "#3d3d3d",
-					},
-					title: {
-						fontSize: "34px",
-						textAlign: "center",
-						color: hasColor ? userColor : "#4e85bc",
-					},
-					body: { backgroundColor: "#3d3d3d" },
-				}}
-			>
-				<Settings />
-			</Modal>
+			<div>
+				<Modal
+					title="Notes"
+					opened={isOpened}
+					onClose={() => {
+						closedNotes();
+					}}
+					styles={{
+						header: {
+							backgroundColor: "#3d3d3d",
+						},
+						title: {
+							fontSize: "34px",
+							textAlign: "center",
+						},
+						body: { backgroundColor: "#3d3d3d" },
+					}}
+				>
+					<UserNotes />
+				</Modal>
+				<Modal
+					id="Modal"
+					title="Settings"
+					opened={opened}
+					onClose={() => {
+						close();
+					}}
+					styles={{
+						header: {
+							backgroundColor: "#3d3d3d",
+						},
+						title: {
+							fontSize: "34px",
+							textAlign: "center",
+							color: hasColor ? userColor : "#4e85bc",
+						},
+						body: { backgroundColor: "#3d3d3d" },
+					}}
+				>
+					<Settings />
+				</Modal>
+			</div>
 			<Reader reader={reader} questName={questName} />
 			<QuestImageFetcher
 				questName={questName}
@@ -611,7 +599,7 @@ const QuestPage: React.FC = () => {
 											color: "#546576",
 										},
 										stepLabel: {
-											color: "#4e85bc",
+											color: hasLabelColor ? userLabelColor : "#546576",
 										},
 									}}
 									orientation="vertical"
