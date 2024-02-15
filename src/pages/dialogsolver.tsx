@@ -275,7 +275,7 @@ export class DiagReader extends TypedEmitter<readerEvents> {
 	private processMatching(): void {
 		this.iterationCount = 0;
 		// Check if stored values and dialog options are available
-
+		console.log(this.cTStore);
 		if (this.cTStore.length !== 0 && this.readOption!.length !== 0) {
 			for (const value of this.cTStore) {
 				this.bestMatchIndex = this.findBestMatchIndex(value.toLowerCase());

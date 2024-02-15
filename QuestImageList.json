@@ -270,7 +270,12 @@
 	},
 	{
 		"name": "Father and Son (miniquest)",
-		"images": [""]
+		"images": [
+			"QuestStart.png",
+			"Irwinsson.png",
+			"TalkToSigili.png",
+			"Irwinssonsgreatbow.png"
+		]
 	},
 	{
 		"name": "Helping Laniakea (miniquest)",
@@ -435,7 +440,22 @@
 	},
 	{
 		"name": "The General's Shadow (miniquest)",
-		"images": [""]
+		"images": [
+			"ReqItems.png",
+			"QStart.png",
+			"General.png",
+			"SpinWheelHouse.png",
+			"ScoutLoc.png",
+			"Scout.png",
+			"Scout2.png",
+			"SouthGnomeScout.png",
+			"Scout3Loc.png",
+			"Scout4.png",
+			"SandScout.png",
+			"GobCave.png",
+			"Bouncer.png",
+			"Kill.png"
+		]
 	},
 	{
 		"name": "Tales of the God Wars (miniquest)",
@@ -443,7 +463,14 @@
 	},
 	{
 		"name": "Flag Fall (miniquest)",
-		"images": [""]
+		"images": [
+			"QStart.png",
+			"Bonie.png",
+			"RosieLoc.png",
+			"RosieSupplies.png",
+			"UnchartedIslands.png",
+			"UnchartedIslandSelection.png"
+		]
 	},
 	{
 		"name": "Head of the Family (miniquest)",
@@ -985,15 +1012,24 @@
 	{
 		"name": "Call of the Ancestors",
 		"images": [
-			"AirutAmbush.png",
-			"CalloftheAncestors.png",
-			"FirstGoebietrial.png",
-			"Goebiesgather.png",
-			"Lunchisimpaled.png",
-			"Meetingtheancientgoebie.png",
-			"MeetingXinachto.png",
-			"SecondGoebietrial.png",
-			"ThirdGoebietrial.png"
+			"MageToTuska.png",
+			"TnksLoc.png",
+			"Tunks.png",
+			"AccaKanatah.png",
+			"Funny.png",
+			"Funny2.png",
+			"ClicktoControl.png",
+			"JumpChasm.png",
+			"EntranceToForest.png",
+			"AncientGoebie.png",
+			"Temple.png",
+			"Xinachto.png",
+			"WesternDoor.png",
+			"FirstLocks.png",
+			"PuzzlePattern2.png",
+			"EasternDoor.png",
+			"FirstEastern.png",
+			"NorthernDoor.png"
 		]
 	},
 	{
@@ -1191,12 +1227,39 @@
 	{
 		"name": "Dealing with Scabaras",
 		"images": [
-			"DealingwithScabaras.png",
-
+			"QuestStart.png",
+			"ReqItems.png",
+			"HighPriest.png",
+			"ClimbLadder.png",
+			"LadyIch.png",
 			"Maisascorpse.png",
-			"ScabarasHighPriestandstatues.png",
-			"Ullekresearchcamp.png",
-			"Ullekropeshortcut.png"
+			"TalkMaisa.png",
+			"HighPriest.png",
+			"AgilityShortcut.png",
+			"ClimbRope.png",
+			"PplTalk.png",
+			"UghMath.png",
+			"PayAttention.png",
+			"Info.png",
+			"UseDung.png",
+			"Use1.png",
+			"Simon.png",
+			"SimonNpc.png",
+			"PplTalk.png",
+			"Scabnote1.png",
+			"Kill1.png",
+			"Kill2.png",
+			"ScabKey.png",
+			"Dungeon.png",
+			"StokeFurnace.png",
+			"AgilityTest.png",
+			"StrengthTest.png",
+			"BeetleRoom.png",
+			"PuzzleRoom.png",
+			"Machine.png",
+			"SearchFloor.png",
+			"KK.png",
+			"HighPriest.png"
 		]
 	},
 	{
@@ -3399,12 +3462,55 @@
 	{
 		"name": "The Dig Site",
 		"images": [
-			"Diggingforthetalisman.png",
-			"DigsiteTemple.png",
-			"Panning.png",
-			"SenntistenTemplemap.png",
-
-			"TheDigSitesearchingbushes.png"
+			"ArcheologyJournal.png",
+			"QuestStart.png",
+			"Examiner.png",
+			"SealedLetter.png",
+			"CupOTea.png",
+			"Seth.png",
+			"SearchBush.png",
+			"Teddy.png",
+			"ItemLocations.png",
+			"RockPick.png",
+			"SpecimenBrush.png",
+			"PanningTray.png",
+			"PanningTrayItem.png",
+			"PanningWater.png",
+			"ViewPanning.png",
+			"SpecialCup.png",
+			"Person1.png",
+			"PickpocketWorkmen.png",
+			"AnimalSkull.png",
+			"ArchStudents.png",
+			"Katrina.png",
+			"EdStudent.png",
+			"Examiner2.png",
+			"CertLevel1.png",
+			"CertLevel2.png",
+			"CertLevel3.png",
+			"ThreeCerts.png",
+			"Seth.png",
+			"Level3Dig.png",
+			"AncientTalisman.png",
+			"Terry.png",
+			"DigSiteLocs2.png",
+			"GoinDown.png",
+			"ArceniaRoot.png",
+			"SearchBrick.png",
+			"Workman.png",
+			"TalkDoug.png",
+			"ChestKey.png",
+			"Chest.png",
+			"SearchChest.png",
+			"AmoniumNitrate.png",
+			"SearchBarrel.png",
+			"SearchSack.png",
+			"Charcoal.png",
+			"NitroGlyc.png",
+			"SearchBrick.png",
+			"UseOnBrick.png",
+			"TakeTablet.png",
+			"UseStoneOnTerry.png"
 		]
 	},
 	{
