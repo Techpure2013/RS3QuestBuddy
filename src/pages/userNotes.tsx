@@ -96,9 +96,7 @@ export const UserNotes: React.FC = () => {
 		<>
 			<ReactQuill
 				style={{
-					backgroundColor: "#1e2832",
-					color: hasColor ? userColor : "white",
-					borderRadius: "2px",
+					color: hasColor ? userColor : "",
 				}}
 				className="Notepad"
 				placeholder="Type in your notes. Press ctrl + s To save"
@@ -106,33 +104,23 @@ export const UserNotes: React.FC = () => {
 				onChange={handleNoteChange}
 			/>
 
-			<h3 style={{ color: hasColor ? userColor : "#4e85bc" }}>Your Notes</h3>
+			<h3 style={{ color: hasColor ? userColor : "" }}>Your Notes</h3>
 
 			{displayNote.map((value, index) => {
 				const trueIndex = index + 1;
 				if (value !== "") {
 					return (
-						<>
-							<div style={{ position: "relative" }}>
+						
 								<Box
-									key={trueIndex}
-									style={{
-										backgroundColor: "#1e2832",
-										color: hasColor ? userColor : "white",
-										borderRadius: "5px" /* Optional: Rounded corners */,
-										boxShadow:
-											"5px 5px 5px rgba(0, 0, 0, 0.7)" /* Shadow on the bottom right */,
-										fontFamily: "rs3Font",
-										textAlign: "left",
-										padding: "5px",
-										position: "static",
-									}}
+								key={trueIndex}
+								className="note"
+									style={{ color: hasColor ? userColor : "" }}
 								>
 									{ReactHtmlParser(value)}
 									<ActionIcon
 										onClick={() => {
 											removeNote(trueIndex);
-										}}
+									}}
 										size={"sm"}
 										variant="outline"
 										color="#CA4D4D"
@@ -143,9 +131,7 @@ export const UserNotes: React.FC = () => {
 										<IconTrash />
 									</ActionIcon>
 								</Box>
-							</div>
-							<div className="autoPad2" />
-						</>
+						
 					);
 				}
 			})}
