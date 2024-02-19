@@ -59,7 +59,6 @@ export const QuestAccordian: React.FC = () => {
 
 	return (
 		<>
-			<div className="autoPad1"></div>
 			<Accordion
 				defaultValue=""
 				chevron={
@@ -69,7 +68,7 @@ export const QuestAccordian: React.FC = () => {
 				<Accordion.Item key={1} value="Click to Show Quest Requirements">
 					<Accordion.Control
 						styles={{
-							control: { color: hasLabelColor ? userLabelColor : "#4e85bc" },
+							control: { color: hasLabelColor ? userLabelColor : "" },
 						}}
 					>
 						Requirements
@@ -238,12 +237,12 @@ export const QuestAccordian: React.FC = () => {
 					<Accordion.Control
 						className="AccordianControl"
 						styles={{
-							control: { color: hasLabelColor ? userLabelColor : "#4e85bc" },
+							control: { color: hasLabelColor ? userLabelColor : "" },
 						}}
 					>
 						Start Point
 					</Accordion.Control>
-					<Accordion.Panel c={hasColor ? userColor : "#4d5564"}>
+					<Accordion.Panel c={hasColor ? userColor : ""}>
 						<div>
 							{QuestDetails.map((value) => {
 								return value.StartPoint;
@@ -255,12 +254,12 @@ export const QuestAccordian: React.FC = () => {
 					<Accordion.Control
 						className="AccordianControl"
 						styles={{
-							control: { color: hasLabelColor ? userLabelColor : "#4e85bc" },
+							control: { color: hasLabelColor ? userLabelColor : "" },
 						}}
 					>
 						Is This a Members Quest?
 					</Accordion.Control>
-					<Accordion.Panel c={hasColor ? userColor : "#4d5564"}>
+					<Accordion.Panel c={hasColor ? userColor : ""}>
 						<div>
 							{QuestDetails.map((value) => {
 								return value.MemberRequirement;
@@ -272,12 +271,12 @@ export const QuestAccordian: React.FC = () => {
 					<Accordion.Control
 						className="AccordianControl"
 						styles={{
-							control: { color: hasLabelColor ? userLabelColor : "#4e85bc" },
+							control: { color: hasLabelColor ? userLabelColor : "" },
 						}}
 					>
 						How Long is This Quest?
 					</Accordion.Control>
-					<Accordion.Panel c={hasColor ? userColor : "#4d5564"}>
+					<Accordion.Panel c={hasColor ? userColor : ""}>
 						<div>
 							{QuestDetails.map((value) => {
 								return value.OfficialLength;
@@ -289,12 +288,12 @@ export const QuestAccordian: React.FC = () => {
 					<Accordion.Control
 						className="AccordianControl"
 						styles={{
-							control: { color: hasLabelColor ? userLabelColor : "#4e85bc" },
+							control: { color: hasLabelColor ? userLabelColor : "" },
 						}}
 					>
 						Items You Definitely Need
 					</Accordion.Control>
-					<Accordion.Panel c={hasColor ? userColor : "#4d5564"}>
+					<Accordion.Panel c={hasColor ? userColor : ""}>
 						<div>
 							<List listStyleType="none">
 								{QuestDetails.map((quest, questIndex) => {
@@ -323,12 +322,12 @@ export const QuestAccordian: React.FC = () => {
 						className="AccordianControl"
 						title="Items You Might Need"
 						styles={{
-							control: { color: hasLabelColor ? userLabelColor : "#4e85bc" },
+							control: { color: hasLabelColor ? userLabelColor : "" },
 						}}
 					>
 						Items You Might Need
 					</Accordion.Control>
-					<Accordion.Panel c={hasColor ? userColor : "#4d5564"}>
+					<Accordion.Panel c={hasColor ? userColor : ""}>
 						<div>
 							<List listStyleType="none">
 								{QuestDetails.map((quest, questIndex) => {
@@ -356,12 +355,12 @@ export const QuestAccordian: React.FC = () => {
 					<Accordion.Control
 						className="AccordianControl"
 						styles={{
-							control: { color: hasLabelColor ? userLabelColor : "#4e85bc" },
+							control: { color: hasLabelColor ? userLabelColor : "" },
 						}}
 					>
 						Enemies To Look Out For
 					</Accordion.Control>
-					<Accordion.Panel c={hasColor ? userColor : "#4d5564"}>
+					<Accordion.Panel c={hasColor ? userColor : ""}>
 						<div>
 							<List listStyleType="none">
 								{QuestDetails.map((quest, questIndex) => (
@@ -382,8 +381,7 @@ export const QuestAccordian: React.FC = () => {
 					</Accordion.Panel>
 				</Accordion.Item>
 			</Accordion>
-			<div className="autoPad1"></div>
-			<div className="autoPad2"></div>
+
 		</>
 	);
 };
