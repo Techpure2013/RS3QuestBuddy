@@ -165,7 +165,7 @@
 		"Requirements": [
 			"Death to the Dorgeshuun",
 			"The Lost Tribe",
-			"Goblin Diplomacy",		
+			"Goblin Diplomacy",
 			"The Giant Dwarf",
 			"15 Attack",
 			"25 Prayer"
@@ -561,7 +561,7 @@
 			"The Fremennik Isles",
 			"The Fremennik Trials",
 			"Royal Trouble",
-			"Throne of Miscellania",			
+			"Throne of Miscellania",
 			"Heroes' Quest",
 			"Shield of Arrav",
 			"Dragon Slayer",
@@ -1539,7 +1539,7 @@
 		"Requirements": [
 			"The Dig Site",
 			"Temple of Ikov",
-			"Access To Morytania"
+			"Access To Morytania",
 			"Waterfall Quest",
 			"Troll Stronghold",
 			"Death Plateau",
@@ -2431,7 +2431,7 @@
 			"Nature Spirit",
 			"Priest in Peril",
 			"The Restless Ghost",
-			"Ability to enter Morytania",
+			"Ability to enter Morytania"
 		],
 		"ItemsRequired": [
 			"Dramen/Lunar staff",
@@ -3138,11 +3138,7 @@
 		"StartPoint": "Speak to the Zealot at the entrance of the Abandoned Mine in south Morytania.",
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Long",
-		"Requirements": [
-			"Ability to enter Morytania",
-			"15 Agility",
-			"35 Crafting"
-		],
+		"Requirements": ["Ability to enter Morytania", "15 Agility", "35 Crafting"],
 		"ItemsRequired": ["None"],
 		"Recommended": [
 			"Food and combat equipment",
@@ -3216,7 +3212,7 @@
 			"Lunar Diplomacy",
 			"The Fremennik Trials",
 			"Lost City",
-			"Shilo Village",	
+			"Shilo Village",
 			"Jungle Potion",
 			"Access to the Ancient Cavern from Barbarian Training",
 			"60 Divination",
@@ -3303,10 +3299,7 @@
 		"StartPoint": "Speak with Larrissa, who is outside of the Lighthouse, north of the Barbarian Outpost.",
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Medium",
-		"Requirements": [
-			"Bar Crawl (miniquest)",
-			"35 Agility"
-		],
+		"Requirements": ["Bar Crawl (miniquest)", "35 Agility"],
 		"ItemsRequired": [
 			"For fixing the bridge: 60 steel nails",
 			"For fixing the bridge: 2 normal planks (can be obtained during the quest, just north of the fenced-in area of the Barbarian Outpost)",
@@ -3668,7 +3661,6 @@
 			"Shilo Village",
 			"Jungle Potion",
 			"Druidic Ritual"
-			
 		],
 		"ItemsRequired": [
 			"Granite (any size), or a ring of stone",
@@ -3766,7 +3758,6 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Long to Very Long",
 		"Requirements": [
-
 			"The Darkness of Hallowvale",
 			"In Aid of the Myreque",
 			"In Search of the Myreque",
@@ -3799,7 +3790,7 @@
 			"Teleport to Canifis",
 			"Invitation Box",
 			"Shortcut key",
-			"Completion of Desert Treasure"
+			"Completion of Desert Treasure",
 			"Druid pouches or ouroboros pouch",
 			"Food",
 			"Rod of Ivandis"
@@ -5360,8 +5351,8 @@
 		"OfficialLength": "Short",
 		"Requirements": [
 			"Recipe for Disaster: Another Cook's Quest",
-			"Cook's Assistant",	
-			"Plague City",	
+			"Cook's Assistant",
+			"Plague City",
 			"Ability to enter Morytania",
 			"Priest in Peril",
 			"40 Cooking"
@@ -6500,12 +6491,11 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Medium to Long",
 		"Requirements": [
-		
 			"Rune Mysteries",
 			"Shilo Village",
 			"Jungle Potion",
 			"Druidic Ritual",
-			
+
 			"Creature of Fenkenstrain",
 			"The Restless Ghost",
 			"Priest in Peril",
@@ -6590,7 +6580,7 @@
 		"OfficialLength": "Long",
 		"Requirements": [
 			"Icthlarin's Little Helper",
-			
+
 			"Diamond in the Rough",
 			"Stolen Hearts",
 			"Ironmen: 50 Cooking (for making Chocolate Cake - This is only required if you do not get the drop from monsters.)"
@@ -7475,7 +7465,7 @@
 		"StartPoint": "Begin by speaking to Sir Tiffy Cashien in Falador Park.",
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Medium to Long",
-		"Requirements": [		
+		"Requirements": [
 			"Goblin Diplomacy",
 			"Recruitment Drive",
 			"Enter the Abyss (miniquest)",
