@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { DiagReader } from "./dialogsolver.tsx";
-import "./../../QuestList.json";
+import "./QuestList.json";
 interface ReaderProps {
 	reader: DiagReader;
 	questName: string;
@@ -8,7 +8,7 @@ interface ReaderProps {
 
 export const Reader: React.FC<ReaderProps> = ({ reader, questName }) => {
 	const [, setCState] = useState(reader.getCState());
-	const questList = "./../../QuestList.json";
+	const questList = "./QuestList.json";
 	useEffect(() => {
 		console.log("Component has mounted");
 
