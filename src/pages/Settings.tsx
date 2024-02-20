@@ -9,7 +9,6 @@ import {
 	TextInput,
 } from "@mantine/core";
 import { useEffect, useState } from "react";
-import "./../index.css";
 export const Settings: React.FC = () => {
 	const [highlight, setHighlight] = useState(false);
 	const [removeStep, setRemoveStep] = useState(false);
@@ -115,7 +114,7 @@ export const Settings: React.FC = () => {
 			<Stack>
 				<Radio
 					styles={{
-						label: { color: hasColor ? userColor : "#4e85bc" },
+						label: { color: hasColor ? userColor : "" },
 					}}
 					checked={highlight}
 					onChange={(event) => {
@@ -126,7 +125,7 @@ export const Settings: React.FC = () => {
 				/>
 				<Radio
 					styles={{
-						label: { color: hasColor ? userColor : "#4e85bc" },
+						label: { color: hasColor ? userColor : "" },
 					}}
 					checked={removeStep}
 					onChange={(event) => {
@@ -136,13 +135,11 @@ export const Settings: React.FC = () => {
 					label="Remove step after completion."
 				/>
 			</Stack>
-			<div className="autoPad1"></div>
-			<div className="autoPad2"></div>
 			<Accordion>
 				<Accordion.Item key={1} value="Color Your Text">
 					<AccordionControl
 						styles={{
-							control: { color: hasLabelColor ? labelColor : "#4e85bc" },
+							control: { color: hasLabelColor ? labelColor : "" },
 						}}
 					>
 						Color Your Text
@@ -157,7 +154,6 @@ export const Settings: React.FC = () => {
 								}
 							}}
 						></TextInput>
-						<div className="autoPad1"></div>
 						<ColorPicker
 							value={colorTextValue}
 							size="sm"
@@ -177,7 +173,7 @@ export const Settings: React.FC = () => {
 								setTextSwatchColors([]);
 							}}
 							variant="outline"
-							color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+							color={hasButtonColor ? userButtonColor : ""}
 						>
 							Clear Swatch
 						</Button>
@@ -186,7 +182,7 @@ export const Settings: React.FC = () => {
 				<Accordion.Item key={2} value="Color Your Labels">
 					<AccordionControl
 						styles={{
-							control: { color: hasLabelColor ? labelColor : "#4e85bc" },
+							control: { color: hasLabelColor ? labelColor : "" },
 						}}
 					>
 						Color Your Labels
@@ -200,7 +196,6 @@ export const Settings: React.FC = () => {
 								}
 							}}
 						></TextInput>
-						<div className="autoPad1"></div>
 						<ColorPicker
 							value={labelColor}
 							size="sm"
@@ -220,7 +215,7 @@ export const Settings: React.FC = () => {
 								setSwatchLabelColor([]);
 							}}
 							variant="outline"
-							color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+							color={hasButtonColor ? userButtonColor : ""}
 						>
 							Clear Swatch
 						</Button>
@@ -230,7 +225,7 @@ export const Settings: React.FC = () => {
 				<Accordion.Item key={3} value="Color Your Buttons">
 					<AccordionControl
 						styles={{
-							control: { color: hasLabelColor ? labelColor : "#4e85bc" },
+							control: { color: hasLabelColor ? labelColor : "" },
 						}}
 					>
 						Color Your Buttons
@@ -244,7 +239,6 @@ export const Settings: React.FC = () => {
 								}
 							}}
 						></TextInput>
-						<div className="autoPad1"></div>
 						<ColorPicker
 							value={buttonColor}
 							size="sm"
@@ -260,7 +254,7 @@ export const Settings: React.FC = () => {
 							}}
 						/>
 						<Button
-							color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+							color={hasButtonColor ? userButtonColor : ""}
 							onClick={() => {
 								setButtonSwatchColors([]);
 							}}

@@ -2,10 +2,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Carousel } from "@mantine/carousel";
 import { Button, TextInput, ActionIcon, Modal, Loader } from "@mantine/core";
-import "@mantine/core/styles/UnstyledButton.css";
-import "@mantine/core/styles/Button.css";
-import "@mantine/core/styles/Input.css";
-import "./index.css";
 import { useQuestListStore, QuestListFetcher } from "./Fetchers/FetchQuestList";
 import { NavLink } from "react-router-dom";
 import { IconArrowRight, IconArrowLeft, IconPlus } from "@tabler/icons-react";
@@ -85,17 +81,10 @@ const QuestCarousel: React.FC = () => {
 			let questTEdit = quest.toLowerCase().split(" ");
 			let modifiedQuestVal1 = questTEdit.join("").replace(/[!,`']/g, "");
 			let questImage = "";
-
-			if (!sorted.current) {
-				const pattern = /[^a-zA-Z0-9]/g;
+			const pattern = /[^a-zA-Z0-9]/g;
 				questImage =
-					"./Rewards/" + quest.toLowerCase().replace(pattern, "") + "reward.png";
-			} else {
-				const pattern = /[^a-zA-Z0-9]/g;
-				questImage =
-					"./Rewards/" + quest.toLowerCase().replace(pattern, "") + "reward.png";
-			}
-
+				"./Rewards/" + quest.toLowerCase().replace(pattern, "") + "reward.png";
+			
 			return (
 				<div
 					className="caroQTitle"
@@ -105,7 +94,7 @@ const QuestCarousel: React.FC = () => {
 							? "#BF2930"
 							: playerFound.current
 							? "#54B46F"
-							: "#4e85bc",
+							: "",
 						paddingTop: "30",
 					}}
 				>
@@ -237,10 +226,9 @@ const QuestCarousel: React.FC = () => {
 		}
 	}, []);
 	function startSearch() {
-		do {
+		if (!update) {
 			return <Loader size={25} color="#36935C" />;
-		} while (!update);
-	}
+		}}
 	return (
 		<>
 			<Modal
@@ -250,14 +238,10 @@ const QuestCarousel: React.FC = () => {
 					closedNotes();
 				}}
 				styles={{
-					header: {
-						backgroundColor: "#3d3d3d",
-					},
 					title: {
 						fontSize: "34px",
 						textAlign: "center",
-					},
-					body: { backgroundColor: "#3d3d3d" },
+					}
 				}}
 			>
 				<UserNotes />
@@ -269,14 +253,10 @@ const QuestCarousel: React.FC = () => {
 					close();
 				}}
 				styles={{
-					header: {
-						backgroundColor: "#3d3d3d",
-					},
 					title: {
 						fontSize: "34px",
 						textAlign: "center",
-					},
-					body: { backgroundColor: "#3d3d3d" },
+					}
 				}}
 			>
 				<Settings />
@@ -291,7 +271,7 @@ const QuestCarousel: React.FC = () => {
 						}
 						styles={{
 							input: { color: playerFound.current ? "#36935C" : "#933648" },
-							label: { color: hasLabelColor ? userLabelColor : "#4e85bc" },
+							label: { color: hasLabelColor ? userLabelColor : "" },
 						}}
 						label={"Search for Player Name"}
 						placeholder={"Search for Player Name"}
@@ -310,7 +290,7 @@ const QuestCarousel: React.FC = () => {
 				<div className="SearchQuest">
 					<TextInput
 						styles={{
-							label: { color: hasLabelColor ? userLabelColor : "#4e85bc" },
+							label: { color: hasLabelColor ? userLabelColor : "" },
 						}}
 						className="customInput"
 						label="Search for Quest"
@@ -325,7 +305,7 @@ const QuestCarousel: React.FC = () => {
 					<Button
 						className="SortButton"
 						variant="outline"
-						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+						color={hasButtonColor ? userButtonColor : ""}
 						onClick={() => {
 							applySkills();
 							sort();
@@ -340,7 +320,7 @@ const QuestCarousel: React.FC = () => {
 					<Button
 						className="SortButton"
 						variant="outline"
-						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+						color={hasButtonColor ? userButtonColor : ""}
 						onClick={() => {
 							unSort();
 							location.reload();
@@ -354,7 +334,7 @@ const QuestCarousel: React.FC = () => {
 					<Button
 						className="ApplySkillsButton"
 						variant="outline"
-						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+						color={hasButtonColor ? userButtonColor : ""}
 						onClick={() => {
 							applySkills();
 						}}
@@ -367,7 +347,7 @@ const QuestCarousel: React.FC = () => {
 				<Button
 					className="RefreshButton"
 					variant="outline"
-					color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+					color={hasButtonColor ? userButtonColor : ""}
 					onClick={() => {
 						sessionStorage.clear();
 						location.reload();
@@ -379,7 +359,7 @@ const QuestCarousel: React.FC = () => {
 			{sorted.current && (
 				<div
 					className="caroQTitle"
-					style={{ color: hasColor ? userColor : "#4e85bc" }}
+					style={{ color: hasColor ? userColor : "" }}
 				>
 					<h3>Quests have been sorted by quests you can do!</h3>
 					<p>
@@ -393,12 +373,13 @@ const QuestCarousel: React.FC = () => {
 				<Carousel
 					speed={100}
 					align="center"
-					slideSize={{ base: "100%", sm: "35%", md: "50%", lg: "75%", xl: "125%" }}
+					slideSize={{ base: "100%"}}
 					includeGapInSize={true}
 					height={450}
 					containScroll={"trimSnaps"}
-					nextControlIcon={<IconArrowRight size={16} />}
-					previousControlIcon={<IconArrowLeft size={16} />}
+					nextControlIcon={<IconArrowRight size={24} />}
+					previousControlIcon={<IconArrowLeft size={24} />}
+					loop
 				>
 					{sorted.current &&
 						filteredRemainingQuests.map((quest, index) => (
@@ -412,7 +393,7 @@ const QuestCarousel: React.FC = () => {
 				</Carousel>
 			</div>
 			<ActionIcon
-				color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+				color={hasButtonColor ? userButtonColor : ""}
 				onClick={openNotes}
 				size={"sm"}
 				variant="outline"
@@ -430,7 +411,7 @@ const QuestCarousel: React.FC = () => {
 				onClick={open}
 				variant="outline"
 				size={"sm"}
-				color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+				color={hasButtonColor ? userButtonColor : ""}
 				styles={{
 					root: { bottom: "22px", left: "35px", position: "fixed" },
 				}}

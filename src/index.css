@@ -1,62 +1,156 @@
 @font-face {
 	font-family: rs3Font;
-	src: url("/fonts/RS3Bold.woff2");
+	src: url("/fonts/RS3Font.woff2");
+	font-weight: 100 700;
 }
+
 ::-webkit-scrollbar {
 	width: 10px;
 }
 
+:root {
+	--title-color: #84b1df;
+	font-family: rs3Font;
+	--mantine-font-family: rs3Font !important;
+	--completed: #24BF58;
+	--rs3-background: url("./assets/background.png");
+}
+
+body {
+	background-image: var(--rs3-background);
+}
+
 /* Track */
 ::-webkit-scrollbar-track {
-	background-image: url("./assets/background.png");
+	background-image: var(--rs3-background);
 }
+
 ::-webkit-scrollbar-thumb {
 	background-color: #555;
 }
+
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 	background: #f1f1f1f1;
 }
+
+h2 {
+	text-align: center;
+}
+
+label,
+.mantine-Accordion-control,
+h1,
+h2,
+h3 {
+	color: var(--title-color);
+	font-weight: 550;
+}
+
 .Notepad {
 	font-family: rs3Font;
 }
+
+.Notepad .ql-toolbar .ql-stroke,
+.ql-picker-label {
+	stroke: #ccc;
+	color: #ccc;
+	font-family: rs3Font;
+}
+
+.note {
+	display: flex;
+	justify-content: space-between;
+	background: #1e2832;
+	padding: 10px;
+	gap: 10px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+	font-weight: 400;
+	border: 1px solid #ccc2;
+}
+
+.delete {
+	color: #CA4D4D;
+}
+
+.ql-toolbar.ql-snow {
+	border-radius: 10px 10px 0 0;
+	background: #1e2832;
+}
+
+.ql-container.ql-snow {
+	border-radius: 0 0 10px 10px;
+	background: #ccc1;
+	padding: 10px;
+}
+
+.ql-toolbar.ql-snow,
+.ql-container.ql-snow {
+	border-color: #ccc5;
+}
+
+/* Toolbar buttons hover/active */
+.ql-toolbar button {
+	color: var(--mantine-text-color) !important;
+	stroke: var(--mantine-text-color) !important;
+}
+
+.ql-toolbar button:hover *,
+.ql-picker-label:hover,
+.ql-picker-label:hover *,
+.ql-toolbar .ql-active .ql-stroke {
+	color: var(--title-color) !important;
+	stroke: var(--title-color) !important;
+}
+
 .ApplySkillsButton {
 	left: 5px;
 }
+
 .RefreshButton {
 	left: 10px;
 }
+
 .SortButton,
 .RefreshButton,
 .ApplySkillsButton {
 	margin-top: 6px;
 	size: 20px;
 }
+
 .SearchContainer {
 	display: flex;
 	justify-content: space-between;
+	gap: 5px;
+	padding: 5px;
+	align-items: flex-end;
 }
 
-.SearchQuest {
-	width: 50%;
-}
-
+.SearchQuest,
 .PlayerSearch {
 	width: 50%;
+	color: var(--title-color);
 }
-.mantine-Stepper-stepDescription {
-	color: #575757;
-}
+
 .mantine-Accordion-root {
-	font: rs3Font;
 	display: block;
-	width: 60vh;
-	z-index: 10; /* Set a lower z-index to ensure it stays behind other elements */
+	width: 100%;
+	z-index: 10;
+	/* Set a lower z-index to ensure it stays behind other elements */
+	padding: 20px 0;
 }
+
+.mantine-Accordion-item button {
+	color: var(--title-color)
+}
+
 .mantine-List-root {
 	list-style-type: none;
 	display: block;
 }
+
 .mantine-Stepper-stepIcon {
 	color: #575757;
 }
@@ -64,40 +158,46 @@
 .mantine-Accordion-control:hover {
 	background-color: #30497e;
 }
-.quill > .ql-container > .ql-editor.ql-blank::before {
+
+.quill>.ql-container>.ql-editor.ql-blank::before {
 	font-size: 13px;
-	font-family: rs3Font;
 	color: #f1f1f1f1;
 }
+
 /* .chevron {
 	&[data-rotate] {
 		transform: rotate(180deg);
 	}
 } */
+
 .icon {
 	width: rem(16px);
 	height: rem(16px);
 }
+
 .App {
-	font-family: rs3Font;
 	text-align: center;
 }
 
 .caroQTitle {
-	color: #4e85bc;
+	color: var(--title-color);
 	text-align: center;
-	top: 50px;
 }
+
 .caroContainer {
 	top: 10px;
-	font-family: rs3Font;
 	text-align: center;
 	cursor: pointer;
+	font-weight: 550;
+	color: var(--title-color);
+	padding-top: 1rem;
 }
+
 .questContainer {
 	display: flex;
 	flex-direction: column;
 }
+
 img {
 	bottom: auto;
 	justify-content: center;
@@ -107,14 +207,19 @@ img {
 }
 
 img.enlarged {
-	width: 300px; /* Change this value to your desired size */
+	width: 300px;
+	/* Change this value to your desired size */
 	height: auto;
 }
-.stepperContainer {
-	max-height: 400px; /* Set the desired height for the stepper container */
 
-	margin-top: 16px; /* Adjust as needed to create space between buttons and stepper */
+.stepperContainer {
+	max-height: 400px;
+	/* Set the desired height for the stepper container */
+
+	margin-top: 16px;
+	/* Adjust as needed to create space between buttons and stepper */
 }
+
 /* .buttonsGroup {
     position: fixed;
 
@@ -127,53 +232,79 @@ img.enlarged {
 	right: 20px;
 	gap: 10px;
 }
+
 /* Save this buttons class for later use maybe */
 .prevNextGroup {
 	position: fixed;
 	bottom: 0;
-	right: 5px;
 	display: flex;
 	gap: 10px;
-	flex-direction: column;
-	align-items: flex-end;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
 	z-index: 166;
+	padding: 5px;
+	background: var(--rs3-background);
 }
+
 .mantine-Button-root {
 	font-size: 16px;
-	border-radius: 4px; /* Optional: Rounded corners */
-	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7); /* Shadow on the bottom right */
-	font-family: rs3Font;
+	border-radius: 4px;
+	/* Optional: Rounded corners */
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+	/* Shadow on the bottom right */
 }
-.mantine-Button-root:hover {
-	background-color: hsl(200, 25%, 50%);
+.mantine-Button-root:not(:disabled), .mantine-ActionIcon-root {
+	--mantine-color-blue-outline: #ccc;
+	background: var(--rs3-background);
+	font-weight: 450;
 }
+
+.mantine-Button-root:hover:not(:disabled) {
+	background-color: hsla(200, 25%, 50%, 0.3);
+}
+
 .navLink {
 	text-decoration: none;
-	color: #4e85bc;
+	color: var(--title-color);
 }
+
 .mantine-Stepper-stepDescription {
 	justify-content: flex-start;
 	width: auto;
 	font-family: rs3Font;
 	font-size: 15px;
-	color: #4e85bc;
 }
 
-.mantine-Stepper-stepIcon {
-	background: linear-gradient(
-		to bottom,
-		#546576,
-		#3d4b5a,
-		#2c3742,
-		#1e2832,
-		#141b23,
-		#0c1117
-	);
+.stepperStep:not([data-completed]):not([data-progress]) .mantine-Stepper-stepDescription {
+	color: #575757!important;
 }
+
+[data-progress],
+[data-progress] .mantine-Stepper-stepDescription {
+	color: var(--mantine-text-color);
+}
+
+[data-active] {
+	--_separator-border-color: var(--completed) !important;
+}
+[data-completed] .mantine-Stepper-stepLabel{
+	color: var(--completed)!important;
+}
+.mantine-Stepper-stepIcon {
+	background: linear-gradient(to bottom,
+			#546576,
+			#3d4b5a,
+			#2c3742,
+			#1e2832,
+			#141b23,
+			#0c1117);
+}
+
 .mantine-Stepper-stepLabel {
 	font-size: 20px;
 	font-family: rs3Font;
-	color: #4e85bc;
+	color: var(--title-color);
 }
 
 .mantine-TextInput-label {
@@ -181,16 +312,14 @@ img.enlarged {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	color: #4e85bc;
-	font-size: 25px;
+	font-weight: 500;
+	font-size: clamp(1rem, 2.5vw, 1.25rem);
 }
+
 .QuestPageImageCaro {
 	z-index: 10;
 }
-.autoPad1,
-.autoPad2 {
-	padding-top: 20px;
-}
+
 .custom-container {
 	display: flex;
 	flex-direction: column;
@@ -198,13 +327,27 @@ img.enlarged {
 	height: 50vh;
 	width: 50vh;
 }
-body,
-html,
-#root {
-	background-image: url("./assets/background.png");
-	font-family: rs3Font;
+.mantine-Stepper-steps {
+	padding-bottom: 70px;
 }
-h2 {
-	text-align: center;
-	color: #4e85bc;
+
+#prev-next {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	gap: 5px;
+	align-items: center;
+}
+#icons > button {
+	margin: 5px;
+}
+#return-image {
+	display:flex;
+	flex-wrap: wrap;
+	gap: 5px;
+	flex: 1;
+	justify-content: space-evenly;
+}
+.return {
+	padding: 4px 8px;
 }

@@ -1,7 +1,6 @@
 import { Button } from "@mantine/core";
 import App from "./App";
 import { useState } from "react";
-import "./index.css";
 
 export const AltGuard = () => {
 	const [override, setOverride] = useState(false);

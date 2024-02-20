@@ -1,22 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ActionIcon, Button, Flex, Modal, Stack } from "@mantine/core";
 import { MantineProvider } from "@mantine/core";
-import "@mantine/core/styles/global.css";
-import "@mantine/core/styles/Accordion.css";
-import "@mantine/core/styles/List.css";
-import "@mantine/core/styles/ScrollArea.css";
-import "@mantine/core/styles/UnstyledButton.css";
-import "@mantine/core/styles/VisuallyHidden.css";
-import "@mantine/core/styles/Paper.css";
-import "@mantine/core/styles/Popover.css";
-import "@mantine/core/styles/CloseButton.css";
-import "@mantine/core/styles/Group.css";
-import "@mantine/core/styles/Loader.css";
-import "@mantine/core/styles/Overlay.css";
-import "@mantine/core/styles/ModalBase.css";
-import "@mantine/core/styles/Input.css";
-import "@mantine/core/styles/Flex.css";
-import "./../index.css";
 import { useQuestControllerStore } from "../Handlers/HandlerStore";
 import { IconPlus, IconSettings } from "@tabler/icons-react";
 import { useDisclosure } from "@mantine/hooks";
@@ -101,7 +85,7 @@ const QuestControls: React.FC<{
 
 	return (
 		<>
-			<MantineProvider>
+			<MantineProvider defaultColorScheme="dark">
 				<Modal
 					title="Notes"
 					opened={isOpened}
@@ -109,14 +93,10 @@ const QuestControls: React.FC<{
 						closedNotes();
 					}}
 					styles={{
-						header: {
-							backgroundColor: "#3d3d3d",
-						},
 						title: {
 							fontSize: "34px",
 							textAlign: "center",
-						},
-						body: { backgroundColor: "#3d3d3d" },
+						}
 					}}
 				>
 					<UserNotes />
@@ -128,22 +108,18 @@ const QuestControls: React.FC<{
 						close();
 					}}
 					styles={{
-						header: {
-							backgroundColor: "#3d3d3d",
-						},
 						title: {
 							fontSize: "34px",
 							textAlign: "center",
-							color: hasColor ? userColor : "#4e85bc",
-						},
-						body: { backgroundColor: "#3d3d3d" },
+							color: hasColor ? userColor : "currentColor",
+						}
 					}}
 				>
 					<Settings />
 				</Modal>
 				<Flex styles={{ root: { margin: "5px", gap: "5px" } }}>
 					<ActionIcon
-						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+						color={hasButtonColor ? userButtonColor : "currentColor"}
 						onClick={openNotes}
 						size={"sm"}
 						variant="outline"
@@ -153,7 +129,7 @@ const QuestControls: React.FC<{
 					<ActionIcon
 						onClick={open}
 						variant="outline"
-						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+						color={hasButtonColor ? userButtonColor : "currentColor"}
 						size={"sm"}
 					>
 						<IconSettings />
@@ -162,14 +138,14 @@ const QuestControls: React.FC<{
 				<Stack className="ButtonGroupTwo" gap="sm">
 					<Button
 						variant="outline"
-						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+						color={hasButtonColor ? userButtonColor : "currentColor"}
 						onClick={handleScrollPrev}
 					>
 						Prev Step
 					</Button>
 					<Button
 						variant="outline"
-						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+						color={hasButtonColor ? userButtonColor : "currentColor"}
 						onClick={handleScrollNext}
 					>
 						Next Step
@@ -177,7 +153,7 @@ const QuestControls: React.FC<{
 					{showStepReq ? (
 						<Button
 							variant="outline"
-							color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+							color={hasButtonColor ? userButtonColor : "currentColor"}
 							onClick={toggleShowStepReq}
 						>
 							Show Step Details
@@ -185,7 +161,7 @@ const QuestControls: React.FC<{
 					) : (
 						<Button
 							variant="outline"
-							color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+							color={hasButtonColor ? userButtonColor : "currentColor"}
 							onClick={toggleShowStepReq}
 						>
 							Show Quest Details
@@ -193,7 +169,7 @@ const QuestControls: React.FC<{
 					)}
 					<Button
 						variant="outline"
-						color={hasButtonColor ? userButtonColor : "#EEF3FF"}
+						color={hasButtonColor ? userButtonColor : "currentColor"}
 						onClick={() => {
 							questImageVis();
 						}}
