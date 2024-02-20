@@ -130,7 +130,6 @@
 		"Requirements": [
 			"The Restless Ghost",
 			"Ernest the Chicken",
-			"Priest in Peril",
 			"Ability to enter Morytania",
 			"19 Crafting",
 			"30 Ranged",
@@ -160,14 +159,13 @@
 	},
 	{
 		"Quest": "Another Slice of H.A.M.",
-		"StartPoint": "Talk to Ambassador Alvijar, who is in Ur-tag's house in Dorgesh-Kaan. (via the first location → the second location → the third location)",
+		"StartPoint": "Talk to Ambassador Alvijar, who is in Ur-tag's house in Dorgesh-Kaan.",
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Medium",
 		"Requirements": [
 			"Death to the Dorgeshuun",
 			"The Lost Tribe",
-			"Goblin Diplomacy",
-			"The Dig Site",
+			"Goblin Diplomacy",		
 			"The Giant Dwarf",
 			"15 Attack",
 			"25 Prayer"
@@ -195,7 +193,6 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Long",
 		"Requirements": [
-			"Zogre Flesh Eaters",
 			"Big Chompy Bird Hunting",
 			"Jungle Potion",
 			"51 Firemaking",
@@ -236,8 +233,7 @@
 			"Complete the base camp tutorial on Anachronia",
 			"58 Agility",
 			"58 Archaeology",
-			"70 Divination",
-			"58 Prayer"
+			"70 Divination"
 		],
 		"ItemsRequired": ["Slayer bell"],
 		"Recommended": [
@@ -264,7 +260,6 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Medium",
 		"Requirements": [
-			"A Fairy Tale I: Growing Pains",
 			"Lost City",
 			"Nature Spirit",
 			"Priest in Peril",
@@ -430,7 +425,6 @@
 		"Requirements": [
 			"Dwarf Cannon",
 			"Fishing Contest",
-			"30 Defence",
 			"40 Mining",
 			"50 Smithing"
 		],
@@ -567,8 +561,7 @@
 			"The Fremennik Isles",
 			"The Fremennik Trials",
 			"Royal Trouble",
-			"Throne of Miscellania",
-			"The Fremennik Trials",
+			"Throne of Miscellania",			
 			"Heroes' Quest",
 			"Shield of Arrav",
 			"Dragon Slayer",
@@ -576,11 +569,9 @@
 			"Lost City",
 			"Merlin's Crystal",
 			"56 quest points",
-			"Completed easy, medium, and hard Fremennik achievements",
 			"75 Attack",
 			"65 Slayer",
-			"75 Strength",
-			"Must have claimed the Fremennik sea boots 3"
+			"75 Strength"
 		],
 		"ItemsRequired": [
 			"Rope (obtained during the quest)",
@@ -610,15 +601,12 @@
 			"In Aid of the Myreque",
 			"In Search of the Myreque",
 			"Nature Spirit",
-			"Legends' Quest",
 			"Heroes' Quest",
 			"Shield of Arrav",
 			"Dragon Slayer",
-			"33 quest points",
 			"Druidic Ritual",
 			"Lost City",
 			"Merlin's Crystal",
-			"56 quest points",
 			"Family Crest",
 			"Underground Pass",
 			"Biohazard",
@@ -664,7 +652,7 @@
 		"StartPoint": "Speak to TzHaar-Mej-Ak or TzHaar-Mej-Jeh in the TzHaar City's main plaza.",
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Medium to Long",
-		"Requirements": ["The Elder Kiln", "80 Defence", "72 Mining", "80 Smithing"],
+		"Requirements": ["The Elder Kiln", "72 Mining", "80 Smithing"],
 		"ItemsRequired": ["Any pickaxe (toolbelt will work)"],
 		"Recommended": [
 			"6 free inventory slots",
@@ -817,7 +805,6 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Medium to Long",
 		"Requirements": [
-			"Fate of the Gods",
 			"Missing, Presumed Death",
 			"The Light Within",
 			"Meeting History",
@@ -1205,10 +1192,8 @@
 			"Priest in Peril",
 			"Ability to enter Morytania",
 			"Claim Kudos from Historian Minas in Varrock Museum for completing Shield of Arrav",
-			"Troll Romance",
 			"Troll Stronghold",
 			"Death Plateau",
-			"Shades of Mort'ton",
 			"Ability to enter Morytania",
 			"Fully restore Senliten from the 'Missing My Mummy' quest",
 			"61 Agility",
@@ -1400,13 +1385,11 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Long",
 		"Requirements": [
-			"The Feud",
 			"Contact!",
 			"Icthlarin's Little Helper",
 			"Gertrude's Cat",
 			"Diamond in the Rough",
 			"Stolen Hearts",
-			"Zogre Flesh Eaters",
 			"Big Chompy Bird Hunting",
 			"Jungle Potion",
 			"50 Agility",
@@ -1507,11 +1490,8 @@
 		"Requirements": [
 			"Shield of Arrav",
 			"The Knight's Sword",
-			"Demon Slayer",
-			"Temple of Ikov",
 			"Family Crest",
 			"What Lies Below",
-			"Garden of Tranquillity",
 			"Creature of Fenkenstrain",
 			"The Restless Ghost",
 			"Priest in Peril",
@@ -1558,9 +1538,8 @@
 		"OfficialLength": "Very Long",
 		"Requirements": [
 			"The Dig Site",
-			"The Tourist Trap",
 			"Temple of Ikov",
-			"Priest in Peril",
+			"Access To Morytania"
 			"Waterfall Quest",
 			"Troll Stronghold",
 			"Death Plateau",
@@ -1698,18 +1677,16 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Medium",
 		"Requirements": [
-			"Troll Stronghold",
 			"Death Plateau",
-			"Wanted!",
 			"The Lost Tribe",
 			"Goblin Diplomacy",
 			"Priest in Peril",
 			"Recruitment Drive",
 			"Enter the Abyss (miniquest)",
 			"Rune Mysteries",
-			"33 quest points",
 			"What's Mine is Yours",
 			"Ability to enter Morytania",
+			"33 quest points",
 			"50 Fletching",
 			"50 Runecrafting",
 			"65 Smithing"
@@ -2047,8 +2024,6 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Short to Medium",
 		"Requirements": [
-			"Dream Mentor",
-			"Eadgar's Ruse",
 			"Troll Stronghold",
 			"Death Plateau",
 			"Druidic Ritual",
@@ -2058,7 +2033,6 @@
 			"Lost City",
 			"Shilo Village",
 			"Jungle Potion",
-			"85 Combat Combat",
 			"AbleToDefeat multiple high-level monsters in one trip without prayer"
 		],
 		"ItemsRequired": [
@@ -2458,7 +2432,6 @@
 			"Priest in Peril",
 			"The Restless Ghost",
 			"Ability to enter Morytania",
-			"Jungle Potion is only required if clean volencia moss is a requested item during the quest"
 		],
 		"ItemsRequired": [
 			"Dramen/Lunar staff",
@@ -2555,6 +2528,7 @@
 		],
 		"Recommended": [
 			"Activated Al Kharid, Ardougne, Edgeville, Falador and Varrock lodestone",
+			"Recommends 59 Magic",
 			"A charged amulet of glory",
 			"A charged combat bracelet",
 			"Activated Fort Forinthry lodestone, Fort Forinthry Teleport scrolls, a Wicked hood to teleport to the earth altar, or an archaeology journal to teleport to the Infernal Source Dig Site for easy access to Johnathon"
@@ -2880,7 +2854,6 @@
 		"OfficialLength": "Short",
 		"Requirements": [
 			"The Restless Ghost",
-			"Priest in Peril",
 			"Ability to enter Morytania",
 			"25 Agility",
 			"20 Cooking"
@@ -3166,7 +3139,6 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Long",
 		"Requirements": [
-			"Priest in Peril",
 			"Ability to enter Morytania",
 			"15 Agility",
 			"35 Crafting"
@@ -3244,11 +3216,9 @@
 			"Lunar Diplomacy",
 			"The Fremennik Trials",
 			"Lost City",
-			"Shilo Village",
+			"Shilo Village",	
 			"Jungle Potion",
-			"Tai Bwo Wannai Trio",
-			"Jungle Potion",
-			"Master Barbarian Training",
+			"Access to the Ancient Cavern from Barbarian Training",
 			"60 Divination",
 			"67 Mining",
 			"62 Slayer",
@@ -3284,9 +3254,6 @@
 			"Shield of Arrav",
 			"Dragon Slayer",
 			"33 quest points",
-			"Druidic Ritual",
-			"Lost City",
-			"Merlin's Crystal",
 			"56 quest points",
 			"53 Cooking",
 			"53 Fishing",
@@ -3337,7 +3304,6 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Medium",
 		"Requirements": [
-			"Horror from the Deep",
 			"Bar Crawl (miniquest)",
 			"35 Agility"
 		],
@@ -3694,7 +3660,6 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Medium to Long",
 		"Requirements": [
-			"King's Ransom",
 			"Holy Grail",
 			"Merlin's Crystal",
 			"Murder Mystery",
@@ -3702,9 +3667,8 @@
 			"Rune Mysteries",
 			"Shilo Village",
 			"Jungle Potion",
-			"Druidic Ritual",
-			"65 Defence",
-			"45 Magic"
+			"Druidic Ritual"
+			
 		],
 		"ItemsRequired": [
 			"Granite (any size), or a ring of stone",
@@ -3802,7 +3766,7 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Long to Very Long",
 		"Requirements": [
-			"Legacy of Seergaze",
+
 			"The Darkness of Hallowvale",
 			"In Aid of the Myreque",
 			"In Search of the Myreque",
@@ -3835,6 +3799,7 @@
 			"Teleport to Canifis",
 			"Invitation Box",
 			"Shortcut key",
+			"Completion of Desert Treasure"
 			"Druid pouches or ouroboros pouch",
 			"Food",
 			"Rod of Ivandis"
@@ -3851,20 +3816,14 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Long to Very Long",
 		"Requirements": [
-			"Legends' Quest",
 			"Heroes' Quest",
 			"Shield of Arrav",
 			"Dragon Slayer",
-			"33 quest points",
 			"Druidic Ritual",
 			"Lost City",
 			"Merlin's Crystal",
-			"56 quest points",
-			"Family Crest",
-			"Underground Pass",
 			"Biohazard",
 			"Plague City",
-			"Waterfall Quest",
 			"Shilo Village",
 			"Jungle Potion",
 			"107 quest points",
@@ -3944,7 +3903,6 @@
 			"Plague's End",
 			"Within the Light",
 			"Catapult Construction",
-			"Making History",
 			"The World Wakes",
 			"Fate of the Gods",
 			"Missing, Presumed Death",
@@ -4067,8 +4025,6 @@
 			"77 Magic",
 			"68 Smithing",
 			"Ability to enter Morytania",
-			"101 quest points",
-			"Recipe for Disaster: Freeing Sir Amik Varze",
 			"Recipe for Disaster: Another Cook's Quest",
 			"Cook's Assistant",
 			"Lost City",
@@ -4076,7 +4032,6 @@
 			"Heroes' Quest",
 			"Shield of Arrav",
 			"Dragon Slayer",
-			"33 quest points",
 			"Druidic Ritual",
 			"Lost City",
 			"Merlin's Crystal",
@@ -4121,7 +4076,6 @@
 			"55 Woodcutting",
 			"The Fremennik Trials",
 			"Lost City",
-			"Shilo Village",
 			"Jungle Potion"
 		],
 		"ItemsRequired": [
@@ -4146,7 +4100,6 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Medium",
 		"Requirements": [
-			"Priest in Peril",
 			"The Restless Ghost",
 			"Ability to enter Morytania",
 			"24 Crafting (if making your own sapphire amulet)"
@@ -4207,7 +4160,6 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Long to Very Long",
 		"Requirements": [
-			"The Chosen Commander",
 			"Land of the Goblins",
 			"Another Slice of H.A.M.",
 			"Death to the Dorgeshuun",
@@ -4225,7 +4177,7 @@
 			"Jungle Potion",
 			"Work on the Tai Bwo Wannai Cleanup",
 			"Missing, Presumed Death",
-			"The Hunt for Surok (miniquest)",
+
 			"What Lies Below",
 			"79 Attack",
 			"78 Constitution",
@@ -4235,7 +4187,9 @@
 		],
 		"ItemsRequired": ["Light source"],
 		"Recommended": [
+			"The Chosen Commander",
 			"Combat equipment, potions and food",
+			"The Hunt for Surok (miniquest)",
 			"Goblin village spheres or mind altar tablets or a Bandosian token",
 			"Dorgesh-Kaan spheres",
 			"Wicked hood for a teleport to the water altar and quick access to Lumbridge Swamp"
@@ -4485,7 +4439,6 @@
 			"Death Plateau",
 			"Druidic Ritual",
 			"Rescue Mad Eadgar from the Troll Stronghold",
-			"The Feud",
 			"Jungle Potion",
 			"Work on the Tai Bwo Wannai Cleanup",
 			"29 Farming",
@@ -4855,10 +4808,8 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Long",
 		"Requirements": [
-			"Rune Mysteries",
 			"Shilo Village",
 			"Jungle Potion",
-			"Druidic Ritual",
 			"36 Agility",
 			"25 Crafting",
 			"18 Herblore",
@@ -4900,7 +4851,6 @@
 			"Icthlarin's Little Helper",
 			"Gertrude's Cat",
 			"Diamond in the Rough",
-			"King's Ransom",
 			"Holy Grail",
 			"Merlin's Crystal",
 			"Murder Mystery",
@@ -5410,19 +5360,10 @@
 		"OfficialLength": "Short",
 		"Requirements": [
 			"Recipe for Disaster: Another Cook's Quest",
-			"Cook's Assistant",
-			"Big Chompy Bird Hunting",
-			"Biohazard",
-			"Plague City",
-			"Demon Slayer",
-			"Murder Mystery",
-			"Nature Spirit",
-			"Priest in Peril",
-			"The Restless Ghost",
+			"Cook's Assistant",	
+			"Plague City",	
 			"Ability to enter Morytania",
 			"Priest in Peril",
-			"Witch's House",
-			"The Restless Ghost",
 			"40 Cooking"
 		],
 		"ItemsRequired": [
@@ -5704,9 +5645,7 @@
 			"The Slug Menace",
 			"Sea Slug",
 			"Wanted!",
-			"A Fairy Tale III: Battle at Ork's Rift",
 			"A Fairy Tale II: Cure a Queen",
-			"Rocking Out",
 			"The Great Brain Robbery",
 			"A Tail of Two Cats",
 			"Icthlarin's Little Helper",
@@ -5941,10 +5880,8 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Medium",
 		"Requirements": [
-			"Zogre Flesh Eaters",
 			"Big Chompy Bird Hunting",
 			"Jungle Potion",
-			"Priest in Peril",
 			"Ability to enter Morytania",
 			"42 Crafting",
 			"40 Farming",
@@ -6563,17 +6500,16 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Medium to Long",
 		"Requirements": [
-			"One Small Favour",
+		
 			"Rune Mysteries",
 			"Shilo Village",
 			"Jungle Potion",
 			"Druidic Ritual",
-			"Garden of Tranquillity",
+			
 			"Creature of Fenkenstrain",
 			"The Restless Ghost",
 			"Priest in Peril",
 			"Ability to enter Morytania",
-			"101 quest points",
 			"62 Cooking",
 			"40 Crafting",
 			"42 Firemaking",
@@ -6593,6 +6529,7 @@
 		"Recommended": [
 			"Activated Eagles' Peak lodestone, Draynor and Yanille lodestone",
 			"Access to the fairy rings",
+			"Garden of Tranquillity",
 			"Clan vexillum",
 			"Cooking gauntlets or Cooking cape",
 			"Prayer restoration such as Prayer potions"
@@ -6653,10 +6590,9 @@
 		"OfficialLength": "Long",
 		"Requirements": [
 			"Icthlarin's Little Helper",
-			"Gertrude's Cat",
+			
 			"Diamond in the Rough",
 			"Stolen Hearts",
-			"Gertrude's Cat",
 			"Ironmen: 50 Cooking (for making Chocolate Cake - This is only required if you do not get the drop from monsters.)"
 		],
 		"ItemsRequired": [
@@ -6898,10 +6834,8 @@
 		"OfficialLength": "Medium",
 		"Requirements": [
 			"The Fremennik Trials",
-			"Heroes' Quest",
 			"Shield of Arrav",
 			"Dragon Slayer",
-			"33 quest points",
 			"Druidic Ritual",
 			"Lost City",
 			"Merlin's Crystal",
@@ -7359,8 +7293,7 @@
 			"Dream Mentor",
 			"Eadgar's Ruse",
 			"Lunar Diplomacy",
-			"The Hand in the Sand",
-			"King's Ransom",
+			"Shilo Village",
 			"Holy Grail",
 			"Murder Mystery",
 			"One Small Favour",
@@ -7542,14 +7475,11 @@
 		"StartPoint": "Begin by speaking to Sir Tiffy Cashien in Falador Park.",
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Medium to Long",
-		"Requirements": [
-			"The Lost Tribe",
+		"Requirements": [		
 			"Goblin Diplomacy",
-			"Priest in Peril",
 			"Recruitment Drive",
 			"Enter the Abyss (miniquest)",
-			"Rune Mysteries",
-			"33 quest points"
+			"Rune Mysteries"
 		],
 		"ItemsRequired": [
 			"Either 10,000 coins, or an enchanted gem, molten glass, and a law rune",
@@ -8074,15 +8004,13 @@
 		"OfficialLength": "Medium to Long",
 		"Requirements": [
 			"The Restless Ghost",
-			"Partial completion of Desert Treasure",
 			"The Dig Site",
 			"The Tourist Trap",
 			"Temple of Ikov",
 			"Priest in Peril",
 			"Waterfall Quest",
 			"Troll Stronghold",
-			"Death Plateau",
-			"31 Prayer (if Dhalak is at the Edgeville Monastery)"
+			"Death Plateau"
 		],
 		"ItemsRequired": [
 			"Ring of visibility",
@@ -8135,8 +8063,7 @@
 			"Icthlarin's Little Helper",
 			"Gertrude's Cat",
 			"Diamond in the Rough",
-			"Stolen Hearts",
-			"70 Slayer"
+			"Stolen Hearts"
 		],
 		"ItemsRequired": [
 			"Full slayer helmet, slayer helmet, masked earmuffs or face mask. Having a slayer helmet stored on the slayer helmet stand also works.",
@@ -8690,7 +8617,6 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Medium",
 		"Requirements": [
-			"The Lord of Vampyrium",
 			"The Branches of Darkmeyer",
 			"Legacy of Seergaze",
 			"The Darkness of Hallowvale",
