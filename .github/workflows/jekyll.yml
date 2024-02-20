@@ -50,11 +50,11 @@ jobs:
 
    # Copy/Move final build output files to production location.
    - name: Copy Quest List TXT
-     run: cp ./questlist.txt ./dist
+     run: mv ./questlist.txt ./dist
    - name: Copy Quest List JSON LUT
-     run: cp ./QuestList.json ./dist
+     run: mv ./QuestList.json ./dist
    - name: Copy QuestImageList.JSON to ./dist
-     run: cp ./QuestImageList.json ./dist
+     run: mv ./QuestImageList.json ./dist
    - name: Move Quests to Dist Folder
      run: mv ./Quests/ ./dist
    - name: Move Rewards to Dist Folder
