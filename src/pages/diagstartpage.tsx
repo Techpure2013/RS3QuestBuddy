@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { DiagReader } from "./dialogsolver.tsx";
-import "./QuestList.json";
 interface ReaderProps {
 	reader: DiagReader;
 	questName: string;
