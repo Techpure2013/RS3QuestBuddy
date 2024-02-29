@@ -261,11 +261,20 @@
 	{
 		"name": "Enter the Abyss (miniquest)",
 		"images": [
+			"Items.png",
 			"MageOfZamorakWildyLoc.png",
+			"TalkToMage.png",
 			"ZamorakLocationVarrock.png",
+			"EntranceToZammyTemple.png",
+			"MageOfZamorak.png",
 			"AuburyLoc.png",
+			"AuburyTele.png",
+			"CarweanLoc.png",
+			"TeleCarwean.png",
 			"ArchmageLocation.png",
-			"WizardCrompertyLoc.png"
+			"TeleArchMage.png",
+			"WizardCrompertyLoc.png",
+			"TeleCromp.png"
 		]
 	},
 	{
@@ -2118,11 +2127,34 @@
 	{
 		"name": "Imp Catcher",
 		"images": [
-			"Fightingthecholericimp.png",
-			"ImpCatcher.png",
-
-			"Phlegmaticimpvomits.png",
-			"Racingthesanguineimp.png"
+			"Message.png",
+			"Message2.png",
+			"QuestStart.png",
+			"TalkToWizardMizog.png",
+			"BowlOHotWater.png",
+			"ImpLoc2.png",
+			"UseHotWaterOnPhlem.png",
+			"BeadRecovery.png",
+			"PhlemBead.png",
+			"ImpLoc3.png",
+			"TalkToCalm.png",
+			"Shoot.png",
+			"ChloEthrowup.png",
+			"CholBead.png",
+			"ImpLoc1.png",
+			"TalkToMelaImp.png",
+			"Emoting.png",
+			"Emoting2.png",
+			"Emoting3.png",
+			"Emoting4.png",
+			"UseBowlOnMel.png",
+			"ImpThrowup.png",
+			"MelBead.png",
+			"ImpLoc.png",
+			"SanguineImp.png",
+			"SanguineBead.png",
+			"TalkToWizardMizog.png",
+			"AmuletCreation.png"
 		]
 	},
 	{
@@ -3928,7 +3960,24 @@
 	},
 	{
 		"name": "Throne of Miscellania",
-		"images": ["ThroneofMiscellania.png"]
+		"images": [
+			"QuestStart.png",
+			"TalkToVargas.png",
+			"KingVargas.png",
+			"QueenLocation.png",
+			"TalkToQueen.png",
+			"TalkToPrince.png",
+			"TalkToAdvisor.png",
+			"TakeGoodAnthem.png",
+			"KingVargas.png",
+			"DerekLoc.png",
+			"TalkToDerek.png",
+			"GiantNib.png",
+			"UseNibOnLog.png",
+			"GiantPen.png",
+			"FlowersOnPrince.png",
+			"BlowKiss.png"
+		]
 	},
 	{
 		"name": "Tok Tz-Ket-Dill",
