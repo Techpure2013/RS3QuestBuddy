@@ -1392,11 +1392,26 @@
 	{
 		"name": "Demon Slayer",
 		"images": [
-			"ClaimingSilverlight.png",
-			"Delrithissummoned.png",
-			"DemonSlayer.png",
-
-			"Fightingthecultists.png"
+			"QuestStart.png",
+			"TalkToGideon.png",
+			"Climbdown.png",
+			"CoolScene.png",
+			"SpiritMap.png",
+			"SpeakToMindSpirit.png",
+			"TalkToSpiritFaith.png",
+			"FollowCommands.png",
+			"Kill1.png",
+			"Kill2.png",
+			"CoolScene.png",
+			"ClaimSilverlight1.png",
+			"ClaimSilverlight2.png",
+			"Scroll.png",
+			"ScrollContent.png",
+			"MapAround.png",
+			"ClimbDownToTemple.png",
+			"Incantation1.png",
+			"Incantation2.png",
+			"Delrithfight1.png"
 		]
 	},
 	{
@@ -1406,7 +1421,6 @@
 			"DesertTreasure.png",
 			"DesertTreasurecryingtrollchild.png",
 			"DesertTreasureRasolo.png",
-
 			"DesertTreasurestart.png",
 			"DTBloodObelisk.png",
 			"Dtdessoushssss.png",
@@ -2522,9 +2536,23 @@
 	{
 		"name": "Monk's Friend",
 		"images": [
-			"MonksFriend.png",
-			"MonksFriendDungeon.png",
-			"MonksFriendParty.png"
+			"Screenshot_19.png",
+			"Screenshot_18.png",
+			"Screenshot_20.png",
+			"Screenshot_21.png",
+			"Screenshot_22.png",
+			"Screenshot_23.png",
+			"Screenshot_24.png",
+			"Screenshot_25.png",
+			"Screenshot_28.png",
+			"Screenshot_26.png",
+			"Screenshot_29.png",
+			"Screenshot_30.png",
+			"Screenshot_31.png",
+			"Screenshot_32.png",
+			"Screenshot_33.png",
+			"Screenshot_34.png",
+			"Screenshot_35.png"
 		]
 	},
 	{
@@ -3851,7 +3879,25 @@
 	},
 	{
 		"name": "The Restless Ghost",
-		"images": ["TheRestlessGhost.png"]
+		"images": [
+			"QuestStart.png",
+			"Church.png",
+			"TalkToFatherAereck.png",
+			"FatherHouse.png",
+			"TalkToFather.png",
+			"ObtainedItem.png",
+			"OpenCoffin.png",
+			"OpenCoffin2.png",
+			"OpenCoffin3.png",
+			"TalkToSpirit.png",
+			"SearchRocks.png",
+			"SearchRocks2.png",
+			"SearchRocks3.png",
+			"SkullObtained.png",
+			"SkullToCoffin.png",
+			"Spiriteased.png",
+			"SpiritEased2.png"
+		]
 	},
 	{
 		"name": "The Slug Menace",
