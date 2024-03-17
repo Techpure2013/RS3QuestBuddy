@@ -994,19 +994,19 @@
 		"Quest": "Recipe for Disaster: Freeing the Goblin Generals",
 		"Path": "./Quests/Recipe for Disaster Freeing the Goblin Generals/freeingthegoblingeneralsinfo.txt.txt",
 		"Transcript": "./Quests/Recipe for Disaster Freeing the Goblin Generals/Freeing_the_Goblin_Generals_transcript.json",
-		"CTranscript": ""
+		"CTranscript": "./Quests/Recipe for Disaster Freeing the Goblin Generals/Comparefreeingthegoblingenerals.json"
 	},
 	{
 		"Quest": "Recipe for Disaster: Freeing King Awowogei",
 		"Path": "./Quests/Recipe for Disaster Freeing King Awowogei/FreeingKingAwowogeiInfo.txt",
 		"Transcript": "./Quests/Recipe for Disaster Freeing King Awowogei/Freeing_King_Awowogei_transcript.json",
-		"CTranscript": ""
+		"CTranscript": "./Quests/Recipe for Disaster Freeing King Awowogei/Comparerecipefordisasterfreeingkingawowogei.json"
 	},
 	{
 		"Quest": "Recipe for Disaster: Freeing Evil Dave",
 		"Path": "./Quests/Recipe for Disaster Freeing Evil Dave/FreeingEvilDaveInfo.txt",
 		"Transcript": "./Quests/Recipe for Disaster Freeing Evil Dave/Freeing_Evil_Dave_transcript.json",
-		"CTranscript": ""
+		"CTranscript": "./Quests/Recipe for Disaster Freeing Evil Dave/Comparerecipefordisasterfreeingevildave.json"
 	},
 	{
 		"Quest": "Recipe for Disaster: Freeing the Mountain Dwarf",
@@ -1018,31 +1018,37 @@
 		"Quest": "Recipe for Disaster: Freeing the Lumbridge Sage",
 		"Path": "./Quests/Recipe for Disaster Freeing the Lumbridge Sage/FreeingtheLumbridgeSageInfo.txt",
 		"Transcript": "./Quests/Recipe for Disaster Freeing the Lumbridge Sage/Freeing_the_Lumbridge_Sage_transcript.json",
-		"CTranscript": ""
+		"CTranscript": "./Quests/Recipe for Disaster Freeing the Lumbridge Sage/Comparerecipefordisasterfreeingthelumbridgesage.json"
 	},
 	{
 		"Quest": "Recipe for Disaster: Freeing Pirate Pete",
 		"Path": "./Quests/Recipe for Disaster Freeing Pirate Pete/FreeingPiratePeteInfo.txt",
 		"Transcript": "./Quests/Recipe for Disaster Freeing Pirate Pete/Freeing_Pirate_Pete_transcript.json",
-		"CTranscript": ""
+		"CTranscript": "./Quests/Recipe for Disaster Freeing Pirate Pete/Comparerecipefordisasterfreeingpiratepete.json"
 	},
 	{
 		"Quest": "Recipe for Disaster: Freeing Skrach Uglogwee",
 		"Path": "./Quests/Recipe for Disaster Freeing Skrach Uglogwee/FreeingSkrachUglogweeInfo.txt",
 		"Transcript": "./Quests/Recipe for Disaster Freeing Skrach Uglogwee/Freeing_Skrach_Uglogwee_transcript.json",
-		"CTranscript": ""
+		"CTranscript": "./Quests/Recipe for Disaster Freeing Skrach Uglogwee/Comparerecipefordisasterfreeingskrachuglogwee.json"
 	},
 	{
 		"Quest": "Recipe for Disaster: Freeing Sir Amik Varze",
 		"Path": "./Quests/Recipe for Disaster Freeing Sir Amik Varze/FreeingSirAmikVarzeInfo.txt",
 		"Transcript": "./Quests/Recipe for Disaster Freeing Sir Amik Varze/Freeing_Sir_Amik_Varze_transcript.json",
-		"CTranscript": ""
+		"CTranscript": "./Quests/Recipe for Disaster Freeing Sir Amik Varze/Comparerecipefordisasterfreeingsiramikvarze.json"
 	},
 	{
 		"Quest": "Recipe for Disaster: Defeating The Culinaromancer",
 		"Path": "./Quests/Recipe for Disaster Defeating The Culinaromancer/DefeatingTheCulinaromancerInfo.txt",
 		"Transcript": "./Quests/Recipe for Disaster Defeating The Culinaromancer/Defeating_the_Culinaromancer_transcript.json",
 		"CTranscript": ""
+	},
+	{
+		"Quest": "Recruitment Drive",
+		"Path": "./Quests/Recruitment Drive/RecruitmentDriveInfo.txt",
+		"Transcript": "./Quests/Recruitment Drive/Recruitment_Drive_transcript.json",
+		"CTranscript": "./Quests/Recruitment Drive/CompareRecruitment_Drive.json"
 	},
 	{
 		"Quest": "Regicide",
