@@ -250,7 +250,9 @@ const QuestPage: React.FC = () => {
 				handles.setButtonVisible(false);
 				handles.setPopOutClicked(false);
 
-				newWindow.document.write("<!DOCTYPE html><html><head></head><body></body></html>");
+				newWindow.document.write(
+					"<!DOCTYPE html><html><head></head><body></body></html>"
+				);
 				// Render the QuestControls component into the new window
 				const container: HTMLDivElement = newWindow.document.createElement("div");
 				container.className = "ButtonGroupTwo";
@@ -415,7 +417,7 @@ const QuestPage: React.FC = () => {
 						title: {
 							fontSize: "34px",
 							textAlign: "center",
-						}
+						},
 					}}
 				>
 					<UserNotes />
@@ -428,12 +430,11 @@ const QuestPage: React.FC = () => {
 						close();
 					}}
 					styles={{
-						
 						title: {
 							fontSize: "34px",
 							textAlign: "center",
 							color: hasColor ? userColor : "",
-						}
+						},
 					}}
 				>
 					<Settings />
@@ -465,7 +466,7 @@ const QuestPage: React.FC = () => {
 							fontSize: "34px",
 							textAlign: "center",
 							color: hasColor ? userColor : "",
-						}
+						},
 					}}
 				>
 					<Carousel
@@ -954,97 +955,96 @@ const QuestPage: React.FC = () => {
 						)}
 					</Stepper>
 					{buttonVisible && (
-							<div className="prevNextGroup">
-								<div id="icons">
-							<ActionIcon
-								onClick={open}
-								variant="outline"
-								color={hasButtonColor ? userButtonColor : ""}
-								size={"sm"}
-							>
-								<IconSettings />
-							</ActionIcon>
-							<ActionIcon
-								color={hasButtonColor ? userButtonColor : ""}
-								onClick={() => {
-									isOpenNotes.current = true;
-									openNotes();
-								}}
-								size={"sm"}
-								variant="outline"
-							>
-								<IconPlus />
+						<div className="prevNextGroup">
+							<div id="icons">
+								<ActionIcon
+									onClick={open}
+									variant="outline"
+									color={hasButtonColor ? userButtonColor : ""}
+									size={"sm"}
+								>
+									<IconSettings />
+								</ActionIcon>
+								<ActionIcon
+									color={hasButtonColor ? userButtonColor : ""}
+									onClick={() => {
+										isOpenNotes.current = true;
+										openNotes();
+									}}
+									size={"sm"}
+									variant="outline"
+								>
+									<IconPlus />
+								</ActionIcon>
+							</div>
+							<div id="return-image">
+								{toTop ? (
+									<ActionIcon
+										className="return"
+										size="compact-sm"
+										variant="outline"
+										color={hasButtonColor ? userButtonColor : ""}
+										onClick={() => {
+											setToTop((prev) => !prev);
+										}}
+									>
+										Return to Step
 									</ActionIcon>
-								</div>
-								<div id="return-image">
-							{toTop ? (
-										<ActionIcon
-											className="return"
-									size="compact-sm"
-									variant="outline"
-									color={hasButtonColor ? userButtonColor : ""}
-									onClick={() => {
-										setToTop((prev) => !prev);
-									}}
-								>
-									Return to Step
-								</ActionIcon>
-							) : (
-											<ActionIcon
-												className="return"
-									size="compact-sm"
-									variant="outline"
-									color={hasButtonColor ? userButtonColor : ""}
-									onClick={() => {
-										setToTop((prev) => !prev);
-									}}
-								>
-									Return to Top
-								</ActionIcon>
-							)}
+								) : (
+									<ActionIcon
+										className="return"
+										size="compact-sm"
+										variant="outline"
+										color={hasButtonColor ? userButtonColor : ""}
+										onClick={() => {
+											setToTop((prev) => !prev);
+										}}
+									>
+										Return to Top
+									</ActionIcon>
+								)}
 
-							<Button
-								size="compact-sm"
-								variant="outline"
-								color={hasButtonColor ? userButtonColor : ""}
-								onClick={() => {
-									imgModOpen();
-								}}
-							>
-								Images
-									</Button>
-									</div>
-								<div id="prev-next">
-									<Button
-								styles={{ root: {} }}
-								size="compact-sm"
-								variant="outline"
-								color={hasButtonColor ? userButtonColor : ""}
-								onClick={() => {
-									handleStepChange(active + 1);
-									scrollNext();
-								}}
-							>
-								Next Step
+								<Button
+									size="compact-sm"
+									variant="outline"
+									color={hasButtonColor ? userButtonColor : ""}
+									onClick={() => {
+										imgModOpen();
+									}}
+								>
+									Images
 								</Button>
-							<Button
-								size="compact-sm"
-								variant="outline"
-								color={hasButtonColor ? userButtonColor : ""}
-								onClick={() => {
-									scrollPrev();
-									handleStepChange(active - 1);
-								}}
-							>
-								Prev Step
-							</Button>
-							
-								</div>
+							</div>
+							<div id="prev-next">
+								<Button
+									styles={{ root: {} }}
+									size="compact-sm"
+									variant="outline"
+									color={hasButtonColor ? userButtonColor : ""}
+									onClick={() => {
+										handleStepChange(active + 1);
+										scrollNext();
+									}}
+								>
+									Next Step
+								</Button>
+								<Button
+									size="compact-sm"
+									variant="outline"
+									color={hasButtonColor ? userButtonColor : ""}
+									onClick={() => {
+										scrollPrev();
+										handleStepChange(active - 1);
+									}}
+								>
+									Prev Step
+								</Button>
+							</div>
 						</div>
 					)}
 				</>
 			)}
-			</>
+		</>
 	);
 };
 

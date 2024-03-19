@@ -2954,6 +2954,26 @@
 		"EnemiesToDefeat": ["5 Sorebones (level 49)", "Barrelchest (level 93)"]
 	},
 	{
+		"Quest": "Great-Egg-spectations",
+		"StartPoint": "Talk to the Easter Bunny in the Blooming Burrow.",
+		"MemberRequirement": "Free to play",
+		"OfficialLength": "Short",
+		"Requirements": [
+			"For Ironmen: Partial completion of Chef's Assistant else none."
+		],
+		"ItemsRequired": [
+			"Sliced banana, can be picked up during the quest",
+			"Bottle of caramel, obtained during the quest",
+			"Grapes (which you will turn into dried grapes during the quest)",
+			"Nuts (can be purchased from the Grand Exchange)",
+			"Biscuits (can be purchased from Grand Exchange, to make them requires partial completion of Chef's Assistant)",
+			"Marshmallows, obtained during the quest",
+			"2 planks (protean planks do not work)"
+		],
+		"Recommended": ["Mystical sand seed or sand seed"],
+		"EnemiesToDefeat": ["None"]
+	},
+	{
 		"Quest": "Grim Tales",
 		"StartPoint": "Talk to Sylas south of Taverley.",
 		"MemberRequirement": "Members only",
