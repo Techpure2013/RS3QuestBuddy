@@ -325,6 +325,12 @@
 		"CTranscript": "./Quests/Desperate Times/CompareDesperate_Times.json"
 	},
 	{
+		"Quest": "Diamond in the Rough",
+		"Path": "./Quests/Diamond in the Rough/DiamondInTheRoughInfo.txt",
+		"Transcript": "./Quests/Diamond in the Rough/Diamond_in_the_Rough_transcript.json",
+		"CTranscript": "./Quests/Diamond in the Rough/CompareDiamond_in_the_Rough.json"
+	},
+	{
 		"Quest": "Devious Minds",
 		"Path": "./Quests/Devious Minds/DeviousMinds.txt",
 		"Transcript": "./Quests/Devious Minds/Devious_Minds_transcript.json",
