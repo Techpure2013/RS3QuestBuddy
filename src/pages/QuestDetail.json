@@ -4732,6 +4732,19 @@
 		]
 	},
 	{
+		"Quest": "Osseous Rex",
+		"StartPoint": "Talk to the 'calm' Archaeologist in Anachronia base camp.",
+		"MemberRequirement": "Members only",
+		"OfficialLength": "Short",
+		"Requirements": ["30 Archaeology", "70 Necromancy"],
+		"ItemsRequired": ["None"],
+		"Recommended": [
+			"Archaeology journal (for easy teleport to an archaeologist's workbench)",
+			"The best mattock you own to excavate from the crystallised rubble"
+		],
+		"EnemiesToDefeat": ["None"]
+	},
+	{
 		"Quest": "Once Upon a Slime",
 		"StartPoint": "Talk to Peter in Rimmington.",
 		"MemberRequirement": "Free to play",

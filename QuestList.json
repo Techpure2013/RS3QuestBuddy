@@ -883,6 +883,12 @@
 		"CTranscript": "./Quests/Olaf's Quest/CompareOlaf's_Quest.json"
 	},
 	{
+		"Quest": "Osseous Rex",
+		"Path": "./Quests/Osseous Rex/OsseousRexInfo.txt",
+		"Transcript": "",
+		"CTranscript": "./Quests/Osseous Rex/CompareOsseousRex.json"
+	},
+	{
 		"Quest": "Once Upon a Slime",
 		"Path": "./Quests/Once Upon a Slime/OnceUponASlimeInfo.txt",
 		"Transcript": "",
