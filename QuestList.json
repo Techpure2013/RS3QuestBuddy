@@ -1189,6 +1189,12 @@
 		"CTranscript": "./Quests/Shilo Village/CompareShilo_Village.json"
 	},
 	{
+		"Quest": "Soul Searching",
+		"Path": "./Quests/Soul Searching/soulsearchinginfo.txt",
+		"Transcript": "",
+		"CTranscript": "./Quests/Soul Searching/CompareSoulSearching.json"
+	},
+	{
 		"Quest": "A Clockwork Syringe",
 		"Path": "./Quests/A Clockwork Syringe/aclockworksyringeinfo.txt",
 		"Transcript": "./Quests/A Clockwork Syringe/A_Clockwork_Syringe_transcript.json",

@@ -6126,6 +6126,24 @@
 		]
 	},
 	{
+		"Quest": "Soul Searching",
+		"StartPoint": "Talk to the Suspicious Stranger in the City of Um.",
+		"MemberRequirement": "Members only",
+		"OfficialLength": "Short",
+		"Requirements": ["Necromancy!"],
+		"ItemsRequired": [
+			"3 cadava berries",
+			"10 fishing bait",
+			"Antipoison (3)",
+			"Charcoal",
+			"Papyrus"
+		],
+		"Recommended": [
+			"Spirit runes or Underworld Grimoire (2 or higher) for teleportation to the Um ritual site"
+		],
+		"EnemiesToDefeat": ["None"]
+	},
+	{
 		"Quest": "Sins of the Father",
 		"StartPoint": "Talk to Mr Mordaut, located at the Anachronia base camp, east of the Anachronia lodestone.",
 		"MemberRequirement": "Members only",
