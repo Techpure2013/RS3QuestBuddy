@@ -1411,7 +1411,22 @@
 	},
 	{
 		"name": "Deadliest Catch",
-		"images": ["DeadliestCatch.png", "DeadliestCatchBoat.png", "Jonesreturns.png"]
+		"images": [
+			"Start.png",
+			"JonesNPC.png",
+			"PickPocketMasterFisher.png",
+			"SeaChart.png",
+			"TalkToMasterFisher.png",
+			"TalkToLinza.png",
+			"TowerOfLife.png",
+			"Bonafido.png",
+			"TalkToGuns.png",
+			"LowlandHeather.png",
+			"InvestigateWreckage.png",
+			"Trail.png",
+			"Thalassus.png",
+			"Mermaids.png"
+		]
 	},
 	{
 		"name": "Dealing with Scabaras",
