@@ -1,5 +1,18 @@
 [
 	{
+		"Quest": "A Shadow over Ashdale",
+		"StartPoint": "Speak to Gudrik, who can be found east of Gerrant's Fishy Business in Port Sarim.",
+		"MemberRequirement": "Free to play",
+		"OfficialLength": "Medium",
+		"Requirements": ["None"],
+		"ItemsRequired": ["None"],
+		"Recommended": [
+			"Decent armour, some food and a gem bag.",
+			"Ranged or Magic weapons to deal damage from a distance."
+		],
+		"EnemiesToDefeat": ["None"]
+	},
+	{
 		"Quest": "Aftermath",
 		"StartPoint": "Talk to Adrasteia in her library on the 2nd floor[US] of the White Knights' Castle in Falador, near the interrogation room.",
 		"MemberRequirement": "Members only",
