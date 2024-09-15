@@ -1075,6 +1075,12 @@
 		"CTranscript": "./Quests/Regicide/CompareRegicide.json"
 	},
 	{
+		"Quest": "Requiem for a Dragon",
+		"Path": "./Quests/Requiem for a Dragon/requiemforadragoninfo.txt",
+		"Transcript": "",
+		"CTranscript": "./Quests/Requiem for a Dragon/Comparerequiemforadragon.json"
+	},
+	{
 		"Quest": "Ritual of the Mahjarrat",
 		"Path": "./Quests/Ritual of the Mahjarrat/RitualOfTheMahjarratInfo.txt",
 		"Transcript": "./Quests/Ritual of the Mahjarrat/Ritual_of_the_Mahjarrat_transcript.json",

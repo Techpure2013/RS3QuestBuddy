@@ -5650,6 +5650,53 @@
 		"EnemiesToDefeat": ["Skeleton warlock (level 7, optional)"]
 	},
 	{
+		"Quest": "Requiem for a Dragon",
+		"StartPoint": "Speak to Aster in the Fort Forinthry townhall.",
+		"MemberRequirement": "Members Only",
+		"OfficialLength": "Medium",
+		"Requirements": [
+			"Battle of Forinthry",
+			"Ancient Awakening",
+			"Dead and Buried",
+			"Unwelcome Guests",
+			"Murder on the Border Must have built the eastern border wall, Must have built Grove cabin (Tier 1), Must have built Botanist's Workbench (Tier 1)",
+			"Tomes of the Warlock",
+			"The Spirit of War",
+			"Vessel of the Harbinger",
+			"Rune Mythos",
+			"Kili Row",
+			"Necromancy!",
+			"Ghosts Ahoy",
+			"The Restless Ghost",
+			"Ability to enter Morytania",
+			"3,000 City of Um vessel souls",
+			"The Jack of Spades",
+			"Diamond in the Rough",
+			"Stolen Hearts",
+			"Collect a set of necromancer robes from Sostratus",
+			"Ironmen: 80 Necromancy Necromancy (to make greater ensouled bars)"
+		],
+		"ItemsRequired": [
+			"30 white marble (Material Storage works)",
+			"30 white oak (Material Storage works)",
+			"5 greater ensouled bars",
+			"Ink and candles for two level 75 Necromancy rituals (assuming no glyphs or light sources are present at the Um ritual site): 4 basic ghostly ink, 10 regular ghostly ink, 16 greater ghostly ink, 12 basic ritual candle or better"
+		],
+		"Recommended": [
+			"Archaeology journal",
+			"Archaeology equipment",
+			"Sixth-Age circuit",
+			"Combat equipment",
+			"Super restore"
+		],
+		"EnemiesToDefeat": [
+			"Vorkath (level 789, optional)",
+			"8 Zamorakian scouts (level 85, optional)",
+			"Translator (level 75)",
+			"Vengeance"
+		]
+	},
+	{
 		"Quest": "Ritual of the Mahjarrat",
 		"StartPoint": "Speak to Sir Tiffy Cashien in Falador Park.",
 		"MemberRequirement": "Members only",
