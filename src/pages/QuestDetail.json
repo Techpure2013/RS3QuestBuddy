@@ -4727,6 +4727,19 @@
 		"EnemiesToDefeat": ["Goblin guard (level 28; optional)"]
 	},
 	{
+		"Quest": "Ode of the Devourer",
+		"StartPoint": " Check on Bill at the Fort Forinthry workshop.",
+		"MemberRequirement": "Members only",
+		"OfficialLength": "Medium to Long",
+		"Requirements": ["Requiem for a Dragon"],
+		"ItemsRequired": ["None"],
+		"Recommended": ["None"],
+		"EnemiesToDefeat": [
+			"Multiple Level 115 Foes",
+			"The Gate of Elidinis (level 650)"
+		]
+	},
+	{
 		"Quest": "Olaf's Quest",
 		"StartPoint": "Talk to Olaf Hradson in his 'camp' north-east of Rellekka, south of the Fremennik hunting area.",
 		"MemberRequirement": "Members only",

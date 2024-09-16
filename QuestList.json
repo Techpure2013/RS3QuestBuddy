@@ -877,6 +877,12 @@
 		"CTranscript": "./Quests/Observatory Quest/CompareObservatory_Quest.json"
 	},
 	{
+		"Quest": "Ode of the Devourer",
+		"Path": "./Quests/Ode of the Devourer/odeofthedevourerinfo.txt",
+		"Transcript": "",
+		"CTranscript": "./Quests/Ode of the Devourer/Compareodeofthedevourer.json"
+	},
+	{
 		"Quest": "Olaf's Quest",
 		"Path": "./Quests/Olaf's Quest/OlafsQuestInfo.txt",
 		"Transcript": "./Quests/Olaf's Quest/Olaf's_Quest_transcript.json",
