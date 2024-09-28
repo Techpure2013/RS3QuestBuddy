@@ -8874,5 +8874,34 @@
 		"ItemsRequired": ["Burnt meat", "Eye of newt", "Onion"],
 		"Recommended": ["None"],
 		"EnemiesToDefeat": ["None"]
+	},
+	{
+		"Quest": "Thok It To 'Em (saga)",
+		"StartPoint": "Find scribbled notes while raiding the 30-35 abandoned floors of Daemonheim, then ask Skaldrun south-west of the Daemonheim entrance to share their story. ",
+		"MemberRequirement": "Members only",
+		"OfficialLength": "Medium",
+		"Requirements": [
+			"59 Dungeoneering Dungeoneering",
+			"Find and free Skaldrun from the frozen floors in Daemonheim"
+		],
+		"ItemsRequired": ["Ring of kinship to find scribbled notes"],
+		"Recommended": ["70 Strength "],
+		"EnemiesToDefeat": [
+			"3 Cowards in armour (level 82)",
+			"Girly warrior (level 82)",
+			"Weaker than Thok (level 82)",
+			"3 Namby-pamby (level 82)",
+			"Splinter-lobber (level 82)",
+			"Weakling (level 82)",
+			"4 Ramokee bloodragers (level 103)",
+			"2 Ramokee skinweaver (level 103)",
+			"Ramokee deathslinger (level 103)",
+			"Several squishy ghosts",
+			"Stomp (level 77)",
+			"Thing with eyes (level 69)",
+			"Walking icecube (level 81)",
+			"Warped gulega (level 99)",
+			"Optional: Several ugly (level 104), Armoured cow thing (level 62), Bulky warrior (level 114), Coward with bow (level 105), Gobby demon (level 119)"
+		]
 	}
 ]
