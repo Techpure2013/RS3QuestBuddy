@@ -8903,5 +8903,34 @@
 			"Warped gulega (level 99)",
 			"Optional: Several ugly (level 104), Armoured cow thing (level 62), Bulky warrior (level 114), Coward with bow (level 105), Gobby demon (level 119)"
 		]
+	},
+	{
+		"Quest": "Thok Your Block Off (saga)",
+		"StartPoint": "Find the rock and twine bundle while raiding the 36-40 occult floors of Daemonheim, then ask Skaldrun south-west of the Daemonheim entrance to share their story.",
+		"MemberRequirement": "Members Only",
+		"OfficialLength": "Medium",
+		"Requirements": [
+			"71 Dungeoneering",
+			"Find and free Skaldrun from the frozen floors in Daemonheim"
+		],
+		"ItemsRequired": [
+			"Ring of kinship to find the rock and twine bundle. Players cannot bring it into the saga itself."
+		],
+		"Recommended": ["75 Strength Strength "],
+		"EnemiesToDefeat": [
+			"Huge troll (level 42)",
+			"Several Brutes (level 70)",
+			"Several skeletons (magic and melee, level 56)",
+			"Several dungeon spiders (level 42)",
+			"Several forgotten mages (level 42)",
+			"Several forgotten rangers (level 42)",
+			"Several forgotten warriors (level 42)",
+			"Several zombies (level 56)",
+			"2 Hellhounds (level 42)",
+			"Gravecreeper (level 98)",
+			"Gluttonous behemoth (level 147)",
+			"Unholy Cursebearer",
+			"Hobgoblin Geomancer (level 98)"
+		]
 	}
 ]
