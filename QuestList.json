@@ -1675,6 +1675,12 @@
 		"CTranscript": "./Quests/Witch's House/CompareWitch's_House.json"
 	},
 	{
+		"Quest": "Waterfall Quest",
+		"Path": "./Quests/Waterfall Quest/WaterfallQuestInfo.txt",
+		"Transcript": "",
+		"CTranscript": "./Quests/Waterfall Quest/CompareWaterfall_Quest.json"
+	},
+	{
 		"Quest": "Within the Light",
 		"Path": "./Quests/Within the Light/WithinTheLightInfo.txt",
 		"Transcript": "./Quests/Within the Light/Within_the_Light_transcript.json",
