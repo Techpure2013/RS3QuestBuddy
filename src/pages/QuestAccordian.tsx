@@ -381,7 +381,6 @@ export const QuestAccordian: React.FC = () => {
 					</Accordion.Panel>
 				</Accordion.Item>
 			</Accordion>
-
 		</>
 	);
 };

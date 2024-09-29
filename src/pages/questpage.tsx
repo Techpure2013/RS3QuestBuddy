@@ -56,7 +56,7 @@ const QuestPage: React.FC = () => {
 	const [active, setActive] = useState(-1);
 	const [highestStepVisited, setHighestStepVisited] = useState(active);
 	const questlistJSON = "./QuestList.json";
-	const textfile = modified + "info.txt";
+	let textfile = modified + "info.txt";
 	const reader = new DiagReader();
 	const hist = useNavigate();
 	const details = useQuestStepStore();
@@ -139,18 +139,22 @@ const QuestPage: React.FC = () => {
 	const carouselRef = useRef<HTMLDivElement | null>(null);
 	if (questName == "Ability to enter Morytania") {
 		questName = "Priest in Peril";
+		textfile = "priestinperilinfo.txt";
 	}
 	if (
 		questName ==
 		"Jungle Potion is only required if clean volencia moss is a requested item during the quest"
 	) {
 		questName = "Jungle Potion";
+		textfile = "junglepotioninfo.txt";
 	}
 	if (questName == "Fully restore Senliten from the 'Missing My Mummy' quest") {
 		questName = "Missing My Mummy";
+		textfile = "missingmymummyinfo.txt";
 	}
 	if (questName == "Bring Leela to Senliten's tomb") {
 		questName = "Missing My Mummy";
+		textfile = "missingmymummyinfo.txt";
 	}
 	const clearAllIntervals = () => {
 		clearTimeout(reader.timeoutID);
@@ -697,10 +701,7 @@ const QuestPage: React.FC = () => {
 																	<NavLink
 																		to="/QuestPage"
 																		onClick={() => {
-																			if (abilityToEnterMort) {
-																				console.log(history.state);
-																				document.location.reload();
-																			}
+																			history.go(0);
 																		}}
 																		state={{
 																			questName: requirement,
