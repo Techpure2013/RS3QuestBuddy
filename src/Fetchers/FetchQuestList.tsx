@@ -29,11 +29,7 @@ export const QuestListFetcher: React.FC<QuestListFetch> = ({ questlist }) => {
 
 			// Sort the quest list objects
 			quests.sort((a, b) => {
-				return a
-					.trim()
-					.replace("'", "")
-					.replace(":", "")
-					.localeCompare(b.trim());
+				return a.trim().replace("'", "").replace(":", "").localeCompare(b.trim());
 			});
 			quests.shift();
 

@@ -39,10 +39,13 @@ import { IconArrowBack } from "@tabler/icons-react";
 import { Settings } from "./Settings.tsx";
 import { useDisclosure } from "@mantine/hooks";
 import useNotesDisclosure from "../Handlers/useDisclosure.ts";
+import usePOGDisclosure from "./POGCalcDisclosure.tsx";
 import { UserNotes } from "./userNotes.tsx";
 import useImageDisclosure from "./ImageModal.tsx";
 import { Image } from "./ImageInterface.tsx";
 import QuestIcon from "./../QuestIconEdited.png";
+import ColorCalculator from "../Handlers/POGCalc.tsx";
+
 const QuestPage: React.FC = () => {
 	// State and variables
 	const qpname = useLocation();
@@ -64,6 +67,7 @@ const QuestPage: React.FC = () => {
 	const stepRefs = useRef<React.RefObject<HTMLDivElement>[]>([]);
 	const QuestDetails = useQuestDetailsStore.getState().questDetails;
 	const [isHighlight, setIsHighlight] = useState(false);
+	let isPog = false;
 	const [stepHidden, setStepHidden] = useState(false);
 	const buttonRef = useRef<HTMLButtonElement | null>(null);
 	const [toTop, setToTop] = useState(false);
@@ -73,6 +77,7 @@ const QuestPage: React.FC = () => {
 	const [hasColor, setHasColor] = useState(false);
 	const [hasButtonColor, setHasButtonColor] = useState(false);
 	const [hasLabelColor, setHasLabelColor] = useState(false);
+	let [isPOGOpen, { pogModOpen, pogModClose }] = usePOGDisclosure(false);
 	let [isOpened, { openNotes, closedNotes }] = useNotesDisclosure(false);
 	const isOpenNotes = useRef(false);
 	const [isImg, { imgModOpen, imgModClose }] = useImageDisclosure(false);
@@ -136,10 +141,19 @@ const QuestPage: React.FC = () => {
 		);
 		return uuid;
 	}
+
 	const carouselRef = useRef<HTMLDivElement | null>(null);
+
 	if (questName == "Ability to enter Morytania") {
 		questName = "Priest in Peril";
 		textfile = "priestinperilinfo.txt";
+	}
+	console.log(questName);
+	if (questName.trim() == "The Prisoner of Glouphrie") {
+		console.log("yes");
+		isPog = true;
+	} else {
+		console.log("its not The Prisoner of Glouphrie");
 	}
 	if (
 		questName ==
@@ -406,6 +420,7 @@ const QuestPage: React.FC = () => {
 	function handleFalse() {
 		isOpenNotes.current = false;
 	}
+
 	return (
 		<>
 			<Reader reader={reader} questName={questName} />
@@ -425,6 +440,9 @@ const QuestPage: React.FC = () => {
 					}}
 				>
 					<UserNotes />
+				</Modal>
+				<Modal opened={isPOGOpen} onClose={pogModClose}>
+					<ColorCalculator />
 				</Modal>
 				<Modal
 					id="Modal"
@@ -503,6 +521,15 @@ const QuestPage: React.FC = () => {
 				direction="column"
 				wrap="wrap"
 			>
+				{isPog && (
+					<Button
+						variant="outline"
+						color={hasButtonColor ? userButtonColor : ""}
+						onClick={pogModOpen}
+					>
+						Color Calculator
+					</Button>
+				)}
 				{buttonVisible ? (
 					<>
 						<Button
@@ -955,6 +982,7 @@ const QuestPage: React.FC = () => {
 							)
 						)}
 					</Stepper>
+					<></>
 					{buttonVisible && (
 						<div className="prevNextGroup">
 							<div id="icons">

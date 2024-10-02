@@ -24,7 +24,7 @@ export const UserNotes: React.FC = () => {
 				// Save the note value
 				const savedNoteValue = originalNote || noteValue;
 				console.log("Note saved:", savedNoteValue);
-				// You can perform further actions like sending the data to a server or storing it locally.
+
 				if (savedNoteValue !== "" && savedNoteValue !== "<p><br></p>") {
 					displayNote.push(savedNoteValue);
 					window.localStorage.setItem("displayNote", JSON.stringify(displayNote));
@@ -110,28 +110,26 @@ export const UserNotes: React.FC = () => {
 				const trueIndex = index + 1;
 				if (value !== "") {
 					return (
-						
-								<Box
-								key={trueIndex}
-								className="note"
-									style={{ color: hasColor ? userColor : "" }}
-								>
-									{ReactHtmlParser(value)}
-									<ActionIcon
-										onClick={() => {
-											removeNote(trueIndex);
-									}}
-										size={"sm"}
-										variant="outline"
-										color="#CA4D4D"
-										styles={{
-											root: {},
-										}}
-									>
-										<IconTrash />
-									</ActionIcon>
-								</Box>
-						
+						<Box
+							key={trueIndex}
+							className="note"
+							style={{ color: hasColor ? userColor : "" }}
+						>
+							{ReactHtmlParser(value)}
+							<ActionIcon
+								onClick={() => {
+									removeNote(trueIndex);
+								}}
+								size={"sm"}
+								variant="outline"
+								color="#CA4D4D"
+								styles={{
+									root: {},
+								}}
+							>
+								<IconTrash />
+							</ActionIcon>
+						</Box>
 					);
 				}
 			})}
