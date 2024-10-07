@@ -1495,6 +1495,12 @@
 		"CTranscript": "./Quests/The Prisoner of Glouphrie/CompareThe_Prisoner_of_Glouphrie.json"
 	},
 	{
+		"Quest": "Remains of the Necrolord",
+		"Path": "./Quests/Remains of the Necrolord/RemainsOfTheNecroLordInfo.txt",
+		"Transcript": "",
+		"CTranscript": "./Quests/Remains of the Necrolord/CompareRemains_of_the_Necrolord.json"
+	},
+	{
 		"Quest": "The Restless Ghost",
 		"Path": "./Quests/The Restless Ghost/TheRestlessGhostInfo.txt",
 		"Transcript": "./Quests/The Restless Ghost/The_Restless_Ghost_transcript.json",
