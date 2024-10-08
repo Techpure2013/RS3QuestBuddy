@@ -772,14 +772,20 @@
 	{
 		"name": "Ancient Awakening",
 		"images": [
-			"AncientAwakening.png",
-			"AncientAwakeningAsterandwoodenheadstone.png",
-			"AncientAwakeningfightingtheundeadgiant.png",
-			"AncientAwakeningfindingartefacts.png",
-			"AncientAwakeningTheyshallservemeindeath.png",
-			"AncientAwakeningundeadwaves.png",
-			"TheHolographicArchivist.png",
-			"ZemouregalsummoningVorkath.png"
+			"TalktoSiv.png",
+			"CryptLoc.png",
+			"AncientDoor.png",
+			"TalkAster.png",
+			"CollectArtifact.png",
+			"JollyBoarInn.png",
+			"BridgeNearDraynor.png",
+			"TalkAster2.png",
+			"ReadLetter.png",
+			"InteractBoat.png",
+			"ImposingStatue.png",
+			"InteractRunicProjector.png",
+			"Search.png",
+			"InspectMysteriousDevice.png"
 		]
 	},
 	{
@@ -963,6 +969,16 @@
 			"BattleoftheMonolithWeekVarrockgates.png",
 			"ElderGodWarsBattleoftheMonolithTrailer.png",
 			"SerenconfrontsZarosattheMonolith.png"
+		]
+	},
+	{
+		"name": "Battle of Forinthry",
+		"images": [
+			"TalkRaptor.png",
+			"UndeadGiants.png",
+			"TalkToSofia.png",
+			"StoneSegments.png",
+			"RepairHotspot.png"
 		]
 	},
 	{
@@ -3256,7 +3272,23 @@
 	},
 	{
 		"name": "Requiem for a Dragon",
-		"images": ["", "", ""]
+		"images": [
+			"TalkAster.png",
+			"ApproachVorky.png",
+			"TakeNotes.png",
+			"SearchShelves.png",
+			"InspectMural.png",
+			"CongealedPotion.png",
+			"FloorHatch.png",
+			"TalkZem.png",
+			"TalkDeath.png",
+			"TreeOfBalance.png",
+			"Soil.png",
+			"SoulBeaconRepair.png",
+			"InspectVorky.png",
+			"ApproachVorkath.png",
+			"TalkZemo.png"
+		]
 	},
 	{
 		"name": "Recipe for Disaster Freeing Evil Dave",
