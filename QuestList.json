@@ -223,10 +223,10 @@
 		"CTranscript": "./Quests/Cold War/CompareCold_War.json"
 	},
 	{
-		"Quest": "Contact",
-		"Path": "./Quests/Contact/ContactInfo.txt",
-		"Transcript": "./Quests/Contact/Contact_transcript.json",
-		"CTranscript": "./Quests/Contact/CompareContact.json"
+		"Quest": "Contact!",
+		"Path": "./Quests/Contact!/ContactInfo.txt",
+		"Transcript": "./Quests/Contact!/Contact_transcript.json",
+		"CTranscript": "./Quests/Contact!/CompareContact.json"
 	},
 	{
 		"Quest": "Cook's Assistant",

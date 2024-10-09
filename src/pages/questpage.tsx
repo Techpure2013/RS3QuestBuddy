@@ -148,12 +148,9 @@ const QuestPage: React.FC = () => {
 		questName = "Priest in Peril";
 		textfile = "priestinperilinfo.txt";
 	}
-	console.log(questName);
+
 	if (questName.trim() == "The Prisoner of Glouphrie") {
-		console.log("yes");
 		isPog = true;
-	} else {
-		console.log("its not The Prisoner of Glouphrie");
 	}
 	if (
 		questName ==
