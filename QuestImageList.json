@@ -4970,15 +4970,7 @@
 	},
 	{
 		"name": "Violet is Blue",
-		"images": [
-			"BettyandTrevor.png",
-			"SnowballdodgingVioletisBlue.png",
-			"VioletisBlue.png",
-			"VioletisBluecompletedsled.png",
-			"VioletisBlueopening.png",
-
-			"Violetshouse.png"
-		]
+		"images": ["Letter.png", "IceSolution.png"]
 	},
 	{
 		"name": "Violet is Blue Too",
@@ -5112,6 +5104,19 @@
 	},
 	{
 		"name": "Ode of the Devourer",
-		"images": [""]
+		"images": [
+			"CabbageDummy.png",
+			"ContinueOde.png",
+			"WhereSave.png",
+			"CrawlUnderCart.png",
+			"Gondala.png",
+			"Continue2.png",
+			"TalkIcthlarin.png",
+			"Zammy.png",
+			"Continue3.png",
+			"Father.png",
+			"SearchWarrior.png",
+			"UseAbsorbtion.png"
+		]
 	}
 ]
