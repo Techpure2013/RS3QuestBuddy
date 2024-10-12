@@ -5173,9 +5173,9 @@
 	{
 		"Quest": "Priest in Peril",
 		"StartPoint": "Speak to King Roald in the Varrock Palace.",
-		"MemberRequirement": "F2P Free to play",
+		"MemberRequirement": "Free to play",
 		"OfficialLength": "Medium",
-		"Requirements": ["Priest in Peril"],
+		"Requirements": ["None"],
 		"ItemsRequired": [
 			"50 rune essence or 25 pure essence (the essence must be un-noted)",
 			"A bucket"
@@ -5657,7 +5657,7 @@
 		"StartPoint": "Speak to Father Aereck in the Lumbridge Church, east of Lumbridge Castle.",
 		"MemberRequirement": "Free to play",
 		"OfficialLength": "Short",
-		"Requirements": ["The Restless Ghost", "None"],
+		"Requirements": ["None"],
 		"ItemsRequired": ["None"],
 		"Recommended": ["None"],
 		"EnemiesToDefeat": ["Skeleton warlock (level 7, optional)"]
@@ -5687,7 +5687,7 @@
 			"Diamond in the Rough",
 			"Stolen Hearts",
 			"Collect a set of necromancer robes from Sostratus",
-			"Ironmen: 80 Necromancy Necromancy (to make greater ensouled bars)"
+			"Ironmen: 80 Necromancy (to make greater ensouled bars)"
 		],
 		"ItemsRequired": [
 			"30 white marble (Material Storage works)",
@@ -7731,7 +7731,7 @@
 		"StartPoint": "Talk to Pikkupstix in his house in Taverley.",
 		"MemberRequirement": "Free to play",
 		"OfficialLength": "Short to Medium",
-		"Requirements": ["Wolf Whistle"],
+		"Requirements": ["None"],
 		"ItemsRequired": ["None"],
 		"Recommended": ["None"],
 		"EnemiesToDefeat": ["None"]
@@ -7741,7 +7741,7 @@
 		"StartPoint": "Speak to Orlando Smith, excavating west of the Legends' Guild, south of Thormac's tower.",
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Long to Very Long",
-		"Requirements": ["The World Wakes"],
+		"Requirements": ["None"],
 		"ItemsRequired": ["None"],
 		"Recommended": [
 			"100 Combat Combat, it is recommended that you have balanced combat stats at around level 70 each.",
