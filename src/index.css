@@ -12,7 +12,7 @@
 	--title-color: #84b1df;
 	font-family: rs3Font;
 	--mantine-font-family: rs3Font !important;
-	--completed: #24BF58;
+	--completed: #24bf58;
 	--rs3-background: url("./assets/background.png");
 }
 
@@ -72,7 +72,7 @@ h3 {
 }
 
 .delete {
-	color: #CA4D4D;
+	color: #ca4d4d;
 }
 
 .ql-toolbar.ql-snow {
@@ -143,7 +143,7 @@ h3 {
 }
 
 .mantine-Accordion-item button {
-	color: var(--title-color)
+	color: var(--title-color);
 }
 
 .mantine-List-root {
@@ -159,11 +159,13 @@ h3 {
 	background-color: #30497e;
 }
 
-.quill>.ql-container>.ql-editor.ql-blank::before {
+.quill > .ql-container > .ql-editor.ql-blank::before {
 	font-size: 13px;
 	color: #f1f1f1f1;
 }
-
+.mantine-Stepper-stepBody {
+	color: #f1f1f1f1;
+}
 /* .chevron {
 	&[data-rotate] {
 		transform: rotate(180deg);
@@ -254,7 +256,8 @@ img.enlarged {
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
 	/* Shadow on the bottom right */
 }
-.mantine-Button-root:not(:disabled), .mantine-ActionIcon-root {
+.mantine-Button-root:not(:disabled),
+.mantine-ActionIcon-root {
 	--mantine-color-blue-outline: #ccc;
 	background: var(--rs3-background);
 	font-weight: 450;
@@ -276,8 +279,9 @@ img.enlarged {
 	font-size: 15px;
 }
 
-.stepperStep:not([data-completed]):not([data-progress]) .mantine-Stepper-stepDescription {
-	color: #575757!important;
+.stepperStep:not([data-completed]):not([data-progress])
+	.mantine-Stepper-stepDescription {
+	color: #bdb6b6 !important;
 }
 
 [data-progress],
@@ -288,17 +292,19 @@ img.enlarged {
 [data-active] {
 	--_separator-border-color: var(--completed) !important;
 }
-[data-completed] .mantine-Stepper-stepLabel{
-	color: var(--completed)!important;
+[data-completed] .mantine-Stepper-stepLabel {
+	color: var(--completed) !important;
 }
 .mantine-Stepper-stepIcon {
-	background: linear-gradient(to bottom,
-			#546576,
-			#3d4b5a,
-			#2c3742,
-			#1e2832,
-			#141b23,
-			#0c1117);
+	background: linear-gradient(
+		to bottom,
+		#546576,
+		#3d4b5a,
+		#2c3742,
+		#1e2832,
+		#141b23,
+		#0c1117
+	);
 }
 
 .mantine-Stepper-stepLabel {
@@ -342,7 +348,7 @@ img.enlarged {
 	margin: 5px;
 }
 #return-image {
-	display:flex;
+	display: flex;
 	flex-wrap: wrap;
 	gap: 5px;
 	flex: 1;
