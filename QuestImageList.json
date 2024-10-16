@@ -1,22 +1,7 @@
 [
 	{
 		"name": "A Clockwork Syringe",
-		"images": [
-			"AClockworkSyringe.png",
-			"AClockworkSyringeConveyorbeltdestruction.png",
-
-			"BarrelchestdisguisedsabotageAClockworkSyringe.png",
-			"ControllingBaronvonHattenkrapperAClockworkSyringe.png",
-			"deadbrewerslocation.png",
-			"EnteringtheRumgeonAClockworkSyringe.png",
-			"Interrogatingthezombiehead.png",
-			"JoesPubChair.png",
-			"Largecrateplayerownedhouse.png",
-			"RumgeoncombatAClockworkSyringe.png",
-			"TheAdventurousunderattack.png",
-			"TheRideAClockworkSyringe.png",
-			"Zombiestresslevel.png"
-		]
+		"images": ["Start.png", "Brother.png", "clocktowermap.png"]
 	},
 	{
 		"name": "A Fairy Tale I: Growing Pains",
@@ -1250,15 +1235,7 @@
 	},
 	{
 		"name": "Clock Tower",
-		"images": [
-			"ClockTower.png",
-			"Clocktowerblackcog.png",
-			"Clocktowerbluecog.png",
-			"clocktowermap.png",
-			"Clocktowerredcog.png",
-
-			"Clocktowerwhitecog.png"
-		]
+		"images": ["start.png", "Brother.png", "clocktowermap.png"]
 	},
 	{
 		"name": "Cold War",
@@ -1712,21 +1689,30 @@
 	{
 		"name": "Do No Evil",
 		"images": [
-			"Apmeken.png",
-			"Apmekenappears.png",
-			"Ayunicutscene.png",
-			"Ayunifight.png",
-			"Buildingthecolony.png",
-			"DoNoEvil.png",
-			"DoNoEvildiglocation.png",
-
-			"Erunicutscene.png",
-			"FightingAyuni.png",
-			"Leeunicutscene.png",
-			"Monkeycampattacked.png",
-			"OsmanandLeela.png",
-			"Thesiteofthecolony.png",
-			"UzerEagleentrance.png"
+			"Travel1.png",
+			"Travel2.png",
+			"Travel3.png",
+			"Start.png",
+			"TalkSenliten.png",
+			"JexLocation.png",
+			"TalkToJex.png",
+			"TalkToSphynx.png",
+			"MonkeyLocations.png",
+			"3WiseMonkeys.png",
+			"GuardPath.png",
+			"KingAwowowgei.png",
+			"Hamab.png",
+			"OpenMonkeys.png",
+			"MonkeyLocation.png",
+			"TalkAli.png",
+			"SpadeLoc.png",
+			"BwukSpot.png",
+			"crates_map.png",
+			"clear.png",
+			"MonkeyFighters.png",
+			"DeadMonkey.png",
+			"Leeuni.png",
+			"LeeuniDeath.png"
 		]
 	},
 	{
