@@ -1140,6 +1140,13 @@
 		"Transcript": "./Quests/Rune Mechanics/Rune_Mechanics_transcript.json",
 		"CTranscript": "./Quests/Rune Mechanics/CompareRune_Mechanics.json"
 	},
+
+	{
+		"Quest": "Rune Mythos",
+		"Path": "./Quests/Rune Mythos/RuneMythosInfo.txt",
+		"Transcript": "./Quests/Rune Mythos/Rune_Mythos_transcript.json",
+		"CTranscript": "./Quests/Rune Mythos/CompareRune_Mythos.json"
+	},
 	{
 		"Quest": "Salt in the Wound",
 		"Path": "./Quests/Salt in the Wound/SaltInTheWoundInfo.txt",
