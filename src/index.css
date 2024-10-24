@@ -197,6 +197,7 @@ h3 {
 
 .questContainer {
 	display: flex;
+
 	flex-direction: column;
 }
 
@@ -323,7 +324,15 @@ img.enlarged {
 }
 
 .QuestPageImageCaro {
-	z-index: 10;
+	display: grid;
+	align-content: space-between;
+	height: 100vh; /* Full height of the viewport */
+	text-align: center;
+}
+
+.QuestPageImageCaro img {
+	max-width: 100%; /* Ensures the image doesn’t overflow */
+	height: auto; /* Maintains aspect ratio */
 }
 
 .custom-container {

@@ -13,9 +13,7 @@ export const UseImageStore = create<QuestImage>((set) => ({
 	imageList: [],
 	setQuestImages: (image) => set({ imageList: image }),
 }));
-/**
- * QuestImageFetcher class encapsulates the logic for fetching quest images.
- */
+
 export const QuestImageFetcher: React.FC<QuestImageType> = ({
 	questName,
 	QuestListJSON,
@@ -65,9 +63,7 @@ export const QuestImageFetcher: React.FC<QuestImageType> = ({
 							.filter((filename) => filename.toLowerCase().endsWith(".png"))
 							.map(
 								(filename) =>
-									`./Images/${questName
-										.trim()
-										.replace(":", "")}/${filename.trim()}`
+									`./Images/${questName.trim().replace(":", "")}/${filename.trim()}`
 							);
 
 			setQuestImages(imagePaths);
@@ -79,11 +75,7 @@ export const QuestImageFetcher: React.FC<QuestImageType> = ({
 		fetchImages();
 	}, [questName, setQuestImages]);
 
-	return null; // or some placeholder UI
+	return null;
 };
 
 export default QuestImageFetcher;
-
-// Example usage within a React component
-// const imageFetcher = new QuestImageFetcher( /* ... */ );
-// imageFetcher.fetchImages();

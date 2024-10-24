@@ -6,6 +6,7 @@ import {
 	Button,
 	Flex,
 	List,
+	MantineProvider,
 	Modal,
 	Stepper,
 } from "@mantine/core";
@@ -17,7 +18,6 @@ import {
 	IconPlus,
 } from "@tabler/icons-react";
 
-import QuestControl from "./../pages/QuestControls.tsx";
 import {
 	QuestImageFetcher,
 	UseImageStore,
@@ -41,7 +41,7 @@ import { useDisclosure } from "@mantine/hooks";
 import useNotesDisclosure from "../Handlers/useDisclosure.ts";
 import usePOGDisclosure from "./POGCalcDisclosure.tsx";
 import { UserNotes } from "./userNotes.tsx";
-import useImageDisclosure from "./ImageModal.tsx";
+
 import { Image } from "./ImageInterface.tsx";
 import QuestIcon from "./../QuestIconEdited.png";
 import ColorCalculator from "../Handlers/POGCalc.tsx";
@@ -80,9 +80,9 @@ const QuestPage: React.FC = () => {
 	let [isPOGOpen, { pogModOpen, pogModClose }] = usePOGDisclosure(false);
 	let [isOpened, { openNotes, closedNotes }] = useNotesDisclosure(false);
 	const isOpenNotes = useRef(false);
-	const [isImg, { imgModOpen, imgModClose }] = useImageDisclosure(false);
+
 	// const finder = new diagFinder();
-	const { showStepReq, buttonVisible, toggleShowStepReq, viewQuestImage } =
+	const { showStepReq, toggleShowStepReq, viewQuestImage } =
 		useQuestControllerStore();
 	const handles = useQuestControllerStore();
 	const [skillLevels, setSkillLevels] = useState<string[]>([]);
@@ -128,6 +128,7 @@ const QuestPage: React.FC = () => {
 	}, []);
 	const handleBackButton = () => {
 		hist("/");
+		handles.popOutWindow!.close();
 	};
 	function create_ListUUID() {
 		var dt = new Date().getTime();
@@ -257,7 +258,7 @@ const QuestPage: React.FC = () => {
 			const newWindow = window.open(
 				emptypage,
 				"promptbox" + popid,
-				"width=200, height=221"
+				"width=420, height=412"
 			)!;
 			if (newWindow) {
 				// Set the pop-out window and hide buttons in the current window
@@ -266,13 +267,23 @@ const QuestPage: React.FC = () => {
 				handles.setPopOutClicked(false);
 
 				newWindow.document.write(
-					"<!DOCTYPE html><html><head></head><body></body></html>"
+					`
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="icon" href="./../assets/rs3buddyicon.png" type="image/x-icon" />
+        </head>
+        <body>
+        </body>
+    </html>
+`
 				);
 				// Render the QuestControls component into the new window
 				const container: HTMLDivElement = newWindow.document.createElement("div");
-				container.className = "ButtonGroupTwo";
+				container.className = ".QuestPageImageCaro";
 				newWindow.document.body.appendChild(container);
-				newWindow.document.title = "Quest Controls";
+				newWindow.document.title = "Quest Images";
+
 				container.style.backgroundImage = "./../assets/background.png";
 				// Set initial content for the new window
 				const initialContentContainer = newWindow.document.createElement("div");
@@ -283,8 +294,6 @@ const QuestPage: React.FC = () => {
 				);
 				const root = createRoot(domNode);
 				const iconLink = newWindow.document.createElement("link");
-				iconLink.rel = "icon";
-				iconLink.href = "./src/assets/rs3buddyicon.png";
 				newWindow.document.head.appendChild(iconLink);
 
 				// Function to copy styles from the original window to the new window
@@ -318,11 +327,36 @@ const QuestPage: React.FC = () => {
 
 				root.render(
 					<>
-						<QuestControl
-							scrollNext={scrollNext}
-							scrollPrev={scrollPrev}
-							handleStepChange={setActiveAndScroll}
-						/>
+						<h2>Quest Images</h2>
+						<h4>Message Notice</h4>
+						<p>
+							Notice Time Remaining: 5 days: This Quest Images pop out can be
+							minimized.You can click the Quest Images button again to completely close
+							the window. To remaximize find it in your primary monitors window (Bottom
+							Left), click the double squares to remaximize to the width you set the
+							window!
+						</p>
+						<MantineProvider defaultColorScheme="dark">
+							<Carousel
+								getEmblaApi={setEmbla}
+								speed={100}
+								withIndicators={false}
+								orientation="horizontal"
+								styles={{ root: { width: "420px" } }}
+								nextControlIcon={<IconArrowRight size={16} />}
+								previousControlIcon={<IconArrowLeft size={16} />}
+								className="QuestPageImageCaro"
+								includeGapInSize={true}
+								containScroll={"trimSnaps"}
+								ref={carouselRef}
+							>
+								{imageDetails.imageList.map((src, index) => (
+									<Carousel.Slide key={index}>
+										<img src={src} />
+									</Carousel.Slide>
+								))}
+							</Carousel>
+						</MantineProvider>
 					</>
 				);
 			}
@@ -472,43 +506,7 @@ const QuestPage: React.FC = () => {
 					{questName}
 				</h2>
 			</div>
-			<>
-				<Modal
-					transitionProps={{ duration: TRANSITION_DURATION }}
-					opened={isImg}
-					onClose={() => {
-						imgModClose();
-					}}
-					styles={{
-						root: { width: "600px" },
-						title: {
-							fontSize: "34px",
-							textAlign: "center",
-							color: hasColor ? userColor : "",
-						},
-					}}
-				>
-					<Carousel
-						getEmblaApi={setEmbla}
-						speed={100}
-						withIndicators={false}
-						orientation="horizontal"
-						styles={{ root: { width: "420px" } }}
-						nextControlIcon={<IconArrowRight size={16} />}
-						previousControlIcon={<IconArrowLeft size={16} />}
-						className="QuestPageImageCaro"
-						includeGapInSize={true}
-						containScroll={"trimSnaps"}
-						ref={carouselRef}
-					>
-						{imageDetails.imageList.map((src, index) => (
-							<Carousel.Slide key={index}>
-								<img src={src} />
-							</Carousel.Slide>
-						))}
-					</Carousel>
-				</Modal>
-			</>
+			<></>
 
 			<Flex
 				className="flexedButtons"
@@ -527,54 +525,37 @@ const QuestPage: React.FC = () => {
 						Color Calculator
 					</Button>
 				)}
-				{buttonVisible ? (
-					<>
-						<Button
-							ref={buttonRef}
-							variant="outline"
-							color={hasButtonColor ? userButtonColor : ""}
-							onClick={handlePopOut}
-						>
-							Pop Out Quest Controls
-						</Button>
-						<Button
-							variant="outline"
-							color={hasButtonColor ? userButtonColor : ""}
-							onClick={handleBackButton}
-							leftSection={<IconArrowBack />}
-						>
-							Pick Another Quest
-						</Button>
-					</>
+
+				<>
+					<Button
+						variant="outline"
+						color={hasButtonColor ? userButtonColor : ""}
+						onClick={handleBackButton}
+						leftSection={<IconArrowBack />}
+					>
+						Pick Another Quest
+					</Button>
+				</>
+
+				{showStepReq ? (
+					<Button
+						variant="outline"
+						color={hasButtonColor ? userButtonColor : ""}
+						onClick={() => {
+							toggleShowStepReq();
+						}}
+					>
+						Show Quest Steps
+					</Button>
 				) : (
 					<Button
 						variant="outline"
 						color={hasButtonColor ? userButtonColor : ""}
-						onClick={handlePopOut}
+						onClick={toggleShowStepReq}
 					>
-						Pop In Quest Controls
+						Show Quest Details
 					</Button>
 				)}
-				{buttonVisible &&
-					(showStepReq ? (
-						<Button
-							variant="outline"
-							color={hasButtonColor ? userButtonColor : ""}
-							onClick={() => {
-								toggleShowStepReq();
-							}}
-						>
-							Show Quest Steps
-						</Button>
-					) : (
-						<Button
-							variant="outline"
-							color={hasButtonColor ? userButtonColor : ""}
-							onClick={toggleShowStepReq}
-						>
-							Show Quest Details
-						</Button>
-					))}
 			</Flex>
 			{showStepReq && Array.isArray(QuestDetails) ? (
 				<>
@@ -980,7 +961,7 @@ const QuestPage: React.FC = () => {
 						)}
 					</Stepper>
 					<></>
-					{buttonVisible && (
+					{
 						<div className="prevNextGroup">
 							<div id="icons">
 								<ActionIcon
@@ -1004,6 +985,16 @@ const QuestPage: React.FC = () => {
 								</ActionIcon>
 							</div>
 							<div id="return-image">
+								<Button
+									className="return"
+									ref={buttonRef}
+									size="compact-sm"
+									variant="outline"
+									color={hasButtonColor ? userButtonColor : ""}
+									onClick={handlePopOut}
+								>
+									Quest Images (New Feature!)
+								</Button>
 								{toTop ? (
 									<ActionIcon
 										className="return"
@@ -1029,17 +1020,6 @@ const QuestPage: React.FC = () => {
 										Return to Top
 									</ActionIcon>
 								)}
-
-								<Button
-									size="compact-sm"
-									variant="outline"
-									color={hasButtonColor ? userButtonColor : ""}
-									onClick={() => {
-										imgModOpen();
-									}}
-								>
-									Images
-								</Button>
 							</div>
 							<div id="prev-next">
 								<Button
@@ -1067,7 +1047,7 @@ const QuestPage: React.FC = () => {
 								</Button>
 							</div>
 						</div>
-					)}
+					}
 				</>
 			)}
 		</>
