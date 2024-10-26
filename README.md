@@ -21,7 +21,7 @@ Reading the options to correctly proceed in the quest.
 
 If you want to help gather images contact Techpure on discord.
 
-# The Quest Carousel containing 261 quest 56 mini quests all subquests:
+# The Quest Carousel containing all quests and mini quests, all subquests:
 
 ![image](https://github.com/Techpure2013/RS3QuestBuddy/assets/149278134/35aa04f1-9371-4e81-8c11-15be0c01be57)
 
