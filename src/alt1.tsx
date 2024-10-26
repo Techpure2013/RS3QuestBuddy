@@ -4,12 +4,13 @@ import { useState } from "react";
 
 export const AltGuard = () => {
 	const [override, setOverride] = useState(false);
-	if (window.alt1 || override) {
-		return <App />;
-	}
 	if (window.alt1) {
 		alt1.identifyAppUrl("./appconfig.prod.json");
 	}
+	if (window.alt1 || override) {
+		return <App />;
+	}
+
 	return (
 		<>
 			<div className="App">
