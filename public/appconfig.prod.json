@@ -1,9 +1,9 @@
 {
 	"appName": "RS3 Quest Buddy",
 	"description": "RS3 Quest Buddy",
-	"appUrl": "./../../index.html",
-	"configUrl": "./RS3QuestBuddy/appconfig.prod.json",
-	"iconUrl": "./../rs3buddyicon.png?1",
+	"appUrl": "https://techpure2013.github.io/RS3QuestBuddy/index.html",
+	"configUrl": "https://techpure2013.github.io/RS3QuestBuddy/appconfig.prod.json",
+	"iconUrl": "https://techpure2013.github.io/RS3QuestBuddy/rs3buddyicon.png",
 	"defaultWidth": 665,
 	"defaultHeight": 603,
 	"minWidth": 250,
