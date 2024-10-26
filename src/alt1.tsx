@@ -7,7 +7,9 @@ export const AltGuard = () => {
 	if (window.alt1 || override) {
 		return <App />;
 	}
-
+	if (window.alt1) {
+		alt1.identifyAppUrl("./appconfig.prod.json");
+	}
 	return (
 		<>
 			<div className="App">
