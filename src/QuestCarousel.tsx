@@ -4,7 +4,12 @@ import { Carousel } from "@mantine/carousel";
 import { Button, TextInput, ActionIcon, Modal, Loader } from "@mantine/core";
 import { useQuestListStore, QuestListFetcher } from "./Fetchers/FetchQuestList";
 import { NavLink } from "react-router-dom";
-import { IconArrowRight, IconArrowLeft, IconPlus } from "@tabler/icons-react";
+import {
+	IconBrandDiscord,
+	IconArrowRight,
+	IconArrowLeft,
+	IconPlus,
+} from "@tabler/icons-react";
 import { PlayerQuests, usePlayerStore } from "./Handlers/PlayerFetch";
 import { rsQuestSorter } from "./Handlers/SortPlayerData";
 import { IconSettings } from "@tabler/icons-react";
@@ -82,19 +87,15 @@ const QuestCarousel: React.FC = () => {
 			let modifiedQuestVal1 = questTEdit.join("").replace(/[!,`']/g, "");
 			let questImage = "";
 			const pattern = /[^a-zA-Z0-9]/g;
-				questImage =
+			questImage =
 				"./Rewards/" + quest.toLowerCase().replace(pattern, "") + "reward.png";
-			
+
 			return (
 				<div
 					className="caroQTitle"
 					aria-label={`Navigate to ${quest}`}
 					style={{
-						color: sorted.current
-							? "#BF2930"
-							: playerFound.current
-							? "#54B46F"
-							: "",
+						color: sorted.current ? "#BF2930" : playerFound.current ? "#54B46F" : "",
 						paddingTop: "30",
 					}}
 				>
@@ -228,7 +229,17 @@ const QuestCarousel: React.FC = () => {
 	function startSearch() {
 		if (!update) {
 			return <Loader size={25} color="#36935C" />;
-		}}
+		}
+	}
+	function openDiscord(): void {
+		const newWindow = window.open(
+			"https://discord.gg/qFftZF7Usa",
+			"_blank",
+			"noopener,noreferrer"
+		);
+		if (newWindow) newWindow.opener = null;
+	}
+
 	return (
 		<>
 			<Modal
@@ -241,7 +252,7 @@ const QuestCarousel: React.FC = () => {
 					title: {
 						fontSize: "34px",
 						textAlign: "center",
-					}
+					},
 				}}
 			>
 				<UserNotes />
@@ -256,7 +267,7 @@ const QuestCarousel: React.FC = () => {
 					title: {
 						fontSize: "34px",
 						textAlign: "center",
-					}
+					},
 				}}
 			>
 				<Settings />
@@ -357,10 +368,7 @@ const QuestCarousel: React.FC = () => {
 				</Button>
 			</div>
 			{sorted.current && (
-				<div
-					className="caroQTitle"
-					style={{ color: hasColor ? userColor : "" }}
-				>
+				<div className="caroQTitle" style={{ color: hasColor ? userColor : "" }}>
 					<h3>Quests have been sorted by quests you can do!</h3>
 					<p>
 						{returningPName.current.replace('"', "").replace('"', "")} has a total of{" "}
@@ -373,7 +381,7 @@ const QuestCarousel: React.FC = () => {
 				<Carousel
 					speed={100}
 					align="center"
-					slideSize={{ base: "100%"}}
+					slideSize={{ base: "100%" }}
 					includeGapInSize={true}
 					height={450}
 					containScroll={"trimSnaps"}
@@ -392,6 +400,21 @@ const QuestCarousel: React.FC = () => {
 						))}
 				</Carousel>
 			</div>
+			<ActionIcon
+				color={hasButtonColor ? userButtonColor : ""}
+				size={"sm"}
+				variant="outline"
+				onClick={openDiscord}
+				styles={{
+					root: {
+						position: "fixed",
+						bottom: "22px",
+						left: "65px",
+					},
+				}}
+			>
+				<IconBrandDiscord />
+			</ActionIcon>
 			<ActionIcon
 				color={hasButtonColor ? userButtonColor : ""}
 				onClick={openNotes}

@@ -11,7 +11,9 @@ import {
 	Stepper,
 } from "@mantine/core";
 import { Carousel, Embla, useAnimationOffsetEffect } from "@mantine/carousel";
+
 import {
+	IconBrandDiscord,
 	IconArrowLeft,
 	IconArrowRight,
 	IconSettings,
@@ -451,7 +453,14 @@ const QuestPage: React.FC = () => {
 	function handleFalse() {
 		isOpenNotes.current = false;
 	}
-
+	function openDiscord(): void {
+		const newWindow = window.open(
+			"https://discord.gg/qFftZF7Usa",
+			"_blank",
+			"noopener,noreferrer"
+		);
+		if (newWindow) newWindow.opener = null;
+	}
 	return (
 		<>
 			<Reader reader={reader} questName={questName} />
@@ -971,6 +980,14 @@ const QuestPage: React.FC = () => {
 									size={"sm"}
 								>
 									<IconSettings />
+								</ActionIcon>
+								<ActionIcon
+									onClick={openDiscord}
+									variant="outline"
+									color={hasButtonColor ? userButtonColor : ""}
+									size={"sm"}
+								>
+									<IconBrandDiscord />
 								</ActionIcon>
 								<ActionIcon
 									color={hasButtonColor ? userButtonColor : ""}
