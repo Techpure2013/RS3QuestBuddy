@@ -1,12 +1,15 @@
 import { Button } from "@mantine/core";
 import App from "./App";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const AltGuard = () => {
 	const [override, setOverride] = useState(false);
-	if (window.alt1) {
-		alt1.identifyAppUrl("./appconfig.prod.json");
-	}
+	useEffect(() => {
+		if (window.alt1) {
+			alt1.identifyAppUrl("./appconfig.prod.json");
+		}
+	}, []);
+
 	if (window.alt1 || override) {
 		return <App />;
 	}
