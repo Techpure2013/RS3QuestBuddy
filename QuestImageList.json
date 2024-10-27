@@ -1,7 +1,7 @@
 [
 	{
 		"name": "A Clockwork Syringe",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "A Fairy Tale I: Growing Pains",
@@ -23,7 +23,7 @@
 	},
 	{
 		"name": "A Guild of Our Own (miniquest)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "A Fairy Tale II: Cure a Queen",
@@ -115,7 +115,7 @@
 			"tootharmy.png",
 			"ttfgf.png",
 			"FG.png",
-			"afterfight",
+			"afterfight.png",
 			"close1.png",
 			"close2.png",
 			"close3.png",
@@ -321,27 +321,27 @@
 	},
 	{
 		"name": "The Hunt for Surok (miniquest)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "In Memory of the Myreque (miniquest)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "Koschei's Troubles (miniquest)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "Lair of Tarn Razorlor (miniquest)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "The Lost Toys (miniquest)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "Mahjarrat Memories (miniquest)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "One Foot in the Grave (miniquest)",
@@ -380,11 +380,11 @@
 	},
 	{
 		"name": "Purple Cat (miniquest)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "Rebuilding Edgeville (miniquest)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "Sheep Shearer (miniquest)",
@@ -404,23 +404,23 @@
 	},
 	{
 		"name": "Tales of Nomad (miniquest)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "Tortle Combat (miniquest)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "Wandering Ga'al (miniquest)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "Witch's Potion (miniquest)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "Three's Company (saga)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "Vengeance (saga)",
@@ -436,7 +436,7 @@
 	},
 	{
 		"name": "Thok It To 'Em (saga)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "Nadir (saga)",
@@ -449,7 +449,7 @@
 	},
 	{
 		"name": "Thok Your Block Off (miniquest)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "Civil War I (miniquest)",
@@ -537,7 +537,7 @@
 	},
 	{
 		"name": "Tales of the God Wars (miniquest)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "Flag Fall (miniquest)",
@@ -552,51 +552,51 @@
 	},
 	{
 		"name": "Head of the Family (miniquest)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "Spiritual Enlightenment (miniquest)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "Jed Hunter (miniquest)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "Eye for an Eye (miniquest)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "Harbinger (miniquest)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "Tuai Leit's Own (miniquest)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "Ghosts from the Past (miniquest)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "Damage Control (miniquest)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "Final Destination (miniquest)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "From Tiny Acorns (miniquest)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "Lost Her Marbles (miniquest)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "A Guild of Our Own (miniquest)",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "Boric's Task I (miniquest)",
@@ -803,7 +803,7 @@
 		]
 	},
 	{
-		"name": "Azzanadras Quest",
+		"name": "Azzanadra's Quest",
 		"images": [
 			"AzzanadraandArianeattheGielinorsElderHalls.png",
 			"Azzanadracomplainsaboutthecouncil.png",
@@ -1031,7 +1031,6 @@
 			"SearchCrate.png",
 			"Distilator.png",
 			"CrossLog.png",
-			"TalkToElena",
 			"Samples.png",
 			"usesampleonbank.png",
 			"Teleports.png",
@@ -1058,7 +1057,6 @@
 			"Barendirarmy.png",
 			"Birthrightherdingmemories.png",
 			"BirthrightoftheDwarves.png",
-
 			"BirthrightoftheDwarvesstart.png",
 			"BirthrightoftheDwarvesTheDirectorandGrimsson.png",
 			"DondakansLocation.png",
@@ -1206,16 +1204,15 @@
 	{
 		"name": "Children of Mah",
 		"images": [
-			".ChildrenofMah.png",
-
-			".JhallanandKharshaidiscussthegathering.png",
-			".Kharshaismemoryofthethroneroom.png",
-			".Lavasurfing.png",
-			".Mahjarratreturntotheritualsite.png",
-			".NightmareofMah.png",
-			".SerenkillsMah.png",
-			".SerenonFreneskae.png",
-			".ZemouregalkidnapsKharshai.png"
+			"ChildrenofMah.png",
+			"JhallanandKharshaidiscussthegathering.png",
+			"Kharshaismemoryofthethroneroom.png",
+			"Lavasurfing.png",
+			"Mahjarratreturntotheritualsite.png",
+			"NightmareofMah.png",
+			"SerenkillsMah.png",
+			"SerenonFreneskae.png",
+			"ZemouregalkidnapsKharshai.png"
 		]
 	},
 	{
@@ -1491,22 +1488,12 @@
 	},
 	{
 		"name": "Death to the Dorgeshuun",
-		"images": [
-			"DeathtotheDorgeshuun.png",
-
-			"Dtdfight.png",
-			"H.png",
-			"Lumbridgemillmachinery.png",
-			"Zanikreceivinghermark.png",
-			"Zanikresurrected.png",
-			"Zanikslocation.png"
-		]
+		"images": []
 	},
 	{
 		"name": "Defender of Varrock",
 		"images": [
 			"DefenderofVarrockinfobox.png",
-
 			"Dovzombieskillingvarrockguards.png",
 			"Freeatlast.png",
 			"Killingarmouredzombies.png"
@@ -1765,7 +1752,7 @@
 			"MDOOR.png",
 			"PSLOC.png",
 			"SIRIMWB.png",
-			"COMBINEMAP.xpng",
+			"COMBINEMAP.png",
 			"dukehoracios.png",
 			"BOATLOC.png",
 			"BUYBOAT.png",
@@ -1782,7 +1769,6 @@
 		"images": [
 			"Cyrisussbank.png",
 			"DreamMentor.png",
-
 			"FeedingCyrisus.png",
 			"SafespotEverlasting.png",
 			"SeeingtheInadequacy.png",
@@ -1806,7 +1792,6 @@
 		"name": "Eadgars Ruse",
 		"images": [
 			"EadgarsRuse.png",
-
 			"Goutweedstoreroom.png",
 			"TrollStrongholdParrothidinglocation.png",
 			"TThistlelocation.png"
@@ -1818,7 +1803,6 @@
 			"CatchingtheFerret.png",
 			"EaglesPeakDungeonmap.png",
 			"EaglesPeakEagledoor.png",
-
 			"EaglesPeakShoutnikolaus.png"
 		]
 	},
@@ -1932,7 +1916,6 @@
 			"CarpetBarrel.png",
 			"RollTheBarrel.png",
 			"SlightlyTwinkledHole.png",
-			"insideTwinkly.png",
 			"EnterHoleIcon.png",
 			"GrabDave.png",
 			"CleanBedOption.png"
@@ -2065,7 +2048,7 @@
 		]
 	},
 	{
-		"name": "Fur 'n' Seek",
+		"name": "Fur 'n Seek",
 		"images": ["FurnSeek.png", "Tanningfur.png"]
 	},
 	{
@@ -2125,7 +2108,7 @@
 		"images": [
 			"REQITEMS.png",
 			"RECCITEM.png",
-			"ECTOTOKENS",
+			"ECTOTOKENS.png",
 			"PSARIMPPHAS.png",
 			"PPHASDOCK.png",
 			"EnterPortPHas.png",
@@ -2190,7 +2173,6 @@
 		"images": [
 			"GloriousMemories.png",
 			"GloriousMemoriesFoottracks.png",
-
 			"Icemound.png",
 			"NialfightsGnoeal.png",
 			"Vargashits.png"
@@ -2200,7 +2182,6 @@
 		"name": "Goblin Diplomacy",
 		"images": [
 			"GoblinDiplomacy.png",
-
 			"Grubfootwithbluerobes.png",
 			"Grubfootwithbrownrobes.png"
 		]
@@ -2257,7 +2238,6 @@
 		"name": "Grim Tales",
 		"images": [
 			"FightingGlod.png",
-
 			"GrimTalesRupertreleased.png",
 			"Sylasandthebeanstalk.png"
 		]
@@ -2267,7 +2247,6 @@
 		"images": [
 			"Dororandepressed.png",
 			"GunnarsGroundinfobox.png",
-
 			"QPCGunnarsGround.png",
 			"ShowingGororansring.png"
 		]
@@ -2279,7 +2258,6 @@
 			"300px-AbandonedMineLevel3.png39340.png",
 			"300px-AbandonedMineLevel4.png24b2d.png",
 			"AbandonedMineLevel.png",
-
 			"SpeakingtotheZealot.png",
 			"TreusDaythattacks.png"
 		]
@@ -2296,7 +2274,6 @@
 			"FightingFulKrasattendants.png",
 			"Fightingtheprehistoricabyssal.png",
 			"HeartofStone.png",
-
 			"JasKraschamber.png",
 			"Kippledies.png",
 			"Portalentrana.png",
@@ -2327,7 +2304,6 @@
 			"HeroesQuest.png",
 			"HeroesquestCongrats.png",
 			"HeroesquestFishingeels.png",
-
 			"KillingGrip.png"
 		]
 	},
@@ -2341,7 +2317,6 @@
 			"HerosWelcome.png",
 			"HerosWelcomecompletedmap.png",
 			"HerosWelcomequestionsinterface.png",
-
 			"TheDragonkinsquabble.png",
 			"Vreturns.png",
 			"Vsdeath.png"
@@ -2358,7 +2333,6 @@
 			"Dagannothmotherbattle.png",
 			"Fixinglighthousebridge.png",
 			"HorrorfromtheDeep.png",
-
 			"Lighthouserepaired.png"
 		]
 	},
@@ -2367,7 +2341,6 @@
 		"images": [
 			"Footprint.png",
 			"HuntforRedRaktuber.png",
-
 			"KGPofficemap.png",
 			"MarlinsSlug.png",
 			"PenguinCapture.png",
@@ -2409,7 +2382,6 @@
 			"Screenshot_30.png",
 			"Screenshot_28.png",
 			"Screenshot_29.png",
-
 			"Screenshot_31.png",
 			"Screenshot_32.png",
 			"Screenshot_33.png",
@@ -2477,7 +2449,6 @@
 			"InAidoftheMyrequeMiningentrance.png",
 			"InAidoftheMyrequePickingpathtotemple.png",
 			"InAidoftheMyrequeProtectingIvan.png",
-
 			"TombIvandisSeergaze.png"
 		]
 	},
@@ -2499,7 +2470,7 @@
 			"FletchTwigs.png",
 			"LightPyre.png",
 			"LightPyre2.png",
-			"WatchPhoenixBurn",
+			"WatchPhoenixBurn.png",
 			"WatchPhoenixBurn2.png",
 			"RiseFromAsh.png",
 			"TalkToPhoenix.png",
@@ -2511,13 +2482,12 @@
 	},
 	{
 		"name": "In Search of the Myreque",
-		"images": ["CyregPaddlehornsboat.png", "InSearchoftheMyreque.png"]
+		"images": []
 	},
 	{
 		"name": "Jungle Potion",
 		"images": [
 			"JunglePotion.png",
-
 			"Marshyjunglevine.png",
 			"PalmtreeJunglePotionCwithardrigal.png",
 			"Roguespurse.png",
@@ -2535,7 +2505,6 @@
 			"KCRoom.png",
 			"KennithcapturesKimberly.png",
 			"KennithsConcerns.png",
-
 			"KentandCaroline.png",
 			"KimberlysParents.png",
 			"Shockingconversation.png"
@@ -2552,7 +2521,6 @@
 			"EscapingSliskeslair.png",
 			"Hanginginthebalance.png",
 			"KindredSpirits.png",
-
 			"PunchingSliske.png",
 			"SliskeandtheStoneofJas.png",
 			"SliskekillsSamwell.png",
@@ -2570,7 +2538,6 @@
 			"Getthemachinesworking.png",
 			"Grimssonfight.png",
 			"KingoftheDwarves.png",
-
 			"LavaFlowMineexplosion.png"
 		]
 	},
@@ -2585,7 +2552,6 @@
 			"Fairyringpuzzle.png",
 			"GrubfootandMistag.png",
 			"GrubfootsDream.png",
-
 			"Strongbonesfight.png",
 			"Yubiusk.png",
 			"Zanikenters.png",
@@ -2604,7 +2570,6 @@
 			"KillingaVyrewatch.png",
 			"Legacy.png",
 			"LegacyofSeergaze.png",
-
 			"Repairingfurnace.png",
 			"SafalaanPower.png",
 			"SpeakingtoFlaygian.png",
@@ -2623,7 +2588,6 @@
 			"LegendsQuest.png",
 			"LegendsQuestFinalBoss.png",
 			"LegendsQuestQuestStart.png",
-
 			"Nezikchenedfirstform.png",
 			"Octagonoffire.png",
 			"Viyeldicavesmap.png",
@@ -2639,7 +2603,6 @@
 		"images": [
 			"Adventurerscamp.png",
 			"FightingtheDramentreespirit.png",
-
 			"LostCitytree.png",
 			"Zanarisshed.png"
 		]
@@ -2671,7 +2634,6 @@
 			"LunarDiplomacy.png",
 			"LunarDiplomacydreampuffs.png",
 			"LunarDiplomacyrace.png",
-
 			"LunarDiplomacySafespot.png",
 			"LunarDiplomacysymbols.png",
 			"Lunarstaffenchantment.png",
@@ -2750,7 +2712,6 @@
 			"FightingSliskeswights.png",
 			"FightingwithIcthlarin.png",
 			"MissingCPresumedDeath.png",
-
 			"Shadowcastersolution.png",
 			"SliskesGrandAscendancy.png",
 			"SliskesGrandAscendancyGathering.png",
@@ -2788,7 +2749,6 @@
 			"Crashisland.png",
 			"Monkeyaunt.png",
 			"MonkeyMadness.png",
-
 			"SpeakingtoGarkor.png",
 			"SpeakingtoNarnode.png"
 		]
@@ -2808,7 +2768,6 @@
 			"MeetingtheHeadMourner.png",
 			"MeetingwithArianwyn.png",
 			"MourningsEndPartI.png",
-
 			"Poisoningthegrain.png",
 			"Shootingsheep.png"
 		]
@@ -2835,28 +2794,7 @@
 	},
 	{
 		"name": "Murder Mystery",
-		"images": [
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
-		]
+		"images": ["MurderMystery.png"]
 	},
 	{
 		"name": "Murder on the Border",
@@ -2866,7 +2804,6 @@
 			"Murderontheborderfeast.png",
 			"MurderontheborderMysteryjournalevidence.png",
 			"MurderontheborderMysteryjournalsuspects.png",
-
 			"Simonsdeath.png"
 		]
 	},
@@ -2881,7 +2818,6 @@
 			"MyababoatHD.png",
 			"MyArmGainsFarming.png",
 			"MyArmsBigAdventure.png",
-
 			"Rocstunattack.png",
 			"Searchingthecauldron.png"
 		]
@@ -2897,22 +2833,13 @@
 			"LoSRoom.png",
 			"MeetingtheSnowimps.png",
 			"MythsoftheWhiteLands.png",
-
 			"Shoutingthroughthepipe.png",
 			"YetiCave.png"
 		]
 	},
 	{
 		"name": "Nature Spirit",
-		"images": [
-			"Invisibleghasts.png",
-			"Killingaghast.png",
-			"NatureGrotto.png",
-			"NatureSpirit.png",
-
-			"NatureSpirittalkingtoDrezel.png",
-			"Naturespirittransform.png"
-		]
+		"images": []
 	},
 	{
 		"name": "Necromancy",
@@ -2929,7 +2856,6 @@
 		"images": [
 			"NewFoundations.png",
 			"NewFoundationsplayerbuildingwall.png",
-
 			"NewFoundationsthebeginningthroneroom.png"
 		]
 	},
@@ -2951,7 +2877,6 @@
 			"NomadsElegy.png",
 			"NomadsElegyexplosion.png",
 			"NomadsElegygatheringresources.png",
-
 			"SiegeonNomadsfortress.png",
 			"ThebattlewithNomad.png",
 			"Xeniafightsascended.png"
@@ -2967,7 +2892,6 @@
 			"Makingabridgeofslabs.png",
 			"NomadsDefeat.png",
 			"NomadsRequiem.png",
-
 			"NomadsRequiemsolution.png",
 			"Nomadstrikes.png",
 			"RootsNomadsRequiem.png",
@@ -2979,7 +2903,6 @@
 		"name": "Observatory Quest",
 		"images": [
 			"ObservatoryQuest.png",
-
 			"Repairingthetelescope.png",
 			"Wakingthesleepingguard.png"
 		]
@@ -2991,7 +2914,6 @@
 			"BrineRatCaverndoorpuzzle.png",
 			"OlafsQuest.png",
 			"Olafsquestpuzzlecompleted.png",
-
 			"Svenslastmapread.png"
 		]
 	},
@@ -3021,19 +2943,19 @@
 	},
 	{
 		"name": "Once Upon a Time in Gielinor: Flashback",
-		"images": ["OnceUponaTimeinGielinor.png", ""]
+		"images": ["OnceUponaTimeinGielinor.png"]
 	},
 	{
 		"name": "Once Upon a Time in Gielinor: Fortunes",
-		"images": ["OnceUponaTimeinGielinor.png", ""]
+		"images": ["OnceUponaTimeinGielinor.png"]
 	},
 	{
 		"name": "Once Upon a Time in Gielinor: Foreshadowing",
-		"images": ["OnceUponaTimeinGielinor.png", ""]
+		"images": ["OnceUponaTimeinGielinor.png"]
 	},
 	{
 		"name": "Once Upon a Time in Gielinor: Finale",
-		"images": ["OnceUponaTimeinGielinor.png", ""]
+		"images": ["OnceUponaTimeinGielinor.png"]
 	},
 	{
 		"name": "Once Upon a Slime",
@@ -3051,7 +2973,6 @@
 			"Investigatingthesymbols.png",
 			"MeetingwiththeKBD.png",
 			"OneofaKind.png",
-
 			"RobertsLibrary.png",
 			"Sharriganarrives.png",
 			"SiphoningDragonkinmemories.png",
@@ -3070,7 +2991,6 @@
 			"Killerstrikes.png",
 			"Layingthebodytorest.png",
 			"OnePiercingNote.png",
-
 			"SisterAnnasdeath.png",
 			"Thekillermurdering.png",
 			"UnusedcharactersfromOnePiercingNote.png"
@@ -3092,7 +3012,6 @@
 			"Jabaribattle.png",
 			"MeetingHet.png",
 			"OurManintheNorth.png",
-
 			"ThePharoahsgoals.png",
 			"Thugsattack.png"
 		]
@@ -3104,12 +3023,11 @@
 			"IceMountainavalanche.png",
 			"PerilsofIceMountain.png",
 			"PerilsofIceMountainCutscene.png",
-
 			"Tentrepair.png"
 		]
 	},
 	{
-		"name": "Phite Club",
+		"name": "'Phite Club",
 		"images": [
 			"AmascutattheSoulAltar.png",
 			"BattlewiththePharaoh.png",
@@ -3132,7 +3050,6 @@
 			"Jumpingship.png",
 			"PiecesofHate.png",
 			"PiecesofHateinvasionlocations.png",
-
 			"Prisonguardflees.png",
 			"Secretpiratemeeting.png",
 			"Watchingthesunset.png"
@@ -3212,7 +3129,6 @@
 			"MiningWellofVoyage.png",
 			"PlaguesEnd.png",
 			"PlaguesEndHining.png",
-
 			"Prifddinaselfcamp.png",
 			"Relievingtheguard.png",
 			"TraversingthePoisonWastes.png"
@@ -3238,18 +3154,17 @@
 			"OutofbodyexperienceasComanderKorasi.png",
 			"QBTSCrossingthebridge.png",
 			"QBTSShipmemory.png",
-
 			"QuietBeforetheSwarmroom.png",
 			"Watchingthestarsedit.png"
 		]
 	},
 	{
 		"name": "Rag and Bone Man",
-		"images": [".RagandBoneMan.png"]
+		"images": ["RagandBoneMan.png"]
 	},
 	{
 		"name": "Raksha the Shadow Colossus Quest",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "Rat Catchers",
@@ -3272,7 +3187,7 @@
 			"TalkZem.png",
 			"TalkDeath.png",
 			"TreeOfBalance.png",
-			"Soil.png",
+			"Fertile Soil.png",
 			"SoulBeaconRepair.png",
 			"InspectVorky.png",
 			"ApproachVorkath.png",
@@ -3289,7 +3204,6 @@
 			"BushTchikimonkeynuts.png",
 			"CollectingRedbananas.png",
 			"Cookingthesnake.png",
-
 			"Snakepit.png"
 		]
 	},
@@ -3304,21 +3218,20 @@
 			"Evilchickenrfd.png",
 			"Fightingblackdragon.png",
 			"InspectingSirAmik.png",
-
 			"RFDBruleeFlambe.png"
 		]
 	},
 	{
 		"name": "Recipe for Disaster Freeing Skrach Uglogwee",
-		"images": ["", ""]
+		"images": ["TreewithArrow.png"]
 	},
 	{
 		"name": "Recipe for Disaster Freeing the Goblin Generals",
-		"images": [""]
+		"images": []
 	},
 	{
 		"name": "Recipe for Disaster Freeing the Lumbridge Sage",
-		"images": [""]
+		"images": ["QuizAnswers1.png", "QuizAnswers2.png", "QuizAnswers3.png"]
 	},
 	{
 		"name": "Recipe for Disaster Freeing the Mountain Dwarf",
@@ -3330,7 +3243,6 @@
 			"Chickencarriedacrossbridge.png",
 			"MissCheeversroom.png",
 			"RecruitmentDrive.png",
-
 			"Recruitmentdrivetrialmemorytest.png",
 			"SirLeyeroom.png",
 			"SirRenItchoodroom.png",
@@ -3425,7 +3337,6 @@
 			"KillingHarold.png",
 			"Pouringtheguthixbalance.png",
 			"Riverofbloodbookshelfsolution.png",
-
 			"RiverofBloodVampyrearmy.png",
 			"SpeakingtoEfaritay.png",
 			"SpeakingtoSarius.png"
@@ -3442,7 +3353,6 @@
 			"MakingarubbingofLuke.png",
 			"RimmingtonCustomsOfficeinterior.png",
 			"RockingOut.png",
-
 			"RockingOutWandaTheFishFilingCabinet.png"
 		]
 	},
@@ -3472,7 +3382,6 @@
 			"RuneMechanics.png",
 			"Runemechanicsanimation.png",
 			"Runemechanicsprint.png",
-
 			"RuneMechanicswiring.png"
 		]
 	},
@@ -3494,7 +3403,6 @@
 			"Openingfirsttowerbasement.png",
 			"Organinterface.png",
 			"RuneMysteries.png",
-
 			"TrappingtheVortex.png",
 			"TroubleintheLibrary.png"
 		]
@@ -3510,7 +3418,6 @@
 			"FightingaRisenknight.png",
 			"LuringaSeaSlug.png",
 			"SaltintheWound.png",
-
 			"Thefinalbattle.png",
 			"Throwingserum.png"
 		]
@@ -3542,7 +3449,6 @@
 			"MatthewDie.png",
 			"MeetingDave.png",
 			"ShadowoftheStorm.png",
-
 			"SoSDesummoning.png",
 			"UzerSandstorm.png"
 		]
@@ -3552,7 +3458,6 @@
 		"images": [
 			"Burningsheepbones.png",
 			"SheepHerder.png",
-
 			"SheepProd.png",
 			"Sicklookingsheep.png"
 		]
@@ -3593,7 +3498,6 @@
 			"ShiloVillage.png",
 			"Shilovillagedolmen.png",
 			"ShiloVillageQuestUndeadOnes.png",
-
 			"ShilovillageTombofRashiliya.png",
 			"ShilovillageZadimusgrave.png"
 		]
@@ -3665,7 +3569,6 @@
 			"POWcamp.png",
 			"RepairedEngine.png",
 			"Sealssleeping.png",
-
 			"Submarineaction.png",
 			"Thecrashedsubmarine.png"
 		]
@@ -3676,7 +3579,6 @@
 			"FollowingWaylanssoul.png",
 			"Glowingsymbol.png",
 			"SFTDRoomBurningsapling.png",
-
 			"Thejump.png",
 			"TheSiren.png"
 		]
@@ -3692,7 +3594,6 @@
 			"CaughtSpiritBeast.png",
 			"SpiritofSummer.png",
 			"SpiritofSummerDiscdamage.png",
-
 			"TrappedSummer.png"
 		]
 	},
@@ -3711,7 +3612,6 @@
 			"PunishingKhnum.png",
 			"StolenHearts.png",
 			"StolenHeartsCornered.png",
-
 			"StolenHeartsScalespuzzle.png",
 			"TheillEmir.png"
 		]
@@ -3797,7 +3697,6 @@
 			"IntheVoidinSummersEnd.png",
 			"SpiritBeast.png",
 			"SummersEnd.png",
-
 			"SummersEnd_FirepitLocations.jpg",
 			"TheEndofSummer.png"
 		]
@@ -3990,7 +3889,6 @@
 			"SafeSpotZanik.png",
 			"StatuesMoving.png",
 			"TalkingtoJuna.png",
-
 			"Thesickchildren.png",
 			"Wecanfight.png",
 			"ZanikGrapple.png"
@@ -4020,7 +3918,7 @@
 		]
 	},
 	{
-		"name": "The Darknessof Hallowvale",
+		"name": "The Darkness of Hallowvale",
 		"images": [
 			"Aeonisigteleports.png",
 			"Decoratedwall.png",
@@ -4035,7 +3933,6 @@
 			"Telegrabhaemalchemy.png",
 			"TheDarknessofHallowvale.png",
 			"TheDarknessofHallowvalemineroutemap.png",
-
 			"Updatedunusedcastledrakanmap.png"
 		]
 	},
@@ -4131,7 +4028,6 @@
 			"Linerow.png",
 			"SafeSpotElderKiln.png",
 			"TheElderKilnquest.png",
-
 			"TzHaarKetYittalsafespot.png",
 			"TzHaarnumbers.png",
 			"YtMejKotfight.png"
@@ -4161,7 +4057,6 @@
 			"TheFiremakersCursefireroom.png",
 			"TheFiremakersCursefirstroom.png",
 			"TheFiremakersCurseinfobox.png",
-
 			"TheFiremakersCursewavepuzzle.png",
 			"Wallofflame.png"
 		]
@@ -4282,7 +4177,6 @@
 			"ImprisonedwithCharlie.png",
 			"Searchingroots.png",
 			"TheGrandTree.png",
-
 			"Tuzo.png"
 		]
 	},
@@ -4312,7 +4206,6 @@
 			"SirVyvvinscabinet.png",
 			"Startoftheknightssword.png",
 			"TheKnightsSword.png",
-
 			"Thurgoandhut.png"
 		]
 	},
@@ -4331,7 +4224,6 @@
 			"Takingthedarkshard.png",
 			"TheLightWithin.png",
 			"TheLightWithinpuzzle.png",
-
 			"Theprudencecrystal.png"
 		]
 	},
@@ -4357,7 +4249,6 @@
 			"ProtectingIvan.png",
 			"Ringpuzzlesolution.png",
 			"TheLordofVampyrium.png",
-
 			"Vanesculabetraysyou.png",
 			"VanesculastabsLowerniel.png",
 			"Veliafgivesup.png",
@@ -4370,7 +4261,6 @@
 			"QuestStart.png",
 			"Screenshot_1.png",
 			"Screenshot_2.png",
-
 			"Screenshot_4.png",
 			"Screenshot_5.png",
 			"Screenshot_6.png",
@@ -4536,7 +4426,6 @@
 			"SeaSlugShrine.png",
 			"Slugmenacewall.png",
 			"TheSlugMenace.png",
-
 			"WitchavenDungeonmap.png"
 		]
 	},
@@ -4615,7 +4504,6 @@
 			"Anainabarrelinaminecart.png",
 			"Makingtheprototypedart.png",
 			"TheTouristTrap.png",
-
 			"TheTouristTrapstart.png",
 			"TouristTrapMineCart.png",
 			"Tradingclothes.png"
@@ -4628,7 +4516,6 @@
 			"TheVaultofShadows.png",
 			"TheVaultofShadowsbloodpuzzle.png",
 			"TheVaultofShadowspuzzleorientationanddialcommands.png",
-
 			"TheVaultofShadowsshadowpuzzle.png",
 			"TheVaultofShadowssmokepuzzle.png",
 			"VaultofShadows.png"
@@ -4649,7 +4536,6 @@
 			"ThePestQueenemerges.png",
 			"TheVoidGooExplosion.png",
 			"TheVoidStaresBack.png",
-
 			"VoidStaresBackForge.png",
 			"Weightdistribution.png"
 		]
@@ -4674,7 +4560,6 @@
 			"TheWorldWakes.png",
 			"TheWorldWakesbanner.png",
 			"TheWorldWakesdoorsolution.png",
-
 			"TheWorldWakesstorageroomsolution.png",
 			"ZemouregalandSharathteerk.png",
 			"ZilyanaandKril.png"
@@ -4806,7 +4691,6 @@
 			"pathtofredas.png",
 			"TrollCaveEntrancePath.png",
 			"TrollRomance.png",
-
 			"TrollStrongholdPath.png",
 			"TRridesled.png",
 			"Waxingthesled.png"
@@ -4955,7 +4839,7 @@
 			"RitualSiteLoc.png",
 			"ReplaceFocus.png",
 			"RitualSettings.png",
-			"ritual1",
+			"ritual1.png",
 			"Ritual2.png",
 			"TalkToDeath.png"
 		]
@@ -5055,7 +4939,7 @@
 			"Locationofpetshop.png",
 			"Pickupsticks.png",
 			"WhiteHairMeat.png",
-			"SkittlebricksLoc",
+			"SkittlebricksLoc.png",
 			"SkittlebricksBoddy.png",
 			"SkittleBricksBooddy2.png",
 			"Pickupsticks.png",
