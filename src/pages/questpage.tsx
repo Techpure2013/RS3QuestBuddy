@@ -72,7 +72,7 @@ const QuestPage: React.FC = () => {
 	let isPog = false;
 	const [stepHidden, setStepHidden] = useState(false);
 	const buttonRef = useRef<HTMLButtonElement | null>(null);
-	const [toTop, setToTop] = useState(false);
+
 	const [userColor, setUserColor] = useState("");
 	const [userLabelColor, setUserLabelColor] = useState("");
 	const [userButtonColor, setUserButtonColor] = useState("");
@@ -84,8 +84,7 @@ const QuestPage: React.FC = () => {
 	const isOpenNotes = useRef(false);
 
 	// const finder = new diagFinder();
-	const { showStepReq, toggleShowStepReq, viewQuestImage } =
-		useQuestControllerStore();
+	const { showStepReq, toggleShowStepReq } = useQuestControllerStore();
 	const handles = useQuestControllerStore();
 	const [skillLevels, setSkillLevels] = useState<string[]>([]);
 	const [completedQuests, setCompleteQuests] = useState<string[] | null>(null);
@@ -180,21 +179,7 @@ const QuestPage: React.FC = () => {
 	// const title = finder.readTitle(capture);
 	// console.log(title);
 	// Use useEffect to scroll when viewQuestImage is true
-	useEffect(() => {
-		if (toTop && buttonRef.current) {
-			buttonRef.current.scrollIntoView({ behavior: "smooth" });
-		} else {
-			scrollIntoView(active);
-		}
-	}, [toTop]);
-	useEffect(() => {
-		if (viewQuestImage && carouselRef.current) {
-			carouselRef.current.scrollIntoView({ behavior: "smooth" });
-		} else {
-			// Scroll back to step
-			scrollIntoView(active);
-		}
-	}, [viewQuestImage]);
+
 	function copyStyle(
 		_from: Window,
 		to: Window,
@@ -1012,31 +997,6 @@ const QuestPage: React.FC = () => {
 								>
 									Quest Images (New Feature!)
 								</Button>
-								{toTop ? (
-									<ActionIcon
-										className="return"
-										size="compact-sm"
-										variant="outline"
-										color={hasButtonColor ? userButtonColor : ""}
-										onClick={() => {
-											setToTop((prev) => !prev);
-										}}
-									>
-										Return to Step
-									</ActionIcon>
-								) : (
-									<ActionIcon
-										className="return"
-										size="compact-sm"
-										variant="outline"
-										color={hasButtonColor ? userButtonColor : ""}
-										onClick={() => {
-											setToTop((prev) => !prev);
-										}}
-									>
-										Return to Top
-									</ActionIcon>
-								)}
 							</div>
 							<div id="prev-next">
 								<Button
