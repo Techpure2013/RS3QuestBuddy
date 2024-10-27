@@ -366,3 +366,16 @@ img.enlarged {
 .return {
 	padding: 4px 8px;
 }
+
+/* Carousel overrides */
+.mantine-Carousel-control {
+	transition: 0.3s ease-in-out;
+}
+.mantine-Carousel-control[data-inactive] {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+.mantine-Carousel-control:not([data-inactive]):hover {
+	background-color: var(--title-color);
+	border-color: var(--title-color);
+}

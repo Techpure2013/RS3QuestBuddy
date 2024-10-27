@@ -323,27 +323,30 @@ const QuestPage: React.FC = () => {
 							Left), click the double squares to remaximize to the width you set the
 							window!
 						</p>
-						<MantineProvider defaultColorScheme="dark">
-							<Carousel
-								getEmblaApi={setEmbla}
-								speed={100}
-								withIndicators={false}
-								orientation="horizontal"
-								styles={{ root: { width: "420px" } }}
-								nextControlIcon={<IconArrowRight size={16} />}
-								previousControlIcon={<IconArrowLeft size={16} />}
-								className="QuestPageImageCaro"
-								includeGapInSize={true}
-								containScroll={"trimSnaps"}
-								ref={carouselRef}
-							>
-								{imageDetails.imageList.map((src, index) => (
-									<Carousel.Slide key={index}>
-										<img src={src} />
-									</Carousel.Slide>
-								))}
-							</Carousel>
-						</MantineProvider>
+						{imageDetails.imageList.length > 0 &&
+							<MantineProvider defaultColorScheme="dark">	
+								<Carousel
+									getEmblaApi={setEmbla}
+									speed={100}
+									withIndicators={false}
+									orientation="horizontal"
+									styles={{ root: { width: "420px" } }}
+									nextControlIcon={<IconArrowRight size={16} />}
+									previousControlIcon={<IconArrowLeft size={16} />}
+									className="QuestPageImageCaro"
+									includeGapInSize={true}
+									containScroll={"trimSnaps"}
+									ref={carouselRef}
+								>
+									{imageDetails.imageList.map((src, index) => (
+										<Carousel.Slide key={index}>
+											<img src={src} />
+										</Carousel.Slide>
+									))}
+								</Carousel>
+							</MantineProvider>
+						}
+						{!imageDetails.imageList.length && <h2>No Images Found</h2>}
 					</>
 				);
 			}
