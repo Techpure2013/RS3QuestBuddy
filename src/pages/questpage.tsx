@@ -10,7 +10,6 @@ import {
 	Modal,
 	Stepper,
 } from "@mantine/core";
-import * as a1lib from "alt1";
 import { Carousel, Embla, useAnimationOffsetEffect } from "@mantine/carousel";
 
 import {
@@ -221,7 +220,6 @@ const QuestPage: React.FC = () => {
 	};
 
 	const scrollIntoView = (step: number) => {
-		console.log("ishere");
 		const element = document.getElementById(step.toString());
 		if (element) {
 			element.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -451,11 +449,9 @@ const QuestPage: React.FC = () => {
 		);
 		if (newWindow) newWindow.opener = null;
 	}
-	a1lib.once("alt1pressed", scrollNext);
 	return (
 		<>
 			<Reader reader={reader} questName={questName} />
-
 			<div>
 				<Modal
 					title="Notes"
