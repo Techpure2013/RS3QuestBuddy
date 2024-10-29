@@ -11,7 +11,7 @@ import {
 	Stepper,
 } from "@mantine/core";
 import { Carousel, Embla, useAnimationOffsetEffect } from "@mantine/carousel";
-
+import * as a1lib from "alt1";
 import {
 	IconBrandDiscord,
 	IconArrowLeft,
@@ -204,12 +204,6 @@ const QuestPage: React.FC = () => {
 			console.error("Error copying style:", error);
 		}
 	}
-	const scrollNext = (): void => {
-		const nextStep = active + 1;
-		if (nextStep <= details.stepDetails.length) {
-			scrollIntoView(nextStep);
-		}
-	};
 
 	const scrollPrev = (): void => {
 		const prevStep = active - 1;
@@ -219,12 +213,6 @@ const QuestPage: React.FC = () => {
 		}
 	};
 
-	const scrollIntoView = (step: number) => {
-		const element = document.getElementById(step.toString());
-		if (element) {
-			element.scrollIntoView({ behavior: "smooth", block: "center" });
-		}
-	};
 	const ShouldAllowStep = (step: number) => {
 		step = step;
 		return highestStepVisited >= step && active !== step;
@@ -399,6 +387,41 @@ const QuestPage: React.FC = () => {
 			setHighestStepVisited((hSC) => Math.max(hSC, nextStep));
 		}
 	};
+	const scrollNext = () => {
+		setActive((prevActive) => {
+			const nextStep = prevActive + 1;
+			if (nextStep <= details.stepDetails.length) {
+				scrollIntoView(nextStep);
+
+				return nextStep;
+			}
+			return prevActive;
+		});
+	};
+
+	const scrollIntoView = (step: number) => {
+		const element = document.getElementById(step.toString());
+		if (element) {
+			element.scrollIntoView({ behavior: "smooth", block: "center" });
+		}
+	};
+
+	const useAlt1Listener = (callback: () => void) => {
+		useEffect(() => {
+			const handleAlt1Pressed = () => {
+				callback();
+			};
+
+			// Attach event listener once when component mounts
+
+			a1lib.on("alt1pressed", handleAlt1Pressed);
+
+			// Clean up the listener on unmount
+			return () => {
+				a1lib.removeListener("alt1pressed", handleAlt1Pressed);
+			};
+		}, [callback]); // Only re-run if callback changes
+	};
 	useEffect(() => {
 		const hl = localStorage.getItem("isHighlighted");
 		const rs = localStorage.getItem("removeStep");
@@ -449,6 +472,7 @@ const QuestPage: React.FC = () => {
 		);
 		if (newWindow) newWindow.opener = null;
 	}
+	useAlt1Listener(scrollNext);
 	return (
 		<>
 			<Reader reader={reader} questName={questName} />
@@ -891,7 +915,7 @@ const QuestPage: React.FC = () => {
 								<Stepper.Step
 									id={(index + 1).toString()}
 									className="stepperStep"
-									label={`Step: ${index + 1}`}
+									label={<>{` Step: ${index + 1}`}</>}
 									key={create_ListUUID()}
 									color={active > index ? "#24BF58" : ""}
 									styles={{
@@ -957,6 +981,7 @@ const QuestPage: React.FC = () => {
 							)
 						)}
 					</Stepper>
+
 					<></>
 					{
 						<div className="prevNextGroup">
