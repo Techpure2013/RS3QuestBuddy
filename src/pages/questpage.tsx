@@ -1033,7 +1033,7 @@ const QuestPage: React.FC = () => {
 									variant="outline"
 									color={hasButtonColor ? userButtonColor : ""}
 									onClick={() => {
-										handleStepChange(active + 1);
+										handleStepChange(active);
 										scrollNext();
 									}}
 								>
