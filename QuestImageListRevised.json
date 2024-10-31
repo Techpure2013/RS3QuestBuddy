@@ -95,9 +95,9 @@
 		"images": [
 			{
 				"step": "1",
-				"src": "StartQuestDialog.png",
-				"width": 511,
-				"height": 145
+				"src": "QuestStartLoc.png",
+				"width": 263,
+				"height": 330
 			},
 			{
 				"step": "2",
@@ -112,19 +112,13 @@
 				"height": 513
 			},
 			{
-				"step": "4",
-				"src": "PickUpCertMonoLogue.png",
-				"width": 507,
-				"height": 142
-			},
-			{
-				"step": "5",
+				"step": "6",
 				"src": "showtofairychef.png",
 				"width": 512,
 				"height": 141
 			},
 			{
-				"step": "6",
+				"step": "5",
 				"src": "studyOptionsforCert.png",
 				"width": 191,
 				"height": 114
@@ -136,145 +130,121 @@
 				"height": 279
 			},
 			{
-				"step": "8",
+				"step": "7",
 				"src": "FairyGodfatherLoc.png",
 				"width": 397,
 				"height": 330
 			},
 			{
-				"step": "9",
+				"step": "7",
 				"src": "FairyGodFatherFairy.png",
 				"width": 325,
 				"height": 501
 			},
 			{
-				"step": "10",
-				"src": "OptiontoFairyGodfather.png",
-				"width": 522,
-				"height": 140
-			},
-			{
-				"step": "11",
-				"src": "optionforFairyGodfather2.png",
-				"width": 509,
-				"height": 133
-			},
-			{
-				"step": "12",
-				"src": "Optionforfairygodfather3.png",
-				"width": 517,
-				"height": 136
-			},
-			{
-				"step": "13",
+				"step": "8",
 				"src": "fairycoordinatorloc.png",
 				"width": 374,
 				"height": 291
 			},
 			{
-				"step": "14",
+				"step": "8",
 				"src": "FairyCoordinator.png",
 				"width": 269,
 				"height": 334
 			},
 			{
-				"step": "15",
-				"src": "OptiontoAskCoordinator.png",
-				"width": 511,
-				"height": 137
-			},
-			{
-				"step": "16",
+				"step": "9",
 				"src": "fairyfixitlocation.png",
 				"width": 207,
 				"height": 218
 			},
 			{
-				"step": "17",
+				"step": "9",
 				"src": "fairyfixitfairy.png",
 				"width": 222,
 				"height": 161
 			},
 			{
-				"step": "18",
+				"step": "10",
 				"src": "fairyringcode1.png",
 				"width": 408,
 				"height": 174
 			},
 			{
-				"step": "19",
+				"step": "10",
 				"src": "fairyringcode2.png",
 				"width": 385,
 				"height": 142
 			},
 			{
-				"step": "20",
+				"step": "10",
 				"src": "fairyringcode3.png",
 				"width": 396,
 				"height": 149
 			},
 			{
-				"step": "21",
+				"step": "10",
 				"src": "HowToGetToFairyHQ.png",
 				"width": 786,
 				"height": 252
 			},
 			{
-				"step": "22",
+				"step": "11",
 				"src": "fairynufflocationfairyhq.png",
 				"width": 451,
 				"height": 312
 			},
 			{
-				"step": "23",
+				"step": "11",
 				"src": "FairyNuffFairyHQ.png",
 				"width": 196,
 				"height": 233
 			},
 			{
-				"step": "24",
+				"step": "14",
 				"src": "starflowerfairycode.png",
 				"width": 381,
 				"height": 203
 			},
 			{
-				"step": "25",
+				"step": "17",
 				"src": "GorakFairyCode.png",
 				"width": 402,
 				"height": 210
 			},
 			{
-				"step": "26",
+				"step": "18",
 				"src": "GorakClaw.png",
 				"width": 272,
 				"height": 178
 			},
 			{
-				"step": "27",
+				"step": "21",
 				"src": "ItemsForEssencePot.png",
 				"width": 199,
 				"height": 82
 			},
 			{
-				"step": "28",
+				"step": "21",
 				"src": "EssencePotionstep2.png",
 				"width": 238,
 				"height": 86
 			},
 			{
-				"step": "29",
+				"step": "21",
 				"src": "EssencePotionstep3.png",
 				"width": 339,
 				"height": 101
 			},
 			{
-				"step": "30",
+				"step": "21",
 				"src": "FairyQueenCuring.png",
 				"width": 342,
 				"height": 467
 			},
 			{
-				"step": "31",
+				"step": "25",
 				"src": "TalkToFairyQueen.png",
 				"width": 329,
 				"height": 468
@@ -291,7 +261,7 @@
 				"height": 148
 			},
 			{
-				"step": "2",
+				"step": "1",
 				"src": "warning.png",
 				"width": 335,
 				"height": 137
@@ -303,13 +273,7 @@
 				"height": 210
 			},
 			{
-				"step": "4",
-				"src": "start.png",
-				"width": 479,
-				"height": 469
-			},
-			{
-				"step": "5",
+				"step": "2",
 				"src": "qstart.png",
 				"width": 416,
 				"height": 445
@@ -327,16 +291,10 @@
 				"height": 469
 			},
 			{
-				"step": "8",
+				"step": "7",
 				"src": "PROJECTOR.png",
 				"width": 451,
 				"height": 374
-			},
-			{
-				"step": "9",
-				"src": "Briefing.png",
-				"width": 299,
-				"height": 133
 			},
 			{
 				"step": "10",
@@ -345,25 +303,19 @@
 				"height": 393
 			},
 			{
-				"step": "11",
+				"step": "10",
 				"src": "hammerSecateurs.png",
 				"width": 207,
 				"height": 107
 			},
 			{
 				"step": "12",
-				"src": "teefextraTK.png",
-				"width": 513,
-				"height": 145
-			},
-			{
-				"step": "13",
 				"src": "toothextractondoor.png",
 				"width": 253,
 				"height": 333
 			},
 			{
-				"step": "14",
+				"step": "13",
 				"src": "tlk_gnarly.png",
 				"width": 258,
 				"height": 341
@@ -375,40 +327,22 @@
 				"height": 208
 			},
 			{
-				"step": "16",
+				"step": "15",
 				"src": "pickupGNARLY.png",
 				"width": 338,
 				"height": 249
 			},
 			{
-				"step": "17",
+				"step": "19",
 				"src": "WAVEEMOTE.png",
 				"width": 302,
 				"height": 377
 			},
 			{
-				"step": "18",
-				"src": "SW2MAP.png",
-				"width": 524,
-				"height": 222
-			},
-			{
-				"step": "19",
+				"step": "20",
 				"src": "teleout.png",
 				"width": 397,
 				"height": 470
-			},
-			{
-				"step": "20",
-				"src": "RECCFIX.png",
-				"width": 231,
-				"height": 211
-			},
-			{
-				"step": "21",
-				"src": "map_nwofbank.png",
-				"width": 472,
-				"height": 466
 			},
 			{
 				"step": "22",
@@ -430,12 +364,6 @@
 			},
 			{
 				"step": "25",
-				"src": "CAMPFIRE.png",
-				"width": 459,
-				"height": 467
-			},
-			{
-				"step": "26",
 				"src": "TALKKCHUNK.png",
 				"width": 336,
 				"height": 442
@@ -447,94 +375,88 @@
 				"height": 573
 			},
 			{
-				"step": "28",
+				"step": "25",
+				"src": "CAMPFIRE.png",
+				"width": 459,
+				"height": 467
+			},
+			{
+				"step": "25",
 				"src": "PP.png",
 				"width": 214,
 				"height": 250
 			},
 			{
-				"step": "29",
+				"step": "28",
 				"src": "MAPBKQ.png",
 				"width": 529,
 				"height": 233
 			},
 			{
-				"step": "30",
+				"step": "28",
 				"src": "WATERFALL.png",
 				"width": 382,
 				"height": 460
 			},
 			{
-				"step": "31",
+				"step": "28",
 				"src": "DRYAD.png",
 				"width": 238,
 				"height": 320
 			},
 			{
-				"step": "32",
+				"step": "29",
 				"src": "GRUMBLOD.png",
 				"width": 403,
 				"height": 261
 			},
 			{
-				"step": "33",
+				"step": "31",
 				"src": "MTREEMAP.png",
 				"width": 524,
 				"height": 266
 			},
 			{
-				"step": "34",
+				"step": "31",
 				"src": "MANGO.png",
 				"width": 403,
 				"height": 474
 			},
 			{
-				"step": "35",
+				"step": "32",
 				"src": "HLOG.png",
 				"width": 365,
 				"height": 416
 			},
 			{
 				"step": "36",
-				"src": "Mangowithtoothground.png",
-				"width": 300,
-				"height": 178
-			},
-			{
-				"step": "37",
 				"src": "EXTRACT_TOOTH.png",
 				"width": 251,
 				"height": 129
 			},
 			{
-				"step": "38",
+				"step": "33",
+				"src": "Mangowithtoothground.png",
+				"width": 300,
+				"height": 178
+			},
+			{
+				"step": "34",
 				"src": "SHREDFLESH.png",
 				"width": 265,
 				"height": 160
 			},
 			{
-				"step": "39",
+				"step": "36",
 				"src": "TOOTHBYEBYE.png",
 				"width": 392,
 				"height": 328
 			},
 			{
-				"step": "40",
+				"step": "37",
 				"src": "ROCKS.png",
 				"width": 280,
 				"height": 531
-			},
-			{
-				"step": "41",
-				"src": "RECC.5.png",
-				"width": 200,
-				"height": 224
-			},
-			{
-				"step": "42",
-				"src": "ComboTele.png",
-				"width": 500,
-				"height": 500
 			},
 			{
 				"step": "43",
@@ -543,88 +465,10 @@
 				"height": 579
 			},
 			{
-				"step": "44",
+				"step": "43",
 				"src": "fairyspell.png",
 				"width": 317,
 				"height": 664
-			},
-			{
-				"step": "45",
-				"src": "Godfathersarmy.png",
-				"width": 300,
-				"height": 194
-			},
-			{
-				"step": "46",
-				"src": "TEETHPATCH.png",
-				"width": 236,
-				"height": 312
-			},
-			{
-				"step": "47",
-				"src": "KL_.png",
-				"width": 214,
-				"height": 212
-			},
-			{
-				"step": "48",
-				"src": "thefight.png",
-				"width": 480,
-				"height": 336
-			},
-			{
-				"step": "49",
-				"src": "tootharmy.png",
-				"width": 348,
-				"height": 310
-			},
-			{
-				"step": "50",
-				"src": "ttfgf.png",
-				"width": 306,
-				"height": 387
-			},
-			{
-				"step": "51",
-				"src": "FG.png",
-				"width": 304,
-				"height": 507
-			},
-			{
-				"step": "52",
-				"src": "afterfight.png",
-				"width": 400,
-				"height": 548
-			},
-			{
-				"step": "53",
-				"src": "close1.png",
-				"width": 661,
-				"height": 286
-			},
-			{
-				"step": "54",
-				"src": "close2.png",
-				"width": 574,
-				"height": 210
-			},
-			{
-				"step": "55",
-				"src": "close3.png",
-				"width": 506,
-				"height": 231
-			},
-			{
-				"step": "56",
-				"src": "close4.png",
-				"width": 499,
-				"height": 225
-			},
-			{
-				"step": "57",
-				"src": "close5.png",
-				"width": 498,
-				"height": 223
 			}
 		]
 	},
@@ -632,147 +476,20 @@
 		"name": "A Shadow over Ashdale",
 		"images": [
 			{
-				"step": "1",
-				"src": "Agorothdies.png",
-				"width": 299,
-				"height": 169
-			},
-			{
-				"step": "2",
-				"src": "AShadowoverAshdale.png",
-				"width": 300,
-				"height": 169
-			},
-			{
-				"step": "3",
-				"src": "AShadowoverAshdaleAshdaleissafe.png",
-				"width": 300,
-				"height": 169
-			},
-			{
-				"step": "4",
+				"step": "12",
 				"src": "BarrelPuzzle.png",
 				"width": 422,
 				"height": 226
-			},
-			{
-				"step": "5",
-				"src": "ASOAAgorothArrives.png",
-				"width": 300,
-				"height": 186
-			},
-			{
-				"step": "6",
-				"src": "ASOABarrelpuzzle.png",
-				"width": 299,
-				"height": 198
-			},
-			{
-				"step": "7",
-				"src": "FightingAgoroth.png",
-				"width": 300,
-				"height": 191
-			},
-			{
-				"step": "8",
-				"src": "KillingaCrassianwarrior.png",
-				"width": 300,
-				"height": 315
 			}
 		]
 	},
 	{
 		"name": "A Soul's Bane",
-		"images": [
-			{
-				"step": "1",
-				"src": "Angerweapons.png",
-				"width": 300,
-				"height": 241
-			},
-			{
-				"step": "2",
-				"src": "ASoulsBane.png",
-				"width": 300,
-				"height": 168
-			},
-			{
-				"step": "3",
-				"src": "ConfrontingTolna.png",
-				"width": 300,
-				"height": 186
-			},
-			{
-				"step": "4",
-				"src": "FightingTolna.png",
-				"width": 299,
-				"height": 178
-			},
-			{
-				"step": "5",
-				"src": "Increaserage.png",
-				"width": 300,
-				"height": 199
-			},
-			{
-				"step": "6",
-				"src": "Killingfear.png",
-				"width": 300,
-				"height": 218
-			},
-			{
-				"step": "7",
-				"src": "Superrage.png",
-				"width": 300,
-				"height": 173
-			},
-			{
-				"step": "8",
-				"src": "Tolna.png",
-				"width": 300,
-				"height": 174
-			},
-			{
-				"step": "9",
-				"src": "Tolnaconfused.png",
-				"width": 300,
-				"height": 196
-			},
-			{
-				"step": "10",
-				"src": "Tolnaleaveshome.png",
-				"width": 300,
-				"height": 197
-			},
-			{
-				"step": "11",
-				"src": "Tolnatrapped.png",
-				"width": 300,
-				"height": 205
-			}
-		]
+		"images": []
 	},
 	{
 		"name": "Bar Crawl (miniquest)",
 		"images": [
-			{
-				"step": "1",
-				"src": "Screenshot_1.png",
-				"width": 55,
-				"height": 67
-			},
-			{
-				"step": "2",
-				"src": "Screenshot_2.png",
-				"width": 350,
-				"height": 215
-			},
-			{
-				"step": "3",
-				"src": "Screenshot_3.png",
-				"width": 350,
-				"height": 207
-			},
 			{
 				"step": "4",
 				"src": "Screenshot_4.png",
@@ -781,129 +498,51 @@
 			},
 			{
 				"step": "5",
-				"src": "Screenshot_5.png",
-				"width": 350,
-				"height": 188
-			},
-			{
-				"step": "6",
 				"src": "Screenshot_6.png",
 				"width": 350,
 				"height": 162
 			},
 			{
-				"step": "7",
-				"src": "Screenshot_7.png",
-				"width": 350,
-				"height": 185
-			},
-			{
-				"step": "8",
+				"step": "6",
 				"src": "Screenshot_8.png",
 				"width": 350,
 				"height": 154
 			},
 			{
-				"step": "9",
-				"src": "Screenshot_9.png",
-				"width": 351,
-				"height": 245
-			},
-			{
-				"step": "10",
+				"step": "7",
 				"src": "Screenshot_10.png",
 				"width": 335,
 				"height": 229
 			},
 			{
-				"step": "11",
-				"src": "Screenshot_11.png",
-				"width": 351,
-				"height": 243
-			},
-			{
-				"step": "12",
+				"step": "8",
 				"src": "Screenshot_12.png",
 				"width": 350,
 				"height": 167
 			},
 			{
-				"step": "13",
-				"src": "Screenshot_13.png",
-				"width": 350,
-				"height": 201
-			},
-			{
-				"step": "14",
+				"step": "9",
 				"src": "Screenshot_14.png",
 				"width": 350,
 				"height": 153
 			},
 			{
-				"step": "15",
-				"src": "Screenshot_15.png",
-				"width": 350,
-				"height": 223
-			},
-			{
-				"step": "16",
-				"src": "Screenshot_16.png",
-				"width": 350,
-				"height": 222
-			},
-			{
-				"step": "17",
-				"src": "Screenshot_17.png",
-				"width": 350,
-				"height": 286
-			},
-			{
-				"step": "18",
+				"step": "10",
 				"src": "Screenshot_18.png",
 				"width": 350,
 				"height": 144
 			},
 			{
-				"step": "19",
-				"src": "Screenshot_19.png",
-				"width": 350,
-				"height": 192
-			},
-			{
-				"step": "20",
+				"step": "12",
 				"src": "Screenshot_20.png",
 				"width": 350,
 				"height": 184
 			},
 			{
-				"step": "21",
-				"src": "Screenshot_21.png",
-				"width": 50,
-				"height": 48
-			},
-			{
-				"step": "22",
-				"src": "Screenshot_22.png",
-				"width": 350,
-				"height": 164
-			},
-			{
-				"step": "23",
+				"step": "12",
 				"src": "Screenshot_23.png",
 				"width": 350,
 				"height": 160
-			},
-			{
-				"step": "24",
-				"src": "Screenshot_24.png",
-				"width": 350,
-				"height": 190
-			},
-			{
-				"step": "25",
-				"src": "Screenshot_25.png",
-				"width": 350,
-				"height": 267
 			}
 		]
 	},
@@ -4087,56 +3726,7 @@
 	},
 	{
 		"name": "Beneath Cursed Tides",
-		"images": [
-			{
-				"step": "1",
-				"src": "BeneathCursedTides.png",
-				"width": 299,
-				"height": 160
-			},
-			{
-				"step": "2",
-				"src": "BeneathCursedTidescookingshrimp.png",
-				"width": 299,
-				"height": 178
-			},
-			{
-				"step": "3",
-				"src": "BeneathCursedTidesrecruitingVannaka.png",
-				"width": 300,
-				"height": 340
-			},
-			{
-				"step": "4",
-				"src": "BeneathCursedTidestutors.png",
-				"width": 300,
-				"height": 186
-			},
-			{
-				"step": "5",
-				"src": "Cookingforthemasterchef.png",
-				"width": 300,
-				"height": 256
-			},
-			{
-				"step": "6",
-				"src": "Deadsearats.png",
-				"width": 300,
-				"height": 172
-			},
-			{
-				"step": "7",
-				"src": "KillingachickenforTerrova.png",
-				"width": 300,
-				"height": 215
-			},
-			{
-				"step": "8",
-				"src": "ShowdownwithVivian.png",
-				"width": 300,
-				"height": 187
-			}
-		]
+		"images": []
 	},
 	{
 		"name": "Between a Rock",
@@ -8473,42 +8063,36 @@
 		"images": [
 			{
 				"step": "1",
-				"src": "REQITEMS.png",
-				"width": 208,
-				"height": 211
-			},
-			{
-				"step": "2",
 				"src": "QSTART.png",
 				"width": 558,
 				"height": 323
 			},
 			{
 				"step": "3",
-				"src": "NEEDED.png",
-				"width": 205,
-				"height": 135
-			},
-			{
-				"step": "4",
 				"src": "CALEB.png",
 				"width": 171,
 				"height": 364
 			},
 			{
-				"step": "5",
+				"step": "2",
 				"src": "MAP2.png",
 				"width": 519,
 				"height": 238
 			},
 			{
-				"step": "6",
+				"step": "3",
+				"src": "MAP2.png",
+				"width": 519,
+				"height": 238
+			},
+			{
+				"step": "4",
 				"src": "ALKHARID.png",
 				"width": 473,
 				"height": 259
 			},
 			{
-				"step": "7",
+				"step": "16",
 				"src": "PRINGGIVEAVAN.png",
 				"width": 223,
 				"height": 351
@@ -8520,85 +8104,79 @@
 				"height": 357
 			},
 			{
-				"step": "9",
+				"step": "5",
 				"src": "MINE.png",
 				"width": 369,
 				"height": 424
 			},
 			{
-				"step": "10",
+				"step": "6",
 				"src": "BOOOTYYY.png",
 				"width": 344,
 				"height": 431
 			},
 			{
-				"step": "11",
-				"src": "NEEDED2.png",
-				"width": 179,
-				"height": 117
-			},
-			{
-				"step": "12",
+				"step": "7",
 				"src": "RUINSMAPO.png",
 				"width": 473,
 				"height": 259
 			},
 			{
-				"step": "13",
+				"step": "7",
 				"src": "RUINS.png",
 				"width": 448,
 				"height": 261
 			},
 			{
-				"step": "14",
+				"step": "9",
 				"src": "PUZ.png",
 				"width": 146,
 				"height": 246
 			},
 			{
-				"step": "15",
+				"step": "9",
 				"src": "PUZ2.png",
 				"width": 430,
 				"height": 411
 			},
 			{
-				"step": "16",
+				"step": "9",
 				"src": "PUZ3.png",
 				"width": 187,
 				"height": 293
 			},
 			{
-				"step": "17",
+				"step": "9",
 				"src": "PUZ4.png",
 				"width": 360,
 				"height": 438
 			},
 			{
-				"step": "18",
+				"step": "9",
 				"src": "PUZ5.png",
 				"width": 187,
 				"height": 334
 			},
 			{
-				"step": "19",
+				"step": "9",
 				"src": "PUZ6.png",
 				"width": 315,
 				"height": 272
 			},
 			{
-				"step": "20",
+				"step": "13",
 				"src": "HHROOM.png",
 				"width": 405,
 				"height": 281
 			},
 			{
-				"step": "21",
+				"step": "13",
 				"src": "MINEGOLD.png",
 				"width": 231,
 				"height": 297
 			},
 			{
-				"step": "22",
+				"step": "13",
 				"src": "SAFESPOT.png",
 				"width": 468,
 				"height": 249
@@ -8610,79 +8188,55 @@
 				"height": 260
 			},
 			{
-				"step": "24",
-				"src": "SMELTY.png",
-				"width": 330,
-				"height": 396
-			},
-			{
-				"step": "25",
-				"src": "SMELTYBARS.png",
-				"width": 523,
-				"height": 132
-			},
-			{
-				"step": "26",
-				"src": "ANTIPOIS.png",
-				"width": 183,
-				"height": 89
-			},
-			{
-				"step": "27",
+				"step": "17",
 				"src": "JOBI.png",
 				"width": 323,
 				"height": 288
 			},
 			{
-				"step": "28",
+				"step": "17",
 				"src": "JBI.png",
 				"width": 328,
 				"height": 392
 			},
 			{
-				"step": "29",
-				"src": "Itemsneeded3.png",
-				"width": 176,
-				"height": 51
-			},
-			{
-				"step": "30",
+				"step": "17",
 				"src": "JON.png",
 				"width": 281,
 				"height": 214
 			},
 			{
-				"step": "31",
+				"step": "19",
 				"src": "EDGE.png",
 				"width": 469,
 				"height": 261
 			},
 			{
-				"step": "32",
+				"step": "19",
 				"src": "DUNGMAP.png",
 				"width": 171,
 				"height": 224
 			},
 			{
-				"step": "33",
+				"step": "21",
 				"src": "BLAST.png",
 				"width": 156,
 				"height": 243
 			},
 			{
-				"step": "34",
+				"step": "21",
 				"src": "CHCRO.png",
 				"width": 474,
 				"height": 633
 			},
 			{
-				"step": "35",
+				"step": "25",
 				"src": "END.png",
 				"width": 508,
 				"height": 315
 			},
 			{
-				"step": "36",
+				"step": "25",
 				"src": "DIMI.png",
 				"width": 200,
 				"height": 289
@@ -8691,109 +8245,11 @@
 	},
 	{
 		"name": "Fate of the Gods",
-		"images": [
-			{
-				"step": "1",
-				"src": "ArrivalonFreneskae.png",
-				"width": 299,
-				"height": 183
-			},
-			{
-				"step": "2",
-				"src": "CollectingMahsmemories.png",
-				"width": 300,
-				"height": 176
-			},
-			{
-				"step": "3",
-				"src": "FateoftheGods.png",
-				"width": 300,
-				"height": 185
-			},
-			{
-				"step": "4",
-				"src": "FateoftheGodsDoorPuzzle.png",
-				"width": 300,
-				"height": 286
-			},
-			{
-				"step": "5",
-				"src": "FightingtheNihils.png",
-				"width": 300,
-				"height": 215
-			},
-			{
-				"step": "6",
-				"src": "Freneskaemap.png",
-				"width": 300,
-				"height": 261
-			},
-			{
-				"step": "7",
-				"src": "MahsNightmare.png",
-				"width": 300,
-				"height": 166
-			},
-			{
-				"step": "8",
-				"src": "TraversingFreneskae.png",
-				"width": 299,
-				"height": 169
-			},
-			{
-				"step": "9",
-				"src": "Zarosinplayersmindthreshold.png",
-				"width": 300,
-				"height": 192
-			},
-			{
-				"step": "10",
-				"src": "ZarosReturnGathering.png",
-				"width": 300,
-				"height": 193
-			}
-		]
+		"images": []
 	},
 	{
 		"name": "Fight Arena",
-		"images": [
-			{
-				"step": "1",
-				"src": "FightArenaquest.png",
-				"width": 300,
-				"height": 167
-			},
-			{
-				"step": "2",
-				"src": "FightArenasafespot.png",
-				"width": 300,
-				"height": 190
-			},
-			{
-				"step": "3",
-				"src": "FightArenastart.png",
-				"width": 300,
-				"height": 194
-			},
-			{
-				"step": "4",
-				"src": "FightingGeneralKhazard.png",
-				"width": 300,
-				"height": 210
-			},
-			{
-				"step": "5",
-				"src": "KhazardogreattacksJustin.png",
-				"width": 300,
-				"height": 240
-			},
-			{
-				"step": "6",
-				"src": "Takingkeys.png",
-				"width": 299,
-				"height": 244
-			}
-		]
+		"images": []
 	},
 	{
 		"name": "Fishing Contest",
@@ -8855,68 +8311,7 @@
 	},
 	{
 		"name": "Forgiveness of a Chaos Dwarf",
-		"images": [
-			{
-				"step": "1",
-				"src": "Drunkveldaban.png",
-				"width": 300,
-				"height": 192
-			},
-			{
-				"step": "2",
-				"src": "Fightingthechaosdwarf.png",
-				"width": 300,
-				"height": 224
-			},
-			{
-				"step": "3",
-				"src": "FOACDcartlabyrinth.png",
-				"width": 300,
-				"height": 200
-			},
-			{
-				"step": "4",
-				"src": "Forgive.png",
-				"width": 300,
-				"height": 206
-			},
-			{
-				"step": "5",
-				"src": "ForgivenessConsortiummeeting.png",
-				"width": 300,
-				"height": 192
-			},
-			{
-				"step": "6",
-				"src": "ForgivenessofaChaosDwarf.png",
-				"width": 300,
-				"height": 225
-			},
-			{
-				"step": "7",
-				"src": "Investigatingfootprints.png",
-				"width": 300,
-				"height": 245
-			},
-			{
-				"step": "8",
-				"src": "Loweringbridge.png",
-				"width": 300,
-				"height": 187
-			},
-			{
-				"step": "9",
-				"src": "Openingdoor.png",
-				"width": 300,
-				"height": 220
-			},
-			{
-				"step": "10",
-				"src": "Veldabaninthepub.png",
-				"width": 299,
-				"height": 175
-			}
-		]
+		"images": []
 	},
 	{
 		"name": "Fur 'n Seek",
