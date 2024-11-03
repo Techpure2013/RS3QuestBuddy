@@ -913,7 +913,29 @@ const QuestPage: React.FC = () => {
 								<Stepper.Step
 									id={(index + 1).toString()}
 									className="stepperStep"
-									label={`Step: ${index + 1}`}
+									label={<>
+										{`Step: ${index + 1}`}
+										{matchedImages &&
+											matchedImages.map((_img, imgIndex) => (
+												<ActionIcon
+													key={imgIndex} // Unique key for each button
+													onClick={() =>
+														handlePopOut(index, _img.src, _img.height, _img.width)
+													}
+													styles={{
+														root: {
+															marginLeft: "5px",
+															verticalAlign: "center",
+														},
+													}}
+													color={hasButtonColor ? userButtonColor : ""}
+													size={"sm"}
+													variant="outline"
+												>
+													<IconPhotoFilled />
+												</ActionIcon>
+											))}
+									</>}
 									key={create_ListUUID()}
 									styles={{
 										stepDescription: {
@@ -933,7 +955,29 @@ const QuestPage: React.FC = () => {
 								<Stepper.Step
 									id={(index + 1).toString()}
 									className="stepperStep"
-									label={`Step: ${index + 1}`}
+									label={<>
+										{`Step: ${index + 1}`}
+										{matchedImages &&
+											matchedImages.map((_img, imgIndex) => (
+												<ActionIcon
+													key={imgIndex} // Unique key for each button
+													onClick={() =>
+														handlePopOut(index, _img.src, _img.height, _img.width)
+													}
+													styles={{
+														root: {
+															marginLeft: "5px",
+															verticalAlign: "center",
+														},
+													}}
+													color={hasButtonColor ? userButtonColor : ""}
+													size={"sm"}
+													variant="outline"
+												>
+													<IconPhotoFilled />
+												</ActionIcon>
+											))}
+									</>}
 									key={create_ListUUID()}
 									styles={{
 										stepLabel: {
