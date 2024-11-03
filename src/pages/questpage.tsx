@@ -222,8 +222,8 @@ const QuestPage: React.FC = () => {
 			const newWindow = window.open(
 				emptypage,
 				"promptbox" + popid,
-				"width=${_imgWidth}, height=${_imgHeight}"
-			)!;
+				`width=${_imgWidth}, height=${_imgHeight + 100}`
+			);
 			if (newWindow) {
 				// Set the pop-out window and hide buttons in the current window
 				handles.setPopOutWindow(newWindow);
