@@ -71,9 +71,7 @@ export const QuestImageFetcher: React.FC<QuestImageType> = ({
 				)
 				.map((image: any, index: number) => ({
 					step: image.step || index.toString(), // Use `image.step` if available, otherwise fallback to `index`
-					src: `./Images/${questName.trim().toLowerCase().replace(":", "").trim()}/${
-						image.src
-					}`,
+					src: `./Images/${questName.trim().replace(":", "")}/${image.src}`,
 					width: image.width,
 					height: image.height,
 				}));
