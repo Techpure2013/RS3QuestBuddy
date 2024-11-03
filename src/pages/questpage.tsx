@@ -16,12 +16,10 @@ import {
 	QuestImageFetcher,
 	UseImageStore,
 } from "../Fetchers/handleNewImage.ts";
-
 import {
 	QuestStepFetcher,
 	useQuestStepStore,
 } from "./../Fetchers/FetchQuestSteps.tsx";
-
 import {
 	QuestDetailsFetcher,
 	useQuestDetailsStore,
@@ -36,10 +34,11 @@ import { useDisclosure } from "@mantine/hooks";
 import useNotesDisclosure from "../Handlers/useDisclosure.ts";
 import usePOGDisclosure from "./POGCalcDisclosure.tsx";
 import { UserNotes } from "./userNotes.tsx";
-
+import Grid from "./../Handlers/UndergroundPassGrid.tsx"
 import { Image } from "./ImageInterface.tsx";
 import QuestIcon from "./../QuestIconEdited.png";
 import ColorCalculator from "../Handlers/POGCalc.tsx";
+import useGridDisclosure from "./useGridModal.tsx";
 
 
 const QuestPage: React.FC = () => {
@@ -52,6 +51,7 @@ const QuestPage: React.FC = () => {
 	useAnimationOffsetEffect(embla, TRANSITION_DURATION);
 	let { questName, modified } = qpname.state;
 	const [opened, { open, close }] = useDisclosure(false);
+	const [openedGrid, {openGrid, closeGrid}] = useGridDisclosure(false)
 	const [active, setActive] = useState(-1);
 	const [highestStepVisited, setHighestStepVisited] = useState(active);
 	const questlistJSON = "./QuestList.json";
@@ -64,6 +64,7 @@ const QuestPage: React.FC = () => {
 	const QuestDetails = useQuestDetailsStore.getState().questDetails;
 	const [isHighlight, setIsHighlight] = useState(false);
 	let isPog = false;
+	let gridActive = false;
 	const [stepHidden, setStepHidden] = useState(false);
 
 	const [userColor, setUserColor] = useState("");
@@ -144,6 +145,9 @@ const QuestPage: React.FC = () => {
 
 	if (questName.trim() == "The Prisoner of Glouphrie") {
 		isPog = true;
+	}
+	if (questName.trim() === "Underground Pass" || questName.trim() === "Regicide"){
+		gridActive = true;
 	}
 	if (
 		questName ==
@@ -433,8 +437,12 @@ const QuestPage: React.FC = () => {
 	useAlt1Listener(scrollNext);
 	return (
 		<>
+
 			<Reader reader={reader} questName={questName} />
 			<div>
+				<Modal title="Underground Pass Grid" opened={openedGrid} onClose={closeGrid}>
+					<Grid />
+				</Modal>
 				<Modal
 					title="Notes"
 					opened={isOpened}
@@ -495,15 +503,7 @@ const QuestPage: React.FC = () => {
 				direction="column"
 				wrap="wrap"
 			>
-				{isPog && (
-					<Button
-						variant="outline"
-						color={hasButtonColor ? userButtonColor : ""}
-						onClick={pogModOpen}
-					>
-						Color Calculator
-					</Button>
-				)}
+
 
 				<>
 					<Button
@@ -996,6 +996,7 @@ const QuestPage: React.FC = () => {
 					<></>
 					{
 						<div className="prevNextGroup">
+
 							<div id="icons">
 								<ActionIcon
 									onClick={open}
@@ -1025,18 +1026,22 @@ const QuestPage: React.FC = () => {
 									<IconPlus />
 								</ActionIcon>
 							</div>
-							{/* <div id="return-image">
+							{isPog && (
 								<Button
-									className="return"
-									ref={buttonRef}
-									size="compact-sm"
 									variant="outline"
 									color={hasButtonColor ? userButtonColor : ""}
-									onClick={handlePopOut}
+									onClick={pogModOpen}
 								>
-									Quest Images (New Feature!)
+									Color Calculator
 								</Button>
-							</div> */}
+							)}
+							{gridActive && (<Button
+								variant="outline"
+								color={hasButtonColor ? userButtonColor : ""}
+								onClick={openGrid}
+							>
+								Underground Pass Grid
+							</Button>)}
 							<div id="prev-next">
 								<Button
 									styles={{ root: {} }}
