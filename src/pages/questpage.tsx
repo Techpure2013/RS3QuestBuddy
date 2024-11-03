@@ -6,24 +6,17 @@ import {
 	Button,
 	Flex,
 	List,
-	MantineProvider,
 	Modal,
 	Stepper,
 } from "@mantine/core";
-import { Carousel, Embla, useAnimationOffsetEffect } from "@mantine/carousel";
+import { Embla, useAnimationOffsetEffect } from "@mantine/carousel";
 import * as a1lib from "alt1";
-import {
-	IconBrandDiscord,
-	IconArrowLeft,
-	IconArrowRight,
-	IconSettings,
-	IconPlus,
-} from "@tabler/icons-react";
-
+import { IconBrandDiscord, IconSettings, IconPlus, IconPhotoFilled } from "@tabler/icons-react";
 import {
 	QuestImageFetcher,
 	UseImageStore,
-} from "./../Fetchers/FetchQuestImages.ts";
+} from "../Fetchers/handleNewImage.ts";
+
 import {
 	QuestStepFetcher,
 	useQuestStepStore,
@@ -48,12 +41,13 @@ import { Image } from "./ImageInterface.tsx";
 import QuestIcon from "./../QuestIconEdited.png";
 import ColorCalculator from "../Handlers/POGCalc.tsx";
 
+
 const QuestPage: React.FC = () => {
 	// State and variables
 	const qpname = useLocation();
 	const TRANSITION_DURATION = 200;
 
-	const [embla, setEmbla] = useState<Embla | null>(null);
+	const [embla] = useState<Embla | null>(null);
 
 	useAnimationOffsetEffect(embla, TRANSITION_DURATION);
 	let { questName, modified } = qpname.state;
@@ -71,7 +65,6 @@ const QuestPage: React.FC = () => {
 	const [isHighlight, setIsHighlight] = useState(false);
 	let isPog = false;
 	const [stepHidden, setStepHidden] = useState(false);
-	const buttonRef = useRef<HTMLButtonElement | null>(null);
 
 	const [userColor, setUserColor] = useState("");
 	const [userLabelColor, setUserLabelColor] = useState("");
@@ -144,8 +137,6 @@ const QuestPage: React.FC = () => {
 		return uuid;
 	}
 
-	const carouselRef = useRef<HTMLDivElement | null>(null);
-
 	if (questName == "Ability to enter Morytania") {
 		questName = "Priest in Peril";
 		textfile = "priestinperilinfo.txt";
@@ -174,11 +165,6 @@ const QuestPage: React.FC = () => {
 		reader.intervalIds.forEach(clearInterval);
 		reader.intervalIds = [];
 	};
-	// const capture = a1lib.captureHoldFullRs();
-	// finder.find();
-	// const title = finder.readTitle(capture);
-	// console.log(title);
-	// Use useEffect to scroll when viewQuestImage is true
 
 	function copyStyle(
 		_from: Window,
@@ -212,13 +198,16 @@ const QuestPage: React.FC = () => {
 			scrollIntoView(prevStep);
 		}
 	};
-
 	const ShouldAllowStep = (step: number) => {
-		step = step;
 		return highestStepVisited >= step && active !== step;
 	};
 
-	const handlePopOut = () => {
+	const handlePopOut = (
+		_index: number,
+		_imgSrc: string,
+		_imgHeight: number,
+		_imgWidth: number
+	) => {
 		if (handles.popOutWindow && !handles.popOutWindow.closed) {
 			// If open, close the window
 			handles.popOutWindow.close();
@@ -233,7 +222,7 @@ const QuestPage: React.FC = () => {
 			const newWindow = window.open(
 				emptypage,
 				"promptbox" + popid,
-				"width=420, height=412"
+				"width=${_imgWidth}, height=${_imgHeight}"
 			)!;
 			if (newWindow) {
 				// Set the pop-out window and hide buttons in the current window
@@ -244,9 +233,10 @@ const QuestPage: React.FC = () => {
 				newWindow.document.write(
 					`
     <!DOCTYPE html>
-    <html>
+    <html lang="es-ES">
         <head>
             <link rel="icon" href="./../assets/rs3buddyicon.png" type="image/x-icon" />
+            <title>Quest Image</title>
         </head>
         <body>
         </body>
@@ -277,14 +267,9 @@ const QuestPage: React.FC = () => {
 						const stylesheets: NodeListOf<HTMLStyleElement | HTMLLinkElement> =
 							document.querySelectorAll('style, link[rel="stylesheet"]');
 						const stylesheetsArray: HTMLStyleElement[] = Array.from(stylesheets);
-
-						console.log("Copying styles:", stylesheetsArray);
-
 						stylesheetsArray.forEach(function (stylesheet: HTMLStyleElement) {
-							console.log("Copying stylesheet:", stylesheet);
 							copyStyle(window, newWindow!, stylesheet);
 						});
-
 						const emotionStyles = document.querySelectorAll("style[data-emotion]");
 						emotionStyles.forEach((style) => {
 							const newEmotionStyle = document.createElement("style");
@@ -299,42 +284,15 @@ const QuestPage: React.FC = () => {
 				copyStyles();
 
 				// Render QuestControls into the new window
-
+				const matchingImage = imageDetails.imageList.find((image) =>
+					image.src.includes(_imgSrc)
+				);
 				root.render(
 					<>
 						<h2>Quest Images</h2>
-						<h4>Message Notice</h4>
-						<p>
-							Notice Time Remaining: 5 days: This Quest Images pop out can be
-							minimized.You can click the Quest Images button again to completely close
-							the window. To remaximize find it in your primary monitors window (Bottom
-							Left), click the double squares to remaximize to the width you set the
-							window!
-						</p>
-						{imageDetails.imageList.length > 0 && (
-							<MantineProvider defaultColorScheme="dark">
-								<Carousel
-									getEmblaApi={setEmbla}
-									speed={100}
-									withIndicators={false}
-									orientation="horizontal"
-									styles={{ root: { width: "420px" } }}
-									nextControlIcon={<IconArrowRight size={16} />}
-									previousControlIcon={<IconArrowLeft size={16} />}
-									className="QuestPageImageCaro"
-									includeGapInSize={true}
-									containScroll={"trimSnaps"}
-									ref={carouselRef}
-								>
-									{imageDetails.imageList.map((src, index) => (
-										<Carousel.Slide key={index}>
-											<img src={src} />
-										</Carousel.Slide>
-									))}
-								</Carousel>
-							</MantineProvider>
-						)}
-						{!imageDetails.imageList.length && <h2>No Images Found</h2>}
+						<div>
+							<img src={matchingImage?.src} />
+						</div>
 					</>
 				);
 			}
@@ -517,7 +475,7 @@ const QuestPage: React.FC = () => {
 
 			<QuestImageFetcher
 				questName={questName}
-				QuestListJSON={"./QuestImageList.json"}
+				QuestListJSON={"./QuestImageListRevised.json"}
 			/>
 			<QuestStepFetcher textfile={textfile} questStepJSON={questlistJSON} />
 			<QuestDetailsFetcher questName={questName} />
@@ -633,12 +591,7 @@ const QuestPage: React.FC = () => {
 															const hasPriestInPeril =
 																completedQuests &&
 																completedQuests.some((value) => {
-																	if (
-																		value &&
-																		typeof value === "object" &&
-																		"title" in value &&
-																		value !== null
-																	) {
+																	if (value && typeof value === "object" && "title" in value) {
 																		return (
 																			(value as { title?: string }).title === "Priest in Peril"
 																		);
@@ -667,12 +620,7 @@ const QuestPage: React.FC = () => {
 															const hasJunglePotion =
 																completedQuests &&
 																completedQuests.some((value) => {
-																	if (
-																		value &&
-																		typeof value === "object" &&
-																		"title" in value &&
-																		value !== null
-																	) {
+																	if (value && typeof value === "object" && "title" in value) {
 																		return (
 																			(value as { title?: string }).title === "Jungle Potion"
 																		);
@@ -686,12 +634,7 @@ const QuestPage: React.FC = () => {
 														const isComplete =
 															completedQuests &&
 															completedQuests.some((value) => {
-																if (
-																	value &&
-																	typeof value === "object" &&
-																	"title" in value &&
-																	value !== null
-																) {
+																if (value && typeof value === "object" && "title" in value) {
 																	return (value as { title?: string }).title === requirement;
 																}
 																return false;
@@ -910,13 +853,48 @@ const QuestPage: React.FC = () => {
 						orientation="vertical"
 						onStepClick={setActiveAndScroll}
 					>
-						{details.stepDetails.map((value, index) =>
-							isHighlight ? (
+						{details.stepDetails.map((value, index) => {
+							// Log current step and imageList for debugging
+							console.log("Current step:", (index + 1).toString());
+							console.log("Image list:", imageDetails.imageList);
+
+							// Find image details matching this step
+							const matchedImages = imageDetails.imageList.filter(
+								(img) => img.step === (index + 1).toString()
+							);
+
+							console.log("Matched image for step", index + 1, ":", matchedImages);
+
+							return isHighlight ? (
 								<Stepper.Step
 									id={(index + 1).toString()}
 									className="stepperStep"
-									label={<>{` Step: ${index + 1}`}</>}
-									key={create_ListUUID()}
+									label={
+										<>
+											{`Step: ${index + 1}`}
+											{matchedImages &&
+												matchedImages.map((_img, imgIndex) => (
+													<ActionIcon
+														key={imgIndex} // Unique key for each button
+														onClick={() =>
+															handlePopOut(index, _img.src, _img.height, _img.width)
+														}
+														styles={{
+															root: {
+																marginLeft: "5px",
+																verticalAlign: "center",
+															},
+														}}
+														color={hasButtonColor ? userButtonColor : ""}
+														size={"sm"}
+														variant="outline"
+													>
+														<IconPhotoFilled />
+													</ActionIcon>
+												))}
+										</>
+									}
+									key={index}
 									color={active > index ? "#24BF58" : ""}
 									styles={{
 										stepDescription: {
@@ -928,40 +906,29 @@ const QuestPage: React.FC = () => {
 									}}
 									orientation="vertical"
 									description={value}
+									onClick={() => setActiveAndScroll(index)}
+									allowStepSelect={true}
+								/>
+							) : stepHidden ? (
+								<Stepper.Step
+									id={(index + 1).toString()}
+									className="stepperStep"
+									label={`Step: ${index + 1}`}
+									key={create_ListUUID()}
+									styles={{
+										stepDescription: {
+											visibility: active > index ? "hidden" : "visible",
+											color: hasColor ? userColor : "",
+										},
+										stepLabel: {
+											visibility: active > index ? "hidden" : "visible",
+										},
+									}}
+									orientation="vertical"
+									description={value}
 									onClick={() => setActiveAndScroll}
 									allowStepSelect={ShouldAllowStep(index)}
 								/>
-							) : stepHidden ? (
-								<>
-									<Stepper.Step
-										id={(index + 1).toString()}
-										className="stepperStep"
-										label={`Step: ${index + 1}`}
-										key={create_ListUUID()}
-										styles={{
-											stepDescription: {
-												visibility: active > index ? "hidden" : "visible",
-												color: hasColor ? userColor : "",
-											},
-											stepLabel: {
-												visibility: active > index ? "hidden" : "visible",
-											},
-											stepCompletedIcon: {
-												visibility: active > index ? "hidden" : "visible",
-											},
-											stepIcon: {
-												visibility: active > index ? "hidden" : "visible",
-											},
-											stepWrapper: {
-												visibility: active > index ? "hidden" : "visible",
-											},
-										}}
-										orientation="vertical"
-										description={value}
-										onClick={() => setActiveAndScroll}
-										allowStepSelect={ShouldAllowStep(index)}
-									/>
-								</>
 							) : (
 								<Stepper.Step
 									id={(index + 1).toString()}
@@ -978,8 +945,8 @@ const QuestPage: React.FC = () => {
 									onClick={() => setActiveAndScroll}
 									allowStepSelect={ShouldAllowStep(index)}
 								/>
-							)
-						)}
+							);
+						})}
 					</Stepper>
 
 					<></>
@@ -1014,7 +981,7 @@ const QuestPage: React.FC = () => {
 									<IconPlus />
 								</ActionIcon>
 							</div>
-							<div id="return-image">
+							{/* <div id="return-image">
 								<Button
 									className="return"
 									ref={buttonRef}
@@ -1025,7 +992,7 @@ const QuestPage: React.FC = () => {
 								>
 									Quest Images (New Feature!)
 								</Button>
-							</div>
+							</div> */}
 							<div id="prev-next">
 								<Button
 									styles={{ root: {} }}

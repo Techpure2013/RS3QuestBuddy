@@ -4835,6 +4835,45 @@
 		]
 	},
 	{
+		"Quest": "Our Man in the North",
+		"StartPoint": "Speak with Hassan in the Merchant district of Menaphos.",
+		"MemberRequirement": "Members only",
+		"OfficialLength": "Short to Medium",
+		"Requirements": [
+			"Do No Evil",
+			"Animal Magnetism",
+			"Shadow of the Storm",
+			"Desert Treasure",
+			"Smoking Kills",
+			"Missing My Mummy",
+			"Dealing with Scabaras",
+			"Recipe for Disaster: Freeing King Awowogei",
+			"Fully restore Senliten from the 'Missing My Mummy' quest",
+			"Bring Leela to Senliten's tomb",
+			"Full completion of Missing My Mummy",
+			"Crocodile Tears",
+			"The Jack of Spades",
+			"Spirits of the Elid",
+			"Missing My Mummy",
+			"Dealing with Scabaras",
+			"Achieve rank 3 overall Menaphos reputation"
+		],
+		"ItemsRequired": [
+			"Items from the tool belt are not listed unless they do not work or are not automatically added."
+		],
+		"Recommended": [
+			"100 Combat Combat",
+			"Combat gear and food",
+			"Desert amulet 2 or above for teleport to Nardah, then run north east to Uzer Mastaba",
+			"Pollnivneach Teleport scroll, Ring of slaying, or Slayer cape teleport to Sumona"
+		],
+		"EnemiesToDefeat": [
+			"Ambassador Jabari (level 112)",
+			"4 Menaphite thugs (level 122)"
+		]
+	},
+
+	{
 		"Quest": "The Path of Glouphrie",
 		"StartPoint": "Talk to King Bolren in the Tree Gnome Village.",
 		"MemberRequirement": "P2P Members only",
