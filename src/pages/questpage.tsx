@@ -475,7 +475,7 @@ const QuestPage: React.FC = () => {
 
 			<QuestImageFetcher
 				questName={questName}
-				QuestListJSON={"./QuestImageListRevised.json"}
+				QuestListJSON={"./QuestImageList.json"}
 			/>
 			<QuestStepFetcher textfile={textfile} questStepJSON={questlistJSON} />
 			<QuestDetailsFetcher questName={questName} />
