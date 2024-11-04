@@ -7021,9 +7021,93 @@
 		"images": [
 			{
 				"step": "1",
-				"src": "Fairyringpuzzle.png",
-				"width": 300,
-				"height": 189
+				"src": "Step1_LandOfGoblins.png",
+				"width": 223,
+				"height": 182
+			},
+			{
+				"step": "3",
+				"src": "Step3_LandofGoblins.png",
+				"width": 197,
+				"height": 164
+			},
+			{
+				"step": "8",
+				"src": "Step8_GuardLoc.png",
+				"width": 252,
+				"height": 286
+			},
+			{
+				"step": "8",
+				"src": "Step8_LandofGoblins.png",
+				"width": 588,
+				"height": 373
+			},
+			{
+				"step": "9",
+				"src": "Step9_MakeoverMageLoc.png",
+				"width": 262,
+				"height": 193
+			},
+			{
+				"step": "14",
+				"src": "Step14_GoblinTransmog.png",
+				"width": 383,
+				"height": 290
+			},
+			{
+				"step": "16",
+				"src": "Step16_HighPriestLoc.png",
+				"width": 195,
+				"height": 202
+			},
+			{
+				"step": "20",
+				"src": "Step20_NERoom.png",
+				"width": 196,
+				"height": 200
+			},
+			{
+				"step": "27",
+				"src": "Step27_AggieLoc.png",
+				"width": 252,
+				"height": 210
+			},
+			{
+				"step": "29",
+				"src": "Step29_Hemenster.png",
+				"width": 247,
+				"height": 177
+			},
+			{
+				"step": "38",
+				"src": "Step38_Locs.png",
+				"width": 200,
+				"height": 200
+			},
+			{
+				"step": "44",
+				"src": "Step44_Crypt.png",
+				"width": 596,
+				"height": 415
+			},
+			{
+				"step": "54",
+				"src": "Step54_ZanikLoc.png",
+				"width": 205,
+				"height": 165
+			},
+			{
+				"step": "56",
+				"src": "Step56_OdLakLoc.png",
+				"width": 182,
+				"height": 151
+			},
+			{
+				"step": "58",
+				"src": "Step58_PuzzleAnswer.png",
+				"width": 453,
+				"height": 333
 			}
 		]
 	},
@@ -11283,7 +11367,7 @@
 				"height": 375
 			},
 			{
-				"step": "2",
+				"step": "28",
 				"src": "IceSolution.png",
 				"width": 375,
 				"height": 292
@@ -11292,14 +11376,7 @@
 	},
 	{
 		"name": "Violet is Blue Too",
-		"images": [
-			{
-				"step": "1",
-				"src": "VioletisBlueToo.png",
-				"width": 300,
-				"height": 159
-			}
-		]
+		"images": []
 	},
 	{
 		"name": "Wanted",

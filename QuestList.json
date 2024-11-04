@@ -997,6 +997,12 @@
 		"CTranscript": "./Quests/Priest in Peril/ComparePriest_in_Peril.json"
 	},
 	{
+		"Quest": "Quiet Before the Swarm",
+		"Path": "./Quests/Quiet Before the Swarm/QuietBeforeTheStormInfo.txt",
+		"Transcript": "./Quests/Quiet Before the Swarm/Quiet_Before_the_Swarm_transcript.json",
+		"CTranscript": "./Quests/Quiet Before the Swarm/CompareQuiet_Before_the_Swarm.json"
+	},
+	{
 		"Quest": "Rag and Bone Man",
 		"Path": "./Quests/Rag and Bone Man/RagAndBoneManInfo.txt",
 		"Transcript": "./Quests/Rag and Bone Man/Rag_and_Bone_Man_transcript.json",
