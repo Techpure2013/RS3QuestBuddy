@@ -1,6 +1,7 @@
 import { Routes, Route, HashRouter, Navigate, Outlet } from "react-router-dom";
 import QuestCarousel from "./QuestCarousel";
 import QuestPage from "./pages/questpage";
+
 function App() {
 	return (
 		<>

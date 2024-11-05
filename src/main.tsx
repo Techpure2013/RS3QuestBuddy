@@ -17,12 +17,16 @@ import "@mantine/core/styles/Overlay.css";
 import "@mantine/core/styles/ModalBase.css";
 import "@mantine/core/styles/Input.css";
 import "@mantine/core/styles/Flex.css";
-import "@mantine/core/styles/Accordion.css"
+import "@mantine/core/styles/Accordion.css";
 import { MantineProvider } from "@mantine/core";
 import "./index.css";
+import { FontSizeProvider } from "./Handlers/FontContextProvider.tsx";
 
+document.querySelector("html")!.style.fontSize = "16px";
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
 	<MantineProvider defaultColorScheme="dark">
-		<AltGuard />
+		<FontSizeProvider>
+			<AltGuard />
+		</FontSizeProvider>
 	</MantineProvider>
 );

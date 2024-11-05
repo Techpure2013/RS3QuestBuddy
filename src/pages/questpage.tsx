@@ -11,7 +11,12 @@ import {
 } from "@mantine/core";
 import { Embla, useAnimationOffsetEffect } from "@mantine/carousel";
 import * as a1lib from "alt1";
-import { IconBrandDiscord, IconSettings, IconPlus, IconPhotoFilled } from "@tabler/icons-react";
+import {
+	IconBrandDiscord,
+	IconSettings,
+	IconPlus,
+	IconPhotoFilled,
+} from "@tabler/icons-react";
 import {
 	QuestImageFetcher,
 	UseImageStore,
@@ -34,12 +39,11 @@ import { useDisclosure } from "@mantine/hooks";
 import useNotesDisclosure from "../Handlers/useDisclosure.ts";
 import usePOGDisclosure from "./POGCalcDisclosure.tsx";
 import { UserNotes } from "./userNotes.tsx";
-import Grid from "./../Handlers/UndergroundPassGrid.tsx"
+import Grid from "./../Handlers/UndergroundPassGrid.tsx";
 import { Image } from "./ImageInterface.tsx";
 import QuestIcon from "./../QuestIconEdited.png";
 import ColorCalculator from "../Handlers/POGCalc.tsx";
 import useGridDisclosure from "./useGridModal.tsx";
-
 
 const QuestPage: React.FC = () => {
 	// State and variables
@@ -51,7 +55,7 @@ const QuestPage: React.FC = () => {
 	useAnimationOffsetEffect(embla, TRANSITION_DURATION);
 	let { questName, modified } = qpname.state;
 	const [opened, { open, close }] = useDisclosure(false);
-	const [openedGrid, {openGrid, closeGrid}] = useGridDisclosure(false)
+	const [openedGrid, { openGrid, closeGrid }] = useGridDisclosure(false);
 	const [active, setActive] = useState(-1);
 	const [highestStepVisited, setHighestStepVisited] = useState(active);
 	const questlistJSON = "./QuestList.json";
@@ -146,7 +150,10 @@ const QuestPage: React.FC = () => {
 	if (questName.trim() == "The Prisoner of Glouphrie") {
 		isPog = true;
 	}
-	if (questName.trim() === "Underground Pass" || questName.trim() === "Regicide"){
+	if (
+		questName.trim() === "Underground Pass" ||
+		questName.trim() === "Regicide"
+	) {
 		gridActive = true;
 	}
 	if (
@@ -437,10 +444,13 @@ const QuestPage: React.FC = () => {
 	useAlt1Listener(scrollNext);
 	return (
 		<>
-
 			<Reader reader={reader} questName={questName} />
 			<div>
-				<Modal title="Underground Pass Grid" opened={openedGrid} onClose={closeGrid}>
+				<Modal
+					title="Underground Pass Grid"
+					opened={openedGrid}
+					onClose={closeGrid}
+				>
 					<Grid />
 				</Modal>
 				<Modal
@@ -452,7 +462,7 @@ const QuestPage: React.FC = () => {
 					}}
 					styles={{
 						title: {
-							fontSize: "34px",
+							fontSize: "2.25rem",
 							textAlign: "center",
 						},
 					}}
@@ -471,7 +481,7 @@ const QuestPage: React.FC = () => {
 					}}
 					styles={{
 						title: {
-							fontSize: "34px",
+							fontSize: "2.25rem",
 							textAlign: "center",
 							color: hasColor ? userColor : "",
 						},
@@ -503,8 +513,6 @@ const QuestPage: React.FC = () => {
 				direction="column"
 				wrap="wrap"
 			>
-
-
 				<>
 					<Button
 						variant="outline"
@@ -881,7 +889,7 @@ const QuestPage: React.FC = () => {
 														}
 														styles={{
 															root: {
-																marginLeft: "5px",
+																marginLeft: ".313rem",
 																verticalAlign: "center",
 															},
 														}}
@@ -913,29 +921,31 @@ const QuestPage: React.FC = () => {
 								<Stepper.Step
 									id={(index + 1).toString()}
 									className="stepperStep"
-									label={<>
-										{`Step: ${index + 1}`}
-										{matchedImages &&
-											matchedImages.map((_img, imgIndex) => (
-												<ActionIcon
-													key={imgIndex} // Unique key for each button
-													onClick={() =>
-														handlePopOut(index, _img.src, _img.height, _img.width)
-													}
-													styles={{
-														root: {
-															marginLeft: "5px",
-															verticalAlign: "center",
-														},
-													}}
-													color={hasButtonColor ? userButtonColor : ""}
-													size={"sm"}
-													variant="outline"
-												>
-													<IconPhotoFilled />
-												</ActionIcon>
-											))}
-									</>}
+									label={
+										<>
+											{`Step: ${index + 1}`}
+											{matchedImages &&
+												matchedImages.map((_img, imgIndex) => (
+													<ActionIcon
+														key={imgIndex} // Unique key for each button
+														onClick={() =>
+															handlePopOut(index, _img.src, _img.height, _img.width)
+														}
+														styles={{
+															root: {
+																marginLeft: ".313rem",
+																verticalAlign: "center",
+															},
+														}}
+														color={hasButtonColor ? userButtonColor : ""}
+														size={"sm"}
+														variant="outline"
+													>
+														<IconPhotoFilled />
+													</ActionIcon>
+												))}
+										</>
+									}
 									key={create_ListUUID()}
 									styles={{
 										stepDescription: {
@@ -955,29 +965,31 @@ const QuestPage: React.FC = () => {
 								<Stepper.Step
 									id={(index + 1).toString()}
 									className="stepperStep"
-									label={<>
-										{`Step: ${index + 1}`}
-										{matchedImages &&
-											matchedImages.map((_img, imgIndex) => (
-												<ActionIcon
-													key={imgIndex} // Unique key for each button
-													onClick={() =>
-														handlePopOut(index, _img.src, _img.height, _img.width)
-													}
-													styles={{
-														root: {
-															marginLeft: "5px",
-															verticalAlign: "center",
-														},
-													}}
-													color={hasButtonColor ? userButtonColor : ""}
-													size={"sm"}
-													variant="outline"
-												>
-													<IconPhotoFilled />
-												</ActionIcon>
-											))}
-									</>}
+									label={
+										<>
+											{`Step: ${index + 1}`}
+											{matchedImages &&
+												matchedImages.map((_img, imgIndex) => (
+													<ActionIcon
+														key={imgIndex} // Unique key for each button
+														onClick={() =>
+															handlePopOut(index, _img.src, _img.height, _img.width)
+														}
+														styles={{
+															root: {
+																marginLeft: ".313rem",
+																verticalAlign: "center",
+															},
+														}}
+														color={hasButtonColor ? userButtonColor : ""}
+														size={"sm"}
+														variant="outline"
+													>
+														<IconPhotoFilled />
+													</ActionIcon>
+												))}
+										</>
+									}
 									key={create_ListUUID()}
 									styles={{
 										stepLabel: {
@@ -996,7 +1008,6 @@ const QuestPage: React.FC = () => {
 					<></>
 					{
 						<div className="prevNextGroup">
-
 							<div id="icons">
 								<ActionIcon
 									onClick={open}
@@ -1035,13 +1046,15 @@ const QuestPage: React.FC = () => {
 									Color Calculator
 								</Button>
 							)}
-							{gridActive && (<Button
-								variant="outline"
-								color={hasButtonColor ? userButtonColor : ""}
-								onClick={openGrid}
-							>
-								Underground Pass Grid
-							</Button>)}
+							{gridActive && (
+								<Button
+									variant="outline"
+									color={hasButtonColor ? userButtonColor : ""}
+									onClick={openGrid}
+								>
+									Underground Pass Grid
+								</Button>
+							)}
 							<div id="prev-next">
 								<Button
 									styles={{ root: {} }}

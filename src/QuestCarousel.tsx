@@ -250,7 +250,7 @@ const QuestCarousel: React.FC = () => {
 				}}
 				styles={{
 					title: {
-						fontSize: "34px",
+						fontSize: "2.125rem",
 						textAlign: "center",
 					},
 				}}
@@ -265,7 +265,7 @@ const QuestCarousel: React.FC = () => {
 				}}
 				styles={{
 					title: {
-						fontSize: "34px",
+						fontSize: "2.125rem",
 						textAlign: "center",
 					},
 				}}
@@ -408,8 +408,8 @@ const QuestCarousel: React.FC = () => {
 				styles={{
 					root: {
 						position: "fixed",
-						bottom: "22px",
-						left: "65px",
+						bottom: "1.375rem",
+						left: "4.063rem",
 					},
 				}}
 			>
@@ -423,8 +423,8 @@ const QuestCarousel: React.FC = () => {
 				styles={{
 					root: {
 						position: "fixed",
-						bottom: "22px",
-						left: "5px",
+						bottom: "1.375rem",
+						left: "0.313rem",
 					},
 				}}
 			>
@@ -436,7 +436,7 @@ const QuestCarousel: React.FC = () => {
 				size={"sm"}
 				color={hasButtonColor ? userButtonColor : ""}
 				styles={{
-					root: { bottom: "22px", left: "35px", position: "fixed" },
+					root: { bottom: "1.375rem", left: "2.188rem", position: "fixed" },
 				}}
 			>
 				<IconSettings />

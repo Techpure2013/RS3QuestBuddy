@@ -9,6 +9,7 @@ import {
 	TextInput,
 } from "@mantine/core";
 import { useEffect, useState } from "react";
+import FontSizeControls from "./../Handlers/FontSizeInput";
 export const Settings: React.FC = () => {
 	const [highlight, setHighlight] = useState(false);
 	const [removeStep, setRemoveStep] = useState(false);
@@ -262,6 +263,18 @@ export const Settings: React.FC = () => {
 						>
 							Clear Swatch
 						</Button>
+					</AccordionPanel>
+				</Accordion.Item>
+				<Accordion.Item key={4} value="Change Your FontSize">
+					<AccordionControl
+						styles={{
+							control: { color: hasLabelColor ? labelColor : "" },
+						}}
+					>
+						Change Font Size
+					</AccordionControl>
+					<AccordionPanel>
+						<FontSizeControls />
 					</AccordionPanel>
 				</Accordion.Item>
 			</Accordion>
