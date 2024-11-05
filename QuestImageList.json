@@ -6994,7 +6994,62 @@
 	},
 	{
 		"name": "Jungle Potion",
-		"images": []
+		"images": [
+			{
+				"step": "2",
+				"src": "Step2_MarshyVines.png",
+				"width": 370,
+				"height": 301
+			},
+			{
+				"step": "7",
+				"src": "Step7_PalmTrees.png",
+				"width": 213,
+				"height": 183
+			},
+			{
+				"step": "9",
+				"src": "Step9_SitoLoc.png",
+				"width": 209,
+				"height": 188
+			},
+			{
+				"step": "9",
+				"src": "Step9_SearchScorch.png",
+				"width": 538,
+				"height": 354
+			},
+			{
+				"step": "12",
+				"src": "Step12_RockLoc.png",
+				"width": 321,
+				"height": 286
+			},
+			{
+				"step": "12",
+				"src": "Step12_SearchRock.png",
+				"width": 386,
+				"height": 355
+			},
+			{
+				"step": "14",
+				"src": "Step14_RoguePurseLoc.png",
+				"width": 233,
+				"height": 200
+			},
+			{
+				"step": "14",
+				"src": "Step14_EntrancePic.png",
+				"width": 383,
+				"height": 346
+			},
+			{
+				"step": "14",
+				"src": "Step14_RoguesPurse.png",
+				"width": 509,
+				"height": 475
+			}
+		]
 	},
 	{
 		"name": "Kennith's Concerns",
@@ -8281,7 +8336,92 @@
 	},
 	{
 		"name": "Shilo Village",
-		"images": []
+		"images": [
+			{
+				"step": "5",
+				"src": "Step5_ShiloVil.png",
+				"width": 973,
+				"height": 705
+			},
+			{
+				"step": "5",
+				"src": "Step5_lookatmound.png",
+				"width": 1007,
+				"height": 565
+			},
+			{
+				"step": "11",
+				"src": "Step11_InvestigateStone.png",
+				"width": 952,
+				"height": 556
+			},
+			{
+				"step": "12",
+				"src": "Step12_SearchCave.png",
+				"width": 824,
+				"height": 651
+			},
+			{
+				"step": "13",
+				"src": "Step13_searchLooseRocks.png",
+				"width": 874,
+				"height": 702
+			},
+			{
+				"step": "14",
+				"src": "Step14_SearchOldSack.png",
+				"width": 918,
+				"height": 656
+			},
+			{
+				"step": "15",
+				"src": "Step15_SearchGallows.png",
+				"width": 519,
+				"height": 605
+			},
+			{
+				"step": "20",
+				"src": "Step20_WestNearbyStat.png",
+				"width": 747,
+				"height": 642
+			},
+			{
+				"step": "22",
+				"src": "Step22_TalkTrif.png",
+				"width": 641,
+				"height": 578
+			},
+			{
+				"step": "24",
+				"src": "Step24_ClimbRocks.png",
+				"width": 907,
+				"height": 704
+			},
+			{
+				"step": "25",
+				"src": "Step25_SearchWellStackedRocks.png",
+				"width": 587,
+				"height": 565
+			},
+			{
+				"step": "26",
+				"src": "Step26_InspectTomb.png",
+				"width": 448,
+				"height": 439
+			},
+			{
+				"step": "31",
+				"src": "Step31_TombLocation.png",
+				"width": 654,
+				"height": 361
+			},
+			{
+				"step": "31",
+				"src": "Step31_TombEntrance.png",
+				"width": 797,
+				"height": 705
+			}
+		]
 	},
 	{
 		"name": "Soul Searching",
@@ -9777,6 +9917,12 @@
 				"src": "ItemLocations.png",
 				"width": 350,
 				"height": 189
+			},
+			{
+				"step": "36",
+				"src": "Step36_DigSite.png",
+				"width": 623,
+				"height": 705
 			}
 		]
 	},
@@ -10747,7 +10893,14 @@
 	},
 	{
 		"name": "The Tourist Trap",
-		"images": []
+		"images": [
+			{
+				"step": "3",
+				"src": "Step3_DesertCamp.png",
+				"width": 290,
+				"height": 200
+			}
+		]
 	},
 	{
 		"name": "The Vault of Shadows",
@@ -11025,7 +11178,44 @@
 	},
 	{
 		"name": "Tree Gnome Village",
-		"images": []
+		"images": [
+			{
+				"step": "3",
+				"src": "Step3_TalkTOCommander.png",
+				"width": 323,
+				"height": 291
+			},
+			{
+				"step": "6",
+				"src": "Step6_GnomeLocs.png",
+				"width": 825,
+				"height": 702
+			},
+			{
+				"step": "6",
+				"src": "Step6_Gnome1.png",
+				"width": 627,
+				"height": 528
+			},
+			{
+				"step": "6",
+				"src": "Step6_Gnome2.png",
+				"width": 722,
+				"height": 704
+			},
+			{
+				"step": "6",
+				"src": "Step6_Gnome3.png",
+				"width": 594,
+				"height": 497
+			},
+			{
+				"step": "10",
+				"src": "Step10_ClimbOverWall.png",
+				"width": 854,
+				"height": 666
+			}
+		]
 	},
 	{
 		"name": "Tribal Totem",
