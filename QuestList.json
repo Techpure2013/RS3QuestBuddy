@@ -1268,6 +1268,12 @@
 		"CTranscript": "./Quests/Spirit of Summer/CompareSpirit_of_Summer.json"
 	},
 	{
+		"Quest": "Spirits of the Elid",
+		"Path": "./Quests/Spirits of the Elid/SpiritsOfElidInfo.txt",
+		"Transcript": "./Quests/Spirits of the Elid/Spirits_of_the_Elid_transcript.json",
+		"CTranscript": "./Quests/Spirits of the Elid/CompareSpirits_of_the_Elid.json"
+	},
+	{
 		"Quest": "Stolen Hearts",
 		"Path": "./Quests/Stolen Hearts/StolenHeartsInfo.txt",
 		"Transcript": "./Quests/Stolen Hearts/Stolen_Hearts_transcript.json",
