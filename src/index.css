@@ -5,7 +5,7 @@
 }
 
 ::-webkit-scrollbar {
-	width: 10px;
+	width: 0.6rem;
 }
 
 :root {
@@ -62,13 +62,13 @@ h3 {
 	display: flex;
 	justify-content: space-between;
 	background: #1e2832;
-	padding: 10px;
-	gap: 10px;
-	border-radius: 10px;
-	margin-bottom: 20px;
-	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+	padding: 0.6rem;
+	gap: 0.6rem;
+	border-radius: 0.6rem;
+	margin-bottom: 1.2rem;
+	box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.7);
 	font-weight: 400;
-	border: 1px solid #ccc2;
+	border: 0.1rem solid #ccc2;
 }
 
 .delete {
@@ -76,14 +76,14 @@ h3 {
 }
 
 .ql-toolbar.ql-snow {
-	border-radius: 10px 10px 0 0;
+	border-radius: 0.6rem 0.6rem 0 0;
 	background: #1e2832;
 }
 
 .ql-container.ql-snow {
-	border-radius: 0 0 10px 10px;
+	border-radius: 0 0 0.6rem 0.6rem;
 	background: #ccc1;
-	padding: 10px;
+	padding: 0.6rem;
 }
 
 .ql-toolbar.ql-snow,
@@ -106,25 +106,25 @@ h3 {
 }
 
 .ApplySkillsButton {
-	left: 5px;
+	left: 0.3rem;
 }
 
 .RefreshButton {
-	left: 10px;
+	left: 0.6rem;
 }
 
 .SortButton,
 .RefreshButton,
 .ApplySkillsButton {
-	margin-top: 6px;
-	size: 20px;
+	margin-top: 0.3rem;
+	size: 1.2rem;
 }
 
 .SearchContainer {
 	display: flex;
 	justify-content: space-between;
-	gap: 5px;
-	padding: 5px;
+	gap: 0.3rem;
+	padding: 0.3rem;
 	align-items: flex-end;
 }
 
@@ -139,7 +139,7 @@ h3 {
 	width: 100%;
 	z-index: 10;
 	/* Set a lower z-index to ensure it stays behind other elements */
-	padding: 20px 0;
+	padding: 1.25rem 0;
 }
 
 .mantine-Accordion-item button {
@@ -160,7 +160,7 @@ h3 {
 }
 
 .quill > .ql-container > .ql-editor.ql-blank::before {
-	font-size: 13px;
+	font-size: 0.8rem;
 	color: #f1f1f1f1;
 }
 .mantine-Stepper-stepBody {
@@ -173,8 +173,8 @@ h3 {
 } */
 
 .icon {
-	width: rem(16px);
-	height: rem(16px);
+	width: 1rem;
+	height: 1rem;
 }
 
 .App {
@@ -187,7 +187,7 @@ h3 {
 }
 
 .caroContainer {
-	top: 10px;
+	top: 0.6rem;
 	text-align: center;
 	cursor: pointer;
 	font-weight: 550;
@@ -209,17 +209,11 @@ img {
 	image-rendering: pixelated;
 }
 
-img.enlarged {
-	width: 300px;
-	/* Change this value to your desired size */
-	height: auto;
-}
-
 .stepperContainer {
-	max-height: 400px;
+	max-height: 25rem;
 	/* Set the desired height for the stepper container */
 
-	margin-top: 16px;
+	margin-top: 1rem;
 	/* Adjust as needed to create space between buttons and stepper */
 }
 
@@ -232,8 +226,8 @@ img.enlarged {
 } */
 .ButtonGroupTwo {
 	justify-content: flex-start;
-	right: 20px;
-	gap: 10px;
+	right: 1.2rem;
+	gap: 0.6rem;
 }
 
 /* Save this buttons class for later use maybe */
@@ -241,20 +235,20 @@ img.enlarged {
 	position: fixed;
 	bottom: 0;
 	display: flex;
-	gap: 10px;
+	gap: 0.6rem;
 	width: 100%;
 	justify-content: space-between;
 	align-items: center;
 	z-index: 166;
-	padding: 5px;
+	padding: 0.3rem;
 	background: var(--rs3-background);
 }
 
 .mantine-Button-root {
-	font-size: 16px;
-	border-radius: 4px;
+	font-size: 1rem;
+	border-radius: 0.25em;
 	/* Optional: Rounded corners */
-	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+	box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.7);
 	/* Shadow on the bottom right */
 }
 .mantine-Button-root:not(:disabled),
@@ -277,7 +271,7 @@ img.enlarged {
 	justify-content: flex-start;
 	width: auto;
 	font-family: rs3Font;
-	font-size: 15px;
+	font-size: 0.9rem;
 }
 
 .stepperStep:not([data-completed]):not([data-progress])
@@ -309,7 +303,7 @@ img.enlarged {
 }
 
 .mantine-Stepper-stepLabel {
-	font-size: 20px;
+	font-size: 1.2rem;
 	font-family: rs3Font;
 	color: var(--title-color);
 }
@@ -323,18 +317,6 @@ img.enlarged {
 	font-size: clamp(1rem, 2.5vw, 1.25rem);
 }
 
-.QuestPageImageCaro {
-	display: grid;
-	align-content: space-between;
-	height: 100vh; /* Full height of the viewport */
-	text-align: center;
-}
-
-.QuestPageImageCaro img {
-	max-width: 100%; /* Ensures the image doesn’t overflow */
-	height: auto; /* Maintains aspect ratio */
-}
-
 .custom-container {
 	display: flex;
 	flex-direction: column;
@@ -343,28 +325,28 @@ img.enlarged {
 	width: 50vh;
 }
 .mantine-Stepper-steps {
-	padding-bottom: 70px;
+	padding-bottom: 4.3rem;
 }
 
 #prev-next {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-between;
-	gap: 5px;
+	gap: 0.3rem;
 	align-items: center;
 }
 #icons > button {
-	margin: 5px;
+	margin: 0.3rem;
 }
 #return-image {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 5px;
+	gap: 0.3rem;
 	flex: 1;
 	justify-content: space-evenly;
 }
 .return {
-	padding: 4px 8px;
+	padding: 0.3rem 0.45rem;
 }
 
 /* Carousel overrides */

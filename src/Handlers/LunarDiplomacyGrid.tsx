@@ -38,9 +38,9 @@ const LunarGrid: React.FC = () => {
 			<div
 				style={{
 					display: "grid",
-					gridTemplateColumns: "repeat(4, 50px)", // 4 columns
-					gridTemplateRows: "repeat(8, 50px)", // 8 rows
-					gap: "5px",
+					gridTemplateColumns: "repeat(4, 3.125rem)", // 4 columns
+					gridTemplateRows: "repeat(8, 3.125rem)", // 8 rows
+					gap: "0.325rem",
 				}}
 			>
 				{highlighted.map((row, rowIndex) =>
@@ -49,14 +49,14 @@ const LunarGrid: React.FC = () => {
 							key={`${rowIndex}-${colIndex}`}
 							onClick={() => handleClick(rowIndex, colIndex)}
 							style={{
-								width: "50px",
-								height: "50px",
+								width: "3.125rem",
+								height: "3.125rem",
 								backgroundColor: cell ? "#4caf50" : "#ddd",
 								display: "flex",
 								alignItems: "center",
 								justifyContent: "center",
 								cursor: "pointer",
-								border: "1px solid #ccc",
+								border: "0.0625rem solid #ccc",
 							}}
 						/>
 					))
@@ -64,7 +64,7 @@ const LunarGrid: React.FC = () => {
 			</div>
 			<button
 				onClick={clearSelection}
-				style={{ marginTop: "10px", marginBottom: "10px" }}
+				style={{ marginTop: "0.625rem", marginBottom: "0.625rem" }}
 			>
 				Clear Selection
 			</button>

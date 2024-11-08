@@ -306,7 +306,12 @@ const QuestPage: React.FC = () => {
 				);
 				root.render(
 					<>
-						<div>
+						<div
+							style={{
+								paddingTop: "1rem",
+								alignContent: "center",
+							}}
+						>
 							<img src={matchingImage?.src} />
 						</div>
 					</>

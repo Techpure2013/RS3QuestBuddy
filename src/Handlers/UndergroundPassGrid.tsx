@@ -38,8 +38,8 @@ const Grid: React.FC = () => {
 			<div
 				style={{
 					display: "grid",
-					gridTemplateColumns: "repeat(5, 50px)",
-					gap: "5px",
+					gridTemplateColumns: "repeat(5, 3.125rem)",
+					gap: "0.325rem",
 				}}
 			>
 				{highlighted.map((row, rowIndex) =>
@@ -48,14 +48,14 @@ const Grid: React.FC = () => {
 							key={`${rowIndex}-${colIndex}`}
 							onClick={() => handleClick(rowIndex, colIndex)}
 							style={{
-								width: "50px",
-								height: "50px",
+								width: "3.125rem",
+								height: "3.125rem",
 								backgroundColor: cell ? "#4caf50" : "#ddd",
 								display: "flex",
 								alignItems: "center",
 								justifyContent: "center",
 								cursor: "pointer",
-								border: "1px solid #ccc",
+								border: "0.0625remsolid #ccc",
 							}}
 						/>
 					))
@@ -63,7 +63,7 @@ const Grid: React.FC = () => {
 			</div>
 			<button
 				onClick={clearSelection}
-				style={{ marginTop: "10px", marginBottom: "10px" }}
+				style={{ marginTop: "0.625rem", marginBottom: "0.625rem" }}
 			>
 				Clear Selection
 			</button>
