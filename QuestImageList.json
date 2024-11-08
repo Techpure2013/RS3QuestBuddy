@@ -2390,7 +2390,74 @@
 	},
 	{
 		"name": "A Void Dance",
-		"images": []
+		"images": [
+			{
+				"step": "67",
+				"src": "Step67_ClueDetails.png",
+				"width": 600,
+				"height": 600
+			},
+			{
+				"step": "67",
+				"src": "Step67_Clue1Loc.png",
+				"width": 198,
+				"height": 196
+			},
+			{
+				"step": "67",
+				"src": "Step67_Clue1Dest.png",
+				"width": 478,
+				"height": 431
+			},
+			{
+				"step": "67",
+				"src": "Step67_Clue2Loc.png",
+				"width": 138,
+				"height": 138
+			},
+			{
+				"step": "67",
+				"src": "Step67_ClueDest.png",
+				"width": 180,
+				"height": 162
+			},
+			{
+				"step": "67",
+				"src": "Step67_Loc3.png",
+				"width": 149,
+				"height": 138
+			},
+			{
+				"step": "67",
+				"src": "Step67_dest3.png",
+				"width": 218,
+				"height": 184
+			},
+			{
+				"step": "67",
+				"src": "Step67_Loc4.png",
+				"width": 149,
+				"height": 216
+			},
+			{
+				"step": "67",
+				"src": "Step67_Dest4.png",
+				"width": 296,
+				"height": 275
+			},
+			{
+				"step": "67",
+				"src": "Step67_Loc5.png",
+				"width": 193,
+				"height": 162
+			},
+			{
+				"step": "67",
+				"src": "Step67_Dest5.png",
+				"width": 299,
+				"height": 253
+			}
+		]
 	},
 	{
 		"name": "Aftermath",
@@ -5162,15 +5229,108 @@
 	},
 	{
 		"name": "Elemental Workshop I",
-		"images": []
+		"images": [
+			{
+				"step": "7",
+				"src": "Step7_WaterControl.png",
+				"width": 764,
+				"height": 639
+			},
+			{
+				"step": "8",
+				"src": "Step8_WaterControl.png",
+				"width": 505,
+				"height": 434
+			},
+			{
+				"step": "9",
+				"src": "Step9_PullLever.png",
+				"width": 603,
+				"height": 493
+			},
+			{
+				"step": "12",
+				"src": "Step12_FixBellows.png",
+				"width": 772,
+				"height": 599
+			},
+			{
+				"step": "10",
+				"src": "Step10_SearchCrate(Optional).png",
+				"width": 657,
+				"height": 588
+			},
+			{
+				"step": "13",
+				"src": "Step13_PullLever.png",
+				"width": 641,
+				"height": 521
+			},
+			{
+				"step": "16",
+				"src": "Step16_SearchBoxes.png",
+				"width": 712,
+				"height": 655
+			},
+			{
+				"step": "18",
+				"src": "Step18_StonetoBowl.png",
+				"width": 563,
+				"height": 489
+			},
+			{
+				"step": "19",
+				"src": "Step19_StoneBowlFurnace.png",
+				"width": 750,
+				"height": 476
+			}
+		]
 	},
 	{
 		"name": "Elemental Workshop II",
-		"images": []
+		"images": [
+			{
+				"step": "10",
+				"src": "Step10_ SearchMachinery.png",
+				"width": 870,
+				"height": 811
+			},
+			{
+				"step": "29",
+				"src": "Step29_Solution.png",
+				"width": 610,
+				"height": 401
+			}
+		]
 	},
 	{
 		"name": "Elemental Workshop III",
-		"images": []
+		"images": [
+			{
+				"step": "74",
+				"src": "Step74_Figure1.png",
+				"width": 893,
+				"height": 726
+			},
+			{
+				"step": "76",
+				"src": "Step76_figure1.png",
+				"width": 896,
+				"height": 727
+			},
+			{
+				"step": "12",
+				"src": "Step12_MiniMap.png",
+				"width": 252,
+				"height": 437
+			},
+			{
+				"step": "12",
+				"src": "Step12_MiniMap2.png",
+				"width": 213,
+				"height": 191
+			}
+		]
 	},
 	{
 		"name": "Elemental Workshop IV",
@@ -7249,7 +7409,20 @@
 	},
 	{
 		"name": "Lunar Diplomacy",
-		"images": []
+		"images": [
+			{
+				"step": "71",
+				"src": "step71_Etheral.png",
+				"width": 638,
+				"height": 713
+			},
+			{
+				"step": "66",
+				"src": "Step66__Dice.png",
+				"width": 600,
+				"height": 600
+			}
+		]
 	},
 	{
 		"name": "Making History",
@@ -9957,25 +10130,25 @@
 		"name": "The Fremennik Trials",
 		"images": [
 			{
-				"step": "2",
+				"step": "1",
 				"src": "Screenshot_2.png",
 				"width": 460,
 				"height": 271
 			},
 			{
-				"step": "72",
+				"step": "60",
 				"src": "Screenshot_62.png",
 				"width": 351,
 				"height": 224
 			},
 			{
-				"step": "72",
+				"step": "60",
 				"src": "Screenshot_63.png",
 				"width": 350,
 				"height": 224
 			},
 			{
-				"step": "72",
+				"step": "60",
 				"src": "Screenshot_64.png",
 				"width": 350,
 				"height": 227

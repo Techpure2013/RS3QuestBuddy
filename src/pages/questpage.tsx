@@ -40,10 +40,12 @@ import useNotesDisclosure from "../Handlers/useDisclosure.ts";
 import usePOGDisclosure from "./POGCalcDisclosure.tsx";
 import { UserNotes } from "./userNotes.tsx";
 import Grid from "./../Handlers/UndergroundPassGrid.tsx";
+import LunarGrid from "../Handlers/LunarDiplomacyGrid.tsx";
 import { Image } from "./ImageInterface.tsx";
 import QuestIcon from "./../QuestIconEdited.png";
 import ColorCalculator from "../Handlers/POGCalc.tsx";
 import useGridDisclosure from "./useGridModal.tsx";
+import useLunarGridDisclosure from "./useLunarDisclosure.tsx";
 
 const QuestPage: React.FC = () => {
 	// State and variables
@@ -56,6 +58,8 @@ const QuestPage: React.FC = () => {
 	let { questName, modified } = qpname.state;
 	const [opened, { open, close }] = useDisclosure(false);
 	const [openedGrid, { openGrid, closeGrid }] = useGridDisclosure(false);
+	const [openLGrid, { openLunarGrid, closeLunarGrid }] =
+		useLunarGridDisclosure(false);
 	const [active, setActive] = useState(-1);
 	const [highestStepVisited, setHighestStepVisited] = useState(active);
 	const questlistJSON = "./QuestList.json";
@@ -69,8 +73,8 @@ const QuestPage: React.FC = () => {
 	const [isHighlight, setIsHighlight] = useState(false);
 	let isPog = false;
 	let gridActive = false;
+	let lunarGridActive = false;
 	const [stepHidden, setStepHidden] = useState(false);
-
 	const [userColor, setUserColor] = useState("");
 	const [userLabelColor, setUserLabelColor] = useState("");
 	const [userButtonColor, setUserButtonColor] = useState("");
@@ -80,7 +84,6 @@ const QuestPage: React.FC = () => {
 	let [isPOGOpen, { pogModOpen, pogModClose }] = usePOGDisclosure(false);
 	let [isOpened, { openNotes, closedNotes }] = useNotesDisclosure(false);
 	const isOpenNotes = useRef(false);
-
 	// const finder = new diagFinder();
 	const { showStepReq, toggleShowStepReq } = useQuestControllerStore();
 	const handles = useQuestControllerStore();
@@ -149,6 +152,9 @@ const QuestPage: React.FC = () => {
 
 	if (questName.trim() == "The Prisoner of Glouphrie") {
 		isPog = true;
+	}
+	if (questName.trim() === "Lunar Diplomacy") {
+		lunarGridActive = true;
 	}
 	if (
 		questName.trim() === "Underground Pass" ||
@@ -452,6 +458,9 @@ const QuestPage: React.FC = () => {
 					onClose={closeGrid}
 				>
 					<Grid />
+				</Modal>
+				<Modal title="Memorization" opened={openLGrid} onClose={closeLunarGrid}>
+					<LunarGrid />
 				</Modal>
 				<Modal
 					title="Notes"
@@ -1055,6 +1064,16 @@ const QuestPage: React.FC = () => {
 									Underground Pass Grid
 								</Button>
 							)}
+							{lunarGridActive && (
+								<Button
+									variant="outline"
+									color={hasButtonColor ? userButtonColor : ""}
+									onClick={openLunarGrid}
+								>
+									Memorization
+								</Button>
+							)}
+
 							<div id="prev-next">
 								<Button
 									styles={{ root: {} }}
