@@ -88,7 +88,14 @@
 	},
 	{
 		"name": "A Guild of Our Own (miniquest)",
-		"images": []
+		"images": [
+			{
+				"step": "8",
+				"src": "Step8_GuildLoc.png",
+				"width": 331,
+				"height": 313
+			}
+		]
 	},
 	{
 		"name": "A Fairy Tale II: Cure a Queen",
@@ -11743,7 +11750,32 @@
 	},
 	{
 		"name": "Wanted",
-		"images": []
+		"images": [
+			{
+				"step": "11",
+				"src": "Step11_Map.png",
+				"width": 840,
+				"height": 811
+			},
+			{
+				"step": "11",
+				"src": "Step11_Daquarius.png",
+				"width": 258,
+				"height": 183
+			},
+			{
+				"step": "14",
+				"src": "Step14_Loc.png",
+				"width": 600,
+				"height": 444
+			},
+			{
+				"step": "14",
+				"src": "Step14_TalkZamorak.png",
+				"width": 651,
+				"height": 453
+			}
+		]
 	},
 	{
 		"name": "Watchtower",
