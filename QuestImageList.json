@@ -8703,7 +8703,14 @@
 	},
 	{
 		"name": "Spirit of Summer",
-		"images": []
+		"images": [
+			{
+				"step": "4",
+				"src": "Step4_ManEmotes.png",
+				"width": 350,
+				"height": 350
+			}
+		]
 	},
 	{
 		"name": "Spirits of the Elid",
