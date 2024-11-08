@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const LunarGrid: React.FC = () => {
 	// Initialize highlighted grid with data from localStorage or default 4x8 grid
 	const [highlighted, setHighlighted] = useState<boolean[][]>(() => {
-		const savedGrid = localStorage.getItem("highlightedGrid");
+		const savedGrid = localStorage.getItem("highlightedLunarGrid");
 		return savedGrid
 			? JSON.parse(savedGrid)
 			: Array.from({ length: 8 }, () => Array(4).fill(false)); // Correctly create 8 rows x 4 columns
@@ -11,7 +11,7 @@ const LunarGrid: React.FC = () => {
 
 	// Save the highlighted state to localStorage whenever it changes
 	useEffect(() => {
-		localStorage.setItem("highlightedGrid", JSON.stringify(highlighted));
+		localStorage.setItem("highlightedLunarGrid", JSON.stringify(highlighted));
 	}, [highlighted]);
 
 	// Toggle cell highlight state
@@ -29,7 +29,7 @@ const LunarGrid: React.FC = () => {
 	const clearSelection = () => {
 		const emptyGrid = Array.from({ length: 8 }, () => Array(4).fill(false)); // Ensure independent arrays
 		setHighlighted(emptyGrid);
-		localStorage.removeItem("highlightedGrid");
+		localStorage.removeItem("highlightedLunarGrid");
 	};
 
 	return (

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const Grid: React.FC = () => {
 	// Initialize highlighted grid with data from localStorage or default 5x5 grid
 	const [highlighted, setHighlighted] = useState<boolean[][]>(() => {
-		const savedGrid = localStorage.getItem("highlightedGrid");
+		const savedGrid = localStorage.getItem("highlightedUndergroundGrid");
 		return savedGrid
 			? JSON.parse(savedGrid)
 			: Array(5).fill(Array(5).fill(false));
@@ -11,7 +11,10 @@ const Grid: React.FC = () => {
 
 	// Save the highlighted state to localStorage whenever it changes
 	useEffect(() => {
-		localStorage.setItem("highlightedGrid", JSON.stringify(highlighted));
+		localStorage.setItem(
+			"highlightedUndergroundGrid",
+			JSON.stringify(highlighted)
+		);
 	}, [highlighted]);
 
 	// Toggle cell highlight state
@@ -29,7 +32,7 @@ const Grid: React.FC = () => {
 	const clearSelection = () => {
 		const emptyGrid = Array(5).fill(Array(5).fill(false));
 		setHighlighted(emptyGrid);
-		localStorage.removeItem("highlightedGrid");
+		localStorage.removeItem("highlightedUndergroundGrid");
 	};
 
 	return (

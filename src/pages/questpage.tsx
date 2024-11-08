@@ -876,15 +876,11 @@ const QuestPage: React.FC = () => {
 					>
 						{details.stepDetails.map((value, index) => {
 							// Log current step and imageList for debugging
-							console.log("Current step:", (index + 1).toString());
-							console.log("Image list:", imageDetails.imageList);
 
 							// Find image details matching this step
 							const matchedImages = imageDetails.imageList.filter(
 								(img) => img.step === (index + 1).toString()
 							);
-
-							console.log("Matched image for step", index + 1, ":", matchedImages);
 
 							return isHighlight ? (
 								<Stepper.Step
