@@ -7741,7 +7741,26 @@
 	},
 	{
 		"name": "Mountain Daughter",
-		"images": []
+		"images": [
+			{
+				"step": "2",
+				"src": "Step1_MountainDaughter.png",
+				"width": 1023,
+				"height": 592
+			},
+			{
+				"step": "2",
+				"src": "Step1_MountainD.png",
+				"width": 660,
+				"height": 588
+			},
+			{
+				"step": "10",
+				"src": "Step10_ListenWater.png",
+				"width": 388,
+				"height": 262
+			}
+		]
 	},
 	{
 		"name": "Mourning's End Part I",
