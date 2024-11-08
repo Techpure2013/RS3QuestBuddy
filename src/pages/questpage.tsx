@@ -306,7 +306,6 @@ const QuestPage: React.FC = () => {
 				);
 				root.render(
 					<>
-						<h2>Quest Images</h2>
 						<div>
 							<img src={matchingImage?.src} />
 						</div>
