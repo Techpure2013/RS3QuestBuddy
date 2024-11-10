@@ -8458,7 +8458,116 @@
 	},
 	{
 		"name": "Rag and Bone Man",
-		"images": []
+		"images": [
+			{
+				"step": "1",
+				"src": "Step1_RagandBone.png",
+				"width": 631,
+				"height": 501
+			},
+			{
+				"step": "3",
+				"src": "Step3_TalkFortunato.png",
+				"width": 582,
+				"height": 465
+			},
+			{
+				"step": "4",
+				"src": "Step4_Vinagar.png",
+				"width": 527,
+				"height": 359
+			},
+			{
+				"step": "6",
+				"src": "Step6_Killgob.png",
+				"width": 476,
+				"height": 353
+			},
+			{
+				"step": "7",
+				"src": "Step7_KillFrog.png",
+				"width": 402,
+				"height": 264
+			},
+			{
+				"step": "8",
+				"src": "Step8_Killbear.png",
+				"width": 482,
+				"height": 387
+			},
+			{
+				"step": "9",
+				"src": "Step9_KillSheep.png",
+				"width": 474,
+				"height": 521
+			},
+			{
+				"step": "10",
+				"src": "Step10_KillUnicorn.png",
+				"width": 524,
+				"height": 490
+			},
+			{
+				"step": "11",
+				"src": "Step11_KillMonkey.png",
+				"width": 427,
+				"height": 334
+			},
+			{
+				"step": "12",
+				"src": "Step12_KillRate.png",
+				"width": 447,
+				"height": 318
+			},
+			{
+				"step": "13",
+				"src": "Step13_KillBat.png",
+				"width": 432,
+				"height": 337
+			},
+			{
+				"step": "15",
+				"src": "Step15_BonesInPots.png",
+				"width": 186,
+				"height": 80
+			},
+			{
+				"step": "15",
+				"src": "Step15_Addlogs.png",
+				"width": 289,
+				"height": 215
+			},
+			{
+				"step": "15",
+				"src": "step15_AddPot.png",
+				"width": 224,
+				"height": 187
+			},
+			{
+				"step": "15",
+				"src": "Step15_light.png",
+				"width": 180,
+				"height": 167
+			},
+			{
+				"step": "15",
+				"src": "Step15_Remove.png",
+				"width": 216,
+				"height": 178
+			},
+			{
+				"step": "16",
+				"src": "step16_PolishedBones.png",
+				"width": 185,
+				"height": 123
+			},
+			{
+				"step": "17",
+				"src": "Step17_OldManTalk.png",
+				"width": 509,
+				"height": 419
+			}
+		]
 	},
 	{
 		"name": "Raksha the Shadow Colossus Quest",
