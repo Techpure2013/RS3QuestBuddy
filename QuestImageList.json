@@ -10642,22 +10642,136 @@
 		"name": "The Lord of Vampyrium",
 		"images": [
 			{
+				"step": "1",
+				"src": "Step1_TalkVanescula.png",
+				"width": 488,
+				"height": 522
+			},
+			{
+				"step": "1",
+				"src": "Step1_VanesculaNpc.png",
+				"width": 495,
+				"height": 601
+			},
+			{
 				"step": "2",
-				"src": "300px-Ringpuzzle2solution.png02e88.png",
-				"width": 300,
-				"height": 237
+				"src": "Step2_BoardBoat.png",
+				"width": 535,
+				"height": 409
 			},
 			{
 				"step": "3",
-				"src": "300px-Ringpuzzle3solution.png3f334.png",
-				"width": 300,
-				"height": 225
+				"src": "Step3_TalkSafalaan.png",
+				"width": 266,
+				"height": 509
 			},
 			{
 				"step": "4",
-				"src": "300px-Ringpuzzle4solution.png3da70.png",
-				"width": 300,
-				"height": 288
+				"src": "Step4_Solution.png",
+				"width": 471,
+				"height": 430
+			},
+			{
+				"step": "5",
+				"src": "Step5_Inspect.png",
+				"width": 268,
+				"height": 534
+			},
+			{
+				"step": "11",
+				"src": "Step11_Veliaf.png",
+				"width": 493,
+				"height": 621
+			},
+			{
+				"step": "12",
+				"src": "Step12_Mansion.png",
+				"width": 235,
+				"height": 373
+			},
+			{
+				"step": "12",
+				"src": "Step12_Crate.png",
+				"width": 348,
+				"height": 311
+			},
+			{
+				"step": "16",
+				"src": "Step16_TalkNadezha.png",
+				"width": 449,
+				"height": 667
+			},
+			{
+				"step": "17",
+				"src": "Step17_LordLexi.png",
+				"width": 533,
+				"height": 337
+			},
+			{
+				"step": "18",
+				"src": "Step18_LordMischa.png",
+				"width": 507,
+				"height": 577
+			},
+			{
+				"step": "19",
+				"src": "Step19_ShooBat.png",
+				"width": 452,
+				"height": 491
+			},
+			{
+				"step": "21",
+				"src": "Step21_Freee.png",
+				"width": 175,
+				"height": 241
+			},
+			{
+				"step": "22",
+				"src": "step22_solution.png",
+				"width": 320,
+				"height": 311
+			},
+			{
+				"step": "25",
+				"src": "Step25_exitDung.png",
+				"width": 735,
+				"height": 381
+			},
+			{
+				"step": "25",
+				"src": "Step25_ButcheryTable.png",
+				"width": 280,
+				"height": 290
+			},
+			{
+				"step": "28",
+				"src": "Step28_BloodLockTable.png",
+				"width": 600,
+				"height": 600
+			},
+			{
+				"step": "29",
+				"src": "Step29_ExitCellar.png",
+				"width": 289,
+				"height": 297
+			},
+			{
+				"step": "33",
+				"src": "Step33_Vandalise.png",
+				"width": 268,
+				"height": 259
+			},
+			{
+				"step": "49",
+				"src": "Step49_Solution.png",
+				"width": 467,
+				"height": 514
+			},
+			{
+				"step": "61",
+				"src": "Step61_Solution.png",
+				"width": 359,
+				"height": 398
 			}
 		]
 	},
