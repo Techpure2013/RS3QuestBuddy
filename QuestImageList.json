@@ -5816,7 +5816,134 @@
 	},
 	{
 		"name": "Forgiveness of a Chaos Dwarf",
-		"images": []
+		"images": [
+			{
+				"step": "1",
+				"src": "Step1_QuestStartLoc.png",
+				"width": 237,
+				"height": 278
+			},
+			{
+				"step": "1",
+				"src": "Step1_TalkCommander.png",
+				"width": 388,
+				"height": 410
+			},
+			{
+				"step": "3",
+				"src": "Step3_Door.png",
+				"width": 284,
+				"height": 200
+			},
+			{
+				"step": "3",
+				"src": "Step3_KillDwarf.png",
+				"width": 293,
+				"height": 275
+			},
+			{
+				"step": "3",
+				"src": "Step3_SlipContents.png",
+				"width": 514,
+				"height": 146
+			},
+			{
+				"step": "6",
+				"src": "Step6_GrandExchangeClerk.png",
+				"width": 313,
+				"height": 473
+			},
+			{
+				"step": "7",
+				"src": "Step7_Brae.png",
+				"width": 234,
+				"height": 217
+			},
+			{
+				"step": "7",
+				"src": "Step7_PubLoc.png",
+				"width": 234,
+				"height": 258
+			},
+			{
+				"step": "7",
+				"src": "Step7_Veldabaun.png",
+				"width": 481,
+				"height": 444
+			},
+			{
+				"step": "12",
+				"src": "Step12_FootPrintLoc.png",
+				"width": 246,
+				"height": 212
+			},
+			{
+				"step": "12",
+				"src": "Step12_BootOnFoot.png",
+				"width": 319,
+				"height": 295
+			},
+			{
+				"step": "13",
+				"src": "Step13_Route.png",
+				"width": 569,
+				"height": 350
+			},
+			{
+				"step": "14",
+				"src": "Step14_BowlFire.png",
+				"width": 271,
+				"height": 294
+			},
+			{
+				"step": "14",
+				"src": "Step14_Rod.png",
+				"width": 250,
+				"height": 238
+			},
+			{
+				"step": "15",
+				"src": "Step15_TurnRod.png",
+				"width": 241,
+				"height": 226
+			},
+			{
+				"step": "16",
+				"src": "Step16_Tunnel.png",
+				"width": 532,
+				"height": 492
+			},
+			{
+				"step": "31",
+				"src": "Step31_BridgeLever.png",
+				"width": 376,
+				"height": 244
+			},
+			{
+				"step": "32",
+				"src": "Step32_PrisonDoor.png",
+				"width": 419,
+				"height": 378
+			},
+			{
+				"step": "36",
+				"src": "Step36_ImageMachine.png",
+				"width": 591,
+				"height": 595
+			},
+			{
+				"step": "37",
+				"src": "Step37_SortingMAchine.png",
+				"width": 325,
+				"height": 196
+			},
+			{
+				"step": "38",
+				"src": "Step38_Squueeeeze.png",
+				"width": 352,
+				"height": 235
+			}
+		]
 	},
 	{
 		"name": "Fur 'n Seek",
@@ -7232,7 +7359,134 @@
 	},
 	{
 		"name": "King of the Dwarves",
-		"images": []
+		"images": [
+			{
+				"step": "1",
+				"src": "Step1_QuestStart.png",
+				"width": 241,
+				"height": 321
+			},
+			{
+				"step": "1",
+				"src": "Step1_Sven.png",
+				"width": 298,
+				"height": 307
+			},
+			{
+				"step": "2",
+				"src": "Step2_FreeDwarvesLocs.png",
+				"width": 245,
+				"height": 258
+			},
+			{
+				"step": "2",
+				"src": "step2_PathNorth.png",
+				"width": 626,
+				"height": 428
+			},
+			{
+				"step": "5",
+				"src": "Step5_Consorsium.png",
+				"width": 243,
+				"height": 379
+			},
+			{
+				"step": "14",
+				"src": "Step14_TalkHreidmar.png",
+				"width": 611,
+				"height": 408
+			},
+			{
+				"step": "16",
+				"src": "Step16_BarLoc.png",
+				"width": 237,
+				"height": 257
+			},
+			{
+				"step": "16",
+				"src": "Step16_Luitger.png",
+				"width": 464,
+				"height": 374
+			},
+			{
+				"step": "17",
+				"src": "Step17_Klaus.png",
+				"width": 462,
+				"height": 546
+			},
+			{
+				"step": "18",
+				"src": "Steo18_WatchTowerLoc.png",
+				"width": 246,
+				"height": 374
+			},
+			{
+				"step": "18",
+				"src": "Step18_TalkMeike.png",
+				"width": 446,
+				"height": 576
+			},
+			{
+				"step": "19",
+				"src": "Step19_LibraryLoc.png",
+				"width": 247,
+				"height": 368
+			},
+			{
+				"step": "26",
+				"src": "Step26_Furnace.png",
+				"width": 246,
+				"height": 367
+			},
+			{
+				"step": "27",
+				"src": "Step27_RecordConsortium.png",
+				"width": 243,
+				"height": 302
+			},
+			{
+				"step": "28",
+				"src": "Step28_TalkMeike.png",
+				"width": 286,
+				"height": 299
+			},
+			{
+				"step": "30",
+				"src": "Step30_KeyCombo.png",
+				"width": 858,
+				"height": 172
+			},
+			{
+				"step": "34",
+				"src": "Step34_DefeatColonel.png",
+				"width": 363,
+				"height": 255
+			},
+			{
+				"step": "37",
+				"src": "Step37_PrettyFlower.png",
+				"width": 366,
+				"height": 406
+			},
+			{
+				"step": "38",
+				"src": "Step38_LiftRock.png",
+				"width": 497,
+				"height": 407
+			},
+			{
+				"step": "39",
+				"src": "Step39_LiftBigRock.png",
+				"width": 346,
+				"height": 277
+			},
+			{
+				"step": "39",
+				"src": "step39_LiftedRock.png",
+				"width": 280,
+				"height": 274
+			}
+		]
 	},
 	{
 		"name": "King's Ransom",
@@ -9946,7 +10200,32 @@
 	},
 	{
 		"name": "The Darkness of Hallowvale",
-		"images": []
+		"images": [
+			{
+				"step": "92",
+				"src": "Step92_Map.png",
+				"width": 492,
+				"height": 606
+			},
+			{
+				"step": "73",
+				"src": "Step73_map1.png",
+				"width": 574,
+				"height": 770
+			},
+			{
+				"step": "18",
+				"src": "Step18_RaulHouse.png",
+				"width": 404,
+				"height": 347
+			},
+			{
+				"step": "20",
+				"src": "Step20_FinalLocation.png",
+				"width": 494,
+				"height": 799
+			}
+		]
 	},
 	{
 		"name": "The Death of Chivalry",
