@@ -7355,7 +7355,14 @@
 	},
 	{
 		"name": "Kindred Spirits",
-		"images": []
+		"images": [
+			{
+				"step": "37",
+				"src": "Step37_KindredSpirits.png",
+				"width": 463,
+				"height": 546
+			}
+		]
 	},
 	{
 		"name": "King of the Dwarves",
@@ -12048,7 +12055,7 @@
 		"name": "Troll Romance",
 		"images": [
 			{
-				"step": "1",
+				"step": "25",
 				"src": "Arrgsafespot.png",
 				"width": 300,
 				"height": 191
@@ -12059,7 +12066,7 @@
 		"name": "Troll Stronghold",
 		"images": [
 			{
-				"step": "1",
+				"step": "13",
 				"src": "Dadsafespot.png",
 				"width": 300,
 				"height": 188
