@@ -3,6 +3,7 @@ import {
 	AccordionControl,
 	AccordionPanel,
 	Button,
+	Checkbox,
 	ColorPicker,
 	Radio,
 	Stack,
@@ -25,7 +26,9 @@ export const Settings: React.FC = () => {
 	const [userColor, setUserColor] = useState("");
 	const [userLabelColor, setUserLabelColor] = useState("");
 	const [userButtonColor, setUserButtonColor] = useState("");
+	const [compact, setCompact] = useState(false);
 	useEffect(() => {
+		const storedCompact = localStorage.getItem("isCompact");
 		const storedHighlight = localStorage.getItem("isHighlighted");
 		const storedRemoveStep = localStorage.getItem("removeStep");
 		const storedTextSwatches = localStorage.getItem("swatchColors");
@@ -79,12 +82,17 @@ export const Settings: React.FC = () => {
 		if (storedTextColorValue !== null) {
 			setTextColorValue(storedTextColorValue);
 		}
+		if (storedCompact !== null) {
+			const parsedCompact = JSON.parse(storedCompact);
+			setCompact(parsedCompact);
+		}
 	}, []);
 
 	useEffect(() => {
 		window.localStorage.setItem("isHighlighted", JSON.stringify(highlight));
 		window.localStorage.setItem("removeStep", JSON.stringify(removeStep));
-	}, [highlight, removeStep]);
+		window.localStorage.setItem("isCompact", JSON.stringify(compact));
+	}, [highlight, removeStep, compact]);
 	useEffect(() => {
 		window.localStorage.setItem("swatchColors", JSON.stringify(swatchTextColors));
 		window.localStorage.setItem("textColorValue", colorTextValue);
@@ -124,16 +132,15 @@ export const Settings: React.FC = () => {
 					}}
 					label="Highlight green when complete."
 				/>
-				<Radio
+				<Checkbox
 					styles={{
 						label: { color: hasColor ? userColor : "" },
 					}}
-					checked={removeStep}
-					onChange={(event) => {
-						setRemoveStep(event.currentTarget.checked);
-						setHighlight(false);
+					label="Compact Mode"
+					checked={compact || false} // Ensures `checked` is always a boolean
+					onChange={(e) => {
+						setCompact(e.target.checked); // Update state based on the checkbox value
 					}}
-					label="Remove step after completion."
 				/>
 			</Stack>
 			<Accordion>

@@ -129,8 +129,15 @@ const QuestPage: React.FC = () => {
 		};
 	}, []);
 	const handleBackButton = () => {
+		// Navigate to home
 		hist("/");
-		handles.popOutWindow!.close();
+
+		// Check if popOutWindow exists and close it
+		if (handles.popOutWindow) {
+			handles.popOutWindow.close();
+		} else {
+			console.warn("popOutWindow is null or undefined.");
+		}
 	};
 	function create_ListUUID() {
 		var dt = new Date().getTime();
@@ -145,12 +152,7 @@ const QuestPage: React.FC = () => {
 		return uuid;
 	}
 
-	if (questName == "Ability to enter Morytania") {
-		questName = "Priest in Peril";
-		textfile = "priestinperilinfo.txt";
-	}
-
-	if (questName.trim() == "The Prisoner of Glouphrie") {
+	if (questName.trim() === "The Prisoner of Glouphrie") {
 		isPog = true;
 	}
 	if (questName.trim() === "Lunar Diplomacy") {
@@ -583,20 +585,33 @@ const QuestPage: React.FC = () => {
 														// Combine questIndex and requirementIndex to create a unique key
 														const uniqueKey = `${questIndex}-${requirementIndex}`;
 														const hasSkill = skillLevels.some((value) => {
-															const splitValue = value.split(" ");
-															const isNumber = !isNaN(parseFloat(splitValue[0]));
-															const reqStr = requirement.split(" ");
-															const isReqNum = !isNaN(parseFloat(reqStr[0]));
+															const [skillValueStr, skillType] = value.split(" ");
+															const [requirementValueStr, requirementType] =
+																requirement.split(" ");
 
-															if (isNumber && isReqNum) {
-																const numberPart = parseInt(splitValue[0]);
-																const requirementNumber = parseInt(reqStr[0]);
+															const skillValue = parseInt(skillValueStr, 10);
+															const requirementValue = parseInt(requirementValueStr, 10);
 
-																// Compare the extracted number
-																return numberPart > requirementNumber;
+															console.log(
+																"Skill:",
+																skillValueStr,
+																skillType,
+																"Requirement:",
+																requirementValueStr,
+																requirementType
+															);
+
+															const isSkillValid =
+																!isNaN(skillValue) && !isNaN(requirementValue);
+															const isTypeMatch = skillType === requirementType;
+
+															if (isSkillValid && isTypeMatch) {
+																return skillValue >= requirementValue;
 															}
+
 															return false;
 														});
+
 														const needLeela =
 															requirement ===
 																"Fully restore Senliten from the 'Missing My Mummy' quest" ||
@@ -683,7 +698,16 @@ const QuestPage: React.FC = () => {
 																	display: "block",
 																}}
 															>
-																{!isNaN(firstPart) || requirement === "None" ? (
+																{!isNaN(firstPart) ||
+																requirement === "None" ||
+																requirement.startsWith("Ironmen") ||
+																requirement.startsWith("Be ") ||
+																requirement.startsWith("Access") ||
+																requirement.startsWith(
+																	"Ability to see the Shadow Realm inside Kharid-et"
+																) ||
+																requirement.startsWith("Time Served") ||
+																requirement.startsWith("Find") ? (
 																	<span style={{ color: hasSkill ? "#24BF58" : "#C64340" }}>
 																		{requirement}
 																	</span>

@@ -1,7 +1,15 @@
 // QuestCarousel.tsx
 import React, { useEffect, useRef, useState } from "react";
 import { Carousel } from "@mantine/carousel";
-import { Button, TextInput, ActionIcon, Modal, Loader } from "@mantine/core";
+import {
+	Button,
+	TextInput,
+	ActionIcon,
+	Modal,
+	Loader,
+	Accordion,
+	AccordionControl,
+} from "@mantine/core";
 import { useQuestListStore, QuestListFetcher } from "./Fetchers/FetchQuestList";
 import { NavLink } from "react-router-dom";
 import {
@@ -40,10 +48,11 @@ const QuestCarousel: React.FC = () => {
 	const [hasButtonColor, setHasButtonColor] = useState(false);
 	const [hasLabelColor, setHasLabelColor] = useState(false);
 	const [update, setUpdate] = useState(false);
+	const [isCompact, setCompact] = useState(false);
 	const filteredQuests = questList.filter((quest) =>
 		quest.toLowerCase().includes(searchQuery.toLowerCase())
 	);
-	const [skillsApplied, setSkillsApplied] = useState(false);
+	const [, setSkillsApplied] = useState(false);
 	const filteredRemainingQuests = sorted.current
 		? remainingQuests.current!.filter((quest) =>
 				quest.toLowerCase().includes(searchQuery.toLowerCase())
@@ -145,6 +154,7 @@ const QuestCarousel: React.FC = () => {
 		const colorVal = localStorage.getItem("textColorValue");
 		const labelCol = localStorage.getItem("labelColor");
 		const buttonCol = localStorage.getItem("buttonColor");
+		const compact = localStorage.getItem("isCompact");
 		if (buttonCol) {
 			setUserButtonColor(buttonCol);
 			setHasButtonColor(true);
@@ -163,6 +173,11 @@ const QuestCarousel: React.FC = () => {
 		} else {
 			setHasColor(false);
 		}
+		if (compact !== null) {
+			const parsedCompact = JSON.parse(compact);
+			console.log(parsedCompact);
+			setCompact(parsedCompact);
+		}
 	}, [
 		userButtonColor,
 		userLabelColor,
@@ -171,6 +186,7 @@ const QuestCarousel: React.FC = () => {
 		hasLabelColor,
 		hasButtonColor,
 		opened,
+		isCompact,
 	]);
 
 	const applySkills = () => {
@@ -182,7 +198,7 @@ const QuestCarousel: React.FC = () => {
 
 		if (player !== null) {
 			returningPName.current = player;
-
+			applySkills();
 			handlePlayerLoad();
 			playerFound.current = true;
 		}
@@ -341,19 +357,6 @@ const QuestCarousel: React.FC = () => {
 						Un-Sort
 					</Button>
 				)}
-				{!skillsApplied && (
-					<Button
-						className="ApplySkillsButton"
-						variant="outline"
-						color={hasButtonColor ? userButtonColor : ""}
-						onClick={() => {
-							applySkills();
-						}}
-						disabled={playerFound.current ? false : true}
-					>
-						Apply Skills Dont Sort
-					</Button>
-				)}
 
 				<Button
 					className="RefreshButton"
@@ -377,29 +380,113 @@ const QuestCarousel: React.FC = () => {
 					</p>
 				</div>
 			)}
-			<div className="caroContainer">
-				<Carousel
-					speed={100}
-					align="center"
-					slideSize={{ base: "100%" }}
-					includeGapInSize={true}
-					height={450}
-					containScroll={"trimSnaps"}
-					nextControlIcon={<IconArrowRight size={24} />}
-					previousControlIcon={<IconArrowLeft size={24} />}
-					loop
-				>
+			{isCompact && (
+				<Accordion>
 					{sorted.current &&
-						filteredRemainingQuests.map((quest, index) => (
-							<Carousel.Slide key={index}>{renderQuestContent(quest)}</Carousel.Slide>
-						))}
-
+						filteredRemainingQuests.map((quest, index) => {
+							let questTEdit = quest.toLowerCase().split(" ");
+							let modifiedQuestVal1 = questTEdit.join("").replace(/[!,`']/g, "");
+							return (
+								<Accordion.Item key={index} value={quest}>
+									<div>
+										<NavLink
+											to="/QuestPage"
+											state={{
+												questName: quest,
+												modified: modifiedQuestVal1,
+											}}
+											style={({ isActive }) => ({
+												textDecoration: "none",
+												color: isActive ? "inherit" : "inherit", // Ensure no style change
+											})}
+											onClick={() => {
+												window.scrollTo(0, 0);
+											}}
+										>
+											<AccordionControl
+												chevron={null}
+												className="AccordianControl"
+												styles={{
+													control: { color: hasLabelColor ? userLabelColor : "" },
+													chevron: {
+														display: "none",
+													},
+												}}
+											>
+												{quest}
+											</AccordionControl>
+										</NavLink>
+									</div>
+								</Accordion.Item>
+							);
+						})}
 					{!sorted.current &&
-						filteredQuests.map((quest, index) => (
-							<Carousel.Slide key={index}>{renderQuestContent(quest)}</Carousel.Slide>
-						))}
-				</Carousel>
-			</div>
+						filteredQuests.map((quest, index) => {
+							let questTEdit = quest.toLowerCase().split(" ");
+							let modifiedQuestVal1 = questTEdit.join("").replace(/[!,`']/g, "");
+
+							return (
+								<Accordion.Item key={index} value={quest}>
+									<div>
+										<NavLink
+											to="/QuestPage"
+											state={{
+												questName: quest,
+												modified: modifiedQuestVal1,
+											}}
+											style={({ isActive }) => ({
+												textDecoration: "none",
+												color: isActive ? "inherit" : "inherit", // Ensure no style change
+											})}
+											onClick={() => {
+												window.scrollTo(0, 0);
+											}}
+										>
+											<AccordionControl
+												chevron={null}
+												className="AccordianControl"
+												styles={{
+													control: { color: hasLabelColor ? userLabelColor : "" },
+													chevron: {
+														display: "none",
+													},
+												}}
+											>
+												{quest}
+											</AccordionControl>
+										</NavLink>
+									</div>
+								</Accordion.Item>
+							);
+						})}
+				</Accordion>
+			)}
+			{!isCompact && (
+				<div className="caroContainer">
+					<Carousel
+						speed={100}
+						align="center"
+						slideSize={{ base: "100%" }}
+						includeGapInSize={true}
+						height={450}
+						containScroll={"trimSnaps"}
+						nextControlIcon={<IconArrowRight size={24} />}
+						previousControlIcon={<IconArrowLeft size={24} />}
+						loop
+					>
+						{sorted.current &&
+							filteredRemainingQuests.map((quest, index) => (
+								<Carousel.Slide key={index}>{renderQuestContent(quest)}</Carousel.Slide>
+							))}
+
+						{!sorted.current &&
+							filteredQuests.map((quest, index) => (
+								<Carousel.Slide key={index}>{renderQuestContent(quest)}</Carousel.Slide>
+							))}
+					</Carousel>
+				</div>
+			)}
+
 			<ActionIcon
 				color={hasButtonColor ? userButtonColor : ""}
 				size={"sm"}

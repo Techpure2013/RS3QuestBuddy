@@ -2993,11 +2993,9 @@
 			"Heroes' Quest",
 			"Shield of Arrav",
 			"Dragon Slayer",
-			"33 quest points",
 			"Druidic Ritual",
 			"Lost City",
 			"Merlin's Crystal",
-			"56 quest points",
 			"50 Agility",
 			"43 Herblore",
 			"41 Hunter",
@@ -7079,12 +7077,7 @@
 		"StartPoint": "Talk to Commander Denulth at the Burthorpe training camp.",
 		"MemberRequirement": "P2P Members only",
 		"OfficialLength": "Short to Medium",
-		"Requirements": [
-			"Troll Stronghold",
-			"Death Plateau",
-			"15 Agility",
-			"30 Thieving"
-		],
+		"Requirements": ["Death Plateau", "15 Agility", "30 Thieving"],
 		"ItemsRequired": [
 			"Climbing boots, rock climbing boots or 12 coins to buy the climbing boots.",
 			"4 free inventory spaces (climbing boots, and 3 keys)"
@@ -8801,7 +8794,7 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Medium",
 		"Requirements": [
-			"59 Dungeoneering Dungeoneering",
+			"59 Dungeoneering",
 			"Find and free Skaldrun from the frozen floors in Daemonheim"
 		],
 		"ItemsRequired": ["Ring of kinship to find scribbled notes"],
