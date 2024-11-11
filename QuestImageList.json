@@ -8816,7 +8816,104 @@
 	},
 	{
 		"name": "River of Blood",
-		"images": []
+		"images": [
+			{
+				"step": "2",
+				"src": "Step1_QuestStartLoc.png",
+				"width": 246,
+				"height": 382
+			},
+			{
+				"step": "2",
+				"src": "Step2_KingRoald.png",
+				"width": 248,
+				"height": 386
+			},
+			{
+				"step": "8",
+				"src": "Step8_KillMonks.png",
+				"width": 349,
+				"height": 282
+			},
+			{
+				"step": "13",
+				"src": "Step13_TrapDoor.png",
+				"width": 184,
+				"height": 179
+			},
+			{
+				"step": "14",
+				"src": "Step14_BookSolution.png",
+				"width": 916,
+				"height": 522
+			},
+			{
+				"step": "18",
+				"src": "Step18_PubbTrap.png",
+				"width": 385,
+				"height": 345
+			},
+			{
+				"step": "18",
+				"src": "Step18_CaveEnter.png",
+				"width": 374,
+				"height": 360
+			},
+			{
+				"step": "21",
+				"src": "Step21_Tomb.png",
+				"width": 328,
+				"height": 169
+			},
+			{
+				"step": "25",
+				"src": "Step25_UseDustOnAltar.png",
+				"width": 320,
+				"height": 300
+			},
+			{
+				"step": "27",
+				"src": "Step27_TalkDrezel.png",
+				"width": 230,
+				"height": 342
+			},
+			{
+				"step": "28",
+				"src": "Step28_PourIntoWell.png",
+				"width": 305,
+				"height": 394
+			},
+			{
+				"step": "38",
+				"src": "Step38_BoardBoat.png",
+				"width": 194,
+				"height": 257
+			},
+			{
+				"step": "39",
+				"src": "Step39_TalkEfaritay.png",
+				"width": 231,
+				"height": 363
+			},
+			{
+				"step": "45",
+				"src": "Step45_TalkSarius.png",
+				"width": 487,
+				"height": 512
+			},
+			{
+				"step": "47",
+				"src": "Step47_ResearchTable.png",
+				"width": 260,
+				"height": 251
+			},
+			{
+				"step": "54",
+				"src": "Step54_OpenCells.png",
+				"width": 280,
+				"height": 295
+			}
+		]
 	},
 	{
 		"name": "Rocking Out",
