@@ -381,7 +381,13 @@ const QuestCarousel: React.FC = () => {
 				</div>
 			)}
 			{isCompact && (
-				<Accordion>
+				<Accordion
+					styles={{
+						control: {
+							textAlign: "center",
+						},
+					}}
+				>
 					{sorted.current &&
 						filteredRemainingQuests.map((quest, index) => {
 							let questTEdit = quest.toLowerCase().split(" ");
@@ -407,7 +413,9 @@ const QuestCarousel: React.FC = () => {
 												chevron={null}
 												className="AccordianControl"
 												styles={{
-													control: { color: hasLabelColor ? userLabelColor : "" },
+													control: {
+														color: hasLabelColor ? userLabelColor : "",
+													},
 													chevron: {
 														display: "none",
 													},
