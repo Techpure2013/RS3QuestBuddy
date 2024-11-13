@@ -7,7 +7,7 @@ import {
 	ColorPicker,
 	Radio,
 	Stack,
-	TextInput
+	TextInput,
 } from "@mantine/core";
 import { useEffect, useState } from "react";
 import FontSizeControls from "./../Handlers/FontSizeInput";
@@ -27,11 +27,6 @@ export const Settings: React.FC = () => {
 	const [userLabelColor, setUserLabelColor] = useState("");
 	const [userButtonColor, setUserButtonColor] = useState("");
 	const [compact, setCompact] = useState(false);
-	const storedExpandAllAccordions = localStorage.getItem('expandAllAccordions');
-	const [expandAllAccordions, setExpandAllAccordions] = useState<boolean>(() => {
-		return storedExpandAllAccordions !== null ? JSON.parse(storedExpandAllAccordions) : false;
-	});
-
 	useEffect(() => {
 		const storedCompact = localStorage.getItem("isCompact");
 		const storedHighlight = localStorage.getItem("isHighlighted");
@@ -123,12 +118,6 @@ export const Settings: React.FC = () => {
 		userLabelColor,
 		colorTextValue,
 	]);
-	
-	useEffect(() => {
-		// Save the expand all setting to local storage when it changes
-		localStorage.setItem('expandAllAccordions', JSON.stringify(expandAllAccordions));
-	}, [expandAllAccordions]);
-
 	return (
 		<div className="SettingsContainer">
 			<Stack>
@@ -152,14 +141,6 @@ export const Settings: React.FC = () => {
 					onChange={(e) => {
 						setCompact(e.target.checked); // Update state based on the checkbox value
 					}}
-				/>
-				<Checkbox
-					styles={{
-						label: { color: hasColor ? userColor : "" },
-					}}
-					checked={expandAllAccordions}
-					onChange={(event) => setExpandAllAccordions(event.target.checked)}
-					label="Expand all accordion sections by default"
 				/>
 			</Stack>
 			<Accordion>

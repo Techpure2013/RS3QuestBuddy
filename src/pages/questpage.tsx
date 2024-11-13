@@ -47,11 +47,6 @@ import ColorCalculator from "../Handlers/POGCalc.tsx";
 import useGridDisclosure from "./useGridModal.tsx";
 import useLunarGridDisclosure from "./useLunarDisclosure.tsx";
 
-// Define constants for local storage keys to avoid typos and ensure consistency
-const LOCAL_STORAGE_KEYS = {
-	expandAllAccordions: 'expandAllAccordions',
-};
-
 const QuestPage: React.FC = () => {
 	// State and variables
 	const qpname = useLocation();
@@ -94,17 +89,6 @@ const QuestPage: React.FC = () => {
 	const handles = useQuestControllerStore();
 	const [skillLevels, setSkillLevels] = useState<string[]>([]);
 	const [completedQuests, setCompleteQuests] = useState<string[] | null>(null);
-	const storedExpandAll = localStorage.getItem(LOCAL_STORAGE_KEYS.expandAllAccordions);
-	const [expandAllAccordions, setExpandAllAccordions] = useState<boolean>(() => {
-		return storedExpandAll !== null ? JSON.parse(storedExpandAll) : false;
-	});
-	const [expanded, setExpanded] = useState<string[]>(() => {
-		const isExpandAll = storedExpandAll !== null ? JSON.parse(storedExpandAll) : false;
-		
-		if (isExpandAll) return ["item-1", "item-2", "item-3", "item-4", "item-5", "item-6", "item-7"];
-		return [];
-	});
-
 	const handleKeyDown = (event: KeyboardEvent) => {
 		if (!isOpenNotes.current) {
 			if (event.key === " ") {
@@ -458,7 +442,6 @@ const QuestPage: React.FC = () => {
 			React.createRef()
 		);
 	}, [details.stepDetails.length]);
-
 	function handleFalse() {
 		isOpenNotes.current = false;
 	}
@@ -579,14 +562,12 @@ const QuestPage: React.FC = () => {
 			{showStepReq && Array.isArray(QuestDetails) ? (
 				<>
 					<Accordion
-						multiple
-						defaultValue={expanded}
-						onChange={setExpanded}
+						defaultValue=""
 						chevron={
 							<Image src={QuestIcon} alt="Quest Icon" width="20px" height="20px" />
 						}
 					>
-						<Accordion.Item key={"item-1"} value="item-1">
+						<Accordion.Item key={1} value="Click to Show Quest Requirements">
 							<Accordion.Control
 								styles={{
 									control: { color: hasLabelColor ? userLabelColor : "" },
@@ -760,7 +741,7 @@ const QuestPage: React.FC = () => {
 								</div>
 							</Accordion.Panel>
 						</Accordion.Item>
-						<Accordion.Item key={"item-2"} value="item-2">
+						<Accordion.Item key={2} value="Click to Show Start Point">
 							<Accordion.Control
 								className="AccordianControl"
 								styles={{
@@ -777,7 +758,7 @@ const QuestPage: React.FC = () => {
 								</div>
 							</Accordion.Panel>
 						</Accordion.Item>
-						<Accordion.Item key={"item-3"} value="item-3">
+						<Accordion.Item key={3} value="Members Or Not">
 							<Accordion.Control
 								className="AccordianControl"
 								styles={{
@@ -794,7 +775,7 @@ const QuestPage: React.FC = () => {
 								</div>
 							</Accordion.Panel>
 						</Accordion.Item>
-						<Accordion.Item key={"item-4"} value="item-4">
+						<Accordion.Item key={4} value="Official Length of Quest">
 							<Accordion.Control
 								className="AccordianControl"
 								styles={{
@@ -811,7 +792,7 @@ const QuestPage: React.FC = () => {
 								</div>
 							</Accordion.Panel>
 						</Accordion.Item>
-						<Accordion.Item key={"item-5"} value="item-5">
+						<Accordion.Item key={5} value="Items Required">
 							<Accordion.Control
 								className="AccordianControl"
 								styles={{
@@ -844,7 +825,7 @@ const QuestPage: React.FC = () => {
 								</div>
 							</Accordion.Panel>
 						</Accordion.Item>
-						<Accordion.Item key={"item-6"} value="item-6">
+						<Accordion.Item key={6} value="Recommended">
 							<Accordion.Control
 								className="AccordianControl"
 								title="Items You Might Need"
@@ -878,7 +859,7 @@ const QuestPage: React.FC = () => {
 								</div>
 							</Accordion.Panel>
 						</Accordion.Item>
-						<Accordion.Item key={"item-7"} value="item-7">
+						<Accordion.Item key={7} value="Enemies to Defeat">
 							<Accordion.Control
 								className="AccordianControl"
 								styles={{
