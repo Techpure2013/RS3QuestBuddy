@@ -95,9 +95,6 @@ const QuestPage: React.FC = () => {
 	const [skillLevels, setSkillLevels] = useState<string[]>([]);
 	const [completedQuests, setCompleteQuests] = useState<string[] | null>(null);
 	const storedExpandAll = localStorage.getItem(LOCAL_STORAGE_KEYS.expandAllAccordions);
-	const [expandAllAccordions, setExpandAllAccordions] = useState<boolean>(() => {
-		return storedExpandAll !== null ? JSON.parse(storedExpandAll) : false;
-	});
 	const [expanded, setExpanded] = useState<string[]>(() => {
 		const isExpandAll = storedExpandAll !== null ? JSON.parse(storedExpandAll) : false;
 		
