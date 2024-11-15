@@ -632,27 +632,11 @@ const QuestPage: React.FC = () => {
 															requirement ===
 																"Fully restore Senliten from the 'Missing My Mummy' quest" ||
 															"Bring Leela to Senliten's tomb";
-														const needMort = requirement === "Ability to enter Morytania";
 														const needJunglePotion =
 															requirement ===
 															"Jungle Potion is only required if clean volencia moss is a requested item during the quest";
 														let abilityToEnterMort = false;
 
-														//let mmm = false;
-														if (needMort) {
-															const hasPriestInPeril =
-																completedQuests &&
-																completedQuests.some((value) => {
-																	if (value && typeof value === "object" && "title" in value) {
-																		return (
-																			(value as { title?: string }).title === "Priest in Peril"
-																		);
-																	}
-																});
-															if (hasPriestInPeril) {
-																abilityToEnterMort = true;
-															}
-														}
 														if (needLeela) {
 															const hasMMM =
 																completedQuests &&
