@@ -1,0 +1,2599 @@
+[
+	{
+		"Quest Name": "",
+		"Rewards": {
+			"Quest Points": 0,
+			"Experience": {
+				"Attack": [""],
+				"Defence": [""],
+				"Strength": [""],
+				"Range": [""],
+				"Prayer": [""],
+				"Magic": [""],
+				"Runecrafting": [""],
+				"Construction": [""],
+				"Dungeoneering": [""],
+				"Archaeology": [""],
+				"Constitution": [""],
+				"Agility": [""],
+				"Herblore": [""],
+				"Thieving": [""],
+				"Crafting": [""],
+				"Fletching": [""],
+				"Slayer": [""],
+				"Hunter": [""],
+				"Divination": [""],
+				"Necromancy": [""],
+				"Mining": [""],
+				"Smithing": [""],
+				"Fishing": [""],
+				"Cooking": [""],
+				"Woodcutting": [""],
+				"Farming": [""],
+				"Summoning": [""],
+				"Invention": [""]
+			},
+			"Unlocks": [""],
+			"Additional Rewards": [""],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "",
+						"runescore": 0
+					}
+				]
+			},
+			"Music Unlock": [""]
+		}
+	},
+	{
+		"Quest Name": "Do No Evil",
+		"Rewards": {
+			"Quest Points": 1,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["None"],
+				"Range": ["None"],
+				"Prayer": ["None"],
+				"Magic": ["50000"],
+				"Runecrafting": ["None"],
+				"Construction": ["30000"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["20000"],
+				"Herblore": ["None"],
+				"Thieving": ["50000"],
+				"Crafting": ["40000"],
+				"Fletching": ["None"],
+				"Slayer": ["None"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["None"],
+				"Mining": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Woodcutting": ["None"],
+				"Farming": ["None"],
+				"Summoning": ["None"],
+				"Invention": ["None"]
+			},
+			"Unlocks": [
+				"The entrance to the Apmeken tomb",
+				"New magic carpet destination at the monkey colony",
+				"Cramulet with speaking amulets (catspeak, camulet, cabbagespeak, crocspeak)",
+				"Ava's alerter upgrade",
+				"Ability to run chimp ice for rewards",
+				"Ability to pickpocket monkey knife fighters",
+				"Access to the monkey colony",
+				"Access to a passageway from the desert to a new kalphite area (via Ayuni room hole)"
+			],
+			"Additional Rewards": [
+				"Elite clue scroll with Ava's alerter (found in Meiyerditch, Iceberg, Isafdar, or Lunar Isle)",
+				"2 Treasure Hunter keys (Ironman accounts excluded)",
+				"Secret treasure room (Apmeken mask, ankh) via cliff cavern (80 Agility required)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Do No Evil",
+						"runescore": 0
+					},
+					{
+						"name": "Are You Needing Access?",
+						"runescore": 10
+					},
+					{
+						"name": "Do No Elite",
+						"runescore": 10
+					},
+					{
+						"name": "Ice Ice Chimpy",
+						"runescore": 25
+					},
+					{
+						"name": "Say It, Don't Spray It",
+						"runescore": 15
+					},
+					{
+						"name": "Sun Shade",
+						"runescore": 25
+					}
+				]
+			},
+			"Music Unlock": ["Monkey See, Monkey Do", "Simian Scuffle"]
+		}
+	},
+	{
+		"Quest Name": "Aftermath",
+		"Rewards": {
+			"Quest Points": 0,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["None"],
+				"Range": ["None"],
+				"Prayer": ["None"],
+				"Magic": ["None"],
+				"Runecrafting": ["None"],
+				"Construction": ["None"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["None"],
+				"Herblore": ["None"],
+				"Thieving": ["None"],
+				"Crafting": ["None"],
+				"Fletching": ["None"],
+				"Slayer": ["None"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["None"],
+				"Mining": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Woodcutting": ["None"],
+				"Farming": ["None"],
+				"Summoning": ["None"],
+				"Invention": ["None"]
+			},
+			"Unlocks": ["None"],
+			"Additional Rewards": ["Small XP lamp", "Chaos die reroll token"],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "None",
+						"runescore": 0
+					}
+				]
+			},
+			"Music Unlock": ["None"]
+		}
+	},
+	{
+		"Quest Name": "All Fired Up",
+		"Rewards": {
+			"Quest Points": 1,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["None"],
+				"Range": ["None"],
+				"Prayer": ["None"],
+				"Magic": ["None"],
+				"Runecrafting": ["None"],
+				"Construction": ["None"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["None"],
+				"Herblore": ["None"],
+				"Thieving": ["None"],
+				"Crafting": ["None"],
+				"Fletching": ["None"],
+				"Slayer": ["None"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["None"],
+				"Mining": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Woodcutting": ["None"],
+				"Farming": ["None"],
+				"Summoning": ["None"],
+				"Invention": ["None"],
+				"Firemaking": ["5500"]
+			},
+			"Unlocks": ["Access to the All Fired Up minigame"],
+			"Additional Rewards": [
+				"20,000 coins",
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)",
+				"Ring of fire for lighting 6 beacons simultaneously",
+				"Flame gloves for lighting 10 beacons simultaneously",
+				"Inferno adze for lighting all 14 beacons simultaneously"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "None",
+						"runescore": 0
+					}
+				]
+			},
+			"Music Unlock": ["None"]
+		}
+	},
+	{
+		"Quest Name": "Alpha vs Omega",
+		"Rewards": {
+			"Quest Points": 1,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["None"],
+				"Range": ["None"],
+				"Prayer": ["None"],
+				"Magic": ["None"],
+				"Runecrafting": ["None"],
+				"Construction": ["None"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["None"],
+				"Herblore": ["None"],
+				"Thieving": ["None"],
+				"Crafting": ["None"],
+				"Fletching": ["None"],
+				"Slayer": ["None"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["150000"],
+				"Mining": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Woodcutting": ["None"],
+				"Farming": ["None"],
+				"Summoning": ["None"],
+				"Invention": ["None"]
+			},
+			"Unlocks": ["Access to the Rasial, the First Necromancer boss encounter"],
+			"Additional Rewards": [
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Alpha vs Omega",
+						"runescore": 0
+					}
+				]
+			},
+			"Music Unlock": ["The First Necromancer"]
+		}
+	},
+	{
+		"Quest Name": "Ancient Awakening",
+		"Rewards": {
+			"Quest Points": 1,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["None"],
+				"Range": ["None"],
+				"Prayer": ["None"],
+				"Magic": ["None"],
+				"Runecrafting": ["None"],
+				"Construction": ["None"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["None"],
+				"Herblore": ["None"],
+				"Thieving": ["None"],
+				"Crafting": ["None"],
+				"Fletching": ["None"],
+				"Slayer": ["None"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["15000"],
+				"Mining": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Woodcutting": ["None"],
+				"Farming": ["None"],
+				"Summoning": ["None"],
+				"Invention": ["None"]
+			},
+			"Unlocks": [
+				"Access to the standard difficulty of the Ungael combat activity",
+				"Ability to build all three tiers of the Botanist's Workbench at Fort Forinthry"
+			],
+			"Additional Rewards": [
+				"10,000 Skills experience lamp (Skill must be level 50 or higher)",
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "None",
+						"runescore": 0
+					}
+				]
+			},
+			"Music Unlock": ["Stop Zemouregal", "Ungael"]
+		}
+	},
+	{
+		"Quest Name": "Animal Magnetism",
+		"Rewards": {
+			"Quest Points": 1,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["None"],
+				"Range": ["None"],
+				"Prayer": ["None"],
+				"Magic": ["None"],
+				"Runecrafting": ["None"],
+				"Construction": ["None"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["None"],
+				"Herblore": ["None"],
+				"Thieving": ["None"],
+				"Crafting": ["1000"],
+				"Fletching": ["1000"],
+				"Slayer": ["1000"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["None"],
+				"Mining": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Woodcutting": ["2500"],
+				"Farming": ["None"],
+				"Summoning": ["None"],
+				"Invention": ["None"]
+			},
+			"Unlocks": [
+				"Ava's device (Attractor if below 50 Ranged, Accumulator if 50 or higher)",
+				"Ava's accumulator ammunition pickup passive effect (requires 50 Ranged)",
+				"Access to Ava's Odds and Ends"
+			],
+			"Additional Rewards": [
+				"Blessed hatchet",
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Animal Magnetism",
+						"runescore": 0
+					}
+				]
+			},
+			"Music Unlock": ["None"]
+		}
+	},
+	{
+		"Quest Name": "Another Slice of H.A.M.",
+		"Rewards": {
+			"Quest Points": 1,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["None"],
+				"Range": ["None"],
+				"Prayer": ["3000"],
+				"Magic": ["None"],
+				"Runecrafting": ["None"],
+				"Construction": ["None"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["None"],
+				"Herblore": ["None"],
+				"Thieving": ["None"],
+				"Crafting": ["None"],
+				"Fletching": ["None"],
+				"Slayer": ["None"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["None"],
+				"Mining": ["3000"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Woodcutting": ["None"],
+				"Farming": ["None"],
+				"Summoning": ["None"],
+				"Invention": ["None"]
+			},
+			"Unlocks": [
+				"The ancient mace",
+				"Ability to buy Goblin village spheres",
+				"Free access to the Dorgesh-Kaan–Keldagrim train system"
+			],
+			"Additional Rewards": [
+				"A Dorgesh-kaan sphere",
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Another Slice of H.A.M.",
+						"runescore": 0
+					}
+				]
+			},
+			"Music Unlock": [
+				"Ham and Seek",
+				"Ham Attack",
+				"Slice of Silent Movie",
+				"Slice of Station"
+			]
+		}
+	},
+	{
+		"Quest Name": "As a First Resort",
+		"Rewards": {
+			"Quest Points": 1,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["None"],
+				"Range": ["None"],
+				"Prayer": ["None"],
+				"Magic": ["None"],
+				"Runecrafting": ["None"],
+				"Construction": ["None"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["None"],
+				"Herblore": ["None"],
+				"Thieving": ["None"],
+				"Crafting": ["None"],
+				"Fletching": ["None"],
+				"Slayer": ["None"],
+				"Hunter": ["15000"],
+				"Divination": ["None"],
+				"Necromancy": ["None"],
+				"Mining": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Woodcutting": ["15000"],
+				"Farming": ["None"],
+				"Summoning": ["None"],
+				"Invention": ["None"],
+				"Firemaking": ["15000"]
+			},
+			"Unlocks": [
+				"Access to the spa facilities",
+				"Access to the Oo'glog bank",
+				"Access to the Oo'glog hunter area",
+				"Access to the platypus summoning pet (level 10 Summoning)",
+				"Access to the Fresh Meat shop",
+				"Access to the Gift Shop",
+				"Ability to travel to Oo'glog using the Charter ships",
+				"Ability to create Robust glass and Crystal glass",
+				"Access to decanting five and six dose flasks into other flasks or vials (talk to Teplin Macagan)"
+			],
+			"Additional Rewards": [
+				"A mixture of 4 items, either caskets or oysters",
+				"If you release your pet in the spot you released the others during the quest you will receive another casket or oyster",
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "As a First Resort",
+						"runescore": 0
+					},
+					{
+						"name": "I'm Super",
+						"runescore": 25
+					},
+					{
+						"name": "The Expensive Range",
+						"runescore": 25
+					}
+				]
+			},
+			"Music Unlock": [
+				"Bish Bash Bosh",
+				"Hot 'n' Bothered",
+				"Shaping Up",
+				"Spa Bizarre"
+			]
+		}
+	},
+	{
+		"Quest Name": "Back to my Roots",
+		"Rewards": {
+			"Quest Points": 1,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["None"],
+				"Range": ["None"],
+				"Prayer": ["None"],
+				"Magic": ["None"],
+				"Runecrafting": ["None"],
+				"Construction": ["None"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["15000"],
+				"Herblore": ["None"],
+				"Thieving": ["None"],
+				"Crafting": ["None"],
+				"Fletching": ["None"],
+				"Slayer": ["23000"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["None"],
+				"Mining": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Woodcutting": ["40000"],
+				"Farming": ["24000"],
+				"Summoning": ["None"],
+				"Invention": ["None"]
+			},
+			"Unlocks": [
+				"Access to the Jade vine Farming patch in East Ardougne",
+				"Jade vine seed",
+				"Access to the jade vine maze and the giant ant soldiers, giant ant workers, tenacious toucans, giant wasps, frogs, and pernicious parrots",
+				"Transportation between Eagles' Peak and Karamja using the Karamjan Jungle eagle",
+				"Ability to slay the wild jade vine for extra Slayer and Farming experience once every 15 hours"
+			],
+			"Additional Rewards": [
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Back to my Roots",
+						"runescore": 0
+					},
+					{
+						"name": "Vine-detta",
+						"runescore": 15
+					}
+				]
+			},
+			"Music Unlock": ["Roots and Flutes"]
+		}
+	},
+	{
+		"Quest Name": "Back to the Freezer",
+		"Rewards": {
+			"Quest Points": 1,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["None"],
+				"Range": ["None"],
+				"Prayer": ["None"],
+				"Magic": ["None"],
+				"Runecrafting": ["25000"],
+				"Construction": ["None"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["15000"],
+				"Herblore": ["None"],
+				"Thieving": ["None"],
+				"Crafting": ["None"],
+				"Fletching": ["None"],
+				"Slayer": ["15000"],
+				"Hunter": ["None"],
+				"Divination": ["25000"],
+				"Necromancy": ["None"],
+				"Mining": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Woodcutting": ["None"],
+				"Farming": ["None"],
+				"Summoning": ["None"],
+				"Invention": ["10000"]
+			},
+			"Unlocks": [
+				"An additional penguin to find in Penguin Hide and Seek",
+				"Balthazar Beauregard's Big Top Bonanza now rewards 1.5 times as much experience as before"
+			],
+			"Additional Rewards": [
+				"500 Skills experience antique lamp (found during the quest, grants 250 XP if used on an elite skill)",
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Back to the Freezer",
+						"runescore": 0
+					}
+				]
+			},
+			"Music Unlock": ["Back to the Freezer", "T.A.R.D.I.S."]
+		}
+	},
+	{
+		"Quest Name": "Battle of Forinthry",
+		"Rewards": {
+			"Quest Points": 1,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["None"],
+				"Range": ["None"],
+				"Prayer": ["None"],
+				"Magic": ["None"],
+				"Runecrafting": ["None"],
+				"Construction": ["None"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["None"],
+				"Herblore": ["None"],
+				"Thieving": ["None"],
+				"Crafting": ["None"],
+				"Fletching": ["None"],
+				"Slayer": ["None"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["30000"],
+				"Mining": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Woodcutting": ["None"],
+				"Farming": ["None"],
+				"Summoning": ["None"],
+				"Invention": ["None"]
+			},
+			"Unlocks": [
+				"Access to the Zemouregal & Vorkath boss encounter via a commemorative statue in the town hall"
+			],
+			"Additional Rewards": [
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Battle of Forinthry",
+						"runescore": 0
+					}
+				]
+			},
+			"Music Unlock": ["Battle of Forinthry"]
+		}
+	},
+	{
+		"Quest Name": "Battle of the Monolith",
+		"Rewards": {
+			"Quest Points": 0,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["None"],
+				"Range": ["None"],
+				"Prayer": ["None"],
+				"Magic": ["None"],
+				"Runecrafting": ["None"],
+				"Construction": ["None"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["None"],
+				"Herblore": ["None"],
+				"Thieving": ["None"],
+				"Crafting": ["None"],
+				"Fletching": ["None"],
+				"Slayer": ["None"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["None"],
+				"Mining": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Woodcutting": ["None"],
+				"Farming": ["None"],
+				"Summoning": ["None"],
+				"Invention": ["None"]
+			},
+			"Unlocks": ["The Shard of Erebus"],
+			"Additional Rewards": ["None"],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Battle of the Monolith",
+						"runescore": 10
+					}
+				]
+			},
+			"Music Unlock": ["Zaros Stirs", "Zaros Zeitgeist"]
+		}
+	},
+	{
+		"Quest Name": "Beneath Cursed Tides",
+		"Rewards": {
+			"Quest Points": 1,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["None"],
+				"Range": ["None"],
+				"Prayer": ["None"],
+				"Magic": ["None"],
+				"Runecrafting": ["None"],
+				"Construction": ["None"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["None"],
+				"Herblore": ["None"],
+				"Thieving": ["None"],
+				"Crafting": ["None"],
+				"Fletching": ["None"],
+				"Slayer": ["None"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["None"],
+				"Mining": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["5000"],
+				"Cooking": ["5000"],
+				"Woodcutting": ["None"],
+				"Farming": ["None"],
+				"Summoning": ["None"],
+				"Invention": ["None"]
+			},
+			"Unlocks": [
+				"Access to the Giant Oyster (monthly Distraction and Diversion)"
+			],
+			"Additional Rewards": [
+				"10,000 Combat experience lamp (choice of Attack, Constitution, Strength, Defence, Ranged, Prayer, Magic, Necromancy, Herblore, Slayer, or Summoning; skill must be level 10 or higher)",
+				"Vannaka's Sword (sword override resembling Vannaka's steel two-handed sword, one-handed)",
+				"Lev's old music box (crumbles to dust when played, unlocking Newbie Melody - original)",
+				"Looting the Giant Oyster rewards items from the Treasure Trail reward tables"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Beneath Cursed Tides",
+						"runescore": 0
+					},
+					{
+						"name": "Oyster Mash",
+						"runescore": 5
+					},
+					{
+						"name": "Pure Newbstalgia",
+						"runescore": 5
+					}
+				]
+			},
+			"Music Unlock": [
+				"Newbie Melody (Boss)",
+				"Newbie Melody (original)",
+				"Newbie Melody (underwater)",
+				"Scape Cave (underwater)"
+			]
+		}
+	},
+	{
+		"Quest Name": "Between a Rock",
+		"Rewards": {
+			"Quest Points": 2,
+			"Experience": {
+				"Attack": ["0"],
+				"Defence": ["5000"],
+				"Strength": ["0"],
+				"Range": ["0"],
+				"Prayer": ["0"],
+				"Magic": ["0"],
+				"Runecrafting": ["0"],
+				"Construction": ["0"],
+				"Dungeoneering": ["0"],
+				"Archaeology": ["0"],
+				"Constitution": ["0"],
+				"Agility": ["0"],
+				"Herblore": ["0"],
+				"Thieving": ["0"],
+				"Crafting": ["0"],
+				"Fletching": ["0"],
+				"Slayer": ["0"],
+				"Hunter": ["0"],
+				"Divination": ["0"],
+				"Necromancy": ["0"],
+				"Mining": ["5000"],
+				"Smithing": ["5000"],
+				"Fishing": ["0"],
+				"Cooking": ["0"],
+				"Woodcutting": ["0"],
+				"Farming": ["0"],
+				"Summoning": ["0"],
+				"Invention": ["0"]
+			},
+			"Unlocks": [
+				"Access to the Arzinian Mine",
+				"146 gold rocks and veins in the Arzinian Mine",
+				"Dwarven boatman for banking gold ore"
+			],
+			"Additional Rewards": [
+				"Adamant pickaxe +2",
+				"Players may keep their gold helmet"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Between a Rock...",
+						"runescore": 0
+					},
+					{
+						"name": "Lamp of Luxury",
+						"runescore": 0
+					}
+				]
+			},
+			"Music Unlock": ["Claustrophobia", "Time to Mine", "In Between"]
+		}
+	},
+	{
+		"Quest Name": "Big Chompy Bird Hunting",
+		"Rewards": {
+			"Quest Points": 2,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["None"],
+				"Range": ["735"],
+				"Prayer": ["None"],
+				"Magic": ["None"],
+				"Runecrafting": ["None"],
+				"Construction": ["None"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["None"],
+				"Herblore": ["None"],
+				"Thieving": ["None"],
+				"Crafting": ["None"],
+				"Fletching": ["262"],
+				"Slayer": ["None"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["None"],
+				"Mining": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["1,470"],
+				"Woodcutting": ["None"],
+				"Farming": ["None"],
+				"Summoning": ["None"],
+				"Invention": ["None"]
+			},
+			"Unlocks": [
+				"Ogre bow",
+				"Ability to fletch ogre arrows",
+				"Ability to hunt and cook chompy birds",
+				"Ability to earn ogre hats"
+			],
+			"Additional Rewards": [
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Big Chompy Bird Hunting",
+						"runescore": 0
+					},
+					{
+						"name": "Master Bogreman",
+						"runescore": 10
+					},
+					{
+						"name": "Chompy Massacre",
+						"runescore": 50
+					}
+				]
+			},
+			"Music Unlock": ["None"]
+		}
+	},
+	{
+		"Quest Name": "Biohazard",
+		"Rewards": {
+			"Quest Points": 3,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["None"],
+				"Range": ["None"],
+				"Prayer": ["None"],
+				"Magic": ["None"],
+				"Runecrafting": ["None"],
+				"Construction": ["None"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["None"],
+				"Herblore": ["None"],
+				"Thieving": ["1,250"],
+				"Crafting": ["None"],
+				"Fletching": ["None"],
+				"Slayer": ["None"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["None"],
+				"Mining": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Woodcutting": ["None"],
+				"Farming": ["None"],
+				"Summoning": ["None"],
+				"Invention": ["None"]
+			},
+			"Unlocks": [
+				"Ability to travel freely through the West Ardougne gate",
+				"Access to the Combat Training Camp north of the city"
+			],
+			"Additional Rewards": [
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Biohazard",
+						"runescore": 0
+					},
+					{
+						"name": "Boot Camp",
+						"runescore": 5
+					}
+				]
+			},
+			"Music Unlock": ["None"]
+		}
+	},
+	{
+		"Quest Name": "Birthright of the Dwarves",
+		"Rewards": {
+			"Quest Points": 2,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["200,000"],
+				"Range": ["None"],
+				"Prayer": ["None"],
+				"Magic": ["None"],
+				"Runecrafting": ["None"],
+				"Construction": ["None"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["None"],
+				"Herblore": ["None"],
+				"Thieving": ["None"],
+				"Crafting": ["None"],
+				"Fletching": ["None"],
+				"Slayer": ["None"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["None"],
+				"Mining": ["100,000"],
+				"Smithing": ["100,000"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Woodcutting": ["None"],
+				"Farming": ["None"],
+				"Summoning": ["None"],
+				"Invention": ["None"]
+			},
+			"Unlocks": [
+				"Ability to fight Chaos Giants in Barendir",
+				"Access to 3 new dragon weapons: Main and off-hand dragon throwing axes (dropped by Chaos Giants), dragon battlestaff (sold in the Quality Weapons Shop), and main and off-hand dragon warhammers (sold in Vigr's Warhammers shop)",
+				"Access to the lava geyser in the Lava Flow Mine, which rewards fragments of the Imcando pickaxe"
+			],
+			"Additional Rewards": [
+				"30 each of rune, adamant, and mithril bars",
+				"A further 250,000 Mining experience in chunks (20,000–33,000 XP, level 81–95 Mining)",
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Birthright of the Dwarves",
+						"runescore": 0
+					},
+					{
+						"name": "Azdaran Birthright",
+						"runescore": 15
+					}
+				]
+			},
+			"Music Unlock": [
+				"Chaos Theory",
+				"Memories of Keldagrim",
+				"Rage of the Red Axe",
+				"Red Axe Retribution"
+			]
+		}
+	},
+	{
+		"Quest Name": "The Blood Pact",
+		"Rewards": {
+			"Quest Points": 1,
+			"Experience": {
+				"Attack": ["100"],
+				"Defence": ["100"],
+				"Strength": ["100"],
+				"Range": ["100"],
+				"Prayer": ["None"],
+				"Magic": ["100"],
+				"Runecrafting": ["None"],
+				"Construction": ["None"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["None"],
+				"Herblore": ["None"],
+				"Thieving": ["None"],
+				"Crafting": ["None"],
+				"Fletching": ["None"],
+				"Slayer": ["None"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["None"],
+				"Mining": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Woodcutting": ["None"],
+				"Farming": ["None"],
+				"Summoning": ["None"],
+				"Invention": ["None"]
+			},
+			"Unlocks": [
+				"Access to the Lumbridge Catacombs, which include:",
+				"The mask of Dragith Nurn (The 5 parts it can be assembled from can be found by killing the monsters in the catacombs)",
+				"6 demon statuettes in the catacombs, which Xenia will buy from you for a total of 2,500 coins",
+				"Xenia can also tell you history about the Catacombs and Dragith Nurn",
+				"Reese's sword and its off-hand counterpart",
+				"Kayle's chargebow",
+				"Caitlin's staff",
+				"Helmet of trials; requires 300 quest points, can be received at any point"
+			],
+			"Additional Rewards": [
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "The Blood Pact",
+						"runescore": 0
+					},
+					{
+						"name": "Mask of Dragith Nurn",
+						"runescore": 10
+					},
+					{
+						"name": "Work For Idol Hands",
+						"runescore": 10
+					}
+				]
+			},
+			"Music Unlock": ["The Pact", "Dead and Buried"]
+		}
+	},
+	{
+		"Quest Name": "Blood Runs Deep",
+		"Rewards": {
+			"Quest Points": 2,
+			"Experience": {
+				"Attack": ["150,000"],
+				"Defence": ["150,000"],
+				"Strength": ["150,000"],
+				"Range": ["150,000"],
+				"Prayer": ["150,000"],
+				"Magic": ["150,000"],
+				"Runecrafting": ["None"],
+				"Construction": ["None"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["150,000"],
+				"Agility": ["None"],
+				"Herblore": ["None"],
+				"Thieving": ["None"],
+				"Crafting": ["None"],
+				"Fletching": ["None"],
+				"Slayer": ["None"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["None"],
+				"Mining": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Woodcutting": ["None"],
+				"Farming": ["None"],
+				"Summoning": ["None"],
+				"Invention": ["None"]
+			},
+			"Unlocks": [
+				"The Balmung, a two-handed melee weapon with special passive abilities when used against dagannoths",
+				"Access to Dagannoth guardians",
+				"The Dagannoth Mother and her sentinels can be faced in the Dominion Tower"
+			],
+			"Additional Rewards": [
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Blood Runs Deep",
+						"runescore": 0
+					},
+					{
+						"name": "Deep and Bloody Experience",
+						"runescore": 15
+					},
+					{
+						"name": "Axe'll Grease",
+						"runescore": 25
+					},
+					{
+						"name": "Sun Shade",
+						"runescore": 25
+					}
+				]
+			},
+			"Music Unlock": ["The Fallen Hero", "Jaws of the Dagannoth", "Maiasaura"]
+		}
+	},
+	{
+		"Quest Name": "The Branches of Darkmeyer",
+		"Rewards": {
+			"Quest Points": 2,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["None"],
+				"Range": ["None"],
+				"Prayer": ["None"],
+				"Magic": ["35,000"],
+				"Runecrafting": ["None"],
+				"Construction": ["None"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["20,000"],
+				"Herblore": ["None"],
+				"Thieving": ["None"],
+				"Crafting": ["20,000"],
+				"Fletching": ["40,000"],
+				"Slayer": ["25,000"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["None"],
+				"Mining": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Woodcutting": ["50,000"],
+				"Farming": ["20,000"],
+				"Summoning": ["None"],
+				"Invention": ["None"]
+			},
+			"Unlocks": [
+				"Access to Darkmeyer",
+				"Ability to fletch and use Blisterwood weapons",
+				"Darkmeyer outfit (can be put into a Costume box in a Player-owned house)",
+				"Drakan's medallion, allowing teleportation to various places in Morytania (Barrows, Burgh de Rott, Meiyerditch, Darkmeyer and Meiyerditch tunnels)",
+				"Ability to receive Vyrewatch as a Slayer task from various Slayer masters",
+				"Access to a Bloodwood tree outside the Arboretum"
+			],
+			"Additional Rewards": [
+				"150,000 Skills experience tome (3x 50,000 Skills experience - Skill must be level 60 or higher)",
+				"Only 75,000 Skills experience is granted if used on elite skills (3x 25,000 Skills experience)",
+				"A new title depending on your status bar progress in Darkmeyer",
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "The Branches of Darkmeyer",
+						"runescore": 0
+					},
+					{
+						"name": "Got a Vyre Reputation",
+						"runescore": 10
+					},
+					{
+						"name": "Raising The Stakes",
+						"runescore": 15
+					},
+					{
+						"name": "On Wings Of Bling",
+						"runescore": 25
+					},
+					{
+						"name": "Properly Metal",
+						"runescore": 25
+					}
+				]
+			},
+			"Music Unlock": ["Arboretum", "Darkmeyer", "Upir Likhyi", "Vanescula Fight"]
+		}
+	},
+	{
+		"Quest Name": "Bringing Home the Bacon",
+		"Rewards": {
+			"Quest Points": 1,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["None"],
+				"Ranged": ["None"],
+				"Prayer": ["None"],
+				"Magic": ["None"],
+				"Runecrafting": ["None"],
+				"Construction": ["350"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["None"],
+				"Herblore": ["None"],
+				"Thieving": ["None"],
+				"Crafting": ["None"],
+				"Fletching": ["None"],
+				"Slayer": ["None"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["None"],
+				"Mining": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Woodcutting": ["None"],
+				"Farming": ["350"],
+				"Summoning": ["350"],
+				"Invention": ["None"]
+			},
+			"Unlocks": [
+				"A customisable pig pet. The name can be changed by Martin the Master Gardener and type can be changed by changing the pig machine by right-clicking on it.",
+				"Ability to make three pig familiars: Spirit pack pig, Spirit prayer pig, Spirit war pig.",
+				"Weekly raw bacon (55 pieces) or familiar reward claimable from Eli.",
+				"Access to pig pens in Falador farm, Falador, Varrock, and East Ardougne.",
+				"Ability to cook and eat bacon, bacon stacks, piles, heaps and mounds.",
+				"Ability to create pork pie.",
+				"Ability to brew pigswill."
+			],
+			"Additional Rewards": [
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)",
+				"After the quest, you can upgrade the pig creation machine using Construction, giving you access to stronger pig familiars.",
+				"Upgrading to tier 2 requires 44 Construction, 44 Crafting, and 44 Summoning, 3 oak planks, 2 steel bars, and at least 3 nails. Grants 100 Construction experience and 100 Crafting experience.",
+				"Upgrading to tier 3 requires 84 Construction, 84 Crafting, and 84 Summoning, 3 teak planks, 2 mithril bars, and at least 3 nails. Grants 1,000 Construction experience and 1,000 Crafting experience."
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Bringing Home the Bacon",
+						"runescore": 0
+					},
+					{
+						"name": "Last of the Summer Swine",
+						"runescore": 10
+					},
+					{
+						"name": "A Face in the Clouds",
+						"runescore": 15
+					}
+				]
+			},
+			"Music Unlock": [
+				"Always on my Rind",
+				"Glutton for Nourishment",
+				"Underbelly"
+			]
+		}
+	},
+	{
+		"Quest Name": "The Brink of Extinction",
+		"Rewards": {
+			"Quest Points": 3,
+			"Experience": {
+				"Attack": ["275000"],
+				"Defence": ["275000"],
+				"Strength": ["275000"],
+				"Ranged": ["275000"],
+				"Magic": ["275000"],
+				"Necromancy": ["275000"],
+				"Mining": ["100000"],
+				"Prayer": ["None"],
+				"Runecrafting": ["None"],
+				"Construction": ["None"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["None"],
+				"Herblore": ["None"],
+				"Thieving": ["None"],
+				"Crafting": ["None"],
+				"Fletching": ["None"],
+				"Slayer": ["None"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Woodcutting": ["None"],
+				"Farming": ["None"],
+				"Summoning": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Invention": ["None"]
+			},
+			"Unlocks": [
+				"The TzHaar-[Name] title.",
+				"Ability to smith obsidian armour and donate 15,000 TokKul to a coffer at the Fight Cauldron to temporarily buff the armour.",
+				"Access to the Fight Cauldron and an added teleport to the TokKul-Zo.",
+				"Ability to find a wandering Ga'al."
+			],
+			"Additional Rewards": [
+				"275,000 Combat experience lamp in a choice of Attack, Strength, Defence, Ranged, Magic, or Necromancy (skill must be level 80 or higher).",
+				"100,000 Mining experience.",
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)."
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "The Brink of Extinction",
+						"runescore": 0
+					},
+					{
+						"name": "TokHaar-Mok",
+						"runescore": 25
+					}
+				]
+			},
+			"Music Unlock": ["None"]
+		}
+	},
+	{
+		"Quest Name": "Broken Home",
+		"Rewards": {
+			"Quest Points": 1,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["None"],
+				"Range": ["None"],
+				"Prayer": ["None"],
+				"Magic": ["None"],
+				"Runecrafting": ["None"],
+				"Construction": ["None"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["None"],
+				"Herblore": ["None"],
+				"Thieving": ["None"],
+				"Crafting": ["None"],
+				"Fletching": ["None"],
+				"Slayer": ["None"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["None"],
+				"Mining": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Woodcutting": ["None"],
+				"Farming": ["None"],
+				"Summoning": ["None"],
+				"Invention": ["None"]
+			},
+			"Unlocks": [
+				"The Pulled Away emote.",
+				"An Asylum doctor's ring that causes monsters to drop undercooked mystery meat.",
+				"2 Treasure Hunter keys (Ironman accounts will not receive these).",
+				"Experience Lamps",
+				"Weekly Replay Rewards"
+			],
+			"Additional Rewards": [
+				"A small XP lamp.",
+				"Post-quest replayable rewards including experience lamps from temporal chests.",
+				"Tier 1 1,000 Skills experience: 1st floor[US], Library, along the east wall.",
+				"Tier 2 2,000 Skills experience: 1st floor[US], in the corridor north of the Hall of Armour, next to the staircase.",
+				"Tier 3 4,000 Skills experience: Basement, in the room southwest of the Servant's Quarters.",
+				"Tier 4 8,000 Skills experience: Basement, Wine Cellar, under a table on the south side of the room.",
+				"Tier 5 16,000 Skills experience: Below the Basement, after the puzzle with the four statues (past the Noose door), down the first flight of stairs.",
+				"Tier 6 32,000 Skills experience: Below the Basement, in the room that the player arrives in after using the mountaineering gear to descend the pit.",
+				"Tier 7 48,000 Skills experience: Below the Basement. Follow the path after the room with the Receptionist's desk (north or east door). In the first room with cells, the chest is in the northwestern cell.",
+				"Tier 8 64,000 Skills experience: Below the Basement. Follow the path after the room with the Receptionist's desk (north or east door). In the second room with cells (where the Dagger key is), the chest is in the northeastern cell.",
+				"Tier 9 96,000 Skills experience: 2nd floor[US], in the bathroom of the Family Chamber (Ingram's room)."
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Broken Home",
+						"runescore": 0
+					},
+					{
+						"name": "Maria, You Gotta See Her",
+						"runescore": 25
+					},
+					{
+						"name": "Challenge Maria",
+						"runescore": 35
+					}
+				]
+			},
+			"Music Unlock": ["None"]
+		}
+	},
+	{
+		"Quest Name": "Buyers and Cellars",
+		"Rewards": {
+			"Quest Points": 1,
+			"Experience": {
+				"Attack": "None",
+				"Defence": "None",
+				"Strength": "None",
+				"Range": "None",
+				"Prayer": "None",
+				"Magic": "None",
+				"Runecrafting": "None",
+				"Construction": "None",
+				"Dungeoneering": "None",
+				"Archaeology": "None",
+				"Constitution": "None",
+				"Agility": "None",
+				"Herblore": "None",
+				"Thieving": "500",
+				"Crafting": "None",
+				"Fletching": "None",
+				"Slayer": "None",
+				"Hunter": "None",
+				"Divination": "None",
+				"Necromancy": "None",
+				"Mining": "None",
+				"Smithing": "None",
+				"Fishing": "None",
+				"Cooking": "None",
+				"Woodcutting": "None",
+				"Farming": "None",
+				"Summoning": "None",
+				"Invention": "None"
+			},
+			"Unlocks": [
+				"Access to the Thieves' Guild",
+				"3 Thieves' guild pamphlets (each granting 175 Thieving experience, for a total of 525 Thieving experience)",
+				"Ability to collect hanky points"
+			],
+			"Additional Rewards": [
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Buyers and Cellars",
+						"runescore": 0
+					},
+					{
+						"name": "Buy and Sell Some XP",
+						"runescore": 10
+					}
+				]
+			},
+			"Music Unlock": ["Thieves' Guild I - At the Thieves' Guild"]
+		}
+	},
+	{
+		"Quest Name": "Cabin Fever",
+		"Rewards": {
+			"Quest Points": 2,
+			"Experience": {
+				"Attack": "None",
+				"Defence": "None",
+				"Strength": "None",
+				"Range": "None",
+				"Prayer": "None",
+				"Magic": "None",
+				"Runecrafting": "None",
+				"Construction": "None",
+				"Dungeoneering": "None",
+				"Archaeology": "None",
+				"Constitution": "None",
+				"Agility": "7000",
+				"Herblore": "None",
+				"Thieving": "None",
+				"Crafting": "7000",
+				"Fletching": "None",
+				"Slayer": "None",
+				"Hunter": "None",
+				"Divination": "None",
+				"Necromancy": "None",
+				"Mining": "None",
+				"Smithing": "7000",
+				"Fishing": "None",
+				"Cooking": "None",
+				"Woodcutting": "None",
+				"Farming": "None",
+				"Summoning": "None",
+				"Invention": "None"
+			},
+			"Unlocks": [
+				"Access to Mos Le'Harmless",
+				"Access to kill cave horrors and unspeakable horrors",
+				"The ability to understand pirates on Mos Le'Harmless with the Little Book o' Piracy",
+				"Charter ship prices are halved"
+			],
+			"Additional Rewards": [
+				"10,000 coins (only if you speak to Bill Teach after the quest)",
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Cabin Fever",
+						"runescore": 0
+					},
+					{
+						"name": "That'll Teach Bill",
+						"runescore": 10
+					}
+				]
+			},
+			"Music Unlock": ["Cabin Fever", "In the Brine"]
+		}
+	},
+	{
+		"Quest Name": "Call of the Ancestors",
+		"Rewards": {
+			"Quest Points": 1,
+			"Experience": {
+				"Attack": "None",
+				"Defence": "None",
+				"Strength": "None",
+				"Range": "None",
+				"Prayer": "None",
+				"Magic": "1000",
+				"Runecrafting": "None",
+				"Construction": "None",
+				"Dungeoneering": "None",
+				"Archaeology": "None",
+				"Constitution": "None",
+				"Agility": "None",
+				"Herblore": "None",
+				"Thieving": "None",
+				"Crafting": "None",
+				"Fletching": "None",
+				"Slayer": "None",
+				"Hunter": "None",
+				"Divination": "None",
+				"Necromancy": "None",
+				"Mining": "None",
+				"Smithing": "None",
+				"Fishing": "None",
+				"Cooking": "None",
+				"Woodcutting": "None",
+				"Farming": "None",
+				"Summoning": "None",
+				"Invention": "None"
+			},
+			"Unlocks": [
+				"Goebie Warpaint outfit overrides",
+				"Mazcab Poker and Mazcab Cudgel weapon override"
+			],
+			"Additional Rewards": [
+				"3 Liberation of Mazcab reroll tokens",
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Call of the Ancestors",
+						"runescore": 0
+					}
+				]
+			},
+			"Music Unlock": ["Airut Ambush", "Spirit of Chantli"]
+		}
+	},
+	{
+		"Quest Name": "Carnillean Rising",
+		"Rewards": {
+			"Quest Points": 1,
+			"Experience": {
+				"Attack": "None",
+				"Defence": "None",
+				"Strength": "None",
+				"Range": "None",
+				"Prayer": "None",
+				"Magic": "None",
+				"Runecrafting": "None",
+				"Construction": "2500",
+				"Dungeoneering": "None",
+				"Archaeology": "None",
+				"Constitution": "None",
+				"Agility": "None",
+				"Herblore": "None",
+				"Thieving": "2500",
+				"Crafting": "None",
+				"Fletching": "None",
+				"Slayer": "None",
+				"Hunter": "None",
+				"Divination": "None",
+				"Necromancy": "None",
+				"Mining": "None",
+				"Smithing": "None",
+				"Fishing": "None",
+				"Cooking": "None",
+				"Woodcutting": "None",
+				"Farming": "None",
+				"Summoning": "None",
+				"Invention": "None"
+			},
+			"Unlocks": [
+				"Philipe's sweets",
+				"Construction supplies",
+				"Treasure chest with a gold bar (used to create personal treasure hunts)"
+			],
+			"Additional Rewards": [
+				"2x 1,500 Skills experience lamps (for a total of 3,000 Skills experience)",
+				"5,000 coins for returning Lady Henryeta's necklace or opening Sir Ceril's money pouch",
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)",
+				"Talk to Claus the chef and then defeat the wolf matriarch to obtain her skull",
+				"Talk to Ceril Carnillean to locate Philipe Carnillean, who will give you an experience lamp worth 2,000 Skills experience in a skill of your choosing",
+				"After speaking to Philipe with 200 quest points, players can talk with Henryeta Carnillean and claim Rover the red dragon",
+				"After speaking to Philipe with 400 quest points, players can claim Spot the black dragon from Henryeta Carnillean",
+				"50 Quest Points: Biohazard - Combat Training Camp (northwest of Ardougne) - 2,000 Skills experience (Skill must be level 30 or higher)",
+				"100 Quest Points: None - West of the Mountain Camp entrance - 5,000 Skills experience (Skill must be level 40 or higher)",
+				"150 Quest Points: Shilo Village - Top level of Shilo Village, in Paramaya inn Dormitory - 5,000 Skills experience (Skill must be level 40 or higher)",
+				"200 Quest Points: None - Port Phasmatys's Inn, called: The Green Ghost - 10,000 Skills experience (Skill must be level 55 or higher)",
+				"250 Quest Points: None - Next to the Ramokee Skinweaver at the bottom of the Polypore Dungeon - 10,000 Skills experience (Skill must be level 55 or higher)",
+				"300 Quest Points: Another Slice of H.A.M. - In front of Oldak's house in Dorgesh-Kaan - 10,000 Skills experience (Skill must be level 55 or higher)",
+				"350 Quest Points: Swan Song - Inside the machine room in the Piscatoris Fishing Colony - 10,000 Skills experience (Skill must be level 55 or higher)",
+				"400 Quest Points: TzHaar City - At the TzHaar Fight Cave entrance, in the TzHaar City - 10,000 Skills experience (Skill must be level 55 or higher)",
+				"450 Quest Points: City of Um - At the reflection pool in the City of Um - 10,000 Skills experience (Skill must be level 55 or higher)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Carnillean Rising",
+						"runescore": 0
+					},
+					{
+						"name": "Claus is Rising",
+						"runescore": 10
+					},
+					{
+						"name": "Keeping Up with the Carnilleans",
+						"runescore": 15
+					},
+					{
+						"name": "Carnillean Riches",
+						"runescore": 5
+					}
+				]
+			},
+			"Music Unlock": [
+				"Beneath the House",
+				"Drains and Canals",
+				"Tiny Adventure",
+				"Philipe's Bane",
+				"Lords and Ladies",
+				"Carnillean Rising"
+			]
+		}
+	},
+	{
+		"Quest Name": "Catapult Construction",
+		"Rewards": {
+			"Quest Points": 2,
+			"Experience": {
+				"Attack": "None",
+				"Defence": "None",
+				"Strength": "None",
+				"Range": "None",
+				"Prayer": "None",
+				"Magic": "None",
+				"Runecrafting": "None",
+				"Construction": "15000",
+				"Dungeoneering": "None",
+				"Archaeology": "None",
+				"Constitution": "None",
+				"Agility": "None",
+				"Herblore": "None",
+				"Thieving": "None",
+				"Crafting": "None",
+				"Fletching": "5000",
+				"Slayer": "None",
+				"Hunter": "None",
+				"Divination": "None",
+				"Necromancy": "None",
+				"Mining": "None",
+				"Smithing": "None",
+				"Fishing": "None",
+				"Cooking": "None",
+				"Woodcutting": "None",
+				"Farming": "None",
+				"Summoning": "None",
+				"Invention": "None"
+			},
+			"Unlocks": ["Castle Wars catapults damage boost", "Sailor's hat"],
+			"Additional Rewards": [
+				"30 Teak planks (worth 11,520 coins)",
+				"2,000 coins",
+				"An adamant halberd (worth 13,078 coins)",
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Catapult Construction",
+						"runescore": 0
+					},
+					{
+						"name": "Artillery Strike",
+						"runescore": 15
+					}
+				]
+			},
+			"Music Unlock": ["Meridian"]
+		}
+	},
+	{
+		"Quest Name": "Chef's Assistant",
+		"Rewards": {
+			"Quest Points": 1,
+			"Experience": {
+				"Attack": "None",
+				"Defence": "None",
+				"Strength": "None",
+				"Range": "None",
+				"Prayer": "None",
+				"Magic": "None",
+				"Runecrafting": "None",
+				"Construction": "None",
+				"Dungeoneering": "None",
+				"Archaeology": "None",
+				"Constitution": "None",
+				"Agility": "None",
+				"Herblore": "None",
+				"Thieving": "None",
+				"Crafting": "None",
+				"Fletching": "None",
+				"Slayer": "None",
+				"Hunter": "None",
+				"Divination": "None",
+				"Necromancy": "None",
+				"Mining": "None",
+				"Smithing": "None",
+				"Fishing": "None",
+				"Cooking": "1500",
+				"Woodcutting": "None",
+				"Farming": "None",
+				"Summoning": "None",
+				"Invention": "None"
+			},
+			"Unlocks": ["Ability to make cheesecakes and biscuits"],
+			"Additional Rewards": [
+				"3 cheesecakes (worth 15,810 coins)",
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)",
+				"Cook 1 of each type of cheesecake and talk to the Head Chef to receive 8,000 Cooking experience lamp and 25 biscuits (worth 126,600 coins)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Chef's Assistant",
+						"runescore": 0
+					},
+					{
+						"name": "Cheese and Biscuits",
+						"runescore": 10
+					}
+				]
+			},
+			"Music Unlock": []
+		}
+	},
+	{
+		"Quest Name": "Children of Mah",
+		"Rewards": {
+			"Quest Points": 2,
+			"Experience": {
+				"Attack": "None",
+				"Defence": "None",
+				"Strength": "None",
+				"Range": "None",
+				"Prayer": "None",
+				"Magic": "None",
+				"Runecrafting": "None",
+				"Construction": "None",
+				"Dungeoneering": "None",
+				"Archaeology": "None",
+				"Constitution": "None",
+				"Agility": "100000",
+				"Herblore": "None",
+				"Thieving": "None",
+				"Crafting": "None",
+				"Fletching": "None",
+				"Slayer": "None",
+				"Hunter": "None",
+				"Divination": "100000",
+				"Necromancy": "None",
+				"Mining": "None",
+				"Smithing": "None",
+				"Fishing": "None",
+				"Cooking": "None",
+				"Woodcutting": "None",
+				"Farming": "None",
+				"Summoning": "None",
+				"Invention": "None"
+			},
+			"Unlocks": [
+				"Shard of Mah",
+				"Access to nightmares, level 80 Slayer Slayer monsters that drop nightmare gauntlets",
+				"Access to ancient memories in Guthixian Caches (these give 4 points per conversion)",
+				"Legatus Maximus outfit",
+				"Tiny Kharshai"
+			],
+			"Additional Rewards": [
+				"300,000 Skills experience journal (3x 100,000 Skills experience - Skill must be level 75 or higher)",
+				"Only 150,000 Skills experience is granted if used on elite skills (3x 50,000 Skills experience)",
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)",
+				"Early bird bonus: In the first two weeks after the release, players were rewarded an additional chapter in Kharshai's journal",
+				"After the quest, you can return to the Lava Falls via the World Gate to replay the lava surfing minigame and to investigate the four mahjarrat deathstones if you didn't do so during the quest. Investigating all four deathstones is a master quest cape requirement."
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Children of Mah",
+						"runescore": 0
+					},
+					{
+						"name": "Death to the Mahjarrat",
+						"runescore": 20
+					}
+				]
+			},
+			"Music Unlock": [
+				"Chamber of Zaros",
+				"Elder Daughter",
+				"Lava Falls",
+				"The Nightmare Continues"
+			]
+		}
+	},
+	{
+		"Quest Name": "The Chosen Commander",
+		"Rewards": {
+			"Quest Points": 3,
+			"Experience": {
+				"Attack": "None",
+				"Defence": "None",
+				"Strength": "20000",
+				"Range": "None",
+				"Prayer": "None",
+				"Magic": "None",
+				"Runecrafting": "None",
+				"Construction": "None",
+				"Dungeoneering": "None",
+				"Archaeology": "None",
+				"Constitution": "None",
+				"Agility": "20000",
+				"Herblore": "None",
+				"Thieving": "20000",
+				"Crafting": "None",
+				"Fletching": "None",
+				"Slayer": "None",
+				"Hunter": "None",
+				"Divination": "None",
+				"Necromancy": "None",
+				"Mining": "None",
+				"Smithing": "None",
+				"Fishing": "None",
+				"Cooking": "None",
+				"Woodcutting": "None",
+				"Farming": "None",
+				"Summoning": "None",
+				"Invention": "None"
+			},
+			"Unlocks": [
+				"Zanik's crossbow",
+				"The ability to buy Bandos throne room spheres from Oldak to return to the Bandos's throne room",
+				"The ability to fight goblin statues, ork statues, ogre statues, and ourg statues inside Bandos's throne room by climbing on them",
+				"Access to the Bandos Agility Course inside Bandos's throne room",
+				"You can claim the goblin cower shield by talking to General Wartface or General Bentnoze in the Goblin Village"
+			],
+			"Additional Rewards": [
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "The Chosen Commander",
+						"runescore": 0
+					},
+					{
+						"name": "Bone I Fired",
+						"runescore": 10
+					},
+					{
+						"name": "Cower Behind the Chosen Commander",
+						"runescore": 10
+					},
+					{
+						"name": "Sun Shade",
+						"runescore": 25
+					},
+					{
+						"name": "Properly Metal",
+						"runescore": 25
+					}
+				]
+			},
+			"Music Unlock": [
+				"But We Can Fight",
+				"The Chosen Commander",
+				"Demise of the Dorgeshuun",
+				"Don't Panic Zanik",
+				"Face Off",
+				"Godslayer",
+				"The Throne of Bandos"
+			]
+		}
+	},
+	{
+		"Quest Name": "City of Senntisten",
+		"Rewards": {
+			"Quest Points": 3,
+			"Experience": {
+				"Attack": "None",
+				"Defence": "None",
+				"Strength": "None",
+				"Range": "None",
+				"Prayer": "None",
+				"Magic": "50000",
+				"Runecrafting": "None",
+				"Construction": "None",
+				"Dungeoneering": "None",
+				"Archaeology": "50000",
+				"Constitution": "None",
+				"Agility": "None",
+				"Herblore": "None",
+				"Thieving": "None",
+				"Crafting": "None",
+				"Fletching": "None",
+				"Slayer": "50000",
+				"Hunter": "None",
+				"Divination": "None",
+				"Necromancy": "None",
+				"Mining": "None",
+				"Smithing": "None",
+				"Fishing": "None",
+				"Cooking": "None",
+				"Woodcutting": "None",
+				"Farming": "None",
+				"Summoning": "None",
+				"Invention": "None"
+			},
+			"Unlocks": [
+				"Four new Ancient Magicks spells: Smoke Cloud, Animate Dead, Exsanguinate, Incite Fear",
+				"Ability to create a pontifex shadow ring"
+			],
+			"Additional Rewards": [
+				"50,000 Combat experience lamp (requires level 75 in the chosen skill to use) in one of: Attack, Strength, Defence, Constitution, Ranged, Magic, Necromancy, Prayer, or Summoning",
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "City of Senntisten",
+						"runescore": 0
+					}
+				]
+			},
+			"Music Unlock": ["Azzanadra's Cathedral", "The City of Senntisten"]
+		}
+	},
+	{
+		"Quest Name": "Clock Tower",
+		"Rewards": {
+			"Quest Points": 1,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["None"],
+				"Range": ["None"],
+				"Prayer": ["None"],
+				"Magic": ["None"],
+				"Runecrafting": ["None"],
+				"Construction": ["None"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["None"],
+				"Herblore": ["None"],
+				"Thieving": ["None"],
+				"Crafting": ["None"],
+				"Fletching": ["None"],
+				"Slayer": ["None"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["None"],
+				"Mining": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Woodcutting": ["None"],
+				"Farming": ["None"],
+				"Summoning": ["None"],
+				"Invention": ["None"]
+			},
+			"Unlocks": ["None"],
+			"Additional Rewards": ["500 coins"],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Clock Tower",
+						"runescore": 0
+					}
+				]
+			},
+			"Music Unlock": ["Alone"]
+		}
+	},
+	{
+		"Quest Name": "A Clockwork Syringe",
+		"Rewards": {
+			"Quest Points": 1,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["19000"],
+				"Strength": ["None"],
+				"Range": ["None"],
+				"Prayer": ["None"],
+				"Magic": ["None"],
+				"Runecrafting": ["None"],
+				"Construction": ["11250"],
+				"Dungeoneering": ["5000"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["None"],
+				"Herblore": ["None"],
+				"Thieving": ["18000"],
+				"Crafting": ["None"],
+				"Fletching": ["None"],
+				"Slayer": ["11000"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["None"],
+				"Mining": ["None"],
+				"Smithing": ["18000"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Woodcutting": ["None"],
+				"Farming": ["None"],
+				"Summoning": ["15000"],
+				"Invention": ["None"]
+			},
+			"Unlocks": [
+				"Ability to enter the 'Rum'-geon resource dungeon and kill the 'Rum'-pumped crabs for the brackish blade.",
+				"A scroll allowing quick transport between Mos Le'Harmless and Braindeath Island."
+			],
+			"Additional Rewards": ["None"],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "A Clockwork Syringe",
+						"runescore": 0
+					},
+					{
+						"name": "Alcrabholic",
+						"runescore": 15,
+						"category": "Daemonheim achievements",
+						"difficulty": "Hard",
+						"description": "Kill a 'rum'-pumped crab in the 'Rum'geon on Braindeath Island."
+					}
+				]
+			},
+			"Music Unlock": ["The Factory Floor"]
+		}
+	},
+	{
+		"Quest Name": "Cold War",
+		"Rewards": {
+			"Quest Points": 1,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["None"],
+				"Range": ["None"],
+				"Prayer": ["None"],
+				"Magic": ["None"],
+				"Runecrafting": ["None"],
+				"Construction": ["1500"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["5000"],
+				"Herblore": ["None"],
+				"Thieving": ["None"],
+				"Crafting": ["2000"],
+				"Fletching": ["None"],
+				"Slayer": ["None"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["None"],
+				"Mining": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Woodcutting": ["None"],
+				"Farming": ["None"],
+				"Summoning": ["None"],
+				"Invention": ["None"]
+			},
+			"Unlocks": [
+				"Ability to make the penguin suit. To enter the suit, you must talk to Larry at the zoo, pier, farm or Iceberg.",
+				"Ability to train at the Penguin Agility Course.",
+				"Players can also steal more cowbells and make more bongos to play while in a penguin suit.",
+				"Ability to contact Larry through the NPC Contact spell."
+			],
+			"Additional Rewards": [
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Cold War",
+						"runescore": 0
+					}
+				]
+			},
+			"Music Unlock": ["Espionage", "Have an Ice Day"]
+		}
+	},
+	{
+		"Quest Name": "Contact!",
+		"Rewards": {
+			"Quest Points": 1,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["None"],
+				"Range": ["None"],
+				"Prayer": ["None"],
+				"Magic": ["None"],
+				"Runecrafting": ["None"],
+				"Construction": ["None"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["None"],
+				"Herblore": ["None"],
+				"Thieving": ["7000"],
+				"Crafting": ["None"],
+				"Fletching": ["None"],
+				"Slayer": ["None"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["None"],
+				"Mining": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Woodcutting": ["None"],
+				"Farming": ["None"],
+				"Summoning": ["None"],
+				"Invention": ["None"]
+			},
+			"Unlocks": [
+				"Keris, a dagger which is very effective against Kalphites and Scarabs",
+				"Access to Sophanem's bank under the Temple of Lesser Deities in the north-east corner (useful for Pyramid Plunder)",
+				"Coenus will allow a one-way passage from Menaphos to Sophanem."
+			],
+			"Additional Rewards": [
+				"2x7,000 Combat experience lamp in a choice of Attack, Strength, Defence, Constitution, Ranged, Magic or Summoning (Summoning must be level 30 or higher)",
+				"If you accidentally destroy the experience lamp, another may be obtained by seeing the High Priest",
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Contact!",
+						"runescore": 0
+					}
+				]
+			},
+			"Music Unlock": ["Back to Life", "Beetle Juice", "The Depths", "Labyrinth"]
+		}
+	},
+	{
+		"Quest Name": "Cook's Assistant",
+		"Rewards": {
+			"Quest Points": 1,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["None"],
+				"Range": ["None"],
+				"Prayer": ["None"],
+				"Magic": ["None"],
+				"Runecrafting": ["None"],
+				"Construction": ["None"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["None"],
+				"Herblore": ["None"],
+				"Thieving": ["None"],
+				"Crafting": ["None"],
+				"Fletching": ["None"],
+				"Slayer": ["None"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["None"],
+				"Mining": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["300"],
+				"Woodcutting": ["None"],
+				"Farming": ["None"],
+				"Summoning": ["None"],
+				"Invention": ["None"]
+			},
+			"Unlocks": [
+				"Permission to use the Cook-o-matic 25, which has a lower chance of burning food than other ranges"
+			],
+			"Additional Rewards": [
+				"500 coins",
+				"20 sardines",
+				"If you have completed the quest before the update that awards 20 sardines and 500 coins, you can claim them at any time by speaking to the cook",
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Cook's Assistant",
+						"runescore": 0
+					},
+					{
+						"name": "Cook's Delights",
+						"runescore": 5
+					}
+				]
+			},
+			"Music Unlock": ["None"]
+		}
+	},
+	{
+		"Quest Name": "Creature of Fenkenstrain",
+		"Rewards": {
+			"Quest Points": 2,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["None"],
+				"Range": ["None"],
+				"Prayer": ["None"],
+				"Magic": ["None"],
+				"Runecrafting": ["None"],
+				"Construction": ["None"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["None"],
+				"Herblore": ["None"],
+				"Thieving": ["1,000"],
+				"Crafting": ["None"],
+				"Fletching": ["None"],
+				"Slayer": ["None"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["None"],
+				"Mining": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Woodcutting": ["None"],
+				"Farming": ["None"],
+				"Summoning": ["None"],
+				"Invention": ["None"]
+			},
+			"Unlocks": [
+				"The Ring of Charos, which allows access to the Werewolf Agility Course",
+				"Access to the Experiment cave"
+			],
+			"Additional Rewards": [
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Creature of Fenkenstrain",
+						"runescore": 0
+					},
+					{
+						"name": "Cranius Lupus",
+						"runescore": 5
+					},
+					{
+						"name": "Lab Clean-up Assistant",
+						"runescore": 5
+					},
+					{
+						"name": "Brain Bending",
+						"runescore": 10
+					},
+					{
+						"name": "They'll Just Throw It Away Again",
+						"runescore": 15
+					}
+				]
+			},
+			"Music Unlock": ["Body Parts"]
+		}
+	},
+	{
+		"Quest Name": "Crocodile Tears",
+		"Rewards": {
+			"Quest Points": 1,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["None"],
+				"Range": ["None"],
+				"Prayer": ["None"],
+				"Magic": ["None"],
+				"Runecrafting": ["None"],
+				"Construction": ["None"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["15,000"],
+				"Herblore": ["None"],
+				"Thieving": ["None"],
+				"Crafting": ["None"],
+				"Fletching": ["None"],
+				"Slayer": ["None"],
+				"Hunter": ["35,000"],
+				"Divination": ["None"],
+				"Necromancy": ["None"],
+				"Mining": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["35,000"],
+				"Cooking": ["None"],
+				"Woodcutting": ["15,000"],
+				"Farming": ["None"],
+				"Summoning": ["None"],
+				"Invention": ["None"]
+			},
+			"Unlocks": [
+				"A relic of Crondis, giving reputation with a faction in Menaphos of your choice by turning it in to a faction leader",
+				"Immunity from desert heat (after re-logging or lobbying)",
+				"Menaphos reputation gain increased to 150%"
+			],
+			"Additional Rewards": [
+				"Access to the Crondis tomb containing:",
+				"Nekhakha",
+				"Crondis mask",
+				"20,000 Constitution experience for entering the tomb for the first time",
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Crocodile Tears",
+						"runescore": 0
+					},
+					{
+						"name": "Under Croc and Key",
+						"runescore": 5
+					}
+				]
+			},
+			"Music Unlock": [
+				"More Than a Mouthful",
+				"More Than a Mouthful II",
+				"The Tale of Crondis"
+			]
+		}
+	},
+	{
+		"Quest Name": "The Curse of Arrav",
+		"Rewards": {
+			"Quest Points": 1,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["9,000"],
+				"Range": ["9,000"],
+				"Prayer": ["None"],
+				"Magic": ["None"],
+				"Runecrafting": ["None"],
+				"Construction": ["None"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["9,000"],
+				"Herblore": ["None"],
+				"Thieving": ["14,000"],
+				"Crafting": ["None"],
+				"Fletching": ["None"],
+				"Slayer": ["2,500"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["None"],
+				"Mining": ["30,000"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Woodcutting": ["None"],
+				"Farming": ["None"],
+				"Summoning": ["4,000"],
+				"Invention": ["None"]
+			},
+			"Unlocks": ["Arrav can be faced in the Dominion Tower"],
+			"Additional Rewards": [
+				"The player can talk to Ali the Wise after the quest and give him additional information, but there are no rewards for doing so. To give him all the information, the player will need to have gathered the four tablets in the tunnel and the two notes of Mahjarrat (A-J and K-Z).",
+				"The player can also give him information from the following quests (if they had not been given already following Missing My Mummy: Desert Treasure, While Guthix Sleeps, The Tale of the Muspah, Defender of Varrock, Hazeel Cult, Temple of Ikov, Enakhra's Lament, The General's Shadow (miniquest), The World Wakes",
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "The Curse of Arrav",
+						"runescore": 0
+					}
+				]
+			},
+			"Music Unlock": ["The Heist", "Lamistard's Labyrinth"]
+		}
+	},
+	{
+		"Quest Name": "Curse of the Black Stone",
+		"Rewards": {
+			"Quest Points": 4,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["None"],
+				"Range": ["None"],
+				"Prayer": ["None"],
+				"Magic": ["None"],
+				"Runecrafting": ["None"],
+				"Construction": ["None"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["None"],
+				"Herblore": ["None"],
+				"Thieving": ["None"],
+				"Crafting": ["None"],
+				"Fletching": ["None"],
+				"Slayer": ["None"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["None"],
+				"Mining": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Woodcutting": ["None"],
+				"Farming": ["None"],
+				"Summoning": ["None"],
+				"Invention": ["None"]
+			},
+			"Unlocks": [
+				"10% reduction of damage received in the Temple of Aminishi elite dungeon.",
+				"10% reduction of damage received in the Dragonkin Laboratory elite dungeon.",
+				"10% reduction of damage received in the Shadow Reef elite dungeon.",
+				"Moonlight mead (m)",
+				"Players can now purchase an upgrade to the Elite Dungeon chests for 750,000 Dungeoneering tokens, which allows banking within the dungeon and always has a 20% chance to double a boss drop."
+			],
+			"Additional Rewards": [
+				"3 huge XP lamps",
+				"After unlocking the Goshima gate and visiting the island outside of quest mode, an azure key can be found in the eastern trunk north of the north-easternmost building in the town.",
+				"This key can be used to grant access to the azure room, a hidden room within the Temple of Aminishi. The door is on floor 1, where Oyu the Quietest spawns.",
+				"In addition to various lore found in the room, traversing further through the azure room corridor leads to a previously inaccessible north-eastern island of Aminishi. There are skilling spots for bamboo, north-east Aminishi mine, and a bank deposit box in the south-east by the dock.",
+				"Players may dig at a mound located on the northern shoreline of Aminishi to find a trunk key which can be used to open the trunk located in the azure room. This contains: 1 superior scrimshaw of sacrifice, 1 superior scrimshaw of vampyrism, 1 ports chi pack, 1 ports bone pack, and 1 ports plate pack",
+				"Looting the trunk completes A Mini Shipment achievement.",
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "Curse of the Black Stone",
+						"runescore": 0
+					},
+					{
+						"name": "A Mini Shipment",
+						"runescore": 5
+					}
+				]
+			},
+			"Music Unlock": ["None"]
+		}
+	},
+	{
+		"Quest Name": "The Darkness of Hallowvale",
+		"Rewards": {
+			"Quest Points": 2,
+			"Experience": {
+				"Attack": ["None"],
+				"Defence": ["None"],
+				"Strength": ["None"],
+				"Range": ["None"],
+				"Prayer": ["None"],
+				"Magic": ["None"],
+				"Runecrafting": ["None"],
+				"Construction": ["2000"],
+				"Dungeoneering": ["None"],
+				"Archaeology": ["None"],
+				"Constitution": ["None"],
+				"Agility": ["7000"],
+				"Herblore": ["None"],
+				"Thieving": ["6000"],
+				"Crafting": ["None"],
+				"Fletching": ["None"],
+				"Slayer": ["None"],
+				"Hunter": ["None"],
+				"Divination": ["None"],
+				"Necromancy": ["None"],
+				"Mining": ["None"],
+				"Smithing": ["None"],
+				"Fishing": ["None"],
+				"Cooking": ["None"],
+				"Woodcutting": ["None"],
+				"Farming": ["None"],
+				"Summoning": ["None"],
+				"Invention": ["None"]
+			},
+			"Unlocks": [
+				"Access to Meiyerditch",
+				"A shortcut key, can be put on the steel key ring after One Small Favour",
+				"Access to the Burgh de Rott Ramble minigame, which is Temple Trekking in reverse route.",
+				"Ability to unlock the Burgh de Rott teleport for a Games Necklace with 500 Companion levels from Temple Trekking"
+			],
+			"Additional Rewards": [
+				"3x 2,000 Skills experience tome (Skill must be over level 30)",
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			],
+			"Achievements": {
+				"Achievement": [
+					{
+						"name": "The Darkness of Hallowvale",
+						"runescore": 0
+					},
+					{
+						"name": "Are You The Keymaster?",
+						"runescore": 20
+					}
+				]
+			},
+			"Music Unlock": [
+				"Darkmeyer",
+				"Lament of Meiyerditch",
+				"The Last Shanty",
+				"Night of the Vampyre"
+			]
+		}
+	}
+]
