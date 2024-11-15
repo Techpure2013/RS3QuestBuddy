@@ -51,7 +51,26 @@ const QuestPage: React.FC = () => {
 	// State and variables
 	const qpname = useLocation();
 	const TRANSITION_DURATION = 200;
-
+	const ignoredRequirements = new Set([
+		"Ironmen",
+		"Ironman",
+		"Be ",
+		"Access",
+		"Ability to",
+		"Time Served",
+		"Find",
+		"Complete the base camp tutorial on Anachronia",
+		"Rescue Mad Eadgar from the Troll Stronghold",
+		"Able To",
+		"Claim Kudos",
+		"You must be using the standard spells or be able to use Spellbook Swap",
+		"Completion of",
+		"To make",
+		"Achieve",
+		"Bring Leela to Senliten's tomb",
+		"If Icthlarin's Little Helper was completed prior to the addition of Stolen Hearts and Diamond in the Rough, they must be completed before Contact! can be started (or completed).",
+		"For Ironmen",
+	]);
 	const [embla] = useState<Embla | null>(null);
 
 	useAnimationOffsetEffect(embla, TRANSITION_DURATION);
@@ -683,14 +702,9 @@ const QuestPage: React.FC = () => {
 															>
 																{!isNaN(firstPart) ||
 																requirement === "None" ||
-																requirement.startsWith("Ironmen") ||
-																requirement.startsWith("Be ") ||
-																requirement.startsWith("Access") ||
-																requirement.startsWith(
-																	"Ability to see the Shadow Realm inside Kharid-et"
-																) ||
-																requirement.startsWith("Time Served") ||
-																requirement.startsWith("Find") ? (
+																Array.from(ignoredRequirements).some((prefix) =>
+																	requirement.startsWith(prefix)
+																) ? (
 																	<span style={{ color: hasSkill ? "#24BF58" : "#C64340" }}>
 																		{requirement}
 																	</span>

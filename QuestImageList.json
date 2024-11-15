@@ -4554,7 +4554,14 @@
 	},
 	{
 		"name": "Death Plateau",
-		"images": []
+		"images": [
+			{
+				"step": "15",
+				"src": "Death Plateau Step 15.png",
+				"width": 423,
+				"height": 468
+			}
+		]
 	},
 	{
 		"name": "Death to the Dorgeshuun",
@@ -5955,7 +5962,14 @@
 	},
 	{
 		"name": "Gertrude's Cat",
-		"images": []
+		"images": [
+			{
+				"step": "6",
+				"src": "Gertrudes Cat Step 6.png",
+				"width": 531,
+				"height": 436
+			}
+		]
 	},
 	{
 		"name": "Great-Egg-spectations",
@@ -10698,7 +10712,14 @@
 	},
 	{
 		"name": "The Golem",
-		"images": []
+		"images": [
+			{
+				"step": "15",
+				"src": "The Golem Step 15.png",
+				"width": 517,
+				"height": 502
+			}
+		]
 	},
 	{
 		"name": "The Grand Tree",
@@ -12179,6 +12200,18 @@
 				"src": "Dadsafespot.png",
 				"width": 300,
 				"height": 188
+			},
+			{
+				"step": "6",
+				"src": "Troll Stronghold Step 6 (CAVERN).png",
+				"width": 423,
+				"height": 468
+			},
+			{
+				"step": "6",
+				"src": "Troll Stronghold Step 6.png",
+				"width": 838,
+				"height": 580
 			}
 		]
 	},
