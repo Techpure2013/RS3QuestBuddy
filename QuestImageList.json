@@ -2569,7 +2569,14 @@
 	},
 	{
 		"name": "Animal Magnetism",
-		"images": []
+		"images": [
+			{
+				"step": "30",
+				"src": "Animal_Magnetism_-_Translated_notes_interface.png",
+				"width": 512,
+				"height": 334
+			}
+		]
 	},
 	{
 		"name": "Another Slice of HAM",

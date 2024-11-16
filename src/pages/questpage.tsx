@@ -49,7 +49,7 @@ import useLunarGridDisclosure from "./useLunarDisclosure.tsx";
 
 // Define constants for local storage keys to avoid typos and ensure consistency
 const LOCAL_STORAGE_KEYS = {
-	expandAllAccordions: 'expandAllAccordions',
+	expandAllAccordions: "expandAllAccordions",
 };
 
 const QuestPage: React.FC = () => {
@@ -77,7 +77,6 @@ const QuestPage: React.FC = () => {
 		"For Ironmen",
 	]);
 	const [embla] = useState<Embla | null>(null);
-
 	useAnimationOffsetEffect(embla, TRANSITION_DURATION);
 	let { questName, modified } = qpname.state;
 	const [opened, { open, close }] = useDisclosure(false);
@@ -113,11 +112,23 @@ const QuestPage: React.FC = () => {
 	const handles = useQuestControllerStore();
 	const [skillLevels, setSkillLevels] = useState<string[]>([]);
 	const [completedQuests, setCompleteQuests] = useState<string[] | null>(null);
-	const storedExpandAll = localStorage.getItem(LOCAL_STORAGE_KEYS.expandAllAccordions);
+	const storedExpandAll = localStorage.getItem(
+		LOCAL_STORAGE_KEYS.expandAllAccordions
+	);
 	const [expanded, setExpanded] = useState<string[]>(() => {
-		const isExpandAll = storedExpandAll !== null ? JSON.parse(storedExpandAll) : false;
-		
-		if (isExpandAll) return ["item-1", "item-2", "item-3", "item-4", "item-5", "item-6", "item-7"];
+		const isExpandAll =
+			storedExpandAll !== null ? JSON.parse(storedExpandAll) : false;
+
+		if (isExpandAll)
+			return [
+				"item-1",
+				"item-2",
+				"item-3",
+				"item-4",
+				"item-5",
+				"item-6",
+				"item-7",
+			];
 		return [];
 	});
 
