@@ -7,13 +7,13 @@ import {
 	ColorPicker,
 	Radio,
 	Stack,
-	TextInput
+	TextInput,
 } from "@mantine/core";
 import { useEffect, useState } from "react";
 import FontSizeControls from "./../Handlers/FontSizeInput";
 export const Settings: React.FC = () => {
 	const [highlight, setHighlight] = useState(false);
-	const [removeStep, setRemoveStep] = useState(false);
+
 	const [colorTextValue, setTextColorValue] = useState<string>("");
 	const [swatchTextColors, setTextSwatchColors] = useState<string[]>([]);
 	const [labelColor, setLabelColor] = useState("");
@@ -27,15 +27,17 @@ export const Settings: React.FC = () => {
 	const [userLabelColor, setUserLabelColor] = useState("");
 	const [userButtonColor, setUserButtonColor] = useState("");
 	const [compact, setCompact] = useState(false);
-	const storedExpandAllAccordions = localStorage.getItem('expandAllAccordions');
+	const storedExpandAllAccordions = localStorage.getItem("expandAllAccordions");
 	const [expandAllAccordions, setExpandAllAccordions] = useState<boolean>(() => {
-		return storedExpandAllAccordions !== null ? JSON.parse(storedExpandAllAccordions) : false;
+		return storedExpandAllAccordions !== null
+			? JSON.parse(storedExpandAllAccordions)
+			: false;
 	});
 
 	useEffect(() => {
 		const storedCompact = localStorage.getItem("isCompact");
 		const storedHighlight = localStorage.getItem("isHighlighted");
-		const storedRemoveStep = localStorage.getItem("removeStep");
+
 		const storedTextSwatches = localStorage.getItem("swatchColors");
 		const storedTextColorValue = localStorage.getItem("textColorValue");
 		const storedLabelColor = localStorage.getItem("labelColor");
@@ -75,11 +77,6 @@ export const Settings: React.FC = () => {
 			const parsedHighlight = JSON.parse(storedHighlight);
 			setHighlight(parsedHighlight);
 		}
-
-		if (storedRemoveStep !== null) {
-			const parsedRemoveStep = JSON.parse(storedRemoveStep);
-			setRemoveStep(parsedRemoveStep);
-		}
 		if (storedTextSwatches !== null) {
 			const parsedSwatches = JSON.parse(storedTextSwatches);
 			setTextSwatchColors(parsedSwatches);
@@ -94,10 +91,16 @@ export const Settings: React.FC = () => {
 	}, []);
 
 	useEffect(() => {
+		//Save Highlight Option
 		window.localStorage.setItem("isHighlighted", JSON.stringify(highlight));
-		window.localStorage.setItem("removeStep", JSON.stringify(removeStep));
+		//Save Compact Option
 		window.localStorage.setItem("isCompact", JSON.stringify(compact));
-	}, [highlight, removeStep, compact]);
+		//Save Expanded Option
+		localStorage.setItem(
+			"expandAllAccordions",
+			JSON.stringify(expandAllAccordions)
+		);
+	}, [highlight, compact, expandAllAccordions]);
 	useEffect(() => {
 		window.localStorage.setItem("swatchColors", JSON.stringify(swatchTextColors));
 		window.localStorage.setItem("textColorValue", colorTextValue);
@@ -123,11 +126,6 @@ export const Settings: React.FC = () => {
 		userLabelColor,
 		colorTextValue,
 	]);
-	
-	useEffect(() => {
-		// Save the expand all setting to local storage when it changes
-		localStorage.setItem('expandAllAccordions', JSON.stringify(expandAllAccordions));
-	}, [expandAllAccordions]);
 
 	return (
 		<div className="SettingsContainer">
@@ -139,7 +137,6 @@ export const Settings: React.FC = () => {
 					checked={highlight}
 					onChange={(event) => {
 						setHighlight(event.currentTarget.checked);
-						setRemoveStep(false);
 					}}
 					label="Highlight green when complete."
 				/>

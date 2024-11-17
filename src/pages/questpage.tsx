@@ -47,13 +47,11 @@ import ColorCalculator from "../Handlers/POGCalc.tsx";
 import useGridDisclosure from "./useGridModal.tsx";
 import useLunarGridDisclosure from "./useLunarDisclosure.tsx";
 
-// Define constants for local storage keys to avoid typos and ensure consistency
-const LOCAL_STORAGE_KEYS = {
-	expandAllAccordions: "expandAllAccordions",
-};
-
 const QuestPage: React.FC = () => {
-	// State and variables
+	// Define constants for local storage keys to avoid typos and ensure consistency
+	const LOCAL_STORAGE_KEYS = {
+		expandAllAccordions: "expandAllAccordions",
+	};
 	const qpname = useLocation();
 	const TRANSITION_DURATION = 200;
 	const ignoredRequirements = new Set([
