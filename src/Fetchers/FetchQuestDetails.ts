@@ -39,9 +39,7 @@ export const QuestDetailsFetcher: React.FC<QuestFetcher> = ({ questName }) => {
 			const sanitizedQuestName = sanitizeString(questName.trim());
 
 			const questInfo = data.find((quest: { Quest: string }) => {
-				return (
-					quest.Quest && sanitizeString(quest.Quest) === sanitizedQuestName
-				);
+				return quest.Quest && sanitizeString(quest.Quest) === sanitizedQuestName;
 			});
 
 			if (!questInfo) {

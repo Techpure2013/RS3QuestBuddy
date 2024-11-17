@@ -37,15 +37,15 @@ import { IconArrowBack } from "@tabler/icons-react";
 import { Settings } from "./Settings.tsx";
 import { useDisclosure } from "@mantine/hooks";
 import useNotesDisclosure from "../Handlers/useDisclosure.ts";
-import usePOGDisclosure from "./POGCalcDisclosure.tsx";
+import usePOGDisclosure from "../Components/POGCalcDisclosure.tsx";
 import { UserNotes } from "./userNotes.tsx";
-import Grid from "./../Handlers/UndergroundPassGrid.tsx";
-import LunarGrid from "../Handlers/LunarDiplomacyGrid.tsx";
-import { Image } from "./ImageInterface.tsx";
+import Grid from "../Components/UndergroundPassGrid.tsx";
+import LunarGrid from "../Components/LunarDiplomacyGrid.tsx";
+import { Image } from "../Components/ImageInterface.tsx";
 import QuestIcon from "./../QuestIconEdited.png";
 import ColorCalculator from "../Handlers/POGCalc.tsx";
-import useGridDisclosure from "./useGridModal.tsx";
-import useLunarGridDisclosure from "./useLunarDisclosure.tsx";
+import useGridDisclosure from "../Components/useGridModal.tsx";
+import useLunarGridDisclosure from "../Components/useLunarDisclosure.tsx";
 
 const QuestPage: React.FC = () => {
 	// Define constants for local storage keys to avoid typos and ensure consistency

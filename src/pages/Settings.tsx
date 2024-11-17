@@ -10,7 +10,7 @@ import {
 	TextInput,
 } from "@mantine/core";
 import { useEffect, useState } from "react";
-import FontSizeControls from "./../Handlers/FontSizeInput";
+import FontSizeControls from "../Components/FontSizeInput";
 export const Settings: React.FC = () => {
 	const [highlight, setHighlight] = useState(false);
 

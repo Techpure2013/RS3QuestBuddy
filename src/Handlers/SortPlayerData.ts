@@ -23,14 +23,8 @@ export class rsQuestSorter {
 				["Freeing Evil Dave", "Recipe for Disaster: Freeing Evil Dave"],
 				["Freeing King Awowogei", "Recipe for Disaster: Freeing King Awowogei"],
 				["Freeing Pirate Pete", "Recipe for Disaster: Freeing Pirate Pete"],
-				[
-					"Freeing Sir Amik Varze",
-					"Recipe for Disaster: Freeing Sir Amik Varze",
-				],
-				[
-					"Freeing Skrach Uglogwee",
-					"Recipe for Disaster: Freeing Skrach Uglogwee",
-				],
+				["Freeing Sir Amik Varze", "Recipe for Disaster: Freeing Sir Amik Varze"],
+				["Freeing Skrach Uglogwee", "Recipe for Disaster: Freeing Skrach Uglogwee"],
 				[
 					"Freeing the Goblin Generals",
 					"Recipe for Disaster: Freeing the Goblin Generals",
@@ -219,14 +213,8 @@ export class rsQuestSorter {
 				["Freeing Evil Dave", "Recipe for Disaster: Freeing Evil Dave"],
 				["Freeing King Awowogei", "Recipe for Disaster: Freeing King Awowogei"],
 				["Freeing Pirate Pete", "Recipe for Disaster: Freeing Pirate Pete"],
-				[
-					"Freeing Sir Amik Varze",
-					"Recipe for Disaster: Freeing Sir Amik Varze",
-				],
-				[
-					"Freeing Skrach Uglogwee",
-					"Recipe for Disaster: Freeing Skrach Uglogwee",
-				],
+				["Freeing Sir Amik Varze", "Recipe for Disaster: Freeing Sir Amik Varze"],
+				["Freeing Skrach Uglogwee", "Recipe for Disaster: Freeing Skrach Uglogwee"],
 				[
 					"Freeing the Goblin Generals",
 					"Recipe for Disaster: Freeing the Goblin Generals",
@@ -363,10 +351,7 @@ export class rsQuestSorter {
 					JSON.stringify(hasCompleteInfo)
 				);
 			}
-			console.warn(
-				"This is for debugging purposes on users end",
-				hasCompleteInfo
-			);
+			console.warn("This is for debugging purposes on users end", hasCompleteInfo);
 			usePlayerStore.getState().grabbedSkills = true;
 		}
 	}
