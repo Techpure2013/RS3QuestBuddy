@@ -3450,40 +3450,94 @@
 		"name": "Birthright of the Dwarves",
 		"images": [
 			{
-				"step": "49",
-				"src": "FragmentTable1.png",
-				"width": 843,
-				"height": 234
+				"step": "2",
+				"src": "Step1_QuestStart.png",
+				"width": 907,
+				"height": 533
 			},
 			{
-				"step": "49",
-				"src": "FragmentTable2.png",
-				"width": 560,
-				"height": 109
+				"step": "2",
+				"src": "Step1_VeldaBan.png",
+				"width": 438,
+				"height": 500
 			},
 			{
-				"step": "49",
-				"src": "FragmentTable3.png",
-				"width": 446,
-				"height": 81
+				"step": "3",
+				"src": "Step3_VaultLoc.png",
+				"width": 242,
+				"height": 375
 			},
 			{
-				"step": "49",
-				"src": "FragmentTable4.png",
-				"width": 494,
-				"height": 50
+				"step": "10",
+				"src": "Step10_FurnaceLoc.png",
+				"width": 249,
+				"height": 384
 			},
 			{
-				"step": "49",
-				"src": "FragmentTable5.png",
-				"width": 617,
-				"height": 131
+				"step": "10",
+				"src": "Step10_SearchFurnace.png",
+				"width": 454,
+				"height": 459
 			},
 			{
-				"step": "21",
-				"src": "TaverlyDungeonMap.png",
-				"width": 552,
-				"height": 919
+				"step": "12",
+				"src": "Step12_TalkMeike.png",
+				"width": 650,
+				"height": 363
+			},
+			{
+				"step": "20",
+				"src": "Step20_Ikadia.png",
+				"width": 441,
+				"height": 625
+			},
+			{
+				"step": "22",
+				"src": "Step22_watchTower.png",
+				"width": 245,
+				"height": 372
+			},
+			{
+				"step": "29",
+				"src": "Step29_caveLoc.png",
+				"width": 404,
+				"height": 345
+			},
+			{
+				"step": "46",
+				"src": "Step46_ChaosDoor.png",
+				"width": 192,
+				"height": 139
+			},
+			{
+				"step": "19",
+				"src": "Step19_TaverlyDungeon.png",
+				"width": 766,
+				"height": 633
+			},
+			{
+				"step": "27",
+				"src": "Step27_FragmentTable.png",
+				"width": 600,
+				"height": 600
+			},
+			{
+				"step": "40",
+				"src": "Step40_FragmentTable.png",
+				"width": 600,
+				"height": 600
+			},
+			{
+				"step": "42",
+				"src": "Step42_FragmentTable.png",
+				"width": 600,
+				"height": 600
+			},
+			{
+				"step": "43",
+				"src": "Step43_FragmentTable.png",
+				"width": 600,
+				"height": 600
 			}
 		]
 	},
