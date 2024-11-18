@@ -277,12 +277,12 @@ const QuestPage: React.FC = () => {
 		} else {
 			const emptypage = "./emptypage.html";
 			var popid = "testpopup_" + Date.now();
-
+			const iconpath = "/rs3buddyicon.png";
 			// If not open, open a new browser window
 			const newWindow = window.open(
 				emptypage,
 				"promptbox" + popid,
-				`width=${_imgWidth}, height=${_imgHeight + 100}`
+				`width=${_imgWidth}, height=${_imgHeight + 100},icon="icon=" + ${iconpath}"`
 			);
 			if (newWindow) {
 				// Set the pop-out window and hide buttons in the current window
@@ -290,25 +290,32 @@ const QuestPage: React.FC = () => {
 				handles.setButtonVisible(false);
 				handles.setPopOutClicked(false);
 
-				newWindow.document.write(
-					`
-    <!DOCTYPE html>
-    <html lang="es-ES">
-        <head>
-            <link rel="icon" href="./../assets/rs3buddyicon.png" type="image/x-icon" />
-            <title>Quest Image</title>
-        </head>
-        <body>
-        </body>
-    </html>
-`
-				);
-				// Render the QuestControls component into the new window
+				newWindow.document.write(`
+					<!DOCTYPE html>
+					<html lang="es-ES">
+						<head>
+							<link 
+								rel="icon" 
+								href="${window.location.protocol}//${window.location.host}/rs3buddyicon.png" 
+								type="image/x-icon" 
+							/>
+							<title>Quest Image</title>
+						</head>
+						<body>
+						</body>
+					</html>
+				`);
+
+				// Render the Quest Image into the new window
 				const container: HTMLDivElement = newWindow.document.createElement("div");
 				container.className = ".QuestPageImageCaro";
 				newWindow.document.body.appendChild(container);
 				newWindow.document.title = "Quest Images";
-
+				let link = newWindow.document.createElement("link");
+				link.rel = "icon";
+				link.href = "./rs3buddyicon.png";
+				link.type = "image/x-icon";
+				newWindow.document.head.appendChild(link);
 				container.style.backgroundImage = "./../assets/background.png";
 				// Set initial content for the new window
 				const initialContentContainer = newWindow.document.createElement("div");
@@ -343,7 +350,7 @@ const QuestPage: React.FC = () => {
 				// Call the function to copy styles
 				copyStyles();
 
-				// Render QuestControls into the new window
+				// Render Quest Image into the new window
 				const matchingImage = imageDetails.imageList.find((image) =>
 					image.src.includes(_imgSrc)
 				);
