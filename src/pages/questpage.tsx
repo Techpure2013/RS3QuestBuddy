@@ -277,46 +277,44 @@ const QuestPage: React.FC = () => {
 		} else {
 			const emptypage = "./emptypage.html";
 			var popid = "testpopup_" + Date.now();
-			const iconpath = "/rs3buddyicon.png";
+
 			// If not open, open a new browser window
 			const newWindow = window.open(
 				emptypage,
 				"promptbox" + popid,
-				`width=${_imgWidth}, height=${_imgHeight + 100},icon="icon=" + ${iconpath}"`
+				`width=${_imgWidth}, height=${_imgHeight + 100},`
 			);
 			if (newWindow) {
 				// Set the pop-out window and hide buttons in the current window
 				handles.setPopOutWindow(newWindow);
 				handles.setButtonVisible(false);
 				handles.setPopOutClicked(false);
-
-				newWindow.document.write(`
-					<!DOCTYPE html>
-					<html lang="es-ES">
-						<head>
-							<link 
-								rel="icon" 
-								href="${window.location.protocol}//${window.location.host}/rs3buddyicon.png" 
-								type="image/x-icon" 
-							/>
-							<title>Quest Image</title>
-						</head>
-						<body>
-						</body>
-					</html>
-				`);
+				let script =
+					"<sc" +
+					"ript>" +
+					"(function() {" +
+					"   var link = document.createElement('link');" +
+					"   link.type = 'image/x-icon';" +
+					"   link.rel = 'image/icon';" +
+					"   link.href = '/src/assets/rs3buddyicon.ico';" +
+					"   document.getElementsByTagName('head')[0].appendChild(link);" +
+					"}());" +
+					"</sc" +
+					"ript>";
+				newWindow.document.writeln(
+					"<html><head><title>Quest Image</title>" +
+						script +
+						"</head>" +
+						'<body onLoad="self.focus()">' +
+						"</body></html>"
+				);
 
 				// Render the Quest Image into the new window
 				const container: HTMLDivElement = newWindow.document.createElement("div");
 				container.className = ".QuestPageImageCaro";
 				newWindow.document.body.appendChild(container);
 				newWindow.document.title = "Quest Images";
-				let link = newWindow.document.createElement("link");
-				link.rel = "icon";
-				link.href = "./rs3buddyicon.png";
-				link.type = "image/x-icon";
-				newWindow.document.head.appendChild(link);
-				container.style.backgroundImage = "./../assets/background.png";
+
 				// Set initial content for the new window
 				const initialContentContainer = newWindow.document.createElement("div");
 				initialContentContainer.id = "initialContentContainer";
@@ -325,8 +323,6 @@ const QuestPage: React.FC = () => {
 					"initialContentContainer"
 				);
 				const root = createRoot(domNode);
-				const iconLink = newWindow.document.createElement("link");
-				newWindow.document.head.appendChild(iconLink);
 
 				// Function to copy styles from the original window to the new window
 				function copyStyles(): void {

@@ -6896,34 +6896,34 @@
 		"name": "Haunted Mine",
 		"images": [
 			{
-				"step": "1",
-				"src": "300px-AbandonedMineLevel2.png6fec6.png",
-				"width": 300,
-				"height": 283
+				"step": "22",
+				"src": "Haunted Mine Step 23.png",
+				"width": 795,
+				"height": 925
 			},
 			{
-				"step": "1",
-				"src": "300px-AbandonedMineLevel3.png39340.png",
-				"width": 300,
-				"height": 374
+				"step": "9",
+				"src": "Haunted Mine Step 9.png",
+				"width": 962,
+				"height": 899
 			},
 			{
-				"step": "1",
-				"src": "300px-AbandonedMineLevel4.png24b2d.png",
-				"width": 300,
-				"height": 319
+				"step": "12",
+				"src": "Haunted Mine Step 12.png",
+				"width": 512,
+				"height": 333
 			},
 			{
-				"step": "1",
-				"src": "AbandonedMineLevel.png",
-				"width": 300,
-				"height": 283
+				"step": "12",
+				"src": "East Set QB.jpeg",
+				"width": 1024,
+				"height": 766
 			},
 			{
-				"step": "1",
-				"src": "SpeakingtotheZealot.png",
-				"width": 299,
-				"height": 212
+				"step": "12",
+				"src": "North Set QB.jpeg",
+				"width": 2048,
+				"height": 1732
 			}
 		]
 	},
@@ -7013,7 +7013,14 @@
 	},
 	{
 		"name": "Hunt for Red Raktuber",
-		"images": []
+		"images": [
+			{
+				"step": "38",
+				"src": "step38_KGP_office_map.png",
+				"width": 800,
+				"height": 592
+			}
+		]
 	},
 	{
 		"name": "Icthlarin's Little Helper",
@@ -7765,6 +7772,12 @@
 	{
 		"name": "Lunar Diplomacy",
 		"images": [
+			{
+				"step": "1",
+				"src": "Lunar Diplomacy Step 1.png",
+				"width": 591,
+				"height": 464
+			},
 			{
 				"step": "71",
 				"src": "step71_Etheral.png",
@@ -9091,85 +9104,85 @@
 		"name": "Shilo Village",
 		"images": [
 			{
-				"step": "5",
+				"step": "1",
+				"src": "Shilo Village Step 1.png",
+				"width": 607,
+				"height": 422
+			},
+			{
+				"step": "23",
+				"src": "Shilo Village Step 24.png",
+				"width": 494,
+				"height": 248
+			},
+			{
+				"step": "4",
 				"src": "Step5_ShiloVil.png",
 				"width": 973,
 				"height": 705
 			},
 			{
-				"step": "5",
+				"step": "6",
 				"src": "Step5_lookatmound.png",
 				"width": 1007,
 				"height": 565
 			},
 			{
-				"step": "11",
+				"step": "10",
 				"src": "Step11_InvestigateStone.png",
 				"width": 952,
 				"height": 556
 			},
 			{
-				"step": "12",
+				"step": "11",
 				"src": "Step12_SearchCave.png",
 				"width": 824,
 				"height": 651
 			},
 			{
-				"step": "13",
+				"step": "12",
 				"src": "Step13_searchLooseRocks.png",
 				"width": 874,
 				"height": 702
 			},
 			{
-				"step": "14",
+				"step": "13",
 				"src": "Step14_SearchOldSack.png",
 				"width": 918,
 				"height": 656
 			},
 			{
-				"step": "15",
+				"step": "14",
 				"src": "Step15_SearchGallows.png",
 				"width": 519,
 				"height": 605
 			},
 			{
-				"step": "20",
+				"step": "19",
 				"src": "Step20_WestNearbyStat.png",
 				"width": 747,
 				"height": 642
 			},
 			{
-				"step": "22",
-				"src": "Step22_TalkTrif.png",
-				"width": 641,
-				"height": 578
-			},
-			{
 				"step": "24",
-				"src": "Step24_ClimbRocks.png",
-				"width": 907,
-				"height": 704
-			},
-			{
-				"step": "25",
 				"src": "Step25_SearchWellStackedRocks.png",
 				"width": 587,
 				"height": 565
 			},
 			{
-				"step": "26",
+				"step": "25",
 				"src": "Step26_InspectTomb.png",
 				"width": 448,
 				"height": 439
 			},
 			{
-				"step": "31",
+				"step": "30",
 				"src": "Step31_TombLocation.png",
 				"width": 654,
 				"height": 361
 			},
 			{
-				"step": "31",
+				"step": "30",
 				"src": "Step31_TombEntrance.png",
 				"width": 797,
 				"height": 705
@@ -10650,6 +10663,18 @@
 		"name": "The Dig Site",
 		"images": [
 			{
+				"step": "6",
+				"src": "The Dig Site Step 6.png",
+				"width": 822,
+				"height": 1011
+			},
+			{
+				"step": "1",
+				"src": "The Dig Site Step 1.png",
+				"width": 478,
+				"height": 439
+			},
+			{
 				"step": "2",
 				"src": "ArcheologyJournal.png",
 				"width": 153,
@@ -10684,24 +10709,6 @@
 				"src": "Seth.png",
 				"width": 351,
 				"height": 199
-			},
-			{
-				"step": "6",
-				"src": "SearchBush.png",
-				"width": 351,
-				"height": 272
-			},
-			{
-				"step": "6",
-				"src": "Teddy.png",
-				"width": 108,
-				"height": 78
-			},
-			{
-				"step": "7",
-				"src": "ItemLocations.png",
-				"width": 350,
-				"height": 189
 			},
 			{
 				"step": "32",
