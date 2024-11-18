@@ -9,6 +9,7 @@ import {
 	Modal,
 	Stepper,
 } from "@mantine/core";
+import { Embla, useAnimationOffsetEffect } from "@mantine/carousel";
 import * as a1lib from "alt1";
 import {
 	IconBrandDiscord,
@@ -52,6 +53,7 @@ const QuestPage: React.FC = () => {
 		expandAllAccordions: "expandAllAccordions",
 	};
 	const qpname = useLocation();
+	const TRANSITION_DURATION = 200;
 	const ignoredRequirements = new Set([
 		"Ironmen",
 		"Ironman",
@@ -72,18 +74,17 @@ const QuestPage: React.FC = () => {
 		"If Icthlarin's Little Helper was completed prior to the addition of Stolen Hearts and Diamond in the Rough, they must be completed before Contact! can be started (or completed).",
 		"For Ironmen",
 	]);
-	const questlistJSON = "./QuestList.json";
+	const [embla] = useState<Embla | null>(null);
+	useAnimationOffsetEffect(embla, TRANSITION_DURATION);
 	let { questName, modified } = qpname.state;
-	let textfile = modified + "info.txt";
-	let isPog = false;
-	let gridActive = false;
-	let lunarGridActive = false;
 	const [opened, { open, close }] = useDisclosure(false);
 	const [openedGrid, { openGrid, closeGrid }] = useGridDisclosure(false);
 	const [openLGrid, { openLunarGrid, closeLunarGrid }] =
 		useLunarGridDisclosure(false);
 	const [active, setActive] = useState(-1);
 	const [highestStepVisited, setHighestStepVisited] = useState(active);
+	const questlistJSON = "./QuestList.json";
+	let textfile = modified + "info.txt";
 	const reader = new DiagReader();
 	const hist = useNavigate();
 	const details = useQuestStepStore();
@@ -91,6 +92,9 @@ const QuestPage: React.FC = () => {
 	const stepRefs = useRef<React.RefObject<HTMLDivElement>[]>([]);
 	const QuestDetails = useQuestDetailsStore.getState().questDetails;
 	const [isHighlight, setIsHighlight] = useState(false);
+	let isPog = false;
+	let gridActive = false;
+	let lunarGridActive = false;
 	const [stepHidden, setStepHidden] = useState(false);
 	const [userColor, setUserColor] = useState("");
 	const [userLabelColor, setUserLabelColor] = useState("");
@@ -101,6 +105,7 @@ const QuestPage: React.FC = () => {
 	let [isPOGOpen, { pogModOpen, pogModClose }] = usePOGDisclosure(false);
 	let [isOpened, { openNotes, closedNotes }] = useNotesDisclosure(false);
 	const isOpenNotes = useRef(false);
+	// const finder = new diagFinder();
 	const { showStepReq, toggleShowStepReq } = useQuestControllerStore();
 	const handles = useQuestControllerStore();
 	const [skillLevels, setSkillLevels] = useState<string[]>([]);
@@ -220,6 +225,32 @@ const QuestPage: React.FC = () => {
 		reader.intervalIds.forEach(clearInterval);
 		reader.intervalIds = [];
 	};
+
+	function copyStyle(
+		_from: Window,
+		to: Window,
+		node: HTMLStyleElement | HTMLLinkElement
+	): void {
+		try {
+			const doc: Document = to.document;
+			console.log("Copying style/link:", node);
+			if (node.tagName === "STYLE") {
+				const newStyle: HTMLStyleElement = doc.createElement("style");
+				newStyle.textContent = node.textContent || "";
+				doc.head.appendChild(newStyle);
+			}
+			if (node.tagName === "LINK" && "rel" in node) {
+				const newLink: HTMLLinkElement = doc.createElement("link");
+				newLink.rel = node.rel || "";
+				newLink.href = node.href || "";
+				newLink.type = node.type || "";
+				doc.head.appendChild(newLink);
+			}
+		} catch (error) {
+			console.error("Error copying style:", error);
+		}
+	}
+
 	const scrollPrev = (): void => {
 		const prevStep = active - 1;
 
@@ -230,28 +261,6 @@ const QuestPage: React.FC = () => {
 	const ShouldAllowStep = (step: number) => {
 		return highestStepVisited >= step && active !== step;
 	};
-	const copyStyles = (sourceDoc: Document, targetDoc: Document) => {
-		Array.from(sourceDoc.styleSheets).forEach((styleSheet) => {
-			let cssRules: CSSRuleList | undefined;
-			try {
-				cssRules = styleSheet.cssRules;
-			} catch (e) {
-				console.warn("Cannot access CSS rules for", styleSheet.href, e);
-			}
-			if (cssRules) {
-				const style = targetDoc.createElement("style");
-				Array.from(cssRules).forEach((rule) => {
-					style.appendChild(targetDoc.createTextNode(rule.cssText));
-				});
-				targetDoc.head.appendChild(style);
-			} else if (styleSheet.href) {
-				const link = targetDoc.createElement("link");
-				link.rel = "stylesheet";
-				link.href = styleSheet.href;
-				targetDoc.head.appendChild(link);
-			}
-		});
-	};
 
 	const handlePopOut = (
 		_index: number,
@@ -260,80 +269,99 @@ const QuestPage: React.FC = () => {
 		_imgWidth: number
 	) => {
 		if (handles.popOutWindow && !handles.popOutWindow.closed) {
-			// Close the existing window
+			// If open, close the window
 			handles.popOutWindow.close();
 			handles.setPopOutWindow(null);
-			handles.setButtonVisible(true);
+			handles.setButtonVisible(true); // Show the buttons again
 			handles.setPopOutClicked(true);
 		} else {
-			const popId = "testpopup_" + Date.now();
-			const newWindow = window.open(
-				"",
-				`promptbox${popId}`,
-				`width=${_imgWidth},height=${_imgHeight + 50},scrollbars=no`
-			);
+			const emptypage = "./emptypage.html";
+			var popid = "testpopup_" + Date.now();
 
+			// If not open, open a new browser window
+			const newWindow = window.open(
+				emptypage,
+				"promptbox" + popid,
+				`width=${_imgWidth}, height=${_imgHeight + 100}`
+			);
 			if (newWindow) {
-				// Set up the new window
+				// Set the pop-out window and hide buttons in the current window
 				handles.setPopOutWindow(newWindow);
 				handles.setButtonVisible(false);
 				handles.setPopOutClicked(false);
 
-				// Write HTML content
-				newWindow.document.write(`
-					<!DOCTYPE html>
-					<html lang="en">
-					<head>
-						<meta charset="UTF-8">
-						<meta name="viewport" content="width=device-width, initial-scale=1.0">
-						<title>Quest Image</title>
-						<link rel="icon" href="./dist/rs3buddyicon.png" type="image/x-icon" />					
-						 <style>
-                        body {
-                            margin: 0;
-                            padding: 0;
-                            overflow: hidden;
-                        }
-						h1 {
-        padding-top: 1rem;
-        text-align: center;
-       
-    }
-                    </style>
-					</head>
-					<body>
+				newWindow.document.write(
+					`
+    <!DOCTYPE html>
+    <html lang="es-ES">
+        <head>
+            <link rel="icon" href="./../assets/rs3buddyicon.png" type="image/x-icon" />
+            <title>Quest Image</title>
+        </head>
+        <body>
+        </body>
+    </html>
+`
+				);
+				// Render the QuestControls component into the new window
+				const container: HTMLDivElement = newWindow.document.createElement("div");
+				container.className = ".QuestPageImageCaro";
+				newWindow.document.body.appendChild(container);
+				newWindow.document.title = "Quest Images";
 
-					</body>
-					</html>
-				`);
-
-				// Copy parent styles
-				copyStyles(document, newWindow.document);
-
-				// Render React content
-				const domNode = newWindow.document.createElement("div");
-				domNode.id = "initialContentContainer";
-				newWindow.document.body.appendChild(domNode);
+				container.style.backgroundImage = "./../assets/background.png";
+				// Set initial content for the new window
+				const initialContentContainer = newWindow.document.createElement("div");
+				initialContentContainer.id = "initialContentContainer";
+				newWindow.document.body.appendChild(initialContentContainer);
+				const domNode: any = newWindow.document.getElementById(
+					"initialContentContainer"
+				);
 				const root = createRoot(domNode);
+				const iconLink = newWindow.document.createElement("link");
+				newWindow.document.head.appendChild(iconLink);
 
+				// Function to copy styles from the original window to the new window
+				function copyStyles(): void {
+					try {
+						const stylesheets: NodeListOf<HTMLStyleElement | HTMLLinkElement> =
+							document.querySelectorAll('style, link[rel="stylesheet"]');
+						const stylesheetsArray: HTMLStyleElement[] = Array.from(stylesheets);
+						stylesheetsArray.forEach(function (stylesheet: HTMLStyleElement) {
+							copyStyle(window, newWindow!, stylesheet);
+						});
+						const emotionStyles = document.querySelectorAll("style[data-emotion]");
+						emotionStyles.forEach((style) => {
+							const newEmotionStyle = document.createElement("style");
+							newEmotionStyle.textContent = style.textContent;
+							newWindow!.document.head.appendChild(newEmotionStyle);
+						});
+					} catch (error) {
+						console.error("Error copying styles:", error);
+					}
+				}
+				// Call the function to copy styles
+				copyStyles();
+
+				// Render QuestControls into the new window
 				const matchingImage = imageDetails.imageList.find((image) =>
 					image.src.includes(_imgSrc)
 				);
 				root.render(
-					<div style={{ paddingTop: "1rem", alignContent: "center" }}>
-						<img src={matchingImage?.src} alt="Quest" />
-					</div>
+					<>
+						<div
+							style={{
+								paddingTop: "1rem",
+								alignContent: "center",
+							}}
+						>
+							<img src={matchingImage?.src} />
+						</div>
+					</>
 				);
-
-				// Cleanup when the window is closed
-				newWindow.addEventListener("beforeunload", () => {
-					handles.setPopOutWindow(null);
-					handles.setButtonVisible(true);
-				});
 			}
 		}
 	};
-
 	const setActiveAndScroll = (nextStep: number): void => {
 		if (nextStep >= 0 && nextStep < details.stepDetails.length) {
 			setActive(nextStep);
