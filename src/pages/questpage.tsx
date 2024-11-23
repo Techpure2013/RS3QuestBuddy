@@ -1095,9 +1095,18 @@ const QuestPage: React.FC = () => {
 								>
 									<IconPlus />
 								</ActionIcon>
+								<ActionIcon
+									size="sm"
+									variant="outline"
+									color={hasButtonColor ? userButtonColor : ""}
+									onClick={handleBackButton}
+								>
+									<IconArrowBack />
+								</ActionIcon>
 							</div>
 							{isPog && (
 								<Button
+									size="compact-sm"
 									variant="outline"
 									color={hasButtonColor ? userButtonColor : ""}
 									onClick={pogModOpen}
@@ -1107,6 +1116,7 @@ const QuestPage: React.FC = () => {
 							)}
 							{gridActive && (
 								<Button
+									size="compact-sm"
 									variant="outline"
 									color={hasButtonColor ? userButtonColor : ""}
 									onClick={openGrid}
