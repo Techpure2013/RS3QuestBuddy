@@ -697,11 +697,11 @@
 			"Rum Deal",
 			"Zogre Flesh Eaters",
 			"Big Chompy Bird Hunting",
-			"Jungle Potion",
+
 			"Priest in Peril",
 			"42 Agility",
 			"45 Crafting",
-			"40 Ranged Ranged",
+			"40 Range",
 			"50 Smithing"
 		],
 		"ItemsRequired": ["None"],
@@ -7068,12 +7068,7 @@
 		"StartPoint": "Talk to King Lathas on the 2nd floor[US] of Ardougne castle.",
 		"MemberRequirement": "P2P Members only",
 		"OfficialLength": "Long to Very Long",
-		"Requirements": [
-			"Underground Pass",
-			"Biohazard",
-			"Plague City",
-			"25 Ranged Ranged"
-		],
+		"Requirements": ["Underground Pass", "Biohazard", "Plague City", "25 Range"],
 		"ItemsRequired": [
 			"A rope (it is recommended to bring more than one since the rope can be lost)",
 			"A bow (bows that do not require ammunition and crossbows will not work)",
