@@ -8646,7 +8646,14 @@
 	},
 	{
 		"name": "Quiet Before the Swarm",
-		"images": []
+		"images": [
+			{
+				"step": "33",
+				"src": "Step 33_PuzzleTable.png",
+				"width": 650,
+				"height": 650
+			}
+		]
 	},
 	{
 		"name": "Rag and Bone Man",
@@ -9142,7 +9149,26 @@
 	},
 	{
 		"name": "Sea Slug",
-		"images": []
+		"images": [
+			{
+				"step": "1",
+				"src": "Step1_QuestStart.png",
+				"width": 489,
+				"height": 466
+			},
+			{
+				"step": "4",
+				"src": "Step4_NorthLadder.png",
+				"width": 606,
+				"height": 485
+			},
+			{
+				"step": "14",
+				"src": "Step14_PickupGlass.png",
+				"width": 473,
+				"height": 460
+			}
+		]
 	},
 	{
 		"name": "Shades of Mort'ton",
