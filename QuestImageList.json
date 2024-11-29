@@ -44,9 +44,15 @@
 			},
 			{
 				"step": "18",
-				"src": "WhereToDigDrayorManor.png",
-				"width": 452,
-				"height": 324
+				"src": "AFairyTaleIStep_18.png",
+				"width": 800,
+				"height": 800
+			},
+			{
+				"step": "13",
+				"src": "AFairyTaleIStep13.png",
+				"width": 800,
+				"height": 800
 			},
 			{
 				"step": "11",
@@ -71,12 +77,6 @@
 				"src": "Queens Secateurs.png",
 				"width": 189,
 				"height": 95
-			},
-			{
-				"step": "23",
-				"src": "ZanarisDungeon.png",
-				"width": 452,
-				"height": 327
 			},
 			{
 				"step": "23",
@@ -2691,31 +2691,31 @@
 				"height": 157
 			},
 			{
-				"step": "28",
+				"step": "25",
 				"src": "secretbunkerpresentmap.png",
 				"width": 456,
 				"height": 274
 			},
 			{
-				"step": "28",
+				"step": "39",
 				"src": "secretbunkerpastmap.png",
 				"width": 319,
 				"height": 416
 			},
 			{
-				"step": "28",
+				"step": "25",
 				"src": "TheSecretBunker.png",
 				"width": 400,
 				"height": 400
 			},
 			{
-				"step": "28",
+				"step": "39",
 				"src": "ThePastSecretBunker.png",
 				"width": 400,
 				"height": 400
 			},
 			{
-				"step": "6",
+				"step": "39",
 				"src": "ThePastSecretBunkerContinued.png",
 				"width": 400,
 				"height": 400
@@ -2733,7 +2733,7 @@
 				"height": 106
 			},
 			{
-				"step": "9",
+				"step": "4",
 				"src": "SkotandMundsenLoc.png",
 				"width": 167,
 				"height": 150
@@ -2751,7 +2751,7 @@
 				"height": 401
 			},
 			{
-				"step": "9",
+				"step": "8",
 				"src": "CrocSpeak.png",
 				"width": 210,
 				"height": 81
@@ -2800,30 +2800,6 @@
 			},
 			{
 				"step": "27",
-				"src": "GPSBOX.png",
-				"width": 351,
-				"height": 95
-			},
-			{
-				"step": "27",
-				"src": "Hatch2.png",
-				"width": 364,
-				"height": 188
-			},
-			{
-				"step": "27",
-				"src": "Code2Enter.png",
-				"width": 521,
-				"height": 146
-			},
-			{
-				"step": "26",
-				"src": "TuxTime.png",
-				"width": 197,
-				"height": 267
-			},
-			{
-				"step": "27",
 				"src": "PengIntoHatch.png",
 				"width": 223,
 				"height": 208
@@ -2841,43 +2817,13 @@
 				"height": 115
 			},
 			{
-				"step": "34",
-				"src": "Clues1.png",
-				"width": 362,
-				"height": 238
-			},
-			{
-				"step": "34",
-				"src": "Crate2.png",
-				"width": 349,
-				"height": 196
-			},
-			{
-				"step": "34",
-				"src": "Crate3.png",
-				"width": 348,
-				"height": 199
-			},
-			{
-				"step": "34",
-				"src": "Crate4.png",
-				"width": 223,
-				"height": 169
-			},
-			{
-				"step": "34",
-				"src": "Crate5.png",
-				"width": 349,
-				"height": 155
-			},
-			{
-				"step": "36",
+				"step": "35",
 				"src": "IceShelf1.png",
 				"width": 282,
 				"height": 191
 			},
 			{
-				"step": "37",
+				"step": "36",
 				"src": "IceCubeMaker.png",
 				"width": 214,
 				"height": 183
@@ -2890,12 +2836,6 @@
 			},
 			{
 				"step": "38",
-				"src": "FlaxCap.png",
-				"width": 187,
-				"height": 84
-			},
-			{
-				"step": "39",
 				"src": "UseOnDeloringdevice.png",
 				"width": 329,
 				"height": 42
@@ -2907,28 +2847,10 @@
 				"height": 122
 			},
 			{
-				"step": "40",
-				"src": "Message.png",
-				"width": 186,
-				"height": 92
-			},
-			{
 				"step": "41",
-				"src": "Use2.png",
-				"width": 309,
-				"height": 27
-			},
-			{
-				"step": "42",
 				"src": "CowBells.png",
 				"width": 235,
 				"height": 152
-			},
-			{
-				"step": "43",
-				"src": "Use3.png",
-				"width": 268,
-				"height": 31
 			},
 			{
 				"step": "43",
@@ -2949,58 +2871,16 @@
 				"height": 206
 			},
 			{
-				"step": "45",
-				"src": "ElonsList.png",
-				"width": 366,
-				"height": 242
-			},
-			{
 				"step": "46",
 				"src": "Fishrod.png",
 				"width": 203,
 				"height": 182
 			},
 			{
-				"step": "47",
-				"src": "Clues1.png",
-				"width": 362,
-				"height": 238
-			},
-			{
-				"step": "50",
-				"src": "Crate2.png",
-				"width": 349,
-				"height": 196
-			},
-			{
-				"step": "50",
-				"src": "Crate3.png",
-				"width": 348,
-				"height": 199
-			},
-			{
-				"step": "55",
-				"src": "Crate4.png",
-				"width": 223,
-				"height": 169
-			},
-			{
-				"step": "50",
-				"src": "Crate5.png",
-				"width": 349,
-				"height": 155
-			},
-			{
-				"step": "52",
+				"step": "49",
 				"src": "Snowww.png",
 				"width": 258,
 				"height": 223
-			},
-			{
-				"step": "59",
-				"src": "crateMysterious.png",
-				"width": 203,
-				"height": 187
 			},
 			{
 				"step": "53",
