@@ -8202,7 +8202,20 @@
 	},
 	{
 		"name": "Observatory Quest",
-		"images": []
+		"images": [
+			{
+				"step": "5",
+				"src": "Step5_ObservatoryQuest.png",
+				"width": 600,
+				"height": 600
+			},
+			{
+				"step": "18",
+				"src": "Step18_ObservatoryQuest.png",
+				"width": 850,
+				"height": 650
+			}
+		]
 	},
 	{
 		"name": "Olaf's Quest",
