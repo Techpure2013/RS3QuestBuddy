@@ -1,5 +1,27 @@
 [
 	{
+		"Quest": "A Christmas Reunion",
+		"StartPoint": "Speak to Diango in Santas Workshop",
+		"MemberRequirement": "Free to play",
+		"OfficialLength": "Short",
+		"Requirements": [
+			"Ironman requirements: 32 cooking with Completion of Chef's Assistant"
+		],
+		"ItemsRequired": [
+			"3 split fir logs (obtainable during quest)",
+			"15 steel nails",
+			"6 bolts of cloth",
+			"Thread",
+			"Red dye",
+			"Green dye",
+			"Chocolate dust",
+			"Bucket of milk",
+			"Biscuits"
+		],
+		"Recommended": ["Legend's Cape for quick access to Fairy Ring's"],
+		"EnemiesToDefeat": ["None"]
+	},
+	{
 		"Quest": "A Shadow over Ashdale",
 		"StartPoint": "Speak to Gudrik, who can be found east of Gerrant's Fishy Business in Port Sarim.",
 		"MemberRequirement": "Free to play",
@@ -6356,10 +6378,7 @@
 			"Light source (e.g., torch, mining helmet)",
 			"Rope",
 			"1 or 2 spools of thread",
-			"Melee weapons (stab, crush, slash)",
-			"Ranged weapon",
-			"Magic weapon and runes",
-			"Necromancy weapon"
+			"Needs one with exception to Mellee: Mellee(A stab, slash, crush weapon),Magic Weapon, Necro Weapon, or Mage Weapon"
 		],
 		"Recommended": [
 			"Coins and ring of charos for 4 magic carpet rides",

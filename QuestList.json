@@ -1,5 +1,11 @@
 [
 	{
+		"Quest": "A Christmas Reunion",
+		"Path": "./Quests/A Christmas Reunion/AChristmasReunionInfo.txt",
+		"Transcript": "",
+		"CTranscript": "./Quests/A Christmas Reunion/CompareAChristmasReunion.json"
+	},
+	{
 		"Quest": "A Fairy Tale I: Growing Pains",
 		"Path": "./Quests/A Fairy Tale I Growing Pains/afairytalei-growingpainsinfo.txt",
 		"Transcript": "./Quests/A Fairy Tale I Growing Pains/A_Fairy_Tale_I_-_Growing_Pains_transcript.json",

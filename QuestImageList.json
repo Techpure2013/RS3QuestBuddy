@@ -1,5 +1,22 @@
 [
 	{
+		"name": "A Christmas Reunion",
+		"images": [
+			{
+				"step": "1",
+				"src": "Step1_questStart.png",
+				"width": 240,
+				"height": 368
+			},
+			{
+				"step": "2",
+				"src": "Step6_PixieLocations.png",
+				"width": 850,
+				"height": 650
+			}
+		]
+	},
+	{
 		"name": "A Clockwork Syringe",
 		"images": []
 	},
@@ -1474,6 +1491,10 @@
 	},
 	{
 		"name": "Thok It To 'Em (saga)",
+		"images": []
+	},
+	{
+		"name": "It's Snow Bother",
 		"images": []
 	},
 	{
