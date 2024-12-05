@@ -259,7 +259,7 @@
 		"Requirements": [
 			"The Vault of Shadows",
 			"Ability to see the Shadow Realm inside Kharid-et",
-			"Raksha, the Shadow Colossus",
+			"Raksha, the Shadow Colossus Quest",
 			"Desperate Creatures",
 			"Desperate Measures",
 			"Desperate Times",
@@ -397,7 +397,7 @@
 			"Azzanadra's Quest",
 			"The Vault of Shadows",
 			"Ability to see the Shadow Realm inside Kharid-et",
-			"Raksha, the Shadow Colossus",
+			"Raksha, the Shadow Colossus Quest",
 			"Desperate Creatures",
 			"Desperate Measures",
 			"Desperate Times",
@@ -896,7 +896,7 @@
 			"Azzanadra's Quest",
 			"The Vault of Shadows",
 			"Ability to see the Shadow Realm inside Kharid-et",
-			"Raksha, the Shadow Colossus",
+			"Raksha, the Shadow Colossus Quest",
 			"Desperate Creatures",
 			"Desperate Measures",
 			"Desperate Times",
@@ -2320,7 +2320,7 @@
 			"Azzanadra's Quest",
 			"The Vault of Shadows",
 			"Ability to see the Shadow Realm inside Kharid-et",
-			"Raksha, the Shadow Colossus",
+			"Raksha, the Shadow Colossus Quest",
 			"Desperate Creatures",
 			"Desperate Measures",
 			"65 Agility"
@@ -2345,7 +2345,7 @@
 			"Battle of the Monolith",
 			"Azzanadra's Quest",
 			"The Vault of Shadows",
-			"Raksha, the Shadow Colossus",
+			"Raksha, the Shadow Colossus Quest",
 			"Desperate Creatures"
 		],
 		"ItemsRequired": ["None"],
@@ -5163,7 +5163,7 @@
 		"EnemiesToDefeat": ["None"]
 	},
 	{
-		"Quest": "Raksha the Shadow Colossus",
+		"Quest": "Raksha the Shadow Colossus Quest",
 		"StartPoint": "Talk to Laniakea on Anachronia.",
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Short",
