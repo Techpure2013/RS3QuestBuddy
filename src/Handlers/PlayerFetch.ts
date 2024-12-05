@@ -62,14 +62,12 @@ export class PlayerQuests {
 		this.getDifficulty = this.getDifficulty.bind(this);
 		this.getQuestPoints = this.getQuestPoints.bind(this);
 	}
+
 	private url =
-		"https://corsproxy.io/?" +
-		encodeURIComponent("https://apps.runescape.com/runemetrics/quests");
+		"https://corsproxy.io/?url=https://apps.runescape.com/runemetrics/quests";
 	private url2 =
-		"https://corsproxy.io/?" +
-		encodeURIComponent(
-			"https://secure.runescape.com/m=hiscore/index_lite.ws?player="
-		);
+		"https://corsproxy.io/?url=https://secure.runescape.com/m=hiscore/index_lite.ws?player=";
+
 	//private api_url: string = "https://apps.runescape.com/runemetrics/quests";
 	//private api_LocaltoPublicCOR: string = "https://cors-anywhere.herokuapp.com/"; //Disable or Comment out for Production
 	//private api_LocaltoPublicCOR: string = "https://raw.githubusercontent.com/";
