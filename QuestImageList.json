@@ -9326,7 +9326,20 @@
 	},
 	{
 		"name": "Some Like It Cold",
-		"images": []
+		"images": [
+			{
+				"step": "49",
+				"src": "Step49_firstBattleShip.png",
+				"width": 850,
+				"height": 650
+			},
+			{
+				"step": "61",
+				"src": "Step61_secondBattleShip.png",
+				"width": 850,
+				"height": 650
+			}
+		]
 	},
 	{
 		"name": "Song from the Depths",
