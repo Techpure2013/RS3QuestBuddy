@@ -7791,7 +7791,20 @@
 	},
 	{
 		"name": "Meeting History",
-		"images": []
+		"images": [
+			{
+				"step": "3",
+				"src": "Step3_MeetingHistory.png",
+				"width": 704,
+				"height": 581
+			},
+			{
+				"step": "21",
+				"src": "step21_fruitTreePatches.png",
+				"width": 356,
+				"height": 129
+			}
+		]
 	},
 	{
 		"name": "Merlin's Crystal",
@@ -8682,7 +8695,20 @@
 	},
 	{
 		"name": "Rat Catchers",
-		"images": []
+		"images": [
+			{
+				"step": "45",
+				"src": "Step45_RatCatcher'sMusic.png",
+				"width": 537,
+				"height": 364
+			},
+			{
+				"step": "24",
+				"src": "step24_ratholelocations.png",
+				"width": 778,
+				"height": 665
+			}
+		]
 	},
 	{
 		"name": "Requiem for a Dragon",
