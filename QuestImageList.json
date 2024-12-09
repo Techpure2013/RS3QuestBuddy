@@ -8124,52 +8124,46 @@
 		"name": "Mourning's End Part II",
 		"images": [
 			{
-				"step": "1",
-				"src": "Temple_of_Light_map.png",
-				"width": 366,
-				"height": 347
+				"step": "15",
+				"src": "Step15_Chest1.png",
+				"width": 525,
+				"height": 517
 			},
 			{
-				"step": "19",
-				"src": "Chest1.png",
-				"width": 264,
-				"height": 260
+				"step": "37",
+				"src": "Step37_Chest3.png",
+				"width": 266,
+				"height": 785
+			},
+			{
+				"step": "48",
+				"src": "Step48_Chest4.png",
+				"width": 248,
+				"height": 732
 			},
 			{
 				"step": "28",
-				"src": "Chest2.png",
-				"width": 264,
-				"height": 260
+				"src": "Step28_Chest2.png",
+				"width": 444,
+				"height": 437
 			},
 			{
-				"step": "45",
-				"src": "Chest3.png",
-				"width": 120,
-				"height": 351
+				"step": "57",
+				"src": "step57_Chest5part1.png",
+				"width": 429,
+				"height": 423
 			},
 			{
-				"step": "9",
-				"src": "Chest4.png",
-				"width": 121,
-				"height": 351
-			},
-			{
-				"step": "58",
-				"src": "Chest5Part1.png",
-				"width": 264,
-				"height": 260
-			},
-			{
-				"step": "58",
-				"src": "Chest5Part2.png",
-				"width": 118,
-				"height": 350
+				"step": "70",
+				"src": "Step70_Chest5Part2.png",
+				"width": 272,
+				"height": 803
 			},
 			{
 				"step": "80",
-				"src": "DeathAltarSolution.png",
-				"width": 119,
-				"height": 351
+				"src": "Step80_DeathAltarSolution.png",
+				"width": 271,
+				"height": 800
 			}
 		]
 	},
@@ -12365,7 +12359,14 @@
 	},
 	{
 		"name": "Underground Pass",
-		"images": []
+		"images": [
+			{
+				"step": "6",
+				"src": "UndergroundPassMap.png",
+				"width": 600,
+				"height": 875
+			}
+		]
 	},
 	{
 		"name": "Unwelcome Guests",
