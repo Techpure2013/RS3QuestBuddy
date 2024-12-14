@@ -1,0 +1,365 @@
+@font-face {
+  font-family: rs3Font;
+  src: url("./../fonts/RS3Font.woff2");
+  font-weight: 100 700;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+:root {
+  --title-color: #84b1df;
+  font-family: rs3Font;
+  --mantine-font-family: rs3Font !important;
+  --completed: #24bf58;
+  --rs3-background: url("./../background.png") !important;
+}
+.Settings {
+  background-image: url("./../background.png");
+}
+body {
+  background-image: var(--rs3-background);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-image: var(--rs3-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #555;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f1f1f1f1;
+}
+
+h2 {
+  text-align: center;
+}
+
+label,
+.mantine-Accordion-control,
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: 550;
+}
+
+.Notepad {
+  font-family: rs3Font;
+}
+
+.Notepad .ql-toolbar .ql-stroke,
+.ql-picker-label {
+  stroke: #ccc;
+  color: #ccc;
+  font-family: rs3Font;
+}
+
+.note {
+  display: flex;
+  justify-content: space-between;
+  background: #1e2832;
+  padding: 0.6rem;
+  gap: 0.6rem;
+  border-radius: 0.6rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.7);
+  font-weight: 400;
+  border: 0.1rem solid #ccc2;
+}
+
+.delete {
+  color: #ca4d4d;
+}
+
+.ql-toolbar.ql-snow {
+  border-radius: 0.6rem 0.6rem 0 0;
+  background: #1e2832;
+}
+
+.ql-container.ql-snow {
+  border-radius: 0 0 0.6rem 0.6rem;
+  background: #ccc1;
+  padding: 0.6rem;
+}
+
+.ql-toolbar.ql-snow,
+.ql-container.ql-snow {
+  border-color: #ccc5;
+}
+
+/* Toolbar buttons hover/active */
+.ql-toolbar button {
+  color: var(--mantine-text-color) !important;
+  stroke: var(--mantine-text-color) !important;
+}
+
+.ql-toolbar button:hover *,
+.ql-picker-label:hover,
+.ql-picker-label:hover *,
+.ql-toolbar .ql-active .ql-stroke {
+  color: var(--title-color) !important;
+  stroke: var(--title-color) !important;
+}
+
+.ApplySkillsButton {
+  left: 0.3rem;
+}
+
+.RefreshButton {
+  left: 0.6rem;
+}
+
+.SortButton,
+.RefreshButton,
+.ApplySkillsButton {
+  margin-top: 0.3rem;
+  size: 1.2rem;
+}
+
+.SearchContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.3rem;
+  padding: 0.3rem;
+  align-items: flex-end;
+}
+
+.SearchQuest,
+.PlayerSearch {
+  width: 50%;
+  color: var(--title-color);
+}
+
+.mantine-Accordion-root {
+  display: block;
+  width: 100%;
+  z-index: 10;
+  /* Set a lower z-index to ensure it stays behind other elements */
+  padding: 1.25rem 0;
+}
+
+.mantine-Accordion-item button {
+  color: var(--title-color);
+}
+
+.mantine-List-root {
+  list-style-type: none;
+  display: block;
+}
+
+.mantine-Stepper-stepIcon {
+  color: #575757;
+}
+
+.mantine-Accordion-control:hover {
+  background-color: #30497e;
+}
+
+.quill > .ql-container > .ql-editor.ql-blank::before {
+  font-size: 0.8rem;
+  color: #f1f1f1f1;
+}
+.mantine-Stepper-stepBody {
+  color: #f1f1f1f1;
+}
+/* .chevron {
+	&[data-rotate] {
+		transform: rotate(180deg);
+	}
+} */
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.App {
+  text-align: center;
+}
+
+.caroQTitle {
+  color: var(--title-color);
+  text-align: center;
+}
+
+.caroContainer {
+  top: 0.6rem;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 550;
+  color: var(--title-color);
+  padding-top: 1rem;
+}
+
+.questContainer {
+  display: flex;
+
+  flex-direction: column;
+}
+
+img {
+  bottom: auto;
+  justify-content: center;
+  margin: auto;
+  display: block;
+  image-rendering: pixelated;
+}
+
+.stepperContainer {
+  max-height: 25rem;
+  /* Set the desired height for the stepper container */
+
+  margin-top: 1rem;
+  /* Adjust as needed to create space between buttons and stepper */
+}
+
+/* .buttonsGroup {
+    position: fixed;
+
+    left: 40%;
+    display: flex;
+    gap: 10px;
+} */
+.ButtonGroupTwo {
+  justify-content: flex-start;
+  right: 1.2rem;
+  gap: 0.6rem;
+}
+
+/* Save this buttons class for later use maybe */
+.prevNextGroup {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  gap: 0.6rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 166;
+  padding: 0.3rem;
+  background: var(--rs3-background);
+}
+
+.mantine-Button-root {
+  font-size: 1rem;
+  border-radius: 0.25em;
+  /* Optional: Rounded corners */
+  box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.7);
+  /* Shadow on the bottom right */
+}
+.mantine-Button-root:not(:disabled),
+.mantine-ActionIcon-root {
+  --mantine-color-blue-outline: #ccc;
+  background: var(--rs3-background);
+  font-weight: 450;
+}
+
+.mantine-Button-root:hover:not(:disabled) {
+  background-color: hsla(200, 25%, 50%, 0.3);
+}
+
+.navLink {
+  text-decoration: none;
+  color: var(--title-color);
+}
+
+.mantine-Stepper-stepDescription {
+  justify-content: flex-start;
+  width: auto;
+  font-family: rs3Font;
+  font-size: 0.9rem;
+}
+
+.stepperStep:not([data-completed]):not([data-progress])
+  .mantine-Stepper-stepDescription {
+  color: #bdb6b6 !important;
+}
+
+[data-progress],
+[data-progress] .mantine-Stepper-stepDescription {
+  color: var(--mantine-text-color);
+}
+
+[data-active] {
+  --_separator-border-color: var(--completed) !important;
+}
+[data-completed] .mantine-Stepper-stepLabel {
+  color: var(--completed) !important;
+}
+.mantine-Stepper-stepIcon {
+  background: linear-gradient(
+    to bottom,
+    #546576,
+    #3d4b5a,
+    #2c3742,
+    #1e2832,
+    #141b23,
+    #0c1117
+  );
+}
+
+.mantine-Stepper-stepLabel {
+  font-size: 1.2rem;
+  font-family: rs3Font;
+  color: var(--title-color);
+}
+
+.mantine-TextInput-label {
+  font-family: rs3Font;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+}
+
+.custom-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  width: 50vh;
+}
+.mantine-Stepper-steps {
+  padding-bottom: 4.3rem;
+}
+
+#prev-next {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  gap: 0.3rem;
+  align-items: center;
+}
+#icons > button {
+  margin: 0.3rem;
+}
+#return-image {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  flex: 1;
+  justify-content: space-evenly;
+}
+.return {
+  padding: 0.3rem 0.45rem;
+}
+
+/* Carousel overrides */
+.mantine-Carousel-control {
+  transition: 0.3s ease-in-out;
+}
+.mantine-Carousel-control[data-inactive] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.mantine-Carousel-control:not([data-inactive]):hover {
+  background-color: var(--title-color);
+  border-color: var(--title-color);
+}
