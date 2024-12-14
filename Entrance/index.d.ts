@@ -13,6 +13,7 @@ import "@mantine/core/styles/CloseButton.css";
 import "@mantine/core/styles/Group.css";
 import "@mantine/core/styles/Loader.css";
 import "@mantine/core/styles/Overlay.css";
+import "@mantine/core/styles/Modal.css";
 import "@mantine/core/styles/ModalBase.css";
 import "@mantine/core/styles/Input.css";
 import "@mantine/core/styles/Flex.css";
