@@ -991,7 +991,11 @@ body {
 h2 {
 	text-align: center;
 }
-
+.mantine-Stepper-root {
+	orientation: vertical;
+	max-height: 23em;
+	padding-top: 1em;
+}
 label,
 .mantine-Accordion-control,
 h1,
@@ -1161,14 +1165,6 @@ img {
 	margin: auto;
 	display: block;
 	image-rendering: pixelated;
-}
-
-.stepperContainer {
-	max-height: 25rem;
-	/* Set the desired height for the stepper container */
-
-	margin-top: 1rem;
-	/* Adjust as needed to create space between buttons and stepper */
 }
 
 /* .buttonsGroup {
