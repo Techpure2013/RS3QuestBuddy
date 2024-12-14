@@ -1,0 +1,80 @@
+/// <reference types="node" />
+import DialogReader, { DialogButton } from "alt1/dialog";
+import { TypedEmitter } from "./TypeEmitter";
+import { diagFinder } from "./handleImage";
+type Points = {
+    x: number;
+    y: number;
+    width: number;
+    buttonX: number;
+    displayIndex: number;
+};
+type readerEvents = {
+    change: {
+        dialogTitle: string;
+        readOption: DialogButton[] | null;
+        charDialog: string | undefined;
+        bestMatchX: Points["x"];
+        bestMatchY: Points["y"];
+        currentBestMatches: Points[];
+        previousBestMatches: Points[];
+        ReadOptionStart: () => void;
+    };
+};
+export declare class DiagReader extends TypedEmitter<readerEvents> {
+    diagInterval: number;
+    color: number;
+    textColor: number;
+    diagW: number;
+    diagH: number;
+    diagX: number;
+    diagY: number;
+    charDialog: string | undefined;
+    readOption: DialogButton[] | null;
+    currentBestMatches: Points[];
+    previousBestMatches: Points[];
+    bestMatchX: Points["x"];
+    bestMatchY: Points["y"];
+    diagTitle: string;
+    coordX: number;
+    coordY: number;
+    buttonX: number;
+    diagReader: DialogReader;
+    cTStore: string[];
+    uniqueCoordinates: Record<string, {
+        x: number;
+        y: number;
+    }>;
+    coordinateCounts: Record<string, number>;
+    optionInterval: number | null;
+    dialogInterval: number;
+    displayNumber: number;
+    widthBox: number;
+    anyOption: boolean;
+    dialogHelp: diagFinder;
+    intervalIds: any[];
+    prevTitle: string;
+    timeoutID: NodeJS.Timeout | undefined;
+    intervalId: NodeJS.Timeout | undefined;
+    optionFound: boolean;
+    constructor();
+    start(): void;
+    getCState(): readerEvents["change"];
+    toggleOptionInterval(run: boolean, interval: number): void;
+    toggleOptionRun(run: boolean): void;
+    private readDiagOptions;
+    private updateDiagDimensions;
+    private processDialog;
+    private bestMatchIndex;
+    private maxIteration;
+    private iterationCount;
+    private processMatching;
+    private findBestMatchIndex;
+    levenshteinDistance(a: string, b: string): number;
+    private resetVariables;
+    private populateUniqueCoordinates;
+    private readCapture;
+    private handleCoordinates;
+    private displayBox;
+}
+export {};
