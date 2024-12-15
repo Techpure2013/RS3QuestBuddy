@@ -1,6 +1,6 @@
 @font-face {
 	font-family: rs3Font;
-	src: url("./../fonts/RS3Font.woff2");
+	src: url("./../fonts/RS3Font.woff2") format("woff2");
 	font-weight: 100 700;
 }
 
@@ -14,9 +14,6 @@
 	--mantine-font-family: rs3Font !important;
 	--completed: #24bf58;
 	--rs3-background: url("./../background.png") !important;
-}
-.Settings {
-	background-image: url("./../background.png");
 }
 body {
 	background-image: var(--rs3-background);
@@ -38,6 +35,10 @@ body {
 
 h2 {
 	text-align: center;
+}
+.stepperContainer {
+	display: flex;
+	flex-direction: column !important;
 }
 .mantine-Stepper-root {
 	orientation: vertical;

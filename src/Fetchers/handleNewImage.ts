@@ -44,7 +44,7 @@ export const QuestImageFetcher: React.FC<QuestImageType> = ({
 			// Fetch the JSON from the provided URL
 			const response = await fetch(QuestListJSON);
 			const imageList = await response.json();
-			console.log("Image List", imageList);
+
 			// Check if the fetched data is an array
 			if (!Array.isArray(imageList)) {
 				console.error("QuestImageList.json is not an array.");
@@ -61,7 +61,7 @@ export const QuestImageFetcher: React.FC<QuestImageType> = ({
 			const questInfo = imageList.find((quest: { name: string }) => {
 				if (quest.name) {
 					const sanitizedQuestNameInList = sanitizeString(quest.name.trim());
-					console.log(sanitizedQuestNameInList, sanitizedQuestName);
+
 					return sanitizedQuestNameInList === sanitizedQuestName;
 				}
 				return false; // Skip entries without a name

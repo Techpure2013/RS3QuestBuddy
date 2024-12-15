@@ -1,18 +1,18 @@
 import * as a1lib from "alt1";
 
 import { ImgRef } from "alt1/base";
-import regNpcBox from "./../../assets/DiagAssets/diagboxNpc.png";
-import userSideCorner from "./../../assets/DiagAssets/diagboxSelf.png";
-import diagBoxContinueB from "./../../assets/DiagAssets/continueReg.png";
-import regBoxContinueBHov from "/assets/DiagAssets/continueHover.png";
-import legacyNpcCorner from "./../../assets/DiagAssets/legacyNpcSide.png";
-import legacyUserCorner from "./../../assets/DiagAssets/legacyUserSide.png";
-import legacyContinueHover from "./../../assets/DiagAssets/legacyHoveredContinue.png";
-import legacyContinueButton from "./../../assets/DiagAssets/legacyContinueButtonAlt.png";
-import generalbox from "./../../assets/DiagAssets/genboximage.png";
-import acceptButton from "./../../assets/DiagAssets/AcceptButton.png";
-import dialogOptionButton from "./../../assets/DiagAssets/regularButton.png";
-import fontHeavy from "./../../assets/DiagAssets/Fonts/aa_8px_mono_allcaps.data.png";
+
+require("./../../assets/DiagAssets/diagboxSelf.png");
+require("./../../assets/DiagAssets/continueReg.png");
+require("./../../assets/DiagAssets/continueHover.png");
+require("./../../assets/DiagAssets/legacyNpcSide.png");
+require("./../../assets/DiagAssets/legacyUserSide.png");
+require("./../../assets/DiagAssets/legacyContinueButton.png");
+require("./../../assets/DiagAssets/legacyContinueButtonAlt.png");
+require("./../../assets/DiagAssets/genboximage.png");
+require("./../../assets/DiagAssets/AcceptButton.png");
+require("./../../assets/DiagAssets/regularButton.png");
+require("./../../assets/DiagAssets/Fonts/aa_8px_mono_allcaps.data.png");
 
 export class diagFinder {
 	legTitleColor = a1lib.mixColor(255, 152, 31);
@@ -37,18 +37,27 @@ export class diagFinder {
 
 	async loadImageData() {
 		const imgPack = {
-			diagboxSide: await a1lib.imageDataFromUrl(regNpcBox),
-			diagboxSideSelf: await a1lib.imageDataFromUrl(userSideCorner),
-			legDiagBoxNpc: await a1lib.imageDataFromUrl(legacyNpcCorner),
-			legDiagBoxUser: await a1lib.imageDataFromUrl(legacyUserCorner),
-			diagboxContinueButton: await a1lib.imageDataFromUrl(diagBoxContinueB),
-			diagBoxContinueHover: await a1lib.imageDataFromUrl(regBoxContinueBHov),
-			legacyContButton: await a1lib.imageDataFromUrl(legacyContinueButton),
-			legacyContinueButtonHover: await a1lib.imageDataFromUrl(legacyContinueHover),
-			genbox: await a1lib.imageDataFromUrl(generalbox),
-			acceptButton: await a1lib.imageDataFromUrl(acceptButton),
-			dialogOptionButton: await a1lib.imageDataFromUrl(dialogOptionButton),
-			fontH: await a1lib.imageDataFromUrl(fontHeavy),
+			diagboxSideSelf: await a1lib.imageDataFromUrl("./assets/diagboxSelf.png"),
+			legDiagBoxNpc: await a1lib.imageDataFromUrl("./assets/legacyNpcSide.png"),
+			legDiagBoxUser: await a1lib.imageDataFromUrl("./assets/legacyUserSide.png"),
+			diagboxContinueButton: await a1lib.imageDataFromUrl(
+				"./assets/continueReg.png"
+			),
+			diagBoxContinueHover: await a1lib.imageDataFromUrl(
+				"./assets/continueHover.png"
+			),
+			legacyContButton: await a1lib.imageDataFromUrl(
+				"./assets/legacyContinueButton.png"
+			),
+			legacyContinueButtonHover: await a1lib.imageDataFromUrl(
+				"./assets/legacyContinueButtonAlt.png"
+			),
+			genbox: await a1lib.imageDataFromUrl("./assets/genboximage.png"),
+			acceptButton: await a1lib.imageDataFromUrl("./assets/AcceptButton.png"),
+			dialogOptionButton: await a1lib.imageDataFromUrl(
+				"./assets/regularButton.png"
+			),
+			fontH: await a1lib.imageDataFromUrl("./assets/aa_8px_mono_allcaps.data.png"),
 		};
 		return (this.imgPack = imgPack);
 	}

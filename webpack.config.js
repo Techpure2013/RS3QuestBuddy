@@ -42,7 +42,7 @@ module.exports = {
 				test: /\.(png|jpg|jpeg|gif|webp)$/i,
 				type: "asset/resource",
 				generator: {
-					filename: "assets/[name][ext]",
+					filename: "./assets/[name][ext]",
 				},
 			},
 			{
@@ -67,7 +67,7 @@ module.exports = {
 					{
 						loader: "css-loader",
 						options: {
-							url: true,
+							url: false,
 						},
 					},
 				],
@@ -79,7 +79,7 @@ module.exports = {
 					{
 						loader: "css-loader",
 						options: {
-							url: false,
+							url: true,
 						},
 					},
 					"sass-loader",
@@ -89,7 +89,7 @@ module.exports = {
 				test: /\.(woff|woff2|eot|ttf|otf)$/i,
 				type: "asset/resource",
 				generator: {
-					filename: "assets/fonts/[name][ext]",
+					filename: "./assets/fonts/[name][ext]",
 				},
 			},
 		],

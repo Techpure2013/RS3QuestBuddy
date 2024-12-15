@@ -9,8 +9,12 @@ import {
 	Modal,
 	Stepper,
 } from "@mantine/core";
+import "@mantine/core/styles/Stepper.css";
+import "@mantine/core/styles/Accordion.css";
 import { Embla, useAnimationOffsetEffect } from "@mantine/carousel";
 import * as a1lib from "alt1";
+import "@mantine/core/styles.css";
+require("./../../assets/QuestIconEdited.png");
 import {
 	IconBrandDiscord,
 	IconSettings,
@@ -193,9 +197,11 @@ const QuestPage: React.FC = () => {
 		);
 		return uuid;
 	}
+	console.log(questName);
 
 	if (questName.trim() === "The Prisoner of Glouphrie") {
 		isPog = true;
+		console.log(isPog);
 	}
 	if (questName.trim() === "Lunar Diplomacy") {
 		lunarGridActive = true;
@@ -933,7 +939,6 @@ const QuestPage: React.FC = () => {
 			) : (
 				<>
 					<Stepper
-						className="stepperContainer"
 						active={active}
 						orientation="vertical"
 						onStepClick={setActiveAndScroll}
@@ -964,7 +969,7 @@ const QuestPage: React.FC = () => {
 														imgIndex: React.Key | null | undefined
 													) => (
 														<ActionIcon
-															key={imgIndex} // Unique key for each button
+															key={imgIndex}
 															onClick={() =>
 																handlePopOut(index, _img.src, _img.height, _img.width)
 															}
@@ -975,8 +980,9 @@ const QuestPage: React.FC = () => {
 																},
 															}}
 															color={hasButtonColor ? userButtonColor : ""}
-															size={"sm"}
+															size="sm"
 															variant="outline"
+															component="span" // Change to span to prevent button nesting
 														>
 															<IconPhotoFilled />
 														</ActionIcon>
@@ -994,7 +1000,6 @@ const QuestPage: React.FC = () => {
 											color: hasLabelColor ? userLabelColor : "",
 										},
 									}}
-									orientation="vertical"
 									description={value}
 									onClick={() => setActiveAndScroll(index)}
 									allowStepSelect={true}
@@ -1017,7 +1022,7 @@ const QuestPage: React.FC = () => {
 														imgIndex: React.Key | null | undefined
 													) => (
 														<ActionIcon
-															key={imgIndex} // Unique key for each button
+															key={imgIndex}
 															onClick={() =>
 																handlePopOut(index, _img.src, _img.height, _img.width)
 															}
@@ -1028,8 +1033,9 @@ const QuestPage: React.FC = () => {
 																},
 															}}
 															color={hasButtonColor ? userButtonColor : ""}
-															size={"sm"}
+															size="sm"
 															variant="outline"
+															component="span" // Change to span to prevent button nesting
 														>
 															<IconPhotoFilled />
 														</ActionIcon>
@@ -1047,7 +1053,6 @@ const QuestPage: React.FC = () => {
 											visibility: active > index ? "hidden" : "visible",
 										},
 									}}
-									orientation="vertical"
 									description={value}
 									onClick={() => setActiveAndScroll}
 									allowStepSelect={ShouldAllowStep(index)}
@@ -1070,7 +1075,7 @@ const QuestPage: React.FC = () => {
 														imgIndex: React.Key | null | undefined
 													) => (
 														<ActionIcon
-															key={imgIndex} // Unique key for each button
+															key={imgIndex}
 															onClick={() =>
 																handlePopOut(index, _img.src, _img.height, _img.width)
 															}
@@ -1081,8 +1086,9 @@ const QuestPage: React.FC = () => {
 																},
 															}}
 															color={hasButtonColor ? userButtonColor : ""}
-															size={"sm"}
+															size="sm"
 															variant="outline"
+															component="span" // Change to span to prevent button nesting
 														>
 															<IconPhotoFilled />
 														</ActionIcon>
@@ -1096,7 +1102,6 @@ const QuestPage: React.FC = () => {
 											color: hasLabelColor ? userLabelColor : "",
 										},
 									}}
-									orientation="vertical"
 									description={value}
 									onClick={() => setActiveAndScroll}
 									allowStepSelect={ShouldAllowStep(index)}

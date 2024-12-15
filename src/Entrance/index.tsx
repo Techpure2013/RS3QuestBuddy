@@ -1,26 +1,36 @@
 import { useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import "./../assets/css/index.css";
-import "@mantine/core/styles/UnstyledButton.css";
-import "@mantine/core/styles.css";
+
+// 1. Global Mantine styles
 import "@mantine/core/styles/global.css";
-import "@mantine/core/styles/Button.css";
-import "@mantine/carousel/styles.css";
-import "@mantine/core/styles/Stepper.css";
-import "@mantine/core/styles/ScrollArea.css";
+
+// 2. Base Mantine styles (core components shared across others)
+import "@mantine/core/styles.css";
 import "@mantine/core/styles/VisuallyHidden.css";
-import "@mantine/core/styles/Paper.css";
-import "@mantine/core/styles/Popover.css";
-import "@mantine/core/styles/CloseButton.css";
+
+// 3. Layout-related styles (for structural components)
+import "@mantine/core/styles/Flex.css";
 import "@mantine/core/styles/Group.css";
-import "@mantine/core/styles/Loader.css";
 import "@mantine/core/styles/Overlay.css";
+import "@mantine/core/styles/Radio.css";
+// 4. Component-specific styles (alphabetical or logical order for clarity)
+import "@mantine/core/styles/Accordion.css";
+import "@mantine/core/styles/CloseButton.css";
+import "@mantine/core/styles/ColorSwatch.css";
+import "@mantine/core/styles/Input.css";
+import "@mantine/core/styles/UnstyledButton.css";
+import "@mantine/core/styles/Button.css";
+import "@mantine/core/styles/Loader.css";
 import "@mantine/core/styles/Modal.css";
 import "@mantine/core/styles/ModalBase.css";
-import "@mantine/core/styles/Input.css";
-import "@mantine/core/styles/Flex.css";
-import "@mantine/core/styles/Accordion.css";
+import "@mantine/core/styles/Paper.css";
+import "@mantine/core/styles/Popover.css";
+import "@mantine/core/styles/ScrollArea.css";
+import "@mantine/core/styles/ActionIcon.css";
+// 5. External Mantine modules
+import "@mantine/carousel/styles.css";
+import "./../assets/css/index.css";
 import { FontSizeProvider } from "./Entrance Components/FontContextProvider";
 import "./../assets/rs3buddyicon.png";
 import "./../assets/fonts/RS3Font.woff2";
@@ -48,7 +58,7 @@ const AltGuard = () => {
 							!window.location.host.includes("localhost")
 								? "RS3QuestBuddy/" //Include repo name (this is only for github pages)
 								: ""
-						}appconfig${
+						}appconfig.${
 							!window.location.host.includes("localhost")
 								? "prod" //Target prod (this is only for github pages)
 								: ""
