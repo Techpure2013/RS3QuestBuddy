@@ -1,3 +1,6 @@
+/*!******************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../node_modules/react-quill/dist/quill.snow.css ***!
+  \******************************************************************************************************************************/
 /*!
  * Quill Editor v1.3.7
  * https://quilljs.com/
@@ -944,6 +947,9 @@
   border: 1px solid #ccc;
 }
 
+/*!*******************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../node_modules/@mantine/core/styles/Stepper.css ***!
+  \*******************************************************************************************************************************/
 .m_cbb4ea7e {
   --stepper-icon-size-xs: 34px;
   --stepper-icon-size-sm: 36px;
@@ -1173,6 +1179,9 @@
   color: var(--mantine-color-dimmed);
 }
 
+/*!*********************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../node_modules/@mantine/core/styles/Accordion.css ***!
+  \*********************************************************************************************************************************/
 .m_9bdbb667 {
   --accordion-radius: var(--mantine-radius-default);
 }
@@ -1359,6 +1368,9 @@
     margin-top: var(--mantine-spacing-md);
   }
 
+/*!***********************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../node_modules/@mantine/core/styles.css ***!
+  \***********************************************************************************************************************/
 /* ----- CSS reset ----- */
 *,
 *::before,
@@ -8985,6 +8997,9 @@ fieldset:disabled .m_c9ade57f:where([data-inverted]),
       background-color: var(--mantine-color-dark-8);
 }
 
+/*!******************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../node_modules/@mantine/core/styles/global.css ***!
+  \******************************************************************************************************************************/
 /* ----- CSS reset ----- */
 *,
 *::before,
@@ -9574,6 +9589,9 @@ fieldset:disabled .mantine-active:active {
   --mantine-color-orange-outline-hover: rgba(253, 126, 20, 0.05);
 }
 
+/*!**************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../node_modules/@mantine/core/styles/VisuallyHidden.css ***!
+  \**************************************************************************************************************************************/
 .m_515a97f8 {
   border: 0;
   clip: rect(0 0 0 0);
@@ -9586,10 +9604,16 @@ fieldset:disabled .mantine-active:active {
   white-space: nowrap;
 }
 
+/*!****************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../node_modules/@mantine/core/styles/Flex.css ***!
+  \****************************************************************************************************************************/
 .m_8bffd616 {
   display: flex;
 }
 
+/*!*****************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../node_modules/@mantine/core/styles/Group.css ***!
+  \*****************************************************************************************************************************/
 .m_4081bf90 {
   display: flex;
   flex-direction: row;
@@ -9604,6 +9628,9 @@ fieldset:disabled .mantine-active:active {
       max-width: var(--group-child-width);
     }
 
+/*!*******************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../node_modules/@mantine/core/styles/Overlay.css ***!
+  \*******************************************************************************************************************************/
 .m_9814e45f {
   inset: 0;
   position: absolute;
@@ -9624,6 +9651,9 @@ fieldset:disabled .mantine-active:active {
     justify-content: center;
   }
 
+/*!*****************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../node_modules/@mantine/core/styles/Radio.css ***!
+  \*****************************************************************************************************************************/
 .m_f3f1af94 {
   --radio-size-xs: 16px;
   --radio-size-sm: 20px;
@@ -9746,6 +9776,9 @@ fieldset:disabled .mantine-active:active {
       --radio-icon-transform: none;
     }
 
+/*!**********************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../node_modules/@mantine/core/styles/ActionIcon.css ***!
+  \**********************************************************************************************************************************/
 .m_8d3f4000 {
   --ai-size-xs: 18px;
   --ai-size-sm: 22px;
@@ -9943,6 +9976,9 @@ fieldset:disabled .mantine-active:active {
   justify-content: center;
 }
 
+/*!***********************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../node_modules/@mantine/core/styles/CloseButton.css ***!
+  \***********************************************************************************************************************************/
 .m_86a44da5 {
   --cb-size-xs: 18px;
   --cb-size-sm: 22px;
@@ -10002,6 +10038,9 @@ fieldset:disabled .mantine-active:active {
   }
 }
 
+/*!***********************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../node_modules/@mantine/core/styles/ColorSwatch.css ***!
+  \***********************************************************************************************************************************/
 .m_de3d2490 {
   --cs-size: 28px;
   --cs-radius: 1000px;
@@ -10073,6 +10112,9 @@ fieldset:disabled .mantine-active:active {
   justify-content: center;
 }
 
+/*!*****************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../node_modules/@mantine/core/styles/Input.css ***!
+  \*****************************************************************************************************************************/
 .m_6c018570 {
   position: relative;
   margin-top: var(--input-margin-top, 0rem);
@@ -10372,6 +10414,9 @@ fieldset:disabled .mantine-active:active {
   font-size: var(--input-description-size, calc(var(--mantine-font-size-sm) - calc(0.125rem * var(--mantine-scale))));
 }
 
+/*!**************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../node_modules/@mantine/core/styles/UnstyledButton.css ***!
+  \**************************************************************************************************************************************/
 .m_87cf2631 {
   background-color: transparent;
   cursor: pointer;
@@ -10390,6 +10435,9 @@ fieldset:disabled .mantine-active:active {
     text-align: right;
 }
 
+/*!******************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../node_modules/@mantine/core/styles/Button.css ***!
+  \******************************************************************************************************************************/
 .m_77c9d27d {
   --button-height-xs: 30px;
   --button-height-sm: 36px;
@@ -10660,6 +10708,9 @@ fieldset:disabled .mantine-active:active {
   justify-content: center;
 }
 
+/*!******************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../node_modules/@mantine/core/styles/Loader.css ***!
+  \******************************************************************************************************************************/
 .m_5ae2e3c {
   --loader-size-xs: 18px;
   --loader-size-sm: 22px;
@@ -10775,6 +10826,9 @@ fieldset:disabled .mantine-active:active {
     animation: m_f8e89c4b 1.2s linear infinite;
   }
 
+/*!*****************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../node_modules/@mantine/core/styles/Modal.css ***!
+  \*****************************************************************************************************************************/
 .m_9df02822 {
   --modal-size-xs: 320px;
   --modal-size-sm: 380px;
@@ -10837,6 +10891,9 @@ fieldset:disabled .mantine-active:active {
   padding-inline: var(--modal-inner-x-offset, var(--modal-x-offset));
 }
 
+/*!*********************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../node_modules/@mantine/core/styles/ModalBase.css ***!
+  \*********************************************************************************************************************************/
 .m_615af6c9 {
   line-height: 1;
   padding: 0;
@@ -10894,6 +10951,9 @@ fieldset:disabled .mantine-active:active {
     padding-top: 0;
   }
 
+/*!*****************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../node_modules/@mantine/core/styles/Paper.css ***!
+  \*****************************************************************************************************************************/
 .m_1b7284a3 {
   --paper-radius: var(--mantine-radius-default);
 
@@ -10915,6 +10975,9 @@ fieldset:disabled .mantine-active:active {
       border: calc(0.0625rem * var(--mantine-scale)) solid var(--mantine-color-dark-4);
 }
 
+/*!*******************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../node_modules/@mantine/core/styles/Popover.css ***!
+  \*******************************************************************************************************************************/
 .m_38a85659 {
   position: absolute;
   border: 1px solid var(--popover-border-color);
@@ -10947,6 +11010,9 @@ fieldset:disabled .mantine-active:active {
   z-index: 1;
 }
 
+/*!**********************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../node_modules/@mantine/core/styles/ScrollArea.css ***!
+  \**********************************************************************************************************************************/
 .m_d57069b5 {
   --scrollarea-scrollbar-size: 12px;
 
@@ -11103,6 +11169,9 @@ fieldset:disabled .mantine-active:active {
     display: none;
   }
 
+/*!***************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../node_modules/@mantine/carousel/styles.css ***!
+  \***************************************************************************************************************************/
 .m_17884d0f {
   --carousel-height: auto;
   position: relative;
@@ -11272,9 +11341,12 @@ fieldset:disabled .mantine-active:active {
       margin-inline-end: var(--carousel-slide-gap);
     }
 
+/*!*****************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./assets/css/index.css ***!
+  \*****************************************************************************************************/
 @font-face {
 	font-family: rs3Font;
-	src: url(/assets/fonts/RS3Font.woff2);
+	src: url(/assets/fonts/RS3Font.woff2) format("woff2");
 	font-weight: 100 700;
 }
 
@@ -11288,9 +11360,6 @@ fieldset:disabled .mantine-active:active {
 	--mantine-font-family: rs3Font !important;
 	--completed: #24bf58;
 	--rs3-background: url(/assets/background.png) !important;
-}
-.Settings {
-	background-image: url(/assets/background.png);
 }
 body {
 	background-image: var(--rs3-background);
