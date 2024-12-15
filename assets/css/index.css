@@ -11346,7 +11346,7 @@ fieldset:disabled .mantine-active:active {
   \*****************************************************************************************************/
 @font-face {
 	font-family: rs3Font;
-	src: url(/assets/fonts/RS3Font.woff2) format("woff2");
+	src: url("./assets/fonts/RS3Font.woff2") format("woff2");
 	font-weight: 100 700;
 }
 
@@ -11359,7 +11359,7 @@ fieldset:disabled .mantine-active:active {
 	font-family: rs3Font;
 	--mantine-font-family: rs3Font !important;
 	--completed: #24bf58;
-	--rs3-background: url(/assets/background.png) !important;
+	--rs3-background: url("./assets/background.png") !important;
 }
 body {
 	background-image: var(--rs3-background);
