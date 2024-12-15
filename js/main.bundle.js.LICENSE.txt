@@ -1,0 +1,306 @@
+/*!
+ * Quill Editor v1.3.7
+ * https://quilljs.com/
+ * Copyright (c) 2014, Jason Chen
+ * Copyright (c) 2013, salesforce.com
+ */
+
+/*!
+* tabbable 6.2.0
+* @license MIT, https://github.com/focus-trap/tabbable/blob/master/LICENSE
+*/
+
+/*! . */
+
+/*! ../fonts/aa_8px_mono.fontmeta.json */
+
+/*! ../fonts/aa_8px_mono_allcaps.fontmeta.json */
+
+/*! ./alt1api */
+
+/*! ./declarations */
+
+/*! ./imagedata-extensions */
+
+/*! ./imagedetect */
+
+/*! ./imgref */
+
+/*! ./imgs/12pt.fontmeta.json */
+
+/*! ./imgs/boxtl.data.png */
+
+/*! ./imgs/boxtl_leg.data.png */
+
+/*! ./imgs/boxtr.data.png */
+
+/*! ./imgs/boxtr_leg.data.png */
+
+/*! ./imgs/chatimg.data.png */
+
+/*! ./imgs/chatimg_leg.data.png */
+
+/*! ./imgs/chatimgactive.data.png */
+
+/*! ./imgs/chatimgactive_leg.data.png */
+
+/*! ./imgs/chatimghover.data.png */
+
+/*! ./imgs/chatimghover_leg.data.png */
+
+/*! ./imgs/continueimg.data.png */
+
+/*! ./imgs/continueimg_leg.data.png */
+
+/*! ./imgs/continueimgdown.data.png */
+
+/*! ./imgs/continueimgdown_leg.data.png */
+
+/*! ./index */
+
+/*! ./nodepolyfill */
+
+/*! ./pasteinput */
+
+/*! ./rect */
+
+/*! ./wrapper */
+
+/*! alt1/base */
+
+/*! alt1/ocr */
+
+/*! canvas */
+
+/*! electron/common */
+
+/*! sharp */
+
+/*!************************!*\
+  !*** external "sharp" ***!
+  \************************/
+
+/*!*************************!*\
+  !*** external "canvas" ***!
+  \*************************/
+
+/*!**************************!*\
+  !*** ./src/base/rect.ts ***!
+  \**************************/
+
+/*!**************************!*\
+  !*** ./src/ocr/index.ts ***!
+  \**************************/
+
+/*!***************************!*\
+  !*** ./src/base/index.ts ***!
+  \***************************/
+
+/*!****************************!*\
+  !*** ./src/base/imgref.ts ***!
+  \****************************/
+
+/*!*****************************!*\
+  !*** ./src/base/alt1api.ts ***!
+  \*****************************/
+
+/*!*****************************!*\
+  !*** ./src/base/wrapper.ts ***!
+  \*****************************/
+
+/*!*****************************!*\
+  !*** ./src/dialog/index.ts ***!
+  \*****************************/
+
+/*!********************************!*\
+  !*** ./src/base/pasteinput.ts ***!
+  \********************************/
+
+/*!*********************************!*\
+  !*** ./src/base/imagedetect.ts ***!
+  \*********************************/
+
+/*!**********************************!*\
+  !*** ./src/base/declarations.ts ***!
+  \**********************************/
+
+/*!**********************************!*\
+  !*** ./src/base/nodepolyfill.ts ***!
+  \**********************************/
+
+/*!**********************************!*\
+  !*** external "electron/common" ***!
+  \**********************************/
+
+/*!****************************************!*\
+  !*** ./src/dialog/imgs/boxtl.data.png ***!
+  \****************************************/
+
+/*!****************************************!*\
+  !*** ./src/dialog/imgs/boxtr.data.png ***!
+  \****************************************/
+
+/*!******************************************!*\
+  !*** ./src/base/imagedata-extensions.ts ***!
+  \******************************************/
+
+/*!******************************************!*\
+  !*** ./src/dialog/imgs/chatimg.data.png ***!
+  \******************************************/
+
+/*!********************************************!*\
+  !*** ./src/dialog/imgs/12pt.fontmeta.json ***!
+  \********************************************/
+
+/*!********************************************!*\
+  !*** ./src/dialog/imgs/boxtl_leg.data.png ***!
+  \********************************************/
+
+/*!********************************************!*\
+  !*** ./src/dialog/imgs/boxtr_leg.data.png ***!
+  \********************************************/
+
+/*!*********************************************!*\
+  !*** ./src/fonts/aa_8px_mono.fontmeta.json ***!
+  \*********************************************/
+
+/*!**********************************************!*\
+  !*** ./src/dialog/imgs/chatimg_leg.data.png ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./src/dialog/imgs/continueimg.data.png ***!
+  \**********************************************/
+
+/*!***********************************************!*\
+  !*** ./src/dialog/imgs/chatimghover.data.png ***!
+  \***********************************************/
+
+/*!************************************************!*\
+  !*** ./src/dialog/imgs/chatimgactive.data.png ***!
+  \************************************************/
+
+/*!**************************************************!*\
+  !*** ./src/dialog/imgs/continueimg_leg.data.png ***!
+  \**************************************************/
+
+/*!**************************************************!*\
+  !*** ./src/dialog/imgs/continueimgdown.data.png ***!
+  \**************************************************/
+
+/*!***************************************************!*\
+  !*** ./src/dialog/imgs/chatimghover_leg.data.png ***!
+  \***************************************************/
+
+/*!****************************************************!*\
+  !*** ./src/dialog/imgs/chatimgactive_leg.data.png ***!
+  \****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./src/fonts/aa_8px_mono_allcaps.fontmeta.json ***!
+  \*****************************************************/
+
+/*!******************************************************!*\
+  !*** ./src/dialog/imgs/continueimgdown_leg.data.png ***!
+  \******************************************************/
+
+/*!*********************************************************************************************!*\
+  !*** external {"root":"OCR","commonjs2":"alt1/ocr","commonjs":"alt1/ocr","amd":"alt1/ocr"} ***!
+  \*********************************************************************************************/
+
+/*!**************************************************************************************************!*\
+  !*** external {"root":"A1lib","commonjs2":"alt1/base","commonjs":"alt1/base","amd":"alt1/base"} ***!
+  \**************************************************************************************************/
+
+/**
+ * @license React
+ * react-dom.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * @license React
+ * react.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * @license React
+ * scheduler.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * @license React
+ * use-sync-external-store-shim.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * @license React
+ * use-sync-external-store-shim/with-selector.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * @remix-run/router v1.11.0
+ *
+ * Copyright (c) Remix Software Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
+ */
+
+/**
+ * React Router DOM v6.18.0
+ *
+ * Copyright (c) Remix Software Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
+ */
+
+/**
+ * React Router v6.18.0
+ *
+ * Copyright (c) Remix Software Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
+ */
