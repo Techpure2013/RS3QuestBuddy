@@ -14,6 +14,7 @@ import "@mantine/core/styles/Loader.css";
 import "@mantine/core/styles/Overlay.css";
 import "@mantine/core/styles/Modal.css";
 import "@mantine/core/styles/ModalBase.css";
+import "@mantine/core/styles/ActionIcon.css";
 import "@mantine/core/styles/Input.css";
 import "@mantine/core/styles/Flex.css";
 import "./../assets/css/index.css";
