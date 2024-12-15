@@ -1,5 +1,6 @@
 import "@mantine/core/styles/global.css";
 import "@mantine/core/styles.css";
+import "@mantine/core/styles/ColorSwatch.css";
 import "@mantine/carousel/styles.css";
 import "@mantine/core/styles/Accordion.css";
 import "@mantine/core/styles/UnstyledButton.css";
