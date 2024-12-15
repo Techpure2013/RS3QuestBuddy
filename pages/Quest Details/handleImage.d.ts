@@ -14,7 +14,6 @@ export declare class diagFinder {
     constructor();
     initialize(): Promise<void>;
     loadImageData(): Promise<{
-        diagboxSide: ImageData;
         diagboxSideSelf: ImageData;
         legDiagBoxNpc: ImageData;
         legDiagBoxUser: ImageData;

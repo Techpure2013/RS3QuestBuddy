@@ -11346,7 +11346,7 @@ fieldset:disabled .mantine-active:active {
   \*****************************************************************************************************/
 @font-face {
 	font-family: rs3Font;
-	src: url("./../../RS3Font.woff2") format("woff2");
+	src: url("./../fonts/RS3Font.woff2") format("woff2");
 	font-weight: 100 700;
 }
 
