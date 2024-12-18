@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from "react";
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import React, { useState, useEffect, useRef, lazy, Suspense } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import {
 	Accordion,
 	ActionIcon,
@@ -11,8 +11,6 @@ import {
 } from "@mantine/core";
 import "@mantine/core/styles/Stepper.css";
 import "@mantine/core/styles/Accordion.css";
-import { Embla, useAnimationOffsetEffect } from "@mantine/carousel";
-import * as a1lib from "alt1";
 import "@mantine/core/styles.css";
 require("./../../assets/QuestIconEdited.png");
 import {
@@ -30,6 +28,7 @@ import {
 	QuestDetailsFetcher,
 	useQuestDetailsStore,
 } from "./../../Fetchers/FetchQuestDetails";
+import { useQuestPaths } from "./../../Fetchers/useQuestData";
 import { useQuestControllerStore } from "./../../Handlers/HandlerStore";
 import { createRoot } from "react-dom/client";
 import { DiagReader } from "./dialogsolver";
@@ -39,46 +38,60 @@ import { Settings } from "./../Settings/Settings";
 import { useDisclosure } from "@mantine/hooks";
 import useNotesDisclosure from "./Quest Detail Components/useDisclosure";
 import usePOGDisclosure from "./Quest Detail Components/POGCalcDisclosure";
-import { UserNotes } from "./userNotes";
-import Grid from "./Quest Detail Components/UndergroundPassGrid";
-import LunarGrid from "./Quest Detail Components/LunarDiplomacyGrid";
+import { UserNotes } from "./../Settings/userNotes";
 import { Image } from "./Quest Detail Components/ImageInterface";
-import ColorCalculator from "./Quest Detail Components/POGCalc";
 import useGridDisclosure from "./Quest Detail Components/useGridModal";
 import useLunarGridDisclosure from "./Quest Detail Components/useLunarDisclosure";
+import { useQuestPageFunctions } from "./questPageFunctions";
 import {
 	QuestImageFetcher,
 	UseImageStore,
 } from "./../../Fetchers/handleNewImage";
+const UnderGroundPassGrid = React.lazy(
+	() =>
+		new Promise<{ default: React.ComponentType<any> }>((resolve) => {
+			resolve({
+				default: require("./Quest Detail Components/UndergroundPassGrid").default,
+			});
+		})
+);
+const LunarGrid = React.lazy(
+	() =>
+		new Promise<{ default: React.ComponentType<any> }>((resolve) => {
+			resolve({
+				default: require("./Quest Detail Components/LunarDiplomacyGrid").default,
+			});
+		})
+);
+const ColorCalculator = React.lazy(
+	() =>
+		new Promise<{ default: React.ComponentType<any> }>((resolve) => {
+			resolve({ default: require("./Quest Detail Components/POGCalc").default });
+		})
+);
+const QuestDetailContents = React.lazy(
+	() =>
+		new Promise<{ default: React.ComponentType<any> }>((resolve) => {
+			resolve({
+				default: require("./Quest Detail Components/QuestDetailsAccordion").default,
+			});
+		})
+);
 const QuestPage: React.FC = () => {
 	// Define constants for local storage keys to avoid typos and ensure consistency
+	const { questPaths, QuestDataPaths, getQuestSteps } = useQuestPaths();
+	const {
+		ignoredRequirements,
+		create_ListUUID,
+		useAlt1Listener,
+		handleBackButton,
+		openDiscord,
+	} = useQuestPageFunctions();
+	const location = useLocation();
 	const LOCAL_STORAGE_KEYS = {
 		expandAllAccordions: "expandAllAccordions",
 	};
 	const qpname = useLocation();
-	const TRANSITION_DURATION = 200;
-	const ignoredRequirements = new Set([
-		"Ironmen",
-		"Ironman",
-		"Be ",
-		"Access",
-		"Ability to",
-		"Time Served",
-		"Find",
-		"Complete the base camp tutorial on Anachronia",
-		"Rescue Mad Eadgar from the Troll Stronghold",
-		"Able To",
-		"Claim Kudos",
-		"You must be using the standard spells or be able to use Spellbook Swap",
-		"Completion of",
-		"To make",
-		"Achieve",
-		"Bring Leela to Senliten's tomb",
-		"If Icthlarin's Little Helper was completed prior to the addition of Stolen Hearts and Diamond in the Rough, they must be completed before Contact! can be started (or completed).",
-		"For Ironmen",
-	]);
-	const [embla] = useState<Embla | null>(null);
-	useAnimationOffsetEffect(embla, TRANSITION_DURATION);
 	let { questName, modified } = qpname.state;
 	const [opened, { open, close }] = useDisclosure(false);
 	const [openedGrid, { openGrid, closeGrid }] = useGridDisclosure(false);
@@ -89,22 +102,23 @@ const QuestPage: React.FC = () => {
 	const questlistJSON = "./Quest Data/QuestPaths.json";
 	let textfile = modified + "info.txt";
 	const reader = new DiagReader();
-	const hist = useNavigate();
 	const details = useQuestStepStore();
 	const imageDetails = UseImageStore();
 	const stepRefs = useRef<React.RefObject<HTMLDivElement>[]>([]);
 	const QuestDetails = useQuestDetailsStore.getState().questDetails;
-	const [isHighlight, setIsHighlight] = useState(false);
 	let isPog = false;
 	let gridActive = false;
 	let lunarGridActive = false;
-	const [stepHidden, setStepHidden] = useState(false);
-	const [userColor, setUserColor] = useState("");
-	const [userLabelColor, setUserLabelColor] = useState("");
-	const [userButtonColor, setUserButtonColor] = useState("");
-	const [hasColor, setHasColor] = useState(false);
-	const [hasButtonColor, setHasButtonColor] = useState(false);
-	const [hasLabelColor, setHasLabelColor] = useState(false);
+	const [uiState, setUiState] = useState({
+		isHighlight: false,
+		hasColor: false,
+		hasButtonColor: false,
+		hasLabelColor: false,
+		userColor: "",
+		userLabelColor: "",
+		userButtonColor: "",
+	});
+
 	let [isPOGOpen, { pogModOpen, pogModClose }] = usePOGDisclosure(false);
 	let [isOpened, { openNotes, closedNotes }] = useNotesDisclosure(false);
 	const isOpenNotes = useRef(false);
@@ -116,6 +130,7 @@ const QuestPage: React.FC = () => {
 	const storedExpandAll = localStorage.getItem(
 		LOCAL_STORAGE_KEYS.expandAllAccordions
 	);
+
 	const [expanded, setExpanded] = useState<string[]>(() => {
 		const isExpandAll =
 			storedExpandAll !== null ? JSON.parse(storedExpandAll) : false;
@@ -140,7 +155,16 @@ const QuestPage: React.FC = () => {
 			}
 		}
 	};
-
+	useEffect(() => {
+		console.log("Component rendered!");
+	}, []);
+	useEffect(() => {
+		// Combine fetching quest paths and steps
+		QuestDataPaths();
+		if (questPaths) {
+			getQuestSteps(questName);
+		}
+	}, [questPaths]);
 	useEffect(() => {
 		const completedQuests = window.sessionStorage.getItem("hasCompleted");
 		const skill = sessionStorage.getItem("skillLevels");
@@ -174,34 +198,9 @@ const QuestPage: React.FC = () => {
 			document.removeEventListener("keydown", handleKeyDown);
 		};
 	}, []);
-	const handleBackButton = () => {
-		// Navigate to home
-		hist("/");
-
-		// Check if popOutWindow exists and close it
-		if (handles.popOutWindow) {
-			handles.popOutWindow.close();
-		} else {
-			console.warn("popOutWindow is null or undefined.");
-		}
-	};
-	function create_ListUUID() {
-		var dt = new Date().getTime();
-		var uuid = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(
-			/[xy]/g,
-			function (c) {
-				var r = (dt + Math.random() * 16) % 16 | 0;
-				dt = Math.floor(dt / 16);
-				return (c == "x" ? r : (r & 0x3) | 0x8).toString(16);
-			}
-		);
-		return uuid;
-	}
-	console.log(questName);
 
 	if (questName.trim() === "The Prisoner of Glouphrie") {
 		isPog = true;
-		console.log(isPog);
 	}
 	if (questName.trim() === "Lunar Diplomacy") {
 		lunarGridActive = true;
@@ -379,31 +378,6 @@ const QuestPage: React.FC = () => {
 			scrollIntoView(nextStep);
 		}
 	};
-	const updateButtonVis = () => {
-		const prevNextButtons = document.querySelector(
-			".prevNextGroup"
-		) as HTMLElement;
-		const imageCaro = document.querySelector(
-			".QuestPageImageCaro"
-		) as HTMLElement;
-
-		if (prevNextButtons && imageCaro) {
-			// Check if elements exist
-			const prevNextRect = prevNextButtons.getBoundingClientRect();
-			const imageCaroRect = imageCaro.getBoundingClientRect();
-
-			if (
-				prevNextRect.right > imageCaroRect.left &&
-				prevNextRect.left < imageCaroRect.right &&
-				prevNextRect.bottom > imageCaroRect.top &&
-				prevNextRect.top < imageCaroRect.bottom
-			) {
-				prevNextButtons.style.visibility = "hidden"; // Hide the prevNextButtons
-			} else {
-				prevNextButtons.style.visibility = "visible"; // Show the prevNextButtons
-			}
-		}
-	};
 
 	const handleStepChange = (nextStep: number) => {
 		const stepLength = details.stepDetails.length;
@@ -437,57 +411,23 @@ const QuestPage: React.FC = () => {
 			element.scrollIntoView({ behavior: "smooth", block: "center" });
 		}
 	};
+	const loadUserSettings = () => {
+		const hl = JSON.parse(localStorage.getItem("isHighlighted") || "false");
+		const rs = JSON.parse(localStorage.getItem("removeStep") || "false");
 
-	const useAlt1Listener = (callback: () => void) => {
-		useEffect(() => {
-			const handleAlt1Pressed = () => {
-				callback();
-			};
-
-			// Attach event listener once when component mounts
-
-			a1lib.on("alt1pressed", handleAlt1Pressed);
-
-			// Clean up the listener on unmount
-			return () => {
-				a1lib.removeListener("alt1pressed", handleAlt1Pressed);
-			};
-		}, [callback]); // Only re-run if callback changes
+		setUiState({
+			isHighlight: hl,
+			userColor: localStorage.getItem("textColorValue") || "",
+			userLabelColor: localStorage.getItem("labelColor") || "",
+			userButtonColor: localStorage.getItem("buttonColor") || "",
+			hasColor: !!localStorage.getItem("textColorValue"),
+			hasLabelColor: !!localStorage.getItem("labelColor"),
+			hasButtonColor: !!localStorage.getItem("buttonColor"),
+		});
 	};
 	useEffect(() => {
-		const hl = localStorage.getItem("isHighlighted");
-		const rs = localStorage.getItem("removeStep");
-		const colorVal = localStorage.getItem("textColorValue");
-		const labelCol = localStorage.getItem("labelColor");
-		const buttonCol = localStorage.getItem("buttonColor");
-		if (buttonCol) {
-			setUserButtonColor(buttonCol);
-			setHasButtonColor(true);
-		} else {
-			setHasButtonColor(false);
-		}
-		if (labelCol) {
-			setUserLabelColor(labelCol);
-			setHasLabelColor(true);
-		} else {
-			setHasLabelColor(false);
-		}
-		if (colorVal) {
-			setUserColor(colorVal);
-			setHasColor(true);
-		} else {
-			setHasColor(false);
-		}
-		if (hl !== null) {
-			const highlight = JSON.parse(hl);
-			setIsHighlight(highlight);
-		}
-		if (rs !== null) {
-			const removeStep = JSON.parse(rs);
-			setStepHidden(removeStep);
-		}
-	}, [stepHidden, isHighlight, showStepReq, opened]);
-
+		loadUserSettings();
+	}, [location.key]);
 	useEffect(() => {
 		stepRefs.current = Array.from({ length: details.stepDetails.length }, () =>
 			React.createRef()
@@ -497,29 +437,25 @@ const QuestPage: React.FC = () => {
 	function handleFalse() {
 		isOpenNotes.current = false;
 	}
-	function openDiscord(): void {
-		const newWindow = window.open(
-			"https://discord.gg/qFftZF7Usa",
-			"_blank",
-			"noopener,noreferrer"
-		);
-		if (newWindow) newWindow.opener = null;
-	}
 	useAlt1Listener(scrollNext);
 	return (
 		<>
 			<Reader reader={reader} questName={questName} />
 			<div>
-				<Modal
-					title="Underground Pass Grid"
-					opened={openedGrid}
-					onClose={closeGrid}
-				>
-					<Grid />
-				</Modal>
-				<Modal title="Memorization" opened={openLGrid} onClose={closeLunarGrid}>
-					<LunarGrid />
-				</Modal>
+				<Suspense fallback={<div>Loading...</div>}>
+					<Modal
+						title="Underground Pass Grid"
+						opened={openedGrid}
+						onClose={closeGrid}
+					>
+						<UnderGroundPassGrid />
+					</Modal>
+				</Suspense>
+				<Suspense fallback={<div>Loading...</div>}>
+					<Modal title="Memorization" opened={openLGrid} onClose={closeLunarGrid}>
+						<LunarGrid />
+					</Modal>{" "}
+				</Suspense>
 				<Modal
 					title="Notes"
 					opened={isOpened}
@@ -536,21 +472,24 @@ const QuestPage: React.FC = () => {
 				>
 					<UserNotes />
 				</Modal>
-				<Modal opened={isPOGOpen} onClose={pogModClose}>
-					<ColorCalculator />
-				</Modal>
+				<Suspense fallback={<div>Loading...</div>}>
+					<Modal opened={isPOGOpen} onClose={pogModClose}>
+						<ColorCalculator />
+					</Modal>
+				</Suspense>
 				<Modal
 					id="Modal"
 					title="Settings"
 					opened={opened}
 					onClose={() => {
 						close();
+						loadUserSettings();
 					}}
 					styles={{
 						title: {
 							fontSize: "2.25rem",
 							textAlign: "center",
-							color: hasColor ? userColor : "",
+							color: uiState.hasColor ? uiState.userColor : "",
 						},
 					}}
 				>
@@ -563,9 +502,12 @@ const QuestPage: React.FC = () => {
 			/>
 			<QuestStepFetcher textfile={textfile} questStepJSON={questlistJSON} />
 			<QuestDetailsFetcher questName={questName} />
-			{window.addEventListener("scroll", updateButtonVis)}
+
 			<div>
-				<h2 className="qpTitle" style={{ color: hasColor ? userColor : "" }}>
+				<h2
+					className="qpTitle"
+					style={{ color: uiState.hasColor ? uiState.userColor : "" }}
+				>
 					{questName}
 				</h2>
 			</div>
@@ -582,7 +524,7 @@ const QuestPage: React.FC = () => {
 				<>
 					<Button
 						variant="outline"
-						color={hasButtonColor ? userButtonColor : ""}
+						color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
 						styles={{
 							root: {
 								paddingBottom: "1em",
@@ -598,7 +540,7 @@ const QuestPage: React.FC = () => {
 				{showStepReq ? (
 					<Button
 						variant="outline"
-						color={hasButtonColor ? userButtonColor : ""}
+						color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
 						onClick={() => {
 							toggleShowStepReq();
 						}}
@@ -608,7 +550,7 @@ const QuestPage: React.FC = () => {
 				) : (
 					<Button
 						variant="outline"
-						color={hasButtonColor ? userButtonColor : ""}
+						color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
 						onClick={toggleShowStepReq}
 					>
 						Show Quest Details
@@ -617,324 +559,18 @@ const QuestPage: React.FC = () => {
 			</Flex>
 			{showStepReq && Array.isArray(QuestDetails) ? (
 				<>
-					<Accordion
-						multiple
-						defaultValue={expanded}
-						onChange={setExpanded}
-						chevron={
-							<Image
-								src={"./assets/QuestIconEdited.png"}
-								alt="Quest Icon"
-								width="20px"
-								height="20px"
-							/>
-						}
-					>
-						<Accordion.Item key={"item-1"} value="item-1">
-							<Accordion.Control
-								styles={{
-									control: { color: hasLabelColor ? userLabelColor : "" },
-								}}
-							>
-								Requirements
-							</Accordion.Control>
-							<Accordion.Panel>
-								<div>
-									<ul>
-										{QuestDetails.map((quest, questIndex) => {
-											return (
-												<React.Fragment key={questIndex}>
-													{quest.Requirements.map((requirement, requirementIndex) => {
-														// Combine questIndex and requirementIndex to create a unique key
-														const uniqueKey = `${questIndex}-${requirementIndex}`;
-														const hasSkill = skillLevels.some((value) => {
-															const [skillValueStr, skillType] = value.split(" ");
-															const [requirementValueStr, requirementType] =
-																requirement.split(" ");
-
-															const skillValue = parseInt(skillValueStr, 10);
-															const requirementValue = parseInt(requirementValueStr, 10);
-
-															console.log(
-																"Skill:",
-																skillValueStr,
-																skillType,
-																"Requirement:",
-																requirementValueStr,
-																requirementType
-															);
-
-															const isSkillValid =
-																!isNaN(skillValue) && !isNaN(requirementValue);
-															const isTypeMatch = skillType === requirementType;
-
-															if (isSkillValid && isTypeMatch) {
-																return skillValue >= requirementValue;
-															}
-
-															return false;
-														});
-
-														const needLeela =
-															requirement ===
-																"Fully restore Senliten from the 'Missing My Mummy' quest" ||
-															"Bring Leela to Senliten's tomb";
-														const needJunglePotion =
-															requirement ===
-															"Jungle Potion is only required if clean volencia moss is a requested item during the quest";
-														let abilityToEnterMort = false;
-
-														if (needLeela) {
-															const hasMMM =
-																completedQuests &&
-																completedQuests.some((value) => {
-																	if (value && typeof value === "object") {
-																		return (
-																			(value as { title?: string }).title === "Missing My Mummy"
-																		);
-																	}
-																});
-															if (hasMMM) {
-																//mmm = true;
-															}
-														}
-														let junglePotion = false;
-														if (needJunglePotion) {
-															const hasJunglePotion =
-																completedQuests &&
-																completedQuests.some((value) => {
-																	if (value && typeof value === "object" && "title" in value) {
-																		return (
-																			(value as { title?: string }).title === "Jungle Potion"
-																		);
-																	}
-																});
-															if (hasJunglePotion) {
-																junglePotion = true;
-															}
-														}
-
-														const isComplete =
-															completedQuests &&
-															completedQuests.some((value) => {
-																if (value && typeof value === "object" && "title" in value) {
-																	return (value as { title?: string }).title === requirement;
-																}
-																return false;
-															});
-
-														let color = "#C64340"; // Default to red
-
-														if (isComplete) {
-															color = "#24BF58"; // Green
-														}
-														if (junglePotion) {
-															color = "#24BF58";
-														}
-														if (abilityToEnterMort) {
-															color = "#24BF58";
-														}
-
-														const requirementParts = requirement.split(" ");
-														const firstPart: number = parseInt(requirementParts[0]);
-
-														return (
-															<li
-																key={uniqueKey}
-																style={{
-																	display: "block",
-																}}
-															>
-																{!isNaN(firstPart) ||
-																requirement === "None" ||
-																Array.from(ignoredRequirements).some((prefix) =>
-																	requirement.startsWith(prefix)
-																) ? (
-																	<span
-																		style={{
-																			color: hasSkill ? "#24BF58" : "#C64340",
-																		}}
-																	>
-																		{requirement}
-																	</span>
-																) : (
-																	<NavLink
-																		to="/QuestPage"
-																		onClick={() => {
-																			history.go(0);
-																		}}
-																		state={{
-																			questName: requirement,
-																			modified: requirement.toLowerCase().replace(/[!,`']/g, ""),
-																		}}
-																		style={{
-																			display: "block",
-																			color: color,
-
-																			textDecoration: "none",
-																		}}
-																	>
-																		<span>{requirement}</span>
-																	</NavLink>
-																)}
-															</li>
-														);
-													})}
-												</React.Fragment>
-											);
-										})}
-									</ul>
-								</div>
-							</Accordion.Panel>
-						</Accordion.Item>
-						<Accordion.Item key={"item-2"} value="item-2">
-							<Accordion.Control
-								className="AccordianControl"
-								styles={{
-									control: { color: hasLabelColor ? userLabelColor : "" },
-								}}
-							>
-								Start Point
-							</Accordion.Control>
-							<Accordion.Panel c={hasColor ? userColor : ""}>
-								<div>
-									{QuestDetails.map((value) => {
-										return value.StartPoint;
-									})}
-								</div>
-							</Accordion.Panel>
-						</Accordion.Item>
-						<Accordion.Item key={"item-3"} value="item-3">
-							<Accordion.Control
-								className="AccordianControl"
-								styles={{
-									control: { color: hasLabelColor ? userLabelColor : "" },
-								}}
-							>
-								Is This a Members Quest?
-							</Accordion.Control>
-							<Accordion.Panel c={hasColor ? userColor : ""}>
-								<div>
-									{QuestDetails.map((value) => {
-										return value.MemberRequirement;
-									})}
-								</div>
-							</Accordion.Panel>
-						</Accordion.Item>
-						<Accordion.Item key={"item-4"} value="item-4">
-							<Accordion.Control
-								className="AccordianControl"
-								styles={{
-									control: { color: hasLabelColor ? userLabelColor : "" },
-								}}
-							>
-								How Long is This Quest?
-							</Accordion.Control>
-							<Accordion.Panel c={hasColor ? userColor : ""}>
-								<div>
-									{QuestDetails.map((value) => {
-										return value.OfficialLength;
-									})}
-								</div>
-							</Accordion.Panel>
-						</Accordion.Item>
-						<Accordion.Item key={"item-5"} value="item-5">
-							<Accordion.Control
-								className="AccordianControl"
-								styles={{
-									control: { color: hasLabelColor ? userLabelColor : "" },
-								}}
-							>
-								Items You Definitely Need
-							</Accordion.Control>
-							<Accordion.Panel c={hasColor ? userColor : ""}>
-								<div>
-									<List listStyleType="none">
-										{QuestDetails.map((quest, questIndex) => {
-											return (
-												<React.Fragment key={questIndex}>
-													{quest.ItemsRequired.map((item, itemIndex) => {
-														// Combine questIndex and itemIndex to create a unique key
-														const uniqueKey = `${questIndex}-${itemIndex}`;
-
-														return (
-															<List.Item key={uniqueKey}>
-																{"- "}
-																{item}
-															</List.Item>
-														);
-													})}
-												</React.Fragment>
-											);
-										})}
-									</List>
-								</div>
-							</Accordion.Panel>
-						</Accordion.Item>
-						<Accordion.Item key={"item-6"} value="item-6">
-							<Accordion.Control
-								className="AccordianControl"
-								title="Items You Might Need"
-								styles={{
-									control: { color: hasLabelColor ? userLabelColor : "" },
-								}}
-							>
-								Items You Might Need
-							</Accordion.Control>
-							<Accordion.Panel c={hasColor ? userColor : ""}>
-								<div>
-									<List listStyleType="none">
-										{QuestDetails.map((quest, questIndex) => {
-											return (
-												<React.Fragment key={questIndex}>
-													{quest.Recommended.map((item, itemIndex) => {
-														// Combine questIndex and itemIndex to create a unique key
-														const uniqueKey = `${questIndex}-${itemIndex}`;
-
-														return (
-															<List.Item key={uniqueKey}>
-																{"- "}
-																{item}
-															</List.Item>
-														);
-													})}
-												</React.Fragment>
-											);
-										})}
-									</List>
-								</div>
-							</Accordion.Panel>
-						</Accordion.Item>
-						<Accordion.Item key={"item-7"} value="item-7">
-							<Accordion.Control
-								className="AccordianControl"
-								styles={{
-									control: { color: hasLabelColor ? userLabelColor : "" },
-								}}
-							>
-								Enemies To Look Out For
-							</Accordion.Control>
-							<Accordion.Panel c={hasColor ? userColor : ""}>
-								<div>
-									<List listStyleType="none">
-										{QuestDetails.map((quest, questIndex) => (
-											<React.Fragment key={questIndex}>
-												{quest.EnemiesToDefeat.map((value, enemiesIndex) => {
-													const UniqueID = `${questIndex}-${enemiesIndex}`;
-													return (
-														<List.Item key={UniqueID}>
-															{"- "}
-															{value}
-														</List.Item>
-													);
-												})}
-											</React.Fragment>
-										))}
-									</List>
-								</div>
-							</Accordion.Panel>
-						</Accordion.Item>
-					</Accordion>
+					<Suspense fallback={<div>Loading Accordion...</div>}>
+						<QuestDetailContents
+							QuestDetails={QuestDetails}
+							uiState={uiState}
+							expanded={expanded}
+							setExpanded={setExpanded}
+							ignoredRequirements={ignoredRequirements}
+							skillLevels={skillLevels}
+							completedQuests={completedQuests}
+							history={history}
+						/>
+					</Suspense>
 				</>
 			) : (
 				<>
@@ -951,7 +587,7 @@ const QuestPage: React.FC = () => {
 								(img: { step: string }) => img.step === (index + 1).toString()
 							);
 
-							return isHighlight ? (
+							return uiState.isHighlight ? (
 								<Stepper.Step
 									id={(index + 1).toString()}
 									className="stepperStep"
@@ -979,7 +615,7 @@ const QuestPage: React.FC = () => {
 																	verticalAlign: "center",
 																},
 															}}
-															color={hasButtonColor ? userButtonColor : ""}
+															color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
 															size="sm"
 															variant="outline"
 															component="span" // Change to span to prevent button nesting
@@ -994,68 +630,20 @@ const QuestPage: React.FC = () => {
 									color={active > index ? "#24BF58" : ""}
 									styles={{
 										stepDescription: {
-											color: active > index ? "#24BF58" : hasColor ? userColor : "",
+											color:
+												active > index
+													? "#24BF58"
+													: uiState.hasColor
+													? uiState.userColor
+													: "",
 										},
 										stepLabel: {
-											color: hasLabelColor ? userLabelColor : "",
+											color: uiState.hasLabelColor ? uiState.userLabelColor : "",
 										},
 									}}
 									description={value}
 									onClick={() => setActiveAndScroll(index)}
 									allowStepSelect={true}
-								/>
-							) : stepHidden ? (
-								<Stepper.Step
-									id={(index + 1).toString()}
-									className="stepperStep"
-									label={
-										<>
-											{`Step: ${index + 1}`}
-											{matchedImages &&
-												matchedImages.map(
-													(
-														_img: {
-															src: string;
-															height: number;
-															width: number;
-														},
-														imgIndex: React.Key | null | undefined
-													) => (
-														<ActionIcon
-															key={imgIndex}
-															onClick={() =>
-																handlePopOut(index, _img.src, _img.height, _img.width)
-															}
-															styles={{
-																root: {
-																	marginLeft: ".313rem",
-																	verticalAlign: "center",
-																},
-															}}
-															color={hasButtonColor ? userButtonColor : ""}
-															size="sm"
-															variant="outline"
-															component="span" // Change to span to prevent button nesting
-														>
-															<IconPhotoFilled />
-														</ActionIcon>
-													)
-												)}
-										</>
-									}
-									key={create_ListUUID()}
-									styles={{
-										stepDescription: {
-											visibility: active > index ? "hidden" : "visible",
-											color: hasColor ? userColor : "",
-										},
-										stepLabel: {
-											visibility: active > index ? "hidden" : "visible",
-										},
-									}}
-									description={value}
-									onClick={() => setActiveAndScroll}
-									allowStepSelect={ShouldAllowStep(index)}
 								/>
 							) : (
 								<Stepper.Step
@@ -1085,7 +673,7 @@ const QuestPage: React.FC = () => {
 																	verticalAlign: "center",
 																},
 															}}
-															color={hasButtonColor ? userButtonColor : ""}
+															color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
 															size="sm"
 															variant="outline"
 															component="span" // Change to span to prevent button nesting
@@ -1099,7 +687,7 @@ const QuestPage: React.FC = () => {
 									key={create_ListUUID()}
 									styles={{
 										stepLabel: {
-											color: hasLabelColor ? userLabelColor : "",
+											color: uiState.hasLabelColor ? uiState.userLabelColor : "",
 										},
 									}}
 									description={value}
@@ -1117,7 +705,7 @@ const QuestPage: React.FC = () => {
 								<ActionIcon
 									onClick={open}
 									variant="outline"
-									color={hasButtonColor ? userButtonColor : ""}
+									color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
 									size={"sm"}
 								>
 									<IconSettings />
@@ -1125,13 +713,13 @@ const QuestPage: React.FC = () => {
 								<ActionIcon
 									onClick={openDiscord}
 									variant="outline"
-									color={hasButtonColor ? userButtonColor : ""}
+									color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
 									size={"sm"}
 								>
 									<IconBrandDiscord />
 								</ActionIcon>
 								<ActionIcon
-									color={hasButtonColor ? userButtonColor : ""}
+									color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
 									onClick={() => {
 										isOpenNotes.current = true;
 										openNotes();
@@ -1144,7 +732,7 @@ const QuestPage: React.FC = () => {
 								<ActionIcon
 									size="sm"
 									variant="outline"
-									color={hasButtonColor ? userButtonColor : ""}
+									color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
 									onClick={handleBackButton}
 								>
 									<IconArrowBack />
@@ -1154,7 +742,7 @@ const QuestPage: React.FC = () => {
 								<Button
 									size="compact-sm"
 									variant="outline"
-									color={hasButtonColor ? userButtonColor : ""}
+									color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
 									onClick={pogModOpen}
 								>
 									Color Calculator
@@ -1164,7 +752,7 @@ const QuestPage: React.FC = () => {
 								<Button
 									size="compact-sm"
 									variant="outline"
-									color={hasButtonColor ? userButtonColor : ""}
+									color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
 									onClick={openGrid}
 								>
 									Underground Pass Grid
@@ -1173,7 +761,7 @@ const QuestPage: React.FC = () => {
 							{lunarGridActive && (
 								<Button
 									variant="outline"
-									color={hasButtonColor ? userButtonColor : ""}
+									color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
 									onClick={openLunarGrid}
 								>
 									Memorization
@@ -1185,7 +773,7 @@ const QuestPage: React.FC = () => {
 									styles={{ root: {} }}
 									size="compact-sm"
 									variant="outline"
-									color={hasButtonColor ? userButtonColor : ""}
+									color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
 									onClick={() => {
 										handleStepChange(active);
 										scrollNext();
@@ -1196,7 +784,7 @@ const QuestPage: React.FC = () => {
 								<Button
 									size="compact-sm"
 									variant="outline"
-									color={hasButtonColor ? userButtonColor : ""}
+									color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
 									onClick={() => {
 										scrollPrev();
 										handleStepChange(active - 1);
@@ -1213,4 +801,4 @@ const QuestPage: React.FC = () => {
 	);
 };
 
-export default QuestPage;
+export default React.memo(QuestPage);

@@ -45,6 +45,10 @@ h2 {
 	max-height: 23em;
 	padding-top: 1em;
 }
+.mantine-Stepper-steps {
+	align-items: stretch;
+	flex-direction: column;
+}
 label,
 .mantine-Accordion-control,
 h1,

@@ -13,7 +13,10 @@ export const Reader: React.FC<ReaderProps> = ({ reader, questName }) => {
 
 		const handleChange = () => setCState(reader.getCState());
 		reader.on("change", handleChange);
-		reader.toggleOptionRun(true);
+		if (window.alt1) {
+			reader.toggleOptionRun(true);
+		}
+
 		return () => {
 			console.log("Component is unmounting");
 			reader.toggleOptionRun(false);
