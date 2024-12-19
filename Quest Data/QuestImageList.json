@@ -5866,7 +5866,62 @@
 	},
 	{
 		"name": "Forgettable Tale of a Drunken Dwarf",
-		"images": []
+		"images": [
+			{
+				"step": "33",
+				"src": "Chasm1_part1.png",
+				"width": 750,
+				"height": 660
+			},
+			{
+				"step": "33",
+				"src": "Chasm1_Part2.png",
+				"width": 750,
+				"height": 660
+			},
+			{
+				"step": "33",
+				"src": "Chasm1_Part3.png",
+				"width": 750,
+				"height": 660
+			},
+			{
+				"step": "33",
+				"src": "Chasm2_part1.png",
+				"width": 750,
+				"height": 660
+			},
+			{
+				"step": "33",
+				"src": "Chasm2_Part2.png",
+				"width": 750,
+				"height": 660
+			},
+			{
+				"step": "33",
+				"src": "Chasm2_Part3.png",
+				"width": 750,
+				"height": 660
+			},
+			{
+				"step": "33",
+				"src": "Chasm3_part1.png",
+				"width": 750,
+				"height": 660
+			},
+			{
+				"step": "33",
+				"src": "Chasm3_part2.png",
+				"width": 750,
+				"height": 660
+			},
+			{
+				"step": "33",
+				"src": "Chasm3_part3.png",
+				"width": 750,
+				"height": 660
+			}
+		]
 	},
 	{
 		"name": "Forgiveness of a Chaos Dwarf",
