@@ -8,4 +8,4 @@ export type QuestDetailsType = {
     OfficialLength: string;
     Recommended: string[];
 };
-export declare const fetchQuestDetails: () => Promise<QuestDetailsType | null>;
+export declare const useQuestDetails: () => void;
