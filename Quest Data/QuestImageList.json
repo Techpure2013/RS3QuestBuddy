@@ -1930,7 +1930,14 @@
 	},
 	{
 		"name": "Lost Her Marbles (miniquest)",
-		"images": []
+		"images": [
+			{
+				"step": "2",
+				"src": "Step2_MarblesTable.png.png",
+				"width": 800,
+				"height": 650
+			}
+		]
 	},
 	{
 		"name": "A Guild of Our Own (miniquest)",

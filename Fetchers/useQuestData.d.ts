@@ -6,7 +6,7 @@ type QuestPaths = {
 };
 export declare const useQuestPaths: () => {
     readonly questSteps: String[] | undefined;
-    readonly QuestDataPaths: (QuestPaths & any[]) | never[];
+    readonly QuestDataPaths: never[] | (QuestPaths & any[]);
     readonly getQuestSteps: (questName: string) => Promise<void>;
 };
 export {};
