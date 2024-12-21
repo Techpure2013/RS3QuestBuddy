@@ -8,4 +8,8 @@ export type QuestDetailsType = {
     OfficialLength: string;
     Recommended: string[];
 };
-export declare const useQuestDetails: () => void;
+export declare const useQuestDetails: () => {
+    readonly getQuestDetails: QuestDetailsType[];
+    readonly questDetails: QuestDetailsType[] | undefined;
+    readonly getQuestNamedDetails: (questName: string) => void;
+};
