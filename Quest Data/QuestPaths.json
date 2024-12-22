@@ -1683,9 +1683,9 @@
   },
   {
     "Quest": "Wanted!",
-    "Path": "./Quests/Wanted!/WantedInfo.txt",
-    "Transcript": "./Quests/Wanted!/Wanted_transcript.json",
-    "CTranscript": "./Quests/Wanted!/CompareWanted.json"
+    "Path": "./Quests/Wanted/WantedInfo.txt",
+    "Transcript": "./Quests/Wanted/Wanted_transcript.json",
+    "CTranscript": "./Quests/Wanted/CompareWanted.json"
   },
   {
     "Quest": "Watchtower",
