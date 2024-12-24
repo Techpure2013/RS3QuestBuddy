@@ -101,14 +101,10 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 									<React.Fragment key={questIndex}>
 										{quest.Requirements.map(
 											(requirement: string, requirementIndex: number) => {
-												// Combine questIndex and requirementIndex to create a unique key
 												const uniqueKey = `${questIndex}-${requirementIndex}`;
 
-												// Compute hasSkill once for this requirement
 												const hasSkill = checkRequirement(skillLevels, requirement);
-												console.log(`Requirement: ${requirement}, Has Skill: ${hasSkill}`);
 
-												// Check if the requirement is a completed quest
 												const isComplete =
 													completedQuests &&
 													completedQuests.some((value) => {
@@ -118,13 +114,11 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 														return false;
 													});
 
-												// Determine color for NavLink
 												let color = "#C64340"; // Default to red
 												if (isComplete) {
 													color = "#24BF58"; // Green
 												}
 
-												// Parse the requirement into parts
 												const requirementParts = requirement.split(" ");
 												const firstPart: number = parseInt(requirementParts[0], 10);
 

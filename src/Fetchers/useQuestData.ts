@@ -17,7 +17,6 @@ export const useQuestPaths = () => {
 
 	const getQuestSteps = useCallback(
 		async (questName: string) => {
-			console.log(questName);
 			if (QuestDataPaths !== undefined) {
 				const stepPath = QuestDataPaths?.find((quest) => {
 					if (quest.Quest === questName) {

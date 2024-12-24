@@ -66,7 +66,6 @@ export const QuestImageFetcher: React.FC<QuestImageType> = ({
 				}
 				return false; // Skip entries without a name
 			});
-			console.log(questInfo);
 			// If questInfo is not found or does not have images, log an error
 			if (!questInfo || !Array.isArray(questInfo.images)) {
 				console.error(

@@ -117,7 +117,6 @@ const QuestCarousel: React.FC = () => {
 				"hasCompleted",
 				JSON.stringify(completedPlayerQuests)
 			);
-			// Update `remainingQuests` here
 			if (alteredQuestData.length > 0) {
 				remainingQuests.current = notStartedPlayerQuests;
 				sessionStorage.setItem(
@@ -129,7 +128,6 @@ const QuestCarousel: React.FC = () => {
 					JSON.stringify(totalQuestPoints)
 				);
 				setQuestPoints(totalQuestPoints);
-				console.log("Updated remainingQuests:", totalQuestPoints);
 				setUpdate(true);
 				playerFound.current = true;
 				sessionStorage.setItem("playerFound", JSON.stringify(playerFound.current));
@@ -259,7 +257,6 @@ const QuestCarousel: React.FC = () => {
 				const parsedPlayerF: boolean = JSON.parse(playerF);
 				const parsedAlreadySorted: boolean = JSON.parse(alreadyS);
 				const qpoint: number = JSON.parse(qp);
-				console.log(Array.isArray(parsedQuests));
 				if (Array.isArray(parsedQuests)) {
 					setQuestPoints(qpoint);
 					returningPName.current = player;

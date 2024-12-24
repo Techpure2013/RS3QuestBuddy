@@ -155,7 +155,6 @@ const QuestPage: React.FC = () => {
 	useEffect(() => {
 		const completedQuests = window.sessionStorage.getItem("hasCompleted");
 		const skill = sessionStorage.getItem("skillLevels");
-		console.log(skill);
 		if (completedQuests !== null && skill !== null) {
 			const parsedQuests: PlayerQuestStatus[] = JSON.parse(completedQuests);
 
@@ -169,7 +168,6 @@ const QuestPage: React.FC = () => {
 				Array.isArray(parsedSkills)
 			) {
 				setCompleteQuests(parsedQuests);
-				console.log(parsedQuests);
 				setSkillLevels(parsedSkills);
 			} else {
 				console.error("Invalid or non-array data in sessionStorage");
