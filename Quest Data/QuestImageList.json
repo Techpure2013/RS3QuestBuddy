@@ -4724,7 +4724,26 @@
 	},
 	{
 		"name": "Desperate Measures",
-		"images": []
+		"images": [
+			{
+				"step": "62",
+				"src": "DesperateMeasureTable.png",
+				"width": 800,
+				"height": 650
+			},
+			{
+				"step": "50",
+				"src": "DesperateMeasuresLocation.png",
+				"width": 800,
+				"height": 650
+			},
+			{
+				"step": "51",
+				"src": "Step51_PylonInfo.png",
+				"width": 800,
+				"height": 650
+			}
+		]
 	},
 	{
 		"name": "Desperate Times",

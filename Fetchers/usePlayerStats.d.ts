@@ -1,6 +1,5 @@
-/// <reference types="react" />
 export declare const usePlayerStats: () => {
-    readonly playerStats: import("react").MutableRefObject<string | null>;
+    readonly playerStats: String;
     readonly isLoading: boolean;
     readonly hasError: boolean;
     readonly fetchPlayerStats: (playerName: String) => Promise<void>;

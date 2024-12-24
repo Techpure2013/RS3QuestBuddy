@@ -1,4 +1,6 @@
 import React from "react";
+import { Skills } from "./../../../Fetchers/PlayerStatsSort";
+import { PlayerQuestStatus } from "./../../../Fetchers/sortPlayerQuests";
 interface UIState {
     hasLabelColor: boolean;
     userLabelColor: string;
@@ -11,8 +13,8 @@ interface AccordionComponentProps {
     expanded: string[];
     setExpanded: (expanded: string[]) => void;
     ignoredRequirements: Set<string>;
-    skillLevels: string[];
-    completedQuests: any[];
+    skillLevels: Skills[];
+    completedQuests: PlayerQuestStatus[];
     history: any;
 }
 declare const AccordionComponent: React.FC<AccordionComponentProps>;

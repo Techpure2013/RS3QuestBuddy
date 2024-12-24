@@ -1,5 +1,5 @@
 /// <reference types="react" />
-type Skills = {
+export type Skills = {
     rank: number;
     totalLevel: number;
     attack: number;
@@ -33,7 +33,6 @@ type Skills = {
     necromancy: number;
 };
 export declare const usePlayerSortStats: () => {
-    readonly sortedPlayerStats: import("react").MutableRefObject<Skills | null>;
+    readonly sortedPlayerStats: import("react").MutableRefObject<Skills[] | null>;
     readonly filterPlayerStats: (playerStats: string[]) => void;
 };
-export {};
