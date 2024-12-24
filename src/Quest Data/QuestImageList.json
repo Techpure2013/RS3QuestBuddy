@@ -1930,7 +1930,14 @@
 	},
 	{
 		"name": "Lost Her Marbles (miniquest)",
-		"images": []
+		"images": [
+			{
+				"step": "2",
+				"src": "Step2_MarblesTable.png.png",
+				"width": 800,
+				"height": 650
+			}
+		]
 	},
 	{
 		"name": "A Guild of Our Own (miniquest)",
@@ -4717,7 +4724,26 @@
 	},
 	{
 		"name": "Desperate Measures",
-		"images": []
+		"images": [
+			{
+				"step": "62",
+				"src": "DesperateMeasureTable.png",
+				"width": 800,
+				"height": 650
+			},
+			{
+				"step": "50",
+				"src": "DesperateMeasuresLocation.png",
+				"width": 800,
+				"height": 650
+			},
+			{
+				"step": "51",
+				"src": "Step51_PylonInfo.png",
+				"width": 800,
+				"height": 650
+			}
+		]
 	},
 	{
 		"name": "Desperate Times",
@@ -5866,7 +5892,62 @@
 	},
 	{
 		"name": "Forgettable Tale of a Drunken Dwarf",
-		"images": []
+		"images": [
+			{
+				"step": "33",
+				"src": "Chasm1_part1.png",
+				"width": 750,
+				"height": 660
+			},
+			{
+				"step": "33",
+				"src": "Chasm1_Part2.png",
+				"width": 750,
+				"height": 660
+			},
+			{
+				"step": "33",
+				"src": "Chasm1_Part3.png",
+				"width": 750,
+				"height": 660
+			},
+			{
+				"step": "33",
+				"src": "Chasm2_part1.png",
+				"width": 750,
+				"height": 660
+			},
+			{
+				"step": "33",
+				"src": "Chasm2_Part2.png",
+				"width": 750,
+				"height": 660
+			},
+			{
+				"step": "33",
+				"src": "Chasm2_Part3.png",
+				"width": 750,
+				"height": 660
+			},
+			{
+				"step": "33",
+				"src": "Chasm3_part1.png",
+				"width": 750,
+				"height": 660
+			},
+			{
+				"step": "33",
+				"src": "Chasm3_part2.png",
+				"width": 750,
+				"height": 660
+			},
+			{
+				"step": "33",
+				"src": "Chasm3_part3.png",
+				"width": 750,
+				"height": 660
+			}
+		]
 	},
 	{
 		"name": "Forgiveness of a Chaos Dwarf",

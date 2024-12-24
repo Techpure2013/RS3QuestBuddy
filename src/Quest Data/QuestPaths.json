@@ -18,10 +18,10 @@
 		"CTranscript": "./Quests/A Fairy Tale II Cure a Queen/CompareA_Fairy_Tale_II.json"
 	},
 	{
-		"Quest": "A Fairy Tale III: Battle at Orks Rift",
-		"Path": "./Quests/A Fairy Tale III Battle at Orks Rift/AFairyTalePartiii-battleatorksriftinfo.txt ",
+		"Quest": "A Fairy Tale III: Battle at Ork's Rift",
+		"Path": "./Quests/A Fairy Tale III Battle at Ork's Rift/AFairyTalePartiii-battleatorksriftinfo.txt ",
 		"Transcript": "",
-		"CTranscript": "./Quests/A Fairy Tale III Battle at Orks Rift//CompareA_Fairy_Tale_III.json"
+		"CTranscript": "./Quests/A Fairy Tale III Battle at Ork's Rift//CompareA_Fairy_Tale_III.json"
 	},
 	{
 		"Quest": "A Shadow over Ashdale",
@@ -997,6 +997,12 @@
 		"CTranscript": "./Quests/Plague's End/ComparePlague's_End.json"
 	},
 	{
+		"Quest": "'Phite Club",
+		"Path": "./Quests/'Phite Club/PhiteClubInfo.txt",
+		"Transcript": "",
+		"CTranscript": "./Quests/'Phite Club/ComparePhite_Club.json"
+	},
+	{
 		"Quest": "Priest in Peril",
 		"Path": "./Quests/Priest in Peril/PriestInPerilInfo.txt",
 		"Transcript": "./Quests/Priest in Peril/Priest_in_Peril_transcript.json",
@@ -1009,10 +1015,10 @@
 		"CTranscript": "./Quests/Quiet Before the Swarm/CompareQuiet_Before_the_Swarm.json"
 	},
 	{
-		"Quest": "Raksha the Shadow Colossus Quest",
-		"Path": "./Quests/Raksha The Shadow Colossus Quest/RakshaTheShadowColossusQuestInfo.txt",
+		"Quest": "Raksha, The Shadow Colossus Quest",
+		"Path": "./Quests/Raksha, The Shadow Colossus Quest/RakshaTheShadowColossusQuestInfo.txt",
 		"Transcript": "",
-		"CTranscript": "./Quests/Raksha the Shadow Colossus Quest/CompareRaksha,_the_Shadow_Colossus.json"
+		"CTranscript": "./Quests/Raksha, The Shadow Colossus Quest/CompareRaksha,_the_Shadow_Colossus.json"
 	},
 	{
 		"Quest": "Rag and Bone Man",
@@ -1676,7 +1682,7 @@
 		"CTranscript": "./Quests/Violet is Blue Too/CompareViolet_is_Blue_Too.json"
 	},
 	{
-		"Quest": "Wanted",
+		"Quest": "Wanted!",
 		"Path": "./Quests/Wanted/WantedInfo.txt",
 		"Transcript": "./Quests/Wanted/Wanted_transcript.json",
 		"CTranscript": "./Quests/Wanted/CompareWanted.json"

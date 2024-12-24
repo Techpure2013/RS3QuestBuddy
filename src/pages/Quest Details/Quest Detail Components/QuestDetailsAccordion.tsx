@@ -1,6 +1,8 @@
 import React from "react";
 import { Accordion, List, Image } from "@mantine/core";
 import { NavLink } from "react-router-dom";
+import { Skills } from "./../../../Fetchers/PlayerStatsSort";
+import { PlayerQuestStatus } from "./../../../Fetchers/sortPlayerQuests";
 interface UIState {
 	hasLabelColor: boolean;
 	userLabelColor: string;
@@ -14,8 +16,8 @@ interface AccordionComponentProps {
 	expanded: string[];
 	setExpanded: (expanded: string[]) => void;
 	ignoredRequirements: Set<string>;
-	skillLevels: string[];
-	completedQuests: any[];
+	skillLevels: Skills[];
+	completedQuests: PlayerQuestStatus[];
 	history: any;
 }
 const AccordionComponent: React.FC<AccordionComponentProps> = ({
@@ -28,6 +30,45 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 	completedQuests,
 	history,
 }) => {
+	const checkRequirement = (
+		skillLevels: Skills[],
+		requirement: string
+	): boolean => {
+		let [part1, part2] = requirement.split(" ");
+		let requiredLevel: number;
+		let skillName: keyof Skills;
+		if (part2.toLowerCase() === "ranged") {
+			part2 = "range"; // Change "ranged" to "range"
+		}
+		// Determine which part is the skill name and which is the required level
+		if (!isNaN(parseInt(part1, 10))) {
+			requiredLevel = parseInt(part1, 10);
+			skillName = part2.toLowerCase() as keyof Skills; // Convert skill name to lowercase
+		} else if (!isNaN(parseInt(part2, 10))) {
+			requiredLevel = parseInt(part2, 10);
+			skillName = part1.toLowerCase() as keyof Skills; // Convert skill name to lowercase
+		} else {
+			console.error("Invalid requirement format:", requirement);
+			return false; // If neither part is numeric, the format is invalid
+		}
+
+		console.log(
+			`Parsed Requirement: Level = ${requiredLevel}, Skill = ${skillName}`
+		);
+
+		// Check if any player in skillLevels matches the requirement
+		return skillLevels.some((playerStats) => {
+			if (skillName in playerStats) {
+				const playerSkillLevel = playerStats[skillName];
+				console.log(`Checking skill: ${skillName} = ${playerSkillLevel}`);
+				return playerSkillLevel >= requiredLevel;
+			} else {
+				console.warn(`Skill ${skillName} does not exist in player stats.`);
+				return false;
+			}
+		});
+	};
+
 	return (
 		<Accordion
 			multiple
@@ -55,32 +96,19 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 				<Accordion.Panel>
 					<div>
 						<ul>
-							{QuestDetails.map((quest, questIndex) => {
+							{QuestDetails?.map((quest, questIndex) => {
 								return (
 									<React.Fragment key={questIndex}>
 										{quest.Requirements.map(
 											(requirement: string, requirementIndex: number) => {
 												// Combine questIndex and requirementIndex to create a unique key
 												const uniqueKey = `${questIndex}-${requirementIndex}`;
-												const hasSkill = skillLevels.some((value) => {
-													const [skillValueStr, skillType] = value.split(" ");
-													const [requirementValueStr, requirementType] =
-														requirement.split(" ");
 
-													const skillValue = parseInt(skillValueStr, 10);
-													const requirementValue = parseInt(requirementValueStr, 10);
+												// Compute hasSkill once for this requirement
+												const hasSkill = checkRequirement(skillLevels, requirement);
+												console.log(`Requirement: ${requirement}, Has Skill: ${hasSkill}`);
 
-													const isSkillValid =
-														!isNaN(skillValue) && !isNaN(requirementValue);
-													const isTypeMatch = skillType === requirementType;
-
-													if (isSkillValid && isTypeMatch) {
-														return skillValue >= requirementValue;
-													}
-
-													return false;
-												});
-
+												// Check if the requirement is a completed quest
 												const isComplete =
 													completedQuests &&
 													completedQuests.some((value) => {
@@ -90,14 +118,15 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 														return false;
 													});
 
+												// Determine color for NavLink
 												let color = "#C64340"; // Default to red
-
 												if (isComplete) {
 													color = "#24BF58"; // Green
 												}
 
+												// Parse the requirement into parts
 												const requirementParts = requirement.split(" ");
-												const firstPart: number = parseInt(requirementParts[0]);
+												const firstPart: number = parseInt(requirementParts[0], 10);
 
 												return (
 													<li
@@ -131,7 +160,6 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 																style={{
 																	display: "block",
 																	color: color,
-
 																	textDecoration: "none",
 																}}
 															>
@@ -162,7 +190,7 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 				</Accordion.Control>
 				<Accordion.Panel c={uiState.hasColor ? uiState.userColor : ""}>
 					<div>
-						{QuestDetails.map((value) => {
+						{QuestDetails?.map((value) => {
 							return value.StartPoint;
 						})}
 					</div>
@@ -181,7 +209,7 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 				</Accordion.Control>
 				<Accordion.Panel c={uiState.hasColor ? uiState.userColor : ""}>
 					<div>
-						{QuestDetails.map((value) => {
+						{QuestDetails?.map((value) => {
 							return value.MemberRequirement;
 						})}
 					</div>
@@ -200,7 +228,7 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 				</Accordion.Control>
 				<Accordion.Panel c={uiState.hasColor ? uiState.userColor : ""}>
 					<div>
-						{QuestDetails.map((value) => {
+						{QuestDetails?.map((value) => {
 							return value.OfficialLength;
 						})}
 					</div>
@@ -220,7 +248,7 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 				<Accordion.Panel c={uiState.hasColor ? uiState.userColor : ""}>
 					<div>
 						<List listStyleType="none">
-							{QuestDetails.map((quest, questIndex) => {
+							{QuestDetails?.map((quest, questIndex) => {
 								return (
 									<React.Fragment key={questIndex}>
 										{quest.ItemsRequired.map((item: string, itemIndex: number) => {
@@ -256,7 +284,7 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 				<Accordion.Panel c={uiState.hasColor ? uiState.userColor : ""}>
 					<div>
 						<List listStyleType="none">
-							{QuestDetails.map((quest, questIndex) => {
+							{QuestDetails?.map((quest, questIndex) => {
 								return (
 									<React.Fragment key={questIndex}>
 										{quest.Recommended.map((item: string, itemIndex: number) => {
@@ -291,7 +319,7 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 				<Accordion.Panel c={uiState.hasColor ? uiState.userColor : ""}>
 					<div>
 						<List listStyleType="none">
-							{QuestDetails.map((quest, questIndex) => (
+							{QuestDetails?.map((quest, questIndex) => (
 								<React.Fragment key={questIndex}>
 									{quest.EnemiesToDefeat.map((value: string, enemiesIndex: number) => {
 										const UniqueID = `${questIndex}-${enemiesIndex}`;

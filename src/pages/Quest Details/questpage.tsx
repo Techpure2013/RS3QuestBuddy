@@ -1,14 +1,6 @@
-import React, { useState, useEffect, useRef, lazy, Suspense } from "react";
-import { NavLink, useLocation } from "react-router-dom";
-import {
-	Accordion,
-	ActionIcon,
-	Button,
-	Flex,
-	List,
-	Modal,
-	Stepper,
-} from "@mantine/core";
+import React, { useState, useEffect, useRef, Suspense } from "react";
+import { useLocation } from "react-router-dom";
+import { ActionIcon, Button, Flex, Modal, Stepper } from "@mantine/core";
 import "@mantine/core/styles/Stepper.css";
 import "@mantine/core/styles/Accordion.css";
 import "@mantine/core/styles.css";
@@ -20,14 +12,6 @@ import {
 	IconPhotoFilled,
 } from "@tabler/icons-react";
 
-import {
-	QuestStepFetcher,
-	useQuestStepStore,
-} from "./../../Fetchers/FetchQuestSteps";
-import {
-	QuestDetailsFetcher,
-	useQuestDetailsStore,
-} from "./../../Fetchers/FetchQuestDetails";
 import { useQuestPaths } from "./../../Fetchers/useQuestData";
 import { useQuestControllerStore } from "./../../Handlers/HandlerStore";
 import { createRoot } from "react-dom/client";
@@ -39,7 +23,6 @@ import { useDisclosure } from "@mantine/hooks";
 import useNotesDisclosure from "./Quest Detail Components/useDisclosure";
 import usePOGDisclosure from "./Quest Detail Components/POGCalcDisclosure";
 import { UserNotes } from "./../Settings/userNotes";
-import { Image } from "./Quest Detail Components/ImageInterface";
 import useGridDisclosure from "./Quest Detail Components/useGridModal";
 import useLunarGridDisclosure from "./Quest Detail Components/useLunarDisclosure";
 import { useQuestPageFunctions } from "./questPageFunctions";
@@ -47,6 +30,9 @@ import {
 	QuestImageFetcher,
 	UseImageStore,
 } from "./../../Fetchers/handleNewImage";
+import { Skills } from "./../../Fetchers/PlayerStatsSort";
+import { useQuestDetails } from "./../../Fetchers/useQuestDetails";
+import { PlayerQuestStatus } from "./../../Fetchers/sortPlayerQuests";
 const UnderGroundPassGrid = React.lazy(
 	() =>
 		new Promise<{ default: React.ComponentType<any> }>((resolve) => {
@@ -79,7 +65,7 @@ const QuestDetailContents = React.lazy(
 );
 const QuestPage: React.FC = () => {
 	// Define constants for local storage keys to avoid typos and ensure consistency
-	const { questPaths, QuestDataPaths, getQuestSteps } = useQuestPaths();
+	const { questSteps, QuestDataPaths, getQuestSteps } = useQuestPaths();
 	const {
 		ignoredRequirements,
 		create_ListUUID,
@@ -92,20 +78,18 @@ const QuestPage: React.FC = () => {
 		expandAllAccordions: "expandAllAccordions",
 	};
 	const qpname = useLocation();
-	let { questName, modified } = qpname.state;
+	let { questName } = qpname.state;
 	const [opened, { open, close }] = useDisclosure(false);
 	const [openedGrid, { openGrid, closeGrid }] = useGridDisclosure(false);
 	const [openLGrid, { openLunarGrid, closeLunarGrid }] =
 		useLunarGridDisclosure(false);
 	const [active, setActive] = useState(-1);
 	const [highestStepVisited, setHighestStepVisited] = useState(active);
-	const questlistJSON = "./Quest Data/QuestPaths.json";
-	let textfile = modified + "info.txt";
 	const reader = new DiagReader();
-	const details = useQuestStepStore();
+	const { getQuestDetails, questDetails, getQuestNamedDetails } =
+		useQuestDetails();
 	const imageDetails = UseImageStore();
 	const stepRefs = useRef<React.RefObject<HTMLDivElement>[]>([]);
-	const QuestDetails = useQuestDetailsStore.getState().questDetails;
 	let isPog = false;
 	let gridActive = false;
 	let lunarGridActive = false;
@@ -125,8 +109,10 @@ const QuestPage: React.FC = () => {
 	// const finder = new diagFinder();
 	const { showStepReq, toggleShowStepReq } = useQuestControllerStore();
 	const handles = useQuestControllerStore();
-	const [skillLevels, setSkillLevels] = useState<string[]>([]);
-	const [completedQuests, setCompleteQuests] = useState<string[] | null>(null);
+	const [skillLevels, setSkillLevels] = useState<Skills[]>([]);
+	const [completedQuests, setCompleteQuests] = useState<
+		PlayerQuestStatus[] | null
+	>(null);
 	const storedExpandAll = localStorage.getItem(
 		LOCAL_STORAGE_KEYS.expandAllAccordions
 	);
@@ -156,23 +142,25 @@ const QuestPage: React.FC = () => {
 		}
 	};
 	useEffect(() => {
-		console.log("Component rendered!");
-	}, []);
-	useEffect(() => {
 		// Combine fetching quest paths and steps
-		QuestDataPaths();
-		if (questPaths) {
+		if (QuestDataPaths) {
 			getQuestSteps(questName);
 		}
-	}, [questPaths]);
+	}, []);
+	useEffect(() => {
+		if (getQuestDetails) {
+			getQuestNamedDetails(questName);
+		}
+	}, []);
 	useEffect(() => {
 		const completedQuests = window.sessionStorage.getItem("hasCompleted");
 		const skill = sessionStorage.getItem("skillLevels");
-
+		console.log(skill);
 		if (completedQuests !== null && skill !== null) {
-			const parsedQuests = JSON.parse(completedQuests);
+			const parsedQuests: PlayerQuestStatus[] = JSON.parse(completedQuests);
 
-			const parsedSkills = JSON.parse(skill);
+			const parsedSkills: Skills[] = JSON.parse(skill);
+			console.log(Array.isArray(parsedQuests), Array.isArray(parsedSkills));
 
 			if (
 				parsedQuests !== null &&
@@ -181,6 +169,7 @@ const QuestPage: React.FC = () => {
 				Array.isArray(parsedSkills)
 			) {
 				setCompleteQuests(parsedQuests);
+				console.log(parsedQuests);
 				setSkillLevels(parsedSkills);
 			} else {
 				console.error("Invalid or non-array data in sessionStorage");
@@ -210,21 +199,6 @@ const QuestPage: React.FC = () => {
 		questName.trim() === "Regicide"
 	) {
 		gridActive = true;
-	}
-	if (
-		questName ==
-		"Jungle Potion is only required if clean volencia moss is a requested item during the quest"
-	) {
-		questName = "Jungle Potion";
-		textfile = "junglepotioninfo.txt";
-	}
-	if (questName == "Fully restore Senliten from the 'Missing My Mummy' quest") {
-		questName = "Missing My Mummy";
-		textfile = "missingmymummyinfo.txt";
-	}
-	if (questName == "Bring Leela to Senliten's tomb") {
-		questName = "Missing My Mummy";
-		textfile = "missingmymummyinfo.txt";
 	}
 	const clearAllIntervals = () => {
 		clearTimeout(reader.timeoutID);
@@ -372,7 +346,7 @@ const QuestPage: React.FC = () => {
 		}
 	};
 	const setActiveAndScroll = (nextStep: number): void => {
-		if (nextStep >= 0 && nextStep < details.stepDetails.length) {
+		if (nextStep >= 0 && nextStep < questSteps!.length) {
 			setActive(nextStep);
 			setHighestStepVisited((hSC) => Math.max(hSC, nextStep));
 			scrollIntoView(nextStep);
@@ -380,7 +354,7 @@ const QuestPage: React.FC = () => {
 	};
 
 	const handleStepChange = (nextStep: number) => {
-		const stepLength = details.stepDetails.length;
+		const stepLength = questSteps!.length;
 		const isOutOfBoundsBottom = nextStep > stepLength;
 		const isOutOfBoundsTop = nextStep < 0;
 
@@ -396,7 +370,7 @@ const QuestPage: React.FC = () => {
 	const scrollNext = () => {
 		setActive((prevActive) => {
 			const nextStep = prevActive + 1;
-			if (nextStep <= details.stepDetails.length) {
+			if (nextStep <= questSteps!.length) {
 				scrollIntoView(nextStep);
 
 				return nextStep;
@@ -429,10 +403,12 @@ const QuestPage: React.FC = () => {
 		loadUserSettings();
 	}, [location.key]);
 	useEffect(() => {
-		stepRefs.current = Array.from({ length: details.stepDetails.length }, () =>
-			React.createRef()
-		);
-	}, [details.stepDetails.length]);
+		if (questSteps !== undefined) {
+			stepRefs.current = Array.from({ length: questSteps.length }, () =>
+				React.createRef()
+			);
+		}
+	}, [questSteps?.length]);
 
 	function handleFalse() {
 		isOpenNotes.current = false;
@@ -500,9 +476,6 @@ const QuestPage: React.FC = () => {
 				questName={questName}
 				QuestListJSON={"./Quest Data/QuestImageList.json"}
 			/>
-			<QuestStepFetcher textfile={textfile} questStepJSON={questlistJSON} />
-			<QuestDetailsFetcher questName={questName} />
-
 			<div>
 				<h2
 					className="qpTitle"
@@ -557,11 +530,11 @@ const QuestPage: React.FC = () => {
 					</Button>
 				)}
 			</Flex>
-			{showStepReq && Array.isArray(QuestDetails) ? (
+			{showStepReq ? (
 				<>
 					<Suspense fallback={<div>Loading Accordion...</div>}>
 						<QuestDetailContents
-							QuestDetails={QuestDetails}
+							QuestDetails={questDetails}
 							uiState={uiState}
 							expanded={expanded}
 							setExpanded={setExpanded}
@@ -579,7 +552,7 @@ const QuestPage: React.FC = () => {
 						orientation="vertical"
 						onStepClick={setActiveAndScroll}
 					>
-						{details.stepDetails.map((value, index) => {
+						{questSteps?.map((value, index) => {
 							// Log current step and imageList for debugging
 
 							// Find image details matching this step

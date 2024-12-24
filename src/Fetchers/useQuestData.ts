@@ -1,9 +1,6 @@
 import pathData from "./../Quest Data/QuestPaths.json";
-import { useCallback, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 
-type Steps = {
-	steps: string;
-};
 type QuestPaths = {
 	Quest: string;
 	Path: string;
@@ -11,27 +8,36 @@ type QuestPaths = {
 	CTranscript: string;
 };
 export const useQuestPaths = () => {
-	const [questPaths, setQuestPaths] = useState<QuestPaths[]>();
-	const [questSteps, setQuestSteps] = useState<Steps>();
+	const [questSteps, setQuestSteps] = useState<String[]>();
 
-	const QuestDataPaths = useCallback(() => {
-		const paths = JSON.parse(JSON.stringify(pathData));
-		console.log(paths);
-		if (Array.isArray(paths)) {
-			setQuestPaths((prev) =>
-				JSON.stringify(prev) !== JSON.stringify(paths) ? paths : prev
-			);
-		}
+	const QuestDataPaths = useMemo(() => {
+		const paths: QuestPaths[] = JSON.parse(JSON.stringify(pathData));
+		return Array.isArray(paths) ? paths : [];
 	}, []);
 
 	const getQuestSteps = useCallback(
-		(questName: string) => {
-			const stepPath = questPaths?.find(
-				(quest) => quest.Quest === questName
-			)?.Path;
-			console.log(stepPath);
+		async (questName: string) => {
+			console.log(questName);
+			if (QuestDataPaths !== undefined) {
+				const stepPath = QuestDataPaths?.find((quest) => {
+					if (quest.Quest === questName) {
+						return quest.Path;
+					}
+				});
+				if (stepPath !== undefined) {
+					const response = fetch(stepPath.Path);
+					const steps = (await (await response).text())
+						.trim()
+						.replace(/\n/g, "")
+						.split("`");
+					if (Array.isArray(steps) && steps !== undefined) {
+						setQuestSteps(steps);
+					}
+				}
+			}
 		},
-		[questPaths]
+		[QuestDataPaths]
 	);
-	return { questPaths, QuestDataPaths, getQuestSteps } as const;
+
+	return { questSteps, QuestDataPaths, getQuestSteps } as const;
 };

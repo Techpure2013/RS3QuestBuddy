@@ -53,6 +53,7 @@ export const useQuestPageFunctions = () => {
 		if (newWindow) newWindow.opener = null;
 	};
 	const ignoredRequirements = new Set([
+		"Meet Naressa in Senntisten",
 		"Ironmen",
 		"Ironman",
 		"Be ",
@@ -60,7 +61,7 @@ export const useQuestPageFunctions = () => {
 		"Ability to",
 		"Time Served",
 		"Find",
-		"Complete the base camp tutorial on Anachronia",
+		"Complete",
 		"Rescue Mad Eadgar from the Troll Stronghold",
 		"Able To",
 		"Claim Kudos",

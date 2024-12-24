@@ -18,29 +18,45 @@ import {
 	IconArrowLeft,
 	IconPlus,
 } from "@tabler/icons-react";
-import { PlayerQuests, usePlayerStore } from "./../../Fetchers/PlayerFetch";
-import { rsQuestSorter } from "./../Quest Details/SortPlayerData";
+import { usePlayerStats } from "./../../Fetchers/usePlayerStats";
+import { usePlayerSortStats } from "./../../Fetchers/PlayerStatsSort";
 import { IconSettings } from "@tabler/icons-react";
 import { useDisclosure } from "@mantine/hooks";
 import { Settings } from "./../Settings/Settings";
 import useNotesDisclosure from "./../Quest Details/Quest Detail Components/useDisclosure";
 import { UserNotes } from "../Settings/userNotes";
+import { usePlayerQuests } from "./../../Fetchers/usePlayerQuests";
+import {
+	PlayerQuestStatus,
+	useSortedPlayerQuests,
+} from "./../../Fetchers/sortPlayerQuests";
 const QuestCarousel: React.FC = () => {
 	const [searchQuery, setSearchQuery] = useState<string>("");
-	const playerfetch = new PlayerQuests();
+	const { playerStats, isLoading, fetchPlayerStats } = usePlayerStats();
+	const { sortedPlayerStats, filterPlayerStats } = usePlayerSortStats();
 	const returningPName = useRef<string>("");
 	const location = useLocation();
-	let playerName = returningPName.current;
 	const playerFound = useRef<boolean>(false);
 	const sorted = useRef<boolean>(false);
-	const remainingQuests = useRef<string[] | null>(null);
-	const rsSorter = new rsQuestSorter();
-	const rsUserQuestProfile = usePlayerStore.getState().playerQuestInfo;
-	const [searchInitiated, setSearchInitiated] = useState(false);
-	const [questPoints, setQuestPoints] = useState(0);
+
+	const {
+		alteredQuestData,
+		completedPlayerQuests,
+		notStartedPlayerQuests,
+		startedPlayerQuests,
+		eligiblePlayerQuests,
+		notEligiblePlayerQuests,
+		totalQuestPoints,
+		sortPlayerQuests,
+	} = useSortedPlayerQuests();
+	const [inputValue, setInputValue] = useState("");
+	const remainingQuests = useRef<PlayerQuestStatus[]>();
+	const [questPoints, setQuestPoints] = useState(totalQuestPoints);
 	const alreadySorted = useRef<boolean>(false);
 	const [opened, { open, close }] = useDisclosure(false);
 	const [isOpened, { openNotes, closedNotes }] = useNotesDisclosure(false);
+	const { playerQuests, fetchPlayerQuests, questIsLoading } = usePlayerQuests();
+	const [update, setUpdate] = useState<boolean>(false);
 	const [uiState, setUiState] = useState({
 		isCompact: false,
 		isHighlight: false,
@@ -51,21 +67,20 @@ const QuestCarousel: React.FC = () => {
 		userLabelColor: "",
 		userButtonColor: "",
 	});
-	const [update, setUpdate] = useState(false);
+	const [currentPlayerName, setCurrentPlayerName] = useState<string | null>(
+		null
+	);
 	const [, forceUpdate] = useReducer((x) => x + 1, 0);
 	const [questList, setQuestList] = useState<questlist | null>(null);
 	const filteredQuests = questList?.quests.filter((quest) =>
 		quest.toLowerCase().includes(searchQuery.toLowerCase())
 	);
-	const [, setSkillsApplied] = useState(false);
 	const filteredRemainingQuests = sorted.current
-		? remainingQuests.current!.filter((quest) =>
-				quest.toLowerCase().includes(searchQuery.toLowerCase())
+		? remainingQuests.current?.filter((quest) =>
+				quest.title.toLowerCase().includes(searchQuery.toLowerCase())
 		  )
 		: [];
-	const handlePlayerLoad = async () => {
-		await playerfetch.fetchPlayerInfo(playerName);
-	};
+
 	useEffect(() => {
 		loadUserSettings();
 	}, [location.key]);
@@ -80,43 +95,62 @@ const QuestCarousel: React.FC = () => {
 		loadQuestList();
 	}, []);
 	const HandleNewPlayer = () => {
-		if (
-			sessionStorage.getItem("playerName") &&
-			sessionStorage.getItem("playerFound")
-		) {
-			sessionStorage.removeItem("playerName");
-			sessionStorage.removeItem("playerFound");
-			window.location.reload();
-		}
+		sessionStorage.clear();
+		playerFound.current = false;
+		returningPName.current = "";
+		remainingQuests.current = [];
+		setQuestPoints(null);
+		forceUpdate();
 	};
-	const handleKeyPress = async () => {
-		try {
-			if (playerName.length > 0) {
-				console.log("im here");
-				setSearchInitiated(true);
-				await playerfetch.fetchPlayerInfo(playerName);
-				await playerfetch.fetchPlayerSkills(playerName);
-				returningPName.current = playerName;
-				if (usePlayerStore.getState().playerQuestInfo.length > 0) {
-					setUpdate(true);
-					playerFound.current = true;
-					window.sessionStorage.setItem("playerFound", JSON.stringify(playerFound));
-					window.sessionStorage.setItem("playerName", JSON.stringify(playerName));
-					setSearchInitiated(false);
-				}
-			} else {
-				playerFound.current = false;
-			}
-		} catch (error) {
-			// Handle errors
-			console.error("Error fetching player info:", error);
-		}
+	const handleKeyPress = async (playerName: string) => {
+		setCurrentPlayerName(playerName);
+		if (isLoading) return;
+		if (questIsLoading) return;
+		await fetchPlayerStats(playerName);
+		await fetchPlayerQuests(playerName);
 	};
 	useEffect(() => {
-		if (usePlayerStore.getState().playerQuestInfo.length > 0) {
-			setUpdate(false);
+		if (!questIsLoading && playerQuests.length > 0) {
+			sessionStorage.setItem("playerQuest", JSON.stringify(playerQuests));
+			sortPlayerQuests([...playerQuests]); // Pass a fresh reference always
+			sessionStorage.setItem(
+				"hasCompleted",
+				JSON.stringify(completedPlayerQuests)
+			);
+			// Update `remainingQuests` here
+			if (alteredQuestData.length > 0) {
+				remainingQuests.current = notStartedPlayerQuests;
+				sessionStorage.setItem(
+					"remainingQuest",
+					JSON.stringify(remainingQuests.current)
+				);
+				sessionStorage.setItem(
+					"totalQuestPoints",
+					JSON.stringify(totalQuestPoints)
+				);
+				setQuestPoints(totalQuestPoints);
+				console.log("Updated remainingQuests:", totalQuestPoints);
+				setUpdate(true);
+				playerFound.current = true;
+				sessionStorage.setItem("playerFound", JSON.stringify(playerFound.current));
+				forceUpdate();
+			}
 		}
-	}, [update]);
+	}, [totalQuestPoints, playerQuests]);
+	useEffect(() => {
+		if (playerStats) {
+			sessionStorage.setItem("playerName", currentPlayerName ?? "");
+			sessionStorage.setItem("returningPName", currentPlayerName ?? "");
+			sessionStorage.setItem("sorted", JSON.stringify(sorted.current));
+
+			filterPlayerStats(playerStats.split(","));
+			sessionStorage.setItem(
+				"skillLevels",
+				JSON.stringify(sortedPlayerStats.current)
+			);
+		}
+	}, [sortedPlayerStats, playerStats, currentPlayerName]);
+
 	const renderQuestContent = (quest: string | undefined) => {
 		if (quest) {
 			let questTEdit = quest.toLowerCase().split(" ");
@@ -131,7 +165,7 @@ const QuestCarousel: React.FC = () => {
 					className="caroQTitle"
 					aria-label={`Navigate to ${quest}`}
 					style={{
-						color: sorted.current ? "#BF2930" : playerFound.current ? "#54B46F" : "",
+						color: sorted.current ? "#BF2930" : playerFound ? "#54B46F" : "",
 						paddingTop: "30",
 					}}
 				>
@@ -156,8 +190,6 @@ const QuestCarousel: React.FC = () => {
 		return null;
 	};
 	const sort = () => {
-		const resultingQuests = rsSorter.sortNotStartedQuests(rsUserQuestProfile);
-		remainingQuests.current = resultingQuests;
 		alreadySorted.current = true;
 		sorted.current = true;
 		window.sessionStorage.setItem(
@@ -165,10 +197,19 @@ const QuestCarousel: React.FC = () => {
 			JSON.stringify(alreadySorted.current)
 		);
 		window.sessionStorage.setItem("sorted", JSON.stringify(sorted.current));
-		applySkills();
+
 		forceUpdate();
 	};
-
+	useEffect(() => {
+		// Safeguard to avoid unnecessary resets
+		if (playerFound.current == true && returningPName.current) {
+			console.log("Setting INputval");
+			setInputValue(returningPName.current); // Set the input value only when needed
+		}
+		if (playerFound.current == false) {
+			setInputValue("");
+		}
+	}, [playerFound.current, returningPName.current]);
 	const unSort = () => {
 		alreadySorted.current = false;
 		sorted.current = false;
@@ -195,59 +236,52 @@ const QuestCarousel: React.FC = () => {
 		});
 	};
 
-	const applySkills = () => {
-		rsSorter.sortCompletedQuests(rsUserQuestProfile);
-		setSkillsApplied(true);
-	};
 	useEffect(() => {
 		const player = sessionStorage.getItem("playerName");
 
 		if (player !== null) {
 			returningPName.current = player;
-			applySkills();
-			handlePlayerLoad();
 			playerFound.current = true;
 		}
-	}, [playerFound.current]);
-	useEffect(() => {
-		const remainQuests = sessionStorage.getItem("remainingQuests");
-		const player = sessionStorage.getItem("playerName");
-		const qp = sessionStorage.getItem("questPoints");
-		const sort = sessionStorage.getItem("sorted");
-		const playerF = sessionStorage.getItem("playerFound");
-		const alreadyS = sessionStorage.getItem("alreadySorted");
-		if (
-			remainQuests !== null &&
-			player !== null &&
-			qp !== null &&
-			sort !== null &&
-			playerF &&
-			alreadyS !== null
-		) {
-			const parsedQuests: string[] = JSON.parse(remainQuests);
-			const parsedSort: boolean = JSON.parse(sort);
-			const parsedPlayerF: boolean = JSON.parse(playerF);
-			const parsedAlreadySorted: boolean = JSON.parse(alreadyS);
-			if (
-				parsedQuests !== null &&
-				typeof parsedQuests === "object" &&
-				Array.isArray(parsedQuests)
-			) {
+	}, [playerFound]);
+	const loadSessionStorage = () => {
+		try {
+			const remainQuests = sessionStorage.getItem("remainingQuest");
+			const player = sessionStorage.getItem("playerName");
+			const qp = sessionStorage.getItem("totalQuestPoints");
+			const sort = sessionStorage.getItem("sorted");
+			const playerF = sessionStorage.getItem("playerFound");
+			const alreadyS = sessionStorage.getItem("alreadySorted");
+			console.log(player);
+			if (remainQuests && player && qp && sort && playerF && alreadyS) {
+				const parsedQuests: PlayerQuestStatus[] = JSON.parse(remainQuests);
+				const parsedSort: boolean = JSON.parse(sort);
+				const parsedPlayerF: boolean = JSON.parse(playerF);
+				const parsedAlreadySorted: boolean = JSON.parse(alreadyS);
 				const qpoint: number = JSON.parse(qp);
-				setQuestPoints(qpoint);
-				returningPName.current = player;
-				sorted.current = parsedSort;
-				alreadySorted.current = parsedAlreadySorted;
-				remainingQuests.current = parsedQuests;
-				playerFound.current = parsedPlayerF;
-				applySkills();
+				console.log(Array.isArray(parsedQuests));
+				if (Array.isArray(parsedQuests)) {
+					setQuestPoints(qpoint);
+					returningPName.current = player;
+					sorted.current = parsedSort;
+					alreadySorted.current = parsedAlreadySorted;
+					remainingQuests.current = parsedQuests;
+					playerFound.current = parsedPlayerF;
+				} else {
+					console.warn("Invalid or non-array data in 'remainingQuests'");
+				}
 			} else {
-				console.warn("Invalid or non-array data in sessionStorage");
+				console.warn("Some data is missing from sessionStorage");
 			}
-		} else {
-			console.warn("No data found in sessionStorage");
+		} catch (error) {
+			console.error("Error parsing sessionStorage data:", error);
 		}
-	}, [sorted.current]);
+	};
+
+	useEffect(() => {
+		loadSessionStorage();
+	}, []);
+
 	function startSearch() {
 		if (!update) {
 			return <Loader size={25} color="#36935C" />;
@@ -300,24 +334,18 @@ const QuestCarousel: React.FC = () => {
 				<div className="PlayerSearch">
 					<TextInput
 						readOnly={false}
-						defaultValue={
-							playerFound.current ? returningPName.current.replace(/["]/g, "") : ""
-						}
+						value={inputValue || ""} // Ensures value is never null/undefined
+						onChange={(e) => setInputValue(e.currentTarget.value)}
 						styles={{
 							input: { color: playerFound.current ? "#36935C" : "#933648" },
 							label: { color: uiState.hasLabelColor ? uiState.userLabelColor : "" },
 						}}
 						label={"Search for Player Name"}
 						placeholder={"Search for Player Name"}
-						onKeyDown={(event) => {
-							if (event.key === "Enter") {
-								console.log("Event value:", event.currentTarget.value);
-								playerName = event.currentTarget.value;
-								console.log("After update:", playerName);
-								handleKeyPress();
-							}
-						}}
-						rightSection={searchInitiated ? startSearch() : null}
+						onKeyDown={(event) =>
+							event.key === "Enter" ? handleKeyPress(event.currentTarget.value) : null
+						}
+						rightSection={isLoading || questIsLoading ? startSearch() : null}
 					/>
 				</div>
 
@@ -389,16 +417,16 @@ const QuestCarousel: React.FC = () => {
 					}}
 				>
 					{sorted.current &&
-						filteredRemainingQuests.map((quest, index) => {
-							let questTEdit = quest.toLowerCase().split(" ");
+						filteredRemainingQuests?.map((quest, index) => {
+							let questTEdit = quest.title.toLowerCase().split(" ");
 							let modifiedQuestVal1 = questTEdit.join("").replace(/[!,`']/g, "");
 							return (
-								<Accordion.Item key={index} value={quest}>
+								<Accordion.Item key={index} value={quest.title}>
 									<div>
 										<NavLink
 											to="/QuestPage"
 											state={{
-												questName: quest,
+												questName: quest.title,
 												modified: modifiedQuestVal1,
 											}}
 											style={({ isActive }) => ({
@@ -421,7 +449,7 @@ const QuestCarousel: React.FC = () => {
 													},
 												}}
 											>
-												{quest}
+												{quest.title}
 											</AccordionControl>
 										</NavLink>
 									</div>
@@ -485,8 +513,10 @@ const QuestCarousel: React.FC = () => {
 						loop
 					>
 						{sorted.current &&
-							filteredRemainingQuests.map((quest, index) => (
-								<Carousel.Slide key={index}>{renderQuestContent(quest)}</Carousel.Slide>
+							filteredRemainingQuests?.map((quest, index) => (
+								<Carousel.Slide key={index}>
+									{renderQuestContent(quest.title)}
+								</Carousel.Slide>
 							))}
 
 						{!sorted.current &&
