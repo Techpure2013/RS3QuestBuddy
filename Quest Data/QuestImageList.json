@@ -10514,16 +10514,28 @@
 		"name": "The Brink of Extinction",
 		"images": [
 			{
-				"step": "1",
-				"src": "TzhaarWordTable.png",
-				"width": 299,
-				"height": 146
+				"step": "19",
+				"src": "CombatWeaknessTable.png",
+				"width": 800,
+				"height": 650
 			},
 			{
-				"step": "1",
-				"src": "WeaponTable.png",
-				"width": 215,
-				"height": 120
+				"step": "33",
+				"src": "ScaleTable.png",
+				"width": 800,
+				"height": 650
+			},
+			{
+				"step": "52",
+				"src": "Step52_SolutionBOE.png",
+				"width": 710,
+				"height": 602
+			},
+			{
+				"step": "50",
+				"src": "WordsTable.png",
+				"width": 800,
+				"height": 650
 			}
 		]
 	},
