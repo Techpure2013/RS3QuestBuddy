@@ -37,30 +37,26 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 		let [part1, part2] = requirement.split(" ");
 		let requiredLevel: number;
 		let skillName: keyof Skills;
-		if (part2.toLowerCase() === "ranged") {
-			part2 = "range"; // Change "ranged" to "range"
-		}
-		// Determine which part is the skill name and which is the required level
-		if (!isNaN(parseInt(part1, 10))) {
-			requiredLevel = parseInt(part1, 10);
-			skillName = part2.toLowerCase() as keyof Skills; // Convert skill name to lowercase
-		} else if (!isNaN(parseInt(part2, 10))) {
-			requiredLevel = parseInt(part2, 10);
-			skillName = part1.toLowerCase() as keyof Skills; // Convert skill name to lowercase
-		} else {
-			console.error("Invalid requirement format:", requirement);
-			return false; // If neither part is numeric, the format is invalid
+		if (part2 !== undefined) {
+			if (part2.toLowerCase() === "ranged") {
+				part2 = "range";
+			}
 		}
 
-		console.log(
-			`Parsed Requirement: Level = ${requiredLevel}, Skill = ${skillName}`
-		);
+		if (!isNaN(parseInt(part1, 10))) {
+			requiredLevel = parseInt(part1, 10);
+			skillName = part2.toLowerCase() as keyof Skills;
+		} else if (!isNaN(parseInt(part2, 10))) {
+			requiredLevel = parseInt(part2, 10);
+			skillName = part1.toLowerCase() as keyof Skills;
+		} else {
+			return false; // If neither part is numeric, the format is invalid
+		}
 
 		// Check if any player in skillLevels matches the requirement
 		return skillLevels.some((playerStats) => {
 			if (skillName in playerStats) {
 				const playerSkillLevel = playerStats[skillName];
-				console.log(`Checking skill: ${skillName} = ${playerSkillLevel}`);
 				return playerSkillLevel >= requiredLevel;
 			} else {
 				console.warn(`Skill ${skillName} does not exist in player stats.`);
@@ -101,26 +97,29 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 									<React.Fragment key={questIndex}>
 										{quest.Requirements.map(
 											(requirement: string, requirementIndex: number) => {
-												const uniqueKey = `${questIndex}-${requirementIndex}`;
+												// Combine questIndex and requirementIndex to create a unique key
+												const uniqueKey = questIndex - requirementIndex;
+												let isComplete = false;
+												let color = "#C64340";
+												let hasSkill = false; // Default to red
+												if (skillLevels !== null) {
+													hasSkill = checkRequirement(skillLevels, requirement);
+													isComplete =
+														completedQuests &&
+														completedQuests.some((value) => {
+															if (value && typeof value === "object" && "title" in value) {
+																return (value as { title?: string }).title === requirement;
+															}
+															return false;
+														});
+												}
 
-												const hasSkill = checkRequirement(skillLevels, requirement);
-
-												const isComplete =
-													completedQuests &&
-													completedQuests.some((value) => {
-														if (value && typeof value === "object" && "title" in value) {
-															return (value as { title?: string }).title === requirement;
-														}
-														return false;
-													});
-
-												let color = "#C64340"; // Default to red
 												if (isComplete) {
 													color = "#24BF58"; // Green
 												}
 
 												const requirementParts = requirement.split(" ");
-												const firstPart: number = parseInt(requirementParts[0], 10);
+												const firstPart: number = parseInt(requirementParts[0]);
 
 												return (
 													<li
@@ -149,11 +148,12 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 																}}
 																state={{
 																	questName: requirement,
-																	modified: requirement.toLowerCase().replace(/[!,`']/g, ""),
+																	modified: requirement.toLowerCase().replace(/[!,']/g, ""),
 																}}
 																style={{
 																	display: "block",
 																	color: color,
+
 																	textDecoration: "none",
 																}}
 															>

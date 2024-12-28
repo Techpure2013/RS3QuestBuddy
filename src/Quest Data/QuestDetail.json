@@ -178,7 +178,7 @@
 			"Ghostspeak amulet (the reward from completing the hard Morytania achievements will not work)",
 			"Holy symbol",
 			"Polished buttons",
-			"15 Thieving to pickpocket from a H.A.M. Member or Drop from H.A.M. Guard or Obtained from digging at the Varrock Dig Site east of Varrock",
+			"15 Thieving to pickpocket from a HAM Member or Drop from HAM Guard or Obtained from digging at the Varrock Dig Site east of Varrock",
 			"Hard leather",
 			"20 ecto-tokens"
 		],
@@ -193,7 +193,7 @@
 		"EnemiesToDefeat": ["None"]
 	},
 	{
-		"Quest": "Another Slice of H.A.M.",
+		"Quest": "Another Slice of HAM",
 		"StartPoint": "Talk to Ambassador Alvijar, who is in Ur-tag's house in Dorgesh-Kaan.",
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Medium",
@@ -207,7 +207,7 @@
 		],
 		"ItemsRequired": [
 			"At least 3 free inventory spaces however 8 is preferable",
-			"Magic, Ranged, or Necromancy gear to fight a level 28 H.A.M. ranger and a level 28 H.A.M. mage (they cannot be killed with melee weapons - they are behind an obstacle). A crossbow and 50 bronze bolts will be provided in case you forget your ranged gear.",
+			"Magic, Ranged, or Necromancy gear to fight a level 28 HAM ranger and a level 28 HAM mage (they cannot be killed with melee weapons - they are behind an obstacle). A crossbow and 50 bronze bolts will be provided in case you forget your ranged gear.",
 			"A light source (bug lantern doesn't work)",
 			"A rope (only if you have never entered the Lumbridge Swamp Caves from the surface before)"
 		],
@@ -217,8 +217,8 @@
 			"Molten glass and law runes in bank to make spheres post-quest"
 		],
 		"EnemiesToDefeat": [
-			"H.A.M. Mage (level 28)",
-			"H.A.M. Archer (level 28)",
+			"HAM Mage (level 28)",
+			"HAM Archer (level 28)",
 			"Sigmund (level 70)"
 		]
 	},
@@ -853,7 +853,7 @@
 		"OfficialLength": "Long to Very Long",
 		"Requirements": [
 			"Land of the Goblins",
-			"Another Slice of H.A.M.",
+			"Another Slice of HAM",
 			"Death to the Dorgeshuun",
 			"The Lost Tribe",
 			"Goblin Diplomacy",
@@ -866,11 +866,11 @@
 		],
 		"ItemsRequired": [
 			"A light source or any Seers' headband",
-			"Full H.A.M. robe set (obtained during quest - you are given a new set)",
+			"Full HAM robe set (obtained during quest - you are given a new set)",
 			"5,000 coins (if player wrongly accuses an innocent merchant)"
 		],
 		"Recommended": [
-			"Food, armour, and a weapon (mage or melee for fight with H.A.M. agent)",
+			"Food, armour, and a weapon (mage or melee for fight with HAM agent)",
 			"Ardougne/Fishing Guild teleports",
 			"Prayer potions",
 			"Ancient mace",
@@ -880,7 +880,7 @@
 			"Goblin statue (level 70)",
 			"Ork statue (level 71)",
 			"Ogre statue (level 75)",
-			"H.A.M. agent Walton (level 49)",
+			"HAM agent Walton (level 49)",
 			"Sigmund (level 65)",
 			"Zanik (level 65), 5 times in succession",
 			"Bandos avatar (level 77), twice"
@@ -1440,7 +1440,7 @@
 			"23 Thieving"
 		],
 		"ItemsRequired": [
-			"2 full sets of H.A.M. robes (the set comprises: Hood, shirt, robe, gloves, boots, cloak and logo).",
+			"2 full sets of HAM robes (the set comprises: Hood, shirt, robe, gloves, boots, cloak and logo).",
 			"A light source (such as a bullseye lantern)",
 			"A melee, magic, or necromancy weapon or ability"
 		],
@@ -3670,7 +3670,7 @@
 		"OfficialLength": "Long",
 		"Requirements": [
 			"Land of the Goblins",
-			"Another Slice of H.A.M.",
+			"Another Slice of HAM",
 			"Death to the Dorgeshuun",
 			"The Lost Tribe",
 			"Goblin Diplomacy",
@@ -4089,7 +4089,7 @@
 		"OfficialLength": "Long to Very Long",
 		"Requirements": [
 			"Land of the Goblins",
-			"Another Slice of H.A.M.",
+			"Another Slice of HAM",
 			"Death to the Dorgeshuun",
 			"The Lost Tribe",
 			"The Dig Site",

@@ -28,7 +28,6 @@ export const useQuestDetails = () => {
 		const filteredDetails = getQuestDetails.filter(
 			(quest) => quest.Quest === questName
 		);
-
 		if (Array.isArray(filteredDetails) && filteredDetails !== undefined) {
 			setQuestDetails(filteredDetails);
 		}

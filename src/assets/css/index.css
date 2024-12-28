@@ -364,3 +364,22 @@ img {
 	background-color: var(--title-color);
 	border-color: var(--title-color);
 }
+.zoomable {
+	transition: transform 0.2s ease, left 0.2s ease, top 0.2s ease;
+	cursor: zoom-in;
+	position: relative; /* Enable positioning adjustments */
+	max-width: 100%; /* Prevent overflow in the initial state */
+	height: auto; /* Maintain aspect ratio */
+}
+
+.zoomable.zoomed {
+	position: fixed; /* Fix the image to the viewport */
+	top: 0;
+	left: 0;
+	width: 100vw; /* Full width of the viewport */
+	height: 100vh; /* Full height of the viewport */
+	transform: none; /* Remove unnecessary scaling */
+	cursor: zoom-out;
+	object-fit: contain; /* Ensure the image maintains its aspect ratio */
+	z-index: 10; /* Bring it to the front */
+}

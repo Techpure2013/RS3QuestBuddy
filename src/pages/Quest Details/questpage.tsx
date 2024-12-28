@@ -33,6 +33,7 @@ import {
 import { Skills } from "./../../Fetchers/PlayerStatsSort";
 import { useQuestDetails } from "./../../Fetchers/useQuestDetails";
 import { PlayerQuestStatus } from "./../../Fetchers/sortPlayerQuests";
+import { useDialogSolver } from "./dialogsolverRW";
 const UnderGroundPassGrid = React.lazy(
 	() =>
 		new Promise<{ default: React.ComponentType<any> }>((resolve) => {
@@ -66,6 +67,7 @@ const QuestDetailContents = React.lazy(
 const QuestPage: React.FC = () => {
 	// Define constants for local storage keys to avoid typos and ensure consistency
 	const { questSteps, QuestDataPaths, getQuestSteps } = useQuestPaths();
+
 	const {
 		ignoredRequirements,
 		create_ListUUID,
@@ -77,6 +79,7 @@ const QuestPage: React.FC = () => {
 	const LOCAL_STORAGE_KEYS = {
 		expandAllAccordions: "expandAllAccordions",
 	};
+	const reader = new DiagReader();
 	const qpname = useLocation();
 	let { questName } = qpname.state;
 	const [opened, { open, close }] = useDisclosure(false);
@@ -85,7 +88,6 @@ const QuestPage: React.FC = () => {
 		useLunarGridDisclosure(false);
 	const [active, setActive] = useState(-1);
 	const [highestStepVisited, setHighestStepVisited] = useState(active);
-	const reader = new DiagReader();
 	const { getQuestDetails, questDetails, getQuestNamedDetails } =
 		useQuestDetails();
 	const imageDetails = UseImageStore();
@@ -108,6 +110,7 @@ const QuestPage: React.FC = () => {
 	const isOpenNotes = useRef(false);
 	// const finder = new diagFinder();
 	const { showStepReq, toggleShowStepReq } = useQuestControllerStore();
+	const { startSolver, stopSolver, stopOverlay } = useDialogSolver(questName);
 	const handles = useQuestControllerStore();
 	const [skillLevels, setSkillLevels] = useState<Skills[]>([]);
 	const [completedQuests, setCompleteQuests] = useState<
@@ -133,7 +136,14 @@ const QuestPage: React.FC = () => {
 			];
 		return [];
 	});
-
+	useEffect(() => {
+		startSolver();
+		return () => {
+			console.log("Unmounting Solver");
+			stopSolver();
+			stopOverlay();
+		};
+	}, []);
 	const handleKeyDown = (event: KeyboardEvent) => {
 		if (!isOpenNotes.current) {
 			if (event.key === " ") {
@@ -279,6 +289,7 @@ const QuestPage: React.FC = () => {
 					"}());" +
 					"</sc" +
 					"ript>";
+
 				newWindow.document.writeln(
 					"<html><head><title>Quest Image</title>" +
 						script +
@@ -336,7 +347,19 @@ const QuestPage: React.FC = () => {
 								alignContent: "center",
 							}}
 						>
-							<img src={matchingImage?.src} />
+							<img
+								src={matchingImage?.src}
+								className="zoomable"
+								id="zoomableImage"
+								alt="Quest Image"
+								style={{ maxWidth: "100%", height: "auto" }}
+								onClick={() => {
+									const imgElement = newWindow.document.getElementById("zoomableImage");
+									if (imgElement) {
+										imgElement.classList.toggle("zoomed");
+									}
+								}}
+							/>
 						</div>
 					</>
 				);
@@ -414,8 +437,8 @@ const QuestPage: React.FC = () => {
 	useAlt1Listener(scrollNext);
 	return (
 		<>
-			<Reader reader={reader} questName={questName} />
 			<div>
+				{/* <Reader reader={reader} questName={questName} /> */}
 				<Suspense fallback={<div>Loading...</div>}>
 					<Modal
 						title="Underground Pass Grid"

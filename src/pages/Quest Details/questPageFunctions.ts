@@ -54,6 +54,7 @@ export const useQuestPageFunctions = () => {
 	};
 	const ignoredRequirements = new Set([
 		"Meet Naressa in Senntisten",
+		"Unabridged",
 		"Ironmen",
 		"Ironman",
 		"Be ",
