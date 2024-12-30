@@ -13,7 +13,7 @@ export const useDialogSolver = (questName: string) => {
 	let readNPCDialog: string[] | null | undefined = null;
 	let previousOptions: DialogButton[] | null = null;
 	let previousMatchingOption: string | null = null;
-	let acceptButtonTwice: number = 0;
+	let npcDialogue: string[] | null | undefined = null;
 	// Ensure `compareTranscript` is loaded before starting the interval
 	const initialize = async () => {
 		await getCompareTranscript(questName);
@@ -34,56 +34,60 @@ export const useDialogSolver = (questName: string) => {
 	};
 	const readDialog = () => {
 		const diagboxCapture = a1libs.captureHoldFullRs();
-		const found = dialogReader.find(diagboxCapture);
-		if (found) {
-			const findDialogue = dialogReader.checkDialog(diagboxCapture);
-			if (findDialogue) {
-				const readDialogue = dialogReader.readDialog(diagboxCapture, findDialogue);
-				return readDialogue;
-			}
+		const findDialogue = dialogReader.checkDialog(diagboxCapture);
+		if (findDialogue) {
+			const readDialogue = dialogReader.readDialog(diagboxCapture, findDialogue);
+			return readDialogue;
 		}
 	};
-	const startAcceptButtonFinder = () => {
-		let attemptCount = 0; // Counter to track attempts
-		const maxAttempts = 5; // Maximum number of attempts allowed
-
-		acceptButtonID = setInterval(() => {
-			stopSolver();
-			acceptButtonFinder.find();
-			console.log(acceptButtonFinder.find());
-
-			attemptCount++; // Increment the counter
-
-			// Check if maximum attempts have been reached
-			if (attemptCount >= maxAttempts) {
-				console.warn(
-					`Max attempts (${maxAttempts}) reached. Stopping acceptButtonFinder.`
-				);
-				previousOptions = null;
-				stopButtonFinder();
-				startSolver(); // Stop the interval
-			}
-		}, 500);
-	};
-	const startOverlay = (option: DialogButton, color: number) => {
+	const startOverlay = (
+		option: DialogButton,
+		color: number,
+		transcriptValue: any
+	) => {
 		console.log("starting overlay: ", option);
 		stopSolver();
 		overlayID = setInterval(() => {
 			readNPCDialog = readDialog();
+
+			console.log(readNPCDialog);
 			if (readNPCDialog !== undefined) {
 				stopOverlay();
-				compareTranscript.current.reverse().pop();
-				compareTranscript.current.reverse();
+				console.log("not Undefined");
+				const index = compareTranscript.current.findIndex(
+					(value) => value.Dialogue === transcriptValue
+				);
+
+				if (index !== -1) {
+					compareTranscript.current.splice(index, 1);
+				}
+
 				startSolver();
 			} else {
 				let testCapture = readCapture();
 				if (testCapture) {
 					let questionedOption = testCapture.some(
-						(value) => value.text == previousMatchingOption
+						(value) => value.text === previousMatchingOption
 					);
 					console.log(compareTranscript);
 					if (!questionedOption) {
 						stopOverlay();
+						if (
+							testCapture.some(
+								(value) =>
+									value.text.toLowerCase().trim() ===
+									compareTranscript.current[0 + 1].Dialogue.toLowerCase().trim()
+							)
+						) {
+							const index = compareTranscript.current.findIndex(
+								(value) => value.Dialogue === transcriptValue
+							);
+
+							if (index !== -1) {
+								compareTranscript.current.splice(index, 1);
+							}
+						}
+						previousOptions = null;
 						startSolver();
 					}
 				}
@@ -99,7 +103,7 @@ export const useDialogSolver = (questName: string) => {
 				Math.round(option.y - 10),
 				Math.round(option.x / 2),
 				25,
-				700,
+				1200,
 				4
 			);
 		}, 1000);
@@ -109,21 +113,18 @@ export const useDialogSolver = (questName: string) => {
 			clearInterval(overlayID);
 		}
 	};
-	const stopButtonFinder = () => {
-		if (acceptButtonID) {
-			clearInterval(acceptButtonID);
-		}
-	};
 	const startSolver = () => {
 		if (!compareTranscript.current || compareTranscript.current.length === 0) {
 			console.warn("Transcript data not available. Ensure it's loaded.");
 			return;
 		}
-
+		compareTranscript.current = compareTranscript.current.filter(
+			(option) => option.Dialogue !== "[Accept Quest]"
+		);
 		captureID = setInterval(() => {
 			const options = readCapture();
+			acceptButtonFinder.find();
 			if (options) {
-				stopButtonFinder();
 				const isSameAsPrevious =
 					previousOptions &&
 					options.length === previousOptions.length &&
@@ -140,13 +141,13 @@ export const useDialogSolver = (questName: string) => {
 					console.log("Same options detected, skipping...");
 				}
 			}
-		}, 1000);
+		}, 600);
 	};
 
 	// Update handleMatchedOption to expect a single DialogButton
 	const handleMatchedOption = (option: DialogButton, transcriptValue: any) => {
 		const red = a1libs.mixColor(252, 45, 75, 99);
-		startOverlay(option, red);
+		startOverlay(option, red, transcriptValue);
 	};
 	const useReadOptions = (options: DialogButton[]) => {
 		if (compareTranscript.current.length > 0) {
@@ -155,56 +156,30 @@ export const useDialogSolver = (questName: string) => {
 				compareTranscript,
 				options
 			);
-
-			// Iterate over transcript values and match with options
-			for (const transcriptValue of compareTranscript.current) {
-				if (!transcriptValue || typeof transcriptValue.Dialogue !== "string") {
-					console.warn(
-						"Skipping due to invalid or undefined transcript value:",
-						transcriptValue
-					);
-					continue;
-				}
-
-				const matchingOption = options.find((value) => {
-					if (!value || typeof value.text !== "string") {
-						console.warn("Skipping due to invalid or undefined option:", value);
-						return false;
-					}
-					if (transcriptValue.Dialogue === "[Accept Quest]") {
-						return true;
-					}
-					if (transcriptValue.Dialogue === "[Any option]") {
-						return true;
-					}
-					return (
-						value.text.trim().toLowerCase() ===
-						transcriptValue.Dialogue.trim().toLowerCase()
-					);
-				});
-
-				if (matchingOption) {
-					console.log(`Matched option found: ${matchingOption.text}`);
-
-					previousMatchingOption = matchingOption.text;
-
-					if (transcriptValue.Dialogue === "[Accept Quest]") {
-						startAcceptButtonFinder();
-						compareTranscript.current.reverse().pop();
-						compareTranscript.current.reverse();
-						break;
-					}
-
-					if (transcriptValue.Dialogue === "[Any option]") {
-						handleMatchedOption(matchingOption, transcriptValue);
-						break;
-					}
-
-					handleMatchedOption(matchingOption, transcriptValue);
+			let matchingOption: DialogButton | null = null;
+			for (let index = 0; index < options.length; index++) {
+				const option = options[index];
+				if (
+					option.text.toLowerCase().trim() ===
+					compareTranscript.current[0].Dialogue.toLowerCase().trim()
+				) {
+					matchingOption = option;
 					break;
-				} else {
-					console.log("No match found for:", transcriptValue.Dialogue);
 				}
+				if (compareTranscript.current[0].Dialogue === "[Any option]") {
+					matchingOption = options[0];
+					break;
+				}
+			}
+
+			if (matchingOption) {
+				console.log(`Matched option found: ${matchingOption.text}`);
+
+				previousMatchingOption = matchingOption.text;
+
+				handleMatchedOption(matchingOption, compareTranscript.current[0].Dialogue);
+			} else {
+				console.log("No match found for:", compareTranscript.current[0].Dialogue);
 			}
 		}
 	};

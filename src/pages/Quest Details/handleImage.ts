@@ -56,10 +56,12 @@ export class diagFinder {
 				this.acceptbuttonPos.y,
 				this.acceptbuttonPos.width,
 				this.acceptbuttonPos.height,
-				1000,
+				700,
 				3
 			);
 			return this.acceptbuttonPos;
+		} else {
+			return false;
 		}
 	}
 }
