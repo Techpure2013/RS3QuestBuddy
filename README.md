@@ -32,9 +32,9 @@ You may add this to your Alt1 via the following URL:
 `alt1://addapp/https://techpure2013.github.io/RS3QuestBuddy/appconfig.prod.json`
 
 # Building from Source
-**Run project without building**
+**Run install**
 ```bash
-$ npm run dev
+$ npm run install
 ```
 
 **Build project out to `./dist`**
@@ -42,16 +42,10 @@ $ npm run dev
 $ npm run build
 ```
 
-**Running ES Lint**
+**Run project on localhost:3000**
 ```bash
-$ npm run lint
+$ npm run start
 ```
-
-**Run application live preview**
-```bash
-$ npm run preview
-```
-
-
+----
 # License
 *RS3 Quest Buddy © 2023 by Techpure is licensed under CC BY-NC-SA 4.0*
