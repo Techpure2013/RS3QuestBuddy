@@ -8,5 +8,5 @@ export declare class diagFinder {
     loadImageData(): Promise<{
         acceptButton: ImageData;
     }>;
-    find(imgref?: ImgRef): a1lib.RectLike | null | undefined;
+    find(imgref?: ImgRef): false | a1lib.RectLike | null;
 }
