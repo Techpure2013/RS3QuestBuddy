@@ -1,26 +1,20 @@
-const inquirer = require("inquirer");
-const { execSync } = require("child_process");
+const express = require("express");
+const path = require("path");
 
-// Prompt for a commit message
-inquirer
-  .prompt([
-    {
-      type: "input",
-      name: "commitMessage",
-      message: "Enter a commit message for the deploy:",
-      default: "Deploying to GitHub Pages",
-    },
-  ])
-  .then((answers) => {
-    // Run build and deploy with the provided commit message
-    console.log("Building project...");
-    execSync("npm run build", { stdio: "inherit" });
+const app = express();
 
-    console.log("Deploying to GitHub Pages...");
-    execSync(`gh-pages -a -d dist -m "${answers.commitMessage}"`, {
-      stdio: "inherit",
-    });
-  })
-  .catch((error) => {
-    console.error("Error:", error);
-  });
+// Serve the Webpack bundle (static files)
+app.use(express.static(path.join(__dirname, "dist")));
+
+// Handle SPA fallback to `index.html`
+app.get("*", (req, res) => {
+	res.sendFile(path.join(__dirname, "dist", "index.html"));
+});
+
+// Define the port
+const PORT = process.env.PORT || 3000;
+
+// Start the server
+app.listen(PORT, () => {
+	console.log(`Server running on port ${PORT}`);
+});
