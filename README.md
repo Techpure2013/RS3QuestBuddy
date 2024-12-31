@@ -29,7 +29,7 @@ If you want to help gather images contact Techpure on discord.
 
 # Adding to Alt1
 You may add this to your Alt1 via the following URL:
-`alt1://addapp/https://techpure2013.github.io/RS3QuestBuddy/appconfig.prod.json`
+`alt1://addapp/https://techpure.dev/RS3QuestBuddy/appconfig.prod.json`
 
 # Building from Source
 **Run install**
