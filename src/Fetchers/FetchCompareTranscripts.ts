@@ -20,7 +20,6 @@ export const CompareTranscriptFetcher: React.FC<CTranInterface> = ({
 }) => {
 	const fetchCompareTranscript = async (): Promise<void> => {
 		try {
-			// Fetch the quest data
 			const questResponse = await fetch(QuestPaths);
 			const questData = await questResponse.json();
 
@@ -49,10 +48,7 @@ export const CompareTranscriptFetcher: React.FC<CTranInterface> = ({
 				useCTranscriptStore.getState().setCTranscript(cTranscriptArray);
 			}
 		} catch (error) {
-			console.warn(
-				"Could not fetch or clean the compare transcript data:",
-				error
-			);
+			console.warn("Could not fetch or clean the compare transcript data:", error);
 		}
 	};
 
@@ -63,8 +59,3 @@ export const CompareTranscriptFetcher: React.FC<CTranInterface> = ({
 
 	return null;
 };
-
-// Example usage within a React component
-// const fetcher = new CompareTranscriptFetcher( /* ... */ );
-// const CTranscriptArray = await fetcher.fetchCompareTranscript();
-// console.log(CTranscriptArray);

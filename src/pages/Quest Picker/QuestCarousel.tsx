@@ -156,7 +156,7 @@ const QuestCarousel: React.FC = () => {
 			let questImage = "";
 			const pattern = /[^a-zA-Z0-9]/g;
 			questImage =
-				"./Rewards/" + quest.toLowerCase().replace(pattern, "") + "reward.png";
+				"./Rewards/" + quest.toLowerCase().replace(pattern, "") + "reward.webp";
 
 			return (
 				<div
@@ -179,7 +179,7 @@ const QuestCarousel: React.FC = () => {
 							window.resizeTo(319, 619);
 						}}
 					>
-						<img src={questImage} alt="Reward" aria-hidden="true" />
+						<img loading={"lazy"} src={questImage} alt="Reward" aria-hidden="true" />
 					</NavLink>
 				</div>
 			);

@@ -78,7 +78,7 @@ export const QuestImageFetcher: React.FC<QuestImageType> = ({
 			const questImages: QuestImage[] = questInfo.images
 				.filter(
 					(image: ImageType) =>
-						typeof image.src === "string" && image.src.endsWith(".png")
+						typeof image.src === "string" && image.src.endsWith(".webp")
 				)
 				.map((image: ImageType, index: number) => ({
 					step: image.step, // Fallback to the index if no step is provided
