@@ -5,7 +5,7 @@ const app = express();
 
 // Serve the Webpack bundle (static files) from public_html/RS3QuestBuddy
 app.use(
-	express.static(path.join(__dirname, "public_html", "RS3QuestBuddyNodeJS"))
+	express.static(path.join(__dirname, "public_html", "RS3QuestBuddyTest"))
 );
 
 // Handle SPA fallback to `index.html` from public_html/RS3QuestBuddy
