@@ -136,14 +136,14 @@ const QuestPage: React.FC = () => {
 			];
 		return [];
 	});
-	useEffect(() => {
-		startSolver();
-		return () => {
-			console.log("Unmounting Solver");
-			stopSolver();
-			stopOverlay();
-		};
-	}, []);
+	// useEffect(() => {
+	// 	startSolver();
+	// 	return () => {
+	// 		console.log("Unmounting Solver");
+	// 		stopSolver();
+	// 		stopOverlay();
+	// 	};
+	// }, []);
 	const handleKeyDown = (event: KeyboardEvent) => {
 		if (!isOpenNotes.current) {
 			if (event.key === " ") {
@@ -438,7 +438,7 @@ const QuestPage: React.FC = () => {
 	return (
 		<>
 			<div>
-				{/* <Reader reader={reader} questName={questName} /> */}
+				<Reader reader={reader} questName={questName} />
 				<Suspense fallback={<div>Loading...</div>}>
 					<Modal
 						title="Underground Pass Grid"

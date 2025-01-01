@@ -52,17 +52,9 @@ const AltGuard = () => {
 				<h1>ALT1 not found</h1>
 				<p>
 					<a
-						href={`alt1://addapp/${window.location.protocol}//${
-							window.location.host
-						}/${
-							!window.location.host.includes("localhost")
-								? "RS3QuestBuddy/" //Include repo name (this is only for github pages)
-								: ""
-						}appconfig.${
-							!window.location.host.includes("localhost")
-								? "prod" //Target prod (this is only for github pages)
-								: ""
-						}.json`}
+						href={
+							"alt1://addapp/https://techpure.dev/RS3QuestBuddy/appconfig.prod.json"
+						}
 					>
 						<button className="Alt1button">Click here to add this to alt1</button>
 					</a>
