@@ -20,5 +20,5 @@ import "@mantine/core/styles/ScrollArea.css";
 import "@mantine/core/styles/ActionIcon.css";
 import "@mantine/carousel/styles.css";
 import "./../assets/css/index.css";
-import "./../assets/rs3buddyicon.webp";
+import "./../assets/rs3buddyicon.png";
 import "./../assets/fonts/RS3Font.woff2";
