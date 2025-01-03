@@ -16,7 +16,6 @@ import { useQuestPaths } from "./../../Fetchers/useQuestData";
 import { useQuestControllerStore } from "./../../Handlers/HandlerStore";
 import { createRoot } from "react-dom/client";
 import { DiagReader } from "./dialogsolver";
-import { Reader } from "./diagstartpage";
 import { IconArrowBack } from "@tabler/icons-react";
 import { Settings } from "./../Settings/Settings";
 import { useDisclosure } from "@mantine/hooks";
@@ -158,7 +157,6 @@ const QuestPage: React.FC = () => {
 	}, [questSteps?.length]);
 
 	useEffect(() => {
-		// Combine fetching quest paths and steps
 		if (QuestDataPaths) {
 			getQuestSteps(questName);
 		}
@@ -454,7 +452,6 @@ const QuestPage: React.FC = () => {
 	return (
 		<>
 			<div>
-				{/* <Reader reader={reader} questName={questName} /> */}
 				<Suspense fallback={<div>Loading...</div>}>
 					<Modal
 						title="Underground Pass Grid"

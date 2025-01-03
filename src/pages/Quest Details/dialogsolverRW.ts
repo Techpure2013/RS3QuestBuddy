@@ -12,7 +12,6 @@ export const useDialogSolver = (questName: string) => {
 	let readNPCDialog: string[] | null | undefined = null;
 	let previousOptions: DialogButton[] | null = null;
 	let previousMatchingOption: string | null = null;
-	let npcDialogue: string[] | null | undefined = null;
 	let readDialogueID: NodeJS.Timeout | null = null;
 	let readCaptureID: NodeJS.Timeout | null = null;
 	let activeOption: DialogButton | undefined = undefined;
@@ -44,14 +43,12 @@ export const useDialogSolver = (questName: string) => {
 		}
 	}
 	function startReadCapture() {
-		console.log("Invoking startReadCapture..."); // Debug log
 		if (readCaptureID) {
 			console.log("Interval already running, skipping...");
 			return;
 		}
 
 		readCaptureID = setInterval(() => {
-			console.log("readCaptureID interval running..."); // Add this
 			let readOptions = readCapture();
 			console.log(readOptions);
 			if (readOptions !== null) {
@@ -61,11 +58,6 @@ export const useDialogSolver = (questName: string) => {
 						activeOption = value;
 						break;
 					}
-				}
-			}
-			if (activeOption !== undefined) {
-				if (activeOption.active === true) {
-					console.log(`This button is active ${activeOption.text}`);
 				}
 			}
 		}, 300);
