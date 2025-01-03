@@ -8656,6 +8656,22 @@
 		"EnemiesToDefeat": ["None"]
 	},
 	{
+		"Quest": "Spiritual Enlightenment (miniquest)",
+		"StartPoint": "Talk with Ling on the south beach of Aminishi.",
+		"MemberRequirement": "Members only",
+		"OfficialLength": "Medium",
+		"Requirements": [
+			"NonImpressing the Locals",
+			"Complete the 'Meet the Assassin' voyage in player-owned port",
+			"90 Slayer"
+		],
+		"ItemsRequired": ["None"],
+		"Recommended": ["None"],
+		"EnemiesToDefeat": [
+			"Several Sotapanna, Sakadagami, and/or Anagami (level 111, 118 and 124 respectively)"
+		]
+	},
+	{
 		"Quest": "Nadir (saga)",
 		"StartPoint": "Find the damaged device while raiding the 18-22 furnished floors of Daemonheim, then ask Skaldrun south-west of the Daemonheim entrance to share their story.",
 		"MemberRequirement": "Members only",
