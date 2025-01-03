@@ -7,7 +7,6 @@ export const useDialogSolver = (questName: string) => {
 	const { compareTranscript, getCompareTranscript } = useCompareTranscript();
 	let captureID: NodeJS.Timeout | null = null;
 	let overlayID: NodeJS.Timeout | null = null;
-	let acceptButtonID: NodeJS.Timeout | null = null;
 	let acceptButtonFinder = new diagFinder();
 	let readOptions: DialogButton[] | null = null;
 	let readNPCDialog: string[] | null | undefined = null;
@@ -15,6 +14,9 @@ export const useDialogSolver = (questName: string) => {
 	let previousMatchingOption: string | null = null;
 	let npcDialogue: string[] | null | undefined = null;
 	let readDialogueID: NodeJS.Timeout | null = null;
+	let readCaptureID: NodeJS.Timeout | null = null;
+	let activeOption: DialogButton | undefined = undefined;
+	const red = a1libs.mixColor(252, 45, 75, 99);
 	// Ensure `compareTranscript` is loaded before starting the interval
 	const initialize = async () => {
 		await getCompareTranscript(questName);
@@ -41,6 +43,39 @@ export const useDialogSolver = (questName: string) => {
 			return readDialogue;
 		}
 	}
+	function startReadCapture() {
+		console.log("Invoking startReadCapture..."); // Debug log
+		if (readCaptureID) {
+			console.log("Interval already running, skipping...");
+			return;
+		}
+
+		readCaptureID = setInterval(() => {
+			console.log("readCaptureID interval running..."); // Add this
+			let readOptions = readCapture();
+			console.log(readOptions);
+			if (readOptions !== null) {
+				for (let index = 0; index < readOptions!.length; index++) {
+					let value = readOptions[index];
+					if (value.active) {
+						activeOption = value;
+						break;
+					}
+				}
+			}
+			if (activeOption !== undefined) {
+				if (activeOption.active === true) {
+					console.log(`This button is active ${activeOption.text}`);
+				}
+			}
+		}, 300);
+	}
+	function stopReadCapture() {
+		if (readCaptureID) {
+			clearInterval(readCaptureID);
+			readCaptureID = null;
+		}
+	}
 	function startReadDialog(transcriptValue: any) {
 		readDialogueID = setInterval(() => {
 			readNPCDialog = readDialog();
@@ -49,16 +84,24 @@ export const useDialogSolver = (questName: string) => {
 			if (readNPCDialog !== undefined) {
 				stopOverlay();
 				stopDialogueReader();
-				console.log("not Undefined");
-				const index = compareTranscript.current.findIndex(
-					(value) => value.Dialogue === transcriptValue
-				);
+				stopReadCapture();
 
-				if (index !== -1) {
-					compareTranscript.current.splice(index, 1);
+				if (
+					activeOption?.text.toLowerCase().trim() ===
+					compareTranscript.current[0].Dialogue.toLowerCase().trim()
+				) {
+					const index = compareTranscript.current.findIndex(
+						(value) => value.Dialogue === transcriptValue
+					);
+
+					if (index !== -1) {
+						compareTranscript.current.splice(index, 1);
+					}
+					previousOptions = null;
+					startSolver();
+				} else {
+					startSolver();
 				}
-
-				startSolver();
 			} else {
 				let testCapture = readCapture();
 				if (testCapture) {
@@ -69,6 +112,7 @@ export const useDialogSolver = (questName: string) => {
 					if (!questionedOption) {
 						stopOverlay();
 						stopDialogueReader();
+						stopReadCapture();
 						if (
 							testCapture.some(
 								(value) =>
@@ -94,6 +138,7 @@ export const useDialogSolver = (questName: string) => {
 	function stopDialogueReader() {
 		if (readDialogueID) {
 			clearInterval(readDialogueID);
+			readDialogueID = null;
 		}
 	}
 	function startOverlay(
@@ -101,13 +146,13 @@ export const useDialogSolver = (questName: string) => {
 		color: number,
 		transcriptValue: any
 	) {
-		console.log("starting overlay: ", option);
 		stopSolver();
-		startReadDialog(transcriptValue);
+
 		overlayID = setInterval(() => {
 			if (!dialogReader.find(a1libs.captureHoldFullRs())) {
 				stopOverlay();
 				stopDialogueReader();
+				stopReadCapture();
 				previousOptions = null;
 				startSolver();
 			}
@@ -125,6 +170,7 @@ export const useDialogSolver = (questName: string) => {
 	function stopOverlay() {
 		if (overlayID) {
 			clearInterval(overlayID);
+			overlayID = null;
 		}
 	}
 	function startSolver() {
@@ -151,8 +197,6 @@ export const useDialogSolver = (questName: string) => {
 
 					// Process the new options
 					useReadOptions(readOptions);
-				} else {
-					console.log("Same options detected, skipping...");
 				}
 			}
 		}, 300);
@@ -160,16 +204,12 @@ export const useDialogSolver = (questName: string) => {
 
 	// Update handleMatchedOption to expect a single DialogButton
 	function handleMatchedOption(option: DialogButton, transcriptValue: any) {
-		const red = a1libs.mixColor(252, 45, 75, 99);
 		startOverlay(option, red, transcriptValue);
+		startReadDialog(transcriptValue);
+		startReadCapture();
 	}
 	function useReadOptions(options: DialogButton[]) {
 		if (compareTranscript.current.length > 0) {
-			console.log(
-				"Comparing transcript with options:",
-				compareTranscript,
-				options
-			);
 			let matchingOption: DialogButton | null = null;
 			for (let index = 0; index < options.length; index++) {
 				const option = options[index];
@@ -187,13 +227,9 @@ export const useDialogSolver = (questName: string) => {
 			}
 
 			if (matchingOption) {
-				console.log(`Matched option found: ${matchingOption.text}`);
-
 				previousMatchingOption = matchingOption.text;
 
 				handleMatchedOption(matchingOption, compareTranscript.current[0].Dialogue);
-			} else {
-				console.log("No match found for:", compareTranscript.current[0].Dialogue);
 			}
 		}
 	}
@@ -204,6 +240,26 @@ export const useDialogSolver = (questName: string) => {
 			captureID = null;
 		}
 	}
-
-	return { startSolver: initialize, stopSolver, stopOverlay } as const;
+	function stopEverything() {
+		if (captureID) {
+			clearInterval(captureID);
+			captureID = null;
+		}
+		if (overlayID) {
+			clearInterval(overlayID);
+			overlayID = null;
+		}
+		if (readDialogueID) {
+			clearInterval(readDialogueID);
+			readDialogueID = null;
+		}
+		if (readCaptureID) {
+			clearInterval(readCaptureID);
+			readCaptureID = null;
+		}
+	}
+	return {
+		startSolver: initialize,
+		stopEverything,
+	} as const;
 };

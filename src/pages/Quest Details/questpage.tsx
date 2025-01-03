@@ -78,6 +78,7 @@ const QuestPage: React.FC = () => {
 	const location = useLocation();
 	const LOCAL_STORAGE_KEYS = {
 		expandAllAccordions: "expandAllAccordions",
+		dialogOption: "dialogSolverOption",
 	};
 	const reader = new DiagReader();
 	const qpname = useLocation();
@@ -100,6 +101,7 @@ const QuestPage: React.FC = () => {
 		hasColor: false,
 		hasButtonColor: false,
 		hasLabelColor: false,
+		dialogOption: false,
 		userColor: "",
 		userLabelColor: "",
 		userButtonColor: "",
@@ -110,7 +112,7 @@ const QuestPage: React.FC = () => {
 	const isOpenNotes = useRef(false);
 	// const finder = new diagFinder();
 	const { showStepReq, toggleShowStepReq } = useQuestControllerStore();
-	const { startSolver, stopSolver, stopOverlay } = useDialogSolver(questName);
+	const { startSolver, stopEverything } = useDialogSolver(questName);
 	const handles = useQuestControllerStore();
 	const [skillLevels, setSkillLevels] = useState<Skills[]>([]);
 	const [completedQuests, setCompleteQuests] = useState<
@@ -119,7 +121,6 @@ const QuestPage: React.FC = () => {
 	const storedExpandAll = localStorage.getItem(
 		LOCAL_STORAGE_KEYS.expandAllAccordions
 	);
-
 	const [expanded, setExpanded] = useState<string[]>(() => {
 		const isExpandAll =
 			storedExpandAll !== null ? JSON.parse(storedExpandAll) : false;
@@ -136,14 +137,7 @@ const QuestPage: React.FC = () => {
 			];
 		return [];
 	});
-	// useEffect(() => {
-	// 	startSolver();
-	// 	return () => {
-	// 		console.log("Unmounting Solver");
-	// 		stopSolver();
-	// 		stopOverlay();
-	// 	};
-	// }, []);
+
 	const handleKeyDown = (event: KeyboardEvent) => {
 		if (!isOpenNotes.current) {
 			if (event.key === " ") {
@@ -151,6 +145,18 @@ const QuestPage: React.FC = () => {
 			}
 		}
 	};
+	useEffect(() => {
+		loadUserSettings();
+		console.log(uiState.dialogOption);
+	}, [location.key]);
+	useEffect(() => {
+		if (questSteps !== undefined) {
+			stepRefs.current = Array.from({ length: questSteps.length }, () =>
+				React.createRef()
+			);
+		}
+	}, [questSteps?.length]);
+
 	useEffect(() => {
 		// Combine fetching quest paths and steps
 		if (QuestDataPaths) {
@@ -196,6 +202,26 @@ const QuestPage: React.FC = () => {
 		};
 	}, []);
 
+	useEffect(() => {
+		if (uiState.dialogOption) {
+			console.log("Mounting Solver");
+			startSolver();
+		} else {
+			return () => {
+				console.log("Unmounting Solver");
+				stopEverything();
+			};
+		}
+
+		return () => {
+			console.log("Unmounting Solver");
+			stopEverything();
+		};
+	}, [uiState.dialogOption]);
+
+	function handleFalse() {
+		isOpenNotes.current = false;
+	}
 	if (questName.trim() === "The Prisoner of Glouphrie") {
 		isPog = true;
 	}
@@ -406,12 +432,15 @@ const QuestPage: React.FC = () => {
 			element.scrollIntoView({ behavior: "smooth", block: "center" });
 		}
 	};
-	const loadUserSettings = () => {
+	function loadUserSettings() {
 		const hl = JSON.parse(localStorage.getItem("isHighlighted") || "false");
-		const rs = JSON.parse(localStorage.getItem("removeStep") || "false");
+		const dialogOption = JSON.parse(
+			localStorage.getItem("DialogSolverOption") || "false"
+		);
 
 		setUiState({
 			isHighlight: hl,
+			dialogOption: dialogOption,
 			userColor: localStorage.getItem("textColorValue") || "",
 			userLabelColor: localStorage.getItem("labelColor") || "",
 			userButtonColor: localStorage.getItem("buttonColor") || "",
@@ -419,26 +448,13 @@ const QuestPage: React.FC = () => {
 			hasLabelColor: !!localStorage.getItem("labelColor"),
 			hasButtonColor: !!localStorage.getItem("buttonColor"),
 		});
-	};
-	useEffect(() => {
-		loadUserSettings();
-	}, [location.key]);
-	useEffect(() => {
-		if (questSteps !== undefined) {
-			stepRefs.current = Array.from({ length: questSteps.length }, () =>
-				React.createRef()
-			);
-		}
-	}, [questSteps?.length]);
-
-	function handleFalse() {
-		isOpenNotes.current = false;
 	}
+
 	useAlt1Listener(scrollNext);
 	return (
 		<>
 			<div>
-				<Reader reader={reader} questName={questName} />
+				{/* <Reader reader={reader} questName={questName} /> */}
 				<Suspense fallback={<div>Loading...</div>}>
 					<Modal
 						title="Underground Pass Grid"
@@ -686,7 +702,7 @@ const QuestPage: React.FC = () => {
 									}}
 									description={value}
 									onClick={() => setActiveAndScroll}
-									allowStepSelect={ShouldAllowStep(index)}
+									allowStepSelect={true}
 								/>
 							);
 						})}
