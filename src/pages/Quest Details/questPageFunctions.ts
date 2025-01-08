@@ -52,6 +52,14 @@ export const useQuestPageFunctions = () => {
 		);
 		if (newWindow) newWindow.opener = null;
 	};
+	const openWikiQuest = (questName: string): void => {
+		const newWindow = window.open(
+			`https://runescape.wiki/w/${encodeURIComponent(questName)}/Quick_guide`,
+			"_blank",
+			"noopener,noreferrer"
+		);
+		if (newWindow) newWindow.opener = null;
+	};
 	const ignoredRequirements = new Set([
 		"Meet Naressa in Senntisten",
 		"Unabridged",
@@ -80,5 +88,6 @@ export const useQuestPageFunctions = () => {
 		useAlt1Listener,
 		handleBackButton,
 		openDiscord,
+		openWikiQuest,
 	} as const;
 };
