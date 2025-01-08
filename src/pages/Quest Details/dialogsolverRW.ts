@@ -2,6 +2,12 @@ import * as a1libs from "alt1";
 import DialogReader, { DialogButton } from "alt1/dialog";
 import { useCompareTranscript } from "./../../Fetchers/useCompareTranscript";
 import { diagFinder } from "./handleImage";
+type Color = {
+	r: string;
+	g: string;
+	b: string;
+	a: string;
+};
 export const useDialogSolver = (questName: string) => {
 	const dialogReader = new DialogReader();
 	const { compareTranscript, getCompareTranscript } = useCompareTranscript();
@@ -15,10 +21,41 @@ export const useDialogSolver = (questName: string) => {
 	let readDialogueID: NodeJS.Timeout | null = null;
 	let readCaptureID: NodeJS.Timeout | null = null;
 	let activeOption: DialogButton | undefined = undefined;
-	const red = a1libs.mixColor(252, 45, 75, 99);
+
+	function getRectColor() {
+		let rgbaColor = localStorage.getItem("dialogSolverColor");
+		if (rgbaColor !== null) {
+			const [r, g, b, a] = rgbaColor
+				.replace("rgba", "")
+				.replace("(", "")
+				.replace(")", "")
+				.split(",")
+				.map((value) => value.trim());
+
+			// Create the Color object
+			const rgbaColorObject: Color = {
+				r,
+				g,
+				b,
+				a,
+			};
+			console.log(rgbaColorObject); // Debug or use the object as needed
+			return rgbaColorObject;
+		} else {
+			const rgbaColorObject: Color = {
+				r: "255",
+				g: "255",
+				b: "0",
+				a: "99",
+			};
+			return rgbaColorObject;
+		}
+	}
+
 	// Ensure `compareTranscript` is loaded before starting the interval
 	const initialize = async () => {
 		await getCompareTranscript(questName);
+
 		startSolver();
 	};
 
@@ -50,7 +87,6 @@ export const useDialogSolver = (questName: string) => {
 
 		readCaptureID = setInterval(() => {
 			let readOptions = readCapture();
-			console.log(readOptions);
 			if (readOptions !== null) {
 				for (let index = 0; index < readOptions!.length; index++) {
 					let value = readOptions[index];
@@ -71,8 +107,6 @@ export const useDialogSolver = (questName: string) => {
 	function startReadDialog(transcriptValue: any) {
 		readDialogueID = setInterval(() => {
 			readNPCDialog = readDialog();
-
-			console.log(readNPCDialog);
 			if (readNPCDialog !== undefined) {
 				stopOverlay();
 				stopDialogueReader();
@@ -100,7 +134,6 @@ export const useDialogSolver = (questName: string) => {
 					let questionedOption = testCapture.some(
 						(value) => value.text === previousMatchingOption
 					);
-					console.log(compareTranscript);
 					if (!questionedOption) {
 						stopOverlay();
 						stopDialogueReader();
@@ -133,11 +166,7 @@ export const useDialogSolver = (questName: string) => {
 			readDialogueID = null;
 		}
 	}
-	function startOverlay(
-		option: DialogButton,
-		color: number,
-		transcriptValue: any
-	) {
+	function startOverlay(option: DialogButton, color: number) {
 		stopSolver();
 
 		overlayID = setInterval(() => {
@@ -196,7 +225,17 @@ export const useDialogSolver = (questName: string) => {
 
 	// Update handleMatchedOption to expect a single DialogButton
 	function handleMatchedOption(option: DialogButton, transcriptValue: any) {
-		startOverlay(option, red, transcriptValue);
+		let mixColor = getRectColor();
+		console.log(
+			`this is the mixed color ${Math.round(Number(mixColor.a) * 100)}`
+		);
+		let color = a1libs.mixColor(
+			Number(mixColor.r),
+			Number(mixColor.g),
+			Number(mixColor.b),
+			Math.round(Number(mixColor.a) * 100)
+		);
+		startOverlay(option, color);
 		startReadDialog(transcriptValue);
 		startReadCapture();
 	}

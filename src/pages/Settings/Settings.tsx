@@ -37,18 +37,24 @@ export const Settings: React.FC = () => {
 	const [dialogSolverOption, setDialogSolverOption] = useState<boolean>(() => {
 		return storedDialogOption !== null ? JSON.parse(storedDialogOption) : false;
 	});
-
+	const [dialogSolverColor, setDialogSolverColor] = useState<string>("");
+	const [dialogColorSwatch, setDialogColorSwatch] = useState<string[]>([]);
+	const maxColors = 5;
 	useEffect(() => {
 		const storedCompact = localStorage.getItem("isCompact");
 		const storedHighlight = localStorage.getItem("isHighlighted");
-
+		const storedDialogSolverColor = localStorage.getItem("dialogSolverColor");
 		const storedTextSwatches = localStorage.getItem("swatchColors");
 		const storedTextColorValue = localStorage.getItem("textColorValue");
 		const storedLabelColor = localStorage.getItem("labelColor");
 		const storedLabelSwatch = localStorage.getItem("labelSwatchColors");
 		const storedButtonColor = localStorage.getItem("buttonColor");
 		const storedButtonSwatchColor = localStorage.getItem("buttonSwatchColors");
+		const storedDialogSwatch = localStorage.getItem("dialogSolverSwatch");
 		const colorVal = localStorage.getItem("textColorValue");
+		if (storedDialogSolverColor !== null) {
+			setDialogSolverColor(storedDialogSolverColor);
+		}
 		if (colorVal) {
 			setUserColor(colorVal);
 			setHasColor(true);
@@ -76,6 +82,10 @@ export const Settings: React.FC = () => {
 			setUserLabelColor(storedLabelColor);
 		} else {
 			setHasLabelColor(false);
+		}
+		if (storedDialogSwatch !== null) {
+			const parsedSwatch = JSON.parse(storedDialogSwatch);
+			setDialogColorSwatch(parsedSwatch);
 		}
 		if (storedHighlight !== null) {
 			const parsedHighlight = JSON.parse(storedHighlight);
@@ -110,29 +120,38 @@ export const Settings: React.FC = () => {
 		);
 	}, [highlight, compact, expandAllAccordions, dialogSolverOption]);
 	useEffect(() => {
-		window.localStorage.setItem("swatchColors", JSON.stringify(swatchTextColors));
 		window.localStorage.setItem("textColorValue", colorTextValue);
 		window.localStorage.setItem("labelColor", labelColor);
+		window.localStorage.setItem("dialogSolverColor", dialogSolverColor);
+		window.localStorage.setItem("buttonColor", buttonColor);
+	}, [
+		dialogSolverColor,
+		buttonColor,
+		userColor,
+		userButtonColor,
+		userLabelColor,
+		labelColor,
+		colorTextValue,
+	]);
+	useEffect(() => {
 		window.localStorage.setItem(
 			"labelSwatchColors",
 			JSON.stringify(swatchLabelColor)
 		);
-		window.localStorage.setItem("buttonColor", buttonColor);
+		window.localStorage.setItem("swatchColors", JSON.stringify(swatchTextColors));
 		window.localStorage.setItem(
 			"buttonSwatchColors",
 			JSON.stringify(buttonSwatchColors)
 		);
+		window.localStorage.setItem(
+			"dialogSolverSwatch",
+			JSON.stringify(dialogColorSwatch)
+		);
 	}, [
+		dialogColorSwatch,
 		swatchTextColors,
-		colorTextValue,
-		labelColor,
 		swatchLabelColor,
-		buttonColor,
 		buttonSwatchColors,
-		userColor,
-		userButtonColor,
-		userLabelColor,
-		colorTextValue,
 	]);
 
 	return (
@@ -213,8 +232,10 @@ export const Settings: React.FC = () => {
 							}}
 							onChangeEnd={(value) => {
 								swatchTextColors.push(value);
-								if (swatchTextColors.length > 10) {
+								if (swatchTextColors.length == maxColors) {
+									swatchTextColors.reverse();
 									swatchTextColors.pop();
+									swatchTextColors.reverse();
 								}
 							}}
 						/>
@@ -255,8 +276,10 @@ export const Settings: React.FC = () => {
 							}}
 							onChangeEnd={(value) => {
 								swatchLabelColor.push(value);
-								if (swatchLabelColor.length > 10) {
+								if (swatchLabelColor.length == maxColors) {
+									swatchLabelColor.reverse();
 									swatchLabelColor.pop();
+									swatchLabelColor.reverse();
 								}
 							}}
 						/>
@@ -271,7 +294,6 @@ export const Settings: React.FC = () => {
 						</Button>
 					</AccordionPanel>
 				</Accordion.Item>
-
 				<Accordion.Item key={3} value="Color Your Buttons">
 					<AccordionControl
 						styles={{
@@ -298,8 +320,10 @@ export const Settings: React.FC = () => {
 							}}
 							onChangeEnd={(value) => {
 								buttonSwatchColors.push(value);
-								if (buttonSwatchColors.length > 10) {
+								if (buttonSwatchColors.length == maxColors) {
+									buttonSwatchColors.reverse();
 									buttonSwatchColors.pop();
+									buttonSwatchColors.reverse();
 								}
 							}}
 						/>
@@ -324,6 +348,51 @@ export const Settings: React.FC = () => {
 					</AccordionControl>
 					<AccordionPanel>
 						<FontSizeControls />
+					</AccordionPanel>
+				</Accordion.Item>
+				<Accordion.Item key={5} value="Dialog Solver Color">
+					<AccordionControl
+						styles={{
+							control: { color: hasLabelColor ? labelColor : "" },
+						}}
+					>
+						Change Your Dialog Solver Color
+					</AccordionControl>
+					<AccordionPanel>
+						<TextInput
+							defaultValue={dialogSolverColor}
+							onKeyDown={(event) => {
+								if (event.key === "Enter") {
+									setDialogSolverColor(event.currentTarget.value);
+								}
+							}}
+						></TextInput>
+						<ColorPicker
+							value={dialogSolverColor}
+							size="sm"
+							swatches={dialogColorSwatch}
+							format="rgba"
+							onChange={(value) => {
+								setDialogSolverColor(value);
+							}}
+							onChangeEnd={(value) => {
+								dialogColorSwatch.push(value);
+								if (dialogColorSwatch.length == maxColors) {
+									dialogColorSwatch.reverse();
+									dialogColorSwatch.pop();
+									dialogColorSwatch.reverse();
+								}
+							}}
+						/>
+						<Button
+							color={hasButtonColor ? userButtonColor : ""}
+							onClick={() => {
+								setDialogColorSwatch([]);
+							}}
+							variant="outline"
+						>
+							Clear Swatch
+						</Button>
 					</AccordionPanel>
 				</Accordion.Item>
 			</Accordion>

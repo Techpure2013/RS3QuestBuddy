@@ -16,7 +16,7 @@ import { useQuestPaths } from "./../../Fetchers/useQuestData";
 import { useQuestControllerStore } from "./../../Handlers/HandlerStore";
 import { createRoot } from "react-dom/client";
 import { DiagReader } from "./dialogsolver";
-import { IconArrowBack } from "@tabler/icons-react";
+import { IconArrowBack, IconCheck } from "@tabler/icons-react";
 import { Settings } from "./../Settings/Settings";
 import { useDisclosure } from "@mantine/hooks";
 import useNotesDisclosure from "./Quest Detail Components/useDisclosure";
@@ -430,6 +430,41 @@ const QuestPage: React.FC = () => {
 			element.scrollIntoView({ behavior: "smooth", block: "center" });
 		}
 	};
+	function loadPlayerQuests(questName: string) {
+		let remainingplayerQuest: PlayerQuestStatus[] = JSON.parse(
+			sessionStorage.getItem("remainingQuest") || "[]"
+		);
+
+		const completedQuests: PlayerQuestStatus[] = JSON.parse(
+			sessionStorage.getItem("hasCompleted") || "[]"
+		);
+
+		if (remainingplayerQuest.length > 0) {
+			const filterOutQuest = remainingplayerQuest.filter((value) => {
+				return value.title.toLowerCase().trim() === questName.toLowerCase().trim();
+			});
+
+			remainingplayerQuest = remainingplayerQuest.filter((value) => {
+				return value.title.toLowerCase().trim() !== questName.toLowerCase().trim();
+			});
+			const newCompletedQuests = filterOutQuest.map((value) => {
+				return { ...value, status: "COMPLETED" as "COMPLETED" };
+			});
+
+			completedQuests.push(...newCompletedQuests);
+			sessionStorage.setItem(
+				"remainingQuest",
+				JSON.stringify(remainingplayerQuest)
+			);
+			sessionStorage.setItem("hasCompleted", JSON.stringify(completedQuests));
+
+			console.log(newCompletedQuests);
+			console.log(completedQuests, remainingplayerQuest);
+		} else {
+			console.log("No quests found in sessionStorage.");
+		}
+	}
+
 	function loadUserSettings() {
 		const hl = JSON.parse(localStorage.getItem("isHighlighted") || "false");
 		const dialogOption = JSON.parse(
@@ -447,7 +482,9 @@ const QuestPage: React.FC = () => {
 			hasButtonColor: !!localStorage.getItem("buttonColor"),
 		});
 	}
-
+	function HandleCompleteQuest() {
+		loadPlayerQuests(questName);
+	}
 	useAlt1Listener(scrollNext);
 	return (
 		<>
@@ -744,7 +781,16 @@ const QuestPage: React.FC = () => {
 								>
 									<IconArrowBack />
 								</ActionIcon>
+								<ActionIcon
+									size={"sm"}
+									variant="outline"
+									color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
+									onClick={HandleCompleteQuest}
+								>
+									<IconCheck color="#4EE669" />
+								</ActionIcon>
 							</div>
+
 							{isPog && (
 								<Button
 									size="compact-sm"

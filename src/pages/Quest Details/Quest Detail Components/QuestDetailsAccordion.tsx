@@ -1,5 +1,5 @@
-import React from "react";
-import { Accordion, List, Image } from "@mantine/core";
+import React, { useEffect, useState } from "react";
+import { Accordion, List, Image, Checkbox } from "@mantine/core";
 import { NavLink } from "react-router-dom";
 import { Skills } from "./../../../Fetchers/PlayerStatsSort";
 import { PlayerQuestStatus } from "./../../../Fetchers/sortPlayerQuests";
@@ -30,6 +30,64 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 	completedQuests,
 	history,
 }) => {
+	const NEEDED_STORAGE_KEY = "checkedItemsNeeded";
+	const RECOMMENDED_STORAGE_KEY = "checkedItemsRecommended";
+
+	// Initialize state for needed and recommended items
+	const [checkedItemsNeeded, setCheckItemsNeeded] = useState<Set<string>>(() => {
+		const storedItems = sessionStorage.getItem(NEEDED_STORAGE_KEY);
+		return storedItems ? new Set(JSON.parse(storedItems)) : new Set();
+	});
+
+	const [checkedItemsRecommended, setCheckItemsRecommended] = useState<
+		Set<string>
+	>(() => {
+		const storedItems = sessionStorage.getItem(RECOMMENDED_STORAGE_KEY);
+		return storedItems ? new Set(JSON.parse(storedItems)) : new Set();
+	});
+
+	// Save needed items to sessionStorage
+	useEffect(() => {
+		sessionStorage.setItem(
+			NEEDED_STORAGE_KEY,
+			JSON.stringify([...checkedItemsNeeded])
+		);
+	}, [checkedItemsNeeded]);
+
+	// Save recommended items to sessionStorage
+	useEffect(() => {
+		sessionStorage.setItem(
+			RECOMMENDED_STORAGE_KEY,
+			JSON.stringify([...checkedItemsRecommended])
+		);
+	}, [checkedItemsRecommended]);
+
+	// Handle toggle for needed items
+	const handleCheckedItemsNeeded = (uniqueKey: string) => {
+		setCheckItemsNeeded((prevCheckedItemsNeeded) => {
+			const newCheckedItemsNeeded = new Set(prevCheckedItemsNeeded);
+			if (newCheckedItemsNeeded.has(uniqueKey)) {
+				newCheckedItemsNeeded.delete(uniqueKey); // Uncheck item
+			} else {
+				newCheckedItemsNeeded.add(uniqueKey); // Check item
+			}
+			return newCheckedItemsNeeded;
+		});
+	};
+
+	// Handle toggle for recommended items
+	const handleCheckedItemsRecommended = (uniqueKey: string) => {
+		setCheckItemsRecommended((prevCheckedItemsRecommended) => {
+			const newCheckedItemsRecommended = new Set(prevCheckedItemsRecommended);
+			if (newCheckedItemsRecommended.has(uniqueKey)) {
+				newCheckedItemsRecommended.delete(uniqueKey); // Uncheck item
+			} else {
+				newCheckedItemsRecommended.add(uniqueKey); // Check item
+			}
+			return newCheckedItemsRecommended;
+		});
+	};
+
 	const checkRequirement = (
 		skillLevels: Skills[],
 		requirement: string
@@ -247,12 +305,20 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 									<React.Fragment key={questIndex}>
 										{quest.ItemsRequired.map((item: string, itemIndex: number) => {
 											// Combine questIndex and itemIndex to create a unique key
-											const uniqueKey = `${questIndex}-${itemIndex}`;
+											const uniqueKey = `${quest.Quest}-${questIndex}-${itemIndex}`;
+											console.log(uniqueKey);
+											const isChecked = checkedItemsNeeded.has(uniqueKey);
 
 											return (
 												<List.Item key={uniqueKey}>
-													{"- "}
-													{item}
+													<Checkbox
+														label={item}
+														checked={isChecked}
+														onChange={() => handleCheckedItemsNeeded(uniqueKey)}
+														style={{
+															color: isChecked ? "green" : "inherit", // Apply green when checked
+														}}
+													/>
 												</List.Item>
 											);
 										})}
@@ -283,12 +349,20 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 									<React.Fragment key={questIndex}>
 										{quest.Recommended.map((item: string, itemIndex: number) => {
 											// Combine questIndex and itemIndex to create a unique key
-											const uniqueKey = `${questIndex}-${itemIndex}`;
+											const uniqueKey = `${quest.Quest}-${questIndex}-${itemIndex}`;
+
+											const isChecked = checkedItemsRecommended.has(uniqueKey);
 
 											return (
 												<List.Item key={uniqueKey}>
-													{"- "}
-													{item}
+													<Checkbox
+														label={item}
+														checked={isChecked}
+														onChange={() => handleCheckedItemsRecommended(uniqueKey)}
+														style={{
+															color: isChecked ? "green" : "inherit", // Apply green when checked
+														}}
+													/>
 												</List.Item>
 											);
 										})}
