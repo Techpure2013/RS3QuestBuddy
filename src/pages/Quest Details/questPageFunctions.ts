@@ -53,6 +53,10 @@ export const useQuestPageFunctions = () => {
 		if (newWindow) newWindow.opener = null;
 	};
 	const openWikiQuest = (questName: string): void => {
+		if (questName === "Another Slice of HAM")
+			questName = "Another Slice of H.A.M.";
+		if (questName === "Raksha, The Shadow Colossus Quest")
+			questName = "Raksha, the Shadow Colossus (quest)";
 		const newWindow = window.open(
 			`https://runescape.wiki/w/${encodeURIComponent(questName)}/Quick_guide`,
 			"_blank",

@@ -39,6 +39,7 @@ export const Settings: React.FC = () => {
 	});
 	const [dialogSolverColor, setDialogSolverColor] = useState<string>("");
 	const [dialogColorSwatch, setDialogColorSwatch] = useState<string[]>([]);
+	const [toolTip, setToolTip] = useState<boolean>(false);
 	const maxColors = 5;
 	useEffect(() => {
 		const storedCompact = localStorage.getItem("isCompact");
@@ -52,6 +53,10 @@ export const Settings: React.FC = () => {
 		const storedButtonSwatchColor = localStorage.getItem("buttonSwatchColors");
 		const storedDialogSwatch = localStorage.getItem("dialogSolverSwatch");
 		const colorVal = localStorage.getItem("textColorValue");
+		const toolTip = localStorage.getItem("toolTip");
+		if (toolTip !== null) {
+			setToolTip(JSON.parse(toolTip));
+		}
 		if (storedDialogSolverColor !== null) {
 			setDialogSolverColor(storedDialogSolverColor);
 		}
@@ -118,7 +123,8 @@ export const Settings: React.FC = () => {
 			"DialogSolverOption",
 			JSON.stringify(dialogSolverOption)
 		);
-	}, [highlight, compact, expandAllAccordions, dialogSolverOption]);
+		window.localStorage.setItem("toolTip", JSON.stringify(toolTip));
+	}, [highlight, compact, expandAllAccordions, dialogSolverOption, toolTip]);
 	useEffect(() => {
 		window.localStorage.setItem("textColorValue", colorTextValue);
 		window.localStorage.setItem("labelColor", labelColor);
@@ -202,6 +208,14 @@ export const Settings: React.FC = () => {
 					label={
 						dialogSolverOption ? "Turn off Dialog Solver" : "Turn on Dialog Solver"
 					}
+				/>
+				<Checkbox
+					styles={{
+						label: { color: hasColor ? userColor : "" },
+					}}
+					checked={toolTip}
+					onChange={(event) => setToolTip(event.target.checked)}
+					label={toolTip ? "Turn off Tool Tips" : "Turn on Tool Tips"}
 				/>
 			</Stack>
 			<Accordion>

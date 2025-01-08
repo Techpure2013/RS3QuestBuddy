@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, Suspense } from "react";
 import { useLocation } from "react-router-dom";
-import { ActionIcon, Button, Flex, Modal, Stepper } from "@mantine/core";
+import { ActionIcon, Box, Button, Flex, Modal, Stepper } from "@mantine/core";
 import "@mantine/core/styles/Stepper.css";
 import "@mantine/core/styles/Accordion.css";
 import "@mantine/core/styles.css";
@@ -34,6 +34,7 @@ import { Skills } from "./../../Fetchers/PlayerStatsSort";
 import { useQuestDetails } from "./../../Fetchers/useQuestDetails";
 import { PlayerQuestStatus } from "./../../Fetchers/sortPlayerQuests";
 import { useDialogSolver } from "./dialogsolverRW";
+import Tippy from "@tippyjs/react";
 const UnderGroundPassGrid = React.lazy(
 	() =>
 		new Promise<{ default: React.ComponentType<any> }>((resolve) => {
@@ -98,6 +99,7 @@ const QuestPage: React.FC = () => {
 	let gridActive = false;
 	let lunarGridActive = false;
 	const [uiState, setUiState] = useState({
+		toolTipEnabled: false,
 		isHighlight: false,
 		hasColor: false,
 		hasButtonColor: false,
@@ -472,8 +474,9 @@ const QuestPage: React.FC = () => {
 		const dialogOption = JSON.parse(
 			localStorage.getItem("DialogSolverOption") || "false"
 		);
-
+		const toolTip = JSON.parse(localStorage.getItem("toolTip") || "false");
 		setUiState({
+			toolTipEnabled: toolTip,
 			isHighlight: hl,
 			dialogOption: dialogOption,
 			userColor: localStorage.getItem("textColorValue") || "",
@@ -568,31 +571,57 @@ const QuestPage: React.FC = () => {
 				wrap="wrap"
 			>
 				<>
-					<Button
-						variant="outline"
-						color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-						styles={{
-							root: {
-								paddingBottom: "1em",
-							},
-						}}
-						onClick={handleBackButton}
-						leftSection={<IconArrowBack />}
+					<Tippy
+						content={
+							<Box
+								p="md"
+								bg="#2D413D"
+								c="#FFFFFF"
+								fw={500}
+								fz="sm"
+								lh={1.5}
+								ta="center"
+								w="auto"
+								h="auto"
+								style={{
+									borderRadius: "5px",
+									boxShadow: "initial",
+									borderColor: "ActiveBorder",
+								}}
+							>
+								Go back to the Quest Selection.
+							</Box>
+						}
+						disabled={!uiState.toolTipEnabled}
 					>
-						Pick Another Quest
-					</Button>
+						<Button
+							variant="outline"
+							color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
+							styles={{
+								root: {
+									paddingBottom: "1em",
+								},
+							}}
+							onClick={handleBackButton}
+							leftSection={<IconArrowBack />}
+						>
+							Pick Another Quest
+						</Button>
+					</Tippy>
 				</>
 
 				{showStepReq ? (
-					<Button
-						variant="outline"
-						color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-						onClick={() => {
-							toggleShowStepReq();
-						}}
-					>
-						Show Quest Steps
-					</Button>
+					<>
+						<Button
+							variant="outline"
+							color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
+							onClick={() => {
+								toggleShowStepReq();
+							}}
+						>
+							Show Quest Steps
+						</Button>
+					</>
 				) : (
 					<Button
 						variant="outline"
@@ -748,57 +777,201 @@ const QuestPage: React.FC = () => {
 					{
 						<div className="prevNextGroup">
 							<div id="icons">
-								<ActionIcon
-									onClick={open}
-									variant="outline"
-									color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-									size={"sm"}
+								<Tippy
+									content={
+										<Box
+											p="md"
+											bg="#2D413D"
+											c="#FFFFFF"
+											fw={500}
+											fz="sm"
+											lh={1.5}
+											ta="center"
+											w="auto"
+											h="auto"
+											style={{
+												borderRadius: "5px",
+												boxShadow: "initial",
+												borderColor: "ActiveBorder",
+											}}
+										>
+											Shows your personal Settings.
+										</Box>
+									}
+									disabled={!uiState.toolTipEnabled}
 								>
-									<IconSettings />
-								</ActionIcon>
-								<ActionIcon
-									onClick={openDiscord}
-									variant="outline"
-									color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-									size={"sm"}
+									<ActionIcon
+										onClick={open}
+										variant="outline"
+										color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
+										size={"sm"}
+									>
+										<IconSettings />
+									</ActionIcon>
+								</Tippy>
+								<Tippy
+									content={
+										<Box
+											p="md"
+											bg="#2D413D"
+											c="#FFFFFF"
+											fw={500}
+											fz="sm"
+											lh={1.5}
+											ta="center"
+											w="auto"
+											h="auto"
+											style={{
+												borderRadius: "5px",
+												boxShadow: "initial",
+												borderColor: "ActiveBorder",
+											}}
+										>
+											Travels to RS3 Quest Buddy Discord.
+										</Box>
+									}
+									disabled={!uiState.toolTipEnabled}
 								>
-									<IconBrandDiscord />
-								</ActionIcon>
-								<ActionIcon
-									color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-									onClick={() => {
-										isOpenNotes.current = true;
-										openNotes();
-									}}
-									size={"sm"}
-									variant="outline"
+									<ActionIcon
+										onClick={openDiscord}
+										variant="outline"
+										color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
+										size={"sm"}
+									>
+										<IconBrandDiscord />
+									</ActionIcon>
+								</Tippy>
+								<Tippy
+									content={
+										<Box
+											p="md"
+											bg="#2D413D"
+											c="#FFFFFF"
+											fw={500}
+											fz="sm"
+											lh={1.5}
+											ta="center"
+											w="auto"
+											h="auto"
+											style={{
+												borderRadius: "5px",
+												boxShadow: "initial",
+												borderColor: "ActiveBorder",
+											}}
+										>
+											Take your personal Notes.
+										</Box>
+									}
+									disabled={!uiState.toolTipEnabled}
 								>
-									<IconPlus />
-								</ActionIcon>
-								<ActionIcon
-									size="sm"
-									variant="outline"
-									color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-									onClick={handleBackButton}
+									<ActionIcon
+										color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
+										onClick={() => {
+											isOpenNotes.current = true;
+											openNotes();
+										}}
+										size={"sm"}
+										variant="outline"
+									>
+										<IconPlus />
+									</ActionIcon>
+								</Tippy>
+								<Tippy
+									content={
+										<Box
+											p="md"
+											bg="#2D413D"
+											c="#FFFFFF"
+											fw={500}
+											fz="sm"
+											lh={1.5}
+											ta="center"
+											w="auto"
+											h="auto"
+											style={{
+												borderRadius: "5px",
+												boxShadow: "initial",
+												borderColor: "ActiveBorder",
+											}}
+										>
+											Go back to the Quest Selection.
+										</Box>
+									}
+									disabled={!uiState.toolTipEnabled}
 								>
-									<IconArrowBack />
-								</ActionIcon>
-								<ActionIcon
-									size={"sm"}
-									variant="outline"
-									color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-									onClick={HandleCompleteQuest}
+									<ActionIcon
+										size="sm"
+										variant="outline"
+										color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
+										onClick={handleBackButton}
+									>
+										<IconArrowBack />
+									</ActionIcon>
+								</Tippy>
+								<Tippy
+									content={
+										<Box
+											p="md"
+											bg="#2D413D"
+											c="#FFFFFF"
+											fw={500}
+											fz="sm"
+											lh={1.5}
+											ta="center"
+											w="auto"
+											h="auto"
+											style={{
+												borderRadius: "5px",
+												boxShadow: "initial",
+												borderColor: "ActiveBorder",
+											}}
+										>
+											Completes the quest to update Remaining Quests while sorted.
+										</Box>
+									}
+									disabled={!uiState.toolTipEnabled}
 								>
-									<IconCheck color="#4EE669" />
-								</ActionIcon>
-								<ActionIcon
-									onClick={() => openWikiQuest(questName.trim())}
-									variant="outline"
-									color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-									size={"sm"}
+									<ActionIcon
+										size={"sm"}
+										variant="outline"
+										color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
+										onClick={HandleCompleteQuest}
+									>
+										<IconCheck color="#4EE669" />
+									</ActionIcon>
+								</Tippy>
+								<Tippy
+									content={
+										<Box
+											p="md"
+											bg="#2D413D"
+											c="#FFFFFF"
+											fw={500}
+											fz="sm"
+											lh={1.5}
+											ta="center"
+											w="auto"
+											h="auto"
+											style={{
+												borderRadius: "5px",
+												boxShadow: "initial",
+												borderColor: "ActiveBorder",
+											}}
+										>
+											Travels to the Wiki for the current quest your on.
+										</Box>
+									}
+									disabled={!uiState.toolTipEnabled}
 								>
-									<IconWorldWww/>
-								</ActionIcon>	
+									<ActionIcon
+										onClick={() => openWikiQuest(questName.trim())}
+										variant="outline"
+										color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
+										size={"sm"}
+									>
+										<IconWorldWww />
+									</ActionIcon>
+								</Tippy>
 							</div>
 
 							{isPog && (
