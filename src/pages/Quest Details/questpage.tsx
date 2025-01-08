@@ -10,6 +10,7 @@ import {
 	IconSettings,
 	IconPlus,
 	IconPhotoFilled,
+	IconWorldWww,
 } from "@tabler/icons-react";
 
 import { useQuestPaths } from "./../../Fetchers/useQuestData";
@@ -73,6 +74,7 @@ const QuestPage: React.FC = () => {
 		useAlt1Listener,
 		handleBackButton,
 		openDiscord,
+		openWikiQuest,
 	} = useQuestPageFunctions();
 	const location = useLocation();
 	const LOCAL_STORAGE_KEYS = {
@@ -789,6 +791,14 @@ const QuestPage: React.FC = () => {
 								>
 									<IconCheck color="#4EE669" />
 								</ActionIcon>
+								<ActionIcon
+									onClick={() => openWikiQuest(questName.trim())}
+									variant="outline"
+									color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
+									size={"sm"}
+								>
+									<IconWorldWww/>
+								</ActionIcon>	
 							</div>
 
 							{isPog && (
