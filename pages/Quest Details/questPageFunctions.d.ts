@@ -4,4 +4,5 @@ export declare const useQuestPageFunctions: () => {
     readonly useAlt1Listener: (callback: () => void) => void;
     readonly handleBackButton: () => void;
     readonly openDiscord: () => void;
+    readonly openWikiQuest: (questName: string) => void;
 };
