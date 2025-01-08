@@ -9,7 +9,8 @@ Thus reducing the load size of the github repo, a CDN is used in place and can b
 
 # Adding to Alt1
 You may add this to your Alt1 via the following URL:
-`alt1://addapp/https://techpure.dev/RS3QuestBuddy/appconfig.prod.json`
+`TODO`
+<!-- `alt1://addapp/https://techpure.dev/RS3QuestBuddy/appconfig.prod.json` -->
 
 # Building from Source
 **Run install**
