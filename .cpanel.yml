@@ -2,4 +2,4 @@ deployment:
   tasks:
     #Changed some comments here
     - export DEPLOYPATH=/home/techpure/public_html/RS3QuestBuddy/
-    - /bin/cp -R . $DEPLOYPATH
+    - cp -R . $DEPLOYPATH
