@@ -112,7 +112,7 @@ module.exports = {
 				{ from: "Images", to: "Images" },
 				{ from: "Quests", to: "Quests" },
 				{ from: "Rewards", to: "Rewards" },
-				{ from: "assets/background.png", to: "assets/background.png" }, // Specific file
+				{ from: "assets/background.png", to: "assets/background.png" },
 				{ from: "../public/appconfig.json", to: "assets/appconfig.json" },
 			],
 		}),
