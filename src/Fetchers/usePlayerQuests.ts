@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { PlayerQuestStatus } from "./sortPlayerQuests";
 
 export const usePlayerQuests = () => {
