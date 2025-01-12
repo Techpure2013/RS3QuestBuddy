@@ -8,7 +8,7 @@ type QuestPaths = {
 	CTranscript: string;
 };
 export const useQuestPaths = () => {
-	const [questSteps, setQuestSteps] = useState<String[]>();
+	const [questSteps, setQuestSteps] = useState<String[]>([]); // Default to an empty array
 
 	const QuestDataPaths = useMemo(() => {
 		const paths: QuestPaths[] = JSON.parse(JSON.stringify(pathData));
@@ -17,22 +17,32 @@ export const useQuestPaths = () => {
 
 	const getQuestSteps = useCallback(
 		async (questName: string) => {
-			if (QuestDataPaths !== undefined) {
-				const stepPath = QuestDataPaths?.find((quest) => {
-					if (quest.Quest === questName) {
-						return quest.Path;
-					}
-				});
+			if (QuestDataPaths.length > 0) {
+				const stepPath = QuestDataPaths.find((quest) => quest.Quest === questName);
 				if (stepPath !== undefined) {
-					const response = fetch(stepPath.Path);
-					const steps = (await (await response).text())
-						.trim()
-						.replace(/\n/g, "")
-						.split("`");
-					if (Array.isArray(steps) && steps !== undefined) {
-						setQuestSteps(steps);
+					try {
+						const response = await fetch(stepPath.Path);
+						const steps = (await response.text())
+							.trim()
+							.replace(/\n/g, "")
+							.split("`");
+						if (Array.isArray(steps)) {
+							setQuestSteps(steps);
+						} else {
+							console.warn("Fetched steps are not a valid array.");
+							setQuestSteps([]); // Reset to default if invalid data
+						}
+					} catch (error) {
+						console.error("Error fetching quest steps:", error);
+						setQuestSteps([]); // Reset to default if an error occurs
 					}
+				} else {
+					console.warn("No matching stepPath found for quest:", questName);
+					setQuestSteps([]); // Reset to default if no path is found
 				}
+			} else {
+				console.warn("QuestDataPaths is empty.");
+				setQuestSteps([]); // Reset to default if no paths are available
 			}
 		},
 		[QuestDataPaths]

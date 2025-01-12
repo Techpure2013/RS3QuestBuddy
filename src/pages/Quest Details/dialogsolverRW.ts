@@ -22,35 +22,35 @@ export const useDialogSolver = (questName: string) => {
 	let readCaptureID: NodeJS.Timeout | null = null;
 	let activeOption: DialogButton | undefined = undefined;
 
-	function getRectColor() {
-		let rgbaColor = localStorage.getItem("dialogSolverColor");
-		if (rgbaColor !== null) {
-			const [r, g, b, a] = rgbaColor
-				.replace("rgba", "")
-				.replace("(", "")
-				.replace(")", "")
-				.split(",")
-				.map((value) => value.trim());
+	// function getRectColor() {
+	// 	let rgbaColor = localStorage.getItem("dialogSolverColor");
+	// 	if (rgbaColor !== null) {
+	// 		const [r, g, b, a] = rgbaColor
+	// 			.replace("rgba", "")
+	// 			.replace("(", "")
+	// 			.replace(")", "")
+	// 			.split(",")
+	// 			.map((value) => value.trim());
 
-			// Create the Color object
-			const rgbaColorObject: Color = {
-				r,
-				g,
-				b,
-				a,
-			};
-			console.log(rgbaColorObject); // Debug or use the object as needed
-			return rgbaColorObject;
-		} else {
-			const rgbaColorObject: Color = {
-				r: "255",
-				g: "255",
-				b: "0",
-				a: "99",
-			};
-			return rgbaColorObject;
-		}
-	}
+	// 		// Create the Color object
+	// 		const rgbaColorObject: Color = {
+	// 			r,
+	// 			g,
+	// 			b,
+	// 			a,
+	// 		};
+	// 		console.log(rgbaColorObject); // Debug or use the object as needed
+	// 		return rgbaColorObject;
+	// 	} else {
+	// 		const rgbaColorObject: Color = {
+	// 			r: "255",
+	// 			g: "255",
+	// 			b: "0",
+	// 			a: "99",
+	// 		};
+	// 		return rgbaColorObject;
+	// 	}
+	// }
 
 	// Ensure `compareTranscript` is loaded before starting the interval
 	const initialize = async () => {
@@ -88,15 +88,9 @@ export const useDialogSolver = (questName: string) => {
 		readCaptureID = setInterval(() => {
 			let readOptions = readCapture();
 			if (readOptions !== null) {
-				for (let index = 0; index < readOptions!.length; index++) {
-					let value = readOptions[index];
-					if (value.active) {
-						activeOption = value;
-						break;
-					}
-				}
+				activeOption = readOptions.find((value) => value.active);
 			}
-		}, 300);
+		}, 200);
 	}
 	function stopReadCapture() {
 		if (readCaptureID) {
@@ -116,10 +110,11 @@ export const useDialogSolver = (questName: string) => {
 					activeOption?.text.toLowerCase().trim() ===
 					compareTranscript.current[0].Dialogue.toLowerCase().trim()
 				) {
+					console.log(`Active Option Read: ${activeOption}`);
 					const index = compareTranscript.current.findIndex(
 						(value) => value.Dialogue === transcriptValue
 					);
-
+					console.log(`Index used under Not Undefined NPC Dialog ${index}`);
 					if (index !== -1) {
 						compareTranscript.current.splice(index, 1);
 					}
@@ -148,7 +143,7 @@ export const useDialogSolver = (questName: string) => {
 							const index = compareTranscript.current.findIndex(
 								(value) => value.Dialogue === transcriptValue
 							);
-
+							console.log(`Am before deleting index under test capture ${index}`);
 							if (index !== -1) {
 								compareTranscript.current.splice(index, 1);
 							}
@@ -225,17 +220,15 @@ export const useDialogSolver = (questName: string) => {
 
 	// Update handleMatchedOption to expect a single DialogButton
 	function handleMatchedOption(option: DialogButton, transcriptValue: any) {
-		let mixColor = getRectColor();
-		console.log(
-			`this is the mixed color ${Math.round(Number(mixColor.a) * 100)}`
-		);
-		let color = a1libs.mixColor(
-			Number(mixColor.r),
-			Number(mixColor.g),
-			Number(mixColor.b),
-			Math.round(Number(mixColor.a) * 100)
-		);
-		startOverlay(option, color);
+		let mixColor = a1libs.mixColor(255, 0, 255);
+
+		// let color = a1libs.mixColor(
+		// 	Number(mixColor.r),
+		// 	Number(mixColor.g),
+		// 	Number(mixColor.b),
+		// 	Math.round(Number(mixColor.a) * 100)
+		// );
+		startOverlay(option, mixColor);
 		startReadDialog(transcriptValue);
 		startReadCapture();
 	}

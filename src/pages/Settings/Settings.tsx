@@ -364,7 +364,7 @@ export const Settings: React.FC = () => {
 						<FontSizeControls />
 					</AccordionPanel>
 				</Accordion.Item>
-				<Accordion.Item key={5} value="Dialog Solver Color">
+				{/* <Accordion.Item key={5} value="Dialog Solver Color">
 					<AccordionControl
 						styles={{
 							control: { color: hasLabelColor ? labelColor : "" },
@@ -408,7 +408,7 @@ export const Settings: React.FC = () => {
 							Clear Swatch
 						</Button>
 					</AccordionPanel>
-				</Accordion.Item>
+				</Accordion.Item> */}
 			</Accordion>
 		</div>
 	);
