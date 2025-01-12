@@ -52,13 +52,18 @@ export const useDialogSolver = (questName: string) => {
 	// 	}
 	// }
 
-	// Ensure `compareTranscript` is loaded before starting the interval
+	/**
+	 * @description Initializes the Compare Transcript
+	 */
 	const initialize = async () => {
 		await getCompareTranscript(questName);
 
 		startSolver();
 	};
-
+	/**
+	 *
+	 * @returns DialogButton[]
+	 */
 	function readCapture(): DialogButton[] | null {
 		const diagboxCapture = a1libs.captureHoldFullRs();
 		const found = dialogReader.find(diagboxCapture);
@@ -71,6 +76,10 @@ export const useDialogSolver = (questName: string) => {
 		}
 		return null;
 	}
+	/**
+	 *
+	 * @returns NPC Dialog
+	 */
 	function readDialog() {
 		const diagboxCapture = a1libs.captureHoldFullRs();
 		const findDialogue = dialogReader.checkDialog(diagboxCapture);
@@ -79,6 +88,10 @@ export const useDialogSolver = (questName: string) => {
 			return readDialogue;
 		}
 	}
+	/**
+	 *
+	 * Looks for Options on screen. On an active option Assigns activeOption to its Active Option
+	 */
 	function startReadCapture() {
 		if (readCaptureID) {
 			console.log("Interval already running, skipping...");
@@ -98,6 +111,12 @@ export const useDialogSolver = (questName: string) => {
 			readCaptureID = null;
 		}
 	}
+	/**
+	 *
+	 * @param transcriptValue Holds the CompareTranscript[0].Dialogue value
+	 * @description Looks for NPC Dialogue to Stop Overlay, Stop Dialogue Reader (Itself), and ReadCapture
+	 *
+	 */
 	function startReadDialog(transcriptValue: any) {
 		readDialogueID = setInterval(() => {
 			readNPCDialog = readDialog();
@@ -134,6 +153,7 @@ export const useDialogSolver = (questName: string) => {
 						stopDialogueReader();
 						stopReadCapture();
 						if (
+							//returns if the option that you went into is the next option in the compare transcript array
 							testCapture.some(
 								(value) =>
 									value.text.toLowerCase().trim() ===
@@ -161,6 +181,11 @@ export const useDialogSolver = (questName: string) => {
 			readDialogueID = null;
 		}
 	}
+	/**
+	 *
+	 * @param option DialogButton holds an Array of {Text, active, buttonx, x , y}
+	 * @param color Color of the a1libs.mixColor
+	 */
 	function startOverlay(option: DialogButton, color: number) {
 		stopSolver();
 
@@ -189,6 +214,10 @@ export const useDialogSolver = (questName: string) => {
 			overlayID = null;
 		}
 	}
+	/**
+	 *
+	 * @description Starts the dialog solver initially
+	 */
 	function startSolver() {
 		if (!compareTranscript.current || compareTranscript.current.length === 0) {
 			console.warn("Transcript data not available. Ensure it's loaded.");
@@ -219,6 +248,12 @@ export const useDialogSolver = (questName: string) => {
 	}
 
 	// Update handleMatchedOption to expect a single DialogButton
+	/**
+	 *
+	 * @param option
+	 * @param transcriptValue
+	 * @description Is a median between useReadOptions and Start Overlay, Read Dialog, and readCapture(ReadOptions)
+	 */
 	function handleMatchedOption(option: DialogButton, transcriptValue: any) {
 		let mixColor = a1libs.mixColor(255, 0, 255);
 
@@ -232,6 +267,11 @@ export const useDialogSolver = (questName: string) => {
 		startReadDialog(transcriptValue);
 		startReadCapture();
 	}
+	/**
+	 *
+	 * @param options DialogButton[]
+	 * @description Compares the CompareTranscript[0].Dialogue to All option boxes available.
+	 */
 	function useReadOptions(options: DialogButton[]) {
 		if (compareTranscript.current.length > 0) {
 			let matchingOption: DialogButton | null = null;
