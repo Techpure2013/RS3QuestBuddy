@@ -428,6 +428,19 @@
 		]
 	},
 	{
+		"Quest": "Beneath Scabaras' Sands",
+		"StartPoint": "Enter the Menaphos throne room.",
+		"MemberRequirement": "Members Only",
+		"OfficialLength": "Medium to Long",
+		"Requirements": ["'Phite Club", "Ode of the Devourer", "87 Slayer"],
+		"ItemsRequired": ["Restored Zarosian Artefact"],
+		"Recommended": ["Desert Amulet 4"],
+		"EnemiesToDefeat": [
+			"Multiple Profane Scabarites (Level 125)",
+			"Grief (Level 146)"
+		]
+	},
+	{
 		"Quest": "Beneath Cursed Tides",
 		"StartPoint": "Speak to Wizard Myrtle at the fountains in front of the Wizards' Tower.",
 		"MemberRequirement": "Free to play",

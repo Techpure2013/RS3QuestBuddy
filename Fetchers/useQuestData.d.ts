@@ -5,7 +5,7 @@ type QuestPaths = {
     CTranscript: string;
 };
 export declare const useQuestPaths: () => {
-    readonly questSteps: String[];
+    readonly questSteps: string[];
     readonly QuestDataPaths: QuestPaths[];
     readonly getQuestSteps: (questName: string) => Promise<void>;
 };

@@ -1,6 +1,7 @@
 import React from "react";
 interface CatchUpProps {
-    step: string;
+    step: string[];
+    compareTranscript: string;
 }
 export declare const CatchUp: React.FC<CatchUpProps>;
 export {};

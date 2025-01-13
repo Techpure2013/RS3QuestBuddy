@@ -1,6 +1,6 @@
 /// <reference types="react" />
 export type CTranscript = {
-    Dialogue: string;
+    Dialogue: String;
 };
 export declare const useCompareTranscript: () => {
     readonly compareTranscript: import("react").MutableRefObject<CTranscript[]>;
