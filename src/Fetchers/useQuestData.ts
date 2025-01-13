@@ -8,7 +8,7 @@ type QuestPaths = {
 	CTranscript: string;
 };
 export const useQuestPaths = () => {
-	const [questSteps, setQuestSteps] = useState<String[]>([]); // Default to an empty array
+	const [questSteps, setQuestSteps] = useState<string[]>([]); // Default to an empty array
 
 	const QuestDataPaths = useMemo(() => {
 		const paths: QuestPaths[] = JSON.parse(JSON.stringify(pathData));

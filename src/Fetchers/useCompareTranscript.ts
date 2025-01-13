@@ -8,7 +8,7 @@ type QuestPaths = {
 	CTranscript: string;
 };
 export type CTranscript = {
-	Dialogue: string;
+	Dialogue: String;
 };
 
 export const useCompareTranscript = () => {

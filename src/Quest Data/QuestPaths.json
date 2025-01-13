@@ -126,6 +126,12 @@
 		"CTranscript": "./Quests/Beneath Cursed Tides/CompareBeneath_Cursed_Tides.json"
 	},
 	{
+		"Quest": "Beneath Scabaras' Sands",
+		"Path": "./Quests/Beneath Scabaras' Sands/beneathscabarassandsinfo.txt",
+		"Transcript": "",
+		"CTranscript": "./Quests/Beneath Scabaras' Sands/Comparebeneathscabarassands.json"
+	},
+	{
 		"Quest": "Between a Rock",
 		"Path": "./Quests/Between a Rock/BetweenARockInfo.txt",
 		"Transcript": "/Quests/Between a Rock/Between_a_Rock_transcript.json",

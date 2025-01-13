@@ -325,5 +325,6 @@ export const useDialogSolver = (questName: string) => {
 	return {
 		startSolver: initialize,
 		stopEverything,
+		compareTranscript,
 	} as const;
 };

@@ -35,6 +35,8 @@ import { useQuestDetails } from "./../../Fetchers/useQuestDetails";
 import { PlayerQuestStatus } from "./../../Fetchers/sortPlayerQuests";
 import { useDialogSolver } from "./dialogsolverRW";
 import Tippy from "@tippyjs/react";
+import { CatchUp } from "./Quest Detail Components/CatchUp";
+import useCatchUpDisclosure from "./Quest Detail Components/useCatchUpModal";
 const UnderGroundPassGrid = React.lazy(
 	() =>
 		new Promise<{ default: React.ComponentType<any> }>((resolve) => {
@@ -112,10 +114,12 @@ const QuestPage: React.FC = () => {
 
 	let [isPOGOpen, { pogModOpen, pogModClose }] = usePOGDisclosure(false);
 	let [isOpened, { openNotes, closedNotes }] = useNotesDisclosure(false);
+	let [isCatchOpen, { openCatchUp, closeCatchUp }] = useCatchUpDisclosure(false);
 	const isOpenNotes = useRef(false);
 	// const finder = new diagFinder();
 	const { showStepReq, toggleShowStepReq } = useQuestControllerStore();
-	const { startSolver, stopEverything } = useDialogSolver(questName);
+	const { startSolver, stopEverything, compareTranscript } =
+		useDialogSolver(questName);
 	const handles = useQuestControllerStore();
 	const [skillLevels, setSkillLevels] = useState<Skills[]>([]);
 	const [completedQuests, setCompleteQuests] = useState<
@@ -494,6 +498,16 @@ const QuestPage: React.FC = () => {
 	return (
 		<>
 			<div>
+				{/* <Modal
+					title="Underground Pass Grid"
+					opened={isCatchOpen}
+					onClose={closeCatchUp}
+				>
+					<CatchUp
+						step={questSteps}
+						compareTranscript={JSON.stringify(compareTranscript)}
+					/>
+				</Modal> */}
 				<Suspense fallback={<div>Loading...</div>}>
 					<Modal
 						title="Underground Pass Grid"
@@ -972,6 +986,12 @@ const QuestPage: React.FC = () => {
 										<IconWorldWww />
 									</ActionIcon>
 								</Tippy>
+								{/*<ActionIcon
+									onClick={openCatchUp}
+									variant="outline"
+									color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
+									size={"sm"}
+								></ActionIcon>*/}
 							</div>
 
 							{isPog && (
