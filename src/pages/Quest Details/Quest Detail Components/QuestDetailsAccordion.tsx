@@ -306,7 +306,6 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 										{quest.ItemsRequired.map((item: string, itemIndex: number) => {
 											// Combine questIndex and itemIndex to create a unique key
 											const uniqueKey = `${quest.Quest}-${questIndex}-${itemIndex}`;
-											console.log(uniqueKey);
 											const isChecked = checkedItemsNeeded.has(uniqueKey);
 
 											return (

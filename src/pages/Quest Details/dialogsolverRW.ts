@@ -1,6 +1,9 @@
 import * as a1libs from "alt1";
 import DialogReader, { DialogButton } from "alt1/dialog";
-import { useCompareTranscript } from "./../../Fetchers/useCompareTranscript";
+import {
+	CTranscript,
+	useCompareTranscript,
+} from "./../../Fetchers/useCompareTranscript";
 import { diagFinder } from "./handleImage";
 type Color = {
 	r: string;
@@ -8,9 +11,9 @@ type Color = {
 	b: string;
 	a: string;
 };
-export const useDialogSolver = (questName: string) => {
+export const useDialogSolver = () => {
 	const dialogReader = new DialogReader();
-	const { compareTranscript, getCompareTranscript } = useCompareTranscript();
+
 	let captureID: NodeJS.Timeout | null = null;
 	let overlayID: NodeJS.Timeout | null = null;
 	let acceptButtonFinder = new diagFinder();
@@ -21,7 +24,7 @@ export const useDialogSolver = (questName: string) => {
 	let readDialogueID: NodeJS.Timeout | null = null;
 	let readCaptureID: NodeJS.Timeout | null = null;
 	let activeOption: DialogButton | undefined = undefined;
-
+	let compareTranscript: CTranscript[] = [];
 	// function getRectColor() {
 	// 	let rgbaColor = localStorage.getItem("dialogSolverColor");
 	// 	if (rgbaColor !== null) {
@@ -55,9 +58,11 @@ export const useDialogSolver = (questName: string) => {
 	/**
 	 * @description Initializes the Compare Transcript
 	 */
-	const initialize = async () => {
-		await getCompareTranscript(questName);
-
+	const initialize = () => {
+		compareTranscript = JSON.parse(
+			localStorage.getItem("CompareTranscript") || ""
+		);
+		console.log("Initializing Solver");
 		startSolver();
 	};
 	/**
@@ -100,10 +105,11 @@ export const useDialogSolver = (questName: string) => {
 
 		readCaptureID = setInterval(() => {
 			let readOptions = readCapture();
+			console.log(readOptions);
 			if (readOptions !== null) {
 				activeOption = readOptions.find((value) => value.active);
 			}
-		}, 200);
+		}, 600);
 	}
 	function stopReadCapture() {
 		if (readCaptureID) {
@@ -117,64 +123,110 @@ export const useDialogSolver = (questName: string) => {
 	 * @description Looks for NPC Dialogue to Stop Overlay, Stop Dialogue Reader (Itself), and ReadCapture
 	 *
 	 */
-	function startReadDialog(transcriptValue: any) {
-		readDialogueID = setInterval(() => {
-			readNPCDialog = readDialog();
-			if (readNPCDialog !== undefined) {
-				stopOverlay();
-				stopDialogueReader();
-				stopReadCapture();
 
-				if (
-					activeOption?.text.toLowerCase().trim() ===
-					compareTranscript.current[0].Dialogue.toLowerCase().trim()
-				) {
-					console.log(`Active Option Read: ${activeOption}`);
-					const index = compareTranscript.current.findIndex(
-						(value) => value.Dialogue === transcriptValue
-					);
-					console.log(`Index used under Not Undefined NPC Dialog ${index}`);
-					if (index !== -1) {
-						compareTranscript.current.splice(index, 1);
-					}
-					previousOptions = null;
-					startSolver();
-				} else {
-					startSolver();
-				}
-			} else {
-				let testCapture = readCapture();
-				if (testCapture) {
-					let questionedOption = testCapture.some(
-						(value) => value.text === previousMatchingOption
-					);
-					if (!questionedOption) {
-						stopOverlay();
-						stopDialogueReader();
-						stopReadCapture();
-						if (
-							//returns if the option that you went into is the next option in the compare transcript array
-							testCapture.some(
-								(value) =>
-									value.text.toLowerCase().trim() ===
-									compareTranscript.current[0 + 1].Dialogue.toLowerCase().trim()
-							)
-						) {
-							const index = compareTranscript.current.findIndex(
-								(value) => value.Dialogue === transcriptValue
-							);
-							console.log(`Am before deleting index under test capture ${index}`);
-							if (index !== -1) {
-								compareTranscript.current.splice(index, 1);
-							}
+	function startReadDialog(transcriptValue: string) {
+		// Clear previous interval to prevent multiple active intervals
+		let testCapture: DialogButton[] | null = null;
+		let readNPCDialog: string[] | null | undefined = null;
+		let questionedOption: boolean = false;
+		while (readNPCDialog === undefined || null) {
+			readNPCDialog = readDialog();
+			testCapture = readCapture();
+			if (!readNPCDialog) {
+				break;
+			}
+			if (testCapture) {
+				stopOverlay();
+				questionedOption = testCapture.some(
+					(value) => value.text === previousMatchingOption
+				);
+				if (!questionedOption) {
+					const nextOptionDialogue =
+						compareTranscript[1]?.Dialogue?.toLowerCase().trim();
+
+					if (
+						nextOptionDialogue &&
+						testCapture.some(
+							(value) => value.text.toLowerCase().trim() === nextOptionDialogue
+						)
+					) {
+						const index = compareTranscript.findIndex(
+							(value) => value.Dialogue === transcriptValue
+						);
+						if (index !== -1) {
+							compareTranscript.splice(index, 1);
+							console.log(`Removed dialogue before test capture at index: ${index}`);
+							startSolver();
+							return;
 						}
-						previousOptions = null;
-						startSolver();
 					}
 				}
 			}
-		}, 300);
+		}
+		stopOverlay();
+
+		// Simplified condition to handle transcript and active option check
+		// const firstDialogue = compareTranscript[0]?.Dialogue?.toLowerCase().trim();
+		// const activeOptionText = activeOption?.text?.toLowerCase().trim();
+
+		// if (firstDialogue && activeOptionText === firstDialogue) {
+		// 	console.log(`Active Option Read: ${activeOption}`);
+
+		// 	// Directly remove from compareTranscript using the index
+		// 	const index = compareTranscript.findIndex(
+		// 		(value) => value.Dialogue === transcriptValue
+		// 	);
+		// 	if (index !== -1) {
+		// 		compareTranscript.splice(index, 1);
+		// 		console.log(`Removed dialogue at index: ${index}`);
+		// 	}
+
+		// 	previousOptions = null;
+		// 	startSolver();
+		// } else if (
+		// 	firstDialogue?.startsWith("[Any option]") &&
+		// 	activeOption?.active
+		// ) {
+		// 	const index = compareTranscript.findIndex(
+		// 		(value) => value.Dialogue === transcriptValue
+		// 	);
+		// 	if (index !== -1) {
+		// 		compareTranscript.splice(index, 1);
+		// 		console.log(`Removed dialogue under 'Any option' at index: ${index}`);
+		// 	}
+
+		// 	previousOptions = null;
+		// 	startSolver();
+		// } else {
+		// 	startSolver();
+		// }
+		// // Start a new interval
+		// readDialogueID = setInterval(() => {
+		// 	readDialog();
+		// 	console.log(readNPCDialog);
+
+		// 	if (readNPCDialog !== undefined) {
+		// 		// Stop unnecessary processes early
+		// 	} else {
+		// 		const testCapture = readCapture();
+		// 		if (testCapture) {
+		// 			const questionedOption = testCapture.some(
+		// 				(value) => value.text === previousMatchingOption
+		// 			);
+
+		// 			if (!questionedOption) {
+		// 				stopOverlay();
+		// 				stopDialogueReader();
+		// 				stopReadCapture();
+
+		// 				previousOptions = null;
+		// 				startSolver();
+		// 			}
+		// 		}
+		// 	}
+		// }, 600); // You may also want to experiment with a slightly longer interval for better performance (e.g., 300ms).
 	}
+
 	function stopDialogueReader() {
 		if (readDialogueID) {
 			clearInterval(readDialogueID);
@@ -206,7 +258,7 @@ export const useDialogSolver = (questName: string) => {
 				600,
 				4
 			);
-		}, 900);
+		}, 600);
 	}
 	function stopOverlay() {
 		if (overlayID) {
@@ -219,15 +271,22 @@ export const useDialogSolver = (questName: string) => {
 	 * @description Starts the dialog solver initially
 	 */
 	function startSolver() {
-		if (!compareTranscript.current || compareTranscript.current.length === 0) {
+		if (!compareTranscript || compareTranscript.length === 0) {
 			console.warn("Transcript data not available. Ensure it's loaded.");
 			return;
 		}
-		compareTranscript.current = compareTranscript.current.filter(
+		if (captureID) {
+			clearInterval(captureID);
+			captureID = null;
+		}
+		compareTranscript = compareTranscript.filter(
 			(option) => option.Dialogue !== "[Accept Quest]"
 		);
 		captureID = setInterval(() => {
 			const options = readCapture();
+			if (acceptButtonFinder.find() !== undefined) {
+				acceptButtonFinder.find();
+			}
 			acceptButtonFinder.find();
 			if (options) {
 				const isSameAsPrevious =
@@ -244,7 +303,7 @@ export const useDialogSolver = (questName: string) => {
 					useReadOptions(readOptions);
 				}
 			}
-		}, 300);
+		}, 600);
 	}
 
 	// Update handleMatchedOption to expect a single DialogButton
@@ -273,18 +332,18 @@ export const useDialogSolver = (questName: string) => {
 	 * @description Compares the CompareTranscript[0].Dialogue to All option boxes available.
 	 */
 	function useReadOptions(options: DialogButton[]) {
-		if (compareTranscript.current.length > 0) {
+		if (compareTranscript.length > 0) {
 			let matchingOption: DialogButton | null = null;
 			for (let index = 0; index < options.length; index++) {
 				const option = options[index];
 				if (
 					option.text.toLowerCase().trim() ===
-					compareTranscript.current[0].Dialogue.toLowerCase().trim()
+					compareTranscript[0].Dialogue.toLowerCase().trim()
 				) {
 					matchingOption = option;
 					break;
 				}
-				if (compareTranscript.current[0].Dialogue === "[Any option]") {
+				if (compareTranscript[0].Dialogue === "[Any option]") {
 					matchingOption = options[0];
 					break;
 				}
@@ -293,7 +352,7 @@ export const useDialogSolver = (questName: string) => {
 			if (matchingOption) {
 				previousMatchingOption = matchingOption.text;
 
-				handleMatchedOption(matchingOption, compareTranscript.current[0].Dialogue);
+				handleMatchedOption(matchingOption, compareTranscript[0].Dialogue);
 			}
 		}
 	}

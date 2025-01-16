@@ -1,4 +1,4 @@
-import { useMemo, useRef } from "react";
+import { useMemo } from "react";
 import pathData from "./../Quest Data/QuestPaths.json";
 
 type QuestPaths = {
@@ -8,20 +8,26 @@ type QuestPaths = {
 	CTranscript: string;
 };
 export type CTranscript = {
-	Dialogue: String;
+	Dialogue: string;
 };
 
 export const useCompareTranscript = () => {
-	let compareTranscript = useRef<CTranscript[]>([]);
-
-	const QuestDataPaths = useMemo(() => {
+	// ✅ Store `compareTranscript` inside a `useMemo` variable
+	let { QuestDataPaths, compareTranscript } = useMemo(() => {
 		const paths: QuestPaths[] = JSON.parse(JSON.stringify(pathData));
-		return Array.isArray(paths) ? paths : [];
+
+		// Persistent variable to store transcript data
+		const transcriptStorage: CTranscript[] = [];
+
+		return {
+			QuestDataPaths: Array.isArray(paths) ? paths : [],
+			compareTranscript: transcriptStorage, // Persistent reference
+		};
 	}, []);
 
 	const getCompareTranscript = async (questName: string) => {
 		try {
-			if (QuestDataPaths) {
+			if (QuestDataPaths.length > 0) {
 				const transcriptPath = QuestDataPaths.find(
 					(quest) => quest.Quest === questName
 				)?.CTranscript;
@@ -43,17 +49,24 @@ export const useCompareTranscript = () => {
 
 				const transcript = await response.json();
 
-				// Check if transcript contains the expected structure
+				// Ensure expected structure
 				if (transcript?.Dialogue && Array.isArray(transcript.Dialogue)) {
 					console.log("Fetched Transcript Dialogues:", transcript.Dialogue);
 
-					// Transform the `Dialogue` array into the expected format
-					compareTranscript.current = transcript.Dialogue.map(
-						(dialogue: string) => ({
+					// ✅ Update persistent array reference
+					compareTranscript.length = 0; // Clear previous data
+					compareTranscript.push(
+						...transcript.Dialogue.map((dialogue: string) => ({
 							Dialogue: dialogue,
-						})
+						}))
 					);
-					console.log(compareTranscript.current);
+					compareTranscript = compareTranscript.filter(
+						(option) => option.Dialogue !== "[Accept Quest]"
+					);
+					localStorage.setItem(
+						"CompareTranscript",
+						JSON.stringify(compareTranscript)
+					);
 				} else {
 					console.error("Invalid transcript structure:", transcript);
 				}
@@ -63,5 +76,5 @@ export const useCompareTranscript = () => {
 		}
 	};
 
-	return { compareTranscript, getCompareTranscript } as const;
+	return { compareTranscript, getCompareTranscript };
 };
