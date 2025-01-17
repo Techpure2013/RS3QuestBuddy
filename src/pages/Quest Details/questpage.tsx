@@ -128,7 +128,7 @@ const QuestPage: React.FC = () => {
 	const isOpenNotes = useRef(false);
 	// const finder = new diagFinder();
 	const { showStepReq, toggleShowStepReq } = useQuestControllerStore();
-	const { startSolver, stopEverything } = useDialogSolver();
+	const { stepCapture } = useDialogSolver();
 	const handles = useQuestControllerStore();
 	const [skillLevels, setSkillLevels] = useState<Skills[]>([]);
 	const [completedQuests, setCompleteQuests] = useState<
@@ -218,20 +218,14 @@ const QuestPage: React.FC = () => {
 
 	useEffect(() => {
 		if (uiState.dialogOption) {
-			console.log("Mounting Solver");
-			getCompareTranscript(questName);
-			getStoredTranscript();
-
-			startSolver();
+			console.log("Mounting");
 		} else {
 			return () => {
 				console.log("Unmounting Solver");
-				stopEverything();
 			};
 		}
 		return () => {
 			console.log("Unmounting Solver");
-			stopEverything();
 		};
 	}, [uiState.dialogOption]);
 
@@ -449,6 +443,10 @@ const QuestPage: React.FC = () => {
 	};
 
 	const scrollIntoView = (step: number) => {
+		if (questSteps[step] !== undefined) {
+			stepCapture(questSteps[step]);
+		}
+
 		const element = document.getElementById(step.toString());
 		if (element) {
 			element.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -511,6 +509,7 @@ const QuestPage: React.FC = () => {
 		loadPlayerQuests(questName);
 	}
 	useAlt1Listener(scrollNext);
+
 	return (
 		<>
 			<div>
@@ -519,7 +518,6 @@ const QuestPage: React.FC = () => {
 					opened={isCatchOpen}
 					onClose={() => {
 						closeCatchUp();
-						startSolver();
 					}}
 				>
 					<CatchUp step={questSteps} />
@@ -747,7 +745,6 @@ const QuestPage: React.FC = () => {
 										},
 									}}
 									description={value}
-									onClick={() => setActiveAndScroll(index)}
 									allowStepSelect={true}
 								/>
 							) : (
