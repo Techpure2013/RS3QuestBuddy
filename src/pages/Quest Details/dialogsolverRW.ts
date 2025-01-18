@@ -1,46 +1,49 @@
 import * as a1libs from "alt1";
 import DialogReader, { DialogButton } from "alt1/dialog";
-import {
-	CTranscript,
-	useCompareTranscript,
-} from "../../Fetchers/useCompareTranscript";
 import { diagFinder } from "./handleImage";
-import { useRef, useState } from "react";
-type Color = {
-	r: string;
-	g: string;
-	b: string;
-	a: string;
-};
+import { useRef } from "react";
+
 export const useDialogSolver = () => {
 	const dialogReader = new DialogReader();
+	const diagHelp = new diagFinder();
 	const mixedColor = a1libs.mixColor(255, 255, 0);
 	let optionsRead: DialogButton[] | null | undefined = null;
 	let optionsReadID: NodeJS.Timeout | null = null;
 	let currentStep = useRef<string>("");
 	let currentStepChatOptions = useRef<number[]>([]);
 	let overlayID: NodeJS.Timeout | null = null;
+	let secondReadOptionsID: NodeJS.Timeout | null = null;
+	let activeOption: DialogButton | undefined = undefined;
 
+	//Currently has issues with Multiple steps clicked at a time. Cannot seem to clear intervals before
+	//they are called again.
+
+	/**
+	 * @Description Run's the first capture of each step.
+	 */
 	function run() {
-		if (optionsReadID) return;
-
 		optionsReadID = setInterval(() => {
 			const rsScreenCapture = a1libs.captureHoldFullRs();
+			diagHelp.find();
 			optionsRead = readOptionBox(rsScreenCapture);
 			if (optionsRead !== null && optionsRead !== undefined) {
-				if (optionsReadID) {
-					clearInterval(optionsReadID);
-				}
-				optionsReadID = null;
-				console.log(optionsRead);
 				useOptionsRead(optionsRead);
 			}
 		}, 600);
 	}
+	/**
+	 *
+	 * @param currentStep
+	 * @Description Filters out Chat Options on Step String returned from stepCapture
+	 */
 	function getChatOptions(currentStep: string) {
 		let match = currentStep.match(/\(Chat\s*([\d~•✓]*)\)/);
 		if (match !== null) {
-			const splitValues = match[1].split("•").filter((value) => value !== "✓"); // Remove "✓"
+			let splitValues: string[] = match[1]
+				.split("•")
+				.filter((value) => value !== "✓") // Remove "✓"
+				.map((value) => (value === "~" ? "1" : value)) // Replace "~" with "1"
+				.filter((value) => value !== undefined);
 			const numericValues = splitValues.map(Number);
 			currentStepChatOptions.current.splice(
 				0,
@@ -51,60 +54,165 @@ export const useDialogSolver = () => {
 			console.log(currentStepChatOptions.current);
 		}
 	}
+	/**
+	 *@Description Captures the current step through alt1 hotkey or click of step on main questpage
+	 */
 	function stepCapture(step: string) {
 		currentStep.current = step;
 		getChatOptions(currentStep.current);
 		console.log("Step Captured:", currentStep.current);
 	}
-	function startOverlay(option: DialogButton) {
+	function stopRun() {
 		if (optionsReadID) {
+			console.log("Clearing interval with ID:", optionsReadID);
+			clearInterval(optionsReadID);
 			optionsReadID = null;
+		} else {
+			console.warn("No active interval to clear.");
 		}
-		console.log(option);
-		overlayID = setInterval(() => {
-			alt1.overLayRect(
-				mixedColor,
-				option.x,
-				option.y,
-				option.width,
-				option.buttonx,
-				900,
-				2
-			);
-		}, 1200);
 	}
+	/**
+	 *
+	 * @param option
+	 * @returns Void
+	 * @Description Tries to capture the active state of the Option buttons on screen. Sets activeOption.
+	 */
+	function overlayReadCapture(option: DialogButton) {
+		const rsCapture = a1libs.captureHoldFullRs();
+		console.log(rsCapture);
+		if (rsCapture.handle === 0) {
+			stopOverlay();
+			stopRunOverlayReadCapture();
+		}
+		const optionBoxLoc = dialogReader.findOptions(rsCapture);
+		console.log(optionBoxLoc);
+		if (optionBoxLoc.length === 0) {
+			//If optionBoxLoc: DialogButtonLocation[] === 0 only
+			stopOverlay();
+			stopRunOverlayReadCapture();
+			getChatOptions(currentStep.current);
+		}
+		const options = dialogReader.readOptions(rsCapture, optionBoxLoc);
+		activeOption = options?.find((value) => value.active); // Assigns active value to activeOption
+		if (activeOption !== undefined) {
+			if (activeOption?.active) {
+				console.log(activeOption);
+
+				if (activeOption.text === option.text) {
+					stopOverlay();
+					currentStepChatOptions.current.splice(0, 1);
+				}
+			}
+			if (secondReadOptionsID) clearInterval(secondReadOptionsID);
+			if (currentStepChatOptions.current.length > 0) {
+				console.log(currentStepChatOptions);
+				run();
+			} else {
+				return;
+			}
+		}
+		console.log(activeOption);
+	}
+	function runOverlayReadCapture(option: DialogButton) {
+		secondReadOptionsID = setInterval(() => {
+			overlayReadCapture(option);
+		}, 150); // So far captures option button quite regularly
+	}
+	function stopOverlay() {
+		if (overlayID) {
+			clearInterval(overlayID);
+		}
+	}
+	function stopRunOverlayReadCapture() {
+		if (secondReadOptionsID) {
+			clearInterval(secondReadOptionsID);
+		}
+	}
+	/**
+	 *
+	 * @param option
+	 * @Description  Starts a Capture of options
+	 */
+	function calculateOverlayStop(option: DialogButton) {
+		runOverlayReadCapture(option);
+	}
+	/**
+	 * @Description Stops original Options Capture. Starts overlay with Options: Dialogbutton
+	 */
+	function startOverlay(option: DialogButton) {
+		stopRun();
+		calculateOverlayStop(option);
+		if (option !== undefined) {
+			overlayID = setInterval(() => {
+				alt1.overLaySetGroup("Overlay"); // Test
+				alt1.overLayRect(
+					mixedColor,
+					option.buttonx,
+					Math.round(option.y - 10), //If is negative throws out of bounds error
+					Math.round(option.x / 2), //If is negative throws out of bounds error
+					25,
+					600,
+					4
+				);
+			}, 900);
+		} else {
+			alt1.overLayClearGroup("Overlay"); // Test
+		}
+	}
+	/**
+	 *
+	 * @param options
+	 * @Description Sends Options[0] and CurrentStepChatOptions[0] to StartOverlay
+	 */
 	function useOptionsRead(options: undefined | DialogButton[] | null) {
-		if (options === null) return console.log("i've returned");
-		if (options === undefined) return console.log("i've returned");
-		console.log("I am past option check");
-		if (currentStepChatOptions.current[0] === 1) {
-			startOverlay(options[0]);
+		if (!options || options.length === 0) {
+			return console.log("Looking for options");
 		}
-		if (currentStepChatOptions.current[1] === 2) {
-			startOverlay(options[1]);
-		}
-		if (currentStepChatOptions.current[2] === 3) {
-			console.log("");
-			startOverlay(options[2]);
-		}
-		if (currentStepChatOptions.current[3] === 4) {
-			startOverlay(options[3]);
-		}
-		if (currentStepChatOptions.current[4] === 5) {
-			startOverlay(options[4]);
+		if (currentStepChatOptions.current.length < 0)
+			return console.log("No Current Options");
+		console.log(options);
+		for (let index = 0; index < currentStepChatOptions.current.length; index++) {
+			const currentStepChatOption = currentStepChatOptions.current[index];
+
+			switch (
+				currentStepChatOption //Switch Statement
+			) {
+				case 1: //Captures a [1]
+					startOverlay(options[0]); // First Option Box
+					return;
+				case 2: //Captures a [2]
+					startOverlay(options[1]); // Second Option Box
+					return;
+				case 3: //Captures a [3]
+					startOverlay(options[2]); // Third Option Box
+					return;
+				case 4: //Captures a [4]
+					startOverlay(options[3]); // Fourth Option Box
+					return;
+				case 5: //Captures a [5]
+					startOverlay(options[4]); // Fifth Option Box
+					return;
+			}
+			//So far I have not seen 6 option choices at once.
 		}
 	}
+	/**
+	 *
+	 *
+	 * @param {a1libs.ImgRefBind} capture
+	 * @return {DialogButton[] | null}
+	 */
 	function readOptionBox(capture: a1libs.ImgRefBind) {
 		dialogReader.find(capture);
 		if (!capture) return;
 		try {
 			let optionBoxLoc = dialogReader.findOptions(capture);
-			if (!optionBoxLoc) return;
+			if (!optionBoxLoc) {
+				console.warn("No options found");
+			}
 			let optionsFound = dialogReader.readOptions(capture, optionBoxLoc);
 			return optionsFound;
-		} catch (e) {
-			console.info(e);
-		}
+		} catch (e) {} //Supresses No Option Box Present because (!optionBoxLoc doesnt have a .Length to match to 0)
 	}
 	return { run, stepCapture };
 };

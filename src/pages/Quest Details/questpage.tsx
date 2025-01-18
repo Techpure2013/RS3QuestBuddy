@@ -41,7 +41,7 @@ import { useQuestDetails } from "./../../Fetchers/useQuestDetails";
 import { PlayerQuestStatus } from "./../../Fetchers/sortPlayerQuests";
 import { useDialogSolver } from "./dialogsolverRW";
 import Tippy from "@tippyjs/react";
-import { CatchUp } from "./Quest Detail Components/CatchUp";
+
 import useCatchUpDisclosure from "./Quest Detail Components/useCatchUpModal";
 import {
 	CTranscript,
@@ -80,7 +80,6 @@ const QuestDetailContents = React.lazy(
 const QuestPage: React.FC = () => {
 	// Define constants for local storage keys to avoid typos and ensure consistency
 	const { questSteps, QuestDataPaths, getQuestSteps } = useQuestPaths();
-	let { getCompareTranscript } = useCompareTranscript();
 	const {
 		ignoredRequirements,
 		create_ListUUID,
@@ -121,10 +120,8 @@ const QuestPage: React.FC = () => {
 		userLabelColor: "",
 		userButtonColor: "",
 	});
-	const [, forceUpdate] = useReducer((x) => x + 1, 0);
 	let [isPOGOpen, { pogModOpen, pogModClose }] = usePOGDisclosure(false);
 	let [isOpened, { openNotes, closedNotes }] = useNotesDisclosure(false);
-	let [isCatchOpen, { openCatchUp, closeCatchUp }] = useCatchUpDisclosure(false);
 	const isOpenNotes = useRef(false);
 	// const finder = new diagFinder();
 	const { showStepReq, toggleShowStepReq } = useQuestControllerStore();
@@ -153,7 +150,6 @@ const QuestPage: React.FC = () => {
 			];
 		return [];
 	});
-	const [compareTranscript, setCompareTranscript] = useState<CTranscript[]>([]);
 	const handleKeyDown = (event: KeyboardEvent) => {
 		if (!isOpenNotes.current) {
 			if (event.key === " ") {
@@ -229,12 +225,6 @@ const QuestPage: React.FC = () => {
 		};
 	}, [uiState.dialogOption]);
 
-	function getStoredTranscript() {
-		let cTranscript = JSON.parse(localStorage.getItem("CompareTranscript") || "");
-		if (cTranscript !== "") {
-			setCompareTranscript(cTranscript);
-		}
-	}
 	function handleFalse() {
 		isOpenNotes.current = false;
 	}
@@ -288,10 +278,6 @@ const QuestPage: React.FC = () => {
 			scrollIntoView(prevStep);
 		}
 	};
-	const ShouldAllowStep = (step: number) => {
-		return highestStepVisited >= step && active !== step;
-	};
-
 	const handlePopOut = (
 		_index: number,
 		_imgSrc: string,
@@ -513,15 +499,6 @@ const QuestPage: React.FC = () => {
 	return (
 		<>
 			<div>
-				<Modal
-					title="Quest Progression"
-					opened={isCatchOpen}
-					onClose={() => {
-						closeCatchUp();
-					}}
-				>
-					<CatchUp step={questSteps} />
-				</Modal>
 				<Suspense fallback={<div>Loading...</div>}>
 					<Modal
 						title="Underground Pass Grid"
@@ -999,12 +976,6 @@ const QuestPage: React.FC = () => {
 										<IconWorldWww />
 									</ActionIcon>
 								</Tippy>
-								<ActionIcon
-									onClick={openCatchUp}
-									variant="outline"
-									color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-									size={"sm"}
-								></ActionIcon>
 							</div>
 
 							{isPog && (
