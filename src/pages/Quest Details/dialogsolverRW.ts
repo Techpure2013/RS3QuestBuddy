@@ -8,21 +8,40 @@ export const useDialogSolver = () => {
 	const diagHelp = new diagFinder();
 	const mixedColor = a1libs.mixColor(255, 255, 0);
 	let optionsRead: DialogButton[] | null | undefined = null;
-	let optionsReadID: NodeJS.Timeout | null = null;
+
 	let currentStep = useRef<string>("");
 	let currentStepChatOptions = useRef<number[]>([]);
-	let overlayID: NodeJS.Timeout | null = null;
-	let secondReadOptionsID: NodeJS.Timeout | null = null;
-	let activeOption: DialogButton | undefined = undefined;
 
+	let activeOption: DialogButton | undefined = undefined;
+	let activeStep: boolean = false;
+	const intervalIds = useRef<Record<string, NodeJS.Timeout | null>>({
+		optionsRead: null,
+		overlay: null,
+		secondRead: null,
+	});
 	//Currently has issues with Multiple steps clicked at a time. Cannot seem to clear intervals before
 	//they are called again.
+	const clearIntervalById = (key: keyof typeof intervalIds.current) => {
+		if (intervalIds.current[key]) {
+			clearInterval(intervalIds.current[key]!);
+			intervalIds.current[key] = null;
+			console.log(`Cleared interval: ${key}`);
+		}
+	};
 
+	const clearAllIntervals = () => {
+		Object.keys(intervalIds.current).forEach((key) =>
+			clearIntervalById(key as keyof typeof intervalIds.current)
+		);
+		console.log("Cleared all intervals");
+	};
 	/**
 	 * @Description Run's the first capture of each step.
 	 */
 	function run() {
-		optionsReadID = setInterval(() => {
+		clearAllIntervals();
+		intervalIds.current.optionsRead = setInterval(() => {
+			activeStep = true;
 			const rsScreenCapture = a1libs.captureHoldFullRs();
 			diagHelp.find();
 			optionsRead = readOptionBox(rsScreenCapture);
@@ -50,6 +69,7 @@ export const useDialogSolver = () => {
 				currentStepChatOptions.current.length
 			);
 			currentStepChatOptions.current.push(...numericValues);
+			clearAllIntervals();
 			run();
 			console.log(currentStepChatOptions.current);
 		}
@@ -62,15 +82,6 @@ export const useDialogSolver = () => {
 		getChatOptions(currentStep.current);
 		console.log("Step Captured:", currentStep.current);
 	}
-	function stopRun() {
-		if (optionsReadID) {
-			console.log("Clearing interval with ID:", optionsReadID);
-			clearInterval(optionsReadID);
-			optionsReadID = null;
-		} else {
-			console.warn("No active interval to clear.");
-		}
-	}
 	/**
 	 *
 	 * @param option
@@ -81,15 +92,16 @@ export const useDialogSolver = () => {
 		const rsCapture = a1libs.captureHoldFullRs();
 		console.log(rsCapture);
 		if (rsCapture.handle === 0) {
-			stopOverlay();
-			stopRunOverlayReadCapture();
+			clearIntervalById("overlay");
+			clearIntervalById("secondRead");
 		}
 		const optionBoxLoc = dialogReader.findOptions(rsCapture);
 		console.log(optionBoxLoc);
 		if (optionBoxLoc.length === 0) {
 			//If optionBoxLoc: DialogButtonLocation[] === 0 only
-			stopOverlay();
-			stopRunOverlayReadCapture();
+			clearIntervalById("overlay");
+			clearIntervalById("secondRead");
+			clearIntervalById("optionsRead");
 			getChatOptions(currentStep.current);
 		}
 		const options = dialogReader.readOptions(rsCapture, optionBoxLoc);
@@ -99,13 +111,15 @@ export const useDialogSolver = () => {
 				console.log(activeOption);
 
 				if (activeOption.text === option.text) {
-					stopOverlay();
+					clearIntervalById("overlay");
 					currentStepChatOptions.current.splice(0, 1);
+					activeStep = false;
 				}
 			}
-			if (secondReadOptionsID) clearInterval(secondReadOptionsID);
+			clearIntervalById("secondRead");
 			if (currentStepChatOptions.current.length > 0) {
 				console.log(currentStepChatOptions);
+				activeStep = false;
 				run();
 			} else {
 				return;
@@ -114,19 +128,9 @@ export const useDialogSolver = () => {
 		console.log(activeOption);
 	}
 	function runOverlayReadCapture(option: DialogButton) {
-		secondReadOptionsID = setInterval(() => {
+		intervalIds.current.secondRead = setInterval(() => {
 			overlayReadCapture(option);
-		}, 150); // So far captures option button quite regularly
-	}
-	function stopOverlay() {
-		if (overlayID) {
-			clearInterval(overlayID);
-		}
-	}
-	function stopRunOverlayReadCapture() {
-		if (secondReadOptionsID) {
-			clearInterval(secondReadOptionsID);
-		}
+		}, 50); // So far captures option button quite regularly
 	}
 	/**
 	 *
@@ -140,10 +144,10 @@ export const useDialogSolver = () => {
 	 * @Description Stops original Options Capture. Starts overlay with Options: Dialogbutton
 	 */
 	function startOverlay(option: DialogButton) {
-		stopRun();
+		clearIntervalById("optionsRead");
 		calculateOverlayStop(option);
 		if (option !== undefined) {
-			overlayID = setInterval(() => {
+			intervalIds.current.overlay = setInterval(() => {
 				alt1.overLaySetGroup("Overlay"); // Test
 				alt1.overLayRect(
 					mixedColor,

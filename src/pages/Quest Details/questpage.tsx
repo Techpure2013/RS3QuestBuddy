@@ -430,7 +430,9 @@ const QuestPage: React.FC = () => {
 
 	const scrollIntoView = (step: number) => {
 		if (questSteps[step] !== undefined) {
-			stepCapture(questSteps[step]);
+			if (uiState.dialogOption === true) {
+				stepCapture(questSteps[step]);
+			}
 		}
 
 		const element = document.getElementById(step.toString());
