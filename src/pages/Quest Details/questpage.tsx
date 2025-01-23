@@ -1,4 +1,10 @@
-import React, { useState, useEffect, useRef, Suspense } from "react";
+import React, {
+	useState,
+	useEffect,
+	useRef,
+	Suspense,
+	useReducer,
+} from "react";
 import { useLocation } from "react-router-dom";
 import { ActionIcon, Box, Button, Flex, Modal, Stepper } from "@mantine/core";
 import "@mantine/core/styles/Stepper.css";
@@ -35,8 +41,12 @@ import { useQuestDetails } from "./../../Fetchers/useQuestDetails";
 import { PlayerQuestStatus } from "./../../Fetchers/sortPlayerQuests";
 import { useDialogSolver } from "./dialogsolverRW";
 import Tippy from "@tippyjs/react";
-import { CatchUp } from "./Quest Detail Components/CatchUp";
+
 import useCatchUpDisclosure from "./Quest Detail Components/useCatchUpModal";
+import {
+	CTranscript,
+	useCompareTranscript,
+} from "./../../Fetchers/useCompareTranscript";
 const UnderGroundPassGrid = React.lazy(
 	() =>
 		new Promise<{ default: React.ComponentType<any> }>((resolve) => {
@@ -70,7 +80,6 @@ const QuestDetailContents = React.lazy(
 const QuestPage: React.FC = () => {
 	// Define constants for local storage keys to avoid typos and ensure consistency
 	const { questSteps, QuestDataPaths, getQuestSteps } = useQuestPaths();
-
 	const {
 		ignoredRequirements,
 		create_ListUUID,
@@ -111,15 +120,12 @@ const QuestPage: React.FC = () => {
 		userLabelColor: "",
 		userButtonColor: "",
 	});
-
 	let [isPOGOpen, { pogModOpen, pogModClose }] = usePOGDisclosure(false);
 	let [isOpened, { openNotes, closedNotes }] = useNotesDisclosure(false);
-	let [isCatchOpen, { openCatchUp, closeCatchUp }] = useCatchUpDisclosure(false);
 	const isOpenNotes = useRef(false);
 	// const finder = new diagFinder();
 	const { showStepReq, toggleShowStepReq } = useQuestControllerStore();
-	const { startSolver, stopEverything, compareTranscript } =
-		useDialogSolver(questName);
+	const { stepCapture } = useDialogSolver();
 	const handles = useQuestControllerStore();
 	const [skillLevels, setSkillLevels] = useState<Skills[]>([]);
 	const [completedQuests, setCompleteQuests] = useState<
@@ -144,7 +150,6 @@ const QuestPage: React.FC = () => {
 			];
 		return [];
 	});
-
 	const handleKeyDown = (event: KeyboardEvent) => {
 		if (!isOpenNotes.current) {
 			if (event.key === " ") {
@@ -163,7 +168,6 @@ const QuestPage: React.FC = () => {
 			);
 		}
 	}, [questSteps?.length]);
-
 	useEffect(() => {
 		if (QuestDataPaths) {
 			getQuestSteps(questName);
@@ -210,18 +214,14 @@ const QuestPage: React.FC = () => {
 
 	useEffect(() => {
 		if (uiState.dialogOption) {
-			console.log("Mounting Solver");
-			startSolver();
+			console.log("Mounting");
 		} else {
 			return () => {
 				console.log("Unmounting Solver");
-				stopEverything();
 			};
 		}
-
 		return () => {
 			console.log("Unmounting Solver");
-			stopEverything();
 		};
 	}, [uiState.dialogOption]);
 
@@ -278,10 +278,6 @@ const QuestPage: React.FC = () => {
 			scrollIntoView(prevStep);
 		}
 	};
-	const ShouldAllowStep = (step: number) => {
-		return highestStepVisited >= step && active !== step;
-	};
-
 	const handlePopOut = (
 		_index: number,
 		_imgSrc: string,
@@ -433,6 +429,12 @@ const QuestPage: React.FC = () => {
 	};
 
 	const scrollIntoView = (step: number) => {
+		if (questSteps[step] !== undefined) {
+			if (uiState.dialogOption === true) {
+				stepCapture(questSteps[step]);
+			}
+		}
+
 		const element = document.getElementById(step.toString());
 		if (element) {
 			element.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -495,19 +497,10 @@ const QuestPage: React.FC = () => {
 		loadPlayerQuests(questName);
 	}
 	useAlt1Listener(scrollNext);
+
 	return (
 		<>
 			<div>
-				{/* <Modal
-					title="Underground Pass Grid"
-					opened={isCatchOpen}
-					onClose={closeCatchUp}
-				>
-					<CatchUp
-						step={questSteps}
-						compareTranscript={JSON.stringify(compareTranscript)}
-					/>
-				</Modal> */}
 				<Suspense fallback={<div>Loading...</div>}>
 					<Modal
 						title="Underground Pass Grid"
@@ -731,7 +724,6 @@ const QuestPage: React.FC = () => {
 										},
 									}}
 									description={value}
-									onClick={() => setActiveAndScroll(index)}
 									allowStepSelect={true}
 								/>
 							) : (
@@ -986,12 +978,6 @@ const QuestPage: React.FC = () => {
 										<IconWorldWww />
 									</ActionIcon>
 								</Tippy>
-								{/*<ActionIcon
-									onClick={openCatchUp}
-									variant="outline"
-									color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-									size={"sm"}
-								></ActionIcon>*/}
 							</div>
 
 							{isPog && (

@@ -1,330 +1,222 @@
 import * as a1libs from "alt1";
 import DialogReader, { DialogButton } from "alt1/dialog";
-import { useCompareTranscript } from "./../../Fetchers/useCompareTranscript";
 import { diagFinder } from "./handleImage";
-type Color = {
-	r: string;
-	g: string;
-	b: string;
-	a: string;
-};
-export const useDialogSolver = (questName: string) => {
+import { useRef } from "react";
+
+export const useDialogSolver = () => {
 	const dialogReader = new DialogReader();
-	const { compareTranscript, getCompareTranscript } = useCompareTranscript();
-	let captureID: NodeJS.Timeout | null = null;
-	let overlayID: NodeJS.Timeout | null = null;
-	let acceptButtonFinder = new diagFinder();
-	let readOptions: DialogButton[] | null = null;
-	let readNPCDialog: string[] | null | undefined = null;
-	let previousOptions: DialogButton[] | null = null;
-	let previousMatchingOption: string | null = null;
-	let readDialogueID: NodeJS.Timeout | null = null;
-	let readCaptureID: NodeJS.Timeout | null = null;
+	const diagHelp = new diagFinder();
+	const mixedColor = a1libs.mixColor(255, 255, 0);
+	let optionsRead: DialogButton[] | null | undefined = null;
+
+	let currentStep = useRef<string>("");
+	let currentStepChatOptions = useRef<number[]>([]);
+
 	let activeOption: DialogButton | undefined = undefined;
+	let activeStep: boolean = false;
+	const intervalIds = useRef<Record<string, NodeJS.Timeout | null>>({
+		optionsRead: null,
+		overlay: null,
+		secondRead: null,
+	});
+	//Currently has issues with Multiple steps clicked at a time. Cannot seem to clear intervals before
+	//they are called again.
+	const clearIntervalById = (key: keyof typeof intervalIds.current) => {
+		if (intervalIds.current[key]) {
+			clearInterval(intervalIds.current[key]!);
+			intervalIds.current[key] = null;
+			console.log(`Cleared interval: ${key}`);
+		}
+	};
 
-	// function getRectColor() {
-	// 	let rgbaColor = localStorage.getItem("dialogSolverColor");
-	// 	if (rgbaColor !== null) {
-	// 		const [r, g, b, a] = rgbaColor
-	// 			.replace("rgba", "")
-	// 			.replace("(", "")
-	// 			.replace(")", "")
-	// 			.split(",")
-	// 			.map((value) => value.trim());
-
-	// 		// Create the Color object
-	// 		const rgbaColorObject: Color = {
-	// 			r,
-	// 			g,
-	// 			b,
-	// 			a,
-	// 		};
-	// 		console.log(rgbaColorObject); // Debug or use the object as needed
-	// 		return rgbaColorObject;
-	// 	} else {
-	// 		const rgbaColorObject: Color = {
-	// 			r: "255",
-	// 			g: "255",
-	// 			b: "0",
-	// 			a: "99",
-	// 		};
-	// 		return rgbaColorObject;
-	// 	}
-	// }
-
-	/**
-	 * @description Initializes the Compare Transcript
-	 */
-	const initialize = async () => {
-		await getCompareTranscript(questName);
-
-		startSolver();
+	const clearAllIntervals = () => {
+		Object.keys(intervalIds.current).forEach((key) =>
+			clearIntervalById(key as keyof typeof intervalIds.current)
+		);
+		console.log("Cleared all intervals");
 	};
 	/**
-	 *
-	 * @returns DialogButton[]
+	 * @Description Run's the first capture of each step.
 	 */
-	function readCapture(): DialogButton[] | null {
-		const diagboxCapture = a1libs.captureHoldFullRs();
-		const found = dialogReader.find(diagboxCapture);
-		if (found) {
-			const findOptions = dialogReader.findOptions(diagboxCapture);
-			if (findOptions) {
-				const options = dialogReader.readOptions(diagboxCapture, findOptions);
-				return options;
+	function run() {
+		clearAllIntervals();
+		intervalIds.current.optionsRead = setInterval(() => {
+			activeStep = true;
+			const rsScreenCapture = a1libs.captureHoldFullRs();
+			diagHelp.find();
+			optionsRead = readOptionBox(rsScreenCapture);
+			if (optionsRead !== null && optionsRead !== undefined) {
+				useOptionsRead(optionsRead);
 			}
-		}
-		return null;
+		}, 600);
 	}
 	/**
 	 *
-	 * @returns NPC Dialog
+	 * @param currentStep
+	 * @Description Filters out Chat Options on Step String returned from stepCapture
 	 */
-	function readDialog() {
-		const diagboxCapture = a1libs.captureHoldFullRs();
-		const findDialogue = dialogReader.checkDialog(diagboxCapture);
-		if (findDialogue) {
-			const readDialogue = dialogReader.readDialog(diagboxCapture, findDialogue);
-			return readDialogue;
-		}
-	}
-	/**
-	 *
-	 * Looks for Options on screen. On an active option Assigns activeOption to its Active Option
-	 */
-	function startReadCapture() {
-		if (readCaptureID) {
-			console.log("Interval already running, skipping...");
-			return;
-		}
-
-		readCaptureID = setInterval(() => {
-			let readOptions = readCapture();
-			if (readOptions !== null) {
-				activeOption = readOptions.find((value) => value.active);
-			}
-		}, 200);
-	}
-	function stopReadCapture() {
-		if (readCaptureID) {
-			clearInterval(readCaptureID);
-			readCaptureID = null;
-		}
-	}
-	/**
-	 *
-	 * @param transcriptValue Holds the CompareTranscript[0].Dialogue value
-	 * @description Looks for NPC Dialogue to Stop Overlay, Stop Dialogue Reader (Itself), and ReadCapture
-	 *
-	 */
-	function startReadDialog(transcriptValue: any) {
-		readDialogueID = setInterval(() => {
-			readNPCDialog = readDialog();
-			if (readNPCDialog !== undefined) {
-				stopOverlay();
-				stopDialogueReader();
-				stopReadCapture();
-
-				if (
-					activeOption?.text.toLowerCase().trim() ===
-					compareTranscript.current[0].Dialogue.toLowerCase().trim()
-				) {
-					console.log(`Active Option Read: ${activeOption}`);
-					const index = compareTranscript.current.findIndex(
-						(value) => value.Dialogue === transcriptValue
-					);
-					console.log(`Index used under Not Undefined NPC Dialog ${index}`);
-					if (index !== -1) {
-						compareTranscript.current.splice(index, 1);
-					}
-					previousOptions = null;
-					startSolver();
-				} else {
-					startSolver();
-				}
-			} else {
-				let testCapture = readCapture();
-				if (testCapture) {
-					let questionedOption = testCapture.some(
-						(value) => value.text === previousMatchingOption
-					);
-					if (!questionedOption) {
-						stopOverlay();
-						stopDialogueReader();
-						stopReadCapture();
-						if (
-							//returns if the option that you went into is the next option in the compare transcript array
-							testCapture.some(
-								(value) =>
-									value.text.toLowerCase().trim() ===
-									compareTranscript.current[0 + 1].Dialogue.toLowerCase().trim()
-							)
-						) {
-							const index = compareTranscript.current.findIndex(
-								(value) => value.Dialogue === transcriptValue
-							);
-							console.log(`Am before deleting index under test capture ${index}`);
-							if (index !== -1) {
-								compareTranscript.current.splice(index, 1);
-							}
-						}
-						previousOptions = null;
-						startSolver();
-					}
-				}
-			}
-		}, 300);
-	}
-	function stopDialogueReader() {
-		if (readDialogueID) {
-			clearInterval(readDialogueID);
-			readDialogueID = null;
-		}
-	}
-	/**
-	 *
-	 * @param option DialogButton holds an Array of {Text, active, buttonx, x , y}
-	 * @param color Color of the a1libs.mixColor
-	 */
-	function startOverlay(option: DialogButton, color: number) {
-		stopSolver();
-
-		overlayID = setInterval(() => {
-			if (!dialogReader.find(a1libs.captureHoldFullRs())) {
-				stopOverlay();
-				stopDialogueReader();
-				stopReadCapture();
-				previousOptions = null;
-				startSolver();
-			}
-			alt1.overLayRect(
-				color,
-				option.buttonx,
-				Math.round(option.y - 10),
-				Math.round(option.x / 2),
-				25,
-				600,
-				4
+	function getChatOptions(currentStep: string) {
+		let match = currentStep.match(/\(Chat\s*([\d~•✓]*)\)/);
+		if (match !== null) {
+			let splitValues: string[] = match[1]
+				.split("•")
+				.filter((value) => value !== "✓") // Remove "✓"
+				.map((value) => (value === "~" ? "1" : value)) // Replace "~" with "1"
+				.filter((value) => value !== undefined);
+			const numericValues = splitValues.map(Number);
+			currentStepChatOptions.current.splice(
+				0,
+				currentStepChatOptions.current.length
 			);
-		}, 900);
-	}
-	function stopOverlay() {
-		if (overlayID) {
-			clearInterval(overlayID);
-			overlayID = null;
+			currentStepChatOptions.current.push(...numericValues);
+			clearAllIntervals();
+			run();
+			console.log(currentStepChatOptions.current);
 		}
 	}
 	/**
-	 *
-	 * @description Starts the dialog solver initially
+	 *@Description Captures the current step through alt1 hotkey or click of step on main questpage
 	 */
-	function startSolver() {
-		if (!compareTranscript.current || compareTranscript.current.length === 0) {
-			console.warn("Transcript data not available. Ensure it's loaded.");
-			return;
-		}
-		compareTranscript.current = compareTranscript.current.filter(
-			(option) => option.Dialogue !== "[Accept Quest]"
-		);
-		captureID = setInterval(() => {
-			const options = readCapture();
-			acceptButtonFinder.find();
-			if (options) {
-				const isSameAsPrevious =
-					previousOptions &&
-					options.length === previousOptions.length &&
-					options.every((opt, idx) => opt.text === previousOptions![idx].text);
-
-				if (!isSameAsPrevious) {
-					readOptions = options;
-					previousOptions = options; // Update previous options
-					console.log("New dialog options read:", readOptions);
-
-					// Process the new options
-					useReadOptions(readOptions);
-				}
-			}
-		}, 300);
+	function stepCapture(step: string) {
+		currentStep.current = step;
+		getChatOptions(currentStep.current);
+		console.log("Step Captured:", currentStep.current);
 	}
-
-	// Update handleMatchedOption to expect a single DialogButton
 	/**
 	 *
 	 * @param option
-	 * @param transcriptValue
-	 * @description Is a median between useReadOptions and Start Overlay, Read Dialog, and readCapture(ReadOptions)
+	 * @returns Void
+	 * @Description Tries to capture the active state of the Option buttons on screen. Sets activeOption.
 	 */
-	function handleMatchedOption(option: DialogButton, transcriptValue: any) {
-		let mixColor = a1libs.mixColor(255, 0, 255);
+	function overlayReadCapture(option: DialogButton) {
+		const rsCapture = a1libs.captureHoldFullRs();
+		console.log(rsCapture);
+		if (rsCapture.handle === 0) {
+			clearIntervalById("overlay");
+			clearIntervalById("secondRead");
+		}
+		const optionBoxLoc = dialogReader.findOptions(rsCapture);
+		console.log(optionBoxLoc);
+		if (optionBoxLoc.length === 0) {
+			//If optionBoxLoc: DialogButtonLocation[] === 0 only
+			clearIntervalById("overlay");
+			clearIntervalById("secondRead");
+			clearIntervalById("optionsRead");
+			getChatOptions(currentStep.current);
+		}
+		const options = dialogReader.readOptions(rsCapture, optionBoxLoc);
+		activeOption = options?.find((value) => value.active); // Assigns active value to activeOption
+		if (activeOption !== undefined) {
+			if (activeOption?.active) {
+				console.log(activeOption);
 
-		// let color = a1libs.mixColor(
-		// 	Number(mixColor.r),
-		// 	Number(mixColor.g),
-		// 	Number(mixColor.b),
-		// 	Math.round(Number(mixColor.a) * 100)
-		// );
-		startOverlay(option, mixColor);
-		startReadDialog(transcriptValue);
-		startReadCapture();
+				if (activeOption.text === option.text) {
+					clearIntervalById("overlay");
+					currentStepChatOptions.current.splice(0, 1);
+					activeStep = false;
+				}
+			}
+			clearIntervalById("secondRead");
+			if (currentStepChatOptions.current.length > 0) {
+				console.log(currentStepChatOptions);
+				activeStep = false;
+				run();
+			} else {
+				return;
+			}
+		}
+		console.log(activeOption);
+	}
+	function runOverlayReadCapture(option: DialogButton) {
+		intervalIds.current.secondRead = setInterval(() => {
+			overlayReadCapture(option);
+		}, 50); // So far captures option button quite regularly
 	}
 	/**
 	 *
-	 * @param options DialogButton[]
-	 * @description Compares the CompareTranscript[0].Dialogue to All option boxes available.
+	 * @param option
+	 * @Description  Starts a Capture of options
 	 */
-	function useReadOptions(options: DialogButton[]) {
-		if (compareTranscript.current.length > 0) {
-			let matchingOption: DialogButton | null = null;
-			for (let index = 0; index < options.length; index++) {
-				const option = options[index];
-				if (
-					option.text.toLowerCase().trim() ===
-					compareTranscript.current[0].Dialogue.toLowerCase().trim()
-				) {
-					matchingOption = option;
-					break;
-				}
-				if (compareTranscript.current[0].Dialogue === "[Any option]") {
-					matchingOption = options[0];
-					break;
-				}
+	function calculateOverlayStop(option: DialogButton) {
+		runOverlayReadCapture(option);
+	}
+	/**
+	 * @Description Stops original Options Capture. Starts overlay with Options: Dialogbutton
+	 */
+	function startOverlay(option: DialogButton) {
+		clearIntervalById("optionsRead");
+		calculateOverlayStop(option);
+		if (option !== undefined) {
+			intervalIds.current.overlay = setInterval(() => {
+				alt1.overLaySetGroup("Overlay"); // Test
+				alt1.overLayRect(
+					mixedColor,
+					option.buttonx,
+					Math.round(option.y - 10), //If is negative throws out of bounds error
+					Math.round(option.x / 2), //If is negative throws out of bounds error
+					25,
+					600,
+					4
+				);
+			}, 900);
+		} else {
+			alt1.overLayClearGroup("Overlay"); // Test
+		}
+	}
+	/**
+	 *
+	 * @param options
+	 * @Description Sends Options[0] and CurrentStepChatOptions[0] to StartOverlay
+	 */
+	function useOptionsRead(options: undefined | DialogButton[] | null) {
+		if (!options || options.length === 0) {
+			return console.log("Looking for options");
+		}
+		if (currentStepChatOptions.current.length < 0)
+			return console.log("No Current Options");
+		console.log(options);
+		for (let index = 0; index < currentStepChatOptions.current.length; index++) {
+			const currentStepChatOption = currentStepChatOptions.current[index];
+
+			switch (
+				currentStepChatOption //Switch Statement
+			) {
+				case 1: //Captures a [1]
+					startOverlay(options[0]); // First Option Box
+					return;
+				case 2: //Captures a [2]
+					startOverlay(options[1]); // Second Option Box
+					return;
+				case 3: //Captures a [3]
+					startOverlay(options[2]); // Third Option Box
+					return;
+				case 4: //Captures a [4]
+					startOverlay(options[3]); // Fourth Option Box
+					return;
+				case 5: //Captures a [5]
+					startOverlay(options[4]); // Fifth Option Box
+					return;
 			}
-
-			if (matchingOption) {
-				previousMatchingOption = matchingOption.text;
-
-				handleMatchedOption(matchingOption, compareTranscript.current[0].Dialogue);
+			//So far I have not seen 6 option choices at once.
+		}
+	}
+	/**
+	 *
+	 *
+	 * @param {a1libs.ImgRefBind} capture
+	 * @return {DialogButton[] | null}
+	 */
+	function readOptionBox(capture: a1libs.ImgRefBind) {
+		dialogReader.find(capture);
+		if (!capture) return;
+		try {
+			let optionBoxLoc = dialogReader.findOptions(capture);
+			if (!optionBoxLoc) {
+				console.warn("No options found");
 			}
-		}
+			let optionsFound = dialogReader.readOptions(capture, optionBoxLoc);
+			return optionsFound;
+		} catch (e) {} //Supresses No Option Box Present because (!optionBoxLoc doesnt have a .Length to match to 0)
 	}
-
-	function stopSolver() {
-		if (captureID) {
-			clearInterval(captureID);
-			captureID = null;
-		}
-	}
-	function stopEverything() {
-		if (captureID) {
-			clearInterval(captureID);
-			captureID = null;
-		}
-		if (overlayID) {
-			clearInterval(overlayID);
-			overlayID = null;
-		}
-		if (readDialogueID) {
-			clearInterval(readDialogueID);
-			readDialogueID = null;
-		}
-		if (readCaptureID) {
-			clearInterval(readCaptureID);
-			readCaptureID = null;
-		}
-	}
-	return {
-		startSolver: initialize,
-		stopEverything,
-		compareTranscript,
-	} as const;
+	return { run, stepCapture };
 };
