@@ -1178,7 +1178,14 @@
 	},
 	{
 		"name": "Lair of Tarn Razorlor (miniquest)",
-		"images": []
+		"images": [
+			{
+				"step": "3",
+				"src": "Step3_TarnsLair.webp",
+				"width": 800,
+				"height": 650
+			}
+		]
 	},
 	{
 		"name": "The Lost Toys (miniquest)",
