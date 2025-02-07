@@ -2167,6 +2167,26 @@ fieldset:disabled .mantine-active:active {
       border: calc(0.0625rem * var(--mantine-scale)) solid var(--mantine-color-dark-4);
 }
 
+.m_9814e45f {
+  inset: 0;
+  position: absolute;
+  background: var(--overlay-bg, rgba(0, 0, 0, 0.6));
+  backdrop-filter: var(--overlay-filter);
+  -webkit-backdrop-filter: var(--overlay-filter);
+  border-radius: var(--overlay-radius, 0);
+  z-index: var(--overlay-z-index);
+}
+
+  .m_9814e45f:where([data-fixed]) {
+    position: fixed;
+  }
+
+  .m_9814e45f:where([data-center]) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 .m_38a85659 {
   position: absolute;
   border: 1px solid var(--popover-border-color);
@@ -2197,6 +2217,11 @@ fieldset:disabled .mantine-active:active {
   background-color: inherit;
   border: 1px solid var(--popover-border-color);
   z-index: 1;
+}
+
+.m_3d7bc908 {
+  position: fixed;
+  inset: 0;
 }
 
 .m_5ae2e3c {
@@ -2583,26 +2608,6 @@ fieldset:disabled .mantine-active:active {
       flex-grow: 1;
       max-width: var(--group-child-width);
     }
-
-.m_9814e45f {
-  inset: 0;
-  position: absolute;
-  background: var(--overlay-bg, rgba(0, 0, 0, 0.6));
-  backdrop-filter: var(--overlay-filter);
-  -webkit-backdrop-filter: var(--overlay-filter);
-  border-radius: var(--overlay-radius, 0);
-  z-index: var(--overlay-z-index);
-}
-
-  .m_9814e45f:where([data-fixed]) {
-    position: fixed;
-  }
-
-  .m_9814e45f:where([data-center]) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 
 .m_615af6c9 {
   line-height: 1;
@@ -3775,18 +3780,21 @@ fieldset:disabled .mantine-active:active {
   --combobox-chevron-size-lg: calc(1.5rem * var(--mantine-scale));
   --combobox-chevron-size-xl: calc(1.75rem * var(--mantine-scale));
   --combobox-chevron-size: var(--combobox-chevron-size-sm);
+}
+:where([data-mantine-color-scheme='light']) .m_2943220b {
+    --_combobox-chevron-color: var(--combobox-chevron-color, var(--mantine-color-gray-6));
+}
+:where([data-mantine-color-scheme='dark']) .m_2943220b {
+    --_combobox-chevron-color: var(--combobox-chevron-color, var(--mantine-color-dark-3));
+}
+.m_2943220b {
 
   width: var(--combobox-chevron-size);
   height: var(--combobox-chevron-size);
-}
-:where([data-mantine-color-scheme='light']) .m_2943220b {
-    color: var(--mantine-color-gray-6);
-}
-:where([data-mantine-color-scheme='dark']) .m_2943220b {
-    color: var(--mantine-color-dark-3);
+  color: var(--_combobox-chevron-color);
 }
 .m_2943220b:where([data-error]) {
-    color: var(--mantine-color-error);
+    color: var(--combobox-chevron-color, var(--mantine-color-error));
   }
 
 /* ------- OptionsDropdown ------- */
@@ -5730,15 +5738,15 @@ fieldset:disabled .m_d3ea56bb,
 .m_99ac2aa1:where([data-disabled], :disabled) {
     color: var(--mantine-color-dimmed);
     opacity: 0.6;
-    pointer-events: none;
+    cursor: not-allowed;
   }
 
-:where([data-mantine-color-scheme='light']) .m_99ac2aa1:where([data-hovered]) {
-      background-color: var(--menu-item-hover, var(--mantine-color-gray-1));
+:where([data-mantine-color-scheme='light']) .m_99ac2aa1:where([data-hovered]):where(:not(:disabled, [data-disabled])) {
+        background-color: var(--menu-item-hover, var(--mantine-color-gray-1));
 }
 
-:where([data-mantine-color-scheme='dark']) .m_99ac2aa1:where([data-hovered]) {
-      background-color: var(--menu-item-hover, var(--mantine-color-dark-4));
+:where([data-mantine-color-scheme='dark']) .m_99ac2aa1:where([data-hovered]):where(:not(:disabled, [data-disabled])) {
+        background-color: var(--menu-item-hover, var(--mantine-color-dark-4));
 }
 
 .m_5476e0d3 {
@@ -8090,19 +8098,19 @@ fieldset:disabled .m_c9ade57f:where([data-inverted]),
     border-inline-end: calc(0.0625rem * var(--mantine-scale)) solid var(--table-border-color);
   }
 
-.m_b2404537 :where(tr):where([data-with-row-border]:last-of-type) {
+.m_b2404537 > :where(tr):where([data-with-row-border]:last-of-type) {
       border-bottom: none;
     }
 
-.m_b2404537 :where(tr):where([data-striped='odd']:nth-of-type(odd)) {
+.m_b2404537 > :where(tr):where([data-striped='odd']:nth-of-type(odd)) {
       background-color: var(--table-striped-color);
     }
 
-.m_b2404537 :where(tr):where([data-striped='even']:nth-of-type(even)) {
+.m_b2404537 > :where(tr):where([data-striped='even']:nth-of-type(even)) {
       background-color: var(--table-striped-color);
     }
 
-.m_b2404537 :where(tr)[data-hover] {
+.m_b2404537 > :where(tr)[data-hover] {
       --tr-hover-bg: var(--table-highlight-on-hover-color, var(--table-hover-color));
     }
 
@@ -8135,6 +8143,45 @@ fieldset:disabled .m_c9ade57f:where([data-inverted]),
 .m_62259741 {
   min-width: var(--table-min-width);
 }
+
+.m_bcaa9990 {
+  display: flex;
+  flex-direction: column;
+  --toc-depth-offset: 0.8em;
+}
+
+.m_375a65ef {
+  display: block;
+  padding: 0.3em 0.8em;
+  font-size: var(--toc-size, var(--mantine-font-size-md));
+  border-radius: var(--toc-radius, var(--mantine-radius-default));
+  padding-left: max(calc(var(--depth-offset) * var(--toc-depth-offset)), 0.8em);
+}
+
+@media (hover: hover) {
+      :where([data-mantine-color-scheme='light']) .m_375a65ef:where(:hover):where(:not([data-variant='none'])) {
+        background-color: var(--mantine-color-gray-1);
+  }
+
+      :where([data-mantine-color-scheme='dark']) .m_375a65ef:where(:hover):where(:not([data-variant='none'])) {
+        background-color: var(--mantine-color-dark-5);
+  }
+}
+
+@media (hover: none) {
+      :where([data-mantine-color-scheme='light']) .m_375a65ef:where(:active):where(:not([data-variant='none'])) {
+        background-color: var(--mantine-color-gray-1);
+  }
+
+      :where([data-mantine-color-scheme='dark']) .m_375a65ef:where(:active):where(:not([data-variant='none'])) {
+        background-color: var(--mantine-color-dark-5);
+  }
+}
+
+.m_375a65ef:where([data-active]) {
+    background-color: var(--toc-bg);
+    color: var(--toc-color);
+  }
 
 .m_89d60db1 {
   display: var(--tabs-display);
@@ -10810,6 +10857,11 @@ fieldset:disabled .mantine-active:active {
   z-index: 1;
 }
 
+.m_3d7bc908 {
+  position: fixed;
+  inset: 0;
+}
+
 /*!**********************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../node_modules/@mantine/core/styles/ScrollArea.css ***!
   \**********************************************************************************************************************************/
@@ -11181,6 +11233,10 @@ fieldset:disabled .mantine-active:active {
   height: var(--carousel-height);
   overflow: hidden;
 }
+
+.m_a2dae653[data-type='container'] {
+    container: carousel / inline-size;
+  }
 
 .m_fcd81474 {
   display: flex;

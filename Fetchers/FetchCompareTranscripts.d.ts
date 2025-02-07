@@ -1,4 +1,3 @@
-/// <reference types="react" />
 type CompareFetcherType = {
     CTranscript: string[];
     setCTranscript: (transcript: string[]) => void;

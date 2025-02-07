@@ -1,4 +1,3 @@
-/// <reference types="react" />
 interface QuestImage {
     step: string;
     src: string;

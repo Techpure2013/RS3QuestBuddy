@@ -1,4 +1,3 @@
-/// <reference types="node" />
 import DialogReader, { DialogButton } from "alt1/dialog";
 import { TypedEmitter } from "./TypeEmitter";
 import { diagFinder } from "./handleImage";

@@ -1,4 +1,3 @@
-/// <reference types="react" />
 export type Skills = {
     rank: number;
     totalLevel: number;
