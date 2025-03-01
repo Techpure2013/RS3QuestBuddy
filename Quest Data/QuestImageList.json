@@ -4758,7 +4758,20 @@
 	},
 	{
 		"name": "Desperate Times",
-		"images": []
+		"images": [
+			{
+				"step": "12",
+				"src": "Step12_Desperatetimes.webp",
+				"width": 246,
+				"height": 202
+			},
+			{
+				"step": "13",
+				"src": "Step13_DesperateTimes.webp",
+				"width": 273,
+				"height": 337
+			}
+		]
 	},
 	{
 		"name": "Devious Minds",
@@ -5891,7 +5904,20 @@
 	},
 	{
 		"name": "Fate of the Gods",
-		"images": []
+		"images": [
+			{
+				"step": "5",
+				"src": "Step5_Freneskae_map Fate of the Gods.webp",
+				"width": 981,
+				"height": 854
+			},
+			{
+				"step": "15",
+				"src": "FateoftheGodsDoorPuzzle.webp",
+				"width": 300,
+				"height": 286
+			}
+		]
 	},
 	{
 		"name": "Fight Arena",
