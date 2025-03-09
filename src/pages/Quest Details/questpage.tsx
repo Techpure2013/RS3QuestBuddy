@@ -1,4 +1,10 @@
-import React, { useState, useEffect, useRef, Suspense } from "react";
+import React, {
+	useState,
+	useEffect,
+	useRef,
+	Suspense,
+	useReducer,
+} from "react";
 import { useLocation } from "react-router-dom";
 import { ActionIcon, Box, Button, Flex, Modal, Stepper } from "@mantine/core";
 import "@mantine/core/styles/Stepper.css";
