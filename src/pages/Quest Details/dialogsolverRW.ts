@@ -2,20 +2,6 @@ import * as a1libs from "alt1";
 import DialogReader, { DialogButton } from "alt1/dialog";
 import { diagFinder } from "./handleImage";
 import { useRef } from "react";
-
-export const useDialogSolver = () => {
-	const dialogReader = new DialogReader();
-	const diagHelp = new diagFinder();
-	const mixedColor = a1libs.mixColor(255, 255, 0);
-	let optionsRead: DialogButton[] | null | undefined = null;
-
-	let currentStep = useRef<string>("");
-	let currentStepChatOptions = useRef<number[]>([]);
-
-	let activeOption: DialogButton | undefined = undefined;
-
-
-
 export const useDialogSolver = () => {
 	const dialogReader = new DialogReader();
 	const diagHelp = new diagFinder();
@@ -54,7 +40,6 @@ export const useDialogSolver = () => {
 	function run() {
 		clearAllIntervals();
 		intervalIds.current.optionsRead = setInterval(() => {
-
 			const rsScreenCapture = a1libs.captureHoldFullRs();
 			diagHelp.find();
 			optionsRead = readOptionBox(rsScreenCapture);
@@ -93,7 +78,6 @@ export const useDialogSolver = () => {
 	function stepCapture(step: string) {
 		currentStep.current = step;
 		getChatOptions(currentStep.current);
-
 	}
 	/**
 	 *
@@ -126,15 +110,11 @@ export const useDialogSolver = () => {
 				if (activeOption.text === option.text) {
 					clearIntervalById("overlay");
 					currentStepChatOptions.current.splice(0, 1);
-
 				}
 			}
 			clearIntervalById("secondRead");
 			if (currentStepChatOptions.current.length > 0) {
-
-
 				console.log(currentStepChatOptions);
-				activeStep = false;
 
 				run();
 			} else {
@@ -164,7 +144,6 @@ export const useDialogSolver = () => {
 		calculateOverlayStop(option);
 		if (option !== undefined) {
 			intervalIds.current.overlay = setInterval(() => {
-
 				alt1.overLayRect(
 					mixedColor,
 					option.buttonx,
@@ -175,7 +154,6 @@ export const useDialogSolver = () => {
 					4
 				);
 			}, 900);
-
 		}
 	}
 	/**

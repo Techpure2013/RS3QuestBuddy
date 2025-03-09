@@ -7792,7 +7792,20 @@
 	},
 	{
 		"name": "Legends Quest",
-		"images": []
+		"images": [
+			{
+				"step": "18",
+				"src": "LegendsQuestMapP1.webp",
+				"width": 950,
+				"height": 750
+			},
+			{
+				"step": "18",
+				"src": "LegendsQuestMapP2.webp",
+				"width": 950,
+				"height": 750
+			}
+		]
 	},
 	{
 		"name": "Let Them Eat Pie",
