@@ -13,7 +13,7 @@ export const useDialogSolver = () => {
 	let currentStepChatOptions = useRef<number[]>([]);
 
 	let activeOption: DialogButton | undefined = undefined;
-	let activeStep: boolean = false;
+
 	const intervalIds = useRef<Record<string, NodeJS.Timeout | null>>({
 		optionsRead: null,
 		overlay: null,
@@ -41,7 +41,6 @@ export const useDialogSolver = () => {
 	function run() {
 		clearAllIntervals();
 		intervalIds.current.optionsRead = setInterval(() => {
-			activeStep = true;
 			const rsScreenCapture = a1libs.captureHoldFullRs();
 			diagHelp.find();
 			optionsRead = readOptionBox(rsScreenCapture);
@@ -80,7 +79,6 @@ export const useDialogSolver = () => {
 	function stepCapture(step: string) {
 		currentStep.current = step;
 		getChatOptions(currentStep.current);
-		console.log("Step Captured:", currentStep.current);
 	}
 	/**
 	 *
@@ -113,13 +111,10 @@ export const useDialogSolver = () => {
 				if (activeOption.text === option.text) {
 					clearIntervalById("overlay");
 					currentStepChatOptions.current.splice(0, 1);
-					activeStep = false;
 				}
 			}
 			clearIntervalById("secondRead");
 			if (currentStepChatOptions.current.length > 0) {
-				console.log(currentStepChatOptions);
-				activeStep = false;
 				run();
 			} else {
 				return;
@@ -148,7 +143,6 @@ export const useDialogSolver = () => {
 		calculateOverlayStop(option);
 		if (option !== undefined) {
 			intervalIds.current.overlay = setInterval(() => {
-				alt1.overLaySetGroup("Overlay"); // Test
 				alt1.overLayRect(
 					mixedColor,
 					option.buttonx,
@@ -159,8 +153,6 @@ export const useDialogSolver = () => {
 					4
 				);
 			}, 900);
-		} else {
-			alt1.overLayClearGroup("Overlay"); // Test
 		}
 	}
 	/**

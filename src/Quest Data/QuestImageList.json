@@ -9,7 +9,7 @@
 				"height": 368
 			},
 			{
-				"step": "6G",
+				"step": "6",
 				"src": "Step6_PixieLocations.webp",
 				"width": 850,
 				"height": 650
@@ -2632,10 +2632,10 @@
 		"name": "Azzanadra's Quest",
 		"images": [
 			{
-				"step": "1",
-				"src": "Freneskaemap.webp",
-				"width": 300,
-				"height": 261
+				"step": "8",
+				"src": "AzzandrasQuestMap.webp",
+				"width": 800,
+				"height": 650
 			}
 		]
 	},
@@ -4758,7 +4758,20 @@
 	},
 	{
 		"name": "Desperate Times",
-		"images": []
+		"images": [
+			{
+				"step": "12",
+				"src": "Step12_Desperatetimes.webp",
+				"width": 246,
+				"height": 202
+			},
+			{
+				"step": "13",
+				"src": "Step13_DesperateTimes.webp",
+				"width": 273,
+				"height": 337
+			}
+		]
 	},
 	{
 		"name": "Devious Minds",
@@ -5891,7 +5904,20 @@
 	},
 	{
 		"name": "Fate of the Gods",
-		"images": []
+		"images": [
+			{
+				"step": "5",
+				"src": "Step5_Freneskae_map Fate of the Gods.webp",
+				"width": 981,
+				"height": 854
+			},
+			{
+				"step": "15",
+				"src": "FateoftheGodsDoorPuzzle.webp",
+				"width": 300,
+				"height": 286
+			}
+		]
 	},
 	{
 		"name": "Fight Arena",
@@ -7855,6 +7881,12 @@
 				"src": "step71_Etheral.webp",
 				"width": 638,
 				"height": 713
+			},
+			{
+				"step": "55",
+				"src": "Step55_BlueFlowersLunarQuest.webp",
+				"width": 1067,
+				"height": 689
 			},
 			{
 				"step": "66",
@@ -12092,34 +12124,46 @@
 		"name": "The World Wakes",
 		"images": [
 			{
-				"step": "1",
-				"src": "592px-The_World_Wakes_puzzle_solution_1.webp",
-				"width": 592,
-				"height": 480
+				"step": "19",
+				"src": "Step19_PuzzleSolution1.webp",
+				"width": 866,
+				"height": 702
 			},
 			{
-				"step": "1",
-				"src": "592px-The_World_Wakes_puzzle_solution_2.webp",
-				"width": 592,
-				"height": 480
+				"step": "19",
+				"src": "Step19_PuzzleSolution2.webp",
+				"width": 865,
+				"height": 703
 			},
 			{
-				"step": "1",
-				"src": "592px-The_World_Wakes_puzzle_solution_3.webp",
-				"width": 592,
-				"height": 480
+				"step": "19",
+				"src": "Step19_PuzzleSolution3.webp",
+				"width": 867,
+				"height": 705
 			},
 			{
-				"step": "1",
-				"src": "592px-The_World_Wakes_puzzle_solution_4.webp",
-				"width": 592,
-				"height": 480
+				"step": "19",
+				"src": "Step19_PuzzleSolution4.webp",
+				"width": 868,
+				"height": 703
 			},
 			{
-				"step": "17",
-				"src": "TheWorldWakesdoorsolution.webp",
-				"width": 300,
-				"height": 194
+				"step": "26",
+				"src": "1.webp",
+				"width": 800,
+				"height": 650
+			},
+			{
+				"step": "26",
+				"src": "2.webp",
+				"width": 800,
+				"height": 650
+			},
+			{
+				"step": "27",
+				"src": "step26_WW.webp",
+				"width": 514,
+				"height": 199
 			}
 		]
 	},

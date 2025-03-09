@@ -10,11 +10,14 @@ export const usePlayerQuests = () => {
 
 	const fetchPlayerQuests = async (playerName: String): Promise<void> => {
 		try {
+			const start = performance.now();
 			setIsLoading(true);
 			const response = await fetch(PlayerQuestSite + `?user=${playerName}`);
 			const data = await response.json();
 			if (data !== null) {
 				setPlayerQuests(data.quests);
+				const end = performance.now();
+				console.log(`Fetching player quests took ${end - start}ms to execute`);
 			}
 
 			setHasError(false);

@@ -1,10 +1,4 @@
-import React, {
-	useState,
-	useEffect,
-	useRef,
-	Suspense,
-	useReducer,
-} from "react";
+import React, { useState, useEffect, useRef, Suspense } from "react";
 import { useLocation } from "react-router-dom";
 import { ActionIcon, Box, Button, Flex, Modal, Stepper } from "@mantine/core";
 import "@mantine/core/styles/Stepper.css";
@@ -42,11 +36,6 @@ import { PlayerQuestStatus } from "./../../Fetchers/sortPlayerQuests";
 import { useDialogSolver } from "./dialogsolverRW";
 import Tippy from "@tippyjs/react";
 
-import useCatchUpDisclosure from "./Quest Detail Components/useCatchUpModal";
-import {
-	CTranscript,
-	useCompareTranscript,
-} from "./../../Fetchers/useCompareTranscript";
 const UnderGroundPassGrid = React.lazy(
 	() =>
 		new Promise<{ default: React.ComponentType<any> }>((resolve) => {
@@ -134,6 +123,7 @@ const QuestPage: React.FC = () => {
 	const storedExpandAll = localStorage.getItem(
 		LOCAL_STORAGE_KEYS.expandAllAccordions
 	);
+	const userID = localStorage.getItem("userID");
 	const [expanded, setExpanded] = useState<string[]>(() => {
 		const isExpandAll =
 			storedExpandAll !== null ? JSON.parse(storedExpandAll) : false;
@@ -157,6 +147,7 @@ const QuestPage: React.FC = () => {
 			}
 		}
 	};
+
 	useEffect(() => {
 		loadUserSettings();
 		console.log(uiState.dialogOption);
@@ -609,7 +600,7 @@ const QuestPage: React.FC = () => {
 									paddingBottom: "1em",
 								},
 							}}
-							onClick={handleBackButton}
+							onClick={() => handleBackButton(userID, questName)}
 							leftSection={<IconArrowBack />}
 						>
 							Pick Another Quest
@@ -909,7 +900,7 @@ const QuestPage: React.FC = () => {
 										size="sm"
 										variant="outline"
 										color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-										onClick={handleBackButton}
+										onClick={() => handleBackButton(userID, questName)}
 									>
 										<IconArrowBack />
 									</ActionIcon>

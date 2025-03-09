@@ -20,7 +20,7 @@ module.exports = {
 		static: {
 			directory: path.resolve(__dirname, "dist"),
 		},
-		port: 3000,
+		port: 3001,
 		open: true,
 		hot: true,
 		historyApiFallback: true,
@@ -99,9 +99,9 @@ module.exports = {
 			filename: "assets/css/index.css",
 		}),
 		new HtmlWebpackPlugin({
-			template: path.resolve(__dirname, "src/index.html"),
-			filename: "index.html",
-			inject: false,
+			template: "./Entrance/index.html", // Path to your HTML file
+			filename: "index.html", // Output file name in the dist folder
+			inject: true,
 		}),
 		new webpack.IgnorePlugin({
 			resourceRegExp: /^(canvas|electron\/common|sharp)$/,
