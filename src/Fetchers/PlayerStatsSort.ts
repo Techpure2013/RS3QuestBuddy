@@ -40,6 +40,7 @@ export const usePlayerSortStats = () => {
 		const filterOutNewLine = playerStats.filter(
 			(string) => !string.includes("\n")
 		);
+		const start = performance.now(); // Start measuring
 		sortedPlayerStats.current = [
 			{
 				rank: parseInt(filterOutNewLine[0], 10),
@@ -75,6 +76,8 @@ export const usePlayerSortStats = () => {
 				necromancy: parseInt(filterOutNewLine[30], 10),
 			},
 		];
+		const end = performance.now();
+		console.log(`filterPlayerStats took ${end - start}ms to execute`);
 	};
 	return { sortedPlayerStats, filterPlayerStats } as const;
 };

@@ -35,6 +35,7 @@ import { FontSizeProvider } from "./Entrance Components/FontContextProvider";
 import "./../assets/rs3buddyicon.png";
 import "./../assets/fonts/RS3Font.woff2";
 import { MantineProvider } from "@mantine/core";
+import { SocketProvider } from "./Entrance Components/socketContext";
 const AltGuard = () => {
 	const [override, setOverride] = useState(false);
 	useEffect(() => {
@@ -67,11 +68,14 @@ const AltGuard = () => {
 		</>
 	);
 };
+
 document.querySelector("html")!.style.fontSize = "16px";
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-	<FontSizeProvider>
+	<SocketProvider>
 		<MantineProvider defaultColorScheme="dark">
-			<AltGuard />
+			<FontSizeProvider>
+				<App />
+			</FontSizeProvider>
 		</MantineProvider>
-	</FontSizeProvider>
+	</SocketProvider>
 );

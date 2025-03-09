@@ -30,6 +30,11 @@ import {
 	PlayerQuestStatus,
 	useSortedPlayerQuests,
 } from "./../../Fetchers/sortPlayerQuests";
+import axios from "axios";
+import { SHA256 } from "crypto-js";
+import { io, Socket } from "socket.io-client";
+import { useSocket } from "./../../Entrance/Entrance Components/socketContext";
+
 const QuestCarousel: React.FC = () => {
 	const [searchQuery, setSearchQuery] = useState<string>("");
 	const { playerStats, isLoading, fetchPlayerStats } = usePlayerStats();
@@ -63,6 +68,7 @@ const QuestCarousel: React.FC = () => {
 		hasColor: false,
 		hasButtonColor: false,
 		hasLabelColor: false,
+		userID: "",
 		userColor: "",
 		userLabelColor: "",
 		userButtonColor: "",
@@ -80,6 +86,7 @@ const QuestCarousel: React.FC = () => {
 				quest.title.toLowerCase().includes(searchQuery.toLowerCase())
 		  )
 		: [];
+	let socket = useSocket();
 
 	useEffect(() => {
 		loadUserSettings();
@@ -94,6 +101,7 @@ const QuestCarousel: React.FC = () => {
 
 		loadQuestList();
 	}, []);
+
 	const HandleNewPlayer = () => {
 		sessionStorage.clear();
 		playerFound.current = false;
@@ -225,6 +233,7 @@ const QuestCarousel: React.FC = () => {
 		setUiState({
 			isCompact: compact,
 			isHighlight: hl,
+			userID: localStorage.getItem("userID") || "",
 			userColor: localStorage.getItem("textColorValue") || "",
 			userLabelColor: localStorage.getItem("labelColor") || "",
 			userButtonColor: localStorage.getItem("buttonColor") || "",
@@ -274,6 +283,68 @@ const QuestCarousel: React.FC = () => {
 			console.error("Error parsing sessionStorage data:", error);
 		}
 	};
+	function openMapBuddy(URL: string) {
+		console.warn("Falling back to anchor tag method.");
+		const anchor = document.createElement("a");
+		anchor.href = URL;
+		document.body.appendChild(anchor);
+		anchor.click();
+		document.body.removeChild(anchor);
+	}
+
+	async function sendToMapBuddy(questName: string) {
+		if (uiState.userID === "") {
+			const userID = generateUserID();
+			localStorage.setItem("userID", JSON.stringify(userID));
+			uiState.userID = userID; // Update the userID in the state
+		}
+		console.log(socket);
+		if (socket?.connected) {
+			socket.emit("register", { userID: uiState.userID });
+			// Emit the quest data to the backend
+			socket.emit("updateQuest", {
+				userID: uiState.userID,
+				questName: questName,
+			});
+			socket.emit(
+				"generateURL",
+				{ userID: uiState.userID },
+				(response: { url: string }) => {
+					console.log(response);
+					if (response && response.url) {
+						// Open the map using the received URL
+						console.log(response.url);
+						openMapBuddy(response.url);
+					} else {
+						console.error("Failed to generate URL:", response);
+					}
+				}
+			);
+			socket.on("urlGenerated", (response: { url?: string; error?: string }) => {
+				console.log("Response from server:", response);
+				if (response && response.url) {
+					// Open the map using the received URL
+					console.log("Generated URL:", response.url);
+					openMapBuddy(response.url);
+				} else {
+					console.error("Failed to generate URL:", response.error || response);
+				}
+			});
+		}
+
+		console.log(`Sent quest data to Map Buddy backend: ${questName}`);
+	}
+
+	function generateUserID(): string {
+		const timestamp = Date.now().toString(36);
+		const randomValue = Array(16)
+			.fill(null)
+			.map(() => Math.floor(Math.random() * 16).toString(16))
+			.join("");
+		const rawID = `${timestamp}-${randomValue}`;
+		const hashedID = SHA256(rawID).toString().slice(0, 16); // 16 characters
+		return hashedID; // Return as the final unique userID
+	}
 
 	useEffect(() => {
 		loadSessionStorage();
@@ -431,6 +502,7 @@ const QuestCarousel: React.FC = () => {
 												color: isActive ? "inherit" : "inherit", // Ensure no style change
 											})}
 											onClick={() => {
+												sendToMapBuddy(quest.title);
 												window.scrollTo(0, 0);
 											}}
 										>
@@ -472,6 +544,7 @@ const QuestCarousel: React.FC = () => {
 												color: isActive ? "inherit" : "inherit", // Ensure no style change
 											})}
 											onClick={() => {
+												sendToMapBuddy(quest);
 												window.scrollTo(0, 0);
 											}}
 										>

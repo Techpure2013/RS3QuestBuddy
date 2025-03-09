@@ -2,7 +2,9 @@ import { useEffect } from "react";
 import * as a1lib from "alt1";
 import { useQuestControllerStore } from "./../../Handlers/HandlerStore";
 import { useNavigate } from "react-router-dom";
+import { useSocket } from "./../../Entrance/Entrance Components/socketContext";
 export const useQuestPageFunctions = () => {
+	let socket = useSocket();
 	const hist = useNavigate();
 	const handles = useQuestControllerStore();
 	const create_ListUUID = () => {
@@ -33,7 +35,10 @@ export const useQuestPageFunctions = () => {
 			};
 		}, [callback]); // Only re-run if callback changes
 	};
-	const handleBackButton = () => {
+	const handleBackButton = (userID: string | null, questname: string) => {
+		if (socket?.connected) {
+			socket.emit("removeTempURL", { userID: userID, questName: questname });
+		}
 		// Navigate to home
 		hist("/");
 

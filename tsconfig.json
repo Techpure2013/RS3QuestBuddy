@@ -1,25 +1,25 @@
 {
-  "compilerOptions": {
-    "resolveJsonModule": true,
-    "target": "ES2020", // Target modern JavaScript
-    "module": "Node16", // Use CommonJS for `require()`
-    "moduleResolution": "node16",
-    "jsx": "react-jsx", // Enable React JSX transform
-    "strict": true, // Enable strict type-checking
-    "esModuleInterop": true,
-    "sourceMap": true,
-    "emitDeclarationOnly": false,
-    "declaration": true,
-    "allowSyntheticDefaultImports": true, // Simplifies default imports for CommonJS
-    "resolvePackageJsonExports": true, // Enable `exports` resolution in package.json
-    "forceConsistentCasingInFileNames": true, // Enforce case-sensitive imports
-    "skipLibCheck": true, // Skip type checking of .d.ts files
-    "baseUrl": "./src", // Base directory for module resolution
-    "outDir": "./dist", // Output directory for compiled files
-    "rootDir": "./src", // Root directory for source files
-    "noEmit": false,
-    "typeRoots": ["./node_modules/@types", "./types"]
-  },
-  "include": ["src/**/*"], // Include all files in the `src` directory
-  "exclude": ["node_modules", "dist"] // Exclude unnecessary folders
+	"compilerOptions": {
+		"resolveJsonModule": true,
+		"target": "ES2020", // Target modern JavaScript
+		"module": "Node16", // Use CommonJS for `require()`
+		"moduleResolution": "node16",
+		"jsx": "react-jsx", // Enable React JSX transform
+		"strict": true, // Enable strict type-checking
+		"esModuleInterop": true,
+		"sourceMap": true,
+		"emitDeclarationOnly": false,
+		"declaration": true,
+		"allowSyntheticDefaultImports": true, // Simplifies default imports for CommonJS
+		"resolvePackageJsonExports": true, // Enable `exports` resolution in package.json
+		"forceConsistentCasingInFileNames": true, // Enforce case-sensitive imports
+		"skipLibCheck": true, // Skip type checking of .d.ts files
+		"baseUrl": "./src", // Base directory for module resolution
+		"outDir": "./dist", // Output directory for compiled files
+		"rootDir": "./src", // Root directory for source files
+		"noEmit": false,
+		"typeRoots": ["./node_modules/@types", "./types"]
+	},
+	"include": ["src/**/*"], // Include all files in the `src` directory
+	"exclude": ["node_modules", "dist"] // Exclude unnecessary folders
 }
