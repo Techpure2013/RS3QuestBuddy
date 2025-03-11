@@ -13011,7 +13011,13 @@
 	},
 	{
 		"name": "You Are It",
-		"images": []
+		"images": [			{
+				"step": "9",
+				"src": "Step9YouAreIt.webp",
+				"width": 1426,
+				"height": 705
+			}
+		]
 	},
 	{
 		"name": "Zogre Flesh Eaters",
