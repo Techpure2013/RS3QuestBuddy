@@ -126,7 +126,9 @@ const QuestCarousel: React.FC = () => {
 				JSON.stringify(completedPlayerQuests)
 			);
 			if (alteredQuestData.length > 0) {
-				remainingQuests.current = eligiblePlayerQuests;
+				remainingQuests.current = eligiblePlayerQuests.filter((quest) => {
+					if (quest.status == "NOT_STARTED") return quest;
+				});
 				sessionStorage.setItem(
 					"remainingQuest",
 					JSON.stringify(remainingQuests.current)

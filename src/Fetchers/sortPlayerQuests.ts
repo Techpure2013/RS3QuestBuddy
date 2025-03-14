@@ -99,7 +99,7 @@ export const useSortedPlayerQuests = () => {
 					break;
 
 				case "necromancy!":
-					quest.questPoints = 1;
+					quest.questPoints = 3;
 					break;
 
 				default:
