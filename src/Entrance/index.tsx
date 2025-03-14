@@ -74,7 +74,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
 	<SocketProvider>
 		<MantineProvider defaultColorScheme="dark">
 			<FontSizeProvider>
-				<App />
+				<AltGuard />
 			</FontSizeProvider>
 		</MantineProvider>
 	</SocketProvider>
