@@ -1166,7 +1166,14 @@
 	},
 	{
 		"name": "The Hunt for Surok (miniquest)",
-		"images": []
+		"images": [
+			{
+				"step": "4",
+				"src": "ChaosTunnels.webp",
+				"width": 1017,
+				"height": 733
+			}
+		]
 	},
 	{
 		"name": "In Memory of the Myreque (miniquest)",
