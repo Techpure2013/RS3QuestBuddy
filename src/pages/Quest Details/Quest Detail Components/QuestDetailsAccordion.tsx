@@ -32,7 +32,6 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 }) => {
 	const NEEDED_STORAGE_KEY = "checkedItemsNeeded";
 	const RECOMMENDED_STORAGE_KEY = "checkedItemsRecommended";
-	console.log(QuestDetails);
 	const deduplicatedQuestDetails = Array.isArray(QuestDetails)
 		? QuestDetails.filter(
 				(quest, index, self) =>
