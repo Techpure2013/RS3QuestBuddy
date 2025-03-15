@@ -32,7 +32,13 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 }) => {
 	const NEEDED_STORAGE_KEY = "checkedItemsNeeded";
 	const RECOMMENDED_STORAGE_KEY = "checkedItemsRecommended";
-
+	console.log(QuestDetails);
+	const deduplicatedQuestDetails = Array.isArray(QuestDetails)
+		? QuestDetails.filter(
+				(quest, index, self) =>
+					index === self.findIndex((q) => q.Quest === quest.Quest)
+		  )
+		: [];
 	// Initialize state for needed and recommended items
 	const [checkedItemsNeeded, setCheckItemsNeeded] = useState<Set<string>>(() => {
 		const storedItems = sessionStorage.getItem(NEEDED_STORAGE_KEY);
@@ -150,7 +156,7 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 				<Accordion.Panel>
 					<div>
 						<ul>
-							{QuestDetails?.map((quest, questIndex) => {
+							{deduplicatedQuestDetails?.map((quest, questIndex) => {
 								return (
 									<React.Fragment key={questIndex}>
 										{quest.Requirements.map(
@@ -242,7 +248,7 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 				</Accordion.Control>
 				<Accordion.Panel c={uiState.hasColor ? uiState.userColor : ""}>
 					<div>
-						{QuestDetails?.map((value) => {
+						{deduplicatedQuestDetails?.map((value) => {
 							return value.StartPoint;
 						})}
 					</div>
@@ -261,7 +267,7 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 				</Accordion.Control>
 				<Accordion.Panel c={uiState.hasColor ? uiState.userColor : ""}>
 					<div>
-						{QuestDetails?.map((value) => {
+						{deduplicatedQuestDetails?.map((value) => {
 							return value.MemberRequirement;
 						})}
 					</div>
@@ -280,7 +286,7 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 				</Accordion.Control>
 				<Accordion.Panel c={uiState.hasColor ? uiState.userColor : ""}>
 					<div>
-						{QuestDetails?.map((value) => {
+						{deduplicatedQuestDetails?.map((value) => {
 							return value.OfficialLength;
 						})}
 					</div>
@@ -300,7 +306,7 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 				<Accordion.Panel c={uiState.hasColor ? uiState.userColor : ""}>
 					<div>
 						<List listStyleType="none">
-							{QuestDetails?.map((quest, questIndex) => {
+							{deduplicatedQuestDetails?.map((quest, questIndex) => {
 								return (
 									<React.Fragment key={questIndex}>
 										{quest.ItemsRequired.map((item: string, itemIndex: number) => {
@@ -343,7 +349,7 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 				<Accordion.Panel c={uiState.hasColor ? uiState.userColor : ""}>
 					<div>
 						<List listStyleType="none">
-							{QuestDetails?.map((quest, questIndex) => {
+							{deduplicatedQuestDetails?.map((quest, questIndex) => {
 								return (
 									<React.Fragment key={questIndex}>
 										{quest.Recommended.map((item: string, itemIndex: number) => {
@@ -386,7 +392,7 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 				<Accordion.Panel c={uiState.hasColor ? uiState.userColor : ""}>
 					<div>
 						<List listStyleType="none">
-							{QuestDetails?.map((quest, questIndex) => (
+							{deduplicatedQuestDetails?.map((quest, questIndex) => (
 								<React.Fragment key={questIndex}>
 									{quest.EnemiesToDefeat.map((value: string, enemiesIndex: number) => {
 										const UniqueID = `${questIndex}-${enemiesIndex}`;
