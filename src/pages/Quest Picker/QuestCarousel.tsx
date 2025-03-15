@@ -127,7 +127,8 @@ const QuestCarousel: React.FC = () => {
 			);
 			if (alteredQuestData.length > 0) {
 				remainingQuests.current = eligiblePlayerQuests.filter((quest) => {
-					if (quest.status == "NOT_STARTED") return quest;
+					if (quest.status == "NOT_STARTED" || quest.status == "STARTED")
+						return quest;
 				});
 				sessionStorage.setItem(
 					"remainingQuest",
