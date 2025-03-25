@@ -11255,7 +11255,14 @@
 	},
 	{
 		"name": "The Hand in the Sand",
-		"images": []
+		"images": [
+			{
+				"step": "5",
+				"src": "Step5Handinsand.webp",
+				"width": 1917,
+				"height": 1013
+			}
+		]
 	},
 	{
 		"name": "The Jack of Spades",
@@ -11803,6 +11810,12 @@
 				"src": "WitchavenDungeonmap.webp",
 				"width": 300,
 				"height": 357
+			},
+			{
+				"step": "32",
+				"src": "The_Slug_Menace_puzzle_solution.webp",
+				"width": 213,
+				"height": 275
 			}
 		]
 	},
