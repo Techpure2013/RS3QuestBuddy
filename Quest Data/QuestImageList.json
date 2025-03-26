@@ -6126,7 +6126,14 @@
 	},
 	{
 		"name": "Fur 'n Seek",
-		"images": []
+		"images": [
+			{
+				"step": "3",
+				"src": "Step3Furhideskintable.webp",
+				"width": 850,
+				"height": 650
+			}
+		]
 	},
 	{
 		"name": "Garden of Tranquillity",
@@ -7114,7 +7121,14 @@
 	},
 	{
 		"name": "Horror from the Deep",
-		"images": []
+		"images": [
+			{
+				"step": "17",
+				"src": "Step17TableHorrorFromTheDeep.webp",
+				"width": 850,
+				"height": 650
+			}
+		]
 	},
 	{
 		"name": "Hunt for Red Raktuber",
