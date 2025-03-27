@@ -8340,7 +8340,14 @@
 	},
 	{
 		"name": "My Arm's Big Adventure",
-		"images": []
+		"images": [
+			{
+				"step": "10",
+				"src": "Step10MyArm.webp",
+				"width": 332,
+				"height": 333
+			}
+		]
 	},
 	{
 		"name": "Myths of the White Lands",
