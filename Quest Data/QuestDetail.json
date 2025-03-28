@@ -465,7 +465,7 @@
 		"EnemiesToDefeat": ["None"]
 	},
 	{
-		"Quest": "Between a Rock...",
+		"Quest": "Between a Rock",
 		"StartPoint": "Speak to Dondakan in the Keldagrim mines east of Rellekka, and north of the mountain camp. (via a location)",
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Medium",
@@ -2671,15 +2671,15 @@
 			"8 tin ores if between 1-10",
 			"7 coal if between 11-54",
 			"6 mithril ores if 55+",
-			"Raw tuna",
-			"8 ropes",
-			"8 split logs",
-			"Yak-hide armour",
-			"3 cured yak-hides",
-			"Thread spool",
-			"Fremennik round shield",
-			"Bronze nail",
-			"Rope"
+			"Raw tuna (Obtainable during quest)",
+			"8 ropes (Obtainable during quest)",
+			"8 split logs (Obtainable during quest)",
+			"Yak-hide armour (Obtainable during quest)",
+			"3 cured yak-hides (Obtainable during quest)",
+			"Thread spool (Obtainable during quest)",
+			"Fremennik round shield (Obtainable during quest)",
+			"Bronze nail (Obtainable during quest)",
+			"Rope (Obtainable during quest)"
 		],
 		"Recommended": [
 			"43 Prayer (for all three protection prayers)",
@@ -7746,6 +7746,7 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Medium",
 		"Requirements": [
+			"Dimension of Disaster: Demon Slayer",
 			"Dimension of Disaster: Coin of the Realm",
 			"Demon Slayer",
 			"Shadow of the Storm",
@@ -8420,15 +8421,15 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Short to Medium",
 		"Requirements": ["What Lies Below", "42 Mining", "43 Prayer"],
-		"ItemsRequired": ["Combat equipment to fight a strong level 107 ork"],
-		"Recommended": [
-			"Anti-dragon shield or Anti-fire potion",
+		"ItemsRequired": [
+			"Combat equipment to fight a strong level 107 ork"
+		],
+		"Recommended": ["Anti-dragon shield or Anti-fire potion",
 			"Super energy potions",
 			"Antipoisons",
 			"One-click teleport (e.g., ectophial or magic tablets)",
 			"Way to restore run energy (e.g., mint cakes or Explorer's ring)",
-			"Salt-water spring spa in Oo'glog or salt-water treatment at Anachronia base camp"
-		],
+			"Salt-water spring spa in Oo'glog or salt-water treatment at Anachronia base camp"],
 		"EnemiesToDefeat": ["Bork (level 107)"]
 	},
 	{
