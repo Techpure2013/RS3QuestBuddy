@@ -1177,7 +1177,13 @@
 	},
 	{
 		"name": "In Memory of the Myreque (miniquest)",
-		"images": []
+		"images": [			
+			{
+			"step": "3",
+			"src": "Step3Memoryofmyreque.webp",
+			"width": 387,
+			"height": 371
+		}]
 	},
 	{
 		"name": "Koschei's Troubles (miniquest)",
@@ -3017,6 +3023,12 @@
 				"src": "dwarvernengineerlocation.webp",
 				"width": 315,
 				"height": 323
+			},
+			{
+				"step": "23",
+				"src": "Step23betweenarock.webp",
+				"width": 513,
+				"height": 334
 			}
 		]
 	},
@@ -3454,10 +3466,22 @@
 				"height": 600
 			},
 			{
-				"step": "43",
-				"src": "Step43_FragmentTable.webp",
+				"step": "44",
+				"src": "Step44_FragmentTable.webp",
 				"width": 600,
 				"height": 600
+			},
+			{
+				"step": "33",
+				"src": "scavidmap.webp",
+				"width": 354,
+				"height": 288
+			},
+			{
+				"step": "34",
+				"src": "Step34Watchtower.webp",
+				"width": 624,
+				"height": 659
 			}
 		]
 	},
@@ -8340,7 +8364,14 @@
 	},
 	{
 		"name": "My Arm's Big Adventure",
-		"images": []
+		"images": [
+			{
+				"step": "10",
+				"src": "Step10MyArm.webp",
+				"width": 332,
+				"height": 333
+			}
+		]
 	},
 	{
 		"name": "Myths of the White Lands",
