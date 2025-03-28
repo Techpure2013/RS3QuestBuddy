@@ -62,6 +62,7 @@ export const useQuestPageFunctions = () => {
 			questName = "Another Slice of H.A.M.";
 		if (questName === "Raksha, The Shadow Colossus Quest")
 			questName = "Raksha, the Shadow Colossus (quest)";
+		if (questName === "Between a Rock") questName = "Between a Rock...";
 		const newWindow = window.open(
 			`https://runescape.wiki/w/${encodeURIComponent(questName)}/Quick_guide`,
 			"_blank",
