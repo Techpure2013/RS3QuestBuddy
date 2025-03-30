@@ -4576,7 +4576,14 @@
 	},
 	{
 		"name": "Death to the Dorgeshuun",
-		"images": []
+		"images": [			
+			{
+			"step": "55",
+			"src": "Step55death.webp",
+			"width": 357,
+			"height": 521
+			}
+		]
 	},
 	{
 		"name": "Defender of Varrock",
@@ -7800,32 +7807,32 @@
 				"height": 177
 			},
 			{
-				"step": "38",
-				"src": "Step38_Locs.webp",
+				"step": "37",
+				"src": "Step37_Locs.webp",
 				"width": 200,
 				"height": 200
 			},
 			{
-				"step": "44",
-				"src": "Step44_Crypt.webp",
+				"step": "39",
+				"src": "Step39_Crypt.webp",
 				"width": 596,
 				"height": 415
 			},
 			{
-				"step": "54",
-				"src": "Step54_ZanikLoc.webp",
+				"step": "49",
+				"src": "Step49_ZanikLoc.webp",
 				"width": 205,
 				"height": 165
 			},
 			{
-				"step": "56",
-				"src": "Step56_OdLakLoc.webp",
+				"step": "51",
+				"src": "Step51_OdLakLoc.webp",
 				"width": 182,
 				"height": 151
 			},
 			{
-				"step": "58",
-				"src": "Step58_PuzzleAnswer.webp",
+				"step": "53",
+				"src": "Step53_PuzzleAnswer.webp",
 				"width": 453,
 				"height": 333
 			}
