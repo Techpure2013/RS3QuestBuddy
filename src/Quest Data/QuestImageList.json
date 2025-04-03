@@ -10713,6 +10713,18 @@
 		"name": "The Brink of Extinction",
 		"images": [
 			{
+				"step": "18",
+				"src": "Step18Brink.webp",
+				"width": 1089,
+				"height": 623
+			},
+			{
+				"step": "23",
+				"src": "Step23Brink.webp",
+				"width": 1278,
+				"height": 934
+			},
+			{
 				"step": "19",
 				"src": "CombatWeaknessTable.webp",
 				"width": 800,
@@ -10735,6 +10747,12 @@
 				"src": "WordsTable.webp",
 				"width": 800,
 				"height": 650
+			},
+			{
+				"step": "55",
+				"src": "Step55Brink.webp",
+				"width": 1100,
+				"height": 283
 			}
 		]
 	},
@@ -12638,6 +12656,18 @@
 	{
 		"name": "Troll Romance",
 		"images": [
+			{
+				"step": "2",
+				"src": "TrollStrongholdPath.webp",
+				"width": 300,
+				"height": 300
+			}
+			{
+				"step": "14",
+				"src": "TrollStrongholdPath.webp",
+				"width": 300,
+				"height": 300
+			}
 			{
 				"step": "25",
 				"src": "Arrgsafespot.webp",
