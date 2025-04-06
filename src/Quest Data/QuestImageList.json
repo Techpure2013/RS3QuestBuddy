@@ -1177,13 +1177,14 @@
 	},
 	{
 		"name": "In Memory of the Myreque (miniquest)",
-		"images": [			
+		"images": [
 			{
-			"step": "3",
-			"src": "Step3Memoryofmyreque.webp",
-			"width": 387,
-			"height": 371
-		}]
+				"step": "3",
+				"src": "Step3Memoryofmyreque.webp",
+				"width": 387,
+				"height": 371
+			}
+		]
 	},
 	{
 		"name": "Koschei's Troubles (miniquest)",
@@ -4576,12 +4577,12 @@
 	},
 	{
 		"name": "Death to the Dorgeshuun",
-		"images": [			
+		"images": [
 			{
-			"step": "55",
-			"src": "Step55death.webp",
-			"width": 357,
-			"height": 521
+				"step": "55",
+				"src": "Step55death.webp",
+				"width": 357,
+				"height": 521
 			}
 		]
 	},
@@ -12668,13 +12669,13 @@
 				"src": "TrollStrongholdPath.webp",
 				"width": 300,
 				"height": 300
-			}
+			},
 			{
 				"step": "14",
 				"src": "TrollStrongholdPath.webp",
 				"width": 300,
 				"height": 300
-			}
+			},
 			{
 				"step": "25",
 				"src": "Arrgsafespot.webp",
