@@ -9342,7 +9342,14 @@
 	},
 	{
 		"name": "Rune Mechanics",
-		"images": []
+		"images": [
+			{
+				"step": "16",
+				"src": "RuneMechanicswiring.webp",
+				"width": 300,
+				"height": 205
+			}
+		]
 	},
 	{
 		"name": "Rune Memories",
