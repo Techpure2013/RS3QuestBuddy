@@ -3488,7 +3488,13 @@
 	},
 	{
 		"name": "Blood Runs Deep",
-		"images": []
+		"images": [			{
+			"step": "51",
+			"src": "Step51bloodrunsdeep.webp",
+			"width": 723,
+			"height": 646
+		}
+	]]
 	},
 	{
 		"name": "Bringing Home the Bacon",
@@ -7166,8 +7172,8 @@
 		"name": "Hunt for Red Raktuber",
 		"images": [
 			{
-				"step": "38",
-				"src": "step38_KGP_office_map.webp",
+				"step": "37",
+				"src": "step37_KGP_office_map.webp",
 				"width": 800,
 				"height": 592
 			}
@@ -9342,7 +9348,14 @@
 	},
 	{
 		"name": "Rune Mechanics",
-		"images": []
+		"images": [
+			{
+				"step": "18",
+				"src": "RuneMechanicswiring.webp",
+				"width": 300,
+				"height": 205
+			}
+		]
 	},
 	{
 		"name": "Rune Memories",
