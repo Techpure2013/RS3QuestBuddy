@@ -4980,6 +4980,20 @@
 		]
 	},
 	{
+		"Quest": "Pharaoh's Folly",
+		"StartPoint": "Speak to Leela outside the gates of Menaphos.",
+		"MemberRequirement": "Members Only",
+		"OfficialLength": "Medium",
+		"Requirements": [
+			"Beneath Scabaras' Sands",
+			"'Phite Club",
+			"Our Man in the North"
+		],
+		"ItemsRequired": ["None"],
+		"Recommended": ["None"],
+		"EnemiesToDefeat": ["None"]
+	},
+	{
 		"Quest": "Pirate's Treasure",
 		"StartPoint": "Speak to Redbeard Frank just south of The Rusty Anchor pub in Port Sarim.",
 		"MemberRequirement": "F2P Free to play",
@@ -8421,15 +8435,15 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Short to Medium",
 		"Requirements": ["What Lies Below", "42 Mining", "43 Prayer"],
-		"ItemsRequired": [
-			"Combat equipment to fight a strong level 107 ork"
-		],
-		"Recommended": ["Anti-dragon shield or Anti-fire potion",
+		"ItemsRequired": ["Combat equipment to fight a strong level 107 ork"],
+		"Recommended": [
+			"Anti-dragon shield or Anti-fire potion",
 			"Super energy potions",
 			"Antipoisons",
 			"One-click teleport (e.g., ectophial or magic tablets)",
 			"Way to restore run energy (e.g., mint cakes or Explorer's ring)",
-			"Salt-water spring spa in Oo'glog or salt-water treatment at Anachronia base camp"],
+			"Salt-water spring spa in Oo'glog or salt-water treatment at Anachronia base camp"
+		],
 		"EnemiesToDefeat": ["Bork (level 107)"]
 	},
 	{
