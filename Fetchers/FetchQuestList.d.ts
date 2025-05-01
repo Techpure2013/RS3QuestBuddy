@@ -1,4 +1,10 @@
-export type questlist = {
-    quests: string[];
+export type Quest = {
+    toLowerCase(): unknown;
+    questName: string;
+    questAge: string;
+    series: string;
+    questPoints: string;
+    releaseDate: string;
 };
-export declare const fetchQuestList: () => Promise<questlist | null>;
+export type QuestList = Quest[];
+export declare const fetchQuestList: () => Promise<QuestList | null>;

@@ -5217,10 +5217,10 @@
 		"ItemsRequired": [
 			"Cat or hellcat",
 			"1 Rat poison (can be found in the Clock Tower Dungeon) Alternatively the ingredients to make it during the quest are (54 Herblore required): 1 Vial (must be empty), 1 Clean kwuarm (if needed, Zahur in Nardah cleans grimy herbs for 200 coins), 1 Red spiders' eggs",
-			"4 Cheese", 
-			"1 Unicorn horn dust", 
-			"1 Clean marrentill (if needed, Zahur in Nardah cleans grimy herbs for 200 coins)", 
-			"1 Bucket of milk", 
+			"4 Cheese",
+			"1 Unicorn horn dust",
+			"1 Clean marrentill (if needed, Zahur in Nardah cleans grimy herbs for 200 coins)",
+			"1 Bucket of milk",
 			"1 Catspeak amulet (or cramulet containing a Catspeak amulet)",
 			"1 Pot of weeds (use an empty pot with weeds)",
 			"About 600 coins (about 300 with ring of charos (a))",
@@ -7653,7 +7653,7 @@
 		"StartPoint": "Chop the tree in the south-west of McGrubor's Wood near the quest start marker.",
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Short",
-		"Requirements": ["You Are It"],
+		"Requirements": ["None"],
 		"ItemsRequired": ["Rope"],
 		"Recommended": ["None"],
 		"EnemiesToDefeat": ["None"]
@@ -7663,11 +7663,7 @@
 		"StartPoint": "Talk to Grish, located west of Gu'Tanoth and south of Castle Wars.",
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Medium",
-		"Requirements": [
-			"Zogre Flesh Eaters",
-			"Big Chompy Bird Hunting",
-			"Jungle Potion"
-		],
+		"Requirements": ["Big Chompy Bird Hunting", "Jungle Potion"],
 		"ItemsRequired": ["None"],
 		"Recommended": [
 			"40 Prayer for Protect from Ranged, preferably level 43 for Protect from Melee",
