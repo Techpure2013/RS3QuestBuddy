@@ -1,15 +1,21 @@
-import { useState, useEffect } from "react";
-
-export type questlist = {
-	quests: string[];
+export type Quest = {
+	toLowerCase(): unknown;
+	questName: string;
+	questAge: string;
+	series: string;
+	questPoints: string;
+	releaseDate: string;
 };
 
-const questlistPath = "./Quest Data/QuestList.json";
+// This is the correct type for your data:
+export type QuestList = Quest[];
 
-export const fetchQuestList = async (): Promise<questlist | null> => {
+const questlistPath = "./Quest Data/QuestSeriesList.json";
+
+export const fetchQuestList = async (): Promise<QuestList | null> => {
 	try {
 		const response = await fetch(questlistPath);
-		const questList: questlist = await response.json();
+		const questList: QuestList = await response.json();
 		return questList;
 	} catch (error) {
 		console.error("Was not able to fetch Quest List from Quests:", error);

@@ -10,7 +10,7 @@ import {
 	Accordion,
 	AccordionControl,
 } from "@mantine/core";
-import { fetchQuestList, questlist } from "./../../Fetchers/FetchQuestList";
+import { fetchQuestList, QuestList } from "./../../Fetchers/FetchQuestList";
 import { NavLink, useLocation } from "react-router-dom";
 import {
 	IconBrandDiscord,
@@ -77,10 +77,11 @@ const QuestCarousel: React.FC = () => {
 		null
 	);
 	const [, forceUpdate] = useReducer((x) => x + 1, 0);
-	const [questList, setQuestList] = useState<questlist | null>(null);
-	const filteredQuests = questList?.quests.filter((quest) =>
-		quest.toLowerCase().includes(searchQuery.toLowerCase())
+	const [questList, setQuestList] = useState<QuestList | null>(null);
+	const filteredQuests = questList?.filter((quest: { questName: string }) =>
+		quest.questName.toLowerCase().includes(searchQuery.toLowerCase())
 	);
+
 	const filteredRemainingQuests = sorted.current
 		? remainingQuests.current?.filter((quest) =>
 				quest.title.toLowerCase().includes(searchQuery.toLowerCase())
@@ -530,11 +531,11 @@ const QuestCarousel: React.FC = () => {
 						})}
 					{!sorted.current &&
 						filteredQuests?.map((quest, index) => {
-							let questTEdit = quest.toLowerCase().split(" ");
+							let questTEdit = quest.questName.toLowerCase().split(" ");
 							let modifiedQuestVal1 = questTEdit.join("").replace(/[!,`']/g, "");
 
 							return (
-								<Accordion.Item key={index} value={quest}>
+								<Accordion.Item key={index} value={quest.questName}>
 									<div>
 										<NavLink
 											to="/QuestPage"
@@ -547,7 +548,7 @@ const QuestCarousel: React.FC = () => {
 												color: isActive ? "inherit" : "inherit", // Ensure no style change
 											})}
 											onClick={() => {
-												sendToMapBuddy(quest);
+												sendToMapBuddy(quest.questName);
 												window.scrollTo(0, 0);
 											}}
 										>
@@ -563,7 +564,7 @@ const QuestCarousel: React.FC = () => {
 													},
 												}}
 											>
-												{quest}
+												{quest.questName}
 											</AccordionControl>
 										</NavLink>
 									</div>
@@ -593,8 +594,10 @@ const QuestCarousel: React.FC = () => {
 							))}
 
 						{!sorted.current &&
-							filteredQuests?.map((quest, index) => (
-								<Carousel.Slide key={index}>{renderQuestContent(quest)}</Carousel.Slide>
+							filteredQuests?.map((quest, index: React.Key | null | undefined) => (
+								<Carousel.Slide key={index}>
+									{renderQuestContent(quest.questName)}
+								</Carousel.Slide>
 							))}
 					</Carousel>
 				</div>
