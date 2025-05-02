@@ -225,16 +225,13 @@ const QuestPage: React.FC = () => {
 	function handleFalse() {
 		isOpenNotes.current = false;
 	}
-	if (questName.trim() === "The Prisoner of Glouphrie") {
+	if (questName == "The Prisoner of Glouphrie") {
 		isPog = true;
 	}
-	if (questName.trim() === "Lunar Diplomacy") {
+	if (questName == "Lunar Diplomacy") {
 		lunarGridActive = true;
 	}
-	if (
-		questName.trim() === "Underground Pass" ||
-		questName.trim() === "Regicide"
-	) {
+	if (questName == "Underground Pass" || questName == "Regicide") {
 		gridActive = true;
 	}
 	const clearAllIntervals = () => {

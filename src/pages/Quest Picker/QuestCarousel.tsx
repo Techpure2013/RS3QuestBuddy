@@ -540,7 +540,7 @@ const QuestCarousel: React.FC = () => {
 										<NavLink
 											to="/QuestPage"
 											state={{
-												questName: quest,
+												questName: quest.questName,
 												modified: modifiedQuestVal1,
 											}}
 											style={({ isActive }) => ({
