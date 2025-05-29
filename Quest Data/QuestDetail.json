@@ -2083,6 +2083,25 @@
 		"EnemiesToDefeat": ["None"]
 	},
 	{
+		"Quest": "Eagles' Peak",
+		"StartPoint": "Talk to Charlie the Zookeeper in Ardougne Zoo.",
+		"MemberRequirement": "Members only",
+		"OfficialLength": "Medium",
+		"Requirements": ["27 Hunter"],
+		"ItemsRequired": ["1 Yellow dye", "1 Swamp tar", "50 Coins"],
+		"Recommended": [
+			"25 Agility Agility",
+			"Teleportation runes to Ardougne and Varrock, Ardougne cloak 1 or better (requires easy Ardougne achievements), alternatively activated Ardougne and Varrock lodestone.",
+			"Memory strands in the currency pouch to teleport just north campsite.",
+			"Ability to use Spirit Tree.",
+			"Dramen staff or Lunar staff with the ability to use fairy rings (Not required if A Fairy Tale III - Battle at Ork's Rift has been completed).",
+			"Energy potions or Explorer's ring or Spirit terrorbird with Tireless Run scrolls. (highly recommended)",
+			"The Book of Char can be useful as you can teleport right outside the mountain where the quest plays out once a day (requires The Firemaker's Curse).",
+			"Access to Eagles' Peak lodestone."
+		],
+		"EnemiesToDefeat": ["Kebbit (level 14)"]
+	},
+	{
 		"Quest": "The Elder Kiln",
 		"StartPoint": "Speak to TzHaar-Mej-Jeh by the Birthing Pools in the TzHaar City.",
 		"MemberRequirement": "Members only",
