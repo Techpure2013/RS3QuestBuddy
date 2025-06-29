@@ -7,10 +7,12 @@ import {
 	ColorPicker,
 	Radio,
 	Stack,
+	Switch,
 	TextInput,
 } from "@mantine/core";
 import { useEffect, useState } from "react";
 import FontSizeControls from "./Setting Components/FontSizeInput";
+
 export const Settings: React.FC = () => {
 	const [highlight, setHighlight] = useState(false);
 
@@ -41,6 +43,7 @@ export const Settings: React.FC = () => {
 	const [dialogColorSwatch, setDialogColorSwatch] = useState<string[]>([]);
 	const [toolTip, setToolTip] = useState<boolean>(false);
 	const maxColors = 5;
+
 	useEffect(() => {
 		const storedCompact = localStorage.getItem("isCompact");
 		const storedHighlight = localStorage.getItem("isHighlighted");
@@ -53,9 +56,9 @@ export const Settings: React.FC = () => {
 		const storedButtonSwatchColor = localStorage.getItem("buttonSwatchColors");
 		const storedDialogSwatch = localStorage.getItem("dialogSolverSwatch");
 		const colorVal = localStorage.getItem("textColorValue");
-		const toolTip = localStorage.getItem("toolTip");
-		if (toolTip !== null) {
-			setToolTip(JSON.parse(toolTip));
+		const toolTipVal = localStorage.getItem("toolTip");
+		if (toolTipVal !== null) {
+			setToolTip(JSON.parse(toolTipVal));
 		}
 		if (storedDialogSolverColor !== null) {
 			setDialogSolverColor(storedDialogSolverColor);
@@ -110,21 +113,19 @@ export const Settings: React.FC = () => {
 	}, []);
 
 	useEffect(() => {
-		//Save Highlight Option
 		window.localStorage.setItem("isHighlighted", JSON.stringify(highlight));
-		//Save Compact Option
 		window.localStorage.setItem("isCompact", JSON.stringify(compact));
-		//Save Expanded Option
 		localStorage.setItem(
 			"expandAllAccordions",
-			JSON.stringify(expandAllAccordions)
+			JSON.stringify(expandAllAccordions),
 		);
 		window.localStorage.setItem(
 			"DialogSolverOption",
-			JSON.stringify(dialogSolverOption)
+			JSON.stringify(dialogSolverOption),
 		);
 		window.localStorage.setItem("toolTip", JSON.stringify(toolTip));
 	}, [highlight, compact, expandAllAccordions, dialogSolverOption, toolTip]);
+
 	useEffect(() => {
 		window.localStorage.setItem("textColorValue", colorTextValue);
 		window.localStorage.setItem("labelColor", labelColor);
@@ -139,19 +140,20 @@ export const Settings: React.FC = () => {
 		labelColor,
 		colorTextValue,
 	]);
+
 	useEffect(() => {
 		window.localStorage.setItem(
 			"labelSwatchColors",
-			JSON.stringify(swatchLabelColor)
+			JSON.stringify(swatchLabelColor),
 		);
 		window.localStorage.setItem("swatchColors", JSON.stringify(swatchTextColors));
 		window.localStorage.setItem(
 			"buttonSwatchColors",
-			JSON.stringify(buttonSwatchColors)
+			JSON.stringify(buttonSwatchColors),
 		);
 		window.localStorage.setItem(
 			"dialogSolverSwatch",
-			JSON.stringify(dialogColorSwatch)
+			JSON.stringify(dialogColorSwatch),
 		);
 	}, [
 		dialogColorSwatch,
@@ -160,10 +162,25 @@ export const Settings: React.FC = () => {
 		buttonSwatchColors,
 	]);
 
+	// Helper function to update swatches immutably
+	const updateSwatches = (
+		setter: React.Dispatch<React.SetStateAction<string[]>>,
+		newValue: string,
+	) => {
+		setter((currentSwatches) => {
+			const newSwatches = [...currentSwatches, newValue];
+			// If the array is too long, remove the oldest element (at the beginning)
+			if (newSwatches.length > maxColors) {
+				return newSwatches.slice(1);
+			}
+			return newSwatches;
+		});
+	};
+
 	return (
 		<div className="SettingsContainer">
 			<Stack>
-				<Checkbox
+				<Switch
 					styles={{
 						label: { color: hasColor ? userColor : "" },
 					}}
@@ -171,51 +188,41 @@ export const Settings: React.FC = () => {
 					onChange={(event) => {
 						setHighlight(event.currentTarget.checked);
 					}}
-					label={
-						highlight
-							? "Highlight green when complete turn off."
-							: "Highlight green when complete turn on."
-					}
+					label={highlight ? "Green Completion On" : "Green Completion Off"}
 				/>
-				<Checkbox
+				<Switch
 					styles={{
 						label: { color: hasColor ? userColor : "" },
 					}}
-					label={compact ? "Compact Mode Off" : "Compact Mode On"}
-					checked={compact || false} // Ensures `checked` is always a boolean
+					label={compact ? "Compact Mode On" : "Compact Mode Off"}
+					checked={compact || false}
 					onChange={(e) => {
-						setCompact(e.target.checked); // Update state based on the checkbox value
+						setCompact(e.target.checked);
 					}}
 				/>
-				<Checkbox
+				<Switch
 					styles={{
 						label: { color: hasColor ? userColor : "" },
 					}}
 					checked={expandAllAccordions}
 					onChange={(event) => setExpandAllAccordions(event.target.checked)}
-					label={
-						expandAllAccordions
-							? "Close all accordion sections by default"
-							: "Expand all accordion sections by default"
-					}
+					label={expandAllAccordions ? "Close Sections On" : "Close Sections Off"}
 				/>
-				<Checkbox
+				<Switch
 					styles={{
 						label: { color: hasColor ? userColor : "" },
 					}}
 					checked={dialogSolverOption}
 					onChange={(event) => setDialogSolverOption(event.target.checked)}
-					label={
-						dialogSolverOption ? "Turn off Dialog Solver" : "Turn on Dialog Solver"
-					}
+					label={dialogSolverOption ? "Dialog Solver On" : "Dialog Solver Off"}
 				/>
-				<Checkbox
+				<Switch
 					styles={{
 						label: { color: hasColor ? userColor : "" },
 					}}
 					checked={toolTip}
 					onChange={(event) => setToolTip(event.target.checked)}
-					label={toolTip ? "Turn off Tool Tips" : "Turn on Tool Tips"}
+					label={toolTip ? "Tool Tips On" : "Tool Tips Off"}
 				/>
 			</Stack>
 			<Accordion>
@@ -232,25 +239,22 @@ export const Settings: React.FC = () => {
 							defaultValue={colorTextValue}
 							onKeyDown={(event) => {
 								if (event.key === "Enter") {
-									setTextColorValue(event.currentTarget.value);
-									swatchTextColors.push(event.currentTarget.value);
+									const newValue = event.currentTarget.value;
+									setTextColorValue(newValue);
+									// FIX: Update swatches immutably
+									updateSwatches(setTextSwatchColors, newValue);
 								}
 							}}
-						></TextInput>
+						/>
 						<ColorPicker
+							suppressHydrationWarning
 							value={colorTextValue}
 							size="sm"
 							swatches={swatchTextColors}
-							onChange={(value) => {
-								setTextColorValue(value);
-							}}
+							onChange={setTextColorValue}
 							onChangeEnd={(value) => {
-								swatchTextColors.push(value);
-								if (swatchTextColors.length == maxColors) {
-									swatchTextColors.reverse();
-									swatchTextColors.pop();
-									swatchTextColors.reverse();
-								}
+								// FIX: Update swatches immutably instead of using .push()
+								updateSwatches(setTextSwatchColors, value);
 							}}
 						/>
 						<Button
@@ -280,21 +284,16 @@ export const Settings: React.FC = () => {
 									setLabelColor(event.currentTarget.value);
 								}
 							}}
-						></TextInput>
+						/>
 						<ColorPicker
+							suppressHydrationWarning
 							value={labelColor}
 							size="sm"
 							swatches={swatchLabelColor}
-							onChange={(value) => {
-								setLabelColor(value);
-							}}
+							onChange={setLabelColor}
 							onChangeEnd={(value) => {
-								swatchLabelColor.push(value);
-								if (swatchLabelColor.length == maxColors) {
-									swatchLabelColor.reverse();
-									swatchLabelColor.pop();
-									swatchLabelColor.reverse();
-								}
+								// FIX: Update swatches immutably
+								updateSwatches(setSwatchLabelColor, value);
 							}}
 						/>
 						<Button
@@ -324,21 +323,16 @@ export const Settings: React.FC = () => {
 									setButtonColor(event.currentTarget.value);
 								}
 							}}
-						></TextInput>
+						/>
 						<ColorPicker
+							suppressHydrationWarning
 							value={buttonColor}
 							size="sm"
 							swatches={buttonSwatchColors}
-							onChange={(value) => {
-								setButtonColor(value);
-							}}
+							onChange={setButtonColor}
 							onChangeEnd={(value) => {
-								buttonSwatchColors.push(value);
-								if (buttonSwatchColors.length == maxColors) {
-									buttonSwatchColors.reverse();
-									buttonSwatchColors.pop();
-									buttonSwatchColors.reverse();
-								}
+								// FIX: Update swatches immutably
+								updateSwatches(setButtonSwatchColors, value);
 							}}
 						/>
 						<Button
@@ -364,51 +358,8 @@ export const Settings: React.FC = () => {
 						<FontSizeControls />
 					</AccordionPanel>
 				</Accordion.Item>
-				{/* <Accordion.Item key={5} value="Dialog Solver Color">
-					<AccordionControl
-						styles={{
-							control: { color: hasLabelColor ? labelColor : "" },
-						}}
-					>
-						Change Your Dialog Solver Color
-					</AccordionControl>
-					<AccordionPanel>
-						<TextInput
-							defaultValue={dialogSolverColor}
-							onKeyDown={(event) => {
-								if (event.key === "Enter") {
-									setDialogSolverColor(event.currentTarget.value);
-								}
-							}}
-						></TextInput>
-						<ColorPicker
-							value={dialogSolverColor}
-							size="sm"
-							swatches={dialogColorSwatch}
-							format="rgba"
-							onChange={(value) => {
-								setDialogSolverColor(value);
-							}}
-							onChangeEnd={(value) => {
-								dialogColorSwatch.push(value);
-								if (dialogColorSwatch.length == maxColors) {
-									dialogColorSwatch.reverse();
-									dialogColorSwatch.pop();
-									dialogColorSwatch.reverse();
-								}
-							}}
-						/>
-						<Button
-							color={hasButtonColor ? userButtonColor : ""}
-							onClick={() => {
-								setDialogColorSwatch([]);
-							}}
-							variant="outline"
-						>
-							Clear Swatch
-						</Button>
-					</AccordionPanel>
-				</Accordion.Item> */}
+				{/* The commented-out code also had this issue. If you re-enable it,
+            make sure to use the same immutable update pattern. */}
 			</Accordion>
 		</div>
 	);

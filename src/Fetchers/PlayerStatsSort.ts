@@ -1,5 +1,6 @@
-import { useRef } from "react";
+// PlayerStatsSort.ts
 
+// The Skills type definition remains the same
 export type Skills = {
 	rank: number;
 	totalLevel: number;
@@ -34,50 +35,63 @@ export type Skills = {
 	necromancy: number;
 };
 
-export const usePlayerSortStats = () => {
-	let sortedPlayerStats = useRef<Skills[] | null>(null);
-	const filterPlayerStats = (playerStats: string[]) => {
-		const filterOutNewLine = playerStats.filter(
-			(string) => !string.includes("\n")
-		);
-		const start = performance.now(); // Start measuring
-		sortedPlayerStats.current = [
-			{
-				rank: parseInt(filterOutNewLine[0], 10),
-				totalLevel: parseInt(filterOutNewLine[1], 10),
-				attack: parseInt(filterOutNewLine[2], 10),
-				defence: parseInt(filterOutNewLine[3], 10),
-				strength: parseInt(filterOutNewLine[4], 10),
-				constitution: parseInt(filterOutNewLine[5], 10),
-				range: parseInt(filterOutNewLine[6], 10),
-				prayer: parseInt(filterOutNewLine[7], 10),
-				magic: parseInt(filterOutNewLine[8], 10),
-				cooking: parseInt(filterOutNewLine[9], 10),
-				woodcutting: parseInt(filterOutNewLine[10], 10),
-				fletching: parseInt(filterOutNewLine[11], 10),
-				fishing: parseInt(filterOutNewLine[12], 10),
-				firemaking: parseInt(filterOutNewLine[13], 10),
-				crafting: parseInt(filterOutNewLine[14], 10),
-				smithing: parseInt(filterOutNewLine[15], 10),
-				mining: parseInt(filterOutNewLine[16], 10),
-				herblore: parseInt(filterOutNewLine[17], 10),
-				agility: parseInt(filterOutNewLine[18], 10),
-				thieving: parseInt(filterOutNewLine[19], 10),
-				slayer: parseInt(filterOutNewLine[20], 10),
-				farming: parseInt(filterOutNewLine[21], 10),
-				runecrafting: parseInt(filterOutNewLine[22], 10),
-				hunter: parseInt(filterOutNewLine[23], 10),
-				construction: parseInt(filterOutNewLine[24], 10),
-				summoning: parseInt(filterOutNewLine[25], 10),
-				dungeoneering: parseInt(filterOutNewLine[26], 10),
-				divination: parseInt(filterOutNewLine[27], 10),
-				invention: parseInt(filterOutNewLine[28], 10),
-				archaeology: parseInt(filterOutNewLine[29], 10),
-				necromancy: parseInt(filterOutNewLine[30], 10),
-			},
-		];
-		const end = performance.now();
-		console.log(`filterPlayerStats took ${end - start}ms to execute`);
+// It takes the raw string from the API and returns a structured Skills object.
+export const parsePlayerStats = (rawData: string): Skills | null => {
+	if (!rawData) {
+		return null;
+	}
+
+	// The hiscores API separates skills with newlines, and values with commas.
+	const statsArray = rawData.split(/\s+/).map((line) => line.split(","));
+	// statsArray is now [['rank', 'level', 'xp'], ['rank', 'level', 'xp'], ...]
+
+	// We only care about the level for each skill
+	const levels = statsArray.map((skillData) => parseInt(skillData[1], 10));
+
+	// The first line is Overall: rank, totalLevel, totalXp
+	const overallRank = parseInt(statsArray[0][0], 10);
+	const totalLevel = parseInt(statsArray[0][1], 10);
+
+	// Check if parsing was successful. If not, the data is invalid.
+	if (isNaN(totalLevel) || levels.length < 30) {
+		console.error("Failed to parse player stats. Data was invalid.");
+		return null;
+	}
+
+	// Create and return the structured object.
+	const skills: Skills = {
+		rank: overallRank,
+		totalLevel: totalLevel,
+		attack: levels[1],
+		defence: levels[2],
+		strength: levels[3],
+		constitution: levels[4],
+		range: levels[5],
+		prayer: levels[6],
+		magic: levels[7],
+		cooking: levels[8],
+		woodcutting: levels[9],
+		fletching: levels[10],
+		fishing: levels[11],
+		firemaking: levels[12],
+		crafting: levels[13],
+		smithing: levels[14],
+		mining: levels[15],
+		herblore: levels[16],
+		agility: levels[17],
+		thieving: levels[18],
+		slayer: levels[19],
+		farming: levels[20],
+		runecrafting: levels[21],
+		hunter: levels[22],
+		construction: levels[23],
+		summoning: levels[24],
+		dungeoneering: levels[25],
+		divination: levels[26],
+		invention: levels[27],
+		archaeology: levels[28],
+		necromancy: levels[29],
 	};
-	return { sortedPlayerStats, filterPlayerStats } as const;
+
+	return skills;
 };

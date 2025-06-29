@@ -16,7 +16,7 @@ interface AccordionComponentProps {
 	expanded: string[];
 	setExpanded: (expanded: string[]) => void;
 	ignoredRequirements: Set<string>;
-	skillLevels: Skills[];
+	skillLevels: Skills;
 	completedQuests: PlayerQuestStatus[];
 	history: any;
 }
@@ -35,8 +35,8 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 	const deduplicatedQuestDetails = Array.isArray(QuestDetails)
 		? QuestDetails.filter(
 				(quest, index, self) =>
-					index === self.findIndex((q) => q.Quest === quest.Quest)
-		  )
+					index === self.findIndex((q) => q.Quest === quest.Quest),
+			)
 		: [];
 	// Initialize state for needed and recommended items
 	const [checkedItemsNeeded, setCheckItemsNeeded] = useState<Set<string>>(() => {
@@ -55,7 +55,7 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 	useEffect(() => {
 		sessionStorage.setItem(
 			NEEDED_STORAGE_KEY,
-			JSON.stringify([...checkedItemsNeeded])
+			JSON.stringify([...checkedItemsNeeded]),
 		);
 	}, [checkedItemsNeeded]);
 
@@ -63,7 +63,7 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 	useEffect(() => {
 		sessionStorage.setItem(
 			RECOMMENDED_STORAGE_KEY,
-			JSON.stringify([...checkedItemsRecommended])
+			JSON.stringify([...checkedItemsRecommended]),
 		);
 	}, [checkedItemsRecommended]);
 
@@ -94,38 +94,40 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 	};
 
 	const checkRequirement = (
-		skillLevels: Skills[],
-		requirement: string
+		playerStats: Skills | null, // It receives the single object
+		requirement: string,
 	): boolean => {
+		// If there are no stats, the requirement can't be met.
+		if (!playerStats) {
+			return false;
+		}
+
 		let [part1, part2] = requirement.split(" ");
 		let requiredLevel: number;
 		let skillName: keyof Skills;
-		if (part2 !== undefined) {
-			if (part2.toLowerCase() === "ranged") {
-				part2 = "range";
-			}
+
+		if (part2?.toLowerCase() === "ranged") {
+			part2 = "range";
 		}
 
 		if (!isNaN(parseInt(part1, 10))) {
 			requiredLevel = parseInt(part1, 10);
-			skillName = part2.toLowerCase() as keyof Skills;
-		} else if (!isNaN(parseInt(part2, 10))) {
+			skillName = part2?.toLowerCase() as keyof Skills;
+		} else if (part2 && !isNaN(parseInt(part2, 10))) {
 			requiredLevel = parseInt(part2, 10);
 			skillName = part1.toLowerCase() as keyof Skills;
 		} else {
-			return false; // If neither part is numeric, the format is invalid
+			return false; // Invalid format
 		}
 
-		// Check if any player in skillLevels matches the requirement
-		return skillLevels.some((playerStats) => {
-			if (skillName in playerStats) {
-				const playerSkillLevel = playerStats[skillName];
-				return playerSkillLevel >= requiredLevel;
-			} else {
-				console.warn(`Skill ${skillName} does not exist in player stats.`);
-				return false;
-			}
-		});
+		// We no longer need .some(). We can check the single object directly.
+		if (skillName in playerStats) {
+			const playerSkillLevel = playerStats[skillName];
+			return playerSkillLevel >= requiredLevel;
+		}
+
+		// The skill doesn't exist on our player object.
+		return false;
 	};
 
 	return (
@@ -160,21 +162,17 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 									<React.Fragment key={questIndex}>
 										{quest.Requirements.map(
 											(requirement: string, requirementIndex: number) => {
-												// Combine questIndex and requirementIndex to create a unique key
-												const uniqueKey = questIndex - requirementIndex;
+												const uniqueKey = `${questIndex}-${requirementIndex}`;
 												let isComplete = false;
 												let color = "#C64340";
-												let hasSkill = false; // Default to red
-												if (skillLevels !== null) {
-													hasSkill = checkRequirement(skillLevels, requirement);
-													isComplete =
-														completedQuests &&
-														completedQuests.some((value) => {
-															if (value && typeof value === "object" && "title" in value) {
-																return (value as { title?: string }).title === requirement;
-															}
-															return false;
-														});
+
+												// --- 3. CORRECTED: The call to checkRequirement is the same, but now it works! ---
+												const hasSkill = checkRequirement(skillLevels, requirement);
+
+												if (completedQuests) {
+													isComplete = completedQuests.some(
+														(value) => value.title === requirement,
+													);
 												}
 
 												if (isComplete) {
@@ -182,19 +180,14 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 												}
 
 												const requirementParts = requirement.split(" ");
-												const firstPart: number = parseInt(requirementParts[0]);
+												const firstPartIsNumber = !isNaN(parseInt(requirementParts[0]));
 
 												return (
-													<li
-														key={uniqueKey}
-														style={{
-															display: "block",
-														}}
-													>
-														{!isNaN(firstPart) ||
+													<li key={uniqueKey} style={{ display: "block" }}>
+														{firstPartIsNumber ||
 														requirement === "None" ||
 														Array.from(ignoredRequirements).some((prefix) =>
-															requirement.startsWith(prefix)
+															requirement.startsWith(prefix),
 														) ? (
 															<span
 																style={{
@@ -206,9 +199,7 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 														) : (
 															<NavLink
 																to="/QuestPage"
-																onClick={() => {
-																	history.go(0);
-																}}
+																onClick={() => history.go(0)}
 																state={{
 																	questName: requirement,
 																	modified: requirement.toLowerCase().replace(/[!,']/g, ""),
@@ -216,7 +207,6 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 																style={{
 																	display: "block",
 																	color: color,
-
 																	textDecoration: "none",
 																}}
 															>
@@ -225,7 +215,7 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
 														)}
 													</li>
 												);
-											}
+											},
 										)}
 									</React.Fragment>
 								);

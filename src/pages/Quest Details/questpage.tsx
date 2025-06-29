@@ -17,6 +17,7 @@ import {
 	IconPlus,
 	IconPhotoFilled,
 	IconWorldWww,
+	IconCoffee,
 } from "@tabler/icons-react";
 
 import { useQuestPaths } from "./../../Fetchers/useQuestData";
@@ -48,7 +49,7 @@ const UnderGroundPassGrid = React.lazy(
 			resolve({
 				default: require("./Quest Detail Components/UndergroundPassGrid").default,
 			});
-		})
+		}),
 );
 const LunarGrid = React.lazy(
 	() =>
@@ -56,13 +57,13 @@ const LunarGrid = React.lazy(
 			resolve({
 				default: require("./Quest Detail Components/LunarDiplomacyGrid").default,
 			});
-		})
+		}),
 );
 const ColorCalculator = React.lazy(
 	() =>
 		new Promise<{ default: React.ComponentType<any> }>((resolve) => {
 			resolve({ default: require("./Quest Detail Components/POGCalc").default });
-		})
+		}),
 );
 const QuestDetailContents = React.lazy(
 	() =>
@@ -70,7 +71,7 @@ const QuestDetailContents = React.lazy(
 			resolve({
 				default: require("./Quest Detail Components/QuestDetailsAccordion").default,
 			});
-		})
+		}),
 );
 const QuestPage: React.FC = () => {
 	// Define constants for local storage keys to avoid typos and ensure consistency
@@ -122,12 +123,12 @@ const QuestPage: React.FC = () => {
 	const { showStepReq, toggleShowStepReq } = useQuestControllerStore();
 	const { stepCapture } = useDialogSolver();
 	const handles = useQuestControllerStore();
-	const [skillLevels, setSkillLevels] = useState<Skills[]>([]);
+	const [skillLevels, setSkillLevels] = useState<Skills | null>(null);
 	const [completedQuests, setCompleteQuests] = useState<
 		PlayerQuestStatus[] | null
 	>(null);
 	const storedExpandAll = localStorage.getItem(
-		LOCAL_STORAGE_KEYS.expandAllAccordions
+		LOCAL_STORAGE_KEYS.expandAllAccordions,
 	);
 	const userID = localStorage.getItem("userID");
 	const [expanded, setExpanded] = useState<string[]>(() => {
@@ -160,9 +161,7 @@ const QuestPage: React.FC = () => {
 	}, [location.key]);
 	useEffect(() => {
 		if (questSteps !== undefined) {
-			stepRefs.current = Array.from({ length: questSteps.length }, () =>
-				React.createRef()
-			);
+			stepRefs.current = Array.from({ length: questSteps.length });
 		}
 	}, [questSteps?.length]);
 	useEffect(() => {
@@ -176,27 +175,32 @@ const QuestPage: React.FC = () => {
 		}
 	}, []);
 	useEffect(() => {
-		const completedQuests = window.sessionStorage.getItem("hasCompleted");
-		const skill = sessionStorage.getItem("skillLevels");
-		if (completedQuests !== null && skill !== null) {
-			const parsedQuests: PlayerQuestStatus[] = JSON.parse(completedQuests);
+		const completedQuestsJSON = sessionStorage.getItem("hasCompleted");
+		const skillLevelsJSON = sessionStorage.getItem("skillLevels");
 
-			const parsedSkills: Skills[] = JSON.parse(skill);
-			console.log(Array.isArray(parsedQuests), Array.isArray(parsedSkills));
+		if (completedQuestsJSON && skillLevelsJSON) {
+			try {
+				const parsedQuests: PlayerQuestStatus[] = JSON.parse(completedQuestsJSON);
+				// 1. Parse the data as a single Skills object
+				const parsedSkills: Skills = JSON.parse(skillLevelsJSON);
 
-			if (
-				parsedQuests !== null &&
-				Array.isArray(parsedQuests) &&
-				parsedSkills !== null &&
-				Array.isArray(parsedSkills)
-			) {
-				setCompleteQuests(parsedQuests);
-				setSkillLevels(parsedSkills);
-			} else {
-				console.error("Invalid or non-array data in sessionStorage");
+				// 2. Validate that we have an array and a valid object
+				if (
+					Array.isArray(parsedQuests) &&
+					typeof parsedSkills === "object" &&
+					parsedSkills !== null
+				) {
+					// 3. Set the state correctly
+					setCompleteQuests(parsedQuests);
+					setSkillLevels(parsedSkills);
+				} else {
+					console.error("Invalid data shape in sessionStorage");
+				}
+			} catch (error) {
+				console.error("Failed to parse sessionStorage JSON:", error);
 			}
 		} else {
-			console.error("No data found in sessionStorage");
+			console.error("Required data not found in sessionStorage");
 		}
 	}, []);
 
@@ -243,7 +247,7 @@ const QuestPage: React.FC = () => {
 	function copyStyle(
 		_from: Window,
 		to: Window,
-		node: HTMLStyleElement | HTMLLinkElement
+		node: HTMLStyleElement | HTMLLinkElement,
 	): void {
 		try {
 			const doc: Document = to.document;
@@ -276,7 +280,7 @@ const QuestPage: React.FC = () => {
 		_index: number,
 		_imgSrc: string,
 		_imgHeight: number,
-		_imgWidth: number
+		_imgWidth: number,
 	) => {
 		if (handles.popOutWindow && !handles.popOutWindow.closed) {
 			// If open, close the window
@@ -292,7 +296,7 @@ const QuestPage: React.FC = () => {
 			const newWindow = window.open(
 				emptypage,
 				"promptbox" + popid,
-				`width=${_imgWidth}, height=${_imgHeight + 100},`
+				`width=${_imgWidth}, height=${_imgHeight + 100},`,
 			);
 			if (newWindow) {
 				// Set the pop-out window and hide buttons in the current window
@@ -317,7 +321,7 @@ const QuestPage: React.FC = () => {
 						script +
 						"</head>" +
 						'<body onLoad="self.focus()">' +
-						"</body></html>"
+						"</body></html>",
 				);
 
 				// Render the Quest Image into the new window
@@ -331,7 +335,7 @@ const QuestPage: React.FC = () => {
 				initialContentContainer.id = "initialContentContainer";
 				newWindow.document.body.appendChild(initialContentContainer);
 				const domNode: any = newWindow.document.getElementById(
-					"initialContentContainer"
+					"initialContentContainer",
 				);
 				const root = createRoot(domNode);
 
@@ -359,7 +363,7 @@ const QuestPage: React.FC = () => {
 
 				// Render Quest Image into the new window
 				const matchingImage = imageDetails.imageList?.find(
-					(image: { src: string | string[] }) => image.src.includes(_imgSrc) // image.src should be a string
+					(image: { src: string | string[] }) => image.src.includes(_imgSrc), // image.src should be a string
 				);
 				root.render(
 					<>
@@ -383,7 +387,7 @@ const QuestPage: React.FC = () => {
 								}}
 							/>
 						</div>
-					</>
+					</>,
 				);
 			}
 		}
@@ -395,7 +399,10 @@ const QuestPage: React.FC = () => {
 			scrollIntoView(nextStep);
 		}
 	};
-
+	function openCoffee(): void {
+		const newWindow = window.open("https://buymeacoffee.com/rs3questbuddy");
+		if (newWindow) newWindow.opener = null;
+	}
 	const handleStepChange = (nextStep: number) => {
 		const stepLength = questSteps!.length;
 		const isOutOfBoundsBottom = nextStep > stepLength;
@@ -436,11 +443,11 @@ const QuestPage: React.FC = () => {
 	};
 	function loadPlayerQuests(questName: string) {
 		let remainingplayerQuest: PlayerQuestStatus[] = JSON.parse(
-			sessionStorage.getItem("remainingQuest") || "[]"
+			sessionStorage.getItem("remainingQuest") || "[]",
 		);
 
 		const completedQuests: PlayerQuestStatus[] = JSON.parse(
-			sessionStorage.getItem("hasCompleted") || "[]"
+			sessionStorage.getItem("hasCompleted") || "[]",
 		);
 
 		if (remainingplayerQuest.length > 0) {
@@ -458,7 +465,7 @@ const QuestPage: React.FC = () => {
 			completedQuests.push(...newCompletedQuests);
 			sessionStorage.setItem(
 				"remainingQuest",
-				JSON.stringify(remainingplayerQuest)
+				JSON.stringify(remainingplayerQuest),
 			);
 			sessionStorage.setItem("hasCompleted", JSON.stringify(completedQuests));
 
@@ -472,7 +479,7 @@ const QuestPage: React.FC = () => {
 	function loadUserSettings() {
 		const hl = JSON.parse(localStorage.getItem("isHighlighted") || "false");
 		const dialogOption = JSON.parse(
-			localStorage.getItem("DialogSolverOption") || "false"
+			localStorage.getItem("DialogSolverOption") || "false",
 		);
 		const toolTip = JSON.parse(localStorage.getItem("toolTip") || "false");
 		setUiState({
@@ -660,7 +667,7 @@ const QuestPage: React.FC = () => {
 
 							// Find image details matching this step
 							const matchedImages = imageDetails.imageList?.filter(
-								(img: { step: string }) => img.step === (index + 1).toString()
+								(img: { step: string }) => img.step === (index + 1).toString(),
 							);
 
 							return uiState.isHighlight ? (
@@ -678,7 +685,7 @@ const QuestPage: React.FC = () => {
 															height: number;
 															width: number;
 														},
-														imgIndex: React.Key | null | undefined
+														imgIndex: React.Key | null | undefined,
 													) => (
 														<ActionIcon
 															key={imgIndex}
@@ -698,7 +705,7 @@ const QuestPage: React.FC = () => {
 														>
 															<IconPhotoFilled />
 														</ActionIcon>
-													)
+													),
 												)}
 										</>
 									}
@@ -710,8 +717,8 @@ const QuestPage: React.FC = () => {
 												active > index
 													? "#24BF58"
 													: uiState.hasColor
-													? uiState.userColor
-													: "",
+														? uiState.userColor
+														: "",
 										},
 										stepLabel: {
 											color: uiState.hasLabelColor ? uiState.userLabelColor : "",
@@ -735,7 +742,7 @@ const QuestPage: React.FC = () => {
 															height: number;
 															width: number;
 														},
-														imgIndex: React.Key | null | undefined
+														imgIndex: React.Key | null | undefined,
 													) => (
 														<ActionIcon
 															key={imgIndex}
@@ -755,7 +762,7 @@ const QuestPage: React.FC = () => {
 														>
 															<IconPhotoFilled />
 														</ActionIcon>
-													)
+													),
 												)}
 										</>
 									}
@@ -972,6 +979,14 @@ const QuestPage: React.FC = () => {
 										<IconWorldWww />
 									</ActionIcon>
 								</Tippy>
+								<ActionIcon
+									onClick={openCoffee}
+									variant="outline"
+									color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
+									size={"sm"}
+								>
+									<IconCoffee />
+								</ActionIcon>
 							</div>
 
 							{isPog && (

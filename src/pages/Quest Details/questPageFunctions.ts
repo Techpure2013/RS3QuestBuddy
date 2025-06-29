@@ -15,7 +15,7 @@ export const useQuestPageFunctions = () => {
 				var r = (dt + Math.random() * 16) % 16 | 0;
 				dt = Math.floor(dt / 16);
 				return (c == "x" ? r : (r & 0x3) | 0x8).toString(16);
-			}
+			},
 		);
 		return uuid;
 	};
@@ -53,7 +53,7 @@ export const useQuestPageFunctions = () => {
 		const newWindow = window.open(
 			"https://discord.gg/qFftZF7Usa",
 			"_blank",
-			"noopener,noreferrer"
+			"noopener,noreferrer",
 		);
 		if (newWindow) newWindow.opener = null;
 	};
@@ -66,7 +66,7 @@ export const useQuestPageFunctions = () => {
 		const newWindow = window.open(
 			`https://runescape.wiki/w/${encodeURIComponent(questName)}/Quick_guide`,
 			"_blank",
-			"noopener,noreferrer"
+			"noopener,noreferrer",
 		);
 		if (newWindow) newWindow.opener = null;
 	};
