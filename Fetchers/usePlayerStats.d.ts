@@ -1,6 +1,6 @@
+import { Skills } from "./PlayerStatsSort";
 export declare const usePlayerStats: () => {
-    readonly playerStats: String;
-    readonly isLoading: boolean;
-    readonly hasError: boolean;
-    readonly fetchPlayerStats: (playerName: String) => Promise<void>;
+    playerStats: Skills | null;
+    fetchPlayerStats: (playerName: string) => Promise<boolean>;
+    isLoading: boolean;
 };

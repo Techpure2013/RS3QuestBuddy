@@ -13,7 +13,7 @@ interface AccordionComponentProps {
     expanded: string[];
     setExpanded: (expanded: string[]) => void;
     ignoredRequirements: Set<string>;
-    skillLevels: Skills[];
+    skillLevels: Skills;
     completedQuests: PlayerQuestStatus[];
     history: any;
 }

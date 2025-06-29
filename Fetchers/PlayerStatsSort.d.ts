@@ -31,7 +31,4 @@ export type Skills = {
     archaeology: number;
     necromancy: number;
 };
-export declare const usePlayerSortStats: () => {
-    readonly sortedPlayerStats: import("react").MutableRefObject<Skills[] | null>;
-    readonly filterPlayerStats: (playerStats: string[]) => void;
-};
+export declare const parsePlayerStats: (rawData: string) => Skills | null;
