@@ -125,4 +125,5 @@ export const ironmanQuestOrder: string[] = [
 	"Spirit of War",
 	"A New Beginning",
 	"Rune Mythos",
+	"Eclipse of the Heart",
 ];
