@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Button, Modal, ActionIcon, Group, Badge, Text } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import {
@@ -47,9 +47,23 @@ const QuestCarousel: React.FC = () => {
 		{ type: string; value: string }[]
 	>([]);
 	const [activeSort, setActiveSort] = useState<string | null>(null);
+	useEffect(() => {
+		const KEY_TO_CLEAR_ON_RELOAD = "staticQuestList";
 
+		const navigationEntries = performance.getEntriesByType("navigation");
+
+		if (navigationEntries.length > 0) {
+			const navTiming = navigationEntries[0] as PerformanceNavigationTiming;
+
+			if (navTiming.type === "reload") {
+				console.log(
+					`Page was reloaded. Removing '${KEY_TO_CLEAR_ON_RELOAD}' from localStorage.`,
+				);
+				sessionStorage.removeItem(KEY_TO_CLEAR_ON_RELOAD);
+			}
+		}
+	}, []);
 	// --- DATA FILTERING ---
-
 	const handleFilterChange = (type: string, value: string) => {
 		if (
 			value === "Quest Points" ||

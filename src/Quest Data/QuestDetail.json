@@ -2102,6 +2102,41 @@
 		"EnemiesToDefeat": ["Kebbit (level 14)"]
 	},
 	{
+		"Quest": "Eclipse of the Heart",
+		"StartPoint": "Enter the Golden Palace in Menaphos.",
+		"MemberRequirement": "Members only",
+		"OfficialLength": "Very Long",
+		"Requirements": ["Pharaoh's Folly", "65 Agility", "90 Necromancy"],
+		"ItemsRequired": [
+			"A cat or kitten",
+			"A catspeak amulet or cramulet",
+			"A monkeyspeak amulet or cramulet",
+			"Ink and candles for two level 90 Necromancy rituals"
+		],
+		"Recommended": [
+			"Food and combat equipment",
+			"Bandit Camp lodestone activated",
+			"Ring of duelling for teleports to Het's Oasis or wicked hood for teleports to fire altar",
+			"Underworld Grimoire 2 or better, or runes for the Ungael Teleport necromancy incantation",
+			"Coins for the magic carpet ",
+			"Pollnivneach Teleport scrolls",
+			"Desert amulet 2 or better for teleports to Nardah"
+		],
+		"EnemiesToDefeat": [
+			"Amascut, the Devourer (level 5,000)",
+			"Human akh",
+			"Feline akh",
+			"Salawa akh",
+			"Imperial warrior",
+			"Imperial ranger",
+			"Imperial mage akh",
+			"Mizaru",
+			"Iwazaru",
+			"Kikazaru",
+			"Lesser demon × 6"
+		]
+	},
+	{
 		"Quest": "The Elder Kiln",
 		"StartPoint": "Speak to TzHaar-Mej-Jeh by the Birthing Pools in the TzHaar City.",
 		"MemberRequirement": "Members only",
