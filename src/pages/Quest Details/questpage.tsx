@@ -1,72 +1,40 @@
-import React, {
-	useState,
-	useEffect,
-	useRef,
-	Suspense,
-	useReducer,
-} from "react";
+import React, { useState, useEffect, useRef, Suspense } from "react";
 import { useLocation } from "react-router-dom";
-import { Accordion, ActionIcon, Box, Button, Flex, Modal } from "@mantine/core";
-import { CompactQuestStep } from "./Quest Detail Components/QuestStepDisplay";
-import "@mantine/core/styles/Stepper.css";
-import "@mantine/core/styles/Accordion.css";
-import "@mantine/core/styles.css";
-require("./../../assets/QuestIconEdited.png");
-import {
-	IconBrandDiscord,
-	IconSettings,
-	IconPlus,
-	IconPhotoFilled,
-	IconWorldWww,
-	IconCoffee,
-} from "@tabler/icons-react";
-
-import { useQuestPaths } from "./../../Fetchers/useQuestData";
-import { useQuestControllerStore } from "./../../Handlers/HandlerStore";
+import { Accordion, Box, Button, Flex, Stack, ActionIcon } from "@mantine/core"; // --- NEW: Added ActionIcon
 import { createRoot } from "react-dom/client";
-import { Stack } from "@mantine/core"; // Add Stack to your Mantine imports
-import { QuestImage } from "./../../Fetchers/handleNewImage";
-import { IconArrowBack, IconCheck } from "@tabler/icons-react";
-import { Settings } from "./../Settings/Settings";
+import Tippy from "@tippyjs/react";
+import { IconArrowBack, IconPin } from "@tabler/icons-react"; // --- NEW: Added IconPin
+
+// Refactored Components
+import { CompactQuestStep } from "./Quest Detail Components/QuestStepDisplay";
+import { QuestModals } from "./Quest Detail Components/QuestModals";
+import { QuestFooter } from "./Quest Detail Components/QuestFooter";
+import { useUiSettings } from "./Quest Detail Components/useUiSettings";
+
+// Hooks and State
+import { useQuestPaths } from "./../../Fetchers/useQuestData";
+import {
+	UseImageStore,
+	QuestImageFetcher,
+	QuestImage,
+} from "./../../Fetchers/handleNewImage";
+import { useQuestPageFunctions } from "./questPageFunctions";
+import { useQuestDetails } from "./../../Fetchers/useQuestDetails";
+import { useDialogSolver } from "./dialogsolverRW";
+import { useQuestControllerStore } from "./../../Handlers/HandlerStore";
+
+// Types
+import { Skills } from "./../../Fetchers/PlayerStatsSort";
+import { PlayerQuestStatus } from "./../../Fetchers/sortPlayerQuests";
+
+// Disclosure Hooks
 import { useDisclosure } from "@mantine/hooks";
 import useNotesDisclosure from "./Quest Detail Components/useDisclosure";
 import usePOGDisclosure from "./Quest Detail Components/POGCalcDisclosure";
-import { UserNotes } from "./../Settings/userNotes";
 import useGridDisclosure from "./Quest Detail Components/useGridModal";
 import useLunarGridDisclosure from "./Quest Detail Components/useLunarDisclosure";
-import { useQuestPageFunctions } from "./questPageFunctions";
-import {
-	QuestImageFetcher,
-	UseImageStore,
-} from "./../../Fetchers/handleNewImage";
-import { Skills } from "./../../Fetchers/PlayerStatsSort";
-import { useQuestDetails } from "./../../Fetchers/useQuestDetails";
-import { PlayerQuestStatus } from "./../../Fetchers/sortPlayerQuests";
-import { useDialogSolver } from "./dialogsolverRW";
-import Tippy from "@tippyjs/react";
 
-const UnderGroundPassGrid = React.lazy(
-	() =>
-		new Promise<{ default: React.ComponentType<any> }>((resolve) => {
-			resolve({
-				default: require("./Quest Detail Components/UndergroundPassGrid").default,
-			});
-		}),
-);
-const LunarGrid = React.lazy(
-	() =>
-		new Promise<{ default: React.ComponentType<any> }>((resolve) => {
-			resolve({
-				default: require("./Quest Detail Components/LunarDiplomacyGrid").default,
-			});
-		}),
-);
-const ColorCalculator = React.lazy(
-	() =>
-		new Promise<{ default: React.ComponentType<any> }>((resolve) => {
-			resolve({ default: require("./Quest Detail Components/POGCalc").default });
-		}),
-);
+// Lazy Loaded Components
 const QuestDetailContents = React.lazy(
 	() =>
 		new Promise<{ default: React.ComponentType<any> }>((resolve) => {
@@ -75,180 +43,177 @@ const QuestDetailContents = React.lazy(
 			});
 		}),
 );
+
 const QuestPage: React.FC = () => {
-	// Define constants for local storage keys to avoid typos and ensure consistency
 	const { questSteps, QuestDataPaths, getQuestSteps } = useQuestPaths();
 	const {
-		ignoredRequirements,
-		create_ListUUID,
-		useAlt1Listener,
 		handleBackButton,
 		openDiscord,
 		openWikiQuest,
+		useAlt1Listener,
+		openCoffee,
+		ignoredRequirements,
 	} = useQuestPageFunctions();
-	const location = useLocation();
-	const LOCAL_STORAGE_KEYS = {
-		expandAllAccordions: "expandAllAccordions",
-		dialogOption: "dialogSolverOption",
-	};
-
-	const qpname = useLocation();
-	let { questName } = qpname.state;
-	const [opened, { open, close }] = useDisclosure(false);
-	const [openedGrid, { openGrid, closeGrid }] = useGridDisclosure(false);
-	const [openLGrid, { openLunarGrid, closeLunarGrid }] =
-		useLunarGridDisclosure(false);
-	const [active, setActive] = useState(-1);
-	const [highestStepVisited, setHighestStepVisited] = useState(active);
+	const { settings, reloadSettings } = useUiSettings();
+	const imageDetails = UseImageStore();
 	const { getQuestDetails, questDetails, getQuestNamedDetails } =
 		useQuestDetails();
-	const imageDetails = UseImageStore();
-	const stepRefs = useRef<React.RefObject<HTMLDivElement>[]>([]);
-	let isPog = false;
-	let gridActive = false;
-	let lunarGridActive = false;
-	const [uiState, setUiState] = useState({
-		toolTipEnabled: false,
-		isHighlight: false,
-		hasColor: false,
-		hasButtonColor: false,
-		hasLabelColor: false,
-		dialogOption: false,
-		userColor: "",
-		userLabelColor: "",
-		userButtonColor: "",
-	});
-	let [isPOGOpen, { pogModOpen, pogModClose }] = usePOGDisclosure(false);
-	let [isOpened, { openNotes, closedNotes }] = useNotesDisclosure(false);
-	const isOpenNotes = useRef(false);
-	// const finder = new diagFinder();
-	const { showStepReq, toggleShowStepReq } = useQuestControllerStore();
 	const { stepCapture } = useDialogSolver();
 	const handles = useQuestControllerStore();
+	const { showStepReq, toggleShowStepReq } = useQuestControllerStore();
+	const scrollContainerRef = useRef<HTMLDivElement>(null);
+	const location = useLocation();
+	const { questName } = location.state;
+	const userID = localStorage.getItem("userID");
+
+	const [active, setActive] = useState(-1);
+	const [highestStepVisited, setHighestStepVisited] = useState(active);
 	const [skillLevels, setSkillLevels] = useState<Skills | null>(null);
 	const [completedQuests, setCompleteQuests] = useState<
 		PlayerQuestStatus[] | null
 	>(null);
-	const storedExpandAll = localStorage.getItem(
-		LOCAL_STORAGE_KEYS.expandAllAccordions,
-	);
-	const userID = localStorage.getItem("userID");
-	const [expanded, setExpanded] = useState<string[]>(() => {
-		const isExpandAll =
-			storedExpandAll !== null ? JSON.parse(storedExpandAll) : false;
+	const [expanded, setExpanded] = useState<string[]>([]);
 
-		if (isExpandAll)
-			return [
-				"item-1",
-				"item-2",
-				"item-3",
-				"item-4",
-				"item-5",
-				"item-6",
-				"item-7",
-			];
-		return [];
-	});
+	// --- NEW: State for the "Always Open" feature ---
+	const [persistAccordion, setPersistAccordion] = useState(false);
+
+	const [openedSettings, { open: openSettings, close: closeSettings }] =
+		useDisclosure(false);
+	const [openedGrid, { openGrid, closeGrid }] = useGridDisclosure(false);
+	const [openedLunar, { openLunarGrid, closeLunarGrid }] =
+		useLunarGridDisclosure(false);
+	const [openedPog, { pogModOpen, pogModClose }] = usePOGDisclosure(false);
+	const [openedNotes, { openNotes, closedNotes }] = useNotesDisclosure(false);
+
+	// --- NEW: Effect to load the "Always Open" setting and last active step on mount ---
+	useEffect(() => {
+		const persistSetting =
+			localStorage.getItem("persistAccordionState") === "true";
+		setPersistAccordion(persistSetting);
+
+		if (persistSetting) {
+			const lastActiveStep = sessionStorage.getItem(`lastActiveStep-${questName}`);
+			if (lastActiveStep) {
+				setActive(parseInt(lastActiveStep, 10));
+			}
+		}
+	}, [questName]); // Rerun if the questName changes
+
+	// --- NEW: Effect to save the active step when it changes (if the feature is on) ---
+	useEffect(() => {
+		if (persistAccordion && active !== -1) {
+			sessionStorage.setItem(`lastActiveStep-${questName}`, active.toString());
+		}
+	}, [active, persistAccordion, questName]);
+
+	useEffect(() => {
+		if (QuestDataPaths) {
+			getQuestSteps(questName);
+		}
+	}, [QuestDataPaths, getQuestSteps, questName]);
+
+	useEffect(() => {
+		if (getQuestDetails) {
+			getQuestNamedDetails(questName);
+		}
+	}, []);
+
+	useEffect(() => {
+		const completedQuestsJSON = sessionStorage.getItem("hasCompleted");
+		const skillLevelsJSON = sessionStorage.getItem("skillLevels");
+		if (completedQuestsJSON && skillLevelsJSON) {
+			setCompleteQuests(JSON.parse(completedQuestsJSON));
+			setSkillLevels(JSON.parse(skillLevelsJSON));
+		}
+	}, []);
+	useEffect(() => {
+		document.addEventListener("keydown", handleKeyDown);
+		return () => {
+			document.removeEventListener("keydown", handleKeyDown);
+		};
+	}, []);
+	useEffect(() => {
+		if (active === -1) return;
+
+		const timer = setTimeout(() => {
+			const targetElement = document.getElementById(active.toString());
+
+			if (targetElement) {
+				targetElement.scrollIntoView({
+					behavior: "smooth",
+					block: "start",
+				});
+			}
+		}, 250);
+
+		return () => clearTimeout(timer);
+	}, [active]);
 	const handleKeyDown = (event: KeyboardEvent) => {
-		if (!isOpenNotes.current) {
+		if (!openedNotes) {
 			if (event.key === " ") {
 				event.preventDefault();
 			}
 		}
 	};
 
-	useEffect(() => {
-		loadUserSettings();
-		console.log(uiState.dialogOption);
-	}, [location.key]);
-	useEffect(() => {
-		if (questSteps !== undefined) {
-			stepRefs.current = Array.from({ length: questSteps.length });
-		}
-	}, [questSteps?.length]);
-	useEffect(() => {
-		if (QuestDataPaths) {
-			getQuestSteps(questName);
-		}
-	}, []);
-	useEffect(() => {
-		if (getQuestDetails) {
-			getQuestNamedDetails(questName);
-		}
-	}, []);
-	useEffect(() => {
-		const completedQuestsJSON = sessionStorage.getItem("hasCompleted");
-		const skillLevelsJSON = sessionStorage.getItem("skillLevels");
-
-		if (completedQuestsJSON && skillLevelsJSON) {
-			try {
-				const parsedQuests: PlayerQuestStatus[] = JSON.parse(completedQuestsJSON);
-				// 1. Parse the data as a single Skills object
-				const parsedSkills: Skills = JSON.parse(skillLevelsJSON);
-
-				// 2. Validate that we have an array and a valid object
-				if (
-					Array.isArray(parsedQuests) &&
-					typeof parsedSkills === "object" &&
-					parsedSkills !== null
-				) {
-					// 3. Set the state correctly
-					setCompleteQuests(parsedQuests);
-					setSkillLevels(parsedSkills);
-				} else {
-					console.error("Invalid data shape in sessionStorage");
+	const setActiveAndScroll = (value: string | null) => {
+		const nextStep = value === null ? -1 : parseInt(value, 10);
+		if (!isNaN(nextStep)) {
+			setActive(nextStep);
+			if (nextStep !== -1) {
+				setHighestStepVisited((h) => Math.max(h, nextStep));
+				if (settings.dialogOption && questSteps[nextStep] && window.alt1) {
+					stepCapture(questSteps[nextStep].stepDescription);
 				}
-			} catch (error) {
-				console.error("Failed to parse sessionStorage JSON:", error);
 			}
-		} else {
-			console.error("Required data not found in sessionStorage");
 		}
-	}, []);
+	};
 
-	useEffect(() => {
-		document.addEventListener("keydown", handleKeyDown);
-		return () => {
-			console.log("clearing intervals");
+	const scrollNext = () => {
+		if (active + 1 < questSteps.length)
+			setActiveAndScroll((active + 1).toString());
+	};
+	const scrollPrev = () => {
+		if (active > 0) setActiveAndScroll((active - 1).toString());
+	};
 
-			document.removeEventListener("keydown", handleKeyDown);
-		};
-	}, []);
+	useAlt1Listener(scrollNext);
 
-	useEffect(() => {
-		if (uiState.dialogOption) {
-			console.log("Mounting");
-		} else {
-			return () => {
-				console.log("Unmounting Solver");
-			};
+	const sanitizeStringForMatching = (input: string) =>
+		input
+			?.trim()
+			.replace(/[^\w\s]/gi, "")
+			.toLowerCase() || "";
+
+	const loadPlayerQuests = (questNameToComplete: string) => {
+		let remaining: PlayerQuestStatus[] = JSON.parse(
+			sessionStorage.getItem("remainingQuest") || "[]",
+		);
+		const completed: PlayerQuestStatus[] = JSON.parse(
+			sessionStorage.getItem("hasCompleted") || "[]",
+		);
+		const questToMove = remaining.find(
+			(q) =>
+				q.title.toLowerCase().trim() === questNameToComplete.toLowerCase().trim(),
+		);
+
+		if (questToMove) {
+			remaining = remaining.filter(
+				(q) =>
+					q.title.toLowerCase().trim() !== questNameToComplete.toLowerCase().trim(),
+			);
+			completed.push({ ...questToMove, status: "COMPLETED" });
+			sessionStorage.setItem("remainingQuest", JSON.stringify(remaining));
+			sessionStorage.setItem("hasCompleted", JSON.stringify(completed));
 		}
-		return () => {
-			console.log("Unmounting Solver");
-		};
-	}, [uiState.dialogOption]);
+	};
 
-	function handleFalse() {
-		isOpenNotes.current = false;
-	}
-	if (questName == "The Prisoner of Glouphrie") {
-		isPog = true;
-	}
-	if (questName == "Lunar Diplomacy") {
-		lunarGridActive = true;
-	}
-	if (questName == "Underground Pass" || questName == "Regicide") {
-		gridActive = true;
-	}
-
-	function copyStyle(
-		_from: Window,
+	const copyStyle = (
 		to: Window,
 		node: HTMLStyleElement | HTMLLinkElement,
-	): void {
+	): void => {
 		try {
 			const doc: Document = to.document;
-			console.log("Copying style/link:", node);
 			if (node.tagName === "STYLE") {
 				const newStyle: HTMLStyleElement = doc.createElement("style");
 				newStyle.textContent = node.textContent || "";
@@ -264,730 +229,235 @@ const QuestPage: React.FC = () => {
 		} catch (error) {
 			console.error("Error copying style:", error);
 		}
-	}
-
-	const scrollPrev = (): void => {
-		const prevStep = active - 1;
-
-		if (prevStep > 0) {
-			scrollIntoView(prevStep);
-		}
 	};
-	const sanitizeStringForMatching = (input: string) => {
-		if (!input) return "";
-		return input
-			.trim()
-			.replace(/[^\w\s]/gi, "")
-			.toLowerCase();
-	};
-	const handlePopOut = (
-		_index: number,
-		_imgSrc: string,
-		_imgHeight: number,
-		_imgWidth: number,
-	) => {
+
+	const handlePopOut = (src: string, height: number, width: number) => {
 		if (handles.popOutWindow && !handles.popOutWindow.closed) {
-			// If open, close the window
 			handles.popOutWindow.close();
 			handles.setPopOutWindow(null);
-			handles.setButtonVisible(true); // Show the buttons again
-			handles.setPopOutClicked(true);
 		} else {
-			const emptypage = "./emptypage.html";
-			var popid = "testpopup_" + Date.now();
-
-			// If not open, open a new browser window
 			const newWindow = window.open(
-				emptypage,
-				"promptbox" + popid,
-				`width=${_imgWidth}, height=${_imgHeight + 100},`,
+				"./emptypage.html",
+				`promptbox_${Date.now()}`,
+				`width=${width + 20},height=${height + 100}`,
 			);
 			if (newWindow) {
-				// Set the pop-out window and hide buttons in the current window
 				handles.setPopOutWindow(newWindow);
-				handles.setButtonVisible(false);
-				handles.setPopOutClicked(false);
-				let script =
-					"<sc" +
-					"ript>" +
-					"(function() {" +
-					"   var link = document.createElement('link');" +
-					"   link.type = 'image/x-icon';" +
-					"   link.rel = 'image/icon';" +
-					"   link.href = '/src/assets/rs3buddyicon.ico';" +
-					"   document.getElementsByTagName('head')[0].appendChild(link);" +
-					"}());" +
-					"</sc" +
-					"ript>";
+				newWindow.document.title = "Quest Image";
 
 				newWindow.document.writeln(
-					"<html><head><title>Quest Image</title>" +
-						script +
-						"</head>" +
-						'<body onLoad="self.focus()">' +
-						"</body></html>",
+					"<html><head><title>Quest Image</title></head><body></body></html>",
 				);
+				newWindow.document.close();
 
-				// Render the Quest Image into the new window
-				const container: HTMLDivElement = newWindow.document.createElement("div");
-				container.className = ".QuestPageImageCaro";
+				const container = newWindow.document.createElement("div");
 				newWindow.document.body.appendChild(container);
-				newWindow.document.title = "Quest Images";
 
-				// Set initial content for the new window
-				const initialContentContainer = newWindow.document.createElement("div");
-				initialContentContainer.id = "initialContentContainer";
-				newWindow.document.body.appendChild(initialContentContainer);
-				const domNode: any = newWindow.document.getElementById(
-					"initialContentContainer",
-				);
-				const root = createRoot(domNode);
+				document
+					.querySelectorAll('style, link[rel="stylesheet"]')
+					.forEach((stylesheet) => {
+						copyStyle(newWindow, stylesheet as HTMLStyleElement | HTMLLinkElement);
+					});
+				const emotionStyles = document.querySelectorAll("style[data-emotion]");
+				emotionStyles.forEach((style) => {
+					const newEmotionStyle = newWindow.document.createElement("style");
+					newEmotionStyle.textContent = style.textContent;
+					newWindow.document.head.appendChild(newEmotionStyle);
+				});
 
-				// Function to copy styles from the original window to the new window
-				function copyStyles(): void {
-					try {
-						const stylesheets: NodeListOf<HTMLStyleElement | HTMLLinkElement> =
-							document.querySelectorAll('style, link[rel="stylesheet"]');
-						const stylesheetsArray: HTMLStyleElement[] = Array.from(stylesheets);
-						stylesheetsArray.forEach(function (stylesheet: HTMLStyleElement) {
-							copyStyle(window, newWindow!, stylesheet);
-						});
-						const emotionStyles = document.querySelectorAll("style[data-emotion]");
-						emotionStyles.forEach((style) => {
-							const newEmotionStyle = document.createElement("style");
-							newEmotionStyle.textContent = style.textContent;
-							newWindow!.document.head.appendChild(newEmotionStyle);
-						});
-					} catch (error) {
-						console.error("Error copying styles:", error);
-					}
-				}
-				// Call the function to copy styles
-				copyStyles();
-
-				// Render Quest Image into the new window
-				const matchingImage = imageDetails.imageList?.find(
-					(image: { src: string | string[] }) => image.src.includes(_imgSrc), // image.src should be a string
-				);
+				const root = createRoot(container);
 				root.render(
-					<>
-						<div
-							style={{
-								paddingTop: "1rem",
-								alignContent: "center",
-							}}
-						>
-							<img
-								src={matchingImage?.src}
-								className="zoomable"
-								id="zoomableImage"
-								alt="Quest Image"
-								style={{ maxWidth: "100%", height: "auto" }}
-								onClick={() => {
-									const imgElement = newWindow.document.getElementById("zoomableImage");
-									if (imgElement) {
-										imgElement.classList.toggle("zoomed");
-									}
-								}}
-							/>
-						</div>
-					</>,
+					<img
+						src={src}
+						style={{ maxWidth: "100%", height: "auto" }}
+						alt="Quest Step"
+					/>,
 				);
 			}
 		}
 	};
-	const setActiveAndScroll = (value: string | null) => {
-		const nextStep = value === null ? -1 : parseInt(value, 10);
-		if (!isNaN(nextStep)) {
-			setActive(nextStep);
-			if (nextStep !== -1) {
-				setHighestStepVisited((hSC) => Math.max(hSC, nextStep));
-			}
+
+	// --- NEW: Handler for the toggle button ---
+	const handleTogglePersist = () => {
+		const newValue = !persistAccordion;
+		setPersistAccordion(newValue);
+		localStorage.setItem("persistAccordionState", JSON.stringify(newValue));
+		// If turning off, clear the saved step for this quest
+		if (!newValue) {
+			sessionStorage.removeItem(`lastActiveStep-${questName}`);
 		}
 	};
 
-	// Add this new useEffect to handle the scrolling side-effect
-	useEffect(() => {
-		// Only scroll if a step is actually active
-		if (active === -1) return;
-
-		const timer = setTimeout(() => {
-			const element = document.getElementById(active.toString());
-			if (element) {
-				element.scrollIntoView({ behavior: "smooth", block: "center" });
-			}
-		}, 300); // 300ms is a safer delay to allow the accordion animation to finish
-
-		return () => clearTimeout(timer); // Cleanup the timeout
-	}, [active]);
-	function openCoffee(): void {
-		const newWindow = window.open("https://buymeacoffee.com/rs3questbuddy");
-		if (newWindow) newWindow.opener = null;
-	}
-	const handleStepChange = (nextStep: number) => {
-		const stepLength = questSteps!.length;
-		const isOutOfBoundsBottom = nextStep > stepLength;
-		const isOutOfBoundsTop = nextStep < 0;
-
-		if (isOutOfBoundsBottom) {
-			window.alert("Cannot go forward");
-		} else if (isOutOfBoundsTop) {
-			window.alert("Cannot go back");
-		} else {
-			setActive(nextStep);
-			setHighestStepVisited((hSC) => Math.max(hSC, nextStep));
-		}
-	};
-	const scrollNext = () => {
-		setActive((prevActive) => {
-			const nextStep = prevActive + 1;
-			if (nextStep <= questSteps!.length) {
-				scrollIntoView(nextStep);
-
-				return nextStep;
-			}
-			return prevActive;
-		});
-	};
-
-	const scrollIntoView = (step: number) => {
-		// FIX 1: Access the stepDescription property for the dialog solver
-		if (questSteps[step] !== undefined) {
-			if (uiState.dialogOption === true) {
-				stepCapture(questSteps[step].stepDescription);
-			}
-		}
-
-		const element = document.getElementById((step + 1).toString());
-		if (element) {
-			element.scrollIntoView({ behavior: "smooth", block: "center" });
-		}
-	};
-	function loadPlayerQuests(questName: string) {
-		let remainingplayerQuest: PlayerQuestStatus[] = JSON.parse(
-			sessionStorage.getItem("remainingQuest") || "[]",
-		);
-
-		const completedQuests: PlayerQuestStatus[] = JSON.parse(
-			sessionStorage.getItem("hasCompleted") || "[]",
-		);
-
-		if (remainingplayerQuest.length > 0) {
-			const filterOutQuest = remainingplayerQuest.filter((value) => {
-				return value.title.toLowerCase().trim() === questName.toLowerCase().trim();
-			});
-
-			remainingplayerQuest = remainingplayerQuest.filter((value) => {
-				return value.title.toLowerCase().trim() !== questName.toLowerCase().trim();
-			});
-			const newCompletedQuests = filterOutQuest.map((value) => {
-				return { ...value, status: "COMPLETED" as "COMPLETED" };
-			});
-
-			completedQuests.push(...newCompletedQuests);
-			sessionStorage.setItem(
-				"remainingQuest",
-				JSON.stringify(remainingplayerQuest),
-			);
-			sessionStorage.setItem("hasCompleted", JSON.stringify(completedQuests));
-
-			console.log(newCompletedQuests);
-			console.log(completedQuests, remainingplayerQuest);
-		} else {
-			console.log("No quests found in sessionStorage.");
-		}
-	}
-
-	function loadUserSettings() {
-		const hl = JSON.parse(localStorage.getItem("isHighlighted") || "false");
-		const dialogOption = JSON.parse(
-			localStorage.getItem("DialogSolverOption") || "false",
-		);
-		const toolTip = JSON.parse(localStorage.getItem("toolTip") || "false");
-		setUiState({
-			toolTipEnabled: toolTip,
-			isHighlight: hl,
-			dialogOption: dialogOption,
-			userColor: localStorage.getItem("textColorValue") || "",
-			userLabelColor: localStorage.getItem("labelColor") || "",
-			userButtonColor: localStorage.getItem("buttonColor") || "",
-			hasColor: !!localStorage.getItem("textColorValue"),
-			hasLabelColor: !!localStorage.getItem("labelColor"),
-			hasButtonColor: !!localStorage.getItem("buttonColor"),
-		});
-	}
-	function HandleCompleteQuest() {
-		loadPlayerQuests(questName);
-	}
-	useAlt1Listener(scrollNext);
+	const specialButtons = (
+		<>
+			{questName === "The Prisoner of Glouphrie" && (
+				<Button
+					size="compact-sm"
+					variant="outline"
+					onClick={pogModOpen}
+					color={settings.hasButtonColor ? settings.userButtonColor : ""}
+				>
+					Color Calculator
+				</Button>
+			)}
+			{questName === "Lunar Diplomacy" && (
+				<Button
+					variant="outline"
+					onClick={openLunarGrid}
+					color={settings.hasButtonColor ? settings.userButtonColor : ""}
+				>
+					Memorization
+				</Button>
+			)}
+			{(questName === "Underground Pass" || questName === "Regicide") && (
+				<Button
+					size="compact-sm"
+					variant="outline"
+					onClick={openGrid}
+					color={settings.hasButtonColor ? settings.userButtonColor : ""}
+				>
+					Underground Pass Grid
+				</Button>
+			)}
+		</>
+	);
 
 	return (
-		<>
-			<div>
-				<Suspense fallback={<div>Loading...</div>}>
-					<Modal
-						title="Underground Pass Grid"
-						opened={openedGrid}
-						onClose={closeGrid}
-					>
-						<UnderGroundPassGrid />
-					</Modal>
-				</Suspense>
-				<Suspense fallback={<div>Loading...</div>}>
-					<Modal title="Memorization" opened={openLGrid} onClose={closeLunarGrid}>
-						<LunarGrid />
-					</Modal>{" "}
-				</Suspense>
-				<Modal
-					title="Notes"
-					opened={isOpened}
-					onClose={() => {
-						handleFalse();
-						closedNotes();
-					}}
-					styles={{
-						title: {
-							fontSize: "2.25rem",
-							textAlign: "center",
-						},
-					}}
-				>
-					<UserNotes />
-				</Modal>
-				<Suspense fallback={<div>Loading...</div>}>
-					<Modal opened={isPOGOpen} onClose={pogModClose}>
-						<ColorCalculator />
-					</Modal>
-				</Suspense>
-				<Modal
-					id="Modal"
-					title="Settings"
-					opened={opened}
-					onClose={() => {
-						close();
-						loadUserSettings();
-					}}
-					styles={{
-						title: {
-							fontSize: "2.25rem",
-							textAlign: "center",
-							color: uiState.hasColor ? uiState.userColor : "",
-						},
-					}}
-				>
-					<Settings />
-				</Modal>
-			</div>
+		<Flex
+			direction="column"
+			w="100%"
+			maw="800px"
+			h="100vh"
+			style={{ margin: "0 auto", paddingBottom: "40px" }}
+		>
+			<QuestModals
+				openedSettings={openedSettings}
+				closeSettings={() => {
+					closeSettings();
+					reloadSettings();
+				}}
+				openedGrid={openedGrid}
+				closeGrid={closeGrid}
+				openedLunarGrid={openedLunar}
+				closeLunarGrid={closeLunarGrid}
+				openedNotes={openedNotes}
+				closeNotes={closedNotes}
+				openedPog={openedPog}
+				closePog={pogModClose}
+				uiColor={settings.hasColor ? settings.userColor : ""}
+			/>
 			<QuestImageFetcher
 				questName={questName}
 				QuestListJSON={"./Quest Data/QuestImageList.json"}
 			/>
-			<div>
-				<h2
-					className="qpTitle"
-					style={{ color: uiState.hasColor ? uiState.userColor : "" }}
-				>
-					{questName}
-				</h2>
-			</div>
-			<></>
 
-			<Flex
-				className="flexedButtons"
-				gap="sm"
-				justify="flex-start"
-				align="flex-start"
-				direction="column"
-				wrap="wrap"
-			>
-				<>
-					<Tippy
-						content={
-							<Box
-								p="md"
-								bg="#2D413D"
-								c="#FFFFFF"
-								fw={500}
-								fz="sm"
-								lh={1.5}
-								ta="center"
-								w="auto"
-								h="auto"
-								style={{
-									borderRadius: "5px",
-									boxShadow: "initial",
-									borderColor: "ActiveBorder",
-								}}
+			<Box p="xs" style={{ borderBottom: "1px solid #333" }}>
+				<Stack gap="xs">
+					<h2
+						className="qpTitle"
+						style={{
+							color: settings.hasColor ? settings.userColor : "",
+							margin: 0,
+							textAlign: "center",
+						}}
+					>
+						{questName}
+					</h2>
+					<Flex gap="xs" justify="center" align="center">
+						<Tippy
+							content="Go back to the Quest Selection."
+							disabled={!settings.toolTipEnabled}
+						>
+							<Button
+								variant="outline"
+								color={settings.hasButtonColor ? settings.userButtonColor : ""}
+								onClick={() => handleBackButton(userID, questName)}
+								leftSection={<IconArrowBack size={16} />}
 							>
-								Go back to the Quest Selection.
-							</Box>
-						}
-						disabled={!uiState.toolTipEnabled}
-					>
+								Pick Another Quest
+							</Button>
+						</Tippy>
 						<Button
 							variant="outline"
-							color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-							styles={{
-								root: {
-									paddingBottom: "1em",
-								},
-							}}
-							onClick={() => handleBackButton(userID, questName)}
-							leftSection={<IconArrowBack />}
+							color={settings.hasButtonColor ? settings.userButtonColor : ""}
+							onClick={toggleShowStepReq}
 						>
-							Pick Another Quest
+							{showStepReq ? "Show Quest Steps" : "Show Quest Details"}
 						</Button>
-					</Tippy>
-				</>
+						{/* --- NEW: "Always Open" Toggle Button --- */}
+						<Tippy
+							content={
+								persistAccordion
+									? "Disable Step Persistence"
+									: "Enable Step Persistence"
+							}
+							disabled={!settings.toolTipEnabled}
+						>
+							<ActionIcon
+								variant={persistAccordion ? "filled" : "outline"}
+								color={settings.hasButtonColor ? settings.userButtonColor : "blue"}
+								onClick={handleTogglePersist}
+							>
+								<IconPin size={16} />
+							</ActionIcon>
+						</Tippy>
+					</Flex>
+				</Stack>
+			</Box>
 
+			<Box ref={scrollContainerRef} style={{ flex: 1, overflowY: "auto" }}>
 				{showStepReq ? (
-					<>
-						<Button
-							variant="outline"
-							color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-							onClick={() => {
-								toggleShowStepReq();
-							}}
-						>
-							Show Quest Steps
-						</Button>
-					</>
-				) : (
-					<Button
-						variant="outline"
-						color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-						onClick={toggleShowStepReq}
-					>
-						Show Quest Details
-					</Button>
-				)}
-			</Flex>
-			{showStepReq ? (
-				<>
-					<Suspense fallback={<div>Loading Accordion...</div>}>
+					<Suspense fallback={<div>Loading Details...</div>}>
 						<QuestDetailContents
 							QuestDetails={questDetails}
-							uiState={uiState}
+							uiState={settings}
 							expanded={expanded}
 							setExpanded={setExpanded}
 							ignoredRequirements={ignoredRequirements}
 							skillLevels={skillLevels}
 							completedQuests={completedQuests}
-							history={history}
 						/>
 					</Suspense>
-				</>
-			) : (
-				<>
-					<Accordion
-						value={active.toString()}
-						onChange={setActiveAndScroll}
-						styles={{
-							control: {
-								"&[data-active]": {
-									backgroundColor: "rgba(34, 139, 230, 0.15)", // Subtle highlight for active step
-								},
-							},
-						}}
-					>
+				) : (
+					<Accordion value={active.toString()} onChange={setActiveAndScroll}>
 						{questSteps?.map((step, index) => {
-							// FIX: Use .filter() to find ALL matching images for the step
 							const matchedImages: QuestImage[] =
-								imageDetails.imageList?.filter((img) => {
-									const sanitizedImgDesc = sanitizeStringForMatching(
-										img.stepDescription,
-									);
-									const sanitizedStepDesc = sanitizeStringForMatching(
-										step.stepDescription,
-									);
-									return sanitizedImgDesc && sanitizedImgDesc === sanitizedStepDesc;
-								}) || [];
-
+								imageDetails.imageList?.filter(
+									(img) =>
+										sanitizeStringForMatching(img.stepDescription) ===
+										sanitizeStringForMatching(step.stepDescription),
+								) || [];
 							return (
 								<CompactQuestStep
 									key={index}
 									step={step}
 									index={index}
-									isCompleted={uiState.isHighlight && active > index}
-									// Pass the entire array of images
+									isCompleted={settings.isHighlight && active > index}
 									images={matchedImages}
-									// Pass a handler function for when an image icon is clicked
-									onImagePopOut={(src, height, width) =>
-										handlePopOut(index, src, height, width)
-									}
+									onImagePopOut={handlePopOut}
 								/>
 							);
 						})}
 					</Accordion>
-					; ;<></>
-					{
-						<div className="prevNextGroup">
-							<div id="icons">
-								<Tippy
-									content={
-										<Box
-											p="md"
-											bg="#2D413D"
-											c="#FFFFFF"
-											fw={500}
-											fz="sm"
-											lh={1.5}
-											ta="center"
-											w="auto"
-											h="auto"
-											style={{
-												borderRadius: "5px",
-												boxShadow: "initial",
-												borderColor: "ActiveBorder",
-											}}
-										>
-											Shows your personal Settings.
-										</Box>
-									}
-									disabled={!uiState.toolTipEnabled}
-								>
-									<ActionIcon
-										onClick={open}
-										variant="outline"
-										color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-										size={"sm"}
-									>
-										<IconSettings />
-									</ActionIcon>
-								</Tippy>
-								<Tippy
-									content={
-										<Box
-											p="md"
-											bg="#2D413D"
-											c="#FFFFFF"
-											fw={500}
-											fz="sm"
-											lh={1.5}
-											ta="center"
-											w="auto"
-											h="auto"
-											style={{
-												borderRadius: "5px",
-												boxShadow: "initial",
-												borderColor: "ActiveBorder",
-											}}
-										>
-											Travels to RS3 Quest Buddy Discord.
-										</Box>
-									}
-									disabled={!uiState.toolTipEnabled}
-								>
-									<ActionIcon
-										onClick={openDiscord}
-										variant="outline"
-										color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-										size={"sm"}
-									>
-										<IconBrandDiscord />
-									</ActionIcon>
-								</Tippy>
-								<Tippy
-									content={
-										<Box
-											p="md"
-											bg="#2D413D"
-											c="#FFFFFF"
-											fw={500}
-											fz="sm"
-											lh={1.5}
-											ta="center"
-											w="auto"
-											h="auto"
-											style={{
-												borderRadius: "5px",
-												boxShadow: "initial",
-												borderColor: "ActiveBorder",
-											}}
-										>
-											Take your personal Notes.
-										</Box>
-									}
-									disabled={!uiState.toolTipEnabled}
-								>
-									<ActionIcon
-										color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-										onClick={() => {
-											isOpenNotes.current = true;
-											openNotes();
-										}}
-										size={"sm"}
-										variant="outline"
-									>
-										<IconPlus />
-									</ActionIcon>
-								</Tippy>
-								<Tippy
-									content={
-										<Box
-											p="md"
-											bg="#2D413D"
-											c="#FFFFFF"
-											fw={500}
-											fz="sm"
-											lh={1.5}
-											ta="center"
-											w="auto"
-											h="auto"
-											style={{
-												borderRadius: "5px",
-												boxShadow: "initial",
-												borderColor: "ActiveBorder",
-											}}
-										>
-											Go back to the Quest Selection.
-										</Box>
-									}
-									disabled={!uiState.toolTipEnabled}
-								>
-									<ActionIcon
-										size="sm"
-										variant="outline"
-										color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-										onClick={() => handleBackButton(userID, questName)}
-									>
-										<IconArrowBack />
-									</ActionIcon>
-								</Tippy>
-								<Tippy
-									content={
-										<Box
-											p="md"
-											bg="#2D413D"
-											c="#FFFFFF"
-											fw={500}
-											fz="sm"
-											lh={1.5}
-											ta="center"
-											w="auto"
-											h="auto"
-											style={{
-												borderRadius: "5px",
-												boxShadow: "initial",
-												borderColor: "ActiveBorder",
-											}}
-										>
-											Completes the quest to update Remaining Quests while sorted.
-										</Box>
-									}
-									disabled={!uiState.toolTipEnabled}
-								>
-									<ActionIcon
-										size={"sm"}
-										variant="outline"
-										color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-										onClick={HandleCompleteQuest}
-									>
-										<IconCheck color="#4EE669" />
-									</ActionIcon>
-								</Tippy>
-								<Tippy
-									content={
-										<Box
-											p="md"
-											bg="#2D413D"
-											c="#FFFFFF"
-											fw={500}
-											fz="sm"
-											lh={1.5}
-											ta="center"
-											w="auto"
-											h="auto"
-											style={{
-												borderRadius: "5px",
-												boxShadow: "initial",
-												borderColor: "ActiveBorder",
-											}}
-										>
-											Travels to the Wiki for the current quest your on.
-										</Box>
-									}
-									disabled={!uiState.toolTipEnabled}
-								>
-									<ActionIcon
-										onClick={() => openWikiQuest(questName.trim())}
-										variant="outline"
-										color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-										size={"sm"}
-									>
-										<IconWorldWww />
-									</ActionIcon>
-								</Tippy>
-								<ActionIcon
-									onClick={openCoffee}
-									variant="outline"
-									color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-									size={"sm"}
-								>
-									<IconCoffee />
-								</ActionIcon>
-							</div>
+				)}
+			</Box>
 
-							{isPog && (
-								<Button
-									size="compact-sm"
-									variant="outline"
-									color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-									onClick={pogModOpen}
-								>
-									Color Calculator
-								</Button>
-							)}
-							{gridActive && (
-								<Button
-									size="compact-sm"
-									variant="outline"
-									color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-									onClick={openGrid}
-								>
-									Underground Pass Grid
-								</Button>
-							)}
-							{lunarGridActive && (
-								<Button
-									variant="outline"
-									color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-									onClick={openLunarGrid}
-								>
-									Memorization
-								</Button>
-							)}
-
-							<div id="prev-next">
-								<Button
-									styles={{ root: {} }}
-									size="compact-sm"
-									variant="outline"
-									color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-									onClick={() => {
-										handleStepChange(active);
-										scrollNext();
-									}}
-								>
-									Next Step
-								</Button>
-								<Button
-									size="compact-sm"
-									variant="outline"
-									color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-									onClick={() => {
-										scrollPrev();
-										handleStepChange(active - 1);
-									}}
-								>
-									Prev Step
-								</Button>
-							</div>
-						</div>
-					}
-				</>
-			)}
-		</>
+			<QuestFooter
+				onSettingsClick={openSettings}
+				onDiscordClick={openDiscord}
+				onNotesClick={openNotes}
+				onBackClick={() => handleBackButton(userID, questName)}
+				onCompleteClick={() => loadPlayerQuests(questName)}
+				onWikiClick={() => openWikiQuest(questName)}
+				onCoffeeClick={openCoffee}
+				onNextStep={scrollNext}
+				onPrevStep={scrollPrev}
+				specialButtons={specialButtons}
+				toolTipEnabled={settings.toolTipEnabled}
+				buttonColor={settings.userButtonColor}
+				hasButtonColor={settings.hasButtonColor}
+			/>
+		</Flex>
 	);
 };
 

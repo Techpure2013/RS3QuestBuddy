@@ -30,7 +30,7 @@ export const useDialogSolver = () => {
 
 	const clearAllIntervals = () => {
 		Object.keys(intervalIds.current).forEach((key) =>
-			clearIntervalById(key as keyof typeof intervalIds.current)
+			clearIntervalById(key as keyof typeof intervalIds.current),
 		);
 		console.log("Cleared all intervals");
 	};
@@ -40,7 +40,14 @@ export const useDialogSolver = () => {
 	function run() {
 		clearAllIntervals();
 		intervalIds.current.optionsRead = setInterval(() => {
+			// Attempt to capture the screen
 			const rsScreenCapture = a1libs.captureHoldFullRs();
+			// rsScreenCapture will be null. We must stop here to prevent errors.
+			if (!rsScreenCapture) {
+				console.log("Failed to capture screen. Is RS focused and Alt1 hooked?");
+				return; // Exit this interval's execution
+			}
+
 			diagHelp.find();
 			optionsRead = readOptionBox(rsScreenCapture);
 			if (optionsRead !== null && optionsRead !== undefined) {
@@ -64,7 +71,7 @@ export const useDialogSolver = () => {
 			const numericValues = splitValues.map(Number);
 			currentStepChatOptions.current.splice(
 				0,
-				currentStepChatOptions.current.length
+				currentStepChatOptions.current.length,
 			);
 			currentStepChatOptions.current.push(...numericValues);
 			clearAllIntervals();
@@ -151,7 +158,7 @@ export const useDialogSolver = () => {
 					Math.round(option.x / 2), //If is negative throws out of bounds error
 					25,
 					600,
-					4
+					4,
 				);
 			}, 900);
 		}

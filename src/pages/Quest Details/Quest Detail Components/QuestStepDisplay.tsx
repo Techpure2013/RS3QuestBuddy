@@ -1,5 +1,3 @@
-// ./Quest Detail Components/CompactQuestStep.tsx
-
 import React from "react";
 import {
 	Accordion,
@@ -20,7 +18,6 @@ import {
 	IconCircleCheck,
 	IconInfoCircle,
 	IconChecklist,
-	IconThumbUp,
 	IconPointFilled,
 	IconClipboardText,
 	IconHourglassLow,
@@ -64,7 +61,8 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 			<Accordion.Panel>
 				<Grid>
 					<Grid.Col span={hasItems ? 7 : 12}>
-						<Paper p="xs" withBorder radius="md" h="100%">
+						{/* The h="100%" prop was removed from this Paper component */}
+						<Paper p="xs" withBorder radius="md">
 							<Group justify="space-between">
 								<Group gap="xs">
 									<ThemeIcon variant="light" color="gray" size={30}>
@@ -95,7 +93,8 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 
 					{hasItems && (
 						<Grid.Col span={5}>
-							<Paper p="xs" withBorder radius="md" h="100%">
+							{/* The h="100%" prop was also removed from this Paper component */}
+							<Paper p="xs" withBorder radius="md">
 								<Stack gap="xs">
 									{hasRequiredItems && (
 										<div>
