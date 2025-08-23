@@ -1,0 +1,3579 @@
+{
+  "questName": "City of Senntisten",
+  "questSteps": [
+    {
+      "stepDescription": "Talk to Ariane at the entrance to the Heart of Gielinor and enter the Elder Halls. (Chat ✓•1)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Charos. Go through all chat options about what to do with the eggs. (Chat 1•2•3•4•5•4)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Azzanadra, after which a cutscene will play. (Chat ~)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Charos and Ariane. (Chat ~)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Go to the Archaeology Guild, upstairs onto the balcony. Talk to Dr Nabanik. (Chat ~)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Teleport to Port Sarim lodestone (or use the Clan Vexillum to teleport to the Falador Clan Camp) and go to Armadyl's tower. Climb to the top and talk to Armadyl.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Go to Burthorpe Castle and climb up the stone staircase. (Chat 1)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Icthlarin.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Seren.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Moia. (Chat 1)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Zamorak. (Chat 2)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Go to the throne room on the 3rd floor[US] of the White Knights' Castle in Falador and talk to Saradomin.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Return to Dr Nabanik on the balcony of the main building at the Archaeology Guild.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Items needed: A mattock (tool belt works), a dragonstone, and 4 free inventory slots.",
+      "itemsNeeded": [],
+      "itemsRecommended": [
+        "Signs of the porter or grace of the elves for banking archaeological materials"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Items recommended: Signs of the porter or grace of the elves for banking archaeological materials",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "See the map section below for a helpful map of the area.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Enter the City of Senntisten through the ancient door to the north of the Archaeology Guild.(Chat 1)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Azzanadra.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Excavate the forum entrance. (Use your grace of the elves charges to move the materials to the material storage container if you have it. Porters also work.)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Azzanadra.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Interact with the pedestal for the damaged artefact.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Exit pulley. Talk to Intern Jimmy at the entrance to get materials.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Restore the artefact at an archaeologist's workbench. (The one south by the guild is closest.)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Return to Azzanadra, and interact with the pedestal to place the artefact upon it.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Follow Azzanadra to the cathedral, and speak with him. (You may go directly to the cathedral and wait for him.) (Chat 5)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Alternatively, you can turn off run and click on him once, following him all the way to the cathedral.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Search the bookcases, chests, crates, and pews in the cathedral, including the upstairs balconies, for two light globes (see map below).",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Azzanadra.",
+      "itemsNeeded": [
+        "Combat gear and food"
+      ],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Pass through the western cathedral door.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Items needed: Combat gear and food",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Within the city, put light globes on the light pedestals to illuminate the immediate area. When outside of an illuminated area, you will receive stacks of Shadows of the Empire debuff. The more stacks you have, the more damage you are dealt. Standing in an illuminated area will remove stacks of the debuff. This includes stepping into houses with lights. the ward only dims the light from the globes.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Light globes will persist when teleporting out and additional light globes are spread through the west district of the city. You don't need to obtain all light globes to complete the quest, so it may be more beneficial to juggle them as you explore new areas.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "See the map for ward and objective locations.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Head to the blood bank (north-western building in southern section).",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Inspect the blood bottle by the interior door leading to the blood ward.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Search the old desk.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Search the pile of books on the table near the entrance.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Head north to the marketplace and enter the southern house south of the colosseum gateway.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "The correct house is marked with Bloodied Note on the map.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Search the ransacked desk near the chimney for the Blood Bank Ledger.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Return to the blood bank.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Search the shelves for bottles of blood: Bottle of blood (human) Bottle of blood (unicorn) Bottle of blood (dragon) Bottle of blood (aviansie)\nBe prepared for a dangerous boss fight immediately after finishing the puzzle. The Blood Warden will heal from any damage-over-time abilities. Additionally, its special attack will cause it to heal over time.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Inspect the blood bottle to start the puzzle, and add blood:",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "2/8 human blood",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "3/8 unicorn blood",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "1/8 dragon blood",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "2/8 aviansie blood",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Kill the Blood Warden",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Take the ward from the pedestal.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Activate the blood bottle near the door to exit.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Azzanadra with the ward. (Chat 1)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Go down two flights of stairs from the cathedral.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Take the ice ward from the pedestal inside the house to the south.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Azzanadra with the ward. (Chat 1)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Ensure you have enough healing ability with you as you will take a lot of damage while returning the shadow ward. Each open house is to lower said stacks of damage.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Go to the northern-most building, where the ward is located, and head upstairs.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Take the journal on the desk to get the Inquisition Profiles.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Read the Inquisition Profiles and complete the dialogue. (Chat 1)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Open the marked drawers as below. Start from the bottom and work your way up or zoom in for ease.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Head downstairs and take the ward from the pedestal.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Return to Azzanadra as fast as possible. Be prepared to take a lot of damage. Using a powerburst of acceleration will make this easier.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Azzanadra with the ward. (Chat 1)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "The smoke ward can be found in the large building directly south of the ice ward on the map. As you approach an animation with gargoyle sentinels should play.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Find and smash the stones to reveal the gargoyles sentinels. Smash them manually to complete the final blow, or automatically if relevant perk is available.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Directly outside the arsenal, the building with the ward.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Further west and south of the first, in a clearing in front of a house door.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "To the north in the market, the square containing the market stalls.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "West of the market, directly in front of the colosseum gateway.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Return to the arsenal and take the ward from the pedestal.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Azzanadra with the ward. (Chat 1)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "The drawers denoted by dark cells in the following table need to be opened, forming the shape of a capital letter I:",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Azzanadra and complete the dialogue.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3342 @@
+{
+  "questName": "Gower Quest",
+  "questSteps": [
+    {
+      "stepDescription": "Speak to the Gowers in the house next to rats and a cabbage patch south-east of the Varrock lodestone. (Chat 1•✓)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Search the crate in the room to the west.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Search the largest water barrel to the west of the south entrance.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Search the scarecrow in the south-west part of the farm with the cabbages.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Search the food trough on the east side of the farm in the area with the giant rats.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Spin the broccoli root into broccoli string on the spinning wheel in the main room.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Use the brussels sprout on the cruciferous mounting to make it into a brassican amulet (unstrung).",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Right click and flip the essence.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Use the broccoli string on the unstrung brassican amulet, followed by the life rune, combining everything into a cabbagespeak amulet.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Equip the amulet and talk to Crispy the Cabbage south-west on the cabbage field.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to the brothers. (Chat ~)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Speak to the Cabbages again.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Speak to Andrew to receive the disk of returning.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Items recommended: Armour, weapon, and food (Note: keep 6-7 free spaces)----\nIf you destroy \"Crispy The Cabbage\", you can reclaim \"Crispy\" from the Gower Farm.----",
+      "itemsNeeded": [],
+      "itemsRecommended": [
+        "Armour",
+        "weapon",
+        "and food (Note: keep 6-7 free spaces)----\nIf you destroy \"Crispy The Cabbage\"",
+        "you can reclaim \"Crispy\" from the Gower Farm.----"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Go to Dwarven Mines (entrance north-east of Falador lodestone).",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Go to the passage south-west of the pickaxe shop the area of Boot.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Scan with the disk of returning.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "The room is intentionally black. Move your cursor around to find the hidden objects:\nSearch the table for a rock.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Use the rock on the wall to the west.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Look under the table for an orange.\nEat the orange for a key.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Use the small key on the bumpy wall on the right for a tinderbox.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Use the tinderbox on the scary wispy thing and take the skull.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Use the skull on the unusual shape.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Enter The Gate of Lloigh-enn.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Thordur. (Chat ~•~•1)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Spiral Orb (the purple spider DJ in the middle). (Chat 1•2)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Look around in this area for 3 NPCs: Lucien, Steve the Chaos Elemental, and Thok.----\nYou can complete the following in any order.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Lucien, north-west of spiral orb and next to central bank portal. (Chat 2•3)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Enter the Central Bank Portal.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Claire Hick.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Ernie.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Check out the Locked Vault Door.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Leave the area.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Sphenishchev, located south of the portal, the penguin next to Beastmaster Durzag. (Chat 2)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Tim or Crunchy, just south-west of Spiral Orb (the DJ). (Chat 3)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Ask the bartender for 5 cups of tea and hand them out to all 5 Environment artists around the bar.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Return to Tim and Crunchy. (Chat 1)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Romeo, southeast of Beastmaster Durzag. (Chat 2•2)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to each God Wars Boss: Commander Zilyana, K'ril, Tsutsaroth, General Graardoor, Kree'arra, Nex",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Return to Romeo. (Chat 1)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Guthix, south of the bar. (Chat 2)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to one of the cabbages on the north-side of the bar.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Return to Guthix. (Chat 1)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Enter the Central Bank Portal.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Claire Hick.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Ernie. (Chat 1)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Check out the locked vault door, then enter it.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Open the Bank Safety box, then search it for a fragment.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Leave the bank area.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Chaos Elemental, north of the Grand Exchange Maintenance. (Chat 2•2•3)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Enter the Grand Exchange Maintenance portal.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Repair the Grand Exchange pipes. (there are 3 different thickness pipes, each size must fit each other from the beginning to the end, the interface will close when it's correct)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Leave the Grand Exchange area",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Thok, just north-west of Clawdia. (Chat 2)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Enter Beta Room Portal and talk to Max. (Chat ~•2)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Max all 3 skills. Enter All Green Doors (3 Doors) ----\nFirst room: You get options to rock, trot, gallop, turn. Just click on the action displayed on top of the screen.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Second room: Fire at other battleships (searching desert island and bubbles give more xp too).",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Third room: Stay inside the bank on the white floor tiles.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Max for the third fragment.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Leave the area.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Enter the Life Altar Portal south, opposite of the Beta Room Portal.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Investigate Life altar.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Speak with the Black Knight Titan. (Chat 4)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Kill it 6 times. 3 Before cutscene, 3 after.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to any of the brothers.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Quest complete!",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    }
+  ]
+}

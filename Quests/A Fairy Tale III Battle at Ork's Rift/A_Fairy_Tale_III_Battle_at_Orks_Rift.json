@@ -1,0 +1,2670 @@
+{
+  "questName": "A Fairy Tale III Battle at Ork's Rift",
+  "questSteps": [
+    {
+      "stepDescription": "Items needed: Dramen staff or the Lunar staff and Nuff's certificate (to reach the Fairy Resistance Hideout)",
+      "itemsNeeded": [
+        "Dramen staff or the Lunar staff and Nuff's certificate (to reach the Fairy Resistance Hideout)"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Sparse Plane Fairy Ring",
+            "objectLocation": [
+              {
+                "lat": 4396,
+                "lng": 2454
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4395,
+                "lng": 2453
+              },
+              "topRight": {
+                "lat": 4397,
+                "lng": 2455
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "If you cannot start the quest, enter and leave Zanaris via fairy rings repeatedly until Fairy Very Wise appears and talks to you.",
+        "It may require up to 30 minutes after completing A Fairy Tale II - Cure a Queen.",
+        " If you've declined her before, you have to travel by fairy ring BIR to reach her."
+      ]
+    },
+    {
+      "stepDescription": "Use any fairy ring to travel to Zanaris. If you can start the quest, you will be redirected to the Sparse Plane.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Fairy Very Wise (Sparse Plane)",
+            "npcLocation": {
+              "lat": 4397,
+              "lng": 2452
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4396,
+                "lng": 2451
+              },
+              "topRight": {
+                "lat": 4398,
+                "lng": 2453
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "If you cannot start the quest, enter and leave Zanaris via fairy rings repeatedly until Fairy Very Wise appears and talks to you. It may require up to 30 minutes after completing A Fairy Tale II - Cure a Queen. If you've declined her before, you have to travel by fairy ring BIR to reach her.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Fairy Very Wise (Sparse Plane)",
+            "npcLocation": {
+              "lat": 4397,
+              "lng": 2452
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4396,
+                "lng": 2451
+              },
+              "topRight": {
+                "lat": 4398,
+                "lng": 2453
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Fairy Very Wise and accept her offer (Chat 4). After accepting her offer, Nuff's certificate is no longer needed to reach the Fairy Resistance headquarters.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Fairy Queen (Fairy Headquarters)",
+            "npcLocation": {
+              "lat": 4243,
+              "lng": 1579
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4242,
+                "lng": 1578
+              },
+              "topRight": {
+                "lat": 4244,
+                "lng": 1580
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Accept the teleport from her (Chat 1), or use the fairy ring to get to the Fairy Resistance headquarters (AIR, DLR, DJQ, AJS).",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Tooth Fairy",
+            "npcLocation": {
+              "lat": 4243,
+              "lng": 1584
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4242,
+                "lng": 1583
+              },
+              "topRight": {
+                "lat": 4244,
+                "lng": 1585
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Projector (Fairy Tale Part III)",
+            "objectLocation": [
+              {
+                "lat": 4241,
+                "lng": 1584
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4240,
+                "lng": 1583
+              },
+              "topRight": {
+                "lat": 4242,
+                "lng": 1585
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to the Fairy Queen south-east in the headquarters and then finish talking to the Tooth Fairy (she automatically speaks to you after you speak with the queen). (Chat 2•✓)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Tooth Fairy",
+            "npcLocation": {
+              "lat": 4243,
+              "lng": 1584
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4242,
+                "lng": 1583
+              },
+              "topRight": {
+                "lat": 4244,
+                "lng": 1585
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Projector (Fairy Tale Part III)",
+            "objectLocation": [
+              {
+                "lat": 4241,
+                "lng": 1584
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4240,
+                "lng": 1583
+              },
+              "topRight": {
+                "lat": 4242,
+                "lng": 1585
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Be wary of cutscenes that may trigger epilepsy. Talk to the Tooth Fairy, then turn on the projector to watch the first briefing. (Chat 2)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Tooth Fairy",
+            "npcLocation": {
+              "lat": 4243,
+              "lng": 1584
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4242,
+                "lng": 1583
+              },
+              "topRight": {
+                "lat": 4244,
+                "lng": 1585
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to the Tooth Fairy again after the briefing. (Chat 5•1)\nTurn on the projector to watch the second briefing.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Hammer and Secateurs ( Fairy Headquarters )",
+            "objectLocation": [
+              {
+                "lat": 4261,
+                "lng": 1566
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4260,
+                "lng": 1564
+              },
+              "topRight": {
+                "lat": 4265,
+                "lng": 1569
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "After both briefings, agree to collect her wand. (Chat 3)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Fairy Ring (Fairy Headquarters)",
+            "objectLocation": [
+              {
+                "lat": 4234,
+                "lng": 1559
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4233,
+                "lng": 1558
+              },
+              "topRight": {
+                "lat": 4235,
+                "lng": 1560
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Run north-west and take a hammer and secateurs. Use them on each other.",
+      "itemsNeeded": [
+        "Bucket of milk",
+        "Tooth extractor"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Gnarly",
+            "npcLocation": {
+              "lat": 4467,
+              "lng": 2377
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4466,
+                "lng": 2376
+              },
+              "topRight": {
+                "lat": 4468,
+                "lng": 2378
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Leave through the fairy ring.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Gnarly",
+            "npcLocation": {
+              "lat": 4467,
+              "lng": 2377
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4466,
+                "lng": 2376
+              },
+              "topRight": {
+                "lat": 4468,
+                "lng": 2378
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Your enamel shimmers like a river of silver in the moonlight.",
+        "I've never seen such amazing, inspired and dream-like toothiness.",
+        "I can see your bicuspid ancestry is an example to all molar-kind.",
+        "You're a wonderful guard tooth with lovely cusps."
+      ]
+    },
+    {
+      "stepDescription": "Items needed: Bucket of milk and the Tooth extractor \nGo to the house north-west of Zanaris bank. Use your tooth extractor on the door to pick the lock on it.",
+      "itemsNeeded": [
+        "Bucket of Milk"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Gnarly",
+            "npcLocation": {
+              "lat": 4467,
+              "lng": 2377
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4466,
+                "lng": 2376
+              },
+              "topRight": {
+                "lat": 4468,
+                "lng": 2378
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Gnarly. (Chat 4)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Tooth Fairy",
+            "npcLocation": {
+              "lat": 4243,
+              "lng": 1584
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4242,
+                "lng": 1583
+              },
+              "topRight": {
+                "lat": 4244,
+                "lng": 1585
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "In no particular order, compliment him with the following responses (Only 3 compliments may be needed to continue to the next part): \n\"Your enamel shimmers like a river of silver in the moonlight.\",\n\"I've never seen such amazing, inspired and dream-like toothiness.\", \n\"I can see your bicuspid ancestry is an example to all molar-kind.\", and \n\"You're a wonderful guard tooth with lovely cusps.\"",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Tooth Fairy",
+            "npcLocation": {
+              "lat": 4243,
+              "lng": 1584
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4242,
+                "lng": 1583
+              },
+              "topRight": {
+                "lat": 4244,
+                "lng": 1585
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Use the bucket of milk on him, (Chat 2•2). Gnarly should jump into your inventory.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Tooth Fairy",
+            "npcLocation": {
+              "lat": 4243,
+              "lng": 1584
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4242,
+                "lng": 1583
+              },
+              "topRight": {
+                "lat": 4244,
+                "lng": 1585
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Go back to the Tooth Fairy (Fairy Resistance HQ) in the south-east room.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Yellow Flowers ( Fairy Headquarters )",
+            "objectLocation": [
+              {
+                "lat": 4237,
+                "lng": 1583
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4236,
+                "lng": 1582
+              },
+              "topRight": {
+                "lat": 4238,
+                "lng": 1584
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "(Cutscene) Talk to the tooth fairy, then watch another briefing by turning on the projector.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Fairy Ring (Fairy Headquarters)",
+            "objectLocation": [
+              {
+                "lat": 4234,
+                "lng": 1559
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4233,
+                "lng": 1558
+              },
+              "topRight": {
+                "lat": 4235,
+                "lng": 1560
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "After the briefing, agree to the tooth extraction. (Chat 2•2•3•4)",
+      "itemsNeeded": [
+        "Dramen staff or the Lunar staff"
+      ],
+      "itemsRecommended": [
+        "4 regular planks (has to be regular planks) for bridge repair",
+        "8 nails of any kind for bridge repair",
+        "8 Willow logs if you have level 85 Firemaking, lighting bonfire for K'Chunk for 10k firemaking xp"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "General Bre'egth",
+            "npcLocation": {
+              "lat": 4453,
+              "lng": 2400
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4451,
+                "lng": 2398
+              },
+              "topRight": {
+                "lat": 4454,
+                "lng": 2403
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Step onto the yellow flowers and use the wave emote. There will be a cutscene.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Any Other Ork ( Fairy Tale Part III )",
+            "objectLocation": [
+              {
+                "lat": 4453,
+                "lng": 2414
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4449,
+                "lng": 2404
+              },
+              "topRight": {
+                "lat": 4472,
+                "lng": 2420
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Leave through the fairy ring.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Fairy Fixit",
+            "npcLocation": {
+              "lat": 4434,
+              "lng": 2409
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4433,
+                "lng": 2408
+              },
+              "topRight": {
+                "lat": 4436,
+                "lng": 2411
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Items needed: Dramen staff or the Lunar staff and \nItems recommended: 4 regular planks (has to be regular planks), 8 nails of any kind, and 8 Willow logs if you have level 85 Firemaking",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "K'Chunk",
+            "npcLocation": {
+              "lat": 2920,
+              "lng": 3761
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2919,
+                "lng": 3755
+              },
+              "topRight": {
+                "lat": 2932,
+                "lng": 3767
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Take the 8 willow logs if you have level 85 Firemaking, light the bonfire for K'Chunk and receive 10,000 Firemaking experience.",
+        " If you have the 4 regular planks and 8 nails of any kind, you can fix one of the bridges by using a plank on the bridge."
+      ]
+    },
+    {
+      "stepDescription": "Talk to General Bre'egth outside of the Zanaris mill, north west of the fairy ring. (Chat 3)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "K'Chunk",
+            "npcLocation": {
+              "lat": 2920,
+              "lng": 3761
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2919,
+                "lng": 3755
+              },
+              "topRight": {
+                "lat": 2932,
+                "lng": 3767
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to any other Ork about K'Chunk. (Chat 4)",
+      "itemsNeeded": [
+        "Dramen staff or the Lunar staff and the Tooth extractor you can then"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Wood Dryad ( Enchanted Valley )",
+            "npcLocation": {
+              "lat": 4521,
+              "lng": 3025
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4517,
+                "lng": 3022
+              },
+              "topRight": {
+                "lat": 4522,
+                "lng": 3028
+              }
+            }
+          },
+          {
+            "npcName": "General Gromblod ( Enchanted Valley )",
+            "npcLocation": {
+              "lat": 4508,
+              "lng": 3033
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4506,
+                "lng": 3031
+              },
+              "topRight": {
+                "lat": 4512,
+                "lng": 3036
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Run to the fairy ring, talk to Fairy Fixit about K'Chunk. (Chat 2)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Wood Dryad ( Enchanted Valley )",
+            "npcLocation": {
+              "lat": 4521,
+              "lng": 3025
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4517,
+                "lng": 3022
+              },
+              "topRight": {
+                "lat": 4522,
+                "lng": 3028
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Teleport to DIP and talk to K'Chunk. (Chat 4)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Mango Tree ( Ape Atoll )",
+            "objectLocation": [
+              {
+                "lat": 2744,
+                "lng": 2730
+              },
+              {
+                "lat": 2744,
+                "lng": 2731
+              },
+              {
+                "lat": 2745,
+                "lng": 2731
+              },
+              {
+                "lat": 2745,
+                "lng": 2730
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 2743,
+                "lng": 2729
+              },
+              "topRight": {
+                "lat": 2746,
+                "lng": 2732
+              }
+            }
+          },
+          {
+            "name": "Hollow Log ( Ape Atoll )",
+            "objectLocation": [
+              {
+                "lat": 2740,
+                "lng": 2737
+              },
+              {
+                "lat": 2740,
+                "lng": 2738
+              },
+              {
+                "lat": 2740,
+                "lng": 2739
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 2739,
+                "lng": 2737
+              },
+              "topRight": {
+                "lat": 2741,
+                "lng": 2739
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Recommended: If you have the 4 regular planks and 8 nails of any kind, you can fix one of the bridges by using a plank on the bridge. \nRecommended: Take the 8 Willow logs if you have level 85 Firemaking, light the bonfire for K'Chunk and receive 10,000 Firemaking experience.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "General Gromblod ( Enchanted Valley )",
+            "npcLocation": {
+              "lat": 4508,
+              "lng": 3033
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4506,
+                "lng": 3031
+              },
+              "topRight": {
+                "lat": 4512,
+                "lng": 3036
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Mango ( Tooth )",
+            "objectLocation": [
+              {
+                "lat": 4519,
+                "lng": 3034
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4517,
+                "lng": 3032
+              },
+              "topRight": {
+                "lat": 4521,
+                "lng": 3036
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Pickpocket him for the tooth.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Mango ( Tooth )",
+            "objectLocation": [
+              {
+                "lat": 4519,
+                "lng": 3034
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4517,
+                "lng": 3032
+              },
+              "topRight": {
+                "lat": 4521,
+                "lng": 3036
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Items needed: Dramen staff or the Lunar staff and the Tooth extractor you can then\nTeleport to BKQ and run down the waterfall to talk to the Wood Dryad to the west. (Chat 2)",
+      "itemsNeeded": [
+        "Dramen staff or the Lunar staff",
+        "and the Tooth extractor"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "General Shredflesh",
+            "npcLocation": {
+              "lat": 4205,
+              "lng": 2467
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4203,
+                "lng": 2465
+              },
+              "topRight": {
+                "lat": 4206,
+                "lng": 2469
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Use the extractor on him.",
+        "In no particular order, calm him with the following responses: \"What's a bit of pain for a huge ork hero like you?\", \"If the tooth isn't pulled out, all your teeth will hurt much worse!\", \"Let me pull it! What are you, an ork or a goblin?\", and \"I'll make sure it doesn't hurt a bit; I'm a professional.\"",
+        "Clear the pile of rock behind him if you haven't yet already."
+      ]
+    },
+    {
+      "stepDescription": "Talk to General Gromblod.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Tooth Fairy",
+            "npcLocation": {
+              "lat": 4243,
+              "lng": 1584
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4242,
+                "lng": 1583
+              },
+              "topRight": {
+                "lat": 4244,
+                "lng": 1585
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to the Wood Dryad again.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Projector (Fairy Tale Part III)",
+            "objectLocation": [
+              {
+                "lat": 4241,
+                "lng": 1584
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4240,
+                "lng": 1583
+              },
+              "topRight": {
+                "lat": 4242,
+                "lng": 1585
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Teleport to CLR, pick a mango.",
+      "itemsNeeded": [
+        "The fairy wand",
+        "the 3 teeth and combat equipment. You will not use the fairy wand to fight",
+        "you will need the fairy wand during the fight to heal the farming patches and the friendly generals. You can also use the fairy wand to access the fairy ring system",
+        "you can bank your Dramen or Lunar staff at this point."
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Recommended: unblock this end of the hollow log if you haven't yet. \nReturn to BKQ. \nTalk to Grombold, giving him the mango, he will spit it out to the south of the cave.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Pick up the mango with tooth and use the tooth extractor on it.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Barrier (Fairy Fight)",
+            "objectLocation": [
+              {
+                "lat": 4135,
+                "lng": 1572
+              },
+              {
+                "lat": 4135,
+                "lng": 1573
+              },
+              {
+                "lat": 4134,
+                "lng": 1573
+              },
+              {
+                "lat": 4134,
+                "lng": 1572
+              },
+              {
+                "lat": 4133,
+                "lng": 1572
+              },
+              {
+                "lat": 4133,
+                "lng": 1573
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4132,
+                "lng": 1571
+              },
+              "topRight": {
+                "lat": 4136,
+                "lng": 1574
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Items needed: Dramen staff or the Lunar staff, and the Tooth extractor \nTeleport to ALP and talk to General Shredflesh. (Chat 4•1•2•3•4)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Tooth Fairy ( Final Fight )",
+            "npcLocation": {
+              "lat": 4132,
+              "lng": 1570
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4130,
+                "lng": 1568
+              },
+              "topRight": {
+                "lat": 4134,
+                "lng": 1571
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "In no particular order, calm him with the following responses: \n\"What's a bit of pain for a huge ork hero like you?\", \n\"If the tooth isn't pulled out, all your teeth will hurt much worse!\", \n\"Let me pull it! What are you, an ork or a goblin?\", and \n\"I'll make sure it doesn't hurt a bit; I'm a professional.\"",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Planter 1",
+            "objectLocation": [
+              {
+                "lat": 4122,
+                "lng": 1575
+              },
+              {
+                "lat": 4122,
+                "lng": 1576
+              },
+              {
+                "lat": 4121,
+                "lng": 1577
+              },
+              {
+                "lat": 4120,
+                "lng": 1577
+              },
+              {
+                "lat": 4119,
+                "lng": 1576
+              },
+              {
+                "lat": 4119,
+                "lng": 1575
+              },
+              {
+                "lat": 4120,
+                "lng": 1574
+              },
+              {
+                "lat": 4121,
+                "lng": 1574
+              },
+              {
+                "lat": 4121,
+                "lng": 1575
+              },
+              {
+                "lat": 4121,
+                "lng": 1576
+              },
+              {
+                "lat": 4120,
+                "lng": 1576
+              },
+              {
+                "lat": 4120,
+                "lng": 1575
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4119,
+                "lng": 1574
+              },
+              "topRight": {
+                "lat": 4122,
+                "lng": 1577
+              }
+            }
+          },
+          {
+            "name": "Planter 2",
+            "objectLocation": [
+              {
+                "lat": 4124,
+                "lng": 1583
+              },
+              {
+                "lat": 4124,
+                "lng": 1584
+              },
+              {
+                "lat": 4123,
+                "lng": 1585
+              },
+              {
+                "lat": 4122,
+                "lng": 1585
+              },
+              {
+                "lat": 4121,
+                "lng": 1584
+              },
+              {
+                "lat": 4121,
+                "lng": 1583
+              },
+              {
+                "lat": 4122,
+                "lng": 1582
+              },
+              {
+                "lat": 4123,
+                "lng": 1582
+              },
+              {
+                "lat": 4123,
+                "lng": 1583
+              },
+              {
+                "lat": 4123,
+                "lng": 1584
+              },
+              {
+                "lat": 4122,
+                "lng": 1584
+              },
+              {
+                "lat": 4122,
+                "lng": 1583
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4121,
+                "lng": 1582
+              },
+              "topRight": {
+                "lat": 4124,
+                "lng": 1585
+              }
+            }
+          },
+          {
+            "name": "Planter 3",
+            "objectLocation": [
+              {
+                "lat": 4130,
+                "lng": 1588
+              },
+              {
+                "lat": 4129,
+                "lng": 1588
+              },
+              {
+                "lat": 4128,
+                "lng": 1589
+              },
+              {
+                "lat": 4128,
+                "lng": 1590
+              },
+              {
+                "lat": 4129,
+                "lng": 1591
+              },
+              {
+                "lat": 4130,
+                "lng": 1591
+              },
+              {
+                "lat": 4131,
+                "lng": 1590
+              },
+              {
+                "lat": 4131,
+                "lng": 1589
+              },
+              {
+                "lat": 4130,
+                "lng": 1589
+              },
+              {
+                "lat": 4130,
+                "lng": 1590
+              },
+              {
+                "lat": 4129,
+                "lng": 1590
+              },
+              {
+                "lat": 4129,
+                "lng": 1589
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4128,
+                "lng": 1588
+              },
+              "topRight": {
+                "lat": 4131,
+                "lng": 1591
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Use all 3 teeth on the farming patches.",
+        "Stand by the patches and kill the generals and ork warriors.",
+        "Once the teeth have grown, instruct them to fight.",
+        "Focus on ork warriors while the teeth focus on killing the generals.",
+        "After you and the teeth kill the generals, kill the godfather (let the teeth attack the godfather to reduce the shields). Ensure all 3 teeth are attacking the godfather at once, as each one removes a layer of his 3-layer shield (note: if all 3 teeth aren't attacking the godfather, you will not land hits as his shield will still be active)"
+      ]
+    },
+    {
+      "stepDescription": "Use the extractor on him.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Fairy Godfather ( Defeated )",
+            "npcLocation": {
+              "lat": 4139,
+              "lng": 1581
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4138,
+                "lng": 1580
+              },
+              "topRight": {
+                "lat": 4141,
+                "lng": 1583
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Clear the pile of rock behind him if you haven't yet already.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Fairy Queen (Final Fight)",
+            "npcLocation": {
+              "lat": 4138,
+              "lng": 1582
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4136,
+                "lng": 1580
+              },
+              "topRight": {
+                "lat": 4140,
+                "lng": 1584
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Go back and talk to the Tooth Fairy in the hideout.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Martin the Master Gardener",
+            "npcLocation": {
+              "lat": 3258,
+              "lng": 3075
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3255,
+                "lng": 3073
+              },
+              "topRight": {
+                "lat": 3261,
+                "lng": 3078
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "(Cutscene) Turn on the projector to watch another briefing (Chat 5), She gives you a wand.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Items needed: The fairy wand, the 3 teeth and combat equipment. You will not use the fairy wand to fight, but you will need it during the fight to heal the farming patches and the friendly generals. You can also use the fairy wand to access the fairy ring system, so you can bank your Dramen or Lunar staff at this point.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Prepare for the final battle, with the above listed items.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Teleport to BIR, DIP, CLR, ALP. (If the fairy ring at BIR does not appear, lobby and start over.)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Look through fairy tree where you'll encounter a cutscene.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "After the cutscene talk to the tooth fairy.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "How to kill the Fairy Godfather:",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Use all 3 teeth on the farming patches.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Stand by the patches and kill the generals and ork warriors.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Once the teeth have grown, instruct them to fight.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Focus on ork warriors while the teeth focus on killing the generals.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "After you and the teeth kill the generals, kill the godfather (let the teeth attack the godfather to reduce the shields). Ensure all 3 teeth are attacking the godfather at once, as each one removes a layer of his 3-layer shield (note: if all 3 teeth aren't attacking the godfather, you will not land hits as his shield will still be active)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to the Fairy Godfather for a cutscene.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Continue dialogue with the Fairy Queen and accept her teleport. (Chat 1)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Martin the Master Gardener. (Chat 2)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Quest complete!",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    }
+  ]
+}

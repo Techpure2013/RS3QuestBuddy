@@ -1,8 +1,9 @@
-interface QuestImage {
+export interface QuestImage {
     step: string;
     src: string;
     width: number;
     height: number;
+    stepDescription: string;
 }
 type QuestImageStore = {
     imageList: QuestImage[];

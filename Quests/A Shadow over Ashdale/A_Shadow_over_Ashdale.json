@@ -1,0 +1,1289 @@
+{
+  "questName": "A Shadow over Ashdale",
+  "questSteps": [
+    {
+      "stepDescription": "To start, talk to Gudrik, east of Gerrant's Fishy Business in Port Sarim. (Chat 1•✓)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Gudrik",
+            "npcLocation": {
+              "lat": 3232,
+              "lng": 3028
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3231,
+                "lng": 3027
+              },
+              "topRight": {
+                "lat": 3233,
+                "lng": 3028
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Bring combat equipment, food, and potions if you have them. Right click Gudrik to travel to Ashdale. (Chat 1)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Gudrik",
+            "npcLocation": {
+              "lat": 3232,
+              "lng": 3028
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3231,
+                "lng": 3027
+              },
+              "topRight": {
+                "lat": 3233,
+                "lng": 3028
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Go through the village to Lucy's house and talk with her. (Chat 1•3)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Lucy",
+            "npcLocation": {
+              "lat": 6783,
+              "lng": 3583
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 6786,
+                "lng": 3586
+              },
+              "topRight": {
+                "lat": 6787,
+                "lng": 3589
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Enter the storm drain behind the house.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Storm Drain",
+            "objectLocation": [
+              {
+                "lat": 6781,
+                "lng": 3579
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 6780,
+                "lng": 3578
+              },
+              "topRight": {
+                "lat": 6782,
+                "lng": 3580
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Go through in the sewer, killing or running past crassians.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Climb up the ladder at the end of the sewer.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Run west then south through Ashdale, past the gate and into the house.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "House West",
+            "objectLocation": [
+              {
+                "lat": 6743,
+                "lng": 3543
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 6740,
+                "lng": 3541
+              },
+              "topRight": {
+                "lat": 6745,
+                "lng": 3546
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Inspect the bust by the fireplace.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Bust",
+            "objectLocation": [
+              {
+                "lat": 6740,
+                "lng": 3541
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 6740,
+                "lng": 3541
+              },
+              "topRight": {
+                "lat": 6741,
+                "lng": 3542
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Descend the stairs. (Chat 1)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Stairs",
+            "objectLocation": [
+              {
+                "lat": 6743,
+                "lng": 3543
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 6742,
+                "lng": 3542
+              },
+              "topRight": {
+                "lat": 6744,
+                "lng": 3544
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Fight or run past the crassians.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Crassian Room",
+            "objectLocation": [
+              {
+                "lat": 6755,
+                "lng": 3859
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 6750,
+                "lng": 3854
+              },
+              "topRight": {
+                "lat": 6759,
+                "lng": 3863
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Collect the valve outer wheel, valve inner wheel, pitch, and\nrepair the leaking pipe on the ground.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Items in Area",
+            "objectLocation": [
+              {
+                "lat": 6756,
+                "lng": 3884
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 6750,
+                "lng": 3878
+              },
+              "topRight": {
+                "lat": 6763,
+                "lng": 3892
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Combine valve parts and repair socket on the central barrel and \nturn valves to move water to the door.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Go through and kill all scouts to open the barrier.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Crassian Scouts Room",
+            "objectLocation": [
+              {
+                "lat": 6757,
+                "lng": 3917
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 6749,
+                "lng": 3909
+              },
+              "topRight": {
+                "lat": 6765,
+                "lng": 3927
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Avoid the warrior and go to the lever.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Pull the lever to kill him and continue.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "1st lever",
+            "objectLocation": [
+              {
+                "lat": 6734,
+                "lng": 3920
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 6733,
+                "lng": 3919
+              },
+              "topRight": {
+                "lat": 6735,
+                "lng": 3921
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Do the same with other warriors using lever to trigger the traps.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "2nd Lever",
+            "objectLocation": [
+              {
+                "lat": 6752,
+                "lng": 3961
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 6751,
+                "lng": 3960
+              },
+              "topRight": {
+                "lat": 6753,
+                "lng": 3962
+              }
+            }
+          },
+          {
+            "name": "3rd Lever",
+            "objectLocation": [
+              {
+                "lat": 6772,
+                "lng": 3963
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 6771,
+                "lng": 3962
+              },
+              "topRight": {
+                "lat": 6773,
+                "lng": 3964
+              }
+            }
+          },
+          {
+            "name": "4th Lever",
+            "objectLocation": [
+              {
+                "lat": 6789,
+                "lng": 3952
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 6789,
+                "lng": 3951
+              },
+              "topRight": {
+                "lat": 6791,
+                "lng": 3953
+              }
+            }
+          },
+          {
+            "name": "5th Lever",
+            "objectLocation": [
+              {
+                "lat": 6800,
+                "lng": 3951
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 6799,
+                "lng": 3950
+              },
+              "topRight": {
+                "lat": 6801,
+                "lng": 3952
+              }
+            }
+          },
+          {
+            "name": "6th Lever",
+            "objectLocation": [
+              {
+                "lat": 6822,
+                "lng": 3936
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 6821,
+                "lng": 3935
+              },
+              "topRight": {
+                "lat": 6823,
+                "lng": 3937
+              }
+            }
+          },
+          {
+            "name": "7th Lever",
+            "objectLocation": [
+              {
+                "lat": 6826,
+                "lng": 3919
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 6825,
+                "lng": 3918
+              },
+              "topRight": {
+                "lat": 6827,
+                "lng": 3920
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "You can run past the scouts.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Run Past Crassians",
+            "objectLocation": [
+              {
+                "lat": 6816,
+                "lng": 3893
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 6810,
+                "lng": 3887
+              },
+              "topRight": {
+                "lat": 6820,
+                "lng": 3898
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Climb on the ship.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Climb Ship",
+            "objectLocation": [
+              {
+                "lat": 6817,
+                "lng": 3877
+              },
+              {
+                "lat": 6817,
+                "lng": 3878
+              },
+              {
+                "lat": 6817,
+                "lng": 3879
+              },
+              {
+                "lat": 6817,
+                "lng": 3880
+              },
+              {
+                "lat": 6817,
+                "lng": 3881
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 6816,
+                "lng": 3877
+              },
+              "topRight": {
+                "lat": 6818,
+                "lng": 3881
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Kill the 4 tentacles.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Kill Agoroth.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Lucy.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Return to Gudrik and ask for a reward. (Chat 1)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Gudrik",
+            "npcLocation": {
+              "lat": 3232,
+              "lng": 3028
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3231,
+                "lng": 3027
+              },
+              "topRight": {
+                "lat": 3233,
+                "lng": 3028
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Quest complete!",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    }
+  ]
+}

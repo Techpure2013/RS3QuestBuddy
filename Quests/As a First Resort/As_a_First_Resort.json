@@ -1,0 +1,2548 @@
+{
+  "questName": "As a First Resort",
+  "questSteps": [
+    {
+      "stepDescription": "Getting started",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Chief Tess",
+            "npcLocation": {
+              "lat": 2853,
+              "lng": 2547
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2851,
+                "lng": 2545
+              },
+              "topRight": {
+                "lat": 2856,
+                "lng": 2550
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Head to Oo'glog and talk to Chief Tess. (Chat 1•1•✓•1•1)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Balnea",
+            "npcLocation": {
+              "lat": 2839,
+              "lng": 2557
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2838,
+                "lng": 2556
+              },
+              "topRight": {
+                "lat": 2840,
+                "lng": 2558
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Balnea in the Oo'glog bank. (Chat 1•2•1•1•1•1)",
+      "itemsNeeded": [
+        "10 eucalyptus logs",
+        "8 achey tree logs",
+        "4 spears and 2 raw chompies"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Chargurr",
+            "npcLocation": {
+              "lat": 2852,
+              "lng": 2559
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2850,
+                "lng": 2557
+              },
+              "topRight": {
+                "lat": 2853,
+                "lng": 2561
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Items needed: 10 eucalyptus logs, 8 achey tree logs, 4 spears and 2 raw chompies",
+      "itemsNeeded": [
+        "8 achey tree logs",
+        "10 eucalyptus logs",
+        "Raw Chompy",
+        "4 spears"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Chargurr",
+            "npcLocation": {
+              "lat": 2852,
+              "lng": 2559
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2850,
+                "lng": 2557
+              },
+              "topRight": {
+                "lat": 2853,
+                "lng": 2561
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "With eight achey tree logs and ten eucalyptus logs in your inventory (make sure it is one inventory) to add them to the fire pit."
+      ]
+    },
+    {
+      "stepDescription": "Talk to Chargurr north of the bank. (Chat 1)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Chargurr",
+            "npcLocation": {
+              "lat": 2852,
+              "lng": 2559
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2850,
+                "lng": 2557
+              },
+              "topRight": {
+                "lat": 2853,
+                "lng": 2561
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Chargurr with eight achey tree logs and ten eucalyptus logs in your inventory (make sure it is one inventory) to add them to the fire pit.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Chargurr",
+            "npcLocation": {
+              "lat": 2852,
+              "lng": 2559
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2850,
+                "lng": 2557
+              },
+              "topRight": {
+                "lat": 2853,
+                "lng": 2561
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Chargurr. (Chat 2)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Chargurr",
+            "npcLocation": {
+              "lat": 2852,
+              "lng": 2559
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2850,
+                "lng": 2557
+              },
+              "topRight": {
+                "lat": 2853,
+                "lng": 2561
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Give her four spears. (Chat 2)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Chargurr",
+            "npcLocation": {
+              "lat": 2852,
+              "lng": 2559
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2850,
+                "lng": 2557
+              },
+              "topRight": {
+                "lat": 2853,
+                "lng": 2561
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Chargurr. (Chat 2)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Firepit ( Oo'Glog )",
+            "objectLocation": [
+              {
+                "lat": 2855,
+                "lng": 2558
+              },
+              {
+                "lat": 2854,
+                "lng": 2558
+              },
+              {
+                "lat": 2853,
+                "lng": 2558
+              },
+              {
+                "lat": 2853,
+                "lng": 2559
+              },
+              {
+                "lat": 2853,
+                "lng": 2560
+              },
+              {
+                "lat": 2854,
+                "lng": 2560
+              },
+              {
+                "lat": 2855,
+                "lng": 2560
+              },
+              {
+                "lat": 2855,
+                "lng": 2559
+              },
+              {
+                "lat": 2854,
+                "lng": 2559
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 2852,
+                "lng": 2557
+              },
+              "topRight": {
+                "lat": 2856,
+                "lng": 2561
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Use two raw chompies on Chargurr.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Chargurr",
+            "npcLocation": {
+              "lat": 2852,
+              "lng": 2559
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2850,
+                "lng": 2557
+              },
+              "topRight": {
+                "lat": 2853,
+                "lng": 2561
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Chargurr.",
+      "itemsNeeded": [
+        "8 stripy feathers (or a bird snare)"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Balnea",
+            "npcLocation": {
+              "lat": 2839,
+              "lng": 2557
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2838,
+                "lng": 2556
+              },
+              "topRight": {
+                "lat": 2840,
+                "lng": 2558
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Light the fire pit.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Snurgh",
+            "npcLocation": {
+              "lat": 2845,
+              "lng": 2595
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2843,
+                "lng": 2592
+              },
+              "topRight": {
+                "lat": 2846,
+                "lng": 2596
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Chargurr.",
+      "itemsNeeded": [
+        "8 stripy feathers"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Snurgh",
+            "npcLocation": {
+              "lat": 2845,
+              "lng": 2595
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2843,
+                "lng": 2592
+              },
+              "topRight": {
+                "lat": 2846,
+                "lng": 2596
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Items needed: 8 stripy feathers (or a bird snare)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Balnea",
+            "npcLocation": {
+              "lat": 2839,
+              "lng": 2557
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2838,
+                "lng": 2556
+              },
+              "topRight": {
+                "lat": 2840,
+                "lng": 2558
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Balnea located in the bank. (Chat 1)",
+      "itemsNeeded": [
+        "8 larupia furs (tatty or regular) and 4 wolf bones (if you need to trap the larupias bring a teasing stick)"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Kringk",
+            "npcLocation": {
+              "lat": 2845,
+              "lng": 2595
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2843,
+                "lng": 2592
+              },
+              "topRight": {
+                "lat": 2846,
+                "lng": 2596
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Snurgh who is in the eastern most building of Oo'glog. (Chat 1)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Kringk",
+            "npcLocation": {
+              "lat": 2845,
+              "lng": 2595
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2843,
+                "lng": 2592
+              },
+              "topRight": {
+                "lat": 2846,
+                "lng": 2596
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Give her eight stripy feathers.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Balnea",
+            "npcLocation": {
+              "lat": 2839,
+              "lng": 2557
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2838,
+                "lng": 2556
+              },
+              "topRight": {
+                "lat": 2840,
+                "lng": 2558
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Items needed: 8 larupia furs (tatty or regular) and 4 wolf bones (if you need to trap the larupias, bring a teasing stick)",
+      "itemsNeeded": [
+        "16 eucalyptus logs",
+        "7 each of the five types of herb or more Collect 16 eucalyptus logs and 7 each of the five type of herbs from outside around the outskirts of Oo'glog."
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Seegud",
+            "npcLocation": {
+              "lat": 2856,
+              "lng": 2569
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2854,
+                "lng": 2568
+              },
+              "topRight": {
+                "lat": 2857,
+                "lng": 2571
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "To clear the bugs, eucalyptus logs and different plant types are needed.",
+        "Plant and rock combinations are different for every player, using a reference chart (Provided in the images)"
+      ]
+    },
+    {
+      "stepDescription": "Talk to Balnea. (Chat 1•1)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "saltwater spring",
+            "objectLocation": [
+              {
+                "lat": 2865,
+                "lng": 2573
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 2862,
+                "lng": 2570
+              },
+              "topRight": {
+                "lat": 2867,
+                "lng": 2577
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Kringk in the building east of the bank. (Chat 2)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Spring Stones",
+            "objectLocation": [
+              {
+                "lat": 2864,
+                "lng": 2579
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 2863,
+                "lng": 2578
+              },
+              "topRight": {
+                "lat": 2864,
+                "lng": 2579
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Open the quest log to find what log/plant goes with the examination message.",
+        "Place eucalyptus logs and the correct combination of plants in the fire pit and light them. The insects won't disperse."
+      ]
+    },
+    {
+      "stepDescription": "Give her four wolf bones and eight larupia furs. (Chat 1)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Seegud",
+            "npcLocation": {
+              "lat": 2856,
+              "lng": 2569
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2854,
+                "lng": 2568
+              },
+              "topRight": {
+                "lat": 2857,
+                "lng": 2571
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Items needed: 16 eucalyptus logs, 7 each of the five types of herb (the maximum number you may need if you follow the method below)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Snarrk",
+            "npcLocation": {
+              "lat": 2866,
+              "lng": 2581
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2863,
+                "lng": 2580
+              },
+              "topRight": {
+                "lat": 2866,
+                "lng": 2582
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Disperse the insects from each of the pools. Each of the five pools will have a fire pit and a pile of stones beside it, with all pools sharing one common stone. This stone represents eucalyptus logs, which must be added to every fire. Examine the piles of stones for a detailed description of each stone."
+      ]
+    },
+    {
+      "stepDescription": "Talk to Balnea.",
+      "itemsNeeded": [
+        "This fire pit requires eucalyptus logs and one of the five plants in order to disperse the insects. By trial and error, determine which plant is needed for this pool and memorise the corresponding stone. If done correctly, the swarm of insects above the pool will vanish completely."
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Thermal Bath Firepit",
+            "objectLocation": [
+              {
+                "lat": 2865,
+                "lng": 2578
+              },
+              {
+                "lat": 2866,
+                "lng": 2578
+              },
+              {
+                "lat": 2866,
+                "lng": 2579
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 2864,
+                "lng": 2578
+              },
+              "topRight": {
+                "lat": 2866,
+                "lng": 2580
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Seegud north-east of the bank.",
+      "itemsNeeded": [
+        "this fire pit requires eucalyptus logs and two plants. The primary plant of this pool is the same as the plant used at the thermal bath. Figure out the secondary plant by using any of the other four unused plants, until the correct combination is discovered."
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Mud Bath Firepit",
+            "objectLocation": [
+              {
+                "lat": 2861,
+                "lng": 2602
+              },
+              {
+                "lat": 2860,
+                "lng": 2602
+              },
+              {
+                "lat": 2860,
+                "lng": 2603
+              },
+              {
+                "lat": 2861,
+                "lng": 2603
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 2860,
+                "lng": 2601
+              },
+              "topRight": {
+                "lat": 2861,
+                "lng": 2603
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "To clear the bugs, eucalyptus logs and different plant types are needed.",
+      "itemsNeeded": [
+        "this fire pit requires eucalyptus logs and two plants. Be sure to use the secondary plant from the mud bath as the primary plant for this pool. Find the secondary plant by using the three remaining herbs until the correct one is found."
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Salt-Water Firepit",
+            "objectLocation": [
+              {
+                "lat": 2866,
+                "lng": 2561
+              },
+              {
+                "lat": 2865,
+                "lng": 2561
+              },
+              {
+                "lat": 2865,
+                "lng": 2562
+              },
+              {
+                "lat": 2866,
+                "lng": 2562
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 2865,
+                "lng": 2560
+              },
+              "topRight": {
+                "lat": 2866,
+                "lng": 2562
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Plant and rock combinations are different for every player, using a reference chart like below will help with the process.",
+      "itemsNeeded": [
+        "this fire pit requires eucalyptus logs and two plants. Use the secondary plant for the salt-water spring as the primary plant for this spring. One of the two remaining herbs will be the secondary plant, so try them both."
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Sulphur Spring Firepit",
+            "objectLocation": [
+              {
+                "lat": 2851,
+                "lng": 2533
+              },
+              {
+                "lat": 2850,
+                "lng": 2533
+              },
+              {
+                "lat": 2850,
+                "lng": 2534
+              },
+              {
+                "lat": 2851,
+                "lng": 2534
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 2850,
+                "lng": 2533
+              },
+              "topRight": {
+                "lat": 2851,
+                "lng": 2535
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Collect 16 eucalyptus logs and 7 each of the five type of herbs from outside of Oo'glog.",
+      "itemsNeeded": [
+        "This fire pit requires eucalyptus logs and three plants. Use the secondary plant from the mud bath, the secondary plant from the sulphur pool and the unused herb."
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Bandos Firepit",
+            "objectLocation": [
+              {
+                "lat": 2846,
+                "lng": 2518
+              },
+              {
+                "lat": 2845,
+                "lng": 2518
+              },
+              {
+                "lat": 2845,
+                "lng": 2519
+              },
+              {
+                "lat": 2846,
+                "lng": 2519
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 2844,
+                "lng": 2517
+              },
+              "topRight": {
+                "lat": 2846,
+                "lng": 2519
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Head north-west of Seegud to the saltwater spring.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Seegud",
+            "npcLocation": {
+              "lat": 2856,
+              "lng": 2569
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2854,
+                "lng": 2568
+              },
+              "topRight": {
+                "lat": 2857,
+                "lng": 2571
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Examine the stones between the spring and the fire pit.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Balnea",
+            "npcLocation": {
+              "lat": 2839,
+              "lng": 2557
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2838,
+                "lng": 2556
+              },
+              "topRight": {
+                "lat": 2840,
+                "lng": 2558
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Open the quest log to find what log/plant goes with the examination message.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Chief Tess",
+            "npcLocation": {
+              "lat": 2853,
+              "lng": 2547
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2851,
+                "lng": 2545
+              },
+              "topRight": {
+                "lat": 2856,
+                "lng": 2550
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Place eucalyptus logs and the correct combination of plants in the fire pit and light them. The insects won't disperse.",
+      "itemsNeeded": [
+        "4 logs ",
+        "6 fever grass"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Western Kebbit Traps",
+            "objectLocation": [
+              {
+                "lat": 2861,
+                "lng": 2545
+              },
+              {
+                "lat": 2862,
+                "lng": 2545
+              },
+              {
+                "lat": 2860,
+                "lng": 2548
+              },
+              {
+                "lat": 2860,
+                "lng": 2549
+              },
+              {
+                "lat": 2864,
+                "lng": 2550
+              },
+              {
+                "lat": 2864,
+                "lng": 2551
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 2860,
+                "lng": 2545
+              },
+              "topRight": {
+                "lat": 2865,
+                "lng": 2551
+              }
+            }
+          },
+          {
+            "name": "Eastern Kebbit Traps",
+            "objectLocation": [
+              {
+                "lat": 2866,
+                "lng": 2566
+              },
+              {
+                "lat": 2865,
+                "lng": 2566
+              },
+              {
+                "lat": 2863,
+                "lng": 2567
+              },
+              {
+                "lat": 2863,
+                "lng": 2568
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 2863,
+                "lng": 2566
+              },
+              "topRight": {
+                "lat": 2866,
+                "lng": 2569
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Use the deadfall traps to catch diseased kebbits. To bait the trap, use fever grass on it, then light a fever grass from the inventory and move around.",
+        "Do this until all four kebbits are caught."
+      ]
+    },
+    {
+      "stepDescription": "Talk to Seegud (Chat 2•1).",
+      "itemsNeeded": [
+        "tansymum"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Bird Snare Setup Location",
+            "objectLocation": [
+              {
+                "lat": 2838,
+                "lng": 2538
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 2834,
+                "lng": 2530
+              },
+              "topRight": {
+                "lat": 2843,
+                "lng": 2542
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Light a  tansymum from the inventory and move around.",
+        "Do this until all five birds are caught."
+      ]
+    },
+    {
+      "stepDescription": "Head back to the spring and talk to Snarrk.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Disperse the insects from each of the pools. Each of the five pools will have a fire pit and a pile of stones beside it, with all pools sharing one common stone. This stone represents eucalyptus logs, which must be added to every fire. Examine the piles of stones for a detailed description of each stone.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Platypodes Location",
+            "objectLocation": [
+              {
+                "lat": 2853,
+                "lng": 2527
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 2850,
+                "lng": 2523
+              },
+              "topRight": {
+                "lat": 2856,
+                "lng": 2530
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Once the box shakes, check the trap.",
+        "Burn lavender from the inventory and move around the area."
+      ]
+    },
+    {
+      "stepDescription": "Start with the thermal bath, north-east of Seegud. This fire pit requires eucalyptus logs and one of the five plants in order to disperse the insects. By trial and error, determine which plant is needed for this pool and memorise the corresponding stone. If done correctly, the swarm of insects above the pool will vanish completely.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Platypodes Release Location",
+            "objectLocation": [
+              {
+                "lat": 2863,
+                "lng": 2613
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 2862,
+                "lng": 2611
+              },
+              "topRight": {
+                "lat": 2865,
+                "lng": 2614
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Dismiss any followers before continuing."
+      ]
+    },
+    {
+      "stepDescription": "Next, move to the mud bath to the east -- this fire pit requires eucalyptus logs and two plants. The primary plant of this pool is the same as the plant used at the thermal bath. Figure out the secondary plant by using any of the other four unused plants, until the correct combination is discovered.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Balnea",
+            "npcLocation": {
+              "lat": 2839,
+              "lng": 2557
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2838,
+                "lng": 2556
+              },
+              "topRight": {
+                "lat": 2840,
+                "lng": 2558
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Move to the salt-water spring west of the thermal bath -- this fire pit requires eucalyptus logs and two plants. Be sure to use the secondary plant from the mud bath as the primary plant for this pool. Find the secondary plant by using the three remaining herbs until the correct one is found.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Now head to the sulphur spring -- this fire pit requires eucalyptus logs and two plants. Use the secondary plant for the salt-water spring as the primary plant for this spring. One of the two remaining herbs will be the secondary plant, so try them both.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Lastly, head to the Bandos pool -- this fire pit requires eucalyptus logs and three plants. Use the secondary plant from the mud bath, the secondary plant from the sulphur pool and the unused herb.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "After all of the bugs are taken care of, talk to Seegud.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Balnea. (Chat 1)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Chief Tess. (Chat 1•1)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Items needed: 4 logs and at least 6 fever grass",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Head to the salt-water spring.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Use the deadfall traps to catch diseased kebbits. To bait the trap, use fever grass on it, then light a fever grass from the inventory and move around.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Catch two from the western and eastern side.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Do this until all four kebbits are caught.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Set up a bird snare west of the bank.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Light a tansymum from the inventory and move around.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Do this until all five birds are caught.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Head west of Chief Tess and the sulphur spring.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Set up a box trap.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Burn lavender from the inventory and move around the area.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Once the box shakes, check the trap.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "When all four platypodes are caught, head to the north-east corner of the village and release them next to the plants in the water.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Dismiss any followers before continuing.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Balnea and do not skip the cutscene.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Quest complete!",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    }
+  ]
+}
