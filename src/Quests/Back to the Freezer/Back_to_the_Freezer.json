@@ -1,0 +1,3040 @@
+{
+  "questName": "Back to the Freezer",
+  "questSteps": [
+    {
+      "stepDescription": "Talk to Chuck in the Ardougne Zoo (Chat 1•✓)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Chuck",
+            "npcLocation": {
+              "lat": 3260,
+              "lng": 2613
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3259,
+                "lng": 2612
+              },
+              "topRight": {
+                "lat": 3261,
+                "lng": 2616
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Note down the blue text.",
+        "Alternatively, the Passphrase may also be found in your quest journal."
+      ]
+    },
+    {
+      "stepDescription": "Note down the blue text.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Skot or Mundsen",
+            "npcLocation": {
+              "lat": 3686,
+              "lng": 2645
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3685,
+                "lng": 2644
+              },
+              "topRight": {
+                "lat": 3687,
+                "lng": 2646
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "When prompted, tell them the passphrase from Chuck.",
+        "After telling the passphrase, finish the dialogue and cutscene."
+      ]
+    },
+    {
+      "stepDescription": "Alternatively, the Passphrase may also be found in your quest journal.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Dundee",
+            "npcLocation": {
+              "lat": 2939,
+              "lng": 3317
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2938,
+                "lng": 3316
+              },
+              "topRight": {
+                "lat": 2940,
+                "lng": 3318
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Equip the crocspeak amulet."
+      ]
+    },
+    {
+      "stepDescription": "In the Rellekka marketplace, talk to Skot or Mundsen.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Croc",
+            "npcLocation": {
+              "lat": 2939,
+              "lng": 3314
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2938,
+                "lng": 3313
+              },
+              "topRight": {
+                "lat": 2940,
+                "lng": 3315
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "When prompted, tell them the passphrase from Chuck.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "T.A.R.D.I.S.",
+            "objectLocation": [
+              {
+                "lat": 2919,
+                "lng": 3283
+              },
+              {
+                "lat": 2918,
+                "lng": 3283
+              },
+              {
+                "lat": 2918,
+                "lng": 3284
+              },
+              {
+                "lat": 2919,
+                "lng": 3284
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 2917,
+                "lng": 3282
+              },
+              "topRight": {
+                "lat": 2921,
+                "lng": 3285
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "After telling the passphrase, finish the dialogue and cutscene.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Chuck",
+            "npcLocation": {
+              "lat": 3260,
+              "lng": 2613
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3259,
+                "lng": 2612
+              },
+              "topRight": {
+                "lat": 3261,
+                "lng": 2616
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Note down the agent's favourite food Chuck tells you. Favourite food may be found in your quest journal."
+      ]
+    },
+    {
+      "stepDescription": "South-west of Pollnivneach, talk to Dundee, who will give you a crocspeak amulet. (Chat 1)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "T.A.R.D.I.S.",
+            "objectLocation": [
+              {
+                "lat": 2919,
+                "lng": 3283
+              },
+              {
+                "lat": 2918,
+                "lng": 3283
+              },
+              {
+                "lat": 2918,
+                "lng": 3284
+              },
+              {
+                "lat": 2919,
+                "lng": 3284
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 2917,
+                "lng": 3282
+              },
+              "topRight": {
+                "lat": 2921,
+                "lng": 3285
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Unequip any item in your cape and weapon slot.",
+        "With your clockwork suit in your backpack talk to any named penguin and you will automatically equip your clockwork suit.",
+        "If you don't have a clockwork suit with you return to the zoo and speak with Chuck. Chuck will give you a clockwork suit."
+      ]
+    },
+    {
+      "stepDescription": "Equip the crocspeak amulet.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Just west, talk to Croc. (Chat 4)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Emperor Wing",
+            "npcLocation": {
+              "lat": 2920,
+              "lng": 3288
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2919,
+                "lng": 3287
+              },
+              "topRight": {
+                "lat": 2921,
+                "lng": 3289
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "South-west, investigate the T.A.R.D.I.S..",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Elon",
+            "npcLocation": {
+              "lat": 2921,
+              "lng": 3289
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2920,
+                "lng": 3288
+              },
+              "topRight": {
+                "lat": 2922,
+                "lng": 3290
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Return to Chuck in Ardougne. (Chat 1)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Hugh",
+            "npcLocation": {
+              "lat": 2916,
+              "lng": 3285
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2915,
+                "lng": 3284
+              },
+              "topRight": {
+                "lat": 2917,
+                "lng": 3286
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Note down the agent's favourite food Chuck tells you. Favourite food may be found in your quest journal.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Gordon",
+            "npcLocation": {
+              "lat": 2914,
+              "lng": 3284
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2913,
+                "lng": 3283
+              },
+              "topRight": {
+                "lat": 2915,
+                "lng": 3285
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Gordon will give you a G.P.S.. If he does not, simply talk to him again."
+      ]
+    },
+    {
+      "stepDescription": "Return to the T.A.R.D.I.S.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Boat to Iceberg",
+            "objectLocation": [
+              {
+                "lat": 3736,
+                "lng": 2708
+              },
+              {
+                "lat": 3735,
+                "lng": 2708
+              },
+              {
+                "lat": 3734,
+                "lng": 2708
+              },
+              {
+                "lat": 3733,
+                "lng": 2708
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 3732,
+                "lng": 2707
+              },
+              "topRight": {
+                "lat": 3737,
+                "lng": 2709
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Unequip any item in your cape and weapon slot.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Mysterious Hatch ( Iceberg )",
+            "objectLocation": [
+              {
+                "lat": 4002,
+                "lng": 2652
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4001,
+                "lng": 2651
+              },
+              "topRight": {
+                "lat": 4003,
+                "lng": 2653
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "With your clockwork suit in your backpack talk to any named penguin and you will automatically equip your clockwork suit.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Mysterious Hatch ( Iceberg )",
+            "objectLocation": [
+              {
+                "lat": 4002,
+                "lng": 2652
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4001,
+                "lng": 2651
+              },
+              "topRight": {
+                "lat": 4003,
+                "lng": 2653
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "If you don't have a clockwork suit with you return to the zoo and speak with Chuck. Chuck will give you a clockwork suit.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Jim ( The Polar Bear )",
+            "npcLocation": {
+              "lat": 4004,
+              "lng": 2670
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4003,
+                "lng": 2669
+              },
+              "topRight": {
+                "lat": 4005,
+                "lng": 2671
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "In order, talk to the following penguins:",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Mysterious Hatch ( Iceberg )",
+            "objectLocation": [
+              {
+                "lat": 4002,
+                "lng": 2652
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4001,
+                "lng": 2651
+              },
+              "topRight": {
+                "lat": 4003,
+                "lng": 2653
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Emperor Wing (Chat 1•2)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Cupboard (Penguin Hideout)",
+            "objectLocation": [
+              {
+                "lat": 124,
+                "lng": 4983
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Exit the room and then head south to end of the hall.",
+        "Head west and go to the first hall to north.",
+        "Enter the large door leading to the large room in the centre of the bunker.",
+        "Enter the locker room to your west."
+      ]
+    },
+    {
+      "stepDescription": "Talk to Elon (Chat 2)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Gordon's Locker ( Penguin Hideout )",
+            "objectLocation": [
+              {
+                "lat": 93,
+                "lng": 4947
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Exit the large door to go back to the main hall"
+      ]
+    },
+    {
+      "stepDescription": "Talk to Hugh (Chat 2)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Crate's ( Hammer and Flax )",
+            "objectLocation": [
+              {
+                "lat": 77,
+                "lng": 4941
+              },
+              {
+                "lat": 74,
+                "lng": 4944
+              },
+              {
+                "lat": 74,
+                "lng": 4948
+              },
+              {
+                "lat": 74,
+                "lng": 4951
+              },
+              {
+                "lat": 69,
+                "lng": 4951
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Gordon (Chat 2•3)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Ice Shelf ( Penguin Hideout )",
+            "objectLocation": [
+              {
+                "lat": 113,
+                "lng": 4936
+              },
+              {
+                "lat": 113,
+                "lng": 4937
+              },
+              {
+                "lat": 113,
+                "lng": 4938
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Gordon will give you a G.P.S.. If he does not, simply talk to him again.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Ice Maker",
+            "objectLocation": [
+              {
+                "lat": 117,
+                "lng": 4938
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Use the hammer on the ice cubes to create the flax cap-ice-i-tor.",
+        "Use the flax cap-ice-i-tor on the de-lore-ing device (incomplete) for the de-lore-ing device.",
+        "Operate the de-lore-ing device. Images at this step are from the (past) bunker."
+      ]
+    },
+    {
+      "stepDescription": "Head to a pier north of Fremennik Province lodestone and north-east of Rellekka, travel to the Iceberg via the smaller boat.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "monkey wrench",
+            "objectLocation": [
+              {
+                "lat": 229,
+                "lng": 4961
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 228,
+                "lng": 4960
+              },
+              "topRight": {
+                "lat": 230,
+                "lng": 4962
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Locate with the G.P.S., follow the directions until you find the Mysterious Hatch.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Penguin Bongos and Cowbells",
+            "objectLocation": [
+              {
+                "lat": 303,
+                "lng": 4965
+              },
+              {
+                "lat": 303,
+                "lng": 4966
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Pick cabbage, use it on the device, operate the device again."
+      ]
+    },
+    {
+      "stepDescription": "Back to the Freezer secret bunker map images right here",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Man with a Dragon Pickaxe",
+            "objectLocation": [
+              {
+                "lat": 277,
+                "lng": 4967
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 275,
+                "lng": 4965
+              },
+              "topRight": {
+                "lat": 278,
+                "lng": 4968
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "To the north-east, right click Jim the polar bear and choose \"Tuxedo-Time\".",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Gordon ( The Past )",
+            "npcLocation": {
+              "lat": 93,
+              "lng": 4934
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 92,
+                "lng": 4933
+              },
+              "topRight": {
+                "lat": 94,
+                "lng": 4935
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Interact with the hatch and type in \"1234\" to enter.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Elon ( The Past )",
+            "npcLocation": {
+              "lat": 113,
+              "lng": 4950
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 112,
+                "lng": 4949
+              },
+              "topRight": {
+                "lat": 114,
+                "lng": 4951
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Search the interactable cupboard in the north-east room for a hat.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Fishing Rod",
+            "objectLocation": [
+              {
+                "lat": 67,
+                "lng": 4954
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 66,
+                "lng": 4953
+              },
+              "topRight": {
+                "lat": 70,
+                "lng": 4956
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Exit the room and then head south to end of the hall.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Cog and Coolant Holder",
+            "objectLocation": [
+              {
+                "lat": 77,
+                "lng": 4941
+              },
+              {
+                "lat": 74,
+                "lng": 4944
+              },
+              {
+                "lat": 74,
+                "lng": 4948
+              },
+              {
+                "lat": 74,
+                "lng": 4951
+              },
+              {
+                "lat": 69,
+                "lng": 4951
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Use the cog on the fishing rod to create the 'fishvention' rod."
+      ]
+    },
+    {
+      "stepDescription": "Head west and go to first hall to north.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Enter the large door leading to the large room in the centre of the bunker.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Pure S-now",
+            "objectLocation": [
+              {
+                "lat": 101,
+                "lng": 4936
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 99,
+                "lng": 4935
+              },
+              "topRight": {
+                "lat": 102,
+                "lng": 4938
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Enter the locker room to your west and search Gordon's locker on the west side for the de-lore-ing device parts list and de-lore-ing device (incomplete).",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Crate ( Past Penguin Base )",
+            "npcLocation": {
+              "lat": 110,
+              "lng": 4933
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 109,
+                "lng": 4932
+              },
+              "topRight": {
+                "lat": 110,
+                "lng": 4934
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Exit the large door to go back to the main hall",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Mysterious Ice Block",
+            "objectLocation": [
+              {
+                "lat": 107,
+                "lng": 4932
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 106,
+                "lng": 4931
+              },
+              "topRight": {
+                "lat": 108,
+                "lng": 4933
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Enter the southwest room full of crates and search or look in them until you find both a hammer and flax.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Ice Maker",
+            "objectLocation": [
+              {
+                "lat": 117,
+                "lng": 4938
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 116,
+                "lng": 4937
+              },
+              "topRight": {
+                "lat": 118,
+                "lng": 4939
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "In the north-western room, Peruse the ice shelf (looks like a normal shelf) for The Penguin Book of Gielinor.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Buzz",
+            "npcLocation": {
+              "lat": 108,
+              "lng": 4986
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 107,
+                "lng": 4985
+              },
+              "topRight": {
+                "lat": 110,
+                "lng": 4988
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Leave the bunker via the door to the north."
+      ]
+    },
+    {
+      "stepDescription": "Behind you, Get Ice from the Ice Maker to take ice cubes.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Jim ( The Polar Bear )",
+            "npcLocation": {
+              "lat": 4004,
+              "lng": 2670
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4003,
+                "lng": 2669
+              },
+              "topRight": {
+                "lat": 4005,
+                "lng": 2671
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Use the hammer on the ice cubes to create the flax cap-ice-i-tor.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Killerwatt Portal",
+            "objectLocation": [
+              {
+                "lat": 3362,
+                "lng": 3109
+              },
+              {
+                "lat": 3362,
+                "lng": 3110
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 3362,
+                "lng": 3107
+              },
+              "topRight": {
+                "lat": 3364,
+                "lng": 3111
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Equip your insulated boots and prepare for combat.",
+        "Enter the eastern room, then the Interdimensional Rift.",
+        "Kill 10 Killerwatts until you have 121 killerwatt energy."
+      ]
+    },
+    {
+      "stepDescription": "Use the flax cap-ice-i-tor on the de-lore-ing device (incomplete) for the de-lore-ing device.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "name": "Boat to Iceberg",
+            "objectLocation": [
+              {
+                "lat": 3736,
+                "lng": 2708
+              },
+              {
+                "lat": 3735,
+                "lng": 2708
+              },
+              {
+                "lat": 3734,
+                "lng": 2708
+              },
+              {
+                "lat": 3733,
+                "lng": 2708
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 3732,
+                "lng": 2707
+              },
+              "topRight": {
+                "lat": 3737,
+                "lng": 2709
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Operate the de-lore-ing device. Images at this step are from the (past) bunker.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Jim ( The Polar Bear )",
+            "npcLocation": {
+              "lat": 4004,
+              "lng": 2670
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4003,
+                "lng": 2669
+              },
+              "topRight": {
+                "lat": 4005,
+                "lng": 2671
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Take the monkey wrench (north & slightly east), use it on the de-lore-ing device then operate the device again.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "name": "Mysterious Hatch ( Iceberg )",
+            "objectLocation": [
+              {
+                "lat": 4002,
+                "lng": 2652
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4001,
+                "lng": 2651
+              },
+              "topRight": {
+                "lat": 4003,
+                "lng": 2653
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Take the penguin bongos and cowbells in the north-west corner, use either on the device, operate the device again.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Elon ( The Past )",
+            "npcLocation": {
+              "lat": 113,
+              "lng": 4950
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 112,
+                "lng": 4949
+              },
+              "topRight": {
+                "lat": 114,
+                "lng": 4951
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Fill the energy container to the north-west with your divination energy."
+      ]
+    },
+    {
+      "stepDescription": "Pick cabbage, use it on the device, operate the device again.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Battery Control Station",
+            "objectLocation": [
+              {
+                "lat": 120,
+                "lng": 4947
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 118,
+                "lng": 4947
+              },
+              "topRight": {
+                "lat": 121,
+                "lng": 4948
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Solve the puzzle, DO NOT RESET UNTIL YOU HAVE FAILED TO 10 OR ELSE YOU WILL HAVE A NEW PUZZLE TO COMPLETE.",
+        "You have 10 tries to get the pattern correct. ",
+        "A Grey Square means a energy is in the correct spot. A White Square mean a energy is correct but in the wrong spot.",
+        "GREY SQUARES DO NOT CORRELATE TO THE POSITION.",
+        "Look in quest images to see an example and solution."
+      ]
+    },
+    {
+      "stepDescription": "Speak to the man with a dragon pickaxe, use worthless old boots on the device, operate the device one last time.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Elon ( The Past )",
+            "npcLocation": {
+              "lat": 113,
+              "lng": 4950
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 112,
+                "lng": 4949
+              },
+              "topRight": {
+                "lat": 114,
+                "lng": 4951
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Gordon in the south-western room.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Gordon ( The Past )",
+            "npcLocation": {
+              "lat": 92,
+              "lng": 4934
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 91,
+                "lng": 4933
+              },
+              "topRight": {
+                "lat": 94,
+                "lng": 4935
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Elon in the centre of the bunker.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Hugh ( The Past )",
+            "npcLocation": {
+              "lat": 121,
+              "lng": 4932
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Get the fishing rod from the room south of the big door.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Emperor Wing ( The Past )",
+            "npcLocation": {
+              "lat": 105,
+              "lng": 4961
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 104,
+                "lng": 4960
+              },
+              "topRight": {
+                "lat": 106,
+                "lng": 4962
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Go to the crate room and search until you have both the cog and coolant holder.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "T.A.R.D.I.S.",
+            "objectLocation": [
+              {
+                "lat": 115,
+                "lng": 4958
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 114,
+                "lng": 4957
+              },
+              "topRight": {
+                "lat": 116,
+                "lng": 4959
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Use the cog on the fishing rod to create the 'fishvention' rod.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Chuck",
+            "npcLocation": {
+              "lat": 3260,
+              "lng": 2613
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3259,
+                "lng": 2612
+              },
+              "topRight": {
+                "lat": 3261,
+                "lng": 2616
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Gather Pure S-now in the western room - wait until you have gathered all 2,000. (Process takes no time at all)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Search the crate north of the Mysterious Ice Block for a lemon.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Investigate the Mysterious ice block to craft 2000 lemon sole runes.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Click on the Ice Maker in the north-western room to create cool-ant and an ice box.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Buzz in the prison to the east for 21 killerwatt energy.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Leave the bunker via the door to the north.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Walk east, talk to Jim the polar bear to exit your disguise. (Chat 1)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Equip your insulated boots and prepare for combat.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Make your way to the top floor of Draynor Manor (staircase then ladder).",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Enter the eastern room, then the Interdimensional Rift.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Kill 10 Killerwatts until you have 121 killerwatt energy.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Return to the iceberg.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Head to a pier north of Fremennik Province lodestone and north-east of Rellekka, travel to the Iceberg via the smaller boat.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Head to north-east of the iceberg, talk with Jim the polar bear, right click \"Tuxedo-Time\".",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Re-enter the bunker via the Mysterious Hatch.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "In the centre of the bunker, talk to Elon to give him all the items.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Fill the energy container to the north-west with your divination energy.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Configure the battery control station, north-west.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Solve the puzzle, DO NOT RESET UNTIL YOU HAVE FAILED TO 10 OR ELSE YOU WILL HAVE A NEW PUZZLE TO COMPLETE. You have 10 tries to get the pattern correct. A Grey Square means a energy is in the correct spot. A White Square mean a energy is correct but in the wrong spot. GREY SQUARES DO NOT CORRELATE TO THE POSITION. Look in quest images to see and example and solution.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Once complete, speak to the following penguins, in order:",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Elon, in the same (central) room, roaming around T.A.R.D.I.S.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Gordon, in the south-west room (northern part).",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Hugh roaming around the north-west room.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Emperor Wing, in the central room again, easy to recognise due to his size.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Click the T.A.R.D.I.S. in the centre for a cutscene.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Return to Chuck. (Chat 1)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Quest complete!",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    }
+  ]
+}

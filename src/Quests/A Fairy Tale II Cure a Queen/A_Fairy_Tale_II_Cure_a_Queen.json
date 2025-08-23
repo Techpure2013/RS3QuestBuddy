@@ -1,0 +1,1556 @@
+{
+  "questName": "A Fairy Tale II Cure a Queen",
+  "questSteps": [
+    {
+      "stepDescription": "Talk to Martin the Master Gardener in the Draynor Market. (Chat 2•✓)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Martin the Master Gardener",
+            "npcLocation": {
+              "lat": 3258,
+              "lng": 3075
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3255,
+                "lng": 3073
+              },
+              "topRight": {
+                "lat": 3261,
+                "lng": 3078
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "After 5 minutes have elapsed, talk to him again. (Chat 2)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Martin the Master Gardener",
+            "npcLocation": {
+              "lat": 3258,
+              "lng": 3075
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3255,
+                "lng": 3073
+              },
+              "topRight": {
+                "lat": 3261,
+                "lng": 3078
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Go to Fairy Nuff's grotto, north of the Zanaris bank.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Fairy Nuffs Grotto",
+            "objectLocation": [
+              {
+                "lat": 4466,
+                "lng": 2384
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4465,
+                "lng": 2383
+              },
+              "topRight": {
+                "lat": 4467,
+                "lng": 2385
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "After a short cutscene, enter the house and pick up the Healing Certificate from the floor in the south-east corner.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Fairy Nuffs House",
+            "objectLocation": [
+              {
+                "lat": 4471,
+                "lng": 2387
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4470,
+                "lng": 2383
+              },
+              "topRight": {
+                "lat": 4474,
+                "lng": 2388
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Right-click study on the certificate. (You won't be able to reach the Fairy Resistance HQ if you don't \"study\" it)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Use the certificate with the Fairy chef, south of the bank. She will tell you that she's seen similar inscriptions on a sign near the mysterious ruins, that is the cosmic altar, in southern Zanaris.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Fairy Chef",
+            "npcLocation": {
+              "lat": 4440,
+              "lng": 2381
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4439,
+                "lng": 2380
+              },
+              "topRight": {
+                "lat": 4441,
+                "lng": 2383
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Read the rune temple sign, on the ground south of the Cosmic Altar.\nTalk to the Fairy Godfather (located in the Throne Room) about the Queen being missing. (Chat 1•1•1)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Rune Temple Sign",
+            "objectLocation": [
+              {
+                "lat": 4369,
+                "lng": 2408
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4369,
+                "lng": 2407
+              },
+              "topRight": {
+                "lat": 4370,
+                "lng": 2409
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to the Co-ordinator just north at the crossroads. (Chat 2)",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Fairy Co-ordinator",
+            "npcLocation": {
+              "lat": 4451,
+              "lng": 2451
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4448,
+                "lng": 2449
+              },
+              "topRight": {
+                "lat": 4453,
+                "lng": 2454
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Fairy Fixit near the fairy ring, south-west of the wheat field.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Fairy Fixit",
+            "npcLocation": {
+              "lat": 4434,
+              "lng": 2409
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4433,
+                "lng": 2408
+              },
+              "topRight": {
+                "lat": 4436,
+                "lng": 2411
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Equip your Dramen staff, click on the fairy ring and go to each of these codes in this order to reach the hideout: AIR, DLR, DJQ (this may seem like it failed, but continue to the next code anyway), AJS.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "In the Fairy Resistance Hideout, talk to Fairy Nuff and Fairy Very Wise in the northeastern clearing.\nGo back (via the fairy ring) and pickpocket the Fairy Godfather for the queen's secateurs (may take several attempts). The Fairy Godfather, Fat Rocco and Slim Louie may need to be looking the other way. (ie. Stand east of him and wait until he looks west and both his guards are looking north).",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Fairy Very Wise",
+            "npcLocation": {
+              "lat": 4447,
+              "lng": 2279
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4446,
+                "lng": 2278
+              },
+              "topRight": {
+                "lat": 4448,
+                "lng": 2280
+              }
+            }
+          },
+          {
+            "npcName": "Fairy Nuff",
+            "npcLocation": {
+              "lat": 4457,
+              "lng": 2280
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4456,
+                "lng": 2279
+              },
+              "topRight": {
+                "lat": 4458,
+                "lng": 2281
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Go back to the hideout with the fairy ring (\"Fairy Resistance HQ\").",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Fairy Godfather",
+            "npcLocation": {
+              "lat": 4430,
+              "lng": 2443
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4429,
+                "lng": 2442
+              },
+              "topRight": {
+                "lat": 4432,
+                "lng": 2445
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        " The Fairy Godfather, Fat Rocco and Slim Louie may need to be looking the other way. (ie. Stand east of him and wait until he looks west and both his guards are looking north)."
+      ]
+    },
+    {
+      "stepDescription": "Talk to Fairy Nuff.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Fairy Nuff",
+            "npcLocation": {
+              "lat": 4457,
+              "lng": 2280
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4456,
+                "lng": 2279
+              },
+              "topRight": {
+                "lat": 4458,
+                "lng": 2281
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Go back to a fairy ring and use the code CKP.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Fairy Headquarters Fairy Ring",
+            "objectLocation": [
+              {
+                "lat": 4426,
+                "lng": 2253
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4425,
+                "lng": 2252
+              },
+              "topRight": {
+                "lat": 4427,
+                "lng": 2254
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Wait 2 minutes and pick a starflower.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Starflower",
+            "objectLocation": [
+              {
+                "lat": 4840,
+                "lng": 2070
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4839,
+                "lng": 2069
+              },
+              "topRight": {
+                "lat": 4841,
+                "lng": 2071
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Make sure you have armour required to fight one or multiple Goraks.",
+      "itemsNeeded": [
+        "Combat Gear",
+        "Food"
+      ],
+      "itemsRecommended": [
+        "Water Spell's Recommended"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Gorak 1 (Gorak Plane)",
+            "objectLocation": [
+              {
+                "lat": 5350,
+                "lng": 3034
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 5349,
+                "lng": 3033
+              },
+              "topRight": {
+                "lat": 5351,
+                "lng": 3035
+              }
+            }
+          },
+          {
+            "name": "Gorak 2 (Gorak Plane)",
+            "objectLocation": [
+              {
+                "lat": 5347,
+                "lng": 3032
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 5346,
+                "lng": 3031
+              },
+              "topRight": {
+                "lat": 5348,
+                "lng": 3033
+              }
+            }
+          },
+          {
+            "name": "Gorak 3 (Gorak Plane)",
+            "objectLocation": [
+              {
+                "lat": 5345,
+                "lng": 3036
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 5344,
+                "lng": 3035
+              },
+              "topRight": {
+                "lat": 5346,
+                "lng": 3037
+              }
+            }
+          },
+          {
+            "name": "Gorak 4 (Gorak Plane)",
+            "objectLocation": [
+              {
+                "lat": 5344,
+                "lng": 3040
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 5343,
+                "lng": 3039
+              },
+              "topRight": {
+                "lat": 5345,
+                "lng": 3041
+              }
+            }
+          },
+          {
+            "name": "Gorak 5 (Gorak Plane)",
+            "objectLocation": [
+              {
+                "lat": 5347,
+                "lng": 3043
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 5346,
+                "lng": 3042
+              },
+              "topRight": {
+                "lat": 5348,
+                "lng": 3044
+              }
+            }
+          },
+          {
+            "name": "Gorak 6 (Gorak Plane)",
+            "objectLocation": [
+              {
+                "lat": 5350,
+                "lng": 3041
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 5349,
+                "lng": 3040
+              },
+              "topRight": {
+                "lat": 5351,
+                "lng": 3042
+              }
+            }
+          },
+          {
+            "name": "Gorak 7 (Gorak Plane)",
+            "objectLocation": [
+              {
+                "lat": 5347,
+                "lng": 3052
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 5346,
+                "lng": 3051
+              },
+              "topRight": {
+                "lat": 5348,
+                "lng": 3053
+              }
+            }
+          },
+          {
+            "name": "Gorak 8 (Gorak Plane)",
+            "objectLocation": [
+              {
+                "lat": 5362,
+                "lng": 3037
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 5361,
+                "lng": 3036
+              },
+              "topRight": {
+                "lat": 5363,
+                "lng": 3038
+              }
+            }
+          },
+          {
+            "name": "Gorak 9 (Gorak Plane)",
+            "objectLocation": [
+              {
+                "lat": 5362,
+                "lng": 3035
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 5361,
+                "lng": 3034
+              },
+              "topRight": {
+                "lat": 5363,
+                "lng": 3036
+              }
+            }
+          },
+          {
+            "name": "Gorak 10 (Gorak Plane)",
+            "objectLocation": [
+              {
+                "lat": 5349,
+                "lng": 3034
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          },
+          {
+            "name": "Gorak 11 (Gorak Plane)",
+            "objectLocation": [
+              {
+                "lat": 5353,
+                "lng": 3023
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 5352,
+                "lng": 3022
+              },
+              "topRight": {
+                "lat": 5354,
+                "lng": 3024
+              }
+            }
+          },
+          {
+            "name": "Gorak 12 (Gorak Plane)",
+            "objectLocation": [
+              {
+                "lat": 5349,
+                "lng": 3034
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Kill Goraks until you get Gorak claws.",
+        "Grind the gorak claw."
+      ]
+    },
+    {
+      "stepDescription": "Go back to a fairy ring and use the code DIR.",
+      "itemsNeeded": [
+        "Starflower",
+        "Vial of Water"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Kill Goraks until you get Gorak claws.",
+      "itemsNeeded": [
+        "Gorak Powder",
+        "Unf Potion"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Grind the gorak claw.",
+      "itemsNeeded": [
+        "Nuff's certificate"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Fairy Headquarters Fairy Ring",
+            "objectLocation": [
+              {
+                "lat": 4426,
+                "lng": 2253
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4425,
+                "lng": 2252
+              },
+              "topRight": {
+                "lat": 4427,
+                "lng": 2254
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "You still need to have Nuff's certificate in your inventory for it to work.",
+        "by selecting the \"Fairy Resistance HQ\" option 4 times in the travel log."
+      ]
+    },
+    {
+      "stepDescription": "Use the starflower on the vial of water.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Fairy Nuff",
+            "npcLocation": {
+              "lat": 4457,
+              "lng": 2280
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4456,
+                "lng": 2279
+              },
+              "topRight": {
+                "lat": 4458,
+                "lng": 2281
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Use the Gorak claw powder on the Magic essence (unf).",
+      "itemsNeeded": [
+        "Magic Esssence Potion"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Stretcher Fairy HQ",
+            "objectLocation": [
+              {
+                "lat": 4453,
+                "lng": 2281
+              },
+              {
+                "lat": 4452,
+                "lng": 2281
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4451,
+                "lng": 2281
+              },
+              "topRight": {
+                "lat": 4453,
+                "lng": 2282
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Go back to the Resistance Hideout by equipping your Dramen staff and go to each of these codes in this order to reach the hideout: AIR, DLR, DJQ (right-click fairy ring to \"select Destination\" for quicker travel), and finally AJS or by selecting the \"Fairy Resistance HQ\" option 4 times in the travel log. You still need to have Nuff's certificate in your inventory for it to work.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Fairy Queen",
+            "npcLocation": {
+              "lat": 4454,
+              "lng": 2282
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 4453,
+                "lng": 2281
+              },
+              "topRight": {
+                "lat": 4455,
+                "lng": 2283
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to Fairy Nuff before giving the queen the magic essence or it wont work.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "At the Resistance Hideout, right-click use the magic essence on the queen, laying on the stretcher near Fairy Nuff.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Talk to the Fairy Queen.",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Quest complete!",
+      "itemsNeeded": [
+        "none"
+      ],
+      "itemsRecommended": [
+        "none"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        ""
+      ]
+    }
+  ]
+}

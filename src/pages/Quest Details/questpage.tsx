@@ -6,7 +6,8 @@ import React, {
 	useReducer,
 } from "react";
 import { useLocation } from "react-router-dom";
-import { ActionIcon, Box, Button, Flex, Modal, Stepper } from "@mantine/core";
+import { Accordion, ActionIcon, Box, Button, Flex, Modal } from "@mantine/core";
+import { CompactQuestStep } from "./Quest Detail Components/QuestStepDisplay";
 import "@mantine/core/styles/Stepper.css";
 import "@mantine/core/styles/Accordion.css";
 import "@mantine/core/styles.css";
@@ -23,7 +24,8 @@ import {
 import { useQuestPaths } from "./../../Fetchers/useQuestData";
 import { useQuestControllerStore } from "./../../Handlers/HandlerStore";
 import { createRoot } from "react-dom/client";
-import { DiagReader } from "./dialogsolver";
+import { Stack } from "@mantine/core"; // Add Stack to your Mantine imports
+import { QuestImage } from "./../../Fetchers/handleNewImage";
 import { IconArrowBack, IconCheck } from "@tabler/icons-react";
 import { Settings } from "./../Settings/Settings";
 import { useDisclosure } from "@mantine/hooks";
@@ -89,7 +91,7 @@ const QuestPage: React.FC = () => {
 		expandAllAccordions: "expandAllAccordions",
 		dialogOption: "dialogSolverOption",
 	};
-	const reader = new DiagReader();
+
 	const qpname = useLocation();
 	let { questName } = qpname.state;
 	const [opened, { open, close }] = useDisclosure(false);
@@ -208,7 +210,7 @@ const QuestPage: React.FC = () => {
 		document.addEventListener("keydown", handleKeyDown);
 		return () => {
 			console.log("clearing intervals");
-			clearAllIntervals();
+
 			document.removeEventListener("keydown", handleKeyDown);
 		};
 	}, []);
@@ -238,11 +240,6 @@ const QuestPage: React.FC = () => {
 	if (questName == "Underground Pass" || questName == "Regicide") {
 		gridActive = true;
 	}
-	const clearAllIntervals = () => {
-		clearTimeout(reader.timeoutID);
-		reader.intervalIds.forEach(clearInterval);
-		reader.intervalIds = [];
-	};
 
 	function copyStyle(
 		_from: Window,
@@ -275,6 +272,13 @@ const QuestPage: React.FC = () => {
 		if (prevStep > 0) {
 			scrollIntoView(prevStep);
 		}
+	};
+	const sanitizeStringForMatching = (input: string) => {
+		if (!input) return "";
+		return input
+			.trim()
+			.replace(/[^\w\s]/gi, "")
+			.toLowerCase();
 	};
 	const handlePopOut = (
 		_index: number,
@@ -392,13 +396,30 @@ const QuestPage: React.FC = () => {
 			}
 		}
 	};
-	const setActiveAndScroll = (nextStep: number): void => {
-		if (nextStep >= 0 && nextStep < questSteps!.length) {
+	const setActiveAndScroll = (value: string | null) => {
+		const nextStep = value === null ? -1 : parseInt(value, 10);
+		if (!isNaN(nextStep)) {
 			setActive(nextStep);
-			setHighestStepVisited((hSC) => Math.max(hSC, nextStep));
-			scrollIntoView(nextStep);
+			if (nextStep !== -1) {
+				setHighestStepVisited((hSC) => Math.max(hSC, nextStep));
+			}
 		}
 	};
+
+	// Add this new useEffect to handle the scrolling side-effect
+	useEffect(() => {
+		// Only scroll if a step is actually active
+		if (active === -1) return;
+
+		const timer = setTimeout(() => {
+			const element = document.getElementById(active.toString());
+			if (element) {
+				element.scrollIntoView({ behavior: "smooth", block: "center" });
+			}
+		}, 300); // 300ms is a safer delay to allow the accordion animation to finish
+
+		return () => clearTimeout(timer); // Cleanup the timeout
+	}, [active]);
 	function openCoffee(): void {
 		const newWindow = window.open("https://buymeacoffee.com/rs3questbuddy");
 		if (newWindow) newWindow.opener = null;
@@ -430,13 +451,14 @@ const QuestPage: React.FC = () => {
 	};
 
 	const scrollIntoView = (step: number) => {
+		// FIX 1: Access the stepDescription property for the dialog solver
 		if (questSteps[step] !== undefined) {
 			if (uiState.dialogOption === true) {
-				stepCapture(questSteps[step]);
+				stepCapture(questSteps[step].stepDescription);
 			}
 		}
 
-		const element = document.getElementById(step.toString());
+		const element = document.getElementById((step + 1).toString());
 		if (element) {
 			element.scrollIntoView({ behavior: "smooth", block: "center" });
 		}
@@ -657,130 +679,47 @@ const QuestPage: React.FC = () => {
 				</>
 			) : (
 				<>
-					<Stepper
-						active={active}
-						orientation="vertical"
-						onStepClick={setActiveAndScroll}
+					<Accordion
+						value={active.toString()}
+						onChange={setActiveAndScroll}
+						styles={{
+							control: {
+								"&[data-active]": {
+									backgroundColor: "rgba(34, 139, 230, 0.15)", // Subtle highlight for active step
+								},
+							},
+						}}
 					>
-						{questSteps?.map((value, index) => {
-							// Log current step and imageList for debugging
+						{questSteps?.map((step, index) => {
+							// FIX: Use .filter() to find ALL matching images for the step
+							const matchedImages: QuestImage[] =
+								imageDetails.imageList?.filter((img) => {
+									const sanitizedImgDesc = sanitizeStringForMatching(
+										img.stepDescription,
+									);
+									const sanitizedStepDesc = sanitizeStringForMatching(
+										step.stepDescription,
+									);
+									return sanitizedImgDesc && sanitizedImgDesc === sanitizedStepDesc;
+								}) || [];
 
-							// Find image details matching this step
-							const matchedImages = imageDetails.imageList?.filter(
-								(img: { step: string }) => img.step === (index + 1).toString(),
-							);
-
-							return uiState.isHighlight ? (
-								<Stepper.Step
-									id={(index + 1).toString()}
-									className="stepperStep"
-									label={
-										<>
-											{`Step: ${index + 1}`}
-											{matchedImages &&
-												matchedImages.map(
-													(
-														_img: {
-															src: string;
-															height: number;
-															width: number;
-														},
-														imgIndex: React.Key | null | undefined,
-													) => (
-														<ActionIcon
-															key={imgIndex}
-															onClick={() =>
-																handlePopOut(index, _img.src, _img.height, _img.width)
-															}
-															styles={{
-																root: {
-																	marginLeft: ".313rem",
-																	verticalAlign: "center",
-																},
-															}}
-															color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-															size="sm"
-															variant="outline"
-															component="span" // Change to span to prevent button nesting
-														>
-															<IconPhotoFilled />
-														</ActionIcon>
-													),
-												)}
-										</>
-									}
+							return (
+								<CompactQuestStep
 									key={index}
-									color={active > index ? "#24BF58" : ""}
-									styles={{
-										stepDescription: {
-											color:
-												active > index
-													? "#24BF58"
-													: uiState.hasColor
-														? uiState.userColor
-														: "",
-										},
-										stepLabel: {
-											color: uiState.hasLabelColor ? uiState.userLabelColor : "",
-										},
-									}}
-									description={value}
-									allowStepSelect={true}
-								/>
-							) : (
-								<Stepper.Step
-									id={(index + 1).toString()}
-									className="stepperStep"
-									label={
-										<>
-											{`Step: ${index + 1}`}
-											{matchedImages &&
-												matchedImages.map(
-													(
-														_img: {
-															src: string;
-															height: number;
-															width: number;
-														},
-														imgIndex: React.Key | null | undefined,
-													) => (
-														<ActionIcon
-															key={imgIndex}
-															onClick={() =>
-																handlePopOut(index, _img.src, _img.height, _img.width)
-															}
-															styles={{
-																root: {
-																	marginLeft: ".313rem",
-																	verticalAlign: "center",
-																},
-															}}
-															color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
-															size="sm"
-															variant="outline"
-															component="span" // Change to span to prevent button nesting
-														>
-															<IconPhotoFilled />
-														</ActionIcon>
-													),
-												)}
-										</>
+									step={step}
+									index={index}
+									isCompleted={uiState.isHighlight && active > index}
+									// Pass the entire array of images
+									images={matchedImages}
+									// Pass a handler function for when an image icon is clicked
+									onImagePopOut={(src, height, width) =>
+										handlePopOut(index, src, height, width)
 									}
-									key={create_ListUUID()}
-									styles={{
-										stepLabel: {
-											color: uiState.hasLabelColor ? uiState.userLabelColor : "",
-										},
-									}}
-									description={value}
-									onClick={() => setActiveAndScroll}
-									allowStepSelect={true}
 								/>
 							);
 						})}
-					</Stepper>
-
-					<></>
+					</Accordion>
+					; ;<></>
 					{
 						<div className="prevNextGroup">
 							<div id="icons">

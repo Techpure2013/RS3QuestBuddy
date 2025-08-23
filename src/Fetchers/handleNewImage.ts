@@ -1,105 +1,96 @@
 import { useEffect } from "react";
 import { create } from "zustand";
 
-// Define the interface for individual image data
-interface QuestImage {
+export interface QuestImage {
 	step: string;
 	src: string;
 	width: number;
 	height: number;
+	stepDescription: string;
 }
+
 type ImageType = {
 	step: string;
 	src: string;
 	width: number;
 	height: number;
+	stepDescription: string;
 };
-// Define the type for the Zustand store
+
 type QuestImageStore = {
 	imageList: QuestImage[];
 	setQuestImages: (images: QuestImage[]) => void;
 };
 
-// Create the Zustand store for managing the quest images
 export const UseImageStore = create<QuestImageStore>((set) => ({
 	imageList: [],
 	setQuestImages: (images: QuestImage[]) => set({ imageList: images }),
 }));
 
-// Define the interface for the component's props (questName and QuestListJSON)
 interface QuestImageType {
 	questName: string;
 	QuestListJSON: string;
 }
 
-// QuestImageFetcher component that fetches and sets images
 export const QuestImageFetcher: React.FC<QuestImageType> = ({
 	questName,
 	QuestListJSON,
 }) => {
 	const { setQuestImages } = UseImageStore();
 
-	const fetchImages = async () => {
-		try {
-			// Fetch the JSON from the provided URL
-			const response = await fetch(QuestListJSON);
-			const imageList = await response.json();
-
-			// Check if the fetched data is an array
-			if (!Array.isArray(imageList)) {
-				console.error("QuestImageList.json is not an array.");
-				return;
-			}
-
-			// Sanitize the questName string for matching purposes
-			const sanitizeString = (input: string) =>
-				input.replace(/[^\w\s]/gi, "").toLowerCase();
-
-			const sanitizedQuestName = sanitizeString(questName.trim());
-
-			// Find the quest data from the imageList
-			const questInfo = imageList.find((quest: { name: string }) => {
-				if (quest.name) {
-					const sanitizedQuestNameInList = sanitizeString(quest.name.trim());
-
-					return sanitizedQuestNameInList === sanitizedQuestName;
-				}
-				return false; // Skip entries without a name
-			});
-			// If questInfo is not found or does not have images, log an error
-			if (!questInfo || !Array.isArray(questInfo.images)) {
-				console.error(
-					`Images not found or not an array for questName: ${questName}`
-				);
-				return;
-			}
-
-			// Process the images from the questInfo
-			const questImages: QuestImage[] = questInfo.images
-				.filter(
-					(image: ImageType) =>
-						typeof image.src === "string" && image.src.endsWith(".webp")
-				)
-				.map((image: ImageType, index: number) => ({
-					step: image.step, // Fallback to the index if no step is provided
-					src: `./Images/${questName.trim().replace(":", "")}/${image.src}`,
-					width: image.width,
-					height: image.height,
-				}));
-
-			// Update the Zustand store with the new images
-			setQuestImages(questImages);
-		} catch (error) {
-			console.error("Error fetching or processing QuestImageList.json:", error);
-		}
-	};
-
-	// Run the fetchImages function whenever questName changes
 	useEffect(() => {
-		fetchImages();
-	}, [questName, setQuestImages]);
+		const fetchImages = async () => {
+			try {
+				const response = await fetch(QuestListJSON);
+				const imageList = await response.json();
 
-	return null; // No UI to render here, just a side-effect hook
+				if (!Array.isArray(imageList)) {
+					console.error("QuestImageList.json is not an array.");
+					return;
+				}
+
+				const sanitizeString = (input: string) =>
+					input.replace(/[^\w\s]/gi, "").toLowerCase();
+
+				const sanitizedQuestName = sanitizeString(questName.trim());
+
+				const questInfo = imageList.find((quest: { name: string }) => {
+					if (quest.name) {
+						const sanitizedQuestNameInList = sanitizeString(quest.name.trim());
+						return sanitizedQuestNameInList === sanitizedQuestName;
+					}
+					return false;
+				});
+
+				if (!questInfo || !Array.isArray(questInfo.images)) {
+					setQuestImages([]); // Clear images if quest not found
+					return;
+				}
+
+				const questImages: QuestImage[] = questInfo.images
+					.filter(
+						(image: ImageType) =>
+							typeof image.src === "string" && image.src.endsWith(".webp"),
+					)
+					.map((image: ImageType, index: number) => ({
+						// FIX: Added the 'step' property back for completeness
+						step: image.step || (index + 1).toString(),
+						src: `./Images/${questName.trim().replace(":", "")}/${image.src}`,
+						width: image.width,
+						height: image.height,
+						stepDescription: image.stepDescription,
+					}));
+
+				setQuestImages(questImages);
+			} catch (error) {
+				console.error("Error fetching or processing QuestImageList.json:", error);
+			}
+		};
+
+		fetchImages();
+	}, [questName, QuestListJSON, setQuestImages]);
+
+	return null;
 };
 
 export default QuestImageFetcher;
