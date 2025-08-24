@@ -1,9 +1,15 @@
-import React, { useState, useEffect, useRef, Suspense } from "react";
+import React, { useState, useEffect, useRef, Suspense, useMemo } from "react";
 import { useLocation } from "react-router-dom";
-import { Accordion, Box, Button, Flex, Stack, ActionIcon } from "@mantine/core"; // --- NEW: Added ActionIcon
+import { Accordion, Box, Button, Flex, Stack, ActionIcon } from "@mantine/core";
 import { createRoot } from "react-dom/client";
 import Tippy from "@tippyjs/react";
-import { IconArrowBack, IconPin } from "@tabler/icons-react"; // --- NEW: Added IconPin
+// --- NEW: Import the new icon ---
+import {
+	IconArrowBack,
+	IconPin,
+	IconListDetails,
+	IconFocusCentered,
+} from "@tabler/icons-react";
 
 // Refactored Components
 import { CompactQuestStep } from "./Quest Detail Components/QuestStepDisplay";
@@ -74,8 +80,10 @@ const QuestPage: React.FC = () => {
 	>(null);
 	const [expanded, setExpanded] = useState<string[]>([]);
 
-	// --- NEW: State for the "Always Open" feature ---
 	const [persistAccordion, setPersistAccordion] = useState(false);
+	const [isExpandedMode, setIsExpandedMode] = useState(false);
+	// --- NEW: State for the auto-scroll feature, defaulting to on ---
+	const [autoScroll, setAutoScroll] = useState(true);
 
 	const [openedSettings, { open: openSettings, close: closeSettings }] =
 		useDisclosure(false);
@@ -85,7 +93,13 @@ const QuestPage: React.FC = () => {
 	const [openedPog, { pogModOpen, pogModClose }] = usePOGDisclosure(false);
 	const [openedNotes, { openNotes, closedNotes }] = useNotesDisclosure(false);
 
-	// --- NEW: Effect to load the "Always Open" setting and last active step on mount ---
+	// --- NEW: Effect to load the auto-scroll setting from localStorage on mount ---
+	useEffect(() => {
+		const savedSetting = localStorage.getItem("autoScrollEnabled");
+		// Default to true if the setting doesn't exist yet
+		setAutoScroll(savedSetting === null ? true : JSON.parse(savedSetting));
+	}, []);
+
 	useEffect(() => {
 		const persistSetting =
 			localStorage.getItem("persistAccordionState") === "true";
@@ -97,9 +111,8 @@ const QuestPage: React.FC = () => {
 				setActive(parseInt(lastActiveStep, 10));
 			}
 		}
-	}, [questName]); // Rerun if the questName changes
+	}, [questName]);
 
-	// --- NEW: Effect to save the active step when it changes (if the feature is on) ---
 	useEffect(() => {
 		if (persistAccordion && active !== -1) {
 			sessionStorage.setItem(`lastActiveStep-${questName}`, active.toString());
@@ -132,8 +145,10 @@ const QuestPage: React.FC = () => {
 			document.removeEventListener("keydown", handleKeyDown);
 		};
 	}, []);
+
+	// --- IMPROVEMENT: Scrolling logic is now conditional on the 'autoScroll' state ---
 	useEffect(() => {
-		if (active === -1) return;
+		if (active === -1 || isExpandedMode || !autoScroll) return;
 
 		const timer = setTimeout(() => {
 			const targetElement = document.getElementById(active.toString());
@@ -147,7 +162,8 @@ const QuestPage: React.FC = () => {
 		}, 250);
 
 		return () => clearTimeout(timer);
-	}, [active]);
+	}, [active, isExpandedMode, autoScroll]);
+
 	const handleKeyDown = (event: KeyboardEvent) => {
 		if (!openedNotes) {
 			if (event.key === " ") {
@@ -156,8 +172,14 @@ const QuestPage: React.FC = () => {
 		}
 	};
 
-	const setActiveAndScroll = (value: string | null) => {
-		const nextStep = value === null ? -1 : parseInt(value, 10);
+	const handleAccordionChange = (value: string | string[] | null) => {
+		if (isExpandedMode) {
+			return;
+		}
+
+		const singleValue = value as string | null;
+		const nextStep = singleValue === null ? -1 : parseInt(singleValue, 10);
+
 		if (!isNaN(nextStep)) {
 			setActive(nextStep);
 			if (nextStep !== -1) {
@@ -171,10 +193,10 @@ const QuestPage: React.FC = () => {
 
 	const scrollNext = () => {
 		if (active + 1 < questSteps.length)
-			setActiveAndScroll((active + 1).toString());
+			handleAccordionChange((active + 1).toString());
 	};
 	const scrollPrev = () => {
-		if (active > 0) setActiveAndScroll((active - 1).toString());
+		if (active > 0) handleAccordionChange((active - 1).toString());
 	};
 
 	useAlt1Listener(scrollNext);
@@ -277,16 +299,30 @@ const QuestPage: React.FC = () => {
 		}
 	};
 
-	// --- NEW: Handler for the toggle button ---
 	const handleTogglePersist = () => {
 		const newValue = !persistAccordion;
 		setPersistAccordion(newValue);
 		localStorage.setItem("persistAccordionState", JSON.stringify(newValue));
-		// If turning off, clear the saved step for this quest
 		if (!newValue) {
 			sessionStorage.removeItem(`lastActiveStep-${questName}`);
 		}
 	};
+
+	const toggleExpandedMode = () => {
+		setIsExpandedMode((prev) => !prev);
+	};
+
+	// --- NEW: Handler to toggle auto-scroll and save the preference ---
+	const handleToggleAutoScroll = () => {
+		const newValue = !autoScroll;
+		setAutoScroll(newValue);
+		localStorage.setItem("autoScrollEnabled", JSON.stringify(newValue));
+	};
+
+	const allStepValues = useMemo(
+		() => questSteps.map((_, index) => index.toString()),
+		[questSteps],
+	);
 
 	const specialButtons = (
 		<>
@@ -328,7 +364,7 @@ const QuestPage: React.FC = () => {
 			w="100%"
 			maw="800px"
 			h="100vh"
-			style={{ margin: "0 auto", paddingBottom: "40px" }}
+			style={{ margin: "0 auto" }}
 		>
 			<QuestModals
 				openedSettings={openedSettings}
@@ -384,7 +420,6 @@ const QuestPage: React.FC = () => {
 						>
 							{showStepReq ? "Show Quest Steps" : "Show Quest Details"}
 						</Button>
-						{/* --- NEW: "Always Open" Toggle Button --- */}
 						<Tippy
 							content={
 								persistAccordion
@@ -401,45 +436,83 @@ const QuestPage: React.FC = () => {
 								<IconPin size={16} />
 							</ActionIcon>
 						</Tippy>
+						<Tippy
+							content={isExpandedMode ? "Collapse All Steps" : "Expand All Steps"}
+							disabled={!settings.toolTipEnabled}
+						>
+							<ActionIcon
+								variant={isExpandedMode ? "filled" : "outline"}
+								color={settings.hasButtonColor ? settings.userButtonColor : "blue"}
+								onClick={toggleExpandedMode}
+							>
+								<IconListDetails size={16} />
+							</ActionIcon>
+						</Tippy>
+						{/* --- NEW: Auto-Scroll Toggle Button --- */}
+						<Tippy
+							content={autoScroll ? "Disable Auto-Scroll" : "Enable Auto-Scroll"}
+							disabled={!settings.toolTipEnabled}
+						>
+							<ActionIcon
+								variant={autoScroll ? "filled" : "outline"}
+								color={settings.hasButtonColor ? settings.userButtonColor : "blue"}
+								onClick={handleToggleAutoScroll}
+							>
+								<IconFocusCentered size={16} />
+							</ActionIcon>
+						</Tippy>
 					</Flex>
 				</Stack>
 			</Box>
 
-			<Box ref={scrollContainerRef} style={{ flex: 1, overflowY: "auto" }}>
-				{showStepReq ? (
-					<Suspense fallback={<div>Loading Details...</div>}>
-						<QuestDetailContents
-							QuestDetails={questDetails}
-							uiState={settings}
-							expanded={expanded}
-							setExpanded={setExpanded}
-							ignoredRequirements={ignoredRequirements}
-							skillLevels={skillLevels}
-							completedQuests={completedQuests}
-						/>
-					</Suspense>
-				) : (
-					<Accordion value={active.toString()} onChange={setActiveAndScroll}>
-						{questSteps?.map((step, index) => {
-							const matchedImages: QuestImage[] =
-								imageDetails.imageList?.filter(
-									(img) =>
-										sanitizeStringForMatching(img.stepDescription) ===
-										sanitizeStringForMatching(step.stepDescription),
-								) || [];
-							return (
-								<CompactQuestStep
-									key={index}
-									step={step}
-									index={index}
-									isCompleted={settings.isHighlight && active > index}
-									images={matchedImages}
-									onImagePopOut={handlePopOut}
-								/>
-							);
-						})}
-					</Accordion>
-				)}
+			<Box
+				ref={scrollContainerRef}
+				style={{
+					flex: 1,
+					overflowY: "auto",
+					minHeight: 0,
+				}}
+			>
+				<Box style={{ padding: "0.5rem", paddingBottom: "50px" }}>
+					{showStepReq ? (
+						<Suspense fallback={<div>Loading Details...</div>}>
+							<QuestDetailContents
+								QuestDetails={questDetails}
+								uiState={settings}
+								expanded={expanded}
+								setExpanded={setExpanded}
+								ignoredRequirements={ignoredRequirements}
+								skillLevels={skillLevels}
+								completedQuests={completedQuests}
+							/>
+						</Suspense>
+					) : (
+						<Accordion
+							multiple={isExpandedMode}
+							value={isExpandedMode ? allStepValues : active.toString()}
+							onChange={handleAccordionChange}
+						>
+							{questSteps?.map((step, index) => {
+								const matchedImages: QuestImage[] =
+									imageDetails.imageList?.filter(
+										(img) =>
+											sanitizeStringForMatching(img.stepDescription) ===
+											sanitizeStringForMatching(step.stepDescription),
+									) || [];
+								return (
+									<CompactQuestStep
+										key={index}
+										step={step}
+										index={index}
+										isCompleted={settings.isHighlight && active > index}
+										images={matchedImages}
+										onImagePopOut={handlePopOut}
+									/>
+								);
+							})}
+						</Accordion>
+					)}
+				</Box>
 			</Box>
 
 			<QuestFooter

@@ -12,6 +12,7 @@ import {
 	Grid,
 	Divider,
 	Box,
+	Flex,
 } from "@mantine/core";
 import {
 	IconPhotoFilled,
@@ -23,14 +24,14 @@ import {
 	IconHourglassLow,
 } from "@tabler/icons-react";
 import { QuestStep } from "./../../../Fetchers/useQuestData";
-import { QuestImage } from "./../../../Fetchers/handleNewImage"; // Import the QuestImage type
+import { QuestImage } from "./../../../Fetchers/handleNewImage";
 
 type CompactQuestStepProps = {
 	step: QuestStep;
 	index: number;
 	isCompleted: boolean;
-	images: QuestImage[]; // Accept an array of images
-	onImagePopOut: (src: string, height: number, width: number) => void; // Accept a handler
+	images: QuestImage[];
+	onImagePopOut: (src: string, height: number, width: number) => void;
 };
 
 export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
@@ -40,10 +41,25 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 	images,
 	onImagePopOut,
 }) => {
-	const hasRequiredItems = step.itemsNeeded && step.itemsNeeded.length > 0;
-	const hasRecommendedItems =
-		step.itemsRecommended && step.itemsRecommended.length > 0;
+	const filteredRequired =
+		step.itemsNeeded?.filter(
+			(item) => item.trim() !== "" && item.toLowerCase() !== "none",
+		) || [];
+	const filteredRecommended =
+		step.itemsRecommended?.filter(
+			(item) => item.trim() !== "" && item.toLowerCase() !== "none",
+		) || [];
+	const filteredInfo =
+		step.additionalStepInformation?.filter(
+			(info) => info.trim() !== "" && info.toLowerCase() !== "none",
+		) || [];
+
+	const hasRequiredItems = filteredRequired.length > 0;
+	const hasRecommendedItems = filteredRecommended.length > 0;
 	const hasItems = hasRequiredItems || hasRecommendedItems;
+	const hasAdditionalInfo = filteredInfo.length > 0;
+	const hasImages = images && images.length > 0;
+	const hasPanelContent = hasItems || hasAdditionalInfo;
 
 	return (
 		<Accordion.Item value={index.toString()} id={index.toString()}>
@@ -55,45 +71,83 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 						</ThemeIcon>
 					) : undefined
 				}
+				chevron={hasPanelContent ? undefined : <span />}
+				onClick={(event) => {
+					if (!hasPanelContent) {
+						event.preventDefault();
+						event.stopPropagation();
+					}
+				}}
 			>
-				<Text fw={700}>Step {index + 1}</Text>
+				<Flex justify="space-between" align="center" gap="md">
+					<Box style={{ flex: 1, minWidth: 0 }}>
+						<Text>
+							<Text fw={700} component="span">
+								Step {index + 1}:{" "}
+							</Text>
+							{step.stepDescription}
+						</Text>
+					</Box>
+
+					<Group
+						gap={6}
+						justify="flex-end"
+						onClick={(e) => e.stopPropagation()}
+						style={{ flexShrink: 0 }}
+					>
+						{hasRequiredItems && (
+							<IconChecklist
+								size={18}
+								color={
+									isCompleted
+										? "var(--mantine-color-teal-6)"
+										: "var(--mantine-color-blue-6)"
+								}
+								title="Has required items"
+							/>
+						)}
+						{hasRecommendedItems && (
+							<IconHourglassLow
+								size={18}
+								color={
+									isCompleted
+										? "var(--mantine-color-teal-6)"
+										: "var(--mantine-color-gray-6)"
+								}
+								title="Has recommended items"
+							/>
+						)}
+						{hasAdditionalInfo && (
+							<IconInfoCircle
+								size={18}
+								color={
+									isCompleted
+										? "var(--mantine-color-teal-6)"
+										: "var(--mantine-color-yellow-6)"
+								}
+								title="Has additional information"
+							/>
+						)}
+						{/* --- FIX: Map over the images array to create an icon for each one --- */}
+						{hasImages &&
+							images.map((image, imgIndex) => (
+								<ActionIcon
+									key={imgIndex}
+									variant="subtle"
+									color={isCompleted ? "teal" : "gray"}
+									title="View step image"
+									onClick={() => onImagePopOut(image.src, image.height, image.width)}
+								>
+									<IconPhotoFilled size={18} />
+								</ActionIcon>
+							))}
+					</Group>
+				</Flex>
 			</Accordion.Control>
 			<Accordion.Panel>
-				<Grid>
-					<Grid.Col span={hasItems ? 7 : 12}>
-						{/* The h="100%" prop was removed from this Paper component */}
-						<Paper p="xs" withBorder radius="md">
-							<Group justify="space-between">
-								<Group gap="xs">
-									<ThemeIcon variant="light" color="gray" size={30}>
-										<IconClipboardText size={20} />
-									</ThemeIcon>
-									<Title order={6}>Task</Title>
-								</Group>
-								{/* FIX: Map over the images array to render icons */}
-								{images && images.length > 0 && (
-									<Group gap={4} justify="flex-end">
-										{images.map((image, imgIndex) => (
-											<ActionIcon
-												key={imgIndex}
-												variant="subtle"
-												onClick={() => onImagePopOut(image.src, image.height, image.width)}
-											>
-												<IconPhotoFilled />
-											</ActionIcon>
-										))}
-									</Group>
-								)}
-							</Group>
-							<Text mt="xs" pl={5}>
-								{step.stepDescription}
-							</Text>
-						</Paper>
-					</Grid.Col>
-
-					{hasItems && (
-						<Grid.Col span={5}>
-							{/* The h="100%" prop was also removed from this Paper component */}
+				{hasPanelContent && (
+					<Stack>
+						{hasItems && (
 							<Paper p="xs" withBorder radius="md">
 								<Stack gap="xs">
 									{hasRequiredItems && (
@@ -113,7 +167,7 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 												}}
 											>
 												<List size="sm" withPadding>
-													{step.itemsNeeded.map((item, i) => (
+													{filteredRequired.map((item, i) => (
 														<List.Item
 															key={i}
 															icon={
@@ -149,7 +203,7 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 												}}
 											>
 												<List size="sm" withPadding>
-													{step.itemsRecommended.map((item, i) => (
+													{filteredRecommended.map((item, i) => (
 														<List.Item
 															key={i}
 															icon={
@@ -167,37 +221,35 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 									)}
 								</Stack>
 							</Paper>
-						</Grid.Col>
-					)}
-				</Grid>
+						)}
 
-				{step.additionalStepInformation &&
-					step.additionalStepInformation.length > 0 &&
-					step.additionalStepInformation[0] !== "" && (
-						<Paper p="xs" withBorder mt="md" radius="md">
-							<Group>
-								<ThemeIcon variant="light" size={30}>
-									<IconInfoCircle size={20} />
-								</ThemeIcon>
-								<Title order={6}>Additional Information</Title>
-							</Group>
-							<List size="sm" withPadding mt="xs">
-								{step.additionalStepInformation.map((info, i) => (
-									<List.Item
-										key={i}
-										mt="xs"
-										icon={
-											<ThemeIcon color="gray" size={16} radius="xl">
-												<IconPointFilled size={12} />
-											</ThemeIcon>
-										}
-									>
-										{info}
-									</List.Item>
-								))}
-							</List>
-						</Paper>
-					)}
+						{hasAdditionalInfo && (
+							<Paper p="xs" withBorder radius="md">
+								<Group>
+									<ThemeIcon variant="light" size={30}>
+										<IconInfoCircle size={20} />
+									</ThemeIcon>
+									<Title order={6}>Additional Information</Title>
+								</Group>
+								<List size="sm" withPadding mt="xs">
+									{filteredInfo.map((info, i) => (
+										<List.Item
+											key={i}
+											mt="xs"
+											icon={
+												<ThemeIcon color="gray" size={16} radius="xl">
+													<IconPointFilled size={12} />
+												</ThemeIcon>
+											}
+										>
+											{info}
+										</List.Item>
+									))}
+								</List>
+							</Paper>
+						)}
+					</Stack>
+				)}
 			</Accordion.Panel>
 		</Accordion.Item>
 	);
