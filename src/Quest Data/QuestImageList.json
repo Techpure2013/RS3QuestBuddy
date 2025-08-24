@@ -8215,6 +8215,10 @@
 	},
 	{
 		"name": "Heroes Quest",
+		"images": []
+	},
+	{
+		"name": "Hero's Welcome",
 		"images": [
 			{
 				"step": 19,
@@ -8224,10 +8228,6 @@
 				"stepDescription": "Solve the map fragments."
 			}
 		]
-	},
-	{
-		"name": "Hero's Welcome",
-		"images": []
 	},
 	{
 		"name": "Holy Grail",
