@@ -880,8 +880,14 @@
     },
     {
       "stepDescription": "Head to the Grand Library of Menaphos (Chat 1).",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
+      "itemsNeeded": [
+        "any restored Zarosian artefact",
+        "4 backpack spaces"
+      ],
+      "itemsRecommended": [
+        "15 backpack spaces",
+        "Best Mattock"
+      ],
       "highlights": {
         "npc": [],
         "object": [
@@ -1134,23 +1140,31 @@
         ],
         "object": [
           {
-            "name": "",
+            "name": "Uzer Workbench",
             "objectLocation": [
               {
                 "lat": 0,
                 "lng": 0
+              },
+              {
+                "lat": 3093,
+                "lng": 3476,
+                "color": "#00FF00",
+                "numberLabel": ""
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3092,
+                "lng": 3475
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3094,
+                "lng": 3476
               }
-            }
+            },
+            "color": "#00FF00",
+            "numberLabel": ""
           }
         ]
       },
@@ -1166,19 +1180,19 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Osman",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 6943,
+              "lng": 2116
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6941,
+                "lng": 2114
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6945,
+                "lng": 2118
               }
             }
           }
@@ -1211,76 +1225,32 @@
       ]
     },
     {
-      "stepDescription": "Talk to Leela just outside the northern gates of Menaphos.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
+      "stepDescription": "Talk to Leela just outside the northern gates of Menaphos then release the Golden Scarab.",
+      "itemsNeeded": [
+        "2 Backpack Spaces"
+      ],
+      "itemsRecommended": [
+        "15 Backpack Spaces",
+        "Some food",
+        "Combat Gear",
+        "Antipoison"
+      ],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Leela",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 2830,
+              "lng": 3206
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 2828,
+                "lng": 3204
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Click the golden scarab to release it.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 2832,
+                "lng": 3208
               }
             }
           }
@@ -1319,19 +1289,87 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Golden Scarab ( Beneath Cursed Sands )",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 2895,
+              "lng": 3207
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 2889,
+                "lng": 3202
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 2899,
+                "lng": 3212
+              }
+            }
+          },
+          {
+            "npcName": "Golden Scarab ( Beneath Cursed Sands )",
+            "npcLocation": {
+              "lat": 2961,
+              "lng": 3198
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2956,
+                "lng": 3193
+              },
+              "topRight": {
+                "lat": 2966,
+                "lng": 3203
+              }
+            }
+          },
+          {
+            "npcName": "Golden Scarab ( Beneath Cursed Sands )",
+            "npcLocation": {
+              "lat": 2999,
+              "lng": 3170
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2994,
+                "lng": 3165
+              },
+              "topRight": {
+                "lat": 3004,
+                "lng": 3175
+              }
+            }
+          },
+          {
+            "npcName": "Golden Scarab ( Beneath Cursed Sands )",
+            "npcLocation": {
+              "lat": 3028,
+              "lng": 3251
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3023,
+                "lng": 3246
+              },
+              "topRight": {
+                "lat": 3033,
+                "lng": 3256
+              }
+            }
+          },
+          {
+            "npcName": "Golden Scarab ( Beneath Cursed Sands )",
+            "npcLocation": {
+              "lat": 2991,
+              "lng": 3318
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2986,
+                "lng": 3313
+              },
+              "topRight": {
+                "lat": 2996,
+                "lng": 3323
               }
             }
           }
@@ -1368,44 +1406,34 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Scabarite Cavern",
             "objectLocation": [
               {
                 "lat": 0,
                 "lng": 0
+              },
+              {
+                "lat": 2992,
+                "lng": 3315,
+                "color": "#00FF00",
+                "numberLabel": ""
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 2990,
+                "lng": 3314
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 2993,
+                "lng": 3316
               }
-            }
+            },
+            "color": "#00FF00",
+            "numberLabel": ""
           }
         ]
       },
@@ -1421,19 +1449,19 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Golden Scarab ( Beneath Cursed Sands )",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 7570,
+              "lng": 3311
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 7568,
+                "lng": 3309
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 7572,
+                "lng": 3313
               }
             }
           }
@@ -1491,23 +1519,139 @@
         ],
         "object": [
           {
-            "name": "",
+            "name": "Boat Material",
             "objectLocation": [
               {
                 "lat": 0,
                 "lng": 0
+              },
+              {
+                "lat": 7572,
+                "lng": 3315,
+                "color": "#001eff",
+                "numberLabel": "1"
               }
             ],
             "objectRadius": {
               "bottomLeft": {
+                "lat": 7572,
+                "lng": 3314
+              },
+              "topRight": {
+                "lat": 7573,
+                "lng": 3315
+              }
+            },
+            "numberLabel": "1",
+            "color": "#001eff"
+          },
+          {
+            "name": "Boat Material",
+            "objectLocation": [
+              {
                 "lat": 0,
                 "lng": 0
               },
+              {
+                "lat": 7586,
+                "lng": 3299,
+                "color": "#001eff",
+                "numberLabel": "2"
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 7586,
+                "lng": 3298
+              },
               "topRight": {
+                "lat": 7586,
+                "lng": 3300
+              }
+            },
+            "numberLabel": "2",
+            "color": "#001eff"
+          },
+          {
+            "name": "Boat Material",
+            "objectLocation": [
+              {
                 "lat": 0,
                 "lng": 0
+              },
+              {
+                "lat": 7586,
+                "lng": 3295,
+                "color": "#001eff",
+                "numberLabel": "3"
               }
-            }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 7586,
+                "lng": 3294
+              },
+              "topRight": {
+                "lat": 7586,
+                "lng": 3296
+              }
+            },
+            "numberLabel": "3",
+            "color": "#001eff"
+          },
+          {
+            "name": "Boat Material",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              },
+              {
+                "lat": 7595,
+                "lng": 3319,
+                "color": "#001eff",
+                "numberLabel": "4"
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 7594,
+                "lng": 3319
+              },
+              "topRight": {
+                "lat": 7596,
+                "lng": 3319
+              }
+            },
+            "numberLabel": "4",
+            "color": "#001eff"
+          },
+          {
+            "name": "New Object",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              },
+              {
+                "lat": 7608,
+                "lng": 3290,
+                "color": "#001eff",
+                "numberLabel": "5"
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 7608,
+                "lng": 3289
+              },
+              "topRight": {
+                "lat": 7608,
+                "lng": 3291
+              }
+            },
+            "numberLabel": "5",
+            "color": "#001eff"
           }
         ]
       },
@@ -1542,23 +1686,27 @@
         ],
         "object": [
           {
-            "name": "",
+            "name": "Boat",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 7565,
+                "lng": 3311,
+                "color": "#fdd408",
+                "numberLabel": ""
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 7563,
+                "lng": 3309
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 7565,
+                "lng": 3312
               }
-            }
+            },
+            "color": "#fdd408",
+            "numberLabel": ""
           }
         ]
       },
@@ -1574,19 +1722,19 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Scabaras",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 7583,
+              "lng": 3496
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 7581,
+                "lng": 3494
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 7585,
+                "lng": 3498
               }
             }
           }
@@ -1625,19 +1773,19 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Fear ( Beneath Scabaras Sand )",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 7591,
+              "lng": 3445
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 7590,
+                "lng": 3444
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 7592,
+                "lng": 3446
               }
             }
           }
@@ -1666,58 +1814,7 @@
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Be careful pushing them up the left side as they can get stuck on the sides of the stairwell. If stuck, chase it back down, then chase it to the middle of the stairwell, then back up.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "Be careful pushing them up the left side as they can get stuck on the sides of the stairwell. If stuck, chase it back down, then chase it to the middle of the stairwell, then back up."
       ]
     },
     {
@@ -1778,19 +1875,19 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Ego ( Beneath Scabaras Sand )",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 7572,
+              "lng": 3446
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 7571,
+                "lng": 3445
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 7573,
+                "lng": 3447
               }
             }
           }
@@ -1827,44 +1924,52 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Dwellberry Bushes",
             "objectLocation": [
               {
                 "lat": 0,
                 "lng": 0
+              },
+              {
+                "lat": 7566,
+                "lng": 3413,
+                "color": "#00FF00",
+                "numberLabel": ""
+              },
+              {
+                "lat": 7565,
+                "lng": 3414,
+                "color": "#00FF00",
+                "numberLabel": ""
+              },
+              {
+                "lat": 7567,
+                "lng": 3408,
+                "color": "#00FF00",
+                "numberLabel": ""
+              },
+              {
+                "lat": 7566,
+                "lng": 3407,
+                "color": "#00FF00",
+                "numberLabel": ""
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 7565,
+                "lng": 3407
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 7568,
+                "lng": 3414
               }
-            }
+            },
+            "color": "#00FF00",
+            "numberLabel": ""
           }
         ]
       },
@@ -1931,19 +2036,19 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Melancholy ( Beneath Scabaras Sand)",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 7596,
+              "lng": 3476
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 7595,
+                "lng": 3475
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 7597,
+                "lng": 3477
               }
             }
           }
@@ -1982,19 +2087,19 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Grief ( Beneath Scabaras Sand)",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 7570,
+              "lng": 3462
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 7567,
+                "lng": 3459
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 7573,
+                "lng": 3465
               }
             }
           }
@@ -2023,58 +2128,7 @@
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Keep stamping out Grief until it transforms into into a level 146 enemy that must be defeated.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "Keep stamping out Grief until it transforms into into a level 146 enemy that must be defeated."
       ]
     },
     {
@@ -2084,19 +2138,19 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Scabaras",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3081,
+              "lng": 3207
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3079,
+                "lng": 3205
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3083,
+                "lng": 3209
               }
             }
           }
