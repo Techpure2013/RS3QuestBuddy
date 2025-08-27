@@ -1,1405 +1,1406 @@
 [
-	{
-		"Quest": "A Christmas Reunion",
-		"Path": "./Quests/A Christmas Reunion/A_Christmas_Reunion.json"
-	},
-	{
-		"Quest": "A Fairy Tale I: Growing Pains",
-		"Path": "./Quests/A Fairy Tale I Growing Pains/A_Fairy_Tale_I_Growing_Pains.json"
-	},
-	{
-		"Quest": "A Fairy Tale II: Cure a Queen",
-		"Path": "./Quests/A Fairy Tale II Cure a Queen/A_Fairy_Tale_II_Cure_a_Queen.json"
-	},
-	{
-		"Quest": "A Fairy Tale III: Battle at Ork's Rift",
-		"Path": "./Quests/A Fairy Tale III Battle at Ork's Rift/A_Fairy_Tale_III_Battle_at_Orks_Rift.json"
-	},
-	{
-		"Quest": "Eclipse of the Heart",
-		"Path": "./Quests/Eclipse of the Heart/Eclipse_of_the_Heart.json"
-	},
-	{
-		"Quest": "A Shadow over Ashdale",
-		"Path": "./Quests/A Shadow over Ashdale/A_Shadow_over_Ashdale.json"
-	},
-	{
-		"Quest": "A Soul's Bane",
-		"Path": "./Quests/A Soul's Bane/A_Souls_Bane.json"
-	},
-	{
-		"Quest": "A Tail of Two Cats",
-		"Path": "./Quests/A Tail of Two Cats/A_Tail_of_Two_Cats.json"
-	},
-	{
-		"Quest": "A Void Dance",
-		"Path": "./Quests/A Void Dance/A_Void_Dance.json"
-	},
-	{
-		"Quest": "Aftermath",
-		"Path": "./Quests/Aftermath/Aftermath.json"
-	},
-	{
-		"Quest": "All Fired Up",
-		"Path": "./Quests/All Fired Up/All_Fired_Up.json"
-	},
-	{
-		"Quest": "Alpha vs Omega",
-		"Path": "./Quests/Alpha vs Omega/Alpha_vs_Omega.json"
-	},
-	{
-		"Quest": "Ancient Awakening",
-		"Path": "./Quests/Ancient Awakening/Ancient_Awakening.json"
-	},
-	{
-		"Quest": "Animal Magnetism",
-		"Path": "./Quests/Animal Magnetism/Animal_Magnetism.json"
-	},
-	{
-		"Quest": "Another Slice of HAM",
-		"Path": "./Quests/Another Slice of HAM/Another_Slice_of_HAM.json"
-	},
-	{
-		"Quest": "As a First Resort",
-		"Path": "./Quests/As a First Resort/As_a_First_Resort.json"
-	},
-	{
-		"Quest": "Azzanadra's Quest",
-		"Path": "./Quests/Azzanadra's Quest/Azzanadras_Quest.json"
-	},
-	{
-		"Quest": "Back to my Roots",
-		"Path": "./Quests/Back to my Roots/Back_to_my_Roots.json"
-	},
-	{
-		"Quest": "Back to the Freezer",
-		"Path": "./Quests/Back to the Freezer/Back_to_the_Freezer.json"
-	},
-	{
-		"Quest": "Battle of the Monolith",
-		"Path": "./Quests/Battle of the Monolith/Battle_of_the_Monolith.json"
-	},
-	{
-		"Quest": "Battle of Forinthry",
-		"Path": "./Quests/Battle of Forinthry/Battle_of_Forinthry.json"
-	},
-	{
-		"Quest": "Beneath Cursed Tides",
-		"Path": "./Quests/Beneath Cursed Tides/Beneath_Cursed_Tides.json"
-	},
-	{
-		"Quest": "Beneath Scabaras' Sands",
-		"Path": "./Quests/Beneath Scabaras' Sands/Beneath_Scabaras_Sands.json"
-	},
-	{
-		"Quest": "Between a Rock",
-		"Path": "./Quests/Between a Rock/Between_a_Rock.json"
-	},
-	{
-		"Quest": "Big Chompy Bird Hunting",
-		"Path": "./Quests/Big Chompy Bird Hunting/Big_Chompy_Bird_Hunting.json"
-	},
-	{
-		"Quest": "Biohazard",
-		"Path": "./Quests/Biohazard/Biohazard.json"
-	},
-	{
-		"Quest": "Birthright of the Dwarves",
-		"Path": "./Quests/Birthright of the Dwarves/Birthright_of_the_Dwarves.json"
-	},
-	{
-		"Quest": "Blood Runs Deep",
-		"Path": "./Quests/Blood Runs Deep/Blood_Runs_Deep.json"
-	},
-	{
-		"Quest": "Bringing Home the Bacon",
-		"Path": "./Quests/Bringing Home the Bacon/Bringing_Home_the_Bacon.json"
-	},
-	{
-		"Quest": "Broken Home",
-		"Path": "./Quests/Broken Home/Broken_Home.json"
-	},
-	{
-		"Quest": "Buyers and Cellars",
-		"Path": "./Quests/Buyers and Cellars/Buyers_and_Cellars.json"
-	},
-	{
-		"Quest": "Cabin Fever",
-		"Path": "./Quests/Cabin Fever/Cabin_Fever.json"
-	},
-	{
-		"Quest": "Call of the Ancestors",
-		"Path": "./Quests/Call of the Ancestors/Call_of_the_Ancestors.json"
-	},
-	{
-		"Quest": "Carnillean Rising",
-		"Path": "./Quests/Carnillean Rising/Carnillean_Rising.json"
-	},
-	{
-		"Quest": "Catapult Construction",
-		"Path": "./Quests/Catapult Construction/Catapult_Construction.json"
-	},
-	{
-		"Quest": "Chef's Assistant",
-		"Path": "./Quests/Chef's Assistant/Chefs_Assistant.json"
-	},
-	{
-		"Quest": "Children of Mah",
-		"Path": "./Quests/Children of Mah/Children_of_Mah.json"
-	},
-	{
-		"Quest": "City of Senntisten",
-		"Path": "./Quests/City of Senntisten/City_of_Senntisten.json"
-	},
-	{
-		"Quest": "Clock Tower",
-		"Path": "./Quests/Clock Tower/Clock_Tower.json"
-	},
-	{
-		"Quest": "Cold War",
-		"Path": "./Quests/Cold War/Cold_War.json"
-	},
-	{
-		"Quest": "Contact!",
-		"Path": "./Quests/Contact!/Contact!.json"
-	},
-	{
-		"Quest": "Cook's Assistant",
-		"Path": "./Quests/Cook's Assistant/Cooks_Assistant.json"
-	},
-	{
-		"Quest": "Creature of Fenkenstrain",
-		"Path": "./Quests/Creature of Fenkenstrain/Creature_of_Fenkenstrain.json"
-	},
-	{
-		"Quest": "Crocodile Tears",
-		"Path": "./Quests/Crocodile Tears/Crocodile_Tears.json"
-	},
-	{
-		"Quest": "Curse of the Black Stone",
-		"Path": "./Quests/Curse of the Black Stone/Curse_of_the_Black_Stone.json"
-	},
-	{
-		"Quest": "Daughter of Chaos",
-		"Path": "./Quests/Daughter of Chaos/Daughter_of_Chaos.json"
-	},
-	{
-		"Quest": "Dead and Buried",
-		"Path": "./Quests/Dead and Buried/Dead_and_Buried.json"
-	},
-	{
-		"Quest": "Deadliest Catch",
-		"Path": "./Quests/Deadliest Catch/Deadliest_Catch.json"
-	},
-	{
-		"Quest": "Dealing with Scabaras",
-		"Path": "./Quests/Dealing with Scabaras/Dealing_with_Scabaras.json"
-	},
-	{
-		"Quest": "Death Plateau",
-		"Path": "./Quests/Death Plateau/Death_Plateau.json"
-	},
-	{
-		"Quest": "Death to the Dorgeshuun",
-		"Path": "./Quests/Death to the Dorgeshuun/Death_to_the_Dorgeshuun.json"
-	},
-	{
-		"Quest": "Defender of Varrock",
-		"Path": "./Quests/Defender of Varrock/Defender_of_Varrock.json"
-	},
-	{
-		"Quest": "Demon Slayer",
-		"Path": "./Quests/Demon Slayer/Demon_Slayer.json"
-	},
-	{
-		"Quest": "Desert Treasure",
-		"Path": "./Quests/Desert Treasure/Desert_Treasure.json"
-	},
-	{
-		"Quest": "Desperate Creatures",
-		"Path": "./Quests/Desperate Creatures/Desperate_Creatures.json"
-	},
-	{
-		"Quest": "Desperate Measures",
-		"Path": "./Quests/Desperate Measures/Desperate_Measures.json"
-	},
-	{
-		"Quest": "Desperate Times",
-		"Path": "./Quests/Desperate Times/Desperate_Times.json"
-	},
-	{
-		"Quest": "Diamond in the Rough",
-		"Path": "./Quests/Diamond in the Rough/Diamond_in_the_Rough.json"
-	},
-	{
-		"Quest": "Devious Minds",
-		"Path": "./Quests/Devious Minds/Devious_Minds.json"
-	},
-	{
-		"Quest": "Dimension of Disaster: Coin of the Realm",
-		"Path": "./Quests/Dimension of Disaster Coin of the Realm/Dimension_of_Disaster_Coin_of_the_Realm.json"
-	},
-	{
-		"Quest": "Dimension of Disaster: Curse of Arrav",
-		"Path": "./Quests/Dimension of Disaster Curse of Arrav/Dimension_of_Disaster_Curse_of_Arrav.json"
-	},
-	{
-		"Quest": "Dimension of Disaster: Defender of Varrock",
-		"Path": "./Quests/Dimension of Disaster Defender of Varrock/Dimension_of_Disaster_Defender_of_Varrock.json"
-	},
-	{
-		"Quest": "Dimension of Disaster: Demon Slayer",
-		"Path": "./Quests/Dimension of Disaster Demon Slayer/Dimension_of_Disaster_Demon_Slayer.json"
-	},
-	{
-		"Quest": "Dimension of Disaster: Shield of Arrav",
-		"Path": "./Quests/Dimension of Disaster Shield of Arrav/Dimension_of_Disaster_Shield_of_Arrav.json"
-	},
-	{
-		"Quest": "Dishonour among Thieves",
-		"Path": "./Quests/Dishonour among Thieves/Dishonour_among_Thieves.json"
-	},
-	{
-		"Quest": "Do No Evil",
-		"Path": "./Quests/Do No Evil/Do_No_Evil.json"
-	},
-	{
-		"Quest": "Dragon Slayer",
-		"Path": "./Quests/Dragon Slayer/Dragon_Slayer.json"
-	},
-	{
-		"Quest": "Dream Mentor",
-		"Path": "./Quests/Dream Mentor/Dream_Mentor.json"
-	},
-	{
-		"Quest": "Druidic Ritual",
-		"Path": "./Quests/Druidic Ritual/Druidic_Ritual.json"
-	},
-	{
-		"Quest": "Dwarf Cannon",
-		"Path": "./Quests/Dwarf Cannon/Dwarf_Cannon.json"
-	},
-	{
-		"Quest": "Eadgar's Ruse",
-		"Path": "./Quests/Eadgar's Ruse/Eadgars_Ruse.json"
-	},
-	{
-		"Quest": "Eagles' Peak",
-		"Path": "./Quests/Eagles' Peak/Eagles_Peak.json"
-	},{
-		"Quest": "Eclipse of the Heart",
-		"Path": "./Quests/Eclipse of the Heart/Eclipse_of_the_Heart.json
-	},
-	{
-		"Quest": "Elemental Workshop I",
-		"Path": "./Quests/Elemental Workshop I/Elemental_Workshop_I.json"
-	},
-	{
-		"Quest": "Elemental Workshop II",
-		"Path": "./Quests/Elemental Workshop II/Elemental_Workshop_II.json"
-	},
-	{
-		"Quest": "Elemental Workshop III",
-		"Path": "./Quests/Elemental Workshop III/Elemental_Workshop_III.json"
-	},
-	{
-		"Quest": "Elemental Workshop IV",
-		"Path": "./Quests/Elemental Workshop IV/Elemental_Workshop_IV.json"
-	},
-	{
-		"Quest": "Enakhra's Lament",
-		"Path": "./Quests/Enakhra's Lament/Enakhras_Lament.json"
-	},
-	{
-		"Quest": "Enlightened Journey",
-		"Path": "./Quests/Enlightened Journey/Enlightened_Journey.json"
-	},
-	{
-		"Quest": "Ernest the Chicken",
-		"Path": "./Quests/Ernest the Chicken/Ernest_the_Chicken.json"
-	},
-	{
-		"Quest": "Evil Dave's Big Day Out",
-		"Path": "./Quests/Evil Dave's Big Day Out/Evil_Daves_Big_Day_Out.json"
-	},
-	{
-		"Quest": "Extinction",
-		"Path": "./Quests/Extinction/Extinction.json"
-	},
-	{
-		"Quest": "Eye of Het I",
-		"Path": "./Quests/Eye of Het I/Eye_of_Het_I.json"
-	},
-	{
-		"Quest": "Eye of Het II",
-		"Path": "./Quests/Eye of Het II/Eye_of_Het_II.json"
-	},
-	{
-		"Quest": "Family Crest",
-		"Path": "./Quests/Family Crest/Family_Crest.json"
-	},
-	{
-		"Quest": "Fate of the Gods",
-		"Path": "./Quests/Fate of the Gods/Fate_of_the_Gods.json"
-	},
-	{
-		"Quest": "Fight Arena",
-		"Path": "./Quests/Fight Arena/Fight_Arena.json"
-	},
-	{
-		"Quest": "Fishing Contest",
-		"Path": "./Quests/Fishing Contest/Fishing_Contest.json"
-	},
-	{
-		"Quest": "Forgettable Tale of a Drunken Dwarf",
-		"Path": "./Quests/Forgettable Tale of a Drunken Dwarf/Forgettable_Tale_of_a_Drunken_Dwarf.json"
-	},
-	{
-		"Quest": "Forgiveness of a Chaos Dwarf",
-		"Path": "./Quests/Forgiveness of a Chaos Dwarf/Forgiveness_of_a_Chaos_Dwarf.json"
-	},
-	{
-		"Quest": "Fur 'n Seek",
-		"Path": "./Quests/Fur 'n Seek/Fur_n_Seek.json"
-	},
-	{
-		"Quest": "Garden of Tranquillity",
-		"Path": "./Quests/Garden of Tranquillity/Garden_of_Tranquillity.json"
-	},
-	{
-		"Quest": "Gertrude's Cat",
-		"Path": "./Quests/Gertrude's Cat/Gertrudes_Cat.json"
-	},
-	{
-		"Quest": "Ghosts Ahoy",
-		"Path": "./Quests/Ghosts Ahoy/Ghosts_Ahoy.json"
-	},
-	{
-		"Quest": "Glorious Memories",
-		"Path": "./Quests/Glorious Memories/Glorious_Memories.json"
-	},
-	{
-		"Quest": "Great-Egg-spectations",
-		"Path": "./Quests/Great-Egg-spectations/Great-Egg-spectations.json"
-	},
-	{
-		"Quest": "Goblin Diplomacy",
-		"Path": "./Quests/Goblin Diplomacy/Goblin_Diplomacy.json"
-	},
-	{
-		"Quest": "Gower Quest",
-		"Path": "./Quests/Gower Quest/Gower_Quest.json"
-	},
-	{
-		"Quest": "Grim Tales",
-		"Path": "./Quests/Grim Tales/Grim_Tales.json"
-	},
-	{
-		"Quest": "Gunnar's Ground",
-		"Path": "./Quests/Gunnar's Ground/Gunnars_Ground.json"
-	},
-	{
-		"Quest": "Haunted Mine",
-		"Path": "./Quests/Haunted Mine/Haunted_Mine.json"
-	},
-	{
-		"Quest": "Hazeel Cult",
-		"Path": "./Quests/Hazeel Cult/Hazeel_Cult.json"
-	},
-	{
-		"Quest": "Heart of Stone",
-		"Path": "./Quests/Heart of Stone/Heart_of_Stone.json"
-	},
-	{
-		"Quest": "Heartstealer",
-		"Path": "./Quests/Heartstealer/Heartstealer.json"
-	},
-	{
-		"Quest": "Hero's Welcome",
-		"Path": "./Quests/Hero's Welcome/Heros_Welcome.json"
-	},
-	{
-		"Quest": "Heroes' Quest",
-		"Path": "./Quests/Heroes' Quest/Heroes_Quest.json"
-	},
-	{
-		"Quest": "Holy Grail",
-		"Path": "./Quests/Holy Grail/Holy_Grail.json"
-	},
-	{
-		"Quest": "Horror from the Deep",
-		"Path": "./Quests/Horror from the Deep/Horror_from_the_Deep.json"
-	},
-	{
-		"Quest": "Hunt for Red Raktuber",
-		"Path": "./Quests/Hunt for Red Raktuber/Hunt_for_Red_Raktuber.json"
-	},
-	{
-		"Quest": "Icthlarin's Little Helper",
-		"Path": "./Quests/Icthlarin's Little Helper/Icthlarins_Little_Helper.json"
-	},
-	{
-		"Quest": "Imp Catcher",
-		"Path": "./Quests/Imp Catcher/Imp_Catcher.json"
-	},
-	{
-		"Quest": "Impressing the Locals",
-		"Path": "./Quests/Impressing the Locals/Impressing_the_Locals.json"
-	},
-	{
-		"Quest": "In Aid of the Myreque",
-		"Path": "./Quests/In Aid of the Myreque/In_Aid_of_the_Myreque.json"
-	},
-	{
-		"Quest": "In Pyre Need",
-		"Path": "./Quests/In Pyre Need/In_Pyre_Need.json"
-	},
-	{
-		"Quest": "In Search of the Myreque",
-		"Path": "./Quests/In Search of the Myreque/In_Search_of_the_Myreque.json"
-	},
-	{
-		"Quest": "It's Snow Bother",
-		"Path": "./Quests/It's Snow Bother/Its_Snow_Bother.json"
-	},
-	{
-		"Quest": "Jungle Potion",
-		"Path": "./Quests/Jungle Potion/Jungle_Potion.json"
-	},
-	{
-		"Quest": "Kennith's Concerns",
-		"Path": "./Quests/Kennith's Concerns/Kenniths_Concerns.json"
-	},
-	{
-		"Quest": "Kili Row",
-		"Path": "./Quests/Kili Row/Kili_Row.json"
-	},
-	{
-		"Quest": "Kindred Spirits",
-		"Path": "./Quests/Kindred Spirits/Kindred_Spirits.json"
-	},
-	{
-		"Quest": "King of the Dwarves",
-		"Path": "./Quests/King of the Dwarves/King_of_the_Dwarves.json"
-	},
-	{
-		"Quest": "King's Ransom",
-		"Path": "./Quests/King's Ransom/Kings_Ransom.json"
-	},
-	{
-		"Quest": "Land of the Goblins",
-		"Path": "./Quests/Land of the Goblins/Land_of_the_Goblins.json"
-	},
-	{
-		"Quest": "Legacy of Seergaze",
-		"Path": "./Quests/Legacy of Seergaze/Legacy_of_Seergaze.json"
-	},
-	{
-		"Quest": "Legends' Quest",
-		"Path": "./Quests/Legends' Quest/Legends_Quest.json"
-	},
-	{
-		"Quest": "Let Them Eat Pie",
-		"Path": "./Quests/Let Them Eat Pie/Let_Them_Eat_Pie.json"
-	},
-	{
-		"Quest": "Lost Her Marbles Miniquest",
-		"Path": "./Quests/Lost Her Marbles Miniquest/Lost_Her_Marbles_Miniquest.json"
-	},
-	{
-		"Quest": "Lost City",
-		"Path": "./Quests/Lost City/Lost_City.json"
-	},
-	{
-		"Quest": "Love Story",
-		"Path": "./Quests/Love Story/Love_Story.json"
-	},
-	{
-		"Quest": "Lunar Diplomacy",
-		"Path": "./Quests/Lunar Diplomacy/Lunar_Diplomacy.json"
-	},
-	{
-		"Quest": "Making History",
-		"Path": "./Quests/Making History/Making_History.json"
-	},
-	{
-		"Quest": "Meeting History",
-		"Path": "./Quests/Meeting History/Meeting_History.json"
-	},
-	{
-		"Quest": "Merlin's Crystal",
-		"Path": "./Quests/Merlin's Crystal/Merlins_Crystal.json"
-	},
-	{
-		"Quest": "Missing My Mummy",
-		"Path": "./Quests/Missing My Mummy/Missing_My_Mummy.json"
-	},
-	{
-		"Quest": "Missing, Presumed Death",
-		"Path": "./Quests/Missing, Presumed Death/Missing,_Presumed_Death.json"
-	},
-	{
-		"Quest": "Monk's Friend",
-		"Path": "./Quests/Monk's Friend/Monks_Friend.json"
-	},
-	{
-		"Quest": "Monkey Madness",
-		"Path": "./Quests/Monkey Madness/Monkey_Madness.json"
-	},
-	{
-		"Quest": "Mountain Daughter",
-		"Path": "./Quests/Mountain Daughter/Mountain_Daughter.json"
-	},
-	{
-		"Quest": "Mourning's End Part I",
-		"Path": "./Quests/Mourning's End Part I/Mournings_End_Part_I.json"
-	},
-	{
-		"Quest": "Mourning's End Part II",
-		"Path": "./Quests/Mourning's End Part II/Mournings_End_Part_II.json"
-	},
-	{
-		"Quest": "Murder Mystery",
-		"Path": "./Quests/Murder Mystery/Murder_Mystery.json"
-	},
-	{
-		"Quest": "Murder on the Border",
-		"Path": "./Quests/Murder on the Border/Murder_on_the_Border.json"
-	},
-	{
-		"Quest": "My Arm's Big Adventure",
-		"Path": "./Quests/My Arm's Big Adventure/My_Arms_Big_Adventure.json"
-	},
-	{
-		"Quest": "Myths of the White Lands",
-		"Path": "./Quests/Myths of the White Lands/Myths_of_the_White_Lands.json"
-	},
-	{
-		"Quest": "Nature Spirit",
-		"Path": "./Quests/Nature Spirit/Nature_Spirit.json"
-	},
-	{
-		"Quest": "Necromancy!",
-		"Path": "./Quests/Necromancy!/Necromancy!.json"
-	},
-	{
-		"Quest": "New Foundations",
-		"Path": "./Quests/New Foundations/New_Foundations.json"
-	},
-	{
-		"Quest": "Nomad's Elegy",
-		"Path": "./Quests/Nomad's Elegy/Nomads_Elegy.json"
-	},
-	{
-		"Quest": "Nomad's Requiem",
-		"Path": "./Quests/Nomad's Requiem/Nomads_Requiem.json"
-	},
-	{
-		"Quest": "Observatory Quest",
-		"Path": "./Quests/Observatory Quest/Observatory_Quest.json"
-	},
-	{
-		"Quest": "Ode of the Devourer",
-		"Path": "./Quests/Ode of the Devourer/Ode_of_the_Devourer.json"
-	},
-	{
-		"Quest": "Olaf's Quest",
-		"Path": "./Quests/Olaf's Quest/Olafs_Quest.json"
-	},
-	{
-		"Quest": "Osseous Rex",
-		"Path": "./Quests/Osseous Rex/Osseous_Rex.json"
-	},
-	{
-		"Quest": "Once Upon a Slime",
-		"Path": "./Quests/Once Upon a Slime/Once_Upon_a_Slime.json"
-	},
-	{
-		"Quest": "Once Upon a Time in Gielinor: Foreshadowing",
-		"Path": "./Quests/Once Upon a Time in Gielinor Foreshadowing/Once_Upon_a_Time_in_Gielinor_Foreshadowing.json"
-	},
-	{
-		"Quest": "Once Upon a Time in Gielinor: Flashback",
-		"Path": "./Quests/Once Upon a Time in Gielinor Flashback/Once_Upon_a_Time_in_Gielinor_Flashback.json"
-	},
-	{
-		"Quest": "Once Upon a Time in Gielinor: Fortunes",
-		"Path": "./Quests/Once Upon a Time in Gielinor Fortunes/Once_Upon_a_Time_in_Gielinor_Fortunes.json"
-	},
-	{
-		"Quest": "Once Upon a Time in Gielinor: Finale",
-		"Path": "./Quests/Once Upon a Time in Gielinor Finale/Once_Upon_a_Time_in_Gielinor_Finale.json"
-	},
-	{
-		"Quest": "One of a Kind",
-		"Path": "./Quests/One of a Kind/One_of_a_Kind.json"
-	},
-	{
-		"Quest": "One Piercing Note",
-		"Path": "./Quests/One Piercing Note/One_Piercing_Note.json"
-	},
-	{
-		"Quest": "One Small Favour",
-		"Path": "./Quests/One Small Favour/One_Small_Favour.json"
-	},
-	{
-		"Quest": "Our Man in the North",
-		"Path": "./Quests/Our Man in the North/Our_Man_in_the_North.json"
-	},
-	{
-		"Quest": "Perils of Ice Mountain",
-		"Path": "./Quests/Perils of Ice Mountain/Perils_of_Ice_Mountain.json"
-	},
-	{
-		"Quest": "Phite Club",
-		"Path": "./Quests/Phite Club/Phite_Club.json"
-	},
-	{
-		"Quest": "Pieces of Hate",
-		"Path": "./Quests/Pieces of Hate/Pieces_of_Hate.json"
-	},
-	{
-		"Quest": "Pharaoh's Folly",
-		"Path": "./Quests/Pharaoh's Folly/Pharaohs_Folly.json"
-	},
-	{
-		"Quest": "Pirate's Treasure",
-		"Path": "./Quests/Pirate's Treasure/Pirates_Treasure.json"
-	},
-	{
-		"Quest": "Housing of Parliament",
-		"Path": "./Quests/Housing of Parliament/Housing_of_Parliament.json"
-	},
-	{
-		"Quest": "Plague City",
-		"Path": "./Quests/Plague City/Plague_City.json"
-	},
-	{
-		"Quest": "Plague's End",
-		"Path": "./Quests/Plague's End/Plagues_End.json"
-	},
-	{
-		"Quest": "'Phite Club",
-		"Path": "./Quests/'Phite Club/Phite_Club.json"
-	},
-	{
-		"Quest": "Priest in Peril",
-		"Path": "./Quests/Priest in Peril/Priest_in_Peril.json"
-	},
-	{
-		"Quest": "Quiet Before the Swarm",
-		"Path": "./Quests/Quiet Before the Swarm/Quiet_Before_the_Swarm.json"
-	},
-	{
-		"Quest": "Raksha, The Shadow Colossus Quest",
-		"Path": "./Quests/Raksha, The Shadow Colossus Quest/Raksha,_The_Shadow_Colossus_Quest.json"
-	},
-	{
-		"Quest": "Rag and Bone Man",
-		"Path": "./Quests/Rag and Bone Man/Rag_and_Bone_Man.json"
-	},
-	{
-		"Quest": "Rat Catchers",
-		"Path": "./Quests/Rat Catchers/Rat_Catchers.json"
-	},
-	{
-		"Quest": "Recipe for Disaster: Another Cook's Quest",
-		"Path": "./Quests/Recipe for Disaster Another Cooks Quest/Recipe_for_Disaster_Another_Cooks_Quest.json"
-	},
-	{
-		"Quest": "Recipe for Disaster: Freeing the Goblin Generals",
-		"Path": "./Quests/Recipe for Disaster Freeing the Goblin Generals/Recipe_for_Disaster_Freeing_the_Goblin_Generals.json"
-	},
-	{
-		"Quest": "Recipe for Disaster: Freeing King Awowogei",
-		"Path": "./Quests/Recipe for Disaster Freeing King Awowogei/Recipe_for_Disaster_Freeing_King_Awowogei.json"
-	},
-	{
-		"Quest": "Recipe for Disaster: Freeing Evil Dave",
-		"Path": "./Quests/Recipe for Disaster Freeing Evil Dave/Recipe_for_Disaster_Freeing_Evil_Dave.json"
-	},
-	{
-		"Quest": "Recipe for Disaster: Freeing the Mountain Dwarf",
-		"Path": "./Quests/Recipe for Disaster Freeing the Mountain Dwarf/Recipe_for_Disaster_Freeing_the_Mountain_Dwarf.json"
-	},
-	{
-		"Quest": "Recipe for Disaster: Freeing the Lumbridge Sage",
-		"Path": "./Quests/Recipe for Disaster Freeing the Lumbridge Sage/Recipe_for_Disaster_Freeing_the_Lumbridge_Sage.json"
-	},
-	{
-		"Quest": "Recipe for Disaster: Freeing Pirate Pete",
-		"Path": "./Quests/Recipe for Disaster Freeing Pirate Pete/Recipe_for_Disaster_Freeing_Pirate_Pete.json"
-	},
-	{
-		"Quest": "Recipe for Disaster: Freeing Skrach Uglogwee",
-		"Path": "./Quests/Recipe for Disaster Freeing Skrach Uglogwee/Recipe_for_Disaster_Freeing_Skrach_Uglogwee.json"
-	},
-	{
-		"Quest": "Recipe for Disaster: Freeing Sir Amik Varze",
-		"Path": "./Quests/Recipe for Disaster Freeing Sir Amik Varze/Recipe_for_Disaster_Freeing_Sir_Amik_Varze.json"
-	},
-	{
-		"Quest": "Recipe for Disaster: Defeating The Culinaromancer",
-		"Path": "./Quests/Recipe for Disaster Defeating The Culinaromancer/Recipe_for_Disaster_Defeating_The_Culinaromancer.json"
-	},
-	{
-		"Quest": "Recruitment Drive",
-		"Path": "./Quests/Recruitment Drive/Recruitment_Drive.json"
-	},
-	{
-		"Quest": "Regicide",
-		"Path": "./Quests/Regicide/Regicide.json"
-	},
-	{
-		"Quest": "Requiem for a Dragon",
-		"Path": "./Quests/Requiem for a Dragon/Requiem_for_a_Dragon.json"
-	},
-	{
-		"Quest": "Ritual of the Mahjarrat",
-		"Path": "./Quests/Ritual of the Mahjarrat/Ritual_of_the_Mahjarrat.json"
-	},
-	{
-		"Quest": "River of Blood",
-		"Path": "./Quests/River of Blood/River_of_Blood.json"
-	},
-	{
-		"Quest": "Rocking Out",
-		"Path": "./Quests/Rocking Out/Rocking_Out.json"
-	},
-	{
-		"Quest": "Roving Elves",
-		"Path": "./Quests/Roving Elves/Roving_Elves.json"
-	},
-	{
-		"Quest": "Royal Trouble",
-		"Path": "./Quests/Royal Trouble/Royal_Trouble.json"
-	},
-	{
-		"Quest": "Rum Deal",
-		"Path": "./Quests/Rum Deal/Rum_Deal.json"
-	},
-	{
-		"Quest": "Rune Mysteries",
-		"Path": "./Quests/Rune Mysteries/Rune_Mysteries.json"
-	},
-	{
-		"Quest": "Rune Memories",
-		"Path": "./Quests/Rune Memories/Rune_Memories.json"
-	},
-	{
-		"Quest": "Rune Mechanics",
-		"Path": "./Quests/Rune Mechanics/Rune_Mechanics.json"
-	},
-	{
-		"Quest": "Rune Mythos",
-		"Path": "./Quests/Rune Mythos/Rune_Mythos.json"
-	},
-	{
-		"Quest": "Salt in the Wound",
-		"Path": "./Quests/Salt in the Wound/Salt_in_the_Wound.json"
-	},
-	{
-		"Quest": "Scorpion Catcher",
-		"Path": "./Quests/Scorpion Catcher/Scorpion_Catcher.json"
-	},
-	{
-		"Quest": "Sea Slug",
-		"Path": "./Quests/Sea Slug/Sea_Slug.json"
-	},
-	{
-		"Quest": "Shades of Mort'ton",
-		"Path": "./Quests/Shades of Mortton/Shades_of_Mortton.json"
-	},
-	{
-		"Quest": "A Shadow over Ashdale",
-		"Path": "./Quests/A Shadow over Ashdale/A_Shadow_over_Ashdale.json"
-	},
-	{
-		"Quest": "Shadow of the Storm",
-		"Path": "./Quests/Shadow of the Storm/Shadow_of_the_Storm.json"
-	},
-	{
-		"Quest": "Sheep Herder",
-		"Path": "./Quests/Sheep Herder/Sheep_Herder.json"
-	},
-	{
-		"Quest": "Sheep Shearer",
-		"Path": "./Quests/Sheep Shearer/Sheep_Shearer.json"
-	},
-	{
-		"Quest": "Shield of Arrav",
-		"Path": "./Quests/Shield of Arrav/Shield_of_Arrav.json"
-	},
-	{
-		"Quest": "Shilo Village",
-		"Path": "./Quests/Shilo Village/Shilo_Village.json"
-	},
-	{
-		"Quest": "Soul Searching",
-		"Path": "./Quests/Soul Searching/Soul_Searching.json"
-	},
-	{
-		"Quest": "A Clockwork Syringe",
-		"Path": "./Quests/A Clockwork Syringe/A_Clockwork_Syringe.json"
-	},
-	{
-		"Quest": "Shilo Village",
-		"Path": "./Quests/Shilo Village/Shilo_Village.json"
-	},
-	{
-		"Quest": "Sins of the Father",
-		"Path": "./Quests/Sins of the Father/Sins_of_the_Father.json"
-	},
-	{
-		"Quest": "Sliske's Endgame",
-		"Path": "./Quests/Sliske's Endgame/Sliskes_Endgame.json"
-	},
-	{
-		"Quest": "Smoking Kills",
-		"Path": "./Quests/Smoking Kills/Smoking_Kills.json"
-	},
-	{
-		"Quest": "Some Like It Cold",
-		"Path": "./Quests/Some Like It Cold/Some_Like_It_Cold.json"
-	},
-	{
-		"Quest": "Song from the Depths",
-		"Path": "./Quests/Song from the Depths/Song_from_the_Depths.json"
-	},
-	{
-		"Quest": "Spirit of Summer",
-		"Path": "./Quests/Spirit of Summer/Spirit_of_Summer.json"
-	},
-	{
-		"Quest": "Spirits of the Elid",
-		"Path": "./Quests/Spirits of the Elid/Spirits_of_the_Elid.json"
-	},
-	{
-		"Quest": "Stolen Hearts",
-		"Path": "./Quests/Stolen Hearts/Stolen_Hearts.json"
-	},
-	{
-		"Quest": "Succession",
-		"Path": "./Quests/Succession/Succession.json"
-	},
-	{
-		"Quest": "Summer's End",
-		"Path": "./Quests/Summer's End/Summers_End.json"
-	},
-	{
-		"Quest": "Swan Song",
-		"Path": "./Quests/Swan Song/Swan_Song.json"
-	},
-	{
-		"Quest": "Swept Away",
-		"Path": "./Quests/Swept Away/Swept_Away.json"
-	},
-	{
-		"Quest": "Tai Bwo Wannai Trio",
-		"Path": "./Quests/Tai Bwo Wannai Trio/Tai_Bwo_Wannai_Trio.json"
-	},
-	{
-		"Quest": "Tears of Guthix",
-		"Path": "./Quests/Tears of Guthix/Tears_of_Guthix.json"
-	},
-	{
-		"Quest": "Temple of Ikov",
-		"Path": "./Quests/Temple of Ikov/Temple_of_Ikov.json"
-	},
-	{
-		"Quest": "That Old Black Magic: My One and Only Lute",
-		"Path": "./Quests/That Old Black Magic My One and Only Lute/That_Old_Black_Magic_My_One_and_Only_Lute.json"
-	},
-	{
-		"Quest": "That Old Black Magic: Skelly By Everlight",
-		"Path": "./Quests/That Old Black Magic Skelly By Everlight/That_Old_Black_Magic_Skelly_By_Everlight.json"
-	},
-	{
-		"Quest": "That Old Black Magic: Flesh and Bone",
-		"Path": "./Quests/That Old Black Magic Flesh and Bone/That_Old_Black_Magic_Flesh_and_Bone.json"
-	},
-	{
-		"Quest": "That Old Black Magic: Hermy and Bass",
-		"Path": "./Quests/That Old Black Magic Hermy and Bass/That_Old_Black_Magic_Hermy_and_Bass.json"
-	},
-	{
-		"Quest": "The Blood Pact",
-		"Path": "./Quests/The Blood Pact/The_Blood_Pact.json"
-	},
-	{
-		"Quest": "The Branches of Darkmeyer",
-		"Path": "./Quests/The Branches of Darkmeyer/The_Branches_of_Darkmeyer.json"
-	},
-	{
-		"Quest": "The Brink of Extinction",
-		"Path": "./Quests/The Brink of Extinction/The_Brink_of_Extinction.json"
-	},
-	{
-		"Quest": "The Chosen Commander",
-		"Path": "./Quests/The Chosen Commander/The_Chosen_Commander.json"
-	},
-	{
-		"Quest": "The Curse of Arrav",
-		"Path": "./Quests/The Curse of Arrav/The_Curse_of_Arrav.json"
-	},
-	{
-		"Quest": "The Darkness of Hallowvale",
-		"Path": "./Quests/The Darkness of Hallowvale/The_Darkness_of_Hallowvale.json"
-	},
-	{
-		"Quest": "The Death of Chivalry",
-		"Path": "./Quests/The Death of Chivalry/The_Death_of_Chivalry.json"
-	},
-	{
-		"Quest": "The Dig Site",
-		"Path": "./Quests/The Dig Site/The_Dig_Site.json"
-	},
-	{
-		"Quest": "The Elder Kiln",
-		"Path": "./Quests/The Elder Kiln/The_Elder_Kiln.json"
-	},
-	{
-		"Quest": "The Eyes of Glouphrie",
-		"Path": "./Quests/The Eyes of Glouphrie/The_Eyes_of_Glouphrie.json"
-	},
-	{
-		"Quest": "The Feud",
-		"Path": "./Quests/The Feud/The_Feud.json"
-	},
-	{
-		"Quest": "The Firemaker's Curse",
-		"Path": "./Quests/The Firemaker's Curse/The_Firemakers_Curse.json"
-	},
-	{
-		"Quest": "The Fremennik Isles",
-		"Path": "./Quests/The Fremennik Isles/The_Fremennik_Isles.json"
-	},
-	{
-		"Quest": "The Fremennik Trials",
-		"Path": "./Quests/The Fremennik Trials/The_Fremennik_Trials.json"
-	},
-	{
-		"Quest": "The Giant Dwarf",
-		"Path": "./Quests/The Giant Dwarf/The_Giant_Dwarf.json"
-	},
-	{
-		"Quest": "The Golem",
-		"Path": "./Quests/The Golem/The_Golem.json"
-	},
-	{
-		"Quest": "The Grand Tree",
-		"Path": "./Quests/The Grand Tree/The_Grand_Tree.json"
-	},
-	{
-		"Quest": "The Great Brain Robbery",
-		"Path": "./Quests/The Great Brain Robbery/The_Great_Brain_Robbery.json"
-	},
-	{
-		"Quest": "The Hand in the Sand",
-		"Path": "./Quests/The Hand in the Sand/The_Hand_in_the_Sand.json"
-	},
-	{
-		"Quest": "The Jack of Spades",
-		"Path": "./Quests/The Jack of Spades/The_Jack_of_Spades.json"
-	},
-	{
-		"Quest": "The Knight's Sword",
-		"Path": "./Quests/The Knight's Sword/The_Knights_Sword.json"
-	},
-	{
-		"Quest": "The Light Within",
-		"Path": "./Quests/The Light Within/The_Light_Within.json"
-	},
-	{
-		"Quest": "The Lord of Vampyrium",
-		"Path": "./Quests/The Lord of Vampyrium/The_Lord_of_Vampyrium.json"
-	},
-	{
-		"Quest": "The Lost Tribe",
-		"Path": "./Quests/The Lost Tribe/The_Lost_Tribe.json"
-	},
-	{
-		"Quest": "The Mighty Fall",
-		"Path": "./Quests/The Mighty Fall/The_Mighty_Fall.json"
-	},
-	{
-		"Quest": "The Needle Skips",
-		"Path": "./Quests/The Needle Skips/The_Needle_Skips.json"
-	},
-	{
-		"Quest": "The Path of Glouphrie",
-		"Path": "./Quests/The Path of Glouphrie/The_Path_of_Glouphrie.json"
-	},
-	{
-		"Quest": "The Prisoner of Glouphrie",
-		"Path": "./Quests/The Prisoner of Glouphrie/The_Prisoner_of_Glouphrie.json"
-	},
-	{
-		"Quest": "Remains of the Necrolord",
-		"Path": "./Quests/Remains of the Necrolord/Remains_of_the_Necrolord.json"
-	},
-	{
-		"Quest": "The Restless Ghost",
-		"Path": "./Quests/The Restless Ghost/The_Restless_Ghost.json"
-	},
-	{
-		"Quest": "The Slug Menace",
-		"Path": "./Quests/The Slug Menace/The_Slug_Menace.json"
-	},
-	{
-		"Quest": "The Spirit of War",
-		"Path": "./Quests/The Spirit of War/The_Spirit_of_War.json"
-	},
-	{
-		"Quest": "The Tale of the Muspah",
-		"Path": "./Quests/The Tale of the Muspah/The_Tale_of_the_Muspah.json"
-	},
-	{
-		"Quest": "The Temple at Senntisten",
-		"Path": "./Quests/The Temple at Senntisten/The_Temple_at_Senntisten.json"
-	},
-	{
-		"Quest": "The Tourist Trap",
-		"Path": "./Quests/The Tourist Trap/The_Tourist_Trap.json"
-	},
-	{
-		"Quest": "The Vault of Shadows",
-		"Path": "./Quests/The Vault of Shadows/The_Vault_of_Shadows.json"
-	},
-	{
-		"Quest": "The Void Stares Back",
-		"Path": "./Quests/The Void Stares Back/The_Void_Stares_Back.json"
-	},
-	{
-		"Quest": "The World Wakes",
-		"Path": "./Quests/The World Wakes/The_World_Wakes.json"
-	},
-	{
-		"Quest": "Throne of Miscellania",
-		"Path": "./Quests/Throne of Miscellania/Throne_of_Miscellania.json"
-	},
-	{
-		"Quest": "TokTz-Ket-Dill",
-		"Path": "./Quests/TokTz-Ket-Dill/TokTz-Ket-Dill.json"
-	},
-	{
-		"Quest": "Tomes of the Warlock",
-		"Path": "./Quests/Tomes of the Warlock/Tomes_of_the_Warlock.json"
-	},
-	{
-		"Quest": "Tower of Life",
-		"Path": "./Quests/Tower of Life/Tower_of_Life.json"
-	},
-	{
-		"Quest": "Tree Gnome Village",
-		"Path": "./Quests/Tree Gnome Village/Tree_Gnome_Village.json"
-	},
-	{
-		"Quest": "Tribal Totem",
-		"Path": "./Quests/Tribal Totem/Tribal_Totem.json"
-	},
-	{
-		"Quest": "Troll Romance",
-		"Path": "./Quests/Troll Romance/Troll_Romance.json"
-	},
-	{
-		"Quest": "Troll Stronghold",
-		"Path": "./Quests/Troll Stronghold/Troll_Stronghold.json"
-	},
-	{
-		"Quest": "Twilight of the Gods",
-		"Path": "./Quests/Twilight of the Gods/Twilight_of_the_Gods.json"
-	},
-	{
-		"Quest": "Underground Pass",
-		"Path": "./Quests/Underground Pass/Underground_Pass.json"
-	},
-	{
-		"Quest": "Unwelcome Guests",
-		"Path": "./Quests/Unwelcome Guests/Unwelcome_Guests.json"
-	},
-	{
-		"Quest": "Vampyre Slayer",
-		"Path": "./Quests/Vampyre Slayer/Vampyre_Slayer.json"
-	},
-	{
-		"Quest": "Vessel of the Harbinger",
-		"Path": "./Quests/Vessel of the Harbinger/Vessel_of_the_Harbinger.json"
-	},
-	{
-		"Quest": "Violet is Blue",
-		"Path": "./Quests/Violet is Blue/Violet_is_Blue.json"
-	},
-	{
-		"Quest": "Violet is Blue Too",
-		"Path": "./Quests/Violet is Blue Too/Violet_is_Blue_Too.json"
-	},
-	{
-		"Quest": "Wanted!",
-		"Path": "./Quests/Wanted!/Wanted!.json"
-	},
-	{
-		"Quest": "Watchtower",
-		"Path": "./Quests/Watchtower/Watchtower.json"
-	},
-	{
-		"Quest": "What Lies Below",
-		"Path": "./Quests/What Lies Below/What_Lies_Below.json"
-	},
-	{
-		"Quest": "What's Mine is Yours",
-		"Path": "./Quests/What's Mine is Yours/Whats_Mine_is_Yours.json"
-	},
-	{
-		"Quest": "While Guthix Sleeps",
-		"Path": "./Quests/While Guthix Sleeps/While_Guthix_Sleeps.json"
-	},
-	{
-		"Quest": "Witch's House",
-		"Path": "./Quests/Witch's House/Witchs_House.json"
-	},
-	{
-		"Quest": "Waterfall Quest",
-		"Path": "./Quests/Waterfall Quest/Waterfall_Quest.json"
-	},
-	{
-		"Quest": "Within the Light",
-		"Path": "./Quests/Within the Light/Within_the_Light.json"
-	},
-	{
-		"Quest": "Wolf Whistle",
-		"Path": "./Quests/Wolf Whistle/Wolf_Whistle.json"
-	},
-	{
-		"Quest": "You Are It",
-		"Path": "./Quests/You Are It/You_Are_It.json"
-	},
-	{
-		"Quest": "Zogre Flesh Eaters",
-		"Path": "./Quests/Zogre Flesh Eaters/Zogre_Flesh_Eaters.json"
-	},
-	{
-		"Quest": "Bar Crawl (miniquest)",
-		"Path": "./Quests/Bar Crawl (miniquest)/Bar_Crawl_miniquest.json"
-	},
-	{
-		"Quest": "Benedict's World Tour (miniquest)",
-		"Path": "./Quests/Benedicts World Tour (miniquest)/Benedicts_World_Tour_miniquest.json"
-	},
-	{
-		"Quest": "Desert Slayer Dungeon (miniquest)",
-		"Path": "./Quests/Desert Slayer Dungeon (miniquest)/Desert_Slayer_Dungeon_miniquest.json"
-	},
-	{
-		"Quest": "Enter the Abyss (miniquest)",
-		"Path": "./Quests/Enter the Abyss (miniquest)/Enter_the_Abyss_miniquest.json"
-	},
-	{
-		"Quest": "Father and Son (miniquest)",
-		"Path": "./Quests/Father and Son (miniquest)/Father_and_Son_miniquest.json"
-	},
-	{
-		"Quest": "Helping Laniakea (miniquest)",
-		"Path": "./Quests/Helping Laniakea (miniquest)/Helping_Laniakea_miniquest.json"
-	},
-	{
-		"Quest": "Hopespear's Will (miniquest)",
-		"Path": "./Quests/Hopespears Will (miniquest)/Hopespears_Will_miniquest.json"
-	},
-	{
-		"Quest": "The Hunt for Surok (miniquest)",
-		"Path": "./Quests/The Hunt for Surok (miniquest)/The_Hunt_for_Surok_miniquest.json"
-	},
-	{
-		"Quest": "In Memory of the Myreque (miniquest)",
-		"Path": "./Quests/In Memory of the Myreque (miniquest)/In_Memory_of_the_Myreque_miniquest.json"
-	},
-	{
-		"Quest": "Koschei's Troubles (miniquest)",
-		"Path": "./Quests/Koscheis Troubles (miniquest)/Koscheis_Troubles_miniquest.json"
-	},
-	{
-		"Quest": "Lair of Tarn Razorlor (miniquest)",
-		"Path": "./Quests/Lair of Tarn Razorlor (miniquest)/Lair_of_Tarn_Razorlor_miniquest.json"
-	},
-	{
-		"Quest": "The Lost Toys (miniquest)",
-		"Path": "./Quests/The Lost Toys (miniquest)/The_Lost_Toys_miniquest.json"
-	},
-	{
-		"Quest": "Mahjarrat Memories (miniquest)",
-		"Path": "./Quests/Mahjarrat Memories (miniquest)/Mahjarrat_Memories_miniquest.json"
-	},
-	{
-		"Quest": "One Foot in the Grave (miniquest)",
-		"Path": "./Quests/One Foot in the Grave (miniquest)/One_Foot_in_the_Grave_miniquest.json"
-	},
-	{
-		"Quest": "Purple Cat (miniquest)",
-		"Path": "./Quests/Purple Cat (miniquest)/Purple_Cat_miniquest.json"
-	},
-	{
-		"Quest": "Rebuilding Edgeville (miniquest)",
-		"Path": "./Quests/Rebuilding Edgeville (miniquest)/Rebuilding_Edgeville_miniquest.json"
-	},
-	{
-		"Quest": "Sheep Shearer (miniquest)",
-		"Path": "./Quests/Sheep Shearer (miniquest)/Sheep_Shearer_miniquest.json"
-	},
-	{
-		"Quest": "Tales of Nomad (miniquest)",
-		"Path": "./Quests/Tales of Nomad (miniquest)/Tales_of_Nomad_miniquest.json"
-	},
-	{
-		"Quest": "Tortle Combat (miniquest)",
-		"Path": "./Quests/Tortle Combat (miniquest)/Tortle_Combat_miniquest.json"
-	},
-	{
-		"Quest": "Wandering Gaal (miniquest)",
-		"Path": "./Quests/Wandering Gaal (miniquest)/Wandering_Gaal_miniquest.json"
-	},
-	{
-		"Quest": "Witch's Potion (miniquest)",
-		"Path": "./Quests/Witch's Potion (miniquest)/Witchs_Potion_miniquest.json"
-	},
-	{
-		"Quest": "Three's Company (saga)",
-		"Path": "./Quests/Three's Company (saga)/Threes_Company_saga.json"
-	},
-	{
-		"Quest": "Vengeance (saga)",
-		"Path": "./Quests/Vengeance (saga)/Vengeance_saga.json"
-	},
-	{
-		"Quest": "Thok It To 'Em (saga)",
-		"Path": "./Quests/Thok It To 'Em (saga)/Thok_It_To_Em_saga.json"
-	},
-	{
-		"Quest": "Nadir (saga)",
-		"Path": "./Quests/Nadir (saga)/Nadir_saga.json"
-	},
-	{
-		"Quest": "Thok Your Block Off (saga)",
-		"Path": "./Quests/Thok Your Block Off (saga)/Thok_Your_Block_Off_saga.json"
-	},
-	{
-		"Quest": "Civil War I (miniquest)",
-		"Path": "./Quests/Civil War I (miniquest)/Civil_War_I_miniquest.json"
-	},
-	{
-		"Quest": "Civil War II (miniquest)",
-		"Path": "./Quests/Civil War II (miniquest)/Civil_War_II_miniquest.json"
-	},
-	{
-		"Quest": "Civil War III (miniquest)",
-		"Path": "./Quests/Civil War III (miniquest)/Civil_War_III_miniquest.json"
-	},
-	{
-		"Quest": "The Curse of Zaros (miniquest)",
-		"Path": "./Quests/The Curse of Zaros (miniquest)/The_Curse_of_Zaros_miniquest.json"
-	},
-	{
-		"Quest": "The General's Shadow (miniquest)",
-		"Path": "./Quests/The General's Shadow (miniquest)/The_Generals_Shadow_miniquest.json"
-	},
-	{
-		"Quest": "Tales of the God Wars (miniquest)",
-		"Path": "./Quests/Tales of the God Wars (miniquest)/Tales_of_the_God_Wars_miniquest.json"
-	},
-	{
-		"Quest": "Flag Fall (miniquest)",
-		"Path": "./Quests/Flag Fall (miniquest)/Flag_Fall_miniquest.json"
-	},
-	{
-		"Quest": "Head of the Family (miniquest)",
-		"Path": "./Quests/Head of the Family (miniquest)/Head_of_the_Family_miniquest.json"
-	},
-	{
-		"Quest": "Spiritual Enlightenment (miniquest)",
-		"Path": "./Quests/Spiritual Enlightenment (miniquest)/Spiritual_Enlightenment_miniquest.json"
-	},
-	{
-		"Quest": "Jed Hunter (miniquest)",
-		"Path": "./Quests/Jed Hunter (miniquest)/Jed_Hunter_miniquest.json"
-	},
-	{
-		"Quest": "Eye for an Eye (miniquest)",
-		"Path": "./Quests/Eye for an Eye (miniquest)/Eye_for_an_Eye_miniquest.json"
-	},
-	{
-		"Quest": "Harbinger (miniquest)",
-		"Path": "./Quests/Harbinger (miniquest)/Harbinger_miniquest.json"
-	},
-	{
-		"Quest": "Tuai Leit's Own (miniquest)",
-		"Path": "./Quests/Tuai Leits Own (miniquest)/Tuai_Leits_Own_miniquest.json"
-	},
-	{
-		"Quest": "Ghosts from the Past (miniquest)",
-		"Path": "./Quests/Ghosts from the Past (miniquest)/Ghosts_from_the_Past_miniquest.json"
-	},
-	{
-		"Quest": "Damage Control (miniquest)",
-		"Path": "./Quests/Damage Control (miniquest)/Damage_Control_miniquest.json"
-	},
-	{
-		"Quest": "Final Destination (miniquest)",
-		"Path": "./Quests/Final Destination (miniquest)/Final_Destination_miniquest.json"
-	},
-	{
-		"Quest": "From Tiny Acorns (miniquest)",
-		"Path": "./Quests/From Tiny Acorns (miniquest)/From_Tiny_Acorns_miniquest.json"
-	},
-	{
-		"Quest": "Lost Her Marbles (miniquest)",
-		"Path": "./Quests/Lost Her Marbles (miniquest)/Lost_Her_Marbles_miniquest.json"
-	},
-	{
-		"Quest": "A Guild of Our Own (miniquest)",
-		"Path": "./Quests/A Guild of Our Own (miniquest)/A_Guild_of_Our_Own_miniquest.json"
-	},
-	{
-		"Quest": "Boric's Task I (miniquest)",
-		"Path": "./Quests/Borics Task I (miniquest)/Borics_Task_I_miniquest.json"
-	},
-	{
-		"Quest": "Boric's Task II (miniquest)",
-		"Path": "./Quests/Borics Task II (miniquest)/Borics_Task_II_miniquest.json"
-	},
-	{
-		"Quest": "Boric's Task III (miniquest)",
-		"Path": "./Quests/Borics Task III (miniquest)/Borics_Task_III_miniquest.json"
-	},
-	{
-		"Quest": "Doric's Task I (miniquest)",
-		"Path": "./Quests/Dorics Task I (miniquest)/Dorics_Task_I_miniquest.json"
-	},
-	{
-		"Quest": "Doric's Task II (miniquest)",
-		"Path": "./Quests/Dorics Task II (miniquest)/Dorics_Task_II_miniquest.json"
-	},
-	{
-		"Quest": "Doric's Task III (miniquest)",
-		"Path": "./Quests/Dorics Task III (miniquest)/Dorics_Task_III_miniquest.json"
-	},
-	{
-		"Quest": "Doric's Task IV (miniquest)",
-		"Path": "./Quests/Dorics Task IV (miniquest)/Dorics_Task_IV_miniquest.json"
-	},
-	{
-		"Quest": "Doric's Task V (miniquest)",
-		"Path": "./Quests/Dorics Task V (miniquest)/Dorics_Task_V_miniquest.json"
-	},
-	{
-		"Quest": "Doric's Task VI (miniquest)",
-		"Path": "./Quests/Dorics Task VI (miniquest)/Dorics_Task_VI_miniquest.json"
-	},
-	{
-		"Quest": "Doric's Task VII (miniquest)",
-		"Path": "./Quests/Dorics Task VII (miniquest)/Dorics_Task_VII_miniquest.json"
-	},
-	{
-		"Quest": "Doric's Task VIII (miniquest)",
-		"Path": "./Quests/Dorics Task VIII (miniquest)/Dorics_Task_VIII_miniquest.json"
-	}
+  {
+    "Quest": "A Christmas Reunion",
+    "Path": "./Quests/A Christmas Reunion/A_Christmas_Reunion.json"
+  },
+  {
+    "Quest": "A Fairy Tale I: Growing Pains",
+    "Path": "./Quests/A Fairy Tale I Growing Pains/A_Fairy_Tale_I_Growing_Pains.json"
+  },
+  {
+    "Quest": "A Fairy Tale II: Cure a Queen",
+    "Path": "./Quests/A Fairy Tale II Cure a Queen/A_Fairy_Tale_II_Cure_a_Queen.json"
+  },
+  {
+    "Quest": "A Fairy Tale III: Battle at Ork's Rift",
+    "Path": "./Quests/A Fairy Tale III Battle at Ork's Rift/A_Fairy_Tale_III_Battle_at_Orks_Rift.json"
+  },
+  {
+    "Quest": "Eclipse of the Heart",
+    "Path": "./Quests/Eclipse of the Heart/Eclipse_of_the_Heart.json"
+  },
+  {
+    "Quest": "A Shadow over Ashdale",
+    "Path": "./Quests/A Shadow over Ashdale/A_Shadow_over_Ashdale.json"
+  },
+  {
+    "Quest": "A Soul's Bane",
+    "Path": "./Quests/A Soul's Bane/A_Souls_Bane.json"
+  },
+  {
+    "Quest": "A Tail of Two Cats",
+    "Path": "./Quests/A Tail of Two Cats/A_Tail_of_Two_Cats.json"
+  },
+  {
+    "Quest": "A Void Dance",
+    "Path": "./Quests/A Void Dance/A_Void_Dance.json"
+  },
+  {
+    "Quest": "Aftermath",
+    "Path": "./Quests/Aftermath/Aftermath.json"
+  },
+  {
+    "Quest": "All Fired Up",
+    "Path": "./Quests/All Fired Up/All_Fired_Up.json"
+  },
+  {
+    "Quest": "Alpha vs Omega",
+    "Path": "./Quests/Alpha vs Omega/Alpha_vs_Omega.json"
+  },
+  {
+    "Quest": "Ancient Awakening",
+    "Path": "./Quests/Ancient Awakening/Ancient_Awakening.json"
+  },
+  {
+    "Quest": "Animal Magnetism",
+    "Path": "./Quests/Animal Magnetism/Animal_Magnetism.json"
+  },
+  {
+    "Quest": "Another Slice of HAM",
+    "Path": "./Quests/Another Slice of HAM/Another_Slice_of_HAM.json"
+  },
+  {
+    "Quest": "As a First Resort",
+    "Path": "./Quests/As a First Resort/As_a_First_Resort.json"
+  },
+  {
+    "Quest": "Azzanadra's Quest",
+    "Path": "./Quests/Azzanadra's Quest/Azzanadras_Quest.json"
+  },
+  {
+    "Quest": "Back to my Roots",
+    "Path": "./Quests/Back to my Roots/Back_to_my_Roots.json"
+  },
+  {
+    "Quest": "Back to the Freezer",
+    "Path": "./Quests/Back to the Freezer/Back_to_the_Freezer.json"
+  },
+  {
+    "Quest": "Battle of the Monolith",
+    "Path": "./Quests/Battle of the Monolith/Battle_of_the_Monolith.json"
+  },
+  {
+    "Quest": "Battle of Forinthry",
+    "Path": "./Quests/Battle of Forinthry/Battle_of_Forinthry.json"
+  },
+  {
+    "Quest": "Beneath Cursed Tides",
+    "Path": "./Quests/Beneath Cursed Tides/Beneath_Cursed_Tides.json"
+  },
+  {
+    "Quest": "Beneath Scabaras' Sands",
+    "Path": "./Quests/Beneath Scabaras' Sands/Beneath_Scabaras_Sands.json"
+  },
+  {
+    "Quest": "Between a Rock",
+    "Path": "./Quests/Between a Rock/Between_a_Rock.json"
+  },
+  {
+    "Quest": "Big Chompy Bird Hunting",
+    "Path": "./Quests/Big Chompy Bird Hunting/Big_Chompy_Bird_Hunting.json"
+  },
+  {
+    "Quest": "Biohazard",
+    "Path": "./Quests/Biohazard/Biohazard.json"
+  },
+  {
+    "Quest": "Birthright of the Dwarves",
+    "Path": "./Quests/Birthright of the Dwarves/Birthright_of_the_Dwarves.json"
+  },
+  {
+    "Quest": "Blood Runs Deep",
+    "Path": "./Quests/Blood Runs Deep/Blood_Runs_Deep.json"
+  },
+  {
+    "Quest": "Bringing Home the Bacon",
+    "Path": "./Quests/Bringing Home the Bacon/Bringing_Home_the_Bacon.json"
+  },
+  {
+    "Quest": "Broken Home",
+    "Path": "./Quests/Broken Home/Broken_Home.json"
+  },
+  {
+    "Quest": "Buyers and Cellars",
+    "Path": "./Quests/Buyers and Cellars/Buyers_and_Cellars.json"
+  },
+  {
+    "Quest": "Cabin Fever",
+    "Path": "./Quests/Cabin Fever/Cabin_Fever.json"
+  },
+  {
+    "Quest": "Call of the Ancestors",
+    "Path": "./Quests/Call of the Ancestors/Call_of_the_Ancestors.json"
+  },
+  {
+    "Quest": "Carnillean Rising",
+    "Path": "./Quests/Carnillean Rising/Carnillean_Rising.json"
+  },
+  {
+    "Quest": "Catapult Construction",
+    "Path": "./Quests/Catapult Construction/Catapult_Construction.json"
+  },
+  {
+    "Quest": "Chef's Assistant",
+    "Path": "./Quests/Chef's Assistant/Chefs_Assistant.json"
+  },
+  {
+    "Quest": "Children of Mah",
+    "Path": "./Quests/Children of Mah/Children_of_Mah.json"
+  },
+  {
+    "Quest": "City of Senntisten",
+    "Path": "./Quests/City of Senntisten/City_of_Senntisten.json"
+  },
+  {
+    "Quest": "Clock Tower",
+    "Path": "./Quests/Clock Tower/Clock_Tower.json"
+  },
+  {
+    "Quest": "Cold War",
+    "Path": "./Quests/Cold War/Cold_War.json"
+  },
+  {
+    "Quest": "Contact!",
+    "Path": "./Quests/Contact!/Contact!.json"
+  },
+  {
+    "Quest": "Cook's Assistant",
+    "Path": "./Quests/Cook's Assistant/Cooks_Assistant.json"
+  },
+  {
+    "Quest": "Creature of Fenkenstrain",
+    "Path": "./Quests/Creature of Fenkenstrain/Creature_of_Fenkenstrain.json"
+  },
+  {
+    "Quest": "Crocodile Tears",
+    "Path": "./Quests/Crocodile Tears/Crocodile_Tears.json"
+  },
+  {
+    "Quest": "Curse of the Black Stone",
+    "Path": "./Quests/Curse of the Black Stone/Curse_of_the_Black_Stone.json"
+  },
+  {
+    "Quest": "Daughter of Chaos",
+    "Path": "./Quests/Daughter of Chaos/Daughter_of_Chaos.json"
+  },
+  {
+    "Quest": "Dead and Buried",
+    "Path": "./Quests/Dead and Buried/Dead_and_Buried.json"
+  },
+  {
+    "Quest": "Deadliest Catch",
+    "Path": "./Quests/Deadliest Catch/Deadliest_Catch.json"
+  },
+  {
+    "Quest": "Dealing with Scabaras",
+    "Path": "./Quests/Dealing with Scabaras/Dealing_with_Scabaras.json"
+  },
+  {
+    "Quest": "Death Plateau",
+    "Path": "./Quests/Death Plateau/Death_Plateau.json"
+  },
+  {
+    "Quest": "Death to the Dorgeshuun",
+    "Path": "./Quests/Death to the Dorgeshuun/Death_to_the_Dorgeshuun.json"
+  },
+  {
+    "Quest": "Defender of Varrock",
+    "Path": "./Quests/Defender of Varrock/Defender_of_Varrock.json"
+  },
+  {
+    "Quest": "Demon Slayer",
+    "Path": "./Quests/Demon Slayer/Demon_Slayer.json"
+  },
+  {
+    "Quest": "Desert Treasure",
+    "Path": "./Quests/Desert Treasure/Desert_Treasure.json"
+  },
+  {
+    "Quest": "Desperate Creatures",
+    "Path": "./Quests/Desperate Creatures/Desperate_Creatures.json"
+  },
+  {
+    "Quest": "Desperate Measures",
+    "Path": "./Quests/Desperate Measures/Desperate_Measures.json"
+  },
+  {
+    "Quest": "Desperate Times",
+    "Path": "./Quests/Desperate Times/Desperate_Times.json"
+  },
+  {
+    "Quest": "Diamond in the Rough",
+    "Path": "./Quests/Diamond in the Rough/Diamond_in_the_Rough.json"
+  },
+  {
+    "Quest": "Devious Minds",
+    "Path": "./Quests/Devious Minds/Devious_Minds.json"
+  },
+  {
+    "Quest": "Dimension of Disaster: Coin of the Realm",
+    "Path": "./Quests/Dimension of Disaster Coin of the Realm/Dimension_of_Disaster_Coin_of_the_Realm.json"
+  },
+  {
+    "Quest": "Dimension of Disaster: Curse of Arrav",
+    "Path": "./Quests/Dimension of Disaster Curse of Arrav/Dimension_of_Disaster_Curse_of_Arrav.json"
+  },
+  {
+    "Quest": "Dimension of Disaster: Defender of Varrock",
+    "Path": "./Quests/Dimension of Disaster Defender of Varrock/Dimension_of_Disaster_Defender_of_Varrock.json"
+  },
+  {
+    "Quest": "Dimension of Disaster: Demon Slayer",
+    "Path": "./Quests/Dimension of Disaster Demon Slayer/Dimension_of_Disaster_Demon_Slayer.json"
+  },
+  {
+    "Quest": "Dimension of Disaster: Shield of Arrav",
+    "Path": "./Quests/Dimension of Disaster Shield of Arrav/Dimension_of_Disaster_Shield_of_Arrav.json"
+  },
+  {
+    "Quest": "Dishonour among Thieves",
+    "Path": "./Quests/Dishonour among Thieves/Dishonour_among_Thieves.json"
+  },
+  {
+    "Quest": "Do No Evil",
+    "Path": "./Quests/Do No Evil/Do_No_Evil.json"
+  },
+  {
+    "Quest": "Dragon Slayer",
+    "Path": "./Quests/Dragon Slayer/Dragon_Slayer.json"
+  },
+  {
+    "Quest": "Dream Mentor",
+    "Path": "./Quests/Dream Mentor/Dream_Mentor.json"
+  },
+  {
+    "Quest": "Druidic Ritual",
+    "Path": "./Quests/Druidic Ritual/Druidic_Ritual.json"
+  },
+  {
+    "Quest": "Dwarf Cannon",
+    "Path": "./Quests/Dwarf Cannon/Dwarf_Cannon.json"
+  },
+  {
+    "Quest": "Eadgar's Ruse",
+    "Path": "./Quests/Eadgar's Ruse/Eadgars_Ruse.json"
+  },
+  {
+    "Quest": "Eagles' Peak",
+    "Path": "./Quests/Eagles' Peak/Eagles_Peak.json"
+  },
+  {
+    "Quest": "Eclipse of the Heart",
+    "Path": "./Quests/Eclipse of the Heart/Eclipse_of_the_Heart.json"
+  },
+  {
+    "Quest": "Elemental Workshop I",
+    "Path": "./Quests/Elemental Workshop I/Elemental_Workshop_I.json"
+  },
+  {
+    "Quest": "Elemental Workshop II",
+    "Path": "./Quests/Elemental Workshop II/Elemental_Workshop_II.json"
+  },
+  {
+    "Quest": "Elemental Workshop III",
+    "Path": "./Quests/Elemental Workshop III/Elemental_Workshop_III.json"
+  },
+  {
+    "Quest": "Elemental Workshop IV",
+    "Path": "./Quests/Elemental Workshop IV/Elemental_Workshop_IV.json"
+  },
+  {
+    "Quest": "Enakhra's Lament",
+    "Path": "./Quests/Enakhra's Lament/Enakhras_Lament.json"
+  },
+  {
+    "Quest": "Enlightened Journey",
+    "Path": "./Quests/Enlightened Journey/Enlightened_Journey.json"
+  },
+  {
+    "Quest": "Ernest the Chicken",
+    "Path": "./Quests/Ernest the Chicken/Ernest_the_Chicken.json"
+  },
+  {
+    "Quest": "Evil Dave's Big Day Out",
+    "Path": "./Quests/Evil Dave's Big Day Out/Evil_Daves_Big_Day_Out.json"
+  },
+  {
+    "Quest": "Extinction",
+    "Path": "./Quests/Extinction/Extinction.json"
+  },
+  {
+    "Quest": "Eye of Het I",
+    "Path": "./Quests/Eye of Het I/Eye_of_Het_I.json"
+  },
+  {
+    "Quest": "Eye of Het II",
+    "Path": "./Quests/Eye of Het II/Eye_of_Het_II.json"
+  },
+  {
+    "Quest": "Family Crest",
+    "Path": "./Quests/Family Crest/Family_Crest.json"
+  },
+  {
+    "Quest": "Fate of the Gods",
+    "Path": "./Quests/Fate of the Gods/Fate_of_the_Gods.json"
+  },
+  {
+    "Quest": "Fight Arena",
+    "Path": "./Quests/Fight Arena/Fight_Arena.json"
+  },
+  {
+    "Quest": "Fishing Contest",
+    "Path": "./Quests/Fishing Contest/Fishing_Contest.json"
+  },
+  {
+    "Quest": "Forgettable Tale of a Drunken Dwarf",
+    "Path": "./Quests/Forgettable Tale of a Drunken Dwarf/Forgettable_Tale_of_a_Drunken_Dwarf.json"
+  },
+  {
+    "Quest": "Forgiveness of a Chaos Dwarf",
+    "Path": "./Quests/Forgiveness of a Chaos Dwarf/Forgiveness_of_a_Chaos_Dwarf.json"
+  },
+  {
+    "Quest": "Fur 'n Seek",
+    "Path": "./Quests/Fur 'n Seek/Fur_n_Seek.json"
+  },
+  {
+    "Quest": "Garden of Tranquillity",
+    "Path": "./Quests/Garden of Tranquillity/Garden_of_Tranquillity.json"
+  },
+  {
+    "Quest": "Gertrude's Cat",
+    "Path": "./Quests/Gertrude's Cat/Gertrudes_Cat.json"
+  },
+  {
+    "Quest": "Ghosts Ahoy",
+    "Path": "./Quests/Ghosts Ahoy/Ghosts_Ahoy.json"
+  },
+  {
+    "Quest": "Glorious Memories",
+    "Path": "./Quests/Glorious Memories/Glorious_Memories.json"
+  },
+  {
+    "Quest": "Great-Egg-spectations",
+    "Path": "./Quests/Great-Egg-spectations/Great-Egg-spectations.json"
+  },
+  {
+    "Quest": "Goblin Diplomacy",
+    "Path": "./Quests/Goblin Diplomacy/Goblin_Diplomacy.json"
+  },
+  {
+    "Quest": "Gower Quest",
+    "Path": "./Quests/Gower Quest/Gower_Quest.json"
+  },
+  {
+    "Quest": "Grim Tales",
+    "Path": "./Quests/Grim Tales/Grim_Tales.json"
+  },
+  {
+    "Quest": "Gunnar's Ground",
+    "Path": "./Quests/Gunnar's Ground/Gunnars_Ground.json"
+  },
+  {
+    "Quest": "Haunted Mine",
+    "Path": "./Quests/Haunted Mine/Haunted_Mine.json"
+  },
+  {
+    "Quest": "Hazeel Cult",
+    "Path": "./Quests/Hazeel Cult/Hazeel_Cult.json"
+  },
+  {
+    "Quest": "Heart of Stone",
+    "Path": "./Quests/Heart of Stone/Heart_of_Stone.json"
+  },
+  {
+    "Quest": "Heartstealer",
+    "Path": "./Quests/Heartstealer/Heartstealer.json"
+  },
+  {
+    "Quest": "Hero's Welcome",
+    "Path": "./Quests/Hero's Welcome/Heros_Welcome.json"
+  },
+  {
+    "Quest": "Heroes' Quest",
+    "Path": "./Quests/Heroes' Quest/Heroes_Quest.json"
+  },
+  {
+    "Quest": "Holy Grail",
+    "Path": "./Quests/Holy Grail/Holy_Grail.json"
+  },
+  {
+    "Quest": "Horror from the Deep",
+    "Path": "./Quests/Horror from the Deep/Horror_from_the_Deep.json"
+  },
+  {
+    "Quest": "Hunt for Red Raktuber",
+    "Path": "./Quests/Hunt for Red Raktuber/Hunt_for_Red_Raktuber.json"
+  },
+  {
+    "Quest": "Icthlarin's Little Helper",
+    "Path": "./Quests/Icthlarin's Little Helper/Icthlarins_Little_Helper.json"
+  },
+  {
+    "Quest": "Imp Catcher",
+    "Path": "./Quests/Imp Catcher/Imp_Catcher.json"
+  },
+  {
+    "Quest": "Impressing the Locals",
+    "Path": "./Quests/Impressing the Locals/Impressing_the_Locals.json"
+  },
+  {
+    "Quest": "In Aid of the Myreque",
+    "Path": "./Quests/In Aid of the Myreque/In_Aid_of_the_Myreque.json"
+  },
+  {
+    "Quest": "In Pyre Need",
+    "Path": "./Quests/In Pyre Need/In_Pyre_Need.json"
+  },
+  {
+    "Quest": "In Search of the Myreque",
+    "Path": "./Quests/In Search of the Myreque/In_Search_of_the_Myreque.json"
+  },
+  {
+    "Quest": "It's Snow Bother",
+    "Path": "./Quests/It's Snow Bother/Its_Snow_Bother.json"
+  },
+  {
+    "Quest": "Jungle Potion",
+    "Path": "./Quests/Jungle Potion/Jungle_Potion.json"
+  },
+  {
+    "Quest": "Kennith's Concerns",
+    "Path": "./Quests/Kennith's Concerns/Kenniths_Concerns.json"
+  },
+  {
+    "Quest": "Kili Row",
+    "Path": "./Quests/Kili Row/Kili_Row.json"
+  },
+  {
+    "Quest": "Kindred Spirits",
+    "Path": "./Quests/Kindred Spirits/Kindred_Spirits.json"
+  },
+  {
+    "Quest": "King of the Dwarves",
+    "Path": "./Quests/King of the Dwarves/King_of_the_Dwarves.json"
+  },
+  {
+    "Quest": "King's Ransom",
+    "Path": "./Quests/King's Ransom/Kings_Ransom.json"
+  },
+  {
+    "Quest": "Land of the Goblins",
+    "Path": "./Quests/Land of the Goblins/Land_of_the_Goblins.json"
+  },
+  {
+    "Quest": "Legacy of Seergaze",
+    "Path": "./Quests/Legacy of Seergaze/Legacy_of_Seergaze.json"
+  },
+  {
+    "Quest": "Legends' Quest",
+    "Path": "./Quests/Legends' Quest/Legends_Quest.json"
+  },
+  {
+    "Quest": "Let Them Eat Pie",
+    "Path": "./Quests/Let Them Eat Pie/Let_Them_Eat_Pie.json"
+  },
+  {
+    "Quest": "Lost Her Marbles Miniquest",
+    "Path": "./Quests/Lost Her Marbles Miniquest/Lost_Her_Marbles_Miniquest.json"
+  },
+  {
+    "Quest": "Lost City",
+    "Path": "./Quests/Lost City/Lost_City.json"
+  },
+  {
+    "Quest": "Love Story",
+    "Path": "./Quests/Love Story/Love_Story.json"
+  },
+  {
+    "Quest": "Lunar Diplomacy",
+    "Path": "./Quests/Lunar Diplomacy/Lunar_Diplomacy.json"
+  },
+  {
+    "Quest": "Making History",
+    "Path": "./Quests/Making History/Making_History.json"
+  },
+  {
+    "Quest": "Meeting History",
+    "Path": "./Quests/Meeting History/Meeting_History.json"
+  },
+  {
+    "Quest": "Merlin's Crystal",
+    "Path": "./Quests/Merlin's Crystal/Merlins_Crystal.json"
+  },
+  {
+    "Quest": "Missing My Mummy",
+    "Path": "./Quests/Missing My Mummy/Missing_My_Mummy.json"
+  },
+  {
+    "Quest": "Missing, Presumed Death",
+    "Path": "./Quests/Missing, Presumed Death/Missing,_Presumed_Death.json"
+  },
+  {
+    "Quest": "Monk's Friend",
+    "Path": "./Quests/Monk's Friend/Monks_Friend.json"
+  },
+  {
+    "Quest": "Monkey Madness",
+    "Path": "./Quests/Monkey Madness/Monkey_Madness.json"
+  },
+  {
+    "Quest": "Mountain Daughter",
+    "Path": "./Quests/Mountain Daughter/Mountain_Daughter.json"
+  },
+  {
+    "Quest": "Mourning's End Part I",
+    "Path": "./Quests/Mourning's End Part I/Mournings_End_Part_I.json"
+  },
+  {
+    "Quest": "Mourning's End Part II",
+    "Path": "./Quests/Mourning's End Part II/Mournings_End_Part_II.json"
+  },
+  {
+    "Quest": "Murder Mystery",
+    "Path": "./Quests/Murder Mystery/Murder_Mystery.json"
+  },
+  {
+    "Quest": "Murder on the Border",
+    "Path": "./Quests/Murder on the Border/Murder_on_the_Border.json"
+  },
+  {
+    "Quest": "My Arm's Big Adventure",
+    "Path": "./Quests/My Arm's Big Adventure/My_Arms_Big_Adventure.json"
+  },
+  {
+    "Quest": "Myths of the White Lands",
+    "Path": "./Quests/Myths of the White Lands/Myths_of_the_White_Lands.json"
+  },
+  {
+    "Quest": "Nature Spirit",
+    "Path": "./Quests/Nature Spirit/Nature_Spirit.json"
+  },
+  {
+    "Quest": "Necromancy!",
+    "Path": "./Quests/Necromancy!/Necromancy!.json"
+  },
+  {
+    "Quest": "New Foundations",
+    "Path": "./Quests/New Foundations/New_Foundations.json"
+  },
+  {
+    "Quest": "Nomad's Elegy",
+    "Path": "./Quests/Nomad's Elegy/Nomads_Elegy.json"
+  },
+  {
+    "Quest": "Nomad's Requiem",
+    "Path": "./Quests/Nomad's Requiem/Nomads_Requiem.json"
+  },
+  {
+    "Quest": "Observatory Quest",
+    "Path": "./Quests/Observatory Quest/Observatory_Quest.json"
+  },
+  {
+    "Quest": "Ode of the Devourer",
+    "Path": "./Quests/Ode of the Devourer/Ode_of_the_Devourer.json"
+  },
+  {
+    "Quest": "Olaf's Quest",
+    "Path": "./Quests/Olaf's Quest/Olafs_Quest.json"
+  },
+  {
+    "Quest": "Osseous Rex",
+    "Path": "./Quests/Osseous Rex/Osseous_Rex.json"
+  },
+  {
+    "Quest": "Once Upon a Slime",
+    "Path": "./Quests/Once Upon a Slime/Once_Upon_a_Slime.json"
+  },
+  {
+    "Quest": "Once Upon a Time in Gielinor: Foreshadowing",
+    "Path": "./Quests/Once Upon a Time in Gielinor Foreshadowing/Once_Upon_a_Time_in_Gielinor_Foreshadowing.json"
+  },
+  {
+    "Quest": "Once Upon a Time in Gielinor: Flashback",
+    "Path": "./Quests/Once Upon a Time in Gielinor Flashback/Once_Upon_a_Time_in_Gielinor_Flashback.json"
+  },
+  {
+    "Quest": "Once Upon a Time in Gielinor: Fortunes",
+    "Path": "./Quests/Once Upon a Time in Gielinor Fortunes/Once_Upon_a_Time_in_Gielinor_Fortunes.json"
+  },
+  {
+    "Quest": "Once Upon a Time in Gielinor: Finale",
+    "Path": "./Quests/Once Upon a Time in Gielinor Finale/Once_Upon_a_Time_in_Gielinor_Finale.json"
+  },
+  {
+    "Quest": "One of a Kind",
+    "Path": "./Quests/One of a Kind/One_of_a_Kind.json"
+  },
+  {
+    "Quest": "One Piercing Note",
+    "Path": "./Quests/One Piercing Note/One_Piercing_Note.json"
+  },
+  {
+    "Quest": "One Small Favour",
+    "Path": "./Quests/One Small Favour/One_Small_Favour.json"
+  },
+  {
+    "Quest": "Our Man in the North",
+    "Path": "./Quests/Our Man in the North/Our_Man_in_the_North.json"
+  },
+  {
+    "Quest": "Perils of Ice Mountain",
+    "Path": "./Quests/Perils of Ice Mountain/Perils_of_Ice_Mountain.json"
+  },
+  {
+    "Quest": "Phite Club",
+    "Path": "./Quests/Phite Club/Phite_Club.json"
+  },
+  {
+    "Quest": "Pieces of Hate",
+    "Path": "./Quests/Pieces of Hate/Pieces_of_Hate.json"
+  },
+  {
+    "Quest": "Pharaoh's Folly",
+    "Path": "./Quests/Pharaoh's Folly/Pharaohs_Folly.json"
+  },
+  {
+    "Quest": "Pirate's Treasure",
+    "Path": "./Quests/Pirate's Treasure/Pirates_Treasure.json"
+  },
+  {
+    "Quest": "Housing of Parliament",
+    "Path": "./Quests/Housing of Parliament/Housing_of_Parliament.json"
+  },
+  {
+    "Quest": "Plague City",
+    "Path": "./Quests/Plague City/Plague_City.json"
+  },
+  {
+    "Quest": "Plague's End",
+    "Path": "./Quests/Plague's End/Plagues_End.json"
+  },
+  {
+    "Quest": "'Phite Club",
+    "Path": "./Quests/'Phite Club/Phite_Club.json"
+  },
+  {
+    "Quest": "Priest in Peril",
+    "Path": "./Quests/Priest in Peril/Priest_in_Peril.json"
+  },
+  {
+    "Quest": "Quiet Before the Swarm",
+    "Path": "./Quests/Quiet Before the Swarm/Quiet_Before_the_Swarm.json"
+  },
+  {
+    "Quest": "Raksha, The Shadow Colossus Quest",
+    "Path": "./Quests/Raksha, The Shadow Colossus Quest/Raksha,_The_Shadow_Colossus_Quest.json"
+  },
+  {
+    "Quest": "Rag and Bone Man",
+    "Path": "./Quests/Rag and Bone Man/Rag_and_Bone_Man.json"
+  },
+  {
+    "Quest": "Rat Catchers",
+    "Path": "./Quests/Rat Catchers/Rat_Catchers.json"
+  },
+  {
+    "Quest": "Recipe for Disaster: Another Cook's Quest",
+    "Path": "./Quests/Recipe for Disaster Another Cooks Quest/Recipe_for_Disaster_Another_Cooks_Quest.json"
+  },
+  {
+    "Quest": "Recipe for Disaster: Freeing the Goblin Generals",
+    "Path": "./Quests/Recipe for Disaster Freeing the Goblin Generals/Recipe_for_Disaster_Freeing_the_Goblin_Generals.json"
+  },
+  {
+    "Quest": "Recipe for Disaster: Freeing King Awowogei",
+    "Path": "./Quests/Recipe for Disaster Freeing King Awowogei/Recipe_for_Disaster_Freeing_King_Awowogei.json"
+  },
+  {
+    "Quest": "Recipe for Disaster: Freeing Evil Dave",
+    "Path": "./Quests/Recipe for Disaster Freeing Evil Dave/Recipe_for_Disaster_Freeing_Evil_Dave.json"
+  },
+  {
+    "Quest": "Recipe for Disaster: Freeing the Mountain Dwarf",
+    "Path": "./Quests/Recipe for Disaster Freeing the Mountain Dwarf/Recipe_for_Disaster_Freeing_the_Mountain_Dwarf.json"
+  },
+  {
+    "Quest": "Recipe for Disaster: Freeing the Lumbridge Sage",
+    "Path": "./Quests/Recipe for Disaster Freeing the Lumbridge Sage/Recipe_for_Disaster_Freeing_the_Lumbridge_Sage.json"
+  },
+  {
+    "Quest": "Recipe for Disaster: Freeing Pirate Pete",
+    "Path": "./Quests/Recipe for Disaster Freeing Pirate Pete/Recipe_for_Disaster_Freeing_Pirate_Pete.json"
+  },
+  {
+    "Quest": "Recipe for Disaster: Freeing Skrach Uglogwee",
+    "Path": "./Quests/Recipe for Disaster Freeing Skrach Uglogwee/Recipe_for_Disaster_Freeing_Skrach_Uglogwee.json"
+  },
+  {
+    "Quest": "Recipe for Disaster: Freeing Sir Amik Varze",
+    "Path": "./Quests/Recipe for Disaster Freeing Sir Amik Varze/Recipe_for_Disaster_Freeing_Sir_Amik_Varze.json"
+  },
+  {
+    "Quest": "Recipe for Disaster: Defeating The Culinaromancer",
+    "Path": "./Quests/Recipe for Disaster Defeating The Culinaromancer/Recipe_for_Disaster_Defeating_The_Culinaromancer.json"
+  },
+  {
+    "Quest": "Recruitment Drive",
+    "Path": "./Quests/Recruitment Drive/Recruitment_Drive.json"
+  },
+  {
+    "Quest": "Regicide",
+    "Path": "./Quests/Regicide/Regicide.json"
+  },
+  {
+    "Quest": "Requiem for a Dragon",
+    "Path": "./Quests/Requiem for a Dragon/Requiem_for_a_Dragon.json"
+  },
+  {
+    "Quest": "Ritual of the Mahjarrat",
+    "Path": "./Quests/Ritual of the Mahjarrat/Ritual_of_the_Mahjarrat.json"
+  },
+  {
+    "Quest": "River of Blood",
+    "Path": "./Quests/River of Blood/River_of_Blood.json"
+  },
+  {
+    "Quest": "Rocking Out",
+    "Path": "./Quests/Rocking Out/Rocking_Out.json"
+  },
+  {
+    "Quest": "Roving Elves",
+    "Path": "./Quests/Roving Elves/Roving_Elves.json"
+  },
+  {
+    "Quest": "Royal Trouble",
+    "Path": "./Quests/Royal Trouble/Royal_Trouble.json"
+  },
+  {
+    "Quest": "Rum Deal",
+    "Path": "./Quests/Rum Deal/Rum_Deal.json"
+  },
+  {
+    "Quest": "Rune Mysteries",
+    "Path": "./Quests/Rune Mysteries/Rune_Mysteries.json"
+  },
+  {
+    "Quest": "Rune Memories",
+    "Path": "./Quests/Rune Memories/Rune_Memories.json"
+  },
+  {
+    "Quest": "Rune Mechanics",
+    "Path": "./Quests/Rune Mechanics/Rune_Mechanics.json"
+  },
+  {
+    "Quest": "Rune Mythos",
+    "Path": "./Quests/Rune Mythos/Rune_Mythos.json"
+  },
+  {
+    "Quest": "Salt in the Wound",
+    "Path": "./Quests/Salt in the Wound/Salt_in_the_Wound.json"
+  },
+  {
+    "Quest": "Scorpion Catcher",
+    "Path": "./Quests/Scorpion Catcher/Scorpion_Catcher.json"
+  },
+  {
+    "Quest": "Sea Slug",
+    "Path": "./Quests/Sea Slug/Sea_Slug.json"
+  },
+  {
+    "Quest": "Shades of Mort'ton",
+    "Path": "./Quests/Shades of Mortton/Shades_of_Mortton.json"
+  },
+  {
+    "Quest": "A Shadow over Ashdale",
+    "Path": "./Quests/A Shadow over Ashdale/A_Shadow_over_Ashdale.json"
+  },
+  {
+    "Quest": "Shadow of the Storm",
+    "Path": "./Quests/Shadow of the Storm/Shadow_of_the_Storm.json"
+  },
+  {
+    "Quest": "Sheep Herder",
+    "Path": "./Quests/Sheep Herder/Sheep_Herder.json"
+  },
+  {
+    "Quest": "Sheep Shearer",
+    "Path": "./Quests/Sheep Shearer/Sheep_Shearer.json"
+  },
+  {
+    "Quest": "Shield of Arrav",
+    "Path": "./Quests/Shield of Arrav/Shield_of_Arrav.json"
+  },
+  {
+    "Quest": "Shilo Village",
+    "Path": "./Quests/Shilo Village/Shilo_Village.json"
+  },
+  {
+    "Quest": "Soul Searching",
+    "Path": "./Quests/Soul Searching/Soul_Searching.json"
+  },
+  {
+    "Quest": "A Clockwork Syringe",
+    "Path": "./Quests/A Clockwork Syringe/A_Clockwork_Syringe.json"
+  },
+  {
+    "Quest": "Shilo Village",
+    "Path": "./Quests/Shilo Village/Shilo_Village.json"
+  },
+  {
+    "Quest": "Sins of the Father",
+    "Path": "./Quests/Sins of the Father/Sins_of_the_Father.json"
+  },
+  {
+    "Quest": "Sliske's Endgame",
+    "Path": "./Quests/Sliske's Endgame/Sliskes_Endgame.json"
+  },
+  {
+    "Quest": "Smoking Kills",
+    "Path": "./Quests/Smoking Kills/Smoking_Kills.json"
+  },
+  {
+    "Quest": "Some Like It Cold",
+    "Path": "./Quests/Some Like It Cold/Some_Like_It_Cold.json"
+  },
+  {
+    "Quest": "Song from the Depths",
+    "Path": "./Quests/Song from the Depths/Song_from_the_Depths.json"
+  },
+  {
+    "Quest": "Spirit of Summer",
+    "Path": "./Quests/Spirit of Summer/Spirit_of_Summer.json"
+  },
+  {
+    "Quest": "Spirits of the Elid",
+    "Path": "./Quests/Spirits of the Elid/Spirits_of_the_Elid.json"
+  },
+  {
+    "Quest": "Stolen Hearts",
+    "Path": "./Quests/Stolen Hearts/Stolen_Hearts.json"
+  },
+  {
+    "Quest": "Succession",
+    "Path": "./Quests/Succession/Succession.json"
+  },
+  {
+    "Quest": "Summer's End",
+    "Path": "./Quests/Summer's End/Summers_End.json"
+  },
+  {
+    "Quest": "Swan Song",
+    "Path": "./Quests/Swan Song/Swan_Song.json"
+  },
+  {
+    "Quest": "Swept Away",
+    "Path": "./Quests/Swept Away/Swept_Away.json"
+  },
+  {
+    "Quest": "Tai Bwo Wannai Trio",
+    "Path": "./Quests/Tai Bwo Wannai Trio/Tai_Bwo_Wannai_Trio.json"
+  },
+  {
+    "Quest": "Tears of Guthix",
+    "Path": "./Quests/Tears of Guthix/Tears_of_Guthix.json"
+  },
+  {
+    "Quest": "Temple of Ikov",
+    "Path": "./Quests/Temple of Ikov/Temple_of_Ikov.json"
+  },
+  {
+    "Quest": "That Old Black Magic: My One and Only Lute",
+    "Path": "./Quests/That Old Black Magic My One and Only Lute/That_Old_Black_Magic_My_One_and_Only_Lute.json"
+  },
+  {
+    "Quest": "That Old Black Magic: Skelly By Everlight",
+    "Path": "./Quests/That Old Black Magic Skelly By Everlight/That_Old_Black_Magic_Skelly_By_Everlight.json"
+  },
+  {
+    "Quest": "That Old Black Magic: Flesh and Bone",
+    "Path": "./Quests/That Old Black Magic Flesh and Bone/That_Old_Black_Magic_Flesh_and_Bone.json"
+  },
+  {
+    "Quest": "That Old Black Magic: Hermy and Bass",
+    "Path": "./Quests/That Old Black Magic Hermy and Bass/That_Old_Black_Magic_Hermy_and_Bass.json"
+  },
+  {
+    "Quest": "The Blood Pact",
+    "Path": "./Quests/The Blood Pact/The_Blood_Pact.json"
+  },
+  {
+    "Quest": "The Branches of Darkmeyer",
+    "Path": "./Quests/The Branches of Darkmeyer/The_Branches_of_Darkmeyer.json"
+  },
+  {
+    "Quest": "The Brink of Extinction",
+    "Path": "./Quests/The Brink of Extinction/The_Brink_of_Extinction.json"
+  },
+  {
+    "Quest": "The Chosen Commander",
+    "Path": "./Quests/The Chosen Commander/The_Chosen_Commander.json"
+  },
+  {
+    "Quest": "The Curse of Arrav",
+    "Path": "./Quests/The Curse of Arrav/The_Curse_of_Arrav.json"
+  },
+  {
+    "Quest": "The Darkness of Hallowvale",
+    "Path": "./Quests/The Darkness of Hallowvale/The_Darkness_of_Hallowvale.json"
+  },
+  {
+    "Quest": "The Death of Chivalry",
+    "Path": "./Quests/The Death of Chivalry/The_Death_of_Chivalry.json"
+  },
+  {
+    "Quest": "The Dig Site",
+    "Path": "./Quests/The Dig Site/The_Dig_Site.json"
+  },
+  {
+    "Quest": "The Elder Kiln",
+    "Path": "./Quests/The Elder Kiln/The_Elder_Kiln.json"
+  },
+  {
+    "Quest": "The Eyes of Glouphrie",
+    "Path": "./Quests/The Eyes of Glouphrie/The_Eyes_of_Glouphrie.json"
+  },
+  {
+    "Quest": "The Feud",
+    "Path": "./Quests/The Feud/The_Feud.json"
+  },
+  {
+    "Quest": "The Firemaker's Curse",
+    "Path": "./Quests/The Firemaker's Curse/The_Firemakers_Curse.json"
+  },
+  {
+    "Quest": "The Fremennik Isles",
+    "Path": "./Quests/The Fremennik Isles/The_Fremennik_Isles.json"
+  },
+  {
+    "Quest": "The Fremennik Trials",
+    "Path": "./Quests/The Fremennik Trials/The_Fremennik_Trials.json"
+  },
+  {
+    "Quest": "The Giant Dwarf",
+    "Path": "./Quests/The Giant Dwarf/The_Giant_Dwarf.json"
+  },
+  {
+    "Quest": "The Golem",
+    "Path": "./Quests/The Golem/The_Golem.json"
+  },
+  {
+    "Quest": "The Grand Tree",
+    "Path": "./Quests/The Grand Tree/The_Grand_Tree.json"
+  },
+  {
+    "Quest": "The Great Brain Robbery",
+    "Path": "./Quests/The Great Brain Robbery/The_Great_Brain_Robbery.json"
+  },
+  {
+    "Quest": "The Hand in the Sand",
+    "Path": "./Quests/The Hand in the Sand/The_Hand_in_the_Sand.json"
+  },
+  {
+    "Quest": "The Jack of Spades",
+    "Path": "./Quests/The Jack of Spades/The_Jack_of_Spades.json"
+  },
+  {
+    "Quest": "The Knight's Sword",
+    "Path": "./Quests/The Knight's Sword/The_Knights_Sword.json"
+  },
+  {
+    "Quest": "The Light Within",
+    "Path": "./Quests/The Light Within/The_Light_Within.json"
+  },
+  {
+    "Quest": "The Lord of Vampyrium",
+    "Path": "./Quests/The Lord of Vampyrium/The_Lord_of_Vampyrium.json"
+  },
+  {
+    "Quest": "The Lost Tribe",
+    "Path": "./Quests/The Lost Tribe/The_Lost_Tribe.json"
+  },
+  {
+    "Quest": "The Mighty Fall",
+    "Path": "./Quests/The Mighty Fall/The_Mighty_Fall.json"
+  },
+  {
+    "Quest": "The Needle Skips",
+    "Path": "./Quests/The Needle Skips/The_Needle_Skips.json"
+  },
+  {
+    "Quest": "The Path of Glouphrie",
+    "Path": "./Quests/The Path of Glouphrie/The_Path_of_Glouphrie.json"
+  },
+  {
+    "Quest": "The Prisoner of Glouphrie",
+    "Path": "./Quests/The Prisoner of Glouphrie/The_Prisoner_of_Glouphrie.json"
+  },
+  {
+    "Quest": "Remains of the Necrolord",
+    "Path": "./Quests/Remains of the Necrolord/Remains_of_the_Necrolord.json"
+  },
+  {
+    "Quest": "The Restless Ghost",
+    "Path": "./Quests/The Restless Ghost/The_Restless_Ghost.json"
+  },
+  {
+    "Quest": "The Slug Menace",
+    "Path": "./Quests/The Slug Menace/The_Slug_Menace.json"
+  },
+  {
+    "Quest": "The Spirit of War",
+    "Path": "./Quests/The Spirit of War/The_Spirit_of_War.json"
+  },
+  {
+    "Quest": "The Tale of the Muspah",
+    "Path": "./Quests/The Tale of the Muspah/The_Tale_of_the_Muspah.json"
+  },
+  {
+    "Quest": "The Temple at Senntisten",
+    "Path": "./Quests/The Temple at Senntisten/The_Temple_at_Senntisten.json"
+  },
+  {
+    "Quest": "The Tourist Trap",
+    "Path": "./Quests/The Tourist Trap/The_Tourist_Trap.json"
+  },
+  {
+    "Quest": "The Vault of Shadows",
+    "Path": "./Quests/The Vault of Shadows/The_Vault_of_Shadows.json"
+  },
+  {
+    "Quest": "The Void Stares Back",
+    "Path": "./Quests/The Void Stares Back/The_Void_Stares_Back.json"
+  },
+  {
+    "Quest": "The World Wakes",
+    "Path": "./Quests/The World Wakes/The_World_Wakes.json"
+  },
+  {
+    "Quest": "Throne of Miscellania",
+    "Path": "./Quests/Throne of Miscellania/Throne_of_Miscellania.json"
+  },
+  {
+    "Quest": "TokTz-Ket-Dill",
+    "Path": "./Quests/TokTz-Ket-Dill/TokTz-Ket-Dill.json"
+  },
+  {
+    "Quest": "Tomes of the Warlock",
+    "Path": "./Quests/Tomes of the Warlock/Tomes_of_the_Warlock.json"
+  },
+  {
+    "Quest": "Tower of Life",
+    "Path": "./Quests/Tower of Life/Tower_of_Life.json"
+  },
+  {
+    "Quest": "Tree Gnome Village",
+    "Path": "./Quests/Tree Gnome Village/Tree_Gnome_Village.json"
+  },
+  {
+    "Quest": "Tribal Totem",
+    "Path": "./Quests/Tribal Totem/Tribal_Totem.json"
+  },
+  {
+    "Quest": "Troll Romance",
+    "Path": "./Quests/Troll Romance/Troll_Romance.json"
+  },
+  {
+    "Quest": "Troll Stronghold",
+    "Path": "./Quests/Troll Stronghold/Troll_Stronghold.json"
+  },
+  {
+    "Quest": "Twilight of the Gods",
+    "Path": "./Quests/Twilight of the Gods/Twilight_of_the_Gods.json"
+  },
+  {
+    "Quest": "Underground Pass",
+    "Path": "./Quests/Underground Pass/Underground_Pass.json"
+  },
+  {
+    "Quest": "Unwelcome Guests",
+    "Path": "./Quests/Unwelcome Guests/Unwelcome_Guests.json"
+  },
+  {
+    "Quest": "Vampyre Slayer",
+    "Path": "./Quests/Vampyre Slayer/Vampyre_Slayer.json"
+  },
+  {
+    "Quest": "Vessel of the Harbinger",
+    "Path": "./Quests/Vessel of the Harbinger/Vessel_of_the_Harbinger.json"
+  },
+  {
+    "Quest": "Violet is Blue",
+    "Path": "./Quests/Violet is Blue/Violet_is_Blue.json"
+  },
+  {
+    "Quest": "Violet is Blue Too",
+    "Path": "./Quests/Violet is Blue Too/Violet_is_Blue_Too.json"
+  },
+  {
+    "Quest": "Wanted!",
+    "Path": "./Quests/Wanted!/Wanted!.json"
+  },
+  {
+    "Quest": "Watchtower",
+    "Path": "./Quests/Watchtower/Watchtower.json"
+  },
+  {
+    "Quest": "What Lies Below",
+    "Path": "./Quests/What Lies Below/What_Lies_Below.json"
+  },
+  {
+    "Quest": "What's Mine is Yours",
+    "Path": "./Quests/What's Mine is Yours/Whats_Mine_is_Yours.json"
+  },
+  {
+    "Quest": "While Guthix Sleeps",
+    "Path": "./Quests/While Guthix Sleeps/While_Guthix_Sleeps.json"
+  },
+  {
+    "Quest": "Witch's House",
+    "Path": "./Quests/Witch's House/Witchs_House.json"
+  },
+  {
+    "Quest": "Waterfall Quest",
+    "Path": "./Quests/Waterfall Quest/Waterfall_Quest.json"
+  },
+  {
+    "Quest": "Within the Light",
+    "Path": "./Quests/Within the Light/Within_the_Light.json"
+  },
+  {
+    "Quest": "Wolf Whistle",
+    "Path": "./Quests/Wolf Whistle/Wolf_Whistle.json"
+  },
+  {
+    "Quest": "You Are It",
+    "Path": "./Quests/You Are It/You_Are_It.json"
+  },
+  {
+    "Quest": "Zogre Flesh Eaters",
+    "Path": "./Quests/Zogre Flesh Eaters/Zogre_Flesh_Eaters.json"
+  },
+  {
+    "Quest": "Bar Crawl (miniquest)",
+    "Path": "./Quests/Bar Crawl (miniquest)/Bar_Crawl_miniquest.json"
+  },
+  {
+    "Quest": "Benedict's World Tour (miniquest)",
+    "Path": "./Quests/Benedicts World Tour (miniquest)/Benedicts_World_Tour_miniquest.json"
+  },
+  {
+    "Quest": "Desert Slayer Dungeon (miniquest)",
+    "Path": "./Quests/Desert Slayer Dungeon (miniquest)/Desert_Slayer_Dungeon_miniquest.json"
+  },
+  {
+    "Quest": "Enter the Abyss (miniquest)",
+    "Path": "./Quests/Enter the Abyss (miniquest)/Enter_the_Abyss_miniquest.json"
+  },
+  {
+    "Quest": "Father and Son (miniquest)",
+    "Path": "./Quests/Father and Son (miniquest)/Father_and_Son_miniquest.json"
+  },
+  {
+    "Quest": "Helping Laniakea (miniquest)",
+    "Path": "./Quests/Helping Laniakea (miniquest)/Helping_Laniakea_miniquest.json"
+  },
+  {
+    "Quest": "Hopespear's Will (miniquest)",
+    "Path": "./Quests/Hopespears Will (miniquest)/Hopespears_Will_miniquest.json"
+  },
+  {
+    "Quest": "The Hunt for Surok (miniquest)",
+    "Path": "./Quests/The Hunt for Surok (miniquest)/The_Hunt_for_Surok_miniquest.json"
+  },
+  {
+    "Quest": "In Memory of the Myreque (miniquest)",
+    "Path": "./Quests/In Memory of the Myreque (miniquest)/In_Memory_of_the_Myreque_miniquest.json"
+  },
+  {
+    "Quest": "Koschei's Troubles (miniquest)",
+    "Path": "./Quests/Koscheis Troubles (miniquest)/Koscheis_Troubles_miniquest.json"
+  },
+  {
+    "Quest": "Lair of Tarn Razorlor (miniquest)",
+    "Path": "./Quests/Lair of Tarn Razorlor (miniquest)/Lair_of_Tarn_Razorlor_miniquest.json"
+  },
+  {
+    "Quest": "The Lost Toys (miniquest)",
+    "Path": "./Quests/The Lost Toys (miniquest)/The_Lost_Toys_miniquest.json"
+  },
+  {
+    "Quest": "Mahjarrat Memories (miniquest)",
+    "Path": "./Quests/Mahjarrat Memories (miniquest)/Mahjarrat_Memories_miniquest.json"
+  },
+  {
+    "Quest": "One Foot in the Grave (miniquest)",
+    "Path": "./Quests/One Foot in the Grave (miniquest)/One_Foot_in_the_Grave_miniquest.json"
+  },
+  {
+    "Quest": "Purple Cat (miniquest)",
+    "Path": "./Quests/Purple Cat (miniquest)/Purple_Cat_miniquest.json"
+  },
+  {
+    "Quest": "Rebuilding Edgeville (miniquest)",
+    "Path": "./Quests/Rebuilding Edgeville (miniquest)/Rebuilding_Edgeville_miniquest.json"
+  },
+  {
+    "Quest": "Sheep Shearer (miniquest)",
+    "Path": "./Quests/Sheep Shearer (miniquest)/Sheep_Shearer_miniquest.json"
+  },
+  {
+    "Quest": "Tales of Nomad (miniquest)",
+    "Path": "./Quests/Tales of Nomad (miniquest)/Tales_of_Nomad_miniquest.json"
+  },
+  {
+    "Quest": "Tortle Combat (miniquest)",
+    "Path": "./Quests/Tortle Combat (miniquest)/Tortle_Combat_miniquest.json"
+  },
+  {
+    "Quest": "Wandering Gaal (miniquest)",
+    "Path": "./Quests/Wandering Gaal (miniquest)/Wandering_Gaal_miniquest.json"
+  },
+  {
+    "Quest": "Witch's Potion (miniquest)",
+    "Path": "./Quests/Witch's Potion (miniquest)/Witchs_Potion_miniquest.json"
+  },
+  {
+    "Quest": "Three's Company (saga)",
+    "Path": "./Quests/Three's Company (saga)/Threes_Company_saga.json"
+  },
+  {
+    "Quest": "Vengeance (saga)",
+    "Path": "./Quests/Vengeance (saga)/Vengeance_saga.json"
+  },
+  {
+    "Quest": "Thok It To 'Em (saga)",
+    "Path": "./Quests/Thok It To 'Em (saga)/Thok_It_To_Em_saga.json"
+  },
+  {
+    "Quest": "Nadir (saga)",
+    "Path": "./Quests/Nadir (saga)/Nadir_saga.json"
+  },
+  {
+    "Quest": "Thok Your Block Off (saga)",
+    "Path": "./Quests/Thok Your Block Off (saga)/Thok_Your_Block_Off_saga.json"
+  },
+  {
+    "Quest": "Civil War I (miniquest)",
+    "Path": "./Quests/Civil War I (miniquest)/Civil_War_I_miniquest.json"
+  },
+  {
+    "Quest": "Civil War II (miniquest)",
+    "Path": "./Quests/Civil War II (miniquest)/Civil_War_II_miniquest.json"
+  },
+  {
+    "Quest": "Civil War III (miniquest)",
+    "Path": "./Quests/Civil War III (miniquest)/Civil_War_III_miniquest.json"
+  },
+  {
+    "Quest": "The Curse of Zaros (miniquest)",
+    "Path": "./Quests/The Curse of Zaros (miniquest)/The_Curse_of_Zaros_miniquest.json"
+  },
+  {
+    "Quest": "The General's Shadow (miniquest)",
+    "Path": "./Quests/The General's Shadow (miniquest)/The_Generals_Shadow_miniquest.json"
+  },
+  {
+    "Quest": "Tales of the God Wars (miniquest)",
+    "Path": "./Quests/Tales of the God Wars (miniquest)/Tales_of_the_God_Wars_miniquest.json"
+  },
+  {
+    "Quest": "Flag Fall (miniquest)",
+    "Path": "./Quests/Flag Fall (miniquest)/Flag_Fall_miniquest.json"
+  },
+  {
+    "Quest": "Head of the Family (miniquest)",
+    "Path": "./Quests/Head of the Family (miniquest)/Head_of_the_Family_miniquest.json"
+  },
+  {
+    "Quest": "Spiritual Enlightenment (miniquest)",
+    "Path": "./Quests/Spiritual Enlightenment (miniquest)/Spiritual_Enlightenment_miniquest.json"
+  },
+  {
+    "Quest": "Jed Hunter (miniquest)",
+    "Path": "./Quests/Jed Hunter (miniquest)/Jed_Hunter_miniquest.json"
+  },
+  {
+    "Quest": "Eye for an Eye (miniquest)",
+    "Path": "./Quests/Eye for an Eye (miniquest)/Eye_for_an_Eye_miniquest.json"
+  },
+  {
+    "Quest": "Harbinger (miniquest)",
+    "Path": "./Quests/Harbinger (miniquest)/Harbinger_miniquest.json"
+  },
+  {
+    "Quest": "Tuai Leit's Own (miniquest)",
+    "Path": "./Quests/Tuai Leits Own (miniquest)/Tuai_Leits_Own_miniquest.json"
+  },
+  {
+    "Quest": "Ghosts from the Past (miniquest)",
+    "Path": "./Quests/Ghosts from the Past (miniquest)/Ghosts_from_the_Past_miniquest.json"
+  },
+  {
+    "Quest": "Damage Control (miniquest)",
+    "Path": "./Quests/Damage Control (miniquest)/Damage_Control_miniquest.json"
+  },
+  {
+    "Quest": "Final Destination (miniquest)",
+    "Path": "./Quests/Final Destination (miniquest)/Final_Destination_miniquest.json"
+  },
+  {
+    "Quest": "From Tiny Acorns (miniquest)",
+    "Path": "./Quests/From Tiny Acorns (miniquest)/From_Tiny_Acorns_miniquest.json"
+  },
+  {
+    "Quest": "Lost Her Marbles (miniquest)",
+    "Path": "./Quests/Lost Her Marbles (miniquest)/Lost_Her_Marbles_miniquest.json"
+  },
+  {
+    "Quest": "A Guild of Our Own (miniquest)",
+    "Path": "./Quests/A Guild of Our Own (miniquest)/A_Guild_of_Our_Own_miniquest.json"
+  },
+  {
+    "Quest": "Boric's Task I (miniquest)",
+    "Path": "./Quests/Borics Task I (miniquest)/Borics_Task_I_miniquest.json"
+  },
+  {
+    "Quest": "Boric's Task II (miniquest)",
+    "Path": "./Quests/Borics Task II (miniquest)/Borics_Task_II_miniquest.json"
+  },
+  {
+    "Quest": "Boric's Task III (miniquest)",
+    "Path": "./Quests/Borics Task III (miniquest)/Borics_Task_III_miniquest.json"
+  },
+  {
+    "Quest": "Doric's Task I (miniquest)",
+    "Path": "./Quests/Dorics Task I (miniquest)/Dorics_Task_I_miniquest.json"
+  },
+  {
+    "Quest": "Doric's Task II (miniquest)",
+    "Path": "./Quests/Dorics Task II (miniquest)/Dorics_Task_II_miniquest.json"
+  },
+  {
+    "Quest": "Doric's Task III (miniquest)",
+    "Path": "./Quests/Dorics Task III (miniquest)/Dorics_Task_III_miniquest.json"
+  },
+  {
+    "Quest": "Doric's Task IV (miniquest)",
+    "Path": "./Quests/Dorics Task IV (miniquest)/Dorics_Task_IV_miniquest.json"
+  },
+  {
+    "Quest": "Doric's Task V (miniquest)",
+    "Path": "./Quests/Dorics Task V (miniquest)/Dorics_Task_V_miniquest.json"
+  },
+  {
+    "Quest": "Doric's Task VI (miniquest)",
+    "Path": "./Quests/Dorics Task VI (miniquest)/Dorics_Task_VI_miniquest.json"
+  },
+  {
+    "Quest": "Doric's Task VII (miniquest)",
+    "Path": "./Quests/Dorics Task VII (miniquest)/Dorics_Task_VII_miniquest.json"
+  },
+  {
+    "Quest": "Doric's Task VIII (miniquest)",
+    "Path": "./Quests/Dorics Task VIII (miniquest)/Dorics_Task_VIII_miniquest.json"
+  }
 ]
