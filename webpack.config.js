@@ -12,7 +12,7 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, "dist"),
 		filename: "js/[name].bundle.js",
-		publicPath: "/",
+		publicPath: "./",
 	},
 	devtool: "source-map",
 	mode: "development",
@@ -113,7 +113,7 @@ module.exports = {
 				{ from: "Quests", to: "Quests" },
 				{ from: "Rewards", to: "Rewards" },
 				{ from: "assets/background.png", to: "assets/background.png" },
-				{ from: "../public/appconfig.json", to: "assets/appconfig.json" },
+				{ from: "appconfig.prod.json", to: "appconfig.prod.json" },
 			],
 		}),
 	],

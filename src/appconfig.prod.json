@@ -1,0 +1,16 @@
+{
+	"appName": "RS3 Quest Buddy",
+	"description": "Brings questing right into your RS3 environment by giving you steps to quest completion. ",
+	"appUrl": "https://techpure.dev/RS3QuestBuddy/index.html",
+	"configUrl": "https://techpure.dev/RS3QuestBuddy/appconfig.prod.json",
+	"iconUrl": "https://techpure.dev/RS3QuestBuddy/assets/rs3buddyicon.png",
+	"defaultWidth": 665,
+	"defaultHeight": 603,
+	"minWidth": 250,
+	"minHeight": 250,
+	"maxWidth": 1000,
+	"maxHeight": 1000,
+	"requestHandlers": [],
+	"activators": [],
+	"permissions": "overlay, pixel, gamestate"
+}

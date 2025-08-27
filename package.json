@@ -1,7 +1,7 @@
 {
 	"name": "rs3_quest_buddy",
 	"homepage": "https://techpure.dev/RS3QuestBuddy",
-	"version": "0.0.6",
+	"version": "0.0.9",
 	"scripts": {
 		"build": "webpack",
 		"watch": "webpack --watch",
