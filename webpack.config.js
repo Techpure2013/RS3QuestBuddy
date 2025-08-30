@@ -12,7 +12,7 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, "dist"),
 		filename: "js/[name].bundle.js",
-		publicPath: "/RS3QuestBuddy",
+		publicPath: "./",
 	},
 	devtool: "source-map",
 	mode: "development",
