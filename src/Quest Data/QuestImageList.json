@@ -20,7 +20,71 @@
 	},
 	{
 		"name": "A Clockwork Syringe",
-		"images": []
+		"images": [
+			{
+				"step": 9,
+				"src": "A Clockwork Syringe_step_9_1.webp",
+				"height": 135,
+				"width": 350,
+				"stepDescription": "Torture the head using all five options."
+			},
+			{
+				"step": 20,
+				"src": "A Clockwork Syringe_step_20_1.webp",
+				"height": 730,
+				"width": 734,
+				"stepDescription": "Go down all three paths and investigate the worker's bodies to discover their names."
+			},
+			{
+				"step": 20,
+				"src": "A Clockwork Syringe_step_20_2.webp",
+				"height": 730,
+				"width": 734,
+				"stepDescription": "Go down all three paths and investigate the worker's bodies to discover their names."
+			},
+			{
+				"step": 40,
+				"src": "A Clockwork Syringe_step_40_1.webp",
+				"height": 576,
+				"width": 775,
+				"stepDescription": "Letter One: This is in the south-west room, sabotage the southern gas canister. 'Tell-joke' to each of the Dis-orderly and then brutalise each of them. Investigate the noticeboard."
+			},
+			{
+				"step": 41,
+				"src": "A Clockwork Syringe_step_41_1.webp",
+				"height": 770,
+				"width": 781,
+				"stepDescription": "Letter Two: Kill each of Grimterns in the western-most room. Investigate the noticeboard after killing them."
+			},
+			{
+				"step": 42,
+				"src": "A Clockwork Syringe_step_42_1.webp",
+				"height": 648,
+				"width": 834,
+				"stepDescription": "Letter Three: Talk to one of the Drunk zombies lying on the beds in the north-west room, then investigate the noticeboard."
+			},
+			{
+				"step": 43,
+				"src": "A Clockwork Syringe_step_43_1.webp",
+				"height": 408,
+				"width": 442,
+				"stepDescription": "Letter Four: Loosen each of the three undead arms in the north-east room, then inspect one of the arms, finally investigate the noticeboard."
+			},
+			{
+				"step": 44,
+				"src": "A Clockwork Syringe_step_44_1.webp",
+				"height": 689,
+				"width": 896,
+				"stepDescription": "Letter Five: Do not continue unless you have 300+ life points. Use the three gunpowder on each of your three barrels, finish the three barrelchests in the south-eastern room. Detonate them and investigate the noticeboard."
+			},
+			{
+				"step": 51,
+				"src": "A Clockwork Syringe_step_51_1.webp",
+				"height": 427,
+				"width": 327,
+				"stepDescription": "Continue loading the conveyer belts until each of the conveyor belts explode. You can safely ignore the zombies that make it to you; killing them does nothing and they automatically die when all three belts explode."
+			}
+		]
 	},
 	{
 		"name": "A Fairy Tale I: Growing Pains",
