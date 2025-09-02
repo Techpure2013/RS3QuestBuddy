@@ -27,32 +27,10 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Go to Al Kharid and talk to Emir Ali Mirza in the Al Kharid Palace. (Chat ~)",
@@ -78,32 +56,10 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Go to Sophanem and talk to High Priest of Icthlarin.",
@@ -129,32 +85,10 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Go to Nardah and talk to Awusah the Mayor.",
@@ -180,32 +114,10 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Go to Pollnivneach and talk to Hakeem the Mayor.",
@@ -231,32 +143,10 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Return to the Golden Palace in Menaphos. (Chat 1)",
@@ -271,10 +161,6 @@
           {
             "name": "Golden Palace",
             "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              },
               {
                 "lat": 2729,
                 "lng": 3164,
@@ -298,9 +184,7 @@
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Kill the 4 Profane Scabarites and burst the 4 Corrupted Scarabs nearby.",
@@ -309,28 +193,10 @@
       ],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "Corrupted Scarab",
+            "name": "Corrupted scarab",
             "objectLocation": [
               {
                 "lat": 2735,
@@ -353,12 +219,8 @@
             "numberLabel": "1"
           },
           {
-            "name": "Corrupted Scarab",
+            "name": "Corrupted scarab",
             "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              },
               {
                 "lat": 2718,
                 "lng": 3176,
@@ -380,12 +242,8 @@
             "color": "#00FF00"
           },
           {
-            "name": "Corrupted Scarab",
+            "name": "Corrupted scarab",
             "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              },
               {
                 "lat": 2736,
                 "lng": 3185,
@@ -407,12 +265,8 @@
             "color": "#00FF00"
           },
           {
-            "name": "Corrupted Scarab",
+            "name": "Corrupted scarab",
             "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              },
               {
                 "lat": 2706,
                 "lng": 3196,
@@ -437,10 +291,6 @@
             "name": "Profane Scabarite",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
-              },
-              {
                 "lat": 2736,
                 "lng": 3197,
                 "color": "#e100ff",
@@ -463,10 +313,6 @@
           {
             "name": "Profane Scabarite",
             "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              },
               {
                 "lat": 2731,
                 "lng": 3196,
@@ -491,10 +337,6 @@
             "name": "Profane Scabarite",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
-              },
-              {
                 "lat": 2719,
                 "lng": 3192,
                 "color": "#e100ff",
@@ -518,10 +360,6 @@
             "name": "Profane Scabarite",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
-              },
-              {
                 "lat": 2707,
                 "lng": 3176,
                 "color": "#e100ff",
@@ -544,42 +382,18 @@
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Head down the steps near the lodestone and kill the 4 Profane Scabarites and burst the 4 Corrupted Scarabs.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
             "name": "Profane Scabarite",
             "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              },
               {
                 "lat": 2723,
                 "lng": 3220,
@@ -604,10 +418,6 @@
             "name": "Profane Scabarite",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
-              },
-              {
                 "lat": 2741,
                 "lng": 3223,
                 "color": "#e100ff",
@@ -630,10 +440,6 @@
           {
             "name": "Profane Scabarite",
             "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              },
               {
                 "lat": 2741,
                 "lng": 3230,
@@ -658,10 +464,6 @@
             "name": "Profane Scabarite",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
-              },
-              {
                 "lat": 2723,
                 "lng": 3231,
                 "color": "#e100ff",
@@ -682,12 +484,8 @@
             "color": "#e100ff"
           },
           {
-            "name": "Corrupted Scarab",
+            "name": "Corrupted scarab",
             "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              },
               {
                 "lat": 2736,
                 "lng": 3219,
@@ -709,12 +507,8 @@
             "color": "#21ea6b"
           },
           {
-            "name": "Corrupted Scarab",
+            "name": "Corrupted scarab",
             "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              },
               {
                 "lat": 2721,
                 "lng": 3222,
@@ -736,12 +530,8 @@
             "color": "#21ea6b"
           },
           {
-            "name": "Corrupted Scarab",
+            "name": "Corrupted scarab",
             "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              },
               {
                 "lat": 2739,
                 "lng": 3235,
@@ -763,12 +553,8 @@
             "color": "#21ea6b"
           },
           {
-            "name": "Corrupted Scarab",
+            "name": "Corrupted scarab",
             "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              },
               {
                 "lat": 2729,
                 "lng": 3235,
@@ -792,9 +578,7 @@
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Head back up to the palace and talk to Commander Akhomet.",
@@ -823,9 +607,7 @@
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Enter the Golden Palace and talk to Pharaoh Osman.",
@@ -851,32 +633,10 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Head to the Grand Library of Menaphos (Chat 1).",
@@ -894,10 +654,6 @@
           {
             "name": "Grand Library Entrance",
             "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              },
               {
                 "lat": 2710,
                 "lng": 3171,
@@ -927,9 +683,7 @@
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Kohnen the librarian then the assistant. You do not need to follow the assistant, you can just run ahead to Leela who is in the south west corner. (down two levels, yellow dot on minimap)",
@@ -958,9 +712,7 @@
         "object": []
       },
       "floor": 1,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Leela then search the nearby bookcases until you obtain The Shiny Scarab, the location can be different for each player. Once Found talk to Leela again.",
@@ -989,9 +741,7 @@
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Senliten in the pyramid south of Uzer.",
@@ -1015,14 +765,29 @@
                 "lng": 1493
               }
             }
+          },
+          {
+            "npcName": "Pyramid Location",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3011,
+                "lng": 3486
+              },
+              "topRight": {
+                "lat": 3040,
+                "lng": 3505
+              }
+            }
           }
         ],
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Lead Archaeologist Kerner in Uzer, twice with a restored Zarosian artifact to receive a Golden scarab (damaged).(Chat 1)",
@@ -1051,42 +816,18 @@
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Gather Scorched sand from any of the nearby locations then use the screening tray. Repeat this until you have 2 Ancient rubies and 30 Kharidian gold.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
             "name": "Scorched sand",
             "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              },
               {
                 "lat": 3081,
                 "lng": 3469,
@@ -1110,42 +851,18 @@
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Restore the Golden scarab on the Archaeologist's workbench nearby.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
             "name": "Uzer Workbench",
             "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              },
               {
                 "lat": 3093,
                 "lng": 3476,
@@ -1169,9 +886,7 @@
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Head back to the Golden Palace(Chat 1) and talk to Pharaoh Osman.",
@@ -1197,32 +912,10 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Leela just outside the northern gates of Menaphos then release the Golden Scarab.",
@@ -1255,32 +948,10 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Follow the path of the golden scarab, clicking on it at intermediate stops, until you reach the Scabarite Cavern.",
@@ -1374,32 +1045,10 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Enter the cavern. (Chat 1)",
@@ -1411,10 +1060,6 @@
           {
             "name": "Scabarite Cavern",
             "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              },
               {
                 "lat": 2992,
                 "lng": 3315,
@@ -1438,9 +1083,7 @@
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Head south and click to follow the Golden Scarab.",
@@ -1466,65 +1109,21 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Scavenge the Piles of debris in the cavern until you have 5 boat materials. If a Scarab appears it must be killed to obtain the materials.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
             "name": "Boat Material",
             "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              },
               {
                 "lat": 7572,
                 "lng": 3315,
@@ -1549,10 +1148,6 @@
             "name": "Boat Material",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
-              },
-              {
                 "lat": 7586,
                 "lng": 3299,
                 "color": "#001eff",
@@ -1575,10 +1170,6 @@
           {
             "name": "Boat Material",
             "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              },
               {
                 "lat": 7586,
                 "lng": 3295,
@@ -1603,10 +1194,6 @@
             "name": "Boat Material",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
-              },
-              {
                 "lat": 7595,
                 "lng": 3319,
                 "color": "#001eff",
@@ -1627,12 +1214,8 @@
             "color": "#001eff"
           },
           {
-            "name": "New Object",
+            "name": "Boat Material",
             "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              },
               {
                 "lat": 7608,
                 "lng": 3290,
@@ -1656,34 +1239,14 @@
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Repair then travel on the boat.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
             "name": "Boat",
@@ -1711,9 +1274,7 @@
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Head east and up the steps and talk to Scabaras.",
@@ -1739,32 +1300,10 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Go back down the steps to find a scarab named Fear. You need to interact with Fear to scare them up the steps to Scabaras. Make sure to guide them up the left side of the step as they will get stuck on the right.",
@@ -1790,27 +1329,7 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
@@ -1822,51 +1341,11 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Interact with Ego at the bottom of the steps. Then collect cavern dwellberries from near the boat. It's recommended to fill your inventory with berries.",
@@ -1875,7 +1354,7 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "Ego ( Beneath Scabaras Sand )",
+            "npcName": "Ego ( Beneath Scabaras Sands )",
             "npcLocation": {
               "lat": 7572,
               "lng": 3446
@@ -1894,11 +1373,28 @@
         ],
         "object": [
           {
-            "name": "",
+            "name": "Dwellberry bush (grown)",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 7566,
+                "lng": 3413,
+                "color": "#00FF00",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 7567,
+                "lng": 3408,
+                "color": "#00FF00",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 7566,
+                "lng": 3407,
+                "color": "#00FF00",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -1910,14 +1406,14 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "color": "#00FF00",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Drop the dwellberries to lure Ego up the steps. Ego can only be lured within 5 tiles.",
@@ -1974,60 +1470,18 @@
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Go through all options during the second flashback. (Chat 1•2•3)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Once again head back down the steps to find a scarab named Melancholy. This time interact to use chat options to motivate the scarab to move up the steps. Go through all 4 options until it moves.",
@@ -2053,32 +1507,10 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "After the third flashback, head down the steps to find Grief.",
@@ -2104,27 +1536,7 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
@@ -2155,83 +1567,21 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Quest complete!",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     }
   ]
 }

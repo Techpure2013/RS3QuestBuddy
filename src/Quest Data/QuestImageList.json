@@ -3310,18 +3310,228 @@
 		"name": "Beneath Scabaras' Sands",
 		"images": [
 			{
-				"step": 26,
-				"src": "Beneath Scabaras' Sands_step_26.webp",
-				"height": 841,
-				"width": 651,
-				"stepDescription": "Go back down the steps to find a scarab named Fear. You need to interact with Fear to scare them up the steps to Scabaras. Make sure to guide them up the left side of the step as they will get stuck on the right."
+				"step": 1,
+				"src": "BeneathScabaras'Sands_step_1_1.webp",
+				"height": 444,
+				"width": 1118,
+				"stepDescription": "Talk to Pharaoh Osman in the throne room in Golden Palace in Menaphos. (Chat ✓)"
+			},
+			{
+				"step": 2,
+				"src": "BeneathScabaras'Sands_step_2_1.webp",
+				"height": 613,
+				"width": 472,
+				"stepDescription": "Go to Al Kharid and talk to Emir Ali Mirza in the Al Kharid Palace. (Chat ~)"
+			},
+			{
+				"step": 3,
+				"src": "BeneathScabaras'Sands_step_3_1.webp",
+				"height": 678,
+				"width": 450,
+				"stepDescription": "Go to Sophanem and talk to High Priest of Icthlarin."
+			},
+			{
+				"step": 4,
+				"src": "BeneathScabaras'Sands_step_4_1.webp",
+				"height": 823,
+				"width": 778,
+				"stepDescription": "Go to Nardah and talk to Awusah the Mayor."
+			},
+			{
+				"step": 5,
+				"src": "BeneathScabaras'Sands_step_5_1.webp",
+				"height": 647,
+				"width": 578,
+				"stepDescription": "Go to Pollnivneach and talk to Hakeem the Mayor."
+			},
+			{
+				"step": 6,
+				"src": "BeneathScabaras'Sands_step_6_1.webp",
+				"height": 570,
+				"width": 654,
+				"stepDescription": "Return to the Golden Palace in Menaphos. (Chat 1)"
+			},
+			{
+				"step": 9,
+				"src": "BeneathScabaras'Sands_step_9_1.webp",
+				"height": 297,
+				"width": 663,
+				"stepDescription": "Head back up to the palace and talk to Commander Akhomet."
+			},
+			{
+				"step": 10,
+				"src": "BeneathScabaras'Sands_step_10_1.webp",
+				"height": 503,
+				"width": 1040,
+				"stepDescription": "Enter the Golden Palace and talk to Pharaoh Osman."
+			},
+			{
+				"step": 11,
+				"src": "BeneathScabaras'Sands_step_11_1.webp",
+				"height": 433,
+				"width": 771,
+				"stepDescription": "Head to the Grand Library of Menaphos (Chat 1)."
+			},
+			{
+				"step": 12,
+				"src": "BeneathScabaras'Sands_step_12_1.webp",
+				"height": 515,
+				"width": 538,
+				"stepDescription": "Talk to Kohnen the librarian then the assistant. You do not need to follow the assistant, you can just run ahead to Leela who is in the south west corner. (down two levels, yellow dot on minimap)"
+			},
+			{
+				"step": 13,
+				"src": "BeneathScabaras'Sands_step_13_1.webp",
+				"height": 492,
+				"width": 544,
+				"stepDescription": "Talk to Leela then search the nearby bookcases until you obtain The Shiny Scarab, the location can be different for each player. Once Found talk to Leela again."
+			},
+			{
+				"step": 14,
+				"src": "BeneathScabaras'Sands_step_14_1.webp",
+				"height": 759,
+				"width": 402,
+				"stepDescription": "Talk to Senliten in the pyramid south of Uzer."
+			},
+			{
+				"step": 15,
+				"src": "BeneathScabaras'Sands_step_15_1.webp",
+				"height": 570,
+				"width": 599,
+				"stepDescription": "Talk to Lead Archaeologist Kerner in Uzer, twice with a restored Zarosian artifact to receive a Golden scarab (damaged).(Chat 1)"
+			},
+			{
+				"step": 16,
+				"src": "BeneathScabaras'Sands_step_16_1.webp",
+				"height": 459,
+				"width": 474,
+				"stepDescription": "Gather Scorched sand from any of the nearby locations then use the screening tray. Repeat this until you have 2 Ancient rubies and 30 Kharidian gold."
+			},
+			{
+				"step": 17,
+				"src": "BeneathScabaras'Sands_step_17_1.webp",
+				"height": 456,
+				"width": 559,
+				"stepDescription": "Restore the Golden scarab on the Archaeologist's workbench nearby."
+			},
+			{
+				"step": 18,
+				"src": "BeneathScabaras'Sands_step_18_1.webp",
+				"height": 432,
+				"width": 1027,
+				"stepDescription": "Head back to the Golden Palace(Chat 1) and talk to Pharaoh Osman."
+			},
+			{
+				"step": 19,
+				"src": "BeneathScabaras'Sands_step_19_1.webp",
+				"height": 627,
+				"width": 458,
+				"stepDescription": "Talk to Leela just outside the northern gates of Menaphos then release the Golden Scarab."
 			},
 			{
 				"step": 20,
-				"src": "Beneath Scabaras' Sands_step_20.webp",
-				"height": 684,
-				"width": 746,
+				"src": "BeneathScabaras'Sands_step_20_21.webp",
+				"height": 613,
+				"width": 759,
 				"stepDescription": "Follow the path of the golden scarab, clicking on it at intermediate stops, until you reach the Scabarite Cavern."
+			},
+			{
+				"step": 21,
+				"src": "BeneathScabaras'Sands_step_21_1.webp",
+				"height": 378,
+				"width": 488,
+				"stepDescription": "Enter the cavern. (Chat 1)"
+			},
+			{
+				"step": 22,
+				"src": "BeneathScabaras'Sands_step_22_1.webp",
+				"height": 555,
+				"width": 533,
+				"stepDescription": "Head south and click to follow the Golden Scarab."
+			},
+			{
+				"step": 23,
+				"src": "BeneathScabaras'Sands_step_23_1.webp",
+				"height": 708,
+				"width": 647,
+				"stepDescription": "Scavenge the Piles of debris in the cavern until you have 5 boat materials. If a Scarab appears it must be killed to obtain the materials."
+			},
+			{
+				"step": 24,
+				"src": "BeneathScabaras'Sands_step_24_1.webp",
+				"height": 312,
+				"width": 373,
+				"stepDescription": "Repair then travel on the boat."
+			},
+			{
+				"step": 25,
+				"src": "BeneathScabaras'Sands_step_25_1.webp",
+				"height": 371,
+				"width": 871,
+				"stepDescription": "Head east and up the steps and talk to Scabaras."
+			},
+			{
+				"step": 26,
+				"src": "BeneathScabaras'Sands_step_26_27.webp",
+				"height": 509,
+				"width": 849,
+				"stepDescription": "Go back down the steps to find a scarab named Fear. You need to interact with Fear to scare them up the steps to Scabaras. Make sure to guide them up the left side of the step as they will get stuck on the right."
+			},
+			{
+				"step": 29,
+				"src": "BeneathScabaras'Sands_step_29_2.webp",
+				"height": 654,
+				"width": 1172,
+				"stepDescription": "Drop the dwellberries to lure Ego up the steps. Ego can only be lured within 5 tiles."
+			},
+			{
+				"step": 31,
+				"src": "BeneathScabaras'Sands_step_31_1.webp",
+				"height": 632,
+				"width": 802,
+				"stepDescription": "Once again head back down the steps to find a scarab named Melancholy. This time interact to use chat options to motivate the scarab to move up the steps. Go through all 4 options until it moves."
+			},
+			{
+				"step": 32,
+				"src": "BeneathScabaras'Sands_step_32_1.webp",
+				"height": 665,
+				"width": 1286,
+				"stepDescription": "After the third flashback, head down the steps to find Grief."
+			},
+			{
+				"step": 33,
+				"src": "BeneathScabaras'Sands_step_33_1.webp",
+				"height": 353,
+				"width": 500,
+				"stepDescription": "Talk to Scabaras. (Chat 1•5)"
+			},
+			{
+				"step": 26,
+				"src": "BeneathScabaras'Sands_step_26_28.webp",
+				"height": 512,
+				"width": 396,
+				"stepDescription": "Go back down the steps to find a scarab named Fear. You need to interact with Fear to scare them up the steps to Scabaras. Make sure to guide them up the left side of the step as they will get stuck on the right."
+			},
+			{
+				"step": 7,
+				"src": "BeneathScabaras'Sands_step_7_2.webp",
+				"height": 759,
+				"width": 503,
+				"stepDescription": "Kill the 4 Profane Scabarites and burst the 4 Corrupted Scarabs nearby."
+			},
+			{
+				"step": 8,
+				"src": "BeneathScabaras'Sands_step_8_5.webp",
+				"height": 533,
+				"width": 496,
+				"stepDescription": "Head down the steps near the lodestone and kill the 4 Profane Scabarites and burst the 4 Corrupted Scarabs."
+			},
+			{
+				"step": 28,
+				"src": "BeneathScabaras'Sands_step_28_1.webp",
+				"height": 476,
+				"width": 1234,
+				"stepDescription": "Interact with Ego at the bottom of the steps. Then collect cavern dwellberries from near the boat. It's recommended to fill your inventory with berries."
 			}
 		]
 	},
