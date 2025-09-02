@@ -184,186 +184,123 @@
 		"name": "A Fairy Tale II: Cure a Queen",
 		"images": [
 			{
-				"step": "1",
-				"src": "QuestStartLoc.webp",
-				"width": 263,
-				"height": 330,
-				"stepDescription": "Talk to Martin the Master Gardener in the Draynor Market. (Chat 2\u2022\u2713)"
+				"step": 21,
+				"src": "AFairyTaleIICurea Queen_step_21_1.webp",
+				"height": 336,
+				"width": 373,
+				"stepDescription": "Talk to the Fairy Queen."
 			},
 			{
-				"step": "2",
-				"src": "FairyNuffLocation.webp",
-				"width": 456,
-				"height": 333,
+				"step": 20,
+				"src": "AFairyTaleIICurea Queen_step_20_1.webp",
+				"height": 291,
+				"width": 313,
+				"stepDescription": "At the Resistance Hideout, right-click use the magic essence on the queen, laying on the stretcher near Fairy Nuff."
+			},
+			{
+				"step": 19,
+				"src": "AFairyTaleIICurea Queen_step_19_1.webp",
+				"height": 826,
+				"width": 815,
+				"stepDescription": "Talk to Fairy Nuff before giving the queen the magic essence or it wont work."
+			},
+			{
+				"step": 18,
+				"src": "AFairyTaleIICurea Queen_step_18_1.webp",
+				"height": 799,
+				"width": 714,
+				"stepDescription": "Go back to the Resistance Hideout by equipping your Dramen staff and go to each of these codes in this order to reach the hideout: AIR, DLR, DJQ (right-click fairy ring to \"select Destination\" for quicker travel), AJS"
+			},
+			{
+				"step": 17,
+				"src": "AFairyTaleIICurea Queen_step_17_1.webp",
+				"height": 593,
+				"width": 603,
+				"stepDescription": "Make sure you have armour required to fight one or multiple Goraks to get a Gorak Claw. Once obtained use it on the magic essence (unf) potion for a Magic Essence Potion. Go back to a fairy ring and use the code DIR."
+			},
+			{
+				"step": 1,
+				"src": "AFairyTaleIICurea Queen_step_1_1.webp",
+				"height": 615,
+				"width": 702,
+				"stepDescription": "Talk to Martin the Master Gardener in the Draynor Market. (Chat 2•✓)"
+			},
+			{
+				"step": 2,
+				"src": "AFairyTaleIICurea Queen_step_2_1.webp",
+				"height": 557,
+				"width": 617,
 				"stepDescription": "After 5 minutes have elapsed, talk to him again. (Chat 2)"
 			},
 			{
-				"step": "3",
-				"src": "HealingCert.webp",
-				"width": 332,
-				"height": 513,
+				"step": 3,
+				"src": "AFairyTaleIICurea Queen_step_3_1.webp",
+				"height": 660,
+				"width": 1083,
 				"stepDescription": "Go to Fairy Nuff's grotto, north of the Zanaris bank."
 			},
 			{
-				"step": "6",
-				"src": "showtofairychef.webp",
-				"width": 512,
-				"height": 141,
+				"step": 4,
+				"src": "AFairyTaleIICurea Queen_step_4_1.webp",
+				"height": 365,
+				"width": 407,
+				"stepDescription": "After a short cutscene, enter the house and pick up the Healing Certificate from the floor in the south-east corner."
+			},
+			{
+				"step": 6,
+				"src": "AFairyTaleIICurea Queen_step_6_1.webp",
+				"height": 725,
+				"width": 466,
 				"stepDescription": "Use the certificate with the Fairy chef, south of the bank. She will tell you that she's seen similar inscriptions on a sign near the mysterious ruins, that is the cosmic altar, in southern Zanaris."
 			},
 			{
-				"step": "5",
-				"src": "studyOptionsforCert.webp",
-				"width": 191,
-				"height": 114,
-				"stepDescription": "Right-click study on the certificate. (You won't be able to reach the Fairy Resistance HQ if you don't \"study\" it)"
+				"step": 7,
+				"src": "AFairyTaleIICurea Queen_step_7_1.webp",
+				"height": 285,
+				"width": 336,
+				"stepDescription": "Read the rune temple sign, on the ground south of the Cosmic Altar.\nTalk to the Fairy Godfather (located in the Throne Room) about the Queen being missing. (Chat 1•1•1)"
 			},
 			{
-				"step": "7",
-				"src": "runeTemplesign.webp",
-				"width": 212,
-				"height": 279,
-				"stepDescription": "Read the rune temple sign, on the ground south of the Cosmic Altar.\nTalk to the Fairy Godfather (located in the Throne Room) about the Queen being missing. (Chat 1\u20221\u20221)"
-			},
-			{
-				"step": "7",
-				"src": "FairyGodfatherLoc.webp",
-				"width": 397,
-				"height": 330,
-				"stepDescription": "Read the rune temple sign, on the ground south of the Cosmic Altar.\nTalk to the Fairy Godfather (located in the Throne Room) about the Queen being missing. (Chat 1\u20221\u20221)"
-			},
-			{
-				"step": "7",
-				"src": "FairyGodFatherFairy.webp",
-				"width": 325,
-				"height": 501,
-				"stepDescription": "Read the rune temple sign, on the ground south of the Cosmic Altar.\nTalk to the Fairy Godfather (located in the Throne Room) about the Queen being missing. (Chat 1\u20221\u20221)"
-			},
-			{
-				"step": "8",
-				"src": "fairycoordinatorloc.webp",
-				"width": 374,
-				"height": 291,
+				"step": 8,
+				"src": "AFairyTaleIICurea Queen_step_8_1.webp",
+				"height": 549,
+				"width": 290,
 				"stepDescription": "Talk to the Co-ordinator just north at the crossroads. (Chat 2)"
 			},
 			{
-				"step": "8",
-				"src": "FairyCoordinator.webp",
-				"width": 269,
-				"height": 334,
-				"stepDescription": "Talk to the Co-ordinator just north at the crossroads. (Chat 2)"
-			},
-			{
-				"step": "9",
-				"src": "fairyfixitlocation.webp",
-				"width": 207,
-				"height": 218,
+				"step": 9,
+				"src": "AFairyTaleIICurea Queen_step_9_1.webp",
+				"height": 571,
+				"width": 766,
 				"stepDescription": "Talk to Fairy Fixit near the fairy ring, south-west of the wheat field."
 			},
 			{
-				"step": "9",
-				"src": "fairyfixitfairy.webp",
-				"width": 222,
-				"height": 161,
-				"stepDescription": "Talk to Fairy Fixit near the fairy ring, south-west of the wheat field."
+				"step": 11,
+				"src": "AFairyTaleIICurea Queen_step_11_1.webp",
+				"height": 564,
+				"width": 565,
+				"stepDescription": "In the Fairy Resistance Hideout, talk to Fairy Nuff and Fairy Very Wise in the northeastern clearing.\n"
 			},
 			{
-				"step": "10",
-				"src": "fairyringcode1.webp",
-				"width": 408,
-				"height": 174,
-				"stepDescription": "Equip your Dramen staff, click on the fairy ring and go to each of these codes in this order to reach the hideout: AIR, DLR, DJQ (this may seem like it failed, but continue to the next code anyway), AJS."
+				"step": 12,
+				"src": "AFairyTaleIICurea Queen_step_12_1.webp",
+				"height": 478,
+				"width": 439,
+				"stepDescription": "Go back (via the fairy ring) and pickpocket the Fairy Godfather for the queen's secateurs (may take several attempts). For a helpful hint look at Additional Info."
 			},
 			{
-				"step": "10",
-				"src": "fairyringcode2.webp",
-				"width": 385,
-				"height": 142,
-				"stepDescription": "Equip your Dramen staff, click on the fairy ring and go to each of these codes in this order to reach the hideout: AIR, DLR, DJQ (this may seem like it failed, but continue to the next code anyway), AJS."
+				"step": 14,
+				"src": "AFairyTaleIICurea Queen_step_14_1.webp",
+				"height": 603,
+				"width": 565,
+				"stepDescription": "Talk to Fairy Nuff."
 			},
 			{
-				"step": "10",
-				"src": "fairyringcode3.webp",
-				"width": 396,
-				"height": 149,
-				"stepDescription": "Equip your Dramen staff, click on the fairy ring and go to each of these codes in this order to reach the hideout: AIR, DLR, DJQ (this may seem like it failed, but continue to the next code anyway), AJS."
-			},
-			{
-				"step": "10",
-				"src": "HowToGetToFairyHQ.webp",
-				"width": 786,
-				"height": 252,
-				"stepDescription": "Equip your Dramen staff, click on the fairy ring and go to each of these codes in this order to reach the hideout: AIR, DLR, DJQ (this may seem like it failed, but continue to the next code anyway), AJS."
-			},
-			{
-				"step": "11",
-				"src": "fairynufflocationfairyhq.webp",
-				"width": 451,
-				"height": 312,
-				"stepDescription": "In the Fairy Resistance Hideout, talk to Fairy Nuff and Fairy Very Wise in the northeastern clearing.\nGo back (via the fairy ring) and pickpocket the Fairy Godfather for the queen's secateurs (may take several attempts). The Fairy Godfather, Fat Rocco and Slim Louie may need to be looking the other way. (ie. Stand east of him and wait until he looks west and both his guards are looking north)."
-			},
-			{
-				"step": "11",
-				"src": "FairyNuffFairyHQ.webp",
-				"width": 196,
-				"height": 233,
-				"stepDescription": "In the Fairy Resistance Hideout, talk to Fairy Nuff and Fairy Very Wise in the northeastern clearing.\nGo back (via the fairy ring) and pickpocket the Fairy Godfather for the queen's secateurs (may take several attempts). The Fairy Godfather, Fat Rocco and Slim Louie may need to be looking the other way. (ie. Stand east of him and wait until he looks west and both his guards are looking north)."
-			},
-			{
-				"step": "14",
-				"src": "starflowerfairycode.webp",
-				"width": 381,
-				"height": 203,
-				"stepDescription": "Go back to a fairy ring and use the code CKP."
-			},
-			{
-				"step": "17",
-				"src": "GorakFairyCode.webp",
-				"width": 402,
-				"height": 210,
-				"stepDescription": "Go back to a fairy ring and use the code DIR."
-			},
-			{
-				"step": "18",
-				"src": "GorakClaw.webp",
-				"width": 272,
-				"height": 178,
-				"stepDescription": "Kill Goraks until you get Gorak claws."
-			},
-			{
-				"step": "21",
-				"src": "ItemsForEssencePot.webp",
-				"width": 199,
-				"height": 82,
-				"stepDescription": "Use the Gorak claw powder on the Magic essence (unf)."
-			},
-			{
-				"step": "21",
-				"src": "EssencePotionstep2.webp",
-				"width": 238,
-				"height": 86,
-				"stepDescription": "Use the Gorak claw powder on the Magic essence (unf)."
-			},
-			{
-				"step": "21",
-				"src": "EssencePotionstep3.webp",
-				"width": 339,
-				"height": 101,
-				"stepDescription": "Use the Gorak claw powder on the Magic essence (unf)."
-			},
-			{
-				"step": "21",
-				"src": "FairyQueenCuring.webp",
-				"width": 342,
-				"height": 467,
-				"stepDescription": "Use the Gorak claw powder on the Magic essence (unf)."
-			},
-			{
-				"step": "25",
-				"src": "TalkToFairyQueen.webp",
-				"width": 329,
-				"height": 468,
-				"stepDescription": "Talk to the Fairy Queen."
+				"step": 16,
+				"src": "AFairyTaleIICurea Queen_step_16_2.webp",
+				"height": 388,
+				"width": 474,
+				"stepDescription": "Wait 2 minutes and pick a starflower then use it on a vial of water for a magic essence (unf) potion."
 			}
 		]
 	},
