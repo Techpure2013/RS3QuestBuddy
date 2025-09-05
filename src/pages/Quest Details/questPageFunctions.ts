@@ -27,6 +27,7 @@ const IGNORED_REQUIREMENTS = new Set([
 	"Bring Leela to Senliten's tomb",
 	"If Icthlarin's Little Helper was completed prior to the addition of Stolen Hearts and Diamond in the Rough, they must be completed before Contact! can be started (or completed).",
 	"For Ironmen",
+	"Rescue Mad Eadgar from the Troll Stronghold",
 ]);
 
 const openDiscord = (): void => {

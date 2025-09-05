@@ -126,10 +126,10 @@ const QuestPage: React.FC = () => {
 	}, [QuestDataPaths, getQuestSteps, questName]);
 
 	useEffect(() => {
-		if (getQuestDetails) {
+		if (questName) {
 			getQuestNamedDetails(questName);
 		}
-	}, []);
+	}, [questName]);
 
 	useEffect(() => {
 		const completedQuestsJSON = sessionStorage.getItem("hasCompleted");
