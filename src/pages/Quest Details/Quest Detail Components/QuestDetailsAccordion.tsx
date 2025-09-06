@@ -55,6 +55,28 @@ const OTHER_REQUIREMENT_PREFIXES = [
 	"If Icthlarin's Little Helper was completed prior to the addition of Stolen Hearts and Diamond in the Rough, they must be completed before Contact! can be started (or completed).",
 ];
 
+// rem breakpoints
+const BP_ONE_COL = 40; // < 40rem => 1 column
+const BP_TWO_COL = 60; // >= 60rem => 3 columns, otherwise 2
+
+const sectionGap = "1rem";
+const cardBorder = "0.125rem";
+const minColRem = 16; // used for items grid min width per column
+
+const useRemWidth = () => {
+	const [remWidth, setRemWidth] = useState<number>(() =>
+		typeof window !== "undefined" ? window.innerWidth / 16 : 100,
+	);
+	useEffect(() => {
+		const onResize = () =>
+			setRemWidth(typeof window !== "undefined" ? window.innerWidth / 16 : 100);
+		onResize();
+		window.addEventListener("resize", onResize);
+		return () => window.removeEventListener("resize", onResize);
+	}, []);
+	return remWidth;
+};
+
 const QuestDetailsGrid: React.FC<QuestDetailsGridProps> = ({
 	QuestDetails,
 	ignoredRequirements,
@@ -151,7 +173,7 @@ const QuestDetailsGrid: React.FC<QuestDetailsGridProps> = ({
 
 			const firstPartIsNumber = !isNaN(parseInt(req.split(" ")[0]));
 
-			// ✅ Force Quest Points into Other Requirements
+			// Force Quest Points into Other Requirements
 			if (req.toLowerCase().includes("quest point")) {
 				otherReqs.push(req);
 			} else if (
@@ -173,7 +195,7 @@ const QuestDetailsGrid: React.FC<QuestDetailsGridProps> = ({
 		});
 	});
 
-	// ✅ Deduplicate and sort
+	// Deduplicate and sort
 	const uniqueQuestReqs = Array.from(new Set(questReqs)).sort((a, b) =>
 		a.localeCompare(b),
 	);
@@ -196,9 +218,14 @@ const QuestDetailsGrid: React.FC<QuestDetailsGridProps> = ({
 		uniqueIronReqs.length ||
 		uniqueOtherReqs.length;
 
+	// Responsive column counts based on rem width
+	const remWidth = useRemWidth();
+	const trioCols = remWidth < BP_ONE_COL ? 1 : remWidth < BP_TWO_COL ? 2 : 3;
+	const itemsCols = remWidth < BP_ONE_COL ? 1 : 2;
+
 	return (
-		<Grid gutter="lg">
-			{/* === Top Row: Required Quests === */}
+		<Grid gutter="lg" style={{ gap: sectionGap }}>
+			{/* === Required Quests & Skills === */}
 			<Grid.Col span={12}>
 				{hasAnyRequirements ? (
 					<Card
@@ -207,7 +234,7 @@ const QuestDetailsGrid: React.FC<QuestDetailsGridProps> = ({
 						radius="md"
 						withBorder
 						style={{
-							border: "2px solid var(--mantine-color-teal-6)",
+							border: `${cardBorder} solid var(--mantine-color-teal-6)`,
 							background: "linear-gradient(135deg, #1e1e1e, #141414)",
 						}}
 					>
@@ -219,7 +246,6 @@ const QuestDetailsGrid: React.FC<QuestDetailsGridProps> = ({
 						</Group>
 						<Divider mb="sm" />
 
-						{/* ✅ Success message if all quests + skills are met */}
 						{(() => {
 							const allQuestsMet =
 								uniqueQuestReqs.length === 0 ||
@@ -241,7 +267,7 @@ const QuestDetailsGrid: React.FC<QuestDetailsGridProps> = ({
 											withBorder
 											style={{
 												marginBottom: "1rem",
-												border: "2px solid var(--mantine-color-green-6)",
+												border: `${cardBorder} solid var(--mantine-color-green-6)`,
 												background: "linear-gradient(135deg, #1a2e1a, #141414)",
 											}}
 										>
@@ -255,38 +281,59 @@ const QuestDetailsGrid: React.FC<QuestDetailsGridProps> = ({
 											)}
 										</Card>
 
-										{/* Only show Other Requirements if they exist */}
 										{uniqueOtherReqs.length > 0 && (
-											<Grid>
-												<Grid.Col span={{ base: 12, md: 3 }}>
-													<Title order={5} mb="xs" c="orange.6">
-														Other Requirements
-													</Title>
-													<List spacing="sm" size="sm">
-														{uniqueOtherReqs.map((requirement, idx) => (
-															<List.Item key={idx}>
-																<Text span size="sm" fw={500} c="orange">
-																	{requirement}
-																</Text>
-															</List.Item>
-														))}
-													</List>
-												</Grid.Col>
-											</Grid>
+											<>
+												<Divider my="sm" />
+												<Title order={5} mb="xs" c="orange.6">
+													Other Requirements
+												</Title>
+												<List spacing="sm" size="sm">
+													{uniqueOtherReqs.map((requirement, idx) => (
+														<List.Item key={idx}>
+															<Text span size="sm" fw={500} c="orange">
+																{requirement}
+															</Text>
+														</List.Item>
+													))}
+												</List>
+											</>
 										)}
 									</>
 								);
 							}
 
-							// ❌ If not all met → show the normal lists
+							// Responsive 3/2/1 columns (no horizontal scroll)
+							const subCardBase: React.CSSProperties = {
+								width: "100%",
+								boxSizing: "border-box",
+								background: "linear-gradient(135deg, #151515, #101010)",
+								overflowWrap: "anywhere",
+							};
+
 							return (
-								<Grid>
-									{/* Quests (alphabetical) */}
+								<div
+									style={{
+										display: "grid",
+										gap: sectionGap,
+										gridTemplateColumns: `repeat(${trioCols}, 1fr)`,
+										alignItems: "start",
+									}}
+								>
+									{/* Quests */}
 									{uniqueQuestReqs.length > 0 && (
-										<Grid.Col span={{ base: 12, md: 3 }}>
+										<Card
+											padding="md"
+											radius="md"
+											withBorder
+											style={{
+												...subCardBase,
+												border: `${cardBorder} solid var(--mantine-color-teal-6)`,
+											}}
+										>
 											<Title order={5} mb="xs" c="teal.4">
 												Quests
 											</Title>
+											<Divider mb="xs" />
 											<List spacing="sm" size="sm">
 												{uniqueQuestReqs.map((requirement, idx) => {
 													const isComplete = completedQuests?.some(
@@ -324,15 +371,24 @@ const QuestDetailsGrid: React.FC<QuestDetailsGridProps> = ({
 													);
 												})}
 											</List>
-										</Grid.Col>
+										</Card>
 									)}
 
-									{/* Skills (numerical order) */}
+									{/* Skills */}
 									{uniqueSkillReqs.length > 0 && (
-										<Grid.Col span={{ base: 12, md: 3 }}>
+										<Card
+											padding="md"
+											radius="md"
+											withBorder
+											style={{
+												...subCardBase,
+												border: `${cardBorder} solid var(--mantine-color-blue-6)`,
+											}}
+										>
 											<Title order={5} mb="xs" c="blue.4">
 												Skills
 											</Title>
+											<Divider mb="xs" />
 											<List spacing="sm" size="sm">
 												{uniqueSkillReqs.map((requirement, idx) => {
 													const hasSkill = checkRequirement(skillLevels, requirement);
@@ -346,33 +402,24 @@ const QuestDetailsGrid: React.FC<QuestDetailsGridProps> = ({
 													);
 												})}
 											</List>
-										</Grid.Col>
-									)}
-
-									{/* Ironman/Hardcore */}
-									{uniqueIronReqs.length > 0 && (
-										<Grid.Col span={{ base: 12, md: 3 }}>
-											<Title order={5} mb="xs" c="yellow.6">
-												Ironman / Hardcore
-											</Title>
-											<List spacing="sm" size="sm">
-												{uniqueIronReqs.map((requirement, idx) => (
-													<List.Item key={idx}>
-														<Text span size="sm" fw={500} c="yellow">
-															{requirement}
-														</Text>
-													</List.Item>
-												))}
-											</List>
-										</Grid.Col>
+										</Card>
 									)}
 
 									{/* Other Requirements */}
 									{uniqueOtherReqs.length > 0 && (
-										<Grid.Col span={{ base: 12, md: 3 }}>
+										<Card
+											padding="md"
+											radius="md"
+											withBorder
+											style={{
+												...subCardBase,
+												border: `${cardBorder} solid var(--mantine-color-orange-6)`,
+											}}
+										>
 											<Title order={5} mb="xs" c="orange.6">
 												Other Requirements
 											</Title>
+											<Divider mb="xs" />
 											<List spacing="sm" size="sm">
 												{uniqueOtherReqs.map((requirement, idx) => (
 													<List.Item key={idx}>
@@ -382,9 +429,9 @@ const QuestDetailsGrid: React.FC<QuestDetailsGridProps> = ({
 													</List.Item>
 												))}
 											</List>
-										</Grid.Col>
+										</Card>
 									)}
-								</Grid>
+								</div>
 							);
 						})()}
 					</Card>
@@ -395,7 +442,7 @@ const QuestDetailsGrid: React.FC<QuestDetailsGridProps> = ({
 						radius="md"
 						withBorder
 						style={{
-							border: "2px solid var(--mantine-color-gray-6)",
+							border: `${cardBorder} solid var(--mantine-color-gray-6)`,
 							background: "linear-gradient(135deg, #1e1e1e, #141414)",
 						}}
 					>
@@ -410,86 +457,168 @@ const QuestDetailsGrid: React.FC<QuestDetailsGridProps> = ({
 				)}
 			</Grid.Col>
 
-			{/* === Second Row: Required Items, Recommended Items === */}
-			<Grid.Col span={{ base: 12, md: 6 }}>
+			{/* === Items: Single Card with two panels (Required left, Recommended right) === */}
+			<Grid.Col span={12}>
 				<Card
 					shadow="sm"
-					padding="md"
+					padding="lg"
 					radius="md"
 					withBorder
 					style={{
-						border: "2px solid var(--mantine-color-orange-6)",
+						border: "0.125rem solid var(--mantine-color-gray-6)",
 						background: "linear-gradient(135deg, #1e1e1e, #141414)",
 					}}
 				>
-					<Group mb="sm">
-						<IconPackage size={20} color="var(--mantine-color-orange-5)" />
-						<Title order={4} c="orange.4">
-							Required Items
-						</Title>
-					</Group>
-					<List spacing="sm" size="sm">
-						{deduplicatedQuestDetails?.map((quest, questIndex) =>
-							quest.ItemsRequired.map((item: string, itemIndex: number) => {
-								const uniqueKey = `${quest.Quest}-req-${questIndex}-${itemIndex}`;
-								const isChecked = checkedItemsRequired.has(uniqueKey);
+					{(function ItemsGrid() {
+						// rem-based responsive columns
+						const remWidth =
+							typeof window !== "undefined" ? window.innerWidth / 16 : 100;
+						const cols = remWidth < 40 ? 1 : 2; // < 40rem => stack
 
-								return (
-									<List.Item key={uniqueKey}>
-										<Checkbox
-											size="sm"
-											label={item}
-											checked={isChecked}
-											onChange={() => handleCheckedItemsRequired(uniqueKey)}
-										/>
-									</List.Item>
-								);
-							}),
-						)}
-					</List>
+						// Collect items and normalize "None"
+						const requiredItems = deduplicatedQuestDetails
+							?.flatMap((q) => q.ItemsRequired || [])
+							.filter(Boolean);
+						const recommendedItems = deduplicatedQuestDetails
+							?.flatMap((q) => q.Recommended || [])
+							.filter(Boolean);
+
+						const requiredIsNone =
+							!requiredItems ||
+							requiredItems.length === 0 ||
+							requiredItems.every((it) => String(it).trim().toLowerCase() === "none");
+
+						const recommendedIsNone =
+							!recommendedItems ||
+							recommendedItems.length === 0 ||
+							recommendedItems.every(
+								(it) => String(it).trim().toLowerCase() === "none",
+							);
+
+						const gridStyle: React.CSSProperties = {
+							display: "grid",
+							gap: "1rem",
+							gridTemplateColumns: `repeat(${cols}, minmax(16rem, 1fr))`,
+							alignItems: "start",
+						};
+
+						const panelBase: React.CSSProperties = {
+							width: "100%",
+							boxSizing: "border-box",
+							background: "linear-gradient(135deg, #151515, #101010)",
+							borderRadius: "0.5rem",
+							padding: "1rem",
+						};
+
+						const emptyBox: React.CSSProperties = {
+							border: "0.125rem solid var(--mantine-color-gray-6)",
+							background: "linear-gradient(135deg, #1e1e1e, #121212)",
+							padding: "0.75rem 1rem",
+							borderRadius: "0.5rem",
+						};
+
+						return (
+							<div style={gridStyle}>
+								{/* Required Items (Orange) */}
+								<div
+									style={{
+										...panelBase,
+										border: "0.125rem solid var(--mantine-color-orange-6)",
+									}}
+								>
+									<Group mb="sm">
+										<IconPackage size={20} color="var(--mantine-color-orange-5)" />
+										<Title order={4} c="orange.4">
+											Required Items
+										</Title>
+									</Group>
+
+									{requiredIsNone ? (
+										<div style={emptyBox}>
+											<Group gap="xs">
+												<Text fw={600} c="gray.3">
+													No Required Items
+												</Text>
+											</Group>
+											<Text size="sm" c="dimmed">
+												This quest does not require any specific items.
+											</Text>
+										</div>
+									) : (
+										<List spacing="sm" size="sm">
+											{requiredItems
+												.map((item, idx) => ({ item, idx }))
+												.map(({ item, idx }) => {
+													const uniqueKey = `req-${idx}-${String(item)}`;
+													const isChecked = checkedItemsRequired.has(uniqueKey);
+													return (
+														<List.Item key={uniqueKey}>
+															<Checkbox
+																size="sm"
+																label={String(item)}
+																checked={isChecked}
+																onChange={() => handleCheckedItemsRequired(uniqueKey)}
+															/>
+														</List.Item>
+													);
+												})}
+										</List>
+									)}
+								</div>
+
+								{/* Recommended Items (Blue) */}
+								<div
+									style={{
+										...panelBase,
+										border: "0.125rem solid var(--mantine-color-blue-6)",
+									}}
+								>
+									<Group mb="sm">
+										<IconBox size={20} color="var(--mantine-color-blue-5)" />
+										<Title order={4} c="blue.4">
+											Recommended Items
+										</Title>
+									</Group>
+
+									{recommendedIsNone ? (
+										<div style={emptyBox}>
+											<Group gap="xs">
+												<Text fw={600} c="gray.3">
+													No Recommended Items
+												</Text>
+											</Group>
+											<Text size="sm" c="dimmed">
+												There are no specific recommendations for this quest.
+											</Text>
+										</div>
+									) : (
+										<List spacing="sm" size="sm">
+											{recommendedItems
+												.map((item, idx) => ({ item, idx }))
+												.map(({ item, idx }) => {
+													const uniqueKey = `rec-${idx}-${String(item)}`;
+													const isChecked = checkedItemsRecommended.has(uniqueKey);
+													return (
+														<List.Item key={uniqueKey}>
+															<Checkbox
+																size="sm"
+																label={String(item)}
+																checked={isChecked}
+																onChange={() => handleCheckedItemsRecommended(uniqueKey)}
+															/>
+														</List.Item>
+													);
+												})}
+										</List>
+									)}
+								</div>
+							</div>
+						);
+					})()}
 				</Card>
 			</Grid.Col>
 
-			<Grid.Col span={{ base: 12, md: 6 }}>
-				<Card
-					shadow="sm"
-					padding="md"
-					radius="md"
-					withBorder
-					style={{
-						border: "2px solid var(--mantine-color-blue-6)",
-						background: "linear-gradient(135deg, #1e1e1e, #141414)",
-					}}
-				>
-					<Group mb="sm">
-						<IconBox size={20} color="var(--mantine-color-blue-5)" />
-						<Title order={4} c="blue.4">
-							Recommended Items
-						</Title>
-					</Group>
-					<List spacing="sm" size="sm">
-						{deduplicatedQuestDetails?.map((quest, questIndex) =>
-							quest.Recommended.map((item: string, itemIndex: number) => {
-								const uniqueKey = `${quest.Quest}-rec-${questIndex}-${itemIndex}`;
-								const isChecked = checkedItemsRecommended.has(uniqueKey);
-
-								return (
-									<List.Item key={uniqueKey}>
-										<Checkbox
-											size="sm"
-											label={item}
-											checked={isChecked}
-											onChange={() => handleCheckedItemsRecommended(uniqueKey)}
-										/>
-									</List.Item>
-								);
-							}),
-						)}
-					</List>
-				</Card>
-			</Grid.Col>
-
-			{/* === Bottom Row: Enemies === */}
+			{/* === Enemies === */}
 			<Grid.Col span={12}>
 				{deduplicatedQuestDetails?.some(
 					(quest) =>
@@ -503,7 +632,7 @@ const QuestDetailsGrid: React.FC<QuestDetailsGridProps> = ({
 						radius="md"
 						withBorder
 						style={{
-							border: "2px solid var(--mantine-color-red-6)",
+							border: `${cardBorder} solid var(--mantine-color-red-6)`,
 							background: "linear-gradient(135deg, #1e1e1e, #141414)",
 						}}
 					>
@@ -519,18 +648,27 @@ const QuestDetailsGrid: React.FC<QuestDetailsGridProps> = ({
 								.filter((enemy) => enemy.toLowerCase() !== "none")
 								.sort((a, b) => a.localeCompare(b))
 								.map((enemy: string, idx: number) => {
-									// ✅ Extract all levels (handles multiple like "70, 72, 75, or 78")
-									const levelMatches = enemy.match(/\d+/g);
-									const levels = levelMatches
-										? levelMatches.map((n) => parseInt(n, 10))
-										: [];
+									// Extract numeric tokens
+									const numMatches = enemy.match(/\d+/g);
+									const nums = numMatches ? numMatches.map((n) => parseInt(n, 10)) : [];
 
-									// ✅ Extract quantity (numbers or "at least X")
+									// Quantity at start
 									const quantityMatch = enemy.match(/^(at least\s*\d+|\d+)/i);
 									const quantity = quantityMatch ? quantityMatch[0] : null;
 
-									// ✅ Dangerous if ANY level > 30
-									const isDangerous = levels.some((lvl) => lvl > 30);
+									// Skip quantity number for danger check if it's the leading token
+									const numbersForDanger =
+										quantity &&
+										nums.length > 0 &&
+										enemy.trim().toLowerCase().startsWith(quantity.toLowerCase())
+											? nums.slice(1)
+											: nums;
+
+									const isDangerous = numbersForDanger.some((n) => n > 30);
+
+									const text = quantity
+										? `${quantity} ${enemy.replace(quantity, "").trim()}`
+										: enemy;
 
 									return (
 										<List.Item key={idx}>
@@ -540,17 +678,11 @@ const QuestDetailsGrid: React.FC<QuestDetailsGridProps> = ({
 														Dangerous
 													</Badge>
 													<Text fw={600} c="red.5">
-														{quantity
-															? `${quantity} ${enemy.replace(quantity, "").trim()}`
-															: enemy}
+														{text}
 													</Text>
 												</Group>
 											) : (
-												<Text>
-													{quantity
-														? `${quantity} ${enemy.replace(quantity, "").trim()}`
-														: enemy}
-												</Text>
+												<Text>{text}</Text>
 											)}
 										</List.Item>
 									);

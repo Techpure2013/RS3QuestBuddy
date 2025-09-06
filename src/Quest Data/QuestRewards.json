@@ -1027,7 +1027,43 @@
 			]
 		},
 		{
-			"Quest": "Eye for an Eye",
+			"Quest": "Duck Quest",
+
+			"questPoints": 1,
+
+			"rewards": [
+				"500 Herblore experience as a lamp",
+
+				"Duckling pet",
+
+				"Access to Paddlington via Monty the rubber duckie or Waddle Willow",
+
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			]
+		},
+		{
+			"Quest": "Field of Screams",
+
+			"questPoints": 0,
+
+			"rewards": [
+				"The Horsemen's Uniform of chosen captain",
+
+				"Horses the chicken pet, themed around chosen captain",
+
+				"Title for chosen captain",
+
+				"10,000 spooky tokens (capable of surpassing the soft cap of 150,000 spooky tokens)",
+
+				"Emotes from the previous Halloween events (if not unlocked)",
+
+				"Ability to hand in clan confections for further rewards",
+
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			]
+		},
+		{
+			"Quest": "Eye for an Eye (miniquest)",
 			"questPoints": 0,
 			"rewards": [
 				"250x Chimes",
@@ -1072,7 +1108,7 @@
 			]
 		},
 		{
-			"Quest": "Father and Son",
+			"Quest": "Father and Son (miniquest)",
 			"questPoints": 0,
 			"rewards": ["A Medium Hunter XP lamp"]
 		},
@@ -3514,6 +3550,89 @@
 			]
 		},
 		{
+			"Quest": "Death Plateau",
+			"questPoints": 1,
+			"rewards": [
+				"3x 100 Skills experience lamps",
+				"4 rabbit sandwiches (obtained during the quest)",
+				"Can take supplies from Commander Denulth to the Ambush Commander 5 times to receive 15 reward lamps in total",
+				"15x 180 Skills experience lamps for a total of 2,700 Skills experience",
+				"2 Treasure Hunter keys (Ironman accounts will not receive these)"
+			]
+		},
+		{
+			"Quest": "Eye for an Eye",
+			"questPoints": 0,
+			"rewards": [
+				"250 chimes",
+				"1 taijitu",
+				"25 alaea sea salt",
+				"1 medium Prayer XP lamp",
+				"Banky crablet and Cyclosis teleport tablet unlocked in the Waiko Reward Shop"
+			]
+		},
+		{
+			"Quest": "Father and Son",
+			"questPoints": 0,
+			"rewards": ["Medium Hunter XP lamp"]
+		},
+		{
+			"Quest": "Final Destination (miniquest)",
+
+			"questPoints": 1,
+
+			"rewards": [
+				"2,000 chimes",
+
+				"10 taijitu",
+
+				"1 large combat XP lamp (Attack, Strength, Defence, Constitution, Ranged, Magic, Necromancy, Prayer, or Summoning)",
+
+				"Goshima teleport tablet unlocked in the Waiko Reward Shop",
+
+				"Title [Name] of the Arc"
+			]
+		},
+		{
+			"Quest": "Flag Fall (miniquest)",
+
+			"questPoints": 1,
+
+			"rewards": [
+				"500 chimes",
+
+				"2 Taijitu",
+
+				"Ability to claim an uncharted isle",
+
+				"Claim island flag in the Waiko Reward Shop"
+			]
+		},
+		{
+			"Quest": "Eye of Het II",
+			"questPoints": 0,
+			"rewards": [
+				"Medium XP lamp",
+				"Eye of Het (broken), a relic which can be offered to the mysterious monolith to unlock the Blessing of Het relic power. (The relic doesn't require repairing.)"
+			]
+		},
+		{
+			"Quest": "Eye of Het I",
+			"questPoints": 0,
+			"rewards": ["Medium XP lamp"]
+		},
+		{
+			"Quest": "Damage Control (miniquest)",
+			"questPoints": 0,
+			"rewards": [
+				"3,000 chimes",
+				"2 taijitu",
+				"1 medium Thieving XP lamp",
+				"Fully armed and prepared ship",
+				"Whereabouts of Stan's stolen property and Jacob"
+			]
+		},
+		{
 			"Quest": "Zogre Flesh Eaters",
 			"questPoints": 1,
 			"rewards": [
@@ -3527,6 +3646,143 @@
 				"Ability to fletch composite ogre bow and brutal arrows",
 				"Access to post-quest rewards from Zavistic, Rarve or Yanni Salika, and Uglug Nar",
 				"2 Treasure Hunter keys."
+			]
+		},
+		{
+			"Quest": "Final Destination (miniquest)",
+			"questPoints": 1,
+			"rewards": [
+				"2,000 chimes",
+				"10 taijitu",
+				"1 large combat XP lamp (Attack, Strength, Defence, Constitution, Ranged, Magic, Necromancy, Prayer, or Summoning)",
+				"Goshima teleport tablet unlocked in the Waiko Reward Shop",
+				"Title [Name] of the Arc"
+			]
+		},
+		{
+			"Quest": "Flag Fall (miniquest)",
+			"questPoints": 1,
+			"rewards": [
+				"500 chimes",
+				"2 Taijitu",
+				"Ability to claim an uncharted isle",
+				"Claim island flag in the Waiko Reward Shop"
+			]
+		},
+		{
+			"Quest": "Ghosts from the Past (miniquest)",
+			"questPoints": 1,
+			"rewards": [
+				"500 chimes",
+				"2 Taijitu",
+				"1 Medium XP lamp",
+				"Islands That Once Were Turtles teleport tablet unlocked in the Waiko Reward Shop"
+			]
+		},
+		{
+			"Quest": "Harbinger (miniquest)",
+			"questPoints": 1,
+			"rewards": ["250 chimes", "2 Taijitu", "1 Medium Construction XP lamp"]
+		},
+		{
+			"Quest": "Head of the Family (miniquest)",
+			"questPoints": 1,
+			"rewards": [
+				"1,000 chimes",
+				"5 Taijitu",
+				"30 Fish oil",
+				"4 Bundles of bamboo",
+				"1 Medium Agility XP lamp",
+				"Moai decoration in the Waiko Reward Shop",
+				"An additional crew member"
+			]
+		},
+		{
+			"Quest": "Helping Laniakea (miniquest)",
+			"questPoints": 1,
+			"rewards": ["Totem of Intimidation middle"]
+		},
+		{
+			"Quest": "Jed Hunter (miniquest)",
+			"questPoints": 1,
+			"rewards": [
+				"2,000 chimes",
+				"10 Taijitu",
+				"1 Medium Hunter XP lamp",
+				"Goshima teleport tablet in Waiko Reward Shop",
+				"'of the Arc' title"
+			]
+		},
+		{
+			"Quest": "Nadir (saga)",
+			"questPoints": 1,
+			"rewards": [
+				"Dungeoneering XP (saga completion)",
+				"Access to saga replays from Skaldrun"
+			]
+		},
+		{
+			"Quest": "Raksha, the Shadow Colossus",
+			"questPoints": 0,
+			"rewards": ["Access to Raksha, the Shadow Colossus boss encounter"]
+		},
+		{
+			"Quest": "Sins of the Father",
+			"questPoints": 0,
+			"rewards": ["Access to the Effigy Incubator"]
+		},
+		{
+			"Quest": "Spiritual Enlightenment (miniquest)",
+			"questPoints": 1,
+			"rewards": [
+				"250 chimes",
+				"3 Taijitu",
+				"1 Medium Slayer XP lamp",
+				"Access to Aminishi's Spirit Realm and arhat dragons"
+			]
+		},
+		{
+			"Quest": "That Old Black Magic: Flesh and Bone",
+			"questPoints": 0,
+			"rewards": ["12,500 Necromancy XP lamp", "25 vessel souls"]
+		},
+		{
+			"Quest": "That Old Black Magic: Hermy and Bass",
+			"questPoints": 0,
+			"rewards": ["20,000 Necromancy XP lamp", "25 vessel souls"]
+		},
+		{
+			"Quest": "That Old Black Magic: My One and Only Lute",
+			"questPoints": 0,
+			"rewards": ["5,000 Necromancy XP lamp", "10 vessel souls"]
+		},
+		{
+			"Quest": "That Old Black Magic: Skelly By Everlight",
+			"questPoints": 0,
+			"rewards": ["7,500 Necromancy XP lamp", "25 vessel souls"]
+		},
+		{
+			"Quest": "Three's Company (saga)",
+			"questPoints": 1,
+			"rewards": [
+				"Dungeoneering XP (saga completion)",
+				"Access to saga replays from Skaldrun"
+			]
+		},
+		{
+			"Quest": "Tree Gnome Village",
+			"questPoints": 2,
+			"rewards": ["11,450 Attack XP", "Gnome Amulet of Protection"]
+		},
+		{
+			"Quest": "Tuai Leit's Own (miniquest)",
+			"questPoints": 1,
+			"rewards": [
+				"500 chimes",
+				"2 Taijitu",
+				"50 Rumberry",
+				"50 Ancestral energy",
+				"Tuai Leit teleport tablet in the Waiko Reward Shop"
 			]
 		}
 	]
