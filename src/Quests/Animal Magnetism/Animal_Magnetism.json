@@ -3,12 +3,8 @@
   "questSteps": [
     {
       "stepDescription": "Talk to Ava inside the western room of Draynor Manor. (Chat 1•✓)",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
@@ -29,39 +25,79 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "To get to her room, a candle sconce (North of the entrance) must be pulled."
       ]
     },
     {
-      "stepDescription": "To get to her room, a candle sconce (North of the entrance) must be pulled.",
+      "stepDescription": "Talk to Alice at the farm west of the Ectofuntus. (Chat 4)",
       "itemsNeeded": [
         "ghostspeak amulet",
         "20 ecto-tokens"
       ],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Alice (farmer)",
+            "npcLocation": {
+              "lat": 3525,
+              "lng": 3626
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3524,
+                "lng": 3625
+              },
+              "topRight": {
+                "lat": 3527,
+                "lng": 3629
+              }
+            }
+          }
+        ],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": []
+    },
+    {
+      "stepDescription": "Equip your ghostspeak amulet and Talk to Alice's husband.",
+      "itemsNeeded": [
+        "Ghostspeak Amulet"
+      ],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Alice's Husband",
+            "npcLocation": {
+              "lat": 3526,
+              "lng": 3618
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3523,
+                "lng": 3612
+              },
+              "topRight": {
+                "lat": 3530,
+                "lng": 3622
+              }
+            }
+          }
+        ],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": []
+    },
+    {
+      "stepDescription": "Talk to Alice again. (Chat 4)",
+      "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
         "npc": [
@@ -83,151 +119,15 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Alice at the farm west of the Ectofuntus. (Chat 4)",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "Alice's Husband",
-            "npcLocation": {
-              "lat": 3526,
-              "lng": 3618
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 3523,
-                "lng": 3612
-              },
-              "topRight": {
-                "lat": 3530,
-                "lng": 3622
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Equip ghostspeak amulet.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": " Alice",
-            "npcLocation": {
-              "lat": 3525,
-              "lng": 3626
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 3524,
-                "lng": 3625
-              },
-              "topRight": {
-                "lat": 3527,
-                "lng": 3629
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Alice's husband.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
@@ -248,41 +148,15 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Alice again. (Chat 4)",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
@@ -303,41 +177,15 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Alice's husband.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
@@ -358,41 +206,15 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Alice again. (Chat 4)",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
@@ -413,41 +235,15 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Talk to Alice's husband.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "stepDescription": "Head to Netty's house east of the Slayer Tower.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
@@ -485,41 +281,17 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "If Vessel of the Harbinger is completed, Netty will be in the City of Um at The Last Call."
       ]
     },
     {
-      "stepDescription": "Talk to Alice again. (Chat 4)",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "stepDescription": "Talk to Netty. (Chat 2)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
@@ -540,97 +312,20 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "(Chat 1) if at The Last Call."
       ]
     },
     {
-      "stepDescription": "Head to Netty's house east of the Slayer Tower. (If Vessel of the Harbinger is completed, Netty will be in the City of Um.)",
-      "itemsNeeded": [
-        "ghostspeak amulet"
-      ],
+      "stepDescription": "Talk to Alice's husband to give him the altered ghostspeak amulet. (Chat 1)",
+      "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "Netty ( City of Um )",
-            "npcLocation": {
-              "lat": 1777,
-              "lng": 1123
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 1776,
-                "lng": 1122
-              },
-              "topRight": {
-                "lat": 1777,
-                "lng": 1126
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Netty. (Chat 2)",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
             "npcName": "Alice's Husband",
             "npcLocation": {
               "lat": 3526,
@@ -648,145 +343,71 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Netty again. (Chat 1)",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "Alice's Husband",
-            "npcLocation": {
-              "lat": 3526,
-              "lng": 3618
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 3523,
-                "lng": 3612
-              },
-              "topRight": {
-                "lat": 3530,
-                "lng": 3622
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Alice's husband to give him the crone-made amulet. (Chat 1)",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "Alice's Husband",
-            "npcLocation": {
-              "lat": 3526,
-              "lng": 3618
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 3523,
-                "lng": 3612
-              },
-              "topRight": {
-                "lat": 3530,
-                "lng": 3622
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to him again.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Alice's Husband",
+            "npcLocation": {
+              "lat": 3526,
+              "lng": 3618
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3523,
+                "lng": 3612
+              },
+              "topRight": {
+                "lat": 3530,
+                "lng": 3622
+              }
+            }
+          }
+        ],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": []
+    },
+    {
+      "stepDescription": "After the cutscene, buy two undead chickens from Alice's husband for 20 ecto-tokens. (Chat 1•2)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Alice's Husband",
+            "npcLocation": {
+              "lat": 3526,
+              "lng": 3618
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3523,
+                "lng": 3612
+              },
+              "topRight": {
+                "lat": 3530,
+                "lng": 3622
+              }
+            }
+          }
+        ],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": []
+    },
+    {
+      "stepDescription": "Talk to Ava in Draynor Manor.",
       "itemsNeeded": [
         "5 Iron Bars"
       ],
@@ -811,35 +432,13 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "After the cutscene, buy two undead chickens from Alice's husband for 20 ecto-tokens. (Chat 1•2)",
+      "stepDescription": "Talk to Helda who is also on the western side of the manor and give her five iron bars.",
       "itemsNeeded": [
         "5 Iron Bars"
       ],
@@ -864,41 +463,15 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Talk to Ava in Draynor Manor.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "stepDescription": "Talk to Helda again to receive the selected iron.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
@@ -919,61 +492,17 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Talk to Helda who is also on the western side of the manor and give her five iron bars.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "stepDescription": "Take the selected iron to the mine north-east of Rimmington (using the Port Sarim lodestone is recommended).\nFace north and left click the selected iron to hammer it and make bar magnet.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
             "name": "Rimmington Mining Location",
@@ -998,17 +527,13 @@
       },
       "floor": 0,
       "additionalStepInformation": [
-        "Face north and left click the selected iron to hammer it and make Bar magnet."
+        ""
       ]
     },
     {
-      "stepDescription": "Talk to Helda again to receive the selected iron.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "stepDescription": "Talk to Ava.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
@@ -1029,62 +554,20 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Take the selected iron to the mine north-east of Rimmington (using the Port Sarim lodestone is recommended).",
-      "itemsNeeded": [
-        "none"
-      ],
+      "stepDescription": "Attempt to cut an undead tree with a mithril hatchet. Undead trees can be found beside the path that leads you to the entrance.",
+      "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "Undead Tree",
+            "name": "Undead tree",
             "objectLocation": [
               {
                 "lat": 3344,
@@ -1109,18 +592,12 @@
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Face north and left click the selected iron to hammer it and make Bar magnet.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "stepDescription": "Talk to Ava.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
@@ -1141,35 +618,13 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Talk to Ava.",
+      "stepDescription": "Go to Burthorpe and talk to Turael (or Spria). (Chat 3)",
       "itemsNeeded": [
         "Mithril Hatchet",
         "Holy Symbol"
@@ -1195,41 +650,15 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Attempt to cut an undead tree with a mithril hatchet. Undead trees can be found beside the path that leads you to the entrance.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "stepDescription": "Give them a mithril hatchet and holy symbol. (Chat 3•1)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
@@ -1250,43 +679,22 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Talk to Ava.",
+      "stepDescription": "Attempt to cut another undead tree with the blessed hatchet until you receive some undead twigs.",
       "itemsNeeded": [
         "Blessed Hatchet"
       ],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
+        "npc": [],
+        "object": [
           {
-            "name": "Undead Tree",
+            "name": "Undead tree",
             "objectLocation": [
               {
                 "lat": 3344,
@@ -1308,208 +716,76 @@
               }
             }
           }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Go to Burthorpe and talk to Turael (or Spria). (Chat 3)",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "Ava",
-            "npcLocation": {
-              "lat": 3358,
-              "lng": 3092
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 3357,
-                "lng": 3091
-              },
-              "topRight": {
-                "lat": 3359,
-                "lng": 3093
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Give him/her a mithril hatchet and holy symbol. (Chat 3•1)",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "Ava",
-            "npcLocation": {
-              "lat": 3358,
-              "lng": 3092
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 3357,
-                "lng": 3091
-              },
-              "topRight": {
-                "lat": 3359,
-                "lng": 3093
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Attempt to cut another undead tree with the blessed hatchet and you will receive some undead twigs.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "Ava",
-            "npcLocation": {
-              "lat": 3358,
-              "lng": 3092
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 3357,
-                "lng": 3091
-              },
-              "topRight": {
-                "lat": 3359,
-                "lng": 3093
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Ava.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Ava",
+            "npcLocation": {
+              "lat": 3358,
+              "lng": 3092
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3357,
+                "lng": 3091
+              },
+              "topRight": {
+                "lat": 3359,
+                "lng": 3093
+              }
+            }
+          }
+        ],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": []
+    },
+    {
+      "stepDescription": "Talk to Ava to help her translate the note.\nTranslate Ava's research notes. Image at this step.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Ava",
+            "npcLocation": {
+              "lat": 3358,
+              "lng": 3092
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3357,
+                "lng": 3091
+              },
+              "topRight": {
+                "lat": 3359,
+                "lng": 3093
+              }
+            }
+          }
+        ],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": []
+    },
+    {
+      "stepDescription": "Talk to Ava then Use the pattern with a piece of hard leather and polished buttons to create a container.",
       "itemsNeeded": [
         "Hard Leather",
         "Polished Buttons"
       ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
@@ -1530,27 +806,38 @@
             }
           }
         ],
-        "object": [
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": []
+    },
+    {
+      "stepDescription": "Talk to Ava.",
+      "itemsNeeded": [
+        ""
+      ],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
           {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
+            "npcName": "Ava",
+            "npcLocation": {
+              "lat": 3358,
+              "lng": 3092
+            },
+            "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3357,
+                "lng": 3091
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3359,
+                "lng": 3093
               }
             }
           }
-        ]
+        ],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
@@ -1558,182 +845,15 @@
       ]
     },
     {
-      "stepDescription": "Talk to Ava to help her translate the note.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "Ava",
-            "npcLocation": {
-              "lat": 3358,
-              "lng": 3092
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 3357,
-                "lng": 3091
-              },
-              "topRight": {
-                "lat": 3359,
-                "lng": 3093
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Translate Ava's research notes. (Use image at step)",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Ava.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Use the pattern with a piece of hard leather and polished buttons.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Ava.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
       "stepDescription": "Quest complete!",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [],
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     }
   ]
 }
