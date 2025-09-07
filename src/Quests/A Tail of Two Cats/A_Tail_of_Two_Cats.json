@@ -6,9 +6,7 @@
       "itemsNeeded": [
         "Catspeak Amulet"
       ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
@@ -29,35 +27,13 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Items needed: 5 death runes",
+      "stepDescription": "Speak to Hild in the building north of the Heroes' Guild.",
       "itemsNeeded": [
         "5 death runes"
       ],
@@ -82,371 +58,31 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Speak to Hild in the building north of the Heroes' Guild.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Locate Bob the cat using the catspeak amulet.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "Right-click and \"open\" the amulet.",
+        "Click on the whiskers until the arrow and the eyes glow white.",
+        "Run in the direction of the arrow, occasionally re-checking the amulet, until you find Bob.",
+        "The easiest way to find Bob is to keep hopping worlds at the anvil, south of the varrock's west bank, until you find Bob."
       ]
     },
     {
-      "stepDescription": "Right-click and \"open\" the amulet.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Click on the whiskers until the arrow and the eyes glow white.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Run in the direction of the arrow, occasionally re-checking the amulet, until you find Bob.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "The easiest way to find Bob is to keep hopping worlds at the anvil, south of the varrock's west bank, until you find Bob.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Bob.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "stepDescription": "Talk to Bob. Ask Gertrude about Bob's parents in her house west of Varrock. (Chat 4)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
@@ -467,362 +103,70 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "If Rat Catchers has been started. (Chat 5)"
       ]
     },
     {
-      "stepDescription": "Ask Gertrude about Bob's parents in her house west of Varrock. (Chat 4)",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "If Rat Catchers has been started. (Chat 5)",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "stepDescription": "Speak to Reldo in the Varrock library. (Chat 3) once finished go back to Bob the cat again, in the same spot you found him.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
             "npcName": "Reldo",
             "npcLocation": {
-              "lat": 3494,
+              "lat": 3496,
               "lng": 3209
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 3490,
-                "lng": 3206
+                "lat": 3495,
+                "lng": 3208
               },
               "topRight": {
                 "lat": 3497,
-                "lng": 3213
+                "lng": 3210
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Speak to Reldo in the Varrock library. (Chat 3)",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Go back to Bob the cat again, in the same spot you found him.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "stepDescription": "Go to Sophanem and talk to the Sphinx. (Chat 1•2)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
             "npcName": "Sphinx",
             "npcLocation": {
-              "lat": 2787,
-              "lng": 3298
+              "lat": 2760,
+              "lng": 3304
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 2785,
-                "lng": 3295
+                "lat": 2758,
+                "lng": 3302
               },
               "topRight": {
-                "lat": 2789,
-                "lng": 3300
+                "lat": 2762,
+                "lng": 3306
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Items needed: 4 potato seeds, logs, chocolate cake, bucket of milk",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "Raetul",
-            "npcLocation": {
-              "lat": 2789,
-              "lng": 3303
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 2788,
-                "lng": 3301
-              },
-              "topRight": {
-                "lat": 2793,
-                "lng": 3305
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Go to Sophanem and talk to the Sphinx. (Chat 1•2)",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "Unferths House",
-            "objectLocation": [
-              {
-                "lat": 3539,
-                "lng": 2927
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 3537,
-                "lng": 2926
-              },
-              "topRight": {
-                "lat": 3542,
-                "lng": 2930
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Raetul and buy a full desert robe set, if you don't have them already.",
@@ -833,12 +177,52 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Raetul",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 2781,
+              "lng": 3307
             },
             "wanderRadius": {
+              "bottomLeft": {
+                "lat": 2779,
+                "lng": 3305
+              },
+              "topRight": {
+                "lat": 2783,
+                "lng": 3309
+              }
+            }
+          }
+        ],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": []
+    },
+    {
+      "stepDescription": "Return to Unferth's house in Burthorpe and complete the list in the additional info section. Prioritize planting the Potato Seeds.",
+      "itemsNeeded": [
+        "4 potato seeds",
+        "logs",
+        "chocolate cake",
+        "bucket of milk"
+      ],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [],
+        "object": [
+          {
+            "name": "Rake",
+            "objectLocation": [
+              {
+                "lat": 3540,
+                "lng": 2932,
+                "color": "#20d977",
+                "numberLabel": "Rake First",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
               "bottomLeft": {
                 "lat": 0,
                 "lng": 0
@@ -847,469 +231,131 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
-          }
-        ],
-        "object": [
+            },
+            "color": "#20d977",
+            "numberLabel": "Rake First"
+          },
           {
-            "name": "Unferths Patch",
+            "name": "Logs",
             "objectLocation": [
               {
-                "lat": 3538,
-                "lng": 2931
-              },
-              {
-                "lat": 3538,
-                "lng": 2932
-              },
-              {
-                "lat": 3539,
-                "lng": 2932
-              },
-              {
-                "lat": 3539,
-                "lng": 2931
-              },
-              {
                 "lat": 3540,
-                "lng": 2931
-              },
-              {
-                "lat": 3540,
-                "lng": 2932
-              },
-              {
-                "lat": 3541,
-                "lng": 2932
-              },
-              {
-                "lat": 3541,
-                "lng": 2931
+                "lng": 2930,
+                "color": "#20d977",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "color": "#20d977",
+            "numberLabel": ""
+          },
+          {
+            "name": "Chocolate cake",
+            "objectLocation": [
+              {
+                "lat": 3541,
+                "lng": 2928,
+                "color": "#20d977",
+                "numberLabel": "",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "color": "#20d977",
+            "numberLabel": ""
+          },
+          {
+            "name": "Bucket of milk",
+            "objectLocation": [
+              {
+                "lat": 3541,
+                "lng": 2929,
+                "color": "#20d977",
+                "numberLabel": "",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "color": "#20d977",
+            "numberLabel": ""
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Rake the patch behind his house and plant potato seeds in it. Your cat will notify you when they are done (typically 25–35 minutes to grow). A supreme growth potion from player-owned farm cannot be used to accelerate growth.",
+        "If you don't have your cat out, chatbox will tell \"Perhaps I should have a look and see if Unferth's potatoes have grown...\".",
+        "Use the logs on fireplace, then light the fireplace.",
+        "Use the chocolate cake and bucket of milk on the table.",
+        "Make his bed upstairs.",
+        "Give Unferth a haircut. (Chat 2)"
+      ]
+    },
+    {
+      "stepDescription": "Talk to Unferth once all the chores are done. (Chat 1)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Unferth",
+            "npcLocation": {
+              "lat": 3539,
+              "lng": 2928
+            },
+            "wanderRadius": {
               "bottomLeft": {
                 "lat": 3537,
-                "lng": 2931
-              },
-              "topRight": {
-                "lat": 3542,
-                "lng": 2933
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Return to Unferth's house in Burthorpe and do the following:",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Rake the patch behind his house and plant potato seeds in it. Your cat will notify you when they are done (typically 25–35 minutes to grow).",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "A supreme growth potion from player-owned farm cannot be used to accelerate growth.",
-      "itemsNeeded": [
-        "Logs"
-      ],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "Unferths Fireplace",
-            "objectLocation": [
-              {
-                "lat": 3539,
-                "lng": 2930
-              },
-              {
-                "lat": 3540,
-                "lng": 2930
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 3539,
-                "lng": 2929
-              },
-              "topRight": {
-                "lat": 3541,
-                "lng": 2930
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "If you don't have your cat out, chatbox will tell \"Perhaps i should have a look and see if Unferth's potatoes have grown...\".",
-      "itemsNeeded": [
-        "bucket of milk",
-        "chocolate cake"
-      ],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "Unferths Table",
-            "objectLocation": [
-              {
-                "lat": 3541,
-                "lng": 2928
-              },
-              {
-                "lat": 3541,
-                "lng": 2929
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 3540,
-                "lng": 2927
-              },
-              "topRight": {
-                "lat": 3542,
-                "lng": 2930
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Use the logs on fireplace, then light the fireplace.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "Unferths Bed",
-            "objectLocation": [
-              {
-                "lat": 3529,
-                "lng": 2925
-              },
-              {
-                "lat": 3529,
                 "lng": 2926
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 3528,
-                "lng": 2925
               },
               "topRight": {
-                "lat": 3530,
-                "lng": 2927
-              }
-            }
-          }
-        ]
-      },
-      "floor": 1,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Use the chocolate cake and bucket of milk on the table.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "Unferth",
-            "npcLocation": {
-              "lat": 3530,
-              "lng": 2927
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 3529,
-                "lng": 2925
-              },
-              "topRight": {
-                "lat": 3532,
-                "lng": 2928
+                "lat": 3541,
+                "lng": 2930
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Make his bed upstairs.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "Unferth",
-            "npcLocation": {
-              "lat": 3530,
-              "lng": 2927
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 3529,
-                "lng": 2925
-              },
-              "topRight": {
-                "lat": 3532,
-                "lng": 2928
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Give Unferth a haircut. (Chat 2)",
-      "itemsNeeded": [
-        "vial of water",
-        "desert robe and desert shirt or other white robes"
-      ],
+      "stepDescription": "Talk to the Apothecary in south-west Varrock. (Chat 1•~)",
+      "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "Apothecary ( Varrock )",
+            "npcName": "Apothecary",
             "npcLocation": {
               "lat": 3404,
               "lng": 3194
@@ -1317,329 +363,103 @@
             "wanderRadius": {
               "bottomLeft": {
                 "lat": 3402,
-                "lng": 3191
+                "lng": 3192
               },
               "topRight": {
                 "lat": 3406,
-                "lng": 3197
+                "lng": 3196
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Unferth once all the chores are done. (Chat 1)",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "Unferth",
-            "npcLocation": {
-              "lat": 3530,
-              "lng": 2927
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 3529,
-                "lng": 2925
-              },
-              "topRight": {
-                "lat": 3532,
-                "lng": 2928
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Items needed: vial of water, desert robe and desert shirt or other white robes",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to the Apothecary in south-west Varrock. (Chat 1•~)",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "Unferth",
-            "npcLocation": {
-              "lat": 3530,
-              "lng": 2927
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 3529,
-                "lng": 2925
-              },
-              "topRight": {
-                "lat": 3532,
-                "lng": 2928
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Unequip your weapons and equip the doctor's hat/nurse hat and your white robes.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Return to Unferth with a vial of water.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
+    },
+    {
+      "stepDescription": "Unequip your weapons and equip the doctor's hat/nurse hat and your white robes and return to Unferth with a vial of water.",
+      "itemsNeeded": [
+        "vial of water",
+        "desert robe",
+        "desert shirt or other white robes"
+      ],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Unferth",
+            "npcLocation": {
+              "lat": 3539,
+              "lng": 2928
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3537,
+                "lng": 2926
+              },
+              "topRight": {
+                "lat": 3541,
+                "lng": 2930
+              }
+            }
+          }
+        ],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Bob the cat. If he's not at his previous location, locate him again using the catspeak amulet (e).",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [],
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "After the cutscene, talk to Unferth again.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
-        "npc": [],
+        "npc": [
+          {
+            "npcName": "Unferth",
+            "npcLocation": {
+              "lat": 3539,
+              "lng": 2928
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3537,
+                "lng": 2926
+              },
+              "topRight": {
+                "lat": 3541,
+                "lng": 2930
+              }
+            }
+          }
+        ],
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Quest complete!",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [],
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     }
   ]
 }
