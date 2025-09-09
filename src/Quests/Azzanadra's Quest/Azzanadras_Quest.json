@@ -2,9 +2,9 @@
   "questName": "Azzanadra's Quest",
   "questSteps": [
     {
-      "stepDescription": "Make sure you have 4 free inventory slots.",
+      "stepDescription": "Go up the stairs in Burthorpe Castle. (Chat 1)\nTalk to Azzanadra. (Chat ✓)",
       "itemsNeeded": [
-        ""
+        "4 Inventory Slots"
       ],
       "itemsRecommended": [
         ""
@@ -29,27 +29,7 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 1,
       "additionalStepInformation": [
@@ -57,7 +37,7 @@
       ]
     },
     {
-      "stepDescription": "Go up the stairs in Burthorpe Castle. (Chat 1)",
+      "stepDescription": "Travel to Kharid-et Dig Site. Talk to Azzanadra at the Praetorium war table",
       "itemsNeeded": [
         ""
       ],
@@ -84,45 +64,23 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Talk to Azzanadra. (Chat ✓)",
+      "stepDescription": "Travel to the World Gate and talk to Azzanadra. Equip a face mask to protect against volcanic ash. Having a slayer helmet on the slayer helmet stand counts for this. Enter the World Gate, travelling to the 'Approach' destination (first option). Make sure to finish the dialogue with Azzanadra upon entry.",
       "itemsNeeded": [
         ""
       ],
       "itemsRecommended": [
-        "the Sixth-Age circuit to teleport or run south from the Eagle's Peak lodestone"
+        "Sixth-Age circuit"
       ],
       "highlights": {
         "npc": [
           {
-            "npcName": "Azzanadra ( World Gate )",
+            "npcName": "Azzanadra",
             "npcLocation": {
               "lat": 3360,
               "lng": 2368
@@ -139,35 +97,16 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
+        "Teleporting, logging out or going to lobby will require starting this part over from this step.",
         "Enter the World Gate, travelling to the 'Approach' destination (first option)."
       ]
     },
     {
-      "stepDescription": "Travel to Kharid-et. Talk to Azzanadra at the Praetorium war table (not inside of it).",
+      "stepDescription": "For the time your in this portion of the Approach follow the steps in the Additional Info section and talk to Azzanadra as you progress through. So starting off you enter the Approach talk to Azzanadra.",
       "itemsNeeded": [
         ""
       ],
@@ -262,46 +201,25 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 6230,
-                "lng": 3933
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        "If you lobby/logout while following Azzandra through Freneskae, you will end up back at the World Gate and will have to redo it.",
         "Head east over the ledges, then up the cliffside.",
-        "Continue east, climbing down the drop, then talk to Azzanadra to the south-east. (Any Chat Option)",
+        "Continue east, climbing down the drop, then talk to Azzanadra to the south-east. (Chat ~)",
         "Continue north, crossing the stepping stones and up the cliffside.",
-        "Continue north and wall run the overhang and talk to Azzanadra again. (Any Chat Option)",
-        "Climb the cliffside and continue west and slide down the slope and head west.",
+        "Continue north, wall run the overhang and talk to Azzanadra again. (Chat ~)",
+        "Climb the cliffside, continue west and slide down the slope and head west.",
         "You can heal up by standing under the archway with the glowing crystals.",
         "Continue south, wrapping around east and north, then climb the nearby cliffside which is south of the archway.",
-        "Walk across the rock formation and talk to Azzanadra again. (Any Chat Option)",
+        "Walk across the rock formation and talk to Azzanadra again. (Chat ~)",
         "Continue east and climb down the drop, then traverse the rock bridge to the east.",
-        "Talk to Azzandra Again",
+        "Talk to Azzanadra again.",
         "Enter the opening."
       ]
     },
     {
-      "stepDescription": "Travel to the World Gate (use the Sixth-Age circuit to teleport or run south from the Eagle's Peak lodestone) and talk to Azzanadra.",
+      "stepDescription": "Talk to Azzanadra.",
       "itemsNeeded": [
         ""
       ],
@@ -330,62 +248,7 @@
         ],
         "object": [
           {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Equip a facemask to protect against volcanic ash.",
-      "itemsNeeded": [
-        ""
-      ],
-      "itemsRecommended": [
-        ""
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "Fragment 1",
+            "name": "Fragmented sphere (Wen)",
             "objectLocation": [
               {
                 "lat": 6358,
@@ -404,7 +267,7 @@
             }
           },
           {
-            "name": "Fragment 2",
+            "name": "Fragmented sphere (Ful)",
             "objectLocation": [
               {
                 "lat": 6358,
@@ -423,7 +286,7 @@
             }
           },
           {
-            "name": "Fragment 3",
+            "name": "Fragmented sphere (Mah)",
             "objectLocation": [
               {
                 "lat": 6307,
@@ -442,7 +305,7 @@
             }
           },
           {
-            "name": "Fragment 4",
+            "name": "Fragmented sphere (Jas)",
             "objectLocation": [
               {
                 "lat": 6283,
@@ -461,7 +324,7 @@
             }
           },
           {
-            "name": "Fragment 4",
+            "name": "Fragmented sphere (Bik)",
             "objectLocation": [
               {
                 "lat": 6323,
@@ -482,12 +345,121 @@
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Enter the World Gate, travelling to the 'Approach' destination (first option).",
+      "stepDescription": "Inspect the fragmented sphere at each end of the halls.",
+      "itemsNeeded": [
+        ""
+      ],
+      "itemsRecommended": [
+        ""
+      ],
+      "highlights": {
+        "npc": [],
+        "object": [
+          {
+            "name": "Fragmented sphere (Wen)",
+            "objectLocation": [
+              {
+                "lat": 6358,
+                "lng": 4267
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 6357,
+                "lng": 4265
+              },
+              "topRight": {
+                "lat": 6360,
+                "lng": 4268
+              }
+            }
+          },
+          {
+            "name": "Fragmented sphere (Ful)",
+            "objectLocation": [
+              {
+                "lat": 6358,
+                "lng": 4298
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 6357,
+                "lng": 4296
+              },
+              "topRight": {
+                "lat": 6360,
+                "lng": 4299
+              }
+            }
+          },
+          {
+            "name": "Fragmented sphere (Mah)",
+            "objectLocation": [
+              {
+                "lat": 6307,
+                "lng": 4312
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 6306,
+                "lng": 4311
+              },
+              "topRight": {
+                "lat": 6309,
+                "lng": 4314
+              }
+            }
+          },
+          {
+            "name": "Fragmented sphere (Jas)",
+            "objectLocation": [
+              {
+                "lat": 6283,
+                "lng": 4266
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 6281,
+                "lng": 4265
+              },
+              "topRight": {
+                "lat": 6284,
+                "lng": 4268
+              }
+            }
+          },
+          {
+            "name": "Fragmented sphere (Bik)",
+            "objectLocation": [
+              {
+                "lat": 6323,
+                "lng": 4237
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 6320,
+                "lng": 4235
+              },
+              "topRight": {
+                "lat": 6323,
+                "lng": 4238
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": []
+    },
+    {
+      "stepDescription": "Talk to Ariane back at the centre, she gives you a blank observation. Azzanadra will replace this if you lost yours.",
       "itemsNeeded": [
         ""
       ],
@@ -514,35 +486,13 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Travel through Freneskae, talking to Azzanadra at different stops.",
+      "stepDescription": "Collect memories from the elder god memory wisps (50 each). Inspect the blank observation in your backpack after all location wisps are collected. Locations in Additional Info.",
       "itemsNeeded": [
         ""
       ],
@@ -550,28 +500,10 @@
         ""
       ],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "Wen Memory Wisp",
+            "name": "Wen memory wisp",
             "objectLocation": [
               {
                 "lat": 6344,
@@ -590,7 +522,7 @@
             }
           },
           {
-            "name": "Ful Memory Wisp",
+            "name": "Ful memory wisp",
             "objectLocation": [
               {
                 "lat": 6336,
@@ -609,7 +541,7 @@
             }
           },
           {
-            "name": "Jas Memory Wisp",
+            "name": "Jas memory wisp",
             "objectLocation": [
               {
                 "lat": 6296,
@@ -628,7 +560,7 @@
             }
           },
           {
-            "name": "Bik Memory Wisp",
+            "name": "Bik memory wisp",
             "objectLocation": [
               {
                 "lat": 6324,
@@ -650,11 +582,14 @@
       },
       "floor": 0,
       "additionalStepInformation": [
-        "After Collecting Speak to Azzanadra"
+        "Bik memory wisp (western hallway).",
+        "Wen memory wisp (northern hallway).",
+        "Ful memory wisp (north-eastern hallway).",
+        "Jas memory wisp (south-western hallway)."
       ]
     },
     {
-      "stepDescription": "If you lobby/logout while following Azzandra through Freneskae, you will end up back at the World Gate and will have to redo it.",
+      "stepDescription": "Talk to Azzanadra then Light voice and Shadow voice will speak to you. (Chat 5)",
       "itemsNeeded": [
         ""
       ],
@@ -681,147 +616,15 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Enter the opening.",
+      "stepDescription": "Travel to White Knights' Castle in Falador and enter the courtyard. Talk to Sir Upticious near the entrance.",
       "itemsNeeded": [
-        ""
-      ],
-      "itemsRecommended": [
-        ""
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "Azzanadra ( Elder Halls )",
-            "npcLocation": {
-              "lat": 6317,
-              "lng": 4267
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 6316,
-                "lng": 4266
-              },
-              "topRight": {
-                "lat": 6319,
-                "lng": 4268
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Azzanadra.",
-      "itemsNeeded": [
-        ""
-      ],
-      "itemsRecommended": [
-        ""
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "Azzanadra ( Elder Halls )",
-            "npcLocation": {
-              "lat": 6317,
-              "lng": 4267
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 6316,
-                "lng": 4266
-              },
-              "topRight": {
-                "lat": 6319,
-                "lng": 4268
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Inspect the fragmented sphere at each end of the halls.",
-      "itemsNeeded": [
-        ""
+        "Slayer Bell"
       ],
       "itemsRecommended": [
         ""
@@ -846,35 +649,13 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Talk to Ariane back at the centre, she gives you a blank observation.",
+      "stepDescription": "Go up the eastern ladder then up the staircase by Sir Renitee to the altar in the castle. Talk to Father Frith. (Chat ~)",
       "itemsNeeded": [
         ""
       ],
@@ -901,35 +682,13 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Collect memories from the elder god memory wisps (50 each), Bik memory wisp, Wen memory wisp, Ful memory wisp, Jas memory wisp.",
+      "stepDescription": "Go to the 1st floor[US], walk one room west from the ladder and talk to Sir Owen. (Chat ~)",
       "itemsNeeded": [
         ""
       ],
@@ -956,35 +715,13 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Inspect the blank observation (in your bag).",
+      "stepDescription": "Return upstairs and talk to Father Frith.",
       "itemsNeeded": [
         ""
       ],
@@ -1011,35 +748,13 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Talk to Azzanadra.",
+      "stepDescription": "Talk to Sir Amik Varze on the 3rd floor[US] in the west wing of the castle. (Chat 1•~)",
       "itemsNeeded": [
         ""
       ],
@@ -1066,35 +781,13 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Light voice and Shadow voice will speak to you. (Chat 5)",
+      "stepDescription": "Talk to Padomenes in the courtyard. (Chat 1•~)",
       "itemsNeeded": [
         ""
       ],
@@ -1121,35 +814,13 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Travel to Falador and enter the White Knight's Castle courtyard.",
+      "stepDescription": "Talk to Sir Vyvin, found next to Father Frith on 3rd floor[US]. (Chat 1)",
       "itemsNeeded": [
         ""
       ],
@@ -1176,35 +847,13 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Talk with Sir Upticious, who is just inside the entrance.",
+      "stepDescription": "Talk to Sir Owen on the 1st floor[US]",
       "itemsNeeded": [
         ""
       ],
@@ -1231,35 +880,13 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Go up the eastern ladder then up the staircase by Sir Renitee to the altar in the castle. Talk to Father Frith. (Chat ~)",
+      "stepDescription": "Search the nearby cupboard. (Chat 1) ",
       "itemsNeeded": [
         ""
       ],
@@ -1267,25 +894,7 @@
         ""
       ],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
             "name": "Cupboard ( By Sir Owen )",
@@ -1314,7 +923,7 @@
       ]
     },
     {
-      "stepDescription": "Go to the ground floor, walk one room west from the ladder and talk to Sir Owen. (Chat ~)",
+      "stepDescription": "Go up the ladder into Sir Renitee's room and crack open the safe then Right-click the slayer bell and use the 'Cut clapper' option to create a silent bell.",
       "itemsNeeded": [
         ""
       ],
@@ -1322,25 +931,7 @@
         ""
       ],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
             "name": "Safe ( Sir Renitee's Room ) ",
@@ -1365,37 +956,20 @@
       },
       "floor": 0,
       "additionalStepInformation": [
-        "Right click slayer bell and cut the clapper to create a Silent bell."
+        ""
       ]
     },
     {
-      "stepDescription": "Return upstairs and talk to Father Frith.",
+      "stepDescription": "Travel to the Paterdomus and enter the Mausoleum to the north.",
       "itemsNeeded": [
         ""
       ],
       "itemsRecommended": [
-        ""
+        "Wicked Hood",
+        "Skeletal Horror Teleport or Invitation Box"
       ],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
             "name": "Mausoleum ( Paterdomus )",
@@ -1419,12 +993,10 @@
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Talk to Sir Amik Varze on the 3rd floor[US] in the west wing of the castle. (Chat 1•~)",
+      "stepDescription": "Use the bell on the well to create a silent bell (blessed).",
       "itemsNeeded": [
         ""
       ],
@@ -1432,25 +1004,7 @@
         ""
       ],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
             "name": "Well ( Paterdomus )",
@@ -1474,48 +1028,22 @@
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Talk to Padomenes in the courtyard. (Chat 1•~)",
-      "itemsNeeded": [
-        ""
-      ],
-      "itemsRecommended": [
-        ""
-      ],
+      "stepDescription": "Return to Saradomin's throne in the White Knights' Castle by the altar and next to Father Frith on 3rd floor[US]. Ring the bell three times, calling Saradomin's name each time. (Chat 1)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Saradomin",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3341,
+              "lng": 2979
             },
             "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "Saradomin's Throne",
-            "objectLocation": [
-              {
-                "lat": 3341,
-                "lng": 2979
-              }
-            ],
-            "objectRadius": {
               "bottomLeft": {
                 "lat": 3340,
                 "lng": 2979
@@ -1526,76 +1054,16 @@
               }
             }
           }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Sir Vyvin, found next to Father Frith 3rd floor[US]. (Chat 1)",
-      "itemsNeeded": [
-        ""
-      ],
-      "itemsRecommended": [
-        ""
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
         ],
-        "object": [
-          {
-            "name": "Saradomin's Throne",
-            "objectLocation": [
-              {
-                "lat": 3341,
-                "lng": 2979
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 3340,
-                "lng": 2979
-              },
-              "topRight": {
-                "lat": 3342,
-                "lng": 2980
-              }
-            }
-          }
-        ]
+        "object": []
       },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "floor": 2
     },
     {
-      "stepDescription": "Talk to Sir Owen on the ground floor.",
-      "itemsNeeded": [
-        ""
-      ],
-      "itemsRecommended": [
-        ""
-      ],
+      "stepDescription": "Speak to Saradomin. (Chat 3•~•2•1)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
       "highlights": {
         "npc": [
           {
@@ -1638,35 +1106,29 @@
           }
         ]
       },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "floor": 2
     },
     {
-      "stepDescription": "Search the nearby cupboard. (Chat 1)",
-      "itemsNeeded": [
-        ""
-      ],
-      "itemsRecommended": [
-        ""
-      ],
+      "stepDescription": "Travel to Kharid-et and talk to Azzanadra at the Praetorium war table. (Chat ~)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "Azzanadra ( Praetorium War Table )",
+            "npcName": "Azzanadra",
             "npcLocation": {
               "lat": 7588,
               "lng": 2465
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 7585,
-                "lng": 2463
+                "lat": 7587,
+                "lng": 2464
               },
               "topRight": {
-                "lat": 7593,
-                "lng": 2467
+                "lat": 7589,
+                "lng": 2466
               }
             }
           }
@@ -1693,39 +1155,18 @@
           }
         ]
       },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "floor": 0
     },
     {
-      "stepDescription": "Go up the ladder into Sir Renitee's room and crack open the safe.",
+      "stepDescription": "Travel to the Hall of Memories and enter the pool. (Chat 1•~•~)",
       "itemsNeeded": [
         ""
       ],
       "itemsRecommended": [
-        ""
+        "Sixth-Age circuit or Memory Strands"
       ],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
             "name": "Hall of Memories",
@@ -1749,12 +1190,10 @@
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Right click slayer bell and cut the clapper to create a Silent bell.",
+      "stepDescription": "Capture the 6 Archivist's memories, then talk to the Archivist (Chat ~•~)",
       "itemsNeeded": [
         ""
       ],
@@ -1764,107 +1203,30 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "Trindine",
+            "npcName": "The Archivist",
             "npcLocation": {
-              "lat": 3554,
-              "lng": 2277
+              "lat": 9104,
+              "lng": 2204
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 3553,
-                "lng": 2276
+                "lat": 9103,
+                "lng": 2203
               },
               "topRight": {
-                "lat": 3555,
-                "lng": 2278
+                "lat": 9105,
+                "lng": 2205
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Travel to the Paterdomus Temple and enter the mausoleum north of the temple entrance.",
-      "itemsNeeded": [
-        ""
-      ],
-      "itemsRecommended": [
-        ""
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "Hall of Memories Pool",
-            "objectLocation": [
-              {
-                "lat": 3554,
-                "lng": 2273
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 3552,
-                "lng": 2272
-              },
-              "topRight": {
-                "lat": 3555,
-                "lng": 2274
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Use the bell on the well to create a Silent bell (blessed).",
+      "stepDescription": "Capture the 6 restricted memories. Interact with each of the plinths in the north-west and north-east. Search the memory bud in the centre to receive a restricted engram.",
       "itemsNeeded": [
         ""
       ],
@@ -1893,11 +1255,58 @@
         ],
         "object": [
           {
-            "name": "",
+            "name": "Plinth",
             "objectLocation": [
               {
+                "lat": 9133,
+                "lng": 2197,
+                "color": "#FFFFFF",
+                "numberLabel": "",
+                "isSearched": true
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
                 "lat": 0,
                 "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          },
+          {
+            "name": "Plinth",
+            "objectLocation": [
+              {
+                "lat": 9132,
+                "lng": 2196,
+                "color": "#FFFFFF",
+                "numberLabel": "",
+                "isSearched": true
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          },
+          {
+            "name": "Plinth",
+            "objectLocation": [
+              {
+                "lat": 9131,
+                "lng": 2195,
+                "color": "#FFFFFF",
+                "numberLabel": "",
+                "isSearched": true
               }
             ],
             "objectRadius": {
@@ -1929,28 +1338,10 @@
         ""
       ],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "Fountain of Energy",
+            "name": "Fountain of energy",
             "objectLocation": [
               {
                 "lat": 3554,
@@ -1971,12 +1362,10 @@
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Ring the bell three times, calling Saradomin's name each time. (Chat 1)",
+      "stepDescription": "Travel to the entrance of the TzHaar City. Talk to Trindine on the surface of Karamja Volcano",
       "itemsNeeded": [
         ""
       ],
@@ -1988,50 +1377,28 @@
           {
             "npcName": "Trinidine",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3163,
+              "lng": 2843
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3162,
+                "lng": 2842
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3164,
+                "lng": 2844
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Speak to Saradomin. (Chat 3•~•2•1)",
+      "stepDescription": "Enter the city, talk to Ga'al right next to the entrance. (Chat ~)",
       "itemsNeeded": [
         ""
       ],
@@ -2058,35 +1425,13 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Travel to Kharid-et and talk to Azzanadra at the Praetorium war table.(Chat ~)",
+      "stepDescription": "Go to the main plaza (you can teleport back here using the TokKul-Zo), talk to Trindine.",
       "itemsNeeded": [
         ""
       ],
@@ -2113,35 +1458,13 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Travel to the Hall of Memories (use a Sixth-Age circuit or Memory strands to teleport to Guthix Memorial)",
+      "stepDescription": "Talk to TokHaar-Hok.",
       "itemsNeeded": [
         ""
       ],
@@ -2151,7 +1474,7 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "TokHaar-Hok ( Main Plaza )",
+            "npcName": "TokHaar-Hok",
             "npcLocation": {
               "lat": 5156,
               "lng": 4676
@@ -2168,27 +1491,7 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
@@ -2196,62 +1499,7 @@
       ]
     },
     {
-      "stepDescription": "Talk to Trindine.",
-      "itemsNeeded": [
-        ""
-      ],
-      "itemsRecommended": [
-        ""
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Enter the pool. (Chat 1•~•~)",
+      "stepDescription": "Travel to the TzHaar City library (north-west of the main plaza), go inside. Talk to Trindine.",
       "itemsNeeded": [
         ""
       ],
@@ -2278,35 +1526,13 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Capture the 6 archivist memories, then talk to The Archivist (Chat ~•~).",
+      "stepDescription": "Travel to the Wizards' Tower ",
       "itemsNeeded": [
         ""
       ],
@@ -2314,25 +1540,7 @@
         "Wicked Hood or Traveller's Necklace"
       ],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
             "name": "Wizards' Tower",
@@ -2356,12 +1564,10 @@
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Capture the 6 restricted memories.",
+      "stepDescription": "Talk to Wizard Trindy on 1st floor[US] at entrance of the Wizards' Tower. (Chat ~)",
       "itemsNeeded": [
         ""
       ],
@@ -2388,35 +1594,13 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Interact with each of the plinths at the north-west and north-east.",
+      "stepDescription": "Search four bookcases to the west.",
       "itemsNeeded": [
         ""
       ],
@@ -2424,25 +1608,7 @@
         ""
       ],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
             "name": "Bookcase 1 ( Wizards Tower 1st Floor )",
@@ -2571,12 +1737,10 @@
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Search the memory bud in the centre to receive a Restricted engram.",
+      "stepDescription": "Talk to Wizard Trindy at the eastern bookcases.",
       "itemsNeeded": [
         ""
       ],
@@ -2603,35 +1767,13 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Leave the Hall of Memories and use the Restricted Engram on the Fountain of Energy.",
+      "stepDescription": "Return to Kharid-et Dig Site's praetorium war table. Talk to Azzanadra.",
       "itemsNeeded": [
         ""
       ],
@@ -2658,63 +1800,22 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Travel to the entrance of the TzHaar City (use the TokKul-Zo to teleport to the Main Plaza then run south and exit the volcano).",
+      "stepDescription": "Travel to the entrance of the Heart of Gielinor. Located west of Nardah",
       "itemsNeeded": [
         ""
       ],
       "itemsRecommended": [
         "The Heart Teleport",
-        "Modified House Teleport to Pollnivneach then Carpet Ride to Nardah then Run South-West ",
-        "Desert Amulet Teleport"
+        ""
       ],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
             "name": "The  Heart of Gielinor Entrance",
@@ -2743,7 +1844,7 @@
       ]
     },
     {
-      "stepDescription": "Talk to Trindine (on the surface of Karamja Volcano).",
+      "stepDescription": "Talk to Azzanadra.",
       "itemsNeeded": [
         ""
       ],
@@ -2770,35 +1871,13 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Enter the city, talk to Ga'al right next to the entrance. (Chat ~)",
+      "stepDescription": "Enter the Heart.",
       "itemsNeeded": [
         ""
       ],
@@ -2806,25 +1885,7 @@
         ""
       ],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
             "name": "Enter the Heart",
@@ -2848,12 +1909,10 @@
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Go to the main plaza (you can teleport back here using your TokKul-Zo), talk to Trindine.",
+      "stepDescription": "Observe each of the eggs at the end of the corridors. Then talk to Ariane",
       "itemsNeeded": [
         ""
       ],
@@ -2863,42 +1922,33 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Ariane",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 7219,
+              "lng": 3440
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 7218,
+                "lng": 3439
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 7220,
+                "lng": 3441
               }
             }
           }
         ],
         "object": [
           {
-            "name": "Wens Egg",
+            "name": "Wen's egg",
             "objectLocation": [
               {
                 "lat": 7253,
-                "lng": 3437
-              },
-              {
-                "lat": 7253,
-                "lng": 3438
-              },
-              {
-                "lat": 7254,
-                "lng": 3438
-              },
-              {
-                "lat": 7254,
-                "lng": 3437
+                "lng": 3437,
+                "color": "#00FF00",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -2910,23 +1960,13 @@
                 "lat": 7255,
                 "lng": 3439
               }
-            }
+            },
+            "color": "#00FF00",
+            "numberLabel": ""
           },
           {
-            "name": "Fuls Egg",
+            "name": "Ful's egg",
             "objectLocation": [
-              {
-                "lat": 7254,
-                "lng": 3468
-              },
-              {
-                "lat": 7254,
-                "lng": 3469
-              },
-              {
-                "lat": 7253,
-                "lng": 3469
-              },
               {
                 "lat": 7253,
                 "lng": 3468
@@ -2944,20 +1984,8 @@
             }
           },
           {
-            "name": "Biks Egg",
+            "name": "Bik's egg",
             "objectLocation": [
-              {
-                "lat": 7220,
-                "lng": 3403
-              },
-              {
-                "lat": 7221,
-                "lng": 3403
-              },
-              {
-                "lat": 7221,
-                "lng": 3404
-              },
               {
                 "lat": 7220,
                 "lng": 3404
@@ -2978,48 +2006,28 @@
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "Bik's egg.",
+        "Wen's egg.",
+        "Ful's egg."
       ]
     },
     {
-      "stepDescription": "Talk to TokHaar-Hok.",
+      "stepDescription": "Return to Kharid-et and enter to the main fortress. (Chat 1) Walk to the praetorium war table. Information on what to do in Addition Info Section.",
       "itemsNeeded": [
-        ""
+        "Observation"
       ],
       "itemsRecommended": [
         ""
       ],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "Shadow Anchor 1",
+            "name": "Shadow anchor",
             "objectLocation": [
               {
                 "lat": 7594,
                 "lng": 2439
-              },
-              {
-                "lat": 7595,
-                "lng": 2439
               }
             ],
             "objectRadius": {
@@ -3034,15 +2042,11 @@
             }
           },
           {
-            "name": "Shadow Anchor 2",
+            "name": "Shadow anchor",
             "objectLocation": [
               {
                 "lat": 7604,
                 "lng": 2463
-              },
-              {
-                "lat": 7604,
-                "lng": 2464
               }
             ],
             "objectRadius": {
@@ -3057,15 +2061,11 @@
             }
           },
           {
-            "name": "Shadow Anchor 3",
+            "name": "Shadow anchor",
             "objectLocation": [
               {
                 "lat": 7601,
                 "lng": 2480
-              },
-              {
-                "lat": 7601,
-                "lng": 2481
               }
             ],
             "objectRadius": {
@@ -3080,15 +2080,11 @@
             }
           },
           {
-            "name": "Shadow Anchor 4",
+            "name": "Shadow anchor",
             "objectLocation": [
               {
                 "lat": 7599,
                 "lng": 2498
-              },
-              {
-                "lat": 7600,
-                "lng": 2498
               }
             ],
             "objectRadius": {
@@ -3103,15 +2099,11 @@
             }
           },
           {
-            "name": "Shadow Anchor 5",
+            "name": "Shadow anchor",
             "objectLocation": [
               {
                 "lat": 7572,
                 "lng": 2499
-              },
-              {
-                "lat": 7571,
-                "lng": 2499
               }
             ],
             "objectRadius": {
@@ -3126,15 +2118,11 @@
             }
           },
           {
-            "name": "Shadow Anchor 6",
+            "name": "Shadow anchor",
             "objectLocation": [
               {
                 "lat": 7564,
                 "lng": 2485
-              },
-              {
-                "lat": 7564,
-                "lng": 2486
               }
             ],
             "objectRadius": {
@@ -3149,15 +2137,11 @@
             }
           },
           {
-            "name": "Shadow Anchor 7",
+            "name": "Shadow anchor",
             "objectLocation": [
               {
                 "lat": 7562,
                 "lng": 2474
-              },
-              {
-                "lat": 7562,
-                "lng": 2473
               }
             ],
             "objectRadius": {
@@ -3172,15 +2156,11 @@
             }
           },
           {
-            "name": "Shadow Anchor 8",
+            "name": "Shadow anchor",
             "objectLocation": [
               {
                 "lat": 7569,
                 "lng": 2435
-              },
-              {
-                "lat": 7570,
-                "lng": 2435
               }
             ],
             "objectRadius": {
@@ -3198,301 +2178,9 @@
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Travel to the TzHaar City library (north-west of the Main Plaza), go inside.",
-      "itemsNeeded": [
-        ""
-      ],
-      "itemsRecommended": [
-        ""
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "Kharid-et Entrance",
-            "objectLocation": [
-              {
-                "lat": 3178,
-                "lng": 3367
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 3177,
-                "lng": 3365
-              },
-              "topRight": {
-                "lat": 3183,
-                "lng": 3369
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Trindine.",
-      "itemsNeeded": [
-        ""
-      ],
-      "itemsRecommended": [
-        ""
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "Praetorium War Table",
-            "objectLocation": [
-              {
-                "lat": 7589,
-                "lng": 2466
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 7585,
-                "lng": 2462
-              },
-              "topRight": {
-                "lat": 7591,
-                "lng": 2468
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        "After the dialogue click on the pylon outside."
-      ]
-    },
-    {
-      "stepDescription": "Travel to the Wizards' Tower (use the wicked hood or traveller's necklace to teleport)",
-      "itemsNeeded": [
-        ""
-      ],
-      "itemsRecommended": [
-        ""
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "Shadow Anchor 1",
-            "objectLocation": [
-              {
-                "lat": 7594,
-                "lng": 2439
-              },
-              {
-                "lat": 7595,
-                "lng": 2439
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          },
-          {
-            "name": "Shadow Anchor 2",
-            "objectLocation": [
-              {
-                "lat": 7604,
-                "lng": 2463
-              },
-              {
-                "lat": 7604,
-                "lng": 2464
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          },
-          {
-            "name": "Shadow Anchor 3",
-            "objectLocation": [
-              {
-                "lat": 7601,
-                "lng": 2480
-              },
-              {
-                "lat": 7601,
-                "lng": 2481
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          },
-          {
-            "name": "Shadow Anchor 4",
-            "objectLocation": [
-              {
-                "lat": 7599,
-                "lng": 2498
-              },
-              {
-                "lat": 7600,
-                "lng": 2498
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
+        "Stand next to any four shadow anchors around Kharid-et.",
         "Harvest Trindine wisps until you get 50 memories.",
-        "Inspect the blank observation."
-      ]
-    },
-    {
-      "stepDescription": "Talk to Wizard Trindy on ground floor at entrance of the Wizards' Tower. (Chat ~)",
-      "itemsNeeded": [
-        ""
-      ],
-      "itemsRecommended": [
-        ""
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "Ga'al ( Standing in Main Plaza )",
-            "npcLocation": {
-              "lat": 5145,
-              "lng": 4670
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 5144,
-                "lng": 4669
-              },
-              "topRight": {
-                "lat": 5146,
-                "lng": 4671
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "Inspect the blank observation and finish the dialogue or Ga'al will not spawn for the next step."
       ]
     },
     {
@@ -3506,61 +2194,27 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Ga'al",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5155,
+              "lng": 4670
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5154,
+                "lng": 4669
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5156,
+                "lng": 4671
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "Wizards' Tower Entrance",
-            "objectLocation": [
-              {
-                "lat": 3168,
-                "lng": 3101
-              },
-              {
-                "lat": 3169,
-                "lng": 3101
-              },
-              {
-                "lat": 3169,
-                "lng": 3102
-              },
-              {
-                "lat": 3168,
-                "lng": 3102
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Wizard Trindy at the eastern bookcases.",
@@ -3571,54 +2225,39 @@
         ""
       ],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "The Archivist",
-            "npcLocation": {
-              "lat": 9104,
-              "lng": 2204
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 9103,
-                "lng": 2203
-              },
-              "topRight": {
-                "lat": 9105,
-                "lng": 2205
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "New Object",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3169,
+                "lng": 3101,
+                "color": "#64a89e",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3136,
+                "lng": 3089
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3174,
+                "lng": 3114
               }
-            }
+            },
+            "color": "#64a89e",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Return to Kharid-et Dig Site's praetorium war table. Talk to Azzanadra.",
+      "stepDescription": "Return to the Hall of Memories and enter the pool. (Chat 1) Talk to the Archivist.",
       "itemsNeeded": [
         ""
       ],
@@ -3644,38 +2283,71 @@
                 "lat": 2895,
                 "lng": 3390
               }
+            },
+            "npcName": "The Archivist",
+            "npcLocation": {
+              "lat": 9104,
+              "lng": 2204
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 9103,
+                "lng": 2203
+              },
+              "topRight": {
+                "lat": 9105,
+                "lng": 2205
+              }
             }
           }
         ],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": []
+    },
+    {
+      "stepDescription": "Return to the Heart of Gielinor (enter from the entrance). (Chat 1)",
+      "itemsNeeded": [
+        ""
+      ],
+      "itemsRecommended": [
+        ""
+      ],
+      "highlights": {
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "New Object",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 2886,
+                "lng": 3376,
+                "color": "#64a89e",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 2868,
+                "lng": 3363
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 2894,
+                "lng": 3391
               }
-            }
+            },
+            "color": "#64a89e",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Travel to the entrance of the Heart of Gielinor (use The Heart teleport and leave by the wooden lift. Alternatively, if you have completed Love Story you can modify a Teleport to House tablet to teleport to Pollnivneach or you can use the Desert amulet teleport. From there, speak to the nearby magic carpet travel operator and go to Nardah, then run slightly south-west to the Heart.)",
+      "stepDescription": "Talk to Ariane. A cutscene will follow. (Chat ~)\nthen talk to Ariane again.",
       "itemsNeeded": [
         ""
       ],
@@ -3685,7 +2357,7 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "Ariane ( at The Heart of Gielinor )",
+            "npcName": "Ariane",
             "npcLocation": {
               "lat": 7214,
               "lng": 3445
@@ -3702,87 +2374,10 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Azzanadra.",
-      "itemsNeeded": [
-        ""
-      ],
-      "itemsRecommended": [
-        ""
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "Ariane ( at The Heart of Gielinor )",
-            "npcLocation": {
-              "lat": 7214,
-              "lng": 3445
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 7213,
-                "lng": 3444
-              },
-              "topRight": {
-                "lat": 7215,
-                "lng": 3446
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Enter the Heart (Chat 1) and continue the dialogue.",
@@ -3795,74 +2390,51 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "Ariane ( Falador Castle )",
+            "npcName": "Ariane",
             "npcLocation": {
-              "lat": 7215,
-              "lng": 3446
+              "lat": 3359,
+              "lng": 2963
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 3354,
-                "lng": 2963
+                "lat": 3358,
+                "lng": 2962
               },
               "topRight": {
-                "lat": 3353,
-                "lng": 2962
+                "lat": 3360,
+                "lng": 2964
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Observe each of the eggs at the end of the corridors: Bik's egg, Wen's egg, Ful's egg.\nTalk to Ariane",
+      "stepDescription": "Return to Kharid-et, talk to Azzanadra at the praetorium war table to complete the quest.",
       "itemsNeeded": [
-        ""
+        "3 free backpack"
       ],
-      "itemsRecommended": [
-        ""
-      ],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "Ariane ( Falador Castle )",
+            "npcName": "",
             "npcLocation": {
-              "lat": 7215,
-              "lng": 3446
+              "lat": 0,
+              "lng": 0
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 3354,
-                "lng": 2963
+                "lat": 0,
+                "lng": 0
               },
               "topRight": {
-                "lat": 3353,
-                "lng": 2962
+                "lat": 0,
+                "lng": 0
               }
             }
           }
@@ -3872,91 +2444,35 @@
             "name": "",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 7588,
+                "lng": 2465,
+                "color": "#64a89e",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 7581,
+                "lng": 2460
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 7598,
+                "lng": 2473
               }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Trindine and Azzanadra's plan",
-      "itemsNeeded": [
-        ""
-      ],
-      "itemsRecommended": [
-        ""
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "Azzanadra ( Praetorium War Table )",
-            "npcLocation": {
-              "lat": 7588,
-              "lng": 2465
             },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 7585,
-                "lng": 2463
-              },
-              "topRight": {
-                "lat": 7593,
-                "lng": 2467
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
+            "color": "#64a89e",
+            "numberLabel": ""
           }
         ]
       },
-      "floor": 0,
-      "additionalStepInformation": [
-        "You need 3 free inventory slots upon quest completion for the experience lamps rewarded."
-      ]
+      "floor": 0
     },
     {
-      "stepDescription": "Locations of the shadow anchors",
-      "itemsNeeded": [
-        ""
-      ],
-      "itemsRecommended": [
-        ""
-      ],
+      "stepDescription": "Quest Complete!",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
       "highlights": {
         "npc": [
           {
@@ -3999,265 +2515,7 @@
           }
         ]
       },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Return to Kharid-et. Bring the blank observation. Enter the fort. (Chat 1)",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Walk to the praetorium war table (you need to walk into the room where the table is to start the dialogue).",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Stand next to any four shadow anchors around Kharid-et.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Harvest Trindine wisps until you get 50 memories.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Inspect the blank observation.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Return to the TzHaar City main plaza. Talk to Ga'al at the circle.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Return to the Wizards' Tower. Walk to the entrance to trigger the dialogue.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Return to the Hall of Memories, enter the pool. (Chat 1) Talk to the Archivist.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Return to the Heart of Gielinor (enter from the entrance). (Chat 1).",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Ariane. A cutscene will follow. (Chat ~)",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Ariane again.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Return to the Falador castle, talk to Ariane at the bridge.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "A cutscene will follow. (Chat ~)",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Return to Kharid-et, talk to Azzanadra at the praetorium war table to complete the quest.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "You need 3 free inventory slots upon quest completion for the experience lamps rewarded.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "floor": 0
     }
   ]
 }

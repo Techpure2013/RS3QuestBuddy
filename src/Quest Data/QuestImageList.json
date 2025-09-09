@@ -2807,11 +2807,39 @@
 		"name": "Azzanadra's Quest",
 		"images": [
 			{
-				"step": "8",
-				"src": "AzzandrasQuestMap.webp",
-				"width": 800,
+				"step": 8,
+				"src": "Azzanadra'sQuest_step_8_1.webp",
+				"height": 646,
+				"width": 716,
+				"stepDescription": "Collect memories from the elder god memory wisps (50 each). Inspect the blank observation in your backpack after all location wisps are collected. Locations in Additional Info."
+			},
+			{
+				"step": 6,
+				"src": "Azzanadra'sQuest_step_6_1.webp",
+				"height": 709,
+				"width": 730,
+				"stepDescription": "Inspect the fragmented sphere at each end of the halls."
+			},
+			{
+				"step": 4,
+				"src": "Azzanadra'sQuest_step_4_1.webp",
+				"height": 694,
+				"width": 843,
+				"stepDescription": "For the time your in this portion of the Approach follow the steps in the Additional Info section and talk to Azzanadra as you progress through. So starting off you enter the Approach talk to Azzanadra."
+			},
+			{
+				"step": 43,
+				"src": "Azzanadra'sQuest_step_43_1.webp",
+				"height": 487,
+				"width": 861,
+				"stepDescription": "Return to Kharid-et and enter to the main fortress. (Chat 1) Walk to the praetorium war table. Information on what to do in Addition Info Section."
+			},
+			{
+				"step": 4,
+				"src": "Azzanadra'sQuest_step_4_2.webp",
 				"height": 650,
-				"stepDescription": "Travel through Freneskae, talking to Azzanadra at different stops."
+				"width": 800,
+				"stepDescription": "For the time your in this portion of the Approach follow the steps in the Additional Info section and talk to Azzanadra as you progress through. So starting off you enter the Approach talk to Azzanadra."
 			}
 		]
 	},
