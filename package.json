@@ -1,9 +1,9 @@
 {
 	"name": "rs3_quest_buddy",
 	"homepage": "https://techpure.dev/RS3QuestBuddy",
-	"version": "0.0.9",
+	"version": "0.1.0",
 	"scripts": {
-		"build": "webpack",
+		"build": "webpack && node build-script.mjs",
 		"watch": "webpack --watch",
 		"start": "webpack-dev-server",
 		"deploy": "node deploy.js"
