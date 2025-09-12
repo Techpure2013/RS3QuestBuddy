@@ -1,18 +1,26 @@
 // build-script.mjs
-import { execSync } from "child_process";
+// execSync is no longer needed
 import { writeFileSync, readFileSync } from "fs";
 import { resolve } from "path";
 
 console.log("🚀 Starting post-build versioning script...");
 
 try {
-	// 1. Get the latest git commit hash
-	const gitHash = execSync("git rev-parse --short HEAD").toString().trim();
+	// 1. Read the git commit hash from an environment variable
+	const gitHash = process.env.GIT_COMMIT_HASH;
+
+	// Add a check to ensure the variable was passed in
+	if (!gitHash) {
+		throw new Error(
+			"GIT_COMMIT_HASH environment variable not set. Build cannot continue.",
+		);
+	}
+
 	console.log(`✅ Git Hash: ${gitHash}`);
 
 	// 2. Create the version.json file in the build output directory ('dist')
 	const versionInfo = { version: gitHash };
-	const buildDir = resolve(process.cwd(), "dist");
+	const buildDir = resolve(process.cwd(), "dist"); // Or your actual build output
 	writeFileSync(
 		resolve(buildDir, "version.json"),
 		JSON.stringify(versionInfo, null, 2),
