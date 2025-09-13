@@ -128,7 +128,7 @@ function MenuInterface({
 					/>
 					{/* Standard menu items for sorting */}
 					<Menu.Item
-						leftSection={<CustomIcon src="./../../../assets/Quest_points.png" />}
+						leftSection={<CustomIcon src="./assets/Quest_points.png" />}
 						onClick={() => handleFilterChange("Sort", "Quest Points")}
 					>
 						Quest Points
@@ -140,7 +140,7 @@ function MenuInterface({
 						Release Date
 					</Menu.Item>
 					<Menu.Item
-						leftSection={<CustomIcon src="./../../../assets/IronmanImage.png" />}
+						leftSection={<CustomIcon src="./assets/IronmanImage.png" />}
 						onClick={() => handleFilterChange("Sort", "Efficient Ironman Quests")}
 					>
 						Efficient Ironman Quests
