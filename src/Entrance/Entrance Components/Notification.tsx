@@ -4,13 +4,10 @@ import { IconRefresh } from "@tabler/icons-react";
 
 export const UpdateNotification = () => {
 	const handleReload = () => {
-		// THE FIX: This is the modern, standard-compliant way to force a hard reload.
-		// 1. Get the current URL.
-		const url = new URL(window.location.href);
-		// 2. Add a unique query parameter with the current timestamp.
-		url.searchParams.set("reload", Date.now().toString());
-		// 3. Set the window's location to this new, unique URL.
-		window.location.href = url.toString();
+		const { origin, pathname } = window.location;
+		const baseUrl = `${origin}${pathname}`;
+		const newUrl = `${baseUrl}?reload=${Date.now()}`;
+		window.location.href = newUrl;
 	};
 
 	return (
