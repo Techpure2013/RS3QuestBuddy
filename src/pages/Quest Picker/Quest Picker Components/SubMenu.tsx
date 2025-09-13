@@ -6,20 +6,25 @@ interface SubMenuProps {
 	title: string;
 	items: string[];
 	onItemClick: (value: string) => void;
-	scrollable?: boolean; // This prop is optional
+	scrollable?: boolean;
+	leftSection?: React.ReactNode;
 }
 
 const SubMenu: React.FC<SubMenuProps> = ({
 	title,
 	items,
 	onItemClick,
-	scrollable = false, // Default to not scrollable if the prop isn't provided
+	scrollable = false,
+	leftSection,
 }) => {
 	return (
 		<Menu.Sub>
 			{/* This is the part of the menu that is always visible */}
 			<Menu.Sub.Target>
-				<Menu.Sub.Item rightSection={<IconChevronDown size={18} stroke={1.5} />}>
+				<Menu.Sub.Item
+					leftSection={leftSection}
+					rightSection={<IconChevronDown size={18} stroke={1.5} />}
+				>
 					{title}
 				</Menu.Sub.Item>
 			</Menu.Sub.Target>

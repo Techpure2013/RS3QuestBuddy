@@ -1,33 +1,51 @@
 // build-script.mjs
-// execSync is no longer needed
+import { execSync } from "child_process"; // Re-add execSync for the fallback
 import { writeFileSync, readFileSync } from "fs";
 import { resolve } from "path";
 
 console.log("🚀 Starting post-build versioning script...");
 
 try {
-	// 1. Read the git commit hash from an environment variable
-	const gitHash = process.env.GIT_COMMIT_HASH;
+	// 1. Attempt to read the git commit hash from the environment variable first.
+	let gitHash = process.env.GIT_COMMIT_HASH;
 
-	// Add a check to ensure the variable was passed in
+	// 2. If the environment variable is not set, fall back to running the git command.
+	//    This makes the script work both in the CI/Docker environment and locally.
 	if (!gitHash) {
-		throw new Error(
-			"GIT_COMMIT_HASH environment variable not set. Build cannot continue.",
+		console.log(
+			"INFO: GIT_COMMIT_HASH env var not found. Falling back to local git command.",
 		);
+		try {
+			gitHash = execSync("git rev-parse --short HEAD").toString().trim();
+		} catch (gitError) {
+			console.warn(
+				"WARN: Local git command failed. Using 'local-dev' as version.",
+			);
+			gitHash = "local-dev"; // A final fallback to prevent the build from failing
+		}
+	} else {
+		console.log("INFO: Found GIT_COMMIT_HASH in environment variable.");
+	}
+
+	// Final check to ensure we have a hash
+	if (!gitHash) {
+		throw new Error("Could not determine git hash. Build cannot continue.");
 	}
 
 	console.log(`✅ Git Hash: ${gitHash}`);
 
-	// 2. Create the version.json file in the build output directory ('dist')
+	// (The rest of the script is unchanged)
+
+	// Create the version.json file in the build output directory ('dist')
 	const versionInfo = { version: gitHash };
-	const buildDir = resolve(process.cwd(), "dist"); // Or your actual build output
+	const buildDir = resolve(process.cwd(), "dist");
 	writeFileSync(
 		resolve(buildDir, "version.json"),
 		JSON.stringify(versionInfo, null, 2),
 	);
 	console.log(`✅ Created dist/version.json`);
 
-	// 3. Inject the version into the index.html file
+	// Inject the version into the index.html file
 	const indexPath = resolve(buildDir, "index.html");
 	let indexHtml = readFileSync(indexPath, "utf8");
 

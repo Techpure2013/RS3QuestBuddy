@@ -365,7 +365,10 @@ img {
 	border-color: var(--title-color);
 }
 .zoomable {
-	transition: transform 0.2s ease, left 0.2s ease, top 0.2s ease;
+	transition:
+		transform 0.2s ease,
+		left 0.2s ease,
+		top 0.2s ease;
 	cursor: zoom-in;
 	position: relative; /* Enable positioning adjustments */
 	max-width: 100%; /* Prevent overflow in the initial state */
@@ -382,4 +385,48 @@ img {
 	cursor: zoom-out;
 	object-fit: contain; /* Ensure the image maintains its aspect ratio */
 	z-index: 10; /* Bring it to the front */
+}
+.mantine-Accordion-item {
+	/* Add a smooth transition for background color and border changes */
+	transition:
+		background-color 0.2s ease-in-out,
+		border-color 0.2s ease-in-out;
+	border-color: transparent; /* Start with a transparent border */
+}
+
+/* On hover, make the quest item glow or highlight */
+.mantine-Accordion-item:hover {
+	background-color: rgba(
+		132,
+		177,
+		223,
+		0.1
+	); /* A subtle, semi-transparent blue glow */
+	border-color: rgba(132, 177, 223, 0.2); /* Faint border to match the glow */
+}
+
+/* Style the TextInput fields for a more integrated look */
+.mantine-TextInput-input {
+	background-color: var(--mantine-color-dark-8) !important;
+	border-color: var(--mantine-color-dark-4) !important;
+	transition: border-color 0.2s ease;
+}
+
+/* Add a gold border on focus to make it feel premium, like in RS3 */
+.mantine-TextInput-input:focus {
+	border-color: #d4af37 !important; /* A nice gold color */
+}
+.todo-item {
+	padding: 0.75rem;
+	border-radius: var(--mantine-radius-md);
+	background-color: var(--mantine-color-dark-6);
+	border: 1px solid var(--mantine-color-dark-4);
+	transition:
+		background-color 0.2s ease,
+		transform 0.2s ease;
+}
+
+.todo-item:hover {
+	background-color: var(--mantine-color-dark-5);
+	transform: translateY(-2px); /* Give it a slight lift on hover */
 }

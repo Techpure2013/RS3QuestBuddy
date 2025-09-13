@@ -1,8 +1,15 @@
-import { Button, Menu } from "@mantine/core";
-import { IconChevronDown } from "@tabler/icons-react";
+import { Badge, Button, Menu } from "@mantine/core";
+import {
+	IconAward,
+	IconBooks,
+	IconCalendarEvent,
+	IconChevronDown,
+	IconClock,
+	IconFilter,
+} from "@tabler/icons-react";
 import { QuestList } from "Fetchers/FetchQuestList";
 import SubMenu from "./SubMenu"; // Make sure the path to SubMenu is correct
-
+import { CustomIcon } from "./CustomIcon";
 // Data for the sub-menus
 const questAges = [
 	"Fifth Age",
@@ -59,11 +66,20 @@ interface MenuInterfaceProps {
 }
 
 // The component now accepts a props object and destructures questList from it
-function MenuInterface({ onFilterChange }: MenuInterfaceProps) {
-	// A single, reusable handler for all filter/sort actions
+interface MenuInterfaceProps {
+	onFilterChange: (type: string, value: string) => void;
+	activeFilterCount: number; // New prop to receive the count of active filters
+}
+
+function MenuInterface({
+	onFilterChange,
+	activeFilterCount,
+}: MenuInterfaceProps) {
 	function handleFilterChange(filterType: string, value: string) {
 		onFilterChange(filterType, value);
 	}
+
+	const areFiltersActive = activeFilterCount > 0;
 
 	return (
 		<div className="SearchContainer">
@@ -73,12 +89,23 @@ function MenuInterface({ onFilterChange }: MenuInterfaceProps) {
 				width={220}
 				withinPortal
 				radius="md"
+				shadow="md" // Add a subtle shadow for depth
 			>
 				<Menu.Target>
 					<Button
-						rightSection={<IconChevronDown size={18} stroke={1.5} />}
+						leftSection={<IconFilter size={18} />}
+						rightSection={
+							areFiltersActive ? (
+								<Badge circle color="blue" size="sm">
+									{activeFilterCount}
+								</Badge>
+							) : (
+								<IconChevronDown size={18} stroke={1.5} />
+							)
+						}
 						pr={12}
 						radius="md"
+						variant={areFiltersActive ? "filled" : "outline"}
 					>
 						Filter Quests
 					</Button>
@@ -86,25 +113,34 @@ function MenuInterface({ onFilterChange }: MenuInterfaceProps) {
 				<Menu.Dropdown>
 					{/* Use the reusable SubMenu component for Quest Age */}
 					<SubMenu
+						leftSection={<IconClock size={16} />}
 						title="Quest Age"
 						items={questAges}
 						onItemClick={(value: string) => handleFilterChange("Quest Age", value)}
 					/>
 					{/* Use the reusable SubMenu component for Series */}
 					<SubMenu
+						leftSection={<IconBooks size={16} />}
 						title="Series"
 						items={questSeries}
 						onItemClick={(value: string) => handleFilterChange("Series", value)}
 						scrollable // Enable scrolling for this long list
 					/>
 					{/* Standard menu items for sorting */}
-					<Menu.Item onClick={() => handleFilterChange("Sort", "Quest Points")}>
+					<Menu.Item
+						leftSection={<CustomIcon src="./../../../assets/Quest_points.png" />}
+						onClick={() => handleFilterChange("Sort", "Quest Points")}
+					>
 						Quest Points
 					</Menu.Item>
-					<Menu.Item onClick={() => handleFilterChange("Sort", "Release Date")}>
+					<Menu.Item
+						leftSection={<IconCalendarEvent size={16} />}
+						onClick={() => handleFilterChange("Sort", "Release Date")}
+					>
 						Release Date
 					</Menu.Item>
 					<Menu.Item
+						leftSection={<CustomIcon src="./../../../assets/IronmanImage.png" />}
 						onClick={() => handleFilterChange("Sort", "Efficient Ironman Quests")}
 					>
 						Efficient Ironman Quests
