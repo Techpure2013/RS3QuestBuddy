@@ -8,49 +8,27 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Elena",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3336,
+              "lng": 2592
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3335,
+                "lng": 2591
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3337,
+                "lng": 2593
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Jerico, who is in the building south of the Ardougne north bank.",
@@ -59,132 +37,99 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Jerico",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3324,
+              "lng": 2612
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3323,
+                "lng": 2611
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3325,
+                "lng": 2613
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Search the cupboard near Jerico for some bird feed.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Cupboard",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3326,
+                "lng": 2611,
+                "color": "#FFFFFF",
+                "numberLabel": "",
+                "isSearched": true
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3325,
+                "lng": 2610
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3326,
+                "lng": 2611
               }
             }
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Go behind Jerico's house and pick up a pigeon cage.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Pigeon Cages",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3323,
+                "lng": 2617,
+                "color": "#3d867a",
+                "numberLabel": "Pigeon Cages",
+                "isSearched": false
+              },
+              {
+                "lat": 3324,
+                "lng": 2617,
+                "color": "#3d867a",
+                "numberLabel": "Pigeon Cages",
+                "isSearched": false
+              },
+              {
+                "lat": 3325,
+                "lng": 2617,
+                "color": "#3d867a",
+                "numberLabel": "Pigeon Cages",
+                "isSearched": false
+              },
+              {
+                "lat": 3326,
+                "lng": 2617,
+                "color": "#3d867a",
+                "numberLabel": "Pigeon Cages",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -196,167 +141,25 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "numberLabel": "Pigeon Cages",
+            "color": "#3d867a"
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Go back across the river, west of the castle to the West Ardougne gate.",
+      "stepDescription": "Go back across the river, west of the castle to the West Ardougne gate and Use bird feed on the watchtower fence then open the pigeon cage.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Use bird feed on the watchtower fence (the spears, highlighted in red on your minimap) where several Mourners are perched above.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Open the pigeon cage.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Go south along the wall and talk to Omart. Make sure to finish the dialogue (Chat 1)",
@@ -365,81 +168,68 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Omart",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3266,
+              "lng": 2559
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3265,
+                "lng": 2558
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3267,
+                "lng": 2560
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "The Rehnison's house.",
+      "stepDescription": "Go to the east side of Martha Rehnison's house. Take the rotten apple.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Martha Rehnison's House",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3331,
+                "lng": 2530,
+                "color": "#4c8978",
+                "numberLabel": "",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 3329,
+                "lng": 2526
+              },
+              "topRight": {
+                "lat": 3333,
+                "lng": 2532
+              }
+            },
+            "color": "#4c8978",
+            "numberLabel": ""
+          },
+          {
+            "name": "Rotten Apple",
+            "objectLocation": [
+              {
+                "lat": 3333,
+                "lng": 2534,
+                "color": "#5c605f",
+                "numberLabel": "Rotten Apple",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -451,46 +241,31 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "numberLabel": "Rotten Apple",
+            "color": "#5c605f"
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Go to the east side of Martha Rehnison's house, highlighted in the picture (do not enter the house), north-west of where you breached the wall.",
+      "stepDescription": "Squeeze through the gap east of the rotten apple.  Use the rotten apple on the cauldron in front of you.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Fence Gap",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3331,
+                "lng": 2540,
+                "color": "#3815c1",
+                "numberLabel": "Gap",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -502,46 +277,62 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "color": "#7001cb",
+            "numberLabel": "Gap"
+          },
+          {
+            "name": "Cauldron ( Mourner Headquarters )",
+            "objectLocation": [
+              {
+                "lat": 3332,
+                "lng": 2542,
+                "color": "#7001cb",
+                "numberLabel": "Cauldron",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 3331,
+                "lng": 2541
+              },
+              "topRight": {
+                "lat": 3333,
+                "lng": 2543
+              }
+            },
+            "numberLabel": "Cauldron",
+            "color": "#7001cb"
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Take the rotten apple on the east outside of the house.",
+      "stepDescription": "Go to Nurse Sarah's house in the corner, south-west of the church. Search the box on the north side of the house to obtain a doctors' gown.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Doctors' Gown",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3278,
+                "lng": 2515,
+                "color": "#1c55b0",
+                "numberLabel": "Doctors Gown",
+                "isSearched": false
+              },
+              {
+                "lat": 3278,
+                "lng": 2516,
+                "color": "#1c55b0",
+                "numberLabel": "Doctors Gown",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -553,371 +344,86 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "color": "#1c55b0",
+            "numberLabel": "Doctors Gown"
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Squeeze through a gap directly east of the rotten apple, along the west side of the metal fence.",
+      "stepDescription": "Equip the gown and go to the north-east corner of the city, and enter the Mourner Headquarters.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Mourner Headquarter's",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3320,
+                "lng": 2548,
+                "color": "#2d7d5f",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3320,
+                "lng": 2541
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3327,
+                "lng": 2554
               }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Use the rotten apple on the cauldron in front of you.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
             },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
+            "color": "#2d7d5f",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Go to Nurse Sarah's house in the corner, south-west of the church.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Search the box on the north side of the house to obtain a doctors' gown.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Equip the gown.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Go to the north-east corner of the city, and enter the Mourner Headquarters.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Open the door to the west and go upstairs.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Stairs",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3325,
+                "lng": 2543,
+                "color": "#3d867a",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3325,
+                "lng": 2542
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3326,
+                "lng": 2543
               }
-            }
+            },
+            "color": "#3d867a",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Open the door to the east and kill a Mourner to obtain a key.",
@@ -926,406 +432,170 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Mourner",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3325,
+              "lng": 2547
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3324,
+                "lng": 2546
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3326,
+                "lng": 2548
               }
             }
           }
         ],
+        "object": []
+      },
+      "floor": 1,
+      "additionalStepInformation": []
+    },
+    {
+      "stepDescription": "Use the key on the gate in front of you to get into the caged room. Search the crates in the caged room to find the distillator.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Search Crates",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3326,
+                "lng": 2552,
+                "color": "#3d867a",
+                "numberLabel": "Crates",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3324,
+                "lng": 2551
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3327,
+                "lng": 2554
               }
-            }
+            },
+            "numberLabel": "Crates",
+            "color": "#3d867a"
           }
         ]
       },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "floor": 1,
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Use the key on the gate in front of you to get into the caged room.",
+      "stepDescription": "Teleport back to the Ardougne lodestone. Talk to Elena.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Elena",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3336,
+              "lng": 2592
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3335,
+                "lng": 2591
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3337,
+                "lng": 2593
               }
             }
           }
         ],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": []
+    },
+    {
+      "stepDescription": "Without teleporting, go to a bank and deposit your plague sample. read into Additional Info about the Plague Sample.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Teleporting with the plague sample in your inventory will destroy it, forcing you to retrieve another sample from Elena"
+      ]
+    },
+    {
+      "stepDescription": "Retrieve the plague sample from a nearby bank with the other three vials.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Bank",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3243,
+                "lng": 3092,
+                "color": "#328494",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3240,
+                "lng": 3087
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3246,
+                "lng": 3096
               }
-            }
+            },
+            "color": "#328494",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Search the crates in the caged room to find the distillator.",
+      "stepDescription": "Enter the western-most house in Rimmington and talk to the Chemist DO NOT mention the sample. (Chat 3•2•2)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Chemist",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3211,
+              "lng": 2930
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3210,
+                "lng": 2929
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3212,
+                "lng": 2931
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Teleport back to the Ardougne lodestone.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Elena in a house just west of the East Ardougne north bank, across the river.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Without teleporting, go to a bank and deposit your plague sample. Teleporting with the plague sample in your inventory will destroy it, forcing you to retrieve another sample from Elena.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Retrieve the plague sample (and the other three vials, if you banked them) from the closest bank to Rimmington and walk there (Skills necklace teleport to the Crafting Guild is the quickest. Alternatively, you can use the Clan Vexillum Teleport to the Clan Camp South of Falador).",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Enter the western-most house in Rimmington and talk to the Chemist (do not mention that you have the sample or he will take it away from you, and you will be forced to go back to Elena to get a new one; Also do not give the wrong vial as it will force you to go back and get new ones). (Chat 3•2•2)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Chancy. (Chat 2)",
@@ -1334,49 +604,27 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Chancy",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3221,
+              "lng": 2928
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3220,
+                "lng": 2927
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3222,
+                "lng": 2929
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Da Vinci. (Chat 1)",
@@ -1385,49 +633,27 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Da Vinci",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3217,
+              "lng": 2927
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3216,
+                "lng": 2926
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3218,
+                "lng": 2928
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Hops. (Chat 3)",
@@ -1436,103 +662,66 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Hops",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3218,
+              "lng": 2929
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3217,
+                "lng": 2928
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3219,
+                "lng": 2930
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Deposit your plague sample back in the bank and go to Varrock.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Bank",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3243,
+                "lng": 3092,
+                "color": "#328494",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3240,
+                "lng": 3087
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3246,
+                "lng": 3096
               }
-            }
+            },
+            "color": "#328494",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Items needed: Touch paper, Plague sample, Priest gown top, Priest gown bottoms",
+      "stepDescription": "Obtain the plague sample from the bank.",
       "itemsNeeded": [
         "Touch paper",
         "Plague sample",
@@ -1541,204 +730,47 @@
       ],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Obtain the plague sample from the bank.",
+      "stepDescription": "Go through the gate in the south-east corner of Varrock. Obtain a priest gown set which can be bought from the Fancy Shop.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Bank ( Varrock )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3421,
+                "lng": 3252,
+                "color": "#45938f",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3416,
+                "lng": 3249
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3423,
+                "lng": 3256
               }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Go through the gate in the south-east corner of Varrock.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
             },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
+            "color": "#45938f",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "If you have not done so already, obtain a priest gown set (can be bought from the nearby Fancy Clothes Store).",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to the 3 chemist's assistants at the Dancing Donkey Inn to get the vials back.",
@@ -1747,151 +779,97 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Chancy",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3388,
+              "lng": 3270
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3388,
+                "lng": 3270
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3389,
+                "lng": 3270
+              }
+            }
+          },
+          {
+            "npcName": "Da Vinci",
+            "npcLocation": {
+              "lat": 3389,
+              "lng": 3271
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3388,
+                "lng": 3271
+              },
+              "topRight": {
+                "lat": 3389,
+                "lng": 3271
+              }
+            }
+          },
+          {
+            "npcName": "Hops",
+            "npcLocation": {
+              "lat": 3389,
+              "lng": 3266
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3388,
+                "lng": 3265
+              },
+              "topRight": {
+                "lat": 3390,
+                "lng": 3267
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Equip the priest gown top and bottoms now.",
+      "stepDescription": "Equip the priest gown top and bottoms and go to the building south-east of the pub and go inside.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "House South-East of Donkey Inn",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3383,
+                "lng": 3281,
+                "color": "#529777",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3380,
+                "lng": 3278
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3388,
+                "lng": 3284
               }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Go to the building south-east of the pub and go inside.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
             },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
+            "color": "#529777",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Guidor, tell him you are sent by Elena, and give him the samples. (Chat 1•2•1)",
@@ -1900,49 +878,27 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Guidor's wife",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3383,
+              "lng": 3281
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3382,
+                "lng": 3280
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3384,
+                "lng": 3282
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Elena.",
@@ -1951,100 +907,70 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Elena",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3336,
+              "lng": 2592
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3335,
+                "lng": 2591
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3337,
+                "lng": 2593
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Go to Ardougne Castle, south of Elena's house, and climb either the stairs to the north or south.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "New Object",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3286,
+                "lng": 2571,
+                "color": "#418071",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 3307,
+                "lng": 2571,
+                "color": "#418071",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3284,
+                "lng": 2569
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3309,
+                "lng": 2572
               }
-            }
+            },
+            "color": "#418071",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to King Lathas, who is in the middle chamber of the 2nd floor[US] of the castle. (Chat 1)",
@@ -2053,66 +979,38 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "King Lathas",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3298,
+              "lng": 2576
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3297,
+                "lng": 2575
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3299,
+                "lng": 2577
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "floor": 1,
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Quest complete!",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [],
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     }
   ]
 }
