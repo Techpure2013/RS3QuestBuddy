@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { create } from "zustand";
 
 export interface QuestImage {
-	step: string;
+	step: string | number;
 	src: string;
 	width: number;
 	height: number;
@@ -10,7 +10,7 @@ export interface QuestImage {
 }
 
 type ImageType = {
-	step: string;
+	step: string | number;
 	src: string;
 	width: number;
 	height: number;

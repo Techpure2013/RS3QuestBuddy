@@ -30,13 +30,6 @@
 			},
 			{
 				"step": 20,
-				"src": "A Clockwork Syringe_step_20_1.webp",
-				"height": 730,
-				"width": 734,
-				"stepDescription": "Go down all three paths and investigate the worker's bodies to discover their names."
-			},
-			{
-				"step": 20,
 				"src": "A Clockwork Syringe_step_20_2.webp",
 				"height": 730,
 				"width": 734,
@@ -89,90 +82,6 @@
 	{
 		"name": "A Fairy Tale I: Growing Pains",
 		"images": [
-			{
-				"step": "1",
-				"src": "MartinMasterFarmerLocation.webp",
-				"width": 455,
-				"height": 296,
-				"stepDescription": "Talk to Martin the Master Gardener in Draynor Village. (Chat 2•1•✓•1)"
-			},
-			{
-				"step": "2",
-				"src": "AlainFarmerLoc.webp",
-				"width": 340,
-				"height": 217,
-				"stepDescription": "Talk to 5 different gardeners near farming patches around RuneScape. (Use Option Chat 2)"
-			},
-			{
-				"step": "2",
-				"src": "FizzleFarmerLoc.webp",
-				"width": 448,
-				"height": 285,
-				"stepDescription": "Talk to 5 different gardeners near farming patches around RuneScape. (Use Option Chat 2)"
-			},
-			{
-				"step": "2",
-				"src": "ElstanFarmerLoc.webp",
-				"width": 411,
-				"height": 293,
-				"stepDescription": "Talk to 5 different gardeners near farming patches around RuneScape. (Use Option Chat 2)"
-			},
-			{
-				"step": "2",
-				"src": "Daterna and Ellena Farmer.webp",
-				"width": 294,
-				"height": 193,
-				"stepDescription": "Talk to 5 different gardeners near farming patches around RuneScape. (Use Option Chat 2)"
-			},
-			{
-				"step": "18",
-				"src": "AFairyTaleIStep_18.webp",
-				"width": 800,
-				"height": 800,
-				"stepDescription": "Return to Zanaris, then enter the shady grove (dungeon icon) west of the Cosmic altar."
-			},
-			{
-				"step": "13",
-				"src": "AFairyTaleIStep13.webp",
-				"width": 800,
-				"height": 800,
-				"stepDescription": "Run around to the back, north, of Draynor Manor within the fenced area, and click the gravestone slightly west of the Gallows to dig up a skull."
-			},
-			{
-				"step": "6",
-				"src": "EasyTeleportToZanaris.webp",
-				"width": 363,
-				"height": 285,
-				"stepDescription": "Run south (near Chaeldar, the Slayer master), talk to the Fairy Godfather about the Queen. (Chat 2) Make sure to finish the whole dialogue."
-			},
-			{
-				"step": "17",
-				"src": "NatureSpirit.webp",
-				"width": 240,
-				"height": 309,
-				"stepDescription": "Talk to the Nature Spirit in Mort Myre Swamp to receive magic secateurs."
-			},
-			{
-				"step": "17",
-				"src": "NatureSpiritGrotto.webp",
-				"width": 449,
-				"height": 326,
-				"stepDescription": "Talk to the Nature Spirit in Mort Myre Swamp to receive magic secateurs."
-			},
-			{
-				"step": "21",
-				"src": "Queens Secateurs.webp",
-				"width": 189,
-				"height": 95,
-				"stepDescription": "Take the Queen's secateurs."
-			},
-			{
-				"step": "18",
-				"src": "ZanarisFairyTODung.webp",
-				"width": 456,
-				"height": 333,
-				"stepDescription": "Return to Zanaris, then enter the shady grove (dungeon icon) west of the Cosmic altar."
-			},
 			{
 				"step": 1,
 				"src": "A Fairy Tale I: Growing Pains_step_1_1.webp",
@@ -317,445 +226,136 @@
 		"name": "A Fairy Tale II: Cure a Queen",
 		"images": [
 			{
-				"step": "1",
-				"src": "QuestStartLoc.webp",
-				"width": 263,
-				"height": 330,
+				"step": 21,
+				"src": "AFairyTaleIICurea Queen_step_21_1.webp",
+				"height": 336,
+				"width": 373,
+				"stepDescription": "Talk to the Fairy Queen."
+			},
+			{
+				"step": 20,
+				"src": "AFairyTaleIICurea Queen_step_20_1.webp",
+				"height": 291,
+				"width": 313,
+				"stepDescription": "At the Resistance Hideout, right-click use the magic essence on the queen, laying on the stretcher near Fairy Nuff."
+			},
+			{
+				"step": 19,
+				"src": "AFairyTaleIICurea Queen_step_19_1.webp",
+				"height": 826,
+				"width": 815,
+				"stepDescription": "Talk to Fairy Nuff before giving the queen the magic essence or it wont work."
+			},
+			{
+				"step": 18,
+				"src": "AFairyTaleIICurea Queen_step_18_1.webp",
+				"height": 799,
+				"width": 714,
+				"stepDescription": "Go back to the Resistance Hideout by equipping your Dramen staff and go to each of these codes in this order to reach the hideout: AIR, DLR, DJQ (right-click fairy ring to \"select Destination\" for quicker travel), AJS"
+			},
+			{
+				"step": 17,
+				"src": "AFairyTaleIICurea Queen_step_17_1.webp",
+				"height": 593,
+				"width": 603,
+				"stepDescription": "Make sure you have armour required to fight one or multiple Goraks to get a Gorak Claw. Once obtained use it on the magic essence (unf) potion for a Magic Essence Potion. Go back to a fairy ring and use the code DIR."
+			},
+			{
+				"step": 1,
+				"src": "AFairyTaleIICurea Queen_step_1_1.webp",
+				"height": 615,
+				"width": 702,
 				"stepDescription": "Talk to Martin the Master Gardener in the Draynor Market. (Chat 2•✓)"
 			},
 			{
-				"step": "2",
-				"src": "FairyNuffLocation.webp",
-				"width": 456,
-				"height": 333,
+				"step": 2,
+				"src": "AFairyTaleIICurea Queen_step_2_1.webp",
+				"height": 557,
+				"width": 617,
 				"stepDescription": "After 5 minutes have elapsed, talk to him again. (Chat 2)"
 			},
 			{
-				"step": "3",
-				"src": "HealingCert.webp",
-				"width": 332,
-				"height": 513,
+				"step": 3,
+				"src": "AFairyTaleIICurea Queen_step_3_1.webp",
+				"height": 660,
+				"width": 1083,
 				"stepDescription": "Go to Fairy Nuff's grotto, north of the Zanaris bank."
 			},
 			{
-				"step": "6",
-				"src": "showtofairychef.webp",
-				"width": 512,
-				"height": 141,
+				"step": 4,
+				"src": "AFairyTaleIICurea Queen_step_4_1.webp",
+				"height": 365,
+				"width": 407,
+				"stepDescription": "After a short cutscene, enter the house and pick up the Healing Certificate from the floor in the south-east corner."
+			},
+			{
+				"step": 6,
+				"src": "AFairyTaleIICurea Queen_step_6_1.webp",
+				"height": 725,
+				"width": 466,
 				"stepDescription": "Use the certificate with the Fairy chef, south of the bank. She will tell you that she's seen similar inscriptions on a sign near the mysterious ruins, that is the cosmic altar, in southern Zanaris."
 			},
 			{
-				"step": "5",
-				"src": "studyOptionsforCert.webp",
-				"width": 191,
-				"height": 114,
-				"stepDescription": "Right-click study on the certificate. (You won't be able to reach the Fairy Resistance HQ if you don't \"study\" it)"
-			},
-			{
-				"step": "7",
-				"src": "runeTemplesign.webp",
-				"width": 212,
-				"height": 279,
+				"step": 7,
+				"src": "AFairyTaleIICurea Queen_step_7_1.webp",
+				"height": 285,
+				"width": 336,
 				"stepDescription": "Read the rune temple sign, on the ground south of the Cosmic Altar.\nTalk to the Fairy Godfather (located in the Throne Room) about the Queen being missing. (Chat 1•1•1)"
 			},
 			{
-				"step": "7",
-				"src": "FairyGodfatherLoc.webp",
-				"width": 397,
-				"height": 330,
-				"stepDescription": "Read the rune temple sign, on the ground south of the Cosmic Altar.\nTalk to the Fairy Godfather (located in the Throne Room) about the Queen being missing. (Chat 1•1•1)"
-			},
-			{
-				"step": "7",
-				"src": "FairyGodFatherFairy.webp",
-				"width": 325,
-				"height": 501,
-				"stepDescription": "Read the rune temple sign, on the ground south of the Cosmic Altar.\nTalk to the Fairy Godfather (located in the Throne Room) about the Queen being missing. (Chat 1•1•1)"
-			},
-			{
-				"step": "8",
-				"src": "fairycoordinatorloc.webp",
-				"width": 374,
-				"height": 291,
+				"step": 8,
+				"src": "AFairyTaleIICurea Queen_step_8_1.webp",
+				"height": 549,
+				"width": 290,
 				"stepDescription": "Talk to the Co-ordinator just north at the crossroads. (Chat 2)"
 			},
 			{
-				"step": "8",
-				"src": "FairyCoordinator.webp",
-				"width": 269,
-				"height": 334,
-				"stepDescription": "Talk to the Co-ordinator just north at the crossroads. (Chat 2)"
-			},
-			{
-				"step": "9",
-				"src": "fairyfixitlocation.webp",
-				"width": 207,
-				"height": 218,
+				"step": 9,
+				"src": "AFairyTaleIICurea Queen_step_9_1.webp",
+				"height": 571,
+				"width": 766,
 				"stepDescription": "Talk to Fairy Fixit near the fairy ring, south-west of the wheat field."
 			},
 			{
-				"step": "9",
-				"src": "fairyfixitfairy.webp",
-				"width": 222,
-				"height": 161,
-				"stepDescription": "Talk to Fairy Fixit near the fairy ring, south-west of the wheat field."
+				"step": 11,
+				"src": "AFairyTaleIICurea Queen_step_11_1.webp",
+				"height": 564,
+				"width": 565,
+				"stepDescription": "In the Fairy Resistance Hideout, talk to Fairy Nuff and Fairy Very Wise in the northeastern clearing.\n"
 			},
 			{
-				"step": "10",
-				"src": "fairyringcode1.webp",
-				"width": 408,
-				"height": 174,
-				"stepDescription": "Equip your Dramen staff, click on the fairy ring and go to each of these codes in this order to reach the hideout: AIR, DLR, DJQ (this may seem like it failed, but continue to the next code anyway), AJS."
+				"step": 12,
+				"src": "AFairyTaleIICurea Queen_step_12_1.webp",
+				"height": 478,
+				"width": 439,
+				"stepDescription": "Go back (via the fairy ring) and pickpocket the Fairy Godfather for the queen's secateurs (may take several attempts). For a helpful hint look at Additional Info."
 			},
 			{
-				"step": "10",
-				"src": "fairyringcode2.webp",
-				"width": 385,
-				"height": 142,
-				"stepDescription": "Equip your Dramen staff, click on the fairy ring and go to each of these codes in this order to reach the hideout: AIR, DLR, DJQ (this may seem like it failed, but continue to the next code anyway), AJS."
+				"step": 14,
+				"src": "AFairyTaleIICurea Queen_step_14_1.webp",
+				"height": 603,
+				"width": 565,
+				"stepDescription": "Talk to Fairy Nuff."
 			},
 			{
-				"step": "10",
-				"src": "fairyringcode3.webp",
-				"width": 396,
-				"height": 149,
-				"stepDescription": "Equip your Dramen staff, click on the fairy ring and go to each of these codes in this order to reach the hideout: AIR, DLR, DJQ (this may seem like it failed, but continue to the next code anyway), AJS."
+				"step": 16,
+				"src": "AFairyTaleIICurea Queen_step_16_1.webp",
+				"height": 603,
+				"width": 565,
+				"stepDescription": "Wait 2 minutes and pick a starflower then use it on a vial of water for a magic essence (unf) potion."
 			},
 			{
-				"step": "10",
-				"src": "HowToGetToFairyHQ.webp",
-				"width": 786,
-				"height": 252,
-				"stepDescription": "Equip your Dramen staff, click on the fairy ring and go to each of these codes in this order to reach the hideout: AIR, DLR, DJQ (this may seem like it failed, but continue to the next code anyway), AJS."
-			},
-			{
-				"step": "11",
-				"src": "fairynufflocationfairyhq.webp",
-				"width": 451,
-				"height": 312,
-				"stepDescription": "In the Fairy Resistance Hideout, talk to Fairy Nuff and Fairy Very Wise in the northeastern clearing.\nGo back (via the fairy ring) and pickpocket the Fairy Godfather for the queen's secateurs (may take several attempts). The Fairy Godfather, Fat Rocco and Slim Louie may need to be looking the other way. (ie. Stand east of him and wait until he looks west and both his guards are looking north)."
-			},
-			{
-				"step": "11",
-				"src": "FairyNuffFairyHQ.webp",
-				"width": 196,
-				"height": 233,
-				"stepDescription": "In the Fairy Resistance Hideout, talk to Fairy Nuff and Fairy Very Wise in the northeastern clearing.\nGo back (via the fairy ring) and pickpocket the Fairy Godfather for the queen's secateurs (may take several attempts). The Fairy Godfather, Fat Rocco and Slim Louie may need to be looking the other way. (ie. Stand east of him and wait until he looks west and both his guards are looking north)."
-			},
-			{
-				"step": "14",
-				"src": "starflowerfairycode.webp",
-				"width": 381,
-				"height": 203,
-				"stepDescription": "Go back to a fairy ring and use the code CKP."
-			},
-			{
-				"step": "17",
-				"src": "GorakFairyCode.webp",
-				"width": 402,
-				"height": 210,
-				"stepDescription": "Go back to a fairy ring and use the code DIR."
-			},
-			{
-				"step": "18",
-				"src": "GorakClaw.webp",
-				"width": 272,
-				"height": 178,
-				"stepDescription": "Kill Goraks until you get Gorak claws."
-			},
-			{
-				"step": "21",
-				"src": "ItemsForEssencePot.webp",
-				"width": 199,
-				"height": 82,
-				"stepDescription": "Use the Gorak claw powder on the Magic essence (unf)."
-			},
-			{
-				"step": "21",
-				"src": "EssencePotionstep2.webp",
-				"width": 238,
-				"height": 86,
-				"stepDescription": "Use the Gorak claw powder on the Magic essence (unf)."
-			},
-			{
-				"step": "21",
-				"src": "EssencePotionstep3.webp",
-				"width": 339,
-				"height": 101,
-				"stepDescription": "Use the Gorak claw powder on the Magic essence (unf)."
-			},
-			{
-				"step": "21",
-				"src": "FairyQueenCuring.webp",
-				"width": 342,
-				"height": 467,
-				"stepDescription": "Use the Gorak claw powder on the Magic essence (unf)."
-			},
-			{
-				"step": "25",
-				"src": "TalkToFairyQueen.webp",
-				"width": 329,
-				"height": 468,
-				"stepDescription": "Talk to the Fairy Queen."
+				"step": 16,
+				"src": "AFairyTaleIICurea Queen_step_16_2.webp",
+				"height": 388,
+				"width": 474,
+				"stepDescription": "Wait 2 minutes and pick a starflower then use it on a vial of water for a magic essence (unf) potion."
 			}
 		]
 	},
 	{
 		"name": "A Fairy Tale III: Battle at Ork's Rift",
-		"images": [
-			{
-				"step": "1",
-				"src": "REQ.webp",
-				"width": 166,
-				"height": 148,
-				"stepDescription": "Items needed: Dramen staff or the Lunar staff and Nuff's certificate (to reach the Fairy Resistance Hideout)"
-			},
-			{
-				"step": "1",
-				"src": "warning.webp",
-				"width": 335,
-				"height": 137,
-				"stepDescription": "Items needed: Dramen staff or the Lunar staff and Nuff's certificate (to reach the Fairy Resistance Hideout)"
-			},
-			{
-				"step": "3",
-				"src": "SparsePlane.webp",
-				"width": 300,
-				"height": 210,
-				"stepDescription": "If you cannot start the quest, enter and leave Zanaris via fairy rings repeatedly until Fairy Very Wise appears and talks to you. It may require up to 30 minutes after completing A Fairy Tale II - Cure a Queen. If you've declined her before, you have to travel by fairy ring BIR to reach her."
-			},
-			{
-				"step": "2",
-				"src": "qstart.webp",
-				"width": 416,
-				"height": 445,
-				"stepDescription": "Use any fairy ring to travel to Zanaris. If you can start the quest, you will be redirected to the Sparse Plane."
-			},
-			{
-				"step": "6",
-				"src": "tlkFQ.webp",
-				"width": 252,
-				"height": 281,
-				"stepDescription": "Talk to the Fairy Queen south-east in the headquarters and then finish talking to the Tooth Fairy (she automatically speaks to you after you speak with the queen). (Chat 2•✓)"
-			},
-			{
-				"step": "7",
-				"src": "TF.webp",
-				"width": 299,
-				"height": 469,
-				"stepDescription": "Be wary of cutscenes that may trigger epilepsy. Talk to the Tooth Fairy, then turn on the projector to watch the first briefing. (Chat 2)"
-			},
-			{
-				"step": "7",
-				"src": "PROJECTOR.webp",
-				"width": 451,
-				"height": 374,
-				"stepDescription": "Be wary of cutscenes that may trigger epilepsy. Talk to the Tooth Fairy, then turn on the projector to watch the first briefing. (Chat 2)"
-			},
-			{
-				"step": "10",
-				"src": "Hammerandsec.webp",
-				"width": 379,
-				"height": 393,
-				"stepDescription": "Run north-west and take a hammer and secateurs. Use them on each other."
-			},
-			{
-				"step": "10",
-				"src": "hammerSecateurs.webp",
-				"width": 207,
-				"height": 107,
-				"stepDescription": "Run north-west and take a hammer and secateurs. Use them on each other."
-			},
-			{
-				"step": "12",
-				"src": "toothextractondoor.webp",
-				"width": 253,
-				"height": 333,
-				"stepDescription": "Items needed: Bucket of milk and the Tooth extractor \nGo to the house north-west of Zanaris bank. Use your tooth extractor on the door to pick the lock on it."
-			},
-			{
-				"step": "13",
-				"src": "tlk_gnarly.webp",
-				"width": 258,
-				"height": 341,
-				"stepDescription": "Talk to Gnarly. (Chat 4)"
-			},
-			{
-				"step": "15",
-				"src": "usemilk.webp",
-				"width": 336,
-				"height": 208,
-				"stepDescription": "Use the bucket of milk on him, (Chat 2•2). Gnarly should jump into your inventory."
-			},
-			{
-				"step": "15",
-				"src": "pickupGNARLY.webp",
-				"width": 338,
-				"height": 249,
-				"stepDescription": "Use the bucket of milk on him, (Chat 2•2). Gnarly should jump into your inventory."
-			},
-			{
-				"step": "19",
-				"src": "WAVEEMOTE.webp",
-				"width": 302,
-				"height": 377,
-				"stepDescription": "Step onto the yellow flowers and use the wave emote. There will be a cutscene."
-			},
-			{
-				"step": "20",
-				"src": "teleout.webp",
-				"width": 397,
-				"height": 470,
-				"stepDescription": "Leave through the fairy ring."
-			},
-			{
-				"step": "22",
-				"src": "breegth.webp",
-				"width": 257,
-				"height": 283,
-				"stepDescription": "Talk to General Bre'egth outside of the Zanaris mill, north west of the fairy ring. (Chat 3)"
-			},
-			{
-				"step": "23",
-				"src": "ork.webp",
-				"width": 149,
-				"height": 178,
-				"stepDescription": "Talk to any other Ork about K'Chunk. (Chat 4)"
-			},
-			{
-				"step": "24",
-				"src": "ff.webp",
-				"width": 164,
-				"height": 299,
-				"stepDescription": "Run to the fairy ring, talk to Fairy Fixit about K'Chunk. (Chat 2)"
-			},
-			{
-				"step": "25",
-				"src": "TALKKCHUNK.webp",
-				"width": 336,
-				"height": 442,
-				"stepDescription": "Teleport to DIP and talk to K'Chunk. (Chat 4)"
-			},
-			{
-				"step": "27",
-				"src": "BROKENBRIDGE.webp",
-				"width": 469,
-				"height": 573,
-				"stepDescription": "Pickpocket him for the tooth."
-			},
-			{
-				"step": "25",
-				"src": "CAMPFIRE.webp",
-				"width": 459,
-				"height": 467,
-				"stepDescription": "Teleport to DIP and talk to K'Chunk. (Chat 4)"
-			},
-			{
-				"step": "25",
-				"src": "PP.webp",
-				"width": 214,
-				"height": 250,
-				"stepDescription": "Teleport to DIP and talk to K'Chunk. (Chat 4)"
-			},
-			{
-				"step": "28",
-				"src": "MAPBKQ.webp",
-				"width": 529,
-				"height": 233,
-				"stepDescription": "Items needed: Dramen staff or the Lunar staff and the Tooth extractor you can then\nTeleport to BKQ and run down the waterfall to talk to the Wood Dryad to the west. (Chat 2)"
-			},
-			{
-				"step": "28",
-				"src": "WATERFALL.webp",
-				"width": 382,
-				"height": 460,
-				"stepDescription": "Items needed: Dramen staff or the Lunar staff and the Tooth extractor you can then\nTeleport to BKQ and run down the waterfall to talk to the Wood Dryad to the west. (Chat 2)"
-			},
-			{
-				"step": "28",
-				"src": "DRYAD.webp",
-				"width": 238,
-				"height": 320,
-				"stepDescription": "Items needed: Dramen staff or the Lunar staff and the Tooth extractor you can then\nTeleport to BKQ and run down the waterfall to talk to the Wood Dryad to the west. (Chat 2)"
-			},
-			{
-				"step": "29",
-				"src": "GRUMBLOD.webp",
-				"width": 403,
-				"height": 261,
-				"stepDescription": "Talk to General Gromblod."
-			},
-			{
-				"step": "31",
-				"src": "MTREEMAP.webp",
-				"width": 524,
-				"height": 266,
-				"stepDescription": "Teleport to CLR, pick a mango."
-			},
-			{
-				"step": "31",
-				"src": "MANGO.webp",
-				"width": 403,
-				"height": 474,
-				"stepDescription": "Teleport to CLR, pick a mango."
-			},
-			{
-				"step": "32",
-				"src": "HLOG.webp",
-				"width": 365,
-				"height": 416,
-				"stepDescription": "Recommended: unblock this end of the hollow log if you haven't yet. \nReturn to BKQ. \nTalk to Grombold, giving him the mango, he will spit it out to the south of the cave."
-			},
-			{
-				"step": "36",
-				"src": "EXTRACT_TOOTH.webp",
-				"width": 251,
-				"height": 129,
-				"stepDescription": "Use the extractor on him."
-			},
-			{
-				"step": "33",
-				"src": "Mangowithtoothground.webp",
-				"width": 300,
-				"height": 178,
-				"stepDescription": "Pick up the mango with tooth and use the tooth extractor on it."
-			},
-			{
-				"step": "34",
-				"src": "SHREDFLESH.webp",
-				"width": 265,
-				"height": 160,
-				"stepDescription": "Items needed: Dramen staff or the Lunar staff, and the Tooth extractor \nTeleport to ALP and talk to General Shredflesh. (Chat 4•1•2•3•4)"
-			},
-			{
-				"step": "36",
-				"src": "TOOTHBYEBYE.webp",
-				"width": 392,
-				"height": 328,
-				"stepDescription": "Use the extractor on him."
-			},
-			{
-				"step": "37",
-				"src": "ROCKS.webp",
-				"width": 280,
-				"height": 531,
-				"stepDescription": "Clear the pile of rock behind him if you haven't yet already."
-			},
-			{
-				"step": "43",
-				"src": "ftree.webp",
-				"width": 427,
-				"height": 579,
-				"stepDescription": "Look through fairy tree where you'll encounter a cutscene."
-			},
-			{
-				"step": "43",
-				"src": "fairyspell.webp",
-				"width": 317,
-				"height": 664,
-				"stepDescription": "Look through fairy tree where you'll encounter a cutscene."
-			}
-		]
+		"images": []
 	},
 	{
 		"name": "A Shadow over Ashdale",
@@ -850,7 +450,141 @@
 	},
 	{
 		"name": "Benedict's World Tour (miniquest)",
-		"images": []
+		"images": [
+			{
+				"step": 1,
+				"src": "BenedictsWorldTour(miniquest)_step_1_1.webp",
+				"height": 805,
+				"width": 648,
+				"stepDescription": "Talk to Benedict north-west of the Varrock Lodestone. (Chat ✓) Also located at the step is an F2P, and a P2P Table of items."
+			},
+			{
+				"step": 2,
+				"src": "BenedictsWorldTour(miniquest)_step_2_1.webp",
+				"height": 583,
+				"width": 364,
+				"stepDescription": "Travel to Varrock Palace. Go to the northwest staircase and then to the top floor to collect the fox pelt."
+			},
+			{
+				"step": 3,
+				"src": "BenedictsWorldTour(miniquest)_step_3_1.webp",
+				"height": 843,
+				"width": 895,
+				"stepDescription": "Head to the top of Al Kharid Palace and collect the toffee apple."
+			},
+			{
+				"step": 4,
+				"src": "BenedictsWorldTour(miniquest)_step_4_1.webp",
+				"height": 482,
+				"width": 680,
+				"stepDescription": "Teleport with your ring of duelling to Het's Oasis and go to the statue in the centre to collect the package. (Chat 1)"
+			},
+			{
+				"step": 5,
+				"src": "BenedictsWorldTour(miniquest)_step_5_1.webp",
+				"height": 325,
+				"width": 381,
+				"stepDescription": "Glide from Al Kharid or teleport to White Wolf Mountain and collect the Raw fish-like thing, which is right next to the glider. (Chat 2)"
+			},
+			{
+				"step": 6,
+				"src": "BenedictsWorldTour(miniquest)_step_6_1.webp",
+				"height": 667,
+				"width": 856,
+				"stepDescription": "Then glide (or teleport via spirit trees) to the Grand Tree and head south on the 3rd floor[US] to collect a Flask of tea. (Chat 1)"
+			},
+			{
+				"step": 7,
+				"src": "BenedictsWorldTour(miniquest)_step_7_1.webp",
+				"height": 740,
+				"width": 554,
+				"stepDescription": "Teleport with your ring of duelling to Castle wars and head north-west of the portals on the spectating wall to collect Sweets. (Chat 2)"
+			},
+			{
+				"step": 8,
+				"src": "BenedictsWorldTour(miniquest)_step_8_1.webp",
+				"height": 674,
+				"width": 695,
+				"stepDescription": "Teleport with the Wicked hood and enter the Low-level Runespan portal to collect the crystal to the south-west. (on the same island you start on)"
+			},
+			{
+				"step": 9,
+				"src": "BenedictsWorldTour(miniquest)_step_9_1.webp",
+				"height": 619,
+				"width": 633,
+				"stepDescription": "Use a Fairy Ring BIP to teleport to the Polypore dungeon, enter the dungeon entrance and go slightly east to collect cinnamon, which is next to the Neem drupe vine."
+			},
+			{
+				"step": 10,
+				"src": "BenedictsWorldTour(miniquest)_step_10_1.webp",
+				"height": 493,
+				"width": 522,
+				"stepDescription": "Use a Fairy Ring AIQ to teleport to Mudskipper point and head south-west to collect the toy ship."
+			},
+			{
+				"step": 11,
+				"src": "BenedictsWorldTour(miniquest)_step_11_1.webp",
+				"height": 384,
+				"width": 344,
+				"stepDescription": "Ardougne lodestone and head north-east to the top floor of the Sorcerer's Tower to collect a Money pouch."
+			},
+			{
+				"step": 12,
+				"src": "BenedictsWorldTour(miniquest)_step_12_1.webp",
+				"height": 600,
+				"width": 345,
+				"stepDescription": "Teleport to Lumbridge, head to the 3rd floor[US] of Lumbridge Castle and collect a Pipe by the North stairs."
+			},
+			{
+				"step": 13,
+				"src": "BenedictsWorldTour(miniquest)_step_13_1.webp",
+				"height": 523,
+				"width": 530,
+				"stepDescription": "Teleport to Anachronia lodestone to collect the foot slightly south-east of the lodestone."
+			},
+			{
+				"step": 14,
+				"src": "BenedictsWorldTour(miniquest)_step_14_1.webp",
+				"height": 599,
+				"width": 399,
+				"stepDescription": "Head north of the Menaphos gates to pass through the world window and continue slightly north to collect the frogburger."
+			},
+			{
+				"step": 1,
+				"src": "BenedictsWorldTour(miniquest)_step_1_2.webp",
+				"height": 375,
+				"width": 375,
+				"stepDescription": "Talk to Benedict north-west of the Varrock Lodestone. (Chat ✓) Also located at the step is an F2P, and a P2P Table of items."
+			},
+			{
+				"step": 1,
+				"src": "BenedictsWorldTour(miniquest)_step_1_3.webp",
+				"height": 375,
+				"width": 375,
+				"stepDescription": "Talk to Benedict north-west of the Varrock Lodestone. (Chat ✓) Also located at the step is an F2P, and a P2P Table of items."
+			},
+			{
+				"step": 15,
+				"src": "BenedictsWorldTour(miniquest)_step_15_1.webp",
+				"height": 449,
+				"width": 602,
+				"stepDescription": "Teleport to Falador and head to the west side of Falador castle and climb the stairs to the top to collect a monocle."
+			},
+			{
+				"step": 16,
+				"src": "BenedictsWorldTour(miniquest)_step_16_1.webp",
+				"height": 581,
+				"width": 948,
+				"stepDescription": "Teleport with either the Skeletal horror Teleport, an invitation box, a Fort Forinthry Teleport, or a Dig Site pendant to the digsite and head to the beacon south of Paterdomus to collect a scarf. (Chat 1)"
+			},
+			{
+				"step": 17,
+				"src": "BenedictsWorldTour(miniquest)_step_17_1.webp",
+				"height": 479,
+				"width": 556,
+				"stepDescription": "Teleport to Ashdale using the Lodestone and head directly south to collect the Surgical mask."
+			}
+		]
 	},
 	{
 		"name": "Desert Slayer Dungeon (miniquest)",
@@ -15036,307 +14770,5 @@
 	{
 		"name": "Eclipse of the Heart",
 		"images": []
-	},
-	{
-		"name": "A Fairy Tale I Growing Pains",
-		"images": [
-			{
-				"step": 7,
-				"src": "A Fairy Tale I Growing Pains_step_7_1.webp",
-				"height": 693,
-				"width": 1311,
-				"stepDescription": "Travel to The Dark Wizards' Tower (west of Falador)."
-			},
-			{
-				"step": 6,
-				"src": "A Fairy Tale I Growing Pains_step_6_1.webp",
-				"height": 589,
-				"width": 992,
-				"stepDescription": "Run west to the bank. Talk to Fairy Nuff a few steps north of the bank."
-			},
-			{
-				"step": 5,
-				"src": "A Fairy Tale I Growing Pains_step_5_1.webp",
-				"height": 505,
-				"width": 697,
-				"stepDescription": "Run south (near Chaeldar, the Slayer master), talk to the Fairy Godfather about the Queen. (Chat 2) Make sure to finish the whole dialogue."
-			},
-			{
-				"step": 1,
-				"src": "A Fairy Tale I Growing Pains_step_1_1.webp",
-				"height": 711,
-				"width": 642,
-				"stepDescription": "Talk to Martin the Master Gardener in Draynor Village. (Chat 2•1•✓•1)"
-			}
-		]
-	},
-	{
-		"name": "Benedicts World Tour (miniquest)",
-		"images": [
-			{
-				"step": 1,
-				"src": "BenedictsWorldTour(miniquest)_step_1_1.webp",
-				"height": 805,
-				"width": 648,
-				"stepDescription": "Talk to Benedict north-west of the Varrock Lodestone. (Chat ✓) Also located at the step is an F2P, and a P2P Table of items."
-			},
-			{
-				"step": 2,
-				"src": "BenedictsWorldTour(miniquest)_step_2_1.webp",
-				"height": 583,
-				"width": 364,
-				"stepDescription": "Travel to Varrock Palace. Go to the northwest staircase and then to the top floor to collect the fox pelt."
-			},
-			{
-				"step": 3,
-				"src": "BenedictsWorldTour(miniquest)_step_3_1.webp",
-				"height": 843,
-				"width": 895,
-				"stepDescription": "Head to the top of Al Kharid Palace and collect the toffee apple."
-			},
-			{
-				"step": 4,
-				"src": "BenedictsWorldTour(miniquest)_step_4_1.webp",
-				"height": 482,
-				"width": 680,
-				"stepDescription": "Teleport with your ring of duelling to Het's Oasis and go to the statue in the centre to collect the package. (Chat 1)"
-			},
-			{
-				"step": 5,
-				"src": "BenedictsWorldTour(miniquest)_step_5_1.webp",
-				"height": 325,
-				"width": 381,
-				"stepDescription": "Glide from Al Kharid or teleport to White Wolf Mountain and collect the Raw fish-like thing, which is right next to the glider. (Chat 2)"
-			},
-			{
-				"step": 6,
-				"src": "BenedictsWorldTour(miniquest)_step_6_1.webp",
-				"height": 667,
-				"width": 856,
-				"stepDescription": "Then glide (or teleport via spirit trees) to the Grand Tree and head south on the 3rd floor[US] to collect a Flask of tea. (Chat 1)"
-			},
-			{
-				"step": 7,
-				"src": "BenedictsWorldTour(miniquest)_step_7_1.webp",
-				"height": 740,
-				"width": 554,
-				"stepDescription": "Teleport with your ring of duelling to Castle wars and head north-west of the portals on the spectating wall to collect Sweets. (Chat 2)"
-			},
-			{
-				"step": 8,
-				"src": "BenedictsWorldTour(miniquest)_step_8_1.webp",
-				"height": 674,
-				"width": 695,
-				"stepDescription": "Teleport with the Wicked hood and enter the Low-level Runespan portal to collect the crystal to the south-west. (on the same island you start on)"
-			},
-			{
-				"step": 9,
-				"src": "BenedictsWorldTour(miniquest)_step_9_1.webp",
-				"height": 619,
-				"width": 633,
-				"stepDescription": "Use a Fairy Ring BIP to teleport to the Polypore dungeon, enter the dungeon entrance and go slightly east to collect cinnamon, which is next to the Neem drupe vine."
-			},
-			{
-				"step": 10,
-				"src": "BenedictsWorldTour(miniquest)_step_10_1.webp",
-				"height": 493,
-				"width": 522,
-				"stepDescription": "Use a Fairy Ring AIQ to teleport to Mudskipper point and head south-west to collect the toy ship."
-			},
-			{
-				"step": 11,
-				"src": "BenedictsWorldTour(miniquest)_step_11_1.webp",
-				"height": 384,
-				"width": 344,
-				"stepDescription": "Ardougne lodestone and head north-east to the top floor of the Sorcerer's Tower to collect a Money pouch."
-			},
-			{
-				"step": 12,
-				"src": "BenedictsWorldTour(miniquest)_step_12_1.webp",
-				"height": 600,
-				"width": 345,
-				"stepDescription": "Teleport to Lumbridge, head to the 3rd floor[US] of Lumbridge Castle and collect a Pipe by the North stairs."
-			},
-			{
-				"step": 13,
-				"src": "BenedictsWorldTour(miniquest)_step_13_1.webp",
-				"height": 523,
-				"width": 530,
-				"stepDescription": "Teleport to Anachronia lodestone to collect the foot slightly south-east of the lodestone."
-			},
-			{
-				"step": 14,
-				"src": "BenedictsWorldTour(miniquest)_step_14_1.webp",
-				"height": 599,
-				"width": 399,
-				"stepDescription": "Head north of the Menaphos gates to pass through the world window and continue slightly north to collect the frogburger."
-			},
-			{
-				"step": 1,
-				"src": "BenedictsWorldTour(miniquest)_step_1_2.webp",
-				"height": 375,
-				"width": 375,
-				"stepDescription": "Talk to Benedict north-west of the Varrock Lodestone. (Chat ✓) Also located at the step is an F2P, and a P2P Table of items."
-			},
-			{
-				"step": 1,
-				"src": "BenedictsWorldTour(miniquest)_step_1_3.webp",
-				"height": 375,
-				"width": 375,
-				"stepDescription": "Talk to Benedict north-west of the Varrock Lodestone. (Chat ✓) Also located at the step is an F2P, and a P2P Table of items."
-			},
-			{
-				"step": 15,
-				"src": "BenedictsWorldTour(miniquest)_step_15_1.webp",
-				"height": 449,
-				"width": 602,
-				"stepDescription": "Teleport to Falador and head to the west side of Falador castle and climb the stairs to the top to collect a monocle."
-			},
-			{
-				"step": 16,
-				"src": "BenedictsWorldTour(miniquest)_step_16_1.webp",
-				"height": 581,
-				"width": 948,
-				"stepDescription": "Teleport with either the Skeletal horror Teleport, an invitation box, a Fort Forinthry Teleport, or a Dig Site pendant to the digsite and head to the beacon south of Paterdomus to collect a scarf. (Chat 1)"
-			},
-			{
-				"step": 17,
-				"src": "BenedictsWorldTour(miniquest)_step_17_1.webp",
-				"height": 479,
-				"width": 556,
-				"stepDescription": "Teleport to Ashdale using the Lodestone and head directly south to collect the Surgical mask."
-			}
-		]
-	},
-	{
-		"name": "A Fairy Tale II Cure a Queen",
-		"images": [
-			{
-				"step": 21,
-				"src": "AFairyTaleIICurea Queen_step_21_1.webp",
-				"height": 336,
-				"width": 373,
-				"stepDescription": "Talk to the Fairy Queen."
-			},
-			{
-				"step": 20,
-				"src": "AFairyTaleIICurea Queen_step_20_1.webp",
-				"height": 291,
-				"width": 313,
-				"stepDescription": "At the Resistance Hideout, right-click use the magic essence on the queen, laying on the stretcher near Fairy Nuff."
-			},
-			{
-				"step": 19,
-				"src": "AFairyTaleIICurea Queen_step_19_1.webp",
-				"height": 826,
-				"width": 815,
-				"stepDescription": "Talk to Fairy Nuff before giving the queen the magic essence or it wont work."
-			},
-			{
-				"step": 18,
-				"src": "AFairyTaleIICurea Queen_step_18_1.webp",
-				"height": 799,
-				"width": 714,
-				"stepDescription": "Go back to the Resistance Hideout by equipping your Dramen staff and go to each of these codes in this order to reach the hideout: AIR, DLR, DJQ (right-click fairy ring to \"select Destination\" for quicker travel), AJS"
-			},
-			{
-				"step": 17,
-				"src": "AFairyTaleIICurea Queen_step_17_1.webp",
-				"height": 593,
-				"width": 603,
-				"stepDescription": "Make sure you have armour required to fight one or multiple Goraks to get a Gorak Claw. Once obtained use it on the magic essence (unf) potion for a Magic Essence Potion. Go back to a fairy ring and use the code DIR."
-			},
-			{
-				"step": 1,
-				"src": "AFairyTaleIICurea Queen_step_1_1.webp",
-				"height": 615,
-				"width": 702,
-				"stepDescription": "Talk to Martin the Master Gardener in the Draynor Market. (Chat 2•✓)"
-			},
-			{
-				"step": 2,
-				"src": "AFairyTaleIICurea Queen_step_2_1.webp",
-				"height": 557,
-				"width": 617,
-				"stepDescription": "After 5 minutes have elapsed, talk to him again. (Chat 2)"
-			},
-			{
-				"step": 3,
-				"src": "AFairyTaleIICurea Queen_step_3_1.webp",
-				"height": 660,
-				"width": 1083,
-				"stepDescription": "Go to Fairy Nuff's grotto, north of the Zanaris bank."
-			},
-			{
-				"step": 4,
-				"src": "AFairyTaleIICurea Queen_step_4_1.webp",
-				"height": 365,
-				"width": 407,
-				"stepDescription": "After a short cutscene, enter the house and pick up the Healing Certificate from the floor in the south-east corner."
-			},
-			{
-				"step": 6,
-				"src": "AFairyTaleIICurea Queen_step_6_1.webp",
-				"height": 725,
-				"width": 466,
-				"stepDescription": "Use the certificate with the Fairy chef, south of the bank. She will tell you that she's seen similar inscriptions on a sign near the mysterious ruins, that is the cosmic altar, in southern Zanaris."
-			},
-			{
-				"step": 7,
-				"src": "AFairyTaleIICurea Queen_step_7_1.webp",
-				"height": 285,
-				"width": 336,
-				"stepDescription": "Read the rune temple sign, on the ground south of the Cosmic Altar.\nTalk to the Fairy Godfather (located in the Throne Room) about the Queen being missing. (Chat 1•1•1)"
-			},
-			{
-				"step": 8,
-				"src": "AFairyTaleIICurea Queen_step_8_1.webp",
-				"height": 549,
-				"width": 290,
-				"stepDescription": "Talk to the Co-ordinator just north at the crossroads. (Chat 2)"
-			},
-			{
-				"step": 9,
-				"src": "AFairyTaleIICurea Queen_step_9_1.webp",
-				"height": 571,
-				"width": 766,
-				"stepDescription": "Talk to Fairy Fixit near the fairy ring, south-west of the wheat field."
-			},
-			{
-				"step": 11,
-				"src": "AFairyTaleIICurea Queen_step_11_1.webp",
-				"height": 564,
-				"width": 565,
-				"stepDescription": "In the Fairy Resistance Hideout, talk to Fairy Nuff and Fairy Very Wise in the northeastern clearing.\n"
-			},
-			{
-				"step": 12,
-				"src": "AFairyTaleIICurea Queen_step_12_1.webp",
-				"height": 478,
-				"width": 439,
-				"stepDescription": "Go back (via the fairy ring) and pickpocket the Fairy Godfather for the queen's secateurs (may take several attempts). For a helpful hint look at Additional Info."
-			},
-			{
-				"step": 14,
-				"src": "AFairyTaleIICurea Queen_step_14_1.webp",
-				"height": 603,
-				"width": 565,
-				"stepDescription": "Talk to Fairy Nuff."
-			},
-			{
-				"step": 16,
-				"src": "AFairyTaleIICurea Queen_step_16_1.webp",
-				"height": 603,
-				"width": 565,
-				"stepDescription": "Wait 2 minutes and pick a starflower then use it on a vial of water for a magic essence (unf) potion."
-			},
-			{
-				"step": 16,
-				"src": "AFairyTaleIICurea Queen_step_16_2.webp",
-				"height": 388,
-				"width": 474,
-				"stepDescription": "Wait 2 minutes and pick a starflower then use it on a vial of water for a magic essence (unf) potion."
-			}
-		]
 	}
 ]
