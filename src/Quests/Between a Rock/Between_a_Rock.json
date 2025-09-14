@@ -2,65 +2,35 @@
   "questName": "Between a Rock",
   "questSteps": [
     {
-      "stepDescription": "If you haven't yet completed The Giant Dwarf quest, you will need to talk to the dwarven boatman to visit Keldagrim for the first time, after which you can take the mine carts from Grand Exchange to the city; the boatman is at the entrance upon first crossing the water.",
+      "stepDescription": "If you haven't yet completed The Giant Dwarf quest, you will need to talk to or use \"Cross-river\" option on the Dwarven Ferryman to cross the river in Keldagrim.",
       "itemsNeeded": [
-        "asDasd"
+        ""
       ],
       "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Dwarven Ferryman (east)",
             "npcLocation": {
-              "lat": 3298,
-              "lng": 3008
+              "lat": 10128,
+              "lng": 2839
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 3283,
-                "lng": 3030
+                "lat": 10127,
+                "lng": 2838
               },
               "topRight": {
-                "lat": 3287,
-                "lng": 3034
+                "lat": 10129,
+                "lng": 2839
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 3285,
-                "lng": 3031,
-                "color": "#e100ff",
-                "numberLabel": "2"
-              },
-              {
-                "lat": 3284,
-                "lng": 3030,
-                "color": "#e100ff",
-                "numberLabel": "2"
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 3283,
-                "lng": 3029
-              },
-              "topRight": {
-                "lat": 3285,
-                "lng": 3030
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Dondakan about cannonballs in the Keldagrim south-west mine. (Chat 2•1•1•✓•3)",
@@ -69,49 +39,27 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Dondakan the Dwarf",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 10168,
+              "lng": 2824
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10166,
+                "lng": 2822
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10170,
+                "lng": 2826
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "In the western half of the consortium (the big building in the centre of Keldagrim) 1st floor[US], talk to the Dwarven Engineer.",
@@ -120,61 +68,44 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Dwarven Engineer",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 10198,
+              "lng": 2871
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10196,
+                "lng": 2869
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10200,
+                "lng": 2873
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Teleport to the Falador Lodestone and run north-east to the Dwarven Mine (stay outside), or teleport using your skull sceptre and run west.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
+      "stepDescription": "Talk to Rolad, who is located in the most north-eastern building near the ladder to the mines. North-East of the Invention Guild. ",
+      "itemsNeeded": [
+        "A few empty backpack spaces"
+      ],
+      "itemsRecommended": [
+        "A weapon of any kind to kill low-level scorpions and mining gear",
+        "skull sceptre"
+      ],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Rolad",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3452,
+              "lng": 3022
             },
             "wanderRadius": {
               "bottomLeft": {
@@ -188,82 +119,11 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Rolad, who is located in the most north-eastern building near the ladder to the mines. There is a pause in the dialogue; be sure to finish the whole conversation.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "There is a pause in the dialogue; be sure to finish the whole conversation."
       ]
     },
     {
@@ -271,134 +131,88 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Ladder",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3450,
+                "lng": 3017,
+                "color": "#00FF00",
+                "numberLabel": ""
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3449,
+                "lng": 3016
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3450,
+                "lng": 3018
               }
-            }
+            },
+            "color": "#00FF00",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Kill scorpions in the southeast to get the first page. It will appear in your inventory with a popup.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Scorpion Area",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 9792,
+                "lng": 3042,
+                "color": "#337770",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 9764,
+                "lng": 3035
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 9814,
+                "lng": 3050
               }
-            }
+            },
+            "color": "#337770",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Search the mine carts for the second page.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Mine cart",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 9819,
+                "lng": 3040,
+                "color": "#337770",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -410,46 +224,234 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "color": "#337770",
+            "numberLabel": ""
+          },
+          {
+            "name": "Mine cart",
+            "objectLocation": [
+              {
+                "lat": 9820,
+                "lng": 3040,
+                "color": "#337770",
+                "numberLabel": "",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "color": "#337770",
+            "numberLabel": ""
+          },
+          {
+            "name": "Mine cart",
+            "objectLocation": [
+              {
+                "lat": 9821,
+                "lng": 3024,
+                "color": "#337770",
+                "numberLabel": "",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "color": "#337770",
+            "numberLabel": ""
+          },
+          {
+            "name": "Mine cart",
+            "objectLocation": [
+              {
+                "lat": 9819,
+                "lng": 3019,
+                "color": "#337770",
+                "numberLabel": "",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "color": "#337770",
+            "numberLabel": ""
+          },
+          {
+            "name": "Mine cart",
+            "objectLocation": [
+              {
+                "lat": 9817,
+                "lng": 3019,
+                "color": "#337770",
+                "numberLabel": "",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "color": "#337770",
+            "numberLabel": ""
+          },
+          {
+            "name": "Mine cart",
+            "objectLocation": [
+              {
+                "lat": 9836,
+                "lng": 2994,
+                "color": "#337770",
+                "numberLabel": "",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "color": "#337770",
+            "numberLabel": ""
+          },
+          {
+            "name": "Mine cart",
+            "objectLocation": [
+              {
+                "lat": 9845,
+                "lng": 3016,
+                "color": "#337770",
+                "numberLabel": "",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "color": "#337770",
+            "numberLabel": ""
+          },
+          {
+            "name": "Mine cart",
+            "objectLocation": [
+              {
+                "lat": 9846,
+                "lng": 3016,
+                "color": "#337770",
+                "numberLabel": "",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "color": "#337770",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Mine the rocks in the mine to find the last page (the rocks in the dungeon connected to the mine do not work).",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Iron ore rock",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 9785,
+                "lng": 3048,
+                "color": "#337770",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9783,
+                "lng": 3049,
+                "color": "#337770",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9782,
+                "lng": 3051,
+                "color": "#337770",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9782,
+                "lng": 3053,
+                "color": "#337770",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9781,
+                "lng": 3048,
+                "color": "#337770",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9779,
+                "lng": 3046,
+                "color": "#337770",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -461,14 +463,14 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "color": "#337770",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Return to Rolad (Chat 1) and read the book.",
@@ -477,10 +479,10 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Rolad",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3452,
+              "lng": 3022
             },
             "wanderRadius": {
               "bottomLeft": {
@@ -494,82 +496,11 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "If you don't have an ammo mould for the next step, it can be bought from Nulodion for 5 Coins.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "If you don't have an ammo mould for the next step, it can be bought from Nulodion for 5 Coins."
       ]
     },
     {
@@ -579,151 +510,63 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Dondakan the Dwarf",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 10168,
+              "lng": 2824
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10166,
+                "lng": 2822
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10170,
+                "lng": 2826
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Head to any furnace with an ammo mould and make a golden cannonball.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Furnace",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 10211,
+                "lng": 2872,
+                "color": "#00FF00",
+                "numberLabel": "Furnace",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10211,
+                "lng": 2872
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10212,
+                "lng": 2873
               }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "There is a furnace in the west Keldagrim consortium.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
             },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
+            "numberLabel": "Furnace",
+            "color": "#00FF00"
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Return to Dondakan and use the golden cannonball on him. (Chat 1•1•2)",
@@ -732,150 +575,39 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Dondakan the Dwarf",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 10168,
+              "lng": 2824
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10166,
+                "lng": 2822
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10170,
+                "lng": 2826
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Read the dwarven lore book to find a piece of base schematics. (Chat 1)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "If you lost the book, you may speak to Rolad.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "If you lost the book, you may speak to Rolad."
       ]
     },
     {
@@ -885,150 +617,104 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Dwarven Engineer",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 10198,
+              "lng": 2871
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10196,
+                "lng": 2869
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10200,
+                "lng": 2873
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Smith a gold helmet on the anvil in the same room which requires three gold bars.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Anvil",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 10202,
+                "lng": 2868,
+                "color": "#00FF00",
+                "numberLabel": "Furnace",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10201,
+                "lng": 2868
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10202,
+                "lng": 2869
               }
-            }
+            },
+            "color": "#00FF00",
+            "numberLabel": "Furnace"
           }
         ]
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "If you are proceeding or completed Legends' Quest. (Chat 2)"
       ]
     },
     {
-      "stepDescription": "Take a mine cart to White Wolf Mountain, or teleport to the Taverley lodestone and run north (by the tree patch).",
-      "itemsNeeded": [],
+      "stepDescription": "Teleport to the Taverley lodestone, run north and enter the cave by the tree patch",
+      "itemsNeeded": [
+        ""
+      ],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Dungeon_entrance_map_icon",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3459,
+                "lng": 2878,
+                "color": "#00FF00",
+                "numberLabel": "Furnace",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3457,
+                "lng": 2877
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3461,
+                "lng": 2878
               }
-            }
+            },
+            "color": "#00FF00",
+            "numberLabel": "Furnace"
           }
         ]
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "If you completed The Giant Dwarf, take a train cart to White Wolf Mountain."
       ]
     },
     {
@@ -1038,252 +724,73 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Khorvak, a dwarven engineer",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 9876,
+              "lng": 2859
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 9875,
+                "lng": 2858
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 9877,
+                "lng": 2860
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Click assemble on any of the pieces.",
+      "stepDescription": "Click assemble on any of the pieces. Move around (and rotate if needed) the pieces, referring to finished schematics at the image at step.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Move around the pieces, referring to finished schematics pictured right.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Prepare to fight a level 50-56 enemy, along with your gold helmet. Be sure to have 6-15 free inventory spaces for collecting gold ore.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Return to Dondakan, equip your gold helmet and ask him to shoot you into the rock. (Chat 1)",
-      "itemsNeeded": [],
+      "itemsNeeded": [
+        "Combat Equipment",
+        "Potions",
+        "Gold Helmet",
+        "6-15 Backpack Spaces"
+      ],
       "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Dondakan the Dwarf",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 10168,
+              "lng": 2824
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10166,
+                "lng": 2822
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10170,
+                "lng": 2826
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "Prepare to fight a level 50-56 enemy, along with your gold helmet. Be sure to have 6-15 free inventory spaces for collecting gold ore."
       ]
     },
     {
@@ -1291,46 +798,8 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
@@ -1338,206 +807,37 @@
       ]
     },
     {
-      "stepDescription": "Once inside the cave, do not remove the gold helmet or you will have to restart.",
+      "stepDescription": "Kill the Arzinian Avatar Refer to Additional Info for key information on making this easier on yourself.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Arzinian avatar.",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 4960,
+              "lng": 2558
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 4955,
+                "lng": 2553
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 4965,
+                "lng": 2563
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Mine at least 6 gold ores, which is required to damage the enemy, and keep them in the backpack. The more ores mined (up to a maximum of 15), the lower its combat level.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Jump-through the outer ring of fire and right-click talk on the middle ring.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Kill the Arzinian Avatar.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
+        "Once inside the cave, do not remove the gold helmet or you will have to restart.",
+        "Mine at least 6 gold ores, which is required to damage the enemy, and keep them in the backpack. ",
+        "he more ores mined (up to a maximum of 15), the lower its combat level.",
+        "Jump-through the first wall of flames and right-click talk on the next ring of fire.",
         ""
       ]
     },
@@ -1548,100 +848,38 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Dondakan the Dwarf",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 10168,
+              "lng": 2824
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10166,
+                "lng": 2822
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10170,
+                "lng": 2826
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Quest complete!",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     }
   ]
 }

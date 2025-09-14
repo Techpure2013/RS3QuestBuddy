@@ -2,18 +2,21 @@
   "questName": "Battle of Forinthry",
   "questSteps": [
     {
-      "stepDescription": "Items needed: Combat weapon, equipment, and supplies, food",
+      "stepDescription": "Talk to the Raptor in Fort Forinthry. (Chat 1•✓•1)  ",
       "itemsNeeded": [
         "Combat weapon",
-        "equipment",
-        "and supplies",
-        "food"
+        "Combat Equipment",
+        "Food",
+        "Potions",
+        ""
       ],
-      "itemsRecommended": [],
+      "itemsRecommended": [
+        "Beast of Burden"
+      ],
       "highlights": {
         "npc": [
           {
-            "npcName": "Raptor",
+            "npcName": "The Raptor",
             "npcLocation": {
               "lat": 3544,
               "lng": 3291
@@ -30,82 +33,11 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to the Raptor in Fort Forinthry. (Chat 1•✓•1)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "Raptor",
-            "npcLocation": {
-              "lat": 3544,
-              "lng": 3291
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 3543,
-                "lng": 3290
-              },
-              "topRight": {
-                "lat": 3545,
-                "lng": 3292
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "Atleast bring 1 Super Anti-Fire or a Anti-Fire Potion."
       ]
     },
     {
@@ -115,23 +47,34 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "The Raptor",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3544,
+              "lng": 3291
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3543,
+                "lng": 3290
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3545,
+                "lng": 3292
               }
             }
           }
         ],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": []
+    },
+    {
+      "stepDescription": "Begin Encounter with Fort Forinthry Gate.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [],
         "object": [
           {
             "name": "Fort Forinthry Gate",
@@ -160,7 +103,7 @@
       ]
     },
     {
-      "stepDescription": "Begin Encounter with Fort Forinthry Gate.",
+      "stepDescription": "Run north to the camp with an undead giant.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
@@ -173,37 +116,17 @@
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 2208,
-                "lng": 1240
+                "lat": 2205,
+                "lng": 1239
               },
               "topRight": {
-                "lat": 2210,
+                "lat": 2209,
                 "lng": 1243
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
@@ -212,58 +135,43 @@
       ]
     },
     {
-      "stepDescription": "The battle is in story mode and a death will result in appearing near the Raptor. This is a safe death.",
+      "stepDescription": "Kill the undead giant. The other enemies are optional. Disrupt the place of power.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Place of power",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 2205,
+                "lng": 1246,
+                "color": "#458646",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 2204,
+                "lng": 1245
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 2206,
+                "lng": 1247
               }
-            }
+            },
+            "color": "#458646",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Run north to the camp with an undead giant.",
+      "stepDescription": "Head west. Kill the undead giant. The other enemies are optional.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
@@ -286,78 +194,7 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        "Disrupt the place of power."
-      ]
-    },
-    {
-      "stepDescription": "Kill the undead giant. The other enemies are optional.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
@@ -366,6 +203,42 @@
     },
     {
       "stepDescription": "Disrupt the place of power.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [],
+        "object": [
+          {
+            "name": "Place of power",
+            "objectLocation": [
+              {
+                "lat": 2200,
+                "lng": 1191,
+                "color": "#458646",
+                "numberLabel": "",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 2199,
+                "lng": 1190
+              },
+              "topRight": {
+                "lat": 2201,
+                "lng": 1192
+              }
+            },
+            "color": "#458646",
+            "numberLabel": ""
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": []
+    },
+    {
+      "stepDescription": "Head south. Kill the undead giant. The other enemies are optional.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
@@ -388,27 +261,7 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
@@ -416,64 +269,49 @@
       ]
     },
     {
-      "stepDescription": "Head west.",
+      "stepDescription": "Disrupt the place of power.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Place of power",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 2150,
+                "lng": 1183,
+                "color": "#458646",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 2149,
+                "lng": 1182
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 2151,
+                "lng": 1184
               }
-            }
+            },
+            "color": "#458646",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Kill the undead giant. The other enemies are optional.",
+      "stepDescription": "Defeat the Zemouregal & Vorkath",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "Zemouregal & Vorkath",
+            "npcName": "Zemouregal",
             "npcLocation": {
               "lat": 2159,
               "lng": 1341
@@ -490,602 +328,28 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Disrupt the place of power.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Head south.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Kill the undead giant. The other enemies are optional.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Disrupt the place of power.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Defeat the Zemouregal & Vorkath encounter.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "Pray Protect from/Deflect Necromancy.",
+        "Drink 1 dose of super antifire.",
+        "First use of extra action Ballista after Vorkath lands.",
+        "Dive, Surge, or Escape during Vorkath's AoE (10x10 area).",
+        "Second use of extra action Ballista when the Raptor mentions \"Ready the Balista\"",
+        "Use Balista as often as possible after this.",
+        "Target Zemouregal only after killing Vorkath."
       ]
     },
     {
       "stepDescription": "Talk to the Raptor, near the Guardhouse.",
       "itemsNeeded": [],
       "itemsRecommended": [],
+      "additionalStepInformation": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to guard captain Sofía or Overseer Siv in the Guardhouse.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Aster or Bill in the Command Centre.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Oak or Zoe east of the Command Centre.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Copperpot, Father Flint or Granny Rowan in the Chapel.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Princess or Rodney in the Kitchen.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to the Raptor, near the Guardhouse.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "Raptor",
+            "npcName": "The Raptor",
             "npcLocation": {
               "lat": 3544,
               "lng": 3291
@@ -1124,24 +388,60 @@
           }
         ]
       },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "floor": 0
     },
     {
-      "stepDescription": "Talk to Bill in the Town Hall.",
+      "stepDescription": "Talk to guard captain Sofía or Overseer Siv in the Guardhouse.",
       "itemsNeeded": [],
       "itemsRecommended": [],
+      "additionalStepInformation": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Guard captain Sofía",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3535,
+              "lng": 3292
             },
             "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3534,
+                "lng": 3292
+              },
+              "topRight": {
+                "lat": 3535,
+                "lng": 3292
+              }
+            }
+          },
+          {
+            "npcName": "Overseer Siv",
+            "npcLocation": {
+              "lat": 3534,
+              "lng": 3293
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3534,
+                "lng": 3293
+              },
+              "topRight": {
+                "lat": 3535,
+                "lng": 3293
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
               "bottomLeft": {
                 "lat": 0,
                 "lng": 0
@@ -1152,7 +452,624 @@
               }
             }
           }
+        ]
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Talk to Aster or Bill in the Command Centre.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Aster",
+            "npcLocation": {
+              "lat": 3537,
+              "lng": 3312
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3536,
+                "lng": 3312
+              },
+              "topRight": {
+                "lat": 3537,
+                "lng": 3312
+              }
+            }
+          },
+          {
+            "npcName": "Bill",
+            "npcLocation": {
+              "lat": 3536,
+              "lng": 3313
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3536,
+                "lng": 3313
+              },
+              "topRight": {
+                "lat": 3537,
+                "lng": 3313
+              }
+            }
+          }
         ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Talk to Oak or Zoe east of the Command Centre.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Zoe",
+            "npcLocation": {
+              "lat": 3541,
+              "lng": 3326
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3540,
+                "lng": 3326
+              },
+              "topRight": {
+                "lat": 3541,
+                "lng": 3326
+              }
+            }
+          },
+          {
+            "npcName": "Oak (Fort Forinthry)",
+            "npcLocation": {
+              "lat": 3540,
+              "lng": 3327
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3540,
+                "lng": 3327
+              },
+              "topRight": {
+                "lat": 3541,
+                "lng": 3327
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Talk to Copperpot, Father Flint or Granny Rowan in the Chapel.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Copperpot",
+            "npcLocation": {
+              "lat": 3562,
+              "lng": 3329
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3562,
+                "lng": 3329
+              },
+              "topRight": {
+                "lat": 3562,
+                "lng": 3330
+              }
+            }
+          },
+          {
+            "npcName": "Father Flint",
+            "npcLocation": {
+              "lat": 3561,
+              "lng": 3330
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3561,
+                "lng": 3329
+              },
+              "topRight": {
+                "lat": 3561,
+                "lng": 3330
+              }
+            }
+          },
+          {
+            "npcName": "Granny Rowan",
+            "npcLocation": {
+              "lat": 3560,
+              "lng": 3329
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3560,
+                "lng": 3329
+              },
+              "topRight": {
+                "lat": 3560,
+                "lng": 3330
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Talk to Princess or Rodney in the Kitchen.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Princess (Fort Forinthry)",
+            "npcLocation": {
+              "lat": 3567,
+              "lng": 3314
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3567,
+                "lng": 3314
+              },
+              "topRight": {
+                "lat": 3568,
+                "lng": 3314
+              }
+            }
+          },
+          {
+            "npcName": "Rodney",
+            "npcLocation": {
+              "lat": 3568,
+              "lng": 3315
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3567,
+                "lng": 3315
+              },
+              "topRight": {
+                "lat": 3568,
+                "lng": 3315
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "Pile of Stone",
+            "objectLocation": [
+              {
+                "lat": 3572,
+                "lng": 3320,
+                "color": "#458646",
+                "numberLabel": "",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 3571,
+                "lng": 3319
+              },
+              "topRight": {
+                "lat": 3573,
+                "lng": 3321
+              }
+            },
+            "color": "#458646",
+            "numberLabel": ""
+          }
+        ]
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Talk to the Raptor, near the Guardhouse.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "The Raptor",
+            "npcLocation": {
+              "lat": 3544,
+              "lng": 3291
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3543,
+                "lng": 3290
+              },
+              "topRight": {
+                "lat": 3545,
+                "lng": 3292
+              }
+            }
+          }
+        ],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": []
+    },
+    {
+      "stepDescription": "Talk to Bill in the Town Hall.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Bill",
+            "npcLocation": {
+              "lat": 3571,
+              "lng": 3300
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3570,
+                "lng": 3299
+              },
+              "topRight": {
+                "lat": 3572,
+                "lng": 3301
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Head east of the Kitchen and collect 4 stone wall segments from the pile of stone. Fully repair the fortifications with the 4 repair hotspots to the west, north of the broken Workshop.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [],
+        "object": [
+          {
+            "name": "Pile of Stone",
+            "objectLocation": [
+              {
+                "lat": 3572,
+                "lng": 3320,
+                "color": "#458646",
+                "numberLabel": "",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 3571,
+                "lng": 3319
+              },
+              "topRight": {
+                "lat": 3573,
+                "lng": 3321
+              }
+            },
+            "color": "#458646",
+            "numberLabel": ""
+          },
+          {
+            "name": "Build Spot",
+            "objectLocation": [
+              {
+                "lat": 3575,
+                "lng": 3282,
+                "color": "#458646",
+                "numberLabel": "",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "color": "#458646",
+            "numberLabel": ""
+          },
+          {
+            "name": "Build Spot",
+            "objectLocation": [
+              {
+                "lat": 3574,
+                "lng": 3280,
+                "color": "#458646",
+                "numberLabel": "",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "color": "#458646",
+            "numberLabel": ""
+          },
+          {
+            "name": "Build Spot",
+            "objectLocation": [
+              {
+                "lat": 3569,
+                "lng": 3275,
+                "color": "#458646",
+                "numberLabel": "",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "color": "#458646",
+            "numberLabel": ""
+          },
+          {
+            "name": "Build Spot",
+            "objectLocation": [
+              {
+                "lat": 3568,
+                "lng": 3274,
+                "color": "#458646",
+                "numberLabel": "",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "color": "#458646",
+            "numberLabel": ""
+          }
+        ]
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Talk to Aster, Overseer Siv, or Rodney in the Town Hall. (Chat 1)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "Aster",
+            "npcLocation": {
+              "lat": 3570,
+              "lng": 3299
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3569,
+                "lng": 3299
+              },
+              "topRight": {
+                "lat": 3570,
+                "lng": 3300
+              }
+            }
+          },
+          {
+            "npcName": "Overseer Siv",
+            "npcLocation": {
+              "lat": 3566,
+              "lng": 3300
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3565,
+                "lng": 3299
+              },
+              "topRight": {
+                "lat": 3566,
+                "lng": 3300
+              }
+            }
+          },
+          {
+            "npcName": "Rodney",
+            "npcLocation": {
+              "lat": 3570,
+              "lng": 3308
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3569,
+                "lng": 3307
+              },
+              "topRight": {
+                "lat": 3570,
+                "lng": 3308
+              }
+            }
+          }
+        ],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Talk to the Raptor, near the Guardhouse.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "The Raptor",
+            "npcLocation": {
+              "lat": 3544,
+              "lng": 3291
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 3543,
+                "lng": 3290
+              },
+              "topRight": {
+                "lat": 3545,
+                "lng": 3292
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [
+              {
+                "lat": 0,
+                "lng": 0
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Talk to Bill in the Town Hall.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [],
         "object": [
           {
             "name": "Floor Hatch East of Command Centre",
@@ -1181,157 +1098,44 @@
       ]
     },
     {
-      "stepDescription": "Head east of the Kitchen and collect 4 stone wall segments from the pile of stone.",
+      "stepDescription": "Talk to Zemouregal in his prison cell. (Chat ~)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Zemouregal",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 1707,
+              "lng": 1948
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 1706,
+                "lng": 1947
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 1708,
+                "lng": 1949
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Fully repair the fortifications with the 4 repair hotspots to the west near the broken Workshop.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Aster, Overseer Siv, or Rodney in the Town Hall. (Chat 1)",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to the Raptor, near the Guardhouse.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Enter the floor hatch to the east of the Command Centre.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Zemouregal in his prison cell. (Chat ~)",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Quest Complete!",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [],
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     }
   ]
 }

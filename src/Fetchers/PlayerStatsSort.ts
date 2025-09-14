@@ -1,6 +1,3 @@
-// PlayerStatsSort.ts
-
-// The Skills type definition remains the same
 export type Skills = {
 	rank: number;
 	totalLevel: number;
@@ -35,30 +32,21 @@ export type Skills = {
 	necromancy: number;
 };
 
-// It takes the raw string from the API and returns a structured Skills object.
 export const parsePlayerStats = (rawData: string): Skills | null => {
 	if (!rawData) {
 		return null;
 	}
 
-	// The hiscores API separates skills with newlines, and values with commas.
 	const statsArray = rawData.split(/\s+/).map((line) => line.split(","));
-	// statsArray is now [['rank', 'level', 'xp'], ['rank', 'level', 'xp'], ...]
-
-	// We only care about the level for each skill
 	const levels = statsArray.map((skillData) => parseInt(skillData[1], 10));
 
-	// The first line is Overall: rank, totalLevel, totalXp
 	const overallRank = parseInt(statsArray[0][0], 10);
 	const totalLevel = parseInt(statsArray[0][1], 10);
 
-	// Check if parsing was successful. If not, the data is invalid.
 	if (isNaN(totalLevel) || levels.length < 30) {
 		console.error("Failed to parse player stats. Data was invalid.");
 		return null;
 	}
-
-	// Create and return the structured object.
 	const skills: Skills = {
 		rank: overallRank,
 		totalLevel: totalLevel,
