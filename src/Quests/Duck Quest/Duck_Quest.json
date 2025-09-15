@@ -1,0 +1,274 @@
+{
+  "questName": "Duck Quest",
+  "questSteps": [
+    {
+      "stepDescription": "Head south of the bank in Draynor Village and fish the fishing spot?. (Chat ✓•~)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [
+          {
+            "npcName": "",
+            "npcLocation": {
+              "lat": 0,
+              "lng": 0
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ],
+        "object": [
+          {
+            "name": "",
+            "objectLocation": [],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          }
+        ]
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Pick up the nest debris just north of the bridge leading to the Wizards' Tower.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Continue picking it up Refer to Additional Info if you get lost.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [
+        "South east along the coast. ",
+        "east into the swamp.",
+        "North past the Lumbridge castle towards Fred the Farmer's house (through Lumbridge market)",
+        "North over the bridge, then just west near the Waddle Willow tree."
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Talk to Breadstix. (Chat 2•2)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Use duck food on a vial of water to make a duckspeak potion.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Talk to Breadstix again.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Drink the potion. (Chat 1)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Talk to Jemima. (Chat 3)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Talk to Invigilatoad. (Chat 1)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Eat each of the six peas. They are indicated as red dots on the minimap.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Talk to Invigilatoad again. (Chat 1)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Sit down at the relaxing spot at the end of the path to the west.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Talk to Paddlington Badger on the west edge of the sanctuary.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Interact with the floor button on the east side of the sanctuary.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Press the floor button south from Paddlington badger. (Chat 4)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Press the floor button on the east side of the sanctuary.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Interact with the tree bud directly north of the east button.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Interact with the toad statue twice.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Talk to duckling's dad or mum.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Quest complete!",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "New step description...",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    }
+  ]
+}

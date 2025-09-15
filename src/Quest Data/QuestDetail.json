@@ -2052,6 +2052,16 @@
 		"EnemiesToDefeat": ["None"]
 	},
 	{
+		"Quest": "Duck Quest",
+		"StartPoint": "Investigate a strange fishing spot on the riverbank south of Draynor Village.",
+		"MemberRequirement": "Free to play",
+		"OfficialLength": "Short",
+		"Requirements": [],
+		"ItemsRequired": ["1 Duck Food", "1 Vial of Water"],
+		"Recommended": ["Activated Draynor Lodestone", "Activated Varrock Lodestone"],
+		"EnemiesToDefeat": ["None"]
+	},
+	{
 		"Quest": "Eadgar's Ruse",
 		"StartPoint": "Talk to Sanfew in Taverley.",
 		"MemberRequirement": "Members only",
