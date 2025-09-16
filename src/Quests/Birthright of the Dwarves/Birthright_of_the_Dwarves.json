@@ -2,163 +2,76 @@
   "questName": "Birthright of the Dwarves",
   "questSteps": [
     {
-      "stepDescription": "**Items needed: 1 inventory space** \nIf you have just finished King of the Dwarves, you must leave Keldagrim and come back or re-log to make Veldaban appear.",
-      "itemsNeeded": [
-        "1 inventory space** \nIf you have just finished King of the Dwarves",
-        "you must leave Keldagrim and come back or re-log to make Veldaban appear."
-      ],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
       "stepDescription": "Talk to King Veldaban on the top floor of Keldagrim Palace. (Chat 1•1•3•✓•2)",
       "itemsNeeded": [
-        "2 inventory spaces",
-        "Royal dwarven seal** \nEnter the records chamber cave to the west of the bank (along the west wall)."
+        "1 inventory space"
       ],
       "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "King Veldaban",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 10194,
+              "lng": 2877
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10193,
+                "lng": 2876
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10195,
+                "lng": 2878
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
-      "floor": 0,
+      "floor": 2,
       "additionalStepInformation": [
-        ""
+        "If you have just finished King of the Dwarves, you must leave Keldagrim and come back or re-log to make Veldaban appear."
       ]
     },
     {
-      "stepDescription": "**Items needed: 2 inventory spaces, Royal dwarven seal** \nEnter the records chamber cave to the west of the bank (along the west wall).",
-      "itemsNeeded": [],
+      "stepDescription": "Enter the records chamber cave to the west of the bank (along the west wall).",
+      "itemsNeeded": [
+        "2 inventory spaces",
+        "Royal dwarven seal"
+      ],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "New Object",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 10212,
+                "lng": 2818,
+                "color": "#378281",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10211,
+                "lng": 2817
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10213,
+                "lng": 2818
               }
-            }
+            },
+            "color": "#378281",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Lieutenant Brae. (Chat 1•3)",
@@ -167,49 +80,27 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Lieutenant Brae",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5844,
+              "lng": 1954
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5843,
+                "lng": 1953
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5845,
+                "lng": 1955
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Vigr.",
@@ -218,49 +109,27 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Vigr",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5846,
+              "lng": 1948
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5845,
+                "lng": 1947
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5847,
+                "lng": 1949
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Brendt. (Chat 2•2)",
@@ -269,49 +138,27 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Brendt",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5837,
+              "lng": 1948
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5836,
+                "lng": 1947
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5838,
+                "lng": 1949
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Grundt. (Chat 3)",
@@ -320,10 +167,10 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Grundt",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5851,
+              "lng": 1948
             },
             "wanderRadius": {
               "bottomLeft": {
@@ -337,32 +184,10 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Brendt. (Chat 3•~•~)",
@@ -371,49 +196,27 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Brendt",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5837,
+              "lng": 1948
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5836,
+                "lng": 1947
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5838,
+                "lng": 1949
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Klaas. (Chat 1•1•2•3)",
@@ -422,151 +225,63 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Klaas",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5846,
+              "lng": 1948
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5845,
+                "lng": 1947
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5847,
+                "lng": 1949
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Go to the western 1st floor[US] of the Consortium and search the furnace in the north-eastern room.",
+      "stepDescription": "Go to the western 1st floor[US] of the Consortium and search the furnace in the north-eastern room. Read the bundle of letters.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Furnace",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 10211,
+                "lng": 2872,
+                "color": "#378281",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10211,
+                "lng": 2872
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10212,
+                "lng": 2873
               }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Read the bundle of letters.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
             },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
+            "color": "#378281",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Go to the King's Axe Inn, south of the bank, and talk to Meike. (Chat 1•1•1•2)",
@@ -575,254 +290,86 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Meike",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 10196,
+              "lng": 2837
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10195,
+                "lng": 2836
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10197,
+                "lng": 2838
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Return to the cave the suspects are in.",
+      "stepDescription": "Return to the cave the suspects are in and talk to Vigr. (Chat 1•~)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Vigr",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5846,
+              "lng": 1948
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5845,
+                "lng": 1947
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5847,
+                "lng": 1949
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Talk to Vigr. (Chat 1•~)",
+      "stepDescription": "Talk to Klaas. (Chat 1•~) read Additional Info before moving on.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Klaas",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5846,
+              "lng": 1948
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5846,
+                "lng": 1948
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5847,
+                "lng": 1949
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Klaas. (Chat 1•~)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Don't forget to judge all the dwarfs and make sure they are gone. Otherwise you won't find Veldaban in the cave later on.",
-      "itemsNeeded": [],
-      "itemsRecommended": [
-        "Combat equipment** \nGo to the Taverley Dungeon and kill chaos dwarves (south of the Lesser Demons) until Ikadia the Exile appears."
-      ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "Don't forget to judge all the dwarfs and make sure they are gone. Otherwise you won't find Veldaban in the cave later on."
       ]
     },
     {
@@ -832,104 +379,86 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "King Veldaban",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 10194,
+              "lng": 2877
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10193,
+                "lng": 2876
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10195,
+                "lng": 2878
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "floor": 2,
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "**Items recommended: Combat equipment** \nGo to the Taverley Dungeon and kill chaos dwarves (south of the Lesser Demons) until Ikadia the Exile appears.",
+      "stepDescription": "Go to the Taverley Dungeon and kill chaos dwarves south of the Lesser Demons until Ikadia the Exile appears.",
       "itemsNeeded": [
-        "No follower",
-        "5 free inventory spaces** \nWatchtower teleport or Lodestone teleport to Yanille and use the northern Shortcuts to go under the north wall (Requires 16 Agility) then west outside the northern wall \nIf you do not have the Watchtower quest completed",
-        "Climb-up the Trellis on the northern side of the Watchtower."
+        "Combat equipment"
       ],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Chaos Dwarves Area",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 9766,
+                "lng": 2923,
+                "color": "#378281",
+                "numberLabel": "Chaos Dwarves",
+                "isSearched": false
+              },
+              {
+                "lat": 9765,
+                "lng": 2923,
+                "color": "#378281",
+                "numberLabel": "Chaos Dwarves",
+                "isSearched": false
+              },
+              {
+                "lat": 9765,
+                "lng": 2924,
+                "color": "#378281",
+                "numberLabel": "Chaos Dwarves",
+                "isSearched": false
+              },
+              {
+                "lat": 9766,
+                "lng": 2924,
+                "color": "#378281",
+                "numberLabel": "Chaos Dwarves",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 9756,
+                "lng": 2911
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 9780,
+                "lng": 2930
               }
-            }
+            },
+            "numberLabel": "Chaos Dwarves",
+            "color": "#378281"
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "After she talks to you and teleports away, go to the chaos druid circle in the north-eastern corner of the dungeon and talk to her. (Chat 2)",
@@ -938,49 +467,27 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Ikadia the Exile",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 9852,
+              "lng": 2930
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 9850,
+                "lng": 2928
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 9854,
+                "lng": 2932
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Defeat her and talk to her again. (Chat ~•~)",
@@ -989,132 +496,75 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Ikadia the Exile",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 9849,
+              "lng": 2933
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 9848,
+                "lng": 2932
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 9850,
+                "lng": 2934
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "**Items needed: No follower, 5 free inventory spaces** \nWatchtower teleport or Lodestone teleport to Yanille and use the northern Shortcuts to go under the north wall (Requires 16 Agility) then west outside the northern wall \nIf you do not have the Watchtower quest completed, Climb-up the Trellis on the northern side of the Watchtower.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Go to the Yanille's Watchtower",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
+      "itemsNeeded": [
+        "No follower",
+        "5 free inventory space"
+      ],
+      "itemsRecommended": [
+        "Watchtower teleport",
+        "Lodestone teleport",
+        "16 Agility"
+      ],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Yanille Watchtower",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3113,
+                "lng": 2545,
+                "color": "#5facae",
+                "numberLabel": "",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 3111,
+                "lng": 2542
+              },
+              "topRight": {
+                "lat": 3118,
+                "lng": 2549
+              }
+            },
+            "color": "#5facae",
+            "numberLabel": ""
+          },
+          {
+            "name": "trellis",
+            "objectLocation": [
+              {
+                "lat": 3119,
+                "lng": 2544,
+                "color": "#9a60af",
+                "numberLabel": "Trellis",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -1126,13 +576,15 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "color": "#9a60af",
+            "numberLabel": "Trellis"
           }
         ]
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "If you do not have the Watchtower quest completed, Climb-up the Trellis on the northern side of the Watchtower."
       ]
     },
     {
@@ -1142,137 +594,65 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Watchtower Wizard",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3116,
+              "lng": 2544
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3115,
+                "lng": 2543
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3117,
+                "lng": 2545
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "floor": 2,
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "You'll be given a memory wand. Keep the wand for the rest of the quest, do not destroy it.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Use the wand on the 4 floating objects.",
+      "stepDescription": "Use the wand on the 4 floating objects then catch all 16 loose memory fragments.",
       "itemsNeeded": [],
       "itemsRecommended": [
-        "Food",
-        "sign of life",
-        "run enhancing items** \nEnter the Barendir caves southeast of west Keldagrim. The caves can be accessed by selecting \"Travel\" on the Dwarven Boatman on the eastern side of Keldagrim near the northern bridge",
-        "or selecting \"Cross-river\" on the Dwarven Ferryman to the south of western Keldagrim."
+        "",
+        ""
       ],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Floating Object 1 ( Birthright of the Dwarves )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 4949,
+                "lng": 1875,
+                "color": "#9a60af",
+                "numberLabel": "Floating Object 1",
+                "isSearched": false
+              },
+              {
+                "lat": 4949,
+                "lng": 1876,
+                "color": "#9a60af",
+                "numberLabel": "Floating Object 1",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -1284,46 +664,26 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Catch all the loose memory fragments.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
             },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
+            "numberLabel": "Floating Object 1",
+            "color": "#9a60af"
+          },
           {
-            "name": "",
+            "name": "Floating Object 2 ( Birthright of the Dwarves )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 4949,
+                "lng": 1888,
+                "color": "#9a60af",
+                "numberLabel": "Floating Object 2",
+                "isSearched": false
+              },
+              {
+                "lat": 4949,
+                "lng": 1889,
+                "color": "#9a60af",
+                "numberLabel": "Floating Object 2",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -1335,46 +695,26 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Investigate each memory void. Based on the text that appears, use the corresponding memory fragment on the memory void following the table provided",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
             },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
+            "numberLabel": "Floating Object 2",
+            "color": "#9a60af"
+          },
           {
-            "name": "",
+            "name": "Floating Object 3 ( Birthright of the Dwarves )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 4947,
+                "lng": 1875,
+                "color": "#9a60af",
+                "numberLabel": "Floating Object 3",
+                "isSearched": false
+              },
+              {
+                "lat": 4947,
+                "lng": 1876,
+                "color": "#9a60af",
+                "numberLabel": "Floating Object 3",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -1386,13 +726,46 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "numberLabel": "Floating Object 3",
+            "color": "#9a60af"
+          },
+          {
+            "name": "Floating Object 4 ( Birthright of the Dwarves )",
+            "objectLocation": [
+              {
+                "lat": 4950,
+                "lng": 1870,
+                "color": "#9a60af",
+                "numberLabel": "Floating Object 4",
+                "isSearched": false
+              },
+              {
+                "lat": 4950,
+                "lng": 1871,
+                "color": "#9a60af",
+                "numberLabel": "Floating Object 4",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "numberLabel": "Floating Object 4",
+            "color": "#9a60af"
           }
         ]
       },
-      "floor": 0,
+      "floor": 2,
       "additionalStepInformation": [
-        ""
+        "Investigate each memory void. Based on the text that appears, use the corresponding memory fragment on the memory void following the table provided with the Image at step."
       ]
     },
     {
@@ -1402,99 +775,74 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "King Veldaban",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 10194,
+              "lng": 2876
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10193,
+                "lng": 2875
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10195,
+                "lng": 2877
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
-      "floor": 0,
+      "floor": 2,
       "additionalStepInformation": [
-        ""
+        "After this step you go to the caves but before that make sure you have talked to suspects in the record chamber and talk to Veldaban in his palace then in the caves."
       ]
     },
     {
-      "stepDescription": "**Items recommended: Food, sign of life, run enhancing items** \nEnter the Barendir caves southeast of west Keldagrim. The caves can be accessed by selecting \"Travel\" on the Dwarven Boatman on the eastern side of Keldagrim near the northern bridge, or selecting \"Cross-river\" on the Dwarven Ferryman to the south of western Keldagrim.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
+      "stepDescription": "Enter the Barendir caves southeast of west Keldagrim.",
+      "itemsNeeded": [
+        "Combat Equipment",
+        "Potions"
+      ],
+      "itemsRecommended": [
+        "Food",
+        "Sign of Life",
+        "Run Enhancing Items"
+      ],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Barendir Cave Entrance",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 10119,
+                "lng": 2876,
+                "color": "#3e8c88",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10118,
+                "lng": 2876
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 10120,
+                "lng": 2877
               }
-            }
+            },
+            "color": "#3e8c88",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "The caves can be accessed by selecting \"Travel\" on the Dwarven Boatman on the eastern side of Keldagrim near the northern bridge.",
+        "By choosing \"Cross-river\" on the Dwarven Ferryman to the south of western Keldagrim can also take you to the caves."
       ]
     },
     {
@@ -1502,105 +850,68 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "North End of Barendir Tunnels",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 5884,
+                "lng": 1714,
+                "color": "#3e8c88",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5884,
+                "lng": 1713
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5885,
+                "lng": 1715
               }
-            }
+            },
+            "color": "#3e8c88",
+            "numberLabel": ""
           }
         ]
       },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "floor": 1,
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Talk to Veldaban. If Veldaban isn't there make sure the cave with suspects is empty. If not talk to suspects and talk to Veldaban in his palace then in the caves.",
+      "stepDescription": "Talk to Veldaban. If Veldaban isn't there make sure the cave with suspects is empty.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "King Veldaban",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 6258,
+              "lng": 1894
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6257,
+                "lng": 1893
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6259,
+                "lng": 1895
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Talk to Nulodion. He'll give you Explosive gears.",
+      "stepDescription": "Talk to Nulodion. He'll give you Explosive gears. Fire the cannon. Important information in Additional Info.",
       "itemsNeeded": [
         "3 free inventory spaces",
         "memory wand** \nEnter the cave."
@@ -1609,10 +920,10 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Nulodion",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 6255,
+              "lng": 1892
             },
             "wanderRadius": {
               "bottomLeft": {
@@ -1628,11 +939,35 @@
         ],
         "object": [
           {
-            "name": "",
+            "name": "Cannon ( Birtthright of the Dwarves )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 6253,
+                "lng": 1892,
+                "color": "#3e8c88",
+                "numberLabel": "Cannon",
+                "isSearched": false
+              },
+              {
+                "lat": 6253,
+                "lng": 1891,
+                "color": "#3e8c88",
+                "numberLabel": "Cannon",
+                "isSearched": false
+              },
+              {
+                "lat": 6252,
+                "lng": 1891,
+                "color": "#3e8c88",
+                "numberLabel": "Cannon",
+                "isSearched": false
+              },
+              {
+                "lat": 6252,
+                "lng": 1892,
+                "color": "#3e8c88",
+                "numberLabel": "Cannon",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -1644,46 +979,40 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "color": "#3e8c88",
+            "numberLabel": "Cannon"
           }
         ]
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "This next part is not a safe death. Should you die, your gravestone will be a short walk inside the Barendir caves."
       ]
     },
     {
-      "stepDescription": "Fire the cannon. This part is not a safe death. Should you die, your gravestone will be a short walk inside the Barendir caves.",
+      "stepDescription": "Praying against range is strongly recommended. Stand behind the pillars to get the cannons to shoot them down to cross them, and sabotage each cannon as you progress.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Stand Here ( Birthright of the Dwarves",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 6156,
+                "lng": 1866,
+                "color": "#3e8c88",
+                "numberLabel": "Stand Here",
+                "isSearched": false
+              },
+              {
+                "lat": 6169,
+                "lng": 1907,
+                "color": "#3e8c88",
+                "numberLabel": "Stand Here",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -1695,46 +1024,47 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "After the cutscene, stand behind the pillars to get the cannons to shoot them down, and sabotage the cannons as you progress. The first one is to the west. Do not stand near a cannon if it is about to explode, as it will hit for 5,000+ damage. Praying against range is strongly recommended.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
             },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
+            "numberLabel": "Stand Here",
+            "color": "#3e8c88"
+          },
           {
-            "name": "",
+            "name": "Sabatoge Cannons",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 6166,
+                "lng": 1875,
+                "color": "#3e8c88",
+                "numberLabel": "Sabatoge",
+                "isSearched": false
+              },
+              {
+                "lat": 6166,
+                "lng": 1898,
+                "color": "#3e8c88",
+                "numberLabel": "Sabatoge",
+                "isSearched": false
+              },
+              {
+                "lat": 6179,
+                "lng": 1902,
+                "color": "#3e8c88",
+                "numberLabel": "Sabatoge",
+                "isSearched": false
+              },
+              {
+                "lat": 6187,
+                "lng": 1891,
+                "color": "#3e8c88",
+                "numberLabel": "Sabatoge",
+                "isSearched": false
+              },
+              {
+                "lat": 6187,
+                "lng": 1882,
+                "color": "#3e8c88",
+                "numberLabel": "Sabatoge",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -1746,12 +1076,16 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "numberLabel": "Sabatoge",
+            "color": "#3e8c88"
           }
         ]
       },
       "floor": 0,
       "additionalStepInformation": [
+        "The first one is to the west. ",
+        "Do not stand near a cannon if it is about to explode, as it will hit for 5,000+ damage.",
         ""
       ]
     },
@@ -1762,305 +1096,158 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Colonel Grimsson",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 6179,
+              "lng": 1870
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6179,
+                "lng": 1869
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6180,
+                "lng": 1871
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Pull the lever and get in the mine cart.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Minecart Lever",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 6179,
+                "lng": 1870,
+                "color": "#3e8c88",
+                "numberLabel": "Minecart Lever",
+                "isSearched": false
+              },
+              {
+                "lat": 6154,
+                "lng": 1733,
+                "color": "#00FF00",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6179,
+                "lng": 1869
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6180,
+                "lng": 1871
               }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "**Items needed: 3 free inventory spaces, memory wand** \nEnter the cave.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
             },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
+            "color": "#00FF00",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "After the cutscene, use the wand on the royal Red Axe standard (flag, west of Veldaban), the Zamorakian Chaplain, and the chaos dwarf standing next to him.",
-      "itemsNeeded": [],
-      "itemsRecommended": [
-        "Combat equipment** \nKill Grunsh or let him go."
+      "stepDescription": "Enter the cave ten after the cutscene, use the wand on the royal Red Axe standard (flag, west of Veldaban), the Zamorakian Chaplain, and the chaos dwarf standing next to him then collect all fragments",
+      "itemsNeeded": [
+        "3 free inventory spaces",
+        "memory wand"
       ],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Catch all the loose memory fragments.",
-      "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Royal Red Axe Standard",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 5834,
+                "lng": 1673,
+                "color": "#91281d",
+                "numberLabel": "Red Axe Standard",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5834,
+                "lng": 1672
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5835,
+                "lng": 1674
               }
-            }
+            },
+            "color": "#91281d",
+            "numberLabel": "Red Axe Standard"
+          },
+          {
+            "name": "Zamorakian Chaplain",
+            "objectLocation": [
+              {
+                "lat": 5833,
+                "lng": 1672,
+                "color": "#3ac913",
+                "numberLabel": "Zamorakian Chaplain",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 5833,
+                "lng": 1671
+              },
+              "topRight": {
+                "lat": 5833,
+                "lng": 1673
+              }
+            },
+            "numberLabel": "Zamorakian Chaplain",
+            "color": "#a0320e"
+          },
+          {
+            "name": "Chaos Dwarf",
+            "objectLocation": [
+              {
+                "lat": 5832,
+                "lng": 1672,
+                "color": "#8f3c32",
+                "numberLabel": "Chaos Dwarf",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 5831,
+                "lng": 1671
+              },
+              "topRight": {
+                "lat": 5832,
+                "lng": 1673
+              }
+            },
+            "color": "#8f3c32",
+            "numberLabel": "Chaos Dwarf"
           }
         ]
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Investigate each memory void. Based on the text that appears, use the corresponding memory fragment on the memory void following the table provided",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "Investigate each memory void. Based on the text that appears, use the corresponding memory fragment on the memory void following the table provided"
       ]
     },
     {
@@ -2070,49 +1257,27 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "King Veldaban",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5834,
+              "lng": 1676
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5833,
+                "lng": 1675
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5835,
+                "lng": 1677
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "In the next memory, use the wand on the two trolls directly next to Grimsson and repeat the memory fragment process following the table provided",
@@ -2121,49 +1286,73 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Small Troll ( Birthright of the Dwarves )",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5853,
+              "lng": 1690
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5852,
+                "lng": 1689
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5853,
+                "lng": 1690
+              }
+            }
+          },
+          {
+            "npcName": "Dwarf Bone ( Birthright of the Dwarves )",
+            "npcLocation": {
+              "lat": 5854,
+              "lng": 1692
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 5853,
+                "lng": 1692
+              },
+              "topRight": {
+                "lat": 5854,
+                "lng": 1693
               }
             }
           }
         ],
-        "object": [
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": []
+    },
+    {
+      "stepDescription": "Talk to Grimsson (his dialogue won't appear while he's busy fending the trolls).",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [
           {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
+            "npcName": "Colonel Grimsson",
+            "npcLocation": {
+              "lat": 5854,
+              "lng": 1691
+            },
+            "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5853,
+                "lng": 1690
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5855,
+                "lng": 1692
               }
             }
           }
-        ]
+        ],
+        "object": []
       },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "floor": 0
     },
     {
       "stepDescription": "In the next memory, use the wand on Zamorak and repeat the memory fragment process.",
@@ -2172,44 +1361,24 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Zamorak",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 6258,
+              "lng": 1686
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6257,
+                "lng": 1685
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6258,
+                "lng": 1687
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
@@ -2219,210 +1388,170 @@
     {
       "stepDescription": "In the next memory, use the wand on the 3 dwarves, catch the memory fragments only when they're not labelled \"dangerous\", and repeat the process following the table provided",
       "itemsNeeded": [
-        "No follower** \n**"
+        ""
       ],
       "itemsRecommended": [
-        "Magic combat equipment and food**"
+        ""
       ],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Chaos Dwarf ( Birthright of the Dwarves )",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 6171,
+              "lng": 1753
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6170,
+                "lng": 1752
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6171,
+                "lng": 1754
+              }
+            }
+          },
+          {
+            "npcName": "Grumpy Dwarf ( Birthright of the Dwarves )",
+            "npcLocation": {
+              "lat": 6173,
+              "lng": 1753
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 6172,
+                "lng": 1752
+              },
+              "topRight": {
+                "lat": 6173,
+                "lng": 1754
+              }
+            }
+          },
+          {
+            "npcName": "Beardless Dwarf ( Birthright of the Dwarves )",
+            "npcLocation": {
+              "lat": 6175,
+              "lng": 1753
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 6174,
+                "lng": 1752
+              },
+              "topRight": {
+                "lat": 6175,
+                "lng": 1754
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "**Items recommended: Combat equipment** \nKill Grunsh or let him go.",
+      "stepDescription": "Kill Grunsh or let him go.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Grunsh",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 6174,
+              "lng": 1759
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6173,
+                "lng": 1758
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6175,
+                "lng": 1760
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Enter the eastern doorway and go up to the 2nd floor[US].",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Red Axe Base East Door",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 4502,
+                "lng": 1509,
+                "color": "#347f78",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 4501,
+                "lng": 1509
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 4502,
+                "lng": 1510
               }
-            }
+            },
+            "color": "#347f78",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Try to open the door with the chaos dwarf behind it.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "door",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 6250,
+                "lng": 1828,
+                "color": "#4a4f4a",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6249,
+                "lng": 1828
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6251,
+                "lng": 1829
               }
-            }
+            },
+            "color": "#4a4f4a",
+            "numberLabel": ""
           }
         ]
       },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "floor": 1,
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to one of the directors. (Chat 4)",
@@ -2431,49 +1560,27 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Red Axe Director",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 6243,
+              "lng": 1832
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6242,
+                "lng": 1831
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6244,
+                "lng": 1833
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "floor": 1,
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Kill 7 of the 8 directors.",
@@ -2482,49 +1589,129 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Red Axe Director",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 6257,
+              "lng": 1810
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6257,
+                "lng": 1809
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6258,
+                "lng": 1811
+              }
+            }
+          },
+          {
+            "npcName": "Red Axe Director",
+            "npcLocation": {
+              "lat": 6256,
+              "lng": 1811
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 6255,
+                "lng": 1810
+              },
+              "topRight": {
+                "lat": 6256,
+                "lng": 1812
+              }
+            }
+          },
+          {
+            "npcName": "Red Axe Director",
+            "npcLocation": {
+              "lat": 6246,
+              "lng": 1810
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 6245,
+                "lng": 1810
+              },
+              "topRight": {
+                "lat": 6247,
+                "lng": 1811
+              }
+            }
+          },
+          {
+            "npcName": "Red Axe Director",
+            "npcLocation": {
+              "lat": 6240,
+              "lng": 1810
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 6239,
+                "lng": 1810
+              },
+              "topRight": {
+                "lat": 6241,
+                "lng": 1811
+              }
+            }
+          },
+          {
+            "npcName": "Red Axe Director",
+            "npcLocation": {
+              "lat": 6243,
+              "lng": 1832
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 6242,
+                "lng": 1831
+              },
+              "topRight": {
+                "lat": 6243,
+                "lng": 1833
+              }
+            }
+          },
+          {
+            "npcName": "Red Axe Director",
+            "npcLocation": {
+              "lat": 6238,
+              "lng": 1831
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 6238,
+                "lng": 1830
+              },
+              "topRight": {
+                "lat": 6239,
+                "lng": 1832
+              }
+            }
+          },
+          {
+            "npcName": "Red Axe Director",
+            "npcLocation": {
+              "lat": 6247,
+              "lng": 1833
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 6246,
+                "lng": 1832
+              },
+              "topRight": {
+                "lat": 6247,
+                "lng": 1834
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "floor": 1,
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to the remaining director.",
@@ -2533,253 +1720,226 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "New NPC",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 6258,
+              "lng": 1832
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6257,
+                "lng": 1831
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6258,
+                "lng": 1833
               }
             }
           }
         ],
+        "object": []
+      },
+      "floor": 1,
+      "additionalStepInformation": []
+    },
+    {
+      "stepDescription": "Prepare for battle. Go upstairs to the top floor of the palace.",
+      "itemsNeeded": [
+        "No follower",
+        "Magic Combat Equipment",
+        "Food"
+      ],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Fight Area",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 6244,
+                "lng": 1823,
+                "color": "#347f78",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6239,
+                "lng": 1815
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6261,
+                "lng": 1828
               }
-            }
+            },
+            "color": "#347f78",
+            "numberLabel": ""
           }
         ]
       },
-      "floor": 0,
+      "floor": 2,
       "additionalStepInformation": [
-        ""
+        "You can teleport out at any time. When you return, the fight will resume from after the last person you killed.",
+        "If you place a dominion marker during the first phase of the fight, you will lose it. To retrigger the fight, enter the north cave in the Barendir tunnels."
       ]
     },
     {
-      "stepDescription": "Go upstairs to the top floor of the palace.",
+      "stepDescription": "Talk to Grimsson and begin the fight. (Chat 3)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Chaos Grimisson",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 6244,
+              "lng": 1822
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6243,
+                "lng": 1821
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6245,
+                "lng": 1823
               }
             }
           }
         ],
+        "object": []
+      },
+      "floor": 2,
+      "additionalStepInformation": [
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Kill Chaos Grimsson.  ",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Fight Area  Chaos Grimsson ( Birthright of the Dwarves )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 6245,
+                "lng": 1823,
+                "color": "#505555",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6239,
+                "lng": 1815
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6261,
+                "lng": 1828
               }
-            }
+            },
+            "color": "#505555",
+            "numberLabel": ""
           }
         ]
       },
-      "floor": 0,
+      "floor": 2,
       "additionalStepInformation": [
-        ""
+        "Use the Provoke defensive ability when he is attacking Veldaban to make him attack you instead.",
+        "If Veldaban dies, you will respawn outside the cave and need to re-enter and try again from the start."
       ]
     },
     {
-      "stepDescription": "**Items needed: No follower** \n**Items recommended: Magic combat equipment and food**",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "stepDescription": "Kill Chaos Hreidmar. Then choose to Kill or Save Veldaban. ( Chat ~ )",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [],
-        "object": []
+        "object": [
+          {
+            "name": "Fight Area Chaos Hreidmar ( Birthright of the Dwarves )",
+            "objectLocation": [
+              {
+                "lat": 6245,
+                "lng": 1823,
+                "color": "#505555",
+                "numberLabel": "",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 6239,
+                "lng": 1815
+              },
+              "topRight": {
+                "lat": 6261,
+                "lng": 1828
+              }
+            },
+            "color": "#505555",
+            "numberLabel": ""
+          }
+        ]
       },
-      "floor": 0,
+      "floor": 2,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "You can teleport out at any time. When you return, the fight will resume from after the last person you killed (Grimsson, Chaos Grimsson, or Chaos Hreidmar). If you place a dominion marker during the first phase of the fight, you will lose it. To retrigger the fight, enter the north cave in the Barendir tunnels.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Grimsson and begin the fight. (Chat 3)",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Kill Grimsson. Use the Provoke ability when he is attacking Veldaban to make him attack you instead. If Veldaban dies, you will respawn outside the cave and need to re-enter and try again from the start.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Kill Chaos Grimsson. Try to lure and isolate him on the side with the stairs, just outside the main room. When his adrenaline bar fills up and he's about to charge you, go down the stairs and wait for 10 seconds before coming back up.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Kill Chaos Hreidmar.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Either kill or save Veldaban. (Chat ~)",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "Try to lure and isolate him on the side with the stairs, just outside the main room.",
+        "When his adrenaline bar fills up and he's about to charge you, go down the stairs and wait for 10 seconds before coming back up."
       ]
     },
     {
       "stepDescription": "Speak with any director.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [],
-        "object": []
+        "object": [
+          {
+            "name": "Table of Directors ( Birthright of the Dwarves )",
+            "objectLocation": [
+              {
+                "lat": 10199,
+                "lng": 2878,
+                "color": "#3a8781",
+                "numberLabel": "",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 10197,
+                "lng": 2877
+              },
+              "topRight": {
+                "lat": 10200,
+                "lng": 2880
+              }
+            },
+            "color": "#3a8781",
+            "numberLabel": ""
+          }
+        ]
       },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "floor": 2,
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Quest complete!",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [],
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     }
   ]
 }

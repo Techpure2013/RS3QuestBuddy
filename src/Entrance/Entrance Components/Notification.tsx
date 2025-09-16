@@ -4,10 +4,7 @@ import { IconRefresh } from "@tabler/icons-react";
 
 export const UpdateNotification = () => {
 	const handleReload = () => {
-		const { origin, pathname } = window.location;
-		const baseUrl = `${origin}${pathname}`;
-		const newUrl = `${baseUrl}?reload=${Date.now()}`;
-		window.location.href = newUrl;
+		window.location.reload();
 	};
 
 	return (
@@ -24,7 +21,7 @@ export const UpdateNotification = () => {
 			}}
 		>
 			A new version of Quest Buddy is ready. Please reload to get the latest
-			features.
+			version.
 			<Button
 				variant="light"
 				color="teal"

@@ -53,6 +53,7 @@ const OTHER_REQUIREMENT_PREFIXES = [
 	"Achieve",
 	"Bring Leela to Senliten's tomb",
 	"If Icthlarin's Little Helper was completed prior to the addition of Stolen Hearts and Diamond in the Rough, they must be completed before Contact! can be started (or completed).",
+	"Work on the Tai Bwo Wannai Cleanup",
 ];
 
 // rem breakpoints
@@ -61,7 +62,7 @@ const BP_TWO_COL = 60; // >= 60rem => 3 columns, otherwise 2
 
 const sectionGap = "1rem";
 const cardBorder = "0.125rem";
-const minColRem = 16; // used for items grid min width per column
+const minColRem = 16;
 
 const useRemWidth = () => {
 	const [remWidth, setRemWidth] = useState<number>(() =>

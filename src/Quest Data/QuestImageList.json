@@ -3065,123 +3065,39 @@
 		"name": "Birthright of the Dwarves",
 		"images": [
 			{
-				"step": "2",
-				"src": "Step1_QuestStart.webp",
-				"width": 907,
-				"height": 533,
-				"stepDescription": "Talk to King Veldaban on the top floor of Keldagrim Palace. (Chat 1•1•3•✓•2)"
-			},
-			{
-				"step": "2",
-				"src": "Step1_VeldaBan.webp",
-				"width": 438,
-				"height": 500,
-				"stepDescription": "Talk to King Veldaban on the top floor of Keldagrim Palace. (Chat 1•1•3•✓•2)"
-			},
-			{
-				"step": "3",
-				"src": "Step3_VaultLoc.webp",
-				"width": 242,
-				"height": 375,
-				"stepDescription": "**Items needed: 2 inventory spaces, Royal dwarven seal** \nEnter the records chamber cave to the west of the bank (along the west wall)."
-			},
-			{
-				"step": "10",
-				"src": "Step10_FurnaceLoc.webp",
-				"width": 249,
-				"height": 384,
-				"stepDescription": "Go to the western 1st floor[US] of the Consortium and search the furnace in the north-eastern room."
-			},
-			{
-				"step": "10",
-				"src": "Step10_SearchFurnace.webp",
-				"width": 454,
-				"height": 459,
-				"stepDescription": "Go to the western 1st floor[US] of the Consortium and search the furnace in the north-eastern room."
-			},
-			{
-				"step": "12",
-				"src": "Step12_TalkMeike.webp",
-				"width": 650,
-				"height": 363,
-				"stepDescription": "Go to the King's Axe Inn, south of the bank, and talk to Meike. (Chat 1•1•1•2)"
-			},
-			{
-				"step": "20",
-				"src": "Step20_Ikadia.webp",
-				"width": 441,
-				"height": 625,
-				"stepDescription": "Defeat her and talk to her again. (Chat ~•~)"
-			},
-			{
-				"step": "22",
-				"src": "Step22_watchTower.webp",
-				"width": 245,
-				"height": 372,
-				"stepDescription": "Go to the Yanille's Watchtower"
-			},
-			{
-				"step": "29",
-				"src": "Step29_caveLoc.webp",
-				"width": 404,
-				"height": 345,
-				"stepDescription": "**Items recommended: Food, sign of life, run enhancing items** \nEnter the Barendir caves southeast of west Keldagrim. The caves can be accessed by selecting \"Travel\" on the Dwarven Boatman on the eastern side of Keldagrim near the northern bridge, or selecting \"Cross-river\" on the Dwarven Ferryman to the south of western Keldagrim."
-			},
-			{
-				"step": "46",
-				"src": "Step46_ChaosDoor.webp",
-				"width": 192,
-				"height": 139,
-				"stepDescription": "Enter the eastern doorway and go up to the 2nd floor[US]."
-			},
-			{
-				"step": "19",
-				"src": "Step19_TaverlyDungeon.webp",
-				"width": 766,
-				"height": 633,
-				"stepDescription": "After she talks to you and teleports away, go to the chaos druid circle in the north-eastern corner of the dungeon and talk to her. (Chat 2)"
-			},
-			{
-				"step": "27",
-				"src": "Step27_FragmentTable.webp",
-				"width": 600,
+				"step": 20,
+				"src": "BirthrightoftheDwarves_step_20_1.webp",
 				"height": 600,
-				"stepDescription": "Investigate each memory void. Based on the text that appears, use the corresponding memory fragment on the memory void following the table provided"
+				"width": 600,
+				"stepDescription": "Use the wand on the 4 floating objects then catch all 16 loose memory fragments."
 			},
 			{
-				"step": "40",
-				"src": "Step40_FragmentTable.webp",
-				"width": 600,
-				"height": 600,
-				"stepDescription": "Investigate each memory void. Based on the text that appears, use the corresponding memory fragment on the memory void following the table provided"
+				"step": 22,
+				"src": "BirthrightoftheDwarves_step_22_1.webp",
+				"height": 513,
+				"width": 278,
+				"stepDescription": "Enter the Barendir caves southeast of west Keldagrim."
 			},
 			{
-				"step": "42",
-				"src": "Step42_FragmentTable.webp",
-				"width": 600,
+				"step": 29,
+				"src": "BirthrightoftheDwarves_step_29_1.webp",
 				"height": 600,
+				"width": 600,
+				"stepDescription": "Enter the cave ten after the cutscene, use the wand on the royal Red Axe standard (flag, west of Veldaban), the Zamorakian Chaplain, and the chaos dwarf standing next to him then collect all fragments"
+			},
+			{
+				"step": 31,
+				"src": "BirthrightoftheDwarves_step_31_1.webp",
+				"height": 600,
+				"width": 600,
 				"stepDescription": "In the next memory, use the wand on the two trolls directly next to Grimsson and repeat the memory fragment process following the table provided"
 			},
 			{
-				"step": "44",
-				"src": "Step44_FragmentTable.webp",
-				"width": 600,
+				"step": 34,
+				"src": "BirthrightoftheDwarves_step_34_1.webp",
 				"height": 600,
+				"width": 600,
 				"stepDescription": "In the next memory, use the wand on the 3 dwarves, catch the memory fragments only when they're not labelled \"dangerous\", and repeat the process following the table provided"
-			},
-			{
-				"step": "33",
-				"src": "scavidmap.webp",
-				"width": 354,
-				"height": 288,
-				"stepDescription": "Fire the cannon. This part is not a safe death. Should you die, your gravestone will be a short walk inside the Barendir caves."
-			},
-			{
-				"step": "34",
-				"src": "Step34Watchtower.webp",
-				"width": 624,
-				"height": 659,
-				"stepDescription": "After the cutscene, stand behind the pillars to get the cannons to shoot them down, and sabotage the cannons as you progress. The first one is to the west. Do not stand near a cannon if it is about to explode, as it will hit for 5,000+ damage. Praying against range is strongly recommended."
 			}
 		]
 	},
