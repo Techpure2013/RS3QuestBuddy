@@ -64,13 +64,6 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 	return (
 		<Accordion.Item value={index.toString()} id={index.toString()}>
 			<Accordion.Control
-				icon={
-					isCompleted ? (
-						<ThemeIcon color="teal" size={24} radius="xl">
-							<IconCircleCheck size={16} />
-						</ThemeIcon>
-					) : undefined
-				}
 				chevron={hasPanelContent ? undefined : <span />}
 				onClick={(event) => {
 					if (!hasPanelContent) {
@@ -80,7 +73,17 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 				}}
 			>
 				<Flex justify="space-between" align="center" gap="md">
-					<Box style={{ flex: 1, minWidth: 0 }}>
+					{isCompleted ? (
+						<ThemeIcon color="teal" size={24} radius="xl">
+							<IconCircleCheck size={16} />
+						</ThemeIcon>
+					) : (
+						<Box w={24} />
+					)}
+					<Box
+						style={{ flex: 1, minWidth: 0 }}
+						c={isCompleted ? "green" : undefined}
+					>
 						<Text>
 							<Text fw={700} component="span">
 								Step {index + 1}:{" "}

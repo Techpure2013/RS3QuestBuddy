@@ -504,7 +504,7 @@ const QuestPage: React.FC = () => {
 										key={index}
 										step={step}
 										index={index}
-										isCompleted={settings.isHighlight && active > index}
+										isCompleted={active > index}
 										images={matchedImages}
 										onImagePopOut={handlePopOut}
 									/>
