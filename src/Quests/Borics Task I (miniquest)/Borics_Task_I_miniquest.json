@@ -1,5 +1,5 @@
 {
-  "questName": "Borics Task I (miniquest)",
+  "questName": "Boric's Task I (miniquest)",
   "questSteps": [
     {
       "stepDescription": "Head down the stairs behind Doric's hut to speak to Boric. (Chat 1•✓)",
@@ -8,201 +8,125 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Boric",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5987,
+              "lng": 1559
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5986,
+                "lng": 1558
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5990,
+                "lng": 1564
               }
             }
           }
         ],
         "object": [
           {
-            "name": "",
+            "name": "Dorics Hut",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3443,
+                "lng": 2958,
+                "color": "#3f8881",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3431,
+                "lng": 2951
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3449,
+                "lng": 2962
               }
-            }
+            },
+            "color": "#3f8881",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Head to Seers' Village coal truck mining site, west of McGrubor's Wood.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Coal Truck Mining Site",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3482,
+                "lng": 2583,
+                "color": "#3f8881",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3471,
+                "lng": 2571
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3488,
+                "lng": 2589
               }
-            }
+            },
+            "color": "#3f8881",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Deposit 30 coal into the coal truck.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Coal Truck",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3487,
+                "lng": 2583,
+                "color": "#b45073",
+                "numberLabel": "Coal Truck",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3486,
+                "lng": 2582
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3487,
+                "lng": 2584
               }
-            }
+            },
+            "color": "#b45073",
+            "numberLabel": "Coal Truck"
           }
         ]
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "It does not need to be mined, it can be purchased off the Grand exchange. Make sure it isn't noted.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "Coal does not need to be mined, it can be purchased off the Grand exchange. Make sure it isn't noted."
       ]
     },
     {
@@ -212,100 +136,38 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": " Dwarvern Miner",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3479,
+              "lng": 2575
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3478,
+                "lng": 2575
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3480,
+                "lng": 2576
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Miniquest complete!",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     }
   ]
 }

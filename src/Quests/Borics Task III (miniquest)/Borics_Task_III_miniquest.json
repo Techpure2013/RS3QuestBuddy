@@ -1,5 +1,5 @@
 {
-  "questName": "Borics Task III (miniquest)",
+  "questName": "Boric's Task III (miniquest)",
   "questSteps": [
     {
       "stepDescription": "Head down the stairs at Doric's workshop to speak to Boric. (Chat 1•✓)",
@@ -8,49 +8,42 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Boric",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5987,
+              "lng": 1559
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5986,
+                "lng": 1559
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5989,
+                "lng": 1563
               }
             }
           }
         ],
         "object": [
           {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
+            "name": "Doric's Hut",
+            "objectLocation": [],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3431,
+                "lng": 2951
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3449,
+                "lng": 2962
               }
             }
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Head to the Mining guild. You must speak with one of the dwarfs at the guild before mining. (Chat 1)",
@@ -59,150 +52,64 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Dwarf",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3340,
+              "lng": 3021
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3337,
+                "lng": 3020
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3342,
+                "lng": 3023
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Mine 10 runite ore and 15 orichalcite ore.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "New Object",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 9739,
+                "lng": 3035,
+                "color": "#367973",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 9732,
+                "lng": 3014
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 9756,
+                "lng": 3055
               }
-            }
+            },
+            "color": "#367973",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Boosts and perks such as Varrock armour, Shooting Star, and extra ore gained from leveling do count towards the 25 total ores.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "Boosts and perks such as Varrock armour, Shooting Star, and extra ore gained from leveling do count towards the 25 total ores."
       ]
     },
     {
@@ -212,100 +119,53 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Boric",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5987,
+              "lng": 1559
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5986,
+                "lng": 1559
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5989,
+                "lng": 1563
               }
             }
           }
         ],
         "object": [
           {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
+            "name": "Doric's Hut",
+            "objectLocation": [],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3431,
+                "lng": 2951
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3449,
+                "lng": 2962
               }
             }
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Miniquest Complete!",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     }
   ]
 }

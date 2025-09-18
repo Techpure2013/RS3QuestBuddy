@@ -1799,46 +1799,11 @@
 		"name": "Boric's Task I (miniquest)",
 		"images": [
 			{
-				"step": "1",
-				"src": "LocToBoric.webp",
-				"width": 370,
-				"height": 264,
-				"stepDescription": "Head down the stairs behind Doric's hut to speak to Boric. (Chat 1•✓)"
-			},
-			{
-				"step": "1",
-				"src": "LocationOfBoric.webp",
-				"width": 477,
-				"height": 416,
-				"stepDescription": "Head down the stairs behind Doric's hut to speak to Boric. (Chat 1•✓)"
-			},
-			{
-				"step": "1",
-				"src": "TalkToBoric.webp",
-				"width": 384,
-				"height": 359,
-				"stepDescription": "Head down the stairs behind Doric's hut to speak to Boric. (Chat 1•✓)"
-			},
-			{
-				"step": "2",
-				"src": "CoalTruckLocation.webp",
-				"width": 424,
-				"height": 345,
+				"step": 2,
+				"src": "BoricsTaskI(miniquest)_step_2_1.webp",
+				"height": 452,
+				"width": 1267,
 				"stepDescription": "Head to Seers' Village coal truck mining site, west of McGrubor's Wood."
-			},
-			{
-				"step": "2",
-				"src": "AgilityCheck.webp",
-				"width": 221,
-				"height": 98,
-				"stepDescription": "Head to Seers' Village coal truck mining site, west of McGrubor's Wood."
-			},
-			{
-				"step": "6",
-				"src": "CoalTruckandMiner.webp",
-				"width": 470,
-				"height": 415,
-				"stepDescription": "Miniquest complete!"
 			}
 		]
 	},
@@ -1846,95 +1811,17 @@
 		"name": "Boric's Task II (miniquest)",
 		"images": [
 			{
-				"step": "1",
-				"src": "LocToBoric.webp",
-				"width": 370,
-				"height": 264,
-				"stepDescription": "Head down the stairs at Doric's workshop to speak to Boric. (Chat 1•✓)"
-			},
-			{
-				"step": "1",
-				"src": "LocationOfBoric.webp",
-				"width": 477,
-				"height": 416,
-				"stepDescription": "Head down the stairs at Doric's workshop to speak to Boric. (Chat 1•✓)"
-			},
-			{
-				"step": "1",
-				"src": "TalkToBoric.webp",
-				"width": 384,
-				"height": 359,
-				"stepDescription": "Head down the stairs at Doric's workshop to speak to Boric. (Chat 1•✓)"
-			},
-			{
-				"step": "2",
-				"src": "RockBrawler.webp",
-				"width": 167,
-				"height": 170,
-				"stepDescription": "Head to the following mining locations and mine any ore. Multiple ores may need to be mined. A living rock brawler will spawn, kill it. The locations are:"
-			},
-			{
-				"step": "6",
-				"src": "LumbridgeMineLocation.webp",
-				"width": 333,
-				"height": 285,
-				"stepDescription": "Lumbridge south-west mine"
-			},
-			{
-				"step": "4",
-				"src": "AlkharidMine.webp",
-				"width": 150,
-				"height": 421,
-				"stepDescription": "Al Kharid mine"
-			},
-			{
-				"step": "7",
-				"src": "AgilityPyrimidNWMineLoc.webp",
-				"width": 267,
-				"height": 482,
-				"stepDescription": "Agility Pyramid north-west mine"
-			},
-			{
-				"step": "5",
-				"src": "BrimhavenLocationMine.webp",
-				"width": 232,
-				"height": 291,
-				"stepDescription": "Karamja north-west mine"
+				"step": 2,
+				"src": "BoricsTaskII(miniquest)_step_2_1.webp",
+				"height": 637,
+				"width": 956,
+				"stepDescription": "Head to the following mining locations and mine any ore. Multiple ores may need to be mined. A living rock brawler will spawn, kill it. The locations are in Additional Info"
 			}
 		]
 	},
 	{
 		"name": "Boric's Task III (miniquest)",
-		"images": [
-			{
-				"step": "1",
-				"src": "LocToBoric.webp",
-				"width": 370,
-				"height": 264,
-				"stepDescription": "Head down the stairs at Doric's workshop to speak to Boric. (Chat 1•✓)"
-			},
-			{
-				"step": "1",
-				"src": "LocationOfBoric.webp",
-				"width": 477,
-				"height": 416,
-				"stepDescription": "Head down the stairs at Doric's workshop to speak to Boric. (Chat 1•✓)"
-			},
-			{
-				"step": "1",
-				"src": "TalkToBoric.webp",
-				"width": 384,
-				"height": 359,
-				"stepDescription": "Head down the stairs at Doric's workshop to speak to Boric. (Chat 1•✓)"
-			},
-			{
-				"step": "2",
-				"src": "talktodwarf.webp",
-				"width": 175,
-				"height": 147,
-				"stepDescription": "Head to the Mining guild. You must speak with one of the dwarfs at the guild before mining. (Chat 1)"
-			}
-		]
+		"images": []
 	},
 	{
 		"name": "Doric's Task I (miniquest)",
@@ -3105,11 +2992,11 @@
 		"name": "Blood Runs Deep",
 		"images": [
 			{
-				"step": "51",
-				"src": "Step51bloodrunsdeep.webp",
-				"width": 723,
-				"height": 646,
-				"stepDescription": "Follow the red line. You need to jump over some rubble, go west for a bit, enter the tunnel inside the wall (takes you to the other side) and then go south."
+				"step": 32,
+				"src": "BloodRunsDeep_step_32_1.webp",
+				"height": 698,
+				"width": 644,
+				"stepDescription": "Follow the path provided in the quest image. Steps to go through this area in Additional Info."
 			}
 		]
 	},

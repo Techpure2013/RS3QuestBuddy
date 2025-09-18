@@ -2,18 +2,21 @@
   "questName": "Blood Runs Deep",
   "questSteps": [
     {
-      "stepDescription": "Items recommended: Magic or Ranged combat equipment and food for all parts of the quest",
-      "itemsNeeded": [],
+      "stepDescription": "Talk to Baba Yaga on Lunar Isle about the man in the bed. (Chat 1•✓•1•1•1)",
+      "itemsNeeded": [
+        "Magic or Ranged combat equipment",
+        "Food for all parts of the quest"
+      ],
       "itemsRecommended": [
-        "Magic or Ranged combat equipment and food for all parts of the quest"
+        ""
       ],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Baba Yaga",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 4449,
+              "lng": 3102
             },
             "wanderRadius": {
               "bottomLeft": {
@@ -27,83 +30,10 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Baba Yaga on Lunar Isle about the man in the bed. (Chat 1•✓•1•1•1)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Baba Yaga again to go to the Dream World. (Chat 1•1•1•1)",
@@ -112,10 +42,10 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Baba Yaga",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 4449,
+              "lng": 3102
             },
             "wanderRadius": {
               "bottomLeft": {
@@ -129,32 +59,10 @@
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Listen Silas. (Chat 1)",
@@ -163,151 +71,99 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Silas",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5854,
+              "lng": 4446
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5854,
+                "lng": 4445
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5855,
+                "lng": 4446
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "floor": 2,
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Search the bookcase to get a prophecy tablet.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Bookcase ( Blood Runs Deep )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 5858,
+                "lng": 4446,
+                "color": "#74c1c3",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5858,
+                "lng": 4446
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5859,
+                "lng": 4447
               }
-            }
+            },
+            "color": "#74c1c3",
+            "numberLabel": ""
           }
         ]
       },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "floor": 2,
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Climb the stairs.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Stairs ( Dream World )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 5856,
+                "lng": 4445,
+                "color": "#74c1c3",
+                "numberLabel": "Climb",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5855,
+                "lng": 4444
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5856,
+                "lng": 4445
               }
-            }
+            },
+            "numberLabel": "Climb",
+            "color": "#74c1c3"
           }
         ]
       },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "floor": 2,
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Eavesdrop-on Silas and continue through the tunnel. (Chat 1)",
@@ -316,303 +172,69 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Silas",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5840,
+              "lng": 4467
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5840,
+                "lng": 4466
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5841,
+                "lng": 4468
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Talk to Silas. (Chat 1)",
+      "stepDescription": "Go through the tunnel then talk to Silas. (Chat 1)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Silas",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5873,
+              "lng": 4431
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5872,
+                "lng": 4430
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5874,
+                "lng": 4431
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Read Our lives. (Chat 1)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Prepare to face multiple (4-7) Dagannoth at a time. This will go on for a few minutes.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Do not use your dwarf multicannon in this area or you will lose it.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "The Dagannoth attack",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "Prepare to face multiple (4-7) Dagannoth at a time. This will go on for a few minutes.",
+        "Do not use your dwarf multicannon in this area or you will lose it."
       ]
     },
     {
@@ -622,151 +244,65 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Baba Yaga",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 4450,
+              "lng": 3102
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 4449,
+                "lng": 3101
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 4450,
+                "lng": 3103
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "Prepare to face many Dagannoth."
       ]
     },
     {
-      "stepDescription": "Prepare to face many Dagannoth.",
+      "stepDescription": "After killing a sufficient amount of Dagannoths, Brundt the Chieftain will command you to get onto his boat.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "New Object",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 5934,
+                "lng": 4505,
+                "color": "#3f847a",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5933,
+                "lng": 4505
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5938,
+                "lng": 4506
               }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "After killing sufficient Dagannoth, Brundt the Chieftain will command you to get onto his boat.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
             },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
+            "color": "#3f847a",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Queen Sigrid. (Chat 1•1)",
@@ -775,49 +311,27 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Queen Sigrid",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5857,
+              "lng": 4506
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5857,
+                "lng": 4506
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5857,
+                "lng": 4507
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Brundt to get another seal of passage. (Chat 2)",
@@ -826,201 +340,61 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Brundt",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5859,
+              "lng": 4508
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5858,
+                "lng": 4508
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5859,
+                "lng": 4508
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Bank before teleporting to Waterbirth. Bring prayer potions and a full load of food. Leave 1 space empty.",
-      "itemsNeeded": [],
+      "stepDescription": "Talk to Jarvald (on the western pier) and select the option Travel-Waterbirth to head to Waterbirth Island.",
+      "itemsNeeded": [
+        "Combat Equipment",
+        "Food",
+        "Potions"
+      ],
       "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Jarvald",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3683,
+              "lng": 2620
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3682,
+                "lng": 2620
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3683,
+                "lng": 2620
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Speak to Brundt about the war on dagannoths to receive the Balmung.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Jarvald (slightly north west of Rellekka markets) to head to Waterbirth Island. (Chat 1•2•1)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "Bank before teleporting to Waterbirth. Bring prayer potions and a full load of food. Leave 1 space empty."
       ]
     },
     {
@@ -1030,151 +404,63 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Bardur",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3741,
+              "lng": 2528
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3741,
+                "lng": 2527
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3742,
+                "lng": 2528
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Make your way to the southwestern tip of the island and tie the rope on the hole.",
+      "stepDescription": "Make your way to the southwestern tip of the island and tie the rope on the hole then climb down the hole.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "New Object",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3728,
+                "lng": 2503,
+                "color": "#2d7973",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3728,
+                "lng": 2502
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3729,
+                "lng": 2503
               }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Climb-down the hole.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
             },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
+            "color": "#2d7973",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to King Vargas. (Chat 1•1•1•1)",
@@ -1183,304 +469,128 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "King Vargas",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5801,
+              "lng": 4372
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5800,
+                "lng": 4371
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5801,
+                "lng": 4373
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Lead King Vargas down the path to the north-east, to the end and go down the ladder. If you get too far away from him you will escape without him and have to start over.",
+      "stepDescription": "Walk King Vargas down the path taking all aggro from vargas to you to reduce attempts. Read Additional info for direct pathing.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Ladder ( WaterBirth Cave )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 4407,
+                "lng": 1889,
+                "color": "#2d7973",
+                "numberLabel": "Ladder",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 4407,
+                "lng": 1888
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 4408,
+                "lng": 1890
               }
-            }
+            },
+            "numberLabel": "Ladder",
+            "color": "#2d7973"
+          },
+          {
+            "name": "Ladder ( WaterBirth Cave )",
+            "objectLocation": [
+              {
+                "lat": 4371,
+                "lng": 1956,
+                "color": "#2d7973",
+                "numberLabel": "Ladder",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4371,
+                "lng": 1955
+              },
+              "topRight": {
+                "lat": 4372,
+                "lng": 1957
+              }
+            },
+            "numberLabel": "Ladder",
+            "color": "#2d7973"
+          },
+          {
+            "name": "Ladder ( WaterBirth Cave )",
+            "objectLocation": [
+              {
+                "lat": 4391,
+                "lng": 1960,
+                "color": "#2d7973",
+                "numberLabel": "Ladder",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 4390,
+                "lng": 1959
+              },
+              "topRight": {
+                "lat": 4391,
+                "lng": 1961
+              }
+            },
+            "color": "#2d7973",
+            "numberLabel": "Ladder"
           }
         ]
       },
-      "floor": 0,
+      "floor": 3,
       "additionalStepInformation": [
-        ""
+        "Head East and Climb down the ladder.",
+        "continuing to the south and then all the way East to the ladder and climb up.",
+        "Head West and Climb up the ladder.",
+        "Head East and Climb up the Ladder.",
+        "Head North-East and Climb up the ladder."
       ]
     },
     {
-      "stepDescription": "Fight the dagannoths and feed King Vargas to keep him alive.",
+      "stepDescription": "Talk to King Vargas. (Chat 1•1)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Continue to the next tunnel.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Continue past the rock lobsters and climb the next ladder.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Fight through the rock lobsters and climb the last ladder. (Chat 1•1)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Eir. (Chat 1•1•1•1)",
@@ -1489,100 +599,56 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Eir",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5922,
+              "lng": 4382
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5921,
+                "lng": 4381
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5923,
+                "lng": 4383
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Talk to Nial Swiftling. (Chat 1•1•1)",
+      "stepDescription": "Talk to Nial Swiftfling. (Chat 1•1•1)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Nial Swiftfling",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5923,
+              "lng": 4381
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5922,
+                "lng": 4380
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5924,
+                "lng": 4382
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Asleif Hamalsdotter. (Chat 1•1•1)",
@@ -1591,49 +657,27 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Asleif Hamalsdotter",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5923,
+              "lng": 4380
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5922,
+                "lng": 4379
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5924,
+                "lng": 4381
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Eir. (Chat 1)",
@@ -1642,202 +686,87 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Eir",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5922,
+              "lng": 4382
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5921,
+                "lng": 4381
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5923,
+                "lng": 4383
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "If the spiritual realm sequence is interrupted, speak with Brundt in the long hall in Rellekka to obtain a letter. Read the letter to return.",
+      "stepDescription": "Speak to Brundt the Chieftain. (Chat 2)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Brundt",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5858,
+              "lng": 4506
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5858,
+                "lng": 4505
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5858,
+                "lng": 4506
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "If the spiritual realm sequence is interrupted, speak with Brundt in the long hall in Rellekka to obtain a letter. Read the letter to return."
       ]
     },
     {
-      "stepDescription": "Speak to Brundt the Chieftain. (Chat ~)",
+      "stepDescription": "Talk to King Vargas. (Chat 1•1•2•~•~•~•~•~•2)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "King Vargas",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5859,
+              "lng": 4507
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5858,
+                "lng": 4507
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5859,
+                "lng": 4507
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to King Vargas. (Chat ~•~•~•~•~•~•~•~•2)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Princess Astrid or Prince Brand. (Chat ~)",
@@ -1846,49 +775,44 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Princess Astrid",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5859,
+              "lng": 4509
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5859,
+                "lng": 4509
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5859,
+                "lng": 4509
+              }
+            }
+          },
+          {
+            "npcName": "Prince Brand",
+            "npcLocation": {
+              "lat": 5857,
+              "lng": 4509
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 5857,
+                "lng": 4509
+              },
+              "topRight": {
+                "lat": 5857,
+                "lng": 4509
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Brundt to continue and bank. (Chat 2)",
@@ -1897,260 +821,61 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Brundt",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5858,
+              "lng": 4506
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5858,
+                "lng": 4506
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5858,
+                "lng": 4506
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "If the spiritual realm sequence is interrupted, speak with Brundt in the long hall in Rellekka to return.",
-      "itemsNeeded": [],
+      "stepDescription": "Talk to Brundt in the long hall in Rellekka when you are ready. (Chat 2•1)",
+      "itemsNeeded": [
+        "Balmug"
+      ],
       "itemsRecommended": [
-        "Combat equipment for Melee",
-        "Magic (Water",
-        "Earth",
-        "Air",
-        "Fire spells) and Ranged styles",
-        "a way to teleport out - as you can not leave the room while in combat"
+        "Combat Equipment for all three styles.",
+        "Magic - All Elements are REQUIRED"
       ],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Brundt",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3669,
+              "lng": 2658
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3667,
+                "lng": 2657
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3669,
+                "lng": 2659
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Items needed: Balmung",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Items recommended: Combat equipment for Melee, Magic (Water, Earth, Air, Fire spells) and Ranged styles, a way to teleport out - as you can not leave the room while in combat",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Brundt in the long hall in Rellekka when you are ready. (Chat 2•1)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Baba Yaga on the boat. (Chat 1•2•1•1•1)",
@@ -2159,151 +884,99 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Baba Yaga",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5921,
+              "lng": 4448
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5921,
+                "lng": 4448
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5921,
+                "lng": 4448
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Climb down the hole on the southwestern tip of the island.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Waterbirth Dungeon Entrance",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3728,
+                "lng": 2503,
+                "color": "#2d7973",
+                "numberLabel": "Entrance",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3728,
+                "lng": 2502
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3729,
+                "lng": 2503
               }
-            }
+            },
+            "color": "#2d7973",
+            "numberLabel": "Entrance"
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Enter the southern tunnel. (Chat 1)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Waterbirth Tunnel",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 5791,
+                "lng": 4367,
+                "color": "#28756b",
+                "numberLabel": "Entrance",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5790,
+                "lng": 4367
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5791,
+                "lng": 4368
               }
-            }
+            },
+            "color": "#28756b",
+            "numberLabel": "Entrance"
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Enter the next tunnel to fight the Dagannoth sentinels. (Chat 1)",
@@ -2312,10 +985,27 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Daggonoth Sentinel",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5830,
+              "lng": 4362
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            }
+          },
+          {
+            "npcName": "Daggonoth Sentinel",
+            "npcLocation": {
+              "lat": 5830,
+              "lng": 4367
             },
             "wanderRadius": {
               "bottomLeft": {
@@ -2329,13 +1019,794 @@
             }
           }
         ],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Alternate attacks between the dagannoth, keeping their health within approximately 500 life points to prevent them from healing each other.",
+        "High level players with good equipment can just kill one then the other, it is easy to deal more damage than the amount that they are healed.",
+        "After defeating the sentinels, you can go to bank to get more food. You don't need to fight the sentinels again. Also you don't need the tablets or the seal of passage for the fights (saves you a few slots for food)."
+      ]
+    },
+    {
+      "stepDescription": "Follow the path provided in the quest image. Steps to go through this area in Additional Info.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Path Inbetween",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 5753,
+                "lng": 4429,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5752,
+                "lng": 4429,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5750,
+                "lng": 4429,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5751,
+                "lng": 4429,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5749,
+                "lng": 4430,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5748,
+                "lng": 4431,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5747,
+                "lng": 4432,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5747,
+                "lng": 4433,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5747,
+                "lng": 4434,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5747,
+                "lng": 4435,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5747,
+                "lng": 4436,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5747,
+                "lng": 4437,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5748,
+                "lng": 4438,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5748,
+                "lng": 4439,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5748,
+                "lng": 4440,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5748,
+                "lng": 4441,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5748,
+                "lng": 4442,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5748,
+                "lng": 4443,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5747,
+                "lng": 4444,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5746,
+                "lng": 4444,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5745,
+                "lng": 4445,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5744,
+                "lng": 4446,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5743,
+                "lng": 4447,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5743,
+                "lng": 4448,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5743,
+                "lng": 4449,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5743,
+                "lng": 4450,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5743,
+                "lng": 4451,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5743,
+                "lng": 4452,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5742,
+                "lng": 4452,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5741,
+                "lng": 4452,
+                "color": "#d39817",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5739,
+                "lng": 4452,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5738,
+                "lng": 4452,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5737,
+                "lng": 4452,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5736,
+                "lng": 4453,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5734,
+                "lng": 4452,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5735,
+                "lng": 4453,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5733,
+                "lng": 4451,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5732,
+                "lng": 4450,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5730,
+                "lng": 4448,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5731,
+                "lng": 4449,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5729,
+                "lng": 4447,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5729,
+                "lng": 4446,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5729,
+                "lng": 4445,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5729,
+                "lng": 4444,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5729,
+                "lng": 4443,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5729,
+                "lng": 4442,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5729,
+                "lng": 4441,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5728,
+                "lng": 4440,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5727,
+                "lng": 4439,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5726,
+                "lng": 4438,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5725,
+                "lng": 4437,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5724,
+                "lng": 4436,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5723,
+                "lng": 4435,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5721,
+                "lng": 4435,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5722,
+                "lng": 4435,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5720,
+                "lng": 4436,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5754,
+                "lng": 4429,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5719,
+                "lng": 4437,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5718,
+                "lng": 4438,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5717,
+                "lng": 4439,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5716,
+                "lng": 4440,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5715,
+                "lng": 4441,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5714,
+                "lng": 4442,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5714,
+                "lng": 4443,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5714,
+                "lng": 4444,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5714,
+                "lng": 4445,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5714,
+                "lng": 4446,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5715,
+                "lng": 4447,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5716,
+                "lng": 4448,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5717,
+                "lng": 4449,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5718,
+                "lng": 4450,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5718,
+                "lng": 4451,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5719,
+                "lng": 4452,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5720,
+                "lng": 4453,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5721,
+                "lng": 4454,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5722,
+                "lng": 4454,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5723,
+                "lng": 4454,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5724,
+                "lng": 4454,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5726,
+                "lng": 4454,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5725,
+                "lng": 4454,
+                "color": "#bf8d1d",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5731,
+                "lng": 4463,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5731,
+                "lng": 4464,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5730,
+                "lng": 4465,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5729,
+                "lng": 4466,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5728,
+                "lng": 4467,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5727,
+                "lng": 4467,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5726,
+                "lng": 4467,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5725,
+                "lng": 4467,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5724,
+                "lng": 4466,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5723,
+                "lng": 4466,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5722,
+                "lng": 4465,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5721,
+                "lng": 4465,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5720,
+                "lng": 4464,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5719,
+                "lng": 4463,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5718,
+                "lng": 4462,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5717,
+                "lng": 4462,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5716,
+                "lng": 4462,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5715,
+                "lng": 4462,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5714,
+                "lng": 4462,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5713,
+                "lng": 4462,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5712,
+                "lng": 4463,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5711,
+                "lng": 4464,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5710,
+                "lng": 4465,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5709,
+                "lng": 4466,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5708,
+                "lng": 4467,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5707,
+                "lng": 4468,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5706,
+                "lng": 4469,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5705,
+                "lng": 4470,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5704,
+                "lng": 4470,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 5703,
+                "lng": 4470,
+                "color": "#ae8422",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -2347,625 +1818,178 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "color": "#ae8422",
+            "numberLabel": ""
+          },
+          {
+            "name": "Passthrough Tunnel",
+            "objectLocation": [
+              {
+                "lat": 5740,
+                "lng": 4452,
+                "color": "#a13a8b",
+                "numberLabel": "Climb Over",
+                "isSearched": false
+              },
+              {
+                "lat": 5727,
+                "lng": 4455,
+                "color": "#a0488d",
+                "numberLabel": "Enter Tunnel Entrance",
+                "isSearched": false
+              },
+              {
+                "lat": 5727,
+                "lng": 4456,
+                "color": "#a0488d",
+                "numberLabel": "Enter Tunnel Entrance",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "color": "#ae8422",
+            "numberLabel": ""
+          },
+          {
+            "name": "Start/End",
+            "objectLocation": [
+              {
+                "lat": 5755,
+                "lng": 4428,
+                "color": "#2f8575",
+                "numberLabel": "Start",
+                "isSearched": false
+              },
+              {
+                "lat": 5755,
+                "lng": 4429,
+                "color": "#2f8575",
+                "numberLabel": "Start",
+                "isSearched": false
+              },
+              {
+                "lat": 5756,
+                "lng": 4429,
+                "color": "#2f8575",
+                "numberLabel": "Start",
+                "isSearched": false
+              },
+              {
+                "lat": 5756,
+                "lng": 4428,
+                "color": "#2f8575",
+                "numberLabel": "Start",
+                "isSearched": false
+              },
+              {
+                "lat": 5702,
+                "lng": 4470,
+                "color": "#2f7365",
+                "numberLabel": "Enter Tunnel",
+                "isSearched": false
+              },
+              {
+                "lat": 5701,
+                "lng": 4470,
+                "color": "#2f7365",
+                "numberLabel": "Enter Tunnel",
+                "isSearched": false
+              },
+              {
+                "lat": 5701,
+                "lng": 4471,
+                "color": "#2f7365",
+                "numberLabel": "Enter Tunnel",
+                "isSearched": false
+              },
+              {
+                "lat": 5702,
+                "lng": 4471,
+                "color": "#2f7365",
+                "numberLabel": "Enter Tunnel",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "numberLabel": "Enter Tunnel",
+            "color": "#2f7365"
           }
         ]
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "Head South then East then South. Climb over wall.",
+        "Head South click Enter Tunnel Entrance when you see it. ",
+        "You will be pathed in a counter clockwise circle to the Tunnel Entrance.",
+        "Head South until you reach the next Tunnel Entrance."
       ]
     },
     {
-      "stepDescription": "After defeating the sentinels, you can go to bank to get more food. You don't need to fight the sentinels again. Also you don't need the tablets or the seal of passage for the fights (saves you a few slots for food).",
+      "stepDescription": "Go through the next tunnel and talk to Dagannoth Mother. (Chat ~)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Dagannoth Mother",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5843,
+              "lng": 4394
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5842,
+                "lng": 4393
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5843,
+                "lng": 4395
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Alternate attacks between the dagannoth, keeping their health within approximately 500 life points to prevent them from healing each other.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "High level players with good equipment can just kill one then the other, it is easy to deal more damage than the amount that they are healed.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "There is a common glitch that prevents you from attacking the second sentinel. In this case stand on top of the sentinel you cannot attack. This will prevent it from attacking or healing the first sentinel.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Follow the red line. You need to jump over some rubble, go west for a bit, enter the tunnel inside the wall (takes you to the other side) and then go south.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Continue to the next tunnel.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Go to the south-east intersection and enter the tunnel entrance.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Use the photo for reference",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Proceed south and enter the tunnel.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Go through the next tunnel and select either chat option. (Chat ~)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Start the battle with Balmung (the special weapon you received from Brundt) and kill the Dagannoth Mother, switching styles according to her colour.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "If you have trouble telling between the colours (specially red/orange/yellow), you can use the chatbox. It will say \"The dagannoth changes to red...\" etc.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "Read the following to know what to use when the Dagannoth Mother changes colors. React with the following color.",
+        "The Chatbox will also tell you what color the Dagannoth Mother will be.",
+        "White - Air spells, including Smoke spells",
+        "Blue - Water spells, including Ice spells",
+        "Brown - Earth spells, including Shadow spells",
+        "Red - Fire spells, including Blood spells",
+        "Orange - Melee attacks with Balmung or any slashing weapon",
+        "Green - Ranged attacks (officially weak to thrown)"
       ]
     },
     {
@@ -2973,32 +1997,17 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Plank",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 5852,
+                "lng": 4391,
+                "color": "#2f7365",
+                "numberLabel": "k",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -3010,14 +2019,62 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "color": "#2f7365",
+            "numberLabel": "k"
+          },
+          {
+            "name": "Bronze pickaxe",
+            "objectLocation": [
+              {
+                "lat": 5851,
+                "lng": 4392,
+                "color": "#2f7365",
+                "numberLabel": "k",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "color": "#2f7365",
+            "numberLabel": "k"
+          },
+          {
+            "name": "Collapsed Pillar",
+            "objectLocation": [
+              {
+                "lat": 5848,
+                "lng": 4396,
+                "color": "#2f7365",
+                "numberLabel": "Collapse Pillar",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "numberLabel": "Collapse Pillar",
+            "color": "#2f7365"
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Eir. (Chat 1•2•1)",
@@ -3026,81 +2083,51 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Eir",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5923,
+              "lng": 4382
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5922,
+                "lng": 4381
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5924,
+                "lng": 4383
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Check the bodies and finish chat. (Chat ~)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Body",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 5796,
+                "lng": 4367,
+                "color": "#2f7365",
+                "numberLabel": "Body",
+                "isSearched": false
+              },
+              {
+                "lat": 5800,
+                "lng": 4373,
+                "color": "#2f7365",
+                "numberLabel": "Body",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -3112,14 +2139,14 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "numberLabel": "Body",
+            "color": "#2f7365"
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk with Baba Yaga and Koschei. (Chat 2)",
@@ -3128,30 +2155,61 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Baba Yaga",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5800,
+              "lng": 4368
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5800,
+                "lng": 4368
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5800,
+                "lng": 4369
+              }
+            }
+          },
+          {
+            "npcName": "Koschei the Deathless",
+            "npcLocation": {
+              "lat": 5799,
+              "lng": 4369
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 5799,
+                "lng": 4368
+              },
+              "topRight": {
+                "lat": 5799,
+                "lng": 4369
               }
             }
           }
         ],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": []
+    },
+    {
+      "stepDescription": "Attempt to climb up the rope. (Chat ~•~)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Climb Rope",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 5799,
+                "lng": 4370,
+                "color": "#2f7365",
+                "numberLabel": "Rope",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -3163,65 +2221,54 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "color": "#2f7365",
+            "numberLabel": "Rope"
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Attempt to climb up the rope. (Chat ~•~)",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "stepDescription": "Speak to Brundt. (Chat 2) Brundt will have additional rewards in Rellekka if you have combat skills over 75.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
-        "npc": [],
+        "npc": [
+          {
+            "npcName": "Brundt",
+            "npcLocation": {
+              "lat": 5858,
+              "lng": 4506
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 5858,
+                "lng": 4506
+              },
+              "topRight": {
+                "lat": 5858,
+                "lng": 4506
+              }
+            }
+          }
+        ],
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Speak to Brundt to receive your reward. (Chat 2)",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Quest complete!",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [],
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     }
   ]
 }
