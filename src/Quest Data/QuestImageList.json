@@ -4253,11 +4253,11 @@
 		"name": "Death to the Dorgeshuun",
 		"images": [
 			{
-				"step": "55",
-				"src": "Step55death.webp",
-				"width": 357,
-				"height": 521,
-				"stepDescription": "After Zanik climbs in the crate, carry it down into the trapdoor just north of the empty crates."
+				"step": 21,
+				"src": "DeathtotheDorgeshuun_step_21_1.webp",
+				"height": 641,
+				"width": 584,
+				"stepDescription": "Walk past the first guard (Zanik shoots him)."
 			}
 		]
 	},
@@ -12217,164 +12217,10 @@
 		"name": "The Lost Tribe",
 		"images": [
 			{
-				"step": "1",
-				"src": "QuestStart.webp",
-				"width": 350,
-				"height": 232,
-				"stepDescription": "2nd floor[US] of Lumbridge castle, talk to Sigmund. (Chat 1•✓)"
-			},
-			{
-				"step": "1",
-				"src": "Screenshot_1.webp",
-				"width": 350,
-				"height": 321,
-				"stepDescription": "2nd floor[US] of Lumbridge castle, talk to Sigmund. (Chat 1•✓)"
-			},
-			{
-				"step": "2",
-				"src": "Screenshot_2.webp",
-				"width": 350,
-				"height": 179,
-				"stepDescription": "Talk to the following NPCs about Lumbridge cellar around the castle until one of them mentions a goblin:"
-			},
-			{
-				"step": "2",
-				"src": "Screenshot_4.webp",
-				"width": 350,
-				"height": 314,
-				"stepDescription": "Talk to the following NPCs about Lumbridge cellar around the castle until one of them mentions a goblin:"
-			},
-			{
-				"step": "2",
-				"src": "Screenshot_5.webp",
-				"width": 350,
-				"height": 391,
-				"stepDescription": "Talk to the following NPCs about Lumbridge cellar around the castle until one of them mentions a goblin:"
-			},
-			{
-				"step": "2",
-				"src": "Screenshot_6.webp",
-				"width": 350,
-				"height": 357,
-				"stepDescription": "Talk to the following NPCs about Lumbridge cellar around the castle until one of them mentions a goblin:"
-			},
-			{
-				"step": "9",
-				"src": "Screenshot_8.webp",
-				"width": 350,
-				"height": 324,
-				"stepDescription": "Descend the trapdoor in the kitchen and mine the wall rubble to the east."
-			},
-			{
-				"step": "9",
-				"src": "Screenshot_9.webp",
-				"width": 306,
-				"height": 390,
-				"stepDescription": "Descend the trapdoor in the kitchen and mine the wall rubble to the east."
-			},
-			{
-				"step": "10",
-				"src": "Screenshot_10.webp",
-				"width": 350,
-				"height": 258,
-				"stepDescription": "Squeeze through the wall and take the brooch."
-			},
-			{
-				"step": "10",
-				"src": "Screenshot_11.webp",
-				"width": 350,
-				"height": 308,
-				"stepDescription": "Squeeze through the wall and take the brooch."
-			},
-			{
-				"step": "10",
-				"src": "Screenshot_12.webp",
-				"width": 241,
-				"height": 387,
-				"stepDescription": "Squeeze through the wall and take the brooch."
-			},
-			{
-				"step": "12",
-				"src": "Screenshot_14.webp",
-				"width": 350,
-				"height": 300,
-				"stepDescription": "Talk to Reldo in Varrock Palace about the brooch. (Chat 3)"
-			},
-			{
-				"step": "13",
-				"src": "Screenshot_15.webp",
-				"width": 350,
-				"height": 188,
-				"stepDescription": "Search the northern-most bookcase on the west wall for a goblin symbol book."
-			},
-			{
-				"step": "14",
-				"src": "Screenshot_17.webp",
-				"width": 350,
-				"height": 213,
-				"stepDescription": "Read the book to the end."
-			},
-			{
-				"step": "14",
-				"src": "Screenshot_18.webp",
-				"width": 351,
-				"height": 234,
-				"stepDescription": "Read the book to the end."
-			},
-			{
-				"step": "14",
-				"src": "Screenshot_19.webp",
-				"width": 351,
-				"height": 229,
-				"stepDescription": "Read the book to the end."
-			},
-			{
-				"step": "14",
-				"src": "Screenshot_20.webp",
-				"width": 350,
-				"height": 232,
-				"stepDescription": "Read the book to the end."
-			},
-			{
-				"step": "14",
-				"src": "Screenshot_21.webp",
-				"width": 351,
-				"height": 235,
-				"stepDescription": "Read the book to the end."
-			},
-			{
-				"step": "12",
-				"src": "Screenshot_22.webp",
-				"width": 350,
-				"height": 163,
-				"stepDescription": "Talk to Reldo in Varrock Palace about the brooch. (Chat 3)"
-			},
-			{
-				"step": "15",
-				"src": "Screenshot_23.webp",
-				"width": 350,
-				"height": 152,
-				"stepDescription": "Talk to Generals Bentnoze and Wartface in Goblin Village. (Chat 2•1•3•2•3•3•1)"
-			},
-			{
-				"step": "15",
-				"src": "Screenshot_24.webp",
-				"width": 350,
-				"height": 294,
-				"stepDescription": "Talk to Generals Bentnoze and Wartface in Goblin Village. (Chat 2•1•3•2•3•3•1)"
-			},
-			{
-				"step": "15",
-				"src": "Screenshot_25.webp",
-				"width": 350,
-				"height": 256,
-				"stepDescription": "Talk to Generals Bentnoze and Wartface in Goblin Village. (Chat 2•1•3•2•3•3•1)"
-			},
-			{
-				"step": "18",
-				"src": "Screenshot_64.webp",
-				"width": 350,
-				"height": 157,
+				"step": 12,
+				"src": "TheLostTribe_step_12_1.webp",
+				"height": 591,
+				"width": 1148,
 				"stepDescription": "Run through the castle cellar cave."
 			}
 		]

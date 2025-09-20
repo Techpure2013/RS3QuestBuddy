@@ -87,7 +87,9 @@
       "stepDescription": "Use duck food on a vial of water to make a duckspeak potion.",
       "itemsNeeded": [],
       "itemsRecommended": [],
-      "additionalStepInformation": [],
+      "additionalStepInformation": [
+        "Duck food is found directly North of Falador Park."
+      ],
       "highlights": {
         "npc": [],
         "object": []
@@ -183,7 +185,7 @@
       "floor": 0
     },
     {
-      "stepDescription": "Interact with the floor button on the east side of the sanctuary.",
+      "stepDescription": "Interact with the floor button on the east side of the sanctuary. ( It will not do anything )",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [],
@@ -250,17 +252,6 @@
     },
     {
       "stepDescription": "Quest complete!",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "additionalStepInformation": [],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0
-    },
-    {
-      "stepDescription": "New step description...",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [],

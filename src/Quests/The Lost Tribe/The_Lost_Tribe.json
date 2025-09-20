@@ -6,356 +6,27 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Talk to the following NPCs about Lumbridge cellar around the castle until one of them mentions a goblin:",
+      "stepDescription": "Talk to the following NPCs in Additional Info about Lumbridge cellar around the castle until one of them mentions a goblin",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Duke Horacio, in the same room (Chat 3) (or (Chat 4) if Dragon Slayer has been started/completed)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Cook, just downstairs (Chat 5) (or (Chat 2) if Recipe for Disaster has been started but not finished)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Hans, in the courtyard (Chat 4)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Father Aereck, in the church. If you have not previously spoken to him about gravestones, you must complete that dialogue, then speak to him again. (Chat 1)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Bob, in his axe shop (Chat 4)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "Duke Horacio (found in the same room in the castle as Sigmund),",
+        "The Cook ( Cannot continue if in the middle of Cooks Assistant. )",
+        "Hans wonder around the castle",
+        "Father Aereck in Lumbridge Church. Talk about gravestones then talk to him again.",
+        "Bob in his Axe Shop"
       ]
     },
     {
@@ -363,203 +34,47 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Descend the trapdoor in the kitchen and mine the wall rubble to the east.",
-      "itemsNeeded": [],
+      "itemsNeeded": [
+        "Any Source of Light"
+      ],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Squeeze through the wall and take the brooch.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Show the brooch to the Duke. (Chat 3) (or (Chat 4) if Dragon Slayer has been started)",
+      "stepDescription": "Show the brooch to the Duke. (Chat 3)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "(Chat 4) if Dragon Slayer has been started."
       ]
     },
     {
@@ -567,320 +82,67 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Search the northern-most bookcase on the west wall for a goblin symbol book.",
+      "stepDescription": "Search the West walls North bookcase for a goblin symbol book read the book to the end.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Read the book to the end.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Generals Bentnoze and Wartface in Goblin Village. (Chat 2•1•3•2•3•3•1)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Grab your light source and return to Lumbridge Castle and climb down the trapdoor in the kitchen.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Squeeze through the hole in the wall you mined earlier.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Run through the castle cellar cave.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
+        "npc": [],
+        "object": [
           {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
+            "name": "Start/End",
+            "objectLocation": [],
+            "objectRadius": {
               "bottomLeft": {
                 "lat": 0,
                 "lng": 0
@@ -890,15 +152,1591 @@
                 "lng": 0
               }
             }
-          }
-        ],
-        "object": [
+          },
           {
-            "name": "",
+            "name": "Path Inbetween",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 9610,
+                "lng": 3235,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9610,
+                "lng": 3236,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9610,
+                "lng": 3237,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9610,
+                "lng": 3238,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9610,
+                "lng": 3239,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9611,
+                "lng": 3240,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9612,
+                "lng": 3241,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9613,
+                "lng": 3242,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9613,
+                "lng": 3243,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9613,
+                "lng": 3244,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9613,
+                "lng": 3245,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9613,
+                "lng": 3246,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9613,
+                "lng": 3247,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9614,
+                "lng": 3248,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9615,
+                "lng": 3249,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9616,
+                "lng": 3250,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9618,
+                "lng": 3250,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9617,
+                "lng": 3250,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9619,
+                "lng": 3250,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9620,
+                "lng": 3250,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9621,
+                "lng": 3250,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9623,
+                "lng": 3250,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9622,
+                "lng": 3250,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9624,
+                "lng": 3250,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9625,
+                "lng": 3250,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9626,
+                "lng": 3250,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9628,
+                "lng": 3250,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9627,
+                "lng": 3250,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9629,
+                "lng": 3250,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9630,
+                "lng": 3249,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9630,
+                "lng": 3248,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9630,
+                "lng": 3247,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9630,
+                "lng": 3246,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9630,
+                "lng": 3245,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9630,
+                "lng": 3244,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9630,
+                "lng": 3241,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9630,
+                "lng": 3243,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9630,
+                "lng": 3242,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9630,
+                "lng": 3240,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9630,
+                "lng": 3239,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9630,
+                "lng": 3238,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9630,
+                "lng": 3237,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9630,
+                "lng": 3236,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9630,
+                "lng": 3235,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9630,
+                "lng": 3234,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9631,
+                "lng": 3233,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9632,
+                "lng": 3232,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9632,
+                "lng": 3231,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9633,
+                "lng": 3230,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9634,
+                "lng": 3229,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9635,
+                "lng": 3228,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9636,
+                "lng": 3228,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9638,
+                "lng": 3228,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9637,
+                "lng": 3228,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9639,
+                "lng": 3229,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9640,
+                "lng": 3229,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9641,
+                "lng": 3229,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9642,
+                "lng": 3230,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9643,
+                "lng": 3231,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9644,
+                "lng": 3232,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9645,
+                "lng": 3233,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9646,
+                "lng": 3234,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9647,
+                "lng": 3235,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9648,
+                "lng": 3236,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9648,
+                "lng": 3237,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9648,
+                "lng": 3238,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9648,
+                "lng": 3240,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9648,
+                "lng": 3239,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9648,
+                "lng": 3241,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9647,
+                "lng": 3242,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9646,
+                "lng": 3243,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9645,
+                "lng": 3243,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9643,
+                "lng": 3243,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9644,
+                "lng": 3243,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9642,
+                "lng": 3243,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9642,
+                "lng": 3241,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9642,
+                "lng": 3240,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9642,
+                "lng": 3242,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9641,
+                "lng": 3240,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9639,
+                "lng": 3240,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9638,
+                "lng": 3240,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9638,
+                "lng": 3243,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9638,
+                "lng": 3242,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9638,
+                "lng": 3241,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9640,
+                "lng": 3240,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9638,
+                "lng": 3244,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9638,
+                "lng": 3245,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9639,
+                "lng": 3246,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9639,
+                "lng": 3247,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9639,
+                "lng": 3248,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9640,
+                "lng": 3249,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9641,
+                "lng": 3250,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9642,
+                "lng": 3251,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9643,
+                "lng": 3252,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9644,
+                "lng": 3252,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9645,
+                "lng": 3252,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9646,
+                "lng": 3252,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9647,
+                "lng": 3252,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9648,
+                "lng": 3253,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9649,
+                "lng": 3253,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9650,
+                "lng": 3253,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9651,
+                "lng": 3253,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9651,
+                "lng": 3254,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9653,
+                "lng": 3254,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9652,
+                "lng": 3254,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9654,
+                "lng": 3255,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9655,
+                "lng": 3256,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9656,
+                "lng": 3257,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9656,
+                "lng": 3258,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9656,
+                "lng": 3260,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9656,
+                "lng": 3261,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9656,
+                "lng": 3259,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9656,
+                "lng": 3262,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9656,
+                "lng": 3263,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9656,
+                "lng": 3264,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9656,
+                "lng": 3265,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9656,
+                "lng": 3266,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9656,
+                "lng": 3267,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9656,
+                "lng": 3268,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9655,
+                "lng": 3270,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9656,
+                "lng": 3269,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9654,
+                "lng": 3271,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9654,
+                "lng": 3272,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9653,
+                "lng": 3273,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9653,
+                "lng": 3274,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9653,
+                "lng": 3275,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9652,
+                "lng": 3276,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9650,
+                "lng": 3276,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9651,
+                "lng": 3276,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9649,
+                "lng": 3276,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9648,
+                "lng": 3276,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9647,
+                "lng": 3275,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9646,
+                "lng": 3273,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9645,
+                "lng": 3271,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9643,
+                "lng": 3270,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9641,
+                "lng": 3270,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9642,
+                "lng": 3270,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9644,
+                "lng": 3270,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9646,
+                "lng": 3272,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9646,
+                "lng": 3274,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9640,
+                "lng": 3270,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9639,
+                "lng": 3270,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9638,
+                "lng": 3271,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9638,
+                "lng": 3272,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9638,
+                "lng": 3273,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9638,
+                "lng": 3274,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9638,
+                "lng": 3275,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9638,
+                "lng": 3277,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9638,
+                "lng": 3276,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9638,
+                "lng": 3278,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9639,
+                "lng": 3279,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9640,
+                "lng": 3280,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9641,
+                "lng": 3281,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9641,
+                "lng": 3282,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9642,
+                "lng": 3283,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9643,
+                "lng": 3284,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9644,
+                "lng": 3285,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9644,
+                "lng": 3286,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9644,
+                "lng": 3287,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9644,
+                "lng": 3289,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9644,
+                "lng": 3288,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9644,
+                "lng": 3291,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9644,
+                "lng": 3290,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9643,
+                "lng": 3293,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9644,
+                "lng": 3292,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9643,
+                "lng": 3294,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9642,
+                "lng": 3295,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9642,
+                "lng": 3296,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9641,
+                "lng": 3297,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9641,
+                "lng": 3298,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9640,
+                "lng": 3299,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9639,
+                "lng": 3300,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9638,
+                "lng": 3301,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9637,
+                "lng": 3301,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9636,
+                "lng": 3301,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9635,
+                "lng": 3302,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9634,
+                "lng": 3303,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9633,
+                "lng": 3303,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9632,
+                "lng": 3303,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9631,
+                "lng": 3303,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9630,
+                "lng": 3302,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9629,
+                "lng": 3301,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9628,
+                "lng": 3299,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9629,
+                "lng": 3300,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9627,
+                "lng": 3297,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9628,
+                "lng": 3298,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9626,
+                "lng": 3296,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9625,
+                "lng": 3295,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9623,
+                "lng": 3294,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9624,
+                "lng": 3294,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9622,
+                "lng": 3293,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9621,
+                "lng": 3293,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9620,
+                "lng": 3293,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9619,
+                "lng": 3292,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9618,
+                "lng": 3291,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9617,
+                "lng": 3290,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9615,
+                "lng": 3290,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9616,
+                "lng": 3290,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9614,
+                "lng": 3291,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9613,
+                "lng": 3291,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9612,
+                "lng": 3292,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9611,
+                "lng": 3292,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9610,
+                "lng": 3293,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9609,
+                "lng": 3294,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9608,
+                "lng": 3295,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9607,
+                "lng": 3296,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9607,
+                "lng": 3297,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9607,
+                "lng": 3298,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9607,
+                "lng": 3299,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9607,
+                "lng": 3300,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9607,
+                "lng": 3301,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9607,
+                "lng": 3302,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9608,
+                "lng": 3303,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9608,
+                "lng": 3304,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9609,
+                "lng": 3305,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9610,
+                "lng": 3306,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9611,
+                "lng": 3307,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9612,
+                "lng": 3308,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9612,
+                "lng": 3309,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9612,
+                "lng": 3310,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9612,
+                "lng": 3312,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9612,
+                "lng": 3311,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9612,
+                "lng": 3313,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9612,
+                "lng": 3314,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9612,
+                "lng": 3315,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
+              },
+              {
+                "lat": 9612,
+                "lng": 3316,
+                "color": "#f79f3b",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -910,626 +1748,146 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "color": "#f79f3b",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Use the goblin bow emote near Mistag.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Right-click Follow on Mistag.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to the Duke. (Chat 3) (or (Chat 4) if Dragon Slayer has been started)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Pickpocket Sigmund.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Open the chest in the other room for a set of H.A.M. robes.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to the Duke. (Chat 3) (or (Chat 4) if Dragon Slayer has been started)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Enter the H.A.M. Hideout west of the Lumbridge cow pen by using the 'pick-lock' option on the old mine entrance",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Search the crate near the entrance for the missing silverware",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Return to the Duke. (Chat 3) (or (Chat 4) if Dragon Slayer has been started)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Go through the Lumbridge cellar and follow Kazgar.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Mistag.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Quest complete!",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     }
   ]
 }
