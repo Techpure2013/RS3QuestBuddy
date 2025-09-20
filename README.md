@@ -22,7 +22,7 @@ Reading the options to correctly proceed in the quest.
 
 <img width="663" height="714" alt="image" src="https://github.com/user-attachments/assets/863e895d-c268-4656-80f9-048a1aa97df8" />
 
-If you want to help gather images contact Techpure on discord.
+-If you want to help gather images contact Techpure on discord.
 
 # The Quest Carousel or just a list containing all quests and mini quests, all subquests:
 
@@ -48,14 +48,15 @@ If you want to help gather images contact Techpure on discord.
 <img width="652" height="243" alt="image" src="https://github.com/user-attachments/assets/239092c1-7ed5-4975-979d-150e1437eef1" />
 <hr />
 <img width="658" height="235" alt="image" src="https://github.com/user-attachments/assets/58077c5d-e523-423f-9c3e-186462a8d98d" />
+
 -Active Requirements Met
 
----
+<hr />
 
 # Adding to Alt1
 
 You may add this to your Alt1 via the following URL:
-`alt1://addapp/https://techpure.dev/RS3QuestBuddy/appconfig.prod.json`
+`alt1://addapp/https://www.techpure.dev/RS3QuestBuddy/appconfig.prod.json`
 
 # Building from Source
 
