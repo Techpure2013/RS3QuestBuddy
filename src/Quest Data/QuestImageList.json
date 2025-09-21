@@ -5166,7 +5166,15 @@
 	},
 	{
 		"name": "Eagles' Peak",
-		"images": []
+		"images": [
+			{
+				"step": 17,
+				"src": "Eagles'Peak_step_17_1.webp",
+				"height": 807,
+				"width": 887,
+				"stepDescription": "If the puzzle gets messed up, there is a reset lever outside of the chamber. Read Additional Info and use the Image at this step to solve the puzzle."
+			}
+		]
 	},
 	{
 		"name": "Elemental Workshop I",
