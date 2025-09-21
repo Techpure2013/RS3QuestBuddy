@@ -3,9 +3,7 @@ import {
 	AccordionControl,
 	AccordionPanel,
 	Button,
-	Checkbox,
 	ColorPicker,
-	Radio,
 	Stack,
 	Switch,
 	TextInput,
@@ -15,7 +13,6 @@ import FontSizeControls from "./Setting Components/FontSizeInput";
 
 export const Settings: React.FC = () => {
 	const [highlight, setHighlight] = useState(false);
-
 	const [colorTextValue, setTextColorValue] = useState<string>("");
 	const [swatchTextColors, setTextSwatchColors] = useState<string[]>([]);
 	const [labelColor, setLabelColor] = useState("");
@@ -29,13 +26,7 @@ export const Settings: React.FC = () => {
 	const [userLabelColor, setUserLabelColor] = useState("");
 	const [userButtonColor, setUserButtonColor] = useState("");
 	const [compact, setCompact] = useState(false);
-	const storedExpandAllAccordions = localStorage.getItem("expandAllAccordions");
 	const storedDialogOption = localStorage.getItem("DialogSolverOption");
-	const [expandAllAccordions, setExpandAllAccordions] = useState<boolean>(() => {
-		return storedExpandAllAccordions !== null
-			? JSON.parse(storedExpandAllAccordions)
-			: false;
-	});
 	const [dialogSolverOption, setDialogSolverOption] = useState<boolean>(() => {
 		return storedDialogOption !== null ? JSON.parse(storedDialogOption) : false;
 	});
@@ -115,16 +106,12 @@ export const Settings: React.FC = () => {
 	useEffect(() => {
 		window.localStorage.setItem("isHighlighted", JSON.stringify(highlight));
 		window.localStorage.setItem("isCompact", JSON.stringify(compact));
-		localStorage.setItem(
-			"expandAllAccordions",
-			JSON.stringify(expandAllAccordions),
-		);
 		window.localStorage.setItem(
 			"DialogSolverOption",
 			JSON.stringify(dialogSolverOption),
 		);
 		window.localStorage.setItem("toolTip", JSON.stringify(toolTip));
-	}, [highlight, compact, expandAllAccordions, dialogSolverOption, toolTip]);
+	}, [highlight, compact, dialogSolverOption, toolTip]);
 
 	useEffect(() => {
 		window.localStorage.setItem("textColorValue", colorTextValue);
@@ -184,29 +171,11 @@ export const Settings: React.FC = () => {
 					styles={{
 						label: { color: hasColor ? userColor : "" },
 					}}
-					checked={highlight}
-					onChange={(event) => {
-						setHighlight(event.currentTarget.checked);
-					}}
-					label={highlight ? "Green Completion On" : "Green Completion Off"}
-				/>
-				<Switch
-					styles={{
-						label: { color: hasColor ? userColor : "" },
-					}}
 					label={compact ? "Compact Mode On" : "Compact Mode Off"}
 					checked={compact || false}
 					onChange={(e) => {
 						setCompact(e.target.checked);
 					}}
-				/>
-				<Switch
-					styles={{
-						label: { color: hasColor ? userColor : "" },
-					}}
-					checked={expandAllAccordions}
-					onChange={(event) => setExpandAllAccordions(event.target.checked)}
-					label={expandAllAccordions ? "Close Sections On" : "Close Sections Off"}
 				/>
 				<Switch
 					styles={{
@@ -358,8 +327,6 @@ export const Settings: React.FC = () => {
 						<FontSizeControls />
 					</AccordionPanel>
 				</Accordion.Item>
-				{/* The commented-out code also had this issue. If you re-enable it,
-            make sure to use the same immutable update pattern. */}
 			</Accordion>
 		</div>
 	);

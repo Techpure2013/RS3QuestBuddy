@@ -4,7 +4,21 @@ import { usePlayerQuests } from "./../../../Fetchers/usePlayerQuests";
 import { fetchQuestList, QuestList } from "./../../../Fetchers/FetchQuestList";
 import { useSortedPlayerQuests } from "./../../../Fetchers/sortPlayerQuests";
 
+// --- IMPORT THE JSON DIRECTLY ---
+// The build tool handles loading the file.
+// The path is relative from this file to the JSON file.
+import questRewardsData from "./../../../Quest Data/QuestRewards.json";
+
 // Define the shape of our final, unified quest object for type safety
+type QuestRewardInfo = {
+	Quest: string;
+	questPoints: number;
+	rewards: string[];
+};
+
+// Get the array from the imported object. This is now a constant.
+const questRewards: QuestRewardInfo[] = questRewardsData;
+
 export type EnrichedQuest = {
 	questName: string;
 	questAge: string;
@@ -15,6 +29,7 @@ export type EnrichedQuest = {
 	difficulty: number;
 	questPoints: number;
 	userEligible: boolean;
+	rewards: string[];
 };
 
 export function useQuestData() {
@@ -33,6 +48,8 @@ export function useQuestData() {
 		}
 		return null;
 	});
+	// We no longer need useState for questRewards, it's a constant.
+
 	const [playerName, setPlayerName] = useState<string>("");
 	const [isSorted, setIsSorted] = useState<boolean>(false);
 	const [playerFound, setPlayerFound] = useState<boolean>(() => {
@@ -51,19 +68,21 @@ export function useQuestData() {
 		questIsLoading: isQuestLoading,
 		fetchPlayerQuests,
 	} = usePlayerQuests();
-	// CORRECTED: We no longer need eligiblePlayerQuests from here
 	let { alteredQuestData, totalQuestPoints, sortPlayerQuests } =
 		useSortedPlayerQuests();
 	const isLoading = isStatsLoading || isQuestLoading;
+
 	// --- Effects ---
 	useEffect(() => {
-		if (questList) return;
-		fetchQuestList().then((ql) => {
-			if (ql) {
-				setQuestList(ql);
-				sessionStorage.setItem("staticQuestList", JSON.stringify(ql));
-			}
-		});
+		// We only need to fetch the quest list now, not the rewards.
+		if (!questList) {
+			fetchQuestList().then((ql) => {
+				if (ql) {
+					setQuestList(ql);
+					sessionStorage.setItem("staticQuestList", JSON.stringify(ql));
+				}
+			});
+		}
 	}, [questList]);
 
 	useEffect(() => {
@@ -83,24 +102,34 @@ export function useQuestData() {
 
 	// --- Data Enrichment Pipeline ---
 	const baseEnrichedQuests: EnrichedQuest[] = useMemo(() => {
-		if (!questList) return [];
-		return questList.map(
-			(quest) =>
-				({
-					...quest,
-					title: quest.questName,
-					status: "NOT_STARTED",
-					difficulty: 0,
-					userEligible: false,
-					questPoints: parseInt(quest.questPoints, 10) || 0,
-				}) as EnrichedQuest,
+		if (!questList || !Array.isArray(questRewards)) return [];
+		const rewardsMap = new Map(
+			questRewards.map((r) => [r.Quest.trim().toLowerCase(), r.rewards]),
 		);
+		return questList.map((quest) => ({
+			...quest,
+			title: quest.questName,
+			status: "NOT_STARTED",
+			difficulty: 0,
+			userEligible: false,
+			questPoints: parseInt(quest.questPoints, 10) || 0,
+			rewards: rewardsMap.get(quest.questName.trim().toLowerCase()) || [],
+		}));
 	}, [questList]);
 
 	const playerEnrichedQuests: EnrichedQuest[] = useMemo(() => {
-		if (!questList || !alteredQuestData || alteredQuestData.length === 0) {
+		if (
+			!questList ||
+			!Array.isArray(questRewards) ||
+			!alteredQuestData ||
+			alteredQuestData.length === 0
+		) {
 			return [];
 		}
+
+		const rewardsMap = new Map(
+			questRewards.map((r) => [r.Quest.trim().toLowerCase(), r.rewards]),
+		);
 		const questDetailsMap = new Map(
 			questList.map((quest) => [quest.questName, quest]),
 		);
@@ -111,6 +140,7 @@ export function useQuestData() {
 				return {
 					...details,
 					...playerQuest,
+					rewards: rewardsMap.get(playerQuest.title.trim().toLowerCase()) || [],
 				} as EnrichedQuest;
 			})
 			.filter((q): q is EnrichedQuest => q !== null);
@@ -119,16 +149,13 @@ export function useQuestData() {
 	const activeQuestList =
 		playerFound && !!isSorted ? playerEnrichedQuests : baseEnrichedQuests;
 
-	// ensuring it is also of type EnrichedQuest[].
 	const remainingQuests: EnrichedQuest[] = useMemo(() => {
-		// Use the enriched list, not the raw one from the child hook
 		return playerEnrichedQuests.filter(
 			(q) =>
 				q.userEligible && (q.status === "NOT_STARTED" || q.status === "STARTED"),
 		);
 	}, [playerEnrichedQuests]);
 
-	// The final list to be displayed. It is now ALWAYS of type EnrichedQuest[].
 	const displayQuests =
 		isSorted && playerFound ? remainingQuests : activeQuestList;
 	// --- Core Logic ---

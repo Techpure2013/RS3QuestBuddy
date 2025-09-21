@@ -1,29 +1,148 @@
-// src/pages/Quest Picker/Quest Picker Components/QuestDisplay.tsx
 import React from "react";
-import { Carousel } from "@mantine/carousel";
 import {
 	Accordion,
 	AccordionControl,
 	ActionIcon,
 	Group,
 	Tooltip,
-	Text, // Import Mantine's Text component
+	Text,
+	AccordionPanel,
+	List,
+	ThemeIcon,
+	Stack,
+	Button,
+	Card,
+	Title,
+	SimpleGrid,
+	Divider,
 } from "@mantine/core";
 import { NavLink } from "react-router-dom";
 import {
 	IconArrowRight,
-	IconArrowLeft,
 	IconPlus,
 	IconCheck,
+	IconStarFilled,
 } from "@tabler/icons-react";
+import { EnrichedQuest } from "./useQuestData";
 
-// Define a unified quest type for internal use
-type Quest = {
-	title: string;
+// --- Reusable Components ---
+
+const QuestRewardsList: React.FC<{ rewards: string[] }> = ({ rewards }) => {
+	if (!rewards || rewards.length === 0) {
+		return (
+			<Text c="dimmed" size="sm" mt="xs">
+				No specific item rewards for this quest.
+			</Text>
+		);
+	}
+	return (
+		<List
+			spacing="xs"
+			size="sm"
+			center
+			icon={
+				<ThemeIcon color="yellow" size={16} radius="xl">
+					<IconStarFilled style={{ width: "70%", height: "70%" }} />
+				</ThemeIcon>
+			}
+		>
+			{rewards.map((reward, index) => (
+				<List.Item key={index}>{reward}</List.Item>
+			))}
+		</List>
+	);
 };
 
+// --- QuestCard for the Grid View ---
+
+interface QuestCardProps {
+	quest: EnrichedQuest;
+	isAdded: boolean;
+	onAddToTodo: (name: string) => void;
+	onRemoveFromTodo: (name: string) => void;
+	onQuestClick: (name: string) => void;
+	getModifiedQuestName: (name: string) => string;
+}
+
+const QuestCard: React.FC<QuestCardProps> = ({
+	quest,
+	isAdded,
+	onAddToTodo,
+	onRemoveFromTodo,
+	onQuestClick,
+	getModifiedQuestName,
+}) => {
+	return (
+		<Card
+			shadow="lg"
+			padding="lg"
+			radius="md"
+			withBorder
+			style={{
+				height: "100%",
+				display: "flex",
+				flexDirection: "column",
+				border: "0.125rem solid var(--mantine-color-dark-4)",
+				background: "linear-gradient(135deg, #1A1B1E, #101113)",
+			}}
+		>
+			<Group justify="space-between" mb="sm">
+				<Text fz="lg" fw={700} c="teal.3" truncate="end">
+					{quest.questName}
+				</Text>
+				<Tooltip label={isAdded ? "Remove from To-Do" : "Add to To-Do"}>
+					<ActionIcon
+						variant={isAdded ? "filled" : "light"}
+						color={isAdded ? "teal" : "gray"}
+						size="lg"
+						onClick={() =>
+							isAdded
+								? onRemoveFromTodo(quest.questName)
+								: onAddToTodo(quest.questName)
+						}
+					>
+						{isAdded ? <IconCheck size={20} /> : <IconPlus size={20} />}
+					</ActionIcon>
+				</Tooltip>
+			</Group>
+
+			<Divider />
+
+			<Stack gap="xs" mt="md">
+				<Title order={6} c="dimmed">
+					Rewards
+				</Title>
+				<QuestRewardsList rewards={quest.rewards} />
+			</Stack>
+
+			<Group mt="auto" pt="md">
+				<NavLink
+					to="/QuestPage"
+					state={{
+						questName: quest.questName,
+						modified: getModifiedQuestName(quest.questName),
+					}}
+					style={{ textDecoration: "none", width: "100%" }}
+					onClick={() => onQuestClick(quest.questName)}
+				>
+					<Button
+						variant="filled"
+						color="dark"
+						fullWidth
+						rightSection={<IconArrowRight size={16} />}
+					>
+						View Quest Page
+					</Button>
+				</NavLink>
+			</Group>
+		</Card>
+	);
+};
+
+// --- Main Display Component ---
+
 interface QuestDisplayProps {
-	quests: Quest[];
+	quests: EnrichedQuest[];
 	isCompact: boolean;
 	onQuestClick: (questName: string) => void;
 	labelColor?: string;
@@ -31,20 +150,6 @@ interface QuestDisplayProps {
 	onAddToTodo: (questName: string) => void;
 	onRemoveFromTodo: (questName: string) => void;
 }
-
-const QuestItemContent: React.FC<{ quest: Quest }> = ({ quest }) => {
-	const questImage =
-		"./Rewards/" +
-		quest.title.toLowerCase().replace(/[^a-zA-Z0-9]/g, "") +
-		"reward.webp";
-
-	return (
-		<div className="caroQTitle">
-			{quest.title}
-			<img loading="lazy" src={questImage} alt="Reward" aria-hidden="true" />
-		</div>
-	);
-};
 
 export const QuestDisplay: React.FC<QuestDisplayProps> = ({
 	quests,
@@ -63,16 +168,16 @@ export const QuestDisplay: React.FC<QuestDisplayProps> = ({
 			.replace(/[!,`']/g, "");
 	};
 
-	if (!quests) return null;
+	if (!quests || quests.length === 0) return null;
 
+	// --- Accordion View (Compact Mode) ---
 	if (isCompact) {
 		return (
 			<Accordion>
 				{quests.map((quest) => {
-					const isAdded = todoList.includes(quest.title);
+					const isAdded = todoList.includes(quest.questName);
 					return (
-						<Accordion.Item key={quest.title} value={quest.title}>
-							{/* REMOVED rightSection and wrapped children in a Group */}
+						<Accordion.Item key={quest.questName} value={quest.questName}>
 							<AccordionControl
 								chevron={null}
 								styles={{
@@ -81,33 +186,17 @@ export const QuestDisplay: React.FC<QuestDisplayProps> = ({
 								}}
 							>
 								<Group justify="space-between" wrap="nowrap" gap="xs">
-									{/* The NavLink now only wraps the text */}
-									<NavLink
-										to="/QuestPage"
-										state={{
-											questName: quest.title,
-											modified: getModifiedQuestName(quest.title),
-										}}
-										style={{
-											textDecoration: "none",
-											color: "inherit",
-											flex: 1, // Allow the link to take up available space
-										}}
-										onClick={() => onQuestClick(quest.title)}
-									>
-										{/* Using <Text> allows for nice truncation if names are long */}
-										<Text truncate="end">{quest.title}</Text>
-									</NavLink>
-
-									{/* The ActionIcon is now a sibling to the NavLink, inside the Group */}
+									<Text truncate="end">{quest.questName}</Text>
 									<Tooltip label={isAdded ? "Remove from To-Do" : "Add to To-Do"}>
 										<ActionIcon
 											variant={isAdded ? "filled" : "subtle"}
 											color={isAdded ? "teal" : "gray"}
 											onClick={(e) => {
-												e.preventDefault(); // Prevent accordion from toggling
-												e.stopPropagation(); // Stop the click from propagating to the control
-												isAdded ? onRemoveFromTodo(quest.title) : onAddToTodo(quest.title);
+												e.preventDefault();
+												e.stopPropagation();
+												isAdded
+													? onRemoveFromTodo(quest.questName)
+													: onAddToTodo(quest.questName);
 											}}
 										>
 											{isAdded ? <IconCheck size={16} /> : <IconPlus size={16} />}
@@ -115,6 +204,47 @@ export const QuestDisplay: React.FC<QuestDisplayProps> = ({
 									</Tooltip>
 								</Group>
 							</AccordionControl>
+							<AccordionPanel>
+								<Card
+									withBorder
+									shadow="sm"
+									radius="md"
+									padding="lg"
+									style={{
+										border: "0.125rem solid var(--mantine-color-dark-4)",
+										background: "linear-gradient(135deg, #1A1B1E, #101113)",
+									}}
+								>
+									<Stack gap="md">
+										<Group>
+											<NavLink
+												to="/QuestPage"
+												state={{
+													questName: quest.questName,
+													modified: getModifiedQuestName(quest.questName),
+												}}
+												style={{ textDecoration: "none" }}
+												onClick={() => onQuestClick(quest.questName)}
+											>
+												<Button
+													variant="filled"
+													color="dark"
+													size="sm"
+													rightSection={<IconArrowRight size={14} />}
+												>
+													View Quest Page
+												</Button>
+											</NavLink>
+										</Group>
+										<div>
+											<Title order={5} c="dimmed">
+												Rewards
+											</Title>
+											<QuestRewardsList rewards={quest.rewards} />
+										</div>
+									</Stack>
+								</Card>
+							</AccordionPanel>
 						</Accordion.Item>
 					);
 				})}
@@ -122,52 +252,20 @@ export const QuestDisplay: React.FC<QuestDisplayProps> = ({
 		);
 	}
 
-	// The Carousel view is correct and does not need changes
+	// --- Grid View (Default Mode) ---
 	return (
-		<div className="caroContainer">
-			<Carousel
-				slideSize={{ base: "100%" }}
-				height={450}
-				nextControlIcon={<IconArrowRight size={24} />}
-				previousControlIcon={<IconArrowLeft size={24} />}
-			>
-				{quests.map((quest) => {
-					const isAdded = todoList.includes(quest.title);
-					return (
-						<Carousel.Slide key={quest.title}>
-							<Tooltip label={isAdded ? "Remove from To-Do" : "Add to To-Do"}>
-								<ActionIcon
-									variant={isAdded ? "filled" : "light"}
-									color={isAdded ? "teal" : "gray"}
-									onClick={(e) => {
-										e.preventDefault(); // Prevent navigation
-										e.stopPropagation();
-										isAdded ? onRemoveFromTodo(quest.title) : onAddToTodo(quest.title);
-									}}
-									style={{
-										position: "absolute",
-										top: 10,
-										right: 10,
-										zIndex: 2,
-									}}
-								>
-									{isAdded ? <IconCheck size={18} /> : <IconPlus size={18} />}
-								</ActionIcon>
-							</Tooltip>
-							<NavLink
-								to="/QuestPage"
-								state={{
-									questName: quest.title,
-									modified: getModifiedQuestName(quest.title),
-								}}
-								style={{ textDecoration: "none" }}
-							>
-								<QuestItemContent quest={quest} />
-							</NavLink>
-						</Carousel.Slide>
-					);
-				})}
-			</Carousel>
-		</div>
+		<SimpleGrid cols={{ base: 1, sm: 2, lg: 3 }} spacing="xl">
+			{quests.map((quest) => (
+				<QuestCard
+					key={quest.questName}
+					quest={quest}
+					isAdded={todoList.includes(quest.questName)}
+					onAddToTodo={onAddToTodo}
+					onRemoveFromTodo={onRemoveFromTodo}
+					onQuestClick={onQuestClick}
+					getModifiedQuestName={getModifiedQuestName}
+				/>
+			))}
+		</SimpleGrid>
 	);
 };

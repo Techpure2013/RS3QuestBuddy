@@ -2,209 +2,18 @@
   "questName": "Troll Stronghold",
   "questSteps": [
     {
-      "stepDescription": "Items needed: 1 free inventory space",
+      "stepDescription": "Talk to Commander Denulth in Burthorpe, east of the castle. (Chat 1•2•✓)",
       "itemsNeeded": [
         "1 free inventory space"
       ],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Troll arena location",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Talk to Commander Denulth in Burthorpe, east of the castle. (Chat 1•2•✓)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "If Denulth tells you that the ambush is still being planned, try asking him about the White Knights first. (Chat 3)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "If Denulth tells you that the ambush is still being planned, try asking him about the White Knights first. (Chat 3)"
       ]
     },
     {
@@ -212,256 +21,50 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Either: \nEnter Sabbot's cave from Death Plateau.(recommended for low combat level), \nCross all the obstacles to reach the exit of the cavern, \nor take shortcut by climbing the rocks to north west, and climb the cliffside while wearing climbing boots, be aware of level 77 Thrower trolls protect from ranged is advised when taking this route.",
+      "stepDescription": "Enter Sabbot's cave from Death Plateau. Cross all the obstacles to reach the exit of the cavern. Other option in Additional Info.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "Take shortcut by climbing the rocks to north west, and climb the cliffside while wearing climbing boots, be aware of level 77 Thrower trolls protect from ranged is advised when taking this route."
       ]
     },
     {
-      "stepDescription": "Exit the cavern, climb the rocks to the immediate west of the exit and follow the path east over the rocks until you reach the Arena.",
+      "stepDescription": "Exit the cavern, climb the rocks to the immediate west of the exit and follow the path east over the rocks until you reach the Arena. Enter the Arena, attempt to exit to the north.",
       "itemsNeeded": [
-        "Combat equipment Then\nenter the arena and attempt to leave through the northern gate."
+        "Combat equipment "
       ],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Items needed: Combat equipment Then\nenter the arena and attempt to leave through the northern gate.",
+      "stepDescription": "Defeat Dad after he attempts to attack you. Very low level players may need food.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Defeat Dad after he attempts to attack you. Very low level players may need food. Kill him or spare him. (Easy way to kill Dad is to get in the corner where the gate is and safe spot him. As he can't hit you while you are next to the gate. This might take up to 10 mins)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "Kill him or spare him. ",
+        "Easy way to kill Dad is to get in the corner where the gate is and safe spot him. As he can't hit you while you are next to the gate. This might take up to 10 mins. "
       ]
     },
     {
@@ -469,514 +72,129 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Once outside, run counter-clockwise around the mountain, past the thrower trolls (not behind them: they are supposed to throw rocks at you automatically) towards the Troll Stronghold.",
       "itemsNeeded": [
-        "3 free inventory spaces then\nrun south",
-        "go through the open wooden door",
-        "then continue north."
+        ""
       ],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "With 47 Agility the cliffside shortcuts may be used to avoid the thrower trolls completely."
       ]
     },
     {
-      "stepDescription": "With 47 Agility the cliffside shortcuts may be used to avoid the thrower trolls completely.",
-      "itemsNeeded": [],
+      "stepDescription": "Run south, go through the open wooden door, then continue north.",
+      "itemsNeeded": [
+        "3 free inventory spaces"
+      ],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Items needed: 3 free inventory spaces then\nrun south, go through the open wooden door, then continue north.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Kill a general and take his key.",
-      "itemsNeeded": [],
+      "itemsNeeded": [
+        ""
+      ],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Head back towards the entrance, past the door and go down the stone staircase to the north.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Open the prison door to the north-east, unlock it, and head down the stairs.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Pickpocket (or kill) Twig and Berry. Take their keys.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Unlock the two jail cells.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Home teleport to Burthorpe.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [],
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Dunstan (the blacksmith in north-eastern Burthorpe).",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [],
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Quest complete!",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [],
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     }
   ]
 }

@@ -1,5 +1,3 @@
-// src/pages/Quest Picker/QuestCarousel.tsx
-
 import React, { useEffect, useMemo, useState } from "react";
 import {
 	Button,
@@ -263,8 +261,7 @@ const QuestCarousel: React.FC = () => {
 						<Group
 							style={{
 								justifyContent: "center",
-								// This is the correct v7 syntax for a media query
-								[`@media (min-width: ${theme.breakpoints.lg})`]: {
+								[`@media (min-width: 75em`]: {
 									justifyContent: "flex-end",
 								},
 							}}
@@ -368,9 +365,7 @@ const QuestCarousel: React.FC = () => {
 				</div>
 			)}
 			<QuestDisplay
-				quests={fullyFilteredQuests.map((q) => ({
-					title: getQuestTitle(q),
-				}))}
+				quests={fullyFilteredQuests}
 				isCompact={uiState.isCompact}
 				onQuestClick={handleQuestClick}
 				labelColor={uiState.hasLabelColor ? uiState.userLabelColor : undefined}
