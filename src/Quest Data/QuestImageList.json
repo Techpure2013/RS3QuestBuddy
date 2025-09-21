@@ -7276,130 +7276,39 @@
 		"name": "Icthlarin's Little Helper",
 		"images": [
 			{
-				"step": "3",
-				"src": "QuestStart.webp",
-				"width": 350,
-				"height": 197,
-				"stepDescription": "Talk to the Wanderer with your cat in your backpack or while your cat is following you (the Wanderer is located a short distance north of Sophanem, east of the river but west of the Agility Pyramid). (Chat 1•✓)"
+				"step": 1,
+				"src": "Icthlarin'sLittleHelper_step_1_1.webp",
+				"height": 379,
+				"width": 622,
+				"stepDescription": "Get to Sophanem exit gate run north and east to find the Wanderer."
 			},
 			{
-				"step": "5",
-				"src": "Screenshot_1.webp",
-				"width": 350,
-				"height": 161,
-				"stepDescription": "Open the northern door on the southern pyramid (picture of a cat)."
-			},
-			{
-				"step": "5",
-				"src": "Screenshot_2.webp",
-				"width": 350,
-				"height": 247,
-				"stepDescription": "Open the northern door on the southern pyramid (picture of a cat)."
-			},
-			{
-				"step": "6",
-				"src": "Screenshot_3.webp",
-				"width": 350,
-				"height": 197,
-				"stepDescription": "You will arrive inside a maze. Run past the battering rams (\"crushers\")."
-			},
-			{
-				"step": "7",
-				"src": "Screenshot_4.webp",
-				"width": 350,
-				"height": 313,
-				"stepDescription": "The path after the initial crushers is littered with pitfalls. If you look closely, there are dotted lines showing the locations of the pitfalls."
-			},
-			{
-				"step": "13",
-				"src": "Screenshot_5.webp",
-				"width": 315,
-				"height": 130,
-				"stepDescription": "Talk to the Sphinx with your cat/kitten out (if 7 is highlighted it is WRONG ITS 9.) (Chat 1•1•2•1)"
-			},
-			{
-				"step": "10",
-				"src": "Screenshot_6.webp",
-				"width": 353,
-				"height": 338,
+				"step": 8,
+				"src": "Icthlarin'sLittleHelper_step_8_1.webp",
+				"height": 264,
+				"width": 411,
 				"stepDescription": "Click on the door of the western room and solve puzzle."
 			},
 			{
-				"step": "11",
-				"src": "Screenshot_7.webp",
-				"width": 350,
-				"height": 318,
-				"stepDescription": "You may reroll your puzzle until it looks like solution below."
+				"step": 8,
+				"src": "Icthlarin'sLittleHelper_step_8_2.webp",
+				"height": 267,
+				"width": 415,
+				"stepDescription": "Click on the door of the western room and solve puzzle."
 			},
 			{
-				"step": "12",
-				"src": "Screenshot_8.webp",
-				"width": 350,
-				"height": 220,
-				"stepDescription": "Items needed: Combat equipment"
+				"step": 8,
+				"src": "Icthlarin'sLittleHelper_step_8_3.webp",
+				"height": 272,
+				"width": 410,
+				"stepDescription": "Click on the door of the western room and solve puzzle."
 			},
 			{
-				"step": "14",
-				"src": "Screenshot_9.webp",
-				"width": 136,
-				"height": 104,
-				"stepDescription": "Talk to the High Priest, located inside the temple in the south part of the city."
-			},
-			{
-				"step": "14",
-				"src": "Screenshot_10.webp",
-				"width": 284,
-				"height": 201,
-				"stepDescription": "Talk to the High Priest, located inside the temple in the south part of the city."
-			},
-			{
-				"step": "14",
-				"src": "Screenshot_11.webp",
-				"width": 350,
-				"height": 287,
-				"stepDescription": "Talk to the High Priest, located inside the temple in the south part of the city."
-			},
-			{
-				"step": "15",
-				"src": "Screenshot_13.webp",
-				"width": 350,
-				"height": 208,
-				"stepDescription": "Examine the canopic jar in your inventory. (Take note)"
-			},
-			{
-				"step": "15",
-				"src": "Screenshot_12.webp",
-				"width": 350,
-				"height": 228,
-				"stepDescription": "Examine the canopic jar in your inventory. (Take note)"
-			},
-			{
-				"step": "7",
-				"src": "Screenshot_17.webp",
-				"width": 227,
-				"height": 380,
-				"stepDescription": "The path after the initial crushers is littered with pitfalls. If you look closely, there are dotted lines showing the locations of the pitfalls."
-			},
-			{
-				"step": "20",
-				"src": "Screenshot_21.webp",
-				"width": 350,
-				"height": 147,
-				"stepDescription": "Take the jar again."
-			},
-			{
-				"step": "21",
-				"src": "Screenshot_22.webp",
-				"width": 350,
-				"height": 199,
-				"stepDescription": "Exit the room"
-			},
-			{
-				"step": "29",
-				"src": "Screenshot_29.webp",
-				"width": 115,
-				"height": 82,
-				"stepDescription": "Talk to the Carpenter again with a willow log."
+				"step": 8,
+				"src": "Icthlarin'sLittleHelper_step_8_4.webp",
+				"height": 266,
+				"width": 409,
+				"stepDescription": "Click on the door of the western room and solve puzzle."
 			}
 		]
 	},

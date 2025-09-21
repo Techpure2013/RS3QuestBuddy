@@ -3410,7 +3410,6 @@
 		"OfficialLength": "Long",
 		"Requirements": ["Gertrude's Cat", "Diamond in the Rough", "Stolen Hearts"],
 		"ItemsRequired": [
-			"After returning the canopic jar and talking to the priest, you can enter the city through the front gate, so you can use the magic carpet transport system. It is possible to get out of the city without purposely dying, finishing the quest, or using a teleport. There is a small crack in the north-eastern corner of the wall near the locust. You can re-enter the city from the secret passage north-east of where the quest started, directly north-east of the tent where the wanderer is. 2-3 waterskins are recommended. You will not need water within the city, and there are places to fill your water. Note that wearing a lot of weight will make you die faster in the desert. Take this into account- bring more waterskins if you are bringing a lot of armour and weapons with you. Note that jumping the pit is risky. You will not always make it, even if you have 100 run energy. A higher Agility level is recommended.The level 56 Possessed Priest and one of Apmeken, Het, Crondis or Scabaras are not hard to defeat with the help of prayer.Bring a bucket of sap to minimise running/teleporting back and forth.",
 			"A kitten, a cat, an overgrown cat, or a hellcat (it will only need to be out for seconds at a time, so food is unnecessary)",
 			"A pile of salt, bag of salt, salt shaker or an empty bucket to obtain a pile of salt",
 			"Linen (obtainable during quest for 30 coins)",
@@ -3428,7 +3427,9 @@
 		],
 		"EnemiesToDefeat": [
 			"Possessed Priest (level 56)",
-			"Apmeken apparition, Het apparition, Crondis apparition, or Scabaras apparition (levels 56-58)"
+			"Apmeken apparition, Het apparition, Crondis apparition, or Scabaras apparition (levels 56-58)",
+			"Mummies (level 70)",
+			"scarab swarms (level 12)"
 		]
 	},
 	{
