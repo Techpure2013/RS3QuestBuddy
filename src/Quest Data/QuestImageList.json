@@ -6096,11 +6096,11 @@
 		"name": "Fur 'n Seek",
 		"images": [
 			{
-				"step": "3",
-				"src": "Step3Furhideskintable.webp",
-				"width": 850,
+				"step": 3,
+				"src": "Fur'nSeek_step_3_1.webp",
 				"height": 650,
-				"stepDescription": "Use table provided at this step for hide/fur/skin collection"
+				"width": 850,
+				"stepDescription": "Use table provided at this step for hide/fur/skin collection or in Additional Info."
 			}
 		]
 	},
