@@ -111,7 +111,6 @@ module.exports = {
 				{ from: "Quest Data", to: "Quest Data" },
 				{ from: "Images", to: "Images" },
 				{ from: "Quests", to: "Quests" },
-				{ from: "Rewards", to: "Rewards" },
 				{ from: "assets", to: "assets" },
 				{ from: "appconfig.prod.json", to: "appconfig.prod.json" },
 			],
