@@ -4372,102 +4372,81 @@
 		"name": "Desert Treasure",
 		"images": [
 			{
-				"step": "33",
-				"src": "Desert Treasure Step 33.webp",
-				"width": 804,
+				"step": 17,
+				"src": "DesertTreasure_step_17_1.webp",
 				"height": 604,
-				"stepDescription": "(Dungeon map at step) Once in the Dungeon there will be torches that need to be lit in each corner of the dungeon. Once a torch is lit quickly light the other torches in all corners as quick a possible. Once all torches are lit head to the center to open the chest to receive a Warm Key."
-			},
-			{
-				"step": "40",
-				"src": "Desert Treasure Step 40.webp",
 				"width": 804,
-				"height": 604,
-				"stepDescription": "Run east to Damis and kill him in both phases for the Shadow diamond. (refer to map at step for route and Safe Spot)\nIf Damis despawns, run a small distance back from where you came, then run back."
-			},
-			{
-				"step": "32",
-				"src": "Desert Treasure Step 32.webp",
-				"width": 804,
-				"height": 604,
-				"stepDescription": "If Smoking Kills is complete the dungeon can be entered from the Pollnivneach well and through the Dark stairs to the west. \nOtherwise the player can enter the Smokey Well which is located west of Pollnivneach. (refer to image at step for smokey well location)"
-			},
-			{
-				"step": "44",
-				"src": "Desert Treasure Pyramid 1 step 44.webp",
-				"width": 804,
-				"height": 604,
-				"stepDescription": "Run through the pyramid using the maps (refer to image's at this step). Don't stand still, or you may be transported back to the start. Also \nthere's a possibility that scarabs spawn in Azzanadra's room so... hopefully you brought a weapon, antipoison, and some more food just in case."
-			},
-			{
-				"step": "44",
-				"src": "Desert Treasure Pyramid 2 step 44.webp",
-				"width": 804,
-				"height": 604,
-				"stepDescription": "Run through the pyramid using the maps (refer to image's at this step). Don't stand still, or you may be transported back to the start. Also \nthere's a possibility that scarabs spawn in Azzanadra's room so... hopefully you brought a weapon, antipoison, and some more food just in case."
-			},
-			{
-				"step": "44",
-				"src": "Desert Treasure Pyramid 3 step 44.webp",
-				"width": 804,
-				"height": 604,
-				"stepDescription": "Run through the pyramid using the maps (refer to image's at this step). Don't stand still, or you may be transported back to the start. Also \nthere's a possibility that scarabs spawn in Azzanadra's room so... hopefully you brought a weapon, antipoison, and some more food just in case."
-			},
-			{
-				"step": "44",
-				"src": "Desert Treasure Pyramid 4 step 44.webp",
-				"width": 804,
-				"height": 604,
-				"stepDescription": "Run through the pyramid using the maps (refer to image's at this step). Don't stand still, or you may be transported back to the start. Also \nthere's a possibility that scarabs spawn in Azzanadra's room so... hopefully you brought a weapon, antipoison, and some more food just in case."
-			},
-			{
-				"step": "12",
-				"src": "Desert Treasure Step 12.webp",
-				"width": 804,
-				"height": 604,
-				"stepDescription": "Talk to Ruantun in the Draynor Sewers for a Silver pot"
-			},
-			{
-				"step": "21",
-				"src": "Desert Treasure Step 21.webp",
-				"width": 804,
-				"height": 604,
-				"stepDescription": "Get Spiked or Climbing Boots to Climb Rock Barriers (refer to image at step for Route Reference) or If Trollheim teleport is unlocked take the path that leads North-East to the snow area."
-			},
-			{
-				"step": "36",
-				"src": "Desert Treasure Step 36.webp",
-				"width": 804,
-				"height": 604,
-				"stepDescription": "Items needed: A few antipoisons, lots of lockpicks, earth spells if using magic. Once prepared go talk\nto Rasolo (Chat 3•1) (Refer to image at step for Rasolo's location)."
-			},
-			{
-				"step": "38",
-				"src": "Desert Treasure Step 38.webp",
-				"width": 804,
-				"height": 604,
-				"stepDescription": "Unlock the secure chest in the southern-most tent. (Alot of lockpicks Possibly consumed unless you have a Master Thief Lockpick)"
-			},
-			{
-				"step": "42",
-				"src": "Desert Treasure Step 42.webp",
-				"width": 804,
-				"height": 604,
-				"stepDescription": "Return to the Bedabin Camp, and head directly south of Eblis to the pyramid with all Diamonds in the Inventory."
-			},
-			{
-				"step": "1",
-				"src": "Desert Treasure Step 1.webp",
-				"width": 804,
-				"height": 604,
-				"stepDescription": "**Items needed: 650 coins, 1 charcoal, 1 ashes, 1 bones, 1 blood rune, 6 steel bars, 12 magic logs, 6 molten glass, and one free inventory space.** \nTravel to the Bedabin Camp and talk to Asgarnia Smith nearby (refer to map at current step for quest start location). (Chat 2•✓)"
-			},
-			{
-				"step": "17",
-				"src": "Desert Treasure Step 17.webp",
-				"width": 804,
-				"height": 604,
 				"stepDescription": "Run south-east to the Graveyard (refer to image at step)."
+			},
+			{
+				"step": 29,
+				"src": "DesertTreasure_step_29_1.webp",
+				"height": 604,
+				"width": 804,
+				"stepDescription": "Players can enter the Smokey Well which is located west of Pollnivneach. (refer to image at step for smokey well location)"
+			},
+			{
+				"step": 30,
+				"src": "DesertTreasure_step_30_2.webp",
+				"height": 604,
+				"width": 804,
+				"stepDescription": "Light Torches in all four corners run to the middle of the dungeon and loot the chest for a Warm Key."
+			},
+			{
+				"step": 33,
+				"src": "DesertTreasure_step_33_1.webp",
+				"height": 604,
+				"width": 804,
+				"stepDescription": "Go talk to Rasolo (Chat 3•1) (Refer to image at step for Rasolo's location)."
+			},
+			{
+				"step": 34,
+				"src": "DesertTreasure_step_34_1.webp",
+				"height": 604,
+				"width": 804,
+				"stepDescription": "Head back to the Bandit Camp. (Refer to image at next step)"
+			},
+			{
+				"step": 36,
+				"src": "DesertTreasure_step_36_1.webp",
+				"height": 604,
+				"width": 804,
+				"stepDescription": "Run east to Damis and kill him in both phases for the Shadow diamond. (refer to map at step for route and Safe Spot)\n"
+			},
+			{
+				"step": 37,
+				"src": "DesertTreasure_step_37_1.webp",
+				"height": 604,
+				"width": 804,
+				"stepDescription": "Return to the Bedabin Camp, and head directly south of Eblis to the pyramid with all Diamonds in the Inventory.\n"
+			},
+			{
+				"step": 39,
+				"src": "DesertTreasure_step_39_5.webp",
+				"height": 521,
+				"width": 700,
+				"stepDescription": "Run through the pyramid using the maps (refer to image's at this step). Don't stand still, or you may be transported back to the start. Also \nthere's a possibility that scarabs spawn in Azzanadra's room so... hopefully you brought a weapon, antipoison, and some more food just in case."
+			},
+			{
+				"step": 39,
+				"src": "DesertTreasure_step_39_1.webp",
+				"height": 604,
+				"width": 804,
+				"stepDescription": "Run through the pyramid using the maps (refer to image's at this step). Don't stand still, or you may be transported back to the start. Also \nthere's a possibility that scarabs spawn in Azzanadra's room so... hopefully you brought a weapon, antipoison, and some more food just in case."
+			},
+			{
+				"step": 39,
+				"src": "DesertTreasure_step_39_2.webp",
+				"height": 604,
+				"width": 804,
+				"stepDescription": "Run through the pyramid using the maps (refer to image's at this step). Don't stand still, or you may be transported back to the start. Also \nthere's a possibility that scarabs spawn in Azzanadra's room so... hopefully you brought a weapon, antipoison, and some more food just in case."
+			},
+			{
+				"step": 39,
+				"src": "DesertTreasure_step_39_3.webp",
+				"height": 604,
+				"width": 804,
+				"stepDescription": "Run through the pyramid using the maps (refer to image's at this step). Don't stand still, or you may be transported back to the start. Also \nthere's a possibility that scarabs spawn in Azzanadra's room so... hopefully you brought a weapon, antipoison, and some more food just in case."
 			}
 		]
 	},
