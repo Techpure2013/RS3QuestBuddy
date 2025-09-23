@@ -9745,102 +9745,18 @@
 		"name": "Shilo Village",
 		"images": [
 			{
-				"step": "1",
-				"src": "Shilo Village Step 1.webp",
-				"width": 607,
-				"height": 422,
-				"stepDescription": "Teleport to Karamja (shortest teleport is CKR) and run far south/southeast to the end of the village. (Follow the fence all the way down)"
-			},
-			{
-				"step": "23",
-				"src": "Shilo Village Step 24.webp",
-				"width": 494,
-				"height": 248,
-				"stepDescription": "Head southwest to Cairn Isle by climbing the rocks and going across the bridge. Be careful, you can sometimes fall - use the Surge ability to bypass this."
-			},
-			{
-				"step": "4",
-				"src": "Step5_ShiloVil.webp",
-				"width": 973,
+				"step": 5,
+				"src": "ShiloVillage_step_5_1.webp",
 				"height": 705,
-				"stepDescription": "**Items needed: torch and rope**\nLocation of the mound"
-			},
-			{
-				"step": "6",
-				"src": "Step5_lookatmound.webp",
-				"width": 1007,
-				"height": 565,
+				"width": 973,
 				"stepDescription": "Search the mound and select excavate. (🗨️ 1)"
 			},
 			{
-				"step": "10",
-				"src": "Step11_InvestigateStone.webp",
-				"width": 952,
-				"height": 556,
-				"stepDescription": "Investigate the strange looking stone, to the south-east and near the broken table, with a chisel for a Stone-plaque."
-			},
-			{
-				"step": "11",
-				"src": "Step12_SearchCave.webp",
-				"width": 824,
-				"height": 651,
-				"stepDescription": "Search the 'cave in' (see step image) and wiggle through the rocks. (🗨️ 1)"
-			},
-			{
-				"step": "12",
-				"src": "Step13_searchLooseRocks.webp",
-				"width": 874,
-				"height": 702,
-				"stepDescription": "Search the loose rocks up north from the entrance for a Tattered scroll. (You might fail this action and take damage. If you do, Search again until you get the item.) (🗨️ 1)"
-			},
-			{
-				"step": "13",
-				"src": "Step14_SearchOldSack.webp",
-				"width": 918,
-				"height": 656,
-				"stepDescription": "Search the old sacks to the south-east for a Crumpled scroll."
-			},
-			{
-				"step": "14",
-				"src": "Step15_SearchGallows.webp",
-				"width": 519,
-				"height": 605,
-				"stepDescription": "Look-at the ancient gallows to the north."
-			},
-			{
-				"step": "19",
-				"src": "Step20_WestNearbyStat.webp",
-				"width": 747,
-				"height": 642,
-				"stepDescription": "Walk west to the nearby statue. Bury the corpse then talk to the Spirit of Zadimus for the Bone shard."
-			},
-			{
-				"step": "24",
-				"src": "Step25_SearchWellStackedRocks.webp",
-				"width": 587,
-				"height": 565,
-				"stepDescription": "Search the 'well stacked rocks' to the north to enter the Tomb of Bervirius. If you fail search again until you are able to enter. (🗨️ 1)"
-			},
-			{
-				"step": "25",
-				"src": "Step26_InspectTomb.webp",
-				"width": 448,
-				"height": 439,
-				"stepDescription": "Inside, run south and search the 'tomb dolmen' to receive three items; Sword pommel, Locating Locating crystal and Bervirius Bervirius notes. Make sure to have enough inventory space otherwise you will have to reclaim the scroll using papyrus and charcoal."
-			},
-			{
-				"step": "30",
-				"src": "Step31_TombLocation.webp",
-				"width": 654,
-				"height": 361,
-				"stepDescription": "Rashiliyia's Tomb entrance location"
-			},
-			{
-				"step": "30",
-				"src": "Step31_TombEntrance.webp",
-				"width": 797,
-				"height": 705,
-				"stepDescription": "Rashiliyia's Tomb entrance location"
+				"step": 20,
+				"src": "ShiloVillage_step_20_1.webp",
+				"height": 248,
+				"width": 494,
+				"stepDescription": "Talk to Trufitus. (🗨️ 2) Ensure Trufitus mentions the need to find the Tomb of Bervirius.\nLocation of Cairn Isle"
 			}
 		]
 	},
