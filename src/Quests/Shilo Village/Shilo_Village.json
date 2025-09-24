@@ -32,7 +32,9 @@
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": []
+      "additionalStepInformation": [
+        "Teleport to the Karamja lodestone and run southeast to Trufitus, northeast of Tai Bwo Wannai Village, west of the hardwood grove."
+      ]
     },
     {
       "stepDescription": "Travel east of Trufitus' hut, over the agility log and then south to Ah Za Rhoon.",
@@ -60,7 +62,7 @@
       "additionalStepInformation": []
     },
     {
-      "stepDescription": "Use a Lit torch on the fissure. (click on a torch in your inventory to light it)",
+      "stepDescription": "Use a Lit torch on the fissure.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
@@ -68,7 +70,9 @@
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": []
+      "additionalStepInformation": [
+        "To obtain a lit torch, light the torch in the backpack."
+      ]
     },
     {
       "stepDescription": "Use a Rope on the fissure.",
@@ -83,17 +87,6 @@
     },
     {
       "stepDescription": "Search the fissure, climb down. (🗨️ 1)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": []
-    },
-    {
-      "stepDescription": "Investigate the strange looking stone, to the south-east and near the broken table, with a chisel for a Stone-plaque.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {

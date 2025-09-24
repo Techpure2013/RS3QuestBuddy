@@ -1330,7 +1330,7 @@
       ]
     },
     {
-      "stepDescription": "Return to Saradomin's throne in the White Knight's Castle by the altar 3rd floor[US].",
+      "stepDescription": "Leave the Hall of Memories and use the restricted engram on the fountain of energy.",
       "itemsNeeded": [
         ""
       ],
@@ -1912,7 +1912,7 @@
       "additionalStepInformation": []
     },
     {
-      "stepDescription": "Observe each of the eggs at the end of the corridors. Then talk to Ariane",
+      "stepDescription": "Observe each of the eggs at the end of the corridors then talk to Ariane",
       "itemsNeeded": [
         ""
       ],
@@ -2012,7 +2012,7 @@
       ]
     },
     {
-      "stepDescription": "Return to Kharid-et and enter to the main fortress. (Chat 1) Walk to the praetorium war table. Information on what to do in Addition Info Section.",
+      "stepDescription": "Return to Kharid-et and enter to the main fortress. (Chat 1) Walk to the praetorium war table. Information on what to do in Additional Info Section.",
       "itemsNeeded": [
         "Observation"
       ],
@@ -2184,7 +2184,7 @@
       ]
     },
     {
-      "stepDescription": "Search the 4 bookcases to the west.",
+      "stepDescription": "Talk to Ga'al in the main plaza.",
       "itemsNeeded": [
         ""
       ],
@@ -2217,7 +2217,7 @@
       "additionalStepInformation": []
     },
     {
-      "stepDescription": "Talk to Wizard Trindy at the eastern bookcases.",
+      "stepDescription": "Return to the Wizards' Tower and walk to the entrance to trigger the dialogue.",
       "itemsNeeded": [
         ""
       ],
@@ -2228,7 +2228,7 @@
         "npc": [],
         "object": [
           {
-            "name": "New Object",
+            "name": "Wizards Tower Location",
             "objectLocation": [
               {
                 "lat": 3169,
@@ -2318,7 +2318,7 @@
         "npc": [],
         "object": [
           {
-            "name": "New Object",
+            "name": "The Heart Entrance Location",
             "objectLocation": [
               {
                 "lat": 2886,
@@ -2380,7 +2380,7 @@
       "additionalStepInformation": []
     },
     {
-      "stepDescription": "Enter the Heart (Chat 1) and continue the dialogue.",
+      "stepDescription": "Return to the White Knights' Castle, talk to Ariane on the bridge to trigger a cutscene. (Chat ~)",
       "itemsNeeded": [
         ""
       ],
@@ -2441,7 +2441,7 @@
         ],
         "object": [
           {
-            "name": "",
+            "name": "praetorium war table Location",
             "objectLocation": [
               {
                 "lat": 7588,

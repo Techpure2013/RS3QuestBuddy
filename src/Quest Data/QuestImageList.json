@@ -3195,7 +3195,43 @@
 	},
 	{
 		"name": "City of Senntisten",
-		"images": []
+		"images": [
+			{
+				"step": 14,
+				"src": "CityofSenntisten_step_14_1.webp",
+				"height": 795,
+				"width": 530,
+				"stepDescription": "Enter the City of Senntisten through the ancient door to the north of the Archaeology Guild.(Chat 1)"
+			},
+			{
+				"step": 24,
+				"src": "CityofSenntisten_step_24_1.webp",
+				"height": 795,
+				"width": 530,
+				"stepDescription": "See the map for ward and objective locations."
+			},
+			{
+				"step": 43,
+				"src": "CityofSenntisten_step_43_1.webp",
+				"height": 201,
+				"width": 265,
+				"stepDescription": "Open the marked drawers as seen in the image at this step also added map at this step. Start from the bottom and work your way up or zoom in for ease."
+			},
+			{
+				"step": 43,
+				"src": "CityofSenntisten_step_43_2.webp",
+				"height": 795,
+				"width": 530,
+				"stepDescription": "Open the marked drawers as seen in the image at this step also added map at this step. Start from the bottom and work your way up or zoom in for ease."
+			},
+			{
+				"step": 47,
+				"src": "CityofSenntisten_step_47_1.webp",
+				"height": 795,
+				"width": 530,
+				"stepDescription": "The smoke ward can be found in the large building directly south of the ice ward on the map. As you approach an animation with gargoyle sentinels should play."
+			}
+		]
 	},
 	{
 		"name": "Clock Tower",
@@ -9757,6 +9793,34 @@
 				"height": 248,
 				"width": 494,
 				"stepDescription": "Talk to Trufitus. (🗨️ 2) Ensure Trufitus mentions the need to find the Tomb of Bervirius.\nLocation of Cairn Isle"
+			},
+			{
+				"step": 21,
+				"src": "ShiloVillage_step_21_1.webp",
+				"height": 565,
+				"width": 587,
+				"stepDescription": "Search the 'well stacked rocks' to the north to enter the Tomb of Bervirius. If you fail search again until you are able to enter. (🗨️ 1)"
+			},
+			{
+				"step": 22,
+				"src": "ShiloVillage_step_22_1.webp",
+				"height": 439,
+				"width": 448,
+				"stepDescription": "Inside, run south and search the 'tomb dolmen' to receive three items; Sword pommel, Locating Locating crystal and Bervirius Bervirius notes. Make sure to have enough inventory space otherwise you will have to reclaim the scroll using papyrus and charcoal."
+			},
+			{
+				"step": 27,
+				"src": "ShiloVillage_step_27_1.webp",
+				"height": 361,
+				"width": 654,
+				"stepDescription": "Rashiliyia's Tomb entrance location"
+			},
+			{
+				"step": 27,
+				"src": "ShiloVillage_step_27_2.webp",
+				"height": 705,
+				"width": 797,
+				"stepDescription": "Rashiliyia's Tomb entrance location"
 			}
 		]
 	},
