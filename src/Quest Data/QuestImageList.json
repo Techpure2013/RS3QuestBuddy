@@ -11574,74 +11574,25 @@
 		"name": "The Dig Site",
 		"images": [
 			{
-				"step": "6",
-				"src": "The Dig Site Step 6.webp",
-				"width": 822,
-				"height": 1011,
-				"stepDescription": "Search the green bushes to the west of the Monolith in the middle of the Archaeology Campus (not the ones to the south, near the fences) until you find a teddy bear."
+				"step": 9,
+				"src": "TheDigSite_step_9_1.webp",
+				"height": 224,
+				"width": 400,
+				"stepDescription": "Talk to Katarina (student) in the north of the Dig Site then talk to her again."
 			},
 			{
-				"step": "1",
-				"src": "The Dig Site Step 1.webp",
-				"width": 478,
-				"height": 439,
-				"stepDescription": "Item required: 1 free inventory space"
+				"step": 13,
+				"src": "TheDigSite_step_13_1.webp",
+				"height": 224,
+				"width": 400,
+				"stepDescription": "Talk to all 3 students again."
 			},
 			{
-				"step": "2",
-				"src": "ArcheologyJournal.webp",
-				"width": 153,
-				"height": 86,
-				"stepDescription": "Go to the Exam Centre. (teleport to the Archaeology Guild using the Archaeology journal.png: RS3 Inventory image of Archaeology journalArchaeology journal and run south)"
-			},
-			{
-				"step": "3",
-				"src": "QuestStart.webp",
-				"width": 350,
-				"height": 220,
-				"stepDescription": "Speak to an examiner. (Chat ✓)"
-			},
-			{
-				"step": "3",
-				"src": "Examiner.webp",
-				"width": 350,
-				"height": 168,
-				"stepDescription": "Speak to an examiner. (Chat ✓)"
-			},
-			{
-				"step": "4",
-				"src": "SealedLetter.webp",
-				"width": 118,
-				"height": 73,
-				"stepDescription": "Talk to Seth Minas (site manager) in the Archaeology Guild. (Chat 1) Make sure you have the Unstamped letter otherwise the dialogue with Seth does not progress. Grab a cup of tea from the desk in the south side of the building. It is behind Acting Guildmaster Reiniger or Drew (depends on your progress)."
-			},
-			{
-				"step": "4",
-				"src": "CupOTea.webp",
-				"width": 351,
-				"height": 395,
-				"stepDescription": "Talk to Seth Minas (site manager) in the Archaeology Guild. (Chat 1) Make sure you have the Unstamped letter otherwise the dialogue with Seth does not progress. Grab a cup of tea from the desk in the south side of the building. It is behind Acting Guildmaster Reiniger or Drew (depends on your progress)."
-			},
-			{
-				"step": "4",
-				"src": "Seth.webp",
-				"width": 351,
-				"height": 199,
-				"stepDescription": "Talk to Seth Minas (site manager) in the Archaeology Guild. (Chat 1) Make sure you have the Unstamped letter otherwise the dialogue with Seth does not progress. Grab a cup of tea from the desk in the south side of the building. It is behind Acting Guildmaster Reiniger or Drew (depends on your progress)."
-			},
-			{
-				"step": "32",
-				"src": "Step32_Digsite.webp",
-				"width": 997,
-				"height": 708,
-				"stepDescription": "Excavate the area on the ground named Level 3 grid (near Dorian) until you find an Ancient talisman. (see image)"
-			},
-			{
-				"step": "36",
-				"src": "Step36_DigSite.webp",
-				"width": 623,
-				"height": 705,
-				"stepDescription": "Pick up an Arcenia root, one is directly to the east of the rope."
+				"step": 15,
+				"src": "TheDigSite_step_15_1.webp",
+				"height": 224,
+				"width": 400,
+				"stepDescription": "Talk to all 3 students - Katarina will demand an opal (talk to her again). You can obtain this by panning."
 			}
 		]
 	},
