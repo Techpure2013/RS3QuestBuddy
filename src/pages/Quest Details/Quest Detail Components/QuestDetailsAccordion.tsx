@@ -42,6 +42,7 @@ const OTHER_REQUIREMENT_PREFIXES = [
 	"Access",
 	"Ability to",
 	"Time Served",
+	"Must",
 	"Find",
 	"Complete",
 	"Rescue Mad Eadgar from the Troll Stronghold",

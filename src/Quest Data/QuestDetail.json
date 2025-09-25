@@ -4420,7 +4420,7 @@
 			"Must have built Command Centre (Tier 1)",
 			"Must have built Workshop (Tier 1)",
 			"Must have built Chapel (Tier 1)",
-			"20 Woodcutting for Ironmen"
+			"Ironmen needs 20 Woodcutting."
 		],
 		"ItemsRequired": [
 			"6 stone wall segments",
@@ -4428,8 +4428,10 @@
 			"24 limestone bricks for Hardcore Ironman",
 			"144 willow planks for Hardcore Ironman"
 		],
-		"Recommended": ["None"],
-		"EnemiesToDefeat": ["None"]
+		"Recommended": ["Combat Gear", "Food"],
+		"EnemiesToDefeat": [
+			"One assassin that scales to your combat level (optional)"
+		]
 	},
 	{
 		"Quest": "My Arm's Big Adventure",
