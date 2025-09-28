@@ -2860,6 +2860,34 @@
 		"name": "Between a Rock",
 		"images": [
 			{
+				"step": 1,
+				"src": "BetweenaRock_step_1_1.webp",
+				"height": 473,
+				"width": 946,
+				"stepDescription": "If you haven't yet completed The Giant Dwarf quest, you will need to talk to or use \"Cross-river\" option on the Dwarven Ferryman to cross the river in Keldagrim."
+			},
+			{
+				"step": 2,
+				"src": "BetweenaRock_step_2_1.webp",
+				"height": 652,
+				"width": 906,
+				"stepDescription": "Talk to Dondakan about cannonballs in the Keldagrim south-west mine. (Chat 2•1•1•✓•3)"
+			},
+			{
+				"step": 3,
+				"src": "BetweenaRock_step_3_1.webp",
+				"height": 462,
+				"width": 1178,
+				"stepDescription": "In the western half of the consortium (the big building in the centre of Keldagrim) 1st floor[US], talk to the Dwarven Engineer."
+			},
+			{
+				"step": 4,
+				"src": "BetweenaRock_step_4_1.webp",
+				"height": 580,
+				"width": 762,
+				"stepDescription": "Talk to Rolad, who is located in the most north-eastern building near the ladder to the dwarvern mines. North-East of the Invention Guild. Refer to image at the step. "
+			},
+			{
 				"step": 18,
 				"src": "BetweenaRock_step_18_1.webp",
 				"height": 334,
@@ -4412,7 +4440,14 @@
 				"src": "DesertTreasure_step_17_1.webp",
 				"height": 604,
 				"width": 804,
-				"stepDescription": "Run south-east to the Graveyard (refer to image at step)."
+				"stepDescription": "Run south-east to the Graveyard (refer to image at step). Use the pot on the tomb. Then kill Dessous. "
+			},
+			{
+				"step": 19,
+				"src": "DesertTreasure_step_19_2.webp",
+				"height": 572,
+				"width": 696,
+				"stepDescription": "Talk to the troll child near the ice gate Which is located at the North-West Side of the mountain. Look at image at this step to know exactly."
 			},
 			{
 				"step": 29,
@@ -8754,7 +8789,22 @@
 	},
 	{
 		"name": "One Piercing Note",
-		"images": []
+		"images": [
+			{
+				"step": 28,
+				"src": "OnePiercingNote_step_28_1.webp",
+				"height": 453,
+				"width": 679,
+				"stepDescription": "Click move on the small candelabrum (candle holding rack in the basement) north of the Reliquary, then use a cabbage on it."
+			},
+			{
+				"step": 28,
+				"src": "OnePiercingNote_step_28_2.webp",
+				"height": 289,
+				"width": 693,
+				"stepDescription": "Click move on the small candelabrum (candle holding rack in the basement) north of the Reliquary, then use a cabbage on it."
+			}
+		]
 	},
 	{
 		"name": "One Small Favour",

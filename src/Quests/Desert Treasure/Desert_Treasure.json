@@ -229,10 +229,10 @@
       "additionalStepInformation": []
     },
     {
-      "stepDescription": "Talk to the troll child near the ice gate. He may be difficult to see on high brightness settings, but he stays fixed a few squares west of the gate.",
+      "stepDescription": "Talk to the troll child near the ice gate Which is located at the North-West Side of the mountain. Look at image at this step to know exactly.",
       "itemsNeeded": [
         "A cake or a chocolate bar",
-        "spiked boots oe climbing boots (unless you've completed Eadgar's Ruse)",
+        "spiked boots or climbing boots (unless you've completed Eadgar's Ruse)",
         "restore potion or super restore potions",
         "5-10 pieces of food",
         "Magic Items for Fire Spells"
@@ -243,7 +243,9 @@
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": []
+      "additionalStepInformation": [
+        "He may be difficult to see on high brightness settings, but he stays fixed a few squares west of the gate."
+      ]
     },
     {
       "stepDescription": "Use cake/chocolate on him. Talk again to help him. (Chat 1)",
@@ -380,7 +382,7 @@
       "additionalStepInformation": []
     },
     {
-      "stepDescription": "With the warm key, open the gate on the eastern side of the dungeon. Read the next step before entering.",
+      "stepDescription": "With the warm key, open the gate on the eastern side of the dungeon. Read Additional Info before entering the gate.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
