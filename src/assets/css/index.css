@@ -15,6 +15,13 @@
 	--completed: #24bf58;
 	--rs3-background: url("./../background.png") !important;
 }
+body,
+html {
+	margin: 0;
+	padding: 0;
+
+	overflow-x: hidden;
+}
 body {
 	background-image: var(--rs3-background);
 }

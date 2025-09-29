@@ -1,24 +1,24 @@
 import React, { useEffect, useState } from "react";
 import {
 	Card,
-	List,
 	Checkbox,
+	Divider,
+	Grid,
+	Group,
+	List,
 	Text,
 	Title,
 	Badge,
-	Group,
-	Divider,
-	Grid,
 } from "@mantine/core";
 import {
-	IconChecklist,
 	IconBox,
-	IconSwords,
+	IconChecklist,
 	IconPackage,
+	IconSwords,
 } from "@tabler/icons-react";
 import { NavLink } from "react-router-dom";
-import { Skills } from "./../../../Fetchers/PlayerStatsSort";
 import { PlayerQuestStatus } from "./../../../Fetchers/sortPlayerQuests";
+import { Skills } from "./../../../Fetchers/PlayerStatsSort";
 
 interface UIState {
 	hasLabelColor: boolean;
@@ -42,7 +42,7 @@ const OTHER_REQUIREMENT_PREFIXES = [
 	"Access",
 	"Ability to",
 	"Time Served",
-	"Must",
+	"Must", // Added for better matching
 	"Find",
 	"Complete",
 	"Rescue Mad Eadgar from the Troll Stronghold",
@@ -63,21 +63,6 @@ const BP_TWO_COL = 60; // >= 60rem => 3 columns, otherwise 2
 
 const sectionGap = "1rem";
 const cardBorder = "0.125rem";
-const minColRem = 16;
-
-const useRemWidth = () => {
-	const [remWidth, setRemWidth] = useState<number>(() =>
-		typeof window !== "undefined" ? window.innerWidth / 16 : 100,
-	);
-	useEffect(() => {
-		const onResize = () =>
-			setRemWidth(typeof window !== "undefined" ? window.innerWidth / 16 : 100);
-		onResize();
-		window.addEventListener("resize", onResize);
-		return () => window.removeEventListener("resize", onResize);
-	}, []);
-	return remWidth;
-};
 
 const QuestDetailsGrid: React.FC<QuestDetailsGridProps> = ({
 	QuestDetails,
@@ -201,15 +186,12 @@ const QuestDetailsGrid: React.FC<QuestDetailsGridProps> = ({
 	const uniqueQuestReqs = Array.from(new Set(questReqs)).sort((a, b) =>
 		a.localeCompare(b),
 	);
-
 	const uniqueSkillReqs = Array.from(new Set(skillReqs)).sort(
 		(a, b) => parseInt(a.split(" ")[0]) - parseInt(b.split(" ")[0]),
 	);
-
 	const uniqueIronReqs = Array.from(new Set(ironReqs)).sort((a, b) =>
 		a.localeCompare(b),
 	);
-
 	const uniqueOtherReqs = Array.from(new Set(otherReqs)).sort((a, b) =>
 		a.localeCompare(b),
 	);
@@ -220,13 +202,27 @@ const QuestDetailsGrid: React.FC<QuestDetailsGridProps> = ({
 		uniqueIronReqs.length ||
 		uniqueOtherReqs.length;
 
-	// Responsive column counts based on rem width
+	// This hook is now only needed for the top requirements section
+	const useRemWidth = () => {
+		const [remWidth, setRemWidth] = useState<number>(() =>
+			typeof window !== "undefined" ? window.innerWidth / 16 : 100,
+		);
+		useEffect(() => {
+			const onResize = () =>
+				setRemWidth(typeof window !== "undefined" ? window.innerWidth / 16 : 100);
+			window.addEventListener("resize", onResize);
+			return () => window.removeEventListener("resize", onResize);
+		}, []);
+		return remWidth;
+	};
 	const remWidth = useRemWidth();
 	const trioCols = remWidth < BP_ONE_COL ? 1 : remWidth < BP_TWO_COL ? 2 : 3;
-	const itemsCols = remWidth < BP_ONE_COL ? 1 : 2;
 
 	return (
-		<Grid gutter="lg" style={{ gap: sectionGap }}>
+		<Grid
+			gutter="lg"
+			style={{ gap: sectionGap, overflowX: "hidden", overflowY: "hidden" }}
+		>
 			{/* === Required Quests & Skills === */}
 			<Grid.Col span={12}>
 				{hasAnyRequirements ? (
@@ -472,11 +468,6 @@ const QuestDetailsGrid: React.FC<QuestDetailsGridProps> = ({
 					}}
 				>
 					{(function ItemsGrid() {
-						// rem-based responsive columns
-						const remWidth =
-							typeof window !== "undefined" ? window.innerWidth / 16 : 100;
-						const cols = remWidth < 40 ? 1 : 2; // < 40rem => stack
-
 						// Collect items and normalize "None"
 						const requiredItems = deduplicatedQuestDetails
 							?.flatMap((q) => q.ItemsRequired || [])
@@ -500,8 +491,10 @@ const QuestDetailsGrid: React.FC<QuestDetailsGridProps> = ({
 						const gridStyle: React.CSSProperties = {
 							display: "grid",
 							gap: "1rem",
-							gridTemplateColumns: `repeat(${cols}, minmax(16rem, 1fr))`,
-							alignItems: "start",
+							// THIS IS THE KEY FIX: `auto-fit` creates a responsive grid
+							// that wraps columns automatically when they don't fit.
+							// This prevents horizontal overflow on narrow screens.
+							gridTemplateColumns: "repeat(auto-fit, minmax(16rem, 1fr))",
 						};
 
 						const panelBase: React.CSSProperties = {

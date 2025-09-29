@@ -9157,7 +9157,22 @@
 	},
 	{
 		"name": "Priest in Peril",
-		"images": []
+		"images": [
+			{
+				"step": 13,
+				"src": "PriestinPeril_step_13_1.webp",
+				"height": 364,
+				"width": 539,
+				"stepDescription": "Use the golden key on the one that has the iron key."
+			},
+			{
+				"step": 13,
+				"src": "PriestinPeril_step_13_2.webp",
+				"height": 450,
+				"width": 304,
+				"stepDescription": "Use the golden key on the one that has the iron key."
+			}
+		]
 	},
 	{
 		"name": "Quiet Before the Swarm",

@@ -399,7 +399,7 @@ const QuestPage: React.FC = () => {
 					>
 						{questName}
 					</h2>
-					<Flex gap="xs" justify="center" align="center">
+					<Flex gap="xs" justify="center" align="center" wrap="wrap">
 						<Tippy
 							content="Go back to the Quest Selection."
 							disabled={!settings.toolTipEnabled}
@@ -448,7 +448,6 @@ const QuestPage: React.FC = () => {
 								<IconListDetails size={16} />
 							</ActionIcon>
 						</Tippy>
-						{/* --- NEW: Auto-Scroll Toggle Button --- */}
 						<Tippy
 							content={autoScroll ? "Disable Auto-Scroll" : "Enable Auto-Scroll"}
 							disabled={!settings.toolTipEnabled}
@@ -514,22 +513,23 @@ const QuestPage: React.FC = () => {
 					)}
 				</Box>
 			</Box>
-
-			<QuestFooter
-				onSettingsClick={openSettings}
-				onDiscordClick={openDiscord}
-				onNotesClick={openNotes}
-				onBackClick={() => handleBackButton(userID, questName)}
-				onCompleteClick={() => loadPlayerQuests(questName)}
-				onWikiClick={() => openWikiQuest(questName)}
-				onCoffeeClick={openCoffee}
-				onNextStep={scrollNext}
-				onPrevStep={scrollPrev}
-				specialButtons={specialButtons}
-				toolTipEnabled={settings.toolTipEnabled}
-				buttonColor={settings.userButtonColor}
-				hasButtonColor={settings.hasButtonColor}
-			/>
+			{!showStepReq && (
+				<QuestFooter
+					onSettingsClick={openSettings}
+					onDiscordClick={openDiscord}
+					onNotesClick={openNotes}
+					onBackClick={() => handleBackButton(userID, questName)}
+					onCompleteClick={() => loadPlayerQuests(questName)}
+					onWikiClick={() => openWikiQuest(questName)}
+					onCoffeeClick={openCoffee}
+					onNextStep={scrollNext}
+					onPrevStep={scrollPrev}
+					specialButtons={specialButtons}
+					toolTipEnabled={settings.toolTipEnabled}
+					buttonColor={settings.userButtonColor}
+					hasButtonColor={settings.hasButtonColor}
+				/>
+			)}
 		</Flex>
 	);
 };
