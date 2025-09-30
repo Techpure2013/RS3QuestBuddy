@@ -399,7 +399,7 @@ const QuestPage: React.FC = () => {
 					>
 						{questName}
 					</h2>
-					<Flex gap="xs" justify="center" align="center" wrap="wrap">
+					<Flex gap="xs" justify="center" align="center">
 						<Tippy
 							content="Go back to the Quest Selection."
 							disabled={!settings.toolTipEnabled}
