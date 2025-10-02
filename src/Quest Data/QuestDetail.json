@@ -6281,7 +6281,7 @@
 			"Rune Mysteries",
 			"33 quest points",
 			"30 Crafting",
-			"30 Runecrafting Runecrafting",
+			"30 Runecrafting",
 			"30 Slayer",
 			"30 Thieving"
 		],
@@ -6852,7 +6852,9 @@
 		"Requirements": [
 			"That Old Black Magic: My One and Only Lute",
 			"The Blood Pact",
-			"50 Necromancy"
+			"50 Necromancy",
+			"Ironman Requirements: Rune Mythos",
+			"Ironman Requirements: 40 Runecrafting"
 		],
 		"ItemsRequired": ["520 bone runes", "360 flesh runes"],
 		"Recommended": ["None"],
@@ -7302,7 +7304,6 @@
 			"Ectoplasm",
 			"Necromancy weapons, including a conduit",
 			"Bucket",
-			"Items for the empower vessel ritual:",
 			"11 basic ghostly ink",
 			"2 regular ghostly ink",
 			"4 light sources"

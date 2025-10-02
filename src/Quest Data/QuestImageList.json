@@ -7751,151 +7751,46 @@
 		"name": "King of the Dwarves",
 		"images": [
 			{
-				"step": "1",
-				"src": "Step1_QuestStart.webp",
-				"width": 241,
+				"step": 1,
+				"src": "KingoftheDwarves_step_1_1.webp",
 				"height": 321,
+				"width": 241,
 				"stepDescription": "Speak to lava-flow miner Sven standing outside of the Lava Flow Mine in Keldagrim East. (Chat 1•✓)"
 			},
 			{
-				"step": "1",
-				"src": "Step1_Sven.webp",
-				"width": 298,
-				"height": 307,
-				"stepDescription": "Speak to lava-flow miner Sven standing outside of the Lava Flow Mine in Keldagrim East. (Chat 1•✓)"
-			},
-			{
-				"step": "2",
-				"src": "Step2_FreeDwarvesLocs.webp",
-				"width": 245,
+				"step": 2,
+				"src": "KingoftheDwarves_step_2_1.webp",
 				"height": 258,
-				"stepDescription": "Free all 6 dwarves by mining the lighter coloured rubble surrounding them (they are all close to the entrance) and take them back to Foreman Jaak."
+				"width": 245,
+				"stepDescription": "Free all 6 dwarves by mining the lighter coloured rubble surrounding them and take them back to Foreman Jaak."
 			},
 			{
-				"step": "2",
-				"src": "step2_PathNorth.webp",
-				"width": 626,
+				"step": 2,
+				"src": "KingoftheDwarves_step_2_2.webp",
 				"height": 428,
-				"stepDescription": "Free all 6 dwarves by mining the lighter coloured rubble surrounding them (they are all close to the entrance) and take them back to Foreman Jaak."
+				"width": 626,
+				"stepDescription": "Free all 6 dwarves by mining the lighter coloured rubble surrounding them and take them back to Foreman Jaak."
 			},
 			{
-				"step": "5",
-				"src": "Step5_Consorsium.webp",
-				"width": 243,
+				"step": 4,
+				"src": "KingoftheDwarves_step_4_1.webp",
 				"height": 379,
+				"width": 243,
 				"stepDescription": "Go to the top floor of the Consortium."
 			},
 			{
-				"step": "14",
-				"src": "Step14_TalkHreidmar.webp",
-				"width": 611,
-				"height": 408,
-				"stepDescription": "Talk to Hreidmar outside the eastern entrance of the Consortium."
-			},
-			{
-				"step": "16",
-				"src": "Step16_BarLoc.webp",
-				"width": 237,
-				"height": 257,
-				"stepDescription": "Head to the King's Axe Inn (Keldagrim West) and talk to Luitger. (Chat 3•3)"
-			},
-			{
-				"step": "16",
-				"src": "Step16_Luitger.webp",
-				"width": 464,
-				"height": 374,
-				"stepDescription": "Head to the King's Axe Inn (Keldagrim West) and talk to Luitger. (Chat 3•3)"
-			},
-			{
-				"step": "17",
-				"src": "Step17_Klaus.webp",
-				"width": 462,
-				"height": 546,
-				"stepDescription": "Go to the Black Guard HQ (west of the bank) and talk to Klaas."
-			},
-			{
-				"step": "18",
-				"src": "Steo18_WatchTowerLoc.webp",
-				"width": 246,
-				"height": 374,
-				"stepDescription": "Go to the top of the Keldagrim Watchtower (just south of the Palace) and talk to Meike. (Chat 3•1)"
-			},
-			{
-				"step": "18",
-				"src": "Step18_TalkMeike.webp",
-				"width": 446,
-				"height": 576,
-				"stepDescription": "Go to the top of the Keldagrim Watchtower (just south of the Palace) and talk to Meike. (Chat 3•1)"
-			},
-			{
-				"step": "19",
-				"src": "Step19_LibraryLoc.webp",
-				"width": 247,
-				"height": 368,
-				"stepDescription": "Go to the library north of the Consortium in West Keldagrim."
-			},
-			{
-				"step": "26",
-				"src": "Step26_Furnace.webp",
-				"width": 246,
-				"height": 367,
-				"stepDescription": "Use the furnace (not forge) such as the one in the Consortium south of the library, if the prompt doesn't show up go to another furnace. (Chat 1•1)"
-			},
-			{
-				"step": "27",
-				"src": "Step27_RecordConsortium.webp",
-				"width": 243,
+				"step": 24,
+				"src": "KingoftheDwarves_step_24_1.webp",
 				"height": 302,
+				"width": 243,
 				"stepDescription": "Go to the Records Chamber (Enter Entrance in the wall, west of the Black Guard HQ)"
 			},
 			{
-				"step": "28",
-				"src": "Step28_TalkMeike.webp",
-				"width": 286,
-				"height": 299,
-				"stepDescription": "Talk to Meike or Veldaban."
-			},
-			{
-				"step": "30",
-				"src": "Step30_KeyCombo.webp",
-				"width": 858,
+				"step": 26,
+				"src": "KingoftheDwarves_step_26_1.webp",
 				"height": 172,
-				"stepDescription": "The combination to unlock the door"
-			},
-			{
-				"step": "34",
-				"src": "Step34_DefeatColonel.webp",
-				"width": 363,
-				"height": 255,
-				"stepDescription": "Defeat Colonel Grimsson while making sure Veldaban does not die. If you leave the fight, you can restart by talking to Veldaban in the Laughing Miner pub in Keldagrim East."
-			},
-			{
-				"step": "37",
-				"src": "Step37_PrettyFlower.webp",
-				"width": 366,
-				"height": 406,
-				"stepDescription": "Head back halfway through the cavern until you come to an entrance on the east side. Enter it and speak to Pretty Flower. (Chat 2•2)"
-			},
-			{
-				"step": "38",
-				"src": "Step38_LiftRock.webp",
-				"width": 497,
-				"height": 407,
-				"stepDescription": "Lift the big rock opposite My Arm."
-			},
-			{
-				"step": "39",
-				"src": "Step39_LiftBigRock.webp",
-				"width": 346,
-				"height": 277,
-				"stepDescription": "Lift the troll named Big Rock."
-			},
-			{
-				"step": "39",
-				"src": "step39_LiftedRock.webp",
-				"width": 280,
-				"height": 274,
-				"stepDescription": "Lift the troll named Big Rock."
+				"width": 858,
+				"stepDescription": "Match up the keys with the correct keyholes Combo is in the image at this step."
 			}
 		]
 	},
