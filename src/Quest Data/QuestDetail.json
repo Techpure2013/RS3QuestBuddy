@@ -4,9 +4,7 @@
 		"StartPoint": "Speak to Diango in Santas Workshop",
 		"MemberRequirement": "Free to play",
 		"OfficialLength": "Short",
-		"Requirements": [
-			"Ironman requirements: 32 cooking with Completion of Chef's Assistant"
-		],
+		"Requirements": ["Ironmen: 32 cooking", "Ironmen: Chef's Assistant"],
 		"ItemsRequired": [
 			"3 split fir logs (obtainable during quest)",
 			"15 steel nails",
@@ -259,7 +257,7 @@
 		"Requirements": [
 			"The Vault of Shadows",
 			"Ability to see the Shadow Realm inside Kharid-et",
-			"Raksha, The Shadow Colossus Quest",
+			"Raksha, The Shadow Colossus",
 			"Desperate Creatures",
 			"Desperate Measures",
 			"Desperate Times",
@@ -397,7 +395,7 @@
 			"Azzanadra's Quest",
 			"The Vault of Shadows",
 			"Ability to see the Shadow Realm inside Kharid-et",
-			"Raksha, The Shadow Colossus Quest",
+			"Raksha, The Shadow Colossus",
 			"Desperate Creatures",
 			"Desperate Measures",
 			"Desperate Times",
@@ -809,7 +807,7 @@
 		"StartPoint": "Talk to the Head Chef in the Cooking Guild.",
 		"MemberRequirement": "Free to play",
 		"OfficialLength": "Short to Medium",
-		"Requirements": ["Cook's Assistant", "32 Cooking", "38 Cooking (Ironmen)"],
+		"Requirements": ["Cook's Assistant", "32 Cooking", "Ironment: 38 Cooking"],
 		"ItemsRequired": [
 			"Chef's hat",
 			"Logs",
@@ -846,14 +844,15 @@
 		],
 		"ItemsRequired": ["None"],
 		"Recommended": [
-			"110 Combat",
-			"Combat equipment, food and potions are highly recommended",
+			"Combat equipment",
+			"Food",
+			"Potions",
 			"TokKul-Zo or Portable fairy ring for quick access to fairy rings",
 			"Sixth-Age circuit for quick access to World Gate",
 			"Dig Site pendant or Archaeology journal",
 			"Shard of Zaros",
 			"Sign or Portent of life",
-			"Be on the Ancient Magicks spellbook, for increased damage against the various Muspah encountered during the quest"
+			"Be on the Ancient Magicks spellbook, for increased damage against the various Muspah"
 		],
 		"EnemiesToDefeat": [
 			"Survive multiple bladed, force, and throwing muspahs (level 150)"
@@ -909,7 +908,7 @@
 			"Azzanadra's Quest",
 			"The Vault of Shadows",
 			"Ability to see the Shadow Realm inside Kharid-et",
-			"Raksha, The Shadow Colossus Quest",
+			"Raksha, The Shadow Colossus",
 			"Desperate Creatures",
 			"Desperate Measures",
 			"Desperate Times",
@@ -944,12 +943,10 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Short",
 		"Requirements": ["None"],
-		"ItemsRequired": [
-			"Bucket of water (there is a bucket respawn at the well south of the Ardougne Zoo) or ice gloves"
-		],
+		"ItemsRequired": ["Bucket of water or Ice Gloves"],
 		"Recommended": [
 			"Energy potions",
-			"Armour for lower-levelled players, to survive a few attacks from a level 67 Ogre"
+			"Armour for lower-levelled defence players"
 		],
 		"EnemiesToDefeat": ["None"]
 	},
@@ -1010,7 +1007,11 @@
 			"34 Construction",
 			"30 Crafting",
 			"10 Hunter",
-			"Ironmen: 20 Mining/Smithing to Smelt Steel Bars for Clockwork, 60 Woodcutting to chop Mahogany Logs for Mahogany Planks, Access to Zanaris for Cowbells if your not 15 Thieving"
+			"Ironmen: 20 Mining",
+			"Ironmen: 20 Smithing",
+			"Ironmen: 60 Woodcutting",
+			"Ironmen: Lost City",
+			"Ironmen: 15 Thieving"
 		],
 		"ItemsRequired": [
 			"Access to a Crafting table 3 or 4 (you can use a friend's house if you're not an ironman)",
@@ -1086,8 +1087,8 @@
 			"Priest in Peril",
 			"20 Crafting",
 			"25 Thieving",
-			"20 Mining (Ironmen)",
-			"20 Smithing (Ironmen, to make a silver bar)"
+			"Ironmen: 20 Mining",
+			"Ironmen: 20 Smithing"
 		],
 		"ItemsRequired": [
 			"A ghostspeak amulet or a Cramulet",
@@ -1187,11 +1188,9 @@
 			"64 Strength",
 			"41 Summoning",
 			"66 Thieving",
-			"To make mithril grapple unless obtained as a drop",
-			"59 Fletching",
-			"To make a ring of life unless obtained as a drop or as reward from the novice quest The Lost Tribe",
-			"57 Magic",
-			"43 Crafting"
+			"Ironmen: 59 Fletching",
+			"Ironmen: 57 Magic",
+			"Ironmen: 43 Crafting"
 		],
 		"ItemsRequired": [
 			"3 Dwellberries (do not carry while obtaining sacred oil if running through swamp)",
@@ -1812,7 +1811,7 @@
 			"43 Crafting",
 			"40 Smithing",
 			"57 Magic",
-			"Ironman-specific requirements for making a Ring of life"
+			"Ironmen-specific requirements for making a Ring of life"
 		],
 		"ItemsRequired": [
 			"Ring of life (or components)",
@@ -2391,7 +2390,7 @@
 			"Azzanadra's Quest",
 			"The Vault of Shadows",
 			"Ability to see the Shadow Realm inside Kharid-et",
-			"Raksha, The Shadow Colossus Quest",
+			"Raksha, The Shadow Colossus",
 			"Desperate Creatures",
 			"Desperate Measures",
 			"65 Agility"
@@ -2416,7 +2415,7 @@
 			"Battle of the Monolith",
 			"Azzanadra's Quest",
 			"The Vault of Shadows",
-			"Raksha, The Shadow Colossus Quest",
+			"Raksha, The Shadow Colossus",
 			"Desperate Creatures"
 		],
 		"ItemsRequired": ["None"],
@@ -4425,8 +4424,8 @@
 		"ItemsRequired": [
 			"6 stone wall segments",
 			"12 willow frames",
-			"24 limestone bricks for Hardcore Ironman",
-			"144 willow planks for Hardcore Ironman"
+			"24 limestone bricks for Hardcore Ironmen",
+			"144 willow planks for Hardcore Ironmen"
 		],
 		"Recommended": ["Combat Gear", "Food"],
 		"EnemiesToDefeat": [
@@ -4454,8 +4453,8 @@
 			"Some coins",
 			"Bucket",
 			"7 supercompost",
-			"24 limestone bricks for Hardcore Ironman",
-			"144 willow planks for Hardcore Ironman"
+			"24 limestone bricks for Hardcore Ironmen",
+			"144 willow planks for Hardcore Ironmen"
 		],
 		"Recommended": [
 			"60% favour with the people of Tai Bwo Wannai Village (can be done during the quest)",
@@ -5253,7 +5252,7 @@
 		"EnemiesToDefeat": ["None"]
 	},
 	{
-		"Quest": "Raksha, The Shadow Colossus Quest",
+		"Quest": "Raksha, The Shadow Colossus",
 		"StartPoint": "Talk to Laniakea on Anachronia.",
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Short",
@@ -5324,7 +5323,7 @@
 			"Charcoal",
 			"Spice or Gnome spice",
 			"1 Fishing bait",
-			"Bucket of water or Bowl of water or Jug of water",
+			"1 Bucket, Bowl, or Jug of water",
 			"Bread",
 			"Orange",
 			"Any dye that is not red, yellow, orange or pink"
@@ -5348,7 +5347,7 @@
 			"Egg (buy from chest)",
 			"Bucket of milk (buy from chest)",
 			"Bowl of water (take bowl on table next to the Cook and fill it up in the sink)",
-			"Gloves (Ice gloves are the best, but other gloves will work fine too)",
+			"Gloves or Ice Gloves which is best",
 			"4 Asgarnian ale (2 more recommended in case he sobers up, can be bought during the quest)"
 		],
 		"Recommended": [
@@ -5374,8 +5373,7 @@
 			"25 Cooking"
 		],
 		"ItemsRequired": [
-			"Wily cat, cat, kitten, or lazy cat",
-			"Overgrown cats won't work as they do not hunt rats. A kitten is not recommended as the chance of them catching a rat is a low 15% compared to 50% for a normal cat, and will take longer to complete",
+			"Wily cat, cat, or lazy cat. Overgrown cats wont Hunt, Kittens have a low catch rate.",
 			"Up to 10 bowls of stew (If you make no mistakes, you will not need more than 10 bowls. The Forester's Arms sells stew for 20 coins)"
 		],
 		"Recommended": [
@@ -5396,14 +5394,15 @@
 			"40 Cooking"
 		],
 		"ItemsRequired": [
-			"All of these can be bought from the Culinaromancer's chest.",
-			"Bucket of milk",
-			"Egg",
-			"Pot of Flour",
-			"Cake tin"
+			"Bucket of milk ( Culinaromancer's chest )",
+			"Egg ( Culinaromancer's chest )",
+			"Pot of Flour ( Culinaromancer's chest )",
+			"Cake tin ( Culinaromancer's chest )"
 		],
 		"Recommended": [
-			"Wicked hood, skills necklace, or traveller's necklace - to reach the Wizards' Tower"
+			"Wicked hood - to reach the Wizards' Tower",
+			"Skills necklace - to reach the Wizards' Tower",
+			"Traveller's necklace - to reach the Wizards' Tower"
 		],
 		"EnemiesToDefeat": ["None"]
 	},
@@ -6853,8 +6852,8 @@
 			"That Old Black Magic: My One and Only Lute",
 			"The Blood Pact",
 			"50 Necromancy",
-			"Ironman Requirements: Rune Mythos",
-			"Ironman Requirements: 40 Runecrafting"
+			"Ironmen: Rune Mythos",
+			"Ironmen: 40 Runecrafting"
 		],
 		"ItemsRequired": ["520 bone runes", "360 flesh runes"],
 		"Recommended": ["None"],
@@ -7088,9 +7087,9 @@
 			"Death Plateau",
 			"28 Agility",
 			"The latest version of Death Plateau must be complete to do parts of this quest. Even if you've already completed the old one.",
-			"Ironmen: 45 Woodcutting(if chopping your own maple logs)",
-			"10 Mining Mining (to mine iron ore)",
-			"10 Smithing (to smelt iron bar)"
+			"Ironmen: 45 Woodcutting",
+			"Ironmen: 10 Mining Mining",
+			"Ironmen: 10 Smithing"
 		],
 		"ItemsRequired": [
 			"Iron bar",
@@ -7231,7 +7230,7 @@
 			"Must have built Chapel (Tier 1)",
 			"50 Construction",
 			"10 Slayer",
-			"Ironman: 40 Woodcutting (To chop maple logs for the planks)"
+			"Ironmen: 40 Woodcutting"
 		],
 		"ItemsRequired": [
 			"14 maple frames",
@@ -7771,7 +7770,9 @@
 			"Defender of Varrock",
 			"Troll Romance",
 			"Shades of Mort'ton",
-			"Ironman requirements: 43 Crafting, 40 Smithing, 57 Magic"
+			"Ironmen: 43 Crafting",
+			"Ironmen: 40 Smithing",
+			"Ironmen: 57 Magic"
 		],
 		"ItemsRequired": [
 			"Ring of life (or gold ore, diamond, 10 earth runes and 1 cosmic rune)",
