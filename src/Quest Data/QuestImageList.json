@@ -3036,46 +3036,11 @@
 		"name": "Broken Home",
 		"images": [
 			{
-				"step": "2",
-				"src": "BrokenHomemap.webp",
-				"width": 300,
-				"height": 519,
-				"stepDescription": "Open WEST wall's SOUTH door to a safe room."
-			},
-			{
-				"step": "2",
-				"src": "BrokenHomestatuepuzzle.webp",
-				"width": 300,
-				"height": 402,
-				"stepDescription": "Open WEST wall's SOUTH door to a safe room."
-			},
-			{
-				"step": "45",
-				"src": "BrokenHomestatuepuzzlesolution.webp",
-				"width": 300,
-				"height": 250,
-				"stepDescription": "Open WEST door."
-			},
-			{
-				"step": "2",
-				"src": "Broken_home_basement.webp",
-				"width": 512,
-				"height": 334,
-				"stepDescription": "Open WEST wall's SOUTH door to a safe room."
-			},
-			{
-				"step": "2",
-				"src": "Broken_home_first_floor.webp",
-				"width": 512,
-				"height": 334,
-				"stepDescription": "Open WEST wall's SOUTH door to a safe room."
-			},
-			{
-				"step": "2",
-				"src": "Broken_home_ground_floor.webp",
-				"width": 512,
-				"height": 334,
-				"stepDescription": "Open WEST wall's SOUTH door to a safe room."
+				"step": 19,
+				"src": "BrokenHome_step_19_1.webp",
+				"height": 1401,
+				"width": 771,
+				"stepDescription": "To Complete this Pushing Puzzle follow the steps below."
 			}
 		]
 	},
