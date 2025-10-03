@@ -3370,7 +3370,6 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Long",
 		"Requirements": [
-			"Hunt for Red Raktuber",
 			"Cold War",
 			"Sea Slug",
 			"45 Construction",
@@ -3431,7 +3430,7 @@
 		"StartPoint": "Talk to Wizard Mizgog on the 2nd floor[US] of the Wizards' Tower, south of Draynor Village. (via a location)",
 		"MemberRequirement": "Free to play",
 		"OfficialLength": "Short",
-		"Requirements": ["Imp Catcher"],
+		"Requirements": ["None"],
 		"ItemsRequired": ["Bowl of hot water"],
 		"Recommended": [
 			"Wicked hood or some other ways to teleport to air, earth, water and fire altar."
@@ -3454,7 +3453,6 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Long",
 		"Requirements": [
-			"In Aid of the Myreque",
 			"In Search of the Myreque",
 			"Nature Spirit",
 			"Priest in Peril",
@@ -3503,12 +3501,7 @@
 		"StartPoint": "Speak to the Priest of Guthix outside a cave south-west of the Piscatoris Fishing Colony.",
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Short to Medium",
-		"Requirements": [
-			"In Pyre Need",
-			"52 Crafting",
-			"55 Firemaking",
-			"53 Fletching"
-		],
+		"Requirements": ["52 Crafting", "55 Firemaking", "53 Fletching"],
 		"ItemsRequired": ["5 free inventory spaces"],
 		"Recommended": [
 			"Access to fairy rings, a Phoenix lair teleport, or memory strands for quick travel to starting location."
@@ -3521,7 +3514,6 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Short",
 		"Requirements": [
-			"In Search of the Myreque",
 			"Nature Spirit",
 			"Priest in Peril",
 			"The Restless Ghost",
@@ -3540,11 +3532,7 @@
 		"StartPoint": "Speak to Ali Mirza in the Al Kharid palace.",
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Short to Medium",
-		"Requirements": [
-			"The Jack of Spades",
-			"Diamond in the Rough",
-			"Stolen Hearts"
-		],
+		"Requirements": ["Diamond in the Rough", "Stolen Hearts"],
 		"ItemsRequired": ["None"],
 		"Recommended": ["None"],
 		"EnemiesToDefeat": ["None"]
@@ -3583,7 +3571,6 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Medium to Long",
 		"Requirements": [
-			"Kennith's Concerns",
 			"The Slug Menace",
 			"Sea Slug",
 			"Wanted!",
@@ -3608,7 +3595,6 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Short",
 		"Requirements": [
-			"Kili Row",
 			"Necromancy!",
 			"Collect a set of necromancer robes from Sostratus",
 			"20 Necromancy"
@@ -3632,7 +3618,6 @@
 		"MemberRequirement": "Members only",
 		"OfficialLength": "Long",
 		"Requirements": [
-			"Kindred Spirits",
 			"Missing, Presumed Death",
 			"60 Agility",
 			"60 Crafting",
@@ -4051,8 +4036,8 @@
 		"Recommended": [
 			"Protection from dragonfire",
 			"Good armour, food and weapons for multiple combat styles",
-			"Items to restore Prayer points or reduced stats: Prayer potions, Super restore potions, Prayer renewal potions, or Super prayer potions",
-			"Items to boost combat stats: Super sets, Extreme potions, Overloads, Holy overload potions, Supreme overload potions, or Supreme overload salves"
+			"Items to restore Prayer points or reduced stats",
+			"Items to boost combat stats"
 		],
 		"EnemiesToDefeat": [
 			"Zenevivia - level 95",
@@ -4088,6 +4073,7 @@
 			"Spade (tool belt will not work)",
 			"Wicked hood or access to the four elemental Runecrafting altars",
 			"Two spools of thread",
+			"Clean marrentill",
 			"Clean or ground guam"
 		],
 		"Recommended": [

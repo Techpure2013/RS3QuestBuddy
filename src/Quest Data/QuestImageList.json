@@ -8005,32 +8005,32 @@
 		"name": "Lunar Diplomacy",
 		"images": [
 			{
-				"step": "1",
-				"src": "Lunar Diplomacy Step 1.webp",
-				"width": 591,
+				"step": 43,
+				"src": "LunarDiplomacy_step_43_1.webp",
+				"height": 600,
+				"width": 600,
+				"stepDescription": "Talk to Ethereal Fluke."
+			},
+			{
+				"step": 47,
+				"src": "LunarDiplomacy_step_47_1.webp",
+				"height": 713,
+				"width": 638,
+				"stepDescription": "Talk to Ethereal Numerator use the Image at this step to determine what to choose. Read the Additional Information Section to see more on this guy."
+			},
+			{
+				"step": 1,
+				"src": "LunarDiplomacy_step_1_1.webp",
 				"height": 464,
+				"width": 591,
 				"stepDescription": "Talk to Lokar Searunner on Rellekka's westernmost dock. (Chat 2•1•✓)"
 			},
 			{
-				"step": "71",
-				"src": "step71_Etheral.webp",
-				"width": 638,
-				"height": 713,
-				"stepDescription": "Click on the numbers to complete the patterns for four times. If you click on numbers without completing the dialogue, the sequence will be incorrect."
-			},
-			{
-				"step": "55",
-				"src": "Step55_BlueFlowersLunarQuest.webp",
-				"width": 1067,
+				"step": 35,
+				"src": "LunarDiplomacy_step_35_1.webp",
 				"height": 689,
+				"width": 1067,
 				"stepDescription": "Exit the city and run south. Dig up the blue flowers with a spade (tool belt doesn't work)."
-			},
-			{
-				"step": "66",
-				"src": "Step66__Dice.webp",
-				"width": 600,
-				"height": 600,
-				"stepDescription": "He will call out a number. You need to make the dice add up to the number he called. When you \"roll\" one of the dice, it will turn the die upside down, so each die only has two possible numbers (1 and 6, 2 and 5, 3 and 4)."
 			}
 		]
 	},
