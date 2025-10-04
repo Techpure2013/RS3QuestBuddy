@@ -1,0 +1,25 @@
+# Allow only Google's crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
+# Disallow all other bots
+User-agent: *
+Disallow: /
+
+# Optional sitemap reference (still helpful for Google)
+Sitemap: https://www.techpure.dev/sitemap.xml

@@ -108,6 +108,7 @@ module.exports = {
 		}),
 		new CopyWebpackPlugin({
 			patterns: [
+				{ from: "public", to: "." },
 				{ from: "Quest Data", to: "Quest Data" },
 				{ from: "Images", to: "Images" },
 				{ from: "Quests", to: "Quests" },
