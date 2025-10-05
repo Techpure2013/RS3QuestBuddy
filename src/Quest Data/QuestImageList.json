@@ -2236,7 +2236,14 @@
 				"stepDescription": "Follow the path pictured right, searching the bushes, plants, and stones. Finally check the mound."
 			},
 			{
-				"step": 26,
+				"step": 11,
+				"src": "AVoidDance_step_11_1.webp",
+				"height": 335,
+				"width": 266,
+				"stepDescription": "Complete the puzzle using the steps in Additional Info."
+			},
+			{
+				"step": 25,
 				"src": "AVoidDance_step_26_1.webp",
 				"height": 337,
 				"width": 375,
@@ -2264,28 +2271,28 @@
 				"stepDescription": "You can right click the clue scroll to dig. Clue Locations are in the Additional Info Section."
 			},
 			{
-				"step": 36,
+				"step": 35,
 				"src": "AVoidDance_step_36_3.webp",
 				"height": 551,
 				"width": 660,
 				"stepDescription": "You can right click the clue scroll to dig. Clue Locations are in the Additional Info Section."
 			},
 			{
-				"step": 36,
+				"step": 35,
 				"src": "AVoidDance_step_36_4.webp",
 				"height": 563,
 				"width": 633,
 				"stepDescription": "You can right click the clue scroll to dig. Clue Locations are in the Additional Info Section."
 			},
 			{
-				"step": 36,
+				"step": 35,
 				"src": "AVoidDance_step_36_5.webp",
 				"height": 586,
 				"width": 469,
 				"stepDescription": "You can right click the clue scroll to dig. Clue Locations are in the Additional Info Section."
 			},
 			{
-				"step": 36,
+				"step": 35,
 				"src": "AVoidDance_step_36_6.webp",
 				"height": 380,
 				"width": 411,
@@ -3056,88 +3063,60 @@
 		"name": "Call of the Ancestors",
 		"images": [
 			{
-				"step": "1",
-				"src": "MageToTuska.webp",
-				"width": 351,
-				"height": 204,
-				"stepDescription": "The Liberation of Mazcab grouping teleport may be helpful for a few parts of this quest. Especially if you lack reputation."
+				"step": 12,
+				"src": "CalloftheAncestors_step_12_1.webp",
+				"height": 563,
+				"width": 663,
+				"stepDescription": "Control Lunch Headbutt the crack on the West wall. Read Additional Information for the Puzzle Pattern."
 			},
 			{
-				"step": "2",
-				"src": "TnksLoc.webp",
-				"width": 154,
-				"height": 160,
-				"stepDescription": "Talk to Tunks on Tuska's corpse. (Chat ✓)"
+				"step": 13,
+				"src": "CalloftheAncestors_step_13_1.webp",
+				"height": 567,
+				"width": 651,
+				"stepDescription": "Control Tunks, Jump over the chasm. Read Additional Information for the Puzzle Pattern."
 			},
 			{
-				"step": "2",
-				"src": "Tunks.webp",
-				"width": 306,
-				"height": 342,
-				"stepDescription": "Talk to Tunks on Tuska's corpse. (Chat ✓)"
+				"step": 38,
+				"src": "CalloftheAncestors_step_38_1.webp",
+				"height": 813,
+				"width": 798,
+				"stepDescription": "Then do the same thing for the final lever."
 			},
 			{
-				"step": "4",
-				"src": "AccaKanatah.webp",
-				"width": 243,
-				"height": 305,
-				"stepDescription": "Talk to Acca Kanatah. (Chat 2•1•2•2)"
+				"step": 37,
+				"src": "CalloftheAncestors_step_37_1.webp",
+				"height": 552,
+				"width": 642,
+				"stepDescription": "Move Tunks first, Then Lunch as before on the second lever."
 			},
 			{
-				"step": "5",
-				"src": "ClicktoControl.webp",
-				"width": 247,
-				"height": 233,
-				"stepDescription": "If you have a pet, dismiss it and go east to the beach and talk to Tunks for a cutscene. (Chat 1)"
+				"step": 35,
+				"src": "CalloftheAncestors_step_35_1.webp",
+				"height": 595,
+				"width": 696,
+				"stepDescription": "Remember to put Tunks on the tile first, then Lunch 2nd. Do this for both tiles."
 			},
 			{
-				"step": "6",
-				"src": "JumpChasm.webp",
-				"width": 320,
-				"height": 185,
-				"stepDescription": "Jump over the chasm and collect the bundle of logs."
+				"step": 32,
+				"src": "CalloftheAncestors_step_32_1.webp",
+				"height": 501,
+				"width": 564,
+				"stepDescription": "Control Tunks and step on the pressure plate (jumping chasm) revealed in the centre of the room"
 			},
 			{
-				"step": "9",
-				"src": "EntranceToForest.webp",
-				"width": 163,
-				"height": 198,
+				"step": 33,
+				"src": "CalloftheAncestors_step_33_1.webp",
+				"height": 523,
+				"width": 606,
+				"stepDescription": "Control Lunch then step on the same pressure which was revealed (the bigger version)."
+			},
+			{
+				"step": 8,
+				"src": "CalloftheAncestors_step_8_1.webp",
+				"height": 467,
+				"width": 1102,
 				"stepDescription": "Enter Nemi Forest, to the west of Mazcab. Select the correct option on the chatbox when entering the Forest. (Chat 1)"
-			},
-			{
-				"step": "11",
-				"src": "AncientGoebie.webp",
-				"width": 351,
-				"height": 293,
-				"stepDescription": "Talk to the Ancient goebie (Chat 1•1•1)"
-			},
-			{
-				"step": "12",
-				"src": "Temple.webp",
-				"width": 96,
-				"height": 91,
-				"stepDescription": "Enter the temple to the north, then talk to Xinachto (Chat 1•1•2•3•4•5)"
-			},
-			{
-				"step": "12",
-				"src": "Xinachto.webp",
-				"width": 351,
-				"height": 387,
-				"stepDescription": "Enter the temple to the north, then talk to Xinachto (Chat 1•1•2•3•4•5)"
-			},
-			{
-				"step": "23",
-				"src": "FirstLocks.webp",
-				"width": 351,
-				"height": 137,
-				"stepDescription": "Control Lunch and push the heavy block onto the north-eastern pressure plate."
-			},
-			{
-				"step": "34",
-				"src": "PuzzlePattern2.webp",
-				"width": 350,
-				"height": 119,
-				"stepDescription": "Note: For these next instructions, Lunch needs to be placed in the correct positions after Tunks. Also, you can pull the lever as many times as you like to reveal the pressure plate if you forgot."
 			}
 		]
 	},

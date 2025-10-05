@@ -439,7 +439,7 @@
         "Walk 1 east and 2 north, kick the barrel north twice (Barrel #4)",
         "Walk 1 north and 1 north-west and kick the barrel east (Barrel #4)",
         "Walk to the east side of the southern middle barrel, kick it west, then kick it north twice from the south side. (Barrel #9)",
-        "Refer to image pictured right to move the empty barrel out."
+        "Refer to image pictured at this step to move the empty barrel out."
       ]
     },
     {
@@ -849,17 +849,6 @@
             }
           }
         ],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": []
-    },
-    {
-      "stepDescription": "Speak with Zambo in the pub. (Chat 3)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [],
         "object": []
       },
       "floor": 0,
