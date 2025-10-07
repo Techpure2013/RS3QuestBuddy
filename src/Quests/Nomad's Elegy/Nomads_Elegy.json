@@ -2,105 +2,16 @@
   "questName": "Nomad's Elegy",
   "questSteps": [
     {
-      "stepDescription": "Make sure you have combat equipment (but not your familiar yet) from this point.",
+      "stepDescription": "Make sure you have combat equipment but not your familiar from this point.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "If you die, you will be returned to Death's office and will have to leave and re-enter via Death's Hourglass (i.e. not War's Retreat) to resume progress with the quest.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "If you die, you will be returned to Death's office and will have to leave and re-enter via Death's Hourglass (i.e. not War's Retreat) to resume progress with the quest."
       ]
     },
     {
@@ -108,203 +19,25 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Investigate Nomad's tent to the east.",
+      "stepDescription": "Investigate these Locations in Additional Information.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Investigate the throne, some crystals to the west, and sticky goo south of that.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Investigate the strange emissions to the southwest. You will be sent to Death's Realm.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "Investigate Nomad's tent to the east.",
+        "Investigate the throne, some crystals to the west, and sticky goo south of that.",
+        "Investigate the strange emissions to the southwest. You will be sent to Death's Realm."
       ]
     },
     {
@@ -312,203 +45,34 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Speak to Death again. (Chat 1•5)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Embark on the Bloodstained Jetty to the north-east. (You cannot bring a familiar here.) (Chat 1)",
+      "stepDescription": "Embark on the Bloodstained Jetty to the north-east.  (Chat 1)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "If you leave the Underworld, you can return by entering Death's Office from Draynor. Do not enter from War's Retreat.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "You cannot bring your familiar here."
       ]
     },
     {
@@ -516,919 +80,174 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "If you leave the Underworld, you can return by entering Death's Office from Draynor. Do not enter from War's Retreat."
       ]
     },
     {
-      "stepDescription": "Items needed: 2 free inventory spaces",
+      "stepDescription": "Embark on the Dusty Jetty to the north-west. (Chat 1)",
       "itemsNeeded": [
         "2 free inventory spaces"
       ],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Embark on the Dusty Jetty to the north-west. (Chat 1)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Speak to Astrid/Brand.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Speak to Korasi/Jessika in the house north of Bob's Brilliant Axes.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Travel to the south-west of Lumbridge Castle grounds. Speak to Wizard Grayzag for half of Korasi's/Jessika's memories. (Chat 1•3•2•2•4•1)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Travel to the 2nd floor[US] of the Lumbridge Castle wall using the southern gate ladder (not within the main castle keep), and speak to the person you saved in The Void Stares Back to recover the other half of Korasi's/Jessika's memory.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Combine the memory halves.",
+      "stepDescription": "Combine the memory halves, and return Korasi's/Jessika's completed memory to her north of Bob's Axes.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Return Korasi's/Jessika's completed memory to her north of Bob's Axes.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Hazelmere on the 2nd floor[US] of Lumbridge castle.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Find and talk to him again on the 2nd floor[US] and above on the 4th floor[US] above where the bank normally is by using the ladder on the north side of the building.",
+      "stepDescription": "Find and talk to him again on the 2nd floor[US] and above on the 4th floor[US].",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "Above where the bank normally is by using the ladder on the north side of the building."
       ]
     },
     {
-      "stepDescription": "Climb either of the two tower ladders of the castle gate (not within the main castle keep); he will be on the 3rd floor[US].",
+      "stepDescription": "Climb either of the two tower ladders of the castle gate; he will be on the 3rd floor[US].",
       "itemsNeeded": [],
       "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
+        "Not within the main castle keep."
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
     },
     {
       "stepDescription": "Speak to Hazelmere in what would normally be Bob's Axes.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Speak to Hazelmere west of Lumbridge Castle.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Speak to Hazelmere next to Astrid/Brand. (Chat 1)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Speak to Xenia in the Lumbridge Castle 1st floor[US]. (Chat ~)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Attempt to open the chest in the northern room on the 2nd floor[US].",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Kill Guilt, pick up the guilt ridden key, then open and search the chest for a Xenia memory half. The key will not drop if you are in a group.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "Kill Guilt, pick up the guilt ridden key, then open and search the chest for a Xenia memory half. The key will not drop if you are in a group."
       ]
     },
     {
@@ -1436,101 +255,12 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Kill Shame, pick up the shame filled key, then open and search the chest for a other Xenia memory half.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "Kill Shame, pick up the shame filled key, then open and search the chest for a other Xenia memory half."
       ]
     },
     {
@@ -1538,407 +268,87 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Astrid/Brand. (Chat ~)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Enter the portal to leave.(Chat 1)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Plan the war table in the centre area.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Begin torturing Legio Septimus. The player must go through dialogue asking him all the questions. Select Threaten him, then 'remove' crystals until Legio dies. (Chat 1•1•1•2•3•4•5•2•1•2•3•4•2•2•2•2•2•3•3•3•3•3•3•3•3•3•3)",
+      "stepDescription": "Begin torturing Legio Septimus. Select Threaten him, then 'remove' crystals until Legio dies. (Chat 1•1•1•2•3•4•5•2•1•2•3•4•2•2•2•2•2•3•3•3•3•3•3•3•3•3•3)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "If you fail at any point, just go back in and click on the War Table.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "The player must go through dialogue asking him all the questions.",
+        "To fully interrogate him instead, threaten him until it is no longer effective. ",
+        "Then use Zanik's Good Cop option and Xenia's Bad Cop option until his sanity is about 50%.",
+        "Then use Charm to lower his willpower to about 50% as well. Finally raise his sanity back up to about 80% using Zanik's Bad Cop option and Xenia's Good Cop Option.",
+        "Ask the questions, and his answers should be sane and cooperative. ",
+        "Once answered, choose whether to kill or release him (choice currently has no effect on future events)"
       ]
     },
     {
       "stepDescription": "Click the war table and select any two companions.",
       "itemsNeeded": [],
       "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
+        "If you fail at any point, just go back in and click on the War Table"
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
     },
     {
-      "stepDescription": "Collect 25 wood and 25 metal. You can put both companions on the same material; by time you complete the other, they will be finished.",
+      "stepDescription": "Collect 25 wood and 25 metal. ",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "You can put both companions on the same material; by time you complete the other, they will be finished."
       ]
     },
     {
@@ -1946,720 +356,96 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Build the battering ram to the north.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Return to the war table.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Slowly walk the battering ram across the bridge and through the doors.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "It is recommended to use an Aggression potion for this next part, to keep the focus of the enemies on you rather than the battering ram.",
+      "stepDescription": "Choose to either head north and assault the fortress head-on, or if you unlocked the information in the earlier interrogation, detour through the east door and enter the secret passage in the north wall of the cave, which will bypass the second half of the assault. Read Additional Information for some Suggestions and Recommendations.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "It is recommended to use an Aggression potion for this next part, to keep the focus of the enemies on you rather than the battering ram.",
+        "Suggestion 1: Put Zanik north-west by battering ram, Death north-east and the remaining four block off the start of the bridge while fighting.",
+        "Suggestion 2: Place your companions three on each side of the ram, and stand on the bridge's edge blocking off all the monsters while using an aggression potion which requires level 82 Herblore. Fight or withstand the attacks until the ram is done."
       ]
     },
     {
-      "stepDescription": "Suggestion 1: Put Zanik north-west by battering ram, Death north-east and the remaining four block off the start of the bridge while fighting.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
+      "stepDescription": "Once inside, you'll have to fight Nomad it is recommended to read ahead particularly in the Additional Information for Xenia.",
+      "itemsNeeded": [
         ""
-      ]
-    },
-    {
-      "stepDescription": "Suggestion 2: Place your companions three on each side of the ram, and stand on the bridge's edge blocking off all the monsters while using an aggression potion which requires level 82 Herblore. Fight or withstand the attacks until the ram is done.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Choose to either assault the fortress head-on, or detour to the side.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Once inside, you'll have to fight Nomad.",
-      "itemsNeeded": [],
+      ],
       "itemsRecommended": [
-        "High-tier shield for the use of resonance",
-        "stat-boosting potions",
-        "Guthix Staff",
-        "debuff spells",
-        "beast of burden",
-        "power armour (armour value doesn't matter)"
+        ""
       ],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Items needed: Combat equipment and high-healing food",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Items recommended: High-tier shield for the use of resonance, stat-boosting potions, Guthix Staff, debuff spells, beast of burden, power armour (armour value doesn't matter)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "If at any point you wish to leave, go back to the entrance and select \"quick leave\". When you return, you will resume the fight at the beginning of that phase. If you die, your gravestone spawns outside Death's Hourglass.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "First combat phase",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Dwindle away Nomad's health, and move away from the centre of the bridge to avoid Gielinor's hand. Also move away from shadows that appear on the ground to avoid rapid powerful magic attacks. Use Surge if you can.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
+      "itemsNeeded": [
+        "Combat equipment",
+        "High Healing Food"
+      ],
+      "itemsRecommended": [
+        "High Tier Shield for Resonance.",
+        "Debuffing Spells",
+        "Beast of Burden",
+        "Power Armour"
+      ],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "If at any point you wish to leave, go back to the entrance and select \"quick leave\".",
+        "When you return, you will resume the fight at the beginning of that phase.",
+        "If you die, your gravestone spawns outside Death's Hourglass."
       ]
     },
     {
@@ -2667,305 +453,15 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Use Fire Blast when Rorarii are present.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Use Shield Dome when Gladii are present.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Use Shadow Stalk when Scutarii are present.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Every time you attack a Capsarii, it will heal Xenia for a small amount.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "In addition to the previous phase's attacks, when Nomad teleports you near him and orders you to 'face his wrath', switch to your shield to use Resonance to negate any and all damage from the attack.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "Use Fire Blast when Rorarii are present.",
+        "Use Shield Dome when Gladii are present.",
+        "Use Shadow Stalk when Scutarii are present.",
+        "Every time you attack a Capsarii, it will heal Xenia for a small amount."
       ]
     },
     {
@@ -2973,152 +469,26 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "In addition to the previous phase's attacks, when Nomad teleports you near him and orders you to 'face his wrath', switch to your shield to use Resonance to negate any and all damage from the attack."
       ]
     },
     {
-      "stepDescription": "In addition to the previous phases' attacks, Nomad will create a clone of himself when he reaches half health. Kill them both (you might kill Nomad first, in which case you will move on).\nQuickly and without stopping, run around the area anti-clockwise, releasing the souls as you get in the middle of a group of them. Make sure to get over half of the initial total number of spirits.",
+      "stepDescription": "Quickly and without stopping, run around the area anti-clockwise, releasing the souls as you get in the middle of a group of them. Make sure to get over half of the initial total number of spirits.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "The more souls you release, the more powerful the attack reflected onto Gielinor will be.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "In addition to the previous phases' attacks, Nomad will create a clone of himself when he reaches half health. Kill them both (you might kill Nomad first, in which case you will move on).",
+        "The more souls you release, the more powerful the attack reflected onto Gielinor will be."
       ]
     },
     {
@@ -3126,101 +496,12 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "You will have to repeat this process a few times.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "You will have to repeat this process a few times."
       ]
     },
     {
@@ -3228,255 +509,68 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Protect from Melee or Deflect Melee, especially combined with Devotion, can reduce or negate much of Nomad's damage in this phase, though the speed of his attacks can still be problematic.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Choose who ends Gielinor.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Decide Nomad's fate.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "After the cutscene, speak with Death.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
-      "highlights": {
         "npc": [],
         "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "Protect from Melee or Deflect Melee, especially combined with Devotion, can reduce or negate much of Nomad's damage in this phase, though the speed of his attacks can still be problematic."
       ]
     },
     {
-      "stepDescription": "Choose Zanik's fate.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "stepDescription": "Choose who ends Gielinor. (Chat ~)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [],
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
+    },
+    {
+      "stepDescription": "Decide Nomad's fate. (Chat ~•~•~)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": []
+    },
+    {
+      "stepDescription": "After the cutscene, speak with Death. (Chat ~)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": []
+    },
+    {
+      "stepDescription": "Choose Zanik's fate. (Chat ~•~•~)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Quest complete!",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [],
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     }
   ]
 }

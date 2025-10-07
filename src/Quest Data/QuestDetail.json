@@ -4597,14 +4597,6 @@
 		"OfficialLength": "Medium",
 		"Requirements": [
 			"King's Ransom",
-			"Holy Grail",
-			"Merlin's Crystal",
-			"Murder Mystery",
-			"One Small Favour",
-			"Rune Mysteries",
-			"Shilo Village",
-			"Jungle Potion",
-			"Druidic Ritual",
 			"Complete the Knight Waves in Camelot",
 			"Complete the Soul Wars tutorial",
 			"60 Construction",
@@ -4618,11 +4610,13 @@
 			"Air runes and fire runes for the fire spell or runes to cast a fire-aligned ancient magicks spell. A staff alone will NOT work"
 		],
 		"Recommended": [
-			"76 Constitution highly recommended, Nomad uses an attack that deals exactly 7,500 damage. If you have room in your relics and level 71, the Font of Life relic is free after the tutorial and boosts your max life points by 500.",
+			"76 Constitution highly recommended",
 			"75 Combat or higher, unless you're particularly good at combat",
-			"Combat equipment, food, and potions",
+			"Combat equipment",
+			"Food",
+			"Potions",
 			"Beast of Burden or healing Summoning familiar",
-			"Standard prayer book active, or restore potions or super restores"
+			"Standard prayer book active, or Restore Potions or Super Restores"
 		],
 		"EnemiesToDefeat": ["Decaying avatar (level 98)", "Nomad (level 699)"]
 	},
