@@ -2,7 +2,7 @@
   "questName": "Stellar Born",
   "questSteps": [
     {
-      "stepDescription": "Head to West of Piscatoris and approach the rock in the small clearing and talk to the shooting star. (Chat ~ • ✓)",
+      "stepDescription": "Talk to the crashed star west of Piscatoris. (Chat ✓) ",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [],
@@ -46,7 +46,7 @@
       "floor": 0
     },
     {
-      "stepDescription": "Mine the star and proceed through chat options",
+      "stepDescription": "Mine the crashed star and finish the dialogue.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [],
@@ -57,10 +57,12 @@
       "floor": 0
     },
     {
-      "stepDescription": "Make your way to the 3rd floor[US] of the Wizard's Tower (quickest way is to use stardust to teleport) and talk to Wizard Rosalina. (Chat ~•~)",
+      "stepDescription": "Make your way to the 3rd floor[US] of the Wizard's Tower and talk to Wizard Rosalina. (Chat 1•~•~)",
       "itemsNeeded": [],
       "itemsRecommended": [],
-      "additionalStepInformation": [],
+      "additionalStepInformation": [
+        "Players can quickly teleport to her with stardust."
+      ],
       "highlights": {
         "npc": [],
         "object": []
@@ -79,21 +81,16 @@
       "floor": 0
     },
     {
-      "stepDescription": "Talk to Wizard Rosalina and hand her 152 cosmic runes, 52 astral runes and a Wizard Blizzard.",
-      "itemsNeeded": [],
+      "stepDescription": "Talk to Wizard Rosalina to hand her your cosmic and astral runes and the Wizard Blizzard drink. Finish the cutscene.",
+      "itemsNeeded": [
+        "152 Cosmic Runes",
+        "52 Astral Runes",
+        "A Wizard Blizzard or Premade Version"
+      ],
       "itemsRecommended": [],
-      "additionalStepInformation": ["Wizard Blizzard can be Premade."],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0
-    },
-    {
-      "stepDescription": "Watch cutscene and proceed through chat options.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "additionalStepInformation": [],
+      "additionalStepInformation": [
+        ""
+      ],
       "highlights": {
         "npc": [],
         "object": []
@@ -104,7 +101,9 @@
       "stepDescription": "Head to the Desert goebie camp, north west of Menaphos.",
       "itemsNeeded": [],
       "itemsRecommended": [],
-      "additionalStepInformation": [],
+      "additionalStepInformation": [
+        "Players can use Leela's favour to get to the Merchant District (option 2) and exit through the north Menaphos gate."
+      ],
       "highlights": {
         "npc": [],
         "object": []
@@ -123,7 +122,7 @@
       "floor": 0
     },
     {
-      "stepDescription": "Return to Shooting Star crash site and speak to Wizard Chambers or Wizard Rosalina.",
+      "stepDescription": "Return to the Piscatoris crash site and talk to Wizard Chambers or Wizard Rosalina.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [],
@@ -134,7 +133,7 @@
       "floor": 0
     },
     {
-      "stepDescription": "Talk to them again and Shoo Away all the fireflies until the counter finishes.",
+      "stepDescription": "Talk to them again and shoo away fireflies to keep them away from the crashed star until the portal progress at the top of your screen fills to 50.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [],
@@ -145,7 +144,7 @@
       "floor": 0
     },
     {
-      "stepDescription": "Unequip any items in your main/off-hand and \"Jump Rocky Edge\" to the east.",
+      "stepDescription": "Talk to them again.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [],
@@ -156,10 +155,23 @@
       "floor": 0
     },
     {
-      "stepDescription": "Fly to the large island to the east and land at a spot marked by a few crystals on either side of the path.",
+      "stepDescription": "Teleport to Zolarea with the portal. Free both hands then \"Jump Rocky Edge\" to the east.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Fly east to the large island to the east and jump to the rocky edge to land.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [
+        "Players can Surge and Dive during flight."
+      ],
       "highlights": {
         "npc": [],
         "object": []
@@ -178,7 +190,7 @@
       "floor": 0
     },
     {
-      "stepDescription": "Head south and speak to Rox.",
+      "stepDescription": "Jump the rocky edge on the northernmost side of the main island.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [],
@@ -189,7 +201,7 @@
       "floor": 0
     },
     {
-      "stepDescription": "Investigate the Decaying Patch next to Rox.",
+      "stepDescription": "Head to the northeastmost island and inspect the mysterious decay.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [],
@@ -200,7 +212,7 @@
       "floor": 0
     },
     {
-      "stepDescription": "Head into the house just east of Rox and speak to Zag.",
+      "stepDescription": "Back to the main island and then inspect the mysterious decay south of the rocky edge and west of the flower patch.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [],
@@ -211,7 +223,7 @@
       "floor": 0
     },
     {
-      "stepDescription": "Head north and speak to Glorp.",
+      "stepDescription": "Attempt to enter the cave entrance on the west side of the main island. (1/12)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [],
@@ -222,7 +234,7 @@
       "floor": 0
     },
     {
-      "stepDescription": "Investigate the Decaying Patch near Glorp.",
+      "stepDescription": "Head south of the main island and inspect the mysterious decay next to Rox. (2/12)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [],
@@ -233,7 +245,7 @@
       "floor": 0
     },
     {
-      "stepDescription": "Head into the northern most house and investigate the crystal on the north wall then speak to Fuz.",
+      "stepDescription": "Head west to the southernmost house and lift the woven rug, then talk to Nuub. (3/12)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [],
@@ -244,7 +256,7 @@
       "floor": 0
     },
     {
-      "stepDescription": "Investigate the Rocky Bed in the house adjacent to the bank chest. (Northeast)",
+      "stepDescription": "Talk to Blip near Wizard Rosalina. (4/12)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [],
@@ -255,113 +267,12 @@
       "floor": 0
     },
     {
-      "stepDescription": "\"Lift\" the woven rug in the southern most house then speak to Nuub.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "additionalStepInformation": [],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0
-    },
-    {
-      "stepDescription": "Investigate the Cave Entrance to the northwest of the island.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "additionalStepInformation": [],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0
-    },
-    {
-      "stepDescription": "Return to flight and head south west to a small island, speak to Eetee or Zorb.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "additionalStepInformation": [],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0
-    },
-    {
-      "stepDescription": "Return to flight and head to the southern island and investigate the hollowed-out star.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "additionalStepInformation": [],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0
-    },
-    {
-      "stepDescription": "Return to flight and head northeast to a small island (southeast of the large island), land and pick the Starbloom.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "additionalStepInformation": [],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0
-    },
-    {
-      "stepDescription": "Return to flight and head to the northeast most island, land at the small island and investigate the decaying patch.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "additionalStepInformation": [],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0
-    },
-    {
-      "stepDescription": "Return to the main island and head to the south eastern house and speak to Zag.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "additionalStepInformation": [],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0
-    },
-    {
-      "stepDescription": "Return to the center of the island and speak to Zoob.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "additionalStepInformation": [],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0
-    },
-    {
-      "stepDescription": "Speak to Blip.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "additionalStepInformation": [],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0
-    },
-    {
-      "stepDescription": "Speak to Wizard Rosalina and select the following concerns in Additional Information. If done correctly you will receive a Wrinkly Scroll.",
+      "stepDescription": "Talk to Wizard Rosalina. (Chat 1•2•1•3•1)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [
-        "Parts of the planet of dying.",
-        "There is a cave in the planet.",
-        "The cave is where Elder Sprites go to die.",
-        "It's the source of their power."
+        "If the necessary chat options display \"???\", you missed a clue.",
+        "If done correctly, you receive a wrinkly scroll."
       ],
       "highlights": {
         "npc": [],
@@ -370,7 +281,20 @@
       "floor": 0
     },
     {
-      "stepDescription": "Head to the observatory north of Castle Wars by any means necessary.",
+      "stepDescription": "Head to the observatory west of Tree Gnome Village and north of Castle Wars.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [
+        "The fastest teleport is 'Chipped' Watchtower teleport made by Dave's spellbook."
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Talk to the Observatory professor on the 2nd floor[US] after climbing the rope outside and climbing up the stairs. (Chat 1)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [],
@@ -381,18 +305,7 @@
       "floor": 0
     },
     {
-      "stepDescription": "Speak to Observatory Professor (Gronigen) on the 1st floor.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "additionalStepInformation": [],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0
-    },
-    {
-      "stepDescription": "After the cutscene, return to the Crash Site and teleport to Zolarea.",
+      "stepDescription": "After the cutscene, return to Zolarea via the portal at the crash site west of Piscatoris.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [],
@@ -414,7 +327,7 @@
       "floor": 0
     },
     {
-      "stepDescription": "Enter the Sacred Cave west of you and speak to Wizard Rosalina.",
+      "stepDescription": "Enter the cave entrance to the west and speak to Wizard Rosalina.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [],
@@ -425,44 +338,11 @@
       "floor": 0
     },
     {
-      "stepDescription": "Exit the cave and run directly north, Harvest the 1st Dark Star Wisp that is near the Decaying Patch.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "additionalStepInformation": [],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0
-    },
-    {
-      "stepDescription": "Run to the east of the island and harvest the Dark Star Wisp near the meteorites.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "additionalStepInformation": [],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0
-    },
-    {
-      "stepDescription": "Run to the south of the island and harvest the Dark Star Wisp there.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "additionalStepInformation": [],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0
-    },
-    {
-      "stepDescription": "Take Flight off the ledge nearby.",
+      "stepDescription": "Exit the cave and head a bit north, west of the mysterious decay, then gather the dark star wisp. (1/5)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [
-        "You can Surge and Dive during flight for faster travel."
+        "Wisps are visible on the minimap as a yellow dot."
       ],
       "highlights": {
         "npc": [],
@@ -471,7 +351,7 @@
       "floor": 0
     },
     {
-      "stepDescription": "Fly to the furthest north western island (besides the north-western island) and harvest the Dark Star Wisp there.",
+      "stepDescription": "Jump the rocky edge to the north and gather the wisp on the northernmost island. (2/5)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [],
@@ -482,7 +362,7 @@
       "floor": 0
     },
     {
-      "stepDescription": "Fly to the furthest south eastern island and harvest the Dark Star Wisp there.",
+      "stepDescription": "Head to the eastern side of the island and gather the wisp near the meteorites. (3/5)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [],
@@ -493,7 +373,20 @@
       "floor": 0
     },
     {
-      "stepDescription": "Return to the sacred cave on the main island.",
+      "stepDescription": "Head to the southern side of the island and gather the wisp near the rocky edge. (4/5)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [
+        ""
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Jump the rocky edge to the south and gather the wisp on the southeasternmost island. (5/5)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [],
@@ -504,7 +397,7 @@
       "floor": 0
     },
     {
-      "stepDescription": "Speak to Wizard Rosalina and go through all the chat options.",
+      "stepDescription": "Talk to Wizard Rosalina back in the cave. (Chat 1•2•3•4)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [],
@@ -515,7 +408,7 @@
       "floor": 0
     },
     {
-      "stepDescription": "Watch the order of the star sprites and repeat by clicking on them. Order that was given is in Additional Information. ( Caution: May be different for other players. )",
+      "stepDescription": "Select the star sprites in the following order in Additional Information.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [
@@ -530,7 +423,7 @@
       "floor": 0
     },
     {
-      "stepDescription": "Exit the cave and head to center of island, speak to Wizard Rosalina.",
+      "stepDescription": "Exit the cave and head to center of island, speak to Wizard Rosalina. (Chat 1)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [],
@@ -541,7 +434,7 @@
       "floor": 0
     },
     {
-      "stepDescription": "Accept the teleport and when back on Gielinor, speak to Wizard Rosalina again.",
+      "stepDescription": "Talk to Wizard Rosalina back at the crash site.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [],
