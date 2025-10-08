@@ -465,7 +465,7 @@
       ]
     },
     {
-      "stepDescription": "Go directly north, south, east and west of Gielinor. Each time provoking him and quickly getting out of the way, to then use Scythe on the hand, and finally claim the released spirit.",
+      "stepDescription": "In addition to the previous phase's attacks, when Nomad teleports you near him and orders you to 'face his wrath', switch to your shield to use Resonance to negate any and all damage from the attack.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
@@ -474,35 +474,50 @@
       },
       "floor": 0,
       "additionalStepInformation": [
-        "In addition to the previous phase's attacks, when Nomad teleports you near him and orders you to 'face his wrath', switch to your shield to use Resonance to negate any and all damage from the attack."
+        ""
+      ]
+    },
+    {
+      "stepDescription": "Go directly north, south, east and west of Gielinor. Each time provoking him and quickly getting out of the way, to then use Scythe on the hand, and finally claim the released spirit.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [
+        ""
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "In addition to the previous phases' attacks, Nomad will create a clone of himself when he reaches half health. Kill them both (you might kill Nomad first, in which case you will move on).",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "",
+        ""
       ]
     },
     {
       "stepDescription": "Quickly and without stopping, run around the area anti-clockwise, releasing the souls as you get in the middle of a group of them. Make sure to get over half of the initial total number of spirits.",
       "itemsNeeded": [],
       "itemsRecommended": [],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
       "additionalStepInformation": [
-        "In addition to the previous phases' attacks, Nomad will create a clone of himself when he reaches half health. Kill them both (you might kill Nomad first, in which case you will move on).",
-        "The more souls you release, the more powerful the attack reflected onto Gielinor will be."
-      ]
-    },
-    {
-      "stepDescription": "Once all souls have been released, continue circling until Gielinor stops firing the beam, then shield yourself from Gielinor's attack with the ability, in order to reflect the damage onto Gielinor.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": [
+        "The more souls you release, the more powerful the attack reflected onto Gielinor will be.",
+        "Once all souls have been released, continue circling until Gielinor stops firing the beam, then shield yourself from Gielinor's attack with the ability, in order to reflect the damage onto Gielinor.",
         "You will have to repeat this process a few times."
-      ]
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
     },
     {
       "stepDescription": "In this phase, Nomad will only be using rapid melee attacks. Kill him by any means, if using Ranged or Magic, then you can run around the room to avoid damage from Nomad, using Surge to gain distance. Watch out for Gielinor's attacks.",
