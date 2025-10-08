@@ -11725,11 +11725,32 @@
 		"name": "The Tale of the Muspah",
 		"images": [
 			{
-				"step": "1",
-				"src": "SideofIcetoMelt.webp",
-				"width": 375,
-				"height": 375,
-				"stepDescription": "Talk to Erjolf on the mountain north-east of Rellekka. (Fairy ring DKS) (Chat ✓•1)"
+				"step": 7,
+				"src": "TheTaleoftheMuspah_step_7_1.webp",
+				"height": 520,
+				"width": 717,
+				"stepDescription": "You have to set 5 rafts alight quickly from the northern shore of the pool. Light them from a spot such that when they float south, they end up across the east side of the frozen armour and are blocked from leaving the cave by a rock."
+			},
+			{
+				"step": 8,
+				"src": "TheTaleoftheMuspah_step_8_1.webp",
+				"height": 520,
+				"width": 660,
+				"stepDescription": "You have to set 3 rafts alight quickly from the northern shore of the pool. Light them on 3 spots that, when they float south, they end up on the north side of the frozen armour."
+			},
+			{
+				"step": 9,
+				"src": "TheTaleoftheMuspah_step_9_1.webp",
+				"height": 462,
+				"width": 509,
+				"stepDescription": "You have to set 4 rafts alight quickly from the south-east edge of the pool. Light them on a spot that, when they float west, they end up across the south side of the frozen armour."
+			},
+			{
+				"step": 10,
+				"src": "TheTaleoftheMuspah_step_10_1.webp",
+				"height": 519,
+				"width": 703,
+				"stepDescription": "You have to set 2 rafts alight from the western edges of the pool. Light them on 2 spots that, when they float east, they end up on the west side of the frozen armour."
 			}
 		]
 	},
