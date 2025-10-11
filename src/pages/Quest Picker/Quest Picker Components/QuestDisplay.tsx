@@ -24,11 +24,11 @@ import {
 	IconStarFilled,
 } from "@tabler/icons-react";
 import { EnrichedQuest } from "./useQuestData";
-import { useSettingsStore } from "./../../../pages/Settings/Setting Components/useSettingsStore";
+import { useSettings } from "./../../../Entrance/Entrance Components/SettingsContext";
 // --- Reusable Components ---
 
 const QuestRewardsList: React.FC<{ rewards: string[] }> = ({ rewards }) => {
-	const { settings } = useSettingsStore();
+	const { settings } = useSettings();
 	if (!rewards || rewards.length === 0) {
 		return (
 			<Text c={settings.textColor || "dimmed"} size="sm" mt="xs">
@@ -75,7 +75,7 @@ const QuestCard: React.FC<QuestCardProps> = ({
 	onQuestClick,
 	getModifiedQuestName,
 }) => {
-	const { settings } = useSettingsStore();
+	const { settings } = useSettings();
 	return (
 		<Card
 			shadow="lg"
@@ -171,7 +171,7 @@ const QuestDisplay: React.FC<QuestDisplayProps> = ({
 			.join("")
 			.replace(/[!,`']/g, "");
 	};
-	const { settings } = useSettingsStore();
+	const { settings } = useSettings();
 	if (!quests || quests.length === 0) return null;
 
 	// --- Accordion View (Compact Mode) ---

@@ -7,7 +7,6 @@ import {
 	IconClock,
 	IconFilter,
 } from "@tabler/icons-react";
-import { QuestList } from "Fetchers/FetchQuestList";
 import SubMenu from "./SubMenu"; // Make sure the path to SubMenu is correct
 import { CustomIcon } from "./CustomIcon";
 // Data for the sub-menus

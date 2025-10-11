@@ -21,7 +21,7 @@ import {
 	IconX,
 	IconList,
 } from "@tabler/icons-react";
-import { useSettingsStore } from "./../../pages/Settings/Setting Components/useSettingsStore";
+import { useSettings } from "./../../Entrance/Entrance Components/SettingsContext";
 // Imported Types
 import { EnrichedQuest } from "./Quest Picker Components/useQuestData";
 
@@ -57,7 +57,7 @@ const QuestCarousel: React.FC = () => {
 	} = useQuestData();
 	const { todoQuests, addQuestToTodo, removeQuestFromTodo, clearQuestTodo } =
 		useQuestTodo();
-	const { settings, closeSettingsModal, openSettingsModal } = useSettingsStore();
+	const { settings, closeSettingsModal, openSettingsModal } = useSettings();
 	const [settingsModal, { open: openSettings, close: closeSettings }] =
 		useDisclosure(false);
 	const [notesModal, { open: openNotes, close: closeNotes }] =

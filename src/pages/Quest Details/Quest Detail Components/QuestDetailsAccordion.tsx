@@ -19,7 +19,6 @@ import {
 import { NavLink } from "react-router-dom";
 import { PlayerQuestStatus } from "./../../../Fetchers/sortPlayerQuests";
 import { Skills } from "./../../../Fetchers/PlayerStatsSort";
-import { useSettingsStore } from "./../../../pages/Settings/Setting Components/useSettingsStore";
 
 export interface QuestDetailsGridProps {
 	expanded: string[];

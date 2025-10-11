@@ -22,7 +22,6 @@ import {
 import { CompactQuestStep } from "./Quest Detail Components/QuestStepDisplay";
 import { QuestModals } from "./Quest Detail Components/QuestModals";
 import { QuestFooter } from "./Quest Detail Components/QuestFooter";
-import { useUiSettings } from "./Quest Detail Components/useUiSettings";
 
 // Hooks and State
 import { useQuestPaths } from "./../../Fetchers/useQuestData";
@@ -46,7 +45,7 @@ import useNotesDisclosure from "./Quest Detail Components/useDisclosure";
 import usePOGDisclosure from "./Quest Detail Components/POGCalcDisclosure";
 import useGridDisclosure from "./Quest Detail Components/useGridModal";
 import useLunarGridDisclosure from "./Quest Detail Components/useLunarDisclosure";
-import { useSettingsStore } from "./../Settings/Setting Components/useSettingsStore";
+import { useSettings } from "./../../Entrance/Entrance Components/SettingsContext";
 // Lazy Loaded Components
 const QuestDetailContents = lazy(
 	() => import("./Quest Detail Components/QuestDetailsAccordion"),
@@ -87,14 +86,12 @@ const QuestPage: React.FC = () => {
 	// --- NEW: State for the auto-scroll feature, defaulting to on ---
 	const [autoScroll, setAutoScroll] = useState(true);
 
-	const [openedSettings, { open: openSettings, close: closeSettings }] =
-		useDisclosure(false);
 	const [openedGrid, { openGrid, closeGrid }] = useGridDisclosure(false);
 	const [openedLunar, { openLunarGrid, closeLunarGrid }] =
 		useLunarGridDisclosure(false);
 	const [openedPog, { pogModOpen, pogModClose }] = usePOGDisclosure(false);
 	const [openedNotes, { openNotes, closedNotes }] = useNotesDisclosure(false);
-	const { settings, openSettingsModal, closeSettingsModal } = useSettingsStore();
+	const { settings, openSettingsModal, closeSettingsModal } = useSettings();
 	// --- NEW: Effect to load the auto-scroll setting from localStorage on mount ---
 	useEffect(() => {
 		const savedSetting = localStorage.getItem("autoScrollEnabled");
