@@ -24,7 +24,6 @@ export const useDialogSolver = () => {
 		if (intervalIds.current[key]) {
 			clearInterval(intervalIds.current[key]!);
 			intervalIds.current[key] = null;
-			console.log(`Cleared interval: ${key}`);
 		}
 	};
 
@@ -32,7 +31,6 @@ export const useDialogSolver = () => {
 		Object.keys(intervalIds.current).forEach((key) =>
 			clearIntervalById(key as keyof typeof intervalIds.current),
 		);
-		console.log("Cleared all intervals");
 	};
 	/**
 	 * @Description Run's the first capture of each step.
@@ -50,6 +48,9 @@ export const useDialogSolver = () => {
 
 			diagHelp.find();
 			optionsRead = readOptionBox(rsScreenCapture);
+			if (!optionsRead) {
+				return;
+			}
 			if (optionsRead !== null && optionsRead !== undefined) {
 				useOptionsRead(optionsRead);
 			}
@@ -62,6 +63,9 @@ export const useDialogSolver = () => {
 	 */
 	function getChatOptions(currentStep: string) {
 		let match = currentStep.match(/\(Chat\s*([\d~•✓]*)\)/);
+		if (!match) {
+			return;
+		}
 		if (match !== null) {
 			let splitValues: string[] = match[1]
 				.split("•")
@@ -76,7 +80,6 @@ export const useDialogSolver = () => {
 			currentStepChatOptions.current.push(...numericValues);
 			clearAllIntervals();
 			run();
-			console.log(currentStepChatOptions.current);
 		}
 	}
 	/**
@@ -94,13 +97,14 @@ export const useDialogSolver = () => {
 	 */
 	function overlayReadCapture(option: DialogButton) {
 		const rsCapture = a1libs.captureHoldFullRs();
-		console.log(rsCapture);
 		if (rsCapture.handle === 0) {
 			clearIntervalById("overlay");
 			clearIntervalById("secondRead");
 		}
 		const optionBoxLoc = dialogReader.findOptions(rsCapture);
-		console.log(optionBoxLoc);
+		if (!optionBoxLoc) {
+			return;
+		}
 		if (optionBoxLoc.length === 0) {
 			//If optionBoxLoc: DialogButtonLocation[] === 0 only
 			clearIntervalById("overlay");
@@ -112,8 +116,6 @@ export const useDialogSolver = () => {
 		activeOption = options?.find((value) => value.active); // Assigns active value to activeOption
 		if (activeOption !== undefined) {
 			if (activeOption?.active) {
-				console.log(activeOption);
-
 				if (activeOption.text === option.text) {
 					clearIntervalById("overlay");
 					currentStepChatOptions.current.splice(0, 1);
@@ -121,14 +123,11 @@ export const useDialogSolver = () => {
 			}
 			clearIntervalById("secondRead");
 			if (currentStepChatOptions.current.length > 0) {
-				console.log(currentStepChatOptions);
-
 				run();
 			} else {
 				return;
 			}
 		}
-		console.log(activeOption);
 	}
 	function runOverlayReadCapture(option: DialogButton) {
 		intervalIds.current.secondRead = setInterval(() => {
@@ -174,13 +173,10 @@ export const useDialogSolver = () => {
 		}
 		if (currentStepChatOptions.current.length < 0)
 			return console.log("No Current Options");
-		console.log(options);
 		for (let index = 0; index < currentStepChatOptions.current.length; index++) {
 			const currentStepChatOption = currentStepChatOptions.current[index];
 
-			switch (
-				currentStepChatOption //Switch Statement
-			) {
+			switch (currentStepChatOption) {
 				case 1: //Captures a [1]
 					startOverlay(options[0]); // First Option Box
 					return;

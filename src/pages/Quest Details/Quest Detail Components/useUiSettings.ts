@@ -1,10 +1,10 @@
 import { useState, useEffect, useCallback } from "react";
 
 export const useUiSettings = () => {
-	const [settings, setSettings] = useState({
+	const [UIsettings, setSettings] = useState({
 		toolTipEnabled: false,
 		isHighlight: false,
-		dialogOption: false,
+
 		userColor: "",
 		userLabelColor: "",
 		userButtonColor: "",
@@ -19,9 +19,7 @@ export const useUiSettings = () => {
 		const isHighlight = JSON.parse(
 			localStorage.getItem("isHighlighted") || "false",
 		);
-		const dialogOption = JSON.parse(
-			localStorage.getItem("DialogSolverOption") || "false",
-		);
+
 		const toolTipEnabled = JSON.parse(localStorage.getItem("toolTip") || "false");
 		const userColor = localStorage.getItem("textColorValue") || "";
 		const userLabelColor = localStorage.getItem("labelColor") || "";
@@ -30,7 +28,6 @@ export const useUiSettings = () => {
 		setSettings({
 			toolTipEnabled,
 			isHighlight,
-			dialogOption,
 			userColor,
 			userLabelColor,
 			userButtonColor,
@@ -44,5 +41,5 @@ export const useUiSettings = () => {
 		loadSettings();
 	}, [loadSettings]); // It's best practice to include the memoized function here.
 
-	return { settings, reloadSettings: loadSettings };
+	return { UIsettings, reloadSettings: loadSettings };
 };

@@ -1,25 +1,26 @@
 {
 	"compilerOptions": {
 		"resolveJsonModule": true,
-		"target": "ES2020", // Target modern JavaScript
-		"module": "Node16", // Use CommonJS for `require()`
-		"moduleResolution": "node16",
-		"jsx": "react-jsx", // Enable React JSX transform
-		"strict": true, // Enable strict type-checking
+		"target": "ES2020",
+		"module": "ESNext", // Changed from "Node16" to support dynamic imports
+		"moduleResolution": "bundler", // Changed from "node16"
+		"jsx": "react-jsx",
+		"strict": true,
 		"esModuleInterop": true,
 		"sourceMap": true,
 		"emitDeclarationOnly": false,
 		"declaration": true,
-		"allowSyntheticDefaultImports": true, // Simplifies default imports for CommonJS
-		"resolvePackageJsonExports": true, // Enable `exports` resolution in package.json
-		"forceConsistentCasingInFileNames": true, // Enforce case-sensitive imports
-		"skipLibCheck": true, // Skip type checking of .d.ts files
-		"baseUrl": "./src", // Base directory for module resolution
-		"outDir": "./dist", // Output directory for compiled files
-		"rootDir": "./src", // Root directory for source files
+		"allowSyntheticDefaultImports": true,
+		"resolvePackageJsonExports": true,
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true,
+		"baseUrl": "./src",
+		"outDir": "./dist",
+		"rootDir": "./src",
 		"noEmit": false,
-		"typeRoots": ["./node_modules/@types", "./types"]
+		"typeRoots": ["./node_modules/@types", "./types"],
+		"lib": ["ES2020", "DOM", "DOM.Iterable"] // Add DOM libs for React
 	},
-	"include": ["src/**/*"], // Include all files in the `src` directory
-	"exclude": ["node_modules", "dist"] // Exclude unnecessary folders
+	"include": ["src/**/*"],
+	"exclude": ["node_modules", "dist"]
 }

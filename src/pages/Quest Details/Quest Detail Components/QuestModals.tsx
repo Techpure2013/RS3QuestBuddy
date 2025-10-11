@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import { Modal } from "@mantine/core";
-import { Settings } from "./../../Settings/Settings";
-import { UserNotes } from "./../../Settings/userNotes";
+import Settings from "./../../Settings/Settings";
+import UserNotes from "./../../Settings/userNotes";
 
 // Lazy load components
 const UnderGroundPassGrid = React.lazy(
@@ -24,14 +24,6 @@ const ColorCalculator = React.lazy(
 	() =>
 		new Promise<{ default: React.ComponentType<any> }>((resolve) => {
 			resolve({ default: require("./POGCalc").default });
-		}),
-);
-const QuestDetailContents = React.lazy(
-	() =>
-		new Promise<{ default: React.ComponentType<any> }>((resolve) => {
-			resolve({
-				default: require("./QuestDetailsAccordion").default,
-			});
 		}),
 );
 

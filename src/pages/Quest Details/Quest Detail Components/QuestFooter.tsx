@@ -25,7 +25,6 @@ type QuestFooterProps = {
 	specialButtons: React.ReactNode; // For POG, Grids, etc.
 	toolTipEnabled: boolean;
 	buttonColor: string;
-	hasButtonColor: boolean;
 };
 
 export const QuestFooter: React.FC<QuestFooterProps> = ({
@@ -41,7 +40,6 @@ export const QuestFooter: React.FC<QuestFooterProps> = ({
 	specialButtons,
 	toolTipEnabled,
 	buttonColor,
-	hasButtonColor,
 }) => (
 	<Box style={{ borderTop: "1px solid #333" }}>
 		<div className="prevNextGroup">
@@ -51,7 +49,7 @@ export const QuestFooter: React.FC<QuestFooterProps> = ({
 						onClick={onSettingsClick}
 						variant="outline"
 						size="sm"
-						color={hasButtonColor ? buttonColor : ""}
+						color={buttonColor || ""}
 					>
 						<IconSettings />
 					</ActionIcon>
@@ -62,7 +60,7 @@ export const QuestFooter: React.FC<QuestFooterProps> = ({
 						onClick={onDiscordClick}
 						variant="outline"
 						size="sm"
-						color={hasButtonColor ? buttonColor : ""}
+						color={buttonColor || ""}
 					>
 						<IconBrandDiscord />
 					</ActionIcon>
@@ -72,7 +70,7 @@ export const QuestFooter: React.FC<QuestFooterProps> = ({
 						onClick={onNotesClick}
 						variant="outline"
 						size="sm"
-						color={hasButtonColor ? buttonColor : ""}
+						color={buttonColor || ""}
 					>
 						<IconPlus />
 					</ActionIcon>
@@ -82,7 +80,7 @@ export const QuestFooter: React.FC<QuestFooterProps> = ({
 						onClick={onBackClick}
 						variant="outline"
 						size="sm"
-						color={hasButtonColor ? buttonColor : ""}
+						color={buttonColor || ""}
 					>
 						<IconArrowBack />
 					</ActionIcon>
@@ -92,7 +90,7 @@ export const QuestFooter: React.FC<QuestFooterProps> = ({
 						onClick={onCompleteClick}
 						variant="outline"
 						size="sm"
-						color={hasButtonColor ? buttonColor : ""}
+						color={buttonColor || ""}
 					>
 						<IconCheck color="#4EE669" />
 					</ActionIcon>
@@ -102,7 +100,7 @@ export const QuestFooter: React.FC<QuestFooterProps> = ({
 						onClick={onWikiClick}
 						variant="outline"
 						size="sm"
-						color={hasButtonColor ? buttonColor : ""}
+						color={buttonColor || ""}
 					>
 						<IconWorldWww />
 					</ActionIcon>
@@ -112,7 +110,7 @@ export const QuestFooter: React.FC<QuestFooterProps> = ({
 						onClick={onCoffeeClick}
 						variant="outline"
 						size="sm"
-						color={hasButtonColor ? buttonColor : ""}
+						color={buttonColor || ""}
 					>
 						<IconCoffee />
 					</ActionIcon>
@@ -124,7 +122,7 @@ export const QuestFooter: React.FC<QuestFooterProps> = ({
 					size="compact-sm"
 					variant="outline"
 					onClick={onNextStep}
-					color={hasButtonColor ? buttonColor : ""}
+					color={buttonColor || ""}
 				>
 					Next Step
 				</Button>
@@ -132,7 +130,7 @@ export const QuestFooter: React.FC<QuestFooterProps> = ({
 					size="compact-sm"
 					variant="outline"
 					onClick={onPrevStep}
-					color={hasButtonColor ? buttonColor : ""}
+					color={buttonColor || ""}
 				>
 					Prev Step
 				</Button>

@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { lazy, useEffect, useMemo, useState } from "react";
 import {
 	Button,
 	Modal,
@@ -21,7 +21,6 @@ import {
 	IconX,
 	IconList,
 } from "@tabler/icons-react";
-
 // Imported Types
 import { EnrichedQuest } from "./Quest Picker Components/useQuestData";
 
@@ -32,13 +31,16 @@ import { useQuestTodo } from "./Quest Picker Components/useQuestTodo";
 
 // Imported Components
 import { SearchControls } from "./Quest Picker Components/SearchControls";
-import { QuestDisplay } from "./Quest Picker Components/QuestDisplay";
 import MenuInterface from "./Quest Picker Components/MenuInterface";
 import { ironmanQuestOrder } from "./../../Quest Data/ironmanQuestOrder";
-import { Settings } from "./../Settings/Settings";
-import { UserNotes } from "../Settings/userNotes";
-import { QuestTodoList } from "./Quest Picker Components/QuestTodoList";
-
+const LazyQuestTodoList = lazy(
+	() => import("./Quest Picker Components/QuestTodoList"),
+);
+const LazyQuestDisplay = lazy(
+	() => import("./Quest Picker Components/QuestDisplay"),
+);
+const LazySettings = lazy(() => import("./../Settings/Settings"));
+const LazyUserNotes = lazy(() => import("../Settings/userNotes"));
 const QuestCarousel: React.FC = () => {
 	const theme = useMantineTheme(); // Get the theme object for breakpoints
 	// --- All hooks and logic remain the same ---
@@ -206,13 +208,13 @@ const QuestCarousel: React.FC = () => {
 				onClose={handleSettingsClose}
 				suppressHydrationWarning
 			>
-				<Settings />
+				<LazySettings />
 			</Modal>
 			<Modal title="Notes" opened={notesModal} onClose={closeNotes}>
-				<UserNotes />
+				<LazyUserNotes />
 			</Modal>
 			<Modal title="Quest To-Do List" opened={todoModal} onClose={closeTodo}>
-				<QuestTodoList
+				<LazyQuestTodoList
 					quests={todoQuests}
 					onRemoveQuest={removeQuestFromTodo}
 					onClearAll={clearQuestTodo}
@@ -364,7 +366,7 @@ const QuestCarousel: React.FC = () => {
 					</p>
 				</div>
 			)}
-			<QuestDisplay
+			<LazyQuestDisplay
 				quests={fullyFilteredQuests}
 				isCompact={uiState.isCompact}
 				onQuestClick={handleQuestClick}

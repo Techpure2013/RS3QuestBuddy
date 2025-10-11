@@ -4,7 +4,7 @@ import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import ReactHtmlParser from "@orrisroot/react-html-parser";
 import { IconTrash } from "@tabler/icons-react";
-export const UserNotes: React.FC = () => {
+const UserNotes: React.FC = () => {
 	const [noteValue, setNoteValue] = useState<string>("");
 	const [originalNote, setOriginalNote] = useState<string>("");
 	const [displayNote, setDisplayNote] = useState([""]);
@@ -136,3 +136,4 @@ export const UserNotes: React.FC = () => {
 		</>
 	);
 };
+export default UserNotes;

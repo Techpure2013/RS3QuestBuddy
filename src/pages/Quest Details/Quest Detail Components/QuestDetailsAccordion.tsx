@@ -19,20 +19,15 @@ import {
 import { NavLink } from "react-router-dom";
 import { PlayerQuestStatus } from "./../../../Fetchers/sortPlayerQuests";
 import { Skills } from "./../../../Fetchers/PlayerStatsSort";
+import { useSettingsStore } from "./../../../pages/Settings/Setting Components/useSettingsStore";
 
-interface UIState {
-	hasLabelColor: boolean;
-	userLabelColor: string;
-	hasColor: boolean;
-	userColor: string;
-}
-
-interface QuestDetailsGridProps {
+export interface QuestDetailsGridProps {
+	expanded: string[];
+	setExpanded: boolean;
 	QuestDetails: any[];
-	uiState: UIState;
 	ignoredRequirements: Set<string>;
-	skillLevels: Skills;
-	completedQuests: PlayerQuestStatus[];
+	skillLevels?: Skills;
+	completedQuests?: PlayerQuestStatus[];
 }
 
 const OTHER_REQUIREMENT_PREFIXES = [
@@ -65,6 +60,8 @@ const sectionGap = "1rem";
 const cardBorder = "0.125rem";
 
 const QuestDetailsGrid: React.FC<QuestDetailsGridProps> = ({
+	setExpanded,
+	expanded,
 	QuestDetails,
 	ignoredRequirements,
 	skillLevels,
@@ -253,7 +250,7 @@ const QuestDetailsGrid: React.FC<QuestDetailsGridProps> = ({
 
 							const allSkillsMet =
 								uniqueSkillReqs.length === 0 ||
-								uniqueSkillReqs.every((req) => checkRequirement(skillLevels, req));
+								uniqueSkillReqs.every((req) => checkRequirement(skillLevels!, req));
 
 							if (allQuestsMet && allSkillsMet) {
 								return (
@@ -389,7 +386,7 @@ const QuestDetailsGrid: React.FC<QuestDetailsGridProps> = ({
 											<Divider mb="xs" />
 											<List spacing="sm" size="sm">
 												{uniqueSkillReqs.map((requirement, idx) => {
-													const hasSkill = checkRequirement(skillLevels, requirement);
+													const hasSkill = checkRequirement(skillLevels!, requirement);
 													const color = hasSkill ? "#24BF58" : "#C64340";
 													return (
 														<List.Item key={idx}>

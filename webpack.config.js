@@ -12,10 +12,12 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, "dist"),
 		filename: "js/[name].[contenthash].bundle.js",
+		chunkFilename: "js/[name].[contenthash].chunk.js", // Added for code splitting
 		publicPath: "./",
+		clean: true, // Cleans dist folder before each build
 	},
 	devtool: "source-map",
-	mode: "development",
+	mode: "production",
 	devServer: {
 		static: {
 			directory: path.resolve(__dirname, "dist"),
@@ -27,7 +29,7 @@ module.exports = {
 	},
 	resolve: {
 		mainFields: ["browser", "module", "main"],
-		extensions: [".tsx", ".ts", ".jsx", ".js"],
+		extensions: [".tsx", ".ts", ".jsx", ".js", ".json"], // Added .json
 		fallback: {
 			fs: false,
 			path: require.resolve("path-browserify"),
@@ -35,6 +37,24 @@ module.exports = {
 			stream: require.resolve("stream-browserify"),
 			child_process: false,
 		},
+	},
+	optimization: {
+		splitChunks: {
+			chunks: "all",
+			cacheGroups: {
+				vendor: {
+					test: /[\\/]node_modules[\\/]/,
+					name: "vendors",
+					priority: 10,
+				},
+				common: {
+					minChunks: 2,
+					priority: 5,
+					reuseExistingChunk: true,
+				},
+			},
+		},
+		runtimeChunk: "single", // Separates webpack runtime code
 	},
 	module: {
 		rules: [
@@ -51,13 +71,32 @@ module.exports = {
 				use: {
 					loader: "babel-loader",
 					options: {
-						presets: ["@babel/preset-env", "@babel/preset-react"],
+						presets: [
+							[
+								"@babel/preset-env",
+								{
+									modules: false, // Important: Preserves ES modules
+									targets: {
+										browsers: [">0.25%", "not dead"],
+									},
+								},
+							],
+							"@babel/preset-react",
+						],
+						plugins: [
+							"@babel/plugin-syntax-dynamic-import", // Enables dynamic imports
+						],
 					},
 				},
 			},
 			{
 				test: /\.tsx?$/,
-				use: "ts-loader",
+				use: {
+					loader: "ts-loader",
+					options: {
+						transpileOnly: true, // Faster builds during development
+					},
+				},
 				exclude: /node_modules/,
 			},
 			{
@@ -96,11 +135,12 @@ module.exports = {
 	},
 	plugins: [
 		new MiniCssExtractPlugin({
-			filename: "assets/css/index.css",
+			filename: "assets/css/[name].[contenthash].css",
+			chunkFilename: "assets/css/[name].[contenthash].chunk.css",
 		}),
 		new HtmlWebpackPlugin({
-			template: "./Entrance/index.html", // Path to your HTML file
-			filename: "index.html", // Output file name in the dist folder
+			template: "./Entrance/index.html",
+			filename: "index.html",
 			inject: true,
 		}),
 		new webpack.IgnorePlugin({

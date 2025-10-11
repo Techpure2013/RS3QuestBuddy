@@ -25,7 +25,7 @@ import {
 } from "@tabler/icons-react";
 import { QuestStep } from "./../../../Fetchers/useQuestData";
 import { QuestImage } from "./../../../Fetchers/handleNewImage";
-
+import { useSettingsStore } from "./../../../pages/Settings/Setting Components/useSettingsStore";
 type CompactQuestStepProps = {
 	step: QuestStep;
 	index: number;
@@ -53,7 +53,7 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 		step.additionalStepInformation?.filter(
 			(info) => info.trim() !== "" && info.toLowerCase() !== "none",
 		) || [];
-
+	const { settings } = useSettingsStore();
 	const hasRequiredItems = filteredRequired.length > 0;
 	const hasRecommendedItems = filteredRecommended.length > 0;
 	const hasItems = hasRequiredItems || hasRecommendedItems;
@@ -84,8 +84,8 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 						style={{ flex: 1, minWidth: 0 }}
 						c={isCompleted ? "green" : undefined}
 					>
-						<Text>
-							<Text fw={700} component="span">
+						<Text c={settings.textColor}>
+							<Text fw={700} component="span" c={settings.labelColor}>
 								Step {index + 1}:{" "}
 							</Text>
 							{step.stepDescription}
@@ -159,7 +159,9 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 												<ThemeIcon variant="light" color="blue" size={30}>
 													<IconChecklist size={20} />
 												</ThemeIcon>
-												<Title order={6}>Items Required</Title>
+												<Title order={6} c={settings.labelColor}>
+													Items Required
+												</Title>
 											</Group>
 											<Box
 												mt="xs"
@@ -178,6 +180,7 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 																	<IconPointFilled size={12} />
 																</ThemeIcon>
 															}
+															c={settings.textColor}
 														>
 															{item}
 														</List.Item>
@@ -195,7 +198,9 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 												<ThemeIcon variant="light" color="gray" size={30}>
 													<IconHourglassLow size={20} />
 												</ThemeIcon>
-												<Title order={6}>Items Recommended</Title>
+												<Title order={6} c={settings.labelColor}>
+													Items Recommended
+												</Title>
 											</Group>
 											<Box
 												mt="xs"
@@ -214,6 +219,7 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 																	<IconPointFilled size={12} />
 																</ThemeIcon>
 															}
+															c={settings.textColor}
 														>
 															{item}
 														</List.Item>
@@ -232,7 +238,9 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 									<ThemeIcon variant="light" size={30}>
 										<IconInfoCircle size={20} />
 									</ThemeIcon>
-									<Title order={6}>Additional Information</Title>
+									<Title order={6} c={settings.labelColor}>
+										Additional Information
+									</Title>
 								</Group>
 								<List size="sm" withPadding mt="xs">
 									{filteredInfo.map((info, i) => (
@@ -244,6 +252,7 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 													<IconPointFilled size={12} />
 												</ThemeIcon>
 											}
+											c={settings.textColor}
 										>
 											{info}
 										</List.Item>

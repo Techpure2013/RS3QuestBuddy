@@ -1,4 +1,11 @@
-import React, { useState, useEffect, useRef, Suspense, useMemo } from "react";
+import React, {
+	useState,
+	useEffect,
+	useRef,
+	Suspense,
+	useMemo,
+	lazy,
+} from "react";
 import { useLocation } from "react-router-dom";
 import { Accordion, Box, Button, Flex, Stack, ActionIcon } from "@mantine/core";
 import { createRoot } from "react-dom/client";
@@ -39,15 +46,10 @@ import useNotesDisclosure from "./Quest Detail Components/useDisclosure";
 import usePOGDisclosure from "./Quest Detail Components/POGCalcDisclosure";
 import useGridDisclosure from "./Quest Detail Components/useGridModal";
 import useLunarGridDisclosure from "./Quest Detail Components/useLunarDisclosure";
-
+import { useSettingsStore } from "./../Settings/Setting Components/useSettingsStore";
 // Lazy Loaded Components
-const QuestDetailContents = React.lazy(
-	() =>
-		new Promise<{ default: React.ComponentType<any> }>((resolve) => {
-			resolve({
-				default: require("./Quest Detail Components/QuestDetailsAccordion").default,
-			});
-		}),
+const QuestDetailContents = lazy(
+	() => import("./Quest Detail Components/QuestDetailsAccordion"),
 );
 
 const QuestPage: React.FC = () => {
@@ -60,7 +62,7 @@ const QuestPage: React.FC = () => {
 		openCoffee,
 		ignoredRequirements,
 	} = useQuestPageFunctions();
-	const { settings, reloadSettings } = useUiSettings();
+
 	const imageDetails = UseImageStore();
 	const { getQuestDetails, questDetails, getQuestNamedDetails } =
 		useQuestDetails();
@@ -92,7 +94,7 @@ const QuestPage: React.FC = () => {
 		useLunarGridDisclosure(false);
 	const [openedPog, { pogModOpen, pogModClose }] = usePOGDisclosure(false);
 	const [openedNotes, { openNotes, closedNotes }] = useNotesDisclosure(false);
-
+	const { settings } = useSettingsStore();
 	// --- NEW: Effect to load the auto-scroll setting from localStorage on mount ---
 	useEffect(() => {
 		const savedSetting = localStorage.getItem("autoScrollEnabled");
@@ -114,11 +116,21 @@ const QuestPage: React.FC = () => {
 	}, [questName]);
 
 	useEffect(() => {
-		if (persistAccordion && active !== -1) {
-			sessionStorage.setItem(`lastActiveStep-${questName}`, active.toString());
+		const lastActiveStep = localStorage.getItem(`lastActiveStep-${questName}`);
+		if (lastActiveStep) {
+			const step = parseInt(lastActiveStep, 10);
+			setActive(step);
+			setHighestStepVisited(step);
 		}
-	}, [active, persistAccordion, questName]);
-
+	}, [questName]);
+	useEffect(() => {
+		if (active !== -1) {
+			localStorage.setItem(`lastActiveStep-${questName}`, active.toString());
+		} else {
+			// Optional: Clean up storage if user goes back to step 0
+			localStorage.removeItem(`lastActiveStep-${questName}`);
+		}
+	}, [active, questName]);
 	useEffect(() => {
 		if (QuestDataPaths) {
 			getQuestSteps(questName);
@@ -184,7 +196,7 @@ const QuestPage: React.FC = () => {
 			setActive(nextStep);
 			if (nextStep !== -1) {
 				setHighestStepVisited((h) => Math.max(h, nextStep));
-				if (settings.dialogOption && questSteps[nextStep] && window.alt1) {
+				if (settings.dialogSolverEnabled && questSteps[nextStep] && window.alt1) {
 					stepCapture(questSteps[nextStep].stepDescription);
 				}
 			}
@@ -293,6 +305,7 @@ const QuestPage: React.FC = () => {
 						src={src}
 						style={{ maxWidth: "100%", height: "auto" }}
 						alt="Quest Step"
+						loading="lazy"
 					/>,
 				);
 			}
@@ -331,7 +344,7 @@ const QuestPage: React.FC = () => {
 					size="compact-sm"
 					variant="outline"
 					onClick={pogModOpen}
-					color={settings.hasButtonColor ? settings.userButtonColor : ""}
+					color={settings.buttonColor || ""}
 				>
 					Color Calculator
 				</Button>
@@ -340,7 +353,7 @@ const QuestPage: React.FC = () => {
 				<Button
 					variant="outline"
 					onClick={openLunarGrid}
-					color={settings.hasButtonColor ? settings.userButtonColor : ""}
+					color={settings.buttonColor || ""}
 				>
 					Memorization
 				</Button>
@@ -350,7 +363,7 @@ const QuestPage: React.FC = () => {
 					size="compact-sm"
 					variant="outline"
 					onClick={openGrid}
-					color={settings.hasButtonColor ? settings.userButtonColor : ""}
+					color={settings.buttonColor || ""}
 				>
 					Underground Pass Grid
 				</Button>
@@ -370,7 +383,6 @@ const QuestPage: React.FC = () => {
 				openedSettings={openedSettings}
 				closeSettings={() => {
 					closeSettings();
-					reloadSettings();
 				}}
 				openedGrid={openedGrid}
 				closeGrid={closeGrid}
@@ -380,7 +392,7 @@ const QuestPage: React.FC = () => {
 				closeNotes={closedNotes}
 				openedPog={openedPog}
 				closePog={pogModClose}
-				uiColor={settings.hasColor ? settings.userColor : ""}
+				uiColor={settings.textColor || ""}
 			/>
 			<QuestImageFetcher
 				questName={questName}
@@ -392,7 +404,7 @@ const QuestPage: React.FC = () => {
 					<h2
 						className="qpTitle"
 						style={{
-							color: settings.hasColor ? settings.userColor : "",
+							color: settings.textColor || "",
 							margin: 0,
 							textAlign: "center",
 						}}
@@ -402,11 +414,11 @@ const QuestPage: React.FC = () => {
 					<Flex gap="xs" justify="center" align="center">
 						<Tippy
 							content="Go back to the Quest Selection."
-							disabled={!settings.toolTipEnabled}
+							disabled={!settings.toolTipsEnabled}
 						>
 							<Button
 								variant="outline"
-								color={settings.hasButtonColor ? settings.userButtonColor : ""}
+								color={settings.buttonColor || ""}
 								onClick={() => handleBackButton(userID, questName)}
 								leftSection={<IconArrowBack size={16} />}
 							>
@@ -415,7 +427,7 @@ const QuestPage: React.FC = () => {
 						</Tippy>
 						<Button
 							variant="outline"
-							color={settings.hasButtonColor ? settings.userButtonColor : ""}
+							color={settings.buttonColor || ""}
 							onClick={toggleShowStepReq}
 						>
 							{showStepReq ? "Show Quest Steps" : "Show Quest Details"}
@@ -426,11 +438,11 @@ const QuestPage: React.FC = () => {
 									? "Disable Step Persistence"
 									: "Enable Step Persistence"
 							}
-							disabled={!settings.toolTipEnabled}
+							disabled={!settings.toolTipsEnabled}
 						>
 							<ActionIcon
 								variant={persistAccordion ? "filled" : "outline"}
-								color={settings.hasButtonColor ? settings.userButtonColor : "blue"}
+								color={settings.buttonColor || "blue"}
 								onClick={handleTogglePersist}
 							>
 								<IconPin size={16} />
@@ -438,11 +450,11 @@ const QuestPage: React.FC = () => {
 						</Tippy>
 						<Tippy
 							content={isExpandedMode ? "Collapse All Steps" : "Expand All Steps"}
-							disabled={!settings.toolTipEnabled}
+							disabled={!settings.toolTipsEnabled}
 						>
 							<ActionIcon
 								variant={isExpandedMode ? "filled" : "outline"}
-								color={settings.hasButtonColor ? settings.userButtonColor : "blue"}
+								color={settings.buttonColor || "blue"}
 								onClick={toggleExpandedMode}
 							>
 								<IconListDetails size={16} />
@@ -450,11 +462,11 @@ const QuestPage: React.FC = () => {
 						</Tippy>
 						<Tippy
 							content={autoScroll ? "Disable Auto-Scroll" : "Enable Auto-Scroll"}
-							disabled={!settings.toolTipEnabled}
+							disabled={!settings.toolTipsEnabled}
 						>
 							<ActionIcon
 								variant={autoScroll ? "filled" : "outline"}
-								color={settings.hasButtonColor ? settings.userButtonColor : "blue"}
+								color={settings.buttonColor || "blue"}
 								onClick={handleToggleAutoScroll}
 							>
 								<IconFocusCentered size={16} />
@@ -476,13 +488,12 @@ const QuestPage: React.FC = () => {
 					{showStepReq ? (
 						<Suspense fallback={<div>Loading Details...</div>}>
 							<QuestDetailContents
-								QuestDetails={questDetails}
-								uiState={settings}
+								QuestDetails={questDetails!}
 								expanded={expanded}
-								setExpanded={setExpanded}
+								setExpanded={!setExpanded}
 								ignoredRequirements={ignoredRequirements}
-								skillLevels={skillLevels}
-								completedQuests={completedQuests}
+								skillLevels={skillLevels!}
+								completedQuests={completedQuests!}
 							/>
 						</Suspense>
 					) : (
@@ -494,7 +505,7 @@ const QuestPage: React.FC = () => {
 							{questSteps?.map((step, index) => {
 								const matchedImages: QuestImage[] =
 									imageDetails.imageList?.filter(
-										(img) =>
+										(img: { stepDescription: string }) =>
 											sanitizeStringForMatching(img.stepDescription) ===
 											sanitizeStringForMatching(step.stepDescription),
 									) || [];
@@ -525,9 +536,8 @@ const QuestPage: React.FC = () => {
 					onNextStep={scrollNext}
 					onPrevStep={scrollPrev}
 					specialButtons={specialButtons}
-					toolTipEnabled={settings.toolTipEnabled}
-					buttonColor={settings.userButtonColor}
-					hasButtonColor={settings.hasButtonColor}
+					toolTipEnabled={settings.toolTipsEnabled}
+					buttonColor={settings.buttonColor}
 				/>
 			)}
 		</Flex>

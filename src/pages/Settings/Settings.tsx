@@ -6,320 +6,137 @@ import {
 	ColorPicker,
 	Stack,
 	Switch,
-	TextInput,
+	Text,
 } from "@mantine/core";
-import { useEffect, useState } from "react";
+import { lazy, Suspense } from "react";
+import { useDisclosure } from "@mantine/hooks";
+import { useSettingsStore } from "./Setting Components/useSettingsStore";
 import FontSizeControls from "./Setting Components/FontSizeInput";
 
-export const Settings: React.FC = () => {
-	const [highlight, setHighlight] = useState(false);
-	const [colorTextValue, setTextColorValue] = useState<string>("");
-	const [swatchTextColors, setTextSwatchColors] = useState<string[]>([]);
-	const [labelColor, setLabelColor] = useState("");
-	const [swatchLabelColor, setSwatchLabelColor] = useState<string[]>([]);
-	const [buttonColor, setButtonColor] = useState("");
-	const [buttonSwatchColors, setButtonSwatchColors] = useState<string[]>([]);
-	const [hasColor, setHasColor] = useState(false);
-	const [hasButtonColor, setHasButtonColor] = useState(false);
-	const [hasLabelColor, setHasLabelColor] = useState(false);
-	const [userColor, setUserColor] = useState("");
-	const [userLabelColor, setUserLabelColor] = useState("");
-	const [userButtonColor, setUserButtonColor] = useState("");
-	const [compact, setCompact] = useState(false);
-	const storedDialogOption = localStorage.getItem("DialogSolverOption");
-	const [dialogSolverOption, setDialogSolverOption] = useState<boolean>(() => {
-		return storedDialogOption !== null ? JSON.parse(storedDialogOption) : false;
-	});
-	const [dialogSolverColor, setDialogSolverColor] = useState<string>("");
-	const [dialogColorSwatch, setDialogColorSwatch] = useState<string[]>([]);
-	const [toolTip, setToolTip] = useState<boolean>(false);
-	const maxColors = 5;
+const QuestStorageManager = lazy(
+	() => import("./Setting Components/QuestStorageManager"),
+);
 
-	useEffect(() => {
-		const storedCompact = localStorage.getItem("isCompact");
-		const storedHighlight = localStorage.getItem("isHighlighted");
-		const storedDialogSolverColor = localStorage.getItem("dialogSolverColor");
-		const storedTextSwatches = localStorage.getItem("swatchColors");
-		const storedTextColorValue = localStorage.getItem("textColorValue");
-		const storedLabelColor = localStorage.getItem("labelColor");
-		const storedLabelSwatch = localStorage.getItem("labelSwatchColors");
-		const storedButtonColor = localStorage.getItem("buttonColor");
-		const storedButtonSwatchColor = localStorage.getItem("buttonSwatchColors");
-		const storedDialogSwatch = localStorage.getItem("dialogSolverSwatch");
-		const colorVal = localStorage.getItem("textColorValue");
-		const toolTipVal = localStorage.getItem("toolTip");
-		if (toolTipVal !== null) {
-			setToolTip(JSON.parse(toolTipVal));
-		}
-		if (storedDialogSolverColor !== null) {
-			setDialogSolverColor(storedDialogSolverColor);
-		}
-		if (colorVal) {
-			setUserColor(colorVal);
-			setHasColor(true);
-		} else {
-			setHasColor(false);
-		}
-		if (storedButtonSwatchColor !== null) {
-			const parsedButtonSwatch = JSON.parse(storedButtonSwatchColor);
-			setButtonSwatchColors(parsedButtonSwatch);
-		}
-		if (storedButtonColor !== null) {
-			setButtonColor(storedButtonColor);
-			setHasButtonColor(true);
-			setUserButtonColor(storedButtonColor);
-		} else {
-			setHasButtonColor(false);
-		}
-		if (storedLabelSwatch !== null) {
-			const parsedLabelSwatch = JSON.parse(storedLabelSwatch);
-			setSwatchLabelColor(parsedLabelSwatch);
-		}
-		if (storedLabelColor !== null) {
-			setLabelColor(storedLabelColor);
-			setHasLabelColor(true);
-			setUserLabelColor(storedLabelColor);
-		} else {
-			setHasLabelColor(false);
-		}
-		if (storedDialogSwatch !== null) {
-			const parsedSwatch = JSON.parse(storedDialogSwatch);
-			setDialogColorSwatch(parsedSwatch);
-		}
-		if (storedHighlight !== null) {
-			const parsedHighlight = JSON.parse(storedHighlight);
-			setHighlight(parsedHighlight);
-		}
-		if (storedTextSwatches !== null) {
-			const parsedSwatches = JSON.parse(storedTextSwatches);
-			setTextSwatchColors(parsedSwatches);
-		}
-		if (storedTextColorValue !== null) {
-			setTextColorValue(storedTextColorValue);
-		}
-		if (storedCompact !== null) {
-			const parsedCompact = JSON.parse(storedCompact);
-			setCompact(parsedCompact);
-		}
-	}, []);
+const Settings: React.FC = () => {
+	const { settings, updateSetting, addColorToSwatch } = useSettingsStore();
+	const [isOpen, { open, close }] = useDisclosure(false);
 
-	useEffect(() => {
-		window.localStorage.setItem("isHighlighted", JSON.stringify(highlight));
-		window.localStorage.setItem("isCompact", JSON.stringify(compact));
-		window.localStorage.setItem(
-			"DialogSolverOption",
-			JSON.stringify(dialogSolverOption),
-		);
-		window.localStorage.setItem("toolTip", JSON.stringify(toolTip));
-	}, [highlight, compact, dialogSolverOption, toolTip]);
-
-	useEffect(() => {
-		window.localStorage.setItem("textColorValue", colorTextValue);
-		window.localStorage.setItem("labelColor", labelColor);
-		window.localStorage.setItem("dialogSolverColor", dialogSolverColor);
-		window.localStorage.setItem("buttonColor", buttonColor);
-	}, [
-		dialogSolverColor,
-		buttonColor,
-		userColor,
-		userButtonColor,
-		userLabelColor,
-		labelColor,
-		colorTextValue,
-	]);
-
-	useEffect(() => {
-		window.localStorage.setItem(
-			"labelSwatchColors",
-			JSON.stringify(swatchLabelColor),
-		);
-		window.localStorage.setItem("swatchColors", JSON.stringify(swatchTextColors));
-		window.localStorage.setItem(
-			"buttonSwatchColors",
-			JSON.stringify(buttonSwatchColors),
-		);
-		window.localStorage.setItem(
-			"dialogSolverSwatch",
-			JSON.stringify(dialogColorSwatch),
-		);
-	}, [
-		dialogColorSwatch,
-		swatchTextColors,
-		swatchLabelColor,
-		buttonSwatchColors,
-	]);
-
-	// Helper function to update swatches immutably
-	const updateSwatches = (
-		setter: React.Dispatch<React.SetStateAction<string[]>>,
-		newValue: string,
-	) => {
-		setter((currentSwatches) => {
-			const newSwatches = [...currentSwatches, newValue];
-			// If the array is too long, remove the oldest element (at the beginning)
-			if (newSwatches.length > maxColors) {
-				return newSwatches.slice(1);
-			}
-			return newSwatches;
-		});
-	};
+	const hasTextColor = !!settings.textColor;
+	const hasLabelColor = !!settings.labelColor;
+	const hasButtonColor = !!settings.buttonColor;
 
 	return (
 		<div className="SettingsContainer">
 			<Stack>
+				{/* The empty button now has a label */}
+				<Button onClick={open}>Manage Saved Quest Progress</Button>
+				<Suspense fallback={<div>Loading...</div>}>
+					<QuestStorageManager opened={isOpen} onClose={close} />
+				</Suspense>
+
 				<Switch
-					styles={{
-						label: { color: hasColor ? userColor : "" },
-					}}
-					label={compact ? "Compact Mode On" : "Compact Mode Off"}
-					checked={compact || false}
-					onChange={(e) => {
-						setCompact(e.target.checked);
-					}}
+					styles={{ label: { color: hasTextColor ? settings.textColor : "" } }}
+					label={settings.isCompact ? "Compact Mode On" : "Compact Mode Off"}
+					checked={settings.isCompact}
+					onChange={(e) => updateSetting("isCompact", e.currentTarget.checked)}
 				/>
 				<Switch
-					styles={{
-						label: { color: hasColor ? userColor : "" },
-					}}
-					checked={dialogSolverOption}
-					onChange={(event) => setDialogSolverOption(event.target.checked)}
-					label={dialogSolverOption ? "Dialog Solver On" : "Dialog Solver Off"}
+					styles={{ label: { color: hasTextColor ? settings.textColor : "" } }}
+					label={
+						settings.dialogSolverEnabled ? "Dialog Solver On" : "Dialog Solver Off"
+					}
+					checked={settings.dialogSolverEnabled}
+					onChange={(e) =>
+						updateSetting("dialogSolverEnabled", e.currentTarget.checked)
+					}
 				/>
 				<Switch
-					styles={{
-						label: { color: hasColor ? userColor : "" },
-					}}
-					checked={toolTip}
-					onChange={(event) => setToolTip(event.target.checked)}
-					label={toolTip ? "Tool Tips On" : "Tool Tips Off"}
+					styles={{ label: { color: hasTextColor ? settings.textColor : "" } }}
+					label={settings.toolTipsEnabled ? "Tool Tips On" : "Tool Tips Off"}
+					checked={settings.toolTipsEnabled}
+					onChange={(e) => updateSetting("toolTipsEnabled", e.currentTarget.checked)}
 				/>
 			</Stack>
-			<Accordion>
-				<Accordion.Item key={1} value="Color Your Text">
+
+			<Accordion mt="md">
+				<Accordion.Item key="text-color" value="Color Your Text">
 					<AccordionControl
-						styles={{
-							control: { color: hasLabelColor ? labelColor : "" },
-						}}
+						styles={{ control: { color: hasLabelColor ? settings.labelColor : "" } }}
 					>
 						Color Your Text
 					</AccordionControl>
 					<AccordionPanel>
-						<TextInput
-							defaultValue={colorTextValue}
-							onKeyDown={(event) => {
-								if (event.key === "Enter") {
-									const newValue = event.currentTarget.value;
-									setTextColorValue(newValue);
-									// FIX: Update swatches immutably
-									updateSwatches(setTextSwatchColors, newValue);
-								}
-							}}
-						/>
 						<ColorPicker
-							suppressHydrationWarning
-							value={colorTextValue}
-							size="sm"
-							swatches={swatchTextColors}
-							onChange={setTextColorValue}
-							onChangeEnd={(value) => {
-								// FIX: Update swatches immutably instead of using .push()
-								updateSwatches(setTextSwatchColors, value);
-							}}
+							format="hex"
+							value={settings.textColor}
+							onChange={(value) => updateSetting("textColor", value)}
+							onChangeEnd={(value) => addColorToSwatch("textSwatches", value)}
+							swatches={settings.textSwatches}
 						/>
 						<Button
-							onClick={() => {
-								setTextSwatchColors([]);
-							}}
+							mt="xs"
 							variant="outline"
-							color={hasButtonColor ? userButtonColor : ""}
+							color={hasButtonColor ? settings.buttonColor : "blue"}
+							onClick={() => updateSetting("textSwatches", [])}
 						>
-							Clear Swatch
+							Clear Swatches
 						</Button>
 					</AccordionPanel>
 				</Accordion.Item>
-				<Accordion.Item key={2} value="Color Your Labels">
+
+				<Accordion.Item key="label-color" value="Color Your Labels">
 					<AccordionControl
-						styles={{
-							control: { color: hasLabelColor ? labelColor : "" },
-						}}
+						styles={{ control: { color: hasLabelColor ? settings.labelColor : "" } }}
 					>
 						Color Your Labels
 					</AccordionControl>
 					<AccordionPanel>
-						<TextInput
-							defaultValue={labelColor}
-							onKeyDown={(event) => {
-								if (event.key === "Enter") {
-									setLabelColor(event.currentTarget.value);
-								}
-							}}
-						/>
 						<ColorPicker
-							suppressHydrationWarning
-							value={labelColor}
-							size="sm"
-							swatches={swatchLabelColor}
-							onChange={setLabelColor}
-							onChangeEnd={(value) => {
-								// FIX: Update swatches immutably
-								updateSwatches(setSwatchLabelColor, value);
-							}}
+							format="hex"
+							value={settings.labelColor}
+							onChange={(value) => updateSetting("labelColor", value)}
+							onChangeEnd={(value) => addColorToSwatch("labelSwatches", value)}
+							swatches={settings.labelSwatches}
 						/>
 						<Button
-							onClick={() => {
-								setSwatchLabelColor([]);
-							}}
+							mt="xs"
 							variant="outline"
-							color={hasButtonColor ? userButtonColor : ""}
+							color={hasButtonColor ? settings.buttonColor : "blue"}
+							onClick={() => updateSetting("labelSwatches", [])}
 						>
-							Clear Swatch
+							Clear Swatches
 						</Button>
 					</AccordionPanel>
 				</Accordion.Item>
-				<Accordion.Item key={3} value="Color Your Buttons">
+
+				<Accordion.Item key="button-color" value="Color Your Buttons">
 					<AccordionControl
-						styles={{
-							control: { color: hasLabelColor ? labelColor : "" },
-						}}
+						styles={{ control: { color: hasLabelColor ? settings.labelColor : "" } }}
 					>
 						Color Your Buttons
 					</AccordionControl>
 					<AccordionPanel>
-						<TextInput
-							defaultValue={buttonColor}
-							onKeyDown={(event) => {
-								if (event.key === "Enter") {
-									setButtonColor(event.currentTarget.value);
-								}
-							}}
-						/>
 						<ColorPicker
-							suppressHydrationWarning
-							value={buttonColor}
-							size="sm"
-							swatches={buttonSwatchColors}
-							onChange={setButtonColor}
-							onChangeEnd={(value) => {
-								// FIX: Update swatches immutably
-								updateSwatches(setButtonSwatchColors, value);
-							}}
+							format="hex"
+							value={settings.buttonColor}
+							onChange={(value) => updateSetting("buttonColor", value)}
+							onChangeEnd={(value) => addColorToSwatch("buttonSwatches", value)}
+							swatches={settings.buttonSwatches}
 						/>
 						<Button
-							color={hasButtonColor ? userButtonColor : ""}
-							onClick={() => {
-								setButtonSwatchColors([]);
-							}}
+							mt="xs"
 							variant="outline"
+							color={hasButtonColor ? settings.buttonColor : "blue"}
+							onClick={() => updateSetting("buttonSwatches", [])}
 						>
-							Clear Swatch
+							Clear Swatches
 						</Button>
 					</AccordionPanel>
 				</Accordion.Item>
-				<Accordion.Item key={4} value="Change Your FontSize">
+
+				<Accordion.Item key="font-size" value="Change Your FontSize">
 					<AccordionControl
-						styles={{
-							control: { color: hasLabelColor ? labelColor : "" },
-						}}
+						styles={{ control: { color: hasLabelColor ? settings.labelColor : "" } }}
 					>
 						Change Font Size
 					</AccordionControl>
@@ -331,3 +148,4 @@ export const Settings: React.FC = () => {
 		</div>
 	);
 };
+export default Settings;

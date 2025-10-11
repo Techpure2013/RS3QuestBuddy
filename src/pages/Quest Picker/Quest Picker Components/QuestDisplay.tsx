@@ -24,13 +24,14 @@ import {
 	IconStarFilled,
 } from "@tabler/icons-react";
 import { EnrichedQuest } from "./useQuestData";
-
+import { useSettingsStore } from "./../../../pages/Settings/Setting Components/useSettingsStore";
 // --- Reusable Components ---
 
 const QuestRewardsList: React.FC<{ rewards: string[] }> = ({ rewards }) => {
+	const { settings } = useSettingsStore();
 	if (!rewards || rewards.length === 0) {
 		return (
-			<Text c="dimmed" size="sm" mt="xs">
+			<Text c={settings.textColor || "dimmed"} size="sm" mt="xs">
 				No specific item rewards for this quest.
 			</Text>
 		);
@@ -41,13 +42,15 @@ const QuestRewardsList: React.FC<{ rewards: string[] }> = ({ rewards }) => {
 			size="sm"
 			center
 			icon={
-				<ThemeIcon color="yellow" size={16} radius="xl">
+				<ThemeIcon color={settings.labelColor || "yellow"} size={16} radius="xl">
 					<IconStarFilled style={{ width: "70%", height: "70%" }} />
 				</ThemeIcon>
 			}
 		>
 			{rewards.map((reward, index) => (
-				<List.Item key={index}>{reward}</List.Item>
+				<List.Item c={settings.textColor || "teal"} key={index}>
+					{reward}
+				</List.Item>
 			))}
 		</List>
 	);
@@ -72,6 +75,7 @@ const QuestCard: React.FC<QuestCardProps> = ({
 	onQuestClick,
 	getModifiedQuestName,
 }) => {
+	const { settings } = useSettingsStore();
 	return (
 		<Card
 			shadow="lg"
@@ -87,7 +91,7 @@ const QuestCard: React.FC<QuestCardProps> = ({
 			}}
 		>
 			<Group justify="space-between" mb="sm">
-				<Text fz="lg" fw={700} c="teal.3" truncate="end">
+				<Text fz="lg" fw={700} c={settings.labelColor || "teal.3"} truncate="end">
 					{quest.questName}
 				</Text>
 				<Tooltip label={isAdded ? "Remove from To-Do" : "Add to To-Do"}>
@@ -109,7 +113,7 @@ const QuestCard: React.FC<QuestCardProps> = ({
 			<Divider />
 
 			<Stack gap="xs" mt="md">
-				<Title order={6} c="dimmed">
+				<Title order={6} c={settings.labelColor || "dimmed"}>
 					Rewards
 				</Title>
 				<QuestRewardsList rewards={quest.rewards} />
@@ -127,7 +131,7 @@ const QuestCard: React.FC<QuestCardProps> = ({
 				>
 					<Button
 						variant="filled"
-						color="dark"
+						color={settings.buttonColor || "dark"}
 						fullWidth
 						rightSection={<IconArrowRight size={16} />}
 					>
@@ -151,7 +155,7 @@ interface QuestDisplayProps {
 	onRemoveFromTodo: (questName: string) => void;
 }
 
-export const QuestDisplay: React.FC<QuestDisplayProps> = ({
+const QuestDisplay: React.FC<QuestDisplayProps> = ({
 	quests,
 	isCompact,
 	onQuestClick,
@@ -167,7 +171,7 @@ export const QuestDisplay: React.FC<QuestDisplayProps> = ({
 			.join("")
 			.replace(/[!,`']/g, "");
 	};
-
+	const { settings } = useSettingsStore();
 	if (!quests || quests.length === 0) return null;
 
 	// --- Accordion View (Compact Mode) ---
@@ -177,7 +181,11 @@ export const QuestDisplay: React.FC<QuestDisplayProps> = ({
 				{quests.map((quest) => {
 					const isAdded = todoList.includes(quest.questName);
 					return (
-						<Accordion.Item key={quest.questName} value={quest.questName}>
+						<Accordion.Item
+							c={settings.textColor}
+							key={quest.questName}
+							value={quest.questName}
+						>
 							<AccordionControl
 								chevron={null}
 								styles={{
@@ -269,3 +277,4 @@ export const QuestDisplay: React.FC<QuestDisplayProps> = ({
 		</SimpleGrid>
 	);
 };
+export default QuestDisplay;

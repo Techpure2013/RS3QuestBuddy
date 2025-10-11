@@ -20,7 +20,7 @@ interface QuestTodoListProps {
 	onClearAll: () => void; // New prop for the "Clear All" button
 }
 
-export const QuestTodoList: React.FC<QuestTodoListProps> = ({
+const QuestTodoList: React.FC<QuestTodoListProps> = ({
 	quests,
 	onRemoveQuest,
 	onClearAll,
@@ -96,3 +96,4 @@ export const QuestTodoList: React.FC<QuestTodoListProps> = ({
 		</>
 	);
 };
+export default QuestTodoList;
