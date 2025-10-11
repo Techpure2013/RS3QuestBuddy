@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 
 export interface SettingsState {
+	isSettingsModalOpen: boolean;
 	isCompact: boolean;
 	dialogSolverEnabled: boolean;
 	toolTipsEnabled: boolean;
@@ -16,6 +17,7 @@ const SETTINGS_KEY = "appSettings";
 const MAX_SWATCHES = 7;
 
 const defaultSettings: SettingsState = {
+	isSettingsModalOpen: false,
 	isCompact: false,
 	dialogSolverEnabled: false,
 	toolTipsEnabled: true,
@@ -65,7 +67,13 @@ export const useSettingsStore = () => {
 		},
 		[],
 	);
+	const openSettingsModal = useCallback(() => {
+		updateSetting("isSettingsModalOpen", true);
+	}, [updateSetting]);
 
+	const closeSettingsModal = useCallback(() => {
+		updateSetting("isSettingsModalOpen", false);
+	}, [updateSetting]);
 	// --- WHY 6: Encapsulate complex logic like swatch updates ---
 	// The UI component doesn't need to know how to update swatches; it just
 	// calls this function. This keeps the component clean.
@@ -91,5 +99,11 @@ export const useSettingsStore = () => {
 		[],
 	);
 
-	return { settings, updateSetting, addColorToSwatch };
+	return {
+		settings,
+		updateSetting,
+		addColorToSwatch,
+		openSettingsModal,
+		closeSettingsModal,
+	};
 };

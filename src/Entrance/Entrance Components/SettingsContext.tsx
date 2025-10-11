@@ -16,6 +16,8 @@ interface SettingsContextType {
 		swatchKey: "textSwatches" | "labelSwatches" | "buttonSwatches",
 		colorToAdd: string,
 	) => void;
+	openSettingsModal: () => void;
+	closeSettingsModal: () => void;
 }
 
 // --- WHY 2: Create the Context object ---

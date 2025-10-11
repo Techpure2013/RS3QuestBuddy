@@ -94,7 +94,7 @@ const QuestPage: React.FC = () => {
 		useLunarGridDisclosure(false);
 	const [openedPog, { pogModOpen, pogModClose }] = usePOGDisclosure(false);
 	const [openedNotes, { openNotes, closedNotes }] = useNotesDisclosure(false);
-	const { settings } = useSettingsStore();
+	const { settings, openSettingsModal, closeSettingsModal } = useSettingsStore();
 	// --- NEW: Effect to load the auto-scroll setting from localStorage on mount ---
 	useEffect(() => {
 		const savedSetting = localStorage.getItem("autoScrollEnabled");
@@ -380,10 +380,8 @@ const QuestPage: React.FC = () => {
 			style={{ margin: "0 auto" }}
 		>
 			<QuestModals
-				openedSettings={openedSettings}
-				closeSettings={() => {
-					closeSettings();
-				}}
+				openedSettings={settings.isSettingsModalOpen}
+				closeSettings={closeSettingsModal}
 				openedGrid={openedGrid}
 				closeGrid={closeGrid}
 				openedLunarGrid={openedLunar}
@@ -526,7 +524,7 @@ const QuestPage: React.FC = () => {
 			</Box>
 			{!showStepReq && (
 				<QuestFooter
-					onSettingsClick={openSettings}
+					onSettingsClick={openSettingsModal}
 					onDiscordClick={openDiscord}
 					onNotesClick={openNotes}
 					onBackClick={() => handleBackButton(userID, questName)}

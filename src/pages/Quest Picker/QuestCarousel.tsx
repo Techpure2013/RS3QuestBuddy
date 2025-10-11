@@ -21,11 +21,12 @@ import {
 	IconX,
 	IconList,
 } from "@tabler/icons-react";
+import { useSettingsStore } from "./../../pages/Settings/Setting Components/useSettingsStore";
 // Imported Types
 import { EnrichedQuest } from "./Quest Picker Components/useQuestData";
 
 // Imported Hooks
-import { useUISettings } from "./Quest Picker Components/useUISettings";
+
 import { useQuestData } from "./Quest Picker Components/useQuestData";
 import { useQuestTodo } from "./Quest Picker Components/useQuestTodo";
 
@@ -33,19 +34,15 @@ import { useQuestTodo } from "./Quest Picker Components/useQuestTodo";
 import { SearchControls } from "./Quest Picker Components/SearchControls";
 import MenuInterface from "./Quest Picker Components/MenuInterface";
 import { ironmanQuestOrder } from "./../../Quest Data/ironmanQuestOrder";
-const LazyQuestTodoList = lazy(
-	() => import("./Quest Picker Components/QuestTodoList"),
-);
-const LazyQuestDisplay = lazy(
-	() => import("./Quest Picker Components/QuestDisplay"),
-);
-const LazySettings = lazy(() => import("./../Settings/Settings"));
-const LazyUserNotes = lazy(() => import("../Settings/userNotes"));
+import Settings from "./../Settings/Settings";
+import UserNotes from "../Settings/userNotes";
+import QuestTodoList from "./Quest Picker Components/QuestTodoList";
+import QuestDisplay from "./Quest Picker Components/QuestDisplay";
 const QuestCarousel: React.FC = () => {
 	const theme = useMantineTheme(); // Get the theme object for breakpoints
 	// --- All hooks and logic remain the same ---
 	const [searchQuery, setSearchQuery] = useState("");
-	const { uiState, loadUserSettings } = useUISettings();
+
 	const {
 		playerName,
 		playerFound,
@@ -60,7 +57,7 @@ const QuestCarousel: React.FC = () => {
 	} = useQuestData();
 	const { todoQuests, addQuestToTodo, removeQuestFromTodo, clearQuestTodo } =
 		useQuestTodo();
-
+	const { settings, closeSettingsModal, openSettingsModal } = useSettingsStore();
 	const [settingsModal, { open: openSettings, close: closeSettings }] =
 		useDisclosure(false);
 	const [notesModal, { open: openNotes, close: closeNotes }] =
@@ -180,10 +177,7 @@ const QuestCarousel: React.FC = () => {
 	if (fullyFilteredQuests.length === 0) {
 		fullyFilteredQuests = displayQuests;
 	}
-	const handleSettingsClose = () => {
-		closeSettings();
-		loadUserSettings();
-	};
+
 	function openDiscord(): void {
 		const newWindow = window.open(
 			"https://discord.gg/qFftZF7Usa",
@@ -204,17 +198,17 @@ const QuestCarousel: React.FC = () => {
 		<>
 			<Modal
 				title="Settings"
-				opened={settingsModal}
-				onClose={handleSettingsClose}
+				opened={settings.isSettingsModalOpen}
+				onClose={closeSettingsModal}
 				suppressHydrationWarning
 			>
-				<LazySettings />
+				<Settings />
 			</Modal>
 			<Modal title="Notes" opened={notesModal} onClose={closeNotes}>
-				<LazyUserNotes />
+				<UserNotes />
 			</Modal>
 			<Modal title="Quest To-Do List" opened={todoModal} onClose={closeTodo}>
-				<LazyQuestTodoList
+				<QuestTodoList
 					quests={todoQuests}
 					onRemoveQuest={removeQuestFromTodo}
 					onClearAll={clearQuestTodo}
@@ -300,7 +294,7 @@ const QuestCarousel: React.FC = () => {
 						isLoading={isLoading}
 						playerFound={playerFound}
 						initialPlayerName={playerName}
-						labelColor={uiState.hasLabelColor ? uiState.userLabelColor : undefined}
+						labelColor={settings.labelColor || undefined}
 					/>
 				</Stack>
 			</Paper>
@@ -366,17 +360,17 @@ const QuestCarousel: React.FC = () => {
 					</p>
 				</div>
 			)}
-			<LazyQuestDisplay
+			<QuestDisplay
 				quests={fullyFilteredQuests}
-				isCompact={uiState.isCompact}
+				isCompact={settings.isCompact}
 				onQuestClick={handleQuestClick}
-				labelColor={uiState.hasLabelColor ? uiState.userLabelColor : undefined}
+				labelColor={settings.labelColor || undefined}
 				todoList={todoQuests}
 				onAddToTodo={addQuestToTodo}
 				onRemoveFromTodo={removeQuestFromTodo}
 			/>
 			<ActionIcon
-				color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
+				color={settings.buttonColor || ""}
 				size={"sm"}
 				variant="outline"
 				onClick={openCoffee}
@@ -391,7 +385,7 @@ const QuestCarousel: React.FC = () => {
 				<IconCoffee />
 			</ActionIcon>
 			<ActionIcon
-				color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
+				color={settings.buttonColor || ""}
 				size={"sm"}
 				variant="outline"
 				onClick={openDiscord}
@@ -406,7 +400,7 @@ const QuestCarousel: React.FC = () => {
 				<IconBrandDiscord />
 			</ActionIcon>
 			<ActionIcon
-				color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
+				color={settings.buttonColor || ""}
 				onClick={openNotes}
 				size={"sm"}
 				variant="outline"
@@ -423,11 +417,11 @@ const QuestCarousel: React.FC = () => {
 			<ActionIcon
 				variant="outline"
 				size={"sm"}
-				color={uiState.hasButtonColor ? uiState.userButtonColor : ""}
+				color={settings.buttonColor || ""}
 				styles={{
 					root: { bottom: "1.375rem", left: "2.050rem", position: "fixed" },
 				}}
-				onClick={openSettings}
+				onClick={openSettingsModal}
 			>
 				<IconSettings />
 			</ActionIcon>

@@ -17,7 +17,7 @@ module.exports = {
 		clean: true, // Cleans dist folder before each build
 	},
 	devtool: "source-map",
-	mode: "production",
+	mode: "development",
 	devServer: {
 		static: {
 			directory: path.resolve(__dirname, "dist"),

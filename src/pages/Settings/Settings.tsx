@@ -6,11 +6,11 @@ import {
 	ColorPicker,
 	Stack,
 	Switch,
-	Text,
 } from "@mantine/core";
 import { lazy, Suspense } from "react";
 import { useDisclosure } from "@mantine/hooks";
-import { useSettingsStore } from "./Setting Components/useSettingsStore";
+// --- CHANGE 1: Import the correct context hook ---
+import { useSettings } from "./../../Entrance/Entrance Components/SettingsContext";
 import FontSizeControls from "./Setting Components/FontSizeInput";
 
 const QuestStorageManager = lazy(
@@ -18,7 +18,8 @@ const QuestStorageManager = lazy(
 );
 
 const Settings: React.FC = () => {
-	const { settings, updateSetting, addColorToSwatch } = useSettingsStore();
+	// --- CHANGE 2: Call the correct context hook ---
+	const { settings, updateSetting, addColorToSwatch } = useSettings();
 	const [isOpen, { open, close }] = useDisclosure(false);
 
 	const hasTextColor = !!settings.textColor;
@@ -28,7 +29,6 @@ const Settings: React.FC = () => {
 	return (
 		<div className="SettingsContainer">
 			<Stack>
-				{/* The empty button now has a label */}
 				<Button onClick={open}>Manage Saved Quest Progress</Button>
 				<Suspense fallback={<div>Loading...</div>}>
 					<QuestStorageManager opened={isOpen} onClose={close} />
