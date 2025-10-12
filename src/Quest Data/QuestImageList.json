@@ -6745,7 +6745,71 @@
 	},
 	{
 		"name": "Heart of Stone",
-		"images": []
+		"images": [
+			{
+				"step": 4,
+				"src": "HeartofStone_step_4_1.webp",
+				"height": 284,
+				"width": 348,
+				"stepDescription": "Talk to Kipple. (Chat 1•2) and solve the first puzzle."
+			},
+			{
+				"step": 7,
+				"src": "HeartofStone_step_7_1.webp",
+				"height": 284,
+				"width": 348,
+				"stepDescription": "Right-click open tracker with Kipple to solve the second puzzle."
+			},
+			{
+				"step": 11,
+				"src": "HeartofStone_step_11_1.webp",
+				"height": 284,
+				"width": 348,
+				"stepDescription": "Talk to Kipple and solve the third puzzle. (Chat 1)"
+			},
+			{
+				"step": 13,
+				"src": "HeartofStone_step_13_1.webp",
+				"height": 284,
+				"width": 348,
+				"stepDescription": "Right-click open tracker with Kipple and solve the fourth puzzle."
+			},
+			{
+				"step": 18,
+				"src": "HeartofStone_step_18_1.webp",
+				"height": 284,
+				"width": 348,
+				"stepDescription": "Talk to Kipple and solve the fifth puzzle. (Chat 1)"
+			},
+			{
+				"step": 20,
+				"src": "HeartofStone_step_20_1.webp",
+				"height": 284,
+				"width": 348,
+				"stepDescription": "Right-click open tracker with Kipple to solve the sixth puzzle."
+			},
+			{
+				"step": 22,
+				"src": "HeartofStone_step_22_1.webp",
+				"height": 774,
+				"width": 709,
+				"stepDescription": "Click the circuit nodes until you match the power. Note some nodes will remove power, solution to the puzzle is at this quest step."
+			},
+			{
+				"step": 24,
+				"src": "HeartofStone_step_24_1.webp",
+				"height": 284,
+				"width": 348,
+				"stepDescription": "Talk to Kipple and solve the seventh puzzle. (Chat 1)"
+			},
+			{
+				"step": 26,
+				"src": "HeartofStone_step_26_2.webp",
+				"height": 284,
+				"width": 348,
+				"stepDescription": "Right-click open tracker with Kipple to solve the eighth puzzle."
+			}
+		]
 	},
 	{
 		"name": "Heartstealer",
