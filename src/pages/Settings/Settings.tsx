@@ -19,7 +19,13 @@ const QuestStorageManager = lazy(
 
 const Settings: React.FC = () => {
 	// --- CHANGE 2: Call the correct context hook ---
-	const { settings, updateSetting, addColorToSwatch } = useSettings();
+	const {
+		settings,
+		updateSetting,
+		addColorToSwatch,
+		toggleExpandedMode,
+		toggleAutoScroll,
+	} = useSettings();
 	const [isOpen, { open, close }] = useDisclosure(false);
 
 	const hasTextColor = !!settings.textColor;
@@ -55,6 +61,18 @@ const Settings: React.FC = () => {
 					label={settings.toolTipsEnabled ? "Tool Tips On" : "Tool Tips Off"}
 					checked={settings.toolTipsEnabled}
 					onChange={(e) => updateSetting("toolTipsEnabled", e.currentTarget.checked)}
+				/>
+				<Switch
+					styles={{ label: { color: hasTextColor ? settings.textColor : "" } }}
+					label={settings.isExpandedMode ? "Expanded Mode On" : "Expanded Mode Off"}
+					checked={settings.isExpandedMode}
+					onChange={toggleExpandedMode}
+				/>
+				<Switch
+					styles={{ label: { color: hasTextColor ? settings.textColor : "" } }}
+					label={settings.autoScrollEnabled ? "Auto-Scroll On" : "Auto-Scroll Off"}
+					checked={settings.autoScrollEnabled}
+					onChange={toggleAutoScroll}
 				/>
 			</Stack>
 

@@ -32,6 +32,7 @@ type CompactQuestStepProps = {
 	isCompleted: boolean;
 	images: QuestImage[];
 	onImagePopOut: (src: string, height: number, width: number) => void;
+	onStepClick?: (index: number) => void;
 };
 
 export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
@@ -40,6 +41,7 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 	isCompleted,
 	images,
 	onImagePopOut,
+	onStepClick,
 }) => {
 	const filteredRequired =
 		step.itemsNeeded?.filter(
@@ -62,13 +64,18 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 	const hasPanelContent = hasItems || hasAdditionalInfo;
 
 	return (
-		<Accordion.Item value={index.toString()} id={index.toString()}>
+		<Accordion.Item
+			value={index.toString()}
+			id={index.toString()}
+			onClick={() => onStepClick?.(index)}
+		>
 			<Accordion.Control
 				chevron={hasPanelContent ? undefined : <span />}
-				onClick={(event) => {
-					if (!hasPanelContent) {
-						event.preventDefault();
-						event.stopPropagation();
+				onClick={(e) => {
+					if (onStepClick) {
+						e.preventDefault();
+						e.stopPropagation();
+						onStepClick(index);
 					}
 				}}
 			>

@@ -18,6 +18,8 @@ interface SettingsContextType {
 	) => void;
 	openSettingsModal: () => void;
 	closeSettingsModal: () => void;
+	toggleExpandedMode: () => void;
+	toggleAutoScroll: () => void;
 }
 
 // --- WHY 2: Create the Context object ---

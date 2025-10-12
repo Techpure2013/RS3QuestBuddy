@@ -1,10 +1,12 @@
 import { useState, useEffect, useCallback } from "react";
 
 export interface SettingsState {
+	isExpandedMode: boolean;
 	isSettingsModalOpen: boolean;
 	isCompact: boolean;
 	dialogSolverEnabled: boolean;
 	toolTipsEnabled: boolean;
+	autoScrollEnabled: boolean;
 	textColor: string;
 	labelColor: string;
 	buttonColor: string;
@@ -17,6 +19,8 @@ const SETTINGS_KEY = "appSettings";
 const MAX_SWATCHES = 7;
 
 const defaultSettings: SettingsState = {
+	isExpandedMode: false,
+	autoScrollEnabled: true,
 	isSettingsModalOpen: false,
 	isCompact: false,
 	dialogSolverEnabled: false,
@@ -42,11 +46,19 @@ export const useSettingsStore = () => {
 		}
 		return defaultSettings;
 	});
+	const toggleExpandedMode = useCallback(() => {
+		setSettings((prev) => ({
+			...prev,
+			isExpandedMode: !prev.isExpandedMode,
+		}));
+	}, []);
+	const toggleAutoScroll = useCallback(() => {
+		setSettings((prev) => ({
+			...prev,
+			autoScrollEnabled: !prev.autoScrollEnabled,
+		}));
+	}, []);
 
-	// --- WHY 4: One effect to save them all ---
-	// This single useEffect watches the entire `settings` object. Any time it
-	// changes, it saves the whole object to localStorage. This is far more
-	// efficient and maintainable than multiple effects.
 	useEffect(() => {
 		try {
 			localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
@@ -55,9 +67,6 @@ export const useSettingsStore = () => {
 		}
 	}, [settings]);
 
-	// --- WHY 5: A single, generic update function ---
-	// This function allows the UI to update any setting by its key.
-	// We use `useCallback` to ensure this function's reference is stable.
 	const updateSetting = useCallback(
 		<K extends keyof SettingsState>(key: K, value: SettingsState[K]) => {
 			setSettings((prev) => ({
@@ -74,9 +83,7 @@ export const useSettingsStore = () => {
 	const closeSettingsModal = useCallback(() => {
 		updateSetting("isSettingsModalOpen", false);
 	}, [updateSetting]);
-	// --- WHY 6: Encapsulate complex logic like swatch updates ---
-	// The UI component doesn't need to know how to update swatches; it just
-	// calls this function. This keeps the component clean.
+
 	const addColorToSwatch = useCallback(
 		(
 			swatchKey: "textSwatches" | "labelSwatches" | "buttonSwatches",
@@ -105,5 +112,7 @@ export const useSettingsStore = () => {
 		addColorToSwatch,
 		openSettingsModal,
 		closeSettingsModal,
+		toggleExpandedMode,
+		toggleAutoScroll,
 	};
 };
