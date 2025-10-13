@@ -8,49 +8,27 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Xenia",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3280,
+              "lng": 2567
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3280,
+                "lng": 2566
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3281,
+                "lng": 2568
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Ceril Carnillean. (Chat 1•1•1•4)",
@@ -59,81 +37,51 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Ceril Carnillean",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3270,
+              "lng": 2565
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3268,
+                "lng": 2563
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3273,
+                "lng": 2566
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Search the bookcase in the room with Henryeta Carnillean for a book about the Carnillean family.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Bookshelf  ( Carnillean Rising )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3273,
+                "lng": 2570,
+                "color": "#ecb75b",
+                "numberLabel": "Search Bookshelf",
+                "isSearched": false
+              },
+              {
+                "lat": 3272,
+                "lng": 2570,
+                "color": "#ecb75b",
+                "numberLabel": "Search Bookshelf",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -145,14 +93,14 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "numberLabel": "Search Bookshelf",
+            "color": "#ecb75b"
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Butler Crichton. (Chat 1•1)",
@@ -161,81 +109,44 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Butler Crichton",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3273,
+              "lng": 2567
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3273,
+                "lng": 2567
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3273,
+                "lng": 2567
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Head into the basement and enter the hole on the east wall (cutscene will begin), then head back to the house.",
+      "stepDescription": "Climb down into the basement.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Ladder ( Carnillean Rising )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3267,
+                "lng": 2568,
+                "color": "#ecb75b",
+                "numberLabel": "Climb Down",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -247,46 +158,103 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "numberLabel": "Climb Down",
+            "color": "#ecb75b"
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Go to the 2nd floor[US] and take the red and black dragon head from the wall (2 heads in total).",
+      "stepDescription": "Enter the hole on the east wall to trigger a cutscene.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [],
+        "object": [
+          {
+            "name": "Hole ( Carnillean Rising )",
+            "objectLocation": [
+              {
+                "lat": 9668,
+                "lng": 2573,
+                "color": "#ecb75b",
+                "numberLabel": "Enter Hole",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "numberLabel": "Enter Hole",
+            "color": "#ecb75b"
+          }
+        ]
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Climb up the Ladder.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [],
+        "object": [
+          {
+            "name": "Ladder ( Carnillean Rising )",
+            "objectLocation": [
+              {
+                "lat": 9667,
+                "lng": 2568,
+                "color": "#ecb75b",
+                "numberLabel": "Climb Up",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "numberLabel": "Climb Up",
+            "color": "#ecb75b"
+          }
+        ]
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Go to the 2nd floor[US] using the stairs.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Stairs ( Carnillean Rising )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3268,
+                "lng": 2567,
+                "color": "#ecb75b",
+                "numberLabel": "Climb Up Stairs",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -298,46 +266,105 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "numberLabel": "Climb Up Stairs",
+            "color": "#ecb75b"
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
+    },
+    {
+      "stepDescription": "Take the red and black dragon head from the wall (2 heads in total).",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [],
+        "object": [
+          {
+            "name": "Red Dragon Head ( Carnillean Rising )",
+            "objectLocation": [
+              {
+                "lat": 3272,
+                "lng": 2570,
+                "color": "#ecb75b",
+                "numberLabel": "Take Dragon's Head",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "numberLabel": "Take Dragon's Head",
+            "color": "#ecb75b"
+          },
+          {
+            "name": "Black Dragon Head ( Carnillean Rising )",
+            "objectLocation": [
+              {
+                "lat": 3270,
+                "lng": 2570,
+                "color": "#ecb75b",
+                "numberLabel": "Take Dragon's Head",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "numberLabel": "Take Dragon's Head",
+            "color": "#ecb75b"
+          }
+        ]
+      },
+      "floor": 1
     },
     {
       "stepDescription": "Open and search the southern wardrobe for the armour and sword.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Wardrobe ( Carnillean Rising )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3267,
+                "lng": 2571,
+                "color": "#ecb75b",
+                "numberLabel": "Search Wardrobe",
+                "isSearched": false
+              },
+              {
+                "lat": 3267,
+                "lng": 2572,
+                "color": "#ecb75b",
+                "numberLabel": "Search Wardrobe",
+                "isSearched": false
+              },
+              {
+                "lat": 3267,
+                "lng": 2573,
+                "color": "#ecb75b",
+                "numberLabel": "Search Wardrobe",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -349,46 +376,45 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "numberLabel": "Search Wardrobe",
+            "color": "#ecb75b"
           }
         ]
       },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "floor": 1,
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Tear the net curtain from the northeast wall.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Net Curtain ( Carnillean Rising )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3275,
+                "lng": 2573,
+                "color": "#ecb75b",
+                "numberLabel": "Tear Net Curtain",
+                "isSearched": false
+              },
+              {
+                "lat": 3275,
+                "lng": 2575,
+                "color": "#ecb75b",
+                "numberLabel": "Tear Net Curtain",
+                "isSearched": false
+              },
+              {
+                "lat": 3273,
+                "lng": 2575,
+                "color": "#ecb75b",
+                "numberLabel": "Tear Net Curtain",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -400,46 +426,31 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "numberLabel": "Tear Net Curtain",
+            "color": "#ecb75b"
           }
         ]
       },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "floor": 1,
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Take the money pouch from the bed or Henryeta's necklace from the dresser.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Money Pouch ( Carnillean Rising )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3270,
+                "lng": 2573,
+                "color": "#ecb75b",
+                "numberLabel": "Take Money Pouch",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -451,46 +462,31 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "numberLabel": "Take Money Pouch",
+            "color": "#ecb75b"
           }
         ]
       },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "floor": 1,
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Search his painting set for red paint.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Philipe's painting set ( Carnillean Rising )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3274,
+                "lng": 2566,
+                "color": "#ecb75b",
+                "numberLabel": "Search Philipe's painting set",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -502,14 +498,14 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "numberLabel": "Search Philipe's painting set",
+            "color": "#ecb75b"
           }
         ]
       },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "floor": 1,
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Sarsaparilla. (Chat 3), then talk again. (Chat 3•2•2•4•1)",
@@ -518,81 +514,58 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Sarsaparilla",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3269,
+              "lng": 2564
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3269,
+                "lng": 2564
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3269,
+                "lng": 2564
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "floor": 1,
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Open and search the wardrobe for her dress. (Chat 1)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Wardrobe Two ( Carnillean Rising )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3270,
+                "lng": 2564,
+                "color": "#ecb75b",
+                "numberLabel": "Search Wardrobe",
+                "isSearched": false
+              },
+              {
+                "lat": 3270,
+                "lng": 2565,
+                "color": "#ecb75b",
+                "numberLabel": "Search Wardrobe",
+                "isSearched": false
+              },
+              {
+                "lat": 3270,
+                "lng": 2566,
+                "color": "#ecb75b",
+                "numberLabel": "Search Wardrobe",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -604,14 +577,14 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "numberLabel": "Search Wardrobe",
+            "color": "#ecb75b"
           }
         ]
       },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "floor": 1,
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Head to the cellar and talk to Claus the chef. (Chat 2)",
@@ -620,81 +593,44 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Claus the chef",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 9670,
+              "lng": 2565
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 9668,
+                "lng": 2564
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 9672,
+                "lng": 2565
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Search the cupboard, take everything (wooden boards, twine, shears, and Sir Ceril's wine).",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Cupboard ( Carnillean Rising )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 9670,
+                "lng": 2568,
+                "color": "#ecb75b",
+                "numberLabel": "Search Cupboard",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -706,46 +642,31 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "numberLabel": "Search Cupboard",
+            "color": "#ecb75b"
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Search the barrel of junk to collect rusty spikes.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Barrel of Junk ( Carnillean Rising )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 9670,
+                "lng": 2572,
+                "color": "#ecb75b",
+                "numberLabel": "Search Barrel of junk",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -757,46 +678,31 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "numberLabel": "Search Barrel of junk",
+            "color": "#ecb75b"
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Pick up the spider from the floor.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Spider ( Carnillean Rising )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 9667,
+                "lng": 2573,
+                "color": "#ecb75b",
+                "numberLabel": "Pickup Spider",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -808,46 +714,31 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "numberLabel": "Pickup Spider",
+            "color": "#ecb75b"
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Pick up 7 buckets of water for Floor Traps by clicking on Water Buckets by the sink.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Bucket of Water",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 9669,
+                "lng": 2563,
+                "color": "#ecb75b",
+                "numberLabel": "Take Bucket of Water",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -859,46 +750,31 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "numberLabel": "Take Bucket of Water",
+            "color": "#ecb75b"
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Right-click build on the hole hotspot. (Chat 1)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Hole ( Carnillean Rising )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 9668,
+                "lng": 2573,
+                "color": "#ecb75b",
+                "numberLabel": " Build",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -910,14 +786,14 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "numberLabel": " Build",
+            "color": "#ecb75b"
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Enter the cave and talk to Sarsaparilla (Chat 1) and Claus. (Chat 1)",
@@ -926,61 +802,56 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Sarsaparilla",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 6339,
+              "lng": 1799
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6339,
+                "lng": 1799
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6339,
+                "lng": 1799
+              }
+            }
+          },
+          {
+            "npcName": "Claus the chef",
+            "npcLocation": {
+              "lat": 6339,
+              "lng": 1798
+            },
+            "wanderRadius": {
+              "bottomLeft": {
+                "lat": 6339,
+                "lng": 1798
+              },
+              "topRight": {
+                "lat": 6339,
+                "lng": 1798
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Continue through the cave and talk to the goblins. (Chat 3•3•1)",
+      "stepDescription": "Continue through the cave and talk to the goblins Nostrilla or Slimepits. (Chat 3•3•1)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Nostrillia",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 6365,
+              "lng": 1819
             },
             "wanderRadius": {
               "bottomLeft": {
@@ -992,66 +863,67 @@
                 "lng": 0
               }
             }
-          }
-        ],
-        "object": [
+          },
           {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
+            "npcName": "Slimepits",
+            "npcLocation": {
+              "lat": 6364,
+              "lng": 1818
+            },
+            "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6363,
+                "lng": 1818
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6365,
+                "lng": 1820
               }
             }
           }
-        ]
+        ],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "South-east of the fire, enter the passage and search the spoils heap for bone scraps.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Spoil heap ( Carnillean Rising )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 6341,
+                "lng": 1841,
+                "color": "#ecb75b",
+                "numberLabel": "Search Spoil heap",
+                "isSearched": false
+              },
+              {
+                "lat": 6341,
+                "lng": 1842,
+                "color": "#ecb75b",
+                "numberLabel": "Search Spoil heap",
+                "isSearched": false
+              },
+              {
+                "lat": 6342,
+                "lng": 1842,
+                "color": "#ecb75b",
+                "numberLabel": "Search Spoil heap",
+                "isSearched": false
+              },
+              {
+                "lat": 6342,
+                "lng": 1841,
+                "color": "#ecb75b",
+                "numberLabel": "Search Spoil heap",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -1063,46 +935,67 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "numberLabel": "Search Spoil heap",
+            "color": "#ecb75b"
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Take the cave mouse to have the wolves follow you out.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Cave Mouse ( Carnillean Rising )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 6345,
+                "lng": 1852,
+                "color": "#ecb75b",
+                "numberLabel": "Take Cave mouse",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 6344,
+                "lng": 1850
+              },
+              "topRight": {
+                "lat": 6346,
+                "lng": 1852
+              }
+            },
+            "numberLabel": "Take Cave mouse",
+            "color": "#ecb75b"
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": []
+    },
+    {
+      "stepDescription": "Head north to the centre bridge and \"Build\" the \"jailer\" hotspot by leading Claus to it.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [],
+        "object": [
+          {
+            "name": "Claus Hotspot ( Carnillean Rising )",
+            "objectLocation": [
+              {
+                "lat": 6381,
+                "lng": 1822,
+                "color": "#ecb75b",
+                "numberLabel": "Claus Hotspot",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -1114,46 +1007,311 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "numberLabel": "Claus Hotspot",
+            "color": "#ecb75b"
           }
         ]
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "If the money pouch is in your inventory, right-click it and use it on Claus."
       ]
     },
     {
-      "stepDescription": "Head north to the centre bridge.",
+      "stepDescription": "Cross the bridge and build the dragon hotspots. The wolves will move into position then use the dragon heads on the wolves.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [],
+        "object": [
+          {
+            "name": "Dragon Hotspot One ( Carnillean Rising )",
+            "objectLocation": [
+              {
+                "lat": 6401,
+                "lng": 1821,
+                "color": "#ecb75b",
+                "numberLabel": "Build Hotspot",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "color": "#ecb75b",
+            "numberLabel": "Build Hotspot"
+          },
+          {
+            "name": "Dragon Hotspot Two ( Carnillean Rising )",
+            "objectLocation": [
+              {
+                "lat": 6401,
+                "lng": 1825,
+                "color": "#ecb75b",
+                "numberLabel": "Build Hotspot",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "color": "#ecb75b",
+            "numberLabel": "Build Hotspot"
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": []
+    },
+    {
+      "stepDescription": "Build the Damsel hotspot. ",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [],
+        "object": [
+          {
+            "name": "Damsel Hotspot",
+            "objectLocation": [
+              {
+                "lat": 6411,
+                "lng": 1823,
+                "color": "#ecb75b",
+                "numberLabel": "Build Damsel",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "numberLabel": "Build Damsel",
+            "color": "#ecb75b"
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "If the necklace is in your inventory, use it on Sarsaparilla the Damsel."
+      ]
+    },
+    {
+      "stepDescription": "Head back south across the bridge and build the following hotspots on your way back to the cellar. A list is in Additional Information.",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "highlights": {
+        "npc": [],
+        "object": [
+          {
+            "name": "Decoration Bloodstain ( Carnillean Rising )",
+            "objectLocation": [
+              {
+                "lat": 6367,
+                "lng": 1830,
+                "color": "#ecb75b",
+                "numberLabel": "Build Bloodstain Decoration",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "numberLabel": "Build Bloodstain Decoration",
+            "color": "#ecb75b"
+          },
+          {
+            "name": "Decoration Scary Eyes ( Carnillean Rising )",
+            "objectLocation": [
+              {
+                "lat": 6363,
+                "lng": 1808,
+                "color": "#ecb75b",
+                "numberLabel": "Build Scary Eyes Decoration",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "numberLabel": "Build Scary Eyes Decoration",
+            "color": "#ecb75b"
+          },
+          {
+            "name": "Decoration Impaled Skulls ( Carnillean Rising )",
+            "objectLocation": [
+              {
+                "lat": 6350,
+                "lng": 1824,
+                "color": "#ecb75b",
+                "numberLabel": "Build Impaled Skulls Decoration",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "numberLabel": "Build Impaled Skulls Decoration",
+            "color": "#ecb75b"
+          },
+          {
+            "name": "Trap Tripwire ( Carnillean Rising )",
+            "objectLocation": [
+              {
+                "lat": 6364,
+                "lng": 1813,
+                "color": "#ecb75b",
+                "numberLabel": "Build Tripwire Trap",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "numberLabel": "Build Tripwire Trap",
+            "color": "#ecb75b"
+          },
+          {
+            "name": "Trap Tripwire Two ( Carnillean Rising )",
+            "objectLocation": [
+              {
+                "lat": 6364,
+                "lng": 1825,
+                "color": "#ecb75b",
+                "numberLabel": "Build Tripwire Trap",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "numberLabel": "Build Tripwire Trap",
+            "color": "#ecb75b"
+          },
+          {
+            "name": "Obstacle Pool of Water ( Carnillean Rising )",
+            "objectLocation": [
+              {
+                "lat": 6342,
+                "lng": 1814,
+                "color": "#ecb75b",
+                "numberLabel": "Build Obstacle Pool of Water",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "numberLabel": "Build Obstacle Pool of Water",
+            "color": "#ecb75b"
+          }
+        ]
+      },
+      "floor": 0,
+      "additionalStepInformation": [
+        "Decoration - on the wall east of the fire (Chat 1)",
+        "Traps - east and west of the fire (Chat 1)",
+        "Decoration - west of the fire at the end of the hall (Chat 2)",
+        "Decoration - on the north wall before turning around towards the cave entrance (Chat 3)",
+        "Obstacle - on the floor in the southernmost corridor, heading towards the cave entrance (Chat 2)"
+      ]
+    },
+    {
+      "stepDescription": "Leave through the cave, climb up the ladder and talk to Philipe Carnillean. (Chat ✓)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Philipe Carnillean",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3268,
+              "lng": 2571
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3267,
+                "lng": 2569
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3270,
+                "lng": 2572
               }
             }
           }
         ],
         "object": [
           {
-            "name": "",
+            "name": "Cave Exit ( Carnillean Rising )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 6338,
+                "lng": 1797,
+                "color": "#ecb75b",
+                "numberLabel": "Leave",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -1165,46 +1323,19 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "\"Build\" the \"jailer\" hotspot by leading Claus to it.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
             },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
+            "numberLabel": "Leave",
+            "color": "#ecb75b"
+          },
           {
-            "name": "",
+            "name": "Ladder ( Carnillean Rising )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 9667,
+                "lng": 2568,
+                "color": "#ecb75b",
+                "numberLabel": "Climb-up Ladder",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -1216,677 +1347,14 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "If the money pouch was taken, use it on Claus.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
             },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
+            "numberLabel": "Climb-up Ladder",
+            "color": "#ecb75b"
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Cross the bridge and build the dragon hotspots. The wolves will move into position.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Use the dragon heads on the wolves.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Build the Damsel hotspot.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "If the necklace was taken, use it on Sarsaparilla.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Head back south across the bridge.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Build hotspots in these locations as you backtrack up towards the cellar:",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Decoration - on the wall east of the goblin's bonfire (Chat 1)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Traps - east and west of the bonfire (Chat 1)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Decoration - west of the bonfire at the end of the hall (Chat 2)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Decoration - on the north wall before turning around towards the cave entrance (Chat 3)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Obstacle - on the floor in the southernmost corridor, heading towards the cave entrance (Chat 2)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Head back into the house and talk to Philipe. (Chat ✓)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Pickpocket him. Talk to him again. (Chat 4•✓•1)",
@@ -1895,81 +1363,44 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Philipe Carnillean",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3268,
+              "lng": 2571
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3267,
+                "lng": 2569
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3270,
+                "lng": 2572
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Proceed through the cave while Philipe follows. (Chat ~)",
+      "stepDescription": "Climb down the ladder, enter the Ominous Portal and proceed through the cave climb over the ledge. (Chat ~)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Ladder ( Carnillean Rising )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3267,
+                "lng": 2568,
+                "color": "#ecb75b",
+                "numberLabel": "Climb-Down Ladder",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -1981,64 +1412,109 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "numberLabel": "Climb-Down Ladder",
+            "color": "#cda050"
+          },
+          {
+            "name": "Ominous Portal ( Carnillean Rising )",
+            "objectLocation": [
+              {
+                "lat": 9668,
+                "lng": 2573,
+                "color": "#ecb75b",
+                "numberLabel": "Enter Ominous Portal",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "numberLabel": "Enter Ominous Portal",
+            "color": "#ecb75b"
+          },
+          {
+            "name": "Ledge ( Carnillean Rising )",
+            "objectLocation": [
+              {
+                "lat": 6341,
+                "lng": 1811,
+                "color": "#ecb75b",
+                "numberLabel": "Climb Ledge",
+                "isSearched": false
+              },
+              {
+                "lat": 6341,
+                "lng": 1812,
+                "color": "#ecb75b",
+                "numberLabel": "Climb Ledge",
+                "isSearched": false
+              },
+              {
+                "lat": 6341,
+                "lng": 1813,
+                "color": "#ecb75b",
+                "numberLabel": "Climb Ledge",
+                "isSearched": false
+              },
+              {
+                "lat": 6341,
+                "lng": 1815,
+                "color": "#ecb75b",
+                "numberLabel": "Climb Ledge",
+                "isSearched": false
+              },
+              {
+                "lat": 6341,
+                "lng": 1814,
+                "color": "#ecb75b",
+                "numberLabel": "Climb Ledge",
+                "isSearched": false
+              },
+              {
+                "lat": 6341,
+                "lng": 1816,
+                "color": "#ecb75b",
+                "numberLabel": "Climb Ledge",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "numberLabel": "Climb Ledge",
+            "color": "#ecb75b"
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Watch the cutscene where Philipe attempts to pass the guards.",
+      "stepDescription": "Continue north to pass the \"Guards\". (Chat ~) ",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "Watch the cutscene where Philipe attempts to pass the guards."
       ]
     },
     {
@@ -2046,51 +1522,36 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Goblin Area",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 6356,
+                "lng": 1803,
+                "color": "#397c5d",
+                "numberLabel": "",
+                "isSearched": false
               }
             ],
             "objectRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6355,
+                "lng": 1800
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6357,
+                "lng": 1806
               }
-            }
+            },
+            "color": "#397c5d",
+            "numberLabel": ""
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Philipe again to have him follow.",
@@ -2099,81 +1560,44 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Philipe Carnillean",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 6359,
+              "lng": 1810
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6359,
+                "lng": 1810
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6359,
+                "lng": 1810
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Continue towards Claus. (Chat ~)",
+      "stepDescription": "Continue towards Claus clicking both traps along the way. ( Chat 1 ) Continue until a cutscene triggers.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Tripwire One ( Carnillean Rising )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 6364,
+                "lng": 1813,
+                "color": "#cda050",
+                "numberLabel": "Cross Tripwire",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -2185,14 +1609,38 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "numberLabel": "Cross Tripwire",
+            "color": "#cda050"
+          },
+          {
+            "name": "Tripwire Two ( Carnillean Rising )",
+            "objectLocation": [
+              {
+                "lat": 6364,
+                "lng": 1825,
+                "color": "#cda050",
+                "numberLabel": "Cross Tripwire",
+                "isSearched": false
+              }
+            ],
+            "objectRadius": {
+              "bottomLeft": {
+                "lat": 0,
+                "lng": 0
+              },
+              "topRight": {
+                "lat": 0,
+                "lng": 0
+              }
+            },
+            "numberLabel": "Cross Tripwire",
+            "color": "#cda050"
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Philipe again to have him follow.",
@@ -2201,303 +1649,80 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Philipe Carnillean",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 6380,
+              "lng": 1825
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6380,
+                "lng": 1825
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6380,
+                "lng": 1825
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Continue towards the dragons. (Chat ~)",
+      "stepDescription": "Continue towards the dragons and click on Sarsaparilla. (Chat ~)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Sarsaparilla",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 6410,
+              "lng": 1823
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6410,
+                "lng": 1823
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6410,
+                "lng": 1823
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "After the dragons are slain, a cave wolf matriarch will arrive.",
+      "stepDescription": "Talk to Philipe to trigger a cutscene. ( Chat ~ ) After the dragons are slain, a cave wolf matriarch will arrive.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Attempt to attack the matriarch to focus its attacks on you. Dodge or withstand the attacks until Philipe kills it. If you run in circles around the matriarch, most of her attacks will miss and you will take very little damage.",
+      "stepDescription": "Attempt to attack the matriarch to focus its attacks on you. Dodge or withstand the attacks until Philipe kills it.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Do not use Protect from Magic or the matriarch will revert her attention back to Philipe.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Finishing up",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "If you run in circles around the matriarch, most of her attacks will miss and you will take very little damage.",
+        "Dont Pray Against it or it will lose aggro and attack Philipe."
       ]
     },
     {
@@ -2507,49 +1732,27 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Philipe Carnillean",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 6399,
+              "lng": 1823
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6399,
+                "lng": 1823
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 6399,
+                "lng": 1823
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Ceril.",
@@ -2558,49 +1761,27 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Ceril Carnillean",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3270,
+              "lng": 2565
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3268,
+                "lng": 2563
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3273,
+                "lng": 2566
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Xenia. (Chat 4)",
@@ -2609,49 +1790,27 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Xenia",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3280,
+              "lng": 2567
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3280,
+                "lng": 2567
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3280,
+                "lng": 2567
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Ceril.",
@@ -2660,100 +1819,40 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Ceril Carnillean",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3270,
+              "lng": 2565
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3268,
+                "lng": 2563
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3273,
+                "lng": 2566
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "Loot the chest near Ceril."
       ]
     },
     {
-      "stepDescription": "Quest complete!\nLoot the chest near Ceril.",
+      "stepDescription": "Quest Complete!\n",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     }
   ]
 }
