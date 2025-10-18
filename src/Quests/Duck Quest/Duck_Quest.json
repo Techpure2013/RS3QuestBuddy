@@ -88,7 +88,7 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "additionalStepInformation": [
-        "Duck food is found directly North of Falador Park."
+        "Duck food is found directly South of Falador Park."
       ],
       "highlights": {
         "npc": [],
@@ -261,5 +261,23 @@
       },
       "floor": 0
     }
-  ]
+  ],
+  "questDetails": {
+    "Quest": "Duck Quest",
+    "StartPoint": "Investigate a strange fishing spot on the riverbank south of Draynor Village.",
+    "MemberRequirement": "Free to play",
+    "OfficialLength": "Short",
+    "Requirements": [],
+    "ItemsRequired": [
+      "1 Duck Food",
+      "1 Vial of Water"
+    ],
+    "Recommended": [
+      "Activated Draynor Lodestone",
+      "Activated Varrock Lodestone"
+    ],
+    "EnemiesToDefeat": [
+      "None"
+    ]
+  }
 }
