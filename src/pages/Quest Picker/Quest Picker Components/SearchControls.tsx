@@ -20,11 +20,16 @@ export const SearchControls: React.FC<SearchControlsProps> = ({
 	labelColor,
 }) => {
 	const [playerName, setPlayerName] = useState(initialPlayerName);
-
+	const [localQuestQuery, setLocalQuestQuery] = useState("");
 	useEffect(() => {
 		setPlayerName(initialPlayerName);
 	}, [initialPlayerName]);
-
+	useEffect(() => {
+		const id = setTimeout(() => {
+			onQuestSearchChange(localQuestQuery);
+		}, 150);
+		return () => clearTimeout(id);
+	}, [localQuestQuery, onQuestSearchChange]);
 	return (
 		<div className="SearchContainer">
 			<div className="PlayerSearch">
@@ -48,7 +53,8 @@ export const SearchControls: React.FC<SearchControlsProps> = ({
 					styles={{ label: { color: labelColor || "" } }}
 					label="Search for Quest"
 					placeholder="Type in a quest"
-					onChange={(e) => onQuestSearchChange(e.currentTarget.value)}
+					value={localQuestQuery}
+					onChange={(e) => setLocalQuestQuery(e.currentTarget.value)}
 				/>
 			</div>
 		</div>

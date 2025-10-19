@@ -1,4 +1,4 @@
-import React, { lazy, useEffect, useMemo, useState } from "react";
+import React, { lazy, useCallback, useEffect, useMemo, useState } from "react";
 import {
 	Button,
 	Modal,
@@ -42,7 +42,7 @@ const QuestCarousel: React.FC = () => {
 	const theme = useMantineTheme(); // Get the theme object for breakpoints
 	// --- All hooks and logic remain the same ---
 	const [searchQuery, setSearchQuery] = useState("");
-
+	const debouncedQuery = searchQuery;
 	const {
 		playerName,
 		playerFound,
@@ -58,8 +58,6 @@ const QuestCarousel: React.FC = () => {
 	const { todoQuests, addQuestToTodo, removeQuestFromTodo, clearQuestTodo } =
 		useQuestTodo();
 	const { settings, closeSettingsModal, openSettingsModal } = useSettings();
-	const [settingsModal, { open: openSettings, close: closeSettings }] =
-		useDisclosure(false);
 	const [notesModal, { open: openNotes, close: closeNotes }] =
 		useDisclosure(false);
 	const [todoModal, { open: openTodo, close: closeTodo }] = useDisclosure(false);
@@ -67,7 +65,10 @@ const QuestCarousel: React.FC = () => {
 	const [activeFilters, setActiveFilters] = useState<
 		{ type: string; value: string }[]
 	>([]);
-
+	const orderMap = useMemo(
+		() => new Map(ironmanQuestOrder.map((name, i) => [name, i] as const)),
+		[],
+	);
 	const [activeSort, setActiveSort] = useState<string | null>(null);
 	useEffect(() => {
 		const KEY_TO_CLEAR_ON_RELOAD = "staticQuestList";
@@ -75,9 +76,6 @@ const QuestCarousel: React.FC = () => {
 		if (navigationEntries.length > 0) {
 			const navTiming = navigationEntries[0] as PerformanceNavigationTiming;
 			if (navTiming.type === "reload") {
-				console.log(
-					`Page was reloaded. Removing '${KEY_TO_CLEAR_ON_RELOAD}' from localStorage.`,
-				);
 				sessionStorage.removeItem(KEY_TO_CLEAR_ON_RELOAD);
 			}
 		}
@@ -123,10 +121,12 @@ const QuestCarousel: React.FC = () => {
 	const getQuestTitle = (quest: EnrichedQuest): string =>
 		quest?.questName || quest?.title || "";
 	let fullyFilteredQuests: EnrichedQuest[] = useMemo(() => {
-		const searchFiltered =
-			displayQuests?.filter((quest) =>
-				getQuestTitle(quest).toLowerCase().includes(searchQuery.toLowerCase()),
-			) || [];
+		const base = displayQuests || [];
+		const q = debouncedQuery.trim().toLowerCase();
+		const searchFiltered = q
+			? base.filter((quest) => getQuestTitle(quest).toLowerCase().includes(q))
+			: base;
+
 		let menuFiltered = searchFiltered;
 		if (activeFilters.length > 0) {
 			menuFiltered = searchFiltered.filter((quest) => {
@@ -147,9 +147,6 @@ const QuestCarousel: React.FC = () => {
 				? searchFiltered
 				: menuFiltered;
 		if (activeSort === "Efficient Ironman Quests") {
-			const orderMap = new Map(
-				ironmanQuestOrder.map((questName, index) => [questName, index]),
-			);
 			listToSort = [...listToSort].sort((a, b) => {
 				const indexA = orderMap.get(a.questName) ?? Infinity;
 				const indexB = orderMap.get(b.questName) ?? Infinity;
@@ -173,11 +170,23 @@ const QuestCarousel: React.FC = () => {
 			});
 		}
 		return listToSort;
-	}, [displayQuests, searchQuery, activeFilters, activeSort]);
+	}, [displayQuests, debouncedQuery, activeFilters, activeSort, orderMap]);
 	if (fullyFilteredQuests.length === 0) {
 		fullyFilteredQuests = displayQuests;
 	}
+	const handleQuestClick = useCallback(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
+	const handleAddToTodo = useCallback(
+		(name: string) => addQuestToTodo(name),
+		[addQuestToTodo],
+	);
+
+	const handleRemoveFromTodo = useCallback(
+		(name: string) => removeQuestFromTodo(name),
+		[removeQuestFromTodo],
+	);
 	function openDiscord(): void {
 		const newWindow = window.open(
 			"https://discord.gg/qFftZF7Usa",
@@ -190,9 +199,6 @@ const QuestCarousel: React.FC = () => {
 		const newWindow = window.open("https://buymeacoffee.com/rs3questbuddy");
 		if (newWindow) newWindow.opener = null;
 	}
-	const handleQuestClick = (questName: string) => {
-		window.scrollTo(0, 0);
-	};
 
 	return (
 		<>
@@ -298,8 +304,6 @@ const QuestCarousel: React.FC = () => {
 					/>
 				</Stack>
 			</Paper>
-
-			{/* ... (The rest of your component remains the same) ... */}
 			{(activeFilters.length > 0 || activeSort) && (
 				<Group mt="md" mb="md" justify="center" gap="xs">
 					{activeFilters.length > 0 && <Text size="sm">Filtered by:</Text>}
@@ -366,8 +370,8 @@ const QuestCarousel: React.FC = () => {
 				onQuestClick={handleQuestClick}
 				labelColor={settings.labelColor || undefined}
 				todoList={todoQuests}
-				onAddToTodo={addQuestToTodo}
-				onRemoveFromTodo={removeQuestFromTodo}
+				onAddToTodo={handleAddToTodo}
+				onRemoveFromTodo={handleRemoveFromTodo}
 			/>
 			<ActionIcon
 				color={settings.buttonColor || ""}
