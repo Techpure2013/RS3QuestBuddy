@@ -82,4 +82,6 @@ $ npm run start
 
 # License
 
-_RS3 Quest Buddy © 2023 by Techpure is licensed under CC BY-NC-SA 4.0_
+**© 2023–2025 Techpure — RS3 Quest Buddy**  
+Licensed under **Creative Commons Attribution–NonCommercial–ShareAlike 4.0 International**
+
