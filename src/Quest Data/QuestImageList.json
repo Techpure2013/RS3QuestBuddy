@@ -9086,7 +9086,29 @@
 	},
 	{
 		"name": "Ritual of the Mahjarrat",
-		"images": []
+		"images": [
+			{
+				"step": 19,
+				"src": "RitualoftheMahjarrat_step_19_1.webp",
+				"height": 334,
+				"width": 512,
+				"stepDescription": "Use Bob's collar on the wall design and solve the puzzle by positioning Bob's collar."
+			},
+			{
+				"step": 43,
+				"src": "RitualoftheMahjarrat_step_43_1.webp",
+				"height": 257,
+				"width": 255,
+				"stepDescription": "Find the coordinates received and dig there with a spade to receive a Kethsian key. The strange device tells you your current location."
+			},
+			{
+				"step": 55,
+				"src": "RitualoftheMahjarrat_step_55_1.webp",
+				"height": 742,
+				"width": 706,
+				"stepDescription": "Read the code key and open the main entrance by obtaining the code from the key and strips."
+			}
+		]
 	},
 	{
 		"name": "River of Blood",
@@ -12711,7 +12733,22 @@
 	},
 	{
 		"name": "While Guthix Sleeps",
-		"images": []
+		"images": [
+			{
+				"step": 18,
+				"src": "WhileGuthixSleeps_step_18_1.webp",
+				"height": 336,
+				"width": 762,
+				"stepDescription": "Go through the old battered door. Image of what each rune to represented Letter is at this step."
+			},
+			{
+				"step": 101,
+				"src": "WhileGuthixSleeps_step_101_1.webp",
+				"height": 470,
+				"width": 680,
+				"stepDescription": "Use the herbs and the secondary ingredients on the various statues referencing the image at this step. Not all keywords will be on statues."
+			}
+		]
 	},
 	{
 		"name": "Witch's House",

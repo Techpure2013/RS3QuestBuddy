@@ -8,49 +8,27 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Darren Lightfinger",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5903,
+              "lng": 4661
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5902,
+                "lng": 4660
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5904,
+                "lng": 4662
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Chief Thief Robin, south of Lumbridge Castle by the castle wall. (Chat 1)",
@@ -59,49 +37,27 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Chief Thief Robin",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5904,
+              "lng": 4662
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5903,
+                "lng": 4661
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5905,
+                "lng": 4663
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Speak to Father Urhney in his house, south in the Lumbridge Swamp. (Chat 3•3)",
@@ -110,99 +66,28 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Father Urhney",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3149,
+              "lng": 3205
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3148,
+                "lng": 3203
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3150,
+                "lng": 3208
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "If The Restless Ghost has been completed, (Chat 4•3)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "If The Restless Ghost has been completed, (Chat 4•3)"
       ]
     },
     {
@@ -210,32 +95,17 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Fire Location ( Buyers and Cellars )",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3152,
+                "lng": 3208,
+                "color": "#a14a3a",
+                "numberLabel": "Light Fire",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -247,14 +117,14 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "numberLabel": "Light Fire",
+            "color": "#a14a3a"
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Urhney and mention the chalice then the fire. (Chat 3•4)",
@@ -263,99 +133,28 @@
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Father Urhney",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 3149,
+              "lng": 3205
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3148,
+                "lng": 3203
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 3150,
+                "lng": 3208
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "If The Restless Ghost has been completed, (Chat 4•4)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "If The Restless Ghost has been completed, (Chat 4•4)"
       ]
     },
     {
@@ -363,83 +162,28 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Use the key on the chalice display case.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
+        "npc": [],
         "object": [
           {
-            "name": "",
+            "name": "Chalice Display Case",
             "objectLocation": [
               {
-                "lat": 0,
-                "lng": 0
+                "lat": 3151,
+                "lng": 3202,
+                "color": "#a14a3a",
+                "numberLabel": "Display Case",
+                "isSearched": false
               }
             ],
             "objectRadius": {
@@ -451,167 +195,54 @@
                 "lat": 0,
                 "lng": 0
               }
-            }
+            },
+            "numberLabel": "Display Case",
+            "color": "#a14a3a"
           }
         ]
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Return to Darren's cellar.",
+      "stepDescription": "Return to Darren's cellar and use the chalice on him.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
         "npc": [
           {
-            "npcName": "",
+            "npcName": "Darren Lightfinger",
             "npcLocation": {
-              "lat": 0,
-              "lng": 0
+              "lat": 5903,
+              "lng": 4661
             },
             "wanderRadius": {
               "bottomLeft": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5902,
+                "lng": 4660
               },
               "topRight": {
-                "lat": 0,
-                "lng": 0
+                "lat": 5904,
+                "lng": 4662
               }
             }
           }
         ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Use the chalice on Darren.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Quest complete!",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     }
   ]
 }

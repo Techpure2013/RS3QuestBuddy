@@ -6,152 +6,36 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to King Vargas in Miscellania.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Talk to Brundt the Chieftain back in Rellekka Longhall. (Chat 1). (If Lunar Diplomacy has been started (Chat 2))",
-      "itemsNeeded": [],
+      "stepDescription": "Talk to Brundt the Chieftain back in Rellekka Longhall. (Chat 1).",
+      "itemsNeeded": [
+        ""
+      ],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "If Lunar Diplomacy has been started (Chat 2)"
       ]
     },
     {
@@ -159,775 +43,150 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "After the cutscene, talk to Mawnis Burowgar in Neitiznot, south of the bank. (Chat 2)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
-      "stepDescription": "Items needed: Equipment for a battle with a level 81 monster, 4 free backpack spaces",
+      "stepDescription": "Travel to the 'i' icon ('question mark' on legacy interfaces) in the snowy Rellekka Hunter area.",
       "itemsNeeded": [
         "Equipment for a battle with a level 81 monster",
         "4 free backpack spaces"
       ],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Travel to the 'i' icon ('question mark' on legacy interfaces) in the snowy Rellekka Hunter area.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Inspect the tracks in the north-west corner of the platform and follow them to a mound of ice in the north-east corner. Inspect the tracks directly in front of the ice mound, then dig through the ice mound and go inside. (Chat 1)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Run to the southern wall and enter the tunnel.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Kill Nial Swiftfling and take his items.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Freygerd in Jatizso near the west gate. (Chat 1)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to King Gjuki Sorvott IV in the central building. (Chat 2)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Freygerd near the west gate. (Chat 1)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Mawnis Burowgar in Neitiznot, south of the bank. (Chat 2)",
       "itemsNeeded": [
-        "An empty vial",
-        "10 earth runes and 1 cosmic rune to cast Enchant Level 4 Jewellery",
-        "a plank",
-        "a staff or pole",
-        "a clean irit",
-        "herb pouch",
-        "and yeti hair."
+        ""
       ],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Items needed: An empty vial, 10 earth runes and 1 cosmic rune to cast Enchant Level 4 Jewellery, a plank, a staff or pole, a clean irit, herb pouch, and yeti hair.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to King Vargas in the throne room in Miscellania.",
-      "itemsNeeded": [],
+      "itemsNeeded": [
+        "1 Empty Vial",
+        "10 Earth Runes",
+        "1 Cosmic Rune",
+        "1 Plank",
+        "1 Staff or Pole",
+        "1 Clean Irit",
+        "1 Herb Pouch",
+        "1 Yeti Hair"
+      ],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
+        "Ensure you have the standard spellbook enabled."
       ]
     },
     {
-      "stepDescription": "Ensure you have the standard spellbook enabled.",
+      "stepDescription": "Travel to the Mountain Camp. ",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "Travel to the Mountain Camp. (Fairy code AJR.) A pole and plank can be found near the goats if you didn't bring a staff and plank.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "Fairy code AJR for quick access",
+        "A pole and plank can be found near the goats if you didn't bring a staff and plank."
       ]
     },
     {
@@ -935,152 +194,23 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Listen to the shining pool while standing directly south of the rocks.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "If the diamond root was not put in your inventory, open the Herb pouch with at least 1 inventory space.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "If the diamond root was not put in your inventory, open the Herb pouch with at least 1 inventory space."
       ]
     },
     {
@@ -1088,289 +218,115 @@
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Add the irit, grind the diamond root, cast enchant diamond on the dust, add the dust and yeti hair to the vial.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Return to King Vargas.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Talk to Brundt the Chieftain in the longhall to give him the unfinished astral rune. (Chat 1)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
+        "npc": [],
+        "object": []
       },
       "floor": 0,
       "additionalStepInformation": [
-        ""
-      ]
-    },
-    {
-      "stepDescription": "(Chat 2) If Lunar Diplomacy has been completed.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [
-          {
-            "npcName": "",
-            "npcLocation": {
-              "lat": 0,
-              "lng": 0
-            },
-            "wanderRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ],
-        "object": [
-          {
-            "name": "",
-            "objectLocation": [
-              {
-                "lat": 0,
-                "lng": 0
-              }
-            ],
-            "objectRadius": {
-              "bottomLeft": {
-                "lat": 0,
-                "lng": 0
-              },
-              "topRight": {
-                "lat": 0,
-                "lng": 0
-              }
-            }
-          }
-        ]
-      },
-      "floor": 0,
-      "additionalStepInformation": [
-        ""
+        "(Chat 2) If Lunar Diplomacy has been completed."
       ]
     },
     {
       "stepDescription": "Talk to Manni the Reveller and watch the cutscene.",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [],
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     },
     {
       "stepDescription": "Quest complete!",
-      "itemsNeeded": [
-        "none"
-      ],
-      "itemsRecommended": [
-        "none"
-      ],
+      "itemsNeeded": [],
+      "itemsRecommended": [],
       "highlights": {
         "npc": [],
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": [
-        ""
-      ]
+      "additionalStepInformation": []
     }
-  ]
+  ],
+  "questDetails": {
+    "Quest": "Glorious Memories",
+    "StartPoint": "Speak to Manni the Reveller inside the longhall in Rellekka.",
+    "MemberRequirement": "Members only",
+    "OfficialLength": "Medium",
+    "Requirements": [
+      "Mountain Daughter",
+      "The Fremennik Isles",
+      "The Fremennik Trials",
+      "Royal Trouble",
+      "Throne of Miscellania",
+      "The Fremennik Trials",
+      "Heroes' Quest",
+      "Shield of Arrav",
+      "Dragon Slayer",
+      "Druidic Ritual",
+      "Lost City",
+      "Merlin's Crystal",
+      "50 Agility",
+      "43 Herblore",
+      "41 Hunter",
+      "57 Magic",
+      "Be ableToDefeat a level 81 opponent who attacks with Melee and Ranged, and survive in an area with aggressive foes of around level 60",
+      "Access to the standard spellbook spells (tablets cannot be used)"
+    ],
+    "ItemsRequired": [
+      "Plank",
+      "Staff or pole",
+      "Clean irit",
+      "An empty vial",
+      "10 Earth runes or a staff which provides earth runes, such as an earth staff.",
+      "Cosmic rune",
+      "At least 4 free inventory spaces"
+    ],
+    "Recommended": [
+      "Miscellania teleports or a Ring of Wealth (or its higher-tier variants) for quick teleports to King Vargas.",
+      "Multiple ways to teleport around the Fremennik Province:",
+      "Activated Fremennik Province lodestone",
+      "Enchanted lyre",
+      "House Teleport runes or a Rellekka tablet with a home in Rellekka",
+      "A ring of wealth",
+      "Dramen staff/Lunar staff (not necessary if A Fairy Tale III - Battle at Ork's Rift is completed)"
+    ],
+    "EnemiesToDefeat": [
+      "Nial Swiftfling (Level 81)"
+    ]
+  }
 }
