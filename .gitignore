@@ -1,7 +1,31 @@
-.vs
-.vscode
-.prettierrc
-node_modules
-dist
+# env
+.env
+.env.*.local
+!.env.example
+
+# drizzle cache/artifacts
+.drizzle
+drizzle/meta/*
+drizzle.config.ts
+db
+
+# local db data if you bind-mount
+data/
+pg_data/
+postgres-data/
+
+# dumps/backups
+*.sql
+*.dump
+*.bak
+*.tar
+#VSCode Stuff
 .idea
+.vs
+.VSCode
+.github
+.prettierrc
+# Node stuff
+node_modules/
 appconfig.local.json
+dist/
