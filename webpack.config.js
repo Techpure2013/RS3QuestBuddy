@@ -154,6 +154,11 @@ module.exports = {
 				{ from: "Quests", to: "Quests" },
 				{ from: "assets", to: "assets" },
 				{ from: "appconfig.prod.json", to: "appconfig.prod.json" },
+				{
+					from: "appconfig.local.json",
+					to: "appconfig.local.json",
+					noErrorOnMissing: true,
+				},
 			],
 		}),
 	],

@@ -2080,50 +2080,24 @@
   {
     "Quest": "Do No Evil",
     "StartPoint": "Speak with Leela and Senliten in Senliten's tomb.",
-    "MemberRequirement": "Members only",
+    "MemberRequirement": "Members",
     "OfficialLength": "Very Long",
     "Requirements": [
       "Animal Magnetism",
-      "The Restless Ghost",
-      "Ernest the Chicken",
-      "Priest in Peril",
       "Shadow of the Storm",
-      "Demon Slayer",
-      "The Golem",
       "Desert Treasure",
-      "The Dig Site",
-      "The Tourist Trap",
-      "Temple of Ikov",
-      "Priest in Peril",
-      "Waterfall Quest",
-      "Troll Stronghold",
-      "Death Plateau",
       "Smoking Kills",
-      "The Restless Ghost",
-      "Icthlarin's Little Helper",
-      "Gertrude's Cat",
-      "Diamond in the Rough",
-      "Stolen Hearts",
       "Missing My Mummy",
-      "The Golem",
-      "Diamond in the Rough",
-      "Dealing with Scabaras",
-      "The Feud",
-      "Contact!",
-      "Zogre Flesh Eaters",
-      "Big Chompy Bird Hunting",
-      "Jungle Potion",
       "Recipe for Disaster: Freeing King Awowogei",
       "Recipe for Disaster: Another Cook's Quest",
-      "Cook's Assistant",
-      "Monkey Madness",
-      "The Grand Tree",
-      "Tree Gnome Village",
       "64 Construction",
       "68 Crafting",
       "70 Magic",
       "50 Range",
-      "70 Thieving"
+      "70 Thieving",
+      "Dealing with Scabaras",
+      "Fully restore Senliten from the 'Missing My Mummy' Quest (100%)",
+      "Bring Leela to Senlitens Tomb"
     ],
     "ItemsRequired": [
       "10 bananas",
@@ -2141,9 +2115,7 @@
       "Desert attire (shirt, robe, boots)",
       "Various combat and quest-specific items",
       "Enough runes for 20+ casts of ice spells",
-      "At least 1,000 coins (11,000+ recommended)",
-      "Must have restored Senliten to 100% (requires Garden of Tranquillity and Creature of Fenkenstrain)",
-      "Must have led Leela to Senliten's tomb"
+      "At least 1,000 coins (11,000+ recommended)"
     ],
     "Recommended": [
       "100 Combat Level",
@@ -2637,24 +2609,14 @@
   {
     "Quest": "Extinction",
     "StartPoint": "Talk to Moia at the surface entrance of Senntisten.",
-    "MemberRequirement": "Members only",
+    "MemberRequirement": "Members",
     "OfficialLength": "Very Long",
     "Requirements": [
       "Sins of the Father",
-      "Desperate Measures",
-      "Desperate Times",
-      "The Needle Skips",
-      "You Are It",
-      "Complete the base camp tutorial on Anachronia",
-      "Eye of Het II",
-      "Eye of Het I",
-      "City of Senntisten",
-      "Battle of the Monolith",
-      "Azzanadra's Quest"
+      "Eye of Het II"
     ],
     "ItemsRequired": [
-      "The Measure (if destroyed it can be obtained from Mr Mordaut during the quest)",
-      "At least 6 free backpack spaces during the Erebus section"
+      "The Measure (If you completed Fate of the Gods)"
     ],
     "Recommended": [
       "105 Combat, with balanced stats",
@@ -3268,29 +3230,28 @@
   {
     "Quest": "The Giant Dwarf",
     "StartPoint": "Talk to Commander Veldaban in the Black Guard headquarters on the western side of Keldagrim. To enter Keldagrim, talk to the dwarf boatman in the dwarven mine east of Rellekka.",
-    "MemberRequirement": "Members only",
-    "OfficialLength": "Medium to Long",
+    "MemberRequirement": "Members",
+    "OfficialLength": "Medium",
     "Requirements": [
       "12 Crafting",
       "16 Firemaking",
       "33 Magic",
       "14 Thieving",
       "Be on the normal spellbook (or able to use Spellbook Swap)",
-      "20 Mining (to mine coal)",
-      "10 Smithing (to smelt iron bar)"
+      "Ironmen: 20 Mining",
+      "Ironmen: 10 Smithing "
     ],
     "ItemsRequired": [
-      "200 coins",
-      "Any log that you can set fire to",
-      "1 coal",
-      "1 iron bar",
-      "Runes to cast Telekinetic Grab (1 law rune and 1 air rune)",
-      "3 cut sapphires",
-      "1 Redberry pie (not required if you have completed The Knight's Sword quest)",
+      "10,000 Coins",
+      "Any Burnable Log",
+      "1 Coal",
+      "1 Iron Bar",
+      "Rune to cast: Telekinetic Grab",
+      "3 Cut Sapphires",
+      "1 Redberry Pie ( If The Knight's Sword is Not Completed )",
       "Ores and bars from clay to mithril, which can be bought when the quest requires it"
     ],
     "Recommended": [
-      "About 10,000 coins (may vary on the tasks you get during the quest)",
       "21 Agility (for underground tunnel to the GE)",
       "Activated Port Sarim and Fremennik Province lodestone",
       "Luck of the Dwarves or Hazelmere's signet ring teleport to Keldagrim (accessible after initial city entry in quest introduction)"
@@ -4233,17 +4194,11 @@
   },
   {
     "Quest": "Land of the Goblins",
-    "StartPoint": "Speak to Grubfoot in the Dorgeshuun mine, north of Dorgesh-Kaan. (via a location)",
-    "MemberRequirement": "Members only",
+    "StartPoint": "Speak to Grubfoot in the Dorgeshuun mine, north of Dorgesh-Kaan.",
+    "MemberRequirement": "Members",
     "OfficialLength": "Long",
     "Requirements": [
-      "Land of the Goblins",
       "Another Slice of HAM",
-      "Death to the Dorgeshuun",
-      "The Lost Tribe",
-      "Goblin Diplomacy",
-      "The Dig Site",
-      "The Giant Dwarf",
       "Fishing Contest",
       "36 Agility",
       "36 Fishing",
@@ -4515,7 +4470,7 @@
   {
     "Quest": "The Lost Tribe",
     "StartPoint": "Talk to Sigmund in Lumbridge Castle",
-    "MemberRequirement": "Members only",
+    "MemberRequirement": "Members",
     "OfficialLength": "Medium",
     "Requirements": [
       "13 Agility",
@@ -4523,7 +4478,7 @@
       "13 Thieving"
     ],
     "ItemsRequired": [
-      "A light source (preferably a covered source such as the oil lantern, any Seer's headband or a bullseye lantern which can be easily obtained from the lorehound if you have 50 quest points)"
+      "A light source, such as a lantern"
     ],
     "Recommended": [
       "A lockpick",

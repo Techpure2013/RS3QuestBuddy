@@ -9,7 +9,6 @@ import {
 	ThemeIcon,
 	Paper,
 	Stack,
-	Grid,
 	Divider,
 	Box,
 	Flex,
@@ -20,12 +19,16 @@ import {
 	IconInfoCircle,
 	IconChecklist,
 	IconPointFilled,
-	IconClipboardText,
 	IconHourglassLow,
 } from "@tabler/icons-react";
 import { QuestStep } from "./../../../Fetchers/useQuestData";
 import { QuestImage } from "./../../../Fetchers/handleNewImage";
 import { useSettingsStore } from "./../../../pages/Settings/Setting Components/useSettingsStore";
+import {
+	removeTextFragment,
+	replaceChatTag,
+	useQuestConditionalSwap,
+} from "./../../../util/DescriptionSwap";
 type CompactQuestStepProps = {
 	step: QuestStep;
 	index: number;
@@ -33,6 +36,7 @@ type CompactQuestStepProps = {
 	images: QuestImage[];
 	onImagePopOut: (src: string, height: number, width: number) => void;
 	onStepClick?: (index: number) => void;
+	quest: string;
 };
 
 export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
@@ -42,6 +46,7 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 	images,
 	onImagePopOut,
 	onStepClick,
+	quest,
 }) => {
 	const filteredRequired =
 		step.itemsNeeded?.filter(
@@ -51,18 +56,50 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 		step.itemsRecommended?.filter(
 			(item) => item.trim() !== "" && item.toLowerCase() !== "none",
 		) || [];
-	const filteredInfo =
-		step.additionalStepInformation?.filter(
-			(info) => info.trim() !== "" && info.toLowerCase() !== "none",
-		) || [];
+
 	const { settings } = useSettingsStore();
 	const hasRequiredItems = filteredRequired.length > 0;
 	const hasRecommendedItems = filteredRecommended.length > 0;
 	const hasItems = hasRequiredItems || hasRecommendedItems;
-	const hasAdditionalInfo = filteredInfo.length > 0;
-	const hasImages = images && images.length > 0;
-	const hasPanelContent = hasItems || hasAdditionalInfo;
 
+	const hasImages = images && images.length > 0;
+
+	const swapResult = useQuestConditionalSwap(quest, step);
+
+	let displayStepDescription = step.stepDescription;
+	let displayAdditionalInfo = step.additionalStepInformation || [];
+	let activeChat = null;
+
+	if (swapResult) {
+		activeChat = swapResult.activeChat;
+
+		if (swapResult.textToDelete) {
+			console.log("Attempting to remove text:", {
+				// Enclose in quotes to see whitespace clearly
+				from: `"${displayStepDescription}"`,
+				and: `"${displayAdditionalInfo.join(" | ")}"`,
+				removing: `"${swapResult.textToDelete}"`,
+			});
+			displayStepDescription = removeTextFragment(
+				displayStepDescription,
+				swapResult.textToDelete,
+			);
+
+			displayAdditionalInfo = displayAdditionalInfo.map((info) =>
+				removeTextFragment(info, swapResult.textToDelete!),
+			);
+		}
+	}
+
+	if (activeChat) {
+		displayStepDescription = replaceChatTag(displayStepDescription, activeChat);
+	}
+
+	const filteredInfo = displayAdditionalInfo.filter(
+		(info) => info.trim() !== "",
+	);
+	const hasAdditionalInfo = filteredInfo.length > 0;
+	const hasPanelContent = hasItems || hasAdditionalInfo;
 	return (
 		<Accordion.Item
 			value={index.toString()}
@@ -95,7 +132,7 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 							<Text fw={700} component="span" c={settings.labelColor}>
 								Step {index + 1}:{" "}
 							</Text>
-							{step.stepDescription}
+							{displayStepDescription}
 						</Text>
 					</Box>
 
@@ -138,18 +175,22 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 								title="Has additional information"
 							/>
 						)}
-						{/* --- FIX: Map over the images array to create an icon for each one --- */}
 						{hasImages &&
 							images.map((image, imgIndex) => (
-								<ActionIcon
-									key={imgIndex}
-									variant="subtle"
-									color={isCompleted ? "teal" : "gray"}
-									title="View step image"
-									onClick={() => onImagePopOut(image.src, image.height, image.width)}
+								<div
+									key={`step-${index}-img-${imgIndex}`}
+									onClick={(e) => e.stopPropagation()}
 								>
-									<IconPhotoFilled size={18} />
-								</ActionIcon>
+									<ActionIcon
+										variant="subtle"
+										color={isCompleted ? "teal" : "gray"}
+										title="View step image"
+										onClick={() => onImagePopOut(image.src, image.height, image.width)}
+										component="div"
+									>
+										<IconPhotoFilled size={18} />
+									</ActionIcon>
+								</div>
 							))}
 					</Group>
 				</Flex>

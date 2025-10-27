@@ -28,7 +28,7 @@ import { useQuestPageFunctions } from "./questPageFunctions";
 import { useQuestDetails } from "./../../Fetchers/useQuestDetails";
 import { useDialogSolver } from "./dialogsolverRW";
 import { useQuestControllerStore } from "./../../Handlers/HandlerStore";
-
+import { getQuestSwaps } from "./../../util/DescriptionSwap";
 // Types
 import { Skills } from "./../../Fetchers/PlayerStatsSort";
 import { PlayerQuestStatus } from "./../../Fetchers/sortPlayerQuests";
@@ -178,10 +178,22 @@ const QuestPage: React.FC = () => {
 
 		if (!isNaN(nextStep) && nextStep !== active) {
 			setActive(nextStep);
-			updateCompletionState(nextStep); // <-- This is the key
+			updateCompletionState(nextStep);
 
 			if (settings.dialogSolverEnabled && questSteps?.[nextStep] && window.alt1) {
-				stepCapture(questSteps[nextStep].stepDescription);
+				const currentStep = questSteps[nextStep];
+				const swaps = getQuestSwaps(questName);
+				const deletionStrings = swaps.map((swap) => swap.deletedIf).filter(Boolean);
+
+				const filteredAdditionalInfo = (
+					currentStep.additionalStepInformation || []
+				).filter((info) => !deletionStrings.includes(info));
+
+				const infoString = filteredAdditionalInfo.join(". ");
+				const allSteps = [currentStep.stepDescription, infoString].join(" ");
+
+				console.log("Final text sent to stepCapture:", allSteps);
+				stepCapture(allSteps);
 			}
 		}
 	};
@@ -445,6 +457,7 @@ const QuestPage: React.FC = () => {
 										images={matchedImages}
 										onImagePopOut={handlePopOut}
 										onStepClick={settings.isExpandedMode ? handleStepClick : undefined}
+										quest={questName}
 									/>
 								);
 							})}

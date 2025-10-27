@@ -39,7 +39,6 @@ import UserNotes from "../Settings/userNotes";
 import QuestTodoList from "./Quest Picker Components/QuestTodoList";
 import QuestDisplay from "./Quest Picker Components/QuestDisplay";
 const QuestCarousel: React.FC = () => {
-	const theme = useMantineTheme(); // Get the theme object for breakpoints
 	// --- All hooks and logic remain the same ---
 	const [searchQuery, setSearchQuery] = useState("");
 	const debouncedQuery = searchQuery;
@@ -235,10 +234,6 @@ const QuestCarousel: React.FC = () => {
 						<Group
 							style={{
 								justifyContent: "center",
-								// This is the correct v7 syntax for a media query
-								[`@media (min-width: ${theme.breakpoints.lg})`]: {
-									justifyContent: "flex-start",
-								},
 							}}
 						>
 							<Button
@@ -263,9 +258,6 @@ const QuestCarousel: React.FC = () => {
 						<Group
 							style={{
 								justifyContent: "center",
-								[`@media (min-width: 75em`]: {
-									justifyContent: "flex-end",
-								},
 							}}
 						>
 							{!isSorted ? (

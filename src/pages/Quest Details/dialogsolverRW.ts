@@ -62,25 +62,30 @@ export const useDialogSolver = () => {
 	 * @Description Filters out Chat Options on Step String returned from stepCapture
 	 */
 	function getChatOptions(currentStep: string) {
-		let match = currentStep.match(/\(Chat\s*([\d~•✓]*)\)/);
-		if (!match) {
+		const chatRegex = /\(Chat\s*([\d~•✓]*)\)/g;
+		const allMatches = [...currentStep.matchAll(chatRegex)];
+		if (allMatches.length === 0) {
 			return;
 		}
-		if (match !== null) {
-			let splitValues: string[] = match[1]
+
+		const numericValues = allMatches.flatMap((match) => {
+			const chatString = match[1];
+			return chatString
 				.split("•")
-				.filter((value) => value !== "✓") // Remove "✓"
-				.map((value) => (value === "~" ? "1" : value)) // Replace "~" with "1"
-				.filter((value) => value !== undefined);
-			const numericValues = splitValues.map(Number);
-			currentStepChatOptions.current.splice(
-				0,
-				currentStepChatOptions.current.length,
-			);
-			currentStepChatOptions.current.push(...numericValues);
-			clearAllIntervals();
-			run();
-		}
+				.filter((value) => value !== "✓")
+				.map((value) => (value === "~" ? "1" : value))
+				.map(Number)
+				.filter((num) => !isNaN(num));
+		});
+
+		currentStepChatOptions.current.splice(
+			0,
+			currentStepChatOptions.current.length,
+		);
+		currentStepChatOptions.current.push(...numericValues);
+
+		clearAllIntervals();
+		run();
 	}
 	/**
 	 *@Description Captures the current step through alt1 hotkey or click of step on main questpage

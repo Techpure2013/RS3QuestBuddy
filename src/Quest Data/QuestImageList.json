@@ -4688,165 +4688,32 @@
 		"name": "Do No Evil",
 		"images": [
 			{
-				"step": "11",
-				"src": "Travel1.webp",
-				"width": 375,
-				"height": 375,
-				"stepDescription": "Take the chimp ice to King Awowogei without teleporting. Look in Images for Routes"
-			},
-			{
-				"step": "11",
-				"src": "Travel2.webp",
-				"width": 375,
-				"height": 375,
-				"stepDescription": "Take the chimp ice to King Awowogei without teleporting. Look in Images for Routes"
-			},
-			{
-				"step": "11",
-				"src": "Travel3.webp",
-				"width": 375,
-				"height": 375,
-				"stepDescription": "Take the chimp ice to King Awowogei without teleporting. Look in Images for Routes"
-			},
-			{
-				"step": "1",
-				"src": "Start.webp",
-				"width": 324,
-				"height": 156,
-				"stepDescription": "Items needed: Any kind of cat, kitten, or hellcat, 1,000 coins and desert survival equipment \nAfter completing Missing My Mummy, speak to Leela in Draynor Village; she will teleport the player to Senliten. Leela can only be found there afterwards.\nIf you need to return later, you can pick the option to return to the Pharaoh Queen directly (without having to go through the pyramid). If you lead Leela to the pyramid Fairy Ring DLQ. \nTalk to Senliten. (Chat 2•3•✓)"
-			},
-			{
-				"step": "1",
-				"src": "TalkSenliten.webp",
-				"width": 188,
-				"height": 127,
-				"stepDescription": "Items needed: Any kind of cat, kitten, or hellcat, 1,000 coins and desert survival equipment \nAfter completing Missing My Mummy, speak to Leela in Draynor Village; she will teleport the player to Senliten. Leela can only be found there afterwards.\nIf you need to return later, you can pick the option to return to the Pharaoh Queen directly (without having to go through the pyramid). If you lead Leela to the pyramid Fairy Ring DLQ. \nTalk to Senliten. (Chat 2•3•✓)"
-			},
-			{
-				"step": "2",
-				"src": "JexLocation.webp",
-				"width": 166,
-				"height": 146,
-				"stepDescription": "If players have completed Contact!, players can right click on Coenus by the bridge (near the Menaphos lodestone) to pass through to Sophanem. \nTo quickly enter the magic carpet network, use a charged amulet of glory and teleport to Al Kharid, or use a Desert amulet 2 to teleport to Nardah. \nHead to Sophanem and talk to Jex north of the Sphinx. (Chat 2•4•1•2•3)"
-			},
-			{
-				"step": "2",
-				"src": "TalkToJex.webp",
-				"width": 211,
-				"height": 254,
-				"stepDescription": "If players have completed Contact!, players can right click on Coenus by the bridge (near the Menaphos lodestone) to pass through to Sophanem. \nTo quickly enter the magic carpet network, use a charged amulet of glory and teleport to Al Kharid, or use a Desert amulet 2 to teleport to Nardah. \nHead to Sophanem and talk to Jex north of the Sphinx. (Chat 2•4•1•2•3)"
-			},
-			{
-				"step": "3",
-				"src": "TalkToSphynx.webp",
-				"width": 188,
-				"height": 226,
-				"stepDescription": "Drop the cat and talk to the Sphinx (Chat 2•3•4)"
-			},
-			{
-				"step": "7",
-				"src": "MonkeyLocations.webp",
-				"width": 243,
-				"height": 343,
-				"stepDescription": "Return to the three wise monkeys and talk to them. Then remove your greegree and speak to them in human form, then equip your greegree and speak to them again. (Chat 2•4)"
-			},
-			{
-				"step": "7",
-				"src": "3WiseMonkeys.webp",
-				"width": 319,
-				"height": 304,
-				"stepDescription": "Return to the three wise monkeys and talk to them. Then remove your greegree and speak to them in human form, then equip your greegree and speak to them again. (Chat 2•4)"
-			},
-			{
-				"step": "5",
-				"src": "GuardPath.webp",
-				"width": 355,
+				"step": 6,
+				"src": "DoNoEvil_step_6_1.webp",
 				"height": 256,
-				"stepDescription": "Items needed: Any Monkey greegree, a Monkeyspeak amulet, at least 10 coins, and some free inventory spots. (20+ to make it easy in one try, OP Tech could not) \nHead to Ape Atoll and equip the monkey greegree and monkeyspeak amulet, then speak to three wise monkeys in the The Temple of Marimbo (north-easternmost temple). (Chat 1•1)"
+				"width": 355,
+				"stepDescription": "Fill your inventory with Green bananas from the crate to the east and lay a trail to lure the guard to the crate."
 			},
 			{
-				"step": "8",
-				"src": "KingAwowowgei.webp",
-				"width": 149,
-				"height": 182,
-				"stepDescription": "Talk to King Awowogei, who is in the building south of the temple. (Chat 1•5•3) after if you dont already have a mould Hamab's crafting stall sells a Monkeyspeak amulet mould which is needed later in the quest. (Look in images for location)"
-			},
-			{
-				"step": "19",
-				"src": "OpenMonkeys.webp",
-				"width": 346,
+				"step": 13,
+				"src": "DoNoEvil_step_13_1.webp",
 				"height": 299,
-				"stepDescription": "Head north-west around the cliff to the area shown in Images and release the monkeys (open the barrel)."
-			},
-			{
-				"step": "19",
-				"src": "MonkeyLocation.webp",
-				"width": 251,
-				"height": 210,
-				"stepDescription": "Head north-west around the cliff to the area shown in Images and release the monkeys (open the barrel)."
-			},
-			{
-				"step": "21",
-				"src": "TalkAli.webp",
-				"width": 221,
-				"height": 174,
-				"stepDescription": "With your ring of charos (a) equipped, speak to Ali Morrisane (north of the Al Kharid lodestone). (Chat 2)"
-			},
-			{
-				"step": "24",
-				"src": "SpadeLoc.webp",
-				"width": 377,
-				"height": 153,
-				"stepDescription": "Pick up the spade in the easternmost room if you do not already have one."
-			},
-			{
-				"step": "25",
-				"src": "BwukSpot.webp",
 				"width": 346,
+				"stepDescription": "Head north-west around the cliff to the area shown in Images and release the monkeys (open the barrel)."
+			},
+			{
+				"step": 20,
+				"src": "DoNoEvil_step_20_1.webp",
 				"height": 272,
-				"stepDescription": "Go to the fountain in the south-western corner of the manor's grounds."
+				"width": 346,
+				"stepDescription": "Wear your Ava's alerter and walk two steps east from the dead tree that can be converted to a hidey-hole, just north-east of the fountain. Dig when it says Bwuk! Bwuk! Bwuk! Bwuk! (Location is in images)"
 			},
 			{
-				"step": "28",
-				"src": "crates_map.webp",
-				"width": 317,
+				"step": 22,
+				"src": "DoNoEvil_step_22_1.webp",
 				"height": 284,
-				"stepDescription": "Teleport to Bandit Camp and in the area north-east of the monkey camp search for crates using the map pictured right. You should dig up 5 crates, repeat this until you receive bundle of carpets."
-			},
-			{
-				"step": "34",
-				"src": "clear.webp",
-				"width": 344,
-				"height": 242,
-				"stepDescription": "Remove the rubble from the four building spots in the colony."
-			},
-			{
-				"step": "40",
-				"src": "MonkeyFighters.webp",
-				"width": 232,
-				"height": 197,
-				"stepDescription": "Items needed: gorilla greegree (also a ninja monkey greegree (small) if using the fairy ring), 1 Monkeyspeak amulet \nHead back to Ape Atoll and find the building with the monkey knife fighters; it is located just east of the building with the Monkey Child. \nPunch and pickpocket the monkey fighters for 6 knives. The success rate is fairly low, so be prepared to punch at least 30 monkeys."
-			},
-			{
-				"step": "47",
-				"src": "DeadMonkey.webp",
-				"width": 321,
-				"height": 331,
-				"stepDescription": "Investigate a corpse to make a ghost monkey appear."
-			},
-			{
-				"step": "52",
-				"src": "Leeuni.webp",
-				"width": 357,
-				"height": 255,
-				"stepDescription": "Kill Leeuni (50,000 life points). \nAfter defeating Leeuni, talk to Iwazaru."
-			},
-			{
-				"step": "52",
-				"src": "LeeuniDeath.webp",
-				"width": 353,
-				"height": 311,
-				"stepDescription": "Kill Leeuni (50,000 life points). \nAfter defeating Leeuni, talk to Iwazaru."
+				"width": 317,
+				"stepDescription": "Teleport to Bandit Camp and in the area north-east of the monkey camp search for crates using the map pictured at this step. You should dig up 5 crates, repeat this until you receive bundle of carpets."
 			}
 		]
 	},

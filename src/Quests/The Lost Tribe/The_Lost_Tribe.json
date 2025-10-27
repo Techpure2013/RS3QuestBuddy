@@ -13,7 +13,7 @@
       "additionalStepInformation": []
     },
     {
-      "stepDescription": "Talk to the following NPCs in Additional Info about Lumbridge cellar around the castle until one of them mentions a goblin",
+      "stepDescription": "Talk to Duke Horacio (Chat 3)\n",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
@@ -22,15 +22,60 @@
       },
       "floor": 0,
       "additionalStepInformation": [
-        "Duke Horacio (found in the same room in the castle as Sigmund),",
-        "The Cook ( Cannot continue if in the middle of Cooks Assistant. )",
-        "Hans wonder around the castle",
-        "Father Aereck in Lumbridge Church. Talk about gravestones then talk to him again.",
-        "Bob in his Axe Shop"
+        "(Chat 4) If Dragon Slayer has been started/completed."
       ]
     },
     {
-      "stepDescription": "Talk to the Duke. (Chat 3) (or (Chat 4) if Dragon Slayer has been started/completed)",
+      "stepDescription": "Talk to the Cook, just downstairs. (Chat 4)\n",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [
+        "(Chat 2) If Recipe for Disaster has been started but not finished.",
+        "(Chat 5) If Cook's Assistant has not started."
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Talk to Hans, in the courtyard. (Chat 4)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Talk to Father Aereck, in the church. (Chat 1)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [
+        "If you have not previously spoken to him about gravestones, you must complete that dialogue, then speak to him again."
+      ],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Talk to Bob the smith, in his axe shop. (Chat 4)",
+      "itemsNeeded": [],
+      "itemsRecommended": [],
+      "additionalStepInformation": [],
+      "highlights": {
+        "npc": [],
+        "object": []
+      },
+      "floor": 0
+    },
+    {
+      "stepDescription": "Talk to the Duke. (Chat 4)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
@@ -38,7 +83,9 @@
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": []
+      "additionalStepInformation": [
+        ""
+      ]
     },
     {
       "stepDescription": "Descend the trapdoor in the kitchen and mine the wall rubble to the east.",
@@ -1780,7 +1827,7 @@
       "additionalStepInformation": []
     },
     {
-      "stepDescription": "Talk to the Duke. (Chat 3) (or (Chat 4) if Dragon Slayer has been started)",
+      "stepDescription": "Talk to the Duke. (Chat 3)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
@@ -1788,7 +1835,9 @@
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": []
+      "additionalStepInformation": [
+        "(Chat 4) If Dragon Slayer has been started/completed."
+      ]
     },
     {
       "stepDescription": "Pickpocket Sigmund.",
@@ -1813,7 +1862,7 @@
       "additionalStepInformation": []
     },
     {
-      "stepDescription": "Talk to the Duke. (Chat 3) (or (Chat 4) if Dragon Slayer has been started)",
+      "stepDescription": "Talk to the Duke. (Chat 3)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
@@ -1821,7 +1870,9 @@
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": []
+      "additionalStepInformation": [
+        "(Chat 4) If Dragon Slayer has been started/completed."
+      ]
     },
     {
       "stepDescription": "Enter the H.A.M. Hideout west of the Lumbridge cow pen by using the 'pick-lock' option on the old mine entrance",
@@ -1846,7 +1897,7 @@
       "additionalStepInformation": []
     },
     {
-      "stepDescription": "Return to the Duke. (Chat 3) (or (Chat 4) if Dragon Slayer has been started)",
+      "stepDescription": "Return to the Duke. (Chat 3)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
@@ -1854,7 +1905,9 @@
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": []
+      "additionalStepInformation": [
+        "(Chat 4) If Dragon Slayer has been started/completed."
+      ]
     },
     {
       "stepDescription": "Go through the Lumbridge cellar and follow Kazgar.",
@@ -1889,5 +1942,26 @@
       "floor": 0,
       "additionalStepInformation": []
     }
-  ]
+  ],
+  "questDetails": {
+    "Quest": "The Lost Tribe",
+    "StartPoint": "Talk to Sigmund in Lumbridge Castle",
+    "MemberRequirement": "Members",
+    "OfficialLength": "Medium",
+    "Requirements": [
+      "13 Agility",
+      "17 Mining",
+      "13 Thieving"
+    ],
+    "ItemsRequired": [
+      "A light source, such as a lantern"
+    ],
+    "Recommended": [
+      "A lockpick",
+      "Active Falador, Lumbridge, and Varrock lodestones, or teleport runes"
+    ],
+    "EnemiesToDefeat": [
+      "None"
+    ]
+  }
 }

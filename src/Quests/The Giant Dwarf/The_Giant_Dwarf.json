@@ -211,17 +211,6 @@
       "additionalStepInformation": []
     },
     {
-      "stepDescription": "If you have not completed The Knight's Sword:",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": []
-    },
-    {
       "stepDescription": "Talk to Santiri again.",
       "itemsNeeded": [],
       "itemsRecommended": [],
@@ -255,18 +244,7 @@
       "additionalStepInformation": []
     },
     {
-      "stepDescription": "Take a redberry pie with you when you talk to Thurgo.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": []
-    },
-    {
-      "stepDescription": "If you have not completed The Knight's Sword: \nTake a redberry pie with you when you talk to Thurgo.",
+      "stepDescription": "If you have not completed The Knight's Sword take a redberry pie with you when you talk to thurgo.",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
@@ -285,30 +263,9 @@
         "object": []
       },
       "floor": 0,
-      "additionalStepInformation": []
-    },
-    {
-      "stepDescription": "If The Knight's Sword is complete (Chat 2•2•1)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": []
-    },
-    {
-      "stepDescription": "Have an iron bar to give to Thurgo either from your inventory or metal bank.",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
       "additionalStepInformation": [
-        ""
+        "If The Knight's Sword is complete (Chat 2•2•1)",
+        "Have an iron bar to give to Thurgo either from your inventory or metal bank."
       ]
     },
     {
@@ -355,21 +312,10 @@
       "floor": 0,
       "additionalStepInformation": [
         "Fetch them the required ore (must be un-noted).",
-        " Repeat with the same secretary for a total of 4 tasks.",
+        "Repeat with the same secretary for a total of 4 tasks.",
         "In the event you do not possess the ore or bars the secretary or director assigns as your task, you do not have to accept it, simply cancel the dialogue and request another task.",
         "This may make you have to do more than 4 tasks though as you may lose favour declining too many tasks."
       ]
-    },
-    {
-      "stepDescription": "Talk to the director. (Chat 3•~)",
-      "itemsNeeded": [],
-      "itemsRecommended": [],
-      "highlights": {
-        "npc": [],
-        "object": []
-      },
-      "floor": 0,
-      "additionalStepInformation": []
     },
     {
       "stepDescription": "Fetch them the required bars. Repeat for a total of 2 tasks.",
@@ -415,5 +361,39 @@
       "floor": 0,
       "additionalStepInformation": []
     }
-  ]
+  ],
+  "questDetails": {
+    "Quest": "The Giant Dwarf",
+    "StartPoint": "Talk to Commander Veldaban in the Black Guard headquarters on the western side of Keldagrim. To enter Keldagrim, talk to the dwarf boatman in the dwarven mine east of Rellekka.",
+    "MemberRequirement": "Members only",
+    "OfficialLength": "Medium to Long",
+    "Requirements": [
+      "12 Crafting",
+      "16 Firemaking",
+      "33 Magic",
+      "14 Thieving",
+      "Be on the normal spellbook (or able to use Spellbook Swap)",
+      "20 Mining (to mine coal)",
+      "10 Smithing (to smelt iron bar)"
+    ],
+    "ItemsRequired": [
+      "200 coins",
+      "Any log that you can set fire to",
+      "1 coal",
+      "1 iron bar",
+      "Runes to cast Telekinetic Grab (1 law rune and 1 air rune)",
+      "3 cut sapphires",
+      "1 Redberry pie (not required if you have completed The Knight's Sword quest)",
+      "Ores and bars from clay to mithril, which can be bought when the quest requires it"
+    ],
+    "Recommended": [
+      "About 10,000 coins (may vary on the tasks you get during the quest)",
+      "21 Agility (for underground tunnel to the GE)",
+      "Activated Port Sarim and Fremennik Province lodestone",
+      "Luck of the Dwarves or Hazelmere's signet ring teleport to Keldagrim (accessible after initial city entry in quest introduction)"
+    ],
+    "EnemiesToDefeat": [
+      "None"
+    ]
+  }
 }

@@ -225,6 +225,17 @@
 		"rewards": ["The Shard of Erebus"]
 	},
 	{
+		"Quest": "Beneath Scabaras' Sands",
+		"questPoints": 2,
+		"rewards": [
+			"Slayer XP lamp (yields 100,000 experience in Slayer; requires 87 Slayer)",
+			"Archaeology XP lamp (yields 100,000 experience in Archaeology; requires 86 Archaeology)",
+			"Combat XP lamp (yields 75,000 in the selected combat skill (Attack, Strength, Defence, Constitution, Ranged, Magic, or Necromancy); requires level 75 in the selected skill)",
+			"Access to Scabaras' Temple of Isolation and the Elite Profane Scabarites within",
+			"A primed keris and the ability to upgrade it to a consecrated keris, rewarding 40,000 Prayer experience when upgrading it. Talk to Scabaras again after the quest to receive it."
+		]
+	},
+	{
 		"Quest": "Beneath Cursed Tides",
 		"questPoints": 1,
 		"rewards": [
@@ -2441,9 +2452,13 @@
 		"rewards": ["150 Crafting XP", "2,000x Coins."]
 	},
 	{
-		"Quest": "The Shield of Arrav Quest",
+		"Quest": "Shield of Arrav",
 		"questPoints": 1,
-		"rewards": ["1,200 coins", "Two Treasure Hunter keys"]
+		"rewards": [
+			"1,200 coins",
+			"Two Treasure Hunter keys",
+			"If you are a member, you can talk to Historian Minas in the Varrock Museum to receive 5 kudos and an antique lamp that gives 1,000 experience in a skill of level 20 or above."
+		]
 	},
 	{
 		"Quest": "Shilo Village",
