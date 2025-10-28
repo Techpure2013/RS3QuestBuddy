@@ -5,7 +5,6 @@
 
 # drizzle cache/artifacts
 .drizzle
-drizzle/meta/*
 
 
 # local db data if you bind-mount
