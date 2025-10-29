@@ -12889,5 +12889,24 @@
 	{
 		"name": "Eclipse of the Heart",
 		"images": []
+	},
+	{
+		"name": "Field of Screams",
+		"images": [
+			{
+				"step": 2,
+				"src": "FieldofScreams_step_2_1.webp",
+				"height": 628,
+				"width": 629,
+				"stepDescription": "Wear or enable as a cosmetic override four components from the table at this step. If wearing an item, you must not override its slot with a cosmetic override."
+			},
+			{
+				"step": 2,
+				"src": "FieldofScreams_2.webp",
+				"height": 898,
+				"width": 630,
+				"stepDescription": "Wear or enable as a cosmetic override four components from the table at this step. If wearing an item, you must not override its slot with a cosmetic override."
+			}
+		]
 	}
 ]

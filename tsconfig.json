@@ -21,6 +21,6 @@
 		"typeRoots": ["./node_modules/@types", "./types"],
 		"lib": ["ES2020", "DOM", "DOM.Iterable"] // Add DOM libs for React
 	},
-	"include": ["src/**/*"],
+	"include": ["src/**/*", "src/scripts/**/*"],
 	"exclude": ["node_modules", "dist"]
 }

@@ -1,6 +1,7 @@
 import { ActionIcon, Box } from "@mantine/core";
 import { useEffect, useState } from "react";
 import ReactQuill from "react-quill";
+import "quill/dist/quill.snow.css";
 import "react-quill/dist/quill.snow.css";
 import ReactHtmlParser from "@orrisroot/react-html-parser";
 import { IconTrash } from "@tabler/icons-react";

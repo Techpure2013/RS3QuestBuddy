@@ -4,12 +4,12 @@ import QuestDetails from "./../Quest Data/QuestDetail.json";
 export type QuestDetailsType = {
 	Quest: string;
 	StartPoint: string;
-	EnemiesToDefeat: string[];
-	Requirements: string[];
 	MemberRequirement: string;
-	ItemsRequired: string[];
 	OfficialLength: string;
+	Requirements: string[];
+	ItemsRequired: string[];
 	Recommended: string[];
+	EnemiesToDefeat: string[];
 };
 
 export const useQuestDetails = () => {
@@ -26,7 +26,7 @@ export const useQuestDetails = () => {
 
 	const getQuestNamedDetails = (questName: string) => {
 		const filteredDetails = getQuestDetails.filter(
-			(quest) => quest.Quest === questName
+			(quest) => quest.Quest === questName,
 		);
 		if (Array.isArray(filteredDetails) && filteredDetails !== undefined) {
 			setQuestDetails(filteredDetails);

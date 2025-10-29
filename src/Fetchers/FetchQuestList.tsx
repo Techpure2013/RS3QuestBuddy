@@ -1,5 +1,4 @@
 export type Quest = {
-	toLowerCase(): unknown;
 	questName: string;
 	questAge: string;
 	series: string;

@@ -5,6 +5,9 @@
 
 # drizzle cache/artifacts
 .drizzle
+drizzle/
+scripts/
+drizzle.config.ts
 
 
 # local db data if you bind-mount
