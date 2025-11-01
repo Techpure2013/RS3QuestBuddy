@@ -4419,7 +4419,7 @@
 				"src": "DesertTreasure_step_34_1.webp",
 				"height": 604,
 				"width": 804,
-				"stepDescription": "Head back to the Bandit Camp. (Refer to image at next step)"
+				"stepDescription": "Head back to the Bandit Camp south of the pub to unlock a chest containing the Gilded cross. (Refer to image at this step for tent location)"
 			},
 			{
 				"step": 36,
@@ -4437,28 +4437,28 @@
 			},
 			{
 				"step": 39,
-				"src": "DesertTreasure_step_39_5.webp",
+				"src": "DesertTreasure_step_39_1.webp",
 				"height": 521,
 				"width": 700,
 				"stepDescription": "Run through the pyramid using the maps (refer to image's at this step). Don't stand still, or you may be transported back to the start. Also \nthere's a possibility that scarabs spawn in Azzanadra's room so... hopefully you brought a weapon, antipoison, and some more food just in case."
 			},
 			{
 				"step": 39,
-				"src": "DesertTreasure_step_39_1.webp",
-				"height": 604,
-				"width": 804,
-				"stepDescription": "Run through the pyramid using the maps (refer to image's at this step). Don't stand still, or you may be transported back to the start. Also \nthere's a possibility that scarabs spawn in Azzanadra's room so... hopefully you brought a weapon, antipoison, and some more food just in case."
-			},
-			{
-				"step": 39,
 				"src": "DesertTreasure_step_39_2.webp",
-				"height": 604,
-				"width": 804,
+				"height": 521,
+				"width": 700,
 				"stepDescription": "Run through the pyramid using the maps (refer to image's at this step). Don't stand still, or you may be transported back to the start. Also \nthere's a possibility that scarabs spawn in Azzanadra's room so... hopefully you brought a weapon, antipoison, and some more food just in case."
 			},
 			{
 				"step": 39,
 				"src": "DesertTreasure_step_39_3.webp",
+				"height": 604,
+				"width": 804,
+				"stepDescription": "Run through the pyramid using the maps (refer to image's at this step). Don't stand still, or you may be transported back to the start. Also \nthere's a possibility that scarabs spawn in Azzanadra's room so... hopefully you brought a weapon, antipoison, and some more food just in case."
+			},
+			{
+				"step": 39,
+				"src": "DesertTreasure_step_39_4.webp",
 				"height": 604,
 				"width": 804,
 				"stepDescription": "Run through the pyramid using the maps (refer to image's at this step). Don't stand still, or you may be transported back to the start. Also \nthere's a possibility that scarabs spawn in Azzanadra's room so... hopefully you brought a weapon, antipoison, and some more food just in case."
@@ -11423,11 +11423,25 @@
 		"name": "The Path of Glouphrie",
 		"images": [
 			{
-				"step": "1",
-				"src": "MachineChart.webp",
-				"width": 375,
+				"step": 23,
+				"src": "ThePathofGlouphrie_step_23_1.webp",
 				"height": 375,
-				"stepDescription": "Items needed: Crystal saw or small crystal seed. It is recommended to have around 10-14 free inventory spaces to make room for crystalline disks"
+				"width": 375,
+				"stepDescription": "Referencing the table at this step, insert discs on the left side of the machine to equal the values on the right side. Use Yewnock's exchanger to obtain shapes of lesser values."
+			},
+			{
+				"step": 36,
+				"src": "ThePathofGlouphrie_step_36_1.webp",
+				"height": 664,
+				"width": 497,
+				"stepDescription": "Go west into the large sewer entrance."
+			},
+			{
+				"step": 31,
+				"src": "ThePathofGlouphrie_step_31_1.webp",
+				"height": 719,
+				"width": 780,
+				"stepDescription": "Teleport to the Yanille lodestone and head south-west, travelling west along the southern wall of Castle Wars until you reach a bridge crossing a river."
 			}
 		]
 	},
@@ -11435,95 +11449,11 @@
 		"name": "The Prisoner of Glouphrie",
 		"images": [
 			{
-				"step": "1",
-				"src": "DungeonEntrance.webp",
-				"width": 229,
-				"height": 247,
-				"stepDescription": "Speak to Golrie in the Gnome Village Dungeon. (Chat 2•✓•4) (Note: If you run into a bug where you can't click the X to close the letter without it moving your character, right-click on the X and click \"Close\" or press \"Esc\" on your keyboard to close the note.)"
-			},
-			{
-				"step": "1",
-				"src": "GolrieLoc.webp",
-				"width": 267,
-				"height": 210,
-				"stepDescription": "Speak to Golrie in the Gnome Village Dungeon. (Chat 2•✓•4) (Note: If you run into a bug where you can't click the X to close the letter without it moving your character, right-click on the X and click \"Close\" or press \"Esc\" on your keyboard to close the note.)"
-			},
-			{
-				"step": "3",
-				"src": "PathToGolrana.webp",
-				"width": 362,
-				"height": 254,
-				"stepDescription": "Teleport to Castle Wars (or follow Elkoy out of the maze) and head to the highlighted area north of the Observatory and south of the Ourania altar (just north-east of the crystal tree)."
-			},
-			{
-				"step": "6",
-				"src": "LargeDeadTree.webp",
-				"width": 169,
-				"height": 228,
-				"stepDescription": "Walk up the path north-west until you reach a large dead tree. Search it, then climb-through it."
-			},
-			{
-				"step": "6",
-				"src": "ClimbThroughDeadTree.webp",
-				"width": 236,
-				"height": 291,
-				"stepDescription": "Walk up the path north-west until you reach a large dead tree. Search it, then climb-through it."
-			},
-			{
-				"step": "7",
-				"src": "InvestigateLedge.webp",
-				"width": 293,
-				"height": 274,
-				"stepDescription": "Investigate the ledge on the south end of the chasm and continue through the cave."
-			},
-			{
-				"step": "8",
-				"src": "JumnpGap.webp",
-				"width": 357,
-				"height": 284,
-				"stepDescription": "Move south and continue through the cave by jumping across gaps."
-			},
-			{
-				"step": "9",
-				"src": "JumpingStones.webp",
-				"width": 323,
-				"height": 253,
-				"stepDescription": "Travel north-west until reaching a water stream with stepping stones, but do not cross yet."
-			},
-			{
-				"step": "10",
-				"src": "InvestigateSmallCrevice.webp",
-				"width": 278,
-				"height": 153,
-				"stepDescription": "Before crossing the set of stepping stones, investigate the small crevice in the south wall to your immediate east."
-			},
-			{
-				"step": "12",
-				"src": "InvestigateSturdyTree.webp",
-				"width": 290,
-				"height": 210,
-				"stepDescription": "Go west to the ledge overlooking Lletya and investigate the sturdy tree, then climb-down it."
-			},
-			{
-				"step": "12",
-				"src": "underStepsGolrana.webp",
-				"width": 231,
-				"height": 216,
-				"stepDescription": "Go west to the ledge overlooking Lletya and investigate the sturdy tree, then climb-down it."
-			},
-			{
-				"step": "22",
-				"src": "AirVent.webp",
-				"width": 330,
-				"height": 228,
-				"stepDescription": "Once back up on the ledge, walk past the large boulder to the east, and Golrana should spot an air vent."
-			},
-			{
-				"step": "24",
-				"src": "ClimbStairs.webp",
-				"width": 319,
-				"height": 365,
-				"stepDescription": "Climb-up the stairs just next to you."
+				"step": 3,
+				"src": "ThePrisonerofGlouphrie_step_3_1.webp",
+				"height": 550,
+				"width": 934,
+				"stepDescription": "Teleport to Castle Wars or follow Elkoy out of the maze. Head to the highlighted area north of the Observatory and south of the Ourania altar (just north-east of the crystal tree)."
 			}
 		]
 	},
@@ -12232,18 +12162,18 @@
 		"name": "Tower of Life",
 		"images": [
 			{
-				"step": "1",
-				"src": "300px-Tolpipes2.webpd20ef.webp",
-				"width": 300,
-				"height": 196,
-				"stepDescription": "Talk to Effigy at the Tower of Life. (Chat 1•✓)"
+				"step": 9,
+				"src": "TowerofLife_step_9_1.webp",
+				"height": 225,
+				"width": 284,
+				"stepDescription": "All of the items you need for the quest will be found on the ground floor of the tower in crates. Refer to image for item crate locations."
 			},
 			{
-				"step": "1",
-				"src": "ToLPipePuzzle.webp",
-				"width": 300,
+				"step": 13,
+				"src": "TowerofLife_step_13_1.webp",
 				"height": 196,
-				"stepDescription": "Talk to Effigy at the Tower of Life. (Chat 1•✓)"
+				"width": 300,
+				"stepDescription": "Fix the pipe machine and move the pieces into the solution at this step."
 			}
 		]
 	},

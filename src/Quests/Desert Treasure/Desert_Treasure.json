@@ -424,7 +424,7 @@
       "additionalStepInformation": []
     },
     {
-      "stepDescription": "Head back to the Bandit Camp. (Refer to image at next step)",
+      "stepDescription": "Head back to the Bandit Camp south of the pub to unlock a chest containing the Gilded cross. (Refer to image at this step for tent location)",
       "itemsNeeded": [],
       "itemsRecommended": [],
       "highlights": {
@@ -529,5 +529,66 @@
       "floor": 0,
       "additionalStepInformation": []
     }
-  ]
+  ],
+  "questDetails": {
+    "Quest": "Desert Treasure",
+    "StartPoint": "Speak to Asgarnia Smith in the Bedabin Camp.",
+    "MemberRequirement": "Members Only",
+    "OfficialLength": "Very Long",
+    "Requirements": [
+      "The Dig Site",
+      "Troll Stronghold",
+      "Priest in Peril",
+      "50 Firemaking",
+      "50 Magic",
+      "10 Slayer",
+      "53 Thieving",
+      "Ironmen: 80 Woodcutting (unless you get magic logs as a drop)"
+    ],
+    "ItemsRequired": [
+      "Ashes",
+      "Blood rune",
+      "Bones",
+      "Charcoal",
+      "650 coins",
+      "6 molten glass (noted)",
+      "12 magic logs (noted)",
+      "6 steel bars (noted)",
+      "Chocolate cake, cake, or chocolate bar",
+      "Climbing boots",
+      "Face mask",
+      "Garlic",
+      "Up to 100 lockpicks or master thief's lockpick",
+      "Ice gloves",
+      "Silver bar",
+      "Spice",
+      "Spiked boots"
+    ],
+    "Recommended": [
+      "47 Agility",
+      "50 Mining",
+      "Higher Thieving level",
+      "Combat equipment (Magic or Necromancy recommended)",
+      "Runes for casting your best water spell or Ice arrows",
+      "Antipoisons",
+      "Active lodestones in various locations",
+      "Skills necklace",
+      "Completion of certain quests for transportation",
+      "About 1,500 coins for carpet rides",
+      "Desert heat protection",
+      "Single-click teleports",
+      "Charged druid pouch or an ouroboros pouch",
+      "Energy/super energy potions or explorer ring, prayer potions, and restore potions",
+      "Enchanted broomstick, bandit camp teleports, Archaeology journal, and/or a Dig Site pendant",
+      "A wicked hood"
+    ],
+    "EnemiesToDefeat": [
+      "Dessous (level 84)",
+      "Kamil (level 88)",
+      "Fareed (level 84)",
+      "2 Damis (level varies)",
+      "5 Ice Trolls (level 89)",
+      "Stranger (level 81; optional)"
+    ]
+  }
 }
