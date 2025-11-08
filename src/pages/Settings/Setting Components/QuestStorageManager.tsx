@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import {
 	Modal,
 	Checkbox,
@@ -25,33 +25,52 @@ const QuestStorageManager: React.FC<QuestStorageManagerProps> = ({
 	const [selectedQuests, setSelectedQuests] = useState<string[]>([]);
 
 	useEffect(() => {
-		if (opened) {
-			const questKeys = Object.keys(localStorage).filter((key) =>
-				key.startsWith(STORAGE_PREFIX),
-			);
-			const questNames = questKeys.map((key) => key.replace(STORAGE_PREFIX, ""));
-			setStoredQuests(questNames);
-			setSelectedQuests([]); // Reset selection when modal opens
-		}
+		if (!opened) return;
+		const questKeys = Object.keys(localStorage).filter((key) =>
+			key.startsWith(STORAGE_PREFIX),
+		);
+		const questNames = questKeys.map((key) => key.replace(STORAGE_PREFIX, ""));
+		setStoredQuests(questNames);
+		setSelectedQuests([]); // reset selection on open
 	}, [opened]);
 
+	const allSelected = useMemo(
+		() =>
+			storedQuests.length > 0 && selectedQuests.length === storedQuests.length,
+		[storedQuests, selectedQuests],
+	);
+
+	const toggleSelectAll = () => {
+		if (allSelected) {
+			setSelectedQuests([]);
+		} else {
+			setSelectedQuests(storedQuests.slice());
+		}
+	};
+
 	const handleDeleteSelected = () => {
+		if (selectedQuests.length === 0) return;
+
 		selectedQuests.forEach((questName) => {
 			localStorage.removeItem(`${STORAGE_PREFIX}${questName}`);
 		});
-		// Refresh the list after deletion
-		const remainingQuests = storedQuests.filter(
-			(q) => !selectedQuests.includes(q),
-		);
-		setStoredQuests(remainingQuests);
+
+		const remaining = storedQuests.filter((q) => !selectedQuests.includes(q));
+		setStoredQuests(remaining);
 		setSelectedQuests([]);
 	};
 
 	const handleDeleteAll = () => {
+		if (storedQuests.length === 0) return;
+
+		const confirm = window.confirm(
+			`Delete all (${storedQuests.length}) saved quest progress entries?`,
+		);
+		if (!confirm) return;
+
 		storedQuests.forEach((questName) => {
 			localStorage.removeItem(`${STORAGE_PREFIX}${questName}`);
 		});
-		// Clear the state after deleting all
 		setStoredQuests([]);
 		setSelectedQuests([]);
 	};
@@ -67,11 +86,27 @@ const QuestStorageManager: React.FC<QuestStorageManagerProps> = ({
 			<Stack>
 				{storedQuests.length > 0 ? (
 					<>
-						<Text size="sm">
-							Select the quest progress you wish to delete from your browser's storage.
-						</Text>
-						<ScrollArea mah={300}>
-							<Checkbox.Group value={selectedQuests} onChange={setSelectedQuests}>
+						<Group justify="space-between" align="center">
+							<Text size="sm">
+								Select the quest progress you wish to delete from your browser&apos;s
+								storage.
+							</Text>
+							<Button
+								variant="light"
+								size="xs"
+								onClick={toggleSelectAll}
+								aria-pressed={allSelected}
+							>
+								{allSelected ? "Deselect All" : "Select All"}
+							</Button>
+						</Group>
+
+						<ScrollArea mah={300} type="auto">
+							<Checkbox.Group
+								value={selectedQuests}
+								onChange={setSelectedQuests}
+								aria-label="Saved quest progress items"
+							>
 								<Stack gap="xs" p="xs">
 									{storedQuests.map((questName) => (
 										<Checkbox key={questName} value={questName} label={questName} />
@@ -79,6 +114,7 @@ const QuestStorageManager: React.FC<QuestStorageManagerProps> = ({
 								</Stack>
 							</Checkbox.Group>
 						</ScrollArea>
+
 						<Group justify="flex-end" mt="md">
 							<Button variant="outline" color="red" onClick={handleDeleteAll}>
 								Delete All ({storedQuests.length})
@@ -99,4 +135,5 @@ const QuestStorageManager: React.FC<QuestStorageManagerProps> = ({
 		</Modal>
 	);
 };
+
 export default QuestStorageManager;

@@ -1,6 +1,6 @@
 import { useSortedPlayerQuests } from "./../Fetchers/sortPlayerQuests";
 import { useMemo } from "react";
-import { QuestStep } from "./../Fetchers/useQuestData";
+import { QuestStep } from "./../state/types";
 
 export interface QuestStepSwap {
 	description: string;

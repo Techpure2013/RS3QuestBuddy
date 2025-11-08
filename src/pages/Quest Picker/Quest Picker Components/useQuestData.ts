@@ -1,28 +1,49 @@
-import { useState, useEffect, useCallback, useMemo } from "react";
-import { usePlayerStats } from "./../../../Fetchers/usePlayerStats";
-import { usePlayerQuests } from "./../../../Fetchers/usePlayerQuests";
-import { fetchQuestList, QuestList } from "./../../../Fetchers/FetchQuestList";
+import { useState, useMemo, useCallback, useEffect, useRef } from "react";
+import { usePlayer } from "./../../../Fetchers/usePlayer";
 import { useSortedPlayerQuests } from "./../../../Fetchers/sortPlayerQuests";
 
-// --- IMPORT THE JSON DIRECTLY ---
-// The build tool handles loading the file.
-// The path is relative from this file to the JSON file.
-import questRewardsData from "./../../../Quest Data/QuestRewards.json";
+import {
+	writeSession,
+	loadPlayerSession,
+	clearPlayerSession,
+	type PlayerSession,
+} from "./../../../idb/playerSessionStore";
 
-// Define the shape of our final, unified quest object for type safety
-type QuestRewardInfo = {
-	Quest: string;
-	questPoints: number;
-	rewards: string[];
+import {
+	saveQuestListAll,
+	loadQuestListAll,
+	type QuestListItem,
+} from "./../../../idb/questListStore";
+
+import type {
+	PlayerQuestStatus,
+	QuestAge,
+	QuestSeries,
+	Skills,
+} from "./../../../state/types";
+
+/* =====================
+   Types
+   ===================== */
+
+export type QuestListItemDto = {
+	id: number;
+	quest_name: string;
+	quest_series: QuestSeries;
+	quest_age: QuestAge;
+	quest_release_date: string | null;
+	quest_points: number;
+	quest_rewards: string[];
+	created_at: string;
+	updated_at: string;
 };
 
-// Get the array from the imported object. This is now a constant.
-const questRewards: QuestRewardInfo[] = questRewardsData;
+export type QuestList = QuestListItem[];
 
 export type EnrichedQuest = {
 	questName: string;
-	questAge: string;
-	series: string;
+	questAge: QuestAge;
+	series: QuestSeries;
 	releaseDate: string;
 	title: string;
 	status: "COMPLETED" | "NOT_STARTED" | "STARTED";
@@ -32,168 +53,383 @@ export type EnrichedQuest = {
 	rewards: string[];
 };
 
-export function useQuestData() {
-	// --- State Declarations ---
-	const [questList, setQuestList] = useState<QuestList | null>(() => {
-		const storedList = sessionStorage.getItem("staticQuestList");
-		try {
-			if (storedList) {
-				const parsedList = JSON.parse(storedList);
-				if (Array.isArray(parsedList)) {
-					return parsedList;
-				}
-			}
-		} catch (e) {
-			console.error("Failed to parse stored quest list", e);
-		}
-		return null;
-	});
-	// We no longer need useState for questRewards, it's a constant.
+function getApiBase(): string {
+	const cfg = window.__APP_CONFIG__;
+	if (cfg?.API_BASE) {
+		return cfg.API_BASE.endsWith("/") ? cfg.API_BASE.slice(0, -1) : cfg.API_BASE;
+	}
+	return "/api";
+}
 
+type AllFullResponse = {
+	items: QuestListItemDto[];
+	updatedAt?: string;
+};
+
+async function fetchAllQuestsFullRaw(): Promise<AllFullResponse> {
+	const r = await fetch(`${getApiBase()}/quests/all-full`, {
+		credentials: "same-origin",
+	});
+	if (!r.ok) throw new Error("all-full failed");
+	return r.json();
+}
+
+function mapDtoToQuestList(items: QuestListItemDto[]): QuestList {
+	return items.map((i) => ({
+		questName: i.quest_name,
+		questAge: i.quest_age,
+		series: i.quest_series,
+		releaseDate: i.quest_release_date ?? "",
+		questPoints: String(i.quest_points ?? 0),
+		rewards: Array.isArray(i.quest_rewards) ? i.quest_rewards : [],
+	}));
+}
+
+/* =====================
+   Hook
+   ===================== */
+
+export function useQuestData() {
+	// Quest list (IDB first -> refresh)
+	const [questState, setQuestState] = useState<{
+		list: QuestList | null;
+		updatedAt?: string;
+	}>({
+		list: null,
+		updatedAt: undefined,
+	});
+	const questList = questState.list;
+	const cachedSkillsRef = useRef<Skills | null>(null);
+
+	// Player session (IDB + memory)
 	const [playerName, setPlayerName] = useState<string>("");
 	const [isSorted, setIsSorted] = useState<boolean>(false);
-	const [playerFound, setPlayerFound] = useState<boolean>(() => {
-		// Player is only "found" if ALL necessary data exists in storage.
-		return (
-			!!sessionStorage.getItem("playerName") &&
-			!!sessionStorage.getItem("processedPlayerQuests") &&
-			!!sessionStorage.getItem("staticQuestList")
-		);
-	});
-
-	// --- Child Hooks ---
-	const { isLoading: isStatsLoading, fetchPlayerStats } = usePlayerStats();
+	const [playerFound, setPlayerFound] = useState<boolean>(false);
+	const [hydratedEnriched, setHydratedEnriched] = useState<
+		EnrichedQuest[] | null
+	>(null);
+	const setSortState = (sorted: boolean) => setIsSorted(sorted);
+	// Consolidated player fetch (skills + quests via /api)
+	const { skills, quests, loading, fetchPlayer, resetPlayer } = usePlayer();
+	const skillLevels = skills ?? cachedSkillsRef.current ?? null;
+	// Sorting on runemetrics quests
 	const {
-		playerQuests,
-		questIsLoading: isQuestLoading,
-		fetchPlayerQuests,
-	} = usePlayerQuests();
-	let { alteredQuestData, totalQuestPoints, sortPlayerQuests } =
-		useSortedPlayerQuests();
-	const isLoading = isStatsLoading || isQuestLoading;
+		alteredQuestData,
+		totalQuestPoints,
+		sortPlayerQuests,
+		completedPlayerQuests,
+	} = useSortedPlayerQuests();
 
-	// --- Effects ---
+	// Global loading = consolidated loading
+	const isLoading = loading;
+
+	/* Load quest list: IDB fast, then refresh */
 	useEffect(() => {
-		// We only need to fetch the quest list now, not the rewards.
-		if (!questList) {
-			fetchQuestList().then((ql) => {
-				if (ql) {
-					setQuestList(ql);
-					sessionStorage.setItem("staticQuestList", JSON.stringify(ql));
+		let cancelled = false;
+		(async () => {
+			try {
+				// 1) IDB
+				const cached = await loadQuestListAll();
+				if (!cancelled && cached?.items?.length) {
+					setQuestState((prev) => {
+						if (prev.updatedAt === cached.updatedAt) return prev;
+						return { list: cached.items, updatedAt: cached.updatedAt };
+					});
 				}
-			});
-		}
-	}, [questList]);
 
-	useEffect(() => {
-		if (playerFound) {
-			const sessionPlayer = sessionStorage.getItem("playerName");
-			if (sessionPlayer) {
-				setPlayerName(sessionPlayer);
+				// 2) API
+				const freshResp = await fetchAllQuestsFullRaw();
+				const fresh = mapDtoToQuestList(freshResp.items);
+				const freshUpdated = freshResp.updatedAt ?? new Date().toISOString();
+
+				if (!cancelled) {
+					setQuestState((prev) => {
+						const sameVersion = prev.updatedAt === freshUpdated;
+						const sameLen = prev.list?.length === fresh.length;
+						const sameNames =
+							sameLen &&
+							prev.list!.every((v, i) => v.questName === fresh[i].questName);
+						if (sameVersion && sameNames) return prev;
+						return { list: fresh, updatedAt: freshUpdated };
+					});
+					await saveQuestListAll({ items: fresh, updatedAt: freshUpdated });
+				}
+			} catch (e) {
+				console.error("Failed to load/refresh quest list:", e);
 			}
-		}
-	}, [playerFound]);
+		})();
+		return () => {
+			cancelled = true;
+		};
+	}, []);
 
+	/* Hydrate active player session from IDB*/
 	useEffect(() => {
-		if (playerQuests && playerQuests.length > 0) {
-			sortPlayerQuests(playerQuests);
-		}
-	}, [playerQuests, sortPlayerQuests]);
+		(async () => {
+			try {
+				const session = await loadPlayerSession();
+				if (session?.playerName) {
+					setPlayerName(session.playerName);
+					setPlayerFound(true);
 
-	// --- Data Enrichment Pipeline ---
+					// 1) restore user’s sort choice
+					if (typeof session.isSorted === "boolean") {
+						setIsSorted(session.isSorted);
+					} else {
+						setIsSorted(false);
+					}
+
+					// in hydration effect (your snippet), after you load session:
+					if (session?.skillLevels) {
+						cachedSkillsRef.current = session.skillLevels; // keep cached skills
+					}
+					// 2) instant rebuild: merge cached remaining + completed into raw quests
+					const cachedRaw: PlayerQuestStatus[] = [
+						...(Array.isArray(session.remainingQuest) ? session.remainingQuest : []),
+						...(Array.isArray(session.hasCompleted) ? session.hasCompleted : []),
+					];
+					if (cachedRaw.length > 0) {
+						sortPlayerQuests(cachedRaw); // fills alteredQuestData quickly
+					}
+
+					// 3) optional immediate display fallback (do NOT force sort)
+					if (
+						Array.isArray(session.enrichedQuests) &&
+						session.enrichedQuests.length > 0
+					) {
+						setHydratedEnriched(session.enrichedQuests as EnrichedQuest[]);
+					}
+				} else {
+					setPlayerFound(false);
+				}
+			} catch (e) {
+				console.error("Failed to load player session from IDB:", e);
+				setPlayerFound(false);
+			}
+		})();
+	}, [sortPlayerQuests]);
+
+	/* Sort whenever consolidated quests change */
+	useEffect(() => {
+		if (quests?.length) {
+			sortPlayerQuests(quests);
+		} else {
+			sortPlayerQuests(null);
+		}
+	}, [quests, sortPlayerQuests]);
+
+	/* Base enrichment (no player) */
 	const baseEnrichedQuests: EnrichedQuest[] = useMemo(() => {
-		if (!questList || !Array.isArray(questRewards)) return [];
-		const rewardsMap = new Map(
-			questRewards.map((r) => [r.Quest.trim().toLowerCase(), r.rewards]),
-		);
-		return questList.map((quest) => ({
-			...quest,
-			title: quest.questName,
-			status: "NOT_STARTED",
+		if (!questList) return [];
+		return questList.map((q) => ({
+			questName: q.questName,
+			questAge: q.questAge as QuestAge,
+			series: q.series as QuestSeries,
+			releaseDate: q.releaseDate ?? "",
+			title: q.questName,
+			status: "NOT_STARTED" as const,
 			difficulty: 0,
 			userEligible: false,
-			questPoints: parseInt(quest.questPoints, 10) || 0,
-			rewards: rewardsMap.get(quest.questName.trim().toLowerCase()) || [],
+			questPoints: Number.parseInt(q.questPoints, 10) || 0,
+			rewards: Array.isArray(q.rewards) ? q.rewards : [],
 		}));
 	}, [questList]);
 
-	const playerEnrichedQuests: EnrichedQuest[] = useMemo(() => {
-		if (
-			!questList ||
-			!Array.isArray(questRewards) ||
-			!alteredQuestData ||
-			alteredQuestData.length === 0
-		) {
-			return [];
-		}
-
-		const rewardsMap = new Map(
-			questRewards.map((r) => [r.Quest.trim().toLowerCase(), r.rewards]),
-		);
-		const questDetailsMap = new Map(
-			questList.map((quest) => [quest.questName, quest]),
-		);
-		return alteredQuestData
-			.map((playerQuest) => {
-				const details = questDetailsMap.get(playerQuest.title);
-				if (!details) return null;
+	/* Player enrichment (after sort hook) */
+	const playerEnrichedQuests = useMemo(() => {
+		if (!questList || !alteredQuestData?.length) return [];
+		const map = new Map(questList.map((q) => [q.questName, q]));
+		const merged = alteredQuestData
+			.map((pq) => {
+				const base = map.get(pq.title);
+				if (!base) return null;
 				return {
-					...details,
-					...playerQuest,
-					rewards: rewardsMap.get(playerQuest.title.trim().toLowerCase()) || [],
+					...base,
+					...pq,
+					title: base.questName,
+					questPoints: parseInt(base.questPoints, 10) || 0,
+					rewards: Array.isArray(base.rewards) ? base.rewards : [],
 				} as EnrichedQuest;
 			})
-			.filter((q): q is EnrichedQuest => q !== null);
+			.filter(Boolean) as EnrichedQuest[];
+
+		return merged;
 	}, [questList, alteredQuestData]);
-
-	const activeQuestList =
-		playerFound && !!isSorted ? playerEnrichedQuests : baseEnrichedQuests;
-
-	const remainingQuests: EnrichedQuest[] = useMemo(() => {
+	console.log("useQuestData skills", skills);
+	/* Remaining (eligible + not completed) when sorted */
+	const remainingEligible = useMemo(() => {
 		return playerEnrichedQuests.filter(
 			(q) =>
 				q.userEligible && (q.status === "NOT_STARTED" || q.status === "STARTED"),
 		);
 	}, [playerEnrichedQuests]);
+	const remainingAll = useMemo(() => {
+		return playerEnrichedQuests.filter((q) => q.status !== "COMPLETED");
+	}, [playerEnrichedQuests]);
+	const remainingQuests: EnrichedQuest[] =
+		remainingEligible.length > 0 ? remainingEligible : remainingAll;
 
-	const displayQuests =
-		isSorted && playerFound ? remainingQuests : activeQuestList;
-	// --- Core Logic ---
+	/* Prefer hydrated enriched if present and we haven't recomputed yet */
+	const preferHydrated =
+		hydratedEnriched?.length &&
+		playerFound &&
+		alteredQuestData.length === 0 &&
+		!isSorted;
+
+	/* Display enrichment */
+	const displayQuests: EnrichedQuest[] = useMemo(() => {
+		if (preferHydrated) return hydratedEnriched!;
+		return isSorted && playerFound ? remainingQuests : baseEnrichedQuests;
+	}, [
+		preferHydrated,
+		hydratedEnriched,
+		isSorted,
+		playerFound,
+		remainingQuests,
+		baseEnrichedQuests,
+	]);
+	/* Search and persist to IDB */
 	const searchForPlayer = useCallback(
 		async (name: string) => {
 			if (isLoading) return;
-			setPlayerName(name);
-			const statsFound = await fetchPlayerStats(name);
-			const questsFound = await fetchPlayerQuests(name);
-			const wasPlayerFound = statsFound && questsFound;
-			if (wasPlayerFound) {
+			const trimmed = name.trim();
+			if (!trimmed) return;
+
+			const ok = await fetchPlayer(trimmed); // sets quests + skills in usePlayer
+			if (ok) {
+				setPlayerName(trimmed);
 				setPlayerFound(true);
-				sessionStorage.setItem("playerName", name);
+				// Do not save here; wait for the persist effect (below)
 			} else {
 				setPlayerFound(false);
-				sessionStorage.removeItem("playerName");
-				sessionStorage.removeItem("processedPlayerQuests");
-				sessionStorage.removeItem("hasCompleted");
+				try {
+					await clearPlayerSession(); // only wipe on failed searches
+				} catch {}
 			}
 		},
-		[fetchPlayerStats, fetchPlayerQuests, isLoading],
+		[isLoading, fetchPlayer],
 	);
 
-	const clearPlayerSearch = () => {
-		sessionStorage.clear();
-		setPlayerName("");
-		setIsSorted(false);
-		setSortState(false);
-		sortPlayerQuests(null);
-		setPlayerFound(false);
-		setQuestList(null);
-	};
+	/* Persist enriched view + completed/remaining to IDB; only on real changes */
+	const lastSavedRef = useRef<{
+		completedLen: number;
+		remainingLen: number;
+		enrichedLen: number;
+		hadSkills: boolean;
+	} | null>(null);
+	useEffect(() => {
+		let cancelled = false;
+		(async () => {
+			try {
+				const current = await loadPlayerSession();
+				if (cancelled) return;
 
-	const setSortState = (sorted: boolean) => {
-		setIsSorted(sorted);
-	};
+				// Build a minimal base if we don't have a session yet
+				const base: PlayerSession = current ?? {
+					playerName: playerName || "",
+					hasCompleted: [],
+					remainingQuest: [],
+					enrichedQuests: [],
+					skillLevels: null,
+					updatedAt: new Date().toISOString(),
+				};
 
-	// --- Return Value ---
+				if (base.isSorted === isSorted) {
+					return;
+				}
+
+				await writeSession({
+					...base,
+					isSorted,
+					updatedAt: new Date().toISOString(),
+				});
+			} catch (e) {
+				console.error("Failed to persist isSorted:", e);
+			}
+		})();
+		return () => {
+			cancelled = true;
+		};
+	}, [isSorted, playerName]);
+	useEffect(() => {
+		(async () => {
+			if (!playerFound || !playerName) return;
+
+			const enriched = isSorted ? remainingQuests : playerEnrichedQuests;
+
+			const haveSkills = !!skills;
+			const completedNow = completedPlayerQuests ?? [];
+			const haveCompleted = completedNow.length > 0;
+			const haveRemaining = remainingQuests.length > 0;
+			const haveEnriched = enriched.length > 0;
+
+			// If nothing useful yet, and there's already a session, do not overwrite
+			if (!haveSkills && !haveCompleted && !haveRemaining && !haveEnriched) {
+				return;
+			}
+
+			// Avoid redundant saves: compare lengths + skills presence
+			const sig = {
+				completedLen: completedNow.length,
+				remainingLen: remainingQuests.length,
+				enrichedLen: enriched.length,
+				hadSkills: haveSkills,
+			};
+			if (
+				lastSavedRef.current &&
+				lastSavedRef.current.completedLen === sig.completedLen &&
+				lastSavedRef.current.remainingLen === sig.remainingLen &&
+				lastSavedRef.current.enrichedLen === sig.enrichedLen &&
+				lastSavedRef.current.hadSkills === sig.hadSkills
+			) {
+				return;
+			}
+			lastSavedRef.current = sig;
+
+			// Merge with existing session to avoid wiping non-empty fields with empty
+			const current = (await loadPlayerSession()) as PlayerSession | null;
+
+			const session: PlayerSession = {
+				playerName,
+				hasCompleted: haveCompleted ? completedNow : (current?.hasCompleted ?? []),
+				remainingQuest: haveRemaining
+					? remainingQuests
+					: (current?.remainingQuest ?? []),
+				enrichedQuests: haveEnriched ? enriched : (current?.enrichedQuests ?? []),
+				skillLevels: haveSkills ? skills! : (current?.skillLevels ?? null),
+				updatedAt: new Date().toISOString(),
+			};
+
+			try {
+				await writeSession(session);
+			} catch (e) {
+				console.error("Failed to save player session:", e);
+			}
+		})();
+	}, [
+		playerFound,
+		playerName,
+		isSorted,
+		skills,
+		remainingQuests,
+		playerEnrichedQuests,
+		completedPlayerQuests,
+	]);
+
+	const clearPlayerSearch = useCallback(() => {
+		(async () => {
+			try {
+				await clearPlayerSession();
+			} catch {}
+			setPlayerName("");
+			setIsSorted(false);
+			setPlayerFound(false);
+			setHydratedEnriched(null);
+			sortPlayerQuests(null);
+			resetPlayer();
+		})();
+	}, [sortPlayerQuests, resetPlayer]);
+
 	return {
 		questList,
 		playerName,
@@ -203,6 +439,8 @@ export function useQuestData() {
 		questPoints: totalQuestPoints,
 		displayQuests,
 		remainingQuestsCount: remainingQuests.length,
+		skillLevels: skillLevels,
+		completedQuests: completedPlayerQuests ?? [],
 		searchForPlayer,
 		clearPlayerSearch,
 		setSortState,

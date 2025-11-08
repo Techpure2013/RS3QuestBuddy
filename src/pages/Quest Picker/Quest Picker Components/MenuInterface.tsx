@@ -1,6 +1,5 @@
 import { Badge, Button, Menu } from "@mantine/core";
 import {
-	IconAward,
 	IconBooks,
 	IconCalendarEvent,
 	IconChevronDown,
@@ -9,6 +8,8 @@ import {
 } from "@tabler/icons-react";
 import SubMenu from "./SubMenu"; // Make sure the path to SubMenu is correct
 import { CustomIcon } from "./CustomIcon";
+import { Filter, SortKey } from "./../QuestCarousel";
+import type { QuestAge, QuestSeries } from "./../../../state/types";
 // Data for the sub-menus
 const questAges = [
 	"Fifth Age",
@@ -61,23 +62,16 @@ const questSeries = [
 
 // Define the props interface for type safety
 interface MenuInterfaceProps {
-	onFilterChange: (type: string, value: string) => void;
-}
-
-// The component now accepts a props object and destructures questList from it
-interface MenuInterfaceProps {
-	onFilterChange: (type: string, value: string) => void;
-	activeFilterCount: number; // New prop to receive the count of active filters
+	onFilterChange: (value: Filter) => void;
+	onSortChange: (key: SortKey) => void;
+	activeFilterCount: number;
 }
 
 function MenuInterface({
 	onFilterChange,
+	onSortChange,
 	activeFilterCount,
 }: MenuInterfaceProps) {
-	function handleFilterChange(filterType: string, value: string) {
-		onFilterChange(filterType, value);
-	}
-
 	const areFiltersActive = activeFilterCount > 0;
 
 	return (
@@ -88,7 +82,7 @@ function MenuInterface({
 				width={220}
 				withinPortal
 				radius="md"
-				shadow="md" // Add a subtle shadow for depth
+				shadow="md"
 			>
 				<Menu.Target>
 					<Button
@@ -109,38 +103,41 @@ function MenuInterface({
 						Filter Quests
 					</Button>
 				</Menu.Target>
+
 				<Menu.Dropdown>
-					{/* Use the reusable SubMenu component for Quest Age */}
 					<SubMenu
 						leftSection={<IconClock size={16} />}
 						title="Quest Age"
 						items={questAges}
-						onItemClick={(value: string) => handleFilterChange("Quest Age", value)}
+						onItemClick={(value: string) =>
+							onFilterChange({ type: "Quest Age", value: value as QuestAge })
+						}
 					/>
-					{/* Use the reusable SubMenu component for Series */}
 					<SubMenu
 						leftSection={<IconBooks size={16} />}
 						title="Series"
 						items={questSeries}
-						onItemClick={(value: string) => handleFilterChange("Series", value)}
-						scrollable // Enable scrolling for this long list
+						scrollable
+						onItemClick={(value: string) =>
+							onFilterChange({ type: "Series", value: value as QuestSeries })
+						}
 					/>
-					{/* Standard menu items for sorting */}
+
 					<Menu.Item
 						leftSection={<CustomIcon src="./assets/Quest_points.png" />}
-						onClick={() => handleFilterChange("Sort", "Quest Points")}
+						onClick={() => onSortChange("Quest Points")}
 					>
 						Quest Points
 					</Menu.Item>
 					<Menu.Item
 						leftSection={<IconCalendarEvent size={16} />}
-						onClick={() => handleFilterChange("Sort", "Release Date")}
+						onClick={() => onSortChange("Release Date")}
 					>
 						Release Date
 					</Menu.Item>
 					<Menu.Item
 						leftSection={<CustomIcon src="./assets/IronmanImage.png" />}
-						onClick={() => handleFilterChange("Sort", "Efficient Ironman Quests")}
+						onClick={() => onSortChange("Efficient Ironman Quests")}
 					>
 						Efficient Ironman Quests
 					</Menu.Item>

@@ -56,21 +56,7 @@ const replacementMap = new Map<string, string>([
 ]);
 
 export const useSortedPlayerQuests = () => {
-	// Initialize state with a function that checks sessionStorage
-	const [rawQuests, setRawQuests] = useState<PlayerQuestStatus[]>(() => {
-		const storedQuests = sessionStorage.getItem("processedPlayerQuests");
-		if (storedQuests) {
-			try {
-				const parsedQuests = JSON.parse(storedQuests);
-				if (Array.isArray(parsedQuests)) {
-					return parsedQuests;
-				}
-			} catch (e) {
-				console.error("Failed to parse stored quests", e);
-			}
-		}
-		return []; // Default to an empty array if nothing is found
-	});
+	const [rawQuests, setRawQuests] = useState<PlayerQuestStatus[]>();
 
 	const sortPlayerQuests = useCallback(
 		(questData: PlayerQuestStatus[] | null) => {
@@ -84,6 +70,7 @@ export const useSortedPlayerQuests = () => {
 			return {
 				alteredQuestData: [],
 				completedPlayerQuests: [],
+				remainingPlayerQuests: [],
 				notStartedPlayerQuests: [],
 				startedPlayerQuests: [],
 				eligiblePlayerQuests: [],
@@ -92,50 +79,44 @@ export const useSortedPlayerQuests = () => {
 			};
 		}
 
-		const updatedData = rawQuests
+		const normalized = rawQuests
 			.map((quest) => {
 				const newTitle = replacementMap.get(quest.title) ?? quest.title;
 				return { ...quest, title: newTitle };
 			})
 			.filter((quest) => quest.title !== "");
 
-		const updatedWithQuestPoints = updatedData.map((quest) => {
-			switch (quest.title.toLowerCase()) {
-				case "that old black magic: hermy and bass":
-					quest.questPoints = 2;
-					break;
-				case "dimension of disaster: curse of arrav":
-					quest.questPoints = 3;
-					break;
-				case "once upon a time in gielinor: finale":
-					quest.questPoints = 4;
-					break;
-				case "necromancy!":
-					quest.questPoints = 1;
-					break;
-				default:
-					break;
-			}
-			return quest;
+		const withPoints = normalized.map((quest) => {
+			const lower = quest.title.toLowerCase();
+			const qp =
+				lower === "that old black magic: hermy and bass"
+					? 2
+					: lower === "dimension of disaster: curse of arrav"
+						? 3
+						: lower === "once upon a time in gielinor: finale"
+							? 4
+							: lower === "necromancy!"
+								? 1
+								: (quest.questPoints ?? 0);
+			return { ...quest, questPoints: qp };
 		});
 
-		const completed = updatedWithQuestPoints.filter(
-			(q) => q.status === "COMPLETED",
-		);
-		const notStarted = updatedWithQuestPoints.filter(
-			(q) => q.status === "NOT_STARTED",
-		);
-		const started = updatedWithQuestPoints.filter((q) => q.status === "STARTED");
-		const eligible = updatedWithQuestPoints.filter((q) => q.userEligible);
-		const notEligible = updatedWithQuestPoints.filter((q) => !q.userEligible);
+		const completed = withPoints.filter((q) => q.status === "COMPLETED");
+		const notStarted = withPoints.filter((q) => q.status === "NOT_STARTED");
+		const started = withPoints.filter((q) => q.status === "STARTED");
+		const eligible = withPoints.filter((q) => q.userEligible);
+		const notEligible = withPoints.filter((q) => !q.userEligible);
+		const remaining = withPoints.filter((q) => q.status !== "COMPLETED");
+
 		const totalPoints = completed.reduce(
 			(sum, q) => sum + (q.questPoints || 0),
 			0,
 		);
 
 		return {
-			alteredQuestData: updatedWithQuestPoints,
+			alteredQuestData: withPoints,
 			completedPlayerQuests: completed,
+			remainingPlayerQuests: remaining,
 			notStartedPlayerQuests: notStarted,
 			startedPlayerQuests: started,
 			eligiblePlayerQuests: eligible,
@@ -143,25 +124,6 @@ export const useSortedPlayerQuests = () => {
 			totalQuestPoints: totalPoints,
 		};
 	}, [rawQuests]);
-
-	// This effect now saves BOTH lists whenever the source data changes
-	useEffect(() => {
-		// The guard clause prevents overwriting good data with an empty array on initial load.
-		if (rawQuests.length > 0) {
-			// Save the normalized data that can be used to re-hydrate the state.
-			// We use `sortedData.alteredQuestData` because it's the final, cleaned version.
-			sessionStorage.setItem(
-				"processedPlayerQuests",
-				JSON.stringify(sortedData.alteredQuestData),
-			);
-
-			// Also save the completed list for the other page.
-			sessionStorage.setItem(
-				"hasCompleted",
-				JSON.stringify(sortedData.completedPlayerQuests),
-			);
-		}
-	}, [rawQuests, sortedData.alteredQuestData, sortedData.completedPlayerQuests]);
 
 	return {
 		...sortedData,

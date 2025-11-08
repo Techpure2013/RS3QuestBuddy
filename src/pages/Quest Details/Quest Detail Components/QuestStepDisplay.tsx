@@ -21,7 +21,7 @@ import {
 	IconPointFilled,
 	IconHourglassLow,
 } from "@tabler/icons-react";
-import { QuestStep } from "./../../../Fetchers/useQuestData";
+import type { QuestStep } from "../../../state/types";
 import { QuestImage } from "./../../../Fetchers/handleNewImage";
 import { useSettingsStore } from "./../../../pages/Settings/Setting Components/useSettingsStore";
 import {
@@ -30,6 +30,7 @@ import {
 	useQuestConditionalSwap,
 } from "./../../../util/DescriptionSwap";
 type CompactQuestStepProps = {
+	safeQuestName: string;
 	step: QuestStep;
 	index: number;
 	isCompleted: boolean;
@@ -40,6 +41,7 @@ type CompactQuestStepProps = {
 };
 
 export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
+	safeQuestName,
 	step,
 	index,
 	isCompleted,
@@ -100,6 +102,16 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 	);
 	const hasAdditionalInfo = filteredInfo.length > 0;
 	const hasPanelContent = hasItems || hasAdditionalInfo;
+	function appBase(): string {
+		// Prefer a runtime override, fall back to <base> or "/"
+		const cfg = (window as any).__APP_CONFIG__;
+		if (cfg?.APP_BASE)
+			return cfg.APP_BASE.endsWith("/") ? cfg.APP_BASE : cfg.APP_BASE + "/";
+		const baseEl = document.querySelector("base") as HTMLBaseElement | null;
+		const base = baseEl?.href || "/";
+		return base.endsWith("/") ? base : base + "/";
+	}
+
 	return (
 		<Accordion.Item
 			value={index.toString()}
@@ -176,22 +188,26 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 							/>
 						)}
 						{hasImages &&
-							images.map((image, imgIndex) => (
-								<div
-									key={`step-${index}-img-${imgIndex}`}
-									onClick={(e) => e.stopPropagation()}
-								>
-									<ActionIcon
-										variant="subtle"
-										color={isCompleted ? "teal" : "gray"}
-										title="View step image"
-										onClick={() => onImagePopOut(image.src, image.height, image.width)}
-										component="div"
+							images.map((image, imgIndex) => {
+								const fullSrc = `${appBase()}Images/${safeQuestName}/${image.src}`;
+								console.log("Full Image SRC: ", fullSrc);
+								return (
+									<div
+										key={`step-${index}-img-${imgIndex}`}
+										onClick={(e) => e.stopPropagation()}
 									>
-										<IconPhotoFilled size={18} />
-									</ActionIcon>
-								</div>
-							))}
+										<ActionIcon
+											component="div"
+											variant="subtle"
+											color={isCompleted ? "teal" : "gray"}
+											title="View step image"
+											onClick={() => onImagePopOut(fullSrc, image.height, image.width)}
+										>
+											<IconPhotoFilled size={18} />
+										</ActionIcon>
+									</div>
+								);
+							})}
 					</Group>
 				</Flex>
 			</Accordion.Control>

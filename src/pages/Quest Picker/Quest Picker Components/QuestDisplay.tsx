@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import {
 	Accordion,
 	AccordionControl,
@@ -25,6 +25,7 @@ import {
 } from "@tabler/icons-react";
 import { EnrichedQuest } from "./useQuestData";
 import { useSettings } from "./../../../Entrance/Entrance Components/SettingsContext";
+
 // --- Reusable Components ---
 
 const QuestRewardsList: React.FC<{ rewards: string[] }> = ({ rewards }) => {
@@ -155,6 +156,8 @@ interface QuestDisplayProps {
 	onRemoveFromTodo: (questName: string) => void;
 }
 
+const PAGE_SIZE = 60; // tweak as desired (30, 60, 90...)
+
 const QuestDisplay: React.FC<QuestDisplayProps> = React.memo(
 	function QuestDisplay({
 		quests,
@@ -165,21 +168,57 @@ const QuestDisplay: React.FC<QuestDisplayProps> = React.memo(
 		onAddToTodo,
 		onRemoveFromTodo,
 	}) {
-		const getModifiedQuestName = (name: string) => {
-			return name
+		const { settings } = useSettings();
+
+		// Always define helpers and hooks in the same order on every render
+		const getModifiedQuestName = (name: string) =>
+			name
 				.toLowerCase()
 				.split(" ")
 				.join("")
 				.replace(/[!,`']/g, "");
-		};
-		const { settings } = useSettings();
+
+		// Infinite scroll state/hooks must be declared unconditionally (even if unused)
+		const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+		const loaderRef = useRef<HTMLDivElement | null>(null);
+
+		// Reset visible chunk whenever the source list changes
+		useEffect(() => {
+			setVisibleCount(PAGE_SIZE);
+		}, [quests]);
+
+		// Auto-increase visible chunk when sentinel is visible
+		useEffect(() => {
+			const el = loaderRef.current;
+			if (!el) return;
+
+			const io = new IntersectionObserver(
+				(entries) => {
+					const first = entries[0];
+					if (first?.isIntersecting) {
+						setVisibleCount((c) => Math.min(c + PAGE_SIZE, quests.length));
+					}
+				},
+				{ root: null, rootMargin: "1500px 0px", threshold: 0 },
+			);
+
+			io.observe(el);
+			return () => io.disconnect();
+		}, [quests.length]);
+
+		// Compute the visible slice once (grid branch uses it; compact branch ignores it)
+		const visibleQuests = useMemo(
+			() => quests.slice(0, visibleCount),
+			[quests, visibleCount],
+		);
+
 		if (!quests || quests.length === 0) return null;
 
-		// --- Accordion View (Compact Mode) ---
+		// --- Compact (Accordion) view ---
 		if (isCompact) {
 			return (
 				<Accordion>
-					{quests.map((quest) => {
+					{visibleQuests.map((quest) => {
 						const isAdded = todoList.includes(quest.questName);
 						return (
 							<Accordion.Item
@@ -198,6 +237,8 @@ const QuestDisplay: React.FC<QuestDisplayProps> = React.memo(
 										<Text truncate="end">{quest.questName}</Text>
 										<Tooltip label={isAdded ? "Remove from To-Do" : "Add to To-Do"}>
 											<ActionIcon
+												component="div" // render as div
+												role="button"
 												variant={isAdded ? "filled" : "subtle"}
 												color={isAdded ? "teal" : "gray"}
 												onClick={(e) => {
@@ -213,6 +254,7 @@ const QuestDisplay: React.FC<QuestDisplayProps> = React.memo(
 										</Tooltip>
 									</Group>
 								</AccordionControl>
+
 								<AccordionPanel>
 									<Card
 										withBorder
@@ -261,22 +303,32 @@ const QuestDisplay: React.FC<QuestDisplayProps> = React.memo(
 			);
 		}
 
-		// --- Grid View (Default Mode) ---
+		// --- Grid view with infinite scroll (uses visibleQuests and loaderRef) ---
 		return (
-			<SimpleGrid cols={{ base: 1, sm: 2, lg: 3 }} spacing="xl">
-				{quests.map((quest) => (
-					<QuestCard
-						key={quest.questName}
-						quest={quest}
-						isAdded={todoList.includes(quest.questName)}
-						onAddToTodo={onAddToTodo}
-						onRemoveFromTodo={onRemoveFromTodo}
-						onQuestClick={onQuestClick}
-						getModifiedQuestName={getModifiedQuestName}
+			<>
+				<SimpleGrid cols={{ base: 1, sm: 2, lg: 3 }} spacing="xl">
+					{visibleQuests.map((quest) => (
+						<QuestCard
+							key={quest.questName}
+							quest={quest}
+							isAdded={todoList.includes(quest.questName)}
+							onAddToTodo={onAddToTodo}
+							onRemoveFromTodo={onRemoveFromTodo}
+							onQuestClick={onQuestClick}
+							getModifiedQuestName={getModifiedQuestName}
+						/>
+					))}
+				</SimpleGrid>
+
+				{visibleCount < quests.length && (
+					<div
+						ref={loaderRef}
+						style={{ height: "1px", width: "100%", marginTop: "1rem" }}
 					/>
-				))}
-			</SimpleGrid>
+				)}
+			</>
 		);
 	},
 );
+
 export default QuestDisplay;

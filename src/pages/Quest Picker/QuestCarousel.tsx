@@ -1,4 +1,4 @@
-import React, { lazy, useCallback, useEffect, useMemo, useState } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 import {
 	Button,
 	Modal,
@@ -10,7 +10,6 @@ import {
 	Stack,
 	Divider,
 	SimpleGrid,
-	useMantineTheme, // This is still needed to get breakpoints
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import {
@@ -21,27 +20,37 @@ import {
 	IconX,
 	IconList,
 } from "@tabler/icons-react";
-import { useSettings } from "./../../Entrance/Entrance Components/SettingsContext";
-// Imported Types
-import { EnrichedQuest } from "./Quest Picker Components/useQuestData";
-
-// Imported Hooks
+import { useSettings } from "../../Entrance/Entrance Components/SettingsContext";
 
 import { useQuestData } from "./Quest Picker Components/useQuestData";
 import { useQuestTodo } from "./Quest Picker Components/useQuestTodo";
 
-// Imported Components
 import { SearchControls } from "./Quest Picker Components/SearchControls";
 import MenuInterface from "./Quest Picker Components/MenuInterface";
-import { ironmanQuestOrder } from "./../../Quest Data/ironmanQuestOrder";
-import Settings from "./../Settings/Settings";
+import { ironmanQuestOrder } from "../../Handlers/ironmanQuestOrder";
+import Settings from "../Settings/Settings";
 import UserNotes from "../Settings/userNotes";
 import QuestTodoList from "./Quest Picker Components/QuestTodoList";
 import QuestDisplay from "./Quest Picker Components/QuestDisplay";
+import { fetchQuestBundleNormalized } from "../../idb/questBundleClient";
+
+import type { QuestAge, QuestSeries } from "../../state/types";
+import type { EnrichedQuest } from "./Quest Picker Components/useQuestData";
+
+// Strong typing for filters and sorts
+export type Filter =
+	| { type: "Quest Age"; value: QuestAge }
+	| { type: "Series"; value: QuestSeries };
+
+export type SortKey =
+	| "Quest Points"
+	| "Release Date"
+	| "Efficient Ironman Quests";
+
 const QuestCarousel: React.FC = () => {
-	// --- All hooks and logic remain the same ---
 	const [searchQuery, setSearchQuery] = useState("");
-	const debouncedQuery = searchQuery;
+	const debouncedQuery = searchQuery; // if you want actual debouncing, swap to a useDebounce hook
+
 	const {
 		playerName,
 		playerFound,
@@ -54,127 +63,143 @@ const QuestCarousel: React.FC = () => {
 		clearPlayerSearch,
 		setSortState,
 	} = useQuestData();
+
 	const { todoQuests, addQuestToTodo, removeQuestFromTodo, clearQuestTodo } =
 		useQuestTodo();
+
 	const { settings, closeSettingsModal, openSettingsModal } = useSettings();
+
 	const [notesModal, { open: openNotes, close: closeNotes }] =
 		useDisclosure(false);
 	const [todoModal, { open: openTodo, close: closeTodo }] = useDisclosure(false);
 
-	const [activeFilters, setActiveFilters] = useState<
-		{ type: string; value: string }[]
-	>([]);
+	const [activeFilters, setActiveFilters] = useState<Filter[]>([]);
+	const [activeSort, setActiveSort] = useState<SortKey | null>(null);
+
+	// For Ironman sort
 	const orderMap = useMemo(
 		() => new Map(ironmanQuestOrder.map((name, i) => [name, i] as const)),
 		[],
 	);
-	const [activeSort, setActiveSort] = useState<string | null>(null);
-	useEffect(() => {
-		const KEY_TO_CLEAR_ON_RELOAD = "staticQuestList";
-		const navigationEntries = performance.getEntriesByType("navigation");
-		if (navigationEntries.length > 0) {
-			const navTiming = navigationEntries[0] as PerformanceNavigationTiming;
-			if (navTiming.type === "reload") {
-				sessionStorage.removeItem(KEY_TO_CLEAR_ON_RELOAD);
+
+	// Handlers (stable)
+	const handleFilterChange = useCallback((next: Filter) => {
+		setActiveFilters((current) => {
+			const idx = current.findIndex((f) => f.type === next.type);
+			if (idx !== -1) {
+				const nextArr = current.slice();
+				nextArr[idx] = next;
+				return nextArr;
 			}
-		}
+			return [...current, next];
+		});
 	}, []);
-	const handleFilterChange = (type: string, value: string) => {
-		if (
-			value === "Quest Points" ||
-			value === "Release Date" ||
-			value === "Efficient Ironman Quests"
-		) {
-			setActiveSort(value);
-		} else {
-			setActiveFilters((currentFilters) => {
-				const existingFilterIndex = currentFilters.findIndex(
-					(f) => f.type === type,
-				);
-				const newFilter = { type, value };
-				if (existingFilterIndex !== -1) {
-					const newFilters = [...currentFilters];
-					newFilters[existingFilterIndex] = newFilter;
-					return newFilters;
-				} else {
-					return [...currentFilters, newFilter];
-				}
-			});
-		}
-	};
-	const removeFilter = (filterToRemove: { type: string; value: string }) => {
-		setActiveFilters((currentFilters) =>
-			currentFilters.filter(
-				(f) => f.type !== filterToRemove.type || f.value !== filterToRemove.value,
-			),
+
+	const handleSortChange = useCallback((next: SortKey | null) => {
+		setActiveSort(next);
+	}, []);
+
+	const removeFilter = useCallback((to: Filter) => {
+		setActiveFilters((current) =>
+			current.filter((f) => !(f.type === to.type && f.value === to.value)),
 		);
-	};
-	const clearSort = () => {
+	}, []);
+
+	const clearSort = useCallback(() => {
 		setActiveSort(null);
-	};
-	const activeFilterCount = activeFilters.length + (activeSort ? 1 : 0);
-	const clearAll = () => {
+	}, []);
+
+	const clearAll = useCallback(() => {
 		setActiveFilters([]);
 		setActiveSort(null);
-	};
+	}, []);
+
+	const activeFilterCount = activeFilters.length + (activeSort ? 1 : 0);
+
+	// Stable signature for base list to reduce recomputes
+	const base = displayQuests || [];
+	const baseSig = useMemo(
+		() =>
+			`${base.length}:${base[0]?.questName ?? ""}:${
+				base[Math.floor(base.length / 2)]?.questName ?? ""
+			}:${base.at(-1)?.questName ?? ""}`,
+		[base],
+	);
+
 	const getQuestTitle = (quest: EnrichedQuest): string =>
 		quest?.questName || quest?.title || "";
-	let fullyFilteredQuests: EnrichedQuest[] = useMemo(() => {
-		const base = displayQuests || [];
+
+	// Build the filtered/sorted list for display
+	const filteredQuests: EnrichedQuest[] = useMemo(() => {
 		const q = debouncedQuery.trim().toLowerCase();
+
+		// Text search
 		const searchFiltered = q
-			? base.filter((quest) => getQuestTitle(quest).toLowerCase().includes(q))
+			? base.filter((quest) => {
+					const title = getQuestTitle(quest).toLowerCase();
+					return title.includes(q);
+				})
 			: base;
 
+		// Menu filters
 		let menuFiltered = searchFiltered;
 		if (activeFilters.length > 0) {
-			menuFiltered = searchFiltered.filter((quest) => {
-				return activeFilters.every((filter) => {
-					switch (filter.type) {
+			menuFiltered = searchFiltered.filter((quest) =>
+				activeFilters.every((f) => {
+					switch (f.type) {
 						case "Quest Age":
-							return quest.questAge === filter.value;
+							return quest.questAge === f.value;
 						case "Series":
-							return quest.series === filter.value;
+							return quest.series === f.value;
 						default:
 							return true;
 					}
-				});
-			});
+				}),
+			);
 		}
+
+		// If filters removed everything, fallback to search result instead of empty
 		let listToSort =
 			menuFiltered.length === 0 && activeFilters.length > 0
 				? searchFiltered
 				: menuFiltered;
+
+		// Sorting
 		if (activeSort === "Efficient Ironman Quests") {
 			listToSort = [...listToSort].sort((a, b) => {
-				const indexA = orderMap.get(a.questName) ?? Infinity;
-				const indexB = orderMap.get(b.questName) ?? Infinity;
-				return indexA - indexB;
+				const aIdx = orderMap.get(a.questName) ?? Infinity;
+				const bIdx = orderMap.get(b.questName) ?? Infinity;
+				return aIdx - bIdx;
 			});
 		} else if (activeSort === "Quest Points") {
-			listToSort = [...listToSort].sort((a, b) => {
-				const pointsA = a.questPoints || 0;
-				const pointsB = b.questPoints || 0;
-				return pointsB - pointsA;
-			});
+			listToSort = [...listToSort].sort(
+				(a, b) => (b.questPoints || 0) - (a.questPoints || 0),
+			);
 		} else if (activeSort === "Release Date") {
 			listToSort = [...listToSort].sort((a, b) => {
-				const dateA = a.releaseDate
+				const aDate = a.releaseDate
 					? new Date(a.releaseDate)
 					: new Date("2100-01-01");
-				const dateB = b.releaseDate
+				const bDate = b.releaseDate
 					? new Date(b.releaseDate)
 					: new Date("2100-01-01");
-				return dateA.getTime() - dateB.getTime();
+				return aDate.getTime() - bDate.getTime();
 			});
 		}
-		return listToSort;
-	}, [displayQuests, debouncedQuery, activeFilters, activeSort, orderMap]);
-	if (fullyFilteredQuests.length === 0) {
-		fullyFilteredQuests = displayQuests;
-	}
-	const handleQuestClick = useCallback(() => {
-		window.scrollTo(0, 0);
+
+		// Final fallback: if everything ends empty, show base
+		return listToSort.length === 0 ? base : listToSort;
+	}, [baseSig, debouncedQuery, activeFilters, activeSort, orderMap, isSorted]);
+
+	// Prefetch quest bundle so QuestPage is instant
+	const handleQuestClick = useCallback(async (questName: string) => {
+		try {
+			await fetchQuestBundleNormalized(questName);
+		} catch (e) {
+			console.error("Failed to prefetch bundle:", e);
+		} finally {
+			window.scrollTo(0, 0);
+		}
 	}, []);
 
 	const handleAddToTodo = useCallback(
@@ -186,39 +211,49 @@ const QuestCarousel: React.FC = () => {
 		(name: string) => removeQuestFromTodo(name),
 		[removeQuestFromTodo],
 	);
-	function openDiscord(): void {
+
+	const openDiscord = useCallback(() => {
 		const newWindow = window.open(
 			"https://discord.gg/qFftZF7Usa",
 			"_blank",
 			"noopener,noreferrer",
 		);
 		if (newWindow) newWindow.opener = null;
-	}
-	function openCoffee(): void {
+	}, []);
+
+	const openCoffee = useCallback(() => {
 		const newWindow = window.open("https://buymeacoffee.com/rs3questbuddy");
 		if (newWindow) newWindow.opener = null;
-	}
+	}, []);
 
 	return (
 		<>
-			<Modal
-				title="Settings"
-				opened={settings.isSettingsModalOpen}
-				onClose={closeSettingsModal}
-				suppressHydrationWarning
-			>
-				<Settings />
-			</Modal>
-			<Modal title="Notes" opened={notesModal} onClose={closeNotes}>
-				<UserNotes />
-			</Modal>
-			<Modal title="Quest To-Do List" opened={todoModal} onClose={closeTodo}>
-				<QuestTodoList
-					quests={todoQuests}
-					onRemoveQuest={removeQuestFromTodo}
-					onClearAll={clearQuestTodo}
-				/>
-			</Modal>
+			{settings.isSettingsModalOpen && (
+				<Modal
+					title="Settings"
+					opened={settings.isSettingsModalOpen}
+					onClose={closeSettingsModal}
+					suppressHydrationWarning
+				>
+					<Settings />
+				</Modal>
+			)}
+
+			{notesModal && (
+				<Modal title="Notes" opened={notesModal} onClose={closeNotes}>
+					<UserNotes />
+				</Modal>
+			)}
+
+			{todoModal && (
+				<Modal title="Quest To-Do List" opened={todoModal} onClose={closeTodo}>
+					<QuestTodoList
+						quests={todoQuests}
+						onRemoveQuest={removeQuestFromTodo}
+						onClearAll={clearQuestTodo}
+					/>
+				</Modal>
+			)}
 
 			<Paper
 				p="md"
@@ -231,11 +266,7 @@ const QuestCarousel: React.FC = () => {
 			>
 				<Stack>
 					<SimpleGrid cols={{ base: 1, lg: 2 }}>
-						<Group
-							style={{
-								justifyContent: "center",
-							}}
-						>
+						<Group style={{ justifyContent: "center" }}>
 							<Button
 								leftSection={<IconList size={18} />}
 								variant="filled"
@@ -250,16 +281,15 @@ const QuestCarousel: React.FC = () => {
 							>
 								To-Do List
 							</Button>
+
 							<MenuInterface
 								onFilterChange={handleFilterChange}
+								onSortChange={handleSortChange}
 								activeFilterCount={activeFilterCount}
 							/>
 						</Group>
-						<Group
-							style={{
-								justifyContent: "center",
-							}}
-						>
+
+						<Group style={{ justifyContent: "center" }}>
 							{!isSorted ? (
 								<>
 									<Button
@@ -286,6 +316,7 @@ const QuestCarousel: React.FC = () => {
 					</SimpleGrid>
 
 					<Divider label="Search" labelPosition="center" color="dark.3" my="xs" />
+
 					<SearchControls
 						onPlayerSearch={searchForPlayer}
 						onQuestSearchChange={setSearchQuery}
@@ -296,9 +327,11 @@ const QuestCarousel: React.FC = () => {
 					/>
 				</Stack>
 			</Paper>
+
 			{(activeFilters.length > 0 || activeSort) && (
 				<Group mt="md" mb="md" justify="center" gap="xs">
 					{activeFilters.length > 0 && <Text size="sm">Filtered by:</Text>}
+
 					{activeFilters.map((filter) => (
 						<Badge
 							key={`${filter.type}-${filter.value}`}
@@ -319,6 +352,7 @@ const QuestCarousel: React.FC = () => {
 							{filter.type}: {filter.value}
 						</Badge>
 					))}
+
 					{activeSort && (
 						<>
 							<Text size="sm">Sorted by:</Text>
@@ -342,11 +376,13 @@ const QuestCarousel: React.FC = () => {
 							</Badge>
 						</>
 					)}
+
 					<Button size="compact-sm" variant="light" color="red" onClick={clearAll}>
 						Clear All
 					</Button>
 				</Group>
 			)}
+
 			{isSorted && playerFound && (
 				<div className="caroQTitle">
 					<h3>Quests have been sorted by quests you can do!</h3>
@@ -356,8 +392,9 @@ const QuestCarousel: React.FC = () => {
 					</p>
 				</div>
 			)}
+
 			<QuestDisplay
-				quests={fullyFilteredQuests}
+				quests={filteredQuests}
 				isCompact={settings.isCompact}
 				onQuestClick={handleQuestClick}
 				labelColor={settings.labelColor || undefined}
@@ -365,32 +402,25 @@ const QuestCarousel: React.FC = () => {
 				onAddToTodo={handleAddToTodo}
 				onRemoveFromTodo={handleRemoveFromTodo}
 			/>
+
 			<ActionIcon
 				color={settings.buttonColor || ""}
-				size={"sm"}
+				size="sm"
 				variant="outline"
 				onClick={openCoffee}
 				styles={{
-					root: {
-						position: "fixed",
-						bottom: "1.375rem",
-						left: "5.425rem",
-					},
+					root: { position: "fixed", bottom: "1.375rem", left: "5.425rem" },
 				}}
 			>
 				<IconCoffee />
 			</ActionIcon>
 			<ActionIcon
 				color={settings.buttonColor || ""}
-				size={"sm"}
+				size="sm"
 				variant="outline"
 				onClick={openDiscord}
 				styles={{
-					root: {
-						position: "fixed",
-						bottom: "1.375rem",
-						left: "3.750rem",
-					},
+					root: { position: "fixed", bottom: "1.375rem", left: "3.750rem" },
 				}}
 			>
 				<IconBrandDiscord />
@@ -398,21 +428,17 @@ const QuestCarousel: React.FC = () => {
 			<ActionIcon
 				color={settings.buttonColor || ""}
 				onClick={openNotes}
-				size={"sm"}
+				size="sm"
 				variant="outline"
 				styles={{
-					root: {
-						position: "fixed",
-						bottom: "1.375rem",
-						left: "0.313rem",
-					},
+					root: { position: "fixed", bottom: "1.375rem", left: "0.313rem" },
 				}}
 			>
 				<IconPlus />
 			</ActionIcon>
 			<ActionIcon
 				variant="outline"
-				size={"sm"}
+				size="sm"
 				color={settings.buttonColor || ""}
 				styles={{
 					root: { bottom: "1.375rem", left: "2.050rem", position: "fixed" },

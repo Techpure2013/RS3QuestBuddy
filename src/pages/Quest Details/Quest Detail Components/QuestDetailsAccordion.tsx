@@ -19,11 +19,9 @@ import {
 import { NavLink } from "react-router-dom";
 import { PlayerQuestStatus } from "./../../../Fetchers/sortPlayerQuests";
 import { Skills } from "./../../../Fetchers/PlayerStatsSort";
-
+import { QuestDetails } from "state/types";
 export interface QuestDetailsGridProps {
-	expanded: string[];
-	setExpanded: boolean;
-	QuestDetails: any[];
+	QuestDetails: QuestDetails[];
 	ignoredRequirements: Set<string>;
 	skillLevels?: Skills;
 	completedQuests?: PlayerQuestStatus[];
@@ -36,7 +34,7 @@ const OTHER_REQUIREMENT_PREFIXES = [
 	"Access",
 	"Ability to",
 	"Time Served",
-	"Must", // Added for better matching
+	"Must",
 	"Find",
 	"Complete",
 	"Rescue Mad Eadgar from the Troll Stronghold",
@@ -60,8 +58,6 @@ const sectionGap = "1rem";
 const cardBorder = "0.125rem";
 
 const QuestDetailsGrid: React.FC<QuestDetailsGridProps> = ({
-	setExpanded,
-	expanded,
 	QuestDetails,
 	ignoredRequirements,
 	skillLevels,

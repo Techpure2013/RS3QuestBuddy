@@ -1,115 +1,102 @@
 import { ActionIcon, Box } from "@mantine/core";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import ReactQuill from "react-quill";
 import "quill/dist/quill.snow.css";
 import "react-quill/dist/quill.snow.css";
 import ReactHtmlParser from "@orrisroot/react-html-parser";
 import { IconTrash } from "@tabler/icons-react";
+
+const STORAGE_KEY = "displayNote";
+
 const UserNotes: React.FC = () => {
 	const [noteValue, setNoteValue] = useState<string>("");
-	const [originalNote, setOriginalNote] = useState<string>("");
-	const [displayNote, setDisplayNote] = useState([""]);
+	const [displayNote, setDisplayNote] = useState<string[]>([]);
 	const [userColor, setUserColor] = useState("");
-	const [, setUserLabelColor] = useState("");
-	const [, setUserButtonColor] = useState("");
 	const [hasColor, setHasColor] = useState(false);
 	const [, setHasButtonColor] = useState(false);
 	const [, setHasLabelColor] = useState(false);
+
+	// Load persisted notes + colors
 	useEffect(() => {
-		const handleKeyDown = (event: KeyboardEvent) => {
-			// Check if the user presses Ctrl + S
-			if (event.ctrlKey && event.key === "s") {
-				// Prevent the default browser save behavior
-				event.preventDefault();
-
-				// Save the note value
-				const savedNoteValue = originalNote || noteValue;
-				console.log("Note saved:", savedNoteValue);
-
-				if (savedNoteValue !== "" && savedNoteValue !== "<p><br></p>") {
-					displayNote.push(savedNoteValue);
-					window.localStorage.setItem("displayNote", JSON.stringify(displayNote));
-				}
-				// Reset the editor for a new note
-				setNoteValue("");
-				setOriginalNote("");
+		try {
+			const saved = localStorage.getItem(STORAGE_KEY);
+			if (saved) {
+				const parsed = JSON.parse(saved);
+				if (Array.isArray(parsed)) setDisplayNote(parsed);
 			}
-		};
+		} catch {
+			console.warn("Did not find Notes");
+		}
 
-		// Add event listener when the component mounts
-		window.addEventListener("keydown", handleKeyDown);
-
-		// Remove event listener when the component unmounts
-		return () => {
-			window.removeEventListener("keydown", handleKeyDown);
-		};
-	}, [noteValue, originalNote]);
-
-	const handleNoteChange = (value: string) => {
-		setNoteValue(value);
-	};
-	useEffect(() => {
-		const displayN = localStorage.getItem("displayNote");
 		const colorVal = localStorage.getItem("textColorValue");
 		const labelCol = localStorage.getItem("labelColor");
 		const buttonCol = localStorage.getItem("buttonColor");
-		if (buttonCol) {
-			setUserButtonColor(buttonCol);
-			setHasButtonColor(true);
-		} else {
-			setHasButtonColor(false);
-		}
-		if (labelCol) {
-			setUserLabelColor(labelCol);
-			setHasLabelColor(true);
-		} else {
-			setHasLabelColor(false);
-		}
+
+		setHasButtonColor(!!buttonCol);
+		setHasLabelColor(!!labelCol);
+
 		if (colorVal) {
 			setUserColor(colorVal);
 			setHasColor(true);
 		} else {
 			setHasColor(false);
 		}
-		if (displayN) {
-			const parsedNotes = JSON.parse(displayN);
-			setDisplayNote(parsedNotes);
-		} else {
-			console.warn("Did not find Notes");
-		}
 	}, []);
 
+	// Persist notes whenever they change
 	useEffect(() => {
-		// Update the original note when noteValue changes
-		setOriginalNote(noteValue);
+		localStorage.setItem(STORAGE_KEY, JSON.stringify(displayNote));
+	}, [displayNote]);
+
+	// Ctrl+S to save current editor content as a note
+	useEffect(() => {
+		const handleKeyDown = (event: KeyboardEvent) => {
+			if (event.ctrlKey && (event.key === "s" || event.key === "S")) {
+				event.preventDefault();
+				const savedNoteValue = noteValue.trim();
+
+				if (savedNoteValue && savedNoteValue !== "<p><br></p>") {
+					setDisplayNote((prev) => [...prev, savedNoteValue]);
+				}
+
+				// Clear editor for next note
+				setNoteValue("");
+			}
+		};
+
+		window.addEventListener("keydown", handleKeyDown);
+		return () => window.removeEventListener("keydown", handleKeyDown);
 	}, [noteValue]);
-	const removeNote = (value: number) => {
-		setDisplayNote((prevDisplayNote) => {
-			const updatedDisplayNote = prevDisplayNote.filter((_, i) => i + 1 !== value);
 
-			// Update localStorage with the latest state
-			localStorage.setItem("displayNote", JSON.stringify(updatedDisplayNote));
+	const handleNoteChange = useCallback((value: string) => {
+		setNoteValue(value);
+	}, []);
 
-			return updatedDisplayNote;
+	const removeNote = useCallback((oneBasedIndex: number) => {
+		setDisplayNote((prev) => {
+			const idx = oneBasedIndex - 1;
+			if (idx < 0 || idx >= prev.length) return prev;
+			const next = prev.slice(0, idx).concat(prev.slice(idx + 1));
+			return next;
 		});
-	};
+	}, []);
+
 	return (
 		<>
 			<ReactQuill
-				style={{
-					color: hasColor ? userColor : "",
-				}}
+				style={{ color: hasColor ? userColor : "" }}
 				className="Notepad"
-				placeholder="Type in your notes. Press ctrl + s To save"
+				placeholder="Type your notes. Press Ctrl+S to save"
 				value={noteValue}
 				onChange={handleNoteChange}
 			/>
 
 			<h3 style={{ color: hasColor ? userColor : "" }}>Your Notes</h3>
 
-			{displayNote.map((value, index) => {
-				const trueIndex = index + 1;
-				if (value !== "") {
+			{displayNote
+				.filter((v) => v && v !== "")
+				.map((value, index) => {
+					const trueIndex = index + 1;
 					return (
 						<Box
 							key={trueIndex}
@@ -118,23 +105,18 @@ const UserNotes: React.FC = () => {
 						>
 							{ReactHtmlParser(value)}
 							<ActionIcon
-								onClick={() => {
-									removeNote(trueIndex);
-								}}
-								size={"sm"}
+								onClick={() => removeNote(trueIndex)}
+								size="sm"
 								variant="outline"
 								color="#CA4D4D"
-								styles={{
-									root: {},
-								}}
 							>
 								<IconTrash />
 							</ActionIcon>
 						</Box>
 					);
-				}
-			})}
+				})}
 		</>
 	);
 };
+
 export default UserNotes;

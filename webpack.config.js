@@ -26,6 +26,15 @@ module.exports = {
 		open: true,
 		hot: true,
 		historyApiFallback: true,
+		proxy: [
+			{
+				context: ["/api"],
+
+				target: "http://127.0.0.1:42069",
+
+				changeOrigin: true,
+			},
+		],
 	},
 	resolve: {
 		mainFields: ["browser", "module", "main"],
@@ -149,9 +158,7 @@ module.exports = {
 		new CopyWebpackPlugin({
 			patterns: [
 				{ from: "public", to: "." },
-				{ from: "Quest Data", to: "Quest Data" },
 				{ from: "Images", to: "Images" },
-				{ from: "Quests", to: "Quests" },
 				{ from: "assets", to: "assets" },
 				{ from: "appconfig.prod.json", to: "appconfig.prod.json" },
 				{
