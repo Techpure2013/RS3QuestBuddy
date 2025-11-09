@@ -130,7 +130,23 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 		const base = origin + normalizeBase(defaultSubpath || "/");
 		return normalizeBase(base);
 	}
-
+	function imageUrl(safeQuestName: string, file: string): string {
+		const base = appBase(); // returns ".../RS3QuestBuddy/"
+		// Ensure no leading slash in the relative part
+		const rel = `Images/${safeQuestName}/${file}`.replace(/^\/+/, "");
+		return new URL(rel, base).toString();
+	}
+	function buildImageUrl(path: string): string {
+		// path can be "images/foo.png" or "/images/foo.png"
+		const base = appBase(); // your function
+		const url = new URL(path.replace(/^\//, ""), base).toString();
+		// Debug once
+		if ((window as any).__DBG_IMG__ !== true) {
+			(window as any).__DBG_IMG__ = true;
+			console.log("APP_BASE:", base, "sample image URL:", url);
+		}
+		return url;
+	}
 	return (
 		<Accordion.Item
 			value={index.toString()}
@@ -208,7 +224,7 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 						)}
 						{hasImages &&
 							images.map((image, imgIndex) => {
-								const fullSrc = `${appBase()}Images/${safeQuestName}/${image.src}`;
+								const fullSrc = imageUrl(safeQuestName, image.src);
 
 								return (
 									<div
