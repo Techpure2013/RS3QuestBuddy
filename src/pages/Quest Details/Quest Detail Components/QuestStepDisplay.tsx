@@ -102,14 +102,33 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 	);
 	const hasAdditionalInfo = filteredInfo.length > 0;
 	const hasPanelContent = hasItems || hasAdditionalInfo;
+	function normalizeBase(url: string): string {
+		const withSlash = url.endsWith("/") ? url : url + "/";
+		return withSlash.replace(/([^:]\/)\/+/g, "$1");
+	}
+
 	function appBase(): string {
-		// Prefer a runtime override, fall back to <base> or "/"
-		const cfg = (window as any).__APP_CONFIG__;
-		if (cfg?.APP_BASE)
-			return cfg.APP_BASE.endsWith("/") ? cfg.APP_BASE : cfg.APP_BASE + "/";
+		const cfg = (window as unknown as { __APP_CONFIG__?: { APP_BASE?: string } })
+			.__APP_CONFIG__;
+		if (cfg?.APP_BASE) return normalizeBase(cfg.APP_BASE);
+
+		// 2) <base href="..."> or document.baseURI
 		const baseEl = document.querySelector("base") as HTMLBaseElement | null;
-		const base = baseEl?.href || "/";
-		return base.endsWith("/") ? base : base + "/";
+		const candidate =
+			baseEl?.href ||
+			(typeof document.baseURI === "string" ? document.baseURI : "");
+
+		if (candidate) return normalizeBase(candidate);
+
+		const { origin, pathname } = window.location;
+
+		const defaultSubpath =
+			origin.includes("techpure.dev") && (pathname === "/" || pathname === "")
+				? "/RS3QuestBuddy/"
+				: pathname;
+
+		const base = origin + normalizeBase(defaultSubpath || "/");
+		return normalizeBase(base);
 	}
 
 	return (
@@ -189,7 +208,7 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 						)}
 						{hasImages &&
 							images.map((image, imgIndex) => {
-								const fullSrc = `${appBase()}/RS3QuestBuddy/Images/${safeQuestName}/${image.src}`;
+								const fullSrc = `${appBase()}Images/${safeQuestName}/${image.src}`;
 
 								return (
 									<div
