@@ -131,11 +131,13 @@ export const length = app.enum("length", [
 export const Quests = app.table(
 	"Quests",
 	(q) => ({
+		total_steps: q.integer(),
 		id: q
 			.integer()
 			.notNull()
 			.primaryKey()
 			.generatedAlwaysAsIdentity({ startWith: 1 }),
+
 		quest_name: q.text().unique().notNull(),
 		quest_age: questage("quest_age"),
 		quest_series: questseries("quest_series").default("No Series"),

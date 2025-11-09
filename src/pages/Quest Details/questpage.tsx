@@ -57,7 +57,7 @@ const QuestPage: React.FC = () => {
 	const { stepCapture } = useDialogSolver();
 	const handles = useQuestControllerStore();
 	const { showStepReq, toggleShowStepReq } = useQuestControllerStore();
-	console.log("useQuestP skills", skillLevels);
+
 	const scrollContainerRef = useRef<HTMLDivElement>(null);
 	const location = useLocation();
 	const { questName } = location.state as { questName: string };

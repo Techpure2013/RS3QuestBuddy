@@ -17,6 +17,7 @@ export async function fetchAllQuestsFull() {
 	const json = await r.json();
 	return json.items as Array<{
 		id: number;
+		total_steps: number;
 		quest_name: string;
 		quest_series: string;
 		quest_age: string;

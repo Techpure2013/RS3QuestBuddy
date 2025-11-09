@@ -255,7 +255,7 @@ export function useQuestData() {
 
 		return merged;
 	}, [questList, alteredQuestData]);
-	console.log("useQuestData skills", skills);
+
 	/* Remaining (eligible + not completed) when sorted */
 	const remainingEligible = useMemo(() => {
 		return playerEnrichedQuests.filter(

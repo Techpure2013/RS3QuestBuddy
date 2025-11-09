@@ -189,8 +189,8 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 						)}
 						{hasImages &&
 							images.map((image, imgIndex) => {
-								const fullSrc = `${appBase()}Images/${safeQuestName}/${image.src}`;
-								console.log("Full Image SRC: ", fullSrc);
+								const fullSrc = `${appBase()}/RS3QuestBuddy/Images/${safeQuestName}/${image.src}`;
+
 								return (
 									<div
 										key={`step-${index}-img-${imgIndex}`}
