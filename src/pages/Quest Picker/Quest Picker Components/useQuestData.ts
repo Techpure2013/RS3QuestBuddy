@@ -21,6 +21,7 @@ import type {
 	QuestSeries,
 	Skills,
 } from "./../../../state/types";
+import { getApiBase } from "./../../../api/base";
 
 /* =====================
    Types
@@ -52,14 +53,6 @@ export type EnrichedQuest = {
 	userEligible: boolean;
 	rewards: string[];
 };
-
-function getApiBase(): string {
-	const cfg = window.__APP_CONFIG__;
-	if (cfg?.API_BASE) {
-		return cfg.API_BASE.endsWith("/") ? cfg.API_BASE.slice(0, -1) : cfg.API_BASE;
-	}
-	return "/api";
-}
 
 type AllFullResponse = {
 	items: QuestListItemDto[];

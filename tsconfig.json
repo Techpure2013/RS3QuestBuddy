@@ -7,7 +7,7 @@
 		"jsx": "react-jsx",
 		"strict": true,
 		"esModuleInterop": true,
-		"sourceMap": true,
+		"sourceMap": false,
 		"emitDeclarationOnly": false,
 		"declaration": true,
 		"allowSyntheticDefaultImports": true,

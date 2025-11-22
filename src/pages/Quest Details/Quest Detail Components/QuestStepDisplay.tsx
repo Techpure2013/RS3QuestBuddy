@@ -20,6 +20,7 @@ import {
 	IconChecklist,
 	IconPointFilled,
 	IconHourglassLow,
+	IconMap2,
 } from "@tabler/icons-react";
 import type { QuestStep } from "../../../state/types";
 import { QuestImage } from "./../../../Fetchers/handleNewImage";
@@ -29,6 +30,11 @@ import {
 	replaceChatTag,
 	useQuestConditionalSwap,
 } from "./../../../util/DescriptionSwap";
+import {
+	buildPlotLink,
+	buildPlotLinkAsync,
+	resolveStepId,
+} from "./../../../util/plotLinks";
 type CompactQuestStepProps = {
 	safeQuestName: string;
 	step: QuestStep;
@@ -58,7 +64,9 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 		step.itemsRecommended?.filter(
 			(item) => item.trim() !== "" && item.toLowerCase() !== "none",
 		) || [];
-
+	const [plotUrl, setPlotUrl] = React.useState<string>(() =>
+		buildPlotLink(quest, index),
+	);
 	const { settings } = useSettingsStore();
 	const hasRequiredItems = filteredRequired.length > 0;
 	const hasRecommendedItems = filteredRecommended.length > 0;
@@ -147,6 +155,7 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 		}
 		return url;
 	}
+
 	return (
 		<Accordion.Item
 			value={index.toString()}
@@ -243,6 +252,21 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 									</div>
 								);
 							})}
+						<div onClick={(e) => e.stopPropagation()}>
+							<ActionIcon
+								component="div"
+								variant="subtle"
+								color={isCompleted ? "teal" : "blue"}
+								title="Open plotting workspace for this step"
+								onClick={async (e) => {
+									e.stopPropagation();
+									const url = await buildPlotLinkAsync(quest, index);
+									window.open(url, "_blank", "noopener,noreferrer");
+								}}
+							>
+								<IconMap2 size={18} />
+							</ActionIcon>
+						</div>
 					</Group>
 				</Flex>
 			</Accordion.Control>

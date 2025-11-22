@@ -23,6 +23,7 @@ module.exports = {
 			directory: path.resolve(__dirname, "dist"),
 		},
 		port: 3001,
+		host: "127.0.0.1",
 		open: true,
 		hot: true,
 		historyApiFallback: true,
@@ -143,6 +144,11 @@ module.exports = {
 		],
 	},
 	plugins: [
+		new webpack.DefinePlugin({
+			__EDITOR_BASE_URL__: JSON.stringify(
+				process.env.EDITOR_BASE_URL || "http://127.0.0.1:3000/RS3QuestBuddyEditor",
+			),
+		}),
 		new MiniCssExtractPlugin({
 			filename: "assets/css/[name].[contenthash].css",
 			chunkFilename: "assets/css/[name].[contenthash].chunk.css",

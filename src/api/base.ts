@@ -1,11 +1,3 @@
-export function getApiBase(): string {
-	const cfg = window.__APP_CONFIG__;
-	if (cfg?.API_BASE) {
-		// ensure trailing slash handling is consistent
-		return cfg.API_BASE.endsWith("/") ? cfg.API_BASE.slice(0, -1) : cfg.API_BASE;
-	}
-	return "/api";
-}
 export function getAppBase(): string {
 	// If you set APP_BASE in __APP_CONFIG__ (e.g., "/RS3QuestBuddy/")
 	const base =
@@ -13,4 +5,9 @@ export function getAppBase(): string {
 		(document.querySelector("base") as HTMLBaseElement | null)?.href ??
 		"/";
 	return base.endsWith("/") ? base : base + "/";
+}
+export function getApiBase(): string {
+	// In dev: call /api (devServer proxy handles it)
+	// In prod: same-origin /api behind NGINX
+	return "/api";
 }

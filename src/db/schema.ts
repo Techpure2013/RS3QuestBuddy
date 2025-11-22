@@ -7,6 +7,9 @@ import {
 	jsonb,
 	uniqueIndex,
 	index,
+	bigserial,
+	integer,
+	customType,
 } from "drizzle-orm/pg-core";
 
 export const app = pgSchema("rs3questbuddy");
@@ -367,3 +370,41 @@ export const schema = {
 	QuestRewards,
 	QuestImages,
 };
+
+const bytea = customType<{
+	data: Buffer | null;
+	driverData: Buffer | null;
+}>({
+	dataType() {
+		return "bytea";
+	},
+});
+
+export const ChatheadsMin = app.table(
+	"ChatheadsMin",
+	(t) => ({
+		id: t.integer().primaryKey().generatedByDefaultAsIdentity(),
+		npc_id: t.integer().references(() => NpcTable.id),
+		name: t.text().notNull(),
+		variant: t.text().notNull().default("default"),
+		source: t.text().notNull(),
+		width_px: t.integer("width_px"),
+		height_px: t.integer("height_px"),
+		sprite_webp: bytea("sprite_webp"), // here
+		sprite_mime: t.text("sprite_mime").default("image/webp"),
+		created_at: timestamp("created_at", { withTimezone: true })
+			.default(sql`CURRENT_TIMESTAMP`)
+			.notNull(),
+		updated_at: timestamp("updated_at", { withTimezone: true })
+			.default(sql`CURRENT_TIMESTAMP`)
+			.notNull(),
+	}),
+	(t) => [
+		uniqueIndex("uq_chatheadsmin_name_variant").on(t.name, t.variant),
+		index("idx_chatheadsmin_name").on(t.name),
+		index("idx_chatheadsmin_npc_id").on(t.npc_id),
+	],
+);
+
+export type ChatheadMin = typeof ChatheadsMin.$inferSelect;
+export type NewChatheadMin = typeof ChatheadsMin.$inferInsert;

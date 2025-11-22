@@ -6,6 +6,7 @@
 		"db:seed:missingQuests": "tsx ./src/scripts/missingSeeds.ts",
 		"db:seed:quests": "tsx ./src/scripts/seedQuestsQuestDetails.ts",
 		"db:seed:npcs": "tsx ./src/scripts/seedNPCs.ts",
+		"db:seed:chatheads": "tsx ./src/scripts/seedChathead.ts",
 		"db:seed:steps": "tsx ./src/scripts/seed-QuestSteps.ts",
 		"db:seed:images": "tsx ./src/scripts/seed-quest-images.ts",
 		"db:seed:rewards": "tsx ./src/scripts/seed-Quest-Rewards.ts",
