@@ -65,7 +65,11 @@ export const useQuestPageFunctions = () => {
 
 	const useAlt1Listener = (callback: () => void) => {
 		useEffect(() => {
-			const handleAlt1Pressed = () => callback();
+			const handleAlt1Pressed = () => {
+				if (alt1.rsActive) {
+					callback();
+				}
+			};
 			a1lib.on("alt1pressed", handleAlt1Pressed);
 			return () => a1lib.removeListener("alt1pressed", handleAlt1Pressed);
 		}, [callback]);
