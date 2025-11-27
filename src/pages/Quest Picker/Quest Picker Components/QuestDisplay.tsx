@@ -23,7 +23,7 @@ import {
 	IconCheck,
 	IconStarFilled,
 } from "@tabler/icons-react";
-import { EnrichedQuest } from "./useQuestData";
+import type { EnrichedQuest } from "./../../../state/playerModel";
 import { useSettings } from "./../../../Entrance/Entrance Components/SettingsContext";
 
 // --- Reusable Components ---

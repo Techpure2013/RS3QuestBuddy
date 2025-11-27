@@ -29,4 +29,8 @@ postgres-data/
 # Node stuff
 node_modules/
 appconfig.local.json
+dist/.claude/
+.claude/
 dist/
+BROADCAST_TOAST_GUIDE.md
+TEST_INSTRUCTIONS.md

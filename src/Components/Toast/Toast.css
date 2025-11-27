@@ -1,0 +1,36 @@
+.toast {
+	animation: slideIn 0.3s ease-out;
+	min-width: 300px;
+	max-width: 500px;
+}
+
+.toast:hover {
+	transform: translateX(-5px);
+	transition: transform 0.2s ease;
+}
+
+@keyframes slideIn {
+	from {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slideOut {
+	from {
+		transform: translateX(0);
+		opacity: 1;
+	}
+	to {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+}
+
+.toast.removing {
+	animation: slideOut 0.3s ease-in forwards;
+}

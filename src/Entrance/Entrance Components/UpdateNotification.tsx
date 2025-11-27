@@ -1,4 +1,4 @@
-// src/components/UpdateNotification.tsx
+// src/Entrance/Entrance Components/UpdateNotification.tsx
 import { Notification, Button } from "@mantine/core";
 import { IconRefresh } from "@tabler/icons-react";
 

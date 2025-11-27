@@ -1,6 +1,6 @@
-import { useSortedPlayerQuests } from "./../Fetchers/sortPlayerQuests";
 import { useMemo } from "react";
 import { QuestStep } from "./../state/types";
+import { usePlayerSelector } from "./../state/usePlayerSelector";
 
 export interface QuestStepSwap {
 	description: string;
@@ -33,7 +33,7 @@ export function getQuestSwaps(name: string) {
 }
 
 export function useQuestConditionalSwap(questName: string, step: QuestStep) {
-	const { completedPlayerQuests } = useSortedPlayerQuests();
+	const completedPlayerQuests = usePlayerSelector((_, d) => d.completedQuests());
 
 	return useMemo(() => {
 		if (!completedPlayerQuests || !completedPlayerQuests.length || !step) {

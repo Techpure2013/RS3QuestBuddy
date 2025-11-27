@@ -21,7 +21,7 @@ import { useDialogSolver } from "./dialogsolverRW";
 import { useQuestControllerStore } from "./../../Handlers/HandlerStore";
 import { getQuestSwaps } from "./../../util/DescriptionSwap";
 
-import type { PlayerQuestStatus } from "./../../Fetchers/sortPlayerQuests";
+import type { PlayerQuestStatus } from "./../../state/types";
 import type { Quest, QuestImage } from "./../../state/types";
 import {
 	fetchQuestBundleNormalized,
@@ -38,7 +38,7 @@ import {
 	PlayerSession,
 	writeSession,
 } from "./../../idb/playerSessionStore";
-import { useQuestData } from "./../../pages/Quest Picker/Quest Picker Components/useQuestData";
+import { usePlayerSelector } from "./../../state/usePlayerSelector";
 
 const QuestDetailContents = lazy(
 	() => import("./Quest Detail Components/QuestDetailsAccordion"),
@@ -53,7 +53,8 @@ const QuestPage: React.FC = () => {
 		openCoffee,
 		ignoredRequirements,
 	} = useQuestPageFunctions();
-	const { skillLevels, completedQuests } = useQuestData();
+	const skillLevels = usePlayerSelector((s) => s.player.skills);
+	const completedQuests = usePlayerSelector((_, d) => d.completedQuests());
 	const { stepCapture } = useDialogSolver();
 	const handles = useQuestControllerStore();
 	const { showStepReq, toggleShowStepReq } = useQuestControllerStore();

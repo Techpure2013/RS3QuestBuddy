@@ -1,6 +1,6 @@
 // src/idb/playerSessionStore.ts
 import type { PlayerQuestStatus, Skills } from "./../state/types";
-import { EnrichedQuest } from "./../pages/Quest Picker/Quest Picker Components/useQuestData";
+import type { EnrichedQuest } from "./../state/playerModel";
 export type PlayerSession = {
 	playerName: string;
 	hasCompleted?: PlayerQuestStatus[];

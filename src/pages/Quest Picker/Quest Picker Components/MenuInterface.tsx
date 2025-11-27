@@ -1,10 +1,12 @@
-import { Badge, Button, Menu } from "@mantine/core";
+import React from "react";
+import { Badge, Button, Menu, TextInput } from "@mantine/core";
 import {
 	IconBooks,
 	IconCalendarEvent,
 	IconChevronDown,
 	IconClock,
 	IconFilter,
+	IconGift,
 } from "@tabler/icons-react";
 import SubMenu from "./SubMenu"; // Make sure the path to SubMenu is correct
 import { CustomIcon } from "./CustomIcon";
@@ -73,6 +75,14 @@ function MenuInterface({
 	activeFilterCount,
 }: MenuInterfaceProps) {
 	const areFiltersActive = activeFilterCount > 0;
+	const [rewardFilter, setRewardFilter] = React.useState("");
+
+	const handleRewardFilterSubmit = (e: React.KeyboardEvent<HTMLInputElement>) => {
+		if (e.key === "Enter" && rewardFilter.trim()) {
+			onFilterChange({ type: "Reward", value: rewardFilter.trim() });
+			setRewardFilter("");
+		}
+	};
 
 	return (
 		<div className="SearchContainer">
@@ -121,6 +131,19 @@ function MenuInterface({
 						onItemClick={(value: string) =>
 							onFilterChange({ type: "Series", value: value as QuestSeries })
 						}
+					/>
+
+					<Menu.Divider />
+
+					<Menu.Label>Filter by Reward</Menu.Label>
+					<TextInput
+						placeholder="e.g. lamp, experience, key"
+						leftSection={<IconGift size={16} />}
+						value={rewardFilter}
+						onChange={(e) => setRewardFilter(e.currentTarget.value)}
+						onKeyDown={handleRewardFilterSubmit}
+						size="xs"
+						style={{ padding: "0.5rem" }}
 					/>
 
 					<Menu.Item

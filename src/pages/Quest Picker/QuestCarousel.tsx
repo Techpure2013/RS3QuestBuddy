@@ -22,8 +22,9 @@ import {
 } from "@tabler/icons-react";
 import { useSettings } from "../../Entrance/Entrance Components/SettingsContext";
 
-import { useQuestData } from "./Quest Picker Components/useQuestData";
+import { usePlayerSelector, usePlayerActions } from "../../state/usePlayerSelector";
 import { useQuestTodo } from "./Quest Picker Components/useQuestTodo";
+import { useToast } from "../../Components/Toast/useToast";
 
 import { SearchControls } from "./Quest Picker Components/SearchControls";
 import MenuInterface from "./Quest Picker Components/MenuInterface";
@@ -35,12 +36,13 @@ import QuestDisplay from "./Quest Picker Components/QuestDisplay";
 import { fetchQuestBundleNormalized } from "../../idb/questBundleClient";
 
 import type { QuestAge, QuestSeries } from "../../state/types";
-import type { EnrichedQuest } from "./Quest Picker Components/useQuestData";
+import type { EnrichedQuest } from "../../state/playerModel";
 
 // Strong typing for filters and sorts
 export type Filter =
 	| { type: "Quest Age"; value: QuestAge }
-	| { type: "Series"; value: QuestSeries };
+	| { type: "Series"; value: QuestSeries }
+	| { type: "Reward"; value: string };
 
 export type SortKey =
 	| "Quest Points"
@@ -51,18 +53,42 @@ const QuestCarousel: React.FC = () => {
 	const [searchQuery, setSearchQuery] = useState("");
 	const debouncedQuery = searchQuery; // if you want actual debouncing, swap to a useDebounce hook
 
-	const {
-		playerName,
-		playerFound,
-		isSorted,
-		isLoading,
-		questPoints,
-		displayQuests,
-		remainingQuestsCount,
-		searchForPlayer,
-		clearPlayerSearch,
-		setSortState,
-	} = useQuestData();
+	// Toast notifications
+	const toast = useToast();
+
+	// PlayerStore selectors
+	const playerName = usePlayerSelector((s) => s.player.playerName);
+	const playerFound = usePlayerSelector((s) => s.ui.playerFound);
+	const isSorted = usePlayerSelector((s) => s.player.isSorted);
+	const isLoading = usePlayerSelector((s) => s.ui.loading);
+	const questPoints = usePlayerSelector((_, d) => d.totalQuestPoints());
+	const displayQuests = usePlayerSelector((_, d) => d.displayQuests());
+	const remainingQuestsCount = usePlayerSelector((_, d) => d.remainingCount());
+
+	// PlayerStore actions with toast callbacks
+	const { fetchPlayer, setSorted, clearPlayer } = usePlayerActions({
+		onFetchError: (error) => toast.error(error),
+		onFetchSuccess: (name) => toast.success(`Successfully loaded data for ${name}!`),
+	});
+
+	const searchForPlayer = useCallback(
+		async (name: string) => {
+			if (isLoading) return;
+			await fetchPlayer(name);
+		},
+		[isLoading, fetchPlayer]
+	);
+
+	const clearPlayerSearch = useCallback(() => {
+		clearPlayer();
+	}, [clearPlayer]);
+
+	const setSortState = useCallback(
+		(sorted: boolean) => {
+			setSorted(sorted);
+		},
+		[setSorted]
+	);
 
 	const { todoQuests, addQuestToTodo, removeQuestFromTodo, clearQuestTodo } =
 		useQuestTodo();
@@ -151,6 +177,10 @@ const QuestCarousel: React.FC = () => {
 							return quest.questAge === f.value;
 						case "Series":
 							return quest.series === f.value;
+						case "Reward":
+							return quest.rewards?.some((reward) =>
+								reward.toLowerCase().includes(f.value.toLowerCase())
+							) ?? false;
 						default:
 							return true;
 					}

@@ -17,7 +17,7 @@ import {
 	IconSwords,
 } from "@tabler/icons-react";
 import { NavLink } from "react-router-dom";
-import { PlayerQuestStatus } from "./../../../Fetchers/sortPlayerQuests";
+import type { PlayerQuestStatus } from "./../../../state/types";
 import { Skills } from "./../../../Fetchers/PlayerStatsSort";
 import { QuestDetails } from "state/types";
 export interface QuestDetailsGridProps {
