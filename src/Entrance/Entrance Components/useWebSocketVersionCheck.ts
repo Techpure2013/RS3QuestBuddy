@@ -3,307 +3,276 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { io, Socket } from "socket.io-client";
 import { getApiBase } from "../../api/base";
 
-/**
- * WebSocket-based version checking with:
- * - Real-time update notifications from server
- * - Automatic reconnection
- * - Fallback to polling if WebSocket fails
- * - Toast integration support
- */
-
-const FALLBACK_POLL_INTERVAL = 5 * 60 * 1000; // 5 minutes fallback
+const FALLBACK_POLL_INTERVAL = 5 * 60 * 1000;
 
 interface VersionUpdateData {
-  version: string;
-  timestamp: string;
+	version: string;
+	timestamp: string;
 }
 
 interface ToastBroadcastData {
-  message: string;
-  type: "success" | "error" | "info" | "warning";
-  duration?: number;
-  timestamp: string;
+	message: string;
+	type: "success" | "error" | "info" | "warning";
+	duration?: number;
+	timestamp: string;
 }
 
+interface OnlineStatsData {
+	sockets: number; // live connections (tabs/windows)
+	clients: number; // unique clientId count
+	timestamp: string;
+}
+
+const CLIENT_ID_STORAGE_KEY = "qb_client_id";
+
+const getOrCreateClientId = (): string => {
+	const existing = localStorage.getItem(CLIENT_ID_STORAGE_KEY);
+	if (existing && existing.trim().length > 0) return existing;
+
+	const generated =
+		typeof crypto !== "undefined" && typeof crypto.randomUUID === "function"
+			? crypto.randomUUID()
+			: `qb_${Date.now()}_${Math.random().toString(16).slice(2)}`;
+
+	localStorage.setItem(CLIENT_ID_STORAGE_KEY, generated);
+	return generated;
+};
+
 export const useWebSocketVersionCheck = (
-  onUpdateAvailable?: (newVersion: string) => void,
-  onToastBroadcast?: (message: string, type: "success" | "error" | "info" | "warning", duration?: number) => void
+	onUpdateAvailable?: (newVersion: string) => void,
+	onToastBroadcast?: (
+		message: string,
+		type: "success" | "error" | "info" | "warning",
+		duration?: number,
+	) => void,
 ) => {
-  const [isUpdateAvailable, setIsUpdateAvailable] = useState(false);
-  const [lastChecked, setLastChecked] = useState<Date | null>(null);
-  const [isConnected, setIsConnected] = useState(false);
-  const [newVersion, setNewVersion] = useState<string | null>(null);
+	const [isUpdateAvailable, setIsUpdateAvailable] = useState(false);
+	const [lastChecked, setLastChecked] = useState<Date | null>(null);
+	const [isConnected, setIsConnected] = useState(false);
+	const [newVersion, setNewVersion] = useState<string | null>(null);
 
-  const socketRef = useRef<Socket | null>(null);
-  const clientVersionRef = useRef<string | null>(null);
-  const fallbackTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const isMountedRef = useRef(true);
-  const onUpdateAvailableRef = useRef(onUpdateAvailable);
-  const onToastBroadcastRef = useRef(onToastBroadcast);
+	// NEW: online usage stats
+	const [onlineSockets, setOnlineSockets] = useState<number | null>(null);
+	const [onlineClients, setOnlineClients] = useState<number | null>(null);
+	const [onlineUpdatedAt, setOnlineUpdatedAt] = useState<Date | null>(null);
 
-  const checkVersionViaHttp = useCallback(async () => {
-    if (!clientVersionRef.current) return;
+	const socketRef = useRef<Socket | null>(null);
+	const clientVersionRef = useRef<string | null>(null);
+	const fallbackTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+	const isMountedRef = useRef(true);
+	const onUpdateAvailableRef = useRef(onUpdateAvailable);
+	const onToastBroadcastRef = useRef(onToastBroadcast);
 
-    try {
-      // In dev, API is proxied to 127.0.0.1:42069
-      // In prod, API is same origin
-      const isDev = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-      const apiUrl = isDev ? 'http://127.0.0.1:42069/api' : getApiBase();
-      const response = await fetch(`${apiUrl}/version`, { cache: "no-cache" });
-      if (!response.ok) return;
+	const toEpochMs = (input: Date | string | null | undefined): number | null => {
+		if (!input) return null;
+		if (input instanceof Date) return input.getTime();
+		const n = Date.parse(input);
+		return Number.isFinite(n) ? n : null;
+	};
 
-      const data = await response.json();
-      setLastChecked(new Date());
+	const checkVersionViaHttp = useCallback(async () => {
+		if (!clientVersionRef.current) return;
 
-      if (data.version && clientVersionRef.current === data.version) {
-        // Versions match - clear any previous notification flag
-        const notifiedVersion = localStorage.getItem("notified_version");
-        if (notifiedVersion) {
-          console.log(`[HTTP] Versions now match (${data.version}), clearing notification flag`);
-          localStorage.removeItem("notified_version");
-        }
-        return;
-      }
+		try {
+			const isDev =
+				window.location.hostname === "localhost" ||
+				window.location.hostname === "127.0.0.1";
+			const apiUrl = isDev ? "http://127.0.0.1:42069/api" : getApiBase();
+			const response = await fetch(`${apiUrl}/version`, { cache: "no-cache" });
+			if (!response.ok) return;
 
-      if (data.version && clientVersionRef.current !== data.version) {
-        // Check if user has already been notified about this version
-        const notifiedVersion = localStorage.getItem("notified_version");
-        if (notifiedVersion === data.version) {
-          console.log(`[HTTP] Already notified about version ${data.version}, skipping notification`);
-          return;
-        }
+			const data: { version?: string } = await response.json();
+			setLastChecked(new Date());
 
-        console.log(
-          `New version available! Client: ${clientVersionRef.current}, Server: ${data.version}`
-        );
+			if (data.version && clientVersionRef.current === data.version) {
+				const notifiedVersion = localStorage.getItem("notified_version");
+				if (notifiedVersion) localStorage.removeItem("notified_version");
+				return;
+			}
 
-        // Store that we've notified about this version
-        localStorage.setItem("notified_version", data.version);
+			if (data.version && clientVersionRef.current !== data.version) {
+				const notifiedVersion = localStorage.getItem("notified_version");
+				if (notifiedVersion === data.version) return;
 
-        setNewVersion(data.version);
-        setIsUpdateAvailable(true);
-        onUpdateAvailable?.(data.version);
-      }
-    } catch (error) {
-      console.error("HTTP version check failed:", error);
-    }
-  }, [onUpdateAvailable]);
+				localStorage.setItem("notified_version", data.version);
+				setNewVersion(data.version);
+				setIsUpdateAvailable(true);
+				onUpdateAvailableRef.current?.(data.version);
+			}
+		} catch (error) {
+			console.error("HTTP version check failed:", error);
+		}
+	}, []);
 
-  const scheduleFallbackPoll = useCallback(() => {
-    if (fallbackTimerRef.current) {
-      clearTimeout(fallbackTimerRef.current);
-    }
+	const scheduleFallbackPoll = useCallback(() => {
+		if (fallbackTimerRef.current) clearTimeout(fallbackTimerRef.current);
 
-    fallbackTimerRef.current = setTimeout(() => {
-      if (!isConnected && !isUpdateAvailable) {
-        console.log("WebSocket disconnected, using HTTP fallback");
-        checkVersionViaHttp();
-        scheduleFallbackPoll();
-      }
-    }, FALLBACK_POLL_INTERVAL);
-  }, [isConnected, isUpdateAvailable, checkVersionViaHttp]);
+		fallbackTimerRef.current = setTimeout(() => {
+			if (!isConnected && !isUpdateAvailable) {
+				checkVersionViaHttp();
+				scheduleFallbackPoll();
+			}
+		}, FALLBACK_POLL_INTERVAL);
+	}, [isConnected, isUpdateAvailable, checkVersionViaHttp]);
 
-  // Keep callback refs updated
-  useEffect(() => {
-    onUpdateAvailableRef.current = onUpdateAvailable;
-  }, [onUpdateAvailable]);
+	useEffect(() => {
+		onUpdateAvailableRef.current = onUpdateAvailable;
+	}, [onUpdateAvailable]);
 
-  useEffect(() => {
-    onToastBroadcastRef.current = onToastBroadcast;
-  }, [onToastBroadcast]);
+	useEffect(() => {
+		onToastBroadcastRef.current = onToastBroadcast;
+	}, [onToastBroadcast]);
 
-  useEffect(() => {
-    // Prevent double initialization in React Strict Mode
-    if (socketRef.current) {
-      return;
-    }
+	useEffect(() => {
+		if (socketRef.current) return;
 
-    isMountedRef.current = true;
+		isMountedRef.current = true;
 
-    try {
-      // Get client version from meta tag
-      const meta = document.querySelector('meta[name="app-version"]');
-      clientVersionRef.current = meta?.getAttribute("content") || null;
+		try {
+			const meta = document.querySelector('meta[name="app-version"]');
+			clientVersionRef.current = meta?.getAttribute("content") || null;
 
-      if (!clientVersionRef.current) {
-        console.warn("App version meta tag not found.");
-        return;
-      }
+			if (!clientVersionRef.current) {
+				console.warn("App version meta tag not found.");
+				return;
+			}
 
-      const api = getApiBase();
-      if (!api) {
-        console.warn("API base URL not available");
-        return;
-      }
+			const api = getApiBase();
+			if (!api) {
+				console.warn("API base URL not available");
+				return;
+			}
 
-      // Determine WebSocket server URL
-      // In dev: backend runs on different port (42069)
-      // In prod: same origin as frontend
-      const isDev = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-      const wsOrigin = isDev
-        ? `http://127.0.0.1:42069`  // Backend server in dev
-        : window.location.origin;   // Same origin in production
+			const isDev =
+				window.location.hostname === "localhost" ||
+				window.location.hostname === "127.0.0.1";
 
-      console.log(`Connecting to WebSocket at: ${wsOrigin}`);
+			const wsOrigin = isDev ? "http://127.0.0.1:42069" : window.location.origin;
 
-      // Initialize Socket.IO connection
-      const socket = io(wsOrigin, {
-      path: "/socket.io/",
-      transports: ["websocket", "polling"],
-      reconnection: true,
-      reconnectionDelay: 1000,
-      reconnectionDelayMax: 5000,
-      reconnectionAttempts: Infinity,
-    });
+			const clientId = getOrCreateClientId();
 
-    // Store socket in ref to prevent recreation
-    socketRef.current = socket;
+			const socket = io(wsOrigin, {
+				path: "/socket.io/",
+				transports: ["websocket", "polling"],
+				reconnection: true,
+				reconnectionDelay: 1000,
+				reconnectionDelayMax: 5000,
+				reconnectionAttempts: Infinity,
 
-    // Connection events
-    socket.on("connect", () => {
-      if (!isMountedRef.current) return;
+				// NEW: this is what the server uses to count unique clients
+				auth: { clientId },
+			});
 
-      console.log("WebSocket connected to update service");
-      setIsConnected(true);
+			socketRef.current = socket;
 
-      // Request current version on connect
-      socket.emit("version:request");
+			socket.on("connect", () => {
+				if (!isMountedRef.current) return;
 
-      // Clear fallback polling
-      if (fallbackTimerRef.current) {
-        clearTimeout(fallbackTimerRef.current);
-        fallbackTimerRef.current = null;
-      }
-    });
+				setIsConnected(true);
+				socket.emit("version:request");
 
-    socket.on("disconnect", () => {
-      if (!isMountedRef.current) return;
+				if (fallbackTimerRef.current) {
+					clearTimeout(fallbackTimerRef.current);
+					fallbackTimerRef.current = null;
+				}
+			});
 
-      console.log("WebSocket disconnected from update service");
-      setIsConnected(false);
+			socket.on("disconnect", () => {
+				if (!isMountedRef.current) return;
 
-      // Start fallback polling
-      scheduleFallbackPoll();
-    });
+				setIsConnected(false);
+				scheduleFallbackPoll();
+			});
 
-    // Version events
-    socket.on("version:current", (data: VersionUpdateData) => {
-      if (!isMountedRef.current) return;
+			socket.on("version:current", (data: VersionUpdateData) => {
+				if (!isMountedRef.current) return;
 
-      setLastChecked(new Date());
+				setLastChecked(new Date());
 
-      if (data.version && clientVersionRef.current === data.version) {
-        // Versions match - clear any previous notification flag
-        const notifiedVersion = localStorage.getItem("notified_version");
-        if (notifiedVersion) {
-          console.log(`Versions now match (${data.version}), clearing notification flag`);
-          localStorage.removeItem("notified_version");
-        }
-        return;
-      }
+				if (data.version && clientVersionRef.current === data.version) {
+					const notifiedVersion = localStorage.getItem("notified_version");
+					if (notifiedVersion) localStorage.removeItem("notified_version");
+					return;
+				}
 
-      if (data.version && clientVersionRef.current !== data.version) {
-        // Check if user has already been notified about this version
-        const notifiedVersion = localStorage.getItem("notified_version");
-        if (notifiedVersion === data.version) {
-          console.log(`Already notified about version ${data.version}, skipping notification`);
-          return;
-        }
+				if (data.version && clientVersionRef.current !== data.version) {
+					const notifiedVersion = localStorage.getItem("notified_version");
+					if (notifiedVersion === data.version) return;
 
-        console.log(
-          `Version mismatch detected! Client: ${clientVersionRef.current}, Server: ${data.version}`
-        );
-        console.log("Setting isUpdateAvailable to true");
-        console.log("Calling onUpdateAvailable callback:", onUpdateAvailableRef.current ? "exists" : "missing");
+					localStorage.setItem("notified_version", data.version);
+					setNewVersion(data.version);
+					setIsUpdateAvailable(true);
+					onUpdateAvailableRef.current?.(data.version);
+				}
+			});
 
-        // Store that we've notified about this version
-        localStorage.setItem("notified_version", data.version);
+			socket.on("version:update", (data: VersionUpdateData) => {
+				if (!isMountedRef.current) return;
 
-        setNewVersion(data.version);
-        setIsUpdateAvailable(true);
-        onUpdateAvailableRef.current?.(data.version);
-        console.log("Update notification should now appear");
-      }
-    });
+				setLastChecked(new Date());
 
-    socket.on("version:update", (data: VersionUpdateData) => {
-      if (!isMountedRef.current) return;
+				if (data.version && clientVersionRef.current === data.version) {
+					const notifiedVersion = localStorage.getItem("notified_version");
+					if (notifiedVersion) localStorage.removeItem("notified_version");
+					return;
+				}
 
-      console.log("Received version update broadcast:", data);
-      setLastChecked(new Date());
+				if (data.version && clientVersionRef.current !== data.version) {
+					const notifiedVersion = localStorage.getItem("notified_version");
+					if (notifiedVersion === data.version) return;
 
-      if (data.version && clientVersionRef.current === data.version) {
-        // Versions match - clear any previous notification flag
-        const notifiedVersion = localStorage.getItem("notified_version");
-        if (notifiedVersion) {
-          console.log(`[version:update] Versions now match (${data.version}), clearing notification flag`);
-          localStorage.removeItem("notified_version");
-        }
-        return;
-      }
+					localStorage.setItem("notified_version", data.version);
+					setNewVersion(data.version);
+					setIsUpdateAvailable(true);
+					onUpdateAvailableRef.current?.(data.version);
+				}
+			});
 
-      if (data.version && clientVersionRef.current !== data.version) {
-        // Check if user has already been notified about this version
-        const notifiedVersion = localStorage.getItem("notified_version");
-        if (notifiedVersion === data.version) {
-          console.log(`[version:update] Already notified about version ${data.version}, skipping notification`);
-          return;
-        }
+			socket.on("toast:broadcast", (data: ToastBroadcastData) => {
+				if (!isMountedRef.current) return;
+				onToastBroadcastRef.current?.(data.message, data.type, data.duration);
+			});
 
-        console.log(
-          `New version available! Client: ${clientVersionRef.current}, Server: ${data.version}`
-        );
-        console.log("[version:update] Setting isUpdateAvailable to true");
-        console.log("[version:update] Calling onUpdateAvailable callback:", onUpdateAvailableRef.current ? "exists" : "missing");
+			// NEW: live online stats
+			socket.on("usage:online", (data: OnlineStatsData) => {
+				if (!isMountedRef.current) return;
 
-        // Store that we've notified about this version
-        localStorage.setItem("notified_version", data.version);
+				setOnlineSockets(data.sockets);
+				setOnlineClients(data.clients);
+				const ms = toEpochMs(data.timestamp);
+				setOnlineUpdatedAt(ms ? new Date(ms) : new Date());
+			});
 
-        setNewVersion(data.version);
-        setIsUpdateAvailable(true);
-        onUpdateAvailableRef.current?.(data.version);
-        console.log("[version:update] Update notification should now appear");
-      }
-    });
+			socket.on("connect_error", (error: Error) => {
+				console.warn("WebSocket connection error:", error.message);
+			});
 
-    // Toast broadcast events
-    socket.on("toast:broadcast", (data: ToastBroadcastData) => {
-      if (!isMountedRef.current) return;
+			return () => {
+				isMountedRef.current = false;
 
-      console.log("[WebSocket] Received toast broadcast:", data);
-      onToastBroadcastRef.current?.(data.message, data.type, data.duration);
-    });
+				if (fallbackTimerRef.current) {
+					clearTimeout(fallbackTimerRef.current);
+					fallbackTimerRef.current = null;
+				}
 
-    socket.on("connect_error", (error) => {
-      console.warn("WebSocket connection error:", error.message);
-      // Fallback will be triggered by disconnect event
-    });
+				socket.removeAllListeners();
+				socket.disconnect();
+				socketRef.current = null;
+			};
+		} catch (error) {
+			console.error("WebSocket version check initialization failed:", error);
+			scheduleFallbackPoll();
+		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
 
-      // Cleanup
-      return () => {
-        isMountedRef.current = false;
-        if (fallbackTimerRef.current) {
-          clearTimeout(fallbackTimerRef.current);
-          fallbackTimerRef.current = null;
-        }
-        if (socket) {
-          socket.removeAllListeners();
-          socket.disconnect();
-        }
-        socketRef.current = null;
-      };
-    } catch (error) {
-      console.error("WebSocket version check initialization failed:", error);
-      // Fallback to HTTP polling on error
-      scheduleFallbackPoll();
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []); // Empty deps - only run once
-
-  return {
-    isUpdateAvailable,
-    lastChecked,
-    isConnected,
-    newVersion,
-  };
+	return {
+		isUpdateAvailable,
+		lastChecked,
+		isConnected,
+		newVersion,
+		onlineSockets,
+		onlineClients,
+		onlineUpdatedAt,
+	};
 };
