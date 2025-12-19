@@ -129,15 +129,15 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 
 		if (candidate) return normalizeBase(candidate);
 
-		const { origin, pathname } = window.location;
+		const { origin } = window.location;
 
-		const defaultSubpath =
-			origin.includes("techpure.dev") && (pathname === "/" || pathname === "")
-				? "/RS3QuestBuddy/"
-				: pathname;
+		// Always use /RS3QuestBuddy/ as base on production
+		if (origin.includes("techpure.dev")) {
+			return normalizeBase(origin + "/RS3QuestBuddy/");
+		}
 
-		const base = origin + normalizeBase(defaultSubpath || "/");
-		return normalizeBase(base);
+		// Local dev - use root
+		return normalizeBase(origin + "/");
 	}
 	function imageUrl(safeQuestName: string, file: string): string {
 		const base = appBase(); // returns ".../RS3QuestBuddy/"
