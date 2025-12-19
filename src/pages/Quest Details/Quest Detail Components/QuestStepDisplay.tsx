@@ -117,24 +117,17 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 	}
 
 	function appBase(): string {
-		const cfg = (window as unknown as { __APP_CONFIG__?: { APP_BASE?: string } })
-			.__APP_CONFIG__;
-		if (cfg?.APP_BASE) return normalizeBase(cfg.APP_BASE);
-
-		// 2) <base href="..."> or document.baseURI
-		const baseEl = document.querySelector("base") as HTMLBaseElement | null;
-		const candidate =
-			baseEl?.href ||
-			(typeof document.baseURI === "string" ? document.baseURI : "");
-
-		if (candidate) return normalizeBase(candidate);
-
 		const { origin } = window.location;
 
 		// Always use /RS3QuestBuddy/ as base on production
 		if (origin.includes("techpure.dev")) {
 			return normalizeBase(origin + "/RS3QuestBuddy/");
 		}
+
+		// Check for explicit config
+		const cfg = (window as unknown as { __APP_CONFIG__?: { APP_BASE?: string } })
+			.__APP_CONFIG__;
+		if (cfg?.APP_BASE) return normalizeBase(cfg.APP_BASE);
 
 		// Local dev - use root
 		return normalizeBase(origin + "/");
