@@ -6,7 +6,7 @@ import React, {
 	Suspense,
 	lazy,
 } from "react";
-import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { Accordion, Box, Button, Flex, Stack } from "@mantine/core";
 import { createRoot } from "react-dom/client";
 import Tippy from "@tippyjs/react";
@@ -61,8 +61,8 @@ const QuestPage: React.FC = () => {
 	const { showStepReq, toggleShowStepReq } = useQuestControllerStore();
 
 	const scrollContainerRef = useRef<HTMLDivElement>(null);
-	const location = useLocation();
-	const { questName } = location.state as { questName: string };
+	const { questName: encodedQuestName } = useParams<{ questName: string }>();
+	const questName = decodeURIComponent(encodedQuestName ?? "");
 
 	const [completedSteps, setCompletedSteps] = useState<Set<number>>(new Set());
 	const [active, setActive] = useState(-1);

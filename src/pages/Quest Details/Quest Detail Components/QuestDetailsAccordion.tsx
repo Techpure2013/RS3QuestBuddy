@@ -345,11 +345,7 @@ const QuestDetailsGrid: React.FC<QuestDetailsGridProps> = ({
 													return (
 														<List.Item key={idx}>
 															<NavLink
-																to="/QuestPage"
-																state={{
-																	questName: requirement,
-																	modified: requirement.toLowerCase().replace(/[!,']/g, ""),
-																}}
+																to={`/${encodeURIComponent(requirement)}`}
 																style={{
 																	display: "block",
 																	color: color,

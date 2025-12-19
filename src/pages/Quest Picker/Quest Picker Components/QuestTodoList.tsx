@@ -63,11 +63,7 @@ const QuestTodoList: React.FC<QuestTodoListProps> = ({
 							className="todo-item" // Add a class for CSS styling
 						>
 							<NavLink
-								to="/QuestPage"
-								state={{
-									questName: questName,
-									modified: getModifiedQuestName(questName),
-								}}
+								to={`/${encodeURIComponent(questName)}`}
 								style={{
 									textDecoration: "none",
 									color: "inherit",

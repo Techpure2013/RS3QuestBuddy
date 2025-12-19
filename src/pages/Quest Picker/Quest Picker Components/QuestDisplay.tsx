@@ -122,11 +122,7 @@ const QuestCard: React.FC<QuestCardProps> = React.memo(function QuestCard({
 
 			<Group mt="auto" pt="md">
 				<NavLink
-					to="/QuestPage"
-					state={{
-						questName: quest.questName,
-						modified: getModifiedQuestName(quest.questName),
-					}}
+					to={`/${encodeURIComponent(quest.questName)}`}
 					style={{ textDecoration: "none", width: "100%" }}
 					onClick={() => onQuestClick(quest.questName)}
 				>
@@ -269,11 +265,7 @@ const QuestDisplay: React.FC<QuestDisplayProps> = React.memo(
 										<Stack gap="md">
 											<Group>
 												<NavLink
-													to="/QuestPage"
-													state={{
-														questName: quest.questName,
-														modified: getModifiedQuestName(quest.questName),
-													}}
+													to={`/${encodeURIComponent(quest.questName)}`}
 													style={{ textDecoration: "none" }}
 													onClick={() => onQuestClick(quest.questName)}
 												>
