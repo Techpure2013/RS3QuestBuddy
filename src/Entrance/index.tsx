@@ -2,6 +2,18 @@ import { useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 
+// Suppress ReactQuill callback ref warning (known issue with React 18+)
+const originalWarn = console.warn;
+console.warn = (...args) => {
+	if (
+		typeof args[0] === "string" &&
+		args[0].includes("Unexpected return value from a callback ref")
+	) {
+		return;
+	}
+	originalWarn.apply(console, args);
+};
+
 // Mantine global + component styles
 import "@mantine/core/styles/global.css";
 import "@mantine/core/styles.css";

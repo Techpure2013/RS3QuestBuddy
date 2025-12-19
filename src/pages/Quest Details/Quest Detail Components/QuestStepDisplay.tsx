@@ -35,6 +35,7 @@ import {
 	buildPlotLinkAsync,
 	resolveStepId,
 } from "./../../../util/plotLinks";
+import { RichText } from "./../../../util/RichText";
 type CompactQuestStepProps = {
 	safeQuestName: string;
 	step: QuestStep;
@@ -188,7 +189,7 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 							<Text fw={700} component="span" c={settings.labelColor}>
 								Step {index + 1}:{" "}
 							</Text>
-							{displayStepDescription}
+							<RichText>{displayStepDescription}</RichText>
 						</Text>
 					</Box>
 
@@ -305,7 +306,7 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 															}
 															c={settings.textColor}
 														>
-															{item}
+															<RichText>{item}</RichText>
 														</List.Item>
 													))}
 												</List>
@@ -344,7 +345,7 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 															}
 															c={settings.textColor}
 														>
-															{item}
+															<RichText>{item}</RichText>
 														</List.Item>
 													))}
 												</List>
@@ -377,7 +378,7 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 											}
 											c={settings.textColor}
 										>
-											{info}
+											<RichText>{info}</RichText>
 										</List.Item>
 									))}
 								</List>

@@ -39,6 +39,7 @@ import {
 	writeSession,
 } from "./../../idb/playerSessionStore";
 import { usePlayerSelector } from "./../../state/usePlayerSelector";
+import { hasRichTextFormatting, stripFormatting } from "./../../util/RichText";
 
 const QuestDetailContents = lazy(
 	() => import("./Quest Detail Components/QuestDetailsAccordion"),
@@ -177,6 +178,10 @@ const QuestPage: React.FC = () => {
 				).filter((info) => !deletionStrings.includes(info));
 				const infoString = filteredAdditionalInfo.join(". ");
 				const allSteps = [currentStep.stepDescription, infoString].join(" ");
+				const rich = hasRichTextFormatting(allSteps);
+				if (rich) {
+					stripFormatting(allSteps);
+				}
 				stepCapture(allSteps);
 			}
 		}
