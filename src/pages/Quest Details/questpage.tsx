@@ -284,7 +284,7 @@ const QuestPage: React.FC = () => {
 	function folderize(name: string) {
 		return name
 			.normalize("NFKD")
-			.replace(/[’']/g, "") // apostrophes
+			
 			.replace(/[:]/g, ""); // colons
 	}
 	const safeQuestName = folderize(questName);

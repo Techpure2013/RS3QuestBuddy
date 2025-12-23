@@ -1,410 +1,546 @@
 import { sql } from "drizzle-orm";
 import {
-	text,
-	pgSchema,
-	unique,
-	timestamp,
-	jsonb,
-	uniqueIndex,
-	index,
-	bigserial,
-	integer,
-	customType,
+  text,
+  pgSchema,
+  unique,
+  timestamp,
+  jsonb,
+  uniqueIndex,
+  index,
+  bigserial,
+  bigint,
+  integer,
+  customType,
+  varchar,
+  serial,
 } from "drizzle-orm/pg-core";
 
 export const app = pgSchema("rs3questbuddy");
-type NpcLocation = { lat: number; lng: number };
-type NpcWanderRadius = {
-	bottomLeft: NpcLocation;
-	topRight: NpcLocation;
+export type NpcLocation = { lat: number; lng: number };
+export type NpcWanderRadius = {
+  bottomLeft: NpcLocation;
+  topRight: NpcLocation;
 };
-type NpcHighlight = {
-	id: number;
-	npcName: string;
-	npcLocation: NpcLocation;
-	wanderRadius?: NpcWanderRadius;
+export type NpcHighlight = {
+  id: number;
+  npcName: string;
+  npcLocation: NpcLocation;
+  wanderRadius?: NpcWanderRadius;
 };
 export type Actions = Array<Record<`${number}`, string | null>>;
 export type ActionCursors = Array<Record<`${number}`, number | null>>;
 export type NpcLocationEntry = { lat: number; lng: number; floor: number };
 export type NpcLocations = NpcLocationEntry[];
 export type ObjectLocationPoint = {
-	lat: number;
-	lng: number;
-	color?: string;
-	numberLabel?: string;
+  lat: number;
+  lng: number;
+  color?: string;
+  numberLabel?: string;
 };
 export type ObjectRadius = {
-	bottomLeft: NpcLocation;
-	topRight: NpcLocation;
+  bottomLeft: NpcLocation;
+  topRight: NpcLocation;
 };
 export type ObjectHighlight = {
-	id?: number;
-	name: string;
-	objectLocation: ObjectLocationPoint[];
-	objectRadius?: ObjectRadius;
+  id?: number;
+  name: string;
+  objectLocation: ObjectLocationPoint[];
+  objectRadius?: ObjectRadius;
 };
 export type QuestHighlights = {
-	npc: NpcHighlight[];
-	object: ObjectHighlight[];
+  npc: NpcHighlight[];
+  object: ObjectHighlight[];
 };
 export type QuestImage = {
-	step: number;
-	src: string;
-	height: number;
-	width: number;
-	stepDescription: string;
+  step: string;
+  src: string;
+  height: number;
+  width: number;
+  stepDescription: string;
 };
+
 // Enums
 export const questage = app.enum("questAge", [
-	"Ambiguous",
-	"None",
-	"Fifth or Sixth Age",
-	"Fifth Age",
-	"Ambiguous (Fits into Either Ages)",
-	"Sixth Age",
-	"Age of Chaos",
+  "Ambiguous",
+  "None",
+  "Fifth or Sixth Age",
+  "Fifth Age",
+  "Ambiguous (Fits into Either Ages)",
+  "Sixth Age",
+  "Age of Chaos",
 ]);
 export const questStatus = app.enum("quest_status", [
-	"draft",
-	"in_progress",
-	"published",
-	"archived",
+  "draft",
+  "in_progress",
+  "published",
+  "archived",
 ]);
 
 export const stepStatus = app.enum("step_status", ["draft", "ready"]);
 export const questseries = app.enum("questSeries", [
-	"No Series",
-	"Delrith",
-	"Pirate",
-	"Fairy",
-	"Camelot",
-	"Gnome",
-	"Elf (Prifddinas)",
-	"Ogre",
-	"Elemental Workshop",
-	"Myreque",
-	"Troll",
-	"Fremennik",
-	"Desert",
-	"Cave Goblin",
-	"Dwarf (Red Axe)",
-	"Temple Knight",
-	"Enchanted Key",
-	"Odd Old Man",
-	"Wise Old Man",
-	"Penguin",
-	"TzHaar",
-	"Summer",
-	"Thieves' Guild",
-	"Void Knight",
-	"Fremennik Sagas",
-	"Ozan",
-	"Doric's Tasks",
-	"Boric's Tasks",
-	"Ariane",
-	"Tales of the Arc",
-	"Violet Tendencies",
-	"Seasons",
-	"Mahjarrat Mysteries",
-	"Sliske's Game",
-	"The Elder God Wars",
-	"Legacy of Zamorak",
-	"Fort Forinthry",
-	"The First Necromancer",
-	"City of Um",
+  "No Series",
+  "Delrith",
+  "Pirate",
+  "Fairy",
+  "Camelot",
+  "Gnome",
+  "Elf (Prifddinas)",
+  "Ogre",
+  "Elemental Workshop",
+  "Myreque",
+  "Troll",
+  "Fremennik",
+  "Desert",
+  "Cave Goblin",
+  "Dwarf (Red Axe)",
+  "Temple Knight",
+  "Enchanted Key",
+  "Odd Old Man",
+  "Wise Old Man",
+  "Penguin",
+  "TzHaar",
+  "Summer",
+  "Thieves' Guild",
+  "Void Knight",
+  "Fremennik Sagas",
+  "Ozan",
+  "Doric's Tasks",
+  "Boric's Tasks",
+  "Ariane",
+  "Tales of the Arc",
+  "Violet Tendencies",
+  "Seasons",
+  "Mahjarrat Mysteries",
+  "Sliske's Game",
+  "The Elder God Wars",
+  "Legacy of Zamorak",
+  "Fort Forinthry",
+  "The First Necromancer",
+  "City of Um",
 ]);
 
 export const questaccess = app.enum("requirement", [
-	"Free to Play",
-	"Members Only",
+  "Free to Play",
+  "Members Only",
 ]);
 
 export const length = app.enum("length", [
-	"Very Short",
-	"Short",
-	"Short to Medium",
-	"Medium",
-	"Medium to Long",
-	"Long",
-	"Very Long",
-	"Very Very Long",
+  "Very Short",
+  "Short",
+  "Short to Medium",
+  "Medium",
+  "Medium to Long",
+  "Long",
+  "Very Long",
+  "Very Very Long",
 ]);
 
 export const Quests = app.table(
-	"Quests",
-	(q) => ({
-		total_steps: q.integer(),
-		id: q
-			.integer()
-			.notNull()
-			.primaryKey()
-			.generatedAlwaysAsIdentity({ startWith: 1 }),
+  "Quests",
+  (q) => ({
+    total_steps: q.integer(),
+    id: q
+      .integer()
+      .notNull()
+      .primaryKey()
+      .generatedAlwaysAsIdentity({ startWith: 1 }),
 
-		quest_name: q.text().unique().notNull(),
-		quest_age: questage("quest_age"),
-		quest_series: questseries("quest_series").default("No Series"),
-		quest_release_date: q.date("release_date", { mode: "string" }),
-		created_at: timestamp("created_at", { withTimezone: true })
-			.default(sql`CURRENT_TIMESTAMP`)
-			.notNull(),
-		updated_at: timestamp("updated_at", { withTimezone: true })
-			.default(sql`CURRENT_TIMESTAMP`)
-			.notNull(),
-	}),
-	(t) => [
-		index("idx_quest_age").on(t.quest_age),
-		index("idx_quest_series").on(t.quest_series),
-		index("idx_quest_release_date").on(t.quest_release_date),
-	],
+    quest_name: q.text().unique().notNull(),
+    quest_age: questage("quest_age"),
+    quest_series: questseries("quest_series").default("No Series"),
+    quest_release_date: q.date("release_date", { mode: "string" }),
+    created_at: timestamp("created_at", { withTimezone: true })
+      .default(sql`CURRENT_TIMESTAMP`)
+      .notNull(),
+    updated_at: timestamp("updated_at", { withTimezone: true })
+      .default(sql`CURRENT_TIMESTAMP`)
+      .notNull(),
+  }),
+  (t) => [
+    index("idx_quest_age").on(t.quest_age),
+    index("idx_quest_series").on(t.quest_series),
+    index("idx_quest_release_date").on(t.quest_release_date),
+  ]
 );
 
 export const QuestDetails = app.table(
-	"QuestDetails",
-	(qd) => ({
-		id: qd.integer().primaryKey().generatedByDefaultAsIdentity(),
-		quest_id: qd
-			.integer()
-			.notNull()
-			.references(() => Quests.id, { onDelete: "cascade" }),
-		start_point: qd.text().notNull(),
-		member_requirement: questaccess("member_requirement"),
-		official_length: length("official_length"),
-		quest_requirements: text("quest_requirements").array().default([]),
-		items_required: qd.text("items_required").array().default([]),
-		items_recommended: qd.text("items_recommended").array().default([]),
-		enemies_to_defeat: qd.text("enemies_to_defeat").array().default([]),
-		created_at: timestamp("created_at", { withTimezone: true })
-			.default(sql`CURRENT_TIMESTAMP`)
-			.notNull(),
-		updated_at: timestamp("updated_at", { withTimezone: true })
-			.default(sql`CURRENT_TIMESTAMP`)
-			.notNull(),
-	}),
-	(t) => [[unique("quest_details_quest_id_key").on(t.quest_id)]],
+  "QuestDetails",
+  (qd) => ({
+    id: qd.integer().primaryKey().generatedByDefaultAsIdentity(),
+    quest_id: qd
+      .integer()
+      .notNull()
+      .references(() => Quests.id, { onDelete: "cascade" }),
+    start_point: qd.text().notNull(),
+    member_requirement: questaccess("member_requirement"),
+    official_length: length("official_length"),
+    quest_requirements: text("quest_requirements").array().default([]),
+    items_required: qd.text("items_required").array().default([]),
+    items_recommended: qd.text("items_recommended").array().default([]),
+    enemies_to_defeat: qd.text("enemies_to_defeat").array().default([]),
+    created_at: timestamp("created_at", { withTimezone: true })
+      .default(sql`CURRENT_TIMESTAMP`)
+      .notNull(),
+    updated_at: timestamp("updated_at", { withTimezone: true })
+      .default(sql`CURRENT_TIMESTAMP`)
+      .notNull(),
+  }),
+  (t) => [[unique("quest_details_quest_id_key").on(t.quest_id)]]
 );
 export const QuestRequirementsHistory = app.table(
-	"QuestRequirementsHistory",
-	(qrh) => ({
-		id: qrh.integer().primaryKey().generatedByDefaultAsIdentity(),
-		quest_details_id: qrh
-			.integer("questDetailsID")
-			.references(() => QuestDetails.id, { onDelete: "cascade" }),
-		quest_requirements: qrh.text("quest_requirements").array().default([]),
+  "QuestRequirementsHistory",
+  (qrh) => ({
+    id: qrh.integer().primaryKey().generatedByDefaultAsIdentity(),
+    quest_details_id: qrh
+      .integer("questDetailsID")
+      .references(() => QuestDetails.id, { onDelete: "cascade" }),
+    quest_requirements: qrh.text("quest_requirements").array().default([]),
 
-		createdAt: qrh
-			.timestamp({ withTimezone: true })
-			.default(sql`CURRENT_TIMESTAMP`),
-	}),
+    createdAt: qrh
+      .timestamp({ withTimezone: true })
+      .default(sql`CURRENT_TIMESTAMP`),
+  })
 );
 
 export const NpcTable = app.table(
-	"NPCTable",
-	(n) => ({
-		id: n.integer().primaryKey().notNull(),
-		name: n.text().notNull(),
-		models: n.integer().array(),
-		head_models: n.integer().array(),
-		color_replacements: jsonb("color_replacements").$type<[number, number][]>(),
-		material_replacements: jsonb("material_replacements").$type<
-			[number, number][]
-		>(),
-		actions: jsonb("actions").$type<Actions>(),
-		action_cursors: jsonb("action_cursors").$type<ActionCursors>(),
-		location: jsonb("location").$type<NpcLocations>(),
-		npc_combat_level: n.integer().array(),
-		animation_group: n.integer().array(),
-		movement_capabilities: n.integer().array(),
-		bound_size: n.integer(),
-		created_at: timestamp("created_at", { withTimezone: true })
-			.default(sql`CURRENT_TIMESTAMP`)
-			.notNull(),
-		updated_at: timestamp("updated_at", { withTimezone: true })
-			.default(sql`CURRENT_TIMESTAMP`)
-			.notNull(),
-	}),
-	(t) => [index("idx_npc_name").on(t.name)],
+  "NPCTable",
+  (n) => ({
+    id: n.integer().primaryKey().notNull(),
+    name: n.text().notNull(),
+    models: n.integer().array(),
+    head_models: n.integer().array(),
+    color_replacements: jsonb("color_replacements").$type<[number, number][]>(),
+    material_replacements: jsonb("material_replacements").$type<
+      [number, number][]
+    >(),
+    actions: jsonb("actions").$type<Actions>(),
+    action_cursors: jsonb("action_cursors").$type<ActionCursors>(),
+    location: jsonb("location").$type<NpcLocations>(),
+    npc_combat_level: n.integer().array(),
+    animation_group: n.integer().array(),
+    movement_capabilities: n.integer().array(),
+    bound_size: n.integer(),
+    buffer_hash: bigint("buffer_hash", { mode: "number" }),
+    created_at: timestamp("created_at", { withTimezone: true })
+      .default(sql`CURRENT_TIMESTAMP`)
+      .notNull(),
+    updated_at: timestamp("updated_at", { withTimezone: true })
+      .default(sql`CURRENT_TIMESTAMP`)
+      .notNull(),
+  }),
+  (t) => [
+    index("idx_npc_name").on(t.name),
+    index("idx_npc_buffer_hash").on(t.buffer_hash),
+  ]
 );
 
 export const QuestSteps = app.table(
-	"quest_steps",
-	(t) => ({
-		id: t.integer().primaryKey().generatedAlwaysAsIdentity(),
-		quest_id: t
-			.integer()
-			.notNull()
-			.references(() => Quests.id, { onDelete: "cascade" }),
-		step_number: t.integer().notNull(),
-		step_description: t.text().notNull(),
-		items_needed: text("items_needed").array().notNull().default([]),
-		items_recommended: text("items_recommended").array().notNull().default([]),
-		highlights: jsonb("highlights")
-			.$type<QuestHighlights>()
-			.notNull()
-			.default(sql`'{"npc":[],"object":[]}'::jsonb`),
-		additional_info: text("additional_info").array().notNull().default([]),
-		floor: t.integer("floor").notNull().default(0),
-		status: questStatus("status").notNull().default("draft"),
-		created_at: timestamp("created_at", { withTimezone: true })
-			.default(sql`CURRENT_TIMESTAMP`)
-			.notNull(),
-		updated_at: timestamp("updated_at", { withTimezone: true })
-			.default(sql`CURRENT_TIMESTAMP`)
-			.notNull(),
-	}),
-	(t) => [
-		uniqueIndex("uq_quest_step_no").on(t.quest_id, t.step_number),
-		index("idx_steps_quest").on(t.quest_id),
-		index("idx_steps_status").on(t.status),
-	],
+  "quest_steps",
+  (t) => ({
+    id: t.integer().primaryKey().generatedAlwaysAsIdentity(),
+    quest_id: t
+      .integer()
+      .notNull()
+      .references(() => Quests.id, { onDelete: "cascade" }),
+    step_number: t.integer().notNull(),
+    step_description: t.text().notNull(),
+    items_needed: text("items_needed").array().notNull().default([]),
+    items_recommended: text("items_recommended").array().notNull().default([]),
+    highlights: jsonb("highlights")
+      .$type<QuestHighlights>()
+      .notNull()
+      .default(sql`'{"npc":[],"object":[]}'::jsonb`),
+    additional_info: text("additional_info").array().notNull().default([]),
+    dialog_options: text("dialog_options").array().notNull().default([]),
+    floor: t.integer("floor").notNull().default(0),
+    status: questStatus("status").notNull().default("draft"),
+    created_at: timestamp("created_at", { withTimezone: true })
+      .default(sql`CURRENT_TIMESTAMP`)
+      .notNull(),
+    updated_at: timestamp("updated_at", { withTimezone: true })
+      .default(sql`CURRENT_TIMESTAMP`)
+      .notNull(),
+  }),
+  (t) => [
+    uniqueIndex("uq_quest_step_no").on(t.quest_id, t.step_number),
+    index("idx_steps_quest").on(t.quest_id),
+    index("idx_steps_status").on(t.status),
+  ]
 );
 export const StepDescriptionHistory = app.table(
-	"quest_step_description_history",
-	(t) => ({
-		id: t.integer().primaryKey().generatedByDefaultAsIdentity(),
-		step_id: t
-			.integer()
-			.notNull()
-			.references(() => QuestSteps.id, { onDelete: "cascade" }),
-		old_description: t.text().notNull(),
-		changed_at: timestamp("changed_at", { withTimezone: true })
-			.default(sql`CURRENT_TIMESTAMP`)
-			.notNull(),
-		changed_by: t.text("changed_by"),
-		change_note: t.text("change_note"),
-	}),
+  "quest_step_description_history",
+  (t) => ({
+    id: t.integer().primaryKey().generatedByDefaultAsIdentity(),
+    step_id: t
+      .integer()
+      .notNull()
+      .references(() => QuestSteps.id, { onDelete: "cascade" }),
+    old_description: t.text().notNull(),
+    changed_at: timestamp("changed_at", { withTimezone: true })
+      .default(sql`CURRENT_TIMESTAMP`)
+      .notNull(),
+    changed_by: t.text("changed_by"),
+    change_note: t.text("change_note"),
+  })
 );
 export const StepAdditionalInfoHistory = app.table(
-	"quest_step_additional_info_history",
-	(t) => ({
-		id: t.integer().primaryKey().generatedByDefaultAsIdentity(),
-		step_id: t
-			.integer()
-			.notNull()
-			.references(() => QuestSteps.id, { onDelete: "cascade" }),
-		old_additional_info: text("old_additional_info").$type<string[]>().notNull(),
-		changed_at: timestamp("changed_at", { withTimezone: true })
-			.default(sql`CURRENT_TIMESTAMP`)
-			.notNull(),
-		changed_by: t.text("changed_by"),
-		change_note: t.text("change_note"),
-	}),
+  "quest_step_additional_info_history",
+  (t) => ({
+    id: t.integer().primaryKey().generatedByDefaultAsIdentity(),
+    step_id: t
+      .integer()
+      .notNull()
+      .references(() => QuestSteps.id, { onDelete: "cascade" }),
+    old_additional_info: text("old_additional_info")
+      .$type<string[]>()
+      .notNull(),
+    changed_at: timestamp("changed_at", { withTimezone: true })
+      .default(sql`CURRENT_TIMESTAMP`)
+      .notNull(),
+    changed_by: t.text("changed_by"),
+    change_note: t.text("change_note"),
+  })
 );
 export const StepHighlightsHistory = app.table(
-	"quest_step_highlights_history",
-	(t) => ({
-		id: t.integer().primaryKey().generatedByDefaultAsIdentity(),
-		step_id: t
-			.integer()
-			.notNull()
-			.references(() => QuestSteps.id, { onDelete: "cascade" }),
-		old_highlights: jsonb("old_highlights").$type<QuestHighlights>().notNull(),
-		changed_at: timestamp("changed_at", { withTimezone: true })
-			.default(sql`CURRENT_TIMESTAMP`)
-			.notNull(),
-		changed_by: t.text("changed_by"),
-		change_note: t.text("change_note"),
-	}),
+  "quest_step_highlights_history",
+  (t) => ({
+    id: t.integer().primaryKey().generatedByDefaultAsIdentity(),
+    step_id: t
+      .integer()
+      .notNull()
+      .references(() => QuestSteps.id, { onDelete: "cascade" }),
+    old_highlights: jsonb("old_highlights").$type<QuestHighlights>().notNull(),
+    changed_at: timestamp("changed_at", { withTimezone: true })
+      .default(sql`CURRENT_TIMESTAMP`)
+      .notNull(),
+    changed_by: t.text("changed_by"),
+    change_note: t.text("change_note"),
+  })
 );
 export const StepStatusHistory = app.table(
-	"quest_step_status_history",
-	(t) => ({
-		id: t.integer().primaryKey().generatedByDefaultAsIdentity(),
-		step_id: t
-			.integer()
-			.notNull()
-			.references(() => QuestSteps.id, { onDelete: "cascade" }),
-		from_status: questStatus("from_status").notNull(),
-		to_status: questStatus("to_status").notNull(),
-		changed_at: timestamp("changed_at", { withTimezone: true })
-			.default(sql`CURRENT_TIMESTAMP`)
-			.notNull(),
-		changed_by: t.text("changed_by"),
-		change_note: t.text("change_note"),
-	}),
+  "quest_step_status_history",
+  (t) => ({
+    id: t.integer().primaryKey().generatedByDefaultAsIdentity(),
+    step_id: t
+      .integer()
+      .notNull()
+      .references(() => QuestSteps.id, { onDelete: "cascade" }),
+    from_status: questStatus("from_status").notNull(),
+    to_status: questStatus("to_status").notNull(),
+    changed_at: timestamp("changed_at", { withTimezone: true })
+      .default(sql`CURRENT_TIMESTAMP`)
+      .notNull(),
+    changed_by: t.text("changed_by"),
+    change_note: t.text("change_note"),
+  })
 );
+export const plotSubmissionStatus = app.enum("plot_submission_status", [
+  "pending",
+  "approved",
+  "rejected",
+]);
+
+export const plotSubmissions = app.table(
+  "plot_submissions",
+  (t) => ({
+    id: serial("id").primaryKey(),
+    stepId: integer("step_id")
+      .notNull()
+      .references(() => QuestSteps.id, { onDelete: "cascade" }),
+
+    playerName: varchar("player_name", { length: 64 }).notNull(),
+    playerNameCi: varchar("player_name_ci", { length: 64 }).notNull(),
+
+    ipDigest: varchar("ip_digest", { length: 128 }).notNull(),
+    ipAlgo: varchar("ip_algo", { length: 32 }).notNull().default("hmac-sha256"),
+
+    // canonical snapshot at submission-time (optional)
+    baseHighlights: jsonb("base_highlights").$type<QuestHighlights>().notNull(),
+    // proposed change (what the player submitted)
+    proposedHighlights: jsonb("proposed_highlights")
+      .$type<QuestHighlights>()
+      .notNull(),
+    floor: integer("floor"),
+
+    // dedupe: hash of (stepId + normalized proposed highlights)
+    contentHash: varchar("content_hash", { length: 128 }).notNull(),
+
+    status: plotSubmissionStatus("status").notNull().default("pending"),
+    rejectionReason: text("rejection_reason"),
+
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .default(sql`CURRENT_TIMESTAMP`)
+      .notNull(),
+    reviewedAt: timestamp("reviewed_at", { withTimezone: true }),
+
+    reviewedBy: text("reviewed_by"),
+  }),
+  (t) => [
+    index("idx_plot_submissions_step").on(t.stepId),
+    index("idx_plot_submissions_status").on(t.status),
+    index("idx_plot_submissions_hash").on(t.contentHash),
+  ]
+);
+export const playerOwnedPlots = app.table(
+  "player_owned_plots",
+  {
+    id: serial("id").primaryKey(),
+
+    playerName: varchar("player_name", { length: 64 }).notNull(),
+
+    // NEW: normalized lower-case for CI uniqueness
+    playerNameCi: varchar("player_name_ci", { length: 64 }).notNull(),
+
+    ipDigest: varchar("ip_digest", { length: 128 }).notNull(),
+    ipAlgo: varchar("ip_algo", { length: 32 }).notNull().default("hmac-sha256"),
+
+    stepId: integer("step_id")
+      .notNull()
+      .references(() => QuestSteps.id, { onDelete: "cascade" }),
+
+    plotHighlights: jsonb("plot_highlights").$type<QuestHighlights>().notNull(),
+    floor: integer("floor"),
+
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .default(sql`CURRENT_TIMESTAMP`)
+      .notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true })
+      .default(sql`CURRENT_TIMESTAMP`)
+      .notNull(),
+  },
+  (t) => [
+    // CI unique: name_ci + step
+    uniqueIndex("player_owned_plots_name_step_uidx").on(
+      t.playerNameCi,
+      t.stepId
+    ),
+    index("player_owned_plots_step_idx").on(t.stepId),
+    index("player_owned_plots_ip_digest_idx").on(t.ipDigest),
+  ]
+);
+export const playerOwnedPlotsNameStepUq = uniqueIndex(
+  "player_owned_plots_name_step_uidx"
+).using("btree", sql`lower(player_name)`, sql.raw("step_id"));
 export const QuestRewards = app.table(
-	"QuestRewards",
-	(qr) => ({
-		id: qr.integer().primaryKey().generatedByDefaultAsIdentity(),
-		quest_id: qr.integer().references(() => Quests.id),
-		quest_points: qr.integer().notNull(),
-		quest_rewards: qr.text().array(),
-		created_at: timestamp("created_at", { withTimezone: true })
-			.default(sql`CURRENT_TIMESTAMP`)
-			.notNull(),
-		updated_at: timestamp("updated_at", { withTimezone: true })
-			.default(sql`CURRENT_TIMESTAMP`)
-			.notNull(),
-	}),
-	(t) => [index("idx_qrewards_quest").on(t.quest_id)],
+  "QuestRewards",
+  (qr) => ({
+    id: qr.integer().primaryKey().generatedByDefaultAsIdentity(),
+    quest_id: qr.integer().references(() => Quests.id),
+    quest_points: qr.integer().notNull(),
+    quest_rewards: qr.text().array(),
+    created_at: timestamp("created_at", { withTimezone: true })
+      .default(sql`CURRENT_TIMESTAMP`)
+      .notNull(),
+    updated_at: timestamp("updated_at", { withTimezone: true })
+      .default(sql`CURRENT_TIMESTAMP`)
+      .notNull(),
+  }),
+  (t) => [index("idx_qrewards_quest").on(t.quest_id)]
 );
 export const QuestImages = app.table(
-	"QuestImages",
-	(qi) => ({
-		id: qi.integer().primaryKey().generatedByDefaultAsIdentity(),
-		quest_id: qi.integer().references(() => Quests.id),
-		images: jsonb("images")
-			.$type<QuestImage[]>()
-			.notNull()
-			.default(sql`'[]'::jsonb`),
-		created_at: timestamp("created_at", { withTimezone: true })
-			.default(sql`CURRENT_TIMESTAMP`)
-			.notNull(),
-		updated_at: timestamp("updated_at", { withTimezone: true })
-			.default(sql`CURRENT_TIMESTAMP`)
-			.notNull(),
-	}),
-	(t) => [index("idx_questimages_quest").on(t.quest_id)],
+  "QuestImages",
+  (qi) => ({
+    id: qi.integer().primaryKey().generatedByDefaultAsIdentity(),
+    quest_id: qi.integer().references(() => Quests.id),
+    images: jsonb("images")
+      .$type<QuestImage[]>()
+      .notNull()
+      .default(sql`'[]'::jsonb`),
+    created_at: timestamp("created_at", { withTimezone: true })
+      .default(sql`CURRENT_TIMESTAMP`)
+      .notNull(),
+    updated_at: timestamp("updated_at", { withTimezone: true })
+      .default(sql`CURRENT_TIMESTAMP`)
+      .notNull(),
+  }),
+  (t) => [index("idx_questimages_quest").on(t.quest_id)]
 );
-export const schema = {
-	Quests,
-	QuestDetails,
-	QuestRequirementsHistory,
-	NpcTable,
-	QuestSteps,
-	StepDescriptionHistory,
-	StepAdditionalInfoHistory,
-	StepHighlightsHistory,
-	StepStatusHistory,
-	QuestRewards,
-	QuestImages,
-};
 
 const bytea = customType<{
-	data: Buffer | null;
-	driverData: Buffer | null;
+  data: Buffer | null;
+  driverData: Buffer | null;
 }>({
-	dataType() {
-		return "bytea";
-	},
+  dataType() {
+    return "bytea";
+  },
 });
+export const adminEditor = pgSchema("Admin_Editor");
 
-export const ChatheadsMin = app.table(
-	"ChatheadsMin",
-	(t) => ({
-		id: t.integer().primaryKey().generatedByDefaultAsIdentity(),
-		npc_id: t.integer().references(() => NpcTable.id),
-		name: t.text().notNull(),
-		variant: t.text().notNull().default("default"),
-		source: t.text().notNull(),
-		width_px: t.integer("width_px"),
-		height_px: t.integer("height_px"),
-		sprite_webp: bytea("sprite_webp"), // here
-		sprite_mime: t.text("sprite_mime").default("image/webp"),
-		created_at: timestamp("created_at", { withTimezone: true })
-			.default(sql`CURRENT_TIMESTAMP`)
-			.notNull(),
-		updated_at: timestamp("updated_at", { withTimezone: true })
-			.default(sql`CURRENT_TIMESTAMP`)
-			.notNull(),
-	}),
-	(t) => [
-		uniqueIndex("uq_chatheadsmin_name_variant").on(t.name, t.variant),
-		index("idx_chatheadsmin_name").on(t.name),
-		index("idx_chatheadsmin_npc_id").on(t.npc_id),
-	],
+export const AdminTable = adminEditor.table(
+  "Admin_Table",
+  (t) => ({
+    id: integer("id").primaryKey().generatedByDefaultAsIdentity(),
+    admin_email: text("admin_email").notNull(),
+  }),
+  (t) => [uniqueIndex("uq_admin_email").on(t.admin_email)]
 );
+
+export type AdminRow = typeof AdminTable.$inferSelect;
+export type NewAdminRow = typeof AdminTable.$inferInsert;
+export const ChatheadsMin = app.table(
+  "ChatheadsMin",
+  (t) => ({
+    id: t.integer().primaryKey().generatedByDefaultAsIdentity(),
+    npc_id: t.integer().references(() => NpcTable.id),
+    name: t.text().notNull(),
+    variant: t.text().notNull().default("default"),
+    source: t.text().notNull(),
+    width_px: t.integer("width_px"),
+    height_px: t.integer("height_px"),
+    sprite_webp: bytea("sprite_webp"), // here
+    sprite_mime: t.text("sprite_mime").default("image/webp"),
+    created_at: timestamp("created_at", { withTimezone: true })
+      .default(sql`CURRENT_TIMESTAMP`)
+      .notNull(),
+    updated_at: timestamp("updated_at", { withTimezone: true })
+      .default(sql`CURRENT_TIMESTAMP`)
+      .notNull(),
+  }),
+  (t) => [
+    uniqueIndex("uq_chatheadsmin_name_variant").on(t.name, t.variant),
+    index("idx_chatheadsmin_name").on(t.name),
+    index("idx_chatheadsmin_npc_id").on(t.npc_id),
+  ]
+);
+
+export const ClaimedPlayers = app.table(
+  "claimed_players",
+  (t) => ({
+    id: serial("id").primaryKey(),
+    playerName: varchar("player_name", { length: 64 }).notNull(),
+    playerNameCi: varchar("player_name_ci", { length: 64 }).notNull(),
+    ipDigest: varchar("ip_digest", { length: 128 }).notNull(),
+    ipAlgo: varchar("ip_algo", { length: 32 }).notNull().default("hmac-sha256"),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .default(sql`CURRENT_TIMESTAMP`)
+      .notNull(),
+    updatedAt: timestamp("updated_at", { withTimezone: true })
+      .default(sql`CURRENT_TIMESTAMP`)
+      .notNull(),
+  }),
+  (t) => [
+    uniqueIndex("uq_claimed_players_name_ci").on(t.playerNameCi),
+    index("idx_claimed_players_digest").on(t.ipDigest),
+  ]
+);
+export const schema = {
+  Quests,
+  QuestDetails,
+  QuestRequirementsHistory,
+  NpcTable,
+  QuestSteps,
+  StepDescriptionHistory,
+  StepAdditionalInfoHistory,
+  StepHighlightsHistory,
+  StepStatusHistory,
+  QuestRewards,
+  QuestImages,
+  plotSubmissions,
+  playerOwnedPlots,
+  ChatheadsMin,
+  AdminTable,
+  ClaimedPlayers,
+};
 
 export type ChatheadMin = typeof ChatheadsMin.$inferSelect;
 export type NewChatheadMin = typeof ChatheadsMin.$inferInsert;
