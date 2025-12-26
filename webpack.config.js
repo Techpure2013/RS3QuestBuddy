@@ -30,10 +30,14 @@ module.exports = {
 		proxy: [
 			{
 				context: ["/api"],
-
 				target: "http://127.0.0.1:42069",
-
 				changeOrigin: true,
+			},
+			{
+				context: ["/images"],
+				target: "https://techpure.dev",
+				changeOrigin: true,
+				secure: true,
 			},
 		],
 	},
@@ -164,7 +168,6 @@ module.exports = {
 		new CopyWebpackPlugin({
 			patterns: [
 				{ from: "public", to: "." },
-				{ from: "Images", to: "Images" },
 				{ from: "assets", to: "assets" },
 				{ from: "appconfig.prod.json", to: "appconfig.prod.json" },
 				{

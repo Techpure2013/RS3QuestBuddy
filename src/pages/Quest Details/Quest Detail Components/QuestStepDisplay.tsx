@@ -133,10 +133,8 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 		return normalizeBase(origin + "/");
 	}
 	function imageUrl(safeQuestName: string, file: string): string {
-		const base = appBase(); // returns ".../RS3QuestBuddy/"
-		// Ensure no leading slash in the relative part
-		const rel = `Images/${safeQuestName}/${file}`.replace(/^\/+/, "");
-		return new URL(rel, base).toString();
+		// Images are now served from /images/ at the root (VPS)
+		return `/images/${safeQuestName}/${file}`;
 	}
 	function buildImageUrl(path: string): string {
 		// path can be "images/foo.png" or "/images/foo.png"
