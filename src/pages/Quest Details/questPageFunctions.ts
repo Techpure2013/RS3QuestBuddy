@@ -42,7 +42,7 @@ const openDiscord = (): void => {
 const openWikiQuest = (questName: string): void => {
 	if (questName === "Another Slice of HAM")
 		questName = "Another Slice of H.A.M.";
-	if (questName === "Raksha, The Shadow Colossus Quest")
+	if (questName === "Raksha, the Shadow Colossus")
 		questName = "Raksha, the Shadow Colossus (quest)";
 	if (questName === "Between a Rock") questName = "Between a Rock...";
 	const newWindow = window.open(

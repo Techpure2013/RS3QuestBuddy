@@ -54,7 +54,7 @@ const replacementMap = new Map<string, string>([
   ["Finale", "Once Upon a Time in Gielinor: Finale"],
   ["flashback", "Once Upon a Time in Gielinor: Flashback"],
   ["Fortunes", "Once Upon a Time in Gielinor: Fortunes"],
-  ["Raksha, The Shadow Colossus", "Raksha, The Shadow Colossus Quest"],
+  ["Raksha, The Shadow Colossus", "Raksha, the Shadow Colossus"],
   ["Helping Laniakea", "Helping Laniakea (miniquest)"],
   ["Father and Son", "Father and Son (miniquest)"],
   ["A Fairy Tale I - Growing Pains", "A Fairy Tale I: Growing Pains"],

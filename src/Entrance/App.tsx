@@ -6,6 +6,8 @@ import { usePlayerStoreInit } from "./../state/usePlayerSelector";
 import { ToastProvider } from "./../Components/Toast/useToast";
 import { AppWithVersionCheck } from "./Entrance Components/AppWithVersionCheck";
 
+const isDev = window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost";
+
 function App() {
 	usePlayerStoreInit();
 	return (
@@ -13,7 +15,7 @@ function App() {
 			<ToastProvider>
 				<AppWithVersionCheck>
 					<SettingsProvider>
-						<BrowserRouter basename="/RS3QuestBuddy">
+						<BrowserRouter basename={isDev ? "/" : "/RS3QuestBuddy"}>
 							<Routes>
 								<Route path="/" element={<QuestCarousel />} />
 								<Route path="/:questName" element={<QuestPage />} />
