@@ -231,7 +231,8 @@ const derivedSelectors: PlayerDerivedSelectors = {
           rewards: base.rewards ?? [],
         };
       })
-      .filter((q): q is EnrichedQuest => q !== null);
+      .filter((q): q is EnrichedQuest => q !== null)
+      .sort((a, b) => a.questName.localeCompare(b.questName));
   },
 
   displayQuests(): EnrichedQuest[] {
