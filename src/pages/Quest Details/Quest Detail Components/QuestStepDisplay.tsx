@@ -180,7 +180,7 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 							<Text fw={700} component="span" c={settings.labelColor}>
 								Step {index + 1}:{" "}
 							</Text>
-							<RichText>{displayStepDescription}</RichText>
+							<RichText onStepClick={(step) => onStepClick?.(step - 1)}>{displayStepDescription}</RichText>
 						</Text>
 					</Box>
 
@@ -297,7 +297,7 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 															}
 															c={settings.textColor}
 														>
-															<RichText>{item}</RichText>
+															<RichText onStepClick={(step) => onStepClick?.(step - 1)}>{item}</RichText>
 														</List.Item>
 													))}
 												</List>
@@ -336,7 +336,7 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 															}
 															c={settings.textColor}
 														>
-															<RichText>{item}</RichText>
+															<RichText onStepClick={(step) => onStepClick?.(step - 1)}>{item}</RichText>
 														</List.Item>
 													))}
 												</List>
@@ -369,7 +369,7 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 											}
 											c={settings.textColor}
 										>
-											<RichText>{info}</RichText>
+											<RichText onStepClick={(step) => onStepClick?.(step - 1)}>{info}</RichText>
 										</List.Item>
 									))}
 								</List>

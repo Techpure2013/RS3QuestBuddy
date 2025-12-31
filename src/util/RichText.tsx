@@ -18,6 +18,7 @@ import React from "react";
  * - ![alt|32](url)       → Image with custom size
  * - {{img:url}}          → Image shorthand (48px)
  * - {{img:url|64}}       → Image shorthand with size
+ * - step(22){text}       → Step link (jump to step 22)
  *
  * Combinations work: __**bold underline**__ or ~~*italic strikethrough*~~
  */
@@ -32,7 +33,8 @@ type TextNode =
 	| { type: "superscript"; children: TextNode[] }
 	| { type: "color"; color: string; children: TextNode[] }
 	| { type: "link"; url: string; children: TextNode[] }
-	| { type: "image"; url: string; alt: string; size?: number };
+	| { type: "image"; url: string; alt: string; size?: number }
+	| { type: "steplink"; step: number; children: TextNode[] };
 
 // Token patterns in order of precedence (most specific first)
 const patterns: Array<{
@@ -42,6 +44,7 @@ const patterns: Array<{
 	getUrl?: (match: RegExpMatchArray) => string;
 	getAlt?: (match: RegExpMatchArray) => string;
 	getSize?: (match: RegExpMatchArray) => number | undefined;
+	getStep?: (match: RegExpMatchArray) => number;
 }> = [
 	// Image with size: ![alt|size](url) - e.g., ![NPC|32](https://...)
 	{
@@ -101,6 +104,12 @@ const patterns: Array<{
 	{ regex: /\^\(([^)]+)\)/, type: "superscript" },
 	// Superscript single word: ^word
 	{ regex: /\^(\S+)/, type: "superscript" },
+	// Step link: step(22){text} - jump to specific step
+	{
+		regex: /step\((\d+)\)\{(.+?)\}(?!\})/,
+		type: "steplink",
+		getStep: (m) => parseInt(m[1], 10),
+	},
 ];
 
 function parseRichText(text: string): TextNode[] {
@@ -117,6 +126,7 @@ function parseRichText(text: string): TextNode[] {
 			url?: string;
 			alt?: string;
 			size?: number;
+			step?: number;
 		} | null = null;
 
 		// Find the earliest matching pattern
@@ -132,6 +142,9 @@ function parseRichText(text: string): TextNode[] {
 					} else if (pattern.type === "image") {
 						// Images don't have inner content to parse
 						content = "";
+					} else if (pattern.type === "steplink") {
+						// steplink has content in group 2
+						content = match[2];
 					} else {
 						content = match[1];
 					}
@@ -145,6 +158,7 @@ function parseRichText(text: string): TextNode[] {
 						url: pattern.getUrl?.(match),
 						alt: pattern.getAlt?.(match),
 						size: pattern.getSize?.(match),
+						step: pattern.getStep?.(match),
 					};
 				}
 			}
@@ -190,6 +204,12 @@ function parseRichText(text: string): TextNode[] {
 					url: earliestMatch.url,
 					children: innerNodes,
 				});
+			} else if (earliestMatch.type === "steplink" && earliestMatch.step !== undefined) {
+				nodes.push({
+					type: "steplink",
+					step: earliestMatch.step,
+					children: innerNodes,
+				});
 			} else {
 				nodes.push({
 					type: earliestMatch.type,
@@ -207,6 +227,7 @@ function parseRichText(text: string): TextNode[] {
 
 interface RenderOptions {
 	inheritColor?: string;
+	onStepClick?: (step: number) => void;
 }
 
 function renderNodes(
@@ -326,6 +347,27 @@ function renderNodes(
 					</span>
 				);
 
+			case "steplink":
+				return (
+					<a
+						key={key}
+						href="#"
+						onClick={(e) => {
+							e.preventDefault();
+							e.stopPropagation();
+							options.onStepClick?.(node.step);
+						}}
+						style={{
+							color: options.inheritColor || "#22c55e",
+							textDecoration: "underline",
+							cursor: "pointer",
+						}}
+						title={`Go to step ${node.step}`}
+					>
+						{renderNodes(node.children, key, options)}
+					</a>
+				);
+
 			default:
 				return null;
 		}
@@ -336,6 +378,8 @@ export interface RichTextProps {
 	children: string;
 	/** Fallback for plain text if parsing fails */
 	fallbackToPlain?: boolean;
+	/** Callback when a step link is clicked */
+	onStepClick?: (step: number) => void;
 }
 
 /**
@@ -351,6 +395,7 @@ export interface RichTextProps {
 export const RichText: React.FC<RichTextProps> = ({
 	children,
 	fallbackToPlain = true,
+	onStepClick,
 }) => {
 	if (typeof children !== "string") {
 		return <>{children}</>;
@@ -358,7 +403,7 @@ export const RichText: React.FC<RichTextProps> = ({
 
 	try {
 		const nodes = parseRichText(children);
-		return <>{renderNodes(nodes, "rt")}</>;
+		return <>{renderNodes(nodes, "rt", { onStepClick })}</>;
 	} catch (error) {
 		console.error("RichText parsing error:", error);
 		if (fallbackToPlain) {
@@ -441,6 +486,9 @@ export function stripFormatting(text: string): string {
 
 		// Superscript single word: ^word -> word
 		result = result.replace(/\^(\S+)/g, "$1");
+
+		// Step link: step(N){text} -> text
+		result = result.replace(/step\(\d+\)\{(.+?)\}(?!\})/g, "$1");
 	}
 
 	return result;
