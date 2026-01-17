@@ -275,6 +275,9 @@ const toLinesArray = (v: unknown): string[] => {
 		.filter(Boolean);
 };
 export function bundleToQuest(b: QuestBundle): Quest {
+	if (!b || !b.quest || !b.details) {
+		throw new Error(`Invalid quest bundle: missing required data`);
+	}
 	const stepsIn = (b.steps as StepIn[] | undefined) ?? [];
 	const sorted = stepsIn
 		.slice()
