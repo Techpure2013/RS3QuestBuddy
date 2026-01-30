@@ -15,6 +15,9 @@ import {
 	Title,
 	SimpleGrid,
 	Divider,
+	Badge,
+	Collapse,
+	Box,
 } from "@mantine/core";
 import { NavLink } from "react-router-dom";
 import {
@@ -22,9 +25,15 @@ import {
 	IconPlus,
 	IconCheck,
 	IconStarFilled,
+	IconChevronDown,
+	IconChevronRight,
 } from "@tabler/icons-react";
 import type { EnrichedQuest } from "./../../../state/playerModel";
 import { useSettings } from "./../../../Entrance/Entrance Components/SettingsContext";
+import {
+	getParentGroupName,
+	getSubquestOrder,
+} from "../../../Handlers/questGroups";
 
 // --- Reusable Components ---
 
@@ -140,6 +149,162 @@ const QuestCard: React.FC<QuestCardProps> = React.memo(function QuestCard({
 	);
 });
 
+// --- Grouped Quest Card for multi-part quests ---
+
+interface GroupedQuestCardProps {
+	parentName: string;
+	subquests: EnrichedQuest[];
+	todoList: string[];
+	onAddToTodo: (name: string) => void;
+	onRemoveFromTodo: (name: string) => void;
+	onQuestClick: (name: string) => void;
+}
+
+const GroupedQuestCard: React.FC<GroupedQuestCardProps> = React.memo(
+	function GroupedQuestCard({
+		parentName,
+		subquests,
+		todoList,
+		onAddToTodo,
+		onRemoveFromTodo,
+		onQuestClick,
+	}) {
+		const { settings } = useSettings();
+		const [expanded, setExpanded] = useState(false);
+
+		// Sort subquests by their defined order
+		const sortedSubquests = useMemo(() => {
+			return [...subquests].sort((a, b) => {
+				const orderA = getSubquestOrder(a.questName);
+				const orderB = getSubquestOrder(b.questName);
+				return orderA - orderB;
+			});
+		}, [subquests]);
+
+		// Get short name (part after the colon)
+		const getShortName = (questName: string) => {
+			const colonIndex = questName.indexOf(":");
+			return colonIndex !== -1 ? questName.slice(colonIndex + 1).trim() : questName;
+		};
+
+		return (
+			<Card
+				shadow="lg"
+				padding="lg"
+				radius="md"
+				withBorder
+				style={{
+					height: "100%",
+					display: "flex",
+					flexDirection: "column",
+					border: "0.125rem solid var(--mantine-color-dark-4)",
+					background: "linear-gradient(135deg, #1A1B1E, #101113)",
+				}}
+			>
+				{/* Header - clickable to expand/collapse */}
+				<Group
+					justify="space-between"
+					mb="sm"
+					style={{ cursor: "pointer" }}
+					onClick={() => setExpanded(!expanded)}
+				>
+					<Group gap="sm">
+						{expanded ? (
+							<IconChevronDown size={20} color="gray" />
+						) : (
+							<IconChevronRight size={20} color="gray" />
+						)}
+						<Text fz="lg" fw={700} c={settings.labelColor || "teal.3"}>
+							{parentName}
+						</Text>
+					</Group>
+					<Badge color="blue" variant="light" size="lg">
+						{subquests.length} parts
+					</Badge>
+				</Group>
+
+				<Divider />
+
+				{/* Collapsed state - show brief info */}
+				{!expanded && (
+					<Text size="sm" c="dimmed" mt="md">
+						Click to view {subquests.length} subquests in order
+					</Text>
+				)}
+
+				{/* Expanded state - show subquests list */}
+				<Collapse in={expanded}>
+					<Stack gap="xs" mt="md">
+						{sortedSubquests.map((quest, index) => {
+							const isAdded = todoList.includes(quest.questName);
+							return (
+								<Box
+									key={quest.questName}
+									p="xs"
+									style={{
+										borderRadius: "4px",
+										background: "rgba(255,255,255,0.03)",
+									}}
+								>
+									<Group justify="space-between" wrap="nowrap">
+										<Group gap="xs" style={{ flex: 1, minWidth: 0 }}>
+											<Text size="sm" c="dimmed" fw={600} style={{ minWidth: "24px" }}>
+												{index + 1}.
+											</Text>
+											<Text size="sm" c={settings.textColor || "white"} truncate="end">
+												{getShortName(quest.questName)}
+											</Text>
+										</Group>
+										<Group gap="xs" wrap="nowrap">
+											<Tooltip label={isAdded ? "Remove from To-Do" : "Add to To-Do"}>
+												<ActionIcon
+													variant={isAdded ? "filled" : "light"}
+													color={isAdded ? "teal" : "gray"}
+													size="sm"
+													onClick={(e) => {
+														e.stopPropagation();
+														isAdded
+															? onRemoveFromTodo(quest.questName)
+															: onAddToTodo(quest.questName);
+													}}
+												>
+													{isAdded ? <IconCheck size={14} /> : <IconPlus size={14} />}
+												</ActionIcon>
+											</Tooltip>
+											<NavLink
+												to={`/${encodeURIComponent(quest.questName)}`}
+												style={{ textDecoration: "none" }}
+												onClick={() => onQuestClick(quest.questName)}
+											>
+												<ActionIcon
+													variant="light"
+													color={settings.buttonColor || "blue"}
+													size="sm"
+												>
+													<IconArrowRight size={14} />
+												</ActionIcon>
+											</NavLink>
+										</Group>
+									</Group>
+									{/* Rewards for this subquest */}
+									{quest.rewards && quest.rewards.length > 0 && (
+										<Box mt="sm" ml="28px" pt="xs" style={{ borderTop: "1px solid rgba(255,255,255,0.1)" }}>
+											<Title order={6} c={settings.labelColor || "dimmed"} mb="xs">
+												Rewards
+											</Title>
+											<QuestRewardsList rewards={quest.rewards} />
+										</Box>
+									)}
+								</Box>
+							);
+						})}
+					</Stack>
+				</Collapse>
+			</Card>
+		);
+	}
+);
+
 // --- Main Display Component ---
 
 interface QuestDisplayProps {
@@ -207,6 +372,47 @@ const QuestDisplay: React.FC<QuestDisplayProps> = React.memo(
 			() => quests.slice(0, visibleCount),
 			[quests, visibleCount],
 		);
+
+		// Group quests by parent for multi-part quests
+		type DisplayItem =
+			| { type: "single"; quest: EnrichedQuest }
+			| { type: "group"; parentName: string; subquests: EnrichedQuest[] };
+
+		const groupedDisplayItems = useMemo(() => {
+			const items: DisplayItem[] = [];
+			const groupedQuests = new Map<string, EnrichedQuest[]>();
+			const processedParents = new Set<string>();
+
+			// First pass: identify and group subquests
+			for (const quest of visibleQuests) {
+				const parentName = getParentGroupName(quest.questName);
+				if (parentName) {
+					if (!groupedQuests.has(parentName)) {
+						groupedQuests.set(parentName, []);
+					}
+					groupedQuests.get(parentName)!.push(quest);
+				}
+			}
+
+			// Second pass: create display items in order
+			for (const quest of visibleQuests) {
+				const parentName = getParentGroupName(quest.questName);
+				if (parentName) {
+					// Only add the group once (on first subquest encountered)
+					if (!processedParents.has(parentName)) {
+						processedParents.add(parentName);
+						const subquests = groupedQuests.get(parentName)!;
+						items.push({ type: "group", parentName, subquests });
+					}
+					// Skip individual subquests since they're in the group
+				} else {
+					// Regular quest
+					items.push({ type: "single", quest });
+				}
+			}
+
+			return items;
+		}, [visibleQuests]);
 
 		if (!quests || quests.length === 0) return null;
 
@@ -295,21 +501,33 @@ const QuestDisplay: React.FC<QuestDisplayProps> = React.memo(
 			);
 		}
 
-		// --- Grid view with infinite scroll (uses visibleQuests and loaderRef) ---
+		// --- Grid view with infinite scroll (uses groupedDisplayItems and loaderRef) ---
 		return (
 			<>
 				<SimpleGrid cols={{ base: 1, sm: 2, lg: 3 }} spacing="xl">
-					{visibleQuests.map((quest) => (
-						<QuestCard
-							key={quest.questName}
-							quest={quest}
-							isAdded={todoList.includes(quest.questName)}
-							onAddToTodo={onAddToTodo}
-							onRemoveFromTodo={onRemoveFromTodo}
-							onQuestClick={onQuestClick}
-							getModifiedQuestName={getModifiedQuestName}
-						/>
-					))}
+					{groupedDisplayItems.map((item) =>
+						item.type === "group" ? (
+							<GroupedQuestCard
+								key={item.parentName}
+								parentName={item.parentName}
+								subquests={item.subquests}
+								todoList={todoList}
+								onAddToTodo={onAddToTodo}
+								onRemoveFromTodo={onRemoveFromTodo}
+								onQuestClick={onQuestClick}
+							/>
+						) : (
+							<QuestCard
+								key={item.quest.questName}
+								quest={item.quest}
+								isAdded={todoList.includes(item.quest.questName)}
+								onAddToTodo={onAddToTodo}
+								onRemoveFromTodo={onRemoveFromTodo}
+								onQuestClick={onQuestClick}
+								getModifiedQuestName={getModifiedQuestName}
+							/>
+						)
+					)}
 				</SimpleGrid>
 
 				{visibleCount < quests.length && (

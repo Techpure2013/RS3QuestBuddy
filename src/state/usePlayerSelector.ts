@@ -66,7 +66,8 @@ export function usePlayerActions(options?: { onFetchError?: (error: string) => v
   return {
     fetchPlayer,
     loadQuestList: PlayerStore.loadQuestList.bind(PlayerStore),
-    setSorted: PlayerStore.setSorted.bind(PlayerStore),
+    setHideCompleted: PlayerStore.setHideCompleted.bind(PlayerStore),
+    setShowEligibleOnly: PlayerStore.setShowEligibleOnly.bind(PlayerStore),
     clearPlayer: PlayerStore.clearPlayer.bind(PlayerStore),
     reset: PlayerStore.reset.bind(PlayerStore),
   };

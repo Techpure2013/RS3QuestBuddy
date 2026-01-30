@@ -237,21 +237,26 @@ const derivedSelectors: PlayerDerivedSelectors = {
 
   displayQuests(): EnrichedQuest[] {
     const enriched = this.enrichedQuests();
-    const { isSorted } = state.player;
+    const { hideCompleted, showEligibleOnly } = state.player;
     const { playerFound } = state.ui;
 
-    if (!isSorted || !playerFound) {
-      return enriched;
+    let result = enriched;
+
+    // Apply "Hide Completed" filter (only when player data is loaded)
+    if (hideCompleted && playerFound) {
+      result = result.filter((q) => q.status !== "COMPLETED");
     }
 
-    // When sorted, show eligible remaining quests
-    const eligible = enriched.filter(
-      (q) => q.userEligible && q.status !== "COMPLETED"
-    );
+    // Apply "Show Eligible Only" filter (only when player data is loaded)
+    if (showEligibleOnly && playerFound) {
+      const eligible = result.filter((q) => q.userEligible);
+      // Only apply if we have eligible quests, otherwise keep current list
+      if (eligible.length > 0) {
+        result = eligible;
+      }
+    }
 
-    return eligible.length > 0
-      ? eligible
-      : enriched.filter((q) => q.status !== "COMPLETED");
+    return result;
   },
 
   remainingCount(): number {
@@ -496,8 +501,12 @@ export const PlayerStore = {
     }
   },
 
-  setSorted(isSorted: boolean) {
-    this.setPlayer({ isSorted });
+  setHideCompleted(hideCompleted: boolean) {
+    this.setPlayer({ hideCompleted });
+  },
+
+  setShowEligibleOnly(showEligibleOnly: boolean) {
+    this.setPlayer({ showEligibleOnly });
   },
 
   clearPlayer() {

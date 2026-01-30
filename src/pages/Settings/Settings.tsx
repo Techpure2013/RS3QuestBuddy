@@ -4,6 +4,7 @@ import {
 	AccordionPanel,
 	Button,
 	ColorPicker,
+	Select,
 	Stack,
 	Switch,
 } from "@mantine/core";
@@ -73,6 +74,19 @@ const Settings: React.FC = () => {
 					label={settings.autoScrollEnabled ? "Auto-Scroll On" : "Auto-Scroll Off"}
 					checked={settings.autoScrollEnabled}
 					onChange={toggleAutoScroll}
+				/>
+
+				<Select
+					label="Background Theme"
+					value={settings.backgroundTheme}
+					onChange={(value) => updateSetting("backgroundTheme", (value as "default" | "brown") || "default")}
+					data={[
+						{ value: "default", label: "Default (Blue)" },
+						{ value: "brown", label: "Brown" },
+					]}
+					styles={{
+						label: { color: hasLabelColor ? settings.labelColor : "" },
+					}}
 				/>
 			</Stack>
 

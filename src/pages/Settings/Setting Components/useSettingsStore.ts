@@ -1,5 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 
+export type BackgroundTheme = "default" | "brown";
+
 export interface SettingsState {
 	isExpandedMode: boolean;
 	isSettingsModalOpen: boolean;
@@ -7,6 +9,7 @@ export interface SettingsState {
 	dialogSolverEnabled: boolean;
 	toolTipsEnabled: boolean;
 	autoScrollEnabled: boolean;
+	backgroundTheme: BackgroundTheme;
 	textColor: string;
 	labelColor: string;
 	buttonColor: string;
@@ -25,6 +28,7 @@ const defaultSettings: SettingsState = {
 	isCompact: false,
 	dialogSolverEnabled: false,
 	toolTipsEnabled: true,
+	backgroundTheme: "default",
 	textColor: "",
 	labelColor: "",
 	buttonColor: "",
@@ -66,6 +70,15 @@ export const useSettingsStore = () => {
 			console.error("Failed to save settings to localStorage", error);
 		}
 	}, [settings]);
+
+	// Apply background theme using data attribute on html element (CSS handles the styling)
+	useEffect(() => {
+		if (settings.backgroundTheme === "brown") {
+			document.documentElement.setAttribute("data-theme", "brown");
+		} else {
+			document.documentElement.removeAttribute("data-theme");
+		}
+	}, [settings.backgroundTheme]);
 
 	const updateSetting = useCallback(
 		<K extends keyof SettingsState>(key: K, value: SettingsState[K]) => {

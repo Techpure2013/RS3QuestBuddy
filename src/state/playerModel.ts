@@ -39,7 +39,8 @@ export interface PlayerState {
   playerName: string;
   skills: Skills | null;
   quests: PlayerQuestStatus[];
-  isSorted: boolean;
+  hideCompleted: boolean;
+  showEligibleOnly: boolean;
 }
 
 export interface QuestListState {
@@ -70,7 +71,8 @@ export const initialPlayerStoreState: PlayerStoreState = {
     playerName: "",
     skills: null,
     quests: [],
-    isSorted: false,
+    hideCompleted: false,
+    showEligibleOnly: false,
   },
   questList: {
     items: [],

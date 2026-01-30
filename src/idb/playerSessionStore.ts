@@ -7,7 +7,8 @@ export type PlayerSession = {
 	remainingQuest?: PlayerQuestStatus[];
 	skillLevels?: Skills | null; // if you want to persist skills
 	enrichedQuests?: EnrichedQuest[];
-	isSorted?: boolean;
+	hideCompleted?: boolean;
+	showEligibleOnly?: boolean;
 	updatedAt: string;
 };
 
@@ -75,7 +76,8 @@ export async function writeSession(patch: Partial<PlayerSession>) {
 		remainingQuest: current?.remainingQuest ?? [],
 		enrichedQuests: current?.enrichedQuests ?? [],
 		skillLevels: current?.skillLevels ?? null,
-		isSorted: current?.isSorted, // keep existing flag
+		hideCompleted: current?.hideCompleted,
+		showEligibleOnly: current?.showEligibleOnly,
 		updatedAt: new Date().toISOString(),
 		...patch, // override only what you intend to change
 	};

@@ -13,11 +13,194 @@
 	font-family: rs3Font;
 	--mantine-font-family: rs3Font !important;
 	--completed: #24bf58;
-	--rs3-background: url("./../background.png") !important;
+	--rs3-background: url("./../background.png");
+	--rs3-highlight-color: rgba(132, 177, 223, 0.1);
+	--rs3-hover-color: #30497e;
 }
 
 body {
 	background-image: var(--rs3-background);
+}
+
+/* Brown theme overrides */
+:root[data-theme="brown"] {
+	--title-color: #c4a87a;
+	--rs3-background: url("./../background-brown.png");
+	--rs3-highlight-color: rgba(196, 168, 122, 0.1);
+	--rs3-hover-color: #5a4a3a;
+	--rs3-card-background: linear-gradient(135deg, #2a2318, #1e1a14);
+	--rs3-card-border: #5a4a3a;
+}
+
+/* Direct body background for brown theme (CSS variables with url() can be unreliable) */
+html[data-theme="brown"],
+html[data-theme="brown"] body {
+	background-image: url("./../background-brown.png") !important;
+}
+
+[data-theme="brown"] .prevNextGroup,
+[data-theme="brown"] .mantine-Button-root:not(:disabled),
+[data-theme="brown"] .mantine-ActionIcon-root {
+	background-image: url("./../background-brown.png") !important;
+}
+
+/* Brown theme card styling */
+[data-theme="brown"] .mantine-Card-root {
+	background: linear-gradient(135deg, #2a2318, #1e1a14) !important;
+	border-color: #5a4a3a !important;
+}
+
+[data-theme="brown"] .mantine-Card-root:hover {
+	border-color: #8b7355 !important;
+	box-shadow: 0 0 10px rgba(196, 168, 122, 0.3) !important;
+}
+
+/* Brown theme accordion styling */
+[data-theme="brown"] .mantine-Accordion-item {
+	border-color: #5a4a3a;
+}
+
+[data-theme="brown"] .mantine-Accordion-item:hover {
+	background-color: rgba(139, 115, 85, 0.15);
+	border-color: #8b7355;
+}
+
+/* Brown theme button styling */
+[data-theme="brown"] .mantine-Button-root {
+	border: 1px solid #8b7355 !important;
+}
+
+[data-theme="brown"] .mantine-Button-root:hover:not(:disabled) {
+	border-color: #c4a87a !important;
+	background-color: rgba(139, 115, 85, 0.3) !important;
+}
+
+/* Brown theme input styling */
+[data-theme="brown"] .mantine-TextInput-input,
+[data-theme="brown"] .mantine-Select-input,
+[data-theme="brown"] .mantine-Input-input {
+	background-color: #1e1a14 !important;
+	border-color: #5a4a3a !important;
+}
+
+[data-theme="brown"] .mantine-TextInput-input:focus,
+[data-theme="brown"] .mantine-Select-input:focus,
+[data-theme="brown"] .mantine-Input-input:focus {
+	border-color: #c4a87a !important;
+}
+
+/* Brown theme fieldset/legend */
+[data-theme="brown"] fieldset {
+	border-color: #5a4a3a !important;
+}
+
+[data-theme="brown"] legend {
+	color: #c4a87a !important;
+}
+
+/* Brown theme select dropdown */
+[data-theme="brown"] .mantine-Select-dropdown {
+	background-color: #1e1a14 !important;
+	border-color: #5a4a3a !important;
+}
+
+[data-theme="brown"] .mantine-Select-option:hover,
+[data-theme="brown"] .mantine-Select-option[data-selected] {
+	background-color: rgba(139, 115, 85, 0.3) !important;
+}
+
+/* Brown theme switch styling */
+[data-theme="brown"] .mantine-Switch-track {
+	border-color: #5a4a3a !important;
+}
+
+/* Brown theme slider styling */
+[data-theme="brown"] .mantine-Slider-track {
+	background-color: #3a3025 !important;
+}
+
+[data-theme="brown"] .mantine-Slider-bar {
+	background-color: #c4a87a !important;
+}
+
+[data-theme="brown"] .mantine-Slider-thumb {
+	border-color: #c4a87a !important;
+}
+
+/* Brown theme divider */
+[data-theme="brown"] .mantine-Divider-root {
+	border-color: #5a4a3a !important;
+}
+
+[data-theme="brown"] .mantine-Divider-label {
+	color: #c4a87a !important;
+}
+
+/* Brown theme modal styling */
+[data-theme="brown"] .mantine-Modal-content,
+[data-theme="brown"] .mantine-Modal-body,
+[data-theme="brown"] .mantine-Modal-header {
+	background-color: #1e1a14 !important;
+	background-image: url("./../background-brown.png") !important;
+}
+
+[data-theme="brown"] .mantine-Modal-title {
+	color: #c4a87a !important;
+}
+
+[data-theme="brown"] .mantine-Modal-close {
+	color: #c4a87a !important;
+}
+
+[data-theme="brown"] .mantine-Modal-close:hover {
+	background-color: rgba(139, 115, 85, 0.3) !important;
+}
+
+/* Brown theme menu/popover styling */
+[data-theme="brown"] .mantine-Menu-dropdown,
+[data-theme="brown"] .mantine-Popover-dropdown {
+	background-color: #1e1a14 !important;
+	background-image: url("./../background-brown.png") !important;
+	border-color: #5a4a3a !important;
+}
+
+[data-theme="brown"] .mantine-Menu-item {
+	color: #e0d5c5 !important;
+}
+
+[data-theme="brown"] .mantine-Menu-item:hover {
+	background-color: rgba(139, 115, 85, 0.3) !important;
+}
+
+[data-theme="brown"] .mantine-Menu-label {
+	color: #c4a87a !important;
+}
+
+[data-theme="brown"] .mantine-Menu-divider {
+	border-color: #5a4a3a !important;
+}
+
+/* Brown theme drawer styling (for Quest Image window) */
+[data-theme="brown"] .mantine-Drawer-content,
+[data-theme="brown"] .mantine-Drawer-body,
+[data-theme="brown"] .mantine-Drawer-header {
+	background-color: #1e1a14 !important;
+	background-image: url("./../background-brown.png") !important;
+}
+
+/* Brown theme paper/overlay backgrounds */
+[data-theme="brown"] .mantine-Paper-root {
+	background-color: #1e1a14 !important;
+}
+
+/* Brown theme checkbox styling */
+[data-theme="brown"] .mantine-Checkbox-input {
+	border-color: #5a4a3a !important;
+}
+
+[data-theme="brown"] .mantine-Checkbox-input:checked {
+	background-color: #c4a87a !important;
+	border-color: #c4a87a !important;
 }
 
 /* Track */
@@ -168,7 +351,7 @@ h3 {
 }
 
 .mantine-Accordion-control:hover {
-	background-color: #30497e;
+	background-color: var(--rs3-hover-color);
 }
 
 .quill > .ql-container > .ql-editor.ql-blank::before {
@@ -402,13 +585,8 @@ img {
 
 /* On hover, make the quest item glow or highlight */
 .mantine-Accordion-item:hover {
-	background-color: rgba(
-		132,
-		177,
-		223,
-		0.1
-	); /* A subtle, semi-transparent blue glow */
-	border-color: rgba(132, 177, 223, 0.2); /* Faint border to match the glow */
+	background-color: var(--rs3-highlight-color); /* A subtle, semi-transparent glow */
+	border-color: var(--rs3-highlight-color); /* Faint border to match the glow */
 }
 
 /* Style the TextInput fields for a more integrated look */

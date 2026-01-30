@@ -59,14 +59,16 @@ const QuestCarousel: React.FC = () => {
 	// PlayerStore selectors
 	const playerName = usePlayerSelector((s) => s.player.playerName);
 	const playerFound = usePlayerSelector((s) => s.ui.playerFound);
-	const isSorted = usePlayerSelector((s) => s.player.isSorted);
+	const hideCompleted = usePlayerSelector((s) => s.player.hideCompleted);
+	const showEligibleOnly = usePlayerSelector((s) => s.player.showEligibleOnly);
 	const isLoading = usePlayerSelector((s) => s.ui.loading);
 	const questPoints = usePlayerSelector((_, d) => d.totalQuestPoints());
 	const displayQuests = usePlayerSelector((_, d) => d.displayQuests());
 	const remainingQuestsCount = usePlayerSelector((_, d) => d.remainingCount());
+	const completedCount = usePlayerSelector((_, d) => d.completedQuests().length);
 
 	// PlayerStore actions with toast callbacks
-	const { fetchPlayer, setSorted, clearPlayer } = usePlayerActions({
+	const { fetchPlayer, setHideCompleted, setShowEligibleOnly, clearPlayer } = usePlayerActions({
 		onFetchError: (error) => toast.error(error),
 		onFetchSuccess: (name) => toast.success(`Successfully loaded data for ${name}!`),
 	});
@@ -83,12 +85,13 @@ const QuestCarousel: React.FC = () => {
 		clearPlayer();
 	}, [clearPlayer]);
 
-	const setSortState = useCallback(
-		(sorted: boolean) => {
-			setSorted(sorted);
-		},
-		[setSorted]
-	);
+	const toggleHideCompleted = useCallback(() => {
+		setHideCompleted(!hideCompleted);
+	}, [setHideCompleted, hideCompleted]);
+
+	const toggleShowEligibleOnly = useCallback(() => {
+		setShowEligibleOnly(!showEligibleOnly);
+	}, [setShowEligibleOnly, showEligibleOnly]);
 
 	const { todoQuests, addQuestToTodo, removeQuestFromTodo, clearQuestTodo } =
 		useQuestTodo();
@@ -219,7 +222,7 @@ const QuestCarousel: React.FC = () => {
 
 		// Final fallback: if everything ends empty, show base
 		return listToSort.length === 0 ? base : listToSort;
-	}, [baseSig, debouncedQuery, activeFilters, activeSort, orderMap, isSorted]);
+	}, [baseSig, debouncedQuery, activeFilters, activeSort, orderMap, hideCompleted, showEligibleOnly]);
 
 	// Prefetch quest bundle so QuestPage is instant
 	const handleQuestClick = useCallback(async (questName: string) => {
@@ -320,28 +323,25 @@ const QuestCarousel: React.FC = () => {
 						</Group>
 
 						<Group style={{ justifyContent: "center" }}>
-							{!isSorted ? (
-								<>
-									<Button
-										variant="outline"
-										onClick={() => setSortState(true)}
-										disabled={!playerFound}
-									>
-										Sort Completed Quests
-									</Button>
-									<Button variant="outline" onClick={clearPlayerSearch}>
-										New Player Search
-									</Button>
-								</>
-							) : (
-								<Button
-									variant="outline"
-									onClick={() => setSortState(false)}
-									disabled={!playerFound}
-								>
-									Un-Sort
-								</Button>
-							)}
+							<Button
+								variant={hideCompleted ? "filled" : "outline"}
+								onClick={toggleHideCompleted}
+								disabled={!playerFound}
+								color={hideCompleted ? "teal" : undefined}
+							>
+								{hideCompleted ? "Showing Incomplete" : "Hide Completed"}
+							</Button>
+							<Button
+								variant={showEligibleOnly ? "filled" : "outline"}
+								onClick={toggleShowEligibleOnly}
+								disabled={!playerFound}
+								color={showEligibleOnly ? "blue" : undefined}
+							>
+								{showEligibleOnly ? "Eligible Only" : "Show All Quests"}
+							</Button>
+							<Button variant="outline" onClick={clearPlayerSearch}>
+								New Player Search
+							</Button>
 						</Group>
 					</SimpleGrid>
 
@@ -413,12 +413,17 @@ const QuestCarousel: React.FC = () => {
 				</Group>
 			)}
 
-			{isSorted && playerFound && (
+			{playerFound && (hideCompleted || showEligibleOnly) && (
 				<div className="caroQTitle">
-					<h3>Quests have been sorted by quests you can do!</h3>
+					<h3>
+						{hideCompleted && showEligibleOnly
+							? "Showing quests you can do now"
+							: hideCompleted
+								? "Hiding completed quests"
+								: "Showing only eligible quests"}
+					</h3>
 					<p>
-						{playerName} has a total of {questPoints} Quest Points and has{" "}
-						{remainingQuestsCount} quests you can do at this current time!
+						{playerName} has {questPoints} Quest Points ({completedCount} completed, {remainingQuestsCount} remaining)
 					</p>
 				</div>
 			)}
