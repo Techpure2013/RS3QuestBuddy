@@ -291,6 +291,7 @@ function renderNodes(
 							color: options.inheritColor || "#58a6ff",
 							textDecoration: "underline",
 						}}
+						onClick={(e) => e.stopPropagation()}
 					>
 						{renderNodes(node.children, key, options)}
 					</a>

@@ -80,6 +80,27 @@ const QuestPage: React.FC = () => {
 	const questDetails = questData?.questDetails ?? null;
 	const questImages = questData?.questImages ?? [];
 
+	// Handle scroll when toggling between Quest Details and Quest Steps views
+	useEffect(() => {
+		if (showStepReq) {
+			// Switching to Quest Details view - scroll to top
+			window.scrollTo(0, 0);
+			scrollContainerRef.current?.scrollTo(0, 0);
+		} else {
+			// Switching to Quest Steps view - scroll to active step if saved, otherwise top
+			if (active >= 0 && !settings.isExpandedMode && settings.autoScrollEnabled) {
+				const timer = setTimeout(() => {
+					const targetElement = document.getElementById(active.toString());
+					targetElement?.scrollIntoView({ behavior: "smooth", block: "start" });
+				}, 100);
+				return () => clearTimeout(timer);
+			} else {
+				window.scrollTo(0, 0);
+				scrollContainerRef.current?.scrollTo(0, 0);
+			}
+		}
+	}, [showStepReq]);
+
 	// Smooth-scroll to active step in non-expanded mode
 	useEffect(() => {
 		if (active === -1 || settings.isExpandedMode || !settings.autoScrollEnabled)
@@ -127,6 +148,10 @@ const QuestPage: React.FC = () => {
 			setActive(highestCompleted);
 		} else if (savedActive) {
 			setActive(parseInt(savedActive, 10));
+		} else {
+			// No saved progress - scroll to top
+			window.scrollTo(0, 0);
+			scrollContainerRef.current?.scrollTo(0, 0);
 		}
 	}, [questName]);
 
