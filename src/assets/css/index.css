@@ -203,6 +203,39 @@ html[data-theme="brown"] body {
 	border-color: #c4a87a !important;
 }
 
+/* Brown theme scrollbar styling */
+[data-theme="brown"] ::-webkit-scrollbar-track {
+	background-image: url("./../background-brown.png");
+	background-color: #1e1a14;
+}
+
+[data-theme="brown"] ::-webkit-scrollbar-thumb {
+	background-color: #5a4a3a;
+	border-radius: 0.3rem;
+}
+
+[data-theme="brown"] ::-webkit-scrollbar-thumb:hover {
+	background-color: #8b7355;
+}
+
+/* Also target html/body level for root scrollbar */
+html[data-theme="brown"] ::-webkit-scrollbar-track,
+html[data-theme="brown"]::-webkit-scrollbar-track {
+	background-image: url("./../background-brown.png");
+	background-color: #1e1a14;
+}
+
+html[data-theme="brown"] ::-webkit-scrollbar-thumb,
+html[data-theme="brown"]::-webkit-scrollbar-thumb {
+	background-color: #5a4a3a;
+	border-radius: 0.3rem;
+}
+
+html[data-theme="brown"] ::-webkit-scrollbar-thumb:hover,
+html[data-theme="brown"]::-webkit-scrollbar-thumb:hover {
+	background-color: #8b7355;
+}
+
 /* Track */
 ::-webkit-scrollbar-track {
 	background-image: var(--rs3-background);
