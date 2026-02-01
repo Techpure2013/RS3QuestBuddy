@@ -48,7 +48,7 @@ const patterns: Array<{
 }> = [
 	// Image with size: ![alt|size](url) - e.g., ![NPC|32](https://...)
 	{
-		regex: /!\[([^\]|]*)\|(\d+)\]\((https?:\/\/[^)]+)\)/,
+		regex: /!\[([^\]|]*)\|(\d+)\]\((https?:\/\/(?:[^()\s]|\([^()]*\))+)\)/,
 		type: "image",
 		getAlt: (m) => m[1],
 		getUrl: (m) => m[3],
@@ -56,7 +56,7 @@ const patterns: Array<{
 	},
 	// Image standard: ![alt](url) - defaults to 48px (chathead size)
 	{
-		regex: /!\[([^\]]*)\]\((https?:\/\/[^)]+)\)/,
+		regex: /!\[([^\]]*)\]\((https?:\/\/(?:[^()\s]|\([^()]*\))+)\)/,
 		type: "image",
 		getAlt: (m) => m[1],
 		getUrl: (m) => m[2],
@@ -83,7 +83,7 @@ const patterns: Array<{
 	},
 	// Link: [text](url) - HTTPS only for security
 	{
-		regex: /\[([^\]]+)\]\((https:\/\/[^)]+)\)/,
+		regex: /\[([^\]]+)\]\((https:\/\/(?:[^()\s]|\([^()]*\))+)\)/,
 		type: "link",
 		getUrl: (m) => m[2],
 	},
@@ -447,10 +447,10 @@ export function stripFormatting(text: string): string {
 		previousResult = result;
 
 		// Image with size: ![alt|size](url) -> alt (or empty)
-		result = result.replace(/!\[([^\]|]*)\|\d+\]\((https?:\/\/[^)]+)\)/g, "$1");
+		result = result.replace(/!\[([^\]|]*)\|\d+\]\((https?:\/\/(?:[^()\s]|\([^()]*\))+)\)/g, "$1");
 
 		// Image standard: ![alt](url) -> alt (or empty)
-		result = result.replace(/!\[([^\]]*)\]\((https?:\/\/[^)]+)\)/g, "$1");
+		result = result.replace(/!\[([^\]]*)\]\((https?:\/\/(?:[^()\s]|\([^()]*\))+)\)/g, "$1");
 
 		// Image shorthand: {{img:url}} or {{img:url|size}} -> empty
 		result = result.replace(/\{\{img:(https?:\/\/[^|}]+)(?:\|\d+)?\}\}/g, "");
@@ -465,7 +465,7 @@ export function stripFormatting(text: string): string {
 		);
 
 		// Link: [text](url) -> text
-		result = result.replace(/\[([^\]]+)\]\((https:\/\/[^)]+)\)/g, "$1");
+		result = result.replace(/\[([^\]]+)\]\((https:\/\/(?:[^()\s]|\([^()]*\))+)\)/g, "$1");
 
 		// Bold italic: ***text*** -> text
 		result = result.replace(/\*\*\*(.+?)\*\*\*/g, "$1");
