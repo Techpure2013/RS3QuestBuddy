@@ -2,7 +2,7 @@
 .env
 .env.*.local
 !.env.example
-
+.omc/
 # drizzle cache/artifacts
 .drizzle
 drizzle/

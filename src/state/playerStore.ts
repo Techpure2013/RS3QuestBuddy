@@ -32,6 +32,7 @@ const STORAGE_KEY = "rs3qb:player_state:v1";
    ========================================================================== */
 
 const replacementMap = new Map<string, string>([
+  ["Between a Rock", "Between a Rock..."],
   ["Hermy and Bass", "That Old Black Magic: Hermy and Bass"],
   ["Flesh and Bone", "That Old Black Magic: Flesh and Bone"],
   ["Skelly by Everlight", "That Old Black Magic: Skelly by Everlight"],
