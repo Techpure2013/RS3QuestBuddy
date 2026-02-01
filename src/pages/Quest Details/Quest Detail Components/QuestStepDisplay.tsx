@@ -74,6 +74,7 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 	const hasItems = hasRequiredItems || hasRecommendedItems;
 
 	const hasImages = images && images.length > 0;
+	const hasPlottedPoints = (step.highlights?.npc?.length ?? 0) > 0 || (step.highlights?.object?.length ?? 0) > 0;
 
 	const swapResult = useQuestConditionalSwap(quest, step);
 
@@ -244,21 +245,23 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 									</div>
 								);
 							})}
-						<div onClick={(e) => e.stopPropagation()}>
-							<ActionIcon
-								component="div"
-								variant="subtle"
-								color={isCompleted ? "teal" : "blue"}
-								title="Open plotting workspace for this step"
-								onClick={async (e) => {
-									e.stopPropagation();
-									const url = await buildPlotLinkAsync(quest, index);
-									window.open(url, "_blank", "noopener,noreferrer");
-								}}
-							>
-								<IconMap2 size={18} />
-							</ActionIcon>
-						</div>
+						{!hasPlottedPoints && (
+							<div onClick={(e) => e.stopPropagation()}>
+								<ActionIcon
+									component="div"
+									variant="subtle"
+									color={isCompleted ? "teal" : "blue"}
+									title="Open plotting workspace for this step"
+									onClick={async (e) => {
+										e.stopPropagation();
+										const url = await buildPlotLinkAsync(quest, index);
+										window.open(url, "_blank", "noopener,noreferrer");
+									}}
+								>
+									<IconMap2 size={18} />
+								</ActionIcon>
+							</div>
+						)}
 					</Group>
 				</Flex>
 			</Accordion.Control>
