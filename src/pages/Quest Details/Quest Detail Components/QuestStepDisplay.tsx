@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
 	Accordion,
 	Text,
@@ -21,6 +21,7 @@ import {
 	IconPointFilled,
 	IconHourglassLow,
 	IconMap2,
+	IconTable,
 } from "@tabler/icons-react";
 import type { QuestStep } from "../../../state/types";
 import { QuestImage } from "./../../../Fetchers/handleNewImage";
@@ -36,6 +37,62 @@ import {
 	resolveStepId,
 } from "./../../../util/plotLinks";
 import { RichText } from "./../../../util/RichText";
+import { TablePopup } from "./../../../Components/TablePopup";
+
+// Table data type for popup
+interface TableStyle {
+	borderColor: string;
+	headerBgColor: string;
+	headerTextColor: string;
+	evenRowBgColor: string;
+	oddRowBgColor: string;
+}
+
+interface TableData {
+	headers: string[];
+	rows: string[][];
+	style: TableStyle;
+}
+
+// Helper function to extract table data from text containing {{table|...}} syntax
+function extractTableFromText(text: string): TableData | null {
+	const match = text.match(/\{\{table\|([^}]+)\}\}/);
+	if (!match) return null;
+
+	const parts = match[1].split("|");
+	const style: TableStyle = {
+		borderColor: "#5a4a3a",
+		headerBgColor: "#2a2318",
+		headerTextColor: "#c4a87a",
+		evenRowBgColor: "#1e1a14",
+		oddRowBgColor: "#2a2318",
+	};
+
+	const dataParts: string[] = [];
+	for (const part of parts) {
+		if (part.startsWith("border:")) {
+			style.borderColor = part.substring(7);
+		} else if (part.startsWith("hbg:")) {
+			style.headerBgColor = part.substring(4);
+		} else if (part.startsWith("htx:")) {
+			style.headerTextColor = part.substring(4);
+		} else if (part.startsWith("ebg:")) {
+			style.evenRowBgColor = part.substring(4);
+		} else if (part.startsWith("obg:")) {
+			style.oddRowBgColor = part.substring(4);
+		} else {
+			dataParts.push(part);
+		}
+	}
+
+	const dataString = dataParts.join("|");
+	const segments = dataString.split("||");
+	const headers = segments[0] ? segments[0].split("|") : [];
+	const rows = segments.slice(1).map(seg => seg.split("|"));
+
+	return { headers, rows, style };
+}
+
 type CompactQuestStepProps = {
 	safeQuestName: string;
 	step: QuestStep;
@@ -68,7 +125,15 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 	const [plotUrl, setPlotUrl] = React.useState<string>(() =>
 		buildPlotLink(quest, index),
 	);
+	const [tablePopupOpen, setTablePopupOpen] = useState(false);
+	const [selectedTable, setSelectedTable] = useState<TableData | null>(null);
 	const { settings } = useSettingsStore();
+
+	const handleTableClick = (table: TableData) => {
+		setSelectedTable(table);
+		setTablePopupOpen(true);
+	};
+
 	const hasRequiredItems = filteredRequired.length > 0;
 	const hasRecommendedItems = filteredRecommended.length > 0;
 	const hasItems = hasRequiredItems || hasRecommendedItems;
@@ -112,6 +177,11 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 	);
 	const hasAdditionalInfo = filteredInfo.length > 0;
 	const hasPanelContent = hasItems || hasAdditionalInfo;
+
+	// Extract table data from step description for the ActionIcon
+	const tableData = extractTableFromText(displayStepDescription);
+	const hasTable = tableData !== null;
+
 	function normalizeBase(url: string): string {
 		const withSlash = url.endsWith("/") ? url : url + "/";
 		return withSlash.replace(/([^:]\/)\/+/g, "$1");
@@ -181,7 +251,7 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 							<Text fw={700} component="span" c={settings.labelColor}>
 								Step {index + 1}:{" "}
 							</Text>
-							<RichText onStepClick={(step) => onStepClick?.(step - 1)}>{displayStepDescription}</RichText>
+							<RichText onStepClick={(step) => onStepClick?.(step - 1)} onTableClick={handleTableClick} buttonColor={settings.buttonColor}>{displayStepDescription}</RichText>
 						</Text>
 					</Box>
 
@@ -223,6 +293,19 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 								}
 								title="Has additional information"
 							/>
+						)}
+						{hasTable && tableData && (
+							<div onClick={(e) => e.stopPropagation()}>
+								<ActionIcon
+									component="div"
+									variant="subtle"
+									color={isCompleted ? "teal" : settings.buttonColor || "violet"}
+									title="View table"
+									onClick={() => handleTableClick(tableData)}
+								>
+									<IconTable size={18} />
+								</ActionIcon>
+							</div>
 						)}
 						{hasImages &&
 							images.map((image, imgIndex) => {
@@ -300,7 +383,7 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 															}
 															c={settings.textColor}
 														>
-															<RichText onStepClick={(step) => onStepClick?.(step - 1)}>{item}</RichText>
+															<RichText onStepClick={(step) => onStepClick?.(step - 1)} onTableClick={handleTableClick} buttonColor={settings.buttonColor}>{item}</RichText>
 														</List.Item>
 													))}
 												</List>
@@ -339,7 +422,7 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 															}
 															c={settings.textColor}
 														>
-															<RichText onStepClick={(step) => onStepClick?.(step - 1)}>{item}</RichText>
+															<RichText onStepClick={(step) => onStepClick?.(step - 1)} onTableClick={handleTableClick} buttonColor={settings.buttonColor}>{item}</RichText>
 														</List.Item>
 													))}
 												</List>
@@ -372,7 +455,7 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 											}
 											c={settings.textColor}
 										>
-											<RichText onStepClick={(step) => onStepClick?.(step - 1)}>{info}</RichText>
+											<RichText onStepClick={(step) => onStepClick?.(step - 1)} onTableClick={handleTableClick} buttonColor={settings.buttonColor}>{info}</RichText>
 										</List.Item>
 									))}
 								</List>
@@ -381,6 +464,11 @@ export const CompactQuestStep: React.FC<CompactQuestStepProps> = ({
 					</Stack>
 				)}
 			</Accordion.Panel>
+			<TablePopup
+				opened={tablePopupOpen}
+				onClose={() => setTablePopupOpen(false)}
+				table={selectedTable}
+			/>
 		</Accordion.Item>
 	);
 };

@@ -647,3 +647,41 @@ img {
 	background-color: var(--mantine-color-dark-5);
 	transform: translateY(-2px); /* Give it a slight lift on hover */
 }
+
+/* RichText table button - ensure styles aren't overridden by Mantine */
+.richtext-table-btn,
+[data-richtext-btn="table"],
+.mantine-Accordion-control .richtext-table-btn,
+.mantine-Accordion-control [data-richtext-btn="table"],
+.mantine-Accordion-item .richtext-table-btn,
+span.richtext-table-btn[role="button"] {
+	--table-btn-color: #7c3aed;
+	background: var(--table-btn-color) !important;
+	background-color: var(--table-btn-color) !important;
+	color: #fff !important;
+	border: 1px solid var(--table-btn-color) !important;
+	display: inline-flex !important;
+	align-items: center !important;
+	gap: 4px !important;
+	padding: 4px 10px !important;
+	border-radius: 4px !important;
+	font-size: 0.85em !important;
+	cursor: pointer !important;
+	vertical-align: middle !important;
+	-webkit-appearance: none !important;
+	appearance: none !important;
+}
+
+.richtext-table-btn:hover,
+[data-richtext-btn="table"]:hover,
+.mantine-Accordion-control .richtext-table-btn:hover {
+	opacity: 0.85;
+}
+
+.richtext-table-btn svg,
+[data-richtext-btn="table"] svg,
+.mantine-Accordion-control .richtext-table-btn svg {
+	color: #fff !important;
+	fill: #fff !important;
+	stroke: #fff !important;
+}

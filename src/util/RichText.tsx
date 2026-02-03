@@ -19,9 +19,24 @@ import React from "react";
  * - {{img:url}}          → Image shorthand (48px)
  * - {{img:url|64}}       → Image shorthand with size
  * - step(22){text}       → Step link (jump to step 22)
+ * - {{table|...}}        → Table with customizable styling
  *
  * Combinations work: __**bold underline**__ or ~~*italic strikethrough*~~
  */
+
+interface TableStyle {
+	borderColor: string;
+	headerBgColor: string;
+	headerTextColor: string;
+	evenRowBgColor: string;
+	oddRowBgColor: string;
+}
+
+interface TableData {
+	headers: string[];
+	rows: string[][];
+	style: TableStyle;
+}
 
 type TextNode =
 	| { type: "text"; content: string }
@@ -34,7 +49,8 @@ type TextNode =
 	| { type: "color"; color: string; children: TextNode[] }
 	| { type: "link"; url: string; children: TextNode[] }
 	| { type: "image"; url: string; alt: string; size?: number }
-	| { type: "steplink"; step: number; children: TextNode[] };
+	| { type: "steplink"; step: number; children: TextNode[] }
+	| { type: "table"; table: TableData };
 
 // Token patterns in order of precedence (most specific first)
 const patterns: Array<{
@@ -46,6 +62,11 @@ const patterns: Array<{
 	getSize?: (match: RegExpMatchArray) => number | undefined;
 	getStep?: (match: RegExpMatchArray) => number;
 }> = [
+	// Table: {{table|border:#hex|hbg:#hex|htx:#hex|ebg:#hex|obg:#hex|h1|h2||r1c1|r1c2||r2c1|r2c2}}
+	{
+		regex: /\{\{table\|([^}]+)\}\}/,
+		type: "table" as const,
+	},
 	// Image with size: ![alt|size](url) - e.g., ![NPC|32](https://...)
 	{
 		regex: /!\[([^\]|]*)\|(\d+)\]\((https?:\/\/(?:[^()\s]|\([^()]*\))+)\)/,
@@ -127,6 +148,7 @@ function parseRichText(text: string): TextNode[] {
 			alt?: string;
 			size?: number;
 			step?: number;
+			table?: TableData;
 		} | null = null;
 
 		// Find the earliest matching pattern
@@ -136,7 +158,45 @@ function parseRichText(text: string): TextNode[] {
 				if (earliestMatch === null || match.index < earliestMatch.index) {
 					// For color patterns, content is in different capture groups
 					let content: string;
-					if (pattern.type === "color" && pattern.getColor) {
+					let tableData: TableData | undefined;
+
+					if (pattern.type === "table") {
+						// Parse table: border:#hex|hbg:#hex|htx:#hex|ebg:#hex|obg:#hex|h1|h2||r1c1|r1c2||r2c1|r2c2
+						content = "";
+						const parts = match[1].split("|");
+						const style: TableStyle = {
+							borderColor: "#5a4a3a",
+							headerBgColor: "#2a2318",
+							headerTextColor: "#c4a87a",
+							evenRowBgColor: "#1e1a14",
+							oddRowBgColor: "#2a2318",
+						};
+
+						const dataParts: string[] = [];
+						for (const part of parts) {
+							if (part.startsWith("border:")) {
+								style.borderColor = part.substring(7);
+							} else if (part.startsWith("hbg:")) {
+								style.headerBgColor = part.substring(4);
+							} else if (part.startsWith("htx:")) {
+								style.headerTextColor = part.substring(4);
+							} else if (part.startsWith("ebg:")) {
+								style.evenRowBgColor = part.substring(4);
+							} else if (part.startsWith("obg:")) {
+								style.oddRowBgColor = part.substring(4);
+							} else {
+								dataParts.push(part);
+							}
+						}
+
+						// Split by || to get headers and rows
+						const dataString = dataParts.join("|");
+						const segments = dataString.split("||");
+						const headers = segments[0] ? segments[0].split("|") : [];
+						const rows = segments.slice(1).map(seg => seg.split("|"));
+
+						tableData = { headers, rows, style };
+					} else if (pattern.type === "color" && pattern.getColor) {
 						// RGB pattern has content in group 4, hex in group 2
 						content = match[4] ?? match[2];
 					} else if (pattern.type === "image") {
@@ -159,6 +219,7 @@ function parseRichText(text: string): TextNode[] {
 						alt: pattern.getAlt?.(match),
 						size: pattern.getSize?.(match),
 						step: pattern.getStep?.(match),
+						table: tableData,
 					};
 				}
 			}
@@ -180,13 +241,18 @@ function parseRichText(text: string): TextNode[] {
 			});
 		}
 
-		// Handle image type specially (no children)
+		// Handle image and table types specially (no children)
 		if (earliestMatch.type === "image" && earliestMatch.url) {
 			nodes.push({
 				type: "image",
 				url: earliestMatch.url,
 				alt: earliestMatch.alt || "",
 				size: earliestMatch.size,
+			});
+		} else if (earliestMatch.type === "table" && earliestMatch.table) {
+			nodes.push({
+				type: "table",
+				table: earliestMatch.table,
 			});
 		} else {
 			// Recursively parse the content inside the matched pattern
@@ -228,6 +294,8 @@ function parseRichText(text: string): TextNode[] {
 interface RenderOptions {
 	inheritColor?: string;
 	onStepClick?: (step: number) => void;
+	onTableClick?: (table: TableData) => void;
+	buttonColor?: string;
 }
 
 function renderNodes(
@@ -369,6 +437,11 @@ function renderNodes(
 					</a>
 				);
 
+			case "table":
+				// Tables are now shown as ActionIcons in QuestStepDisplay
+				// Return empty fragment - the table icon on the right handles it
+				return <React.Fragment key={key} />;
+
 			default:
 				return null;
 		}
@@ -381,6 +454,10 @@ export interface RichTextProps {
 	fallbackToPlain?: boolean;
 	/** Callback when a step link is clicked */
 	onStepClick?: (step: number) => void;
+	/** Callback when a table is clicked */
+	onTableClick?: (table: TableData) => void;
+	/** Custom button color for table buttons (from theme settings) */
+	buttonColor?: string;
 }
 
 /**
@@ -397,6 +474,8 @@ export const RichText: React.FC<RichTextProps> = ({
 	children,
 	fallbackToPlain = true,
 	onStepClick,
+	onTableClick,
+	buttonColor,
 }) => {
 	if (typeof children !== "string") {
 		return <>{children}</>;
@@ -404,7 +483,7 @@ export const RichText: React.FC<RichTextProps> = ({
 
 	try {
 		const nodes = parseRichText(children);
-		return <>{renderNodes(nodes, "rt", { onStepClick })}</>;
+		return <>{renderNodes(nodes, "rt", { onStepClick, onTableClick, buttonColor })}</>;
 	} catch (error) {
 		console.error("RichText parsing error:", error);
 		if (fallbackToPlain) {
@@ -418,10 +497,13 @@ export const RichText: React.FC<RichTextProps> = ({
  * Parse rich text and return React nodes directly
  * Useful when you need more control over rendering
  */
-export function parseAndRender(text: string): React.ReactNode {
+export function parseAndRender(
+	text: string,
+	options?: { onStepClick?: (step: number) => void; onTableClick?: (table: TableData) => void }
+): React.ReactNode {
 	try {
 		const nodes = parseRichText(text);
-		return <>{renderNodes(nodes, "rt")}</>;
+		return <>{renderNodes(nodes, "rt", options)}</>;
 	} catch {
 		return text;
 	}
@@ -445,6 +527,9 @@ export function stripFormatting(text: string): string {
 	// Keep stripping until no more changes (handles nested formatting)
 	while (result !== previousResult) {
 		previousResult = result;
+
+		// Table: {{table|...}} -> [Table]
+		result = result.replace(/\{\{table\|[^}]+\}\}/g, "[Table]");
 
 		// Image with size: ![alt|size](url) -> alt (or empty)
 		result = result.replace(/!\[([^\]|]*)\|\d+\]\((https?:\/\/(?:[^()\s]|\([^()]*\))+)\)/g, "$1");
