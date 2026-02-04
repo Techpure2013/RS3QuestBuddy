@@ -303,6 +303,18 @@ const QuestPage: React.FC = () => {
 	};
 
 	const handleStepClick = (clickedIndex: number) => {
+		setActive(clickedIndex);
+		// Only scroll if auto-scroll is enabled
+		if (settings.autoScrollEnabled) {
+			// In expanded mode, useEffect doesn't scroll, so we do it directly
+			if (settings.isExpandedMode) {
+				setTimeout(() => {
+					const targetElement = document.getElementById(clickedIndex.toString());
+					targetElement?.scrollIntoView({ behavior: "smooth", block: "start" });
+				}, 100);
+			}
+			// In compact mode, the useEffect handles scrolling
+		}
 		updateCompletionState(clickedIndex);
 	};
 	// Adjust to how your folders are actually named on disk
@@ -506,7 +518,7 @@ const QuestPage: React.FC = () => {
 										isCompleted={completedSteps.has(index)}
 										images={matchedImages}
 										onImagePopOut={handlePopOut}
-										onStepClick={settings.isExpandedMode ? handleStepClick : undefined}
+										onStepClick={handleStepClick}
 										quest={questName}
 									/>
 								);
