@@ -17,6 +17,7 @@ import {
 } from "./playerModel";
 import type { PlayerQuestStatus, Skills } from "./types";
 import { getApiBase } from "../api/base";
+import { getQuestGroup } from "../Handlers/questGroups";
 import { parsePlayerStats } from "../Fetchers/PlayerStatsSort";
 
 /* ==========================================================================
@@ -35,7 +36,7 @@ const replacementMap = new Map<string, string>([
   ["Between a Rock", "Between a Rock..."],
   ["Hermy and Bass", "That Old Black Magic: Hermy and Bass"],
   ["Flesh and Bone", "That Old Black Magic: Flesh and Bone"],
-  ["Skelly by Everlight", "That Old Black Magic: Skelly by Everlight"],
+  ["Skelly by Everlight", "That Old Black Magic: Skelly By Everlight"],
   ["My One and Only Lute", "That Old Black Magic: My One and Only Lute"],
   ["Foreshadowing", "Once Upon a Time in Gielinor: Foreshadowing"],
   ["Defeating the Culinaromancer", "Recipe for Disaster: Defeating the Culinaromancer"],
@@ -161,17 +162,42 @@ const derivedSelectors: PlayerDerivedSelectors = {
     const quests = state.player.quests;
     if (!quests.length) return [];
 
-    return quests
-      .map((q) => {
-        const newTitle = replacementMap.get(q.title) ?? q.title;
+    const seen = new Set<string>();
+    const result: PlayerQuestStatus[] = [];
+
+    for (const q of quests) {
+      const newTitle = replacementMap.get(q.title) ?? q.title;
+
+      if (newTitle === "") {
+        // Parent quest mapped to empty - expand into sub-quests if it's a quest group
+        const group = getQuestGroup(q.title);
+        if (group) {
+          for (const sub of group.subquests) {
+            if (!seen.has(sub)) {
+              seen.add(sub);
+              result.push({
+                ...q,
+                title: sub,
+                questPoints: getQuestPointOverride(sub) ?? 0,
+              });
+            }
+          }
+        }
+        continue;
+      }
+
+      if (!seen.has(newTitle)) {
+        seen.add(newTitle);
         const pointOverride = getQuestPointOverride(newTitle);
-        return {
+        result.push({
           ...q,
           title: newTitle,
           questPoints: pointOverride ?? q.questPoints,
-        };
-      })
-      .filter((q) => q.title !== "");
+        });
+      }
+    }
+
+    return result;
   },
 
   completedQuests(): PlayerQuestStatus[] {
