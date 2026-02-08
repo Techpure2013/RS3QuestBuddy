@@ -39,14 +39,20 @@ const openDiscord = (): void => {
 	if (newWindow) newWindow.opener = null;
 };
 
+/** Map of app display names → wiki page names for quests where they differ */
+const wikiNameMap = new Map<string, string>([
+	["Another Slice of HAM", "Another Slice of H.A.M."],
+	["Raksha, the Shadow Colossus", "Raksha, the Shadow Colossus (quest)"],
+	["Between a Rock", "Between a Rock..."],
+	["A Fairy Tale I: Growing Pains", "A Fairy Tale I - Growing Pains"],
+	["A Fairy Tale II: Cure a Queen", "A Fairy Tale II - Cure a Queen"],
+	["A Fairy Tale III: Battle at Ork's Rift", "A Fairy Tale III - Battle at Ork's Rift"],
+]);
+
 const openWikiQuest = (questName: string): void => {
-	if (questName === "Another Slice of HAM")
-		questName = "Another Slice of H.A.M.";
-	if (questName === "Raksha, the Shadow Colossus")
-		questName = "Raksha, the Shadow Colossus (quest)";
-	if (questName === "Between a Rock") questName = "Between a Rock...";
+	const wikiName = wikiNameMap.get(questName) ?? questName;
 	const newWindow = window.open(
-		`https://runescape.wiki/w/${encodeURIComponent(questName)}/Quick_guide`,
+		`https://runescape.wiki/w/${encodeURIComponent(wikiName)}/Quick_guide`,
 		"_blank",
 		"noopener,noreferrer",
 	);

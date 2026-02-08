@@ -88,7 +88,7 @@ const QuestPage: React.FC = () => {
 			scrollContainerRef.current?.scrollTo(0, 0);
 		} else {
 			// Switching to Quest Steps view - scroll to active step if saved, otherwise top
-			if (active >= 0 && !settings.isExpandedMode && settings.autoScrollEnabled) {
+			if (active >= 0 && settings.autoScrollEnabled) {
 				const timer = setTimeout(() => {
 					const targetElement = document.getElementById(active.toString());
 					targetElement?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -101,9 +101,9 @@ const QuestPage: React.FC = () => {
 		}
 	}, [showStepReq]);
 
-	// Smooth-scroll to active step in non-expanded mode
+	// Smooth-scroll to active step
 	useEffect(() => {
-		if (active === -1 || settings.isExpandedMode || !settings.autoScrollEnabled)
+		if (active === -1 || !settings.autoScrollEnabled)
 			return;
 		const timer = setTimeout(() => {
 			const targetElement = document.getElementById(active.toString());
@@ -357,6 +357,15 @@ const QuestPage: React.FC = () => {
 					s.textContent = style.textContent;
 					newWindow.document.head.appendChild(s);
 				});
+
+				// Transfer theme settings to pop-out window
+				const theme = document.documentElement.getAttribute("data-theme");
+				if (theme) {
+					newWindow.document.documentElement.setAttribute("data-theme", theme);
+				}
+				newWindow.document.body.style.backgroundColor = getComputedStyle(document.body).backgroundColor;
+				newWindow.document.body.style.margin = "0";
+				newWindow.document.body.style.padding = "8px";
 
 				const root = createRoot(container);
 				root.render(

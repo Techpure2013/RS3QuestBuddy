@@ -96,6 +96,17 @@ const AltGuard = () => {
 	);
 };
 
+// Apply saved theme early to prevent flash of default theme
+try {
+	const saved = localStorage.getItem("appSettings");
+	if (saved) {
+		const parsed = JSON.parse(saved);
+		if (parsed.backgroundTheme === "brown") {
+			document.documentElement.setAttribute("data-theme", "brown");
+		}
+	}
+} catch { /* ignore parse errors */ }
+
 // Base HTML font size + render
 document.querySelector("html")!.style.fontSize = "16px";
 
