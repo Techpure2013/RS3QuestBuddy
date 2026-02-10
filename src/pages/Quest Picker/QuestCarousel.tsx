@@ -19,6 +19,7 @@ import {
 	IconSettings,
 	IconX,
 	IconList,
+	IconPlaylistAdd,
 } from "@tabler/icons-react";
 import { useSettings } from "../../Entrance/Entrance Components/SettingsContext";
 
@@ -29,6 +30,7 @@ import { useToast } from "../../Components/Toast/useToast";
 import { SearchControls } from "./Quest Picker Components/SearchControls";
 import MenuInterface from "./Quest Picker Components/MenuInterface";
 import { ironmanQuestOrder } from "../../Handlers/ironmanQuestOrder";
+import { timelineQuestOrder } from "../../Handlers/timelineQuestOrder";
 import Settings from "../Settings/Settings";
 import UserNotes from "../Settings/userNotes";
 import QuestTodoList from "./Quest Picker Components/QuestTodoList";
@@ -47,7 +49,13 @@ export type Filter =
 export type SortKey =
 	| "Quest Points"
 	| "Release Date"
-	| "Efficient Ironman Quests";
+	| "Efficient Ironman Quests"
+	| "Alphabetical"
+	| "Timeline"
+	| "Fifth/Sixth Age"
+	| "Progress"
+	| "Series"
+	| "Difficulty";
 
 const QuestCarousel: React.FC = () => {
 	const [searchQuery, setSearchQuery] = useState("");
@@ -93,7 +101,7 @@ const QuestCarousel: React.FC = () => {
 		setShowEligibleOnly(!showEligibleOnly);
 	}, [setShowEligibleOnly, showEligibleOnly]);
 
-	const { todoQuests, addQuestToTodo, removeQuestFromTodo, clearQuestTodo } =
+	const { todoQuests, addQuestToTodo, addMultipleQuestsToTodo, removeQuestFromTodo, clearQuestTodo } =
 		useQuestTodo();
 
 	const { settings, closeSettingsModal, openSettingsModal } = useSettings();
@@ -108,6 +116,12 @@ const QuestCarousel: React.FC = () => {
 	// For Ironman sort
 	const orderMap = useMemo(
 		() => new Map(ironmanQuestOrder.map((name, i) => [name, i] as const)),
+		[],
+	);
+
+	// For Timeline sort
+	const timelineOrderMap = useMemo(
+		() => new Map(timelineQuestOrder.map((name, i) => [name, i] as const)),
 		[],
 	);
 
@@ -218,11 +232,51 @@ const QuestCarousel: React.FC = () => {
 					: new Date("2100-01-01");
 				return aDate.getTime() - bDate.getTime();
 			});
+		} else if (activeSort === "Alphabetical") {
+			listToSort = [...listToSort].sort((a, b) =>
+				a.questName.localeCompare(b.questName),
+			);
+		} else if (activeSort === "Timeline") {
+			listToSort = [...listToSort].sort((a, b) => {
+				const aIdx = timelineOrderMap.get(a.questName) ?? Infinity;
+				const bIdx = timelineOrderMap.get(b.questName) ?? Infinity;
+				return aIdx - bIdx;
+			});
+		} else if (activeSort === "Fifth/Sixth Age") {
+			const ageOrder: Record<string, number> = {
+				"Fifth Age": 0,
+				"Ambiguous (Fits into Either Ages)": 1,
+				"Sixth Age": 2,
+				"Age of Chaos": 3,
+			};
+			listToSort = [...listToSort].sort(
+				(a, b) => (ageOrder[a.questAge] ?? 99) - (ageOrder[b.questAge] ?? 99),
+			);
+		} else if (activeSort === "Progress") {
+			const statusOrder: Record<string, number> = {
+				STARTED: 0,
+				NOT_STARTED: 1,
+				COMPLETED: 2,
+			};
+			listToSort = [...listToSort].sort(
+				(a, b) =>
+					(statusOrder[a.status] ?? 1) - (statusOrder[b.status] ?? 1),
+			);
+		} else if (activeSort === "Series") {
+			listToSort = [...listToSort].sort((a, b) => {
+				if (a.series === "No Series" && b.series !== "No Series") return 1;
+				if (a.series !== "No Series" && b.series === "No Series") return -1;
+				return a.series.localeCompare(b.series);
+			});
+		} else if (activeSort === "Difficulty") {
+			listToSort = [...listToSort].sort(
+				(a, b) => (b.difficulty || 0) - (a.difficulty || 0),
+			);
 		}
 
 		// Final fallback: if everything ends empty, show base
 		return listToSort.length === 0 ? base : listToSort;
-	}, [baseSig, debouncedQuery, activeFilters, activeSort, orderMap, hideCompleted, showEligibleOnly]);
+	}, [baseSig, debouncedQuery, activeFilters, activeSort, orderMap, timelineOrderMap, hideCompleted, showEligibleOnly]);
 
 	// Prefetch quest bundle so QuestPage is instant
 	const handleQuestClick = useCallback(async (questName: string) => {
@@ -244,6 +298,16 @@ const QuestCarousel: React.FC = () => {
 		(name: string) => removeQuestFromTodo(name),
 		[removeQuestFromTodo],
 	);
+
+	const handleAddAllToTodo = useCallback(() => {
+		const names = filteredQuests.map((q) => q.questName);
+		addMultipleQuestsToTodo(names);
+	}, [filteredQuests, addMultipleQuestsToTodo]);
+
+	const addAllCount = useMemo(() => {
+		const existing = new Set(todoQuests);
+		return filteredQuests.filter((q) => !existing.has(q.questName)).length;
+	}, [filteredQuests, todoQuests]);
 
 	const openDiscord = useCallback(() => {
 		const newWindow = window.open(
@@ -313,6 +377,22 @@ const QuestCarousel: React.FC = () => {
 								}
 							>
 								To-Do List
+							</Button>
+
+							<Button
+								leftSection={<IconPlaylistAdd size={18} />}
+								variant="outline"
+								onClick={handleAddAllToTodo}
+								disabled={addAllCount === 0}
+								rightSection={
+									addAllCount > 0 ? (
+										<Badge circle color="teal" size="sm">
+											{addAllCount}
+										</Badge>
+									) : null
+								}
+							>
+								Add All to To-Do
 							</Button>
 
 							<MenuInterface
