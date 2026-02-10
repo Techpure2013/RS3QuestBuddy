@@ -7,11 +7,16 @@ import {
 	IconClock,
 	IconFilter,
 	IconGift,
+	IconSortAZ,
+	IconTimeline,
+	IconProgress,
+	IconSword,
 } from "@tabler/icons-react";
-import SubMenu from "./SubMenu"; // Make sure the path to SubMenu is correct
+import SubMenu from "./SubMenu";
 import { CustomIcon } from "./CustomIcon";
 import { Filter, SortKey } from "./../QuestCarousel";
 import type { QuestAge, QuestSeries } from "./../../../state/types";
+
 // Data for the sub-menus
 const questAges = [
 	"Fifth Age",
@@ -115,6 +120,7 @@ function MenuInterface({
 				</Menu.Target>
 
 				<Menu.Dropdown>
+					<Menu.Label>Filters</Menu.Label>
 					<SubMenu
 						leftSection={<IconClock size={16} />}
 						title="Quest Age"
@@ -133,8 +139,6 @@ function MenuInterface({
 						}
 					/>
 
-					<Menu.Divider />
-
 					<Menu.Label>Filter by Reward</Menu.Label>
 					<TextInput
 						placeholder="e.g. lamp, experience, key"
@@ -146,6 +150,15 @@ function MenuInterface({
 						style={{ padding: "0.5rem" }}
 					/>
 
+					<Menu.Divider />
+
+					<Menu.Label>Sort</Menu.Label>
+					<Menu.Item
+						leftSection={<IconSortAZ size={16} />}
+						onClick={() => onSortChange("Alphabetical")}
+					>
+						Alphabetical
+					</Menu.Item>
 					<Menu.Item
 						leftSection={<CustomIcon src="./assets/Quest_points.png" />}
 						onClick={() => onSortChange("Quest Points")}
@@ -157,6 +170,36 @@ function MenuInterface({
 						onClick={() => onSortChange("Release Date")}
 					>
 						Release Date
+					</Menu.Item>
+					<Menu.Item
+						leftSection={<IconTimeline size={16} />}
+						onClick={() => onSortChange("Timeline")}
+					>
+						Timeline
+					</Menu.Item>
+					<Menu.Item
+						leftSection={<IconClock size={16} />}
+						onClick={() => onSortChange("Fifth/Sixth Age")}
+					>
+						Fifth/Sixth Age
+					</Menu.Item>
+					<Menu.Item
+						leftSection={<IconProgress size={16} />}
+						onClick={() => onSortChange("Progress")}
+					>
+						Progress
+					</Menu.Item>
+					<Menu.Item
+						leftSection={<IconBooks size={16} />}
+						onClick={() => onSortChange("Series")}
+					>
+						Series
+					</Menu.Item>
+					<Menu.Item
+						leftSection={<IconSword size={16} />}
+						onClick={() => onSortChange("Difficulty")}
+					>
+						Difficulty
 					</Menu.Item>
 					<Menu.Item
 						leftSection={<CustomIcon src="./assets/IronmanImage.png" />}
