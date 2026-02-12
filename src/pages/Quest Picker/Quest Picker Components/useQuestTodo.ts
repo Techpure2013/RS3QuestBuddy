@@ -50,9 +50,20 @@ export const useQuestTodo = () => {
 			return newList;
 		});
 	}, []);
+	const addMultipleQuestsToTodo = useCallback((questNames: string[]) => {
+		setTodoQuests((prevList) => {
+			const existing = new Set(prevList);
+			const toAdd = questNames.filter((name) => !existing.has(name));
+			if (toAdd.length === 0) return prevList;
+			const newList = [...prevList, ...toAdd];
+			saveList(newList);
+			return newList;
+		});
+	}, []);
+
 	const clearQuestTodo = useCallback(() => {
 		setTodoQuests([]);
 		saveList([]); // Also clear it from localStorage
 	}, []);
-	return { todoQuests, addQuestToTodo, removeQuestFromTodo, clearQuestTodo };
+	return { todoQuests, addQuestToTodo, addMultipleQuestsToTodo, removeQuestFromTodo, clearQuestTodo };
 };
