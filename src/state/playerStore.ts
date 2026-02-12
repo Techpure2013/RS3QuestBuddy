@@ -312,6 +312,11 @@ export const PlayerStore = {
       if (!raw) return;
       const parsed = JSON.parse(raw) as PlayerStoreState;
       state = migrate(parsed);
+      // Transient UI flags should never survive a page reload
+      state = produce(state, (draft) => {
+        draft.ui.loading = false;
+        draft.ui.error = null;
+      });
     } catch (err) {
       console.error("[PlayerStore] Initialize failed:", err);
       // Keep initial state
@@ -430,6 +435,11 @@ export const PlayerStore = {
     fetchAbortController = new AbortController();
     const signal = fetchAbortController.signal;
 
+    // Add 15-second timeout to prevent permanent lockup
+    const timeoutId = setTimeout(() => {
+      fetchAbortController?.abort();
+    }, 15000);
+
     this.setUi({ loading: true, error: null });
     this.setPlayer({ playerName: trimmed });
 
@@ -446,6 +456,8 @@ export const PlayerStore = {
           credentials: "same-origin",
         }),
       ]);
+
+      clearTimeout(timeoutId);
 
       // Parse hiscores
       let parsedSkills: Skills | null = null;
@@ -484,8 +496,13 @@ export const PlayerStore = {
 
       return success;
     } catch (err) {
+      clearTimeout(timeoutId);
+
       if ((err as Error).name === "AbortError") {
-        // Silent on abort
+        // Only reset loading if no newer request has taken over
+        if (fetchAbortController?.signal === signal) {
+          this.setUi({ loading: false, error: null });
+        }
         return false;
       }
 

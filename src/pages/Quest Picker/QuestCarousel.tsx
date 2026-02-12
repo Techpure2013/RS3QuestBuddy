@@ -75,10 +75,9 @@ const QuestCarousel: React.FC = () => {
 
 	const searchForPlayer = useCallback(
 		async (name: string) => {
-			if (isLoading) return;
 			await fetchPlayer(name);
 		},
-		[isLoading, fetchPlayer]
+		[fetchPlayer]
 	);
 
 	const clearPlayerSearch = useCallback(() => {
