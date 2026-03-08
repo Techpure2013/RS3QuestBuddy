@@ -1,4 +1,5 @@
 import React from "react";
+import { useSettings } from "../Entrance/Entrance Components/SettingsContext";
 
 /**
  * RichText Parser - Discord/Reddit-style text formatting
@@ -470,8 +471,14 @@ export const RichText: React.FC<RichTextProps> = ({
 	onTableClick,
 	buttonColor,
 }) => {
+	const { settings } = useSettings();
+
 	if (typeof children !== "string") {
 		return <>{children}</>;
+	}
+
+	if (!settings.richTextEnabled) {
+		return <>{stripFormatting(children)}</>;
 	}
 
 	try {

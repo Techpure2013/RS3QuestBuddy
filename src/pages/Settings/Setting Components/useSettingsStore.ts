@@ -9,6 +9,7 @@ export interface SettingsState {
 	dialogSolverEnabled: boolean;
 	toolTipsEnabled: boolean;
 	autoScrollEnabled: boolean;
+	richTextEnabled: boolean;
 	backgroundTheme: BackgroundTheme;
 	textColor: string;
 	labelColor: string;
@@ -28,6 +29,7 @@ const defaultSettings: SettingsState = {
 	isCompact: false,
 	dialogSolverEnabled: false,
 	toolTipsEnabled: true,
+	richTextEnabled: true,
 	backgroundTheme: "default",
 	textColor: "",
 	labelColor: "",
