@@ -238,27 +238,27 @@ const derivedSelectors: PlayerDerivedSelectors = {
       }));
     }
 
-    // Merge player quest data with quest list metadata
-    const questMap = new Map(questList.map((q) => [q.questName, q]));
+    // Build lookup from RuneMetrics player data, keyed by title
+    const playerMap = new Map<string, PlayerQuestStatus>(normalized.map((pq) => [pq.title, pq]));
 
-    return normalized
-      .map((pq) => {
-        const base = questMap.get(pq.title);
-        if (!base) return null;
+    // Iterate over OUR quest list as the source of truth,
+    // and enhance with RuneMetrics data when available
+    return questList
+      .map((base) => {
+        const pq = playerMap.get(base.questName);
         return {
           questName: base.questName,
           questAge: base.questAge,
           series: base.series,
           releaseDate: base.releaseDate ?? "",
           title: base.questName,
-          status: pq.status,
-          difficulty: pq.difficulty,
-          userEligible: pq.userEligible,
+          status: pq?.status ?? ("NOT_STARTED" as const),
+          difficulty: pq?.difficulty ?? 0,
+          userEligible: pq?.userEligible ?? false,
           questPoints: parseInt(base.questPoints, 10) || 0,
           rewards: base.rewards ?? [],
         };
       })
-      .filter((q): q is EnrichedQuest => q !== null)
       .sort((a, b) => a.questName.localeCompare(b.questName));
   },
 

@@ -96,6 +96,22 @@ const Settings: React.FC = () => {
 				/>
 			</Stack>
 
+			<Button
+				mt="xs"
+				variant="outline"
+				color="red"
+				onClick={() => {
+					updateSetting("textColor", "");
+					updateSetting("labelColor", "");
+					updateSetting("buttonColor", "");
+					updateSetting("textSwatches", []);
+					updateSetting("labelSwatches", []);
+					updateSetting("buttonSwatches", []);
+				}}
+			>
+				Clear All Colors
+			</Button>
+
 			<Accordion mt="md">
 				<Accordion.Item key="text-color" value="Color Your Text">
 					<AccordionControl
