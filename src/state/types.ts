@@ -127,6 +127,7 @@ export type NpcHighlight = {
 	npcName: string;
 	npcLocation: NpcLocation;
 	wanderRadius?: NpcWanderRadius;
+	floor?: number;
 };
 
 export type ObjectLocationPoint = {
@@ -146,6 +147,7 @@ export type ObjectHighlight = {
 	name: string;
 	objectLocation: ObjectLocationPoint[];
 	objectRadius?: ObjectRadius;
+	floor?: number;
 };
 
 export type QuestHighlights = {
@@ -185,7 +187,6 @@ export type QuestStep = {
 	itemsRecommended?: string[];
 	additionalStepInformation?: string[];
 	highlights: QuestHighlights;
-	floor: number;
 };
 
 export type QuestImage = {
@@ -217,7 +218,6 @@ export type NormalizedQuestStep = {
 	itemsRecommended: string[];
 	additionalStepInformation: string[];
 	highlights: QuestHighlights;
-	floor: number;
 };
 
 export type QuestBundle = {
@@ -244,7 +244,6 @@ type StepIn = {
 	itemsRecommended?: unknown;
 	additionalStepInformation?: unknown;
 	highlights?: QuestHighlights;
-	floor?: number;
 };
 
 const toLinesArray = (v: unknown): string[] => {
@@ -291,7 +290,6 @@ export function bundleToQuest(b: QuestBundle): Quest {
 			itemsRecommended: toLinesArray(s.itemsRecommended),
 			additionalStepInformation: toLinesArray(s.additionalStepInformation),
 			highlights: s.highlights ?? { npc: [], object: [] },
-			floor: Number.isFinite(s.floor as number) ? (s.floor as number) : 0,
 		})),
 		questDetails: {
 			Quest: b.details.Quest,
@@ -326,7 +324,6 @@ export function questToBundle(q: Quest): QuestBundleNormalized {
 			itemsRecommended: toLinesArray(s.itemsRecommended),
 			additionalStepInformation: toLinesArray(s.additionalStepInformation),
 			highlights: s.highlights ?? { npc: [], object: [] },
-			floor: Number.isFinite(s.floor) ? s.floor : 0,
 		})),
 		images: q.questImages ?? [],
 	};

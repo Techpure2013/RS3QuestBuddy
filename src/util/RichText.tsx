@@ -187,10 +187,13 @@ function parseRichText(text: string): TextNode[] {
 						}
 
 						// Split by || to get headers and rows
+						// Trim cells so space-padded empty cells (from serializer) become ""
 						const dataString = dataParts.join("|");
 						const segments = dataString.split("||");
-						const headers = segments[0] ? segments[0].split("|") : [];
-						const rows = segments.slice(1).map(seg => seg.split("|"));
+						const headers = segments[0] ? segments[0].split("|").map(h => h.trim()) : [];
+						const rows = segments.slice(1)
+							.filter(seg => seg.trim())
+							.map(seg => seg.split("|").map(c => c.trim()));
 
 						tableData = { headers, rows, style };
 					} else if (pattern.type === "color" && pattern.getColor) {
