@@ -63,6 +63,15 @@ export const QUEST_GROUPS: QuestGroup[] = [
       "That Old Black Magic: Hermy and Bass",
     ],
   },
+  {
+    parentName: "Wendlewick Tasks",
+    subquests:[
+      "Wendlewick Tasks: Finding Tali",
+      "Wendlewick Tasks: Laid to Rest",
+      "Wendlewick Tasks: The Lute of Love",
+      "Wendlewick Tasks: Trader Woes"
+    ]
+  }
 ];
 
 // Build lookup maps for efficient access
