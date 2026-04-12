@@ -49,7 +49,9 @@ const replacementMap = new Map<string, string>([
   ["Freeing the Lumbridge Sage", "Recipe for Disaster: Freeing the Lumbridge Sage"],
   ["Freeing the Mountain Dwarf", "Recipe for Disaster: Freeing the Mountain Dwarf"],
   ["That Old Black Magic", ""],
-  ["Unstable Foundations", ""],
+  // Unstable Foundations: removed tutorial quest, but RS3 API still returns it
+  // with 1 QP for players who completed it. Keep it as-is (no remap needed).
+  // ["Unstable Foundations", ""],
   ["Once Upon a Time in Gielinor", ""],
   ["Recipe for Disaster", ""],
   ["Dimension of Disaster", ""],
@@ -213,11 +215,12 @@ const derivedSelectors: PlayerDerivedSelectors = {
   },
 
   totalQuestPoints(): number {
-    // Use enrichedQuests which takes QP from the questList (our DB)
-    // rather than the RS3 API, which returns 0 for many Arc miniquests
-    // and other quests that actually give quest points.
-    return this.enrichedQuests()
-      .filter(q => q.status === "COMPLETED")
+    // Sum directly from the raw RS3 RuneMetrics API data, bypassing
+    // normalizedQuests() which corrupts QP values during parent→sub-quest
+    // expansion (sets QP=0 on expanded subs, then `seen` blocks the real values).
+    // The RuneMetrics per-quest QP values sum to the correct in-game total.
+    return state.player.quests
+      .filter((q) => q.status === "COMPLETED")
       .reduce((sum, q) => sum + (q.questPoints || 0), 0);
   },
 
