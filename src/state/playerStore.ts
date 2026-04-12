@@ -144,13 +144,13 @@ const isEqualShallow = (a: unknown, b: unknown): boolean => {
    Quest Point Overrides
    ========================================================================== */
 
+// Quest point overrides — currently empty since DB values are correct.
+// Add entries here if the techpure API ever has wrong quest_points values.
+// Format: "quest name lowercase" → correct QP value
+const QUEST_POINT_OVERRIDES: Record<string, number> = {};
+
 function getQuestPointOverride(title: string): number | null {
-  const lower = title.toLowerCase();
-  if (lower === "that old black magic: hermy and bass") return 2;
-  if (lower === "dimension of disaster: curse of arrav") return 3;
-  if (lower === "once upon a time in gielinor: finale") return 4;
-  if (lower === "necromancy!") return 1;
-  return null;
+  return QUEST_POINT_OVERRIDES[title.toLowerCase()] ?? null;
 }
 
 /* ==========================================================================
