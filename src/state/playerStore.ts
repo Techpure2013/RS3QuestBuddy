@@ -213,7 +213,12 @@ const derivedSelectors: PlayerDerivedSelectors = {
   },
 
   totalQuestPoints(): number {
-    return this.completedQuests().reduce((sum, q) => sum + (q.questPoints || 0), 0);
+    // Use enrichedQuests which takes QP from the questList (our DB)
+    // rather than the RS3 API, which returns 0 for many Arc miniquests
+    // and other quests that actually give quest points.
+    return this.enrichedQuests()
+      .filter(q => q.status === "COMPLETED")
+      .reduce((sum, q) => sum + (q.questPoints || 0), 0);
   },
 
   enrichedQuests(): EnrichedQuest[] {
