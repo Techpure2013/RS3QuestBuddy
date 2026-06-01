@@ -203,7 +203,19 @@ const derivedSelectors: PlayerDerivedSelectors = {
   },
 
   completedQuests(): PlayerQuestStatus[] {
-    return this.normalizedQuests().filter((q) => q.status === "COMPLETED");
+    const fromRM = this.normalizedQuests().filter((q) => q.status === "COMPLETED");
+    const rmTitles = new Set(fromRM.map((q) => q.title));
+    // Include manually completed quests not already in RuneMetrics data
+    const manual = state.player.completedQuestNames
+      .filter((name) => !rmTitles.has(name))
+      .map((name) => ({
+        title: name,
+        status: "COMPLETED" as const,
+        difficulty: 0,
+        questPoints: 0,
+        userEligible: true,
+      }));
+    return [...fromRM, ...manual];
   },
 
   remainingQuests(): PlayerQuestStatus[] {
@@ -215,13 +227,21 @@ const derivedSelectors: PlayerDerivedSelectors = {
   },
 
   totalQuestPoints(): number {
-    // Sum directly from the raw RS3 RuneMetrics API data, bypassing
-    // normalizedQuests() which corrupts QP values during parent→sub-quest
-    // expansion (sets QP=0 on expanded subs, then `seen` blocks the real values).
-    // The RuneMetrics per-quest QP values sum to the correct in-game total.
-    return state.player.quests
+    // Sum from raw RuneMetrics data when available
+    const rmQP = state.player.quests
       .filter((q) => q.status === "COMPLETED")
       .reduce((sum, q) => sum + (q.questPoints || 0), 0);
+
+    // Add QP from manually completed quests not in RuneMetrics
+    const rmTitles = new Set(state.player.quests.map((q) => q.title));
+    const manualOnly = state.player.completedQuestNames.filter((n) => !rmTitles.has(n));
+    const questListMap = new Map(state.questList.items.map((i) => [i.questName, i]));
+    const manualQP = manualOnly.reduce((sum, name) => {
+      const item = questListMap.get(name);
+      return sum + (item ? parseInt(item.questPoints, 10) || 0 : 0);
+    }, 0);
+
+    return rmQP + manualQP;
   },
 
   enrichedQuests(): EnrichedQuest[] {
@@ -230,15 +250,18 @@ const derivedSelectors: PlayerDerivedSelectors = {
 
     if (!questList.length) return [];
 
-    // If no player quests, return base enrichment
+    // If no player quests, return base enrichment with manual completions applied
     if (!normalized.length) {
+      const completedNames = new Set(state.player.completedQuestNames);
       return questList.map((q) => ({
         questName: q.questName,
         questAge: q.questAge,
         series: q.series,
         releaseDate: q.releaseDate ?? "",
         title: q.questName,
-        status: "NOT_STARTED" as const,
+        status: completedNames.has(q.questName)
+          ? ("COMPLETED" as const)
+          : ("NOT_STARTED" as const),
         difficulty: 0,
         userEligible: false,
         questPoints: parseInt(q.questPoints, 10) || 0,
@@ -251,16 +274,21 @@ const derivedSelectors: PlayerDerivedSelectors = {
 
     // Iterate over OUR quest list as the source of truth,
     // and enhance with RuneMetrics data when available
+    const completedNames = new Set(state.player.completedQuestNames);
+
     return questList
       .map((base) => {
         const pq = playerMap.get(base.questName);
+        const manuallyCompleted = completedNames.has(base.questName);
         return {
           questName: base.questName,
           questAge: base.questAge,
           series: base.series,
           releaseDate: base.releaseDate ?? "",
           title: base.questName,
-          status: pq?.status ?? ("NOT_STARTED" as const),
+          status: manuallyCompleted
+            ? ("COMPLETED" as const)
+            : (pq?.status ?? ("NOT_STARTED" as const)),
           difficulty: pq?.difficulty ?? 0,
           userEligible: pq?.userEligible ?? false,
           questPoints: parseInt(base.questPoints, 10) || 0,
@@ -273,17 +301,17 @@ const derivedSelectors: PlayerDerivedSelectors = {
   displayQuests(): EnrichedQuest[] {
     const enriched = this.enrichedQuests();
     const { hideCompleted, showEligibleOnly } = state.player;
-    const { playerFound } = state.ui;
+    const hasData = this.hasCompletionData();
 
     let result = enriched;
 
-    // Apply "Hide Completed" filter (only when player data is loaded)
-    if (hideCompleted && playerFound) {
+    // Apply "Hide Completed" filter (when player data or manual completions exist)
+    if (hideCompleted && hasData) {
       result = result.filter((q) => q.status !== "COMPLETED");
     }
 
-    // Apply "Show Eligible Only" filter (only when player data is loaded)
-    if (showEligibleOnly && playerFound) {
+    // Apply "Show Eligible Only" filter (only when RuneMetrics player data is loaded)
+    if (showEligibleOnly && state.ui.playerFound) {
       const eligible = result.filter((q) => q.userEligible);
       // Only apply if we have eligible quests, otherwise keep current list
       if (eligible.length > 0) {
@@ -295,7 +323,12 @@ const derivedSelectors: PlayerDerivedSelectors = {
   },
 
   remainingCount(): number {
-    return this.remainingQuests().length;
+    const enriched = this.enrichedQuests();
+    return enriched.filter((q) => q.status !== "COMPLETED").length;
+  },
+
+  hasCompletionData(): boolean {
+    return state.player.quests.length > 0 || state.player.completedQuestNames.length > 0;
   },
 };
 
@@ -491,6 +524,21 @@ export const PlayerStore = {
 
       const success = parsedSkills !== null || quests.length > 0;
 
+      // Merge RuneMetrics completed quests into our manual list (source of truth)
+      // Use a Set to guarantee no duplicates from RM data or existing list
+      if (quests.length > 0) {
+        const merged = new Set(state.player.completedQuestNames);
+        const before = merged.size;
+        for (const q of quests) {
+          if (q.status !== "COMPLETED") continue;
+          const normalized = replacementMap.get(q.title) ?? q.title;
+          if (normalized !== "") merged.add(normalized);
+        }
+        if (merged.size > before) {
+          this.setPlayer({ completedQuestNames: [...merged] });
+        }
+      }
+
       this.update(
         (draft) => {
           draft.player.skills = parsedSkills;
@@ -553,6 +601,32 @@ export const PlayerStore = {
     }
   },
 
+  markQuestCompleted(questName: string) {
+    this.update(
+      (draft) => {
+        if (!draft.player.completedQuestNames.includes(questName)) {
+          draft.player.completedQuestNames.push(questName);
+        }
+      },
+      ["player"]
+    );
+  },
+
+  markQuestIncomplete(questName: string) {
+    this.update(
+      (draft) => {
+        draft.player.completedQuestNames = draft.player.completedQuestNames.filter(
+          (n: string) => n !== questName
+        );
+      },
+      ["player"]
+    );
+  },
+
+  setCompletedQuests(questNames: string[]) {
+    this.setPlayer({ completedQuestNames: questNames });
+  },
+
   setHideCompleted(hideCompleted: boolean) {
     this.setPlayer({ hideCompleted });
   },
@@ -564,7 +638,8 @@ export const PlayerStore = {
   clearPlayer() {
     this.update(
       (draft) => {
-        draft.player = initialPlayerStoreState.player;
+        const saved = draft.player.completedQuestNames;
+        draft.player = { ...initialPlayerStoreState.player, completedQuestNames: saved };
         draft.ui.playerFound = false;
         draft.ui.error = null;
       },
@@ -575,7 +650,9 @@ export const PlayerStore = {
   reset() {
     this.update(
       (draft) => {
+        const saved = draft.player.completedQuestNames;
         Object.assign(draft, initialPlayerStoreState);
+        draft.player.completedQuestNames = saved;
       },
       ["player", "questList", "ui"]
     );

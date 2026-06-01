@@ -39,6 +39,8 @@ export interface PlayerState {
   playerName: string;
   skills: Skills | null;
   quests: PlayerQuestStatus[];
+  /** Manually marked completed quest names (persisted to IDB) */
+  completedQuestNames: string[];
   hideCompleted: boolean;
   showEligibleOnly: boolean;
 }
@@ -71,6 +73,7 @@ export const initialPlayerStoreState: PlayerStoreState = {
     playerName: "",
     skills: null,
     quests: [],
+    completedQuestNames: [],
     hideCompleted: false,
     showEligibleOnly: false,
   },
@@ -106,6 +109,8 @@ export interface PlayerDerivedSelectors {
   displayQuests(): EnrichedQuest[];
   /** Remaining count */
   remainingCount(): number;
+  /** Whether the user has any completion data (RuneMetrics or manual) */
+  hasCompletionData(): boolean;
 }
 
 /* ==========================================================================

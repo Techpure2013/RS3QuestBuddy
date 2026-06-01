@@ -21,7 +21,6 @@ import { useDialogSolver } from "./dialogsolverRW";
 import { useQuestControllerStore } from "./../../Handlers/HandlerStore";
 import { getQuestSwaps } from "./../../util/DescriptionSwap";
 
-import type { PlayerQuestStatus } from "./../../state/types";
 import type { Quest, QuestImage } from "./../../state/types";
 import {
 	fetchQuestBundleNormalized,
@@ -33,12 +32,9 @@ import usePOGDisclosure from "./Quest Detail Components/POGCalcDisclosure";
 import useGridDisclosure from "./Quest Detail Components/useGridModal";
 import useLunarGridDisclosure from "./Quest Detail Components/useLunarDisclosure";
 import { useSettings } from "./../../Entrance/Entrance Components/SettingsContext";
-import {
-	loadPlayerSession,
-	PlayerSession,
-	writeSession,
-} from "./../../idb/playerSessionStore";
+import { useToast } from "./../../Components/Toast/useToast";
 import { usePlayerSelector } from "./../../state/usePlayerSelector";
+import { PlayerStore } from "./../../state/playerStore";
 import { hasRichTextFormatting, stripFormatting } from "./../../util/RichText";
 
 const QuestDetailContents = lazy(
@@ -54,6 +50,7 @@ const QuestPage: React.FC = () => {
 		openCoffee,
 		ignoredRequirements,
 	} = useQuestPageFunctions();
+	const toast = useToast();
 	const skillLevels = usePlayerSelector((s) => s.player.skills);
 	const completedQuests = usePlayerSelector((_, d) => d.completedQuests());
 	const { stepCapture } = useDialogSolver();
@@ -232,54 +229,9 @@ const QuestPage: React.FC = () => {
 			.replace(/[^\w\s]/gi, "")
 			.toLowerCase() || "";
 
-	const loadPlayerQuests = async (questNameToComplete: string) => {
-		try {
-			const session = (await loadPlayerSession()) as PlayerSession | null;
-			if (!session) {
-				console.warn("No player session in IDB; nothing to update.");
-				return;
-			}
-
-			const remaining: PlayerQuestStatus[] = Array.isArray(session.remainingQuest)
-				? session.remainingQuest
-				: [];
-			const completed: PlayerQuestStatus[] = Array.isArray(session.hasCompleted)
-				? session.hasCompleted
-				: [];
-
-			const targetTitle = questNameToComplete.toLowerCase().trim();
-
-			const questIndex = remaining.findIndex(
-				(q) => q.title?.toLowerCase().trim() === targetTitle,
-			);
-			if (questIndex === -1) {
-				console.warn(
-					"Quest to complete not found in remaining:",
-					questNameToComplete,
-				);
-				return;
-			}
-
-			const questToMove = {
-				...remaining[questIndex],
-				status: "COMPLETED" as const,
-			};
-			const newRemaining = remaining
-				.slice(0, questIndex)
-				.concat(remaining.slice(questIndex + 1));
-			const newCompleted = [...completed, questToMove];
-
-			const updated: PlayerSession = {
-				...session,
-				remainingQuest: newRemaining,
-				hasCompleted: newCompleted,
-				updatedAt: new Date().toISOString(),
-			};
-
-			await writeSession(updated);
-		} catch (e) {
-			console.error("Failed to update player session in IDB:", e);
-		}
+	const markQuestComplete = (questNameToComplete: string) => {
+		PlayerStore.markQuestCompleted(questNameToComplete);
+		toast.success(`${questNameToComplete} added to completed quests!`);
 	};
 
 	const copyStyle = (to: Window, node: HTMLStyleElement | HTMLLinkElement) => {
@@ -543,7 +495,7 @@ const QuestPage: React.FC = () => {
 					onDiscordClick={openDiscord}
 					onNotesClick={openNotes}
 					onBackClick={() => handleBackButton(userID, questName)}
-					onCompleteClick={() => loadPlayerQuests(questName)}
+					onCompleteClick={() => markQuestComplete(questName)}
 					onWikiClick={() => openWikiQuest(questName)}
 					onCoffeeClick={openCoffee}
 					onNextStep={scrollNext}

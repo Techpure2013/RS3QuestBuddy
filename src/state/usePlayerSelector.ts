@@ -68,6 +68,9 @@ export function usePlayerActions(options?: { onFetchError?: (error: string) => v
     loadQuestList: PlayerStore.loadQuestList.bind(PlayerStore),
     setHideCompleted: PlayerStore.setHideCompleted.bind(PlayerStore),
     setShowEligibleOnly: PlayerStore.setShowEligibleOnly.bind(PlayerStore),
+    markQuestCompleted: PlayerStore.markQuestCompleted.bind(PlayerStore),
+    markQuestIncomplete: PlayerStore.markQuestIncomplete.bind(PlayerStore),
+    setCompletedQuests: PlayerStore.setCompletedQuests.bind(PlayerStore),
     clearPlayer: PlayerStore.clearPlayer.bind(PlayerStore),
     reset: PlayerStore.reset.bind(PlayerStore),
   };

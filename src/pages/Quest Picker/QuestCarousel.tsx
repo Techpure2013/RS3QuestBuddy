@@ -20,6 +20,7 @@ import {
 	IconX,
 	IconList,
 	IconPlaylistAdd,
+	IconChecklist,
 } from "@tabler/icons-react";
 import { useSettings } from "../../Entrance/Entrance Components/SettingsContext";
 
@@ -35,6 +36,7 @@ import Settings from "../Settings/Settings";
 import UserNotes from "../Settings/userNotes";
 import QuestTodoList from "./Quest Picker Components/QuestTodoList";
 import QuestDisplay from "./Quest Picker Components/QuestDisplay";
+import CompletedQuestsManager from "./Quest Picker Components/CompletedQuestsManager";
 import { fetchQuestBundleNormalized } from "../../idb/questBundleClient";
 
 import type { QuestAge, QuestSeries } from "../../state/types";
@@ -74,6 +76,7 @@ const QuestCarousel: React.FC = () => {
 	const displayQuests = usePlayerSelector((_, d) => d.displayQuests());
 	const remainingQuestsCount = usePlayerSelector((_, d) => d.remainingCount());
 	const completedCount = usePlayerSelector((_, d) => d.completedQuests().length);
+	const hasCompletionData = usePlayerSelector((_, d) => d.hasCompletionData());
 
 	// PlayerStore actions with toast callbacks
 	const { fetchPlayer, setHideCompleted, setShowEligibleOnly, clearPlayer } = usePlayerActions({
@@ -108,6 +111,8 @@ const QuestCarousel: React.FC = () => {
 	const [notesModal, { open: openNotes, close: closeNotes }] =
 		useDisclosure(false);
 	const [todoModal, { open: openTodo, close: closeTodo }] = useDisclosure(false);
+	const [completedModal, { open: openCompleted, close: closeCompleted }] =
+		useDisclosure(false);
 
 	const [activeFilters, setActiveFilters] = useState<Filter[]>([]);
 	const [activeSort, setActiveSort] = useState<SortKey | null>(null);
@@ -351,6 +356,17 @@ const QuestCarousel: React.FC = () => {
 				</Modal>
 			)}
 
+			{completedModal && (
+				<Modal
+					title="Manage Completed Quests"
+					opened={completedModal}
+					onClose={closeCompleted}
+					size="lg"
+				>
+					<CompletedQuestsManager onClose={closeCompleted} />
+				</Modal>
+			)}
+
 			<Paper
 				p="md"
 				mb="xl"
@@ -403,9 +419,24 @@ const QuestCarousel: React.FC = () => {
 
 						<Group style={{ justifyContent: "center" }}>
 							<Button
+								leftSection={<IconChecklist size={18} />}
+								variant="filled"
+								color="teal"
+								onClick={openCompleted}
+								rightSection={
+									completedCount > 0 ? (
+										<Badge circle color="green" size="sm">
+											{completedCount}
+										</Badge>
+									) : null
+								}
+							>
+								Completed Quests
+							</Button>
+							<Button
 								variant={hideCompleted ? "filled" : "outline"}
 								onClick={toggleHideCompleted}
-								disabled={!playerFound}
+								disabled={!hasCompletionData}
 								color={hideCompleted ? "teal" : undefined}
 							>
 								{hideCompleted ? "Showing Incomplete" : "Hide Completed"}
@@ -492,7 +523,7 @@ const QuestCarousel: React.FC = () => {
 				</Group>
 			)}
 
-			{playerFound && (hideCompleted || showEligibleOnly) && (
+			{hasCompletionData && (hideCompleted || showEligibleOnly) && (
 				<div className="caroQTitle">
 					<h3>
 						{hideCompleted && showEligibleOnly
@@ -502,7 +533,7 @@ const QuestCarousel: React.FC = () => {
 								: "Showing only eligible quests"}
 					</h3>
 					<p>
-						{playerName} has {questPoints} Quest Points ({completedCount} completed, {remainingQuestsCount} remaining)
+						{playerName ? `${playerName} has` : "You have"} {questPoints} Quest Points ({completedCount} completed, {remainingQuestsCount} remaining)
 					</p>
 				</div>
 			)}
